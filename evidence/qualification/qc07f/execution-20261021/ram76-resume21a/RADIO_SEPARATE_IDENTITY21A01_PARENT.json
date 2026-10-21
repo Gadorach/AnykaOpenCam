@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-21T06:43:20.850843+00:00",
+  "state": "PARENT_VERIFIED_SEPARATE_APPLICATION_IDENTITY_AND_RETIREMENT_ORIGINAL_TRIAL_FAILED_HOLD",
+  "image_sha256": "bd8a2a08be1483e1ddcd1efa2c68c9e20549047dec79796137979179197f654f",
+  "recipe_sha256": "c3c19a12bffb56eec2044e259793f58a7243e1ae20ac6fe8cf75ee3f3229ceeb",
+  "source_closure_commit": "433136a97748b931af64ceca0039075576b19b61",
+  "strict_APPLICATION": true,
+  "retained_chip_version_SVN_CPU_identity_matches": true,
+  "device_identifying_fields_kept_private": true,
+  "same_original_private_boot_UUID_and_owner_checkpoint": true,
+  "exact_admitted_UART_TX_delta_bytes": 1741,
+  "completed_sends": 54,
+  "one_pre_monitor_refresh": false,
+  "post_monitor_refresh": false,
+  "cached_pre_and_post_FD_descriptor_full_idle_rounds_completed": true,
+  "final_idle_memory_KiB_snapshot_not_budget": {
+    "MemTotal": 33144,
+    "MemFree": 20864,
+    "CmaTotal": 16384,
+    "CmaFree": 9216
+  },
+  "original_failed_trial_HOLD_content_preserved_byte_exact": true,
+  "active_query_endpoint_CLEAR_HALT_ONLY_AFTER_separate_retirement_and_fresh_preRO": true,
+  "no_firmware_reload_RUN_repeat_fallback_module_association_network_media_reset_or_persistent_write": true,
+  "original_151_ACK_strict_trial_still_failed": true,
+  "direct_all_URB_DMA_MODE_NAK_toggle_MTU1500_or_product_acceptance": false,
+  "parent_verification_saved_evidence_only_no_new_target_IO": true
+}

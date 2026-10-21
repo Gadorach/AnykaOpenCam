@@ -1,5 +1,33 @@
 # Project instructions for local agents
 
+## Latest actual —06:43 separate APPLICATION/identity/retirement PASS; original HOLD kept
+
+shellsh_15d33053f001Se3y74f0wlZBlNcompleted06:43:20UTC. Exactc3c19a12…one
+preRO/stateAPPLICATION/conditionalinfoexpectedversionchipSVNCPU/postRO sameboot
+retirementPASS/1741UARTB54sends/norefresh. PID1consoleFDs0..3/noUSBWDfd/USBcached
+descriptorsmatch/nointerface driver/ISPidle/WDlogicalinactive/UARTerrorsbusy0/
+modulesempty/volatilemounts. Original151ACKstricttrialFAILED/HOLDbyteexactKEPT.
+No reload/RUN/fallback/reset/module/association/network/media/persistentwrite.
+LasttargetONidleRAM76/radioAPPLICATION/UARTconnected; noactivelease/GUI/network.
+Privateidentityrawtail/UUID/countercheckpointretainednotexported. Publicreceipts
+RADIO_SEPARATE_IDENTITY21A01*.json + SEPARATE_IDENTITY21A_RESULT.md. Sourceclosure
+433136a(localmain/indexpreserved/nopush). 06:42:58capture/catch1574sremaining
+DATEDrevalidate,07:09UTCnotfutureauthority. Nextstation/transportSOURCEadmission,
+NOautoassociation/reload/HOLDclear. RP04combined/adoptionandproductHOLDunchanged.
+
+## Active hardware — ONE separate identity operation launched06:43UTC
+
+Freshparent06:42:58PASS: originalHOLDbytes/inode/path, exactnative-retirementTX/
+orderedlineage/snapshot/source/solepeer/PIDstart/unprivilegedUIDGID/catchfuture,
+1574sremainingDATED; noHCD/activeEP/newkernel/reset/topologygaps. Exactc3c19a12…
+independentGOcommitted433136a(mainlocal/indexpreserved). ONEidentity21a.py
+--one-separate-identity-preserve-HOLD21a shellsh_15d33053f001Se3y74f0wlZBlN.
+WaitcompletionNOconcurrentUART/RPC/status/progresspoll/helperorrecipeedit.
+FixedpreRO->onestate->conditionaloneinfo->postRO; no reload/RUN/reset/fallback/
+module/network/media. Original151ACKtrialFAILED/HOLDmustremainevenifidentity
+healthy. No nativeidentityresultyet; failuressticky/noretry, prearmedWDifneeded
+retaincatch/noinjectedresetwhileactive. Source/helpersFROZENuntilcompletion.
+
 ## Latest review — exact identity conditional SOURCE GO; fresh gates next
 
 IDENTITY_CONTROLLER_REVIEW48HOSTmethods+62independentchecksPASS/I1-I4closed,

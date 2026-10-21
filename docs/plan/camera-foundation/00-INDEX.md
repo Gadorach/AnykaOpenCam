@@ -68,7 +68,11 @@ state/info followed. A separately reviewed06:00UTC retirement-only cached read
 then passed on the same boot (no PID1 USB/watchdog FD, idle ISP/watchdog/UART),
 preserving original HOLD byte-exact. No reset/retry. See active ledger,
 `NATIVE_TRIAL21A_HOLD.md` and `READONLY_RETIREMENT21A.md` under qualification docs.
-Separate identity admission remains; combined memory/native radio/product gates open.
+Separate06:43UTC APPLICATION/retained firmware identity plus full fresh pre/post
+idle/FD/descriptors retirement then passed,1741B/54 sends, preserving original
+HOLD. No reset/reload/module/association/network/MTU result. See
+`SEPARATE_IDENTITY21A_RESULT.md` under qualification docs. Paired76 station/finite
+transport still needs source/current admission; combined memory/product gates open.
 
 ### Latest request — complete remaining-feature/bug plan, October21 (PLAN ONLY)
 

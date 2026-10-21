@@ -1,0 +1,9 @@
+{
+  "state": "SEPARATE_IDENTITY_RETIRED_ORIGINAL_TRIAL_FAILED_HOLD",
+  "strict_APPLICATION": true,
+  "retained_chip_version_SVN_CPU_identity_matches": true,
+  "device_identifying_fields_kept_private": true,
+  "same_original_boot_idle_retirement": true,
+  "original_trial_FAILED_HOLD_preserved": true,
+  "direct_MODE_NAK_toggle_MTU1500_or_product_acceptance": false
+}

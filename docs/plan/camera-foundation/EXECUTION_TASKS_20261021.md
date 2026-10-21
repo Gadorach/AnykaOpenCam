@@ -1,5 +1,24 @@
 # Active execution ledger — remaining foundation work
 
+**Latest actual06:43:20UTC:** separate identity operation completed normally:
+fresh pre-RO → one strict APPLICATION state → one retained firmware-info identity
+→ full post-RO sameboot idle/FD/descriptors retirement PASS. Exact1741B/54 sends,
+no refresh; original151-ACK trial FAILED/HOLD byte-exact retained. No reload/RUN/
+reset/module/association/network/media effects. See `SEPARATE_IDENTITY21A_RESULT.md`.
+Target last observed ON/idle RAM76/radio APPLICATION, UART connected; no active
+lease/GUI or associated network. Future operations require new source/current
+admission;06:42:58 coverage1574s is DATED. RP-04/product gates unchanged.
+
+**Active identity06:43UTC:** one exact reviewed controller launched as
+`sh_15d33053f001Se3y74f0wlZBlN`. Fresh06:42:58UTC parent admission rechecked
+HOLD bytes/inode/path, ordered/native checkpoint/TX/snapshot, sole source/owner/
+peer/start/identity, no intervening reset/HCD/active-endpoint warning/topology,
+future catch and1574s bounded coverage (DATED). Source closure `433136a` is local
+main/index preserved. **Wait completion; no concurrent UART/RPC/status/progress
+poll or helper/recipe edit.** Fixed pre-RO → one state → conditional info → post-RO;
+no reload/RUN/reset/fallback/module/network/media. Original151-ACK FAILED/HOLD
+stays even if this separate identity succeeds. No native identity result yet.
+
 **Identity exact-source review:** `IDENTITY_CONTROLLER_REVIEW.md` returned
 conditional SOURCE GO for c3c19a12… (48 HOST methods +62 independent checks).
 Original failed151-ACK HOLD remains. Fresh parent source/lineage/owner/catch
@@ -131,7 +150,7 @@ not the requirement to revalidate each later operation. Old20c authority is expi
 |---|---|---|
 | RP-00 | NATIVE-BASELINE-PASS-NARROW | Main source baseline/index preserved, old20c final hashes verified. Fresh21a cold gate and exact76 upload/CRC/monitor + fixed RO idle inventory passed04:36–37UTC; E2 must still be revalidated for later effects |
 | RP-01 | OPEN / prior narrow proofs | Retain76 paired build/basic boot; complete release manifest enforcement/product supervision/serial/watchdog after bounded entry |
-| RP-02 | NATIVE-STRICT-RECEIPT-HOLD; SEPARATE-RO-RETIREMENT-OBSERVED | One trial/all74 fragments, final RUN ACK interrupted by printk. Separate06:00 cached FD/descriptors/full idle/sameboot retirement passed without clearing HOLD. Application identity unverified; separate review before state/info; no reload/retry |
+| RP-02 | ORIGINAL-STRICT-HOLD; SEPARATE-NATIVE-IDENTITY-RETIREMENT-PASS | One74-fragment trial had final RUN ACK interleaved; original HOLD unchanged. Separate06:43 strict APPLICATION/retained firmware identity + fresh pre/post cached FD/descriptors/full idle/sameboot retirement PASS. No module/association/network/MTU proof; station/finite transport source admission next, no reload/retry |
 | RP-03 | QUEUED | Controlled image/timing benchmark after current source/transport baseline; no assumed factory FPS |
 | RP-04 | SOURCE-DECISION-REVIEWED; MEMORY-HOLD |80 initial +89 placement-review identities match. Conditional6160KiB fixed-ISP exclusion is future-evacuation only with real continuous FD pin; no implementation/policy change or current admission. Parent unchanged-v6 reproduction active |
 | RP-05 | DEPENDENCY | Standard capture/import/overlap after memory/retirement proof |

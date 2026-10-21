@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-21T06:42:58.369293+00:00",
+  "state": "PARENT_SEPARATE_IDENTITY_HOST_ADMISSION_PASS",
+  "source_sha256": "c3c19a12bffb56eec2044e259793f58a7243e1ae20ac6fe8cf75ee3f3229ceeb",
+  "original_failed_HOLD_content_inode_path_unchanged": true,
+  "ordered_lineage_native_retirement_checkpoint_receipt_completion_rechecked": true,
+  "saved_snapshot_exact_actual_capture_slice_matches": true,
+  "sole_original_source_adapter_peer_PID_start_unprivileged_identity": true,
+  "no_competing_active_lease_or_sender": true,
+  "exact_current_TX_matches_native_retirement_endpoint": true,
+  "no_original_interval_HCD_active_endpoint_reset_or_new_kernel": true,
+  "no_topology_transition_since_SAVED_native_retirement_RX_including_carry": true,
+  "future_mainCPU_Uboot_catch_armed": true,
+  "capture_and_catch_remaining_seconds_floor": 1574,
+  "target_TX": false,
+  "fresh_preRO_idle_FD_descriptor_gates_required_inside_controller": true
+}

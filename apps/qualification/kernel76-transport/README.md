@@ -96,6 +96,12 @@ review returned conditional SOURCE GO with62 additional checks. Parent offline n
 that is not a live owner/runtime admission. A parent30s HOST reproduction timeout
 is retained; the longer bounded run then passed all48 methods. No target controller ran.
 
+Subsequent native result: exactly one separately admitted identity operation
+passed06:43UTC (APPLICATION/retained firmware identity, complete fresh pre/post
+cached/idle retirement,1741 UART bytes/54 sends). Original failed-trial HOLD stayed
+byte-exact. See `SEPARATE_IDENTITY21A_RESULT.md`. This does not repair the original
+ACK receipt or qualify MODE/NAK/toggles/MTU/network/product. No reload/reset.
+
 Watchdog is preferred for reviewed recovery, not a hidden test side effect. An
 already guarded operation may reset autonomously; a deliberate `wdt reset` needs
 its own known-idle/catch admission. No reset is used to clear an unknown state
