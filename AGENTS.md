@@ -1,5 +1,49 @@
 # Project instructions for local agents
 
+## Latest review — retirement-only reader conditional SOURCE GO; fresh gates next
+
+RETIREMENT_GUARD_CLOSURE_REVIEW05:55UTC aeda5136…conditionalGOonereader859/860B,
+25HOSTmethods+40independentchecksPASS/G1G2closed. OriginaltrialFAILED/HOLDmust
+staybyteexact; noactiveUSBstate/info/reset/reload/RUN/retry. Sourcefrozenbefore
+actualuse; freshparentexactfailurecounter/snapshot/source/PIDstart/derivedUIDGID/
+soleowner/catch>=300s/noactiveleasegatesrequired,150stotal/10sRPCreserve. No new
+targetTXyet; last05:23failure, 21acapture07:09UTC DATEDrevalidate. No native
+retirementclaim; RP04combined/adoptionHOLD unchanged.
+
+## Latest correction —25 HOSTmethodsPASS; retirement guard closure review pending
+
+InitialreaderNO-GO(G1nestedsendbypass/G2splitRXtopology)preservedwithbefore-source.
+Corrections hookonlyonesessioncheck_stream/call(savedunwrappedavoidrecursion),
+recheckafterblockingstate/beforeRPC+10soverheadreserve; carryinpartialline<=1024
+includedtopologyscan.25HOSTmethodsPASSinclrealBoot.send/direct+zerorefusal8fault
+probes/allsplitUSBtransitionfixtures. Guardclosurereviewactive/sourcefrozen;
+NOtargetTXsincefailed05:23trial. OriginalHOLDstillretained; noidentity/reset/RUN/
+reload/fallback. CurrentpostloadruntimeUNKNOWN; freshowner/counter/catchgatesafter
+GOonly. Mainlocal1f64895, nopush/indexpreserved; memoryadoption/combinedHOLD.
+
+## Latest source — preserved-HOLD retirement reader22 HOSTmethodsPASS; review pending
+
+FAILED_TRIAL_FOLLOWUP_REVIEW conditionalSOURCEGOoneseparatecachedmetadata+14RO
+inventoryonly; oldentrypointsNO-GO(clearHOLD/oldcounters). Newretire21a.pycandidate
+22HOSTmethodsPASS, implementationreviewactive/frozen. ParentOFFLINEfailedTX
+reconciled28matchedintent/completionrecords/RpRttrue/trialdelta878B/formula
+Cfailed=Cboot+1197+Rp+Rt; privatecheckpointnotrebasedfromstatus. NOtargetTXsince
+failedtrial05:23; preserveoriginalHOLD, NOreload/RUN/state/info/reset/repairuntil
+separatelyadmitted. ReaderneverclearsHOLD; oneattempt300scoverage/150stotal.
+Mainlocal1f64895/d66b274, indexpreserved/nopush. CurrentruntimepostloadUNKNOWN;
+21acapture07:09UTC DATEDrevalidate. RP04combined/adoptionHOLD unchanged.
+
+## Latest offline — unchanged v6 parent reproduction PASS; native HOLD unchanged
+
+runParentV6RP04Acompleted05:28:43UTC; host42/35/67/24eachopt+san/receiver16PASS.
+55sourcepins/265consumedclosure/46externaltools matchrun34; strippedARM91236B
+byteexact64434b3c…NEVERRUN. Initialcomparatorrunpathfailure+24differingHOSTobject
+hashespreserved. Sourceplacementreportconditional6160KiBfutureevacuationexclusion
+requirescontinuousFDpin/extents; NOTimplemented/adopted, dated88KiBmarginNOTGO.
+Mainlocal1f64895reproduction/d66b274stricttrialfailure, indexpreserved,nopush.
+No targetTXsincefailedradio05:23; originalHOLDretained. Retirement-onlyreview
+active, NOnewhardwarebeforeitsGO+fixedreviewedrecipe/freshowner/runtimegates.
+
 ## Latest actual — single native radio trial FAILED strict receipt; HOLD retained
 
 shellsh_15cea5441001X0ygn37rDHAm9Gcompletedexit1. Freshidle/USBdescriptors/PID1FD

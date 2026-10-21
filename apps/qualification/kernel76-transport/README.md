@@ -18,6 +18,11 @@ a self-contained public firmware release or a product network service.
   independent descriptor/FD/logical watchdog/ISP/UART/boot continuity retirement.
   Entire operation retains durable HOLD until all gates pass; no retry,256 fallback,
   GPIO42 reset, module attachment, association or MTU change is implemented.
+- `retire21a.py`: separate postfailure **retirement-only candidate**, with
+  conditional source GO. Reconciles original boot/postcheck/trial TX from saved completion
+  events and snapshot; reads cached metadata plus full idle inventory while
+  preserving the exact original nonempty failed-trial HOLD. No radio or reset
+  command, retry or successful-trial reinterpretation is part of this reader.
 
 Tests (no target/RPC or private-capture access):
 
@@ -25,9 +30,10 @@ Tests (no target/RPC or private-capture access):
 python3 -B apps/qualification/kernel76-transport/test_radio_receipt.py
 python3 -B apps/qualification/kernel76-transport/test_metadata21a.py
 python3 -B apps/qualification/kernel76-transport/test_trial21a.py
+python3 -B apps/qualification/kernel76-transport/test_retire21a.py
 ```
 
-The17 current unittest methods contain grouped negative cases and full trial-main
+The25 current unittest methods contain grouped negative cases and full trial/reader-main
 in-memory fakes. Metadata admission tests cover receipt/checkpoint/source-binding
 failures before import, while trial fakes exercise complete/fault/HOLD paths with
 at most one load. This is HOST proof, **not native acceptance**.
@@ -55,7 +61,27 @@ Execution: `docs/plan/camera-foundation/EXECUTION_TASKS_20261021.md`.
 `CORE_DIAGNOSTIC_CLOSURE_REVIEW.md` closes the preserved source NO-GOs for the
 pinned corrected candidate. Exactly one whole functional load/RUN plus state/info
 and retirement is conditionally source-approved, **not yet natively accepted**.
-Exact current owner/runtime/recovery/lease/descriptor/FD gates must pass first.
+That one trial ran and FAILED strict receipt at an interleaved final RUN ACK;
+original HOLD remains. No rerun is authorized. See `NATIVE_TRIAL21A_HOLD.md`.
+`FAILED_TRIAL_FOLLOWUP_REVIEW.md` conditionally supports one retirement-only
+sequence, not the old entrypoints; the new reader's implementation review and
+fresh current owner/runtime/recovery/counter gates must pass before use. See
+`RETIREMENT_GUARD_CLOSURE_REVIEW.md` for the exact approved revision/scope.
+
+Retirement HOST failures retained in the parent host record: an anchored new-boot
+regex missed a message joined after a prompt (finite substring matching fixed it);
+a counter-test fixture tried to deepcopy a module (excluded from the copy). Neither
+ran on target or changed original trial acceptance.
+
+The reader's first independent implementation review found nested `Boot.send`
+checks bypassing the outer guard and a topology record split across its RX boundary.
+The NO-GO revision is preserved under `retirement-parent-correction01/before/`.
+Correction hooks only this session's checker/RPC boundaries (saved unwrapped methods
+avoid recursion), reserves the existing RPC timeout before send, and scans the
+carry-in incomplete line. Tests now exercise the real inherited send/retry method
+and every split of disconnect/new/reset-device records. Independent closure review
+returned conditional SOURCE GO (25 supplied methods +40 independent checks); this
+is not current hardware admission or original-trial clearance.
 
 Watchdog is preferred for reviewed recovery, not a hidden test side effect. An
 already guarded operation may reset autonomously; a deliberate `wdt reset` needs

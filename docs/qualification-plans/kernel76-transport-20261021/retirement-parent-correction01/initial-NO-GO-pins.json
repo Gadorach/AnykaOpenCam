@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-21T05:49:44.640233+00:00",
+  "source_before": {
+    "retire21a.py": "daa04cd5e5bb8da38a0e87b4975d3c5c49a727ecb4529a9607d64301bbe9b275",
+    "test_retire21a.py": "15986c1c2447d767116b39a86f363cfdcabc8d6d5a0d4df799e071d0a7259b1a"
+  },
+  "preserved_G1_nested_send_guard_bypass": true,
+  "preserved_G2_split_topology_boundary": true,
+  "target_IO": false
+}

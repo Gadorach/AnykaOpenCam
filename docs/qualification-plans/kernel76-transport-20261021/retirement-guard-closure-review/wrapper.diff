@@ -1,0 +1,61 @@
+--- docs/qualification-plans/kernel76-transport-20261021/retirement-parent-correction01/before/retire21a.py
++++ apps/qualification/kernel76-transport/retire21a.py
+@@ -87,24 +87,45 @@
+         self.session, self.held, self.hold_bytes = session, held, hold_bytes
+         self.original_peer, self.start_ticks = original_peer, start_ticks
+         self.original_rx, self.settled_rx, self.deadline = original_rx, settled_rx, deadline
++        self.original_check_stream, self.original_call = session.check_stream, session.call
++        prefix = session.raw_since(original_rx, {"rx_bytes": settled_rx})
++        self.topology_carry = prefix.rsplit(b"\n", 1)[-1]
++        assert len(self.topology_carry) <= 1024
++        # Per-instance only: Boot.send's internal checks/retries and Boot.wait's
++        # receive checks must use this same guard, not merely the outer facade.
++        session.check_stream, session.call = self.check_stream, self.call
++
++    def local_gate(self, reserve=0):
++        assert self.deadline - time.monotonic() > reserve
++        self.held.seek(0); assert self.held.read() == self.hold_bytes
++        assert self.session.peer == self.original_peer and b.ticks(self.original_peer[0]) == self.start_ticks
++
++    def call(self, request, expected_peer=None):
++        assert request["action"] in ("status", "send")
++        # Existing RPC socket timeout is10s. Do not initiate a mutating request
++        # inside that reserve; this is not an electrically atomic deadline.
++        self.local_gate(10 if request["action"] == "send" else 0)
++        value = self.original_call(request, expected_peer=expected_peer)
++        self.local_gate()  # State/RPC reads can consume the remaining budget.
++        return value
+ 
+     def __getattr__(self, name):
+         return getattr(self.session, name)
+ 
+     def check_stream(self):
+-        assert time.monotonic() < self.deadline
+-        self.held.seek(0); assert self.held.read() == self.hold_bytes
+-        assert self.session.peer == self.original_peer and b.ticks(self.original_peer[0]) == self.start_ticks
+-        state = self.session.check_stream()
++        self.local_gate()
++        state = self.original_check_stream()
++        self.local_gate()
+         assert state["abort_armed"] is True and state["tx_busy"] is False
+         assert state["rx_bytes"] >= self.settled_rx
+         whole = self.session.raw_since(self.original_rx, state)
+         assert not trial.HCD_DIAGNOSTIC.search(whole) and not NEW_KERNEL.search(whole)
+-        assert not TRANSITION.search(self.session.raw_since(self.settled_rx, state))
++        assert not TRANSITION.search(self.topology_carry + self.session.raw_since(self.settled_rx, state))
+         return state
+ 
+     def send(self, wire, reason):
+         self.check_stream()
++        self.local_gate(10)
+         return self.session.send(wire, reason)
+ 
+     def wait(self, marker, start, timeout, **kwargs):
+@@ -118,6 +139,7 @@
+ 
+ def main():
+     assert sys.argv[1:] == ["--one-readonly-retirement-preserve-HOLD21a"]
++    assert os.getuid() == os.geteuid() and os.getgid() == os.getegid()
+     os.umask(0o077)
+     with (b.CONTROL / "peripheral-gui-operation.lock").open("r+") as held:
+         fcntl.flock(held, fcntl.LOCK_EX | fcntl.LOCK_NB)

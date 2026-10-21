@@ -1,5 +1,18 @@
 # Active execution ledger — remaining foundation work
 
+**Retirement-only preparation05:41UTC:** source review conditionally supports one
+cached metadata/full-idle follow-up with original HOLD preserved, not old mains.
+Parent reconciled failed TX from saved28 intent/completion records and source
+lengths: Rp/Rt true, trial delta878B, `Cfailed=Cboot+1197+Rp+Rt`; private binding
+retained, no current-status rebasing. New `retire21a.py` reader candidate and22
+HOST unittest methods PASS at that checkpoint. Independent implementation review
+then found nested-send guard bypass and a split-topology boundary gap. Both are
+corrected;25 HOST methods now PASS, including actual inherited send/retry and
+all record-split positions. Original NO-GO source/report is retained; independent
+guard-closure review returned conditional SOURCE GO05:55UTC (25 supplied methods
+and40 independent checks PASS). Fresh parent gates still required. No target
+TX since the failed trial. No radio/USB active query or reset is queued.
+
 **Latest actual05:23UTC — RADIO TRIAL HOLD:** the single reviewed operation
 completed exit1 after native idle/descriptor/FD admission and all74 data fragments.
 A USB-disconnect printk interrupted the final RUN ACK record; the source RUN-success
