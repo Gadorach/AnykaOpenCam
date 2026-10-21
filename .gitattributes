@@ -1,0 +1,9 @@
+# Preserve original acquisition and binary artifact bytes, without global filters.
+firmware/stock/** -filter
+**/flash-read*.bin -text -diff -merge -filter
+*.bin -text -diff -merge -filter
+*.UIM -text -diff -merge -filter
+*.dtb -text -diff -merge -filter
+*.ko -text -diff -merge -filter
+*.jpg -text -diff -merge -filter
+*.png -text -diff -merge -filter

@@ -1,0 +1,1 @@
+FreeSimpleGUI==5.3.0.post1 --hash=sha256:e5b3aa005c94237e9d929a3be72c6311a275e03c8a742a1cd3e565c1903d6e65

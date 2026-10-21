@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Camera browser candidate</title><link rel="stylesheet" href="./player.css">
+<script type="module" src="./app.mjs"></script></head>
+<body><main><h1>Camera browser candidate</h1>
+<p class="notice">Standalone adoption candidate — not a qualified product or live fixture.</p>
+<p id="message" role="status" aria-live="polite">Waiting for session</p>
+<form id="login"><label>Account <input id="account" autocomplete="username" maxlength="63" required></label>
+<label>Password <input id="password" type="password" autocomplete="current-password" required></label>
+<button id="sign-in" type="submit">Sign in</button></form>
+<section id="authenticated" hidden><button id="logout" type="button">Sign out</button>
+<p id="service">Service status unknown</p>
+<label>Physical camera <select id="camera" disabled></select></label>
+<label>Encoder profile <select id="profile" disabled></select></label>
+<p id="availability">Media unavailable until exact qualified resource IDs and source metadata are supplied.</p>
+<div class="toolbar"><button id="start" disabled type="button">Start / reconnect</button>
+<button id="stop" disabled type="button">Stop</button>
+<label>Image fit <select id="fit"><option value="contain">Fit</option><option value="cover">Fill</option></select></label>
+<button id="fullscreen" type="button" disabled>Fullscreen</button></div>
+<p id="state" role="status" aria-live="polite">paused</p>
+<div id="viewport"><video id="video" muted playsinline hidden></video></div>
+<p>Preview correction: horizontal and vertical axes. No tint or re-encoding.</p>
+<p id="metrics">Source timestamps / age / measured FPS: unavailable</p>
+<p>Source metadata is not all-frames-presented proof. Missing FPS is never replaced by a nominal value.</p>
+<fieldset disabled><legend>Physical controls unavailable</legend>
+<button type="button">PTZ</button><button type="button">Lights</button><button type="button">Audio</button>
+<p>No qualified resource bindings, revisions, transaction receipts or applied-state proof; no physical commands are sent.</p></fieldset>
+</section></main></body></html>

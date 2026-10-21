@@ -1,0 +1,16 @@
+// SPDX-License-Identifier: GPL-2.0-only
+// Review fragment ONLY. Not applied to any active DT. No clocks/reset/power
+// or GPIO defaults: those providers and retail bindings are still unknown.
+/ {
+	#address-cells = <1>;
+	#size-cells = <1>;
+	mmc_candidate: mmc@20100000 {
+		compatible = "anyka,qc07f-mci-candidate";
+		reg = <0x20100000 0x44>;
+		// hwirq4 is a vendor source fact, NOT a Linux virtual IRQ number.
+		// interrupt-parent/domain binding must be independently reviewed.
+		bus-width = <1>;
+		max-frequency = <400000>;
+		status = "disabled";
+	};
+};

@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: GPL-2.0-only
+config MMC_QC07F_CANDIDATE
+	bool "QC07F MCI source-review candidate (probe refuses)"
+	depends on MMC && OF && ARM
+	default n
+	help
+	  Offline source/build candidate only. Probe unconditionally refuses
+	  before claiming resources or starting card discovery. A measured,
+	  reviewed routing/clock/shared-L2 retirement provider is still absent.
+	  This is not SDHCI, SD support, or a qualified Linux block path.

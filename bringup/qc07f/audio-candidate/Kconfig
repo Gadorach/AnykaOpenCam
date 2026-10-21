@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: GPL-2.0-only
+config SND_QC07F_ADC2_CANDIDATE
+	tristate "QC07F capture-only ADC2 source candidate (probe refuses)"
+	depends on ARM && SND_PCM
+	default n
+	help
+	  Offline source/ABI candidate only. No retail mic route, clock/reference,
+	  cache, L2/IRQ retirement provider is qualified. Probe always refuses.

@@ -1,0 +1,41 @@
+# Historical acquisitions/experiments remain intact locally. Durable stock evidence,
+# reviewed application code and recovery artifacts are mirrored into named scopes.
+/work/
+/local/
+/.cache/
+/.build/
+/build/
+**/node_modules/
+**/__pycache__/
+*.py[cod]
+*.o
+*.obj
+*.d
+*.tmp
+*.swp
+*~
+
+# Never version generated credentials, operator passwords or private TLS inputs.
+**/private-*/
+**/operator.password
+**/credentials.bin
+*.key
+*.pem
+*.p12
+*.pfx
+.env
+.env.*
+**/core
+**/core.*
+
+# Do not blanket-ignore ROM .bin files, photos, modules, logs, sources or artifacts.
+# Stock acquisitions are sensitive local forensic data; no publication is authorized.
+
+# Source-only main workflow: preserve forensic/private material locally.
+# These exclusions do not remove or alter pre-existing staged entries.
+/firmware/stock/
+/evidence/photos/
+/docs/archive/initial-handoff/
+*.private.json
+*.private.txt
+*.private.bin

@@ -1,0 +1,122 @@
+// SPDX-License-Identifier: GPL-2.0-only
+/dts-v1/;
+/* Experimental UART-first description. No Wi-Fi, storage, imaging or motors
+ * enabled. U-Boot reports64MiB physical DRAM; the running stock kernel uses
+ * 0x81800000..0x84000000 and reserves the lower24MiB for its media ABI. This
+ * peripherals-disabled prototype does not use that ABI; its full-DRAM layout
+ * still needs a safe loading/decompression experiment, not an assumed address.
+ * Register/IRQ definitions come from the pinned AK39 BSP and retail REA.
+ */
+/ {
+	model = "QC07F mainline bring-up prototype (unverified)";
+	compatible = "anyka,qc07f", "anyka,ak3918ev200";
+	#address-cells = <1>;
+	#size-cells = <1>;
+	chosen {
+		stdout-path = "/soc/serial@20130000";
+		bootargs = "earlycon console=ttyAK0,115200n8 keep_bootcon rdinit=/init loglevel=8 panic=0";
+	};
+	memory@80000000 {
+		device_type = "memory";
+		reg = <0x80000000 0x04000000>;
+	};
+	soc {
+		compatible = "simple-bus";
+		#address-cells = <1>;
+		#size-cells = <1>;
+		ranges;
+		intc: interrupt-controller@8000000 {
+			compatible = "anyka,ak3918ev200-intc", "syscon";
+			reg = <0x08000000 0x100>;
+			interrupt-controller;
+			#interrupt-cells = <1>;
+			#address-cells = <0>;
+			sysintc: system-interrupt-controller {
+				compatible = "anyka,ak3918ev200-sysintc";
+				interrupt-controller;
+				#interrupt-cells = <1>;
+				#address-cells = <0>;
+				interrupt-parent = <&intc>;
+				interrupts = <3>;
+			};
+		};
+		timer@80000b4 {
+			compatible = "anyka,ak3918ev200-timer";
+			reg = <0x080000b4 0x10>;
+			interrupt-parent = <&sysintc>;
+			interrupts = <5>;
+			clock-frequency = <12000000>;
+		};
+		serial@20130000 {
+			compatible = "anyka,ak3918ev200-uart";
+			reg = <0x20130000 0x100>;
+		};
+		gpio: gpio@20170000 {
+			compatible = "anyka,ak3918ev200-gpio";
+			reg = <0x20170000 0x100>;
+			anyka,sysctrl = <&intc>;
+			gpio-controller;
+			#gpio-cells = <2>;
+			/* No GPIO consumers/outputs enabled before retail qualification. */
+			status = "disabled";
+		};
+		watchdog@80000e4 {
+			compatible = "anyka,ak3918ev200-wdt";
+			reg = <0x080000e4 0x8>;
+			/* Retail keepalive multiplies seconds by46875. Nominal rate,
+			 * not a measured reset interval. No start/reset in first boot.
+			 */
+			clock-frequency = <46875>;
+			status = "disabled";
+		};
+		i2c@20150000 {
+			compatible = "anyka,ak3918ev200-i2c";
+			reg = <0x20150000 0x30>;
+			anyka,sysctrl = <&intc>;
+			clock-frequency = <100000>;
+			#address-cells = <1>;
+			#size-cells = <0>;
+			/* No sensor/expander autoprobes or power/reset consumers. */
+			status = "disabled";
+		};
+		sensor-bootstrap {
+			compatible = "anyka,qc07f-sensor-bootstrap";
+			anyka,sysctrl = <&intc>;
+			clock-frequency = <24000000>;
+			/* Retail board5 link reset41, active-low; no powerdown pin. */
+			reset-gpios = <&gpio 41 1>;
+			status = "disabled";
+		};
+		isp@20000000 {
+			compatible = "anyka,qc07f-isp-diagnostic";
+			reg = <0x20000000 0x100>;
+			anyka,sysctrl = <&intc>;
+			/* No IRQ requests; no DMA start at probe. Explicit command only. */
+			status = "disabled";
+		};
+		usb@20200000 {
+			compatible = "anyka,ak3918ev200-musb";
+			reg = <0x20200000 0x1000>;
+			interrupt-parent = <&intc>;
+			interrupts = <18>;
+			anyka,sysctrl = <&intc>;
+			radio-power-gpios = <&gpio 42 0>;
+			/* Upstream host-only PIO; no L2 DMA/radio firmware. */
+			status = "disabled";
+		};
+		ptz-axis0 {
+			compatible = "anyka,qc07f-ptz-diagnostic";
+			anyka,retail-board-version = <5>;
+			anyka,axis = <0>;
+			phase-gpios = <&gpio 10 0>, <&gpio 11 0>, <&gpio 19 0>, <&gpio 20 0>;
+			status = "disabled";
+		};
+		ptz-axis1 {
+			compatible = "anyka,qc07f-ptz-diagnostic";
+			anyka,retail-board-version = <5>;
+			anyka,axis = <1>;
+			phase-gpios = <&gpio 15 0>, <&gpio 14 0>, <&gpio 13 0>, <&gpio 24 0>;
+			status = "disabled";
+		};
+	};
+};

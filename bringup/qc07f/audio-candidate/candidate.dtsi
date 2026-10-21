@@ -1,0 +1,8 @@
+// SPDX-License-Identifier: GPL-2.0-only
+/ {
+	adc2_capture_candidate {
+		compatible = "anyka,qc07f-adc2-capture-candidate";
+		status = "disabled";
+		/* No guessed reg/IRQ/clock/mic-bias/mux/GPIO/L2 properties. */
+	};
+};
