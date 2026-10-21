@@ -1,0 +1,52 @@
+test_complete_loader (test_radio_receipt.Receipts.test_complete_loader) ... ok
+test_fd_inventory (test_radio_receipt.Receipts.test_fd_inventory) ... ok
+test_firmware_info_never_returns_device_bytes (test_radio_receipt.Receipts.test_firmware_info_never_returns_device_bytes) ... ok
+test_loader_mutants (test_radio_receipt.Receipts.test_loader_mutants) ... ok
+test_state (test_radio_receipt.Receipts.test_state) ... ok
+test_exact_handoff_refuses_omitted_mismatched_or_untyped_facts (test_metadata21a.Metadata.test_exact_handoff_refuses_omitted_mismatched_or_untyped_facts) ... ok
+test_missing_conflicting_or_foreign_metadata (test_metadata21a.Metadata.test_missing_conflicting_or_foreign_metadata) ... ok
+test_script_bounds (test_metadata21a.Metadata.test_script_bounds) ... ok
+test_state_rejects_other_sender (test_metadata21a.Metadata.test_state_rejects_other_sender) ... ok
+test_valid (test_metadata21a.Metadata.test_valid) ... ok
+test_complete (test_trial21a.Trial.test_complete) ... ok
+test_core_diagnostics_stop_before_first_radio_command (test_trial21a.Trial.test_core_diagnostics_stop_before_first_radio_command) ... ok
+test_failures_keep_HOLD_never_repeat (test_trial21a.Trial.test_failures_keep_HOLD_never_repeat) ... ok
+test_foreign_HOLD_unchanged (test_trial21a.Trial.test_foreign_HOLD_unchanged) ... ok
+test_interquery_warnings_prevent_next_active_query (test_trial21a.Trial.test_interquery_warnings_prevent_next_active_query) ... ok
+test_owner_repin_and_preload_warnings_stop_before_first_effect (test_trial21a.Trial.test_owner_repin_and_preload_warnings_stop_before_first_effect) ... ok
+test_source_based_diagnostic_forms (test_trial21a.Trial.test_source_based_diagnostic_forms) ... ok
+test_complete_keeps_original_HOLD (test_retire21a.Retirement.test_complete_keeps_original_HOLD) ... ok
+test_failed_counter_binding_and_complete_intents (test_retire21a.Retirement.test_failed_counter_binding_and_complete_intents) ... ok
+test_faults_retain_HOLD_and_no_radio_or_reset (test_retire21a.Retirement.test_faults_retain_HOLD_and_no_radio_or_reset) ... ok
+test_foreign_HOLD_is_untouched (test_retire21a.Retirement.test_foreign_HOLD_is_untouched) ... ok
+test_mutating_RPC_reserves_existing_timeout (test_retire21a.Retirement.test_mutating_RPC_reserves_existing_timeout) ... ok
+test_real_Boot_send_and_zero_byte_refusal_use_guard (test_retire21a.Retirement.test_real_Boot_send_and_zero_byte_refusal_use_guard) ... ok
+test_topology_carry_all_split_positions (test_retire21a.Retirement.test_topology_carry_all_split_positions) ... ok
+test_wire_derivation (test_retire21a.Retirement.test_wire_derivation) ... ok
+test_all_pre_refusals_have_zero_active_queries (test_identity21a.Controller.test_all_pre_refusals_have_zero_active_queries) ... ok
+test_all_warning_and_topology_splits_use_saved_retirement_rx (test_identity21a.Controller.test_all_warning_and_topology_splits_use_saved_retirement_rx) ... ok
+test_attempt_consumed_on_refusal_and_success (test_identity21a.Controller.test_attempt_consumed_on_refusal_and_success) ... ok
+test_every_negative_state_sends_no_info_or_cleanup (test_identity21a.Controller.test_every_negative_state_sends_no_info_or_cleanup) ... ok
+test_exact_initial_coverage_and_existing_public_output (test_identity21a.Controller.test_exact_initial_coverage_and_existing_public_output) ... ok
+test_info_and_postfailures_keep_hold (test_identity21a.Controller.test_info_and_postfailures_keep_hold) ... ok
+test_no_private_stdout_or_public_receipt (test_identity21a.Controller.test_no_private_stdout_or_public_receipt) ... ok
+test_two_complete_programs_inherit_real_send_wait (test_identity21a.Controller.test_two_complete_programs_inherit_real_send_wait) ... ok
+test_zero_refusal_never_advances_or_replays_partial (test_identity21a.Controller.test_zero_refusal_never_advances_or_replays_partial) ... ok
+test_foreign_stale_missing_and_partial_provenance_refuse (test_identity21a.Handoff.test_foreign_stale_missing_and_partial_provenance_refuse) ... ok
+test_native_checkpoint_and_completion_provenance_composition (test_identity21a.Handoff.test_native_checkpoint_and_completion_provenance_composition) ... ok
+test_blocking_status_time_coverage_and_tx_rechecked_before_actual_send (test_identity21a.InternalLedger.test_blocking_status_time_coverage_and_tx_rechecked_before_actual_send) ... ok
+test_direct_session_send_cannot_bypass_pending_wire (test_identity21a.InternalLedger.test_direct_session_send_cannot_bypass_pending_wire) ... ok
+test_exact_completed_tx_updates_before_next_stream_and_zero_exhaustion (test_identity21a.InternalLedger.test_exact_completed_tx_updates_before_next_stream_and_zero_exhaustion) ... ok
+test_identity_coverage_deadline_and_phase_flags_are_not_rebased (test_identity21a.InternalLedger.test_identity_coverage_deadline_and_phase_flags_are_not_rebased) ... ok
+test_internal_rpc_requires_exact_next_hex_cursor_peer_and_phase (test_identity21a.InternalLedger.test_internal_rpc_requires_exact_next_hex_cursor_peer_and_phase) ... ok
+test_partial_or_ambiguous_freezes_and_no_replay (test_identity21a.InternalLedger.test_partial_or_ambiguous_freezes_and_no_replay) ... ok
+test_rx_rollback_and_external_hold_change_refuse_without_overwrite (test_identity21a.InternalLedger.test_rx_rollback_and_external_hold_change_refuse_without_overwrite) ... ok
+test_wait_receive_checks_full_span_and_does_not_advance_rejected_cursor (test_identity21a.InternalLedger.test_wait_receive_checks_full_span_and_does_not_advance_rejected_cursor) ... ok
+test_all_eight_refresh_variants (test_identity21a.Lineage.test_all_eight_refresh_variants) ... ok
+test_missing_partial_extra_interleaved_tx_refuse (test_identity21a.Lineage.test_missing_partial_extra_interleaved_tx_refuse) ... ok
+test_stale_checkpoints_completion_and_typed_refresh (test_identity21a.Lineage.test_stale_checkpoints_completion_and_typed_refresh) ... ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 19.135s
+
+OK

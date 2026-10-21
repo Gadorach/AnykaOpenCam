@@ -1,5 +1,14 @@
 # Active execution ledger — remaining foundation work
 
+**Identity candidate06:36UTC:** isolated lane delivered exact controller
+`identity21a.py` c3c19a12… and23 new tests (48 total HOST methods PASS reported by
+author); initial fixture failure preserved, helpers unchanged. Parent source read
+and offline private-lineage check passed: ordered historical segments/native
+retirement checkpoint/receipt/completion/original UUID/HOLD agree. This read sent
+no status/RPC/TX and did not consume a target attempt. Independent controller
+review is pending; parent30s HOST reproduction timeout retained, longer bounded
+HOST-only rerun completed48 methods PASS. **No target execution admission or query queued.**
+
 **Separate identity SOURCE entry:**78 source-audit checks passed; design is
 conditional GO, execution NO-GO until exact implementation/review. One isolated
 source/HOST lane is preparing `identity21a.py` and fault fixtures. It must preserve

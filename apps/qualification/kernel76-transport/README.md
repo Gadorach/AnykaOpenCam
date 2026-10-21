@@ -23,6 +23,11 @@ a self-contained public firmware release or a product network service.
   events and snapshot; reads cached metadata plus full idle inventory while
   preserving the exact original nonempty failed-trial HOLD. No radio or reset
   command, retry or successful-trial reinterpretation is part of this reader.
+- `identity21a.py`: separate one-state/conditionally-one-info candidate after the
+  native cached retirement, pending independent controller review. Exact historical
+  event boundaries/native checkpoint/completion, immutable HOLD, internal wire/TX/
+  phase ledger, active-endpoint warnings and saved-retirement RX topology checks
+  gate pre-RO → state → conditional info → post-RO. No reload/RUN or reset path.
 
 Tests (no target/RPC or private-capture access):
 
@@ -31,9 +36,10 @@ python3 -B apps/qualification/kernel76-transport/test_radio_receipt.py
 python3 -B apps/qualification/kernel76-transport/test_metadata21a.py
 python3 -B apps/qualification/kernel76-transport/test_trial21a.py
 python3 -B apps/qualification/kernel76-transport/test_retire21a.py
+python3 -B apps/qualification/kernel76-transport/test_identity21a.py
 ```
 
-The25 current unittest methods contain grouped negative cases and full trial/reader-main
+The48 current unittest methods contain grouped negative cases and full trial/reader-main
 in-memory fakes. Metadata admission tests cover receipt/checkpoint/source-binding
 failures before import, while trial fakes exercise complete/fault/HOLD paths with
 at most one load. This is HOST proof, **not native acceptance**.
@@ -82,6 +88,13 @@ carry-in incomplete line. Tests now exercise the real inherited send/retry metho
 and every split of disconnect/new/reset-device records. Independent closure review
 returned conditional SOURCE GO (25 supplied methods +40 independent checks); this
 is not current hardware admission or original-trial clearance.
+
+The one cached retirement subsequently passed natively with the original failed
+HOLD preserved. Application identity remains unverified. The separate identity
+candidate's author reports48 HOST methods PASS; independent exact-controller
+review remains pending. Parent offline native-checkpoint/event lineage matches;
+that is not a live owner/runtime admission. A parent30s HOST reproduction timeout
+is retained; the longer bounded run then passed all48 methods. No target controller ran.
 
 Watchdog is preferred for reviewed recovery, not a hidden test side effect. An
 already guarded operation may reset autonomously; a deliberate `wdt reset` needs

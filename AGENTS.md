@@ -1,5 +1,25 @@
 # Project instructions for local agents
 
+## Latest HOST — parent identity suite48methodsPASS; independent review still pending
+
+Hostshellsh_15d2cd2670018cEDxVmLA3OL4Zcompleted48methodsPASS, prior30stimeout
+retainedasHOSTfailureonly. Sourcec3c19a12…remainsfrozen/pinsmatch; no target
+controllerinvocation/privateinputtest. Independentexactcontrollerreviewpending;
+no queryqueued/originalfailedHOLDunchanged. Fresh>=600scoverage/currentgates
+mandatoryafterGO, notold07:09UTCdeadlineauthority. No targetTXsince06:00RO.
+
+## Latest candidate — identity source/HOST delivered; independent review pending
+
+identity21a.pyc3c19a12…+23newtests(author48HOSTmethodsPASS), helpersunchanged.
+Parentreadsource+OFFLINEprivatelineagePASS06:36UTC(originaleventsegments/native
+retireCP/receipt/completion/UUID/HOLD), nostatusRPC/TX/norebase. Exactcontroller
+independentreviewactive; sourceFROZEN. Parent30sHOSTreproductiontimedout(hostonly)
+andlongerboundedHOSTrunactive sh_15d2cd2670018cEDxVmLA3OL4Z; doNOTpoll.
+No targetTXsince06:00retirement; original151ACKtrialFAILED/HOLDunchanged,
+applicationidentityUNVERIFIED. DoNOTrunidentityuntilsourceGO+fresh600scoverage/
+owner/counter/runtime/catchgates. 21acapture07:09UTC DATED, mustdeclineifshort.
+Mainlocal4e5bd58/indexpreserved/nopush; RP04combined/adoptionHOLD unchanged.
+
 ## Latest source — separate identity controller implementation lane, NO target queue
 
 SEPARATE_IDENTITY_ENTRY_REVIEW78sourcechecksPASS/designconditionalGO/executeNOGO

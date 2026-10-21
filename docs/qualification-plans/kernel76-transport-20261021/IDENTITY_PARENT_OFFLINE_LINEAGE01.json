@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-21T06:36:56.900497+00:00",
+  "state": "OFFLINE_NATIVE_RETIREMENT_LINEAGE_MATCHES_IDENTITY_CANDIDATE",
+  "source_sha256": "c3c19a12bffb56eec2044e259793f58a7243e1ae20ac6fe8cf75ee3f3229ceeb",
+  "ordered_intent_completion_and_exact_historical_boundaries_match": true,
+  "native_retirement_checkpoint_public_receipt_and_completion_match": true,
+  "original_boot_UUID_and_saved_descriptor_FD_idle_schema_match": true,
+  "original_HOLD_content_matches_native_checkpoint_unchanged": true,
+  "not_a_current_status_counter_rebase": true,
+  "no_target_RPC_status_or_TX": true,
+  "not_execution_admission": true
+}
