@@ -1,5 +1,14 @@
 # Active execution ledger — remaining foundation work
 
+**A1 narrow SOURCE/HOST GO:** independent review reproduced150705 candidate
+assertions and131340 supplemental assertions per optimized/sanitized mode,16/16
+compiled runtime mutants caught, original faults/provenance/pins verified. This
+accepts only local control-copy/FWINFO changes and stated first-wins semantics,
+not an all-errors transactional latch. Full S4/ARM build/staging/native attach
+remain NO-GO. Parent selects next **A2a SOURCE/HOST only**: preserve original USB
+actual extent/completion status through control ingress in a separate derivative;
+A1 sealed source stays unchanged. Event consumer and S1/S2/S3/S5/S6 remain open.
+
 **Capture21a EXPIRED/host closeout07:24UTC:** exact old recorder ended, adapter
 actually unowned/socket absent; private final manifest and both files full-size/
 hash verified. Final TX equals06:43 identity checkpoint and recorded RX has no later

@@ -80,8 +80,10 @@ or ARM build. See `STATION76_ENTRY_REVIEW.md`. Combined memory/product gates ope
 recorder, adapter owner or socket, and verified private final manifest/raw/events
 sizes/hashes. No extra RX or TX followed the06:43 identity checkpoint. Current
 target runtime/power is unqueried; no receive owner/catch recovery is inherited.
-A1 author+parent HOST reproduction passed; independent review is pending and
-full attach remains NO-GO. See `CAPTURE21A_CLOSEOUT.md` and the active ledger.
+A1 author+parent+independent HOST reproduction passed with narrow local control-copy/
+FWINFO SOURCE GO; full S4/ARM build/attach remain NO-GO. Next A2a is SOURCE/HOST-only
+untrimmed ingress/USB-completion correction in a separate derivative. No target
+queue or current receive owner/recovery arm. See `CAPTURE21A_CLOSEOUT.md` and ledger.
 
 ### Latest request — complete remaining-feature/bug plan, October21 (PLAN ONLY)
 

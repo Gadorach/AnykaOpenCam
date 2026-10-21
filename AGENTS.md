@@ -1,5 +1,17 @@
 # Project instructions for local agents
 
+## Latest review — A1 narrow SOURCE/HOST GO; next A2a ingress source-only selected
+
+STATION76_CONTROL_A1_REVIEW: exact3sourcepinsGOlocalcontrol-copy/FWINFOonly;
+150705candidate+131340supplementalassertionseachopt/san,16runtime mutantscaught,
+origfaults/provenanceverified. FirstwinsNOTallerrortransactionallatch. FullS4/
+ARMbuild/staging/attachstillNOGO; S1S2S3S5S6/eventconsumerOPEN. Parentselected
+A2aSOURCE/HOSTonlyseparatederivativeuntrimmedURBactualextent/completionstatus
+throughcontrolingress; preserveA1sealedtree/originalmodules/images. No HWqueue.
+21aexpired/finalized/host07:24noowner/socket/armedcapture; currenttargetruntime/
+powerUNKNOWN(last06:43RAM76APPidle). Original151ACKHOLDkept. Sourceworkonly,
+freshphysical/owner/runtime/recoverygatesbeforeHW. Mainlocalb1b6746/nopush/indexkept.
+
 ## Latest host actual —21a EXPIRED/finalized; no UART owner/socket/recovery arm
 
 Parent07:24UTC HOSTONLY: oldexactPIDstartdead/adapterpresentactuallyunowned/

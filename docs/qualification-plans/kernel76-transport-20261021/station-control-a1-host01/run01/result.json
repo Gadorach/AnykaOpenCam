@@ -1,0 +1,637 @@
+{
+  "utc_start": "2026-10-21T07:12:36.894372+00:00",
+  "scope": "A1_PUBLIC_SOURCE_SYNTHETIC_HOST_ONLY_ATTACH_NO_GO",
+  "argv": [
+    "apps/qualification/kernel76-station/run_host_tests.py",
+    "--run",
+    "run01"
+  ],
+  "python": "3.14.7 (main, Aug 14 2026, 06:38:32) [GCC 16.2.1 20260810]",
+  "runner_sha256": "fb7742fc405d23c5b1c339c8f373fefdd39e3575a60e462eb42ab5c9f2d0865d",
+  "all_pass": false,
+  "failure": "optimized-compile: exit 1, expected 0",
+  "utc_end": "2026-10-21T07:12:37.310625+00:00",
+  "inputs": {
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/copy-baseline.json": {
+      "bytes": 30482,
+      "sha256": "1a3604cb239723ade63b708f4090e34f136173bc6ea1c59087cac1d5d9f405e1"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/Kconfig": {
+      "bytes": 161,
+      "sha256": "9e140d0bd3ed15e444f4a0dc2031306ffb2691edb7a648aa66b8893bfdb7fda6"
+    },
+    "apps/qualification/kernel76-station/source/Kconfig": {
+      "bytes": 161,
+      "sha256": "9e140d0bd3ed15e444f4a0dc2031306ffb2691edb7a648aa66b8893bfdb7fda6"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/LICENSE": {
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "apps/qualification/kernel76-station/source/LICENSE": {
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/Makefile": {
+      "bytes": 4406,
+      "sha256": "55a5ccfbf20a88d17e4073b8998dd380aa3a1d8b2f19ddcb4c895618a5319d60"
+    },
+    "apps/qualification/kernel76-station/source/Makefile": {
+      "bytes": 4406,
+      "sha256": "55a5ccfbf20a88d17e4073b8998dd380aa3a1d8b2f19ddcb4c895618a5319d60"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/README.md": {
+      "bytes": 188,
+      "sha256": "9808fc033ab4ad1030d1f599434dec2dc00b3eb5124d898bd2ab2edd43db0480"
+    },
+    "apps/qualification/kernel76-station/source/README.md": {
+      "bytes": 188,
+      "sha256": "9808fc033ab4ad1030d1f599434dec2dc00b3eb5124d898bd2ab2edd43db0480"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic.h": {
+      "bytes": 19805,
+      "sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a"
+    },
+    "apps/qualification/kernel76-station/source/hgic.h": {
+      "bytes": 19805,
+      "sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_def.h": {
+      "bytes": 8519,
+      "sha256": "52fbfe0a9d19766f7fae9cc4c18252a5e2f4bce67d95eb7e76a6b666d5a15339"
+    },
+    "apps/qualification/kernel76-station/source/hgic_def.h": {
+      "bytes": 8519,
+      "sha256": "52fbfe0a9d19766f7fae9cc4c18252a5e2f4bce67d95eb7e76a6b666d5a15339"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/11ah.c": {
+      "bytes": 14828,
+      "sha256": "db9a43c7df54b06206609ef6ed8cd88dc9295f1253fb5b2e0bb3abc2df37dbef"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/11ah.c": {
+      "bytes": 14828,
+      "sha256": "db9a43c7df54b06206609ef6ed8cd88dc9295f1253fb5b2e0bb3abc2df37dbef"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/11ah.h": {
+      "bytes": 457,
+      "sha256": "44fb21d39697afa6f718440814735a578b42618811d4f424d2b4fce0f666232c"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/11ah.h": {
+      "bytes": 457,
+      "sha256": "44fb21d39697afa6f718440814735a578b42618811d4f424d2b4fce0f666232c"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/11bgn.c": {
+      "bytes": 6871,
+      "sha256": "9cc08836a4e33491409d538f07b337ade3db88555980e22466d28509f0fccc32"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/11bgn.c": {
+      "bytes": 6871,
+      "sha256": "9cc08836a4e33491409d538f07b337ade3db88555980e22466d28509f0fccc32"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/11bgn.h": {
+      "bytes": 62,
+      "sha256": "0f5d2470e5da5de778622562374f2177ede3e84ba4d806ce6a2307894093bb8f"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/11bgn.h": {
+      "bytes": 62,
+      "sha256": "0f5d2470e5da5de778622562374f2177ede3e84ba4d806ce6a2307894093bb8f"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/Kconfig": {
+      "bytes": 281,
+      "sha256": "e454cb3749a2d6bc2b6b23c9abb2cbae9a4f0f79618f19212dd6886d80c65320"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/Kconfig": {
+      "bytes": 281,
+      "sha256": "e454cb3749a2d6bc2b6b23c9abb2cbae9a4f0f79618f19212dd6886d80c65320"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/Makefile": {
+      "bytes": 724,
+      "sha256": "6650f2598d759cd190ed2298bf0d6ed8bbe26b323a7c85f4258e2468d2ab81f3"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/Makefile": {
+      "bytes": 724,
+      "sha256": "6650f2598d759cd190ed2298bf0d6ed8bbe26b323a7c85f4258e2468d2ab81f3"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/ap.c": {
+      "bytes": 3558,
+      "sha256": "30e6e8e8ec7eb0a2076626cd6f52a6061dbff7f57cb74ceb5384d0220b6b40fe"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/ap.c": {
+      "bytes": 3558,
+      "sha256": "30e6e8e8ec7eb0a2076626cd6f52a6061dbff7f57cb74ceb5384d0220b6b40fe"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/ap.h": {
+      "bytes": 384,
+      "sha256": "86351448186412fbd0a198bec6b300a3b5a5e774168f4373c6fee9be3f0b1d14"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/ap.h": {
+      "bytes": 384,
+      "sha256": "86351448186412fbd0a198bec6b300a3b5a5e774168f4373c6fee9be3f0b1d14"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/core.c": {
+      "bytes": 43017,
+      "sha256": "32abb3b13c188272ea2929a14abc2d42df09bb71262bc4d6b754671e7a450443"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/core.c": {
+      "bytes": 43017,
+      "sha256": "32abb3b13c188272ea2929a14abc2d42df09bb71262bc4d6b754671e7a450443"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/event.c": {
+      "bytes": 1776,
+      "sha256": "5e480e6a21c45714386a458f69913e7d420001e7d6fc3c04b4d5e78f41f14cac"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/event.c": {
+      "bytes": 1776,
+      "sha256": "5e480e6a21c45714386a458f69913e7d420001e7d6fc3c04b4d5e78f41f14cac"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/event.h": {
+      "bytes": 229,
+      "sha256": "8abca8bc4d9e6efbb2137647a7290684e74809dcad81606ee8f908e35d0ae1e3"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/event.h": {
+      "bytes": 229,
+      "sha256": "8abca8bc4d9e6efbb2137647a7290684e74809dcad81606ee8f908e35d0ae1e3"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/hgics.h": {
+      "bytes": 3770,
+      "sha256": "0779a45eaf1ee314c7e241ae0a96fb0a74a2f422cb0727c29dc93ce43b321a0a"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/hgics.h": {
+      "bytes": 3770,
+      "sha256": "0779a45eaf1ee314c7e241ae0a96fb0a74a2f422cb0727c29dc93ce43b321a0a"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/hw.c": {
+      "bytes": 628,
+      "sha256": "28e4fabe668762cd3d01195a75e6194fcfe1b84eadb60ea7d6ad307c1e15fd9a"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/hw.c": {
+      "bytes": 628,
+      "sha256": "28e4fabe668762cd3d01195a75e6194fcfe1b84eadb60ea7d6ad307c1e15fd9a"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/hw.h": {
+      "bytes": 792,
+      "sha256": "c9416377845b6c0eb1226a23c07ecc85a8c575e3a9d3f12a2db16257db11551e"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/hw.h": {
+      "bytes": 792,
+      "sha256": "c9416377845b6c0eb1226a23c07ecc85a8c575e3a9d3f12a2db16257db11551e"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/procfs.c": {
+      "bytes": 8108,
+      "sha256": "702e2450f3b908776f6f75742c410caa3e3bcd85fc7a02753361bf9fd96c53e6"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/procfs.c": {
+      "bytes": 8108,
+      "sha256": "702e2450f3b908776f6f75742c410caa3e3bcd85fc7a02753361bf9fd96c53e6"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/procfs.h": {
+      "bytes": 615,
+      "sha256": "59872a0cb88f59dea27fc916aadf4d1c53a3f305102392ca98fdb62f274faf27"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/procfs.h": {
+      "bytes": 615,
+      "sha256": "59872a0cb88f59dea27fc916aadf4d1c53a3f305102392ca98fdb62f274faf27"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/rx.c": {
+      "bytes": 9780,
+      "sha256": "3ec268d3e7fff7d507134435222ac0c34fb364cf88487e66c29e38f716272a52"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/rx.c": {
+      "bytes": 9780,
+      "sha256": "3ec268d3e7fff7d507134435222ac0c34fb364cf88487e66c29e38f716272a52"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/stabr.c": {
+      "bytes": 8016,
+      "sha256": "91303e06e5705443c6cc98ed1e5c53c9807456c8a44e5280c9ca586ca8432c83"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/stabr.c": {
+      "bytes": 8016,
+      "sha256": "91303e06e5705443c6cc98ed1e5c53c9807456c8a44e5280c9ca586ca8432c83"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/stabr.h": {
+      "bytes": 1205,
+      "sha256": "fc0319ed32175cd6aff3566d80346848cf2ea1bda645bddeb77aa3a08a83c189"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/stabr.h": {
+      "bytes": 1205,
+      "sha256": "fc0319ed32175cd6aff3566d80346848cf2ea1bda645bddeb77aa3a08a83c189"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/stabr_arp.c": {
+      "bytes": 2741,
+      "sha256": "f2a6c59b9c5a307bd98ee19b080408be2cdb994d178f0cf945d70aba34c39efe"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/stabr_arp.c": {
+      "bytes": 2741,
+      "sha256": "f2a6c59b9c5a307bd98ee19b080408be2cdb994d178f0cf945d70aba34c39efe"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/stabr_ip.c": {
+      "bytes": 2972,
+      "sha256": "3951bf24ca2396a2171f3ee339a868b1057702572c3ad3775bad9ff9a2030804"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/stabr_ip.c": {
+      "bytes": 2972,
+      "sha256": "3951bf24ca2396a2171f3ee339a868b1057702572c3ad3775bad9ff9a2030804"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/util.c": {
+      "bytes": 2315,
+      "sha256": "e5fb19ebdc5e9a2c50e0e8e4618924f23e9185c4cfbf23ab5a8e4ce0131bdfe8"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/util.c": {
+      "bytes": 2315,
+      "sha256": "e5fb19ebdc5e9a2c50e0e8e4618924f23e9185c4cfbf23ab5a8e4ce0131bdfe8"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/util.h": {
+      "bytes": 358,
+      "sha256": "65b23301aa1a012bfe89cb10a816cf2082ca0302db75f7f0cef70b23a2a07f79"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/util.h": {
+      "bytes": 358,
+      "sha256": "65b23301aa1a012bfe89cb10a816cf2082ca0302db75f7f0cef70b23a2a07f79"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/linux6-compat.h": {
+      "bytes": 382,
+      "sha256": "32ea414d9001da68b3a91cac8c15d1468b4aba0ec8e337efc84fd0875a0d2eff"
+    },
+    "apps/qualification/kernel76-station/source/linux6-compat.h": {
+      "bytes": 382,
+      "sha256": "32ea414d9001da68b3a91cac8c15d1468b4aba0ec8e337efc84fd0875a0d2eff"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/Makefile": {
+      "bytes": 882,
+      "sha256": "38fb358d7a55ae380a764afe737b45737ac4a0b5356e824ce93dbf7e1d9ab587"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/Makefile": {
+      "bytes": 882,
+      "sha256": "38fb358d7a55ae380a764afe737b45737ac4a0b5356e824ce93dbf7e1d9ab587"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/blenc.c": {
+      "bytes": 4771,
+      "sha256": "70cd93a88ef7ec008aa734c0d0a438e9a4e5fdfe538fb0fa08eb3e9eb9891953"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/blenc.c": {
+      "bytes": 4771,
+      "sha256": "70cd93a88ef7ec008aa734c0d0a438e9a4e5fdfe538fb0fa08eb3e9eb9891953"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/blenc.h": {
+      "bytes": 2308,
+      "sha256": "11c3a8421f334b7d8fdcd158f6131701447025e820cc76c85a8223b938deb57d"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/blenc.h": {
+      "bytes": 2308,
+      "sha256": "11c3a8421f334b7d8fdcd158f6131701447025e820cc76c85a8223b938deb57d"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/bt_ext_porting_hgic.c": {
+      "bytes": 7688,
+      "sha256": "6f49288311e52dc8fd97b99f6d4795c242bb0b23a118b60b2774e824c9dd5dea"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/bt_ext_porting_hgic.c": {
+      "bytes": 7688,
+      "sha256": "6f49288311e52dc8fd97b99f6d4795c242bb0b23a118b60b2774e824c9dd5dea"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/fwinfo.c": {
+      "bytes": 9916,
+      "sha256": "ccee1a7af3ca3f5d3185689af225442cd195fa167dd5fd17f56ec9171d505534"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/fwinfo.c": {
+      "bytes": 9916,
+      "sha256": "ccee1a7af3ca3f5d3185689af225442cd195fa167dd5fd17f56ec9171d505534"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/fwinfo.h": {
+      "bytes": 4967,
+      "sha256": "9f1b78f9522f4645c1d40a73201a3cdaba652373fefd0b76a6b1e1ec8ce600a6"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/fwinfo.h": {
+      "bytes": 4967,
+      "sha256": "9f1b78f9522f4645c1d40a73201a3cdaba652373fefd0b76a6b1e1ec8ce600a6"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/hgic.h": {
+      "bytes": 19805,
+      "sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/hgic.h": {
+      "bytes": 19805,
+      "sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/hgics.c": {
+      "bytes": 9319,
+      "sha256": "6a94f71e4ccec581b881a79980ce90ace6720c00ba7de6b3b53456b26857514a"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/hgics.c": {
+      "bytes": 9319,
+      "sha256": "6a94f71e4ccec581b881a79980ce90ace6720c00ba7de6b3b53456b26857514a"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/hgics_blenc.c": {
+      "bytes": 16471,
+      "sha256": "a8700fb644021797e69c3930ab77dc01acb8d73dad43b269d31f83dd7d66fff3"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/hgics_blenc.c": {
+      "bytes": 16471,
+      "sha256": "a8700fb644021797e69c3930ab77dc01acb8d73dad43b269d31f83dd7d66fff3"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/hgics_relay.c": {
+      "bytes": 13449,
+      "sha256": "7ab3e6363d4d9fad664cbdaa16bcdcf0f092aff63af0ca6dae2780088b92e0da"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/hgics_relay.c": {
+      "bytes": 13449,
+      "sha256": "7ab3e6363d4d9fad664cbdaa16bcdcf0f092aff63af0ca6dae2780088b92e0da"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/hgota.c": {
+      "bytes": 10100,
+      "sha256": "2a3b3e5b54fd1e5f3ac09c5df842b1cdf36848e328e298f8f485f667f2286dc2"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/hgota.c": {
+      "bytes": 10100,
+      "sha256": "2a3b3e5b54fd1e5f3ac09c5df842b1cdf36848e328e298f8f485f667f2286dc2"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/hgpriv.c": {
+      "bytes": 1890,
+      "sha256": "9396704f4489abbebd70e9c801b3b9fe1d7d24e2fd1b2b5793b7a9e924addf40"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/hgpriv.c": {
+      "bytes": 1890,
+      "sha256": "9396704f4489abbebd70e9c801b3b9fe1d7d24e2fd1b2b5793b7a9e924addf40"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/hguevent.c": {
+      "bytes": 7822,
+      "sha256": "2d0a658b45ec99c409a4358054a095b6adecd31940f8a77c8775f0c750c7e2cd"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/hguevent.c": {
+      "bytes": 7822,
+      "sha256": "2d0a658b45ec99c409a4358054a095b6adecd31940f8a77c8775f0c750c7e2cd"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/iwpriv.c": {
+      "bytes": 41730,
+      "sha256": "0bebaaaabc5433abdd2beaa3b16686cba07bffa645cf763b0977f80906e8c2b6"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/iwpriv.c": {
+      "bytes": 41730,
+      "sha256": "0bebaaaabc5433abdd2beaa3b16686cba07bffa645cf763b0977f80906e8c2b6"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/libnetat.c": {
+      "bytes": 7040,
+      "sha256": "baaf2176ffa9d76154543ee2d1a544d4ed03a6d2b3b9d8aa412a6a17faab1c04"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/libnetat.c": {
+      "bytes": 7040,
+      "sha256": "baaf2176ffa9d76154543ee2d1a544d4ed03a6d2b3b9d8aa412a6a17faab1c04"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/libota.c": {
+      "bytes": 6854,
+      "sha256": "4ec58b202ff421b03cc8d25d2901db56955adcb5352a42f19796b8a4e47ab917"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/libota.c": {
+      "bytes": 6854,
+      "sha256": "4ec58b202ff421b03cc8d25d2901db56955adcb5352a42f19796b8a4e47ab917"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/libota.h": {
+      "bytes": 3112,
+      "sha256": "861a309b7fad4f9d95c65f521c2854fd16288d3d57830a7774729b62e725c899"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/libota.h": {
+      "bytes": 3112,
+      "sha256": "861a309b7fad4f9d95c65f521c2854fd16288d3d57830a7774729b62e725c899"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/tcp_test.c": {
+      "bytes": 5903,
+      "sha256": "3746d6b5bef6d09d0d41c748ff4a1f1b8f6ee7fcd2c096143ac1621c0eb34060"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/tcp_test.c": {
+      "bytes": 5903,
+      "sha256": "3746d6b5bef6d09d0d41c748ff4a1f1b8f6ee7fcd2c096143ac1621c0eb34060"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/Kconfig": {
+      "bytes": 256,
+      "sha256": "07cfeddf11d5e92259ac8adca1bb04e2fd76499ce9af26009a0b3abe6d1ac4e9"
+    },
+    "apps/qualification/kernel76-station/source/utils/Kconfig": {
+      "bytes": 256,
+      "sha256": "07cfeddf11d5e92259ac8adca1bb04e2fd76499ce9af26009a0b3abe6d1ac4e9"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/ah_freqinfo.c": {
+      "bytes": 8772,
+      "sha256": "7a29b65926e48e22db4f5c85e4e9ed7a570ed5afc1500be14218df1997d492d6"
+    },
+    "apps/qualification/kernel76-station/source/utils/ah_freqinfo.c": {
+      "bytes": 8772,
+      "sha256": "7a29b65926e48e22db4f5c85e4e9ed7a570ed5afc1500be14218df1997d492d6"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/bluetooth.c": {
+      "bytes": 2606,
+      "sha256": "4987a59092cd64ca68017dbeeb6f402b0a246e510f40d9a6cbadf7a2b3ffba1e"
+    },
+    "apps/qualification/kernel76-station/source/utils/bluetooth.c": {
+      "bytes": 2606,
+      "sha256": "4987a59092cd64ca68017dbeeb6f402b0a246e510f40d9a6cbadf7a2b3ffba1e"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/fwctrl.c": {
+      "bytes": 42984,
+      "sha256": "b065ba8c66fa0521450f77c45fbc534e32ce67a37bb1cbf6343d1b3d945fbb7c"
+    },
+    "apps/qualification/kernel76-station/source/utils/fwctrl.c": {
+      "bytes": 46006,
+      "sha256": "334ac87e67ac340df8bd5ccb170cc27e1a3cb17816e6233ae05772a9e13b36e2"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/fwctrl.h": {
+      "bytes": 16924,
+      "sha256": "55c287b3e59c6ad197f79f4758601d5aaed34c81a5dd608148b12b45109b4e64"
+    },
+    "apps/qualification/kernel76-station/source/utils/fwctrl.h": {
+      "bytes": 17173,
+      "sha256": "717e61097c5246fcf191984d64406cedcbadbb65515e927bdeaba38b28468945"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/fwdl.c": {
+      "bytes": 13683,
+      "sha256": "f8c9cf82c6484b1998749ee7814cad44637d8c1db51bc5ee6a7c7fac0314b1fa"
+    },
+    "apps/qualification/kernel76-station/source/utils/fwdl.c": {
+      "bytes": 13683,
+      "sha256": "f8c9cf82c6484b1998749ee7814cad44637d8c1db51bc5ee6a7c7fac0314b1fa"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/fwdl.h": {
+      "bytes": 2825,
+      "sha256": "58e939a56bce67649df222dc5ae3f96dc6255e526233f67408dabdf6605c9392"
+    },
+    "apps/qualification/kernel76-station/source/utils/fwdl.h": {
+      "bytes": 2825,
+      "sha256": "58e939a56bce67649df222dc5ae3f96dc6255e526233f67408dabdf6605c9392"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/fwinfo.c": {
+      "bytes": 9012,
+      "sha256": "4503733cdc0050438f7bf60cf72a18c6afef1c3f1599c6530149cd8aec26f3cf"
+    },
+    "apps/qualification/kernel76-station/source/utils/fwinfo.c": {
+      "bytes": 9012,
+      "sha256": "4503733cdc0050438f7bf60cf72a18c6afef1c3f1599c6530149cd8aec26f3cf"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/fwinfo.h": {
+      "bytes": 4257,
+      "sha256": "5506f2d97c0879f8bf692ec801161cbfa1de3f4ff5fc4acc3bd8986532fd409b"
+    },
+    "apps/qualification/kernel76-station/source/utils/fwinfo.h": {
+      "bytes": 4257,
+      "sha256": "5506f2d97c0879f8bf692ec801161cbfa1de3f4ff5fc4acc3bd8986532fd409b"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/if_sdio.c": {
+      "bytes": 28088,
+      "sha256": "1deebeb0d0c7d886749075fc176d2db473296a279e8c44e156b7cadc1b30f42e"
+    },
+    "apps/qualification/kernel76-station/source/utils/if_sdio.c": {
+      "bytes": 28088,
+      "sha256": "1deebeb0d0c7d886749075fc176d2db473296a279e8c44e156b7cadc1b30f42e"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/if_usb.c": {
+      "bytes": 14403,
+      "sha256": "3c56ddc592fa18ce97b5772025d0f572b0cd3f94227f128ab562069a4052787e"
+    },
+    "apps/qualification/kernel76-station/source/utils/if_usb.c": {
+      "bytes": 14403,
+      "sha256": "3c56ddc592fa18ce97b5772025d0f572b0cd3f94227f128ab562069a4052787e"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/iwpriv.c": {
+      "bytes": 57207,
+      "sha256": "887743a70e8d934e8219b7f321cd2e0d9f13e7f75280383010f516c1d62911b8"
+    },
+    "apps/qualification/kernel76-station/source/utils/iwpriv.c": {
+      "bytes": 57207,
+      "sha256": "887743a70e8d934e8219b7f321cd2e0d9f13e7f75280383010f516c1d62911b8"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/iwpriv.h": {
+      "bytes": 324,
+      "sha256": "9ba6c5cf59f905a35c79f5e5c6011a812b4dc5576f97afa665e068fca350af03"
+    },
+    "apps/qualification/kernel76-station/source/utils/iwpriv.h": {
+      "bytes": 324,
+      "sha256": "9ba6c5cf59f905a35c79f5e5c6011a812b4dc5576f97afa665e068fca350af03"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/mmc_spi.c": {
+      "bytes": 39586,
+      "sha256": "59f3e43c31535c10c033fe5c24f29492abae90443d5d60b2203cf5c0ac7b7460"
+    },
+    "apps/qualification/kernel76-station/source/utils/mmc_spi.c": {
+      "bytes": 39586,
+      "sha256": "59f3e43c31535c10c033fe5c24f29492abae90443d5d60b2203cf5c0ac7b7460"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/ota.c": {
+      "bytes": 9312,
+      "sha256": "631fb8036bb698347954b2aec5296df78510247eba53ee33ad3cc33b65c63d41"
+    },
+    "apps/qualification/kernel76-station/source/utils/ota.c": {
+      "bytes": 9312,
+      "sha256": "631fb8036bb698347954b2aec5296df78510247eba53ee33ad3cc33b65c63d41"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/ota.h": {
+      "bytes": 765,
+      "sha256": "854a7a381b7ce257e35d9dc5170eb465e35e43d445cbcb5c878a0e9bd7ac7a63"
+    },
+    "apps/qualification/kernel76-station/source/utils/ota.h": {
+      "bytes": 765,
+      "sha256": "854a7a381b7ce257e35d9dc5170eb465e35e43d445cbcb5c878a0e9bd7ac7a63"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/utils.c": {
+      "bytes": 6064,
+      "sha256": "5cfa24c9fa05c5f917281ffe62d4b70c02e6a82b628918680f664f9a13768759"
+    },
+    "apps/qualification/kernel76-station/source/utils/utils.c": {
+      "bytes": 6064,
+      "sha256": "5cfa24c9fa05c5f917281ffe62d4b70c02e6a82b628918680f664f9a13768759"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/utils.h": {
+      "bytes": 4287,
+      "sha256": "5da2e1863bee07b3c59bdb2dc196536e603f8f057861774d366a4f66143afcc9"
+    },
+    "apps/qualification/kernel76-station/source/utils/utils.h": {
+      "bytes": 4287,
+      "sha256": "5da2e1863bee07b3c59bdb2dc196536e603f8f057861774d366a4f66143afcc9"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/version.h": {
+      "bytes": 30,
+      "sha256": "5a4e17827eabb8ba89d849b7e94a34292adc8328563709df435ec26e154a7649"
+    },
+    "apps/qualification/kernel76-station/source/version.h": {
+      "bytes": 30,
+      "sha256": "5a4e17827eabb8ba89d849b7e94a34292adc8328563709df435ec26e154a7649"
+    },
+    "apps/qualification/kernel76-station/tests/shim.h": {
+      "bytes": 4390,
+      "sha256": "5db6ff4d8e0665c2e9a3a8d4d0cb34751aff45583218e9acfab6eae9b6c8286b"
+    },
+    "apps/qualification/kernel76-station/tests/test_control.c": {
+      "bytes": 15002,
+      "sha256": "ebaaae142a4cace24838cd5fe87ac8e64144777b9b5c164bbba8106d47605352"
+    },
+    "apps/qualification/kernel76-station/run_host_tests.py": {
+      "bytes": 11031,
+      "sha256": "fb7742fc405d23c5b1c339c8f373fefdd39e3575a60e462eb42ab5c9f2d0865d"
+    },
+    "apps/qualification/kernel76-station/prepare_source.py": {
+      "bytes": 2915,
+      "sha256": "c3bc9d3a544623eb76a544fcc7a14621a094543b2f5b64d35efaff1f0107d9be"
+    },
+    "apps/qualification/kernel76-station/source/utils/control_receipt.h": {
+      "bytes": 3553,
+      "sha256": "f14548d51b985166339d0b688b84e201579ac041d057ba89209fa423d927ce3a"
+    }
+  },
+  "commands": [
+    {
+      "label": "compiler-version",
+      "argv": [
+        "cc",
+        "--version"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "utc_start": "2026-10-21T07:12:36.916559+00:00",
+      "utc_end": "2026-10-21T07:12:36.967305+00:00",
+      "exit": 0,
+      "stdout_sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "optimized-compile",
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run01/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station/tests",
+        "-O2",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run01/candidate-extracted.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run01/optimized.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "utc_start": "2026-10-21T07:12:36.967820+00:00",
+      "utc_end": "2026-10-21T07:12:37.310587+00:00",
+      "exit": 1,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "74a23fa57940828babcb6df2355387343ce407fd229b4c7d904c78ca7f77e4c4"
+    }
+  ],
+  "extractions": [
+    {
+      "source": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "start_byte": 481,
+      "bytes": 10632,
+      "start_line": 23,
+      "sha256": "39347991cfeb32afefa446dcaa9e9db9da9056355c4b6aeb4eac6f386a901115",
+      "start_marker": "#define STR_LEN",
+      "end_marker": "void hgic_fwctrl_init("
+    },
+    {
+      "source": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "start_byte": 12770,
+      "bytes": 1103,
+      "start_line": 394,
+      "sha256": "0f41859bd161fd058d5d497e0f970cba8d91809c39e672da75a69c5be76ec3bc",
+      "start_marker": "int hgic_fwctrl_get_fwinfo(",
+      "end_marker": "int hgic_fwctrl_set_countryregion("
+    }
+  ]
+}

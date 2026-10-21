@@ -1,0 +1,54 @@
+{
+  "candidate-extracted.c": {
+    "bytes": 12365,
+    "sha256": "07b51151de82ab897c5939f93174f3655a8c1dc6c710576f93d942d4037fda2a"
+  },
+  "compiler-version.stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "compiler-version.stdout": {
+    "bytes": 227,
+    "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+  },
+  "include/linux/completion.h": {
+    "bytes": 18,
+    "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+  },
+  "include/linux/errno.h": {
+    "bytes": 30,
+    "sha256": "75be4010966f100e6a1e479f4bbe84f6c8e7cf0ebe349753804d0cee62abf172"
+  },
+  "include/linux/etherdevice.h": {
+    "bytes": 18,
+    "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+  },
+  "include/linux/unaligned.h": {
+    "bytes": 18,
+    "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+  },
+  "include/linux/workqueue.h": {
+    "bytes": 18,
+    "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+  },
+  "optimized-compile.stderr": {
+    "bytes": 859,
+    "sha256": "b943fe424ae9481f8e5dd1fc8a023fab5d966cb59b0981925afae2e0f2c886ad"
+  },
+  "optimized-compile.stdout": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "result.json": {
+    "bytes": 31944,
+    "sha256": "bd6eee0fc7c0f36aab1edf01d7408804c6e48aa0dbf1802bb5e9f346b881ce9b"
+  },
+  "utils_fwctrl.c.diff": {
+    "bytes": 9945,
+    "sha256": "b1ae09ce9565deba71262bd1494fec124ecfbaef02e7ffef8ef07993b9445fe1"
+  },
+  "utils_fwctrl.h.diff": {
+    "bytes": 863,
+    "sha256": "1c7ad8975a21a8941c0962ed004ec23d2130f3dfc7ba7ee47dc9ef84301a2855"
+  }
+}

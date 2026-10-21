@@ -1,0 +1,2394 @@
+{
+  "start": "2026-10-21T07:30:16.603271+00:00",
+  "argv": [
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/review_a1.py"
+  ],
+  "python": "3.14.7 (main, Aug 14 2026, 06:38:32) [GCC 16.2.1 20260810]",
+  "scope": "INDEPENDENT_PUBLIC_SOURCE_SYNTHETIC_HOST_ONLY_NO_BUILD_OR_TARGET_AUTHORITY",
+  "all_pass": true,
+  "originals": 67,
+  "unchanged_copies": 65,
+  "changed": [
+    "utils/fwctrl.c",
+    "utils/fwctrl.h"
+  ],
+  "seal_and_run06_pins_verified": true,
+  "runtime_mutants": [
+    {
+      "name": "missing-min-header",
+      "compiled": true,
+      "runtime_exit": 1
+    },
+    {
+      "name": "missing-opcode",
+      "compiled": true,
+      "runtime_exit": 2
+    },
+    {
+      "name": "missing-type",
+      "compiled": true,
+      "runtime_exit": 2
+    },
+    {
+      "name": "missing-declared-length",
+      "compiled": true,
+      "runtime_exit": 2
+    },
+    {
+      "name": "missing-ifidx",
+      "compiled": true,
+      "runtime_exit": 2
+    },
+    {
+      "name": "missing-cookie",
+      "compiled": true,
+      "runtime_exit": 2
+    },
+    {
+      "name": "unsigned-status",
+      "compiled": true,
+      "runtime_exit": 2
+    },
+    {
+      "name": "missing-version",
+      "compiled": true,
+      "runtime_exit": 2
+    },
+    {
+      "name": "missing-SVN",
+      "compiled": true,
+      "runtime_exit": 2
+    },
+    {
+      "name": "missing-chip",
+      "compiled": true,
+      "runtime_exit": 2
+    },
+    {
+      "name": "missing-CPU",
+      "compiled": true,
+      "runtime_exit": 2
+    },
+    {
+      "name": "missing-retail-length",
+      "compiled": true,
+      "runtime_exit": 1
+    },
+    {
+      "name": "missing-MAC",
+      "compiled": true,
+      "runtime_exit": 2
+    },
+    {
+      "name": "missing-capacity",
+      "compiled": true,
+      "runtime_exit": 2
+    },
+    {
+      "name": "cookie-reuse",
+      "compiled": true,
+      "runtime_exit": 2
+    },
+    {
+      "name": "replace-first-reply",
+      "compiled": true,
+      "runtime_exit": 1
+    }
+  ],
+  "original_identity_and_overread_reproduced": true,
+  "end": "2026-10-21T07:30:37.569502+00:00",
+  "inputs": {
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/review_a1.py": {
+      "bytes": 9909,
+      "sha256": "1ac6cda327364d48193250aab728b7fbed3f56d11cb94f93950bf8607128a1e7"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/supplement.c": {
+      "bytes": 5560,
+      "sha256": "3d856ba013f9b646622174cdbb2f4a41ca87eb8f0cb6fccdb8de4ab0070129ca"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/candidate-seal.json": {
+      "bytes": 14692,
+      "sha256": "22a45351d4573ec0bc90a8e03fa1028434276cb6cdf35409ce814476e0371318"
+    },
+    "apps/qualification/kernel76-station/README.md": {
+      "bytes": 1732,
+      "sha256": "cda8f7188ed4b1eee00d406fa1f03cca9eee569b8e19896fec326dcbae136660"
+    },
+    "apps/qualification/kernel76-station/prepare_source.py": {
+      "bytes": 2915,
+      "sha256": "c3bc9d3a544623eb76a544fcc7a14621a094543b2f5b64d35efaff1f0107d9be"
+    },
+    "apps/qualification/kernel76-station/run_host_tests.py": {
+      "bytes": 12104,
+      "sha256": "6044bf6d847ba6fb7cd7a18fafcc65aa0d3cf4f300780b92cfebc0ab51b6eabc"
+    },
+    "apps/qualification/kernel76-station/seal_candidate.py": {
+      "bytes": 2078,
+      "sha256": "8de028004b0ff03304ab954c5d37ebd35e6b56bb2fa9e4650a1949ffd341d91b"
+    },
+    "apps/qualification/kernel76-station/source/Kconfig": {
+      "bytes": 161,
+      "sha256": "9e140d0bd3ed15e444f4a0dc2031306ffb2691edb7a648aa66b8893bfdb7fda6"
+    },
+    "apps/qualification/kernel76-station/source/LICENSE": {
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "apps/qualification/kernel76-station/source/Makefile": {
+      "bytes": 4406,
+      "sha256": "55a5ccfbf20a88d17e4073b8998dd380aa3a1d8b2f19ddcb4c895618a5319d60"
+    },
+    "apps/qualification/kernel76-station/source/README.md": {
+      "bytes": 188,
+      "sha256": "9808fc033ab4ad1030d1f599434dec2dc00b3eb5124d898bd2ab2edd43db0480"
+    },
+    "apps/qualification/kernel76-station/source/hgic.h": {
+      "bytes": 19805,
+      "sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a"
+    },
+    "apps/qualification/kernel76-station/source/hgic_def.h": {
+      "bytes": 8519,
+      "sha256": "52fbfe0a9d19766f7fae9cc4c18252a5e2f4bce67d95eb7e76a6b666d5a15339"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/11ah.c": {
+      "bytes": 14828,
+      "sha256": "db9a43c7df54b06206609ef6ed8cd88dc9295f1253fb5b2e0bb3abc2df37dbef"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/11ah.h": {
+      "bytes": 457,
+      "sha256": "44fb21d39697afa6f718440814735a578b42618811d4f424d2b4fce0f666232c"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/11bgn.c": {
+      "bytes": 6871,
+      "sha256": "9cc08836a4e33491409d538f07b337ade3db88555980e22466d28509f0fccc32"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/11bgn.h": {
+      "bytes": 62,
+      "sha256": "0f5d2470e5da5de778622562374f2177ede3e84ba4d806ce6a2307894093bb8f"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/Kconfig": {
+      "bytes": 281,
+      "sha256": "e454cb3749a2d6bc2b6b23c9abb2cbae9a4f0f79618f19212dd6886d80c65320"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/Makefile": {
+      "bytes": 724,
+      "sha256": "6650f2598d759cd190ed2298bf0d6ed8bbe26b323a7c85f4258e2468d2ab81f3"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/ap.c": {
+      "bytes": 3558,
+      "sha256": "30e6e8e8ec7eb0a2076626cd6f52a6061dbff7f57cb74ceb5384d0220b6b40fe"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/ap.h": {
+      "bytes": 384,
+      "sha256": "86351448186412fbd0a198bec6b300a3b5a5e774168f4373c6fee9be3f0b1d14"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/core.c": {
+      "bytes": 43017,
+      "sha256": "32abb3b13c188272ea2929a14abc2d42df09bb71262bc4d6b754671e7a450443"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/event.c": {
+      "bytes": 1776,
+      "sha256": "5e480e6a21c45714386a458f69913e7d420001e7d6fc3c04b4d5e78f41f14cac"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/event.h": {
+      "bytes": 229,
+      "sha256": "8abca8bc4d9e6efbb2137647a7290684e74809dcad81606ee8f908e35d0ae1e3"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/hgics.h": {
+      "bytes": 3770,
+      "sha256": "0779a45eaf1ee314c7e241ae0a96fb0a74a2f422cb0727c29dc93ce43b321a0a"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/hw.c": {
+      "bytes": 628,
+      "sha256": "28e4fabe668762cd3d01195a75e6194fcfe1b84eadb60ea7d6ad307c1e15fd9a"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/hw.h": {
+      "bytes": 792,
+      "sha256": "c9416377845b6c0eb1226a23c07ecc85a8c575e3a9d3f12a2db16257db11551e"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/procfs.c": {
+      "bytes": 8108,
+      "sha256": "702e2450f3b908776f6f75742c410caa3e3bcd85fc7a02753361bf9fd96c53e6"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/procfs.h": {
+      "bytes": 615,
+      "sha256": "59872a0cb88f59dea27fc916aadf4d1c53a3f305102392ca98fdb62f274faf27"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/rx.c": {
+      "bytes": 9780,
+      "sha256": "3ec268d3e7fff7d507134435222ac0c34fb364cf88487e66c29e38f716272a52"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/stabr.c": {
+      "bytes": 8016,
+      "sha256": "91303e06e5705443c6cc98ed1e5c53c9807456c8a44e5280c9ca586ca8432c83"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/stabr.h": {
+      "bytes": 1205,
+      "sha256": "fc0319ed32175cd6aff3566d80346848cf2ea1bda645bddeb77aa3a08a83c189"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/stabr_arp.c": {
+      "bytes": 2741,
+      "sha256": "f2a6c59b9c5a307bd98ee19b080408be2cdb994d178f0cf945d70aba34c39efe"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/stabr_ip.c": {
+      "bytes": 2972,
+      "sha256": "3951bf24ca2396a2171f3ee339a868b1057702572c3ad3775bad9ff9a2030804"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/util.c": {
+      "bytes": 2315,
+      "sha256": "e5fb19ebdc5e9a2c50e0e8e4618924f23e9185c4cfbf23ab5a8e4ce0131bdfe8"
+    },
+    "apps/qualification/kernel76-station/source/hgic_smac/util.h": {
+      "bytes": 358,
+      "sha256": "65b23301aa1a012bfe89cb10a816cf2082ca0302db75f7f0cef70b23a2a07f79"
+    },
+    "apps/qualification/kernel76-station/source/linux6-compat.h": {
+      "bytes": 382,
+      "sha256": "32ea414d9001da68b3a91cac8c15d1468b4aba0ec8e337efc84fd0875a0d2eff"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/Makefile": {
+      "bytes": 882,
+      "sha256": "38fb358d7a55ae380a764afe737b45737ac4a0b5356e824ce93dbf7e1d9ab587"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/blenc.c": {
+      "bytes": 4771,
+      "sha256": "70cd93a88ef7ec008aa734c0d0a438e9a4e5fdfe538fb0fa08eb3e9eb9891953"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/blenc.h": {
+      "bytes": 2308,
+      "sha256": "11c3a8421f334b7d8fdcd158f6131701447025e820cc76c85a8223b938deb57d"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/bt_ext_porting_hgic.c": {
+      "bytes": 7688,
+      "sha256": "6f49288311e52dc8fd97b99f6d4795c242bb0b23a118b60b2774e824c9dd5dea"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/fwinfo.c": {
+      "bytes": 9916,
+      "sha256": "ccee1a7af3ca3f5d3185689af225442cd195fa167dd5fd17f56ec9171d505534"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/fwinfo.h": {
+      "bytes": 4967,
+      "sha256": "9f1b78f9522f4645c1d40a73201a3cdaba652373fefd0b76a6b1e1ec8ce600a6"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/hgic.h": {
+      "bytes": 19805,
+      "sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/hgics.c": {
+      "bytes": 9319,
+      "sha256": "6a94f71e4ccec581b881a79980ce90ace6720c00ba7de6b3b53456b26857514a"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/hgics_blenc.c": {
+      "bytes": 16471,
+      "sha256": "a8700fb644021797e69c3930ab77dc01acb8d73dad43b269d31f83dd7d66fff3"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/hgics_relay.c": {
+      "bytes": 13449,
+      "sha256": "7ab3e6363d4d9fad664cbdaa16bcdcf0f092aff63af0ca6dae2780088b92e0da"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/hgota.c": {
+      "bytes": 10100,
+      "sha256": "2a3b3e5b54fd1e5f3ac09c5df842b1cdf36848e328e298f8f485f667f2286dc2"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/hgpriv.c": {
+      "bytes": 1890,
+      "sha256": "9396704f4489abbebd70e9c801b3b9fe1d7d24e2fd1b2b5793b7a9e924addf40"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/hguevent.c": {
+      "bytes": 7822,
+      "sha256": "2d0a658b45ec99c409a4358054a095b6adecd31940f8a77c8775f0c750c7e2cd"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/iwpriv.c": {
+      "bytes": 41730,
+      "sha256": "0bebaaaabc5433abdd2beaa3b16686cba07bffa645cf763b0977f80906e8c2b6"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/libnetat.c": {
+      "bytes": 7040,
+      "sha256": "baaf2176ffa9d76154543ee2d1a544d4ed03a6d2b3b9d8aa412a6a17faab1c04"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/libota.c": {
+      "bytes": 6854,
+      "sha256": "4ec58b202ff421b03cc8d25d2901db56955adcb5352a42f19796b8a4e47ab917"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/libota.h": {
+      "bytes": 3112,
+      "sha256": "861a309b7fad4f9d95c65f521c2854fd16288d3d57830a7774729b62e725c899"
+    },
+    "apps/qualification/kernel76-station/source/tools/test_app/tcp_test.c": {
+      "bytes": 5903,
+      "sha256": "3746d6b5bef6d09d0d41c748ff4a1f1b8f6ee7fcd2c096143ac1621c0eb34060"
+    },
+    "apps/qualification/kernel76-station/source/utils/Kconfig": {
+      "bytes": 256,
+      "sha256": "07cfeddf11d5e92259ac8adca1bb04e2fd76499ce9af26009a0b3abe6d1ac4e9"
+    },
+    "apps/qualification/kernel76-station/source/utils/ah_freqinfo.c": {
+      "bytes": 8772,
+      "sha256": "7a29b65926e48e22db4f5c85e4e9ed7a570ed5afc1500be14218df1997d492d6"
+    },
+    "apps/qualification/kernel76-station/source/utils/bluetooth.c": {
+      "bytes": 2606,
+      "sha256": "4987a59092cd64ca68017dbeeb6f402b0a246e510f40d9a6cbadf7a2b3ffba1e"
+    },
+    "apps/qualification/kernel76-station/source/utils/control_receipt.h": {
+      "bytes": 3984,
+      "sha256": "3b80f917e989fd3587f61e94d9dea713bb26059d7243de5cf0c7bbaccc869073"
+    },
+    "apps/qualification/kernel76-station/source/utils/fwctrl.c": {
+      "bytes": 46380,
+      "sha256": "67e95c81ad1d044475eb521f90f95ffc43702b50d2a6d4c8e4be6d6026750243"
+    },
+    "apps/qualification/kernel76-station/source/utils/fwctrl.h": {
+      "bytes": 17157,
+      "sha256": "e35102bd358117fb02104e17894d053abc7a31a4940953d849c02b06e6fb27fc"
+    },
+    "apps/qualification/kernel76-station/source/utils/fwdl.c": {
+      "bytes": 13683,
+      "sha256": "f8c9cf82c6484b1998749ee7814cad44637d8c1db51bc5ee6a7c7fac0314b1fa"
+    },
+    "apps/qualification/kernel76-station/source/utils/fwdl.h": {
+      "bytes": 2825,
+      "sha256": "58e939a56bce67649df222dc5ae3f96dc6255e526233f67408dabdf6605c9392"
+    },
+    "apps/qualification/kernel76-station/source/utils/fwinfo.c": {
+      "bytes": 9012,
+      "sha256": "4503733cdc0050438f7bf60cf72a18c6afef1c3f1599c6530149cd8aec26f3cf"
+    },
+    "apps/qualification/kernel76-station/source/utils/fwinfo.h": {
+      "bytes": 4257,
+      "sha256": "5506f2d97c0879f8bf692ec801161cbfa1de3f4ff5fc4acc3bd8986532fd409b"
+    },
+    "apps/qualification/kernel76-station/source/utils/if_sdio.c": {
+      "bytes": 28088,
+      "sha256": "1deebeb0d0c7d886749075fc176d2db473296a279e8c44e156b7cadc1b30f42e"
+    },
+    "apps/qualification/kernel76-station/source/utils/if_usb.c": {
+      "bytes": 14403,
+      "sha256": "3c56ddc592fa18ce97b5772025d0f572b0cd3f94227f128ab562069a4052787e"
+    },
+    "apps/qualification/kernel76-station/source/utils/iwpriv.c": {
+      "bytes": 57207,
+      "sha256": "887743a70e8d934e8219b7f321cd2e0d9f13e7f75280383010f516c1d62911b8"
+    },
+    "apps/qualification/kernel76-station/source/utils/iwpriv.h": {
+      "bytes": 324,
+      "sha256": "9ba6c5cf59f905a35c79f5e5c6011a812b4dc5576f97afa665e068fca350af03"
+    },
+    "apps/qualification/kernel76-station/source/utils/mmc_spi.c": {
+      "bytes": 39586,
+      "sha256": "59f3e43c31535c10c033fe5c24f29492abae90443d5d60b2203cf5c0ac7b7460"
+    },
+    "apps/qualification/kernel76-station/source/utils/ota.c": {
+      "bytes": 9312,
+      "sha256": "631fb8036bb698347954b2aec5296df78510247eba53ee33ad3cc33b65c63d41"
+    },
+    "apps/qualification/kernel76-station/source/utils/ota.h": {
+      "bytes": 765,
+      "sha256": "854a7a381b7ce257e35d9dc5170eb465e35e43d445cbcb5c878a0e9bd7ac7a63"
+    },
+    "apps/qualification/kernel76-station/source/utils/utils.c": {
+      "bytes": 6064,
+      "sha256": "5cfa24c9fa05c5f917281ffe62d4b70c02e6a82b628918680f664f9a13768759"
+    },
+    "apps/qualification/kernel76-station/source/utils/utils.h": {
+      "bytes": 4287,
+      "sha256": "5da2e1863bee07b3c59bdb2dc196536e603f8f057861774d366a4f66143afcc9"
+    },
+    "apps/qualification/kernel76-station/source/version.h": {
+      "bytes": 30,
+      "sha256": "5a4e17827eabb8ba89d849b7e94a34292adc8328563709df435ec26e154a7649"
+    },
+    "apps/qualification/kernel76-station/tests/shim.h": {
+      "bytes": 4551,
+      "sha256": "f3a00162f28d2f98bc08d9229b6bb0d3b1241a9f3f796bab61a04a4b1b3c674b"
+    },
+    "apps/qualification/kernel76-station/tests/test_control.c": {
+      "bytes": 16649,
+      "sha256": "3ea53cc312416c7fde4d950d76d42857d64f093ef187b230c81f48441ed49cfa"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/STATION76_CONTROL_A1_CANDIDATE.md": {
+      "bytes": 14272,
+      "sha256": "63c78491f7611bb699cf4c2e46e0b0b61fbf977f0d4cd5e526a00ed5815398bc"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/copy-baseline.json": {
+      "bytes": 30482,
+      "sha256": "1a3604cb239723ade63b708f4090e34f136173bc6ea1c59087cac1d5d9f405e1"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/result.json": {
+      "bytes": 82715,
+      "sha256": "b61eb01441941bb1849996f9c8eb0d86a9a9717fbd57f1936fb43e6c97a08176"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/output-hashes.json": {
+      "bytes": 19262,
+      "sha256": "900839ae4e270f0b639618070740ce18e47251ed32d3228dc2bafe622a5cdbc0"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/Kconfig": {
+      "bytes": 161,
+      "sha256": "9e140d0bd3ed15e444f4a0dc2031306ffb2691edb7a648aa66b8893bfdb7fda6"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/LICENSE": {
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/Makefile": {
+      "bytes": 4406,
+      "sha256": "55a5ccfbf20a88d17e4073b8998dd380aa3a1d8b2f19ddcb4c895618a5319d60"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/README.md": {
+      "bytes": 188,
+      "sha256": "9808fc033ab4ad1030d1f599434dec2dc00b3eb5124d898bd2ab2edd43db0480"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic.h": {
+      "bytes": 19805,
+      "sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_def.h": {
+      "bytes": 8519,
+      "sha256": "52fbfe0a9d19766f7fae9cc4c18252a5e2f4bce67d95eb7e76a6b666d5a15339"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/11ah.c": {
+      "bytes": 14828,
+      "sha256": "db9a43c7df54b06206609ef6ed8cd88dc9295f1253fb5b2e0bb3abc2df37dbef"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/11ah.h": {
+      "bytes": 457,
+      "sha256": "44fb21d39697afa6f718440814735a578b42618811d4f424d2b4fce0f666232c"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/11bgn.c": {
+      "bytes": 6871,
+      "sha256": "9cc08836a4e33491409d538f07b337ade3db88555980e22466d28509f0fccc32"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/11bgn.h": {
+      "bytes": 62,
+      "sha256": "0f5d2470e5da5de778622562374f2177ede3e84ba4d806ce6a2307894093bb8f"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/Kconfig": {
+      "bytes": 281,
+      "sha256": "e454cb3749a2d6bc2b6b23c9abb2cbae9a4f0f79618f19212dd6886d80c65320"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/Makefile": {
+      "bytes": 724,
+      "sha256": "6650f2598d759cd190ed2298bf0d6ed8bbe26b323a7c85f4258e2468d2ab81f3"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/ap.c": {
+      "bytes": 3558,
+      "sha256": "30e6e8e8ec7eb0a2076626cd6f52a6061dbff7f57cb74ceb5384d0220b6b40fe"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/ap.h": {
+      "bytes": 384,
+      "sha256": "86351448186412fbd0a198bec6b300a3b5a5e774168f4373c6fee9be3f0b1d14"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/core.c": {
+      "bytes": 43017,
+      "sha256": "32abb3b13c188272ea2929a14abc2d42df09bb71262bc4d6b754671e7a450443"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/event.c": {
+      "bytes": 1776,
+      "sha256": "5e480e6a21c45714386a458f69913e7d420001e7d6fc3c04b4d5e78f41f14cac"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/event.h": {
+      "bytes": 229,
+      "sha256": "8abca8bc4d9e6efbb2137647a7290684e74809dcad81606ee8f908e35d0ae1e3"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/hgics.h": {
+      "bytes": 3770,
+      "sha256": "0779a45eaf1ee314c7e241ae0a96fb0a74a2f422cb0727c29dc93ce43b321a0a"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/hw.c": {
+      "bytes": 628,
+      "sha256": "28e4fabe668762cd3d01195a75e6194fcfe1b84eadb60ea7d6ad307c1e15fd9a"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/hw.h": {
+      "bytes": 792,
+      "sha256": "c9416377845b6c0eb1226a23c07ecc85a8c575e3a9d3f12a2db16257db11551e"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/procfs.c": {
+      "bytes": 8108,
+      "sha256": "702e2450f3b908776f6f75742c410caa3e3bcd85fc7a02753361bf9fd96c53e6"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/procfs.h": {
+      "bytes": 615,
+      "sha256": "59872a0cb88f59dea27fc916aadf4d1c53a3f305102392ca98fdb62f274faf27"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/rx.c": {
+      "bytes": 9780,
+      "sha256": "3ec268d3e7fff7d507134435222ac0c34fb364cf88487e66c29e38f716272a52"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/stabr.c": {
+      "bytes": 8016,
+      "sha256": "91303e06e5705443c6cc98ed1e5c53c9807456c8a44e5280c9ca586ca8432c83"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/stabr.h": {
+      "bytes": 1205,
+      "sha256": "fc0319ed32175cd6aff3566d80346848cf2ea1bda645bddeb77aa3a08a83c189"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/stabr_arp.c": {
+      "bytes": 2741,
+      "sha256": "f2a6c59b9c5a307bd98ee19b080408be2cdb994d178f0cf945d70aba34c39efe"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/stabr_ip.c": {
+      "bytes": 2972,
+      "sha256": "3951bf24ca2396a2171f3ee339a868b1057702572c3ad3775bad9ff9a2030804"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/util.c": {
+      "bytes": 2315,
+      "sha256": "e5fb19ebdc5e9a2c50e0e8e4618924f23e9185c4cfbf23ab5a8e4ce0131bdfe8"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_smac/util.h": {
+      "bytes": 358,
+      "sha256": "65b23301aa1a012bfe89cb10a816cf2082ca0302db75f7f0cef70b23a2a07f79"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/linux6-compat.h": {
+      "bytes": 382,
+      "sha256": "32ea414d9001da68b3a91cac8c15d1468b4aba0ec8e337efc84fd0875a0d2eff"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/Makefile": {
+      "bytes": 882,
+      "sha256": "38fb358d7a55ae380a764afe737b45737ac4a0b5356e824ce93dbf7e1d9ab587"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/blenc.c": {
+      "bytes": 4771,
+      "sha256": "70cd93a88ef7ec008aa734c0d0a438e9a4e5fdfe538fb0fa08eb3e9eb9891953"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/blenc.h": {
+      "bytes": 2308,
+      "sha256": "11c3a8421f334b7d8fdcd158f6131701447025e820cc76c85a8223b938deb57d"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/bt_ext_porting_hgic.c": {
+      "bytes": 7688,
+      "sha256": "6f49288311e52dc8fd97b99f6d4795c242bb0b23a118b60b2774e824c9dd5dea"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/fwinfo.c": {
+      "bytes": 9916,
+      "sha256": "ccee1a7af3ca3f5d3185689af225442cd195fa167dd5fd17f56ec9171d505534"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/fwinfo.h": {
+      "bytes": 4967,
+      "sha256": "9f1b78f9522f4645c1d40a73201a3cdaba652373fefd0b76a6b1e1ec8ce600a6"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/hgic.h": {
+      "bytes": 19805,
+      "sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/hgics.c": {
+      "bytes": 9319,
+      "sha256": "6a94f71e4ccec581b881a79980ce90ace6720c00ba7de6b3b53456b26857514a"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/hgics_blenc.c": {
+      "bytes": 16471,
+      "sha256": "a8700fb644021797e69c3930ab77dc01acb8d73dad43b269d31f83dd7d66fff3"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/hgics_relay.c": {
+      "bytes": 13449,
+      "sha256": "7ab3e6363d4d9fad664cbdaa16bcdcf0f092aff63af0ca6dae2780088b92e0da"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/hgota.c": {
+      "bytes": 10100,
+      "sha256": "2a3b3e5b54fd1e5f3ac09c5df842b1cdf36848e328e298f8f485f667f2286dc2"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/hgpriv.c": {
+      "bytes": 1890,
+      "sha256": "9396704f4489abbebd70e9c801b3b9fe1d7d24e2fd1b2b5793b7a9e924addf40"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/hguevent.c": {
+      "bytes": 7822,
+      "sha256": "2d0a658b45ec99c409a4358054a095b6adecd31940f8a77c8775f0c750c7e2cd"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/iwpriv.c": {
+      "bytes": 41730,
+      "sha256": "0bebaaaabc5433abdd2beaa3b16686cba07bffa645cf763b0977f80906e8c2b6"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/libnetat.c": {
+      "bytes": 7040,
+      "sha256": "baaf2176ffa9d76154543ee2d1a544d4ed03a6d2b3b9d8aa412a6a17faab1c04"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/libota.c": {
+      "bytes": 6854,
+      "sha256": "4ec58b202ff421b03cc8d25d2901db56955adcb5352a42f19796b8a4e47ab917"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/libota.h": {
+      "bytes": 3112,
+      "sha256": "861a309b7fad4f9d95c65f521c2854fd16288d3d57830a7774729b62e725c899"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/tools/test_app/tcp_test.c": {
+      "bytes": 5903,
+      "sha256": "3746d6b5bef6d09d0d41c748ff4a1f1b8f6ee7fcd2c096143ac1621c0eb34060"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/Kconfig": {
+      "bytes": 256,
+      "sha256": "07cfeddf11d5e92259ac8adca1bb04e2fd76499ce9af26009a0b3abe6d1ac4e9"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/ah_freqinfo.c": {
+      "bytes": 8772,
+      "sha256": "7a29b65926e48e22db4f5c85e4e9ed7a570ed5afc1500be14218df1997d492d6"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/bluetooth.c": {
+      "bytes": 2606,
+      "sha256": "4987a59092cd64ca68017dbeeb6f402b0a246e510f40d9a6cbadf7a2b3ffba1e"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/fwctrl.c": {
+      "bytes": 42984,
+      "sha256": "b065ba8c66fa0521450f77c45fbc534e32ce67a37bb1cbf6343d1b3d945fbb7c"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/fwctrl.h": {
+      "bytes": 16924,
+      "sha256": "55c287b3e59c6ad197f79f4758601d5aaed34c81a5dd608148b12b45109b4e64"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/fwdl.c": {
+      "bytes": 13683,
+      "sha256": "f8c9cf82c6484b1998749ee7814cad44637d8c1db51bc5ee6a7c7fac0314b1fa"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/fwdl.h": {
+      "bytes": 2825,
+      "sha256": "58e939a56bce67649df222dc5ae3f96dc6255e526233f67408dabdf6605c9392"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/fwinfo.c": {
+      "bytes": 9012,
+      "sha256": "4503733cdc0050438f7bf60cf72a18c6afef1c3f1599c6530149cd8aec26f3cf"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/fwinfo.h": {
+      "bytes": 4257,
+      "sha256": "5506f2d97c0879f8bf692ec801161cbfa1de3f4ff5fc4acc3bd8986532fd409b"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/if_sdio.c": {
+      "bytes": 28088,
+      "sha256": "1deebeb0d0c7d886749075fc176d2db473296a279e8c44e156b7cadc1b30f42e"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/if_usb.c": {
+      "bytes": 14403,
+      "sha256": "3c56ddc592fa18ce97b5772025d0f572b0cd3f94227f128ab562069a4052787e"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/iwpriv.c": {
+      "bytes": 57207,
+      "sha256": "887743a70e8d934e8219b7f321cd2e0d9f13e7f75280383010f516c1d62911b8"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/iwpriv.h": {
+      "bytes": 324,
+      "sha256": "9ba6c5cf59f905a35c79f5e5c6011a812b4dc5576f97afa665e068fca350af03"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/mmc_spi.c": {
+      "bytes": 39586,
+      "sha256": "59f3e43c31535c10c033fe5c24f29492abae90443d5d60b2203cf5c0ac7b7460"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/ota.c": {
+      "bytes": 9312,
+      "sha256": "631fb8036bb698347954b2aec5296df78510247eba53ee33ad3cc33b65c63d41"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/ota.h": {
+      "bytes": 765,
+      "sha256": "854a7a381b7ce257e35d9dc5170eb465e35e43d445cbcb5c878a0e9bd7ac7a63"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/utils.c": {
+      "bytes": 6064,
+      "sha256": "5cfa24c9fa05c5f917281ffe62d4b70c02e6a82b628918680f664f9a13768759"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/utils.h": {
+      "bytes": 4287,
+      "sha256": "5da2e1863bee07b3c59bdb2dc196536e603f8f057861774d366a4f66143afcc9"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/version.h": {
+      "bytes": 30,
+      "sha256": "5a4e17827eabb8ba89d849b7e94a34292adc8328563709df435ec26e154a7649"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/candidate-extracted.c": {
+      "bytes": 12739,
+      "sha256": "a07760103b14fa577d3771e30ee40c67888dfb55414656f6133775ed8d7f9092"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/compiler-target.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/compiler-target.stdout": {
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/compiler-version.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/compiler-version.stdout": {
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/cookie-reuse-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/cookie-reuse-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/cookie-reuse-test.stderr": {
+      "bytes": 46,
+      "sha256": "33019b82def5debd7f472ee786a81d29edc4c6a4bf0c5bdacc222d1f10813bde"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/cookie-reuse-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/cookie-reuse.c": {
+      "bytes": 12729,
+      "sha256": "e950cd494dcc9d007d7d26e0b4f50f5c4cf58770096e342ba11227a79ff53754"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/cookie-reuse.host": {
+      "bytes": 307000,
+      "sha256": "6c8b49092f55e06be2c49a8b19f9426c8c5fd5ca805cdf03aadb4f4277d57dae"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/include/linux/build_bug.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/include/linux/completion.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/include/linux/errno.h": {
+      "bytes": 30,
+      "sha256": "75be4010966f100e6a1e479f4bbe84f6c8e7cf0ebe349753804d0cee62abf172"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/include/linux/etherdevice.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/include/linux/unaligned.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/include/linux/workqueue.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-CPU-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-CPU-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-CPU-test.stderr": {
+      "bytes": 75,
+      "sha256": "777c01bdb45ef5fd9d2566135ec48524a476642e69aca8efd6e6a256bc50a8a8"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-CPU-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-CPU.c": {
+      "bytes": 12771,
+      "sha256": "d5877b24c85838010590530c68f21d2da9b301c758a0177da24523e61020d7df"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-CPU.h": {
+      "bytes": 3955,
+      "sha256": "a7415b3190b8a7f52122d3d0a36b3f512a01fcfa2ad2d4875e5d63ae6dc600bd"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-CPU.host": {
+      "bytes": 305952,
+      "sha256": "569694b4a47b53aa13c5e4985a79503cea05547204a7acbe16fc430a81312732"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-MAC-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-MAC-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-MAC-test.stderr": {
+      "bytes": 75,
+      "sha256": "777c01bdb45ef5fd9d2566135ec48524a476642e69aca8efd6e6a256bc50a8a8"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-MAC-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-MAC.c": {
+      "bytes": 12771,
+      "sha256": "03c55a5892c458a167207b440058dff7de3ab6c267e68a7fcdebcc00aae107d6"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-MAC.h": {
+      "bytes": 3964,
+      "sha256": "a53daf79b2d02df42610c2fddcac7cef934fd0916f441333757a603881fb39a3"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-MAC.host": {
+      "bytes": 304480,
+      "sha256": "64bb109cc09293253f57e0b006f86b7b34343dbed0cbaa965ec2393939c73dec"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-SVN-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-SVN-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-SVN-test.stderr": {
+      "bytes": 75,
+      "sha256": "777c01bdb45ef5fd9d2566135ec48524a476642e69aca8efd6e6a256bc50a8a8"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-SVN-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-SVN.c": {
+      "bytes": 12771,
+      "sha256": "aff7b1382e8c444577688d4b0897dbb3de1536edbbd369c73cd90b83088470b8"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-SVN.h": {
+      "bytes": 3952,
+      "sha256": "70a767f70b3c342c3c89cd8db018fcccf0c61fde3f3d6378d5288faed5a06c38"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-SVN.host": {
+      "bytes": 305504,
+      "sha256": "a87ece06ce5a242e913724cf1655315a305a2d662916698ba1db97a7332cae37"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-capacity-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-capacity-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-capacity-test.stderr": {
+      "bytes": 85,
+      "sha256": "b11644310f699ee59060e7275ca2f93c796f36740977696ef51222a4aa73276b"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-capacity-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-capacity.c": {
+      "bytes": 12776,
+      "sha256": "880f6eb565cf9ad6595d0f5a54618d608de30ce31a82cf272f5efca611ca5eb9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-capacity.h": {
+      "bytes": 3965,
+      "sha256": "9299d58395c2c242dff881d61248e0610f7e09803d26889b25c775b06293f673"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-capacity.host": {
+      "bytes": 306648,
+      "sha256": "f8531abc761fa9f54c126c9848a3a770bd6181800641c530e7d043e80442b9ec"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-chip-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-chip-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-chip-test.stderr": {
+      "bytes": 75,
+      "sha256": "777c01bdb45ef5fd9d2566135ec48524a476642e69aca8efd6e6a256bc50a8a8"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-chip-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-chip.c": {
+      "bytes": 12772,
+      "sha256": "8f7ba1ffe528b117fb3c61f28dc89fdad8bd652e22bf1d3cfe120a7072a66dda"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-chip.h": {
+      "bytes": 3943,
+      "sha256": "c2dde21e41cb70125d668f9efa0207ebffb307ffe900b3342f94469c981d4bfe"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-chip.host": {
+      "bytes": 305936,
+      "sha256": "fc2b8ab7029a5eb94cec6bc8b11369a9be5f78d2c4bf32a847b17e0feff85273"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-cookie-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-cookie-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-cookie-test.stderr": {
+      "bytes": 73,
+      "sha256": "1d3794e52e34184e96cc8ab106e0566c447af03952be9039352693d01cb86729"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-cookie-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-cookie.c": {
+      "bytes": 12774,
+      "sha256": "9eabc9632714ece5bf8f46ac869eef43d3c28ed64080a21d5c9e7e940eb6165e"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-cookie.h": {
+      "bytes": 3941,
+      "sha256": "582044f773830637f485dbd7082cba3f8f6fb55be3ba52aa0c9804bf59ae0c15"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-cookie.host": {
+      "bytes": 305824,
+      "sha256": "8916df8b1ee2a72ec24690c28e7ada20e4d1d6e881f7bed309102d9e66dab43e"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-declared-length-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-declared-length-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-declared-length-test.stderr": {
+      "bytes": 75,
+      "sha256": "777c01bdb45ef5fd9d2566135ec48524a476642e69aca8efd6e6a256bc50a8a8"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-declared-length-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-declared-length.c": {
+      "bytes": 12783,
+      "sha256": "3de3a12d23760e5afb9b7fa36e47fad046ab0e56a9f1f578c61424bcd4bc7a7a"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-declared-length.h": {
+      "bytes": 3943,
+      "sha256": "bf370567b88849509cccc20ccacd12e25796dbd79bf4281118b606a7fabe114f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-declared-length.host": {
+      "bytes": 306224,
+      "sha256": "78a7850c8d27e8f7d221ac0731750955191c757c130aad83f6f6c2522b00a3d4"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-ifidx-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-ifidx-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-ifidx-test.stderr": {
+      "bytes": 75,
+      "sha256": "777c01bdb45ef5fd9d2566135ec48524a476642e69aca8efd6e6a256bc50a8a8"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-ifidx-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-ifidx.c": {
+      "bytes": 12773,
+      "sha256": "718a1c5d5d28812dea0c79814229e52e85a386f026cb6fd96c2dc6289bb05136"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-ifidx.h": {
+      "bytes": 3964,
+      "sha256": "b8d1b647988eb5408eb31c40559f3144d93ecc30766c538b6bea95a03cb8161e"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-ifidx.host": {
+      "bytes": 306472,
+      "sha256": "83f06c71722cf5a37942f81e57015c80942dc55c0d8781d99f9a326dcb3d60ba"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-min-header-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-min-header-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-min-header-test.stderr": {
+      "bytes": 5939,
+      "sha256": "4a3c8aa296462f84e5a88985b02e6c030461793387bbe160fe19b6a0719db595"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-min-header-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-min-header.c": {
+      "bytes": 12778,
+      "sha256": "b9f55d1ba38c5ea26a19ac5575d508d70f3f28c1a6a0300fdb667c1b08cd4c9d"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-min-header.h": {
+      "bytes": 3957,
+      "sha256": "9206260843471f9740784571dfb496650a5cbcc6c2f8b6826e24fa08f0973669"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-min-header.host": {
+      "bytes": 306984,
+      "sha256": "8bf06168018d324054872262e6cc5059999fefd4571595b75adb38037c309e81"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-opcode-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-opcode-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-opcode-test.stderr": {
+      "bytes": 75,
+      "sha256": "777c01bdb45ef5fd9d2566135ec48524a476642e69aca8efd6e6a256bc50a8a8"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-opcode-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-opcode.c": {
+      "bytes": 12774,
+      "sha256": "af6ef6abd6c2bd215eacff77ca4904418c02588a5d9abd04853b0ab670bce58a"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-opcode.h": {
+      "bytes": 3993,
+      "sha256": "02688d8cef5f9bb15cf040a8b860794303d3b3fa3e6068dbeb326098b20c830e"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-opcode.host": {
+      "bytes": 306680,
+      "sha256": "696266afae7852ac6c0d2a0933170c3df7c8653eaa86f7cd8905eb25ca97384f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-retail-length-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-retail-length-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-retail-length-test.stderr": {
+      "bytes": 6386,
+      "sha256": "989cff32e18707b02eb311604a3eaf8dd82fd7e8cd87173f694698fd2b201400"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-retail-length-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-retail-length.c": {
+      "bytes": 12781,
+      "sha256": "d4c0c0c5ce5acfbd12eb6064b07b2dd7721818eae3ff6533b885bf345508ed48"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-retail-length.h": {
+      "bytes": 3980,
+      "sha256": "1513fce8084a55218ac6a451a05d22850b00b4e6625dcec660752aa54bd3027a"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-retail-length.host": {
+      "bytes": 323552,
+      "sha256": "3e7e008d9a1a277a458f6fcab070962f76e39f17f7c7a1c7913302797cc9b48a"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-type-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-type-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-type-test.stderr": {
+      "bytes": 75,
+      "sha256": "777c01bdb45ef5fd9d2566135ec48524a476642e69aca8efd6e6a256bc50a8a8"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-type-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-type.c": {
+      "bytes": 12772,
+      "sha256": "ae17ab8c9c4fbe9af7fee6a73f9b3ca0e8c1aa3a28dbb872bd8cd737e30a5ad4"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-type.h": {
+      "bytes": 3974,
+      "sha256": "44818c07e45e73df4eaad59811345bf99e29b9e41479cdd288b7f7ee67d71519"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-type.host": {
+      "bytes": 306472,
+      "sha256": "2c10caaabdcc216820e8e8608ed586a92cc2c56173d6e4298b07635170804194"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-version-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-version-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-version-test.stderr": {
+      "bytes": 75,
+      "sha256": "777c01bdb45ef5fd9d2566135ec48524a476642e69aca8efd6e6a256bc50a8a8"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-version-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-version.c": {
+      "bytes": 12775,
+      "sha256": "9addbe3122e50a26fe432c7c7970e25c99c5d856a5b2a2842af5f030d3744e97"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-version.h": {
+      "bytes": 3951,
+      "sha256": "91c7263feaf8857de1575c849df9bf94bf59179cb165baccc4f9f000c245673e"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/missing-version.host": {
+      "bytes": 305712,
+      "sha256": "2295bced514c5175b23ad648872e2f4f52a963c7e9e1e1b979ebc3ae23a6fb4b"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/optimized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/optimized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/optimized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/optimized-test.stdout": {
+      "bytes": 82,
+      "sha256": "60689376d3810ee0d1740faf801265fba316db279bf34627e5c0c51e7fc395b9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/optimized.host": {
+      "bytes": 104184,
+      "sha256": "2bc53d7c75bc02d8480d40fdbdecf9e00d04579f9f1d0792ac19e2bbebbedcb4"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/original-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/original-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/original-extracted.c": {
+      "bytes": 9387,
+      "sha256": "8929b3e4a6156d23a18f0866aae15ee5c8048ac64a2577945ad20232b5eab0a7"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/original-invalid-identity-repro.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/original-invalid-identity-repro.stdout": {
+      "bytes": 54,
+      "sha256": "d75fe4a2f06f888d2d31ea9a019dfbd9cc1d3e7c36bc63e961c6ab2b1a85b3b3"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/original-sanitized.host": {
+      "bytes": 147776,
+      "sha256": "4b82d3c934405c296562f475ff775191882283f88cc9f1a48e66cdc1248df87f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/original-short-payload-repro.stderr": {
+      "bytes": 4431,
+      "sha256": "b0bbf3b9d5f219ae1734a8d0372a07a7ec0709d2c747ff2d970a0b2b9c02cba9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/original-short-payload-repro.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/replace-first-reply-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/replace-first-reply-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/replace-first-reply-test.stderr": {
+      "bytes": 3640,
+      "sha256": "ec3fd81265270edcf403ce5babb2e0508eaf7ad0e862cb95f57c2567a0012701"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/replace-first-reply-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/replace-first-reply.c": {
+      "bytes": 12734,
+      "sha256": "374185f321c444c0f461137c360dc55b8402ea61ca74cd9ee7ee49cb2670f1da"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/replace-first-reply.host": {
+      "bytes": 306384,
+      "sha256": "a77479fb7e1be031fff2571241aba405cae808516f7acaba33ebb1eaf6d9ef61"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/sanitized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/sanitized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/sanitized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/sanitized-test.stdout": {
+      "bytes": 82,
+      "sha256": "60689376d3810ee0d1740faf801265fba316db279bf34627e5c0c51e7fc395b9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/sanitized.host": {
+      "bytes": 306872,
+      "sha256": "e18ac9bf1f170186363ca86b7aa63b82e8b8bc5d2a61b649c061657189ee417c"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/unsigned-status-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/unsigned-status-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/unsigned-status-test.stderr": {
+      "bytes": 84,
+      "sha256": "8bb7616b5be6194b9346448ba8324cfa2e807b2ca554e4653c3cc1c4ee2cbc6f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/unsigned-status-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/unsigned-status.c": {
+      "bytes": 12775,
+      "sha256": "03c30aa445c1b0a8e0f0061babbd3a9a15341713b2b54595bc98cdb8986bac01"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/unsigned-status.h": {
+      "bytes": 3984,
+      "sha256": "66a7ce0ab51a301e2b238ebf6a67bc8a692c6c0638ea018544a2b57806906e0d"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/unsigned-status.host": {
+      "bytes": 309600,
+      "sha256": "506834801e1c7df3aba23508f78b37ab175ba4e10bcc000c66ea2ac5d8c1f309"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/utils_fwctrl.c.diff": {
+      "bytes": 10618,
+      "sha256": "6f3cf5ea5c3ba1c9bcd3ff0396947f8c01fe05884a4fae88489ea49e5e67cfb0"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-a1-host01/run06/utils_fwctrl.h.diff": {
+      "bytes": 846,
+      "sha256": "620128b3655c735f9a63d76428894582b2326824ac8ce22d665380233a10a0b6"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/analysis/native-usb76-build01/prepare76-manifest.json": {
+      "bytes": 14773,
+      "sha256": "686ad5da743ea3396962606f6349cf07f6d6c7454c84d572fbc5c4418bdd581d"
+    }
+  },
+  "commands": [
+    {
+      "name": "compiler-version",
+      "argv": [
+        "cc",
+        "--version"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:16.695583+00:00",
+      "end": "2026-10-21T07:30:16.698100+00:00",
+      "exit": 0,
+      "stdout_sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "compiler-target",
+      "argv": [
+        "cc",
+        "-dumpmachine"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:16.698143+00:00",
+      "end": "2026-10-21T07:30:16.699669+00:00",
+      "exit": 0,
+      "stdout_sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "candidate-optimized-compile",
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station/tests",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01",
+        "-O2",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/candidate.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/candidate-optimized.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:16.700989+00:00",
+      "end": "2026-10-21T07:30:17.404049+00:00",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "candidate-optimized-test",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/candidate-optimized.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:17.404075+00:00",
+      "end": "2026-10-21T07:30:17.405126+00:00",
+      "exit": 0,
+      "stdout_sha256": "60689376d3810ee0d1740faf801265fba316db279bf34627e5c0c51e7fc395b9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "candidate-sanitized-compile",
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station/tests",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01",
+        "-O1",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/candidate.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/candidate-sanitized.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:17.405146+00:00",
+      "end": "2026-10-21T07:30:18.386345+00:00",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "candidate-sanitized-test",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/candidate-sanitized.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:18.386371+00:00",
+      "end": "2026-10-21T07:30:18.407101+00:00",
+      "exit": 0,
+      "stdout_sha256": "60689376d3810ee0d1740faf801265fba316db279bf34627e5c0c51e7fc395b9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "supplement-optimized-compile",
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station/tests",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01",
+        "-O2",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/supplement.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/supplement-optimized.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:18.407133+00:00",
+      "end": "2026-10-21T07:30:19.318677+00:00",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "supplement-optimized-test",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/supplement-optimized.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:19.318702+00:00",
+      "end": "2026-10-21T07:30:19.319788+00:00",
+      "exit": 0,
+      "stdout_sha256": "c79bbae1e98ee49b47ff32501f1c8113d792430d09b29bdca76c2f04b10843f3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "supplement-sanitized-compile",
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station/tests",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01",
+        "-O1",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/supplement.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/supplement-sanitized.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:19.319807+00:00",
+      "end": "2026-10-21T07:30:20.597726+00:00",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "supplement-sanitized-test",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/supplement-sanitized.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:20.597771+00:00",
+      "end": "2026-10-21T07:30:20.617589+00:00",
+      "exit": 0,
+      "stdout_sha256": "c79bbae1e98ee49b47ff32501f1c8113d792430d09b29bdca76c2f04b10843f3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "original-compile",
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station/tests",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01",
+        "-O1",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/original.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/original.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:20.617651+00:00",
+      "end": "2026-10-21T07:30:21.116767+00:00",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "original-identity-repro",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/original.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:21.116796+00:00",
+      "end": "2026-10-21T07:30:21.131785+00:00",
+      "exit": 0,
+      "stdout_sha256": "d75fe4a2f06f888d2d31ea9a019dfbd9cc1d3e7c36bc63e961c6ab2b1a85b3b3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "original-overread-repro",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/original.host",
+        "short-payload"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:21.131822+00:00",
+      "end": "2026-10-21T07:30:21.144362+00:00",
+      "exit": 1,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "021bd94ee93fe5c0747bd6d7170200f3344079a413b6b52223f471fcad69d6b3"
+    },
+    {
+      "name": "missing-min-header-compile",
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station/tests",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01",
+        "-Wno-type-limits",
+        "-O1",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-min-header.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-min-header.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:21.145598+00:00",
+      "end": "2026-10-21T07:30:22.418794+00:00",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "missing-min-header-test",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-min-header.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:22.418824+00:00",
+      "end": "2026-10-21T07:30:22.432890+00:00",
+      "exit": 1,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "81af531f9453749c9f993eca9143184cea73c5436a5ad76ceebf19a21f75a223"
+    },
+    {
+      "name": "missing-opcode-compile",
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station/tests",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01",
+        "-Wno-type-limits",
+        "-O1",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-opcode.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-opcode.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:22.434072+00:00",
+      "end": "2026-10-21T07:30:23.573434+00:00",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "missing-opcode-test",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-opcode.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:23.573492+00:00",
+      "end": "2026-10-21T07:30:23.590472+00:00",
+      "exit": 2,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "777c01bdb45ef5fd9d2566135ec48524a476642e69aca8efd6e6a256bc50a8a8"
+    },
+    {
+      "name": "missing-type-compile",
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station/tests",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01",
+        "-Wno-type-limits",
+        "-O1",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-type.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-type.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:23.591952+00:00",
+      "end": "2026-10-21T07:30:24.678477+00:00",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "missing-type-test",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-type.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:24.678543+00:00",
+      "end": "2026-10-21T07:30:24.694167+00:00",
+      "exit": 2,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "777c01bdb45ef5fd9d2566135ec48524a476642e69aca8efd6e6a256bc50a8a8"
+    },
+    {
+      "name": "missing-declared-length-compile",
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station/tests",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01",
+        "-Wno-type-limits",
+        "-O1",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-declared-length.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-declared-length.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:24.695384+00:00",
+      "end": "2026-10-21T07:30:25.672097+00:00",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "missing-declared-length-test",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-declared-length.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:25.672122+00:00",
+      "end": "2026-10-21T07:30:25.687846+00:00",
+      "exit": 2,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "777c01bdb45ef5fd9d2566135ec48524a476642e69aca8efd6e6a256bc50a8a8"
+    },
+    {
+      "name": "missing-ifidx-compile",
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station/tests",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01",
+        "-Wno-type-limits",
+        "-O1",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-ifidx.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-ifidx.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:25.688509+00:00",
+      "end": "2026-10-21T07:30:26.647651+00:00",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "missing-ifidx-test",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-ifidx.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:26.647678+00:00",
+      "end": "2026-10-21T07:30:26.663222+00:00",
+      "exit": 2,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "777c01bdb45ef5fd9d2566135ec48524a476642e69aca8efd6e6a256bc50a8a8"
+    },
+    {
+      "name": "missing-cookie-compile",
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station/tests",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01",
+        "-Wno-type-limits",
+        "-O1",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-cookie.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-cookie.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:26.663977+00:00",
+      "end": "2026-10-21T07:30:27.618374+00:00",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "missing-cookie-test",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-cookie.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:27.618404+00:00",
+      "end": "2026-10-21T07:30:27.637892+00:00",
+      "exit": 2,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "1d3794e52e34184e96cc8ab106e0566c447af03952be9039352693d01cb86729"
+    },
+    {
+      "name": "unsigned-status-compile",
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station/tests",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01",
+        "-Wno-type-limits",
+        "-O1",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/unsigned-status.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/unsigned-status.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:27.638565+00:00",
+      "end": "2026-10-21T07:30:28.597535+00:00",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "unsigned-status-test",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/unsigned-status.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:28.597562+00:00",
+      "end": "2026-10-21T07:30:28.615596+00:00",
+      "exit": 2,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "8bb7616b5be6194b9346448ba8324cfa2e807b2ca554e4653c3cc1c4ee2cbc6f"
+    },
+    {
+      "name": "missing-version-compile",
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station/tests",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01",
+        "-Wno-type-limits",
+        "-O1",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-version.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-version.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:28.616496+00:00",
+      "end": "2026-10-21T07:30:29.577711+00:00",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "missing-version-test",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-version.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:29.577744+00:00",
+      "end": "2026-10-21T07:30:29.595649+00:00",
+      "exit": 2,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "777c01bdb45ef5fd9d2566135ec48524a476642e69aca8efd6e6a256bc50a8a8"
+    },
+    {
+      "name": "missing-SVN-compile",
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station/tests",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01",
+        "-Wno-type-limits",
+        "-O1",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-SVN.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-SVN.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:29.596794+00:00",
+      "end": "2026-10-21T07:30:30.554272+00:00",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "missing-SVN-test",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-SVN.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:30.554303+00:00",
+      "end": "2026-10-21T07:30:30.573184+00:00",
+      "exit": 2,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "777c01bdb45ef5fd9d2566135ec48524a476642e69aca8efd6e6a256bc50a8a8"
+    },
+    {
+      "name": "missing-chip-compile",
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station/tests",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01",
+        "-Wno-type-limits",
+        "-O1",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-chip.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-chip.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:30.573967+00:00",
+      "end": "2026-10-21T07:30:31.525405+00:00",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "missing-chip-test",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-chip.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:31.525430+00:00",
+      "end": "2026-10-21T07:30:31.542616+00:00",
+      "exit": 2,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "777c01bdb45ef5fd9d2566135ec48524a476642e69aca8efd6e6a256bc50a8a8"
+    },
+    {
+      "name": "missing-CPU-compile",
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station/tests",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01",
+        "-Wno-type-limits",
+        "-O1",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-CPU.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-CPU.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:31.543386+00:00",
+      "end": "2026-10-21T07:30:32.504344+00:00",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "missing-CPU-test",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-CPU.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:32.504371+00:00",
+      "end": "2026-10-21T07:30:32.521649+00:00",
+      "exit": 2,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "777c01bdb45ef5fd9d2566135ec48524a476642e69aca8efd6e6a256bc50a8a8"
+    },
+    {
+      "name": "missing-retail-length-compile",
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station/tests",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01",
+        "-Wno-type-limits",
+        "-O1",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-retail-length.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-retail-length.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:32.522380+00:00",
+      "end": "2026-10-21T07:30:33.566376+00:00",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "missing-retail-length-test",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-retail-length.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:33.566407+00:00",
+      "end": "2026-10-21T07:30:33.580575+00:00",
+      "exit": 1,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "02e6e0b1d1b0200d919e06136a555a31e045d1b0030b03e36306e290f8267c12"
+    },
+    {
+      "name": "missing-MAC-compile",
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station/tests",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01",
+        "-Wno-type-limits",
+        "-O1",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-MAC.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-MAC.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:33.581298+00:00",
+      "end": "2026-10-21T07:30:34.537387+00:00",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "missing-MAC-test",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-MAC.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:34.537414+00:00",
+      "end": "2026-10-21T07:30:34.555390+00:00",
+      "exit": 2,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "777c01bdb45ef5fd9d2566135ec48524a476642e69aca8efd6e6a256bc50a8a8"
+    },
+    {
+      "name": "missing-capacity-compile",
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station/tests",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01",
+        "-Wno-type-limits",
+        "-O1",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-capacity.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-capacity.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:34.556082+00:00",
+      "end": "2026-10-21T07:30:35.538147+00:00",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "missing-capacity-test",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/missing-capacity.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:35.538173+00:00",
+      "end": "2026-10-21T07:30:35.555815+00:00",
+      "exit": 2,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "b11644310f699ee59060e7275ca2f93c796f36740977696ef51222a4aa73276b"
+    },
+    {
+      "name": "cookie-reuse-compile",
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station/tests",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01",
+        "-Wno-type-limits",
+        "-O1",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/cookie-reuse.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/cookie-reuse.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:35.556403+00:00",
+      "end": "2026-10-21T07:30:36.524582+00:00",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "cookie-reuse-test",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/cookie-reuse.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:36.524608+00:00",
+      "end": "2026-10-21T07:30:36.544366+00:00",
+      "exit": 2,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "33019b82def5debd7f472ee786a81d29edc4c6a4bf0c5bdacc222d1f10813bde"
+    },
+    {
+      "name": "replace-first-reply-compile",
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station/tests",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01",
+        "-Wno-type-limits",
+        "-O1",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/replace-first-reply.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/replace-first-reply.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:36.545255+00:00",
+      "end": "2026-10-21T07:30:37.516771+00:00",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "replace-first-reply-test",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-a1-review01/run01/replace-first-reply.host"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "start": "2026-10-21T07:30:37.516797+00:00",
+      "end": "2026-10-21T07:30:37.540810+00:00",
+      "exit": 1,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "68459ee5265858fff2456e24973e2a988a6ec71ff086cbc89b7c5b6d617a438f"
+    }
+  ],
+  "extractions": [
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 481,
+      "bytes": 11006,
+      "sha256": "a8652114cd262e3b5ad35ae36995f508a3df7e81dcb0afe3a04e363a3ef1c42c"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 13144,
+      "bytes": 1103,
+      "sha256": "0f41859bd161fd058d5d497e0f970cba8d91809c39e672da75a69c5be76ec3bc"
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/fwctrl.c",
+      "offset": 453,
+      "bytes": 7836,
+      "sha256": "c1a0d09ba0ecddec92ef0ef360dd1bc1e21eadc65788c117dcf7cafd09871995"
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/fwctrl.c",
+      "offset": 9946,
+      "bytes": 905,
+      "sha256": "61c0d4a6ed3262ed4dd8b8f5b2072dc954d84d9cd2d39f2ff5a8148e7ad1565b"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 481,
+      "bytes": 11006,
+      "sha256": "a8652114cd262e3b5ad35ae36995f508a3df7e81dcb0afe3a04e363a3ef1c42c"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 13144,
+      "bytes": 1103,
+      "sha256": "0f41859bd161fd058d5d497e0f970cba8d91809c39e672da75a69c5be76ec3bc"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 481,
+      "bytes": 11006,
+      "sha256": "a8652114cd262e3b5ad35ae36995f508a3df7e81dcb0afe3a04e363a3ef1c42c"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 13144,
+      "bytes": 1103,
+      "sha256": "0f41859bd161fd058d5d497e0f970cba8d91809c39e672da75a69c5be76ec3bc"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 481,
+      "bytes": 11006,
+      "sha256": "a8652114cd262e3b5ad35ae36995f508a3df7e81dcb0afe3a04e363a3ef1c42c"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 13144,
+      "bytes": 1103,
+      "sha256": "0f41859bd161fd058d5d497e0f970cba8d91809c39e672da75a69c5be76ec3bc"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 481,
+      "bytes": 11006,
+      "sha256": "a8652114cd262e3b5ad35ae36995f508a3df7e81dcb0afe3a04e363a3ef1c42c"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 13144,
+      "bytes": 1103,
+      "sha256": "0f41859bd161fd058d5d497e0f970cba8d91809c39e672da75a69c5be76ec3bc"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 481,
+      "bytes": 11006,
+      "sha256": "a8652114cd262e3b5ad35ae36995f508a3df7e81dcb0afe3a04e363a3ef1c42c"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 13144,
+      "bytes": 1103,
+      "sha256": "0f41859bd161fd058d5d497e0f970cba8d91809c39e672da75a69c5be76ec3bc"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 481,
+      "bytes": 11006,
+      "sha256": "a8652114cd262e3b5ad35ae36995f508a3df7e81dcb0afe3a04e363a3ef1c42c"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 13144,
+      "bytes": 1103,
+      "sha256": "0f41859bd161fd058d5d497e0f970cba8d91809c39e672da75a69c5be76ec3bc"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 481,
+      "bytes": 11006,
+      "sha256": "a8652114cd262e3b5ad35ae36995f508a3df7e81dcb0afe3a04e363a3ef1c42c"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 13144,
+      "bytes": 1103,
+      "sha256": "0f41859bd161fd058d5d497e0f970cba8d91809c39e672da75a69c5be76ec3bc"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 481,
+      "bytes": 11006,
+      "sha256": "a8652114cd262e3b5ad35ae36995f508a3df7e81dcb0afe3a04e363a3ef1c42c"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 13144,
+      "bytes": 1103,
+      "sha256": "0f41859bd161fd058d5d497e0f970cba8d91809c39e672da75a69c5be76ec3bc"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 481,
+      "bytes": 11006,
+      "sha256": "a8652114cd262e3b5ad35ae36995f508a3df7e81dcb0afe3a04e363a3ef1c42c"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 13144,
+      "bytes": 1103,
+      "sha256": "0f41859bd161fd058d5d497e0f970cba8d91809c39e672da75a69c5be76ec3bc"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 481,
+      "bytes": 11006,
+      "sha256": "a8652114cd262e3b5ad35ae36995f508a3df7e81dcb0afe3a04e363a3ef1c42c"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 13144,
+      "bytes": 1103,
+      "sha256": "0f41859bd161fd058d5d497e0f970cba8d91809c39e672da75a69c5be76ec3bc"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 481,
+      "bytes": 11006,
+      "sha256": "a8652114cd262e3b5ad35ae36995f508a3df7e81dcb0afe3a04e363a3ef1c42c"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 13144,
+      "bytes": 1103,
+      "sha256": "0f41859bd161fd058d5d497e0f970cba8d91809c39e672da75a69c5be76ec3bc"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 481,
+      "bytes": 11006,
+      "sha256": "a8652114cd262e3b5ad35ae36995f508a3df7e81dcb0afe3a04e363a3ef1c42c"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 13144,
+      "bytes": 1103,
+      "sha256": "0f41859bd161fd058d5d497e0f970cba8d91809c39e672da75a69c5be76ec3bc"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 481,
+      "bytes": 11006,
+      "sha256": "a8652114cd262e3b5ad35ae36995f508a3df7e81dcb0afe3a04e363a3ef1c42c"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 13144,
+      "bytes": 1103,
+      "sha256": "0f41859bd161fd058d5d497e0f970cba8d91809c39e672da75a69c5be76ec3bc"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 481,
+      "bytes": 11006,
+      "sha256": "a8652114cd262e3b5ad35ae36995f508a3df7e81dcb0afe3a04e363a3ef1c42c"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 13144,
+      "bytes": 1103,
+      "sha256": "0f41859bd161fd058d5d497e0f970cba8d91809c39e672da75a69c5be76ec3bc"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 481,
+      "bytes": 10996,
+      "sha256": "5f4c0ac90e9c6c0471b60bfd3e3166b28a5bdfb962ba2d8a8078524189dc28f9"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 13134,
+      "bytes": 1103,
+      "sha256": "0f41859bd161fd058d5d497e0f970cba8d91809c39e672da75a69c5be76ec3bc"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 481,
+      "bytes": 11001,
+      "sha256": "85ab116b496cd239ea46b02405d5fc25d717856c3e86ede2f6bbd180db795d47"
+    },
+    {
+      "path": "apps/qualification/kernel76-station/source/utils/fwctrl.c",
+      "offset": 13139,
+      "bytes": 1103,
+      "sha256": "0f41859bd161fd058d5d497e0f970cba8d91809c39e672da75a69c5be76ec3bc"
+    }
+  ]
+}
