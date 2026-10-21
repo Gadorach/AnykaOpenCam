@@ -17,19 +17,35 @@ import radio_receipt as receipt
 
 if not __debug__: raise SystemExit("Assertions required")
 b, private, ROOT, BASE, EVIDENCE, SHA = meta.b, meta.private, meta.ROOT, meta.BASE, meta.EVIDENCE, meta.SHA
+HCD_DIAGNOSTIC = re.compile(
+    rb"could not flush|rx\d+, packet/\d+ ready\?|broken !rx_reinit|bogus ep0 stage|"
+    rb"no URB for end 0|RX\d+ dma busy, csr|Rx interrupt with no errors or packet!|"
+    rb"trying to suspend as [^\r\n]* while active|(?:usb|musb)[^\r\n]*(?:error|warning|timeout)|"
+    rb"WARNING:|BUG:|Oops:|Kernel panic", re.IGNORECASE)
 
 
 def load_post():
     return meta.admitted_handoff()[0]
 
 
-def monitor(instance, command, expected_tx, timeout=6):
+def clean_diagnostics(instance, interval_start, expected_tx):
+    current = meta.state(instance, expected_tx)
+    assert not HCD_DIAGNOSTIC.search(instance.raw_since(interval_start, current))
+    return current
+
+
+def monitor(instance, command, expected_tx, timeout=6, diagnostic_start=None):
     allowed = {"radio native-load", "radio state", "radio info"}
     post = load_post()
     assert command in allowed or command in post.QUERIES.values()
     current = meta.state(instance, expected_tx)
     assert current["recent_rx"].endswith("qc07f> ")
+    if command in allowed:
+        assert diagnostic_start is not None
+        clean_diagnostics(instance, diagnostic_start, expected_tx)
     answer, expected_tx = meta.fixed(instance, command.encode() + b"\r", expected_tx, meta.MONITOR, timeout)
+    if command in allowed:
+        clean_diagnostics(instance, diagnostic_start, expected_tx)
     return post.body(answer, command), expected_tx
 
 
@@ -96,6 +112,8 @@ def main():
             current = instance.owner(margin=1800)
             assert current["part"] == meta.PART and current["tx_bytes"] == expected_tx and current["abort_armed"] is True
             assert instance.peer[0] == checkpoint["recorder_pid"] and b.ticks(instance.peer[0]) == checkpoint["start_ticks"]
+            original_peer = instance.peer
+            original_start = checkpoint["start_ticks"]
             instance.epoch_cursor = checkpoint["rx_bytes"]
             current = meta.state(instance, expected_tx)
             interval_start = current["rx_bytes"]
@@ -106,10 +124,13 @@ def main():
             before_rows, before_memory, expected_tx = idle_inventory(instance, expected_tx, post)
             assert before_rows["boot_id"].strip() == original_runtime["boot_id"].strip()
             before_metadata, expected_tx = metadata_roundtrip(instance, expected_tx)
-            instance.owner(margin=1800)
+            refreshed = instance.owner(margin=1800)
+            assert instance.peer == original_peer and b.ticks(original_peer[0]) == original_start
+            assert refreshed["part"] == meta.PART and refreshed["abort_armed"] is True and refreshed["tx_busy"] is False
             meta.state(instance, expected_tx)
+            clean_diagnostics(instance, interval_start, expected_tx)
             print("Fresh owned idle/descriptor/FD admission passed; one native-load with automatic RAM RUN", flush=True)
-            raw, expected_tx = monitor(instance, "radio native-load", expected_tx, timeout=600)
+            raw, expected_tx = monitor(instance, "radio native-load", expected_tx, timeout=600, diagnostic_start=interval_start)
             parsed = receipt.parse_loader(raw)
             instance.log("native_load_complete_transcript", transcript=raw, summary=parsed)
             # Passive settling is not proof of readiness; following actual
@@ -119,17 +140,16 @@ def main():
             if not current["recent_rx"].endswith("qc07f> "):
                 answer, expected_tx = meta.fixed(instance, b"\r", expected_tx, meta.MONITOR, 5)
                 assert answer.endswith(meta.MONITOR)
-            state_text, expected_tx = monitor(instance, "radio state", expected_tx)
+            state_text, expected_tx = monitor(instance, "radio state", expected_tx, diagnostic_start=interval_start)
             assert receipt.parse_application_state(state_text)
-            info_text, expected_tx = monitor(instance, "radio info", expected_tx)
+            info_text, expected_tx = monitor(instance, "radio info", expected_tx, diagnostic_start=interval_start)
             identity = receipt.parse_firmware_info(info_text)
             instance.log("application_identity_raw_private", state=state_text, info=info_text)
             after_metadata, expected_tx = metadata_roundtrip(instance, expected_tx)
             after_rows, after_memory, expected_tx = idle_inventory(instance, expected_tx, post)
             assert before_rows["boot_id"].strip() == after_rows["boot_id"].strip()
             final = meta.state(instance, expected_tx)
-            interval = instance.raw_since(interval_start, final)
-            assert not re.search(rb"(?i)could not flush|(?:usb|musb)[^\r\n]*(?:error|warning|timeout)|BUG:|Oops:|Kernel panic", interval)
+            clean_diagnostics(instance, interval_start, expected_tx)
             record = {"utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
                       "state": "RADIO76_FUNCTIONAL_NATIVE_FULLSIZE_LOAD_IDENTITY_RETIREMENT_PASS",
                       "image_sha256": SHA, "part": meta.PART, "loader": parsed, "identity": identity,

@@ -66,9 +66,14 @@ def simulate(fault=None):
         def __init__(self, *args):
             self.peer = (123, 1000, 1000); self.tx = initial_tx + int(fault == "entry_TX")
             self.raw = bytearray(b"x" * 50); self.recent = "qc07f> "; self.command = ""; self.pending = b""
-            self.calls = []; self.load_count = 0; instances.append(self)
+            self.calls = []; self.load_count = 0; self.owner_calls = 0; instances.append(self)
         def snapshot(self): return {"part": t.meta.PART, "tx_busy": False, "tx_bytes": self.tx, "rx_bytes": len(self.raw), "recent_rx": self.recent, "abort_armed": True}
-        def owner(self, **kwargs): return self.snapshot()
+        def owner(self, **kwargs):
+            self.owner_calls += 1
+            if self.owner_calls == 2 and fault == "changed_owner": self.peer = (456, 1000, 1000)
+            value = self.snapshot()
+            if self.owner_calls == 2 and fault == "lost_catch": value["abort_armed"] = False
+            return value
         def check_stream(self): return self.snapshot()
         def raw_since(self, offset, state): return bytes(self.raw[offset:state["rx_bytes"]])
         def send(self, wire, reason):
@@ -79,7 +84,11 @@ def simulate(fault=None):
         def wait(self, marker, start, timeout, **kwargs):
             command = self.command
             if command == "shell": answer = b"\r\n# "
-            elif command == "exit": answer = b"\r\nRAM-only shell returned to monitor\r\nqc07f> "
+            elif command == "exit":
+                answer = b"\r\nRAM-only shell returned to monitor\r\nqc07f> "
+                if fault == "source_warning_before": answer = b"\r\n[ 1.000000] musb_rx_reinit 565: rx1, packet/512 ready?\r\n" + answer
+                if fault == "recognized_warning_before": answer = b"\r\n[ 1.000000] musb: warning synthetic\r\n" + answer
+                if fault == "broken_before": answer = b"\r\n[ 1.000000] musb_ep_program 878: broken !rx_reinit, ep1 csr 1234\r\n" + answer
             elif command.startswith("echo K76MD_BEGIN_"):
                 nonce = command.split("K76MD_BEGIN_", 1)[1][:32]
                 lines = [f"K76MD_BEGIN_{nonce}", "FDS"] + [f"lrwx------    1        64 {i} -> /dev/console" for i in range(4)] + ["FD_RC:0"]
@@ -93,12 +102,14 @@ def simulate(fault=None):
                 if fault == "load_timeout": raise TimeoutError("synthetic")
                 value = samples.loader()
                 if fault == "bad_loader": value = value.replace("RESULT0x00000804", "RESULT0xffffff92", 1)
+                if fault == "warning_after_load": value += "\n[ 2.000000] WARNING: CPU: 0 PID: 1 at musb"
                 answer = (value + "\r\nqc07f> ").encode()
                 if fault == "intervening_TX": self.tx += 5
             elif command == "radio state":
                 value = "1a2b07001000020000ff0000000000fd"
                 if fault == "bad_state": value = value.replace("00ff00", "000000")
                 answer = ("RADIO BOOT STATE QUERY TX RESULT 0x00000014\nRADIO RX RESULT 0x00000010\nRADIO RX BYTES " + value + "\nRADIO BOOT QUERY CHECK/CMD/COOKIE MATCH, RESULT 0x000000ff\nRADIO STATE APPLICATION\nqc07f> ").encode()
+                if fault == "warning_after_state": answer = answer.replace(b"qc07f> ", b"[ 3.000000] musb: timeout synthetic\nqc07f> ")
             elif command == "radio info":
                 value = bytearray.fromhex("1a2b0301240001002b001800") + bytearray(24)
                 struct.pack_into("<IIHH", value, 12, 0x02010001, 22118, 0x8400, 1)
@@ -145,6 +156,28 @@ class Trial(unittest.TestCase):
     def test_foreign_HOLD_unchanged(self):
         answer = simulate("foreign_HOLD")
         self.assertEqual(answer["HOLD"], "FOREIGN"); self.assertFalse(answer["PASS"]); self.assertEqual(answer["load_count"], 0)
+
+    def test_owner_repin_and_preload_warnings_stop_before_first_effect(self):
+        for fault in ("changed_owner", "lost_catch", "source_warning_before", "recognized_warning_before", "broken_before"):
+            with self.subTest(fault=fault):
+                answer = simulate(fault)
+                self.assertIsNotNone(answer["error"]); self.assertTrue(answer["HOLD"]); self.assertFalse(answer["PASS"])
+                self.assertEqual(answer["load_count"], 0)
+                self.assertFalse(any(c.startswith("radio ") for c in answer["calls"]))
+
+    def test_interquery_warnings_prevent_next_active_query(self):
+        for fault, disallowed in (("warning_after_load", "radio state"), ("warning_after_state", "radio info")):
+            with self.subTest(fault=fault):
+                answer = simulate(fault)
+                self.assertIsNotNone(answer["error"]); self.assertTrue(answer["HOLD"]); self.assertFalse(answer["PASS"])
+                self.assertEqual(answer["load_count"], 1); self.assertNotIn(disallowed, answer["calls"])
+
+    def test_source_based_diagnostic_forms(self):
+        for text in ("Could not flush host TX4 fifo", "musb_rx_reinit 565: rx1, packet/512 ready?",
+                     "broken !rx_reinit, ep1 csr 12", "bogus ep0 stage 3", "no URB for end 0",
+                     "RX1 dma busy, csr 4", "Rx interrupt with no errors or packet!",
+                     "trying to suspend as a_host while active", "WARNING: CPU: 0", "Oops:", "Kernel panic"):
+            self.assertTrue(t.HCD_DIAGNOSTIC.search(text.encode()), text)
 
 
 if __name__ == "__main__": unittest.main()

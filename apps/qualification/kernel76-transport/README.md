@@ -27,7 +27,7 @@ python3 -B apps/qualification/kernel76-transport/test_metadata21a.py
 python3 -B apps/qualification/kernel76-transport/test_trial21a.py
 ```
 
-The13 current unittest methods contain grouped negative cases and full trial-main
+The16 current unittest methods contain grouped negative cases and full trial-main
 in-memory fakes. Metadata admission tests cover receipt/checkpoint/source-binding
 failures before import, while trial fakes exercise complete/fault/HOLD paths with
 at most one load. This is HOST proof, **not native acceptance**.
@@ -39,6 +39,13 @@ passing earlier tests. Both were corrected before any native metadata/load use.
 The first historical corroboration assumed1185 complete logged ACKs; actual text
 has1184 complete and one truncated header, retained as failure evidence. No repair
 or dropped-line filtering is used to turn that old transcript into a strict PASS.
+
+A further independent whole-trial review reproduced silent peer repinning and
+missed/late HCD-warning rejection. The corrected wrapper freezes the original peer/
+start across owner refresh and fences source-real diagnostics before each effect
+and after each returned active transaction. New fixtures require zero radio
+commands on pre-load warnings/owner loss and no next query after an inter-query
+warning. These corrections remain source-review-gated before native execution.
 
 Qualification review/evidence:
 `docs/qualification-plans/kernel76-transport-20261021/`.
