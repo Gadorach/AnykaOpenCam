@@ -24,7 +24,7 @@ a self-contained public firmware release or a product network service.
   preserving the exact original nonempty failed-trial HOLD. No radio or reset
   command, retry or successful-trial reinterpretation is part of this reader.
 - `identity21a.py`: separate one-state/conditionally-one-info candidate after the
-  native cached retirement, pending independent controller review. Exact historical
+  native cached retirement, with conditional independent source GO. Exact historical
   event boundaries/native checkpoint/completion, immutable HOLD, internal wire/TX/
   phase ledger, active-endpoint warnings and saved-retirement RX topology checks
   gate pre-RO → state → conditional info → post-RO. No reload/RUN or reset path.
@@ -91,8 +91,8 @@ is not current hardware admission or original-trial clearance.
 
 The one cached retirement subsequently passed natively with the original failed
 HOLD preserved. Application identity remains unverified. The separate identity
-candidate's author reports48 HOST methods PASS; independent exact-controller
-review remains pending. Parent offline native-checkpoint/event lineage matches;
+candidate and parent reproduce48 HOST methods PASS; independent exact-controller
+review returned conditional SOURCE GO with62 additional checks. Parent offline native-checkpoint/event lineage matches;
 that is not a live owner/runtime admission. A parent30s HOST reproduction timeout
 is retained; the longer bounded run then passed all48 methods. No target controller ran.
 

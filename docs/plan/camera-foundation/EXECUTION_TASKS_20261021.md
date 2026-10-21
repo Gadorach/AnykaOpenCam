@@ -1,5 +1,11 @@
 # Active execution ledger — remaining foundation work
 
+**Identity exact-source review:** `IDENTITY_CONTROLLER_REVIEW.md` returned
+conditional SOURCE GO for c3c19a12… (48 HOST methods +62 independent checks).
+Original failed151-ACK HOLD remains. Fresh parent source/lineage/owner/catch
+coverage>=600s and full pre-RO runtime gates are still required before the one
+separate state/conditional-info operation; no target result is implied.
+
 **Identity candidate06:36UTC:** isolated lane delivered exact controller
 `identity21a.py` c3c19a12… and23 new tests (48 total HOST methods PASS reported by
 author); initial fixture failure preserved, helpers unchanged. Parent source read

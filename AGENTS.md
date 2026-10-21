@@ -1,5 +1,15 @@
 # Project instructions for local agents
 
+## Latest review — exact identity conditional SOURCE GO; fresh gates next
+
+IDENTITY_CONTROLLER_REVIEW48HOSTmethods+62independentchecksPASS/I1-I4closed,
+exactc3c19a12…conditionalGOforONEpreRO/state/conditionalinfo/postRO. Maincandidate
+f094442local; originalfailedHOLDmustremainbyteexact. No targetTXsince06:00RO.
+DoNOTrunwithoutfreshsoleowner/PIDstart/peer/source/lineage/counter/snapshot/
+catch>=600scoverage+preROruntime/FD/descriptors; declineifshortbefore7:09UTC
+datedcapture. Deadline300/finalcoverage300/statefloor140/info130/RPCreserve10.
+No reload/RUN/fallback/reset/module/network/mediaqueue; RP04HOLDunchanged.
+
 ## Latest HOST — parent identity suite48methodsPASS; independent review still pending
 
 Hostshellsh_15d2cd2670018cEDxVmLA3OL4Zcompleted48methodsPASS, prior30stimeout
