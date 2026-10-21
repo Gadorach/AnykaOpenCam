@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-21T07:28:08.018834+00:00",
+  "state": "OFFLINE_FINAL_CAPTURE_TAIL_AUDIT_ONLY",
+  "additional_RX_bytes_after_final_identity_checkpoint": false,
+  "new_HCD_diagnostic_in_recorded_tail": false,
+  "new_active_endpoint_warning_in_recorded_tail": false,
+  "new_kernel_or_Uboot_marker_in_recorded_tail": false,
+  "new_topology_transition_in_recorded_tail": false,
+  "final_TX_equals_last_identity_checkpoint": true,
+  "private_bytes_and_digests_not_exported": true,
+  "no_current_runtime_or_recovery_authority_claim": true,
+  "target_RPC_status_network_or_serial_IO": false
+}

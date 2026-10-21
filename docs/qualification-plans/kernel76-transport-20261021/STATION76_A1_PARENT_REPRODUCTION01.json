@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-21T07:29:32.050576+00:00",
+  "state": "A1_PARENT_HOST_REPRODUCTION_PASS_INDEPENDENT_REVIEW_PENDING_ATTACH_NO_GO",
+  "author_run": "run06",
+  "parent_run": "run07",
+  "exact_public_input_pins_match": true,
+  "only_two_original_files_changed": [
+    "utils/fwctrl.c",
+    "utils/fwctrl.h"
+  ],
+  "new_pure_header": "utils/control_receipt.h",
+  "HOST_assertions_each_optimized_and_ASan_UBSan": 150705,
+  "runtime_mutants_compiled_and_caught": 16,
+  "all_recorded_command_output_hashes_reverified": true,
+  "author_result_sha256": "b61eb01441941bb1849996f9c8eb0d86a9a9717fbd57f1936fb43e6c97a08176",
+  "parent_result_sha256": "834292e27685d0d267ecf171584b7c0bd5b98b2ea5d55471561ae5c01605e012",
+  "original_invalid_identity_and_short_payload_failure_retained": true,
+  "no_ARM_module_kernel_build_or_staging": true,
+  "no_target_private_input_network_or_device_discovery_IO": true,
+  "original_trial_HOLD_not_modified": true,
+  "full_S4_and_attach_S1_S2_S3_S5_S6_still_NO_GO": true
+}

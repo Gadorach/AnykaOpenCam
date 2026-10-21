@@ -1,5 +1,19 @@
 # Project instructions for local agents
 
+## Latest host actual —21a EXPIRED/finalized; no UART owner/socket/recovery arm
+
+Parent07:24UTC HOSTONLY: oldexactPIDstartdead/adapterpresentactuallyunowned/
+socketabsent/noactiveoperationlockholder; privatefinalmanifest+2filesfullsizehash
+verified, nodigest/rawexport. FinalTX=6:43identitycheckpoint; noextraRXafterthat.
+OriginalfailedtrialHOLDkept. No UART/RPC/TX/reset/renewal/deviceconfigeffect.
+Currenttargetpower/runtime/WDidleUNQUERIED(lastdirect06:43RAM76APPidle); noold
+PID/IP/07:09UTCcaptureauthority. Freshphysical/owner/runtime/catchbeforelaterHW.
+A1isolatedsourcecandidate67baseline/65unchanged+2edited+newheaderdelivered;
+authorrun06+parentrun07match/150705assertionsopt+san/16mutantscaught. Independent
+A1reviewactive/sourcefrozen; ingressURBstatus/event+S1S2S3S5S6OPEN/fullattachNOGO.
+No ARMbuild/staging/network/driver/MTU/resetqueue. Mainlocal1f6043d(indexpreserved/
+nopush); RP04combined/adoption/productHOLD unchanged. SeeCAPTURE21A_CLOSEOUT.md.
+
 ## Latest blocker — station76 EXECUTION NO-GO; isolated A1 SOURCE/HOST correction selected
 
 STATION76_ENTRY_REVIEW98staticchecks/67sourcepinsPASS, initialcollectorfalse

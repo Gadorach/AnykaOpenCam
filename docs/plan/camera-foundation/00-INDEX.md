@@ -76,6 +76,13 @@ review is EXECUTION NO-GO (async guard/timeouts/recovery/parser/lifecycle gaps);
 parent selected isolated A1 control/FWINFO SOURCE/HOST correction only, no target
 or ARM build. See `STATION76_ENTRY_REVIEW.md`. Combined memory/product gates open.
 
+21a capture has since **expired/finalized**: parent07:24UTC host check found no old
+recorder, adapter owner or socket, and verified private final manifest/raw/events
+sizes/hashes. No extra RX or TX followed the06:43 identity checkpoint. Current
+target runtime/power is unqueried; no receive owner/catch recovery is inherited.
+A1 author+parent HOST reproduction passed; independent review is pending and
+full attach remains NO-GO. See `CAPTURE21A_CLOSEOUT.md` and the active ledger.
+
 ### Latest request — complete remaining-feature/bug plan, October21 (PLAN ONLY)
 
 Use [REMAINING_FEATURES_AND_BUGS_GATED_PLAN_20261021.md](REMAINING_FEATURES_AND_BUGS_GATED_PLAN_20261021.md)

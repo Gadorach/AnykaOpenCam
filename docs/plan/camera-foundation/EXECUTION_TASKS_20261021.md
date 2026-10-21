@@ -1,5 +1,18 @@
 # Active execution ledger — remaining foundation work
 
+**Capture21a EXPIRED/host closeout07:24UTC:** exact old recorder ended, adapter
+actually unowned/socket absent; private final manifest and both files full-size/
+hash verified. Final TX equals06:43 identity checkpoint and recorded RX has no later
+bytes. No current receive owner/catch recovery or hardware admission exists; target
+current power/runtime unqueried (last direct06:43 idle RAM76/APPLICATION). Original
+failed HOLD retained. See `CAPTURE21A_CLOSEOUT.md`; no reset/renewal/TX occurred.
+
+**A1 SOURCE/HOST:** isolated67-file baseline (65 unchanged) plus two control-source
+edits/new header delivered;150705 assertions each optimized/ASan/UBSan and16/16
+runtime mutants passed in author run06 and parent run07 with matching input pins.
+Independent narrow A1 review pending. Original ingress trimming/URB status/events
+and S1/S2/S3/S5/S6 remain open; no ARM build, staging or full attach GO.
+
 **Station76 entry EXECUTION NO-GO:** independent review found unguarded asynchronous
 init,10s TX waits versus5s watchdog, automatic recovery/re-init, control/FWINFO/RX
 and retirement gaps; default DHCP also alters default routes/DNS.98 static checks/

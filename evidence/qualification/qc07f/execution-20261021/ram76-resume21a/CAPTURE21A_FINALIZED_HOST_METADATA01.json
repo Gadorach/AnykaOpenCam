@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-21T07:24:38.372551+00:00",
+  "state": "CAPTURE21A_EXPIRED_FINALIZED_FILES_SIZE_HASH_VERIFIED",
+  "old_exact_recorder_PID_start_still_alive": false,
+  "adapter_present": true,
+  "adapter_unowned_fuser_actual": true,
+  "control_socket_absent": true,
+  "private_final_manifest_and_two_files_size_hash_verified": true,
+  "final_TX_equals_separate_identity_checkpoint_no_later_target_send": true,
+  "original_failed_HOLD_retained": true,
+  "no_active_operation_lock_holder_at_check": true,
+  "no_private_raw_data_or_digests_exported": true,
+  "last_observed_target_state": "06:43UTC_RAM76_APPLICATION_idle_NOT_current_runtime_proof",
+  "current_UART_receive_owner_or_recovery_arm": "NONE_OBSERVED",
+  "target_UART_RPC_network_or_device_configuration_IO": false
+}
