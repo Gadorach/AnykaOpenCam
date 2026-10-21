@@ -1,5 +1,37 @@
 # Project instructions for local agents
 
+## Active source — P1 attach-only RX exclusion worker; hardware untouched
+
+OneSOURCE/HOSTworkerownsnewapps/qualification/kernel76-station-attach-rx/+
+STATION76_ATTACH_RX_P1_CANDIDATE.md/station-attach-rx-p1-host01 only. Source68-file
+A2bderivative, primarilyrx.c outertypegate; acceptedA1/A2a/A2bimmutable. Parent
+selectedP1only; P2-P5remainplans/noimplementation/ARMbuild/staging/HWqueue.
+No currentphysical/runtime/owner/recoveryadmission;21aexpiredfinalized/noowner/
+socket/catchobserved07:24,lasttarget06:43datedAPPidle. Original151ACKfailedHOLD
+kept. Mainlocalb940ffe/indexpreserved/nopush; no historicalPID/IP/timerauthority.
+
+## Next selected — P1 attach-only RX exclusion SOURCE/HOST, remaining packets plans
+
+STATION76_ATTACH_REMAINING_SOURCE_PLAN readcomplete/204sourcepinsunchanged.
+ParentselectsONLYP1afterA2bGO: fresh68-filederivativeprimarilyrx.c, positive
+CMD/CMD2/EVENT/EVENT2 gatebeforelegacydispatch/state/credit/test/BT/rawproc paths;
+allothertypesexistingerrorlatch, noinnergrammar/payloadprobing. RealpathHOST
+all256types/sentinels/mutants/parent+independentreviewrequired. P2firsterror/
+init/effects,P3ownedboundedTX,P4lifetime,P5guardedrunnerremainPLANSnotselected
+implementation. No ARMbuild/staging/attach/HWqueue/fullS4GO. Old21acaptureexpired,
+noowner/socket/armedcaptureobserved07:24; currentpower/runtimeUNKNOWN(last06:43
+APPidle), original151ACKfailedHOLDkept. Sourceonly/freshadmissionbeforeanyHW.
+
+## Latest source — A2b committedb940ffe; remaining attach PLAN review only
+
+Exactreviewedeventsource/tests/provenance/narrowGOb940ffemainlocal/indexkept/
+nopush. A1/A2asealed. RemainingattachSOURCE-onlyplanworkeractive, nofurther
+implementation/ARMbuild/staging/nativequeue. FullS4/non-event/BT/rawproc/
+S1S2S3S5S6OPEN; original151ACKnativeFAILEDHOLDunchanged. Currenttargetpower/
+runtimeUNKNOWN(last06:43RAM76APPidle);21aexpiredfinalized/noowner/socket/armed
+captureobserved07:24. No oldPID/IP/timerauthority; freshphysical/owner/runtime/
+recoverybeforeanyfutureHW. Watchdogpreferredonlywhenseparatelyneeded/admitted.
+
 ## Latest review — A2b narrow SOURCE/HOST GO; remaining attach source plan pending
 
 STATION76_EVENT_A2B_REVIEW exactevent.c/rx.cGOextent+consumer suppression/denial

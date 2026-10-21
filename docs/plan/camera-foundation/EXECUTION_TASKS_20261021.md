@@ -1,5 +1,25 @@
 # Active execution ledger — remaining foundation work
 
+**P1 SOURCE/HOST lane active:** one isolated worker owns only new
+`apps/qualification/kernel76-station-attach-rx/` and its candidate/evidence. It is
+implementing the selected outer-RX exclusion; accepted A1/A2a/A2b remain sealed.
+No P2–P5 implementation, ARM/module build, staging or target operation is queued.
+
+**Remaining attach source plan delivered:**204 source pins retained; P1 RX outer-
+type exclusion is the one smallest next increment. Parent selects **P1 SOURCE/HOST
+only** after accepted A2b: fresh isolated68-file derivative, primarily rx.c, admit
+only CMD/CMD2/EVENT/EVENT2 before legacy consumer/state mutation, deny all other
+types through the existing latch. No grammar is invented/qualified by exclusion.
+P2 effects/recovery/init, P3 finite owned TX, P4 allocation/retirement and P5 helper/
+controller remain plans, not combined implementation/build/native approval. See
+`STATION76_ATTACH_REMAINING_SOURCE_PLAN.md`. Full S4/S1–S6/HW gates unchanged.
+
+**A2b committed locally `b940ffe`:** exact reviewed event derivative/source/tests/
+provenance and independent narrow GO, ordinary index preserved, no push. A1/A2a
+remain sealed. Remaining-attach SOURCE plan review continues only; no further
+implementation, ARM build, staging or hardware operation is queued. Full S4 and
+S1/S2/S3/S5/S6 gates remain open; original failed native HOLD is unchanged.
+
 **A2b narrow SOURCE/HOST GO:** independent exact-pin review reproduced event/
 A2a/A1 suites,39 ordered probes/656 supplemental assertions per mode and11/11
 compiled runtime mutants (including a protected-payload read fault). Exact68-file

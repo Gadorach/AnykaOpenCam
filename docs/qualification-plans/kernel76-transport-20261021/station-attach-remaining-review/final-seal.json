@@ -1,0 +1,64 @@
+{
+  "utc": "2026-10-21T09:01:04.710420+00:00",
+  "argv": [
+    "docs/qualification-plans/kernel76-transport-20261021/station-attach-remaining-review/final_seal.py"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "python": "3.14.7 (main, Aug 14 2026, 06:38:32) [GCC 16.2.1 20260810]",
+  "scope": "SOURCE_PLAN_STATIC_CUSTODY_ONLY_NO_IMPLEMENTATION_HOST_TEST_BUILD_HARDWARE",
+  "all_204_original_source_pins_and_original_public_inputs_rechecked": true,
+  "A2b_new_independent_review_report_matches_review_seal": true,
+  "A2b_dependency": "EXACT_PIN_NARROW_GO_READ_NOT_BEHAVIORALLY_REPRODUCED_HERE",
+  "next_recommendation": "P1_ATTACH_ONLY_RX_TYPE_EXCLUSION_REQUIRES_PARENT_SELECTION",
+  "preserved_tool_failures": [
+    "Initial static read used nonexistent utils/bootdl.c; actual file utils/fwdl.c subsequently read.",
+    "Two report update patches refused mismatching context atomically; no input changed. Correct exact-context patch then applied only to the owned new report."
+  ],
+  "files": [
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/STATION76_ATTACH_REMAINING_SOURCE_PLAN.md",
+      "offset": 0,
+      "bytes": 39968,
+      "sha256": "859169c5cd87f342b0e75a7f4808964df335d66eee21b66f8159ac897618c2a6"
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/STATION76_EVENT_A2B_REVIEW.md",
+      "offset": 0,
+      "bytes": 19342,
+      "sha256": "225e06c41124809017655493db879f6ed29f85684921ee77608162cf6f4a92f9"
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-review01/review-seal.json",
+      "offset": 0,
+      "bytes": 33994,
+      "sha256": "5e3e5dd17d2967ca8fd0f68f8ebbe41d5d03c9fdf17ef4cf0f784f55d9c19cf7"
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-remaining-review/audit_public_source.py",
+      "offset": 0,
+      "bytes": 6110,
+      "sha256": "86c01a56ccf46d0013f07e783cc73b1ccb2177567e9f071f4794f8af79ecc31f"
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-remaining-review/final_seal.py",
+      "offset": 0,
+      "bytes": 3612,
+      "sha256": "d06fc8dfc26e12e199bf6ff70f8ba40d1d9b026ab42bdf4aeec892b561fea281"
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-remaining-review/public-excerpts.json",
+      "offset": 0,
+      "bytes": 122687,
+      "sha256": "d1617170be058750601b1da97d02528d1357c787e26176d62e8d7324b0f5673b"
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-remaining-review/reader-pins.json",
+      "offset": 0,
+      "bytes": 53900,
+      "sha256": "96290f796851f175ae6e15d88135a183fd1fcbe6f4d1c48de160ae1d0d72f0fd"
+    }
+  ],
+  "original_HOLD_not_accessed_or_modified": true,
+  "no_target_network_private_input_binary_build_test_or_Git_operation": true,
+  "no_HARDWARE_queue": true
+}

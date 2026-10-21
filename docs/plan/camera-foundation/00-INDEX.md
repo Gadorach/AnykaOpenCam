@@ -83,8 +83,9 @@ target runtime/power is unqueried; no receive owner/catch recovery is inherited.
 A1 local control/FWINFO, A2a original ingress/status and A2b bounded event
 suppression/denial each have narrow independent SOURCE/HOST GO, with sealed
 derivatives and parent reproductions. Full S4/lifecycle/ARM build/attachment remain
-NO-GO. Remaining attach-profile/TX/recovery/lifetime/guard source planning is
-pending, not implementation/build/native approval. No target queue or current
+NO-GO. Remaining attach source plan is delivered; parent selected only its P1
+outer-RX-family exclusion SOURCE/HOST increment. Subsequent TX/recovery/lifetime/
+guard packets remain plans, not implementation/build/native approval. No target queue or current
 receive/catch recovery authority. See `CAPTURE21A_CLOSEOUT.md` and active ledger.
 
 ### Latest request — complete remaining-feature/bug plan, October21 (PLAN ONLY)
