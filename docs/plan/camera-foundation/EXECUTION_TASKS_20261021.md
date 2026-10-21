@@ -4,23 +4,26 @@
 fixed read-only idle postcheck PASS04:37UTC. Target ON at idle RAM76 monitor;
 same private21a/candidate, PID1/UID0/CMA16MiB, volatile mounts/modules empty,
 ISP idle/watchdog inactive/UART clean. Radio/metadata trial has NOT run; corrected
-host candidates13 unittest methods PASS, independent correction/trial review
-pending. Initial metadata FD/handoff NO-GO was source-only and preserved.
+host candidates17 unittest methods PASS, independent core-diagnostic closure review
+conditional SOURCE GO05:20UTC. Fresh hardware gates remain mandatory.
+Metadata FD/handoff and later owner/diagnostic NO-GO reports are preserved;
+all were source-only, with no native metadata or radio trial issued.
 
-**Active hardware04:17UTC:** one fixed RAM76 resume21a upload/boot launched after
-fresh cold gate and host/source checks. **No concurrent UART/RPC/status probes**;
-await completion. User ON/UART connected; fresh sole capture21a is bounded through
-07:09UTC DATED/revalidate. No radio trial or current76 runtime PASS claimed yet.
-Recipe/transport frozen; failures retain HOLD, no automatic repeat.
+**Completed hardware04:36–37UTC:** the one fixed RAM76 resume21a upload/boot and
+approved idle postcheck completed. No transfer lease is active. User ON/UART
+connected; private capture21a was bounded through07:09UTC DATED/revalidate before
+any later operation. The native baseline is narrow, not radio/product acceptance.
 
 **New recovery steering:** user requests camera watchdog reboots for unattended
 recovery instead of routine manual power cycles. Prefer reviewed prearmed operation
 guards or one deliberate watchdog reset from a known controlled state, with fresh
 catch armed beforehand and actual reset/U-Boot observation. Do not interrupt the
-active transfer, clear HOLD before proven reset/retirement, equate SoC reset to
+an active transfer, clear HOLD before proven reset/retirement, equate SoC reset to
 radio/rail power cycling, or automatically retry download/RUN/effects. Manual OFF
 is fallback only when the watchdog/control path is unavailable or fails. Exact
-source admission is under review before any new deliberate reset command.
+source review is conditional GO for known-idle `wdt reset`; current ownership,
+already-armed catch and observed reset/retirement gates remain mandatory. No reset
+has been needed or issued.
 
 **ACTIVE — user approved execution2026-10-21.** Methods/requirements:
 [detailed gated plan](REMAINING_FEATURES_AND_BUGS_GATED_PLAN_20261021.md).
@@ -38,10 +41,10 @@ or automatic push/publication. No reset, blanket staging or historical data remo
 
 Current first packet: RP-00 baseline/admission; concurrent disjoint source lanes
 RP-02 radio entry and RP-04 memory decision, parent review. Parent alone hardware.
-User freshly reports camera **OFF, both UART signals connected**, and will wait.
-Host-only03:49UTC discovery: intended adapter present/unowned, socket absent,
-operation HOLD empty and recorder source matches. This is not a runtime proof or
-current recovery arm. No target byte sent; old20c authority is expired.
+Initial03:49UTC admission found the adapter unowned/socket absent/HOLD empty;
+user then confirmed OFF/UART connected followed by ON under fresh21a capture.
+The subsequent04:36–37UTC RAM76 boot/idle evidence supersedes that initial state,
+not the requirement to revalidate each later operation. Old20c authority is expired.
 
 ## Packet ledger
 
@@ -119,3 +122,17 @@ or later healthy-status clearance. No second UART sender during transfers or GUI
   exact source/receipt/checkpoint binding defects found by review were corrected
   before target use; independent re-review pending. No mode/toggle/MTU proof or
   memory-layout admission is claimed.
+
+### Subsequent source corrections — no native trial yet
+
+- Local main commits: `07f945c` boot/idle evidence, `0ecabd8` trial candidates,
+  `31cf645` owner and diagnostic fences. Ordinary index preserved; no remote/push.
+- Review reproduced silent owner repinning, late warning refusal and missing
+  compiled MUSB host/core diagnostic forms. Narrow corrections freeze the original
+  peer/start and reject diagnostics before each radio effect and after each returned
+  active transaction. Current17 host methods pass, including zero-radio-command
+  refusal for bogus RESUME/unhandled DISCONNECT/Babble. Independent closure review
+  returned conditional SOURCE GO05:20UTC; no source result is native admission or
+  permission to reset/retry.24 diagnostic-placement and13 owner/warning probes
+  independently refused correctly; no native trial result yet.
+- RP-04 combined memory remains HOLD; no guard/reserve/CMA/allocator change.

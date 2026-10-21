@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-21T05:11:35.020062+00:00",
+  "verdict": "NO_GO_residual_C2_compiled_core_diagnostics_missed",
+  "source_pins_unchanged": true,
+  "prior_reports_failures_unchanged": true,
+  "target_operation": false,
+  "private_input_access": false,
+  "evidence_sha256": {
+    "TRIAL_FINAL_REVIEW.md": "d874661da903ef74963b334235f18b89799107d522c8ef624d08dcc40ac4a312",
+    "final-review/result.json": "7a6391cda062b8ffde9286e998359520d73752007d970c3789da755f81bf18ab",
+    "final-review/review.py": "0a44b70e5436de4f9ead6d0d109efc794b672c747b03980e7aa16780eca5f4e6",
+    "final-review/test_metadata21a.py.log": "bc624a9b9d739e64072754f42f0dd288a4b0f156b053b4f65c5349c789eac0b4",
+    "final-review/test_radio_receipt.py.log": "4e646379570855e35743959114efd3681c9bad940db3ba515fa0a9d03668ff8d",
+    "final-review/test_trial21a.py.log": "4be577f329e5b1339c6e1a3db11513081546b3efaf40c796037eb871a375af36"
+  }
+}

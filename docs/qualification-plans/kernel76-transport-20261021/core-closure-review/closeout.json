@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-21T05:21:29.329508+00:00",
+  "verdict": "CONDITIONAL_SOURCE_GO_one_whole_functional_trial_only",
+  "reviewed_sources_unchanged": true,
+  "prior_reports_and_failures_unchanged": true,
+  "target_operation": false,
+  "private_input_access": false,
+  "evidence_sha256": {
+    "CORE_DIAGNOSTIC_CLOSURE_REVIEW.md": "60a955bf0870fefb39c1b348ffa397f9805a0c507940e6c0e13a730c6dbddcb5",
+    "core-closure-review/review.py": "4b250b05fa1fb377fc35eb2e3a0fca5259faf9a849cf56646c0c2ddb58742f75",
+    "core-closure-review/result.json": "e92031862d02a13fd9b44f8583fe9c5c50463137871ca79cbc20161006e408df",
+    "core-closure-review/unittest-discover.log": "f105c15a292be540419422a8731f76b70c607a1763a222caeacbfb8d755350f0"
+  }
+}

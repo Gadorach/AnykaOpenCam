@@ -1,0 +1,439 @@
+{
+  "start_utc": "2026-10-21T05:20:02.107490+00:00",
+  "end_utc": "2026-10-21T05:20:03.268488+00:00",
+  "python": "3.14.7 (main, Aug 14 2026, 06:38:32) [GCC 16.2.1 20260810]",
+  "collector_sha256": "4b250b05fa1fb377fc35eb2e3a0fca5259faf9a849cf56646c0c2ddb58742f75",
+  "source_sha256": {
+    "apps/qualification/kernel76-transport/metadata21a.py": "f0a0e48969184d8df441d525777bc4ae7110177eaf81016c8ab746c8338b2376",
+    "apps/qualification/kernel76-transport/radio_receipt.py": "4b7d9c1887572a6fc7c7138ab3881c8739a00cbf08b0d8a775ded0465af5125c",
+    "apps/qualification/kernel76-transport/test_metadata21a.py": "b3af84e05f1b1aac3690b3c896b6630f9f4c29e2ededad7ad88eea76d3079118",
+    "apps/qualification/kernel76-transport/test_radio_receipt.py": "0e3d547501cb8a48c77c8be7d344b608ecb747fcb398bba6a581e48a1d6292ff",
+    "apps/qualification/kernel76-transport/test_trial21a.py": "887e94b8280e287a0f3b547c9f8f4a7d88a30cfbbd974d9b4a2e55f0993241f4",
+    "apps/qualification/kernel76-transport/trial21a.py": "6d0ce652d3355baef2e5505e9d2a34813aa1f780289b17268ccb160c4748da9c",
+    "scripts/qc07f_boot.py": "6ec0bd70513d530e64507c934ab1885da0cb547b907673c5162bf01c89f7d985",
+    "scripts/qc07f_private_root_transfer.py": "cb224d3cd8b635774b7e364b07b259d90640b30de269ea07351e767c3f97fa3c",
+    "evidence/qualification/qc07f/execution-20261021/ram76-resume21a/postcheck.py": "3dbf96b9ef84216da89283f19cd09dbca27e45a17d84138c9574112fb06170f0",
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/drivers/usb/musb/musb_core.c": "0b8be0783e244d987284f10d6e87e6173bc29c91458cc7c5f2fe58057b0d63fc",
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/drivers/usb/musb/musb_debug.h": "97ecaaf8f6e067235b8899ad9bd714ec4fef70240f90ea4ee4e9392681730905",
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/drivers/usb/musb/musb_host.c": "76cc145a3493221ee263e9f14cfc94e3c6eda25ade0f41ad7b7d2963f7388bd5"
+  },
+  "only_source_changes_since_final_review": [
+    "apps/qualification/kernel76-transport/test_trial21a.py",
+    "apps/qualification/kernel76-transport/trial21a.py"
+  ],
+  "trial_minus_three_new_patterns_equals_previous_exact_pin": true,
+  "prior_reports_and_failures_sha256": {
+    "docs/qualification-plans/kernel76-transport-20261021/METADATA_RECEIPT_REVIEW.md": "1a28d2a08d682e44220923acaf7a2956340118e73eb73005aadb5eccdcdbfc89",
+    "docs/qualification-plans/kernel76-transport-20261021/TRIAL_CORRECTION_REVIEW.md": "913760988fabc0134d47dd85e576be2e878a93edd1c1a89c0b43e4567b1f93ff",
+    "docs/qualification-plans/kernel76-transport-20261021/TRIAL_FINAL_REVIEW.md": "d874661da903ef74963b334235f18b89799107d522c8ef624d08dcc40ac4a312",
+    "docs/qualification-plans/kernel76-transport-20261021/RADIO_ENTRY_REVIEW.md": "c93f9a1162d8fb10097caf41eadbee494fccbadf56d1106c8b0945248ead5f41",
+    "docs/qualification-plans/kernel76-transport-20261021/metadata-review/ack-corroboration-initial-failure.txt": "b169d25fec6cc68d6805952a896ea74a4b3d712c4d1182480b59f61f62444fba",
+    "docs/qualification-plans/kernel76-transport-20261021/metadata-review/ack-corroboration02.json": "14ed7f228e4e3b519eb277602aea569e59ebeff0d94122c77b0233f03cb10d5c",
+    "docs/qualification-plans/kernel76-transport-20261021/metadata-review/collect.py": "afc4beb8a27cf3cb009c0817c410f5c2eb9ab24b4d484a1566d0af230937ce12",
+    "docs/qualification-plans/kernel76-transport-20261021/metadata-review/corroborate_ack.py": "75e76ec986de83459e2867515e43ffc65fca5f7d9f628744a13b0d94c13a8d13",
+    "docs/qualification-plans/kernel76-transport-20261021/metadata-review/corroborate_ack02.py": "1e20732cbd9ea86a477782ad01030a3531dc05fc4c9aab61bccd33f9cfc4e607",
+    "docs/qualification-plans/kernel76-transport-20261021/metadata-review/result.json": "ca74e6417b5c2495f93b0b0aa68d5fc7e9e9184c8c5c783bc97e2e18896dd622",
+    "docs/qualification-plans/kernel76-transport-20261021/metadata-review/review-closeout.json": "4e336c551ae3424c0a9d0a41fe7d9be715ee3b0192b1267b2d9ffc20d5f0d13c",
+    "docs/qualification-plans/kernel76-transport-20261021/metadata-review/test_metadata21a.py.log": "6ed5d06e157baa38a4d118719c2c0761066fadb0dd2d2a0580b3b9e32a6a9f6d",
+    "docs/qualification-plans/kernel76-transport-20261021/metadata-review/test_radio_receipt.py.log": "27139278beff9f3b2a37a98288b11810bb72b140cd1509fe531bd66572f6c763",
+    "docs/qualification-plans/kernel76-transport-20261021/trial-review/closeout.json": "d10f645c8ba5c40fc3948ac16b6fe8291562788ee9744a983003cd14da652fdb",
+    "docs/qualification-plans/kernel76-transport-20261021/trial-review/result.json": "d82d8860cb3e08571034cd2424b761106789652825b2841f7a98218a74edfc01",
+    "docs/qualification-plans/kernel76-transport-20261021/trial-review/run_review.py": "48c8de4cc552916df4ffc20aa7673c6df48389938c35acb2cd1abe4b2846cb49",
+    "docs/qualification-plans/kernel76-transport-20261021/trial-review/test_metadata21a.py.log": "25785170f2b3355da7eb45fba7a09b2548cf91304febd6b97613a096bd96c030",
+    "docs/qualification-plans/kernel76-transport-20261021/trial-review/test_radio_receipt.py.log": "fb5cdf8939d6cbf9cb5504c6a6f3a00c6a71f4dec783901f443b4506a454fddb",
+    "docs/qualification-plans/kernel76-transport-20261021/trial-review/test_trial21a.py.log": "04db6d8948061d58f5bf07556575fdc4fbda3520c412e14582f4cae9695538b6",
+    "docs/qualification-plans/kernel76-transport-20261021/final-review/closeout.json": "ab8022358c0c570f75b7d0f692f7665e727df7f22ec9e9a4f985f156eddd5bb4",
+    "docs/qualification-plans/kernel76-transport-20261021/final-review/result.json": "7a6391cda062b8ffde9286e998359520d73752007d970c3789da755f81bf18ab",
+    "docs/qualification-plans/kernel76-transport-20261021/final-review/review.py": "0a44b70e5436de4f9ead6d0d109efc794b672c747b03980e7aa16780eca5f4e6",
+    "docs/qualification-plans/kernel76-transport-20261021/final-review/test_metadata21a.py.log": "bc624a9b9d739e64072754f42f0dd288a4b0f156b053b4f65c5349c789eac0b4",
+    "docs/qualification-plans/kernel76-transport-20261021/final-review/test_radio_receipt.py.log": "4e646379570855e35743959114efd3681c9bad940db3ba515fa0a9d03668ff8d",
+    "docs/qualification-plans/kernel76-transport-20261021/final-review/test_trial21a.py.log": "4be577f329e5b1339c6e1a3db11513081546b3efaf40c796037eb871a375af36",
+    "docs/qualification-plans/kernel76-transport-20261021/source-review/entry-bind.json": "6aafd05a89e334833824da9afa1878c5a78013be6bd1f58853ab95cd3efbe1bd",
+    "docs/qualification-plans/kernel76-transport-20261021/source-review/inspect_entry.py": "02c0dfbc6e547bab856a4c0ed2a9e53378f14a8ac3cbe6c19537e53ea52127fb",
+    "docs/qualification-plans/kernel76-transport-20261021/source-review/monitor50-selected.disasm": "16f97eef665cb8ea34cd142fc28c22106addbc641f85550de440f09f7d7db1ad",
+    "docs/qualification-plans/kernel76-transport-20261021/source-review/transport-source-pins.json": "b27cca41b561c47aeeae60609fabf1567c953dc1bbd6e280fbd0f3efb92fb1cb"
+  },
+  "prior_reports_and_failures_unchanged": true,
+  "tests": {
+    "argv": [
+      "/usr/bin/python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "apps/qualification/kernel76-transport",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "start_utc": "2026-10-21T05:20:02.115746+00:00",
+    "exit": 0,
+    "methods": 17,
+    "log": "unittest-discover.log",
+    "log_sha256": "f105c15a292be540419422a8731f76b70c607a1763a222caeacbfb8d755350f0"
+  },
+  "full_main_in_memory_probes": {
+    "healthy": {
+      "error": null,
+      "HOLD": "",
+      "PASS": true,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load",
+        "radio state",
+        "radio info"
+      ]
+    },
+    "changed_owner": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 0,
+      "radio_commands": []
+    },
+    "lost_catch": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 0,
+      "radio_commands": []
+    },
+    "peer_uid_refresh": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 0,
+      "radio_commands": []
+    },
+    "peer_gid_refresh": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 0,
+      "radio_commands": []
+    },
+    "start_refresh": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 0,
+      "radio_commands": []
+    },
+    "busy_refresh": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 0,
+      "radio_commands": []
+    },
+    "part_refresh": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 0,
+      "radio_commands": []
+    },
+    "TX_refresh": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 0,
+      "radio_commands": []
+    },
+    "source_warning_before": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 0,
+      "radio_commands": []
+    },
+    "recognized_warning_before": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 0,
+      "radio_commands": []
+    },
+    "broken_before": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 0,
+      "radio_commands": []
+    },
+    "warning_after_load": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load"
+      ]
+    },
+    "warning_after_state": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load",
+        "radio state"
+      ]
+    },
+    "host_resume_before": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 0,
+      "radio_commands": []
+    },
+    "host_resume_after_load": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load"
+      ]
+    },
+    "host_resume_after_state": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load",
+        "radio state"
+      ]
+    },
+    "host_resume_after_info": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load",
+        "radio state",
+        "radio info"
+      ]
+    },
+    "host_resume_post_metadata": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load",
+        "radio state",
+        "radio info"
+      ]
+    },
+    "host_resume_post_inventory": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load",
+        "radio state",
+        "radio info"
+      ]
+    },
+    "peripheral_resume_before": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 0,
+      "radio_commands": []
+    },
+    "peripheral_resume_after_load": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load"
+      ]
+    },
+    "peripheral_resume_after_state": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load",
+        "radio state"
+      ]
+    },
+    "peripheral_resume_after_info": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load",
+        "radio state",
+        "radio info"
+      ]
+    },
+    "peripheral_resume_post_metadata": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load",
+        "radio state",
+        "radio info"
+      ]
+    },
+    "peripheral_resume_post_inventory": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load",
+        "radio state",
+        "radio info"
+      ]
+    },
+    "disconnect_before": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 0,
+      "radio_commands": []
+    },
+    "disconnect_after_load": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load"
+      ]
+    },
+    "disconnect_after_state": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load",
+        "radio state"
+      ]
+    },
+    "disconnect_after_info": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load",
+        "radio state",
+        "radio info"
+      ]
+    },
+    "disconnect_post_metadata": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load",
+        "radio state",
+        "radio info"
+      ]
+    },
+    "disconnect_post_inventory": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load",
+        "radio state",
+        "radio info"
+      ]
+    },
+    "babble_before": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 0,
+      "radio_commands": []
+    },
+    "babble_after_load": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load"
+      ]
+    },
+    "babble_after_state": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load",
+        "radio state"
+      ]
+    },
+    "babble_after_info": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load",
+        "radio state",
+        "radio info"
+      ]
+    },
+    "babble_post_metadata": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load",
+        "radio state",
+        "radio info"
+      ]
+    },
+    "babble_post_inventory": {
+      "error": "AssertionError",
+      "HOLD": "{\"state\": \"HOLD\", \"operation\": \"one_radio_native_load_RUN21a\"}\n",
+      "PASS": false,
+      "load_count": 1,
+      "radio_commands": [
+        "radio native-load",
+        "radio state",
+        "radio info"
+      ]
+    }
+  },
+  "strict_ACK_probes": {
+    "historical_28hex_truncation": "REJECTED",
+    "missing_ACK": "REJECTED",
+    "negative_length": "REJECTED",
+    "short_length": "REJECTED",
+    "status_nonzero": "REJECTED"
+  },
+  "compiled_core_formats_present": true,
+  "linked_kernel_sha256": "24df07ee09121eeff50ab01a5aa002a67418e5593d955f79836447673d427b14",
+  "kernel_HOST_only_PM_disabled": true,
+  "public_artifact_sha256": {
+    "work/lightbulb-camera/foundation-20261011T041148Z/analysis/native-usb76-package01/package76-manifest.json": "b61a73e245cbac3da4a8a1560f7908ea7020796d87b5eacc1580514f983f2d37",
+    "work/lightbulb-camera/foundation-20261011T041148Z/analysis/native-usb76-package01/build/.config": "9e1f37788d3bd8580f2eb031ea2a7d795f4b61e2c1f89e1b91c11f1a87a6499c"
+  },
+  "verdict": "CONDITIONAL_SOURCE_GO_one_whole_functional_trial_only",
+  "target_operation": false,
+  "private_input_access": false,
+  "fresh_parent_hardware_admission_required": true
+}

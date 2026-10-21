@@ -55,11 +55,15 @@ build recipes. Do not rewrite historical absolute paths merely for the rename.
 User approved execution of the consolidated plan. Follow
 [EXECUTION_TASKS_20261021.md](EXECUTION_TASKS_20261021.md): RP-00 baseline first,
 RP-02 finite USB/radio entry and independent RP-04 memory source work. Existing Git
-main is unborn/no remote; user requests commits and selected **local commits for
+main now has curated commits/no remote; user requests commits and selected **local commits for
 now** until a URL is supplied. Preserve the pre-existing staged index; do not commit
 acquisitions/secrets/binaries or publish automatically. [Workflow](../../../GIT_WORKFLOW.md).
-User freshly reports OFF/UART connected. Host discovery adapter unowned/socket
-absent/HOLD empty; no target TX/runtime/recovery assumption or effect queued yet.
+Fresh21a cold entry and exact RAM76 upload/CRC/monitor plus fixed read-only idle
+postcheck passed04:36–37UTC Oct21. Target last observed ON/idle, UART connected;
+capture07:09UTC is DATED/revalidate, not inherited authority. No radio trial/reset
+has run.17 host transport-test methods pass; independent core-diagnostic closure
+review returned conditional SOURCE GO05:20UTC, subject to fresh hardware gates.
+Combined memory and native radio/product gates remain open.
 
 ### Latest request — complete remaining-feature/bug plan, October21 (PLAN ONLY)
 

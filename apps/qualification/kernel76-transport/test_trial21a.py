@@ -15,6 +15,11 @@ import test_radio_receipt as samples
 _spec = importlib.util.spec_from_file_location("public_post_source_only", t.EVIDENCE / "postcheck.py")
 POST = importlib.util.module_from_spec(_spec); _spec.loader.exec_module(POST)
 UUID = "01234567-89ab-4cde-8f01-23456789abcd"
+CORE_DIAGNOSTICS = {
+    "bogus_resume_before": b"musb_handle_intr_resume 692: bogus host RESUME (a_host)",
+    "disconnect_before": b"musb_handle_intr_disconnect 980: unhandled DISCONNECT transition (a_wait_bcon)",
+    "babble_before": b"musb-hdrc musb-hdrc.0.auto: Babble",
+}
 BASELINE = {"pid1": "init", "release": "6.18.55-qc07f-prototype-dirty",
     "identity": "Pid:\t1\nUid:\t0\t0\t0\t0\nCapEff:\t0000000000020000\n",
     "cmdline": POST.BOOTARGS, "modules": "",
@@ -89,6 +94,7 @@ def simulate(fault=None):
                 if fault == "source_warning_before": answer = b"\r\n[ 1.000000] musb_rx_reinit 565: rx1, packet/512 ready?\r\n" + answer
                 if fault == "recognized_warning_before": answer = b"\r\n[ 1.000000] musb: warning synthetic\r\n" + answer
                 if fault == "broken_before": answer = b"\r\n[ 1.000000] musb_ep_program 878: broken !rx_reinit, ep1 csr 1234\r\n" + answer
+                if fault in CORE_DIAGNOSTICS: answer = b"\r\n[ 1.000000] " + CORE_DIAGNOSTICS[fault] + b"\r\n" + answer
             elif command.startswith("echo K76MD_BEGIN_"):
                 nonce = command.split("K76MD_BEGIN_", 1)[1][:32]
                 lines = [f"K76MD_BEGIN_{nonce}", "FDS"] + [f"lrwx------    1        64 {i} -> /dev/console" for i in range(4)] + ["FD_RC:0"]
@@ -178,6 +184,15 @@ class Trial(unittest.TestCase):
                      "RX1 dma busy, csr 4", "Rx interrupt with no errors or packet!",
                      "trying to suspend as a_host while active", "WARNING: CPU: 0", "Oops:", "Kernel panic"):
             self.assertTrue(t.HCD_DIAGNOSTIC.search(text.encode()), text)
+
+    def test_core_diagnostics_stop_before_first_radio_command(self):
+        for fault, diagnostic in CORE_DIAGNOSTICS.items():
+            with self.subTest(fault=fault):
+                self.assertTrue(t.HCD_DIAGNOSTIC.search(diagnostic + b"\r\n"))
+                answer = simulate(fault)
+                self.assertIsNotNone(answer["error"]); self.assertTrue(answer["HOLD"]); self.assertFalse(answer["PASS"])
+                self.assertEqual(answer["load_count"], 0)
+                self.assertFalse(any(c.startswith("radio ") for c in answer["calls"]))
 
 
 if __name__ == "__main__": unittest.main()

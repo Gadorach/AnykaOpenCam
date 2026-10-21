@@ -27,7 +27,7 @@ python3 -B apps/qualification/kernel76-transport/test_metadata21a.py
 python3 -B apps/qualification/kernel76-transport/test_trial21a.py
 ```
 
-The16 current unittest methods contain grouped negative cases and full trial-main
+The17 current unittest methods contain grouped negative cases and full trial-main
 in-memory fakes. Metadata admission tests cover receipt/checkpoint/source-binding
 failures before import, while trial fakes exercise complete/fault/HOLD paths with
 at most one load. This is HOST proof, **not native acceptance**.
@@ -45,13 +45,17 @@ missed/late HCD-warning rejection. The corrected wrapper freezes the original pe
 start across owner refresh and fences source-real diagnostics before each effect
 and after each returned active transaction. New fixtures require zero radio
 commands on pre-load warnings/owner loss and no next query after an inter-query
-warning. These corrections remain source-review-gated before native execution.
+warning. Further MUSB-core bogus RESUME/unhandled DISCONNECT/Babble cases now
+also require zero radio commands before load. Independent closure review returned
+conditional source GO; current hardware admission remains mandatory.
 
 Qualification review/evidence:
 `docs/qualification-plans/kernel76-transport-20261021/`.
 Execution: `docs/plan/camera-foundation/EXECUTION_TASKS_20261021.md`.
-Current candidates are **not admitted for target execution** until the independent
-correction/trial review and exact current owner/runtime/recovery/lease gates pass.
+`CORE_DIAGNOSTIC_CLOSURE_REVIEW.md` closes the preserved source NO-GOs for the
+pinned corrected candidate. Exactly one whole functional load/RUN plus state/info
+and retirement is conditionally source-approved, **not yet natively accepted**.
+Exact current owner/runtime/recovery/lease/descriptor/FD gates must pass first.
 
 Watchdog is preferred for reviewed recovery, not a hidden test side effect. An
 already guarded operation may reset autonomously; a deliberate `wdt reset` needs

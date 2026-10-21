@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-21T05:18:44.048368+00:00",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "apps/qualification/kernel76-transport",
+    "-p",
+    "test_*.py"
+  ],
+  "python": "3.14.7 (main, Aug 14 2026, 06:38:32) [GCC 16.2.1 20260810]",
+  "exit_code": 0,
+  "host_methods": 17,
+  "source_sha256": {
+    "apps/qualification/kernel76-transport/radio_receipt.py": "4b7d9c1887572a6fc7c7138ab3881c8739a00cbf08b0d8a775ded0465af5125c",
+    "apps/qualification/kernel76-transport/test_radio_receipt.py": "0e3d547501cb8a48c77c8be7d344b608ecb747fcb398bba6a581e48a1d6292ff",
+    "apps/qualification/kernel76-transport/metadata21a.py": "f0a0e48969184d8df441d525777bc4ae7110177eaf81016c8ab746c8338b2376",
+    "apps/qualification/kernel76-transport/test_metadata21a.py": "b3af84e05f1b1aac3690b3c896b6630f9f4c29e2ededad7ad88eea76d3079118",
+    "apps/qualification/kernel76-transport/trial21a.py": "6d0ce652d3355baef2e5505e9d2a34813aa1f780289b17268ccb160c4748da9c",
+    "apps/qualification/kernel76-transport/test_trial21a.py": "887e94b8280e287a0f3b547c9f8f4a7d88a30cfbbd974d9b4a2e55f0993241f4"
+  },
+  "no_target_IO": true,
+  "independent_closure_review_pending": true
+}

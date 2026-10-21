@@ -21,6 +21,8 @@ HCD_DIAGNOSTIC = re.compile(
     rb"could not flush|rx\d+, packet/\d+ ready\?|broken !rx_reinit|bogus ep0 stage|"
     rb"no URB for end 0|RX\d+ dma busy, csr|Rx interrupt with no errors or packet!|"
     rb"trying to suspend as [^\r\n]* while active|(?:usb|musb)[^\r\n]*(?:error|warning|timeout)|"
+    rb"bogus (?:host|peripheral) RESUME \([^\r\n]*\)|unhandled DISCONNECT transition \([^\r\n]*\)|"
+    rb"musb[^\r\n]*: Babble(?:\r?\n|$)|"
     rb"WARNING:|BUG:|Oops:|Kernel panic", re.IGNORECASE)
 
 

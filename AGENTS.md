@@ -1,5 +1,27 @@
 # Project instructions for local agents
 
+## Latest review — finite radio trial conditional source GO; fresh hardware gates next
+
+CORE_DIAGNOSTIC_CLOSURE_REVIEW.md SOURCEGO05:20UTC exacttrial6d0ce652…;
+17HOSTmethods/24diagnosticplacements/13ownerwarningprobesPASS, earlierfailures
+preserved. No newtargetTXyet. Admitonlyonewhole native-load/automaticRAMRUN then
+state/info+descriptor/FD/idle/samebootretirement AFTERfreshparentowner/catch/
+lifetime/noactivelease/exactTX/runtimegates. No separate metadata run first;
+fixedhandoffwouldnotmatchafterit. NoMODE/NAK/toggle/MTU/productclaim/reset/retry.
+Lastactual21a04:37UTC RAM76idle, targetON/UARTconnected/capture07:09UTC DATED.
+RP04sourceplacementlaneactiveROonly; combinedmemoryHOLD, noallocationchange.
+
+## Latest source —17 host methods PASS; core-diagnostic closure review pending
+
+No targetcommand since21a04:37UTC idlePASS; no native metadata/radio/reset trial.
+Wholetrialreviews preservedNO-GOs forownerrepin/latewarning/missingcompiledMUSB
+forms. Correctedoriginalpeer/startfences+before/afterradio diagnostics, including
+bogusRESUME/unhandledDISCONNECT/Babble;17HOSTmethodsPASS. Independentclosure
+reviewactive; NOtrialbeforeGO+freshcurrentowner/catch/runtime/descriptor/FDgates.
+Latestmain31cf645(local; earlier07f945c/0ecabd8), noremote/push, indexpreserved.
+04:37targetONidleRAM76/capture07:09UTC DATED; transfercompleted,noleaseactive.
+WDpreferredwhenneeded,notissued; RP04combinedmemoryHOLDunchanged.
+
 ## Latest actual — resume21a RAM76/RO idle PASS; radio trial pending source review
 
 RAMresume shellsh_15cad1ac3001hntmLYigpiv2vUcompleted: actual76upload/CRC/monitor
