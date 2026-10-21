@@ -88,6 +88,11 @@ outer-RX-family exclusion SOURCE/HOST increment. Subsequent TX/recovery/lifetime
 guard packets remain plans, not implementation/build/native approval. No target queue or current
 receive/catch recovery authority. See `CAPTURE21A_CLOSEOUT.md` and active ledger.
 
+P1 subsequently **paused/incomplete after a worker tool-safety error**. Partial
+files are preserved but unreviewed/uncommitted, with no observed final seal. All204
+accepted A1/A2a/A2b source pins still match. No retry or reroute was launched;
+see `P1_TOOL_BLOCK.md`. No later packet or hardware operation is selected by it.
+
 ### Latest request — complete remaining-feature/bug plan, October21 (PLAN ONLY)
 
 Use [REMAINING_FEATURES_AND_BUGS_GATED_PLAN_20261021.md](REMAINING_FEATURES_AND_BUGS_GATED_PLAN_20261021.md)

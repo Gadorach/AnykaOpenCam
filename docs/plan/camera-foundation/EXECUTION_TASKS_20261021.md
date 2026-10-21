@@ -1,9 +1,19 @@
 # Active execution ledger — remaining foundation work
 
+**P1 PAUSED/INCOMPLETE — tool safety error:** the worker ended with `cyber_policy`,
+not a successful handback. Partial source/report/evidence remain in place,
+unreviewed/uncommitted; no candidate seal observed09:31UTC. Parent did read-only
+inventory and reverified all204 accepted A1/A2a/A2b source files; no source/test
+execution, retry/rephrasing/reroute or parent completion attempt after the block.
+See `P1_TOOL_BLOCK.md`. P2–P5 remain plans; no build/staging/native admission or
+target queue. Original FAILED/HOLD and expired-capture restrictions remain.
+
 **P1 SOURCE/HOST lane active:** one isolated worker owns only new
 `apps/qualification/kernel76-station-attach-rx/` and its candidate/evidence. It is
 implementing the selected outer-RX exclusion; accepted A1/A2a/A2b remain sealed.
 No P2–P5 implementation, ARM/module build, staging or target operation is queued.
+The reviewed remaining-source plan and selection are committed locally as
+`84676be`, ordinary index preserved; no push.
 
 **Remaining attach source plan delivered:**204 source pins retained; P1 RX outer-
 type exclusion is the one smallest next increment. Parent selects **P1 SOURCE/HOST

@@ -1,5 +1,17 @@
 # Project instructions for local agents
 
+## Latest blocker — P1 worker tool-safety error; lane PAUSED/INCOMPLETE
+
+P1workerendedcyber_policyERROR, nosuccessfulhandback. Partialnewattach-rxtree/
+candidatereport/evidencepresent; NOcandidate-sealobserved09:31UTC. Preserveall
+inplace/unreviewed/UNCOMMITTED; doNOTadoptclaimedtests/GOoroverwrite/delete.
+Parentonlyreadmetadata+verified204acceptedA1/A2a/A2bsourcepinsallmatch. No retry/
+rephrasing/alternateagent/parentcompletionattemptstarted; P1pausedpendingtool-
+safetyblockresolution. No worker/implementation/build/staging/HWqueue launched
+aftererror; P2-P5stillPLANS. Original151ACKFAILEDHOLDnotcleared;21aexpired/
+finalized/noowner/socket/catchobserved07:24; currenttargetruntime/powerUNKNOWN
+(last06:43APPidle). No target/private/RPC/UART/networkoperation. SeeP1_TOOL_BLOCK.md.
+
 ## Active source — P1 attach-only RX exclusion worker; hardware untouched
 
 OneSOURCE/HOSTworkerownsnewapps/qualification/kernel76-station-attach-rx/+
@@ -8,7 +20,7 @@ A2bderivative, primarilyrx.c outertypegate; acceptedA1/A2a/A2bimmutable. Parent
 selectedP1only; P2-P5remainplans/noimplementation/ARMbuild/staging/HWqueue.
 No currentphysical/runtime/owner/recoveryadmission;21aexpiredfinalized/noowner/
 socket/catchobserved07:24,lasttarget06:43datedAPPidle. Original151ACKfailedHOLD
-kept. Mainlocalb940ffe/indexpreserved/nopush; no historicalPID/IP/timerauthority.
+kept. Mainlocal84676be(plan)/b940ffe(A2b), indexpreserved/nopush; no oldauthority.
 
 ## Next selected — P1 attach-only RX exclusion SOURCE/HOST, remaining packets plans
 

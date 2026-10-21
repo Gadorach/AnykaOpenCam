@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-21T09:31:18.284247+00:00",
+  "state": "P1_PAUSED_AFTER_WORKER_TOOL_SAFETY_ERROR_NOT_SOURCE_OR_NATIVE_GO",
+  "worker_reported_error": "cyber_policy",
+  "partial_source_tree_exists": true,
+  "partial_candidate_report_exists": true,
+  "partial_evidence_directory_exists": true,
+  "P1_candidate_seal_file_observed": false,
+  "accepted_prior_source_files_reverified": {
+    "kernel76-station": 68,
+    "kernel76-station-ingress": 68,
+    "kernel76-station-events": 68
+  },
+  "P1_code_or_test_results_reviewed_or_accepted": false,
+  "partial_files_left_in_place_not_deleted_or_overwritten": true,
+  "worker_retry_rephrasing_redelegation_or_parent_completion_attempted": false,
+  "build_staging_native_attach_GO": false,
+  "read_only_metadata_and_prior_public_source_integrity_check": true,
+  "private_input_target_RPC_UART_network_or_device_configuration_IO": false
+}
