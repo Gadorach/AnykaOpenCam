@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-21T05:01:36.566672+00:00",
+  "verdict": "NO_GO_C1_C2_C3",
+  "reviewed_sources_unchanged": true,
+  "prior_NO_GO_and_failure_evidence_unchanged": true,
+  "target_operation": false,
+  "private_input_access": false,
+  "evidence_sha256": {
+    "TRIAL_CORRECTION_REVIEW.md": "913760988fabc0134d47dd85e576be2e878a93edd1c1a89c0b43e4567b1f93ff",
+    "trial-review/result.json": "d82d8860cb3e08571034cd2424b761106789652825b2841f7a98218a74edfc01",
+    "trial-review/run_review.py": "48c8de4cc552916df4ffc20aa7673c6df48389938c35acb2cd1abe4b2846cb49",
+    "trial-review/test_metadata21a.py.log": "25785170f2b3355da7eb45fba7a09b2548cf91304febd6b97613a096bd96c030",
+    "trial-review/test_radio_receipt.py.log": "fb5cdf8939d6cbf9cb5504c6a6f3a00c6a71f4dec783901f443b4506a454fddb",
+    "trial-review/test_trial21a.py.log": "04db6d8948061d58f5bf07556575fdc4fbda3520c412e14582f4cae9695538b6"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-21T04:50:34.642673+00:00",
+  "all_initial_review_source_pins_unchanged": true,
+  "additional_protocol_header_source": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic.h",
+  "additional_protocol_header_sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a",
+  "verdict": "NO_GO_PENDING_B1_B2",
+  "target_operation": false,
+  "evidence_sha256": {
+    "METADATA_RECEIPT_REVIEW.md": "1a28d2a08d682e44220923acaf7a2956340118e73eb73005aadb5eccdcdbfc89",
+    "metadata-review/ack-corroboration-initial-failure.txt": "b169d25fec6cc68d6805952a896ea74a4b3d712c4d1182480b59f61f62444fba",
+    "metadata-review/ack-corroboration02.json": "14ed7f228e4e3b519eb277602aea569e59ebeff0d94122c77b0233f03cb10d5c",
+    "metadata-review/collect.py": "afc4beb8a27cf3cb009c0817c410f5c2eb9ab24b4d484a1566d0af230937ce12",
+    "metadata-review/corroborate_ack.py": "75e76ec986de83459e2867515e43ffc65fca5f7d9f628744a13b0d94c13a8d13",
+    "metadata-review/corroborate_ack02.py": "1e20732cbd9ea86a477782ad01030a3531dc05fc4c9aab61bccd33f9cfc4e607",
+    "metadata-review/result.json": "ca74e6417b5c2495f93b0b0aa68d5fc7e9e9184c8c5c783bc97e2e18896dd622",
+    "metadata-review/test_metadata21a.py.log": "6ed5d06e157baa38a4d118719c2c0761066fadb0dd2d2a0580b3b9e32a6a9f6d",
+    "metadata-review/test_radio_receipt.py.log": "27139278beff9f3b2a37a98288b11810bb72b140cd1509fe531bd66572f6c763"
+  }
+}

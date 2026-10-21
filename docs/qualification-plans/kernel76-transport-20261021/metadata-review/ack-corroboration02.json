@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-21T04:48:18.637759+00:00",
+  "scope": "independent offline public historical protocol metadata; not current runtime",
+  "collector_sha256": "1e20732cbd9ea86a477782ad01030a3531dc05fc4c9aab61bccd33f9cfc4e607",
+  "historical_load_source": "work/lightbulb-camera/implementation-20261008T205404Z/analysis/i-qualified-retained256-radio-ram-restore02.json",
+  "historical_application_state_source": "evidence/qualification/qc07f/native-ui-20261012/native02/original-retained256-radio-restore-ACK-state02.json",
+  "historical_256_logged_ACK_count": 1185,
+  "complete_ACK_headers_used_for_corroboration": 1184,
+  "truncated_logged_headers_not_accepted": 1,
+  "public_text_and_hex_identical_no_repair": true,
+  "complete_ACKs_actual_length16_type7_vif0_flags0_declared_length16": true,
+  "complete_ACKs_cookie_command_status0_checkFD_match": true,
+  "historical_APPLICATION_FF_same_header_shape": true,
+  "historical_full_transcript_strict_acceptance_claimed": false,
+  "raw_transcript_or_header_bytes_exported": false,
+  "private_capture_access": false,
+  "target_operation": false,
+  "native76_trial_claimed": false
+}

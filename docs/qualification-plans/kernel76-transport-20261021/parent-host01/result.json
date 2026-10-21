@@ -1,0 +1,45 @@
+{
+  "utc": "2026-10-21T04:57:19.197235+00:00",
+  "host_unittest_methods": 13,
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "apps/qualification/kernel76-transport/test_radio_receipt.py"
+      ],
+      "exit": 0
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "apps/qualification/kernel76-transport/test_metadata21a.py"
+      ],
+      "exit": 0
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "apps/qualification/kernel76-transport/test_trial21a.py"
+      ],
+      "exit": 0
+    }
+  ],
+  "source_sha256": {
+    "radio_receipt.py": "4b7d9c1887572a6fc7c7138ab3881c8739a00cbf08b0d8a775ded0465af5125c",
+    "test_radio_receipt.py": "0e3d547501cb8a48c77c8be7d344b608ecb747fcb398bba6a581e48a1d6292ff",
+    "metadata21a.py": "f0a0e48969184d8df441d525777bc4ae7110177eaf81016c8ab746c8338b2376",
+    "test_metadata21a.py": "b3af84e05f1b1aac3690b3c896b6630f9f4c29e2ededad7ad88eea76d3079118",
+    "trial21a.py": "a0126153cb9c1379ecbe5aba25f00e63e29635abbc7a506000ddb22f2d34890c",
+    "test_trial21a.py": "7adce0c89b22211bb003ed9cd0ff5ec8d3c8eedcf9e5d9c9bca82634b7a69fb0"
+  },
+  "source_only_no_target_operations": true,
+  "native_admission_independent_review_pending": true,
+  "preserved_initial_failures": [
+    "FWINFO no-op mutation fixture corrected",
+    "FD_RC missing ValueError made explicit assertion",
+    "metadata FD grammar/handoff NO-GO fixed before native use"
+  ]
+}

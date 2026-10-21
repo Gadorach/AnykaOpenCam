@@ -1,0 +1,90 @@
+{
+  "start_utc": "2026-10-21T04:45:38.543520+00:00",
+  "end_utc": "2026-10-21T04:45:38.826767+00:00",
+  "scope": "offline source/artifact binding and two host-only test scripts; no native operation",
+  "python": "3.14.7 (main, Aug 14 2026, 06:38:32) [GCC 16.2.1 20260810]",
+  "collector_sha256": "afc4beb8a27cf3cb009c0817c410f5c2eb9ab24b4d484a1566d0af230937ce12",
+  "source_sha256": {
+    "apps/qualification/kernel76-transport/metadata21a.py": "698f91a3ceec8b8712038e68a513a971190803d2cf0c79827ee1179367d9512b",
+    "apps/qualification/kernel76-transport/radio_receipt.py": "c4b805d71bd5cee22820bde728f8d3a8050efe90a94e5481caf73ae1791b88fe",
+    "apps/qualification/kernel76-transport/test_metadata21a.py": "f4612d8064c8c13d29d99e10d52cbd79ff4aecb792aa0ac363a434f999e387c0",
+    "apps/qualification/kernel76-transport/test_radio_receipt.py": "ab9dafc8e32a93b9189e4185bf3544cc2bc5db32948eea6a5dbbf8f7952a0610",
+    "scripts/qc07f_boot.py": "6ec0bd70513d530e64507c934ab1885da0cb547b907673c5162bf01c89f7d985",
+    "scripts/qc07f_private_root_transfer.py": "cb224d3cd8b635774b7e364b07b259d90640b30de269ea07351e767c3f97fa3c",
+    "bringup/qc07f/initramfs/init.c": "b3dd4ee9689bde4bead4c7a3c862284b198b879d4470b920366c1503814598aa",
+    "bringup/qc07f/initramfs/wifi-monitor.h": "89eac77740e576c7bce0fdcd8a0eb8736e5d87f3b9119679b777eb17dbf26707",
+    "bringup/qc07f/initramfs/radio-ram-loader.h": "91f8f9a4a1628b270664555dcc73e81c59c1a85ef33b08d8596946ae5dfd8196",
+    "evidence/qualification/qc07f/execution-20261021/ram76-resume21a/postcheck.py": "3dbf96b9ef84216da89283f19cd09dbca27e45a17d84138c9574112fb06170f0",
+    "work/lightbulb-camera/implementation-20261008T205404Z/sources/busybox-1.37.0/busybox-1.37.0/coreutils/ls.c": "9d356307e623550dd9a4be1be5508a4a72e7215345ec637cb4e686cfa3a76837",
+    "work/lightbulb-camera/implementation-20261008T205404Z/sources/busybox-1.37.0/busybox-1.37.0/coreutils/test.c": "9cd3405f39be75447c07788416c2241ac31d990fefcfe2ab839689093123ced0",
+    "work/lightbulb-camera/implementation-20261008T205404Z/sources/busybox-1.37.0/busybox-1.37.0/shell/ash.c": "e8090e5dd0f79097b6b29399a8f14572049f011f86b6c6e4de66dfb75b58cfcd",
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/drivers/usb/core/sysfs.c": "459100ffae9e5e75c5be7350a9844e2ec9900fd42c6ac3b7a74da18d6e6b125f",
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/drivers/usb/core/endpoint.c": "717b08b8402fe490c543c28140c2de569a76fdd055912c91027203399553a0aa",
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/drivers/usb/core/message.c": "658861def474b551fbed552ff990a9b5618ece3353c3260d927a78c2f4f62fa7",
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/fs/proc/fd.c": "0252148d80564c87e085b6f6d745540c85b8ac6afadecb0218b167b2a7d82cb9",
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/drivers/base/dd.c": "26efc05457b05672d7156cc7c6198dfc7c4875bc3a9cb0629ed716992704ed0f",
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/hgic_def.h": "52fbfe0a9d19766f7fae9cc4c18252a5e2f4bce67d95eb7e76a6b666d5a15339",
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/fwdl.h": "58e939a56bce67649df222dc5ae3f96dc6255e526233f67408dabdf6605c9392",
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/fwdl.c": "f8c9cf82c6484b1998749ee7814cad44637d8c1db51bc5ee6a7c7fac0314b1fa"
+  },
+  "busybox_a6": {
+    "bytes": 378104,
+    "sha256": "3f7e15eae5f1c03a0af78ce45a341aaa48ad0eb0a00850a0914512e830b7c3a1",
+    "matches_selected_cpio_and_retained_build_receipt": true,
+    "selected_cpio_matches_final_build_embedded_archive": true,
+    "selected_config_facts": {
+      "DESKTOP": "# CONFIG_DESKTOP is not set",
+      "ASH": "CONFIG_ASH=y",
+      "ASH_TEST": "CONFIG_ASH_TEST=y",
+      "LS": "CONFIG_LS=y",
+      "CAT": "CONFIG_CAT=y",
+      "TEST": "CONFIG_TEST=y",
+      "READLINK": "# CONFIG_READLINK is not set",
+      "FEATURE_EDITING": "# CONFIG_FEATURE_EDITING is not set",
+      "FEATURE_LS_USERNAME": "# CONFIG_FEATURE_LS_USERNAME is not set",
+      "FEATURE_LS_TIMESTAMPS": "# CONFIG_FEATURE_LS_TIMESTAMPS is not set",
+      "FEATURE_LS_COLOR": "# CONFIG_FEATURE_LS_COLOR is not set",
+      "FEATURE_SH_STANDALONE": "CONFIG_FEATURE_SH_STANDALONE=y"
+    },
+    "profile_entries_absent": true
+  },
+  "selected_cpio_sha256": "510e5fdc6e2a7b6ad4a52d82ad1de9381a85e143f7014a6f2cc3bdfb951e309f",
+  "monitor_matches_retained_attempt50": true,
+  "fixed_postcheck_query_count_including_repeat_boot_id": 14,
+  "fixed_postcheck_command_TX_bytes_excluding_optional_one_CR_refresh": 320,
+  "expected_native_protocol": {
+    "chunks": 74,
+    "ACKs": 151,
+    "payload_bytes": 151056,
+    "wire_bytes": 151348
+  },
+  "tests": [
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-transport/test_metadata21a.py",
+        "-v"
+      ],
+      "start_utc": "2026-10-21T04:45:38.579460+00:00",
+      "exit": 0,
+      "log": "test_metadata21a.py.log",
+      "log_sha256": "6ed5d06e157baa38a4d118719c2c0761066fadb0dd2d2a0580b3b9e32a6a9f6d"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-transport/test_radio_receipt.py",
+        "-v"
+      ],
+      "start_utc": "2026-10-21T04:45:38.743562+00:00",
+      "exit": 0,
+      "log": "test_radio_receipt.py.log",
+      "log_sha256": "27139278beff9f3b2a37a98288b11810bb72b140cd1509fe531bd66572f6c763"
+    }
+  ],
+  "target_operation": false,
+  "private_capture_access": false,
+  "native_metadata_or_loader_pass_claimed": false
+}
