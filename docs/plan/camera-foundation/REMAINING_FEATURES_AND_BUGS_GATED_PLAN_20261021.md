@@ -10,6 +10,15 @@ boundary is retained history. Effect/privacy/current-state gates remain in force
 User now requires commits on main and chose local commits until a remote is supplied;
 this supersedes earlier no-commit wording, not the private-data/publication boundary.
 
+**Subsequent recovery steering:** user prefers camera-watchdog-triggered reboots
+for unattended recovery. When source/current-state/recovery gates admit it, use
+the prearmed operation guard or a controlled deliberate watchdog reset with an
+already-armed catch and observed reset boundary. Manual power-OFF is fallback
+when watchdog/control recovery is unavailable. Older manual-first wording below
+is superseded only on that point: watchdog reset is not cold radio/rail power
+cycling, not automatic effect retry, and not permission to free unknown backing
+or clear HOLD before reset/retirement proof.
+
 This consolidates the remaining work from plans01–18, the stock-reference closeout,
 kernel76 and retained candidate reviews. Existing subsystem IDs and G0–G10 meanings
 remain authoritative. `RP-*` below are integration work packets, not replacement

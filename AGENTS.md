@@ -1,5 +1,31 @@
 # Project instructions for local agents
 
+## Latest steering — prefer camera watchdog reboot for unattended recovery
+
+Userrequestswatchdog-triggeredrebootsinsteadwaitingmanualpowercyclewhenneeded.
+Preferreviewedprearmedoperationguardoronecontrolledwdtresetfromknownstate,
+freshsolecapture/catcharmedBEFORETXandactualreset/Ubootobservationrequired.
+CurrentRAMresume21atransferUNINTERRUPTED/frozen,NOconcurrentUART/RPC/progresspoll.
+Watchdogsource-reviewlaneactiveROonly; no newdeliberateresetadmitteduntilreview/
+currentgates. DoNOTequateSoCwatchdogtocoldradio/railpowercycle,clearHOLDorfreeDMA
+beforeresetproof,orautoretryfirmware/RUN/effects. ManualOFFfallbackonlyifWD/control
+unavailable/fails. NewpolicydoesnotauthorizeGPIO42/flash/AP/card/motor/speaker.
+
+## Active hardware — one RAM76 resume21a launched04:17UTC; wait completion
+
+Userapprovedplanexecution+maincommits(localuntilremoteURL). Maincommits1de7714
+sourcebaseline1356files+2295ce4reviewedentry14files; ordinaryuserindexpreserved.
+FreshOFF/capture21a/ONcoldgatepassed; solePID3911508/start141489444/source135a694b…
+capturethrough07:09UTC DATED. OnefixedRAM76resume21a bootrecipe launched shell
+sh_15cad1ac3001hntmLYigpiv2vU. NOconcurrentUART/RPC/status/progresspoll whileactive;
+waitcompletion,freeze recipe/helpers. No native76today/USB/RFresultclaimyet.
+AfteractualbootcompletiononlyapprovedfixedROpostcheck. Radioentrysourceconditional
+GOwhole74chunks+automaticRAMRUN; functionalnotdirectMODE/NAK/toggleproof; native
+trialstillrequiresruntime/descriptors/owners/retirementadmission,notqueuedyet.
+RP04source80pinsmatch/v6=run34; combinedmemoryHOLD,no policychange. Workersfinished.
+No flash/cardwrite/homing/GPIO2/UARTspeaker/GUI/media/APbroadcast effects. Target
+ON/UARTconnected; failuresstickyHOLD/manualOFFrecovery,NOautomaticbootrepeat.
+
 ## Latest user approval — execute plan; commits on main, local until remote supplied
 
 Userapprovedexecutingdetailedplanandrequestedallreviewedincrementscommitted/

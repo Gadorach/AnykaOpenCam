@@ -1,5 +1,20 @@
 # Active execution ledger — remaining foundation work
 
+**Active hardware04:17UTC:** one fixed RAM76 resume21a upload/boot launched after
+fresh cold gate and host/source checks. **No concurrent UART/RPC/status probes**;
+await completion. User ON/UART connected; fresh sole capture21a is bounded through
+07:09UTC DATED/revalidate. No radio trial or current76 runtime PASS claimed yet.
+Recipe/transport frozen; failures retain HOLD, no automatic repeat.
+
+**New recovery steering:** user requests camera watchdog reboots for unattended
+recovery instead of routine manual power cycles. Prefer reviewed prearmed operation
+guards or one deliberate watchdog reset from a known controlled state, with fresh
+catch armed beforehand and actual reset/U-Boot observation. Do not interrupt the
+active transfer, clear HOLD before proven reset/retirement, equate SoC reset to
+radio/rail power cycling, or automatically retry download/RUN/effects. Manual OFF
+is fallback only when the watchdog/control path is unavailable or fails. Exact
+source admission is under review before any new deliberate reset command.
+
 **ACTIVE — user approved execution2026-10-21.** Methods/requirements:
 [detailed gated plan](REMAINING_FEATURES_AND_BUGS_GATED_PLAN_20261021.md).
 This ledger supersedes its earlier planning-only status for approved execution,
@@ -74,6 +89,8 @@ or later healthy-status clearance. No second UART sender during transfers or GUI
 
 - Initial source-only commit on main: `1de7714dca3f30cd0adbee12664e55c5570f79c5`,
  1356 files; ordinary staged index byte-exact preserved. Local only, no remote/push.
+- Reviewed entry/source increment: `2295ce44269dba8789de9f87edb65e9adebbb6a5`,
+  14 files; original index still byte-exact. No target outcome is implied by commit.
 - Fresh user OFF/capture21a/ON; sole3911508/start141489444 through07:09UTC DATED,
   actual original cold U-Boot/BOOT pin and neutral RO gate passed04:13UTC.
   No GO/Linux/manual GPIO store yet at that checkpoint. Old20c final hashes verified.
