@@ -1,5 +1,19 @@
 # Active execution ledger — remaining foundation work
 
+**Separate identity SOURCE entry:**78 source-audit checks passed; design is
+conditional GO, execution NO-GO until exact implementation/review. One isolated
+source/HOST lane is preparing `identity21a.py` and fault fixtures. It must preserve
+native-retirement checkpoint lineage and original HOLD, reject active-endpoint
+CLEAR_HALT warnings, enforce internal per-wire/TX/phase guards and saved-retirement
+RX topology checks, and require140s before state/130s before conditional info.
+No active query/reset/reload is queued; target untouched since06:00 cached retirement.
+
+**Next SOURCE lane:** separate one-shot application state/info admission review
+active after the06:00 retirement observation. No wrapper or active query is queued;
+original failed HOLD remains. Parent must implement/review any new fixed reader
+and revalidate its exact post-retirement owner/counter/catch/runtime gates first.
+Read-only retirement result committed locally as `a498082`, ordinary index preserved.
+
 **Latest actual06:00:08UTC:** the one preserved-HOLD retirement reader completed
 normally: cached descriptors/PID1FDs + full RO idle/sameboot inventory passed, one
 empty refresh/860B TX accounted. No PID1 USB/watchdog FD, ISP idle/logical watchdog

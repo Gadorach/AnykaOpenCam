@@ -1,5 +1,25 @@
 # Project instructions for local agents
 
+## Latest source — separate identity controller implementation lane, NO target queue
+
+SEPARATE_IDENTITY_ENTRY_REVIEW78sourcechecksPASS/designconditionalGO/executeNOGO
+untilexactcontrollerreviewed. OneisolatedSOURCE/HOSTlaneownsnewidentity21a.py/
+test_identity21a.py/candidatereport+hostevidenceonly. ExistinghelpersFROZEN;
+parentalonenativeHW. RequiredfixedpreRO->onestate->conditionaloneinfo->postRO,
+originalHOLDunchanged/counterlineagefromnative-retirementcheckpoint, activeEP
+CLEAR_HALTwarningfatal/saved-retirementRXtopologywindow/internalwireTXphase
+gates. Budget<=300s/coverage600initial300final/140beforestate130beforeinfo;
+noexistingmainreuse/reload/RUN/reset/fallback. No targetTXsince06:00retirement.
+Mainlocala498082; capture07:09UTCdatedrevalidate, noinheritance/RP04HOLDunchanged.
+
+## Next source lane — separate application identity admission review only
+
+Readonlyretirementresultcommitteda498082mainlocal/indexpreserved/nopush.
+OneisolatedSOURCEreviewforseparatestate->infoadmissionactive; nowrapper/target
+query/reset/reloadqueued. Original151ACKtrialFAILED/HOLDunchanged. No targetTX
+since06:00retirement. Source/currentcheckpoint/peer/counter/catch/runtimegates
+requiredagainbeforeanylateractiveUSBentry. Allpreviousrestrictionsstand.
+
 ## Latest actual —06:00 readonly postfailure retirement observed; original HOLD retained
 
 shellsh_15d0b93d7001qG0UyKuzJxAapacompletednormally06:00:08UTC, exactaeda5136…
