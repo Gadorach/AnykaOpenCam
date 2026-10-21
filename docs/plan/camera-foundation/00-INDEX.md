@@ -82,7 +82,10 @@ sizes/hashes. No extra RX or TX followed the06:43 identity checkpoint. Current
 target runtime/power is unqueried; no receive owner/catch recovery is inherited.
 A1 author+parent+independent HOST reproduction passed with narrow local control-copy/
 FWINFO SOURCE GO; full S4/ARM build/attach remain NO-GO. Next A2a is SOURCE/HOST-only
-untrimmed ingress/USB-completion correction in a separate derivative. No target
+untrimmed ingress/USB-completion correction in a separate derivative, now also
+narrow independently reviewed SOURCE/HOST GO. Event-consumer design review
+delivered an explicit suppression/denial policy; parent selected isolated A2b
+SOURCE/HOST implementation only. Full S4/lifecycle/ARM build/attachment still NO-GO. No target
 queue or current receive owner/recovery arm. See `CAPTURE21A_CLOSEOUT.md` and ledger.
 
 ### Latest request — complete remaining-feature/bug plan, October21 (PLAN ONLY)

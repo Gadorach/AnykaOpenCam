@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-21T08:13:33.750106+00:00",
+  "argv": [
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-entry-review/audit_public_source.py",
+    "--seal"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "python": "3.14.7 (main, Aug 14 2026, 06:38:32) [GCC 16.2.1 20260810]",
+  "all_reader_inputs_rechecked_unchanged": true,
+  "kind": "EVENT_ENTRY_DESIGN_ONLY_CONDITIONAL_SOURCE_GO_NOT_IMPLEMENTATION_OR_BUILD",
+  "files": {
+    "docs/qualification-plans/kernel76-transport-20261021/STATION76_EVENT_ENTRY_REVIEW.md": {
+      "bytes": 24170,
+      "sha256": "a80b5d30cefc7ddd77da8bb03d8a4f7823dc80ada6dd52e25c66943ba293ed0f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-entry-review/SOURCE_LICENSE_GPL-2.0.txt": {
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-entry-review/audit_public_source.py": {
+      "bytes": 7201,
+      "sha256": "3e3e5d4e143ab107c33c5d7379b3b1ed048f045be41d285c55e7338bab1806f9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-entry-review/event-references.json": {
+      "bytes": 19694,
+      "sha256": "aba3ef9e4135c65307921e8749d7ed8a19bd3b7e0bfb1ffe7d2aa3f8074e19b2"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-entry-review/public-excerpts.json": {
+      "bytes": 51246,
+      "sha256": "59de2f9c41ee3513d598939857a87e1af57f70ee00c36d88550780f38a1e5ca6"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-entry-review/reader-pins.json": {
+      "bytes": 27365,
+      "sha256": "2c52926036b1a8f1703241e8922f171eb799d8605e694a7f5def69eae36318fa"
+    }
+  },
+  "self_excluded": true
+}

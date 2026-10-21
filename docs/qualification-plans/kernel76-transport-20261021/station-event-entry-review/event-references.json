@@ -1,0 +1,560 @@
+{
+  "utc": "2026-10-21T08:09:13.714849+00:00",
+  "scope": "apps/qualification/kernel76-station-ingress/source/",
+  "needles": [
+    "rx_event",
+    "HDR_EVTID",
+    "HGIC_EVENT_",
+    "evt_list",
+    "evt_sema",
+    "fwevnt",
+    "hgics_event("
+  ],
+  "references": [
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 196,
+      "text": "#define HDR_EVTID(ctl) ((ctl)->hdr.type==HGIC_HDR_TYPE_EVENT2?le16_to_cpu((ctl)->event2.event_id):(ctl)->event.event_id)"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 204,
+      "text": "#define HDR_EVTID_SET(ctl, id) if(id>255){\\"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 416,
+      "text": "    HGIC_EVENT_STATE_CHG           = 1,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 417,
+      "text": "    HGIC_EVENT_CH_SWICH            = 2,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 418,
+      "text": "    HGIC_EVENT_DISCONNECT_REASON   = 3,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 419,
+      "text": "    HGIC_EVENT_ASSOC_STATUS        = 4,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 420,
+      "text": "    HGIC_EVENT_SCANNING            = 5,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 421,
+      "text": "    HGIC_EVENT_SCAN_DONE           = 6,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 422,
+      "text": "    HGIC_EVENT_TX_BITRATE          = 7,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 423,
+      "text": "    HGIC_EVENT_PAIR_START          = 8,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 424,
+      "text": "    HGIC_EVENT_PAIR_SUCCESS        = 9,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 425,
+      "text": "    HGIC_EVENT_PAIR_DONE           = 10,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 426,
+      "text": "    HGIC_EVENT_CONECT_START        = 11,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 427,
+      "text": "    HGIC_EVENT_CONECTED            = 12,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 428,
+      "text": "    HGIC_EVENT_DISCONECTED         = 13,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 429,
+      "text": "    HGIC_EVENT_SIGNAL              = 14,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 430,
+      "text": "    HGIC_EVENT_DISCONNET_LOG       = 15,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 431,
+      "text": "    HGIC_EVENT_REQUEST_PARAM       = 16,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 432,
+      "text": "    HGIC_EVENT_TESTMODE_STATE      = 17,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 433,
+      "text": "    HGIC_EVENT_FWDBG_INFO          = 18,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 434,
+      "text": "    HGIC_EVENT_CUSTOMER_MGMT       = 19,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 435,
+      "text": "    HGIC_EVENT_SLEEP_FAIL          = 20,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 436,
+      "text": "    HGIC_EVENT_DHCPC_DONE          = 21,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 437,
+      "text": "    HGIC_EVENT_CONNECT_FAIL        = 22,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 438,
+      "text": "    HGIC_EVENT_CUST_DRIVER_DATA    = 23,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 439,
+      "text": "    HGIC_EVENT_UNPAIR_STA          = 24,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 440,
+      "text": "    HGIC_EVENT_BLENC_DATA          = 25,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 441,
+      "text": "    HGIC_EVENT_HWSCAN_RESULT       = 26,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 442,
+      "text": "    HGIC_EVENT_EXCEPTION_INFO      = 27,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 443,
+      "text": "\tHGIC_EVENT_DSLEEP_WAKEUP       = 28,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 444,
+      "text": "    HGIC_EVENT_STA_MIC_ERROR       = 29,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 445,
+      "text": "    HGIC_EVENT_ACS_DONE            = 30,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 446,
+      "text": "    HGIC_EVENT_FW_INIT_DONE        = 31,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 447,
+      "text": "    HGIC_EVENT_ROAM_CONECTED       = 32,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "line": 448,
+      "text": "    HGIC_EVENT_MGMT_FRAME          = 33,        "
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/core.c",
+      "line": 124,
+      "text": "    hgic_clear_queue(&hg->evt_list);"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/core.c",
+      "line": 1117,
+      "text": "        hgic_clear_queue(&hg->evt_list);"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/core.c",
+      "line": 1164,
+      "text": "    hg->ctrl.rx_event = hgics_rx_fw_event;"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/core.c",
+      "line": 1196,
+      "text": "    skb_queue_head_init(&hg->evt_list);"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/core.c",
+      "line": 1197,
+      "text": "    sema_init(&hg->evt_sema, 0);"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/core.c",
+      "line": 1346,
+      "text": "void hgics_event(struct hgics_wdev *hg, char *ifname, int event, int param1, int param2)"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/event.c",
+      "line": 28,
+      "text": "#define HGIC_EVENT_MAX (16)"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/event.c",
+      "line": 42,
+      "text": "    evt_id = HDR_EVTID(evt);"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/event.c",
+      "line": 46,
+      "text": "        case HGIC_EVENT_FWDBG_INFO:"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/event.c",
+      "line": 55,
+      "text": "    hgics_event(hg, \"hgics\", evt_id, data, data_len);"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/event.c",
+      "line": 59,
+      "text": "        if (skb_queue_len(&hg->evt_list) > HGIC_EVENT_MAX) {"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/event.c",
+      "line": 60,
+      "text": "            kfree_skb(skb_dequeue(&hg->evt_list));"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/event.c",
+      "line": 61,
+      "text": "            hgic_err(\"event list is full (max %d), drop old event\\r\\n\", HGIC_EVENT_MAX);"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/event.c",
+      "line": 63,
+      "text": "        skb_queue_tail(&hg->evt_list, skb);"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/event.c",
+      "line": 64,
+      "text": "        up(&hg->evt_sema);"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/event.h",
+      "line": 6,
+      "text": "void hgics_event(struct hgics_wdev *hg, char *ifname, int event, int param1, int param2);"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/hgics.h",
+      "line": 121,
+      "text": "    struct sk_buff_head evt_list;"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/hgics.h",
+      "line": 122,
+      "text": "    struct semaphore    evt_sema;"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/procfs.c",
+      "line": 37,
+      "text": "    if (hg->evt_list.qlen) {"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/procfs.c",
+      "line": 38,
+      "text": "        seq_printf(seq, \"    evt_list   : %d\\r\\n\", hg->evt_list.qlen);"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/procfs.c",
+      "line": 69,
+      "text": "    if (down_timeout(&hg->evt_sema, msecs_to_jiffies(100))) {"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/procfs.c",
+      "line": 73,
+      "text": "    if (!skb_queue_empty(&hg->evt_list)) {"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/procfs.c",
+      "line": 74,
+      "text": "        skb = skb_dequeue(&hg->evt_list);"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/procfs.c",
+      "line": 201,
+      "text": "    hg->proc.fwevnt = proc_create_data(\"fwevnt\", 0x0444,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/procfs.c",
+      "line": 203,
+      "text": "    if (hg->proc.fwevnt == NULL) {"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/procfs.c",
+      "line": 216,
+      "text": "    if (hg->proc.fwevnt) {"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/procfs.c",
+      "line": 217,
+      "text": "        remove_proc_entry(\"fwevnt\", hg->proc.rootdir);"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/procfs.c",
+      "line": 218,
+      "text": "        hg->proc.fwevnt = NULL;"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/procfs.h",
+      "line": 16,
+      "text": "    struct proc_dir_entry *fwevnt;"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/rx.c",
+      "line": 186,
+      "text": "            if (skb_queue_len(&hg->evt_list) > 16) {"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/rx.c",
+      "line": 187,
+      "text": "                kfree_skb(skb_dequeue(&hg->evt_list));"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/rx.c",
+      "line": 189,
+      "text": "            skb_queue_tail(&hg->evt_list, skb);"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/rx.c",
+      "line": 190,
+      "text": "            up(&hg->evt_sema);"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 196,
+      "text": "#define HDR_EVTID(ctl) ((ctl)->hdr.type==HGIC_HDR_TYPE_EVENT2?le16_to_cpu((ctl)->event2.event_id):(ctl)->event.event_id)"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 204,
+      "text": "#define HDR_EVTID_SET(ctl, id) if(id>255){\\"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 416,
+      "text": "    HGIC_EVENT_STATE_CHG           = 1,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 417,
+      "text": "    HGIC_EVENT_CH_SWICH            = 2,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 418,
+      "text": "    HGIC_EVENT_DISCONNECT_REASON   = 3,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 419,
+      "text": "    HGIC_EVENT_ASSOC_STATUS        = 4,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 420,
+      "text": "    HGIC_EVENT_SCANNING            = 5,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 421,
+      "text": "    HGIC_EVENT_SCAN_DONE           = 6,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 422,
+      "text": "    HGIC_EVENT_TX_BITRATE          = 7,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 423,
+      "text": "    HGIC_EVENT_PAIR_START          = 8,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 424,
+      "text": "    HGIC_EVENT_PAIR_SUCCESS        = 9,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 425,
+      "text": "    HGIC_EVENT_PAIR_DONE           = 10,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 426,
+      "text": "    HGIC_EVENT_CONECT_START        = 11,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 427,
+      "text": "    HGIC_EVENT_CONECTED            = 12,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 428,
+      "text": "    HGIC_EVENT_DISCONECTED         = 13,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 429,
+      "text": "    HGIC_EVENT_SIGNAL              = 14,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 430,
+      "text": "    HGIC_EVENT_DISCONNET_LOG       = 15,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 431,
+      "text": "    HGIC_EVENT_REQUEST_PARAM       = 16,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 432,
+      "text": "    HGIC_EVENT_TESTMODE_STATE      = 17,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 433,
+      "text": "    HGIC_EVENT_FWDBG_INFO          = 18,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 434,
+      "text": "    HGIC_EVENT_CUSTOMER_MGMT       = 19,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 435,
+      "text": "    HGIC_EVENT_SLEEP_FAIL          = 20,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 436,
+      "text": "    HGIC_EVENT_DHCPC_DONE          = 21,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 437,
+      "text": "    HGIC_EVENT_CONNECT_FAIL        = 22,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 438,
+      "text": "    HGIC_EVENT_CUST_DRIVER_DATA    = 23,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 439,
+      "text": "    HGIC_EVENT_UNPAIR_STA          = 24,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 440,
+      "text": "    HGIC_EVENT_BLENC_DATA          = 25,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 441,
+      "text": "    HGIC_EVENT_HWSCAN_RESULT       = 26,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 442,
+      "text": "    HGIC_EVENT_EXCEPTION_INFO      = 27,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 443,
+      "text": "\tHGIC_EVENT_DSLEEP_WAKEUP       = 28,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 444,
+      "text": "    HGIC_EVENT_STA_MIC_ERROR       = 29,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 445,
+      "text": "    HGIC_EVENT_ACS_DONE            = 30,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 446,
+      "text": "    HGIC_EVENT_FW_INIT_DONE        = 31,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 447,
+      "text": "    HGIC_EVENT_ROAM_CONECTED       = 32,"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgic.h",
+      "line": 448,
+      "text": "    HGIC_EVENT_MGMT_FRAME          = 33,        "
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgics.c",
+      "line": 203,
+      "text": "    evt_id   = HDR_EVTID(evt);"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgics.c",
+      "line": 206,
+      "text": "        case HGIC_EVENT_BLENC_DATA:"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgics.c",
+      "line": 214,
+      "text": "        case HGIC_EVENT_HWSCAN_RESULT:"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgics.c",
+      "line": 268,
+      "text": "    fd = open(\"/proc/hgics/fwevnt\", O_RDONLY);"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/utils/fwctrl.c",
+      "line": 277,
+      "text": "                ctrl->rx_event(ctrl, skb);"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/utils/fwctrl.h",
+      "line": 37,
+      "text": "    void (*rx_event)(struct hgic_fwctrl *ctrl, struct sk_buff *skb);"
+    }
+  ]
+}

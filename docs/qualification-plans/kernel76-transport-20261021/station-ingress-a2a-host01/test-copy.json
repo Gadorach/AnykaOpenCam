@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-21T07:45:12.153896+00:00",
+  "argv": [
+    "apps/qualification/kernel76-station-ingress/prepare_tests.py"
+  ],
+  "python": "3.14.7 (main, Aug 14 2026, 06:38:32) [GCC 16.2.1 20260810]",
+  "files": {
+    "shim.h": {
+      "a1_bytes": 4551,
+      "a1_sha256": "f3a00162f28d2f98bc08d9229b6bb0d3b1241a9f3f796bab61a04a4b1b3c674b",
+      "copied_bytes": 4594,
+      "copied_sha256": "0c606928e0a2378e6a5ac8c37c7d858c671e067ad0f61d0542ae7f01f5a49784"
+    },
+    "test_control.c": {
+      "a1_bytes": 16649,
+      "a1_sha256": "3ea53cc312416c7fde4d950d76d42857d64f093ef187b230c81f48441ed49cfa",
+      "copied_bytes": 16649,
+      "copied_sha256": "3ea53cc312416c7fde4d950d76d42857d64f093ef187b230c81f48441ed49cfa"
+    }
+  }
+}

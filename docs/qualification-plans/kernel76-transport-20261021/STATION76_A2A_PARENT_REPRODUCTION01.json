@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-21T08:04:27.267327+00:00",
+  "state": "A2A_PARENT_HOST_REPRODUCTION_PASS_INDEPENDENT_REVIEW_PENDING",
+  "author_run": "run08",
+  "parent_run": "run09",
+  "source_and_all_recorded_input_pins_match": true,
+  "changed_source_files": [
+    "hgic_def.h",
+    "hgic_smac/core.c",
+    "hgic_smac/hgics.h",
+    "hgic_smac/rx.c",
+    "utils/fwctrl.c",
+    "utils/fwctrl.h",
+    "utils/if_usb.c"
+  ],
+  "all_68_A1_originals_rechecked": true,
+  "ingress_assertions_each_optimized_and_ASan_UBSan": 2806874,
+  "A1_regression_assertions_each_mode": 150705,
+  "compiled_runtime_mutants_caught": 8,
+  "original_A1_surplus_after_trim_acceptance_reproduced": true,
+  "all_recorded_command_output_hashes_reverified": true,
+  "parent_result_sha256": "ca73b4b34adcb6dbe6f54fa091460d51826189d5ac19b9913043ad09ef69e1af",
+  "no_target_private_input_network_ARM_build_or_staging": true,
+  "full_S4_event_consumer_S1_S2_S3_S5_S6_still_NO_GO": true,
+  "no_hardware_queue_or_current_recovery_admission": true
+}

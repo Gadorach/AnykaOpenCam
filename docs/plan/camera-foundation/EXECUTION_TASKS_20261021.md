@@ -1,5 +1,40 @@
 # Active execution ledger — remaining foundation work
 
+**Event design delivered / next parent selection:** source-only review specifies
+exact pre-trim EVENT/EVENT2 extent checks, full16-bit EVENT2 IDs, silent disposal
+of debug ID18 without reading/logging/exporting payload, and denial of all other
+IDs through the existing receipt latch. It identifies unchanged raw procfs/BT
+routes and queue-accounting limits; no payload ABI/source binding is guessed.
+After A2a narrow GO, parent selects **A2b SOURCE/HOST-only implementation** in a
+new isolated derivative, primarily rx.c/event.c, preserving A1/A2a. No ARM/module
+build or target use; full S4/S1/S2/S3/S5/S6 remain open and original HOLD stays.
+
+**A2a narrow SOURCE/HOST GO:** independent review verified all68 originals/seals/
+LICENSE/seven deltas, reproduced ingress+A1 suites and2,688,972 supplemental
+assertions per mode;8 compiled runtime mutants caught. This accepts only exact
+CMD/CMD2 original extent/status-to-copy and observed-failure RX-resubmission
+admission, not atomic cancellation or full S4/lifecycle/native proof. Review
+fixture/encoding-inventory failures remain preserved. Event-consumer source
+design review is still disjoint/pending; no event implementation or ARM build/
+staging/attachment is queued. Original HOLD/current hardware gates unchanged.
+
+**A2a candidate SOURCE/HOST:** exact68-file A1 derivative delivered (61 unchanged,
+seven changed). Author run08 and parent run09 match input pins; each optimized/
+ASan+UBSan mode passes2,806,874 ingress assertions plus150,705 A1 regressions,
+and8/8 compiled runtime mutants are caught. Original surplus-after-trim acceptance
+is reproduced and earlier failures retained. Independent narrow A2a review pending;
+source frozen. Disjoint SOURCE-only A2b event-consumer design review is active,
+not implementation. Event consumer/full S4/S1/S2/S3/S5/S6 and ARM build/staging/
+native attach remain NO-GO. No current hardware admission or target queue.
+
+**A1 committed locally `152cee0`:** exact reviewed local control/FWINFO source,
+licensed67-file baseline, behavioral tests/provenance and narrow independent GO.
+Ordinary index preserved; no push. A2a isolated SOURCE/HOST lane now owns only
+new `apps/qualification/kernel76-station-ingress/` derivative and its report/test
+evidence. A1 stays sealed; no ARM/module build or native command. Full S4/event
+consumer/lifecycle/guard/network gates remain open. No current capture/recovery
+authority or target queue.
+
 **A1 narrow SOURCE/HOST GO:** independent review reproduced150705 candidate
 assertions and131340 supplemental assertions per optimized/sanitized mode,16/16
 compiled runtime mutants caught, original faults/provenance/pins verified. This

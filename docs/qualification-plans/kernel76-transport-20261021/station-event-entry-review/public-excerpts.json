@@ -1,0 +1,449 @@
+{
+  "utc": "2026-10-21T08:09:13.713867+00:00",
+  "kind": "PUBLIC_SOURCE_EXCERPTS_NOT_BEHAVIORAL_TESTS",
+  "license": "SOURCE_LICENSE_GPL-2.0.txt; original notices retained in excerpts",
+  "excerpts": [
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "source_pin": {
+        "bytes": 19805,
+        "sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a"
+      },
+      "start_line": 110,
+      "end_line": 159,
+      "start_byte": 2371,
+      "extent_bytes": 1076,
+      "raw_excerpt_sha256": "eb5521a0c75635ec0c06904ce564fa0bcaf027c65b97abce5cbf16c60a25b6a1",
+      "text": "\r\n/*data packet header*/\r\nstruct hgic_hdr {\r\n    unsigned short magic;\r\n    unsigned char  type;\r\n    unsigned char  ifidx: 4, flags: 4;\r\n    unsigned short length;\r\n    unsigned short cookie;\r\n} __packed;\r\n\r\nstruct hgic_frm_hdr {\r\n    struct hgic_hdr hdr;\r\n    union {\r\n        struct hgic_rx_info rx_info;\r\n        struct hgic_tx_info tx_info;\r\n        unsigned char  rev[24];\r\n    };\r\n} __packed;\r\n\r\nstruct hgic_frm_hdr2 {\r\n    struct hgic_hdr hdr;\r\n} __packed;\r\n\r\n\r\n/*contro pakcet header*/\r\nstruct hgic_ctrl_hdr {\r\n    struct hgic_hdr hdr;\r\n    union {\r\n        struct {\r\n            unsigned char  cmd_id;\r\n            short status;\r\n        } cmd;\r\n        struct {\r\n            unsigned short  cmd_id;\r\n            short status;\r\n        } cmd2;\r\n        struct {\r\n            unsigned char event_id;\r\n            short value;\r\n        } event;\r\n        struct {\r\n            unsigned short event_id;\r\n            short value;\r\n        } event2;\r\n        struct {\r\n            unsigned char  type;\r\n        } hci;\r\n        unsigned char info[4];\r\n    };\r\n} __packed;\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "source_pin": {
+        "bytes": 19805,
+        "sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a"
+      },
+      "start_line": 195,
+      "end_line": 234,
+      "start_byte": 4205,
+      "extent_bytes": 1475,
+      "raw_excerpt_sha256": "e241612eb9606a23a21b3c15499f232a4b698fd5b23657be2f672afe2184297a",
+      "text": "#define HDR_CMDID(ctl) ((ctl)->hdr.type==HGIC_HDR_TYPE_CMD2? le16_to_cpu((ctl)->cmd2.cmd_id):(ctl)->cmd.cmd_id)\r\n#define HDR_EVTID(ctl) ((ctl)->hdr.type==HGIC_HDR_TYPE_EVENT2?le16_to_cpu((ctl)->event2.event_id):(ctl)->event.event_id)\r\n#define HDR_CMDID_SET(ctl, id) if(id>255){\\\r\n        (ctl)->hdr.type =HGIC_HDR_TYPE_CMD2;\\\r\n        (ctl)->cmd2.cmd_id = cpu_to_le16(id);\\\r\n    }else{\\\r\n        (ctl)->hdr.type =HGIC_HDR_TYPE_CMD;\\\r\n        (ctl)->cmd.cmd_id = id;\\\r\n    }\r\n#define HDR_EVTID_SET(ctl, id) if(id>255){\\\r\n        (ctl)->hdr.type =HGIC_HDR_TYPE_EVENT2;\\\r\n        (ctl)->event2.event_id = cpu_to_le16(id);\\\r\n    }else{\\\r\n        (ctl)->hdr.type =HGIC_HDR_TYPE_EVENT;\\\r\n        (ctl)->event.event_id = id;\\\r\n    }\r\n\r\nenum hgic_hdr_type {\r\n    HGIC_HDR_TYPE_ACK         = 1,\r\n    HGIC_HDR_TYPE_FRM         = 2,\r\n    HGIC_HDR_TYPE_CMD         = 3,\r\n    HGIC_HDR_TYPE_EVENT       = 4,\r\n    HGIC_HDR_TYPE_FIRMWARE    = 5,\r\n    HGIC_HDR_TYPE_NLMSG       = 6,\r\n    HGIC_HDR_TYPE_BOOTDL      = 7,\r\n    HGIC_HDR_TYPE_TEST        = 8,\r\n    HGIC_HDR_TYPE_FRM2        = 9,\r\n    HGIC_HDR_TYPE_TEST2       = 10,\r\n    HGIC_HDR_TYPE_SOFTFC      = 11,\r\n    HGIC_HDR_TYPE_OTA         = 12,\r\n    HGIC_HDR_TYPE_CMD2        = 13,\r\n    HGIC_HDR_TYPE_EVENT2      = 14,\r\n    HGIC_HDR_TYPE_BOOTDL_DATA = 15,\r\n    HGIC_HDR_TYPE_IFBR        = 16,\r\n    HGIC_HDR_TYPE_BEACON      = 17,\r\n    HGIC_HDR_TYPE_AGGFRM      = 18,\r\n    HGIC_HDR_TYPE_BLUETOOTH   = 19,\r\n\r\n    HGIC_HDR_TYPE_MAX,\r\n};\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "source_pin": {
+        "bytes": 19805,
+        "sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a"
+      },
+      "start_line": 415,
+      "end_line": 449,
+      "start_byte": 15619,
+      "extent_bytes": 1405,
+      "raw_excerpt_sha256": "82dc6d0523bf35ecd368cc0317a098d09aed71f1c396c324a18e27e7f336de2e",
+      "text": "enum hgic_event {\r\n    HGIC_EVENT_STATE_CHG           = 1,\r\n    HGIC_EVENT_CH_SWICH            = 2,\r\n    HGIC_EVENT_DISCONNECT_REASON   = 3,\r\n    HGIC_EVENT_ASSOC_STATUS        = 4,\r\n    HGIC_EVENT_SCANNING            = 5,\r\n    HGIC_EVENT_SCAN_DONE           = 6,\r\n    HGIC_EVENT_TX_BITRATE          = 7,\r\n    HGIC_EVENT_PAIR_START          = 8,\r\n    HGIC_EVENT_PAIR_SUCCESS        = 9,\r\n    HGIC_EVENT_PAIR_DONE           = 10,\r\n    HGIC_EVENT_CONECT_START        = 11,\r\n    HGIC_EVENT_CONECTED            = 12,\r\n    HGIC_EVENT_DISCONECTED         = 13,\r\n    HGIC_EVENT_SIGNAL              = 14,\r\n    HGIC_EVENT_DISCONNET_LOG       = 15,\r\n    HGIC_EVENT_REQUEST_PARAM       = 16,\r\n    HGIC_EVENT_TESTMODE_STATE      = 17,\r\n    HGIC_EVENT_FWDBG_INFO          = 18,\r\n    HGIC_EVENT_CUSTOMER_MGMT       = 19,\r\n    HGIC_EVENT_SLEEP_FAIL          = 20,\r\n    HGIC_EVENT_DHCPC_DONE          = 21,\r\n    HGIC_EVENT_CONNECT_FAIL        = 22,\r\n    HGIC_EVENT_CUST_DRIVER_DATA    = 23,\r\n    HGIC_EVENT_UNPAIR_STA          = 24,\r\n    HGIC_EVENT_BLENC_DATA          = 25,\r\n    HGIC_EVENT_HWSCAN_RESULT       = 26,\r\n    HGIC_EVENT_EXCEPTION_INFO      = 27,\r\n\tHGIC_EVENT_DSLEEP_WAKEUP       = 28,\r\n    HGIC_EVENT_STA_MIC_ERROR       = 29,\r\n    HGIC_EVENT_ACS_DONE            = 30,\r\n    HGIC_EVENT_FW_INIT_DONE        = 31,\r\n    HGIC_EVENT_ROAM_CONECTED       = 32,\r\n    HGIC_EVENT_MGMT_FRAME          = 33,        \r\n};\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic.h",
+      "source_pin": {
+        "bytes": 19805,
+        "sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a"
+      },
+      "start_line": 475,
+      "end_line": 498,
+      "start_byte": 17847,
+      "extent_bytes": 522,
+      "raw_excerpt_sha256": "b125f0b93eb55888f93ed48fbc7dcdc51ee7df208a5b8cd87811fd2bfbe4318d",
+      "text": "struct hgic_exception_info {\r\n    int num;\r\n    union {\r\n        struct  {\r\n            int max, avg, min;\r\n        } txdelay;\r\n        struct  {\r\n            int max, avg, min;\r\n        } bgrssi;\r\n        struct  {\r\n            int total, used;\r\n        } buffer_usage;\r\n        struct  {\r\n            int total, used;\r\n        } heap_usage;\r\n        struct  {\r\n            int temp;\r\n        } temperature;\r\n    } info;\r\n};\r\n\r\nstruct hgic_dhcp_result {\r\n    unsigned int ipaddr, netmask, svrip, router, dns1, dns2;\r\n};\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_def.h",
+      "source_pin": {
+        "bytes": 8719,
+        "sha256": "3d13521744e834465feb47f492e567eaefe640e125c28e837f75bb44dc167571"
+      },
+      "start_line": 16,
+      "end_line": 21,
+      "start_byte": 329,
+      "extent_bytes": 158,
+      "raw_excerpt_sha256": "b33f5f3024dc46a6656ef0ef9adfb979d38e051271d167e284a4b993fb388b58",
+      "text": "#define HGIC_WDEV_ID_AP   2\r\n#define HGIC_WDEV_ID_STA  1\r\n#define HGIC_SCAN_MAX_NUM 32\r\n\r\n#define HGIC_HDR_TX_MAGIC 0x1A2B\r\n#define HGIC_HDR_RX_MAGIC 0x2B1A\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/event.c",
+      "source_pin": {
+        "bytes": 1776,
+        "sha256": "5e480e6a21c45714386a458f69913e7d420001e7d6fc3c04b4d5e78f41f14cac"
+      },
+      "start_line": 1,
+      "end_line": 70,
+      "start_byte": 0,
+      "extent_bytes": 1776,
+      "raw_excerpt_sha256": "5e480e6a21c45714386a458f69913e7d420001e7d6fc3c04b4d5e78f41f14cac",
+      "text": "\r\n#ifdef __RTOS__\r\n#include <linux/types.h>\r\n#include <linux/unaligned.h>\r\n#include <linux/bitops.h>\r\n#include <linux/jiffies.h>\r\n#include <linux/string.h>\r\n#include <linux/mutex.h>\r\n#include <linux/spinlock.h>\r\n#include <linux/skbuff.h>\r\n#include <linux/netdevice.h>\r\n#include <linux/etherdevice.h>\r\n#include <linux/hrtimer.h>\r\n#else\r\n#include <linux/version.h>\r\n#include <linux/module.h>\r\n#include <linux/sched.h>\r\n#include <linux/net.h>\r\n#include <linux/slab.h>\r\n#include <linux/skbuff.h>\r\n#include <linux/etherdevice.h>\r\n#include <linux/wireless.h>\r\n#endif\r\n\r\n#include \"hgics.h\"\r\n#include \"event.h\"\r\n\r\n#define HGIC_EVENT_MAX (16)\r\n\r\nvoid hgics_rx_fw_event(struct hgic_fwctrl *ctrl, struct sk_buff *skb)\r\n{\r\n    char drop  = 0;\r\n    char *data = NULL;\r\n    u32 data_len;\r\n    u32 evt_id = 0;\r\n    struct hgic_ctrl_hdr *evt = NULL;\r\n    struct hgics_wdev *hg = container_of(ctrl, struct hgics_wdev, ctrl);\r\n\r\n    evt    = (struct hgic_ctrl_hdr *)skb->data;\r\n    data   = (char *)(evt + 1);\r\n    data_len = skb->len - sizeof(struct hgic_ctrl_hdr);\r\n    evt_id = HDR_EVTID(evt);\r\n\r\n    //hgic_dbg(\"rx event %d\\r\\n\", evt_id);\r\n    switch (evt_id) {\r\n        case HGIC_EVENT_FWDBG_INFO:\r\n            drop = 1;\r\n            printk(data);\r\n            break;\r\n        default:\r\n            break;\r\n    }\r\n\r\n#ifdef __RTOS__\r\n    hgics_event(hg, \"hgics\", evt_id, data, data_len);\r\n    dev_kfree_skb(skb);\r\n#else\r\n    if (!drop) {\r\n        if (skb_queue_len(&hg->evt_list) > HGIC_EVENT_MAX) {\r\n            kfree_skb(skb_dequeue(&hg->evt_list));\r\n            hgic_err(\"event list is full (max %d), drop old event\\r\\n\", HGIC_EVENT_MAX);\r\n        }\r\n        skb_queue_tail(&hg->evt_list, skb);\r\n        up(&hg->evt_sema);\r\n    } else {\r\n        dev_kfree_skb(skb);\r\n    }\r\n#endif\r\n}\r\n\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/event.h",
+      "source_pin": {
+        "bytes": 229,
+        "sha256": "8abca8bc4d9e6efbb2137647a7290684e74809dcad81606ee8f908e35d0ae1e3"
+      },
+      "start_line": 1,
+      "end_line": 9,
+      "start_byte": 0,
+      "extent_bytes": 229,
+      "raw_excerpt_sha256": "8abca8bc4d9e6efbb2137647a7290684e74809dcad81606ee8f908e35d0ae1e3",
+      "text": "\r\n#ifndef _HGICS_EVENT_H_\r\n#define _HGICS_EVENT_H_\r\n\r\nvoid hgics_rx_fw_event(struct hgic_fwctrl *ctrl, struct sk_buff *skb);\r\nvoid hgics_event(struct hgics_wdev *hg, char *ifname, int event, int param1, int param2);\r\n\r\n#endif\r\n\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/Makefile",
+      "source_pin": {
+        "bytes": 724,
+        "sha256": "6650f2598d759cd190ed2298bf0d6ed8bbe26b323a7c85f4258e2468d2ab81f3"
+      },
+      "start_line": 1,
+      "end_line": 26,
+      "start_byte": 0,
+      "extent_bytes": 724,
+      "raw_excerpt_sha256": "6650f2598d759cd190ed2298bf0d6ed8bbe26b323a7c85f4258e2468d2ab81f3",
+      "text": "obj-$(CONFIG_HGICS)    += hgics.o\nccflags-y += -DCONFIG_HGIC_2G -DCONFIG_HGIC_USB\nccflags-y += -include $(src)/../linux6-compat.h\n\nhgics-objs += core.o\nhgics-objs += rx.o\nhgics-objs += ap.o\nhgics-objs += util.o\nhgics-objs += event.o\nhgics-objs += procfs.o\nhgics-objs += hw.o\nhgics-objs += ../utils/utils.o\nhgics-objs += ../utils/fwdl.o\nhgics-objs += ../utils/fwctrl.o\nhgics-objs += ../utils/ota.o\nhgics-objs += ../utils/fwinfo.o\nhgics-objs += ../utils/iwpriv.o\nhgics-objs += ../utils/bluetooth.o\n\nhgics-$(CONFIG_HGIC_SDIO) += ../utils/if_sdio.o\nhgics-$(CONFIG_HGIC_USB)  += ../utils/if_usb.o\n\nhgics-$(CONFIG_HGIC_2G) += 11bgn.o\nhgics-$(CONFIG_HGIC_AH) += 11ah.o\n\nhgics-$(CONFIG_HGIC_STABR) += stabr.o stabr_arp.o stabr_ip.o\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/rx.c",
+      "source_pin": {
+        "bytes": 10823,
+        "sha256": "c9b145f50952a8bc5dc573b845e3a443b78d2cf509d5e7be294e5c63cb83c772"
+      },
+      "start_line": 164,
+      "end_line": 205,
+      "start_byte": 5143,
+      "extent_bytes": 1141,
+      "raw_excerpt_sha256": "2da9252ce461b8a34a9df27482d7e9755b3c78ba5dbb1e02f1f5d26760b54823",
+      "text": "static void hgics_rx_bt_data(struct hgics_wdev *hg, u8 *data, int len)\r\n{\r\n#ifndef __RTOS__\r\n    struct hgic_ctrl_hdr *hdr = (struct hgic_ctrl_hdr *)data;\r\n\r\n    if ((u16)(hg->rx_cookie + 1) != hdr->hdr.cookie) {\r\n        hgic_err(\"cookie:%d-%d\\r\\n\", hg->rx_cookie, hdr->hdr.cookie);\r\n    }\r\n    hg->rx_cookie = hdr->hdr.cookie;\r\n\r\n#ifdef CONFIG_BT\r\n    if (hg->hci) {\r\n\t\tdata += sizeof(struct hgic_ctrl_hdr);\r\n\t\tlen  -= sizeof(struct hgic_ctrl_hdr);\r\n        hci_recv_fragment(hg->hci, hdr->hci.type, data, len);\r\n    } else\r\n#endif\r\n    {\r\n        struct sk_buff *skb = dev_alloc_skb(len);\r\n        if (skb) {\r\n            memcpy(skb->data, data, len);\r\n            skb_put(skb, len);\r\n            if (skb_queue_len(&hg->evt_list) > 16) {\r\n                kfree_skb(skb_dequeue(&hg->evt_list));\r\n            }\r\n            skb_queue_tail(&hg->evt_list, skb);\r\n            up(&hg->evt_sema);\r\n        } else {\r\n            hgic_err(\"alloc skb fail, drop bt data ...\\r\\n\");\r\n        }\r\n    }\r\n#else\r\n    /* TBD... */\r\n#endif\r\n}\r\n\r\nvoid hgics_rx_error(void *hgobj)\n{\n    struct hgics_wdev *hg = hgobj;\n\n    hgic_fwctrl_rx_error(&hg->ctrl);\n}\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/rx.c",
+      "source_pin": {
+        "bytes": 10823,
+        "sha256": "c9b145f50952a8bc5dc573b845e3a443b78d2cf509d5e7be294e5c63cb83c772"
+      },
+      "start_line": 207,
+      "end_line": 258,
+      "start_byte": 6285,
+      "extent_bytes": 2103,
+      "raw_excerpt_sha256": "e417f1320cf8e87df377dad4d27dc3b5284a26f7cd45f0c117220f667fd209a6",
+      "text": "int hgics_rx_data(void *hgobj, u8 *data, int len)\n{\r\n    int i = 0;\r\n    struct hgics_wdev *hg = hgobj;\r\n    struct hgic_frm_hdr *hdr = NULL;\r\n    struct hgic_dack_hdr *ackhdr = NULL;\r\n    struct hgics_txstatus txstat;\n    u16 magic, declared;\n    int actual = len;\n\r\n    if (READ_ONCE(hg->bus->rx_failed))\n        return -EPROTO;\n    if (!data || len < sizeof(struct hgic_hdr))\n        goto bad_rx;\n    /* Retail alignment prefix is at most four0xff bytes; bound the\n     * helper's otherwise unbounded lookahead before parsing any header.\n     */\n    for (i = 0; i < 4 && i < len && data[i] == 0xff; i++) {}\n    if (len - i < sizeof(struct hgic_hdr))\n        goto bad_rx;\n    data += i; len -= i;\n    hdr = (struct hgic_frm_hdr *)data;\n    magic = get_unaligned_le16(data);\n    declared = get_unaligned_le16(data + 4);\n    /* Qualification policy: one exact CMD/CMD2 per original USB completion.\n     * No RX padding/prefix grammar is established for station control. Do not\n     * borrow TX alignment rules, trim surplus (even zero), or flatten packets.\n     * All checks precede wire normalization and the asynchronous A1 decoder.\n     */\n    if (magic != HGIC_HDR_RX_MAGIC || declared < sizeof(struct hgic_hdr))\n        goto bad_rx;\n    if ((hdr->hdr.type == HGIC_HDR_TYPE_CMD || hdr->hdr.type == HGIC_HDR_TYPE_CMD2) &&\n        (i != 0 || len < sizeof(struct hgic_ctrl_hdr) || declared != actual))\n        goto bad_rx;\n    if (hdr->hdr.type != HGIC_HDR_TYPE_BOOTDL && len < declared)\n        goto bad_rx;\n    hdr->hdr.magic  = le16_to_cpu(hdr->hdr.magic);\r\n    hdr->hdr.length = le16_to_cpu(hdr->hdr.length);\r\n    hdr->hdr.cookie = le16_to_cpu(hdr->hdr.cookie);\r\n\r\n    if (hdr->hdr.magic != HGIC_HDR_RX_MAGIC) {\r\n        hgic_err(\"invalid rx magic: %x\\r\\n\", hdr->hdr.magic);\r\n        return -1;\r\n    }\r\n\r\n    if (hdr->hdr.type != HGIC_HDR_TYPE_BOOTDL && len < hdr->hdr.length) {\r\n        hgic_err(\"invalid data length: %x/%x, type:%d\\r\\n\", len, hdr->hdr.length, hdr->hdr.type);\r\n        return -1;\r\n    }\r\n\r\n    len = (len < hdr->hdr.length ? len : hdr->hdr.length);\r\n    switch (hdr->hdr.type) {\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/rx.c",
+      "source_pin": {
+        "bytes": 10823,
+        "sha256": "c9b145f50952a8bc5dc573b845e3a443b78d2cf509d5e7be294e5c63cb83c772"
+      },
+      "start_line": 285,
+      "end_line": 292,
+      "start_byte": 9510,
+      "extent_bytes": 278,
+      "raw_excerpt_sha256": "a5d69b9d6cdb22a8f80510e576c90a7716309fbc4268a4132c36d8e666d79585",
+      "text": "        case HGIC_HDR_TYPE_CMD:\r\n        case HGIC_HDR_TYPE_CMD2:\r\n        case HGIC_HDR_TYPE_EVENT:\r\n        case HGIC_HDR_TYPE_EVENT2:\r\n        case HGIC_HDR_TYPE_BOOTDL:\r\n        case HGIC_HDR_TYPE_OTA:\r\n            hgic_fwctrl_rx(&hg->ctrl, data, len);\r\n            break;\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/rx.c",
+      "source_pin": {
+        "bytes": 10823,
+        "sha256": "c9b145f50952a8bc5dc573b845e3a443b78d2cf509d5e7be294e5c63cb83c772"
+      },
+      "start_line": 305,
+      "end_line": 324,
+      "start_byte": 10189,
+      "extent_bytes": 632,
+      "raw_excerpt_sha256": "4a727aa690013656eabf02f092e887711727e026ff735a2165f7be91d91e599e",
+      "text": "        case HGIC_HDR_TYPE_SOFTFC:\r\n            hg->last_rx = jiffies;\r\n            atomic_set(&hg->txwnd, hdr->hdr.cookie);\r\n            complete(&hg->txwnd_cp);\r\n            break;\r\n        case HGIC_HDR_TYPE_BLUETOOTH:\r\n            if (!test_bit(HGICS_STATE_INITED, &hg->state) || hg->if_test) {\r\n                return -1;\r\n            }\r\n            hgics_rx_bt_data(hg, data, len);\r\n            break;\r\n        default:\r\n            hgic_err(\"unknow packet type:%d, len:%d, cookie:%x\\n\", hdr->hdr.type, len, hdr->hdr.cookie);\r\n            return -1;\r\n    }\r\n    return 0;\nbad_rx:\n    hgics_rx_error(hg);\n    return -EPROTO;\n}\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/utils/fwctrl.c",
+      "source_pin": {
+        "bytes": 46706,
+        "sha256": "9a33bb351f36438f897ebccb2da54de285da24bf8a7eebe6ec813dff09a96c83"
+      },
+      "start_line": 170,
+      "end_line": 195,
+      "start_byte": 5668,
+      "extent_bytes": 876,
+      "raw_excerpt_sha256": "05544aa8fdf3d0a8a977f9c82a7d616d961341951486daaac2e85f3427c03195",
+      "text": "/* Caller holds lock. Poison all station waiters, not a later response chosen by\n * cookie alone. Boot/maintenance ownership is NOT qualified by this A1 change.\n */\nstatic void hgic_fwctrl_bad_receipt(struct hgic_fwctrl *ctrl)\n{\n    struct hgic_cmd_response *resp;\n\n    WRITE_ONCE(ctrl->receipt_error, -EPROTO);\n    WRITE_ONCE(ctrl->bus->rx_failed, 1);\n    list_for_each_entry(resp, &ctrl->pd_list, list) {\n        if ((resp->type == HGIC_HDR_TYPE_CMD || resp->type == HGIC_HDR_TYPE_CMD2) && !resp->done) {\n            resp->done = true;\n            complete(&resp->cmpl);\n        }\n    }\n}\n\n/* USB/core ingress uses the same locked A1 waiter/copy-admission latch. */\nvoid hgic_fwctrl_rx_error(struct hgic_fwctrl *ctrl)\n{\n    unsigned long flags;\n\n    spin_lock_irqsave(&ctrl->lock, flags);\n    hgic_fwctrl_bad_receipt(ctrl);\n    spin_unlock_irqrestore(&ctrl->lock, flags);\n}\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/utils/fwctrl.c",
+      "source_pin": {
+        "bytes": 46706,
+        "sha256": "9a33bb351f36438f897ebccb2da54de285da24bf8a7eebe6ec813dff09a96c83"
+      },
+      "start_line": 254,
+      "end_line": 284,
+      "start_byte": 8386,
+      "extent_bytes": 1029,
+      "raw_excerpt_sha256": "b6e97aed60f46961a2d2487fd403af4a065e59671cd734ac98365fc291e58120",
+      "text": "static void hgic_fwctrl_work(struct work_struct *work)\r\n{\r\n    struct hgic_fwctrl *ctrl = NULL;\r\n    struct sk_buff *skb = NULL;\r\n    struct hgic_ctrl_hdr *hdr = NULL;\r\n\r\n    ctrl = container_of(work, struct hgic_fwctrl, work);\r\n    while (!skb_queue_empty(&ctrl->rxq)) {\r\n        skb = skb_dequeue(&ctrl->rxq);\n        if (!hgic_ctrl_frame_valid(skb->data, skb->len)) {\n            hgic_fwctrl_rx_response(ctrl, skb);\n            continue;\n        }\n        hdr = (struct hgic_ctrl_hdr *)skb->data;\r\n        switch (hdr->hdr.type) {\r\n            case HGIC_HDR_TYPE_CMD:\r\n            case HGIC_HDR_TYPE_CMD2:\r\n            case HGIC_HDR_TYPE_BOOTDL:\r\n            case HGIC_HDR_TYPE_OTA:\r\n                hgic_fwctrl_rx_response(ctrl, skb);\r\n                break;\r\n            case HGIC_HDR_TYPE_EVENT:\r\n            case HGIC_HDR_TYPE_EVENT2:\r\n                ctrl->rx_event(ctrl, skb);\r\n                break;\r\n            default:\n                hgic_fwctrl_rx_response(ctrl, skb);\n                break;\r\n        }\r\n    }\r\n}\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/utils/fwctrl.c",
+      "source_pin": {
+        "bytes": 46706,
+        "sha256": "9a33bb351f36438f897ebccb2da54de285da24bf8a7eebe6ec813dff09a96c83"
+      },
+      "start_line": 334,
+      "end_line": 371,
+      "start_byte": 11095,
+      "extent_bytes": 1176,
+      "raw_excerpt_sha256": "888600d36018b0c69408ee378d834429422e474fb7026e2fb83bb27185a09cd5",
+      "text": "void hgic_fwctrl_rx(struct hgic_fwctrl *ctrl, u8 *data, int len)\n{\n    struct sk_buff *skb;\n    unsigned long flags;\n    if (!data || len <= 0 || len > 0xffff) {\n        spin_lock_irqsave(&ctrl->lock, flags);\n        hgic_fwctrl_bad_receipt(ctrl);\n        spin_unlock_irqrestore(&ctrl->lock, flags);\n        return;\n    }\n    if (ctrl->wq) {\r\n        skb = dev_alloc_skb(len);\r\n        if (skb) {\r\n            memcpy(skb->data, data, len);\r\n            skb_put(skb, len);\r\n            skb_queue_tail(&ctrl->rxq, skb);\r\n            queue_work(ctrl->wq, &ctrl->work);\r\n        } else {\r\n            hgic_err(\"alloc skb fail\\r\\n\");\r\n        }\r\n    } else {\r\n        hgic_err(\"fwctrl workqueue is NULL\\r\\n\");\r\n    }\r\n}\r\n\r\nvoid hgic_fwctrl_init(struct hgic_fwctrl *ctrl, void *dev, struct hgic_bus *bus)\r\n{\r\n    memset(ctrl, 0, sizeof(struct hgic_fwctrl));\r\n    ctrl->dev = dev;\r\n    ctrl->bus = bus;\r\n    ctrl->radio_onoff = 1;\r\n    spin_lock_init(&ctrl->lock);\r\n    INIT_LIST_HEAD(&ctrl->pd_list);\r\n    skb_queue_head_init(&ctrl->rxq);\r\n    skb_queue_head_init(&ctrl->txq);\r\n    INIT_WORK(&ctrl->work, hgic_fwctrl_work);\r\n    ctrl->wq = ALLOC_ORDERED_WORKQUEUE(\"fwctrl\", 0);\r\n}\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/utils/fwctrl.h",
+      "source_pin": {
+        "bytes": 17209,
+        "sha256": "52f8cc93aef88e85f96238cde152cc93395d17efb3600a3c366cca0751080db6"
+      },
+      "start_line": 20,
+      "end_line": 50,
+      "start_byte": 453,
+      "extent_bytes": 1563,
+      "raw_excerpt_sha256": "ef839fee3239d9de139c0eb4d5254c3506f3862c969ed697c489853917312f19",
+      "text": "};\r\n\r\nstruct hgic_fwctrl {\r\n    struct device      *dev;\r\n    u16                 cookie;\n    int                 receipt_error; /* inhibits subsequent station admission */\n    spinlock_t          lock;    /*ctrl packet pending lock*/\r\n    struct list_head    pd_list; /*ctrl packet pending queue (for sync cmd)*/\r\n    struct sk_buff_head rxq;   /*fw ctrl packet rx queue*/\r\n    struct sk_buff_head txq;   /*fw ctrl packet tx queue*/\r\n    struct work_struct  work;  /*fw ctrl rx packet process work*/\r\n    struct workqueue_struct *wq;\r\n    u8                  qc_mode;\r\n    u8                  radio_onoff;\r\n    struct hgic_fw_info *fwinfo;\r\n    struct hgic_bus *bus;\r\n    void (*schedule)(struct hgic_fwctrl *ctrl);\r\n    void (*rx_event)(struct hgic_fwctrl *ctrl, struct sk_buff *skb);\r\n};\r\n\r\n/*\r\nint hgic_fwctrl_set_byte(struct hgic_fwctrl *ctrl, int cmd_id, u8 val);\r\nint hgic_fwctrl_set_int_val(struct hgic_fwctrl *ctrl, int cmd_id, int val);\r\nint hgic_fwctrl_get_int_val(struct hgic_fwctrl *ctrl, int cmd_id);\r\nint hgic_fwctrl_get_bytes(struct hgic_fwctrl *ctrl, int cmd_id, char *buff, int len);\r\nint hgic_fwctrl_do_cmd(struct hgic_fwctrl *ctrl, int cmd_id, char *data, int len, char *buff, int size);\r\nint hgic_fwctrl_rx_proc(struct hgic_fwctrl *ctrl, struct sk_buff *skb);\r\nstruct sk_buff *hgic_fwctrl_send_data(struct hgic_fwctrl *ctrl, struct sk_buff *skb, struct hgic_cmd_response *resp, u32 timeout);\r\nvoid hgic_fwctrl_clear_pdlist(struct hgic_fwctrl *ctrl);\r\nint hgic_fwctrl_set_bytes(struct hgic_fwctrl *ctrl, int cmd_id, char *data, int len);\r\n*/\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/utils/control_receipt.h",
+      "source_pin": {
+        "bytes": 3984,
+        "sha256": "3b80f917e989fd3587f61e94d9dea713bb26059d7243de5cf0c7bbaccc869073"
+      },
+      "start_line": 1,
+      "end_line": 25,
+      "start_byte": 0,
+      "extent_bytes": 1065,
+      "raw_excerpt_sha256": "5466c68a2f5f5c6c2874ac2f30f3bca93590a35e4d052834df593427ba192037",
+      "text": "/* SPDX-License-Identifier: GPL-2.0-only\n * A1: selected station76 control receipt checks, not an attach controller.\n */\n#ifndef HGIC_CONTROL_RECEIPT_H\n#define HGIC_CONTROL_RECEIPT_H\n\n#include <linux/errno.h>\n#include <linux/unaligned.h>\n#include <linux/etherdevice.h>\n#include <linux/build_bug.h>\n\nstatic_assert(sizeof(struct hgic_ctrl_hdr) == 12, \"selected control ABI\");\nstatic_assert(offsetof(struct hgic_ctrl_hdr, cmd.status) == 10, \"selected CMD status\");\nstatic_assert(offsetof(struct hgic_ctrl_hdr, cmd2.status) == 10, \"selected CMD2 status\");\n\n/* rx.c normalizes these three outer u16 fields to CPU endian before fwctrl_rx.\n * The remaining command/status/payload fields are still little endian.\n * Do not reinterpret the mirror's 28-byte fw_info as a retail wire object.\n */\nstatic inline bool hgic_ctrl_frame_valid(const u8 *data, size_t len)\n{\n    return data && len >= sizeof(struct hgic_ctrl_hdr) && len <= 0xffff &&\n           get_unaligned((const u16 *)(data + 0)) == HGIC_HDR_RX_MAGIC &&\n           get_unaligned((const u16 *)(data + 4)) == len;\n}\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/utils/if_usb.c",
+      "source_pin": {
+        "bytes": 15757,
+        "sha256": "500a5b4149bf506256542f5f19b2b8476051ef0749e110c483ec0b5f02672a79"
+      },
+      "start_line": 224,
+      "end_line": 263,
+      "start_byte": 6399,
+      "extent_bytes": 1745,
+      "raw_excerpt_sha256": "0e17988f41c44dc3d300d0a886beddb15d4709a9dca590bfa59a3f5c20d1ec7d",
+      "text": "static void hgic_usb_receive(struct urb *urb)\n{\n    struct hgic_usb_buf *buf = (struct hgic_usb_buf *)urb->context;\n    struct hgic_usb *usbdev = buf->usbdev;\n    int ret;\n\r\n    //hgic_enter();\r\n    if (buf->usbdev->status & HGIC_USB_STATUS_STOP) {\r\n        hgic_usb_enq(buf, &buf->usbdev->rx_freeq);\r\n        hgic_err(\"STOP, drop data, status=%x\\r\\n\", buf->usbdev->status);\r\n        return;\r\n    }\r\n\r\n    /* STOP is normal cancellation above: never deliver or resubmit it. Other\n     * completion failures poison A1 acceptance, including error+zero. A successful\n     * zero-length completion has no established station wire meaning: reject.\n     * The allocated backing is exactly max_pkt_len; verify the URB still names\n     * that backing and its full extent before trusting actual_length or data.\n     */\n    if ((usbdev->status & HGIC_USB_STATUS_ERR) || READ_ONCE(usbdev->bus.rx_failed) ||\n        urb->status || !buf->data || urb->transfer_buffer != buf->data ||\n        urb->transfer_buffer_length != max_pkt_len ||\n        urb->actual_length <= 0 || urb->actual_length > urb->transfer_buffer_length)\n        goto bad_rx;\n    ret = usbdev->bus.rx_packet(usbdev->bus.bus_priv, buf->data, urb->actual_length);\n    if (ret == -EPROTO || READ_ONCE(usbdev->bus.rx_failed))\n        goto bad_rx;\n    hgic_usb_submit_rx_urb(buf);\n    //hgic_leave();\n    return;\nbad_rx:\n    usbdev->status |= HGIC_USB_STATUS_ERR;\n    WRITE_ONCE(usbdev->bus.rx_failed, 1);\n    if (usbdev->bus.rx_error)\n        usbdev->bus.rx_error(usbdev->bus.bus_priv);\n    /* Keep backing owned. Other in-flight URBs retire through their callbacks;\n     * this is not a kill/drain/free or a global work-cancellation receipt.\n     */\n    hgic_usb_enq(buf, &usbdev->rx_freeq);\n}\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/core.c",
+      "source_pin": {
+        "bytes": 43055,
+        "sha256": "71a578f033148b2290b2b2b8de5ad540aeb7e4d348043a986615fcad07743452"
+      },
+      "start_line": 993,
+      "end_line": 1048,
+      "start_byte": 32334,
+      "extent_bytes": 1925,
+      "raw_excerpt_sha256": "24c24dc7db83ad66e26b62fe680bf98bbbb025be4e4da643a8a7173cf995a37a",
+      "text": "static void hgics_detect_work(struct work_struct *work)\r\n{\r\n    int status = -1;\r\n    struct hgics_wdev *hg  = container_of(work, struct hgics_wdev, detect_work);\r\n\r\n    if (!test_bit(HGIC_BUS_FLAGS_SLEEP, &hg->bus->flags) && !test_bit(HGICS_STATE_REMOVE, &hg->state)) {\r\n        if (test_bit(HGIC_BUS_FLAGS_ERROR, &hg->bus->flags) || time_after(jiffies, hg->last_rx + msecs_to_jiffies(HGIC_DETECT_TIMER))) {\r\n            status = hgic_bootdl_cmd_enter(&hg->bootdl);\r\n            if (status != STATE_FW) {\r\n                hg->soft_fc = 0;\r\n                clear_bit(HGICS_STATE_START, &hg->state);\r\n                hgic_clear_queue(&hg->ctrl.txq);\r\n                if(hg->bus->reinit){\r\n                    hg->bus->reinit(hg->bus);\r\n                }\r\n                if (!test_bit(HGICS_STATE_REMOVE, &hg->state)) {\r\n                    schedule_work(&hg->delay_init);\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    if (!test_bit(HGICS_STATE_REMOVE, &hg->state)) {\r\n        mod_timer(&hg->detect_tmr, jiffies + msecs_to_jiffies(HGIC_DETECT_TIMER));\r\n    }\r\n}\r\n\r\n#if !defined(__RTOS__) && LINUX_VERSION_CODE >= KERNEL_VERSION(4,14,0)\r\nstatic void hgics_detect_timer(struct timer_list *t)\r\n{\r\n    struct hgics_wdev *hg = from_timer(hg, t, detect_tmr);\r\n    if (!test_bit(HGICS_STATE_REMOVE, &hg->state)) {\r\n        schedule_work(&hg->detect_work);\r\n    }\r\n}\r\n#else\r\nstatic void hgics_detect_timer(unsigned long arg)\r\n{\r\n    struct hgics_wdev *hg = (struct hgics_wdev *) arg;\r\n    if (!test_bit(HGICS_STATE_REMOVE, &hg->state)) {\r\n        schedule_work(&hg->detect_work);\r\n    }\r\n}\r\n#endif\r\n\r\nstatic void hgics_schedule(struct hgic_fwctrl *ctrl)\r\n{\r\n    struct hgics_wdev *hg = container_of(ctrl, struct hgics_wdev, ctrl);\r\n    queue_work(hg->tx_wq, &hg->tx_work);\r\n}\r\n\r\nstatic void hgics_probe_post(void *priv)\r\n{\r\n    struct hgics_wdev *hg  = (struct hgics_wdev *)priv;\r\n    schedule_work(&hg->delay_init);\r\n}\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/core.c",
+      "source_pin": {
+        "bytes": 43055,
+        "sha256": "71a578f033148b2290b2b2b8de5ad540aeb7e4d348043a986615fcad07743452"
+      },
+      "start_line": 1107,
+      "end_line": 1121,
+      "start_byte": 36193,
+      "extent_bytes": 511,
+      "raw_excerpt_sha256": "8074184e463eacd3946efc821849ee7866cd4a73bb26394175cb989a49d77949",
+      "text": "#ifdef __RTOS__\r\n        skb_queue_head_deinit(&hg->data_txq[0]);\r\n        skb_queue_head_deinit(&hg->data_txq[1]);\r\n        skb_queue_head_deinit(&hg->data_txq[2]);\r\n        skb_queue_head_deinit(&hg->data_txq[3]);\r\n        skb_queue_head_deinit(&hg->trans_q);\r\n        skb_queue_head_deinit(&hg->ack_q);\r\n        deinit_completion(&hg->txwnd_cp);\r\n        spin_lock_deinit(&hg->lock);\r\n#else\r\n        hgic_clear_queue(&hg->evt_list);\r\n        if (hg->conf) {\r\n            kfree(hg->conf);\r\n        }\r\n#endif\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/core.c",
+      "source_pin": {
+        "bytes": 43055,
+        "sha256": "71a578f033148b2290b2b2b8de5ad540aeb7e4d348043a986615fcad07743452"
+      },
+      "start_line": 1162,
+      "end_line": 1165,
+      "start_byte": 37780,
+      "extent_bytes": 183,
+      "raw_excerpt_sha256": "02478ea7023a2695dc527f2e3a6c2aba54e4081e2ae38249908d6b62faf894bf",
+      "text": "    hgic_fwctrl_init(&hg->ctrl, dev, bus);\r\n    hg->ctrl.schedule = hgics_schedule;\r\n    hg->ctrl.rx_event = hgics_rx_fw_event;\r\n    hgic_ota_init(&hg->ota, &hg->ctrl, &hg->fwinfo);\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/core.c",
+      "source_pin": {
+        "bytes": 43055,
+        "sha256": "71a578f033148b2290b2b2b8de5ad540aeb7e4d348043a986615fcad07743452"
+      },
+      "start_line": 1193,
+      "end_line": 1211,
+      "start_byte": 39048,
+      "extent_bytes": 569,
+      "raw_excerpt_sha256": "38d5f76cbcc75a8f5192bc1c087f197e8914623d3779e53eea07f441744a8b40",
+      "text": "#ifdef __RTOS__\r\n    hg->conf = sys_get_umaccfg();\r\n#else\r\n    skb_queue_head_init(&hg->evt_list);\r\n    sema_init(&hg->evt_sema, 0);\r\n    hg->conf = kzalloc(sizeof(struct hgics_config), GFP_KERNEL);\r\n    if (hg->conf == NULL) {\r\n        goto __probe_failed;\r\n    }\r\n#endif\r\n\r\n    bus->tx_complete = hgics_tx_complete;\r\n    bus->rx_packet   = hgics_rx_data;\n    bus->rx_error    = hgics_rx_error;\n    bus->probe_post  = hgics_probe_post;\r\n    bus->remove      = hgics_core_remove;\r\n    bus->suspend     = NULL;\r\n    bus->resume      = NULL;\r\n    bus->bus_priv    = hg;\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/core.c",
+      "source_pin": {
+        "bytes": 43055,
+        "sha256": "71a578f033148b2290b2b2b8de5ad540aeb7e4d348043a986615fcad07743452"
+      },
+      "start_line": 1323,
+      "end_line": 1352,
+      "start_byte": 41900,
+      "extent_bytes": 621,
+      "raw_excerpt_sha256": "022fc8ed8412cf547610bdaae963000e84d3f866e7ac446f5b2a12279ad8a845",
+      "text": "#ifdef __RTOS__\r\nconst char *hgic_param_ifname(const char *name)\r\n{\r\n    if (name) ifname = (char *)name;\r\n    return (const char *)ifname;\r\n}\r\nvoid hgic_param_iftest(int iftest)\r\n{\r\n    if_test = iftest;\r\n}\r\nchar *hgic_param_fwfile(const char *fw)\r\n{\r\n    if (fw) fw_file = fw;\r\n    return fw_file;\r\n}\r\nvoid hgic_param_initcb(hgic_init_cb cb)\r\n{\r\n    init_cb = cb;\r\n}\r\nvoid hgic_param_eventcb(hgic_event_cb cb)\r\n{\r\n    event_cb = cb;\r\n}\r\nvoid hgics_event(struct hgics_wdev *hg, char *ifname, int event, int param1, int param2)\r\n{\r\n    if (event_cb) {\r\n        event_cb(ifname, event, param1, param2);\r\n    }\r\n}\r\n#endif\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/core.c",
+      "source_pin": {
+        "bytes": 43055,
+        "sha256": "71a578f033148b2290b2b2b8de5ad540aeb7e4d348043a986615fcad07743452"
+      },
+      "start_line": 1367,
+      "end_line": 1369,
+      "start_byte": 42886,
+      "extent_bytes": 103,
+      "raw_excerpt_sha256": "20de37af991cc2c0356b9ec32f22e326f9f90ff59d8217373d5fa9d211e1d4f7",
+      "text": "MODULE_DESCRIPTION(\"HUGE-IC SoftMAC WLAN Driver\");\r\nMODULE_AUTHOR(\"Dongyun\");\r\nMODULE_LICENSE(\"GPL\");\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/hgics.h",
+      "source_pin": {
+        "bytes": 3803,
+        "sha256": "969cf4264e311e7c605d8f271444fb22d32b6001854164774414f7476cb9932f"
+      },
+      "start_line": 101,
+      "end_line": 128,
+      "start_byte": 2291,
+      "extent_bytes": 578,
+      "raw_excerpt_sha256": "c959c6358f686267dada790328faef17ef783dda048419bc51de335fc81466c5",
+      "text": "    struct hgic_fwctrl  ctrl;\r\n    struct hgic_bootdl  bootdl;\r\n    struct hgics_procfs proc;\r\n    struct hgics_status status;\r\n    struct hgic_ota     ota;\r\n\r\n    /*if test*/\r\n    struct work_struct test_work;\r\n    u32 test_rx_len, test_tx_len;\r\n    u32 test_jiff, if_test;\r\n\r\n    /*soft fc*/\r\n    int soft_fc;\r\n    atomic_t txwnd;\r\n    struct completion txwnd_cp;\r\n    u8 radio_off;\r\n    u8 cfg_changed;\r\n    u8 bt_en;\r\n\r\n#ifndef __RTOS__\r\n    struct sk_buff_head evt_list;\r\n    struct semaphore    evt_sema;\r\n#endif\r\n\r\n#ifdef CONFIG_BT\r\n    struct hci_dev *hci;\r\n#endif\r\n};\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/procfs.c",
+      "source_pin": {
+        "bytes": 8108,
+        "sha256": "702e2450f3b908776f6f75742c410caa3e3bcd85fc7a02753361bf9fd96c53e6"
+      },
+      "start_line": 57,
+      "end_line": 89,
+      "start_byte": 2068,
+      "extent_bytes": 1035,
+      "raw_excerpt_sha256": "022febd0c5af4f5a4a2f2138f2e6c645d7c3d0ab9a0bc863cff3a0e97f01b900",
+      "text": "static int hgics_fwevent_open(struct inode *inode, struct file *file)\r\n{\r\n    return single_open(file, NULL, PDE_DATA(inode));\r\n}\r\nstatic ssize_t hgics_fwevent_read(struct file *file, char __user *buffer,\r\n                                  size_t count, loff_t *data)\r\n{\r\n    int ret = 0;\r\n    struct sk_buff *skb = NULL;\r\n    struct seq_file   *seq = (struct seq_file *)file->private_data;\r\n    struct hgics_wdev *hg  = (struct hgics_wdev *)seq->private;\r\n\r\n    if (down_timeout(&hg->evt_sema, msecs_to_jiffies(100))) {\r\n        return 0;\r\n    }\r\n\r\n    if (!skb_queue_empty(&hg->evt_list)) {\r\n        skb = skb_dequeue(&hg->evt_list);\r\n        if (skb) {\r\n            if (!copy_to_user(buffer, skb->data, skb->len)) {\r\n                ret = skb->len;\r\n            }\r\n            kfree_skb(skb);\r\n        }\r\n    }\r\n    return ret;\r\n}\r\nstatic const struct proc_ops hgics_pops_fwevent = {\r\n    .proc_open = hgics_fwevent_open,\r\n    .proc_read = hgics_fwevent_read,\r\n    .proc_lseek = seq_lseek,\r\n    .proc_release = single_release,\r\n};\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/hgic_smac/procfs.c",
+      "source_pin": {
+        "bytes": 8108,
+        "sha256": "702e2450f3b908776f6f75742c410caa3e3bcd85fc7a02753361bf9fd96c53e6"
+      },
+      "start_line": 194,
+      "end_line": 208,
+      "start_byte": 6356,
+      "extent_bytes": 648,
+      "raw_excerpt_sha256": "c36f97f80d68baa08825f7a585a8db04f026505ec72f5969a64cb16d5313798b",
+      "text": "void hgics_create_common_procfs(struct hgics_wdev *hg)\r\n{\r\n    hg->proc.status = proc_create_data(\"status\", 0x0444,\r\n                                       hg->proc.rootdir, &hgics_pops_status, hg);\r\n    if (hg->proc.status == NULL) {\r\n        hgic_err(\"create proc file: status failed\\r\\n\");\r\n    }\r\n    hg->proc.fwevnt = proc_create_data(\"fwevnt\", 0x0444,\r\n                                       hg->proc.rootdir, &hgics_pops_fwevent, hg);\r\n    if (hg->proc.fwevnt == NULL) {\r\n        hgic_err(\"create proc file: fwevt failed\\r\\n\");\r\n    }\r\n    /* No writable private maintenance interface in the RAM-only port. */\n    hg->proc.iwpriv = NULL;\n}\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgics.c",
+      "source_pin": {
+        "bytes": 9319,
+        "sha256": "6a94f71e4ccec581b881a79980ce90ace6720c00ba7de6b3b53456b26857514a"
+      },
+      "start_line": 1,
+      "end_line": 14,
+      "start_byte": 0,
+      "extent_bytes": 490,
+      "raw_excerpt_sha256": "cfc7379b3627c104852123575ba76da755126c03db0376cd5c2a446d4c17443c",
+      "text": "/**\r\n  ******************************************************************************\r\n  * @file    hgics.c\r\n  * @author  HUGE-IC Application Team\r\n  * @version V1.0.0\r\n  * @date    2022-05-18\r\n  * @brief   hgic smac driver daemon.\r\n  ******************************************************************************\r\n  * @attention\r\n  *\r\n  * <h2><center>&copy; COPYRIGHT 2022 HUGE-IC</center></h2>\r\n  *\r\n  ******************************************************************************\r\n  */\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgics.c",
+      "source_pin": {
+        "bytes": 9319,
+        "sha256": "6a94f71e4ccec581b881a79980ce90ace6720c00ba7de6b3b53456b26857514a"
+      },
+      "start_line": 124,
+      "end_line": 168,
+      "start_byte": 2463,
+      "extent_bytes": 1535,
+      "raw_excerpt_sha256": "4c618375a5bc1e0df2138c9009addef46f4b6f4fca93f46b7a45dadcdb79075b",
+      "text": "static void hgics_parse_blenc_param(u8 *data, int len)\r\n{\r\n    u8 *ptr = data;\r\n\r\n#if 1 //sample code\r\n    u8 buff[33];\r\n    u8 cmd[64];\r\n    while (ptr < data + len) {\r\n        switch (ptr[0]) {\r\n            case 1: //SSID\r\n                memset(buff, 0, sizeof(buff));\r\n                memcpy(buff, ptr + 2, ptr[1]);\r\n                printf(\"SET ssid:%s\\r\\n\", buff);\r\n                sprintf(cmd, \"nvram_set ah_ssid %s\", buff);\r\n                system(cmd);\r\n                break;\r\n            case 2: //PassWord\r\n                memset(buff, 0, sizeof(buff));\r\n                memcpy(buff, ptr + 2, ptr[1]);\r\n                printf(\"SET passwd:%s\\r\\n\", buff);\r\n                sprintf(cmd, \"nvram_set ah_psk %s\", buff);\r\n                system(cmd);\r\n                break;\r\n            case 3: //Keymgmt\r\n                printf(\"SET keymgmt %s\\r\\n\", ptr[2] ? \"WPA-PSK\" : \"NONE\");\r\n                sprintf(cmd, \"nvram_set ah_key_mgmt %s\", ptr[2] ? \"WPA-PSK\" : \"NONE\");\r\n                system(cmd);\r\n                break;\r\n            case 4: //auth\r\n                printf(\"AUTH %d\\r\\n\", ptr[2]);\r\n                sprintf(cmd, \"ifconfig wlan0 %s\", ptr[2] ? \"up\" : \"down\");\r\n                system(cmd);\r\n                break;\r\n            default:\r\n                printf(\"Unsupport ID:%d\\r\\n\", ptr[0]);\r\n                break;\r\n        }\r\n        ptr += (ptr[1] + 2);\r\n    }\r\n\r\n    hgic_blenc_release();\r\n    hgic_iwpriv_blenc_start(\"wlan0\", 0, 38);\r\n    //restart hostapd or wpa_supplicant\r\n    system(\"hgic2g.sh\");\r\n#endif\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgics.c",
+      "source_pin": {
+        "bytes": 9319,
+        "sha256": "6a94f71e4ccec581b881a79980ce90ace6720c00ba7de6b3b53456b26857514a"
+      },
+      "start_line": 171,
+      "end_line": 220,
+      "start_byte": 4003,
+      "extent_bytes": 1340,
+      "raw_excerpt_sha256": "c7c6070c73d1950888bd0d2cd18bee1a057c76d930c6906043caebd359d92cbb",
+      "text": "/*hgic demo protocol*/\r\nstatic void hgics_recv_blenc_data(uint8 *data, uint32 len)\r\n{\r\n    uint8 *ncdata = NULL;\r\n    uint32 data_len = 0;\r\n\r\n    hgics_dump_hex(\"BLE DATA:\\r\\n\", data, len, 1);\r\n    if (hgic_blenc_parse_data(data, len)) {\r\n        data_len = hgic_blenc_get_data(&ncdata);\r\n        if (data_len && ncdata) {\r\n            hgics_parse_blenc_param(ncdata, data_len);\r\n        }\r\n    }\r\n}\r\n\r\n/* customer protocol\r\n   data: BLE PDU data\r\n   len:  data length\r\n*/\r\nstatic void hgics_recv_customer_ble_data(u8 *data, int len)\r\n{\r\n}\r\n\r\nstatic void hgics_proc_fwevent(u8 *event_data, u32 event_len)\r\n{\r\n    u32   data_len = 0;\r\n    u32   evt_id   = 0;\r\n    char *data     = NULL;\r\n    struct hgic_ctrl_hdr *evt = (struct hgic_ctrl_hdr *)event_data;\r\n\r\n    data     = (char *)(evt + 1);\r\n    data_len = event_len - sizeof(struct hgic_ctrl_hdr);\r\n    evt_id   = HDR_EVTID(evt);\r\n\r\n    switch (evt_id) {\r\n        case HGIC_EVENT_BLENC_DATA:\r\n#if 1 /*hgic demo protocol*/            \r\n            hgics_recv_blenc_data(data, data_len);\r\n#else \r\n            /*customer protocol*/            \r\n            hgics_recv_customer_ble_data(data, data_len);\r\n#endif\r\n            break;\r\n        case HGIC_EVENT_HWSCAN_RESULT:\r\n#if AUTO_RELAY_EN\r\n            hgics_relay_check_hwscan_result(data, data_len);\r\n#endif\r\n            break;\r\n    }\r\n}\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgics_relay.c",
+      "source_pin": {
+        "bytes": 13449,
+        "sha256": "7ab3e6363d4d9fad664cbdaa16bcdcf0f092aff63af0ca6dae2780088b92e0da"
+      },
+      "start_line": 1,
+      "end_line": 14,
+      "start_byte": 0,
+      "extent_bytes": 495,
+      "raw_excerpt_sha256": "49f41d4295ae9c4f6a0168fe7e40107230f3879a109d99d2021d7cb20a27f9d5",
+      "text": "/**\r\n  ******************************************************************************\r\n  * @file    hgics_relay.c\r\n  * @author  HUGE-IC Application Team\r\n  * @version V1.0.0\r\n  * @date    2022-05-18\r\n  * @brief   hgic smac relay daemon.\r\n  ******************************************************************************\r\n  * @attention\r\n  *\r\n  * <h2><center>&copy; COPYRIGHT 2022 HUGE-IC</center></h2>\r\n  *\r\n  ******************************************************************************\r\n  */\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgics_relay.c",
+      "source_pin": {
+        "bytes": 13449,
+        "sha256": "7ab3e6363d4d9fad664cbdaa16bcdcf0f092aff63af0ca6dae2780088b92e0da"
+      },
+      "start_line": 171,
+      "end_line": 181,
+      "start_byte": 5542,
+      "extent_bytes": 364,
+      "raw_excerpt_sha256": "9ede2fab4f5f5c627ee6e64c2d5795168d6249878064ec8a713b88d2d2fbd23f",
+      "text": "static void hgics_wpacli_set_ssid(char *ssid)\r\n{\r\n    char cmd[128];\r\n    char out[128];\r\n    if (strcmp(ssid, g_hgrelay.cur_ssid)) {\r\n        strcpy(g_hgrelay.cur_ssid, ssid);\r\n        sprintf(cmd, \"wpa_cli -iwlan0 set_network 0 ssid '\\\"%s\\\"'\", ssid);\r\n        hgics_do_system(cmd, out, 100);\r\n        printf(\"wpa_cli set ssid %s: %s\\r\\n\", ssid, out);\r\n    }\r\n}\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgics_relay.c",
+      "source_pin": {
+        "bytes": 13449,
+        "sha256": "7ab3e6363d4d9fad664cbdaa16bcdcf0f092aff63af0ca6dae2780088b92e0da"
+      },
+      "start_line": 237,
+      "end_line": 248,
+      "start_byte": 7208,
+      "extent_bytes": 471,
+      "raw_excerpt_sha256": "705cbad1338fa0cb3be4ccc2258aa9547d2f089457581faac9be0126b5dbe7c3",
+      "text": "static void hgics_check_signal()\r\n{\r\n    time_t t = time(NULL);\r\n    int chan = hgics_freq_to_channel(g_hgrelay.wpastatus.freq);\r\n\r\n    if (g_hgrelay.hwscan_running == 0 && hgics_wpacli_get_rssi() < g_hgrelay.rssi_th &&\r\n        (g_hgrelay.hwscan_time == 0 || g_hgrelay.hwscan_time + 5 < t)) {\r\n        if (!hgic_iwpriv_set_hwscan(\"wlan0\", 100, 5, BIT(chan - 1))) {\r\n            g_hgrelay.hwscan_time    = t;\r\n            g_hgrelay.hwscan_running = 1;\r\n        }\r\n    }\r\n"
+    },
+    {
+      "source": "apps/qualification/kernel76-station-ingress/source/tools/test_app/hgics_relay.c",
+      "source_pin": {
+        "bytes": 13449,
+        "sha256": "7ab3e6363d4d9fad664cbdaa16bcdcf0f092aff63af0ca6dae2780088b92e0da"
+      },
+      "start_line": 317,
+      "end_line": 419,
+      "start_byte": 9751,
+      "extent_bytes": 3698,
+      "raw_excerpt_sha256": "c005598c49f48348106ccf3285481328b3f26df5a8b7de52811eee4088d432d3",
+      "text": "void hgics_relay_check_status(void)\r\n{\r\n    char  buff[256];\r\n    char *ptr;\r\n\r\n    if (g_hgrelay.wifi_mode != 2) {\r\n        return;\r\n    }\r\n\r\n    if (hgics_do_system(\"wpa_cli status\", buff, 256) > 0) {\r\n        memset(&g_hgrelay.wpastatus, 0, sizeof(g_hgrelay.wpastatus));\r\n        hgics_parse_wpacli_status(buff);\r\n        if (g_hgrelay.last_wpa_state != g_hgrelay.wpastatus.wpa_state) {\r\n            g_hgrelay.hwscan_running = 0;\r\n            if (g_hgrelay.wpastatus.wpa_state) {\r\n                if (strstr(g_hgrelay.wpastatus.ssid, \"#r#\") == NULL) {\r\n                    hgics_gen_hostapd_conf();\r\n                    printf(\"connected AP, enable my AP function\\r\\n\");\r\n                    system(\"hostapd /etc/hostapd.conf &\");\r\n                } else {\r\n                    printf(\"connect to repeater %s, disable my AP function\\r\\n\", g_hgrelay.wpastatus.ssid);\r\n                    hgic_iwpriv_set_rts_threshold(\"wlan0\", 1);\r\n                    system(\"killall hostapd\");\r\n                }\r\n            } else {\r\n                printf(\"disconnect, disable my AP function\\r\\n\");\r\n                system(\"killall hostapd\");\r\n            }\r\n        } else {\r\n            if (g_hgrelay.wpastatus.wpa_state) {\r\n                hgics_check_signal();\r\n            } else {\r\n                g_hgrelay.hwscan_running = 0;\r\n                if (g_hgrelay.connecting == 0) {\r\n                    g_hgrelay.connecting = 20;\r\n                    hgics_check_wpascan_result();\r\n                } else {\r\n                    g_hgrelay.connecting--;\r\n                }\r\n            }\r\n        }\r\n        g_hgrelay.last_wpa_state = g_hgrelay.wpastatus.wpa_state;\r\n    }\r\n}\r\n\r\nstatic void hgics_hwscan_result_dump(char *data, int len)\r\n{\r\n    int i = 0;\r\n    int count = len / sizeof(struct hgic_bss_info);\r\n    struct hgic_bss_info *bssinfo = (struct hgic_bss_info *)data;\r\n    \r\n    printf(\"HWSCAN RESULTS:\\n\");\r\n    for (i = 0; i < count; i++) {\r\n        printf(MACSTR\" ssid:%s, freq:%d, signal:%d \\r\\n\", MACARG(bssinfo->bssid), bssinfo->ssid, bssinfo->freq, bssinfo->signal);\r\n        bssinfo++;\r\n    }\r\n}\r\n\r\nvoid hgics_relay_check_hwscan_result(char *data, int len)\r\n{\r\n    int i = 0;\r\n    int count = len / sizeof(struct hgic_bss_info);\r\n    struct hgic_bss_info *bssinfo = (struct hgic_bss_info *)data;\r\n    struct hgic_bss_info *max   = NULL;\r\n    struct hgic_bss_info *max_r = NULL;\r\n\r\n    g_hgrelay.hwscan_running = 0;\r\n    if (g_hgrelay.wifi_mode != 2) {\r\n        hgics_hwscan_result_dump(data, len);\r\n        return;\r\n    }\r\n\r\n    printf(\"HWSCAN RESULTS:\\n\");\r\n    for (i = 0; i < count; i++) {\r\n        printf(MACSTR\" ssid:%s, freq:%d, signal:%d \\r\\n\", MACARG(bssinfo->bssid), bssinfo->ssid, bssinfo->freq, bssinfo->signal);\r\n        if (hgics_is_suitable_ap(bssinfo->ssid) && !MAC_EQU(bssinfo->bssid, g_hgrelay.wpastatus.bssid)) {\r\n            if(hgics_is_ap(bssinfo->ssid)){\r\n                if (max == NULL || max->signal < bssinfo->signal) {\r\n                    max = bssinfo;\r\n                }\r\n            }else{\r\n                if (max_r == NULL || max_r->signal < bssinfo->signal) {\r\n                    max_r = bssinfo;\r\n                }\r\n            }\r\n        }\r\n        bssinfo++;\r\n    }\r\n\r\n    if(max || max_r){\r\n        if(max == NULL)        bssinfo = max_r;\r\n        else if(max_r == NULL) bssinfo = max;\r\n        else{\r\n            bssinfo = ((max->signal < -50 && max_r->signal > max->signal + 6) ? max_r : max);\r\n        }\r\n\r\n        if (bssinfo->signal > (hgics_wpacli_get_rssi() + 5) && strlen(bssinfo->ssid) > 0) {\r\n            hgics_wpacli_set_ssid(bssinfo->ssid);\r\n            printf(\"HWSCAN: Find new AP, switch to %s\\r\\n\", bssinfo->ssid);\r\n        }\r\n    }\r\n}\r\n\r\n"
+    }
+  ]
+}

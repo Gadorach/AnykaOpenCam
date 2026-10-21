@@ -1,5 +1,52 @@
 # Project instructions for local agents
 
+## Next selected — A2b bounded event SOURCE/HOST implementation, no hardware
+
+STATION76_EVENT_ENTRY_REVIEWdesignread: pretrimEVENT/EVENT2exactextent/full16bit
+IDs; debug18silentlyowneddisposewithoutpayloadread/log/hash/export/queue/RTOS
+forward; allotherIDsdenyviaexistingreceiptlatch. No structuredpayloadABI orsource
+bindingguessed. AfterA2aGOparentselectsA2bSOURCE/HOSTONLYnewderivative preserving
+A1/A2a, primarilyrx.c/event.c; realconsumer+ingress/fakeprintfsafeprobesrequired.
+Rawproc/BT/othergrammars+S1S2S3S5S6remainOPEN/fullS4/ARMbuild/staging/attachNOGO.
+No currentreceiveowner/recoveryadmission/HWqueue; lasttarget06:43datedAPPidle,
+currentpower/runtimeUNKNOWN; original151ACKfailedHOLDkept. Sourceworkonly.
+
+## Latest review — A2a narrow SOURCE/HOST GO; event design review pending
+
+STATION76_INGRESS_A2A_REVIEW7pinsGOonlyexactCMD/CMD2originalextent/status-to-copy/
+observedfailureRXresubmitadmission. All68A1originals61unchanged7changes/LICENSE/
+sealsverified; ingress2806874+A1150705+supplement2688972assertionseachopt/san,
+8compiledruntime mutantscaught. Reviewfixture/UTF8inventoryfailurespreserved.
+NOTatomicglobalcancellation/fullS4/lifecycle/ARMbuild/staging/nativeGO. Disjoint
+eventconsumerDESIGNsource-reviewstillactive, noimplementation/HWqueue. Current
+targetpower/runtimeUNKNOWN(last06:43RAM76APPidle); old21afinalized/nocapture/
+owner/socket/armedrecoveryobserved07:24. Original151ACKfailedHOLDkept. Mainlocal
+152cee0/nopush/indexpreserved. Freshcurrentphysical/owner/runtime/recoveryforHW.
+
+## Latest candidate — A2a parent HOST reproduced; independent review + event design RO
+
+A2asource newkernel76-station-ingress exact68A1derivative/61unchanged7changed;
+authorrun08+parentrun09pinmatch/2806874ingress+150705A1assertionseachopt+san/
+8compiledruntimemutantscaught. Originalsurplus-after-trimacceptance/failureskept.
+IndependentA2areviewactive/sourceFROZEN. SecondDISJOINTSOURCE-onlyeventconsumer
+designreview(A2b)ownsnewSTATION76_EVENT_ENTRY_REVIEW.md+evidence, NOimplementation.
+No sourceARMbuild/staging/attachGO; unsafeeventconsumer+fullS4/S1S2S3S5S6OPEN.
+No target/RPC/network/capture/resetqueue; old21aexpiredfinalized/noowner/socket/
+armedcaptureobserved07:24. Currenttargetpower/runtimeUNKNOWN(last6:43APPidle),
+original151ACKfailedHOLDkept. Mainlocal152cee0/nopush/indexpreserved.
+
+## Latest source — A1 committed152cee0; isolated A2a ingress SOURCE/HOST lane active
+
+NarrowreviewedA1source/tests/LICENSE/provenancecommitted152cee0mainlocal/indexkept/
+nopush. A2aoneworkerownsnewapps/qualification/kernel76-station-ingress/ derivative
+ofsealedA1(68files)+candidatereport/hostevidenceonly. PreserveA1/oldimage/module/
+helpers. ScopeuntrimmedUSBactualextent+completionstatus/failclosedcontroladmission
+andRXresubmission; minimalinternalrejectpropagationonly, realcallbackHOSTtests.
+Eventconsumer+S1S2S3S5S6OPEN/fullS4/ARMbuild/staging/attachNOGO. No HWqueue.
+21aexpired/finalized/noowner/socket/armedcaptureobserved07:24; currenttarget
+power/runtimeUNKNOWN(last06:43RAM76APPidle), original151ACKfailedHOLDkept.
+Freshphysical/soleowner/runtime/recoverybeforelaterHW, noPID/IPtimerinheritance.
+
 ## Latest review — A1 narrow SOURCE/HOST GO; next A2a ingress source-only selected
 
 STATION76_CONTROL_A1_REVIEW: exact3sourcepinsGOlocalcontrol-copy/FWINFOonly;

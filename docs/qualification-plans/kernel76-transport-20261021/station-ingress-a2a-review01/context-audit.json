@@ -1,0 +1,150 @@
+{
+  "scope": "independent selected-source reference inventory, not behavior assertions",
+  "references": [
+    {
+      "path": "hgic_def.h",
+      "line": 181,
+      "text": "    int (*rx_packet)(void *hg, u8 *data, int len);"
+    },
+    {
+      "path": "hgic_def.h",
+      "line": 183,
+      "text": "    void (*rx_error)(void *hg);"
+    },
+    {
+      "path": "hgic_def.h",
+      "line": 184,
+      "text": "    int rx_failed; /* sticky for this bus lifetime; checked before RX submission */"
+    },
+    {
+      "path": "hgic_smac/core.c",
+      "line": 1162,
+      "text": "    hgic_fwctrl_init(&hg->ctrl, dev, bus);"
+    },
+    {
+      "path": "hgic_smac/core.c",
+      "line": 1205,
+      "text": "    bus->rx_packet   = hgics_rx_data;"
+    },
+    {
+      "path": "hgic_smac/core.c",
+      "line": 1206,
+      "text": "    bus->rx_error    = hgics_rx_error;"
+    },
+    {
+      "path": "hgic_smac/hgics.h",
+      "line": 156,
+      "text": "void hgics_rx_error(void *hgobj);"
+    },
+    {
+      "path": "hgic_smac/rx.c",
+      "line": 200,
+      "text": "void hgics_rx_error(void *hgobj)"
+    },
+    {
+      "path": "hgic_smac/rx.c",
+      "line": 204,
+      "text": "    hgic_fwctrl_rx_error(&hg->ctrl);"
+    },
+    {
+      "path": "hgic_smac/rx.c",
+      "line": 217,
+      "text": "    if (READ_ONCE(hg->bus->rx_failed))"
+    },
+    {
+      "path": "hgic_smac/rx.c",
+      "line": 291,
+      "text": "            hgic_fwctrl_rx(&hg->ctrl, data, len);"
+    },
+    {
+      "path": "hgic_smac/rx.c",
+      "line": 322,
+      "text": "    hgics_rx_error(hg);"
+    },
+    {
+      "path": "utils/fwctrl.c",
+      "line": 178,
+      "text": "    WRITE_ONCE(ctrl->bus->rx_failed, 1);"
+    },
+    {
+      "path": "utils/fwctrl.c",
+      "line": 188,
+      "text": "void hgic_fwctrl_rx_error(struct hgic_fwctrl *ctrl)"
+    },
+    {
+      "path": "utils/fwctrl.c",
+      "line": 334,
+      "text": "void hgic_fwctrl_rx(struct hgic_fwctrl *ctrl, u8 *data, int len)"
+    },
+    {
+      "path": "utils/fwctrl.c",
+      "line": 359,
+      "text": "void hgic_fwctrl_init(struct hgic_fwctrl *ctrl, void *dev, struct hgic_bus *bus)"
+    },
+    {
+      "path": "utils/fwctrl.h",
+      "line": 61,
+      "text": "void hgic_fwctrl_init(struct hgic_fwctrl *ctrl, void *dev, struct hgic_bus *bus);"
+    },
+    {
+      "path": "utils/fwctrl.h",
+      "line": 63,
+      "text": "void hgic_fwctrl_rx(struct hgic_fwctrl *ctrl, u8 *data, int len);"
+    },
+    {
+      "path": "utils/fwctrl.h",
+      "line": 64,
+      "text": "void hgic_fwctrl_rx_error(struct hgic_fwctrl *ctrl);"
+    },
+    {
+      "path": "utils/if_sdio.c",
+      "line": 732,
+      "text": "                ret = sdiodev->bus.rx_packet(sdiodev->bus.bus_priv, sdiodev->rxbuf, len);"
+    },
+    {
+      "path": "utils/if_usb.c",
+      "line": 189,
+      "text": "        READ_ONCE(buf->usbdev->bus.rx_failed)) {"
+    },
+    {
+      "path": "utils/if_usb.c",
+      "line": 202,
+      "text": "        if (buf->usbdev->bus.rx_error)"
+    },
+    {
+      "path": "utils/if_usb.c",
+      "line": 203,
+      "text": "            buf->usbdev->bus.rx_error(buf->usbdev->bus.bus_priv);"
+    },
+    {
+      "path": "utils/if_usb.c",
+      "line": 243,
+      "text": "    if ((usbdev->status & HGIC_USB_STATUS_ERR) || READ_ONCE(usbdev->bus.rx_failed) ||"
+    },
+    {
+      "path": "utils/if_usb.c",
+      "line": 248,
+      "text": "    ret = usbdev->bus.rx_packet(usbdev->bus.bus_priv, buf->data, urb->actual_length);"
+    },
+    {
+      "path": "utils/if_usb.c",
+      "line": 249,
+      "text": "    if (ret == -EPROTO || READ_ONCE(usbdev->bus.rx_failed))"
+    },
+    {
+      "path": "utils/if_usb.c",
+      "line": 256,
+      "text": "    WRITE_ONCE(usbdev->bus.rx_failed, 1);"
+    },
+    {
+      "path": "utils/if_usb.c",
+      "line": 257,
+      "text": "    if (usbdev->bus.rx_error)"
+    },
+    {
+      "path": "utils/if_usb.c",
+      "line": 258,
+      "text": "        usbdev->bus.rx_error(usbdev->bus.bus_priv);"
+    }
+  ]
+}

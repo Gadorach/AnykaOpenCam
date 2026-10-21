@@ -1,0 +1,98 @@
+{
+  "compiler-target.stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "compiler-target.stdout": {
+    "bytes": 20,
+    "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+  },
+  "compiler-version.stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "compiler-version.stdout": {
+    "bytes": 227,
+    "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+  },
+  "hgic_def.h.diff": {
+    "bytes": 658,
+    "sha256": "a184d1728595e87cd61b2c60f2d2efbb1dba3194e5c8fbd2307b7d7a5ff9b2c4"
+  },
+  "hgic_smac_core.c.diff": {
+    "bytes": 371,
+    "sha256": "2d9ed9e91af7719b25a3e4aec07bff7a5f07b366b4a8e6176be3718c96adb34e"
+  },
+  "hgic_smac_hgics.h.diff": {
+    "bytes": 373,
+    "sha256": "fc6f08beb9edc8fe04f47c8dd56d1bb0b6414538a58c33c1777f3da31fec41b8"
+  },
+  "hgic_smac_rx.c.diff": {
+    "bytes": 2396,
+    "sha256": "95c82ef51dacee2fe541f369681e8ad1f6fbad491e06349739be43f372bb8036"
+  },
+  "include/linux/build_bug.h": {
+    "bytes": 18,
+    "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+  },
+  "include/linux/completion.h": {
+    "bytes": 18,
+    "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+  },
+  "include/linux/errno.h": {
+    "bytes": 30,
+    "sha256": "75be4010966f100e6a1e479f4bbe84f6c8e7cf0ebe349753804d0cee62abf172"
+  },
+  "include/linux/etherdevice.h": {
+    "bytes": 18,
+    "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+  },
+  "include/linux/unaligned.h": {
+    "bytes": 18,
+    "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+  },
+  "include/linux/workqueue.h": {
+    "bytes": 18,
+    "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+  },
+  "ingress-optimized-compile.stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "ingress-optimized-compile.stdout": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "ingress-optimized-test.stderr": {
+    "bytes": 116,
+    "sha256": "31f04fb07cb98aef0cdea99329cc5f24fbd15f236c97650958f22a0cc5b4ba02"
+  },
+  "ingress-optimized-test.stdout": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "ingress-optimized.host": {
+    "bytes": 93888,
+    "sha256": "fb7a4e87f4814ea7ffa512f360f3d5ea91f1f6a6fdb989b043b19f7719a4f6ff"
+  },
+  "ingress.c": {
+    "bytes": 23840,
+    "sha256": "f7e9d26ead334490443e3cddf1818a73495449aae3a67b5ec276f2f9b68b770d"
+  },
+  "result.json": {
+    "bytes": 36612,
+    "sha256": "ee8c7c78d36ad6b1140864cd7be456327b4cef012e779f4ae0b0a34cec44bd1a"
+  },
+  "utils_fwctrl.c.diff": {
+    "bytes": 827,
+    "sha256": "1bca74320209f2097e8245af10c951c4c08518f20cc820e3de97132124030472"
+  },
+  "utils_fwctrl.h.diff": {
+    "bytes": 630,
+    "sha256": "4bd9205a63b9446f255ab553b57a256b88265622f2fdc5a424843ff35f61a810"
+  },
+  "utils_if_usb.c.diff": {
+    "bytes": 3130,
+    "sha256": "62e65dfcb7106ecf59ebc2fb18e77d4b272cf2aaec7230ff0aff9ea7266a15bc"
+  }
+}
