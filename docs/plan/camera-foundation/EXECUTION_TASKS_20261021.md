@@ -1,5 +1,30 @@
 # Active execution ledger — remaining foundation work
 
+**A2b narrow SOURCE/HOST GO:** independent exact-pin review reproduced event/
+A2a/A1 suites,39 ordered probes/656 supplemental assertions per mode and11/11
+compiled runtime mutants (including a protected-payload read fault). Exact68-file
+provenance/LICENSE/seals verified;1407 successful inputs unchanged. This accepts
+only EVENT/EVENT2 original extent and real consumer suppression/denial, not full
+S4/non-event/BT/raw-proc/lifecycle/build/native GO. Remaining attach source plan
+is still design-only/pending; no new implementation, ARM build or hardware queue.
+
+**A2b candidate SOURCE/HOST:** exact68-file derivative delivered, only event.c/rx.c
+changed. Author run08 and parent run09 match input pins/output seals:12,127,356
+event assertions plus2,806,874 A2a and150,705 A1 regressions per optimized/sanitized
+mode;10/10 compiled runtime mutants caught. Old unsafe format/queue behavior
+reproduced with safe hooks, never format evaluation. Independent exact A2b review
+pending/source frozen. Disjoint remaining attach-only source PLAN review is active
+for RX-profile, finite TX/cancellation, recovery/init/lifetime/guard gaps—not code
+or build approval. Full S4/S1/S2/S3/S5/S6/native gates and expired-capture limits stay.
+
+**A2a committed `08949c0` locally:** exact reviewed68-file ingress derivative,
+real-path HOST/provenance/independent review and event design decision retained;
+ordinary index preserved, no push. One SOURCE/HOST A2b worker now owns only new
+`apps/qualification/kernel76-station-events/` plus its candidate/evidence. It must
+preserve A1/A2a and implement the bounded event suppression/denial policy; no
+existing helper/module/image edits or ARM build/staging/native operation. No
+current hardware admission/recovery claim; original failed HOLD is untouched.
+
 **Event design delivered / next parent selection:** source-only review specifies
 exact pre-trim EVENT/EVENT2 extent checks, full16-bit EVENT2 IDs, silent disposal
 of debug ID18 without reading/logging/exporting payload, and denial of all other

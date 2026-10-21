@@ -1,0 +1,2923 @@
+{
+  "utc": "2026-10-21T08:40:27.482399+00:00",
+  "argv": [
+    "apps/qualification/kernel76-station-events/seal_candidate.py"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "python": "3.14.7 (main, Aug 14 2026, 06:38:32) [GCC 16.2.1 20260810]",
+  "preparer_sha256": "5c0a22e0207147f8b094e982bbaac9b84120619884311b81db698c6c295f0234",
+  "scope": "A2B_SOURCE_HOST_CANDIDATE_INDEPENDENT_REVIEW_REQUIRED_FULL_S4_ARM_NATIVE_NO_GO",
+  "final_run": "run08",
+  "source_count": 68,
+  "unchanged_from_A2a": 66,
+  "changed_files": [
+    "hgic_smac/event.c",
+    "hgic_smac/rx.c"
+  ],
+  "source_extents": [
+    {
+      "path": "Kconfig",
+      "offset": 0,
+      "bytes": 161,
+      "sha256": "9e140d0bd3ed15e444f4a0dc2031306ffb2691edb7a648aa66b8893bfdb7fda6",
+      "accepted_a2a_sha256": "9e140d0bd3ed15e444f4a0dc2031306ffb2691edb7a648aa66b8893bfdb7fda6"
+    },
+    {
+      "path": "LICENSE",
+      "offset": 0,
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+      "accepted_a2a_sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    {
+      "path": "Makefile",
+      "offset": 0,
+      "bytes": 4406,
+      "sha256": "55a5ccfbf20a88d17e4073b8998dd380aa3a1d8b2f19ddcb4c895618a5319d60",
+      "accepted_a2a_sha256": "55a5ccfbf20a88d17e4073b8998dd380aa3a1d8b2f19ddcb4c895618a5319d60"
+    },
+    {
+      "path": "README.md",
+      "offset": 0,
+      "bytes": 188,
+      "sha256": "9808fc033ab4ad1030d1f599434dec2dc00b3eb5124d898bd2ab2edd43db0480",
+      "accepted_a2a_sha256": "9808fc033ab4ad1030d1f599434dec2dc00b3eb5124d898bd2ab2edd43db0480"
+    },
+    {
+      "path": "hgic.h",
+      "offset": 0,
+      "bytes": 19805,
+      "sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a",
+      "accepted_a2a_sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a"
+    },
+    {
+      "path": "hgic_def.h",
+      "offset": 0,
+      "bytes": 8719,
+      "sha256": "3d13521744e834465feb47f492e567eaefe640e125c28e837f75bb44dc167571",
+      "accepted_a2a_sha256": "3d13521744e834465feb47f492e567eaefe640e125c28e837f75bb44dc167571"
+    },
+    {
+      "path": "hgic_smac/11ah.c",
+      "offset": 0,
+      "bytes": 14828,
+      "sha256": "db9a43c7df54b06206609ef6ed8cd88dc9295f1253fb5b2e0bb3abc2df37dbef",
+      "accepted_a2a_sha256": "db9a43c7df54b06206609ef6ed8cd88dc9295f1253fb5b2e0bb3abc2df37dbef"
+    },
+    {
+      "path": "hgic_smac/11ah.h",
+      "offset": 0,
+      "bytes": 457,
+      "sha256": "44fb21d39697afa6f718440814735a578b42618811d4f424d2b4fce0f666232c",
+      "accepted_a2a_sha256": "44fb21d39697afa6f718440814735a578b42618811d4f424d2b4fce0f666232c"
+    },
+    {
+      "path": "hgic_smac/11bgn.c",
+      "offset": 0,
+      "bytes": 6871,
+      "sha256": "9cc08836a4e33491409d538f07b337ade3db88555980e22466d28509f0fccc32",
+      "accepted_a2a_sha256": "9cc08836a4e33491409d538f07b337ade3db88555980e22466d28509f0fccc32"
+    },
+    {
+      "path": "hgic_smac/11bgn.h",
+      "offset": 0,
+      "bytes": 62,
+      "sha256": "0f5d2470e5da5de778622562374f2177ede3e84ba4d806ce6a2307894093bb8f",
+      "accepted_a2a_sha256": "0f5d2470e5da5de778622562374f2177ede3e84ba4d806ce6a2307894093bb8f"
+    },
+    {
+      "path": "hgic_smac/Kconfig",
+      "offset": 0,
+      "bytes": 281,
+      "sha256": "e454cb3749a2d6bc2b6b23c9abb2cbae9a4f0f79618f19212dd6886d80c65320",
+      "accepted_a2a_sha256": "e454cb3749a2d6bc2b6b23c9abb2cbae9a4f0f79618f19212dd6886d80c65320"
+    },
+    {
+      "path": "hgic_smac/Makefile",
+      "offset": 0,
+      "bytes": 724,
+      "sha256": "6650f2598d759cd190ed2298bf0d6ed8bbe26b323a7c85f4258e2468d2ab81f3",
+      "accepted_a2a_sha256": "6650f2598d759cd190ed2298bf0d6ed8bbe26b323a7c85f4258e2468d2ab81f3"
+    },
+    {
+      "path": "hgic_smac/ap.c",
+      "offset": 0,
+      "bytes": 3558,
+      "sha256": "30e6e8e8ec7eb0a2076626cd6f52a6061dbff7f57cb74ceb5384d0220b6b40fe",
+      "accepted_a2a_sha256": "30e6e8e8ec7eb0a2076626cd6f52a6061dbff7f57cb74ceb5384d0220b6b40fe"
+    },
+    {
+      "path": "hgic_smac/ap.h",
+      "offset": 0,
+      "bytes": 384,
+      "sha256": "86351448186412fbd0a198bec6b300a3b5a5e774168f4373c6fee9be3f0b1d14",
+      "accepted_a2a_sha256": "86351448186412fbd0a198bec6b300a3b5a5e774168f4373c6fee9be3f0b1d14"
+    },
+    {
+      "path": "hgic_smac/core.c",
+      "offset": 0,
+      "bytes": 43055,
+      "sha256": "71a578f033148b2290b2b2b8de5ad540aeb7e4d348043a986615fcad07743452",
+      "accepted_a2a_sha256": "71a578f033148b2290b2b2b8de5ad540aeb7e4d348043a986615fcad07743452"
+    },
+    {
+      "path": "hgic_smac/event.c",
+      "offset": 0,
+      "bytes": 2534,
+      "sha256": "b00e6ee84c10f676c2ad7d3afe8abb0800d37224b98445d86acdddde774a6345",
+      "accepted_a2a_sha256": "5e480e6a21c45714386a458f69913e7d420001e7d6fc3c04b4d5e78f41f14cac"
+    },
+    {
+      "path": "hgic_smac/event.h",
+      "offset": 0,
+      "bytes": 229,
+      "sha256": "8abca8bc4d9e6efbb2137647a7290684e74809dcad81606ee8f908e35d0ae1e3",
+      "accepted_a2a_sha256": "8abca8bc4d9e6efbb2137647a7290684e74809dcad81606ee8f908e35d0ae1e3"
+    },
+    {
+      "path": "hgic_smac/hgics.h",
+      "offset": 0,
+      "bytes": 3803,
+      "sha256": "969cf4264e311e7c605d8f271444fb22d32b6001854164774414f7476cb9932f",
+      "accepted_a2a_sha256": "969cf4264e311e7c605d8f271444fb22d32b6001854164774414f7476cb9932f"
+    },
+    {
+      "path": "hgic_smac/hw.c",
+      "offset": 0,
+      "bytes": 628,
+      "sha256": "28e4fabe668762cd3d01195a75e6194fcfe1b84eadb60ea7d6ad307c1e15fd9a",
+      "accepted_a2a_sha256": "28e4fabe668762cd3d01195a75e6194fcfe1b84eadb60ea7d6ad307c1e15fd9a"
+    },
+    {
+      "path": "hgic_smac/hw.h",
+      "offset": 0,
+      "bytes": 792,
+      "sha256": "c9416377845b6c0eb1226a23c07ecc85a8c575e3a9d3f12a2db16257db11551e",
+      "accepted_a2a_sha256": "c9416377845b6c0eb1226a23c07ecc85a8c575e3a9d3f12a2db16257db11551e"
+    },
+    {
+      "path": "hgic_smac/procfs.c",
+      "offset": 0,
+      "bytes": 8108,
+      "sha256": "702e2450f3b908776f6f75742c410caa3e3bcd85fc7a02753361bf9fd96c53e6",
+      "accepted_a2a_sha256": "702e2450f3b908776f6f75742c410caa3e3bcd85fc7a02753361bf9fd96c53e6"
+    },
+    {
+      "path": "hgic_smac/procfs.h",
+      "offset": 0,
+      "bytes": 615,
+      "sha256": "59872a0cb88f59dea27fc916aadf4d1c53a3f305102392ca98fdb62f274faf27",
+      "accepted_a2a_sha256": "59872a0cb88f59dea27fc916aadf4d1c53a3f305102392ca98fdb62f274faf27"
+    },
+    {
+      "path": "hgic_smac/rx.c",
+      "offset": 0,
+      "bytes": 10917,
+      "sha256": "600c2bccc48fae9ee5642fa320d83541b261bf24ff8d2d492c7871f6b97e2cf0",
+      "accepted_a2a_sha256": "c9b145f50952a8bc5dc573b845e3a443b78d2cf509d5e7be294e5c63cb83c772"
+    },
+    {
+      "path": "hgic_smac/stabr.c",
+      "offset": 0,
+      "bytes": 8016,
+      "sha256": "91303e06e5705443c6cc98ed1e5c53c9807456c8a44e5280c9ca586ca8432c83",
+      "accepted_a2a_sha256": "91303e06e5705443c6cc98ed1e5c53c9807456c8a44e5280c9ca586ca8432c83"
+    },
+    {
+      "path": "hgic_smac/stabr.h",
+      "offset": 0,
+      "bytes": 1205,
+      "sha256": "fc0319ed32175cd6aff3566d80346848cf2ea1bda645bddeb77aa3a08a83c189",
+      "accepted_a2a_sha256": "fc0319ed32175cd6aff3566d80346848cf2ea1bda645bddeb77aa3a08a83c189"
+    },
+    {
+      "path": "hgic_smac/stabr_arp.c",
+      "offset": 0,
+      "bytes": 2741,
+      "sha256": "f2a6c59b9c5a307bd98ee19b080408be2cdb994d178f0cf945d70aba34c39efe",
+      "accepted_a2a_sha256": "f2a6c59b9c5a307bd98ee19b080408be2cdb994d178f0cf945d70aba34c39efe"
+    },
+    {
+      "path": "hgic_smac/stabr_ip.c",
+      "offset": 0,
+      "bytes": 2972,
+      "sha256": "3951bf24ca2396a2171f3ee339a868b1057702572c3ad3775bad9ff9a2030804",
+      "accepted_a2a_sha256": "3951bf24ca2396a2171f3ee339a868b1057702572c3ad3775bad9ff9a2030804"
+    },
+    {
+      "path": "hgic_smac/util.c",
+      "offset": 0,
+      "bytes": 2315,
+      "sha256": "e5fb19ebdc5e9a2c50e0e8e4618924f23e9185c4cfbf23ab5a8e4ce0131bdfe8",
+      "accepted_a2a_sha256": "e5fb19ebdc5e9a2c50e0e8e4618924f23e9185c4cfbf23ab5a8e4ce0131bdfe8"
+    },
+    {
+      "path": "hgic_smac/util.h",
+      "offset": 0,
+      "bytes": 358,
+      "sha256": "65b23301aa1a012bfe89cb10a816cf2082ca0302db75f7f0cef70b23a2a07f79",
+      "accepted_a2a_sha256": "65b23301aa1a012bfe89cb10a816cf2082ca0302db75f7f0cef70b23a2a07f79"
+    },
+    {
+      "path": "linux6-compat.h",
+      "offset": 0,
+      "bytes": 382,
+      "sha256": "32ea414d9001da68b3a91cac8c15d1468b4aba0ec8e337efc84fd0875a0d2eff",
+      "accepted_a2a_sha256": "32ea414d9001da68b3a91cac8c15d1468b4aba0ec8e337efc84fd0875a0d2eff"
+    },
+    {
+      "path": "tools/test_app/Makefile",
+      "offset": 0,
+      "bytes": 882,
+      "sha256": "38fb358d7a55ae380a764afe737b45737ac4a0b5356e824ce93dbf7e1d9ab587",
+      "accepted_a2a_sha256": "38fb358d7a55ae380a764afe737b45737ac4a0b5356e824ce93dbf7e1d9ab587"
+    },
+    {
+      "path": "tools/test_app/blenc.c",
+      "offset": 0,
+      "bytes": 4771,
+      "sha256": "70cd93a88ef7ec008aa734c0d0a438e9a4e5fdfe538fb0fa08eb3e9eb9891953",
+      "accepted_a2a_sha256": "70cd93a88ef7ec008aa734c0d0a438e9a4e5fdfe538fb0fa08eb3e9eb9891953"
+    },
+    {
+      "path": "tools/test_app/blenc.h",
+      "offset": 0,
+      "bytes": 2308,
+      "sha256": "11c3a8421f334b7d8fdcd158f6131701447025e820cc76c85a8223b938deb57d",
+      "accepted_a2a_sha256": "11c3a8421f334b7d8fdcd158f6131701447025e820cc76c85a8223b938deb57d"
+    },
+    {
+      "path": "tools/test_app/bt_ext_porting_hgic.c",
+      "offset": 0,
+      "bytes": 7688,
+      "sha256": "6f49288311e52dc8fd97b99f6d4795c242bb0b23a118b60b2774e824c9dd5dea",
+      "accepted_a2a_sha256": "6f49288311e52dc8fd97b99f6d4795c242bb0b23a118b60b2774e824c9dd5dea"
+    },
+    {
+      "path": "tools/test_app/fwinfo.c",
+      "offset": 0,
+      "bytes": 9916,
+      "sha256": "ccee1a7af3ca3f5d3185689af225442cd195fa167dd5fd17f56ec9171d505534",
+      "accepted_a2a_sha256": "ccee1a7af3ca3f5d3185689af225442cd195fa167dd5fd17f56ec9171d505534"
+    },
+    {
+      "path": "tools/test_app/fwinfo.h",
+      "offset": 0,
+      "bytes": 4967,
+      "sha256": "9f1b78f9522f4645c1d40a73201a3cdaba652373fefd0b76a6b1e1ec8ce600a6",
+      "accepted_a2a_sha256": "9f1b78f9522f4645c1d40a73201a3cdaba652373fefd0b76a6b1e1ec8ce600a6"
+    },
+    {
+      "path": "tools/test_app/hgic.h",
+      "offset": 0,
+      "bytes": 19805,
+      "sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a",
+      "accepted_a2a_sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a"
+    },
+    {
+      "path": "tools/test_app/hgics.c",
+      "offset": 0,
+      "bytes": 9319,
+      "sha256": "6a94f71e4ccec581b881a79980ce90ace6720c00ba7de6b3b53456b26857514a",
+      "accepted_a2a_sha256": "6a94f71e4ccec581b881a79980ce90ace6720c00ba7de6b3b53456b26857514a"
+    },
+    {
+      "path": "tools/test_app/hgics_blenc.c",
+      "offset": 0,
+      "bytes": 16471,
+      "sha256": "a8700fb644021797e69c3930ab77dc01acb8d73dad43b269d31f83dd7d66fff3",
+      "accepted_a2a_sha256": "a8700fb644021797e69c3930ab77dc01acb8d73dad43b269d31f83dd7d66fff3"
+    },
+    {
+      "path": "tools/test_app/hgics_relay.c",
+      "offset": 0,
+      "bytes": 13449,
+      "sha256": "7ab3e6363d4d9fad664cbdaa16bcdcf0f092aff63af0ca6dae2780088b92e0da",
+      "accepted_a2a_sha256": "7ab3e6363d4d9fad664cbdaa16bcdcf0f092aff63af0ca6dae2780088b92e0da"
+    },
+    {
+      "path": "tools/test_app/hgota.c",
+      "offset": 0,
+      "bytes": 10100,
+      "sha256": "2a3b3e5b54fd1e5f3ac09c5df842b1cdf36848e328e298f8f485f667f2286dc2",
+      "accepted_a2a_sha256": "2a3b3e5b54fd1e5f3ac09c5df842b1cdf36848e328e298f8f485f667f2286dc2"
+    },
+    {
+      "path": "tools/test_app/hgpriv.c",
+      "offset": 0,
+      "bytes": 1890,
+      "sha256": "9396704f4489abbebd70e9c801b3b9fe1d7d24e2fd1b2b5793b7a9e924addf40",
+      "accepted_a2a_sha256": "9396704f4489abbebd70e9c801b3b9fe1d7d24e2fd1b2b5793b7a9e924addf40"
+    },
+    {
+      "path": "tools/test_app/hguevent.c",
+      "offset": 0,
+      "bytes": 7822,
+      "sha256": "2d0a658b45ec99c409a4358054a095b6adecd31940f8a77c8775f0c750c7e2cd",
+      "accepted_a2a_sha256": "2d0a658b45ec99c409a4358054a095b6adecd31940f8a77c8775f0c750c7e2cd"
+    },
+    {
+      "path": "tools/test_app/iwpriv.c",
+      "offset": 0,
+      "bytes": 41730,
+      "sha256": "0bebaaaabc5433abdd2beaa3b16686cba07bffa645cf763b0977f80906e8c2b6",
+      "accepted_a2a_sha256": "0bebaaaabc5433abdd2beaa3b16686cba07bffa645cf763b0977f80906e8c2b6"
+    },
+    {
+      "path": "tools/test_app/libnetat.c",
+      "offset": 0,
+      "bytes": 7040,
+      "sha256": "baaf2176ffa9d76154543ee2d1a544d4ed03a6d2b3b9d8aa412a6a17faab1c04",
+      "accepted_a2a_sha256": "baaf2176ffa9d76154543ee2d1a544d4ed03a6d2b3b9d8aa412a6a17faab1c04"
+    },
+    {
+      "path": "tools/test_app/libota.c",
+      "offset": 0,
+      "bytes": 6854,
+      "sha256": "4ec58b202ff421b03cc8d25d2901db56955adcb5352a42f19796b8a4e47ab917",
+      "accepted_a2a_sha256": "4ec58b202ff421b03cc8d25d2901db56955adcb5352a42f19796b8a4e47ab917"
+    },
+    {
+      "path": "tools/test_app/libota.h",
+      "offset": 0,
+      "bytes": 3112,
+      "sha256": "861a309b7fad4f9d95c65f521c2854fd16288d3d57830a7774729b62e725c899",
+      "accepted_a2a_sha256": "861a309b7fad4f9d95c65f521c2854fd16288d3d57830a7774729b62e725c899"
+    },
+    {
+      "path": "tools/test_app/tcp_test.c",
+      "offset": 0,
+      "bytes": 5903,
+      "sha256": "3746d6b5bef6d09d0d41c748ff4a1f1b8f6ee7fcd2c096143ac1621c0eb34060",
+      "accepted_a2a_sha256": "3746d6b5bef6d09d0d41c748ff4a1f1b8f6ee7fcd2c096143ac1621c0eb34060"
+    },
+    {
+      "path": "utils/Kconfig",
+      "offset": 0,
+      "bytes": 256,
+      "sha256": "07cfeddf11d5e92259ac8adca1bb04e2fd76499ce9af26009a0b3abe6d1ac4e9",
+      "accepted_a2a_sha256": "07cfeddf11d5e92259ac8adca1bb04e2fd76499ce9af26009a0b3abe6d1ac4e9"
+    },
+    {
+      "path": "utils/ah_freqinfo.c",
+      "offset": 0,
+      "bytes": 8772,
+      "sha256": "7a29b65926e48e22db4f5c85e4e9ed7a570ed5afc1500be14218df1997d492d6",
+      "accepted_a2a_sha256": "7a29b65926e48e22db4f5c85e4e9ed7a570ed5afc1500be14218df1997d492d6"
+    },
+    {
+      "path": "utils/bluetooth.c",
+      "offset": 0,
+      "bytes": 2606,
+      "sha256": "4987a59092cd64ca68017dbeeb6f402b0a246e510f40d9a6cbadf7a2b3ffba1e",
+      "accepted_a2a_sha256": "4987a59092cd64ca68017dbeeb6f402b0a246e510f40d9a6cbadf7a2b3ffba1e"
+    },
+    {
+      "path": "utils/control_receipt.h",
+      "offset": 0,
+      "bytes": 3984,
+      "sha256": "3b80f917e989fd3587f61e94d9dea713bb26059d7243de5cf0c7bbaccc869073",
+      "accepted_a2a_sha256": "3b80f917e989fd3587f61e94d9dea713bb26059d7243de5cf0c7bbaccc869073"
+    },
+    {
+      "path": "utils/fwctrl.c",
+      "offset": 0,
+      "bytes": 46706,
+      "sha256": "9a33bb351f36438f897ebccb2da54de285da24bf8a7eebe6ec813dff09a96c83",
+      "accepted_a2a_sha256": "9a33bb351f36438f897ebccb2da54de285da24bf8a7eebe6ec813dff09a96c83"
+    },
+    {
+      "path": "utils/fwctrl.h",
+      "offset": 0,
+      "bytes": 17209,
+      "sha256": "52f8cc93aef88e85f96238cde152cc93395d17efb3600a3c366cca0751080db6",
+      "accepted_a2a_sha256": "52f8cc93aef88e85f96238cde152cc93395d17efb3600a3c366cca0751080db6"
+    },
+    {
+      "path": "utils/fwdl.c",
+      "offset": 0,
+      "bytes": 13683,
+      "sha256": "f8c9cf82c6484b1998749ee7814cad44637d8c1db51bc5ee6a7c7fac0314b1fa",
+      "accepted_a2a_sha256": "f8c9cf82c6484b1998749ee7814cad44637d8c1db51bc5ee6a7c7fac0314b1fa"
+    },
+    {
+      "path": "utils/fwdl.h",
+      "offset": 0,
+      "bytes": 2825,
+      "sha256": "58e939a56bce67649df222dc5ae3f96dc6255e526233f67408dabdf6605c9392",
+      "accepted_a2a_sha256": "58e939a56bce67649df222dc5ae3f96dc6255e526233f67408dabdf6605c9392"
+    },
+    {
+      "path": "utils/fwinfo.c",
+      "offset": 0,
+      "bytes": 9012,
+      "sha256": "4503733cdc0050438f7bf60cf72a18c6afef1c3f1599c6530149cd8aec26f3cf",
+      "accepted_a2a_sha256": "4503733cdc0050438f7bf60cf72a18c6afef1c3f1599c6530149cd8aec26f3cf"
+    },
+    {
+      "path": "utils/fwinfo.h",
+      "offset": 0,
+      "bytes": 4257,
+      "sha256": "5506f2d97c0879f8bf692ec801161cbfa1de3f4ff5fc4acc3bd8986532fd409b",
+      "accepted_a2a_sha256": "5506f2d97c0879f8bf692ec801161cbfa1de3f4ff5fc4acc3bd8986532fd409b"
+    },
+    {
+      "path": "utils/if_sdio.c",
+      "offset": 0,
+      "bytes": 28088,
+      "sha256": "1deebeb0d0c7d886749075fc176d2db473296a279e8c44e156b7cadc1b30f42e",
+      "accepted_a2a_sha256": "1deebeb0d0c7d886749075fc176d2db473296a279e8c44e156b7cadc1b30f42e"
+    },
+    {
+      "path": "utils/if_usb.c",
+      "offset": 0,
+      "bytes": 15757,
+      "sha256": "500a5b4149bf506256542f5f19b2b8476051ef0749e110c483ec0b5f02672a79",
+      "accepted_a2a_sha256": "500a5b4149bf506256542f5f19b2b8476051ef0749e110c483ec0b5f02672a79"
+    },
+    {
+      "path": "utils/iwpriv.c",
+      "offset": 0,
+      "bytes": 57207,
+      "sha256": "887743a70e8d934e8219b7f321cd2e0d9f13e7f75280383010f516c1d62911b8",
+      "accepted_a2a_sha256": "887743a70e8d934e8219b7f321cd2e0d9f13e7f75280383010f516c1d62911b8"
+    },
+    {
+      "path": "utils/iwpriv.h",
+      "offset": 0,
+      "bytes": 324,
+      "sha256": "9ba6c5cf59f905a35c79f5e5c6011a812b4dc5576f97afa665e068fca350af03",
+      "accepted_a2a_sha256": "9ba6c5cf59f905a35c79f5e5c6011a812b4dc5576f97afa665e068fca350af03"
+    },
+    {
+      "path": "utils/mmc_spi.c",
+      "offset": 0,
+      "bytes": 39586,
+      "sha256": "59f3e43c31535c10c033fe5c24f29492abae90443d5d60b2203cf5c0ac7b7460",
+      "accepted_a2a_sha256": "59f3e43c31535c10c033fe5c24f29492abae90443d5d60b2203cf5c0ac7b7460"
+    },
+    {
+      "path": "utils/ota.c",
+      "offset": 0,
+      "bytes": 9312,
+      "sha256": "631fb8036bb698347954b2aec5296df78510247eba53ee33ad3cc33b65c63d41",
+      "accepted_a2a_sha256": "631fb8036bb698347954b2aec5296df78510247eba53ee33ad3cc33b65c63d41"
+    },
+    {
+      "path": "utils/ota.h",
+      "offset": 0,
+      "bytes": 765,
+      "sha256": "854a7a381b7ce257e35d9dc5170eb465e35e43d445cbcb5c878a0e9bd7ac7a63",
+      "accepted_a2a_sha256": "854a7a381b7ce257e35d9dc5170eb465e35e43d445cbcb5c878a0e9bd7ac7a63"
+    },
+    {
+      "path": "utils/utils.c",
+      "offset": 0,
+      "bytes": 6064,
+      "sha256": "5cfa24c9fa05c5f917281ffe62d4b70c02e6a82b628918680f664f9a13768759",
+      "accepted_a2a_sha256": "5cfa24c9fa05c5f917281ffe62d4b70c02e6a82b628918680f664f9a13768759"
+    },
+    {
+      "path": "utils/utils.h",
+      "offset": 0,
+      "bytes": 4287,
+      "sha256": "5da2e1863bee07b3c59bdb2dc196536e603f8f057861774d366a4f66143afcc9",
+      "accepted_a2a_sha256": "5da2e1863bee07b3c59bdb2dc196536e603f8f057861774d366a4f66143afcc9"
+    },
+    {
+      "path": "version.h",
+      "offset": 0,
+      "bytes": 30,
+      "sha256": "5a4e17827eabb8ba89d849b7e94a34292adc8328563709df435ec26e154a7649",
+      "accepted_a2a_sha256": "5a4e17827eabb8ba89d849b7e94a34292adc8328563709df435ec26e154a7649"
+    }
+  ],
+  "files": {
+    "docs/qualification-plans/kernel76-transport-20261021/STATION76_EVENT_A2B_CANDIDATE.md": {
+      "bytes": 11842,
+      "sha256": "2a038a0d0a4db3fd8c3c1c46f2c6be45a9d2ab7e4fa6f7668c5abedd2c0f1e74"
+    },
+    "apps/qualification/kernel76-station-events/README.md": {
+      "bytes": 1589,
+      "sha256": "3d3cb8a10f0333a3a10808b8b9219b2dcdfd695d6dba645762491c028476736f"
+    },
+    "apps/qualification/kernel76-station-events/prepare_source.py": {
+      "bytes": 3398,
+      "sha256": "fe13af9d6bcad52584db47101b2a1048684980dd9648dd9ec0fd47c49dc70e64"
+    },
+    "apps/qualification/kernel76-station-events/run_host_tests.py": {
+      "bytes": 13869,
+      "sha256": "936b8215f545ec327294692c8a58581b1f50ea63dada72d5b16447892c040b75"
+    },
+    "apps/qualification/kernel76-station-events/seal_candidate.py": {
+      "bytes": 2908,
+      "sha256": "5c0a22e0207147f8b094e982bbaac9b84120619884311b81db698c6c295f0234"
+    },
+    "apps/qualification/kernel76-station-events/source/Kconfig": {
+      "bytes": 161,
+      "sha256": "9e140d0bd3ed15e444f4a0dc2031306ffb2691edb7a648aa66b8893bfdb7fda6"
+    },
+    "apps/qualification/kernel76-station-events/source/LICENSE": {
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "apps/qualification/kernel76-station-events/source/Makefile": {
+      "bytes": 4406,
+      "sha256": "55a5ccfbf20a88d17e4073b8998dd380aa3a1d8b2f19ddcb4c895618a5319d60"
+    },
+    "apps/qualification/kernel76-station-events/source/README.md": {
+      "bytes": 188,
+      "sha256": "9808fc033ab4ad1030d1f599434dec2dc00b3eb5124d898bd2ab2edd43db0480"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic.h": {
+      "bytes": 19805,
+      "sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_def.h": {
+      "bytes": 8719,
+      "sha256": "3d13521744e834465feb47f492e567eaefe640e125c28e837f75bb44dc167571"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/11ah.c": {
+      "bytes": 14828,
+      "sha256": "db9a43c7df54b06206609ef6ed8cd88dc9295f1253fb5b2e0bb3abc2df37dbef"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/11ah.h": {
+      "bytes": 457,
+      "sha256": "44fb21d39697afa6f718440814735a578b42618811d4f424d2b4fce0f666232c"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/11bgn.c": {
+      "bytes": 6871,
+      "sha256": "9cc08836a4e33491409d538f07b337ade3db88555980e22466d28509f0fccc32"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/11bgn.h": {
+      "bytes": 62,
+      "sha256": "0f5d2470e5da5de778622562374f2177ede3e84ba4d806ce6a2307894093bb8f"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/Kconfig": {
+      "bytes": 281,
+      "sha256": "e454cb3749a2d6bc2b6b23c9abb2cbae9a4f0f79618f19212dd6886d80c65320"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/Makefile": {
+      "bytes": 724,
+      "sha256": "6650f2598d759cd190ed2298bf0d6ed8bbe26b323a7c85f4258e2468d2ab81f3"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/ap.c": {
+      "bytes": 3558,
+      "sha256": "30e6e8e8ec7eb0a2076626cd6f52a6061dbff7f57cb74ceb5384d0220b6b40fe"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/ap.h": {
+      "bytes": 384,
+      "sha256": "86351448186412fbd0a198bec6b300a3b5a5e774168f4373c6fee9be3f0b1d14"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/core.c": {
+      "bytes": 43055,
+      "sha256": "71a578f033148b2290b2b2b8de5ad540aeb7e4d348043a986615fcad07743452"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/event.c": {
+      "bytes": 2534,
+      "sha256": "b00e6ee84c10f676c2ad7d3afe8abb0800d37224b98445d86acdddde774a6345"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/event.h": {
+      "bytes": 229,
+      "sha256": "8abca8bc4d9e6efbb2137647a7290684e74809dcad81606ee8f908e35d0ae1e3"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/hgics.h": {
+      "bytes": 3803,
+      "sha256": "969cf4264e311e7c605d8f271444fb22d32b6001854164774414f7476cb9932f"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/hw.c": {
+      "bytes": 628,
+      "sha256": "28e4fabe668762cd3d01195a75e6194fcfe1b84eadb60ea7d6ad307c1e15fd9a"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/hw.h": {
+      "bytes": 792,
+      "sha256": "c9416377845b6c0eb1226a23c07ecc85a8c575e3a9d3f12a2db16257db11551e"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/procfs.c": {
+      "bytes": 8108,
+      "sha256": "702e2450f3b908776f6f75742c410caa3e3bcd85fc7a02753361bf9fd96c53e6"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/procfs.h": {
+      "bytes": 615,
+      "sha256": "59872a0cb88f59dea27fc916aadf4d1c53a3f305102392ca98fdb62f274faf27"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/rx.c": {
+      "bytes": 10917,
+      "sha256": "600c2bccc48fae9ee5642fa320d83541b261bf24ff8d2d492c7871f6b97e2cf0"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/stabr.c": {
+      "bytes": 8016,
+      "sha256": "91303e06e5705443c6cc98ed1e5c53c9807456c8a44e5280c9ca586ca8432c83"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/stabr.h": {
+      "bytes": 1205,
+      "sha256": "fc0319ed32175cd6aff3566d80346848cf2ea1bda645bddeb77aa3a08a83c189"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/stabr_arp.c": {
+      "bytes": 2741,
+      "sha256": "f2a6c59b9c5a307bd98ee19b080408be2cdb994d178f0cf945d70aba34c39efe"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/stabr_ip.c": {
+      "bytes": 2972,
+      "sha256": "3951bf24ca2396a2171f3ee339a868b1057702572c3ad3775bad9ff9a2030804"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/util.c": {
+      "bytes": 2315,
+      "sha256": "e5fb19ebdc5e9a2c50e0e8e4618924f23e9185c4cfbf23ab5a8e4ce0131bdfe8"
+    },
+    "apps/qualification/kernel76-station-events/source/hgic_smac/util.h": {
+      "bytes": 358,
+      "sha256": "65b23301aa1a012bfe89cb10a816cf2082ca0302db75f7f0cef70b23a2a07f79"
+    },
+    "apps/qualification/kernel76-station-events/source/linux6-compat.h": {
+      "bytes": 382,
+      "sha256": "32ea414d9001da68b3a91cac8c15d1468b4aba0ec8e337efc84fd0875a0d2eff"
+    },
+    "apps/qualification/kernel76-station-events/source/tools/test_app/Makefile": {
+      "bytes": 882,
+      "sha256": "38fb358d7a55ae380a764afe737b45737ac4a0b5356e824ce93dbf7e1d9ab587"
+    },
+    "apps/qualification/kernel76-station-events/source/tools/test_app/blenc.c": {
+      "bytes": 4771,
+      "sha256": "70cd93a88ef7ec008aa734c0d0a438e9a4e5fdfe538fb0fa08eb3e9eb9891953"
+    },
+    "apps/qualification/kernel76-station-events/source/tools/test_app/blenc.h": {
+      "bytes": 2308,
+      "sha256": "11c3a8421f334b7d8fdcd158f6131701447025e820cc76c85a8223b938deb57d"
+    },
+    "apps/qualification/kernel76-station-events/source/tools/test_app/bt_ext_porting_hgic.c": {
+      "bytes": 7688,
+      "sha256": "6f49288311e52dc8fd97b99f6d4795c242bb0b23a118b60b2774e824c9dd5dea"
+    },
+    "apps/qualification/kernel76-station-events/source/tools/test_app/fwinfo.c": {
+      "bytes": 9916,
+      "sha256": "ccee1a7af3ca3f5d3185689af225442cd195fa167dd5fd17f56ec9171d505534"
+    },
+    "apps/qualification/kernel76-station-events/source/tools/test_app/fwinfo.h": {
+      "bytes": 4967,
+      "sha256": "9f1b78f9522f4645c1d40a73201a3cdaba652373fefd0b76a6b1e1ec8ce600a6"
+    },
+    "apps/qualification/kernel76-station-events/source/tools/test_app/hgic.h": {
+      "bytes": 19805,
+      "sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a"
+    },
+    "apps/qualification/kernel76-station-events/source/tools/test_app/hgics.c": {
+      "bytes": 9319,
+      "sha256": "6a94f71e4ccec581b881a79980ce90ace6720c00ba7de6b3b53456b26857514a"
+    },
+    "apps/qualification/kernel76-station-events/source/tools/test_app/hgics_blenc.c": {
+      "bytes": 16471,
+      "sha256": "a8700fb644021797e69c3930ab77dc01acb8d73dad43b269d31f83dd7d66fff3"
+    },
+    "apps/qualification/kernel76-station-events/source/tools/test_app/hgics_relay.c": {
+      "bytes": 13449,
+      "sha256": "7ab3e6363d4d9fad664cbdaa16bcdcf0f092aff63af0ca6dae2780088b92e0da"
+    },
+    "apps/qualification/kernel76-station-events/source/tools/test_app/hgota.c": {
+      "bytes": 10100,
+      "sha256": "2a3b3e5b54fd1e5f3ac09c5df842b1cdf36848e328e298f8f485f667f2286dc2"
+    },
+    "apps/qualification/kernel76-station-events/source/tools/test_app/hgpriv.c": {
+      "bytes": 1890,
+      "sha256": "9396704f4489abbebd70e9c801b3b9fe1d7d24e2fd1b2b5793b7a9e924addf40"
+    },
+    "apps/qualification/kernel76-station-events/source/tools/test_app/hguevent.c": {
+      "bytes": 7822,
+      "sha256": "2d0a658b45ec99c409a4358054a095b6adecd31940f8a77c8775f0c750c7e2cd"
+    },
+    "apps/qualification/kernel76-station-events/source/tools/test_app/iwpriv.c": {
+      "bytes": 41730,
+      "sha256": "0bebaaaabc5433abdd2beaa3b16686cba07bffa645cf763b0977f80906e8c2b6"
+    },
+    "apps/qualification/kernel76-station-events/source/tools/test_app/libnetat.c": {
+      "bytes": 7040,
+      "sha256": "baaf2176ffa9d76154543ee2d1a544d4ed03a6d2b3b9d8aa412a6a17faab1c04"
+    },
+    "apps/qualification/kernel76-station-events/source/tools/test_app/libota.c": {
+      "bytes": 6854,
+      "sha256": "4ec58b202ff421b03cc8d25d2901db56955adcb5352a42f19796b8a4e47ab917"
+    },
+    "apps/qualification/kernel76-station-events/source/tools/test_app/libota.h": {
+      "bytes": 3112,
+      "sha256": "861a309b7fad4f9d95c65f521c2854fd16288d3d57830a7774729b62e725c899"
+    },
+    "apps/qualification/kernel76-station-events/source/tools/test_app/tcp_test.c": {
+      "bytes": 5903,
+      "sha256": "3746d6b5bef6d09d0d41c748ff4a1f1b8f6ee7fcd2c096143ac1621c0eb34060"
+    },
+    "apps/qualification/kernel76-station-events/source/utils/Kconfig": {
+      "bytes": 256,
+      "sha256": "07cfeddf11d5e92259ac8adca1bb04e2fd76499ce9af26009a0b3abe6d1ac4e9"
+    },
+    "apps/qualification/kernel76-station-events/source/utils/ah_freqinfo.c": {
+      "bytes": 8772,
+      "sha256": "7a29b65926e48e22db4f5c85e4e9ed7a570ed5afc1500be14218df1997d492d6"
+    },
+    "apps/qualification/kernel76-station-events/source/utils/bluetooth.c": {
+      "bytes": 2606,
+      "sha256": "4987a59092cd64ca68017dbeeb6f402b0a246e510f40d9a6cbadf7a2b3ffba1e"
+    },
+    "apps/qualification/kernel76-station-events/source/utils/control_receipt.h": {
+      "bytes": 3984,
+      "sha256": "3b80f917e989fd3587f61e94d9dea713bb26059d7243de5cf0c7bbaccc869073"
+    },
+    "apps/qualification/kernel76-station-events/source/utils/fwctrl.c": {
+      "bytes": 46706,
+      "sha256": "9a33bb351f36438f897ebccb2da54de285da24bf8a7eebe6ec813dff09a96c83"
+    },
+    "apps/qualification/kernel76-station-events/source/utils/fwctrl.h": {
+      "bytes": 17209,
+      "sha256": "52f8cc93aef88e85f96238cde152cc93395d17efb3600a3c366cca0751080db6"
+    },
+    "apps/qualification/kernel76-station-events/source/utils/fwdl.c": {
+      "bytes": 13683,
+      "sha256": "f8c9cf82c6484b1998749ee7814cad44637d8c1db51bc5ee6a7c7fac0314b1fa"
+    },
+    "apps/qualification/kernel76-station-events/source/utils/fwdl.h": {
+      "bytes": 2825,
+      "sha256": "58e939a56bce67649df222dc5ae3f96dc6255e526233f67408dabdf6605c9392"
+    },
+    "apps/qualification/kernel76-station-events/source/utils/fwinfo.c": {
+      "bytes": 9012,
+      "sha256": "4503733cdc0050438f7bf60cf72a18c6afef1c3f1599c6530149cd8aec26f3cf"
+    },
+    "apps/qualification/kernel76-station-events/source/utils/fwinfo.h": {
+      "bytes": 4257,
+      "sha256": "5506f2d97c0879f8bf692ec801161cbfa1de3f4ff5fc4acc3bd8986532fd409b"
+    },
+    "apps/qualification/kernel76-station-events/source/utils/if_sdio.c": {
+      "bytes": 28088,
+      "sha256": "1deebeb0d0c7d886749075fc176d2db473296a279e8c44e156b7cadc1b30f42e"
+    },
+    "apps/qualification/kernel76-station-events/source/utils/if_usb.c": {
+      "bytes": 15757,
+      "sha256": "500a5b4149bf506256542f5f19b2b8476051ef0749e110c483ec0b5f02672a79"
+    },
+    "apps/qualification/kernel76-station-events/source/utils/iwpriv.c": {
+      "bytes": 57207,
+      "sha256": "887743a70e8d934e8219b7f321cd2e0d9f13e7f75280383010f516c1d62911b8"
+    },
+    "apps/qualification/kernel76-station-events/source/utils/iwpriv.h": {
+      "bytes": 324,
+      "sha256": "9ba6c5cf59f905a35c79f5e5c6011a812b4dc5576f97afa665e068fca350af03"
+    },
+    "apps/qualification/kernel76-station-events/source/utils/mmc_spi.c": {
+      "bytes": 39586,
+      "sha256": "59f3e43c31535c10c033fe5c24f29492abae90443d5d60b2203cf5c0ac7b7460"
+    },
+    "apps/qualification/kernel76-station-events/source/utils/ota.c": {
+      "bytes": 9312,
+      "sha256": "631fb8036bb698347954b2aec5296df78510247eba53ee33ad3cc33b65c63d41"
+    },
+    "apps/qualification/kernel76-station-events/source/utils/ota.h": {
+      "bytes": 765,
+      "sha256": "854a7a381b7ce257e35d9dc5170eb465e35e43d445cbcb5c878a0e9bd7ac7a63"
+    },
+    "apps/qualification/kernel76-station-events/source/utils/utils.c": {
+      "bytes": 6064,
+      "sha256": "5cfa24c9fa05c5f917281ffe62d4b70c02e6a82b628918680f664f9a13768759"
+    },
+    "apps/qualification/kernel76-station-events/source/utils/utils.h": {
+      "bytes": 4287,
+      "sha256": "5da2e1863bee07b3c59bdb2dc196536e603f8f057861774d366a4f66143afcc9"
+    },
+    "apps/qualification/kernel76-station-events/source/version.h": {
+      "bytes": 30,
+      "sha256": "5a4e17827eabb8ba89d849b7e94a34292adc8328563709df435ec26e154a7649"
+    },
+    "apps/qualification/kernel76-station-events/tests/event_shim.h": {
+      "bytes": 3193,
+      "sha256": "bbb4f4d202f6a431fcee98063f0126176d6ccb1bc14783919540b70b2b46c3d9"
+    },
+    "apps/qualification/kernel76-station-events/tests/ingress_shim.h": {
+      "bytes": 1305,
+      "sha256": "929f3f5d27477598d9a36b14207a0dad11c628603d4c2ac7d07381b5f2fe4e27"
+    },
+    "apps/qualification/kernel76-station-events/tests/shim.h": {
+      "bytes": 4594,
+      "sha256": "0c606928e0a2378e6a5ac8c37c7d858c671e067ad0f61d0542ae7f01f5a49784"
+    },
+    "apps/qualification/kernel76-station-events/tests/test_control.c": {
+      "bytes": 16649,
+      "sha256": "3ea53cc312416c7fde4d950d76d42857d64f093ef187b230c81f48441ed49cfa"
+    },
+    "apps/qualification/kernel76-station-events/tests/test_events.c": {
+      "bytes": 17893,
+      "sha256": "a4243da6e8903cb45d82f646b2581987fc36e79ac6bf9b491ec64aaa61652fdd"
+    },
+    "apps/qualification/kernel76-station-events/tests/test_ingress.c": {
+      "bytes": 13303,
+      "sha256": "0b6c202bf39dbdd6ff15b91a31bf4209f119bdacbba10c909c30549283f82dd9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/copy-baseline.json": {
+      "bytes": 20320,
+      "sha256": "d1e3f900a28fa092d4712a2615a256d75b6e0c2d80291cbd899787727c48c03f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/binding.json": {
+      "bytes": 124,
+      "sha256": "be1fd8d9cbefd109ce95a3fcf3f9aaf7ae179fb952a7ee4e0e22d96e1fca34f5"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/compiler-target.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/compiler-target.stdout": {
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/compiler-version.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/compiler-version.stdout": {
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/events-optimized-compile.stderr": {
+      "bytes": 524,
+      "sha256": "ee317a055e15043b4285f853c37b62545a723bf47c59ae0cf428a1f622dc6280"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/events-optimized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/events.c": {
+      "bytes": 25883,
+      "sha256": "9ec7e66441f8770818d2e8d80f4f3bab477d3f0641758e323f63c9868adef3ff"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/hgic_smac_event.c.diff": {
+      "bytes": 3267,
+      "sha256": "9ed93d7689c3b8ccedc68c4a68b1b250a5e5bf39a0a36738d051e9f570d8cc2f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/hgic_smac_rx.c.diff": {
+      "bytes": 1142,
+      "sha256": "d23916fdf4d0f0dbf13ad85a9ac6ddb9408306765228c539b9a344769fcd9a41"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/include/linux/build_bug.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/include/linux/completion.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/include/linux/errno.h": {
+      "bytes": 30,
+      "sha256": "75be4010966f100e6a1e479f4bbe84f6c8e7cf0ebe349753804d0cee62abf172"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/include/linux/etherdevice.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/include/linux/unaligned.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/include/linux/workqueue.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/input-before/run_host_tests.py": {
+      "bytes": 12748,
+      "sha256": "058ef3a0101c9d84ee271051ffd2fc14cdd3ea9d913e0f8b8257880171a5c683"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/input-before/tests/event_shim.h": {
+      "bytes": 2472,
+      "sha256": "2746811c632839765bcecdf2366ad771708f5ed7e567a1f7943dd3f63cd93e8b"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/input-before/tests/ingress_shim.h": {
+      "bytes": 1305,
+      "sha256": "929f3f5d27477598d9a36b14207a0dad11c628603d4c2ac7d07381b5f2fe4e27"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/input-before/tests/shim.h": {
+      "bytes": 4594,
+      "sha256": "0c606928e0a2378e6a5ac8c37c7d858c671e067ad0f61d0542ae7f01f5a49784"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/input-before/tests/test_control.c": {
+      "bytes": 16649,
+      "sha256": "3ea53cc312416c7fde4d950d76d42857d64f093ef187b230c81f48441ed49cfa"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/input-before/tests/test_events.c": {
+      "bytes": 16427,
+      "sha256": "5b11ebf67548b0e1e274fabdf65f1b8b159bcd5a0f0a4f98b38bf4820987777e"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/input-before/tests/test_ingress.c": {
+      "bytes": 13303,
+      "sha256": "0b6c202bf39dbdd6ff15b91a31bf4209f119bdacbba10c909c30549283f82dd9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/output-hashes.json": {
+      "bytes": 2273,
+      "sha256": "4e7c3d16aaa5fce12be8e597a07da759e11fb2eb19d85670b1eb29f3243a5006"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run01/result.json": {
+      "bytes": 39300,
+      "sha256": "f94f9663c547fb52fd2f77eed1baa57fbcf13c9669f00f0382c51fb6af0f66e1"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/binding.json": {
+      "bytes": 124,
+      "sha256": "be1fd8d9cbefd109ce95a3fcf3f9aaf7ae179fb952a7ee4e0e22d96e1fca34f5"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/compiler-target.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/compiler-target.stdout": {
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/compiler-version.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/compiler-version.stdout": {
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/events-optimized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/events-optimized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/events-optimized-test.stderr": {
+      "bytes": 13,
+      "sha256": "d8be33a20582a0e0fbebbe0b42f1702d9feae89efbfd567e9a758f3b2a8de4b3"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/events-optimized-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/events-optimized.host": {
+      "bytes": 121544,
+      "sha256": "057c4712e750e254c4b935b3ed02080d04849a2b1dd2a5507fad28630f1f0ea2"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/events.c": {
+      "bytes": 25883,
+      "sha256": "9ec7e66441f8770818d2e8d80f4f3bab477d3f0641758e323f63c9868adef3ff"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/hgic_smac_event.c.diff": {
+      "bytes": 3267,
+      "sha256": "9ed93d7689c3b8ccedc68c4a68b1b250a5e5bf39a0a36738d051e9f570d8cc2f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/hgic_smac_rx.c.diff": {
+      "bytes": 1142,
+      "sha256": "d23916fdf4d0f0dbf13ad85a9ac6ddb9408306765228c539b9a344769fcd9a41"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/include/linux/build_bug.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/include/linux/completion.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/include/linux/errno.h": {
+      "bytes": 30,
+      "sha256": "75be4010966f100e6a1e479f4bbe84f6c8e7cf0ebe349753804d0cee62abf172"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/include/linux/etherdevice.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/include/linux/unaligned.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/include/linux/workqueue.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/input-snapshots/prepare_source.py": {
+      "bytes": 3398,
+      "sha256": "fe13af9d6bcad52584db47101b2a1048684980dd9648dd9ec0fd47c49dc70e64"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/input-snapshots/run_host_tests.py": {
+      "bytes": 13014,
+      "sha256": "eedbb1c7e87ab19b2de21a5026e465227156fd6d1e36b832c186f2e7e4c4c465"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/input-snapshots/tests/event_shim.h": {
+      "bytes": 2456,
+      "sha256": "f40594f3df10a75c6e145382ed7393d5ba20284fec95cf767a4ebef8cd47716c"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/input-snapshots/tests/ingress_shim.h": {
+      "bytes": 1305,
+      "sha256": "929f3f5d27477598d9a36b14207a0dad11c628603d4c2ac7d07381b5f2fe4e27"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/input-snapshots/tests/shim.h": {
+      "bytes": 4594,
+      "sha256": "0c606928e0a2378e6a5ac8c37c7d858c671e067ad0f61d0542ae7f01f5a49784"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/input-snapshots/tests/test_control.c": {
+      "bytes": 16649,
+      "sha256": "3ea53cc312416c7fde4d950d76d42857d64f093ef187b230c81f48441ed49cfa"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/input-snapshots/tests/test_events.c": {
+      "bytes": 16427,
+      "sha256": "5b11ebf67548b0e1e274fabdf65f1b8b159bcd5a0f0a4f98b38bf4820987777e"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/input-snapshots/tests/test_ingress.c": {
+      "bytes": 13303,
+      "sha256": "0b6c202bf39dbdd6ff15b91a31bf4209f119bdacbba10c909c30549283f82dd9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/output-hashes.json": {
+      "bytes": 3863,
+      "sha256": "beb9b83c7e75b4ecdc2d32ef8ed5564c328f15991b0041194bbad3aaed50d5f6"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run02/result.json": {
+      "bytes": 39733,
+      "sha256": "5873213039c028d9fb792e690c5d50d18f4cf73c2b306726d4430061129a95eb"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/binding.json": {
+      "bytes": 124,
+      "sha256": "be1fd8d9cbefd109ce95a3fcf3f9aaf7ae179fb952a7ee4e0e22d96e1fca34f5"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/compiler-target.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/compiler-target.stdout": {
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/compiler-version.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/compiler-version.stdout": {
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/events-optimized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/events-optimized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/events-optimized-test.stderr": {
+      "bytes": 14,
+      "sha256": "e9d05f3fb7bf822c2c6b92ec9c7fea436a159f7936802279651ee1481c00f8cb"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/events-optimized-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/events-optimized.host": {
+      "bytes": 121592,
+      "sha256": "c91fe0a16c7d3f5c910366e3a612e8e6fdc546c2c5535d68b618a89b4fc30166"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/events.c": {
+      "bytes": 25883,
+      "sha256": "9ec7e66441f8770818d2e8d80f4f3bab477d3f0641758e323f63c9868adef3ff"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/hgic_smac_event.c.diff": {
+      "bytes": 3267,
+      "sha256": "9ed93d7689c3b8ccedc68c4a68b1b250a5e5bf39a0a36738d051e9f570d8cc2f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/hgic_smac_rx.c.diff": {
+      "bytes": 1142,
+      "sha256": "d23916fdf4d0f0dbf13ad85a9ac6ddb9408306765228c539b9a344769fcd9a41"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/include/linux/build_bug.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/include/linux/completion.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/include/linux/errno.h": {
+      "bytes": 30,
+      "sha256": "75be4010966f100e6a1e479f4bbe84f6c8e7cf0ebe349753804d0cee62abf172"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/include/linux/etherdevice.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/include/linux/unaligned.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/include/linux/workqueue.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/input-snapshots/prepare_source.py": {
+      "bytes": 3398,
+      "sha256": "fe13af9d6bcad52584db47101b2a1048684980dd9648dd9ec0fd47c49dc70e64"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/input-snapshots/run_host_tests.py": {
+      "bytes": 13014,
+      "sha256": "eedbb1c7e87ab19b2de21a5026e465227156fd6d1e36b832c186f2e7e4c4c465"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/input-snapshots/tests/event_shim.h": {
+      "bytes": 2456,
+      "sha256": "f40594f3df10a75c6e145382ed7393d5ba20284fec95cf767a4ebef8cd47716c"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/input-snapshots/tests/ingress_shim.h": {
+      "bytes": 1305,
+      "sha256": "929f3f5d27477598d9a36b14207a0dad11c628603d4c2ac7d07381b5f2fe4e27"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/input-snapshots/tests/shim.h": {
+      "bytes": 4594,
+      "sha256": "0c606928e0a2378e6a5ac8c37c7d858c671e067ad0f61d0542ae7f01f5a49784"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/input-snapshots/tests/test_control.c": {
+      "bytes": 16649,
+      "sha256": "3ea53cc312416c7fde4d950d76d42857d64f093ef187b230c81f48441ed49cfa"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/input-snapshots/tests/test_events.c": {
+      "bytes": 16449,
+      "sha256": "069115ed8c9e38fe76a0c69cbd10391fde932b97ed6c0843c744b19f41734097"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/input-snapshots/tests/test_ingress.c": {
+      "bytes": 13303,
+      "sha256": "0b6c202bf39dbdd6ff15b91a31bf4209f119bdacbba10c909c30549283f82dd9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/output-hashes.json": {
+      "bytes": 3863,
+      "sha256": "fcbdf4109cdc27e735586990334531bebe5c656b1ad5cf19b24fd2aef7310703"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run03/result.json": {
+      "bytes": 39733,
+      "sha256": "422e318c36ca2d0a1817b2d70ac13cb2eac1edb4a0c12fe76bac0f87c5a5cdaa"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/binding.json": {
+      "bytes": 124,
+      "sha256": "be1fd8d9cbefd109ce95a3fcf3f9aaf7ae179fb952a7ee4e0e22d96e1fca34f5"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/compiler-target.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/compiler-target.stdout": {
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/compiler-version.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/compiler-version.stdout": {
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/events-optimized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/events-optimized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/events-optimized-test.stderr": {
+      "bytes": 14,
+      "sha256": "e9d05f3fb7bf822c2c6b92ec9c7fea436a159f7936802279651ee1481c00f8cb"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/events-optimized-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/events-optimized.host": {
+      "bytes": 121952,
+      "sha256": "613a647979e3efe1de3c944616e41ef64c42ebe565e8233dcfff6f80c0edf3a8"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/events.c": {
+      "bytes": 25883,
+      "sha256": "9ec7e66441f8770818d2e8d80f4f3bab477d3f0641758e323f63c9868adef3ff"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/hgic_smac_event.c.diff": {
+      "bytes": 3267,
+      "sha256": "9ed93d7689c3b8ccedc68c4a68b1b250a5e5bf39a0a36738d051e9f570d8cc2f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/hgic_smac_rx.c.diff": {
+      "bytes": 1142,
+      "sha256": "d23916fdf4d0f0dbf13ad85a9ac6ddb9408306765228c539b9a344769fcd9a41"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/include/linux/build_bug.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/include/linux/completion.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/include/linux/errno.h": {
+      "bytes": 30,
+      "sha256": "75be4010966f100e6a1e479f4bbe84f6c8e7cf0ebe349753804d0cee62abf172"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/include/linux/etherdevice.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/include/linux/unaligned.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/include/linux/workqueue.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/input-snapshots/prepare_source.py": {
+      "bytes": 3398,
+      "sha256": "fe13af9d6bcad52584db47101b2a1048684980dd9648dd9ec0fd47c49dc70e64"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/input-snapshots/run_host_tests.py": {
+      "bytes": 13014,
+      "sha256": "eedbb1c7e87ab19b2de21a5026e465227156fd6d1e36b832c186f2e7e4c4c465"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/input-snapshots/tests/event_shim.h": {
+      "bytes": 2456,
+      "sha256": "f40594f3df10a75c6e145382ed7393d5ba20284fec95cf767a4ebef8cd47716c"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/input-snapshots/tests/ingress_shim.h": {
+      "bytes": 1305,
+      "sha256": "929f3f5d27477598d9a36b14207a0dad11c628603d4c2ac7d07381b5f2fe4e27"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/input-snapshots/tests/shim.h": {
+      "bytes": 4594,
+      "sha256": "0c606928e0a2378e6a5ac8c37c7d858c671e067ad0f61d0542ae7f01f5a49784"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/input-snapshots/tests/test_control.c": {
+      "bytes": 16649,
+      "sha256": "3ea53cc312416c7fde4d950d76d42857d64f093ef187b230c81f48441ed49cfa"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/input-snapshots/tests/test_events.c": {
+      "bytes": 16638,
+      "sha256": "6318c4c68442f678811bfb5314f1eba24b5e59dcef8fb7c684ff6563691889b9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/input-snapshots/tests/test_ingress.c": {
+      "bytes": 13303,
+      "sha256": "0b6c202bf39dbdd6ff15b91a31bf4209f119bdacbba10c909c30549283f82dd9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/output-hashes.json": {
+      "bytes": 3863,
+      "sha256": "6b14f715dc1c5febb516ca0b65688a5b0259d481d05d7fe916605cbc1bfd16f9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run04/result.json": {
+      "bytes": 39733,
+      "sha256": "32f4bf0963a82040d9f6415b71bdd8e400006a6afa136da0f3efef6effac8c9a"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/binding.json": {
+      "bytes": 124,
+      "sha256": "be1fd8d9cbefd109ce95a3fcf3f9aaf7ae179fb952a7ee4e0e22d96e1fca34f5"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/compiler-target.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/compiler-target.stdout": {
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/compiler-version.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/compiler-version.stdout": {
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/events-optimized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/events-optimized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/events-optimized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/events-optimized-test.stdout": {
+      "bytes": 95,
+      "sha256": "8f85735adecd62e0604009f644b6bface69ab14b5e5e3a1fcc29283aa95b3ef7"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/events-optimized.host": {
+      "bytes": 121504,
+      "sha256": "2221ae395b12eb7957e464677057977122bc9a3a443393eb51896f6f4b00c33d"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/events-sanitized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/events-sanitized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/events-sanitized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/events-sanitized-test.stdout": {
+      "bytes": 95,
+      "sha256": "8f85735adecd62e0604009f644b6bface69ab14b5e5e3a1fcc29283aa95b3ef7"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/events-sanitized.host": {
+      "bytes": 373160,
+      "sha256": "09ef57f5e972de9e62db51538bff2a761f34853905e16399398e3fcfa420d078"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/events.c": {
+      "bytes": 25883,
+      "sha256": "9ec7e66441f8770818d2e8d80f4f3bab477d3f0641758e323f63c9868adef3ff"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/hgic_smac_event.c.diff": {
+      "bytes": 3267,
+      "sha256": "9ed93d7689c3b8ccedc68c4a68b1b250a5e5bf39a0a36738d051e9f570d8cc2f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/hgic_smac_rx.c.diff": {
+      "bytes": 1142,
+      "sha256": "d23916fdf4d0f0dbf13ad85a9ac6ddb9408306765228c539b9a344769fcd9a41"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/include/linux/build_bug.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/include/linux/completion.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/include/linux/errno.h": {
+      "bytes": 30,
+      "sha256": "75be4010966f100e6a1e479f4bbe84f6c8e7cf0ebe349753804d0cee62abf172"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/include/linux/etherdevice.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/include/linux/unaligned.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/include/linux/workqueue.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/input-snapshots/prepare_source.py": {
+      "bytes": 3398,
+      "sha256": "fe13af9d6bcad52584db47101b2a1048684980dd9648dd9ec0fd47c49dc70e64"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/input-snapshots/run_host_tests.py": {
+      "bytes": 13014,
+      "sha256": "eedbb1c7e87ab19b2de21a5026e465227156fd6d1e36b832c186f2e7e4c4c465"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/input-snapshots/tests/event_shim.h": {
+      "bytes": 2456,
+      "sha256": "f40594f3df10a75c6e145382ed7393d5ba20284fec95cf767a4ebef8cd47716c"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/input-snapshots/tests/ingress_shim.h": {
+      "bytes": 1305,
+      "sha256": "929f3f5d27477598d9a36b14207a0dad11c628603d4c2ac7d07381b5f2fe4e27"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/input-snapshots/tests/shim.h": {
+      "bytes": 4594,
+      "sha256": "0c606928e0a2378e6a5ac8c37c7d858c671e067ad0f61d0542ae7f01f5a49784"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/input-snapshots/tests/test_control.c": {
+      "bytes": 16649,
+      "sha256": "3ea53cc312416c7fde4d950d76d42857d64f093ef187b230c81f48441ed49cfa"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/input-snapshots/tests/test_events.c": {
+      "bytes": 16867,
+      "sha256": "f9d7ca6b614498051b0949e2ccdbbb4e34f73816db940687778e2678c215510d"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/input-snapshots/tests/test_ingress.c": {
+      "bytes": 13303,
+      "sha256": "0b6c202bf39dbdd6ff15b91a31bf4209f119bdacbba10c909c30549283f82dd9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/original-event-hooks-optimized-compile.stderr": {
+      "bytes": 499,
+      "sha256": "12581fa19a90fb1a707faf87a62842b19c4c84716b64278bf9549ec42e943987"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/original-event-hooks-optimized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/original-event-hooks.c": {
+      "bytes": 25200,
+      "sha256": "bbf5007fe3e72aa166b2343afe84fa32b82cf6ff6a5c1cb9a370ef5f6bde7a68"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/output-hashes.json": {
+      "bytes": 5006,
+      "sha256": "fd43a8091b9ebd17a5bf0ffdf0041c3b38fda3e097d3dba0d7bdf0af82e0f9f6"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run05/result.json": {
+      "bytes": 42395,
+      "sha256": "535e2e6e6a94e1ea8752ced1388f214ac3185dab320ccbd3565121b00cb3349e"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/a1-regression-optimized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/a1-regression-optimized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/a1-regression-optimized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/a1-regression-optimized-test.stdout": {
+      "bytes": 82,
+      "sha256": "60689376d3810ee0d1740faf801265fba316db279bf34627e5c0c51e7fc395b9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/a1-regression-optimized.host": {
+      "bytes": 104664,
+      "sha256": "b71e6431be1ae4d09581b36fe4e11105c01ba908dcc1904477d15cd1c73709bb"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/a1-regression-sanitized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/a1-regression-sanitized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/a1-regression-sanitized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/a1-regression-sanitized-test.stdout": {
+      "bytes": 82,
+      "sha256": "60689376d3810ee0d1740faf801265fba316db279bf34627e5c0c51e7fc395b9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/a1-regression-sanitized.host": {
+      "bytes": 308936,
+      "sha256": "89568670c3bc203eed2ba09cd6ce5057dd33d2492b022568eea90feb292c37c7"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/a1-regression.c": {
+      "bytes": 13125,
+      "sha256": "4a761c5fd4136289161a8cc91c592922bcfa5d498b3ee378b4c61ea26cdcfce8"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/a2a-regression-optimized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/a2a-regression-optimized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/a2a-regression-optimized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/a2a-regression-optimized-test.stdout": {
+      "bytes": 122,
+      "sha256": "61c382bf33d68be2fb272e5baff2d189c128f0d98ff5970e1818186eeebe964f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/a2a-regression-optimized.host": {
+      "bytes": 100224,
+      "sha256": "3ecd8fdf91f3aa975d1b0c00b9f1f856cfdce9a2bf3da391d07971112d808a57"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/a2a-regression-sanitized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/a2a-regression-sanitized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/a2a-regression-sanitized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/a2a-regression-sanitized-test.stdout": {
+      "bytes": 122,
+      "sha256": "61c382bf33d68be2fb272e5baff2d189c128f0d98ff5970e1818186eeebe964f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/a2a-regression-sanitized.host": {
+      "bytes": 350224,
+      "sha256": "a45f51fb686c1957926738633df838d6e863df82834d5e0ec6a88d96369ca484"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/a2a-regression.c": {
+      "bytes": 23995,
+      "sha256": "fe571e43a81e9fd7e2e143eaf62cead104b7259896b1f5d298fb42d6fcf9d94a"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/binding.json": {
+      "bytes": 124,
+      "sha256": "be1fd8d9cbefd109ce95a3fcf3f9aaf7ae179fb952a7ee4e0e22d96e1fca34f5"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/bounded-string-log-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/bounded-string-log-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/bounded-string-log-test.stderr": {
+      "bytes": 14,
+      "sha256": "e9d05f3fb7bf822c2c6b92ec9c7fea436a159f7936802279651ee1481c00f8cb"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/bounded-string-log-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/bounded-string-log.c": {
+      "bytes": 25939,
+      "sha256": "e2b256db2b87a829970066ee49f7734e433a9932f93a1daceda808daad1e4acc"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/bounded-string-log.host": {
+      "bytes": 374064,
+      "sha256": "0b024c33f076f81764408e22de836e0bdce02583b67b280414b3705a76a00329"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/bypass-persistent-denial-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/bypass-persistent-denial-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/bypass-persistent-denial-test.stderr": {
+      "bytes": 14,
+      "sha256": "cbadb8fdb4a8b196fa78ef8266bc448e7f7c29e4918f2fe3b513cff711cb1a0d"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/bypass-persistent-denial-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/bypass-persistent-denial.c": {
+      "bytes": 25870,
+      "sha256": "5cce0d1e2e956ac59cc05442e78969b6ab23a6acd0cc586815b3799ba8f18d15"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/bypass-persistent-denial.host": {
+      "bytes": 373192,
+      "sha256": "f0a394a405e6d4296952d6111ae45d9488cb7bd499de8cdd12f2c329e13ffaf7"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/compiler-target.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/compiler-target.stdout": {
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/compiler-version.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/compiler-version.stdout": {
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/event-success-completion-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/event-success-completion-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/event-success-completion-test.stderr": {
+      "bytes": 14,
+      "sha256": "d03ba0773b1e4f00ced00942e2e58b152d215ce48565557644b5ddfbbdbda691"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/event-success-completion-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/event-success-completion.c": {
+      "bytes": 26011,
+      "sha256": "3632b311f4b0ee8eba63101cc917755639757994129e205a760a1e1624e50a5d"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/event-success-completion.host": {
+      "bytes": 375256,
+      "sha256": "82fb17424d700e401e5a64f0ee7ea8cd87101b7f2f6e37639e288d234ed2831b"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/events-optimized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/events-optimized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/events-optimized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/events-optimized-test.stdout": {
+      "bytes": 95,
+      "sha256": "8f85735adecd62e0604009f644b6bface69ab14b5e5e3a1fcc29283aa95b3ef7"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/events-optimized.host": {
+      "bytes": 121504,
+      "sha256": "900e0874f6ad5e3aa55cb60a44ee417bb37fcc3cb514c26c0d0729115b922c03"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/events-sanitized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/events-sanitized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/events-sanitized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/events-sanitized-test.stdout": {
+      "bytes": 95,
+      "sha256": "8f85735adecd62e0604009f644b6bface69ab14b5e5e3a1fcc29283aa95b3ef7"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/events-sanitized.host": {
+      "bytes": 373160,
+      "sha256": "8872f475e26d0d0fec15eed5ba4acbf1f842517353812da03a70cf06324a60b8"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/events.c": {
+      "bytes": 25883,
+      "sha256": "9ec7e66441f8770818d2e8d80f4f3bab477d3f0641758e323f63c9868adef3ff"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/hgic_smac_event.c.diff": {
+      "bytes": 3267,
+      "sha256": "9ed93d7689c3b8ccedc68c4a68b1b250a5e5bf39a0a36738d051e9f570d8cc2f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/hgic_smac_rx.c.diff": {
+      "bytes": 1142,
+      "sha256": "d23916fdf4d0f0dbf13ad85a9ac6ddb9408306765228c539b9a344769fcd9a41"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/include/linux/build_bug.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/include/linux/completion.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/include/linux/errno.h": {
+      "bytes": 30,
+      "sha256": "75be4010966f100e6a1e479f4bbe84f6c8e7cf0ebe349753804d0cee62abf172"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/include/linux/etherdevice.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/include/linux/unaligned.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/include/linux/workqueue.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/input-snapshots/prepare_source.py": {
+      "bytes": 3398,
+      "sha256": "fe13af9d6bcad52584db47101b2a1048684980dd9648dd9ec0fd47c49dc70e64"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/input-snapshots/run_host_tests.py": {
+      "bytes": 13137,
+      "sha256": "5ca8bfe57f251bc77ceca5d35469e7470172500b6e4225c56daa161de286d721"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/input-snapshots/tests/event_shim.h": {
+      "bytes": 2456,
+      "sha256": "f40594f3df10a75c6e145382ed7393d5ba20284fec95cf767a4ebef8cd47716c"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/input-snapshots/tests/ingress_shim.h": {
+      "bytes": 1305,
+      "sha256": "929f3f5d27477598d9a36b14207a0dad11c628603d4c2ac7d07381b5f2fe4e27"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/input-snapshots/tests/shim.h": {
+      "bytes": 4594,
+      "sha256": "0c606928e0a2378e6a5ac8c37c7d858c671e067ad0f61d0542ae7f01f5a49784"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/input-snapshots/tests/test_control.c": {
+      "bytes": 16649,
+      "sha256": "3ea53cc312416c7fde4d950d76d42857d64f093ef187b230c81f48441ed49cfa"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/input-snapshots/tests/test_events.c": {
+      "bytes": 16867,
+      "sha256": "f9d7ca6b614498051b0949e2ccdbbb4e34f73816db940687778e2678c215510d"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/input-snapshots/tests/test_ingress.c": {
+      "bytes": 13303,
+      "sha256": "0b6c202bf39dbdd6ff15b91a31bf4209f119bdacbba10c909c30549283f82dd9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/missing-consumer-type-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/missing-consumer-type-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/missing-consumer-type-test.stderr": {
+      "bytes": 14,
+      "sha256": "cbadb8fdb4a8b196fa78ef8266bc448e7f7c29e4918f2fe3b513cff711cb1a0d"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/missing-consumer-type-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/missing-consumer-type.c": {
+      "bytes": 25805,
+      "sha256": "b042b477bf3516c9ff1c586b289b7f26dfda5e6d8744575660e76832e5de2870"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/missing-consumer-type.host": {
+      "bytes": 373008,
+      "sha256": "6d018a587367aa0371490cc7a2164e473f5f0aa8d9c24fd2e5a612b773f467ea"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/missing-event-pretrim-equality-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/missing-event-pretrim-equality-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/missing-event-pretrim-equality-test.stderr": {
+      "bytes": 13,
+      "sha256": "d8be33a20582a0e0fbebbe0b42f1702d9feae89efbfd567e9a758f3b2a8de4b3"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/missing-event-pretrim-equality-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/missing-event-pretrim-equality.c": {
+      "bytes": 25966,
+      "sha256": "ef4141f0caeaa282dc6acd8ced1414cb48fb908b4458de4c3639985a2376dbc2"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/missing-event-pretrim-equality.host": {
+      "bytes": 373256,
+      "sha256": "a68692182156c1113816cbabfe295289fb11c147a176d5563f00965a8733be7b"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/missing-event-pretrim-minimum-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/missing-event-pretrim-minimum-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/missing-event-pretrim-minimum-test.stderr": {
+      "bytes": 13,
+      "sha256": "d8be33a20582a0e0fbebbe0b42f1702d9feae89efbfd567e9a758f3b2a8de4b3"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/missing-event-pretrim-minimum-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/missing-event-pretrim-minimum.c": {
+      "bytes": 25966,
+      "sha256": "c8e854967fc3465ea8d8a2b02288ea46b9dfa8b14d4ead999107630e1996bda3"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/missing-event-pretrim-minimum.host": {
+      "bytes": 373232,
+      "sha256": "4275ca59a6e9348ed3ea45fe8ce5a1745f3d0320c02b7d1bee924cbff371412f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/original-event-hooks-optimized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/original-event-hooks-optimized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/original-event-hooks-optimized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/original-event-hooks-optimized-test.stdout": {
+      "bytes": 68,
+      "sha256": "48604ebb414a573a075db4d8b3f4050f16b68e7bff160a5f1cf2ebd5151833f4"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/original-event-hooks-optimized.host": {
+      "bytes": 106864,
+      "sha256": "4128bda071430ee0eb9b6df5c1080fe52be256ae78810e89d523338864ab52c9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/original-event-hooks-sanitized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/original-event-hooks-sanitized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/original-event-hooks-sanitized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/original-event-hooks-sanitized-test.stdout": {
+      "bytes": 68,
+      "sha256": "48604ebb414a573a075db4d8b3f4050f16b68e7bff160a5f1cf2ebd5151833f4"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/original-event-hooks-sanitized.host": {
+      "bytes": 339128,
+      "sha256": "e31739f55f76287cb95b51e000f5510f753442ae4f815af109d8c9e753a82e1f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/original-event-hooks.c": {
+      "bytes": 25200,
+      "sha256": "bbf5007fe3e72aa166b2343afe84fa32b82cf6ff6a5c1cb9a370ef5f6bde7a68"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/output-hashes.json": {
+      "bytes": 17237,
+      "sha256": "ab7871837bde398884204ba4cbde7622f884c98ba6298950b7bc6de22b97d5ec"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/restore-payload-format-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/restore-payload-format-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/restore-payload-format-test.stderr": {
+      "bytes": 14,
+      "sha256": "e9d05f3fb7bf822c2c6b92ec9c7fea436a159f7936802279651ee1481c00f8cb"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/restore-payload-format-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/restore-payload-format.c": {
+      "bytes": 25919,
+      "sha256": "fe3dba8a2fa14181083a3e36bd12acfdc5af83127308705158393030d5a98628"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/restore-payload-format.host": {
+      "bytes": 373576,
+      "sha256": "39b0220511cd88bfb81899d8963e4fb75ab4959b1b8e1f14578adbebd73cdefc"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/restore-unknown-queue-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/restore-unknown-queue-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/restore-unknown-queue-test.stderr": {
+      "bytes": 14,
+      "sha256": "ad726574296357173e6e7bd016461312f69df252a8331c07a3ac8fc038211726"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/restore-unknown-queue-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/restore-unknown-queue.c": {
+      "bytes": 26020,
+      "sha256": "10572f3deed6c19246f9d8751ab53953edeba94c169d01c2adec9e8667c8d655"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/restore-unknown-queue.host": {
+      "bytes": 375072,
+      "sha256": "cadf0b829833d2ee9167a85fc97c41b3ee0f2a1dce6428697a89852b3f61868e"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/result.json": {
+      "bytes": 213810,
+      "sha256": "777131218034bb4246b2a93c5acbb42879123ce8e333b209256ec67ab40a7043"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/truncate-event2-id-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/truncate-event2-id-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/truncate-event2-id-test.stderr": {
+      "bytes": 14,
+      "sha256": "cbadb8fdb4a8b196fa78ef8266bc448e7f7c29e4918f2fe3b513cff711cb1a0d"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/truncate-event2-id-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/truncate-event2-id.c": {
+      "bytes": 25887,
+      "sha256": "bbf7288e2e1e07eefd7d24099243b51fc23eb01fa2e2a38bd7d745ac71c14ed6"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run06/truncate-event2-id.host": {
+      "bytes": 373168,
+      "sha256": "be335e5eac5ab07549bf6821c8143c4e76318a334724d8edbe25f2fc66ce668c"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/a1-regression-optimized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/a1-regression-optimized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/a1-regression-optimized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/a1-regression-optimized-test.stdout": {
+      "bytes": 82,
+      "sha256": "60689376d3810ee0d1740faf801265fba316db279bf34627e5c0c51e7fc395b9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/a1-regression-optimized.host": {
+      "bytes": 104664,
+      "sha256": "6159db32a8d3912fb9e38ec84c9fd0fb7d4d0a14fc18bf7481646e8a0fb6486c"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/a1-regression-sanitized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/a1-regression-sanitized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/a1-regression-sanitized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/a1-regression-sanitized-test.stdout": {
+      "bytes": 82,
+      "sha256": "60689376d3810ee0d1740faf801265fba316db279bf34627e5c0c51e7fc395b9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/a1-regression-sanitized.host": {
+      "bytes": 308936,
+      "sha256": "abcd655c6269f0040995b06821f4f3ddf64b49ba07238af40cf396ff9afbc8aa"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/a1-regression.c": {
+      "bytes": 13125,
+      "sha256": "4a761c5fd4136289161a8cc91c592922bcfa5d498b3ee378b4c61ea26cdcfce8"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/a2a-regression-optimized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/a2a-regression-optimized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/a2a-regression-optimized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/a2a-regression-optimized-test.stdout": {
+      "bytes": 122,
+      "sha256": "61c382bf33d68be2fb272e5baff2d189c128f0d98ff5970e1818186eeebe964f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/a2a-regression-optimized.host": {
+      "bytes": 100224,
+      "sha256": "d1b2dbab912e23f77d9fc152f391da154907d19401570277539b36adb8461a92"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/a2a-regression-sanitized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/a2a-regression-sanitized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/a2a-regression-sanitized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/a2a-regression-sanitized-test.stdout": {
+      "bytes": 122,
+      "sha256": "61c382bf33d68be2fb272e5baff2d189c128f0d98ff5970e1818186eeebe964f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/a2a-regression-sanitized.host": {
+      "bytes": 350224,
+      "sha256": "b3d952bc6466d3d840bbb7f787bbe97c1a307cdf4bea56869a554d729272451c"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/a2a-regression.c": {
+      "bytes": 23995,
+      "sha256": "fe571e43a81e9fd7e2e143eaf62cead104b7259896b1f5d298fb42d6fcf9d94a"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/binding.json": {
+      "bytes": 124,
+      "sha256": "be1fd8d9cbefd109ce95a3fcf3f9aaf7ae179fb952a7ee4e0e22d96e1fca34f5"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/bounded-string-log-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/bounded-string-log-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/bounded-string-log-test.stderr": {
+      "bytes": 14,
+      "sha256": "e9d05f3fb7bf822c2c6b92ec9c7fea436a159f7936802279651ee1481c00f8cb"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/bounded-string-log-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/bounded-string-log.c": {
+      "bytes": 25939,
+      "sha256": "e2b256db2b87a829970066ee49f7734e433a9932f93a1daceda808daad1e4acc"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/bounded-string-log.host": {
+      "bytes": 376600,
+      "sha256": "130a56d51360100d20a075e9098a07c9b776e76eeed72d6b634f418aba092f18"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/bypass-persistent-denial-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/bypass-persistent-denial-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/bypass-persistent-denial-test.stderr": {
+      "bytes": 14,
+      "sha256": "cbadb8fdb4a8b196fa78ef8266bc448e7f7c29e4918f2fe3b513cff711cb1a0d"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/bypass-persistent-denial-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/bypass-persistent-denial.c": {
+      "bytes": 25870,
+      "sha256": "5cce0d1e2e956ac59cc05442e78969b6ab23a6acd0cc586815b3799ba8f18d15"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/bypass-persistent-denial.host": {
+      "bytes": 375736,
+      "sha256": "7e25f2f2c55d45f96bec40d0068d4f43a8306c62208d4090b286a651c38f50a8"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/compiler-target.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/compiler-target.stdout": {
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/compiler-version.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/compiler-version.stdout": {
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/consumer-call-audit.json": {
+      "bytes": 271,
+      "sha256": "1ee0e230a1b1f9a29f6fe5ff7d83f83b957cf40a01576fd61c1a659b1b280dd7"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/event-success-completion-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/event-success-completion-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/event-success-completion-test.stderr": {
+      "bytes": 14,
+      "sha256": "d03ba0773b1e4f00ced00942e2e58b152d215ce48565557644b5ddfbbdbda691"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/event-success-completion-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/event-success-completion.c": {
+      "bytes": 26011,
+      "sha256": "3632b311f4b0ee8eba63101cc917755639757994129e205a760a1e1624e50a5d"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/event-success-completion.host": {
+      "bytes": 381896,
+      "sha256": "7036d8040f6e285070966a800082a44880b30263e3483fa5c526e33410e0cfa9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/events-optimized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/events-optimized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/events-optimized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/events-optimized-test.stdout": {
+      "bytes": 95,
+      "sha256": "09eeaad63df71a0ff42cbb2a7f6b2aaf75fe23f35ff746e8f185b42181336efc"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/events-optimized.host": {
+      "bytes": 128376,
+      "sha256": "90e6eaf0ead579404dc1b601e862b3067dcf316bc0bdac91b48c0fd4679954c0"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/events-sanitized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/events-sanitized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/events-sanitized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/events-sanitized-test.stdout": {
+      "bytes": 95,
+      "sha256": "09eeaad63df71a0ff42cbb2a7f6b2aaf75fe23f35ff746e8f185b42181336efc"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/events-sanitized.host": {
+      "bytes": 375688,
+      "sha256": "0c920ec544bb91d40eeb179b68c002bd3df56d34783a838ebe4a0e6ff9578d5c"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/events.c": {
+      "bytes": 25883,
+      "sha256": "9ec7e66441f8770818d2e8d80f4f3bab477d3f0641758e323f63c9868adef3ff"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/hgic_smac_event.c.diff": {
+      "bytes": 3267,
+      "sha256": "9ed93d7689c3b8ccedc68c4a68b1b250a5e5bf39a0a36738d051e9f570d8cc2f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/hgic_smac_rx.c.diff": {
+      "bytes": 1142,
+      "sha256": "d23916fdf4d0f0dbf13ad85a9ac6ddb9408306765228c539b9a344769fcd9a41"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/include/linux/build_bug.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/include/linux/completion.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/include/linux/errno.h": {
+      "bytes": 30,
+      "sha256": "75be4010966f100e6a1e479f4bbe84f6c8e7cf0ebe349753804d0cee62abf172"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/include/linux/etherdevice.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/include/linux/unaligned.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/include/linux/workqueue.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/input-snapshots/prepare_source.py": {
+      "bytes": 3398,
+      "sha256": "fe13af9d6bcad52584db47101b2a1048684980dd9648dd9ec0fd47c49dc70e64"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/input-snapshots/run_host_tests.py": {
+      "bytes": 13869,
+      "sha256": "936b8215f545ec327294692c8a58581b1f50ea63dada72d5b16447892c040b75"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/input-snapshots/tests/event_shim.h": {
+      "bytes": 2487,
+      "sha256": "c159c1b7f5e4d855b0c9aef637edd58a3bbc877f7c1a334f95f73b10fa0326d6"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/input-snapshots/tests/ingress_shim.h": {
+      "bytes": 1305,
+      "sha256": "929f3f5d27477598d9a36b14207a0dad11c628603d4c2ac7d07381b5f2fe4e27"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/input-snapshots/tests/shim.h": {
+      "bytes": 4594,
+      "sha256": "0c606928e0a2378e6a5ac8c37c7d858c671e067ad0f61d0542ae7f01f5a49784"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/input-snapshots/tests/test_control.c": {
+      "bytes": 16649,
+      "sha256": "3ea53cc312416c7fde4d950d76d42857d64f093ef187b230c81f48441ed49cfa"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/input-snapshots/tests/test_events.c": {
+      "bytes": 17321,
+      "sha256": "305cef70a5c8aa7600b5b867c874f3bf1d9fa41296c0be9344a727600e3d8d27"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/input-snapshots/tests/test_ingress.c": {
+      "bytes": 13303,
+      "sha256": "0b6c202bf39dbdd6ff15b91a31bf4209f119bdacbba10c909c30549283f82dd9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-consumer-type-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-consumer-type-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-consumer-type-test.stderr": {
+      "bytes": 14,
+      "sha256": "cbadb8fdb4a8b196fa78ef8266bc448e7f7c29e4918f2fe3b513cff711cb1a0d"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-consumer-type-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-consumer-type.c": {
+      "bytes": 25805,
+      "sha256": "b042b477bf3516c9ff1c586b289b7f26dfda5e6d8744575660e76832e5de2870"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-consumer-type.host": {
+      "bytes": 375544,
+      "sha256": "6e73138058431a48d27cee57901fcda6c8378eac52ae11c0edf8f5bdaac5f203"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-event-pretrim-equality-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-event-pretrim-equality-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-event-pretrim-equality-test.stderr": {
+      "bytes": 13,
+      "sha256": "d8be33a20582a0e0fbebbe0b42f1702d9feae89efbfd567e9a758f3b2a8de4b3"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-event-pretrim-equality-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-event-pretrim-equality.c": {
+      "bytes": 25966,
+      "sha256": "ef4141f0caeaa282dc6acd8ced1414cb48fb908b4458de4c3639985a2376dbc2"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-event-pretrim-equality.host": {
+      "bytes": 375784,
+      "sha256": "e76cdaf4a7b2155275766d92a2ff1d740fc2f8bbae2db0ff9d5732c9e48c018e"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-event-pretrim-minimum-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-event-pretrim-minimum-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-event-pretrim-minimum-test.stderr": {
+      "bytes": 13,
+      "sha256": "d8be33a20582a0e0fbebbe0b42f1702d9feae89efbfd567e9a758f3b2a8de4b3"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-event-pretrim-minimum-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-event-pretrim-minimum.c": {
+      "bytes": 25966,
+      "sha256": "c8e854967fc3465ea8d8a2b02288ea46b9dfa8b14d4ead999107630e1996bda3"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-event-pretrim-minimum.host": {
+      "bytes": 375760,
+      "sha256": "743a4fbc10c455fbf202bdc6c4b67b27b0a72ad277b6e2498733bf0909a8bf42"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-event-pretrim-type-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-event-pretrim-type-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-event-pretrim-type-test.stderr": {
+      "bytes": 13,
+      "sha256": "d8be33a20582a0e0fbebbe0b42f1702d9feae89efbfd567e9a758f3b2a8de4b3"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-event-pretrim-type-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-event-pretrim-type.c": {
+      "bytes": 25811,
+      "sha256": "1f8514ff4a7107bb407fe4e281c1c9297461e48641bd54acb99400e7c53173fa"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/missing-event-pretrim-type.host": {
+      "bytes": 375736,
+      "sha256": "59d302b346937478f9451892e2aa7ad166009d45582099e503193755fb3ee519"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/original-event-hooks-optimized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/original-event-hooks-optimized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/original-event-hooks-optimized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/original-event-hooks-optimized-test.stdout": {
+      "bytes": 68,
+      "sha256": "48604ebb414a573a075db4d8b3f4050f16b68e7bff160a5f1cf2ebd5151833f4"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/original-event-hooks-optimized.host": {
+      "bytes": 106952,
+      "sha256": "c462762c9f75e9b49838da8e0bf498d5cf027aa1b1d7829c7e2ffa1644925cac"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/original-event-hooks-sanitized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/original-event-hooks-sanitized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/original-event-hooks-sanitized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/original-event-hooks-sanitized-test.stdout": {
+      "bytes": 68,
+      "sha256": "48604ebb414a573a075db4d8b3f4050f16b68e7bff160a5f1cf2ebd5151833f4"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/original-event-hooks-sanitized.host": {
+      "bytes": 339288,
+      "sha256": "753bf70d13c6096ef455c30b204f05590ea9d16c68b6899719bfe27c68bca6ab"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/original-event-hooks.c": {
+      "bytes": 25200,
+      "sha256": "bbf5007fe3e72aa166b2343afe84fa32b82cf6ff6a5c1cb9a370ef5f6bde7a68"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/output-hashes.json": {
+      "bytes": 18260,
+      "sha256": "c40be9fd56a7d3dc8ae9b530b2d13a4beb4cf86e382c8517bf4ac5edd8b98a96"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/restore-payload-format-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/restore-payload-format-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/restore-payload-format-test.stderr": {
+      "bytes": 14,
+      "sha256": "e9d05f3fb7bf822c2c6b92ec9c7fea436a159f7936802279651ee1481c00f8cb"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/restore-payload-format-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/restore-payload-format.c": {
+      "bytes": 25919,
+      "sha256": "fe3dba8a2fa14181083a3e36bd12acfdc5af83127308705158393030d5a98628"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/restore-payload-format.host": {
+      "bytes": 376112,
+      "sha256": "751b98353713f766164bbb30f99f6f95707e55b0b2c362ecc1a262b2a0a6cac2"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/restore-unknown-queue-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/restore-unknown-queue-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/restore-unknown-queue-test.stderr": {
+      "bytes": 14,
+      "sha256": "ad726574296357173e6e7bd016461312f69df252a8331c07a3ac8fc038211726"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/restore-unknown-queue-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/restore-unknown-queue.c": {
+      "bytes": 26020,
+      "sha256": "10572f3deed6c19246f9d8751ab53953edeba94c169d01c2adec9e8667c8d655"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/restore-unknown-queue.host": {
+      "bytes": 381704,
+      "sha256": "a640b52d1946da4f0a9320d84b6cc99ab8b5c94bc23e03d851493d72ddd32b86"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/result.json": {
+      "bytes": 218189,
+      "sha256": "db62fd1f1d2ceb765ec317beca8199a89da13b33c314866a01abb94f139be7ee"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/truncate-event2-id-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/truncate-event2-id-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/truncate-event2-id-test.stderr": {
+      "bytes": 14,
+      "sha256": "cbadb8fdb4a8b196fa78ef8266bc448e7f7c29e4918f2fe3b513cff711cb1a0d"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/truncate-event2-id-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/truncate-event2-id.c": {
+      "bytes": 25887,
+      "sha256": "bbf7288e2e1e07eefd7d24099243b51fc23eb01fa2e2a38bd7d745ac71c14ed6"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run07/truncate-event2-id.host": {
+      "bytes": 375696,
+      "sha256": "c994588240dac9e78e711f552e5b3410eb8d7fdca10c10bdf4daf95922867227"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/a1-regression-optimized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/a1-regression-optimized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/a1-regression-optimized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/a1-regression-optimized-test.stdout": {
+      "bytes": 82,
+      "sha256": "60689376d3810ee0d1740faf801265fba316db279bf34627e5c0c51e7fc395b9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/a1-regression-optimized.host": {
+      "bytes": 104664,
+      "sha256": "a5ebff1c351e5618b639de781aba4daa7345e0d721681da401a075929f427f8f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/a1-regression-sanitized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/a1-regression-sanitized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/a1-regression-sanitized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/a1-regression-sanitized-test.stdout": {
+      "bytes": 82,
+      "sha256": "60689376d3810ee0d1740faf801265fba316db279bf34627e5c0c51e7fc395b9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/a1-regression-sanitized.host": {
+      "bytes": 308936,
+      "sha256": "1483b0509b4c1cae49fe886ca4c7ec23743c47fc0cb1713827a1b65ccdba2498"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/a1-regression.c": {
+      "bytes": 13125,
+      "sha256": "4a761c5fd4136289161a8cc91c592922bcfa5d498b3ee378b4c61ea26cdcfce8"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/a2a-regression-optimized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/a2a-regression-optimized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/a2a-regression-optimized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/a2a-regression-optimized-test.stdout": {
+      "bytes": 122,
+      "sha256": "61c382bf33d68be2fb272e5baff2d189c128f0d98ff5970e1818186eeebe964f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/a2a-regression-optimized.host": {
+      "bytes": 100224,
+      "sha256": "7cb8ca7e04592eca033bccd64e08ec474ae57ffac697bd743040b1999356d167"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/a2a-regression-sanitized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/a2a-regression-sanitized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/a2a-regression-sanitized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/a2a-regression-sanitized-test.stdout": {
+      "bytes": 122,
+      "sha256": "61c382bf33d68be2fb272e5baff2d189c128f0d98ff5970e1818186eeebe964f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/a2a-regression-sanitized.host": {
+      "bytes": 350224,
+      "sha256": "d29a92be19c7501d2d2bab2ce95dfc172e1bb33b6d43857fa90a6b50ffc7dde1"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/a2a-regression.c": {
+      "bytes": 23995,
+      "sha256": "fe571e43a81e9fd7e2e143eaf62cead104b7259896b1f5d298fb42d6fcf9d94a"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/binding.json": {
+      "bytes": 124,
+      "sha256": "be1fd8d9cbefd109ce95a3fcf3f9aaf7ae179fb952a7ee4e0e22d96e1fca34f5"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/bounded-string-log-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/bounded-string-log-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/bounded-string-log-test.stderr": {
+      "bytes": 14,
+      "sha256": "e9d05f3fb7bf822c2c6b92ec9c7fea436a159f7936802279651ee1481c00f8cb"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/bounded-string-log-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/bounded-string-log.c": {
+      "bytes": 25939,
+      "sha256": "e2b256db2b87a829970066ee49f7734e433a9932f93a1daceda808daad1e4acc"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/bounded-string-log.host": {
+      "bytes": 404448,
+      "sha256": "3725ffbeabff7cf2b449c6fc6ae3d9d3b4497bc276473bd9cbaf5c5470903d0e"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/bypass-persistent-denial-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/bypass-persistent-denial-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/bypass-persistent-denial-test.stderr": {
+      "bytes": 14,
+      "sha256": "cbadb8fdb4a8b196fa78ef8266bc448e7f7c29e4918f2fe3b513cff711cb1a0d"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/bypass-persistent-denial-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/bypass-persistent-denial.c": {
+      "bytes": 25870,
+      "sha256": "5cce0d1e2e956ac59cc05442e78969b6ab23a6acd0cc586815b3799ba8f18d15"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/bypass-persistent-denial.host": {
+      "bytes": 399488,
+      "sha256": "83c9fca234bc751194df8ad1fcfa8ca5f7b94cf636d7cc945bfaeaa5cf1ed7bb"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/compiler-target.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/compiler-target.stdout": {
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/compiler-version.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/compiler-version.stdout": {
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/consumer-call-audit.json": {
+      "bytes": 271,
+      "sha256": "1ee0e230a1b1f9a29f6fe5ff7d83f83b957cf40a01576fd61c1a659b1b280dd7"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/event-success-completion-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/event-success-completion-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/event-success-completion-test.stderr": {
+      "bytes": 14,
+      "sha256": "d03ba0773b1e4f00ced00942e2e58b152d215ce48565557644b5ddfbbdbda691"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/event-success-completion-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/event-success-completion.c": {
+      "bytes": 26011,
+      "sha256": "3632b311f4b0ee8eba63101cc917755639757994129e205a760a1e1624e50a5d"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/event-success-completion.host": {
+      "bytes": 405648,
+      "sha256": "64ae4cbf8e73eb44ef69182eb5e48fe1cb69f3146976556978b31d2fe3678e1a"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/events-optimized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/events-optimized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/events-optimized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/events-optimized-test.stdout": {
+      "bytes": 95,
+      "sha256": "95a60d87e846c78bd75c098d863101f7a084d1d5a09164721dba99854254a4f9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/events-optimized.host": {
+      "bytes": 129704,
+      "sha256": "bc05a5f30fdde175e8edbe3bd92c3e8707a87135f0273593e92a33bf8de8e01e"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/events-sanitized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/events-sanitized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/events-sanitized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/events-sanitized-test.stdout": {
+      "bytes": 95,
+      "sha256": "95a60d87e846c78bd75c098d863101f7a084d1d5a09164721dba99854254a4f9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/events-sanitized.host": {
+      "bytes": 399448,
+      "sha256": "90254025e73e3348892a5d92a0a15bf4b09366071feffea159af53f28873099b"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/events.c": {
+      "bytes": 25883,
+      "sha256": "9ec7e66441f8770818d2e8d80f4f3bab477d3f0641758e323f63c9868adef3ff"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/hgic_smac_event.c.diff": {
+      "bytes": 3267,
+      "sha256": "9ed93d7689c3b8ccedc68c4a68b1b250a5e5bf39a0a36738d051e9f570d8cc2f"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/hgic_smac_rx.c.diff": {
+      "bytes": 1142,
+      "sha256": "d23916fdf4d0f0dbf13ad85a9ac6ddb9408306765228c539b9a344769fcd9a41"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/include/linux/build_bug.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/include/linux/completion.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/include/linux/errno.h": {
+      "bytes": 30,
+      "sha256": "75be4010966f100e6a1e479f4bbe84f6c8e7cf0ebe349753804d0cee62abf172"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/include/linux/etherdevice.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/include/linux/unaligned.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/include/linux/workqueue.h": {
+      "bytes": 18,
+      "sha256": "f6c5323f721f2df7339af90ea6a9094956a08f7b5d43cedd6284b5558f1a9067"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/input-snapshots/prepare_source.py": {
+      "bytes": 3398,
+      "sha256": "fe13af9d6bcad52584db47101b2a1048684980dd9648dd9ec0fd47c49dc70e64"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/input-snapshots/run_host_tests.py": {
+      "bytes": 13869,
+      "sha256": "936b8215f545ec327294692c8a58581b1f50ea63dada72d5b16447892c040b75"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/input-snapshots/tests/event_shim.h": {
+      "bytes": 3193,
+      "sha256": "bbb4f4d202f6a431fcee98063f0126176d6ccb1bc14783919540b70b2b46c3d9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/input-snapshots/tests/ingress_shim.h": {
+      "bytes": 1305,
+      "sha256": "929f3f5d27477598d9a36b14207a0dad11c628603d4c2ac7d07381b5f2fe4e27"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/input-snapshots/tests/shim.h": {
+      "bytes": 4594,
+      "sha256": "0c606928e0a2378e6a5ac8c37c7d858c671e067ad0f61d0542ae7f01f5a49784"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/input-snapshots/tests/test_control.c": {
+      "bytes": 16649,
+      "sha256": "3ea53cc312416c7fde4d950d76d42857d64f093ef187b230c81f48441ed49cfa"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/input-snapshots/tests/test_events.c": {
+      "bytes": 17893,
+      "sha256": "a4243da6e8903cb45d82f646b2581987fc36e79ac6bf9b491ec64aaa61652fdd"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/input-snapshots/tests/test_ingress.c": {
+      "bytes": 13303,
+      "sha256": "0b6c202bf39dbdd6ff15b91a31bf4209f119bdacbba10c909c30549283f82dd9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-consumer-type-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-consumer-type-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-consumer-type-test.stderr": {
+      "bytes": 14,
+      "sha256": "cbadb8fdb4a8b196fa78ef8266bc448e7f7c29e4918f2fe3b513cff711cb1a0d"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-consumer-type-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-consumer-type.c": {
+      "bytes": 25805,
+      "sha256": "b042b477bf3516c9ff1c586b289b7f26dfda5e6d8744575660e76832e5de2870"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-consumer-type.host": {
+      "bytes": 399296,
+      "sha256": "e215e346781a5329584f42db1e87d07d192e926b33857371242071e291a9cfc4"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-event-pretrim-equality-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-event-pretrim-equality-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-event-pretrim-equality-test.stderr": {
+      "bytes": 13,
+      "sha256": "d8be33a20582a0e0fbebbe0b42f1702d9feae89efbfd567e9a758f3b2a8de4b3"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-event-pretrim-equality-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-event-pretrim-equality.c": {
+      "bytes": 25966,
+      "sha256": "ef4141f0caeaa282dc6acd8ced1414cb48fb908b4458de4c3639985a2376dbc2"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-event-pretrim-equality.host": {
+      "bytes": 399544,
+      "sha256": "e71e7382a672a805ffd7b4b49019bb37e83099c1f4ac3c0e4925bfb2e563dc14"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-event-pretrim-minimum-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-event-pretrim-minimum-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-event-pretrim-minimum-test.stderr": {
+      "bytes": 13,
+      "sha256": "d8be33a20582a0e0fbebbe0b42f1702d9feae89efbfd567e9a758f3b2a8de4b3"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-event-pretrim-minimum-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-event-pretrim-minimum.c": {
+      "bytes": 25966,
+      "sha256": "c8e854967fc3465ea8d8a2b02288ea46b9dfa8b14d4ead999107630e1996bda3"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-event-pretrim-minimum.host": {
+      "bytes": 399512,
+      "sha256": "925018ea59cf1acf63659aebeef7f158cce4666220a6b960e13a6d16662d3f99"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-event-pretrim-type-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-event-pretrim-type-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-event-pretrim-type-test.stderr": {
+      "bytes": 13,
+      "sha256": "d8be33a20582a0e0fbebbe0b42f1702d9feae89efbfd567e9a758f3b2a8de4b3"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-event-pretrim-type-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-event-pretrim-type.c": {
+      "bytes": 25811,
+      "sha256": "1f8514ff4a7107bb407fe4e281c1c9297461e48641bd54acb99400e7c53173fa"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/missing-event-pretrim-type.host": {
+      "bytes": 399488,
+      "sha256": "999237bfe1e0327440306f80659b6f88ee69673ad0564b997aa4d10b34c19793"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/original-event-hooks-optimized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/original-event-hooks-optimized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/original-event-hooks-optimized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/original-event-hooks-optimized-test.stdout": {
+      "bytes": 68,
+      "sha256": "48604ebb414a573a075db4d8b3f4050f16b68e7bff160a5f1cf2ebd5151833f4"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/original-event-hooks-optimized.host": {
+      "bytes": 106072,
+      "sha256": "afdbce355fc24e20a37eccc46d72dcf9dd42275495eed57157d3b1d2c0de384e"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/original-event-hooks-sanitized-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/original-event-hooks-sanitized-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/original-event-hooks-sanitized-test.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/original-event-hooks-sanitized-test.stdout": {
+      "bytes": 68,
+      "sha256": "48604ebb414a573a075db4d8b3f4050f16b68e7bff160a5f1cf2ebd5151833f4"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/original-event-hooks-sanitized.host": {
+      "bytes": 356272,
+      "sha256": "64a35a0a49df2cfc17e95cd4d5f7b9b3bc4fdc975a20b1bfbd6f867a2ebe283c"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/original-event-hooks.c": {
+      "bytes": 25200,
+      "sha256": "bbf5007fe3e72aa166b2343afe84fa32b82cf6ff6a5c1cb9a370ef5f6bde7a68"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/output-hashes.json": {
+      "bytes": 18260,
+      "sha256": "c9b1fba8d7fe44d5d7969881db33b5082b58aeb56b53463fd237887437945f43"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/restore-payload-format-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/restore-payload-format-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/restore-payload-format-test.stderr": {
+      "bytes": 14,
+      "sha256": "e9d05f3fb7bf822c2c6b92ec9c7fea436a159f7936802279651ee1481c00f8cb"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/restore-payload-format-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/restore-payload-format.c": {
+      "bytes": 25919,
+      "sha256": "fe3dba8a2fa14181083a3e36bd12acfdc5af83127308705158393030d5a98628"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/restore-payload-format.host": {
+      "bytes": 403960,
+      "sha256": "8cd054d6f875200e7925910986ae5e31de61273f93502894df11ca070dd70c54"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/restore-unknown-queue-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/restore-unknown-queue-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/restore-unknown-queue-test.stderr": {
+      "bytes": 14,
+      "sha256": "ad726574296357173e6e7bd016461312f69df252a8331c07a3ac8fc038211726"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/restore-unknown-queue-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/restore-unknown-queue.c": {
+      "bytes": 26020,
+      "sha256": "10572f3deed6c19246f9d8751ab53953edeba94c169d01c2adec9e8667c8d655"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/restore-unknown-queue.host": {
+      "bytes": 405456,
+      "sha256": "e23ed59cd51efbdee9282c82b1278ed130388e7df0ed0208cc2171c15495edaa"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/result.json": {
+      "bytes": 218189,
+      "sha256": "4b334453fc9df6fd87ea5b00864c9098ccdc8eb235dd244c0f318a9e7794e122"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/truncate-event2-id-compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/truncate-event2-id-compile.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/truncate-event2-id-test.stderr": {
+      "bytes": 14,
+      "sha256": "cbadb8fdb4a8b196fa78ef8266bc448e7f7c29e4918f2fe3b513cff711cb1a0d"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/truncate-event2-id-test.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/truncate-event2-id.c": {
+      "bytes": 25887,
+      "sha256": "bbf7288e2e1e07eefd7d24099243b51fc23eb01fa2e2a38bd7d745ac71c14ed6"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-event-a2b-host01/run08/truncate-event2-id.host": {
+      "bytes": 399456,
+      "sha256": "c0a4ebc95c94c14ef84e38d81f2a37405d50cdfcbb2b42d34a19482121f354b6"
+    }
+  },
+  "a1_a2a_original_and_independent_review_seals_rechecked": true,
+  "final_inputs_outputs_and_unmutated_extraction_extents_rechecked": true
+}

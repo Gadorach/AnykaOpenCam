@@ -1,0 +1,13 @@
+{
+  "closed_call_set": [
+    "READ_ONCE",
+    "dev_kfree_skb",
+    "get_unaligned_le16",
+    "hgic_ctrl_frame_valid",
+    "hgic_fwctrl_rx_error",
+    "if",
+    "offsetof",
+    "skb_is_nonlinear"
+  ],
+  "no_logger_queue_export_rtos_tx_recovery_scan_key_init_calls": true
+}

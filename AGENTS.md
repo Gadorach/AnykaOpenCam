@@ -1,5 +1,40 @@
 # Project instructions for local agents
 
+## Latest review — A2b narrow SOURCE/HOST GO; remaining attach source plan pending
+
+STATION76_EVENT_A2B_REVIEW exactevent.c/rx.cGOextent+consumer suppression/denial
+only. Suitesreproduced+39orderedprobes/656assertionseachmode/11compiledruntime
+mutantscaughtinclprotectedpayloadread;68provenance/LICENSE/seals1407inputskept.
+No fullS4/non-event/BT/rawproc/S1S2S3S5S6/ARMbuild/staging/nativeGO. Remaining
+attachPLANsourceworkeractive, NOimplementation/targetqueue. A1/A2asealed,
+currentpower/runtimeUNKNOWN(last06:43RAM76APPidle),21afinalized/noowner/socket/
+armedcaptureobserved07:24. Original151ACKfailedHOLDkept. Mainlocal08949c0/nopush/
+indexpreserved; freshphysical/soleowner/runtime/recoverybeforeanylaterHW.
+
+## Latest candidate — A2b parent HOST reproduced; independent review + remaining RO plan
+
+A2b68-filederivativeonlyevent.c/rx.cchanged/sourcefrozen. Authorrun08+parentrun09
+input/outputsealsmatch;12127356event+2806874A2a+150705A1assertionseachopt/san/
+10compiledruntimemutantscaught, oldunsafelog/queuebehaviorSAFEhookreproduced.
+IndependentexactA2breviewactive. SeconddisjointSOURCE-onlyremainingattachPLAN
+reviewownsSTATION76_ATTACH_REMAINING_SOURCE_PLAN.md+evidence, noimplementation.
+FullS4/non-event/BT/rawproc/S1S2S3S5S6OPEN/noARMbuild/staging/HWqueue. Current
+targetpower/runtimeUNKNOWN(last06:43APPidle);21afinalized/noowner/socket/armed
+captureobserved07:24, original151ACKfailedHOLDkept. Mainlocal08949c0/indexkept/
+nopush; freshphysical/owner/runtime/recoverybeforeanylaterHW.
+
+## Latest source — A2a committed08949c0; isolated A2b event SOURCE/HOST lane active
+
+ReviewedA2a68-filederivative/tests/provenance/GO+eventdesigncommitted08949c0main
+local/indexpreserved/nopush. A2bworkerownsnewapps/qualification/kernel76-station-events/
+only+candidatereport/station-event-a2b-host01 evidence; source/HOSTonly,
+exact68A2aderivative, primarilyrx.c/event.c, noARMbuild/target/helperedit. Debug18
+ownedskbdispose/nooutput, otherIDsdenied, fullEVENT2id/type/extentvalidated per
+design; realconsumer safeprintf-hook and actualingress/commandcopyHOSTrequired.
+A1/A2asealed; fullS4/non-eventgrammars/S1S2S3S5S6OPEN/noattachorHWqueue. Current
+targetpower/runtimeUNKNOWN(last06:43APPidle);21afinalized/noowner/socket/armed
+captureobserved07:24. Original151ACKfailedHOLDkept/freshadmissionbeforeanyHW.
+
 ## Next selected — A2b bounded event SOURCE/HOST implementation, no hardware
 
 STATION76_EVENT_ENTRY_REVIEWdesignread: pretrimEVENT/EVENT2exactextent/full16bit

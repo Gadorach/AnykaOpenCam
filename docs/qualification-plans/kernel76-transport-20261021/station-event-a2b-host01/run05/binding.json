@@ -1,0 +1,5 @@
+{
+  "actual_core_callback_binding": "hg->ctrl.rx_event = hgics_rx_fw_event;",
+  "line": 1164,
+  "real_consumer_used": true
+}

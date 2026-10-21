@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-21T08:45:51.568345+00:00",
+  "state": "A2B_PARENT_HOST_REPRODUCTION_PASS_INDEPENDENT_REVIEW_PENDING",
+  "author_run": "run08",
+  "parent_run": "run09",
+  "all_recorded_public_input_pins_match": true,
+  "changed_source_files": [
+    "hgic_smac/event.c",
+    "hgic_smac/rx.c"
+  ],
+  "event_assertions_each_optimized_and_ASan_UBSan": 12127356,
+  "A2a_regression_assertions_each_mode": 2806874,
+  "A1_regression_assertions_each_mode": 150705,
+  "mutants_compiled_and_caught_at_runtime": 10,
+  "normal_suite_sanitizer_diagnostics_empty": true,
+  "all_parent_output_hashes_reverified": true,
+  "A1_A2a_seals_rechecked": true,
+  "real_core_event_binding_verified": true,
+  "original_unsafe_event_behavior_reproduced_with_safe_hooks_not_format_evaluation": true,
+  "public_report_has_no_event_content_digest_or_pointer": true,
+  "parent_result_sha256": "f0714b8d3e16cb0bd2617a02213e2e44df4677f611373d37a5b4868df19ce869",
+  "no_target_private_inputs_network_ARM_build_or_staging": true,
+  "full_S4_lifecycle_native_attach_still_NO_GO": true,
+  "original_trial_HOLD_not_modified": true
+}
