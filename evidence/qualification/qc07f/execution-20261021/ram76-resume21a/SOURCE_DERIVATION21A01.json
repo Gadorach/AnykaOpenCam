@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-21T04:13:11.094018+00:00",
+  "changes_only": [
+    "private envelope",
+    "epoch21a identifiers/receipt names"
+  ],
+  "no_command_image_protocol_or_acceptance_change": true,
+  "inputs": [
+    {
+      "file": "cold_gate.py",
+      "original_sha256": "51955539fcfec590b00415ae0b404e9572e87fd052ca10eed2227922c31380e3",
+      "new_sha256": "4d9cb412d6e05aa6622a917cc7da8fc53e4dc9d04108d5a650dcd360eb93c154",
+      "exact_reversible_epoch_path_only_substitutions": true
+    },
+    {
+      "file": "ram76_boot.py",
+      "original_sha256": "d0bbb91a4a4742f3c60fb411e923ec78c510a0fe61376fec5aae6de3aaca732d",
+      "new_sha256": "40f4da4c46ab8159e4aec36af4eb0152d930128b974a3f8d291adae0cea47a28",
+      "exact_reversible_epoch_path_only_substitutions": true
+    },
+    {
+      "file": "postcheck.py",
+      "original_sha256": "035c106995b566b815a670748c1c84c99e49695a5e154c8d67314bf4304fa5e9",
+      "new_sha256": "3dbf96b9ef84216da89283f19cd09dbca27e45a17d84138c9574112fb06170f0",
+      "exact_reversible_epoch_path_only_substitutions": true
+    },
+    {
+      "file": "test_postcheck.py",
+      "original_sha256": "3e19bd3c2f4e199fb05e975cde7ced6075916223de3b8edf2b5bd5a9194b6daa",
+      "new_sha256": "d46b4c1a1be65ef97650710db8b913a927eaae0dd4b3d8e4ac27bd3e68f18496",
+      "exact_reversible_epoch_path_only_substitutions": true
+    }
+  ],
+  "target_IO": false
+}

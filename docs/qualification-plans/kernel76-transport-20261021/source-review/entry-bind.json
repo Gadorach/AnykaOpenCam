@@ -1,0 +1,93 @@
+{
+  "utc": "2026-10-21T03:52:11.941091+00:00",
+  "scope": "offline source and bounded ARM text disassembly; no target or binary execution",
+  "python": "3.14.7 (main, Aug 14 2026, 06:38:32) [GCC 16.2.1 20260810]",
+  "llvm_objdump": "LLVM (http://llvm.org/):",
+  "script_sha256": "02c0dfbc6e547bab856a4c0ed2a9e53378f14a8ac3cbe6c19537e53ea52127fb",
+  "image_sha256": "bd8a2a08be1483e1ddcd1efa2c68c9e20549047dec79796137979179197f654f",
+  "embedded_cpio_equals_final_selected_cpio": true,
+  "embedded_init_equals_attempt50_cpio_and_retained_init": true,
+  "init_bytes": 174248,
+  "init_sha256": "8c8e1a5e083914c8fd2fce7bbcfe10a4065691f49a8a5ea026a4ff12c20bb899",
+  "init_matches_build50_manifest": true,
+  "build50_compile_start_utc": "2026-10-09T19:50:21.956338+00:00",
+  "build50_compile_argv": [
+    "clang",
+    "--target=arm-linux-gnueabi",
+    "-march=armv5te",
+    "-mcpu=arm926ej-s",
+    "-marm",
+    "-mfloat-abi=soft",
+    "-Oz",
+    "-ffreestanding",
+    "-fno-builtin",
+    "-fno-stack-protector",
+    "-nostdlib",
+    "-static",
+    "-fuse-ld=lld",
+    "-Wl,-e,_start",
+    "-Wl,--build-id=none",
+    "-DQC07F_PERIPHERAL_QUALIFICATION=1",
+    "-DQC07F_I2C_QUALIFICATION=1",
+    "-DQC07F_ISP_QUALIFICATION=1",
+    "-DQC07F_USB_QUALIFICATION=1",
+    "-DQC07F_PTZ_QUALIFICATION=1",
+    "-DQC07F_RADIO_RAM_LOADER=1",
+    "-DQC07F_WIFI_QUALIFICATION=1",
+    "-o",
+    "/home/gadorach/Desktop/anyka-km01-agent-handoff/work/lightbulb-camera/implementation-20261008T205404Z/artifacts/init-monitor-attempt50",
+    "/home/gadorach/Desktop/anyka-km01-agent-handoff/bringup/qc07f/initramfs/init.c"
+  ],
+  "source_pins": {
+    "bringup/qc07f/initramfs/init.c": {
+      "sha256": "b3dd4ee9689bde4bead4c7a3c862284b198b879d4470b920366c1503814598aa",
+      "matches_build50_input": true
+    },
+    "bringup/qc07f/initramfs/radio-payload.h": {
+      "sha256": "efcc1adcf025053c440a353d68780aec488dffc16bfa0dd22d7827c148a09a97",
+      "matches_build50_input": true
+    },
+    "bringup/qc07f/initramfs/radio-ram-loader.h": {
+      "sha256": "91f8f9a4a1628b270664555dcc73e81c59c1a85ef33b08d8596946ae5dfd8196",
+      "matches_build50_input": true
+    },
+    "bringup/qc07f/initramfs/sc1346-init.h": {
+      "sha256": "98da5eb9e522975d834d99e8c0cdfbefe75ed87dbbcdf84fd9f0fb150f9efbe9",
+      "matches_build50_input": true
+    },
+    "bringup/qc07f/initramfs/wifi-monitor.h": {
+      "sha256": "89eac77740e576c7bce0fdcd8a0eb8736e5d87f3b9119679b777eb17dbf26707",
+      "matches_build50_input": true
+    }
+  },
+  "private_firmware_admission_booleans_only": {
+    "embedded_equals_local_payload": true,
+    "local_matches_retained_private_preparation_pin": true,
+    "original_matches_retained_private_input_pin": true,
+    "local_equals_original_payload_slice": true,
+    "exact_length_151056": true,
+    "raw_reflected_CRC_residue_zero": true,
+    "header_chip8400_base20000000_offset3072_AESoff_CRCenabled": true
+  },
+  "selected_text_symbols": {
+    "init_main": "0x46bf8",
+    "radio_load": "0x48de0",
+    "radio_boot_command": "0x49aec",
+    "radio_boot_response": "0x49c90",
+    "radio_bulk": "0x49c58",
+    "radio_reset_toggles": "0x49c0c",
+    "radio_info": "0x48824",
+    "radio_dev_open": "0x499a8",
+    "sysfs_prefix_value": "0x4991c",
+    "watchdog_stoppable": "0x495e4"
+  },
+  "disassembly_argv": [
+    "llvm-objdump",
+    "-d",
+    "--disassemble-symbols=init_main,radio_load,radio_boot_command,radio_boot_response,radio_bulk,radio_reset_toggles,radio_info,radio_dev_open,sysfs_prefix_value,watchdog_stoppable",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/artifacts/init-monitor-attempt50"
+  ],
+  "disassembly_sha256": "16f97eef665cb8ea34cd142fc28c22106addbc641f85550de440f09f7d7db1ad",
+  "target_operation": false,
+  "native_transport_pass": false
+}

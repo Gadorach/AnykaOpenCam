@@ -25,11 +25,11 @@ current recovery arm. No target byte sent; old20c authority is expired.
 
 | Packet | State | Immediate output / dependency |
 |---|---|---|
-| RP-00 | ACTIVE | Verify76/75 input/artifact/recovery pins and old capture finalizer; preserve Git/index; fresh physical/capture/native admission before target TX |
+| RP-00 | HOST/COLD-ENTRY-PASS; RUNTIME-PENDING | Source-only initial commit1de7714; original index preserved, old20c final hashes verified. Fresh user OFF/21a catch/ON, original cold U-Boot/BOOT pin/neutral RO gate pass; exact76 dry-run pass |
 | RP-01 | OPEN / prior narrow proofs | Retain76 paired build/basic boot; complete release manifest enforcement/product supervision/serial/watchdog after bounded entry |
-| RP-02 | ACTIVE-SOURCE | Finite exact compiled radio native-load entry review; native trial awaits current76 boot/owner/recovery and exact admission |
+| RP-02 | SOURCE-ENTRY-REVIEWED; NATIVE-GATED | Compiled init/whole74-fragment+automatic RUN entry conditionally GO. Functional trial cannot prove internal MODE/NAK/toggles; awaits current76 runtime/descriptor/owner/retirement admission |
 | RP-03 | QUEUED | Controlled image/timing benchmark after current source/transport baseline; no assumed factory FPS |
-| RP-04 | ACTIVE-SOURCE | Precise CMA/non-CMA/locked memory and v6 backing decision; no new allocation or framework |
+| RP-04 | SOURCE-DECISION-REVIEWED; MEMORY-HOLD |80 identities match; v6=run34, raw overlay saves CPU mapping not codec input. Parent v6 adoption/current placement proof required; no allocation/policy change |
 | RP-05 | DEPENDENCY | Standard capture/import/overlap after memory/retirement proof |
 | RP-06 | DEPENDENCY | Imaging/codec/rate/profile quality after controlled baseline and ownership work |
 | RP-07 | OPEN / SOURCE-HOST pieces | Integrate existing shared graph/producer/control owners, not a parallel stack |
@@ -69,3 +69,15 @@ or later healthy-status clearance. No second UART sender during transfers or GUI
 - RP-02 returned conditional source entry GO; parent must review actual result and
   discriminating-evidence limits before native use. RP-04 report pending.
 - No new build, capture/boot, radio command or target effect yet in this execution.
+
+### Subsequent actual entry
+
+- Initial source-only commit on main: `1de7714dca3f30cd0adbee12664e55c5570f79c5`,
+ 1356 files; ordinary staged index byte-exact preserved. Local only, no remote/push.
+- Fresh user OFF/capture21a/ON; sole3911508/start141489444 through07:09UTC DATED,
+  actual original cold U-Boot/BOOT pin and neutral RO gate passed04:13UTC.
+  No GO/Linux/manual GPIO store yet at that checkpoint. Old20c final hashes verified.
+- Exact76 dry-run and151 in-memory postcheck cases pass. Derived21a recipes change
+  only epoch/private paths from the reviewed/native-passed20c sources.
+- Both disjoint source reports returned and parent-reviewed; no worker target
+  operation. Details: `docs/qualification-plans/execution-20261021/BASELINE_AND_GIT.md`.

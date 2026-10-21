@@ -1,0 +1,707 @@
+{
+  "utc": "2026-10-21T03:54:27.985415+00:00",
+  "command": "python3 -B docs/qualification-plans/execution-20261021/memory-admission01/audit.py",
+  "python": "3.14.7 (main, Aug 14 2026, 06:38:32) [GCC 16.2.1 20260810]",
+  "scope": "public repository source/manifests/artifact hashes and integer arithmetic ONLY",
+  "native_operations": false,
+  "new_build_or_test_execution": false,
+  "source_script": {
+    "path": "docs/qualification-plans/execution-20261021/memory-admission01/audit.py",
+    "bytes": 6031,
+    "sha256": "451e8b6c7bb28f13e8aaa85f1680f06396df33c5982958db64b030dcfef2b789"
+  },
+  "reference_seals": [
+    {
+      "path": "evidence/delegated/20261012-native-handoff/REPORT-v6.json",
+      "bytes": 17967,
+      "sha256": "cc3d298f450c5e1a9927d22d19f27984fdb2ba6b33198d3516b996005c310426"
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/analysis/native-usb76-package01/package76-manifest.json",
+      "bytes": 9950,
+      "sha256": "b61a73e245cbac3da4a8a1560f7908ea7020796d87b5eacc1580514f983f2d37"
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/RAW-REUSE-CONTRACT-v6.md",
+      "bytes": 4731,
+      "sha256": "8b97653ff75c8d837e3ce4505fcf2945abee5386540394810afc7dee628c03de"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-performance/COST-AND-MEMORY.md",
+      "bytes": 10141,
+      "sha256": "7e7594554d3e3cd27bb31937eee529354feb1cb19882373ea72bdb0110c44a5b"
+    }
+  ],
+  "v6_current_vs_report": [
+    {
+      "path": "apps/web-media/native-producer/README.md",
+      "bytes": 32216,
+      "sha256": "0116d1d193fc4438cd56d9b00e4202852b388362379beefa77b1e7b94af841dc",
+      "expected_sha256": "0116d1d193fc4438cd56d9b00e4202852b388362379beefa77b1e7b94af841dc",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/box_reference.py",
+      "bytes": 1240,
+      "sha256": "e41e7806515bfbfd9e8956d6918e374b77fd636d0b42de0e235571cc1e78f66f",
+      "expected_sha256": "e41e7806515bfbfd9e8956d6918e374b77fd636d0b42de0e235571cc1e78f66f",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/build.py",
+      "bytes": 25695,
+      "sha256": "e7835c07ad278276f1a08439b3f8d1ecd4fc1d1fa0f4c9b80ce0849f632c1538",
+      "expected_sha256": "e7835c07ad278276f1a08439b3f8d1ecd4fc1d1fa0f4c9b80ce0849f632c1538",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/handoff.c",
+      "bytes": 10493,
+      "sha256": "2a3bb74ff1c22acf1138a9815245115143ed43cf39aaf9f52da864e392c4783d",
+      "expected_sha256": "2a3bb74ff1c22acf1138a9815245115143ed43cf39aaf9f52da864e392c4783d",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/handoff.h",
+      "bytes": 2413,
+      "sha256": "9b88ce3e24a3a6c1c16336315323b70b29560c473ac9a48d36043bd60c840113",
+      "expected_sha256": "9b88ce3e24a3a6c1c16336315323b70b29560c473ac9a48d36043bd60c840113",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/handoff_test.c",
+      "bytes": 9852,
+      "sha256": "6a8d2e46115a1a959cd79bc89d1be6edf2c8398e5f332f58c85aba710dec3dd3",
+      "expected_sha256": "6a8d2e46115a1a959cd79bc89d1be6edf2c8398e5f332f58c85aba710dec3dd3",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/main.c",
+      "bytes": 5788,
+      "sha256": "754f91d8a58f92c83726a2df4967c3c515eaee3b291c2682c76061e05f7acd6b",
+      "expected_sha256": "754f91d8a58f92c83726a2df4967c3c515eaee3b291c2682c76061e05f7acd6b",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/memory_fixture.h",
+      "bytes": 702,
+      "sha256": "b19db63f336437244ebe3ae1fabd5b51abd34b8168a041dee1a1347b8852b78c",
+      "expected_sha256": "b19db63f336437244ebe3ae1fabd5b51abd34b8168a041dee1a1347b8852b78c",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/memory_reader.c",
+      "bytes": 1079,
+      "sha256": "c9bd8401476f3baf73b43051651e6c306f14a05c1d5a5317531302569d4261c0",
+      "expected_sha256": "c9bd8401476f3baf73b43051651e6c306f14a05c1d5a5317531302569d4261c0",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/memory_reserve.c",
+      "bytes": 10310,
+      "sha256": "aec0a30d7f67bfc8fc0f2c078cf4a53efb42d78a65b46c0bef22312060070aff",
+      "expected_sha256": "aec0a30d7f67bfc8fc0f2c078cf4a53efb42d78a65b46c0bef22312060070aff",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/memory_reserve.h",
+      "bytes": 2193,
+      "sha256": "e09c5ce48a1142df66a71c782367abdc4c8e5557210c27c8ee3f1b67ecfc6eed",
+      "expected_sha256": "e09c5ce48a1142df66a71c782367abdc4c8e5557210c27c8ee3f1b67ecfc6eed",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/memory_reserve_test.c",
+      "bytes": 5653,
+      "sha256": "6ecf4c2fff50360af7755d5a15db470191a1ca133feae2ee24f0b1472b983f91",
+      "expected_sha256": "6ecf4c2fff50360af7755d5a15db470191a1ca133feae2ee24f0b1472b983f91",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/memory_runtime.c",
+      "bytes": 5115,
+      "sha256": "c505e3447cbfa852c88a97816e233269de6dec12080625d16004dca31d152d57",
+      "expected_sha256": "c505e3447cbfa852c88a97816e233269de6dec12080625d16004dca31d152d57",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/memory_runtime.h",
+      "bytes": 921,
+      "sha256": "54aaa1c9bb8e9c297625054160653378c242d9303504bb7093602373ba227b84",
+      "expected_sha256": "54aaa1c9bb8e9c297625054160653378c242d9303504bb7093602373ba227b84",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/native_adapter.c",
+      "bytes": 9570,
+      "sha256": "33f65bb1b40a3fbe2b7e756e0c8e5a3a933a762cbb13737cdb16a9be1b5f0f93",
+      "expected_sha256": "33f65bb1b40a3fbe2b7e756e0c8e5a3a933a762cbb13737cdb16a9be1b5f0f93",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/native_adapter.h",
+      "bytes": 980,
+      "sha256": "39367be1ff9d62ac204a941bdaf0e76bead8cffa5f9e70943e3275d5ab88ca46",
+      "expected_sha256": "39367be1ff9d62ac204a941bdaf0e76bead8cffa5f9e70943e3275d5ab88ca46",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/native_adapter_test.c",
+      "bytes": 26443,
+      "sha256": "b8a4c2d1f752c304415676ce31dbd66c32e426da0b98c62747352014127bed91",
+      "expected_sha256": "b8a4c2d1f752c304415676ce31dbd66c32e426da0b98c62747352014127bed91",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/receiver.py",
+      "bytes": 8185,
+      "sha256": "a2ad36217701e17150f364549b9950e66d7054d5f269ff66724990af44092bd4",
+      "expected_sha256": "a2ad36217701e17150f364549b9950e66d7054d5f269ff66724990af44092bd4",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/receiver_test.py",
+      "bytes": 4306,
+      "sha256": "5020f2e6c0b8e957760c29e3fbe5ee2f68e77194c9e7cbd24d195b994d26a069",
+      "expected_sha256": "5020f2e6c0b8e957760c29e3fbe5ee2f68e77194c9e7cbd24d195b994d26a069",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/sensor_baseline.c",
+      "bytes": 5688,
+      "sha256": "6994e3ce6e048e6829bd0e85e61049662422d872198aa71e14f3cb95b95676ee",
+      "expected_sha256": "6994e3ce6e048e6829bd0e85e61049662422d872198aa71e14f3cb95b95676ee",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/sensor_baseline.h",
+      "bytes": 1099,
+      "sha256": "ed1e8a5ef9586b6c68d71ddabcd499d660cf91e0df97212c8e7ce5076b407503",
+      "expected_sha256": "ed1e8a5ef9586b6c68d71ddabcd499d660cf91e0df97212c8e7ce5076b407503",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/tcp_loopback.c",
+      "bytes": 2208,
+      "sha256": "3795bb0b47dfa907d6c16a0f4a87148dbccf093a0638f1b3771e83b774f0380e",
+      "expected_sha256": "3795bb0b47dfa907d6c16a0f4a87148dbccf093a0638f1b3771e83b774f0380e",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/tcp_sink.c",
+      "bytes": 6310,
+      "sha256": "3f36dd161cd3ed0ebe1fec2858d7b2a8ebb898923b8fe9e84c380ff49105f90e",
+      "expected_sha256": "3f36dd161cd3ed0ebe1fec2858d7b2a8ebb898923b8fe9e84c380ff49105f90e",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/tcp_sink.h",
+      "bytes": 1002,
+      "sha256": "e28a022211a473b1e07367f2a9b0e149cb6c2a3603d3b3ce2d6994f602bebf45",
+      "expected_sha256": "e28a022211a473b1e07367f2a9b0e149cb6c2a3603d3b3ce2d6994f602bebf45",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/tcp_sink_test.c",
+      "bytes": 5135,
+      "sha256": "a2b429c846fb7fce2a23793babcc4d4195ebc944ca9989f5772b1bee75ff9ef7",
+      "expected_sha256": "a2b429c846fb7fce2a23793babcc4d4195ebc944ca9989f5772b1bee75ff9ef7",
+      "matches": true
+    }
+  ],
+  "v6_run34_inputs_vs_report": [
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/README.md",
+      "bytes": 32216,
+      "sha256": "0116d1d193fc4438cd56d9b00e4202852b388362379beefa77b1e7b94af841dc",
+      "expected_sha256": "0116d1d193fc4438cd56d9b00e4202852b388362379beefa77b1e7b94af841dc",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/box_reference.py",
+      "bytes": 1240,
+      "sha256": "e41e7806515bfbfd9e8956d6918e374b77fd636d0b42de0e235571cc1e78f66f",
+      "expected_sha256": "e41e7806515bfbfd9e8956d6918e374b77fd636d0b42de0e235571cc1e78f66f",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/build.py",
+      "bytes": 25695,
+      "sha256": "e7835c07ad278276f1a08439b3f8d1ecd4fc1d1fa0f4c9b80ce0849f632c1538",
+      "expected_sha256": "e7835c07ad278276f1a08439b3f8d1ecd4fc1d1fa0f4c9b80ce0849f632c1538",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/handoff.c",
+      "bytes": 10493,
+      "sha256": "2a3bb74ff1c22acf1138a9815245115143ed43cf39aaf9f52da864e392c4783d",
+      "expected_sha256": "2a3bb74ff1c22acf1138a9815245115143ed43cf39aaf9f52da864e392c4783d",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/handoff.h",
+      "bytes": 2413,
+      "sha256": "9b88ce3e24a3a6c1c16336315323b70b29560c473ac9a48d36043bd60c840113",
+      "expected_sha256": "9b88ce3e24a3a6c1c16336315323b70b29560c473ac9a48d36043bd60c840113",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/handoff_test.c",
+      "bytes": 9852,
+      "sha256": "6a8d2e46115a1a959cd79bc89d1be6edf2c8398e5f332f58c85aba710dec3dd3",
+      "expected_sha256": "6a8d2e46115a1a959cd79bc89d1be6edf2c8398e5f332f58c85aba710dec3dd3",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/main.c",
+      "bytes": 5788,
+      "sha256": "754f91d8a58f92c83726a2df4967c3c515eaee3b291c2682c76061e05f7acd6b",
+      "expected_sha256": "754f91d8a58f92c83726a2df4967c3c515eaee3b291c2682c76061e05f7acd6b",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/memory_fixture.h",
+      "bytes": 702,
+      "sha256": "b19db63f336437244ebe3ae1fabd5b51abd34b8168a041dee1a1347b8852b78c",
+      "expected_sha256": "b19db63f336437244ebe3ae1fabd5b51abd34b8168a041dee1a1347b8852b78c",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/memory_reader.c",
+      "bytes": 1079,
+      "sha256": "c9bd8401476f3baf73b43051651e6c306f14a05c1d5a5317531302569d4261c0",
+      "expected_sha256": "c9bd8401476f3baf73b43051651e6c306f14a05c1d5a5317531302569d4261c0",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/memory_reserve.c",
+      "bytes": 10310,
+      "sha256": "aec0a30d7f67bfc8fc0f2c078cf4a53efb42d78a65b46c0bef22312060070aff",
+      "expected_sha256": "aec0a30d7f67bfc8fc0f2c078cf4a53efb42d78a65b46c0bef22312060070aff",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/memory_reserve.h",
+      "bytes": 2193,
+      "sha256": "e09c5ce48a1142df66a71c782367abdc4c8e5557210c27c8ee3f1b67ecfc6eed",
+      "expected_sha256": "e09c5ce48a1142df66a71c782367abdc4c8e5557210c27c8ee3f1b67ecfc6eed",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/memory_reserve_test.c",
+      "bytes": 5653,
+      "sha256": "6ecf4c2fff50360af7755d5a15db470191a1ca133feae2ee24f0b1472b983f91",
+      "expected_sha256": "6ecf4c2fff50360af7755d5a15db470191a1ca133feae2ee24f0b1472b983f91",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/memory_runtime.c",
+      "bytes": 5115,
+      "sha256": "c505e3447cbfa852c88a97816e233269de6dec12080625d16004dca31d152d57",
+      "expected_sha256": "c505e3447cbfa852c88a97816e233269de6dec12080625d16004dca31d152d57",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/memory_runtime.h",
+      "bytes": 921,
+      "sha256": "54aaa1c9bb8e9c297625054160653378c242d9303504bb7093602373ba227b84",
+      "expected_sha256": "54aaa1c9bb8e9c297625054160653378c242d9303504bb7093602373ba227b84",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/native_adapter.c",
+      "bytes": 9570,
+      "sha256": "33f65bb1b40a3fbe2b7e756e0c8e5a3a933a762cbb13737cdb16a9be1b5f0f93",
+      "expected_sha256": "33f65bb1b40a3fbe2b7e756e0c8e5a3a933a762cbb13737cdb16a9be1b5f0f93",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/native_adapter.h",
+      "bytes": 980,
+      "sha256": "39367be1ff9d62ac204a941bdaf0e76bead8cffa5f9e70943e3275d5ab88ca46",
+      "expected_sha256": "39367be1ff9d62ac204a941bdaf0e76bead8cffa5f9e70943e3275d5ab88ca46",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/native_adapter_test.c",
+      "bytes": 26443,
+      "sha256": "b8a4c2d1f752c304415676ce31dbd66c32e426da0b98c62747352014127bed91",
+      "expected_sha256": "b8a4c2d1f752c304415676ce31dbd66c32e426da0b98c62747352014127bed91",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/receiver.py",
+      "bytes": 8185,
+      "sha256": "a2ad36217701e17150f364549b9950e66d7054d5f269ff66724990af44092bd4",
+      "expected_sha256": "a2ad36217701e17150f364549b9950e66d7054d5f269ff66724990af44092bd4",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/receiver_test.py",
+      "bytes": 4306,
+      "sha256": "5020f2e6c0b8e957760c29e3fbe5ee2f68e77194c9e7cbd24d195b994d26a069",
+      "expected_sha256": "5020f2e6c0b8e957760c29e3fbe5ee2f68e77194c9e7cbd24d195b994d26a069",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/sensor_baseline.c",
+      "bytes": 5688,
+      "sha256": "6994e3ce6e048e6829bd0e85e61049662422d872198aa71e14f3cb95b95676ee",
+      "expected_sha256": "6994e3ce6e048e6829bd0e85e61049662422d872198aa71e14f3cb95b95676ee",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/sensor_baseline.h",
+      "bytes": 1099,
+      "sha256": "ed1e8a5ef9586b6c68d71ddabcd499d660cf91e0df97212c8e7ce5076b407503",
+      "expected_sha256": "ed1e8a5ef9586b6c68d71ddabcd499d660cf91e0df97212c8e7ce5076b407503",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/tcp_loopback.c",
+      "bytes": 2208,
+      "sha256": "3795bb0b47dfa907d6c16a0f4a87148dbccf093a0638f1b3771e83b774f0380e",
+      "expected_sha256": "3795bb0b47dfa907d6c16a0f4a87148dbccf093a0638f1b3771e83b774f0380e",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/tcp_sink.c",
+      "bytes": 6310,
+      "sha256": "3f36dd161cd3ed0ebe1fec2858d7b2a8ebb898923b8fe9e84c380ff49105f90e",
+      "expected_sha256": "3f36dd161cd3ed0ebe1fec2858d7b2a8ebb898923b8fe9e84c380ff49105f90e",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/tcp_sink.h",
+      "bytes": 1002,
+      "sha256": "e28a022211a473b1e07367f2a9b0e149cb6c2a3603d3b3ce2d6994f602bebf45",
+      "expected_sha256": "e28a022211a473b1e07367f2a9b0e149cb6c2a3603d3b3ce2d6994f602bebf45",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/tcp_sink_test.c",
+      "bytes": 5135,
+      "sha256": "a2b429c846fb7fce2a23793babcc4d4195ebc944ca9989f5772b1bee75ff9ef7",
+      "expected_sha256": "a2b429c846fb7fce2a23793babcc4d4195ebc944ca9989f5772b1bee75ff9ef7",
+      "matches": true
+    }
+  ],
+  "current_build_audit_pins": [
+    {
+      "path": "bringup/qc07f/userland/rtspd.c",
+      "bytes": 42855,
+      "sha256": "0334c27a8d6a7142d3867778f517f192f7c7447fc849a7aca18098ad306f3898",
+      "expected_sha256": "0334c27a8d6a7142d3867778f517f192f7c7447fc849a7aca18098ad306f3898",
+      "matches": true
+    },
+    {
+      "path": "bringup/qc07f/variants/security75/mach-ak3918ev200/qc07f_hwenc.h",
+      "bytes": 1501,
+      "sha256": "6723c30c76a3fbd1feaf1ed9d1676a2b9b6289b352ffe7682372bf8e95123731",
+      "expected_sha256": "6723c30c76a3fbd1feaf1ed9d1676a2b9b6289b352ffe7682372bf8e95123731",
+      "matches": true
+    },
+    {
+      "path": "bringup/qc07f/variants/security75/mach-ak3918ev200/isp.c",
+      "bytes": 67624,
+      "sha256": "7d0ef80561df4ef058be1deb6698001c35066fab5533f492dec97d2b447bbd50",
+      "expected_sha256": "7d0ef80561df4ef058be1deb6698001c35066fab5533f492dec97d2b447bbd50",
+      "matches": true
+    },
+    {
+      "path": "bringup/qc07f/variants/security75/mach-ak3918ev200/qc07f_hwenc.c",
+      "bytes": 25109,
+      "sha256": "e97744838acd469772db41fb1fe0907c95fb6e923577cdbffc84ead0141a026f",
+      "expected_sha256": "e97744838acd469772db41fb1fe0907c95fb6e923577cdbffc84ead0141a026f",
+      "matches": true
+    },
+    {
+      "path": "bringup/qc07f/initramfs/sc1346-init.h",
+      "bytes": 2899,
+      "sha256": "98da5eb9e522975d834d99e8c0cdfbefe75ed87dbbcdf84fd9f0fb150f9efbe9",
+      "expected_sha256": "98da5eb9e522975d834d99e8c0cdfbefe75ed87dbbcdf84fd9f0fb150f9efbe9",
+      "matches": true
+    },
+    {
+      "path": "bringup/qc07f/initramfs/init.c",
+      "bytes": 24349,
+      "sha256": "b3dd4ee9689bde4bead4c7a3c862284b198b879d4470b920366c1503814598aa",
+      "expected_sha256": "b3dd4ee9689bde4bead4c7a3c862284b198b879d4470b920366c1503814598aa",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/implementation-20261008T205404Z/sources/linux-lts/mm/page_alloc.c",
+      "bytes": 221788,
+      "sha256": "0fc3313f62da1c7e51a4b3f732785a67ede6f6afb1ca9c0f5dd4a745fa6462c0",
+      "expected_sha256": "0fc3313f62da1c7e51a4b3f732785a67ede6f6afb1ca9c0f5dd4a745fa6462c0",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/implementation-20261008T205404Z/sources/linux-lts/mm/vmstat.c",
+      "bytes": 65756,
+      "sha256": "d3da55b28aefa3e2e92d7d3ed19efa809735397fe93a0696a929553c938ff06e",
+      "expected_sha256": "d3da55b28aefa3e2e92d7d3ed19efa809735397fe93a0696a929553c938ff06e",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/implementation-20261008T205404Z/sources/linux-lts/include/linux/mmzone.h",
+      "bytes": 73729,
+      "sha256": "8653d8ee6b0ebd419f5e553952a8db29f9ee85d2d902d651a2936ed256f1bebd",
+      "expected_sha256": "8653d8ee6b0ebd419f5e553952a8db29f9ee85d2d902d651a2936ed256f1bebd",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/implementation-20261008T205404Z/sources/linux-lts/fs/binfmt_elf.c",
+      "bytes": 58670,
+      "sha256": "94de8efdef946d505dec15a2b9cf6e41dcdde21791dceeeca7d8f2e8fdf60d45",
+      "expected_sha256": "94de8efdef946d505dec15a2b9cf6e41dcdde21791dceeeca7d8f2e8fdf60d45",
+      "matches": true
+    }
+  ],
+  "candidate76_vs_v6_kernel_audit_pins": [
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/qc07f_hwenc.h",
+      "bytes": 1501,
+      "sha256": "6723c30c76a3fbd1feaf1ed9d1676a2b9b6289b352ffe7682372bf8e95123731",
+      "expected_sha256": "6723c30c76a3fbd1feaf1ed9d1676a2b9b6289b352ffe7682372bf8e95123731",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/isp.c",
+      "bytes": 67624,
+      "sha256": "7d0ef80561df4ef058be1deb6698001c35066fab5533f492dec97d2b447bbd50",
+      "expected_sha256": "7d0ef80561df4ef058be1deb6698001c35066fab5533f492dec97d2b447bbd50",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/qc07f_hwenc.c",
+      "bytes": 25109,
+      "sha256": "e97744838acd469772db41fb1fe0907c95fb6e923577cdbffc84ead0141a026f",
+      "expected_sha256": "e97744838acd469772db41fb1fe0907c95fb6e923577cdbffc84ead0141a026f",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/mm/page_alloc.c",
+      "bytes": 221788,
+      "sha256": "0fc3313f62da1c7e51a4b3f732785a67ede6f6afb1ca9c0f5dd4a745fa6462c0",
+      "expected_sha256": "0fc3313f62da1c7e51a4b3f732785a67ede6f6afb1ca9c0f5dd4a745fa6462c0",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/mm/vmstat.c",
+      "bytes": 65756,
+      "sha256": "d3da55b28aefa3e2e92d7d3ed19efa809735397fe93a0696a929553c938ff06e",
+      "expected_sha256": "d3da55b28aefa3e2e92d7d3ed19efa809735397fe93a0696a929553c938ff06e",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/include/linux/mmzone.h",
+      "bytes": 73729,
+      "sha256": "8653d8ee6b0ebd419f5e553952a8db29f9ee85d2d902d651a2936ed256f1bebd",
+      "expected_sha256": "8653d8ee6b0ebd419f5e553952a8db29f9ee85d2d902d651a2936ed256f1bebd",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/fs/binfmt_elf.c",
+      "bytes": 58670,
+      "sha256": "94de8efdef946d505dec15a2b9cf6e41dcdde21791dceeeca7d8f2e8fdf60d45",
+      "expected_sha256": "94de8efdef946d505dec15a2b9cf6e41dcdde21791dceeeca7d8f2e8fdf60d45",
+      "matches": true
+    }
+  ],
+  "current_framework_vs_run34": [
+    {
+      "path": "framework/include/camera/backend.h",
+      "bytes": 5848,
+      "sha256": "6d81a78f05cc82aedb25874e2f0265148da63133894504c4e7b1afd7b2a32097",
+      "expected_sha256": "6d81a78f05cc82aedb25874e2f0265148da63133894504c4e7b1afd7b2a32097",
+      "matches": true
+    },
+    {
+      "path": "framework/include/camera/fmp4.h",
+      "bytes": 4740,
+      "sha256": "474923e415f98f6366ad6a4479d0a86f927a73d7dc3c9bbe51f105983de42818",
+      "expected_sha256": "474923e415f98f6366ad6a4479d0a86f927a73d7dc3c9bbe51f105983de42818",
+      "matches": true
+    },
+    {
+      "path": "framework/include/camera/packet_hub.h",
+      "bytes": 2084,
+      "sha256": "969bbafe30dadf5cf317931d56f116cd36ae9e93d3373e134f201bd3df3f7db2",
+      "expected_sha256": "969bbafe30dadf5cf317931d56f116cd36ae9e93d3373e134f201bd3df3f7db2",
+      "matches": true
+    },
+    {
+      "path": "framework/include/camera/rtsp_clock.h",
+      "bytes": 1187,
+      "sha256": "a1a4b6f99c8c64acb9d2db997f01ab423d2888961572fa25a8819035993c22a3",
+      "expected_sha256": "a1a4b6f99c8c64acb9d2db997f01ab423d2888961572fa25a8819035993c22a3",
+      "matches": true
+    },
+    {
+      "path": "framework/include/camera/dma_integrity.h",
+      "bytes": 3561,
+      "sha256": "8c1eddcc8e3296fa807984e588d5876cf179db52741c0a433c0a8a5ccbc2666c",
+      "expected_sha256": "8c1eddcc8e3296fa807984e588d5876cf179db52741c0a433c0a8a5ccbc2666c",
+      "matches": true
+    },
+    {
+      "path": "framework/src/packet_hub.c",
+      "bytes": 5180,
+      "sha256": "7f3324ce5e180f637a2d0fb0e296f7050ebcb89b99f93918e7cf15521ebf267e",
+      "expected_sha256": "7f3324ce5e180f637a2d0fb0e296f7050ebcb89b99f93918e7cf15521ebf267e",
+      "matches": true
+    },
+    {
+      "path": "framework/src/fmp4.c",
+      "bytes": 2889,
+      "sha256": "3256d07e730cd96a43da8ee05675e07c2de2b249bb2d10fb9893b7f149bc05b3",
+      "expected_sha256": "3256d07e730cd96a43da8ee05675e07c2de2b249bb2d10fb9893b7f149bc05b3",
+      "matches": true
+    },
+    {
+      "path": "framework/src/fmp4_init.c",
+      "bytes": 7570,
+      "sha256": "751eb931098903c06aca21fa054596d43b296ac30c52a81835b94081366280c1",
+      "expected_sha256": "751eb931098903c06aca21fa054596d43b296ac30c52a81835b94081366280c1",
+      "matches": true
+    },
+    {
+      "path": "framework/src/fmp4_timeline.c",
+      "bytes": 1381,
+      "sha256": "d6f5cb3edd8c1290905f0896d9ce93eaef9a01eaf59162ad2259b66d117d6e5b",
+      "expected_sha256": "d6f5cb3edd8c1290905f0896d9ce93eaef9a01eaf59162ad2259b66d117d6e5b",
+      "matches": true
+    }
+  ],
+  "artifact_identity": [
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/manifest.json",
+      "bytes": 265785,
+      "sha256": "8286c85c09d7f34d5bb6af13054803f68ebafad4e2e874da4b1a35aaf9e0d529",
+      "expected_sha256": "8286c85c09d7f34d5bb6af13054803f68ebafad4e2e874da4b1a35aaf9e0d529",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/build/native-handoff-arm.stripped",
+      "bytes": 91236,
+      "sha256": "64434b3c3c7dc9bae28c6ff66bddbc01a4f08a9e6972d0082b0f418036ff2319",
+      "expected_sha256": "64434b3c3c7dc9bae28c6ff66bddbc01a4f08a9e6972d0082b0f418036ff2319",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/images/QC6U76.UIM",
+      "bytes": 3603555,
+      "sha256": "bd8a2a08be1483e1ddcd1efa2c68c9e20549047dec79796137979179197f654f",
+      "expected_sha256": "bd8a2a08be1483e1ddcd1efa2c68c9e20549047dec79796137979179197f654f",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/analysis/native-usb76-package01/build/.config",
+      "bytes": 58853,
+      "sha256": "9e1f37788d3bd8580f2eb031ea2a7d795f4b61e2c1f89e1b91c11f1a87a6499c",
+      "expected_sha256": "9e1f37788d3bd8580f2eb031ea2a7d795f4b61e2c1f89e1b91c11f1a87a6499c",
+      "matches": true
+    }
+  ],
+  "all_comparisons_match": true,
+  "comparison_count": 80,
+  "dma_requested_arithmetic": {
+    "gated_isp": {
+      "bytes": 6307840,
+      "KiB": 6160.0,
+      "MiB": 6.015625,
+      "16MiB_minus_requested_bytes": 10469376,
+      "not_admission": true
+    },
+    "codec": {
+      "bytes": 8454144,
+      "KiB": 8256.0,
+      "MiB": 8.0625,
+      "16MiB_minus_requested_bytes": 8323072,
+      "not_admission": true
+    },
+    "gated_isp_and_codec": {
+      "bytes": 14761984,
+      "KiB": 14416.0,
+      "MiB": 14.078125,
+      "16MiB_minus_requested_bytes": 2015232,
+      "not_admission": true
+    },
+    "four_slot_capture": {
+      "bytes": 12648448,
+      "KiB": 12352.0,
+      "MiB": 12.0625,
+      "16MiB_minus_requested_bytes": 4128768,
+      "not_admission": true
+    },
+    "four_slot_and_codec": {
+      "bytes": 21102592,
+      "KiB": 20608.0,
+      "MiB": 20.125,
+      "16MiB_minus_requested_bytes": -4325376,
+      "not_admission": true
+    },
+    "four_slot_and_imported_codec": {
+      "bytes": 19005440,
+      "KiB": 18560.0,
+      "MiB": 18.125,
+      "16MiB_minus_requested_bytes": -2228224,
+      "not_admission": true
+    },
+    "two_slot_four_stats_and_imported_codec": {
+      "bytes": 14811136,
+      "KiB": 14464.0,
+      "MiB": 14.125,
+      "16MiB_minus_requested_bytes": 1966080,
+      "not_admission": true
+    },
+    "two_slot_four_stats_import_plus_sink": {
+      "bytes": 16908288,
+      "KiB": 16512.0,
+      "MiB": 16.125,
+      "16MiB_minus_requested_bytes": -131072,
+      "not_admission": true
+    }
+  },
+  "v6_CPU_KiB": {
+    "RX": 88,
+    "RW_including_raw_and_sampler": 1724,
+    "nonshared_staging": 4,
+    "each_large_musl_mapping": 1028,
+    "raw_reuse": 2844,
+    "separate": 3872,
+    "raw_reuse_payload_bytes": 2776576,
+    "separate_payload_bytes": 3825152
+  },
+  "dated_i_arithmetic_only": {
+    "raw-reuse-k75": {
+      "CPU_kib": 2844,
+      "A_required_kib": 12636,
+      "A_recorded_kib": 14756,
+      "N_required_kib": 11548,
+      "N_recorded_above_W_kib": 5476,
+      "N_deficit_kib": 6072,
+      "state": "HOLD"
+    },
+    "separate": {
+      "CPU_kib": 3872,
+      "A_required_kib": 13664,
+      "A_recorded_kib": 14756,
+      "N_required_kib": 12576,
+      "N_recorded_above_W_kib": 5476,
+      "N_deficit_kib": 7100,
+      "state": "HOLD"
+    }
+  },
+  "not_proved": [
+    "current target state",
+    "placement",
+    "CMA contiguity",
+    "native v6",
+    "raw overlay on ASIC",
+    "combined TLS fit",
+    "two-slot masks/starvation/import/retirement",
+    "G2/G8"
+  ]
+}

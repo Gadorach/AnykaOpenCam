@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-21T03:54:14.805772+00:00",
+  "source_sha256": {
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/drivers/usb/core/devio.c": "7522ddedb69f9e03205eefd79230254c5f792e037814fde49735796b255bc560",
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/drivers/usb/musb/musb_host.c": "76cc145a3493221ee263e9f14cfc94e3c6eda25ade0f41ad7b7d2963f7388bd5",
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/usb.c": "fba62fd4206de7f19aafc1cf9bcaf3ec8c2c1c3962f0f55fff184e5949e0d2d2",
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/drivers/usb/musb/musb_trace.c": "680ef02f68a241e2ec75c3bdc4dcea7625f7e3e6c851784d609fe3aa0dec53f9",
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/fwdl.h": "58e939a56bce67649df222dc5ae3f96dc6255e526233f67408dabdf6605c9392",
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/station76-final/utils/fwdl.c": "f8c9cf82c6484b1998749ee7814cad44637d8c1db51bc5ee6a7c7fac0314b1fa"
+  },
+  "HCD_source_matches_package_manifest": true,
+  "nonprivate_kernel_build_options_only": {
+    "USB_MON": "# CONFIG_USB_MON is not set",
+    "DEBUG_FS": "# CONFIG_DEBUG_FS is not set",
+    "DYNAMIC_DEBUG": "# CONFIG_DYNAMIC_DEBUG is not set",
+    "TRACING": "absent (not enabled)",
+    "TRACEPOINTS": "absent (not enabled)",
+    "EVENT_TRACING": "absent (not enabled)",
+    "FTRACE": "CONFIG_FTRACE=y",
+    "FUNCTION_TRACER": "# CONFIG_FUNCTION_TRACER is not set",
+    "MUSB_PIO_ONLY": "CONFIG_MUSB_PIO_ONLY=y",
+    "USB_AK3918EV200": "CONFIG_USB_AK3918EV200=y"
+  },
+  "tool_version": "LLVM (http://llvm.org/):\n  LLVM version 23.1.1\n  Optimized build.",
+  "runtime_queried": false,
+  "native_pass": false
+}

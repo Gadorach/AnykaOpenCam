@@ -1,0 +1,615 @@
+{
+  "utc": "2026-10-21T04:13:33.976424+00:00",
+  "cases": 151,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "healthy",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_1",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_2",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_3",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_4",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_5",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_6",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_7",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_8",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_9",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_10",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_11",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_12",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_13",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_14",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_15",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_16",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_17",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_18",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_19",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_20",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_21",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_22",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_23",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_24",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_25",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_26",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_27",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_28",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_29",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_30",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_False_31",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_False_1",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_False_2",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_False_3",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_False_4",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_False_5",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_False_6",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_False_7",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_False_8",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_False_9",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_False_10",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_False_11",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_False_12",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_False_13",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_False_14",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_False_1",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_False_2",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_False_3",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_False_4",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_False_5",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_False_6",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_False_7",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_False_8",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_False_9",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_False_10",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_False_11",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_False_12",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_False_13",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_False_14",
+      "pass": true
+    },
+    {
+      "name": "healthy_refresh",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_1",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_2",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_3",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_4",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_5",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_6",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_7",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_8",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_9",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_10",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_11",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_12",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_13",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_14",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_15",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_16",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_17",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_18",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_19",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_20",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_21",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_22",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_23",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_24",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_25",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_26",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_27",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_28",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_29",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_30",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_31",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_32",
+      "pass": true
+    },
+    {
+      "name": "foreign_TX_check_True_33",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_True_1",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_True_2",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_True_3",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_True_4",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_True_5",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_True_6",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_True_7",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_True_8",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_True_9",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_True_10",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_True_11",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_True_12",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_True_13",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_True_14",
+      "pass": true
+    },
+    {
+      "name": "foreign_send_TX_True_15",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_True_1",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_True_2",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_True_3",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_True_4",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_True_5",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_True_6",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_True_7",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_True_8",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_True_9",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_True_10",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_True_11",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_True_12",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_True_13",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_True_14",
+      "pass": true
+    },
+    {
+      "name": "foreign_wait_TX_True_15",
+      "pass": true
+    },
+    {
+      "name": "missing_receipt_sticky_pre_TX",
+      "pass": true
+    },
+    {
+      "name": "missing_checkpoint_sticky_pre_TX",
+      "pass": true
+    },
+    {
+      "name": "constructor_sticky_pre_TX",
+      "pass": true
+    },
+    {
+      "name": "owner_exception_sticky_pre_TX",
+      "pass": true
+    },
+    {
+      "name": "entry_TX_sticky_pre_TX",
+      "pass": true
+    },
+    {
+      "name": "owner_PID_sticky_pre_TX",
+      "pass": true
+    },
+    {
+      "name": "start_ticks_sticky_pre_TX",
+      "pass": true
+    },
+    {
+      "name": "RX_regression_sticky_pre_TX",
+      "pass": true
+    },
+    {
+      "name": "reset_sticky_pre_TX",
+      "pass": true
+    },
+    {
+      "name": "foreign_HOLD_preserved",
+      "pass": true
+    },
+    {
+      "name": "baseline_schema",
+      "pass": true
+    },
+    {
+      "name": "parser_mutant_0_mounts",
+      "pass": true
+    },
+    {
+      "name": "parser_mutant_1_mounts",
+      "pass": true
+    },
+    {
+      "name": "parser_mutant_2_cmdline",
+      "pass": true
+    },
+    {
+      "name": "parser_mutant_3_cmdline",
+      "pass": true
+    },
+    {
+      "name": "parser_mutant_4_ISP",
+      "pass": true
+    },
+    {
+      "name": "parser_mutant_5_ISP",
+      "pass": true
+    },
+    {
+      "name": "parser_mutant_6_memory",
+      "pass": true
+    },
+    {
+      "name": "parser_mutant_7_watchdog",
+      "pass": true
+    },
+    {
+      "name": "parser_mutant_8_nowayout",
+      "pass": true
+    },
+    {
+      "name": "parser_mutant_9_modules",
+      "pass": true
+    },
+    {
+      "name": "parser_mutant_10_boot_id_after",
+      "pass": true
+    },
+    {
+      "name": "parser_mutant_11_UART",
+      "pass": true
+    },
+    {
+      "name": "parser_mutant_12_UART",
+      "pass": true
+    },
+    {
+      "name": "framing_refusal",
+      "pass": true
+    },
+    {
+      "name": "framing_refusal",
+      "pass": true
+    },
+    {
+      "name": "framing_refusal",
+      "pass": true
+    }
+  ],
+  "source_sha256": "3dbf96b9ef84216da89283f19cd09dbca27e45a17d84138c9574112fb06170f0",
+  "test_sha256": "d46b4c1a1be65ef97650710db8b913a927eaae0dd4b3d8e4ac27bd3e68f18496",
+  "AST_isolated_all_capabilities_faked": true,
+  "UART_RPC_device_or_private_capture_access": false
+}
