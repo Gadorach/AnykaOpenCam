@@ -1,0 +1,52 @@
+{
+  "utc": "2026-10-21T06:59:14.786638+00:00",
+  "scope": "OWN_SOURCE_EVIDENCE_VALIDATION_ONLY",
+  "python": "3.14.7 (main, Aug 14 2026, 06:38:32) [GCC 16.2.1 20260810]",
+  "syntax_parse_pass": true,
+  "98_static_checks_and_67_source_pins_recorded": true,
+  "exclusive_rerun_and_optimized_mode_refuse_without_changes": true,
+  "commands": [
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-entry-review/inspect_station.py"
+      ],
+      "exit": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-entry-review/inspect_station.py\", line 22, in <module>\n    OUT.mkdir(exist_ok=False)\n    ~~~~~~~~~^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.14/pathlib/__init__.py\", line 1011, in mkdir\n    os.mkdir(self, mode)\n    ~~~~~~~~^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-entry-review/run02'\n"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-O",
+        "-B",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-entry-review/inspect_station.py"
+      ],
+      "exit": 1,
+      "stdout": "",
+      "stderr": "Refuse optimized Python or arguments\n"
+    }
+  ],
+  "evidence_sha256": {
+    "inspect_station.py": "df496a9491650cb06d1b3df04bf8a52c60f54807d3693e336956bce5868dfe65",
+    "run01/COLLECTOR_FAILURE.md": "9df30e421c127d59d1f4d9bb94abb5e4787e539fe447ac510f5b42c1966048f1",
+    "run01/llvm-version.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "run01/llvm-version.stdout": "fa90769606dd326e2d442475320fe1e08c52c066d92d147d72e8de86ca911449",
+    "run01/module-metadata.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "run01/module-metadata.stdout": "2bd33634681481532546ccaaeea61763b297c41c27d242c8bc9107a5c368d414",
+    "run01/module-undefined.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "run01/module-undefined.stdout": "7e163196de16ee6c21bb21f405b6971bb1b1bccee5a6d5bab93d42f01bd458d2",
+    "run02/binding.json": "287f4eb7f78b61c0f19d454826aff838ad635e36dfcc3c0a0be3e365180b1dfb",
+    "run02/excerpts.txt": "e055c685fb6a96415f284e4c06bf4d6646ab145dec4c96111778da3cea3230dc",
+    "run02/llvm-version.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "run02/llvm-version.stdout": "fa90769606dd326e2d442475320fe1e08c52c066d92d147d72e8de86ca911449",
+    "run02/module-metadata.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "run02/module-metadata.stdout": "2bd33634681481532546ccaaeea61763b297c41c27d242c8bc9107a5c368d414",
+    "run02/module-undefined.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "run02/module-undefined.stdout": "7e163196de16ee6c21bb21f405b6971bb1b1bccee5a6d5bab93d42f01bd458d2",
+    "validate.py": "2bc75b1fcc8e8f8836a46bf8b92dc9f007f2a4903610d0ca19b40a6b1ef96731"
+  },
+  "report_sha256": "8e0b7ab855f43676bd5f8112526d71299d17f873af31a56037d888eb2a5e065d",
+  "hardware_private_network_build_Git_ARM_execution": false
+}

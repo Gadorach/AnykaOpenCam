@@ -71,8 +71,10 @@ preserving original HOLD byte-exact. No reset/retry. See active ledger,
 Separate06:43UTC APPLICATION/retained firmware identity plus full fresh pre/post
 idle/FD/descriptors retirement then passed,1741B/54 sends, preserving original
 HOLD. No reset/reload/module/association/network/MTU result. See
-`SEPARATE_IDENTITY21A_RESULT.md` under qualification docs. Paired76 station/finite
-transport still needs source/current admission; combined memory/product gates open.
+`SEPARATE_IDENTITY21A_RESULT.md` under qualification docs. Paired76 station entry
+review is EXECUTION NO-GO (async guard/timeouts/recovery/parser/lifecycle gaps);
+parent selected isolated A1 control/FWINFO SOURCE/HOST correction only, no target
+or ARM build. See `STATION76_ENTRY_REVIEW.md`. Combined memory/product gates open.
 
 ### Latest request — complete remaining-feature/bug plan, October21 (PLAN ONLY)
 

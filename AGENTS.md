@@ -1,5 +1,29 @@
 # Project instructions for local agents
 
+## Latest blocker — station76 EXECUTION NO-GO; isolated A1 SOURCE/HOST correction selected
+
+STATION76_ENTRY_REVIEW98staticchecks/67sourcepinsPASS, initialcollectorfalse
+assertionpreserved. ModulecanreuseAPPnormalpathBUTasyncinitoutlivesguard/10sTX
+vs5sWD/autorecovery/weakcontrolidentityRX/retirementgaps; DHCProuteDNSsideeffects.
+NOwifiattach/rawinsmod/association/MTU/resetqueue. ParentselectedA1SOURCE/HOST
+only: newapps/qualification/kernel76-station/ exact67sourcecopy+strictcontrol/
+FWINFOheadercookieopcodetypepayload+expectedidentity/MACvalidation+realHOSTtests.
+Oneisolatedworkerownsnewtree/candidatereport/hostevidence; noexistinghelpers/
+sealedmoduleimageedit/privateinputs/ARMbuild/staging/target. OtherS1S2S3S5S6OPEN;
+A1notfullattachGO. Lasttarget06:43idleRAM76APP/original151ACKHOLDkept, noTXsince.
+21acapture07:09UTC DATEDnearexpiry/notnewauthority; freshrecoverybeforelaterHW.
+Mainlocal9fe6530(indexpreserved/nopush); RP04combined/adoption/productHOLD.
+
+## Next source lane — paired station76 admission review only, no effects queued
+
+Nativeidentity/retirementcommitted9fe6530mainlocal/indexpreserved/nopush.
+OneSOURCEworkerreviewsstation76entry: exactpairedmodule/build/init reuseofAPP,
+noimplicitfirmware/RUN/GPIO42reset/autoscanning/associationeffects, guard/owner/
+retirementgates. OwnnewSTATION76_ENTRY_REVIEW.md+station-entry-reviewonly.
+No driverload/association/MTU/resetqueued; parentonlyHW. No targetTXsince06:43
+separateidentityPASS; original151ACKtrialFAILED/HOLDbyteexactkept. 21acapture
+07:09UTCdatedrevalidate/newcoveragebeforeanyops. RP04memory/productHOLDunchanged.
+
 ## Latest actual —06:43 separate APPLICATION/identity/retirement PASS; original HOLD kept
 
 shellsh_15d33053f001Se3y74f0wlZBlNcompleted06:43:20UTC. Exactc3c19a12…one
