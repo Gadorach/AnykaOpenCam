@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-21T04:37:44.654778+00:00",
+  "state": "RAM76_NATIVE_BOOT_READONLY_IDLE_POSTCHECK_PASS",
+  "part": "foundation-20261021a",
+  "image_sha256": "bd8a2a08be1483e1ddcd1efa2c68c9e20549047dec79796137979179197f654f",
+  "PID1_init_UIDs_zero_CAP_SYS_RAWIO": true,
+  "kernel_release": "6.18.55-qc07f-prototype-dirty",
+  "boot_id_retained_private_and_stable": true,
+  "memory_KiB": {
+    "MemTotal": 33144,
+    "MemFree": 21008,
+    "CmaTotal": 16384,
+    "CmaFree": 9216
+  },
+  "ISP_idle_queues_guards_zero": true,
+  "watchdog_inactive_nowayout_zero": true,
+  "modules_empty": true,
+  "no_flash_SD_mounts": true,
+  "UART_errors_busy_zero": true,
+  "one_empty_monitor_refresh": true,
+  "no_radio_media_peripheral_or_persistent_write": true,
+  "exact_cumulative_TX_accounted_no_other_sender_observed": true,
+  "USB_large_payload_MTU1500_or_product_qualified": false,
+  "recipe_sha256": "3dbf96b9ef84216da89283f19cd09dbca27e45a17d84138c9574112fb06170f0"
+}

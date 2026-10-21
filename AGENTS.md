@@ -1,5 +1,19 @@
 # Project instructions for local agents
 
+## Latest actual — resume21a RAM76/RO idle PASS; radio trial pending source review
+
+RAMresume shellsh_15cad1ac3001hntmLYigpiv2vUcompleted: actual76upload/CRC/monitor
+PASS04:36UTC; exactderivedROpostcheckPASS04:37UTC, UID0/PID1init/CMA16MiB/only
+volatilemounts/modulesempty/ISPidle/WDinactive/UARTerrorsbusy0. TargetONidleRAM76;
+transferleasecompleted.21a3911508/start141489444/capture07:09UTC DATEDrevalidate.
+No radioFW/metadata/vendorquery/association/network/media/GUI/controls/reset yet.
+New apps/qualification/kernel76-transport/ HOSTcandidates13methodsPASS. Initial
+metadatareaderNO-GO(FDformat/handoffbinding)fixedbeforeuse,re-review+wholetrial
+sourceGO pending. DoNOTruntrialuntilGO+currentowner/descriptor/FD/retirementgates.
+UserprefersWDrecoverywhenneeded; conditionalidlewdt-resetreviewready,no reset
+needed/issued. Mainlocalcommits1de7714/2295ce4/9b87e84, no remote/push; preserve
+ordinaryindex, noadd-A/privateacquisitioncommit. RP04combinedmemoryremainsHOLD.
+
 ## Latest steering — prefer camera watchdog reboot for unattended recovery
 
 Userrequestswatchdog-triggeredrebootsinsteadwaitingmanualpowercyclewhenneeded.

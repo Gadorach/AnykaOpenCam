@@ -1,0 +1,66 @@
+{
+  "utc": "2026-10-21T04:29:05.344907+00:00",
+  "scope": "source/pin/selected ARM text only; no target operation or firmware execution",
+  "python": "3.14.7 (main, Aug 14 2026, 06:38:32) [GCC 16.2.1 20260810]",
+  "llvm": "LLVM (http://llvm.org/):\n  LLVM version 23.1.1\n  Optimized build.\n\n\n  Registered Targets:\n    aarch64     - AArch64 (little endian)\n    aarch64_32  - AArch64 (little endian ILP32)\n    aarch64_be  - AArch64 (big endian)\n    amdgcn      - legacy name for amdgpu\n    amdgpu      - AMDGPU gfx6+\n    arm         - ARM\n    arm64       - ARM64 (little endian)\n    arm64_32    - ARM64 (little endian ILP32)\n    armeb       - ARM (big endian)\n    avr         - Atmel AVR Microcontroller\n    bpf         - BPF (host endian)\n    bpfeb       - BPF (big endian)\n    bpfel       - BPF (little endian)\n    hexagon     - Hexagon\n    lanai       - Lanai\n    loongarch32 - 32-bit LoongArch\n    loongarch64 - 64-bit LoongArch\n    mips        - MIPS (32-bit big endian)\n    mips64      - MIPS (64-bit big endian)\n    mips64el    - MIPS (64-bit little endian)\n    mipsel      - MIPS (32-bit little endian)\n    msp430      - MSP430 [experimental]\n    nvptx       - NVIDIA PTX 32-bit\n    nvptx64     - NVIDIA PTX 64-bit\n    ppc32       - PowerPC 32\n    ppc32le     - PowerPC 32 LE\n    ppc64       - PowerPC 64\n    ppc64le     - PowerPC 64 LE\n    r600        - AMD GPUs HD2XXX-HD6XXX\n    riscv32     - 32-bit RISC-V\n    riscv32be   - 32-bit big endian RISC-V\n    riscv64     - 64-bit RISC-V\n    riscv64be   - 64-bit big endian RISC-V\n    sparc       - Sparc\n    sparcel     - Sparc LE\n    sparcv9     - Sparc V9\n    spirv       - SPIR-V Logical\n    spirv32     - SPIR-V 32-bit\n    spirv64     - SPIR-V 64-bit\n    systemz     - SystemZ\n    thumb       - Thumb\n    thumbeb     - Thumb (big endian)\n    ve          - VE\n    wasm32      - WebAssembly 32-bit\n    wasm64      - WebAssembly 64-bit\n    x86         - 32-bit X86: Pentium-Pro and above\n    x86-64      - 64-bit X86: EM64T and AMD64\n    xcore       - XCore",
+  "input_sha256": {
+    "bringup/qc07f/initramfs/init.c": "b3dd4ee9689bde4bead4c7a3c862284b198b879d4470b920366c1503814598aa",
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/watchdog.c": "d6646a2b894f822ea486c4d24db7a49df2003a5706cf25e9908bc1fe15fe06e9",
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/drivers/watchdog/watchdog_dev.c": "07e4291f639506d558d9eaf0176f7b901ab132580f1800c58dc2340c70814bf2",
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/drivers/watchdog/watchdog_core.c": "59cec803734a539e527b1d6dc0509a8a66389763d098e7498fbbf3e5026583e0",
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/inputs/attempt45.dtb": "d837c58c90b56ebb6ce9346b7c1d69689d5a1122dcef55b0f72341e6d003e0b5",
+    "work/lightbulb-camera/foundation-20261011T041148Z/analysis/native-usb76-package01/build/arch/arm/mach-ak3918ev200/.watchdog.o.cmd": "67540ecc169ad799e700d7b41be0fcd535c677ef9b4a0ceeaf4c8343e5e8ada6",
+    "work/lightbulb-camera/foundation-20261011T041148Z/analysis/native-usb76-package01/build/arch/arm/mach-ak3918ev200/watchdog.o": "d4ba44c41a15fb6d0df9d9a4a2dccc00e10769cc0bc058970ebff3d79b6c93e7",
+    "work/lightbulb-camera/foundation-20261011T041148Z/analysis/native-usb76-package01/build/vmlinux": "24df07ee09121eeff50ab01a5aa002a67418e5593d955f79836447673d427b14",
+    "docs/qualification-plans/kernel76-transport-20261021/source-review/entry-bind.json": "6aafd05a89e334833824da9afa1878c5a78013be6bd1f58853ab95cd3efbe1bd",
+    "work/lightbulb-camera/foundation-20261011T041148Z/analysis/native-usb76-package01/package76-manifest.json": "b61a73e245cbac3da4a8a1560f7908ea7020796d87b5eacc1580514f983f2d37",
+    "docs/qualification-plans/kernel76-transport-20261021/recovery-source-review/inspect_recovery.py": "8760a6a433833c33867d06f82a7136cc403e6a19753d28ad9f0a867efae3d2e2"
+  },
+  "monitor_matches_prior_embedded_init_binding": true,
+  "final_vmlinux_matches_package_manifest": true,
+  "init_source_matches_bound_build50_pin": true,
+  "driver_matches_mainline_overlay": true,
+  "driver_recorded_compile_source_path_matches": true,
+  "selected_watchdog_build_options": [
+    "CONFIG_WATCHDOG_AK3918EV200=y",
+    "CONFIG_WATCHDOG=y",
+    "CONFIG_WATCHDOG_CORE=y",
+    "# CONFIG_WATCHDOG_NOWAYOUT is not set",
+    "CONFIG_WATCHDOG_HANDLE_BOOT_ENABLED=y",
+    "CONFIG_WATCHDOG_OPEN_TIMEOUT=0",
+    "CONFIG_WATCHDOG_SYSFS=y",
+    "# CONFIG_WATCHDOG_HRTIMER_PRETIMEOUT is not set",
+    "# CONFIG_WATCHDOG_PRETIMEOUT_GOV is not set"
+  ],
+  "retained_candidate_DTB_watchdog_only": {
+    "compatible": "anyka,ak3918ev200-wdt",
+    "reg": [
+      134217956,
+      8
+    ],
+    "clock-frequency": [
+      46875
+    ],
+    "status": "okay"
+  },
+  "disassembly_argv": [
+    [
+      "llvm-objdump",
+      "-d",
+      "--disassemble-symbols=watchdog_test,watchdog_stoppable",
+      "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/artifacts/init-monitor-attempt50"
+    ],
+    [
+      "llvm-objdump",
+      "-d",
+      "--disassemble-symbols=ak_wdt_start,ak_wdt_stop,ak_wdt_set_timeout,ak_wdt_restart,watchdog_open,watchdog_ioctl,watchdog_release",
+      "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/native-usb76-package01/build/vmlinux"
+    ]
+  ],
+  "output_sha256": {
+    "monitor-watchdog.disasm": "9aaca1d3c1a6c2c0601c6a5a358011567249c3b509cbc21967330db3ae49748a",
+    "kernel-watchdog.disasm": "0c5bca59bfb9b757c5d1a126666830edbadc56bd92667ed931474ba011bffe06"
+  },
+  "runtime_queried": false,
+  "native_reset_proved": false
+}

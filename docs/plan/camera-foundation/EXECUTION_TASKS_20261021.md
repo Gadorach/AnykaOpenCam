@@ -1,5 +1,12 @@
 # Active execution ledger — remaining foundation work
 
+**Latest actual:** resume21a RAM76 upload/CRC/monitor PASS04:36UTC and approved
+fixed read-only idle postcheck PASS04:37UTC. Target ON at idle RAM76 monitor;
+same private21a/candidate, PID1/UID0/CMA16MiB, volatile mounts/modules empty,
+ISP idle/watchdog inactive/UART clean. Radio/metadata trial has NOT run; corrected
+host candidates13 unittest methods PASS, independent correction/trial review
+pending. Initial metadata FD/handoff NO-GO was source-only and preserved.
+
 **Active hardware04:17UTC:** one fixed RAM76 resume21a upload/boot launched after
 fresh cold gate and host/source checks. **No concurrent UART/RPC/status probes**;
 await completion. User ON/UART connected; fresh sole capture21a is bounded through
@@ -40,7 +47,7 @@ current recovery arm. No target byte sent; old20c authority is expired.
 
 | Packet | State | Immediate output / dependency |
 |---|---|---|
-| RP-00 | HOST/COLD-ENTRY-PASS; RUNTIME-PENDING | Source-only initial commit1de7714; original index preserved, old20c final hashes verified. Fresh user OFF/21a catch/ON, original cold U-Boot/BOOT pin/neutral RO gate pass; exact76 dry-run pass |
+| RP-00 | NATIVE-BASELINE-PASS-NARROW | Main source baseline/index preserved, old20c final hashes verified. Fresh21a cold gate and exact76 upload/CRC/monitor + fixed RO idle inventory passed04:36–37UTC; E2 must still be revalidated for later effects |
 | RP-01 | OPEN / prior narrow proofs | Retain76 paired build/basic boot; complete release manifest enforcement/product supervision/serial/watchdog after bounded entry |
 | RP-02 | SOURCE-ENTRY-REVIEWED; NATIVE-GATED | Compiled init/whole74-fragment+automatic RUN entry conditionally GO. Functional trial cannot prove internal MODE/NAK/toggles; awaits current76 runtime/descriptor/owner/retirement admission |
 | RP-03 | QUEUED | Controlled image/timing benchmark after current source/transport baseline; no assumed factory FPS |
@@ -98,3 +105,17 @@ or later healthy-status clearance. No second UART sender during transfers or GUI
   only epoch/private paths from the reviewed/native-passed20c sources.
 - Both disjoint source reports returned and parent-reviewed; no worker target
   operation. Details: `docs/qualification-plans/execution-20261021/BASELINE_AND_GIT.md`.
+
+### RAM resume completed; finite trial candidates not natively run
+
+- One resume21a native boot completed and lease retired; no radio firmware/module/
+  association/media/controls effect. Approved fixed RO postcheck passed with exact
+  cumulative TX, PID1init/UID0,16MiB CMA, volatile mounts, inactive watchdog, clean
+  UART and idle ISP. Live source/owner/recovery still require each future admission.
+- Local main policy commit `9b87e84` records watchdog-preferred guarded recovery;
+  no deliberate reset was needed or issued. No remote/push.
+- New host-only receipt/metadata/one-load trial candidates:13 unittest methods
+  pass, including grouped mutants and full in-memory main faults. FD format and
+  exact source/receipt/checkpoint binding defects found by review were corrected
+  before target use; independent re-review pending. No mode/toggle/MTU proof or
+  memory-layout admission is claimed.

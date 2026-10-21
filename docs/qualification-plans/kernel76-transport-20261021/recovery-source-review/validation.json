@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-21T04:32:56.738487+00:00",
+  "scope": "source-only syntax/pin/refusal validation",
+  "ast_parse_pass": true,
+  "disassembly_pins_pass": true,
+  "refusal_checks": [
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "docs/qualification-plans/kernel76-transport-20261021/recovery-source-review/inspect_recovery.py"
+      ],
+      "returncode": 1,
+      "expected_refusal": "preserve prior outputs",
+      "passed": true
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-O",
+        "docs/qualification-plans/kernel76-transport-20261021/recovery-source-review/inspect_recovery.py"
+      ],
+      "returncode": 1,
+      "expected_refusal": "do not use Python -O",
+      "passed": true
+    }
+  ],
+  "existing_evidence_unchanged": true,
+  "target_operation": false
+}
