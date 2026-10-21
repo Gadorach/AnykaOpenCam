@@ -1,0 +1,985 @@
+{
+  "utc": "2026-10-21T05:21:31.872370+00:00",
+  "command": "python3 -B docs/qualification-plans/execution-20261021/memory-admission01/placement-review/audit_source.py",
+  "python": "3.14.7 (main, Aug 14 2026, 06:38:32) [GCC 16.2.1 20260810]",
+  "scope": "public source/config/manifests only; source strings and integer arithmetic",
+  "builds_existing_tests_ARM_execution_target_network_private_reads": false,
+  "script": {
+    "path": "docs/qualification-plans/execution-20261021/memory-admission01/placement-review/audit_source.py",
+    "bytes": 7012,
+    "sha256": "3c1da055ea608fdf3466797ecfd6fdef79e685f8b928e5da5d7a52a8f45944fd"
+  },
+  "reference_seals": [
+    {
+      "path": "docs/qualification-plans/execution-20261021/memory-admission01/REPORT.md",
+      "bytes": 24187,
+      "sha256": "f0f9fb5c224094f3821ace24a6a906029e93a719a310cedcafa0901867dac415"
+    },
+    {
+      "path": "docs/qualification-plans/execution-20261021/memory-admission01/audit.json",
+      "bytes": 29225,
+      "sha256": "1b4411089d297e4d7422d23604c85af5a07cbb97de206da48bacc9fe4dfb331a"
+    },
+    {
+      "path": "docs/qualification-plans/execution-20261021/memory-admission01/audit.py",
+      "bytes": 6031,
+      "sha256": "451e8b6c7bb28f13e8aaa85f1680f06396df33c5982958db64b030dcfef2b789"
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/REPORT-v6.json",
+      "bytes": 17967,
+      "sha256": "cc3d298f450c5e1a9927d22d19f27984fdb2ba6b33198d3516b996005c310426"
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/RAW-REUSE-CONTRACT-v6.md",
+      "bytes": 4731,
+      "sha256": "8b97653ff75c8d837e3ce4505fcf2945abee5386540394810afc7dee628c03de"
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/PAUSED-v6-STATUS.md",
+      "bytes": 2344,
+      "sha256": "441e52d240810e43f229f97421129d860ec4eedd750f7ba59d37782ae8fbe0d9"
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/analysis/native-usb76-package01/package76-manifest.json",
+      "bytes": 9950,
+      "sha256": "b61a73e245cbac3da4a8a1560f7908ea7020796d87b5eacc1580514f983f2d37"
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/analysis/native-usb76-package01/build/.config",
+      "bytes": 58853,
+      "sha256": "9e1f37788d3bd8580f2eb031ea2a7d795f4b61e2c1f89e1b91c11f1a87a6499c"
+    }
+  ],
+  "identity_comparisons": [
+    {
+      "path": "apps/web-media/native-producer/README.md",
+      "bytes": 32216,
+      "sha256": "0116d1d193fc4438cd56d9b00e4202852b388362379beefa77b1e7b94af841dc",
+      "expected_sha256": "0116d1d193fc4438cd56d9b00e4202852b388362379beefa77b1e7b94af841dc",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/README.md",
+      "bytes": 32216,
+      "sha256": "0116d1d193fc4438cd56d9b00e4202852b388362379beefa77b1e7b94af841dc",
+      "expected_sha256": "0116d1d193fc4438cd56d9b00e4202852b388362379beefa77b1e7b94af841dc",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/box_reference.py",
+      "bytes": 1240,
+      "sha256": "e41e7806515bfbfd9e8956d6918e374b77fd636d0b42de0e235571cc1e78f66f",
+      "expected_sha256": "e41e7806515bfbfd9e8956d6918e374b77fd636d0b42de0e235571cc1e78f66f",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/box_reference.py",
+      "bytes": 1240,
+      "sha256": "e41e7806515bfbfd9e8956d6918e374b77fd636d0b42de0e235571cc1e78f66f",
+      "expected_sha256": "e41e7806515bfbfd9e8956d6918e374b77fd636d0b42de0e235571cc1e78f66f",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/build.py",
+      "bytes": 25695,
+      "sha256": "e7835c07ad278276f1a08439b3f8d1ecd4fc1d1fa0f4c9b80ce0849f632c1538",
+      "expected_sha256": "e7835c07ad278276f1a08439b3f8d1ecd4fc1d1fa0f4c9b80ce0849f632c1538",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/build.py",
+      "bytes": 25695,
+      "sha256": "e7835c07ad278276f1a08439b3f8d1ecd4fc1d1fa0f4c9b80ce0849f632c1538",
+      "expected_sha256": "e7835c07ad278276f1a08439b3f8d1ecd4fc1d1fa0f4c9b80ce0849f632c1538",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/handoff.c",
+      "bytes": 10493,
+      "sha256": "2a3bb74ff1c22acf1138a9815245115143ed43cf39aaf9f52da864e392c4783d",
+      "expected_sha256": "2a3bb74ff1c22acf1138a9815245115143ed43cf39aaf9f52da864e392c4783d",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/handoff.c",
+      "bytes": 10493,
+      "sha256": "2a3bb74ff1c22acf1138a9815245115143ed43cf39aaf9f52da864e392c4783d",
+      "expected_sha256": "2a3bb74ff1c22acf1138a9815245115143ed43cf39aaf9f52da864e392c4783d",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/handoff.h",
+      "bytes": 2413,
+      "sha256": "9b88ce3e24a3a6c1c16336315323b70b29560c473ac9a48d36043bd60c840113",
+      "expected_sha256": "9b88ce3e24a3a6c1c16336315323b70b29560c473ac9a48d36043bd60c840113",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/handoff.h",
+      "bytes": 2413,
+      "sha256": "9b88ce3e24a3a6c1c16336315323b70b29560c473ac9a48d36043bd60c840113",
+      "expected_sha256": "9b88ce3e24a3a6c1c16336315323b70b29560c473ac9a48d36043bd60c840113",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/handoff_test.c",
+      "bytes": 9852,
+      "sha256": "6a8d2e46115a1a959cd79bc89d1be6edf2c8398e5f332f58c85aba710dec3dd3",
+      "expected_sha256": "6a8d2e46115a1a959cd79bc89d1be6edf2c8398e5f332f58c85aba710dec3dd3",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/handoff_test.c",
+      "bytes": 9852,
+      "sha256": "6a8d2e46115a1a959cd79bc89d1be6edf2c8398e5f332f58c85aba710dec3dd3",
+      "expected_sha256": "6a8d2e46115a1a959cd79bc89d1be6edf2c8398e5f332f58c85aba710dec3dd3",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/main.c",
+      "bytes": 5788,
+      "sha256": "754f91d8a58f92c83726a2df4967c3c515eaee3b291c2682c76061e05f7acd6b",
+      "expected_sha256": "754f91d8a58f92c83726a2df4967c3c515eaee3b291c2682c76061e05f7acd6b",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/main.c",
+      "bytes": 5788,
+      "sha256": "754f91d8a58f92c83726a2df4967c3c515eaee3b291c2682c76061e05f7acd6b",
+      "expected_sha256": "754f91d8a58f92c83726a2df4967c3c515eaee3b291c2682c76061e05f7acd6b",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/memory_fixture.h",
+      "bytes": 702,
+      "sha256": "b19db63f336437244ebe3ae1fabd5b51abd34b8168a041dee1a1347b8852b78c",
+      "expected_sha256": "b19db63f336437244ebe3ae1fabd5b51abd34b8168a041dee1a1347b8852b78c",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/memory_fixture.h",
+      "bytes": 702,
+      "sha256": "b19db63f336437244ebe3ae1fabd5b51abd34b8168a041dee1a1347b8852b78c",
+      "expected_sha256": "b19db63f336437244ebe3ae1fabd5b51abd34b8168a041dee1a1347b8852b78c",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/memory_reader.c",
+      "bytes": 1079,
+      "sha256": "c9bd8401476f3baf73b43051651e6c306f14a05c1d5a5317531302569d4261c0",
+      "expected_sha256": "c9bd8401476f3baf73b43051651e6c306f14a05c1d5a5317531302569d4261c0",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/memory_reader.c",
+      "bytes": 1079,
+      "sha256": "c9bd8401476f3baf73b43051651e6c306f14a05c1d5a5317531302569d4261c0",
+      "expected_sha256": "c9bd8401476f3baf73b43051651e6c306f14a05c1d5a5317531302569d4261c0",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/memory_reserve.c",
+      "bytes": 10310,
+      "sha256": "aec0a30d7f67bfc8fc0f2c078cf4a53efb42d78a65b46c0bef22312060070aff",
+      "expected_sha256": "aec0a30d7f67bfc8fc0f2c078cf4a53efb42d78a65b46c0bef22312060070aff",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/memory_reserve.c",
+      "bytes": 10310,
+      "sha256": "aec0a30d7f67bfc8fc0f2c078cf4a53efb42d78a65b46c0bef22312060070aff",
+      "expected_sha256": "aec0a30d7f67bfc8fc0f2c078cf4a53efb42d78a65b46c0bef22312060070aff",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/memory_reserve.h",
+      "bytes": 2193,
+      "sha256": "e09c5ce48a1142df66a71c782367abdc4c8e5557210c27c8ee3f1b67ecfc6eed",
+      "expected_sha256": "e09c5ce48a1142df66a71c782367abdc4c8e5557210c27c8ee3f1b67ecfc6eed",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/memory_reserve.h",
+      "bytes": 2193,
+      "sha256": "e09c5ce48a1142df66a71c782367abdc4c8e5557210c27c8ee3f1b67ecfc6eed",
+      "expected_sha256": "e09c5ce48a1142df66a71c782367abdc4c8e5557210c27c8ee3f1b67ecfc6eed",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/memory_reserve_test.c",
+      "bytes": 5653,
+      "sha256": "6ecf4c2fff50360af7755d5a15db470191a1ca133feae2ee24f0b1472b983f91",
+      "expected_sha256": "6ecf4c2fff50360af7755d5a15db470191a1ca133feae2ee24f0b1472b983f91",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/memory_reserve_test.c",
+      "bytes": 5653,
+      "sha256": "6ecf4c2fff50360af7755d5a15db470191a1ca133feae2ee24f0b1472b983f91",
+      "expected_sha256": "6ecf4c2fff50360af7755d5a15db470191a1ca133feae2ee24f0b1472b983f91",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/memory_runtime.c",
+      "bytes": 5115,
+      "sha256": "c505e3447cbfa852c88a97816e233269de6dec12080625d16004dca31d152d57",
+      "expected_sha256": "c505e3447cbfa852c88a97816e233269de6dec12080625d16004dca31d152d57",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/memory_runtime.c",
+      "bytes": 5115,
+      "sha256": "c505e3447cbfa852c88a97816e233269de6dec12080625d16004dca31d152d57",
+      "expected_sha256": "c505e3447cbfa852c88a97816e233269de6dec12080625d16004dca31d152d57",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/memory_runtime.h",
+      "bytes": 921,
+      "sha256": "54aaa1c9bb8e9c297625054160653378c242d9303504bb7093602373ba227b84",
+      "expected_sha256": "54aaa1c9bb8e9c297625054160653378c242d9303504bb7093602373ba227b84",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/memory_runtime.h",
+      "bytes": 921,
+      "sha256": "54aaa1c9bb8e9c297625054160653378c242d9303504bb7093602373ba227b84",
+      "expected_sha256": "54aaa1c9bb8e9c297625054160653378c242d9303504bb7093602373ba227b84",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/native_adapter.c",
+      "bytes": 9570,
+      "sha256": "33f65bb1b40a3fbe2b7e756e0c8e5a3a933a762cbb13737cdb16a9be1b5f0f93",
+      "expected_sha256": "33f65bb1b40a3fbe2b7e756e0c8e5a3a933a762cbb13737cdb16a9be1b5f0f93",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/native_adapter.c",
+      "bytes": 9570,
+      "sha256": "33f65bb1b40a3fbe2b7e756e0c8e5a3a933a762cbb13737cdb16a9be1b5f0f93",
+      "expected_sha256": "33f65bb1b40a3fbe2b7e756e0c8e5a3a933a762cbb13737cdb16a9be1b5f0f93",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/native_adapter.h",
+      "bytes": 980,
+      "sha256": "39367be1ff9d62ac204a941bdaf0e76bead8cffa5f9e70943e3275d5ab88ca46",
+      "expected_sha256": "39367be1ff9d62ac204a941bdaf0e76bead8cffa5f9e70943e3275d5ab88ca46",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/native_adapter.h",
+      "bytes": 980,
+      "sha256": "39367be1ff9d62ac204a941bdaf0e76bead8cffa5f9e70943e3275d5ab88ca46",
+      "expected_sha256": "39367be1ff9d62ac204a941bdaf0e76bead8cffa5f9e70943e3275d5ab88ca46",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/native_adapter_test.c",
+      "bytes": 26443,
+      "sha256": "b8a4c2d1f752c304415676ce31dbd66c32e426da0b98c62747352014127bed91",
+      "expected_sha256": "b8a4c2d1f752c304415676ce31dbd66c32e426da0b98c62747352014127bed91",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/native_adapter_test.c",
+      "bytes": 26443,
+      "sha256": "b8a4c2d1f752c304415676ce31dbd66c32e426da0b98c62747352014127bed91",
+      "expected_sha256": "b8a4c2d1f752c304415676ce31dbd66c32e426da0b98c62747352014127bed91",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/receiver.py",
+      "bytes": 8185,
+      "sha256": "a2ad36217701e17150f364549b9950e66d7054d5f269ff66724990af44092bd4",
+      "expected_sha256": "a2ad36217701e17150f364549b9950e66d7054d5f269ff66724990af44092bd4",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/receiver.py",
+      "bytes": 8185,
+      "sha256": "a2ad36217701e17150f364549b9950e66d7054d5f269ff66724990af44092bd4",
+      "expected_sha256": "a2ad36217701e17150f364549b9950e66d7054d5f269ff66724990af44092bd4",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/receiver_test.py",
+      "bytes": 4306,
+      "sha256": "5020f2e6c0b8e957760c29e3fbe5ee2f68e77194c9e7cbd24d195b994d26a069",
+      "expected_sha256": "5020f2e6c0b8e957760c29e3fbe5ee2f68e77194c9e7cbd24d195b994d26a069",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/receiver_test.py",
+      "bytes": 4306,
+      "sha256": "5020f2e6c0b8e957760c29e3fbe5ee2f68e77194c9e7cbd24d195b994d26a069",
+      "expected_sha256": "5020f2e6c0b8e957760c29e3fbe5ee2f68e77194c9e7cbd24d195b994d26a069",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/sensor_baseline.c",
+      "bytes": 5688,
+      "sha256": "6994e3ce6e048e6829bd0e85e61049662422d872198aa71e14f3cb95b95676ee",
+      "expected_sha256": "6994e3ce6e048e6829bd0e85e61049662422d872198aa71e14f3cb95b95676ee",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/sensor_baseline.c",
+      "bytes": 5688,
+      "sha256": "6994e3ce6e048e6829bd0e85e61049662422d872198aa71e14f3cb95b95676ee",
+      "expected_sha256": "6994e3ce6e048e6829bd0e85e61049662422d872198aa71e14f3cb95b95676ee",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/sensor_baseline.h",
+      "bytes": 1099,
+      "sha256": "ed1e8a5ef9586b6c68d71ddabcd499d660cf91e0df97212c8e7ce5076b407503",
+      "expected_sha256": "ed1e8a5ef9586b6c68d71ddabcd499d660cf91e0df97212c8e7ce5076b407503",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/sensor_baseline.h",
+      "bytes": 1099,
+      "sha256": "ed1e8a5ef9586b6c68d71ddabcd499d660cf91e0df97212c8e7ce5076b407503",
+      "expected_sha256": "ed1e8a5ef9586b6c68d71ddabcd499d660cf91e0df97212c8e7ce5076b407503",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/tcp_loopback.c",
+      "bytes": 2208,
+      "sha256": "3795bb0b47dfa907d6c16a0f4a87148dbccf093a0638f1b3771e83b774f0380e",
+      "expected_sha256": "3795bb0b47dfa907d6c16a0f4a87148dbccf093a0638f1b3771e83b774f0380e",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/tcp_loopback.c",
+      "bytes": 2208,
+      "sha256": "3795bb0b47dfa907d6c16a0f4a87148dbccf093a0638f1b3771e83b774f0380e",
+      "expected_sha256": "3795bb0b47dfa907d6c16a0f4a87148dbccf093a0638f1b3771e83b774f0380e",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/tcp_sink.c",
+      "bytes": 6310,
+      "sha256": "3f36dd161cd3ed0ebe1fec2858d7b2a8ebb898923b8fe9e84c380ff49105f90e",
+      "expected_sha256": "3f36dd161cd3ed0ebe1fec2858d7b2a8ebb898923b8fe9e84c380ff49105f90e",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/tcp_sink.c",
+      "bytes": 6310,
+      "sha256": "3f36dd161cd3ed0ebe1fec2858d7b2a8ebb898923b8fe9e84c380ff49105f90e",
+      "expected_sha256": "3f36dd161cd3ed0ebe1fec2858d7b2a8ebb898923b8fe9e84c380ff49105f90e",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/tcp_sink.h",
+      "bytes": 1002,
+      "sha256": "e28a022211a473b1e07367f2a9b0e149cb6c2a3603d3b3ce2d6994f602bebf45",
+      "expected_sha256": "e28a022211a473b1e07367f2a9b0e149cb6c2a3603d3b3ce2d6994f602bebf45",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/tcp_sink.h",
+      "bytes": 1002,
+      "sha256": "e28a022211a473b1e07367f2a9b0e149cb6c2a3603d3b3ce2d6994f602bebf45",
+      "expected_sha256": "e28a022211a473b1e07367f2a9b0e149cb6c2a3603d3b3ce2d6994f602bebf45",
+      "matches": true
+    },
+    {
+      "path": "apps/web-media/native-producer/tcp_sink_test.c",
+      "bytes": 5135,
+      "sha256": "a2b429c846fb7fce2a23793babcc4d4195ebc944ca9989f5772b1bee75ff9ef7",
+      "expected_sha256": "a2b429c846fb7fce2a23793babcc4d4195ebc944ca9989f5772b1bee75ff9ef7",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/tcp_sink_test.c",
+      "bytes": 5135,
+      "sha256": "a2b429c846fb7fce2a23793babcc4d4195ebc944ca9989f5772b1bee75ff9ef7",
+      "expected_sha256": "a2b429c846fb7fce2a23793babcc4d4195ebc944ca9989f5772b1bee75ff9ef7",
+      "matches": true
+    },
+    {
+      "path": "bringup/qc07f/userland/rtspd.c",
+      "bytes": 42855,
+      "sha256": "0334c27a8d6a7142d3867778f517f192f7c7447fc849a7aca18098ad306f3898",
+      "expected_sha256": "0334c27a8d6a7142d3867778f517f192f7c7447fc849a7aca18098ad306f3898",
+      "matches": true
+    },
+    {
+      "path": "bringup/qc07f/variants/security75/mach-ak3918ev200/qc07f_hwenc.h",
+      "bytes": 1501,
+      "sha256": "6723c30c76a3fbd1feaf1ed9d1676a2b9b6289b352ffe7682372bf8e95123731",
+      "expected_sha256": "6723c30c76a3fbd1feaf1ed9d1676a2b9b6289b352ffe7682372bf8e95123731",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/qc07f_hwenc.h",
+      "bytes": 1501,
+      "sha256": "6723c30c76a3fbd1feaf1ed9d1676a2b9b6289b352ffe7682372bf8e95123731",
+      "expected_sha256": "6723c30c76a3fbd1feaf1ed9d1676a2b9b6289b352ffe7682372bf8e95123731",
+      "matches": true
+    },
+    {
+      "path": "bringup/qc07f/variants/security75/mach-ak3918ev200/isp.c",
+      "bytes": 67624,
+      "sha256": "7d0ef80561df4ef058be1deb6698001c35066fab5533f492dec97d2b447bbd50",
+      "expected_sha256": "7d0ef80561df4ef058be1deb6698001c35066fab5533f492dec97d2b447bbd50",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/isp.c",
+      "bytes": 67624,
+      "sha256": "7d0ef80561df4ef058be1deb6698001c35066fab5533f492dec97d2b447bbd50",
+      "expected_sha256": "7d0ef80561df4ef058be1deb6698001c35066fab5533f492dec97d2b447bbd50",
+      "matches": true
+    },
+    {
+      "path": "bringup/qc07f/variants/security75/mach-ak3918ev200/qc07f_hwenc.c",
+      "bytes": 25109,
+      "sha256": "e97744838acd469772db41fb1fe0907c95fb6e923577cdbffc84ead0141a026f",
+      "expected_sha256": "e97744838acd469772db41fb1fe0907c95fb6e923577cdbffc84ead0141a026f",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/qc07f_hwenc.c",
+      "bytes": 25109,
+      "sha256": "e97744838acd469772db41fb1fe0907c95fb6e923577cdbffc84ead0141a026f",
+      "expected_sha256": "e97744838acd469772db41fb1fe0907c95fb6e923577cdbffc84ead0141a026f",
+      "matches": true
+    },
+    {
+      "path": "bringup/qc07f/initramfs/sc1346-init.h",
+      "bytes": 2899,
+      "sha256": "98da5eb9e522975d834d99e8c0cdfbefe75ed87dbbcdf84fd9f0fb150f9efbe9",
+      "expected_sha256": "98da5eb9e522975d834d99e8c0cdfbefe75ed87dbbcdf84fd9f0fb150f9efbe9",
+      "matches": true
+    },
+    {
+      "path": "bringup/qc07f/initramfs/init.c",
+      "bytes": 24349,
+      "sha256": "b3dd4ee9689bde4bead4c7a3c862284b198b879d4470b920366c1503814598aa",
+      "expected_sha256": "b3dd4ee9689bde4bead4c7a3c862284b198b879d4470b920366c1503814598aa",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/implementation-20261008T205404Z/sources/linux-lts/mm/page_alloc.c",
+      "bytes": 221788,
+      "sha256": "0fc3313f62da1c7e51a4b3f732785a67ede6f6afb1ca9c0f5dd4a745fa6462c0",
+      "expected_sha256": "0fc3313f62da1c7e51a4b3f732785a67ede6f6afb1ca9c0f5dd4a745fa6462c0",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/mm/page_alloc.c",
+      "bytes": 221788,
+      "sha256": "0fc3313f62da1c7e51a4b3f732785a67ede6f6afb1ca9c0f5dd4a745fa6462c0",
+      "expected_sha256": "0fc3313f62da1c7e51a4b3f732785a67ede6f6afb1ca9c0f5dd4a745fa6462c0",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/implementation-20261008T205404Z/sources/linux-lts/mm/vmstat.c",
+      "bytes": 65756,
+      "sha256": "d3da55b28aefa3e2e92d7d3ed19efa809735397fe93a0696a929553c938ff06e",
+      "expected_sha256": "d3da55b28aefa3e2e92d7d3ed19efa809735397fe93a0696a929553c938ff06e",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/mm/vmstat.c",
+      "bytes": 65756,
+      "sha256": "d3da55b28aefa3e2e92d7d3ed19efa809735397fe93a0696a929553c938ff06e",
+      "expected_sha256": "d3da55b28aefa3e2e92d7d3ed19efa809735397fe93a0696a929553c938ff06e",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/implementation-20261008T205404Z/sources/linux-lts/include/linux/mmzone.h",
+      "bytes": 73729,
+      "sha256": "8653d8ee6b0ebd419f5e553952a8db29f9ee85d2d902d651a2936ed256f1bebd",
+      "expected_sha256": "8653d8ee6b0ebd419f5e553952a8db29f9ee85d2d902d651a2936ed256f1bebd",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/include/linux/mmzone.h",
+      "bytes": 73729,
+      "sha256": "8653d8ee6b0ebd419f5e553952a8db29f9ee85d2d902d651a2936ed256f1bebd",
+      "expected_sha256": "8653d8ee6b0ebd419f5e553952a8db29f9ee85d2d902d651a2936ed256f1bebd",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/implementation-20261008T205404Z/sources/linux-lts/fs/binfmt_elf.c",
+      "bytes": 58670,
+      "sha256": "94de8efdef946d505dec15a2b9cf6e41dcdde21791dceeeca7d8f2e8fdf60d45",
+      "expected_sha256": "94de8efdef946d505dec15a2b9cf6e41dcdde21791dceeeca7d8f2e8fdf60d45",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/fs/binfmt_elf.c",
+      "bytes": 58670,
+      "sha256": "94de8efdef946d505dec15a2b9cf6e41dcdde21791dceeeca7d8f2e8fdf60d45",
+      "expected_sha256": "94de8efdef946d505dec15a2b9cf6e41dcdde21791dceeeca7d8f2e8fdf60d45",
+      "matches": true
+    },
+    {
+      "path": "framework/include/camera/backend.h",
+      "bytes": 5848,
+      "sha256": "6d81a78f05cc82aedb25874e2f0265148da63133894504c4e7b1afd7b2a32097",
+      "expected_sha256": "6d81a78f05cc82aedb25874e2f0265148da63133894504c4e7b1afd7b2a32097",
+      "matches": true
+    },
+    {
+      "path": "framework/include/camera/fmp4.h",
+      "bytes": 4740,
+      "sha256": "474923e415f98f6366ad6a4479d0a86f927a73d7dc3c9bbe51f105983de42818",
+      "expected_sha256": "474923e415f98f6366ad6a4479d0a86f927a73d7dc3c9bbe51f105983de42818",
+      "matches": true
+    },
+    {
+      "path": "framework/include/camera/packet_hub.h",
+      "bytes": 2084,
+      "sha256": "969bbafe30dadf5cf317931d56f116cd36ae9e93d3373e134f201bd3df3f7db2",
+      "expected_sha256": "969bbafe30dadf5cf317931d56f116cd36ae9e93d3373e134f201bd3df3f7db2",
+      "matches": true
+    },
+    {
+      "path": "framework/include/camera/rtsp_clock.h",
+      "bytes": 1187,
+      "sha256": "a1a4b6f99c8c64acb9d2db997f01ab423d2888961572fa25a8819035993c22a3",
+      "expected_sha256": "a1a4b6f99c8c64acb9d2db997f01ab423d2888961572fa25a8819035993c22a3",
+      "matches": true
+    },
+    {
+      "path": "framework/include/camera/dma_integrity.h",
+      "bytes": 3561,
+      "sha256": "8c1eddcc8e3296fa807984e588d5876cf179db52741c0a433c0a8a5ccbc2666c",
+      "expected_sha256": "8c1eddcc8e3296fa807984e588d5876cf179db52741c0a433c0a8a5ccbc2666c",
+      "matches": true
+    },
+    {
+      "path": "framework/src/packet_hub.c",
+      "bytes": 5180,
+      "sha256": "7f3324ce5e180f637a2d0fb0e296f7050ebcb89b99f93918e7cf15521ebf267e",
+      "expected_sha256": "7f3324ce5e180f637a2d0fb0e296f7050ebcb89b99f93918e7cf15521ebf267e",
+      "matches": true
+    },
+    {
+      "path": "framework/src/fmp4.c",
+      "bytes": 2889,
+      "sha256": "3256d07e730cd96a43da8ee05675e07c2de2b249bb2d10fb9893b7f149bc05b3",
+      "expected_sha256": "3256d07e730cd96a43da8ee05675e07c2de2b249bb2d10fb9893b7f149bc05b3",
+      "matches": true
+    },
+    {
+      "path": "framework/src/fmp4_init.c",
+      "bytes": 7570,
+      "sha256": "751eb931098903c06aca21fa054596d43b296ac30c52a81835b94081366280c1",
+      "expected_sha256": "751eb931098903c06aca21fa054596d43b296ac30c52a81835b94081366280c1",
+      "matches": true
+    },
+    {
+      "path": "framework/src/fmp4_timeline.c",
+      "bytes": 1381,
+      "sha256": "d6f5cb3edd8c1290905f0896d9ce93eaef9a01eaf59162ad2259b66d117d6e5b",
+      "expected_sha256": "d6f5cb3edd8c1290905f0896d9ce93eaef9a01eaf59162ad2259b66d117d6e5b",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/manifest.json",
+      "bytes": 265785,
+      "sha256": "8286c85c09d7f34d5bb6af13054803f68ebafad4e2e874da4b1a35aaf9e0d529",
+      "expected_sha256": "8286c85c09d7f34d5bb6af13054803f68ebafad4e2e874da4b1a35aaf9e0d529",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/analysis/native-usb76-package01/build/.config",
+      "bytes": 58853,
+      "sha256": "9e1f37788d3bd8580f2eb031ea2a7d795f4b61e2c1f89e1b91c11f1a87a6499c",
+      "expected_sha256": "9e1f37788d3bd8580f2eb031ea2a7d795f4b61e2c1f89e1b91c11f1a87a6499c",
+      "matches": true
+    }
+  ],
+  "all_comparisons_match": true,
+  "comparison_count": 78,
+  "source_evidence": [
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/isp.c",
+      "bytes": 67624,
+      "sha256": "7d0ef80561df4ef058be1deb6698001c35066fab5533f492dec97d2b447bbd50",
+      "excerpts": [
+        {
+          "first": 48,
+          "last": 58,
+          "text": "48: #define MAIN_PIXELS (1280U * 720U)\n49: #define MAIN_BYTES (MAIN_PIXELS * 3U / 2U)\n50: #define SUB_PIXELS (640U * 360U)\n51: #define SUB_BYTES (SUB_PIXELS * 3U / 2U)\n52: #define FRAME_BYTES (MAIN_BYTES + SUB_BYTES)\n53: #define FRAME_ALLOC 0x200000U\n54: #define TABLE_ALLOC 0x4000U\n55: #define REF_ALLOC 0x400000U\n56: #define STAT_BYTES 0x10c0U /* conservative retained 0x2e20 - 0x1d60 extent */\n57: #define STAT_ALLOC 0x3000U\n58: #define BUFFERS_MASK (GENMASK(18, 15) | GENMASK(24, 21))"
+        },
+        {
+          "first": 143,
+          "last": 151,
+          "text": "143: static struct ak_isp_file *ak_isp_file_alloc(struct ak_isp *isp)\n144: {\n145:  struct ak_isp_file *fc=kzalloc(sizeof(*fc),GFP_KERNEL);\n146:  int ret;\n147:  if(!fc)return ERR_PTR(-ENOMEM);\n148:  ret=qc_retirement_open(&isp->receipt_source,&fc->receipt);\n149:  if(ret){kfree(fc);return ERR_PTR(ret);}\n150:  kref_init(&fc->references);fc->isp=isp;kref_get(&isp->references);return fc;\n151: }"
+        },
+        {
+          "first": 215,
+          "last": 243,
+          "text": "215: static int ak_isp_open(struct inode *inode,struct file *file)\n216: {\n217:  struct miscdevice *misc=file->private_data;\n218:  struct ak_isp *isp=container_of(misc,struct ak_isp,misc);\n219:  struct ak_isp_file *fc;int ret=0;\n220:  (void)inode;\n221:  /* Linux6.18 misc_open holds misc_mtx through this callback; registration ref\n222:   * is retained until matching misc_deregister returns. First get is safe. */\n223:  kref_get(&isp->references);mutex_lock(&isp->lock);\n224:  if(!isp->ready || isp->disconnected || isp->quarantined){ret=isp->quarantined?-EIO:-ENODEV;file->private_data=NULL;goto out;}\n225:  fc=ak_isp_file_alloc(isp);if(IS_ERR(fc)){ret=PTR_ERR(fc);file->private_data=NULL;goto out;}\n226:  file->private_data=fc;\n227: out:\n228:  mutex_unlock(&isp->lock);ak_isp_bundle_put(isp);return ret;\n229: }\n230: struct ak_isp_user_copy {unsigned long arg;};\n231: static int ak_isp_receipt_from(void *ctx,struct qc_capture_receipt *q)\n232: {return copy_from_user(q,(void __user *)((struct ak_isp_user_copy *)ctx)->arg,sizeof(*q))?1:0;}\n233: static int ak_isp_receipt_to(void *ctx,const struct qc_capture_receipt *q)\n234: {return copy_to_user((void __user *)((struct ak_isp_user_copy *)ctx)->arg,q,sizeof(*q))?1:0;}\n235: static int ak_isp_receipt_ioctl(struct ak_isp_file *fc,unsigned int cmd,unsigned long arg)\n236: {\n237:  struct ak_isp *isp=fc->isp;struct ak_isp_user_copy a={arg};\n238:  struct qc_retirement_uaccess u={ak_isp_receipt_from,ak_isp_receipt_to,&a};int ret;\n239:  if(cmd==QC_ISP_RECEIPT_ARM && (isp->disconnected || isp->quarantined))return isp->disconnected?-ENODEV:-EIO;\n240:  ret=qc_retirement_ioctl(&fc->receipt,cmd,&u);\n241:  if(!ret && cmd==QC_ISP_RECEIPT_ARM){fc->receipt_visible=true;kref_get(&fc->references);isp->session=fc;}\n242:  if(!ret && cmd==QC_ISP_RECEIPT_ACK){isp->session=NULL;ak_isp_file_put(fc);}\n243:  return ret;"
+        },
+        {
+          "first": 282,
+          "last": 295,
+          "text": "282: static void *qc_isp_alloc(struct ak_isp *isp, size_t bytes, dma_addr_t *dma, gfp_t gfp)\n283: {\n284: \tu64 start = ktime_get_ns();\n285: \tvoid *p = dma_alloc_coherent(isp->dev, bytes, dma, gfp);\n286: \tqc_stage_sample(&isp->telemetry, QC_PHASE_ALLOC, start, ktime_get_ns(), bytes, p ? 0 : -ENOMEM);\n287: \tqc_stage_alloc(&isp->telemetry, bytes, !!p);\n288: \treturn p;\n289: }\n290: static void qc_isp_free(struct ak_isp *isp, size_t bytes, void *p, dma_addr_t dma)\n291: {\n292: \tu64 start = ktime_get_ns();\n293: \tdma_free_coherent(isp->dev, bytes, p, dma);\n294: \tqc_stage_sample(&isp->telemetry, QC_PHASE_FREE, start, ktime_get_ns(), bytes, 0);\n295: \tqc_stage_free(&isp->telemetry, bytes);"
+        },
+        {
+          "first": 473,
+          "last": 495,
+          "text": "473: static ssize_t state_show(struct device *dev, struct device_attribute *attr, char *buf)\n474: {\n475: \tstruct ak_isp *isp = dev_get_drvdata(dev);\n476: \tssize_t n;\n477: \n478:  kref_get(&isp->references);\n479: \tmutex_lock(&isp->lock);\n480:  if(!isp->ready || isp->disconnected || isp->quarantined){int e=isp->quarantined?-EIO:-ENODEV;mutex_unlock(&isp->lock);ak_isp_bundle_put(isp);return e;}\n481: \tn = sysfs_emit(buf, \"result=%d readable=%u status=%08x main_changed=%u sub_changed=%u guard_errors=%u table_dma=%pad frame_dma=%pad ref_dma=%pad main_bytes=%u sub_bytes=%u ctrl=%08x table=%08x order=%08x pll14_before=%08x pll14_after=%08x frame_crc32_bzip2=%08x temporal_nr_disabled=1\\n\",\n482: \t\tisp->last_result, isp->readable, isp->status, isp->changed_main,\n483: \t\tisp->changed_sub, isp->guard_errors, &isp->table_dma, &isp->frame_dma,\n484: \t\t&isp->reference_dma, MAIN_BYTES, SUB_BYTES, isp->observed_ctrl,\n485: \t\tisp->observed_table, isp->observed_order, isp->pll14_before,\n486: \t\tisp->pll14_after, isp->frame_crc);\n487: \tn += sysfs_emit_at(buf, n, \"stream_pre_gate_wait_timeouts=%u\\n\", isp->stream_pre_gate_wait_timeouts);\n488: \tn += sysfs_emit_at(buf, n, \"irq_mode=%u irq=%d irq_frames=%u irq_unexpected=%u\\n\", isp->irq_mode, isp->irq, isp->irq_frames, isp->irq_unexpected);\n489: \tn += sysfs_emit_at(buf, n, \"irq_no_done=%u irq_late_done=%u irq_last_extra_status=%08x\\n\", isp->irq_no_done, isp->irq_late_done, isp->irq_last_extra_status);\n490: \tn += sysfs_emit_at(buf, n, \"queue_mode=%u queue_started=%u queue_held=%u queue_events=%u queue_dropped=%u queue_sequence=%u\\n\", isp->queue_mode, isp->queue_started, isp->queue_held, isp->queue_events, isp->queue_dropped, isp->queue_sequence);\n491: \tn += sysfs_emit_at(buf, n, \"wb_desired_preset=%u wb_table_prepared=%u wb_last_table_preset=%u wb_table_words=%08x/%08x/%08x; table metadata not live MMIO readback\\n\", isp->wb_preset, isp->wb_table_prepared, isp->wb_table_preset, isp->table[0xd34 / 4], isp->table[0xd38 / 4], isp->table[0xd3c / 4]);\n492: \tn += sysfs_emit_at(buf, n, \"wb_desired_words=%08x/%08x/%08x wb_desired_changed_ns=%llu wb_last_prepared_ns=%llu wb_camera_id=2 wb_owner_active=%u; monotonic timestamps, raw offsets only\\n\", isp->wb_desired_words[0], isp->wb_desired_words[1], isp->wb_desired_words[2], (unsigned long long)isp->wb_desired_changed_ns, (unsigned long long)isp->wb_last_prepared_ns, !!isp->stream_owner);\n493: \tmutex_unlock(&isp->lock);\n494:  ak_isp_bundle_put(isp);\n495: \treturn n;"
+        },
+        {
+          "first": 1491,
+          "last": 1524,
+          "text": "1491: /* Concrete manual teardown. No dma/mapping/IRQ devres owns these resources. */\n1492: static void ak_isp_bundle_release(struct kref *ref)\n1493: {\n1494:  struct ak_isp *isp=container_of(ref,struct ak_isp,references);\n1495:  struct device *dev=isp->dev;\n1496:  if(WARN_ON(!isp->disconnected || !isp->dma_retired || isp->session || isp->receipt_source.hold ||\n1497:             isp->receipt_source.open_files || isp->quarantined))return;\n1498:  if(isp->irq_registered){synchronize_irq(isp->irq);free_irq(isp->irq,isp);isp->irq_registered=false;}\n1499:  ak_isp_ring_release_buffers(isp); /* ring[0] aliases frame; helper never frees it */\n1500:  if(isp->reference)qc_isp_free(isp,REF_ALLOC,isp->reference,isp->reference_dma);\n1501:  if(isp->frame)qc_isp_free(isp,FRAME_ALLOC,isp->frame,isp->frame_dma);\n1502:  if(isp->table)qc_isp_free(isp,TABLE_ALLOC,isp->table,isp->table_dma);\n1503:  if(isp->base)iounmap(isp->base);\n1504:  if(isp->region_owned)release_mem_region(isp->region_start,isp->region_bytes);\n1505:  of_node_put(isp->sys_np);\n1506:  mutex_lock(&ak_isp_registry_lock);WARN_ON(ak_isp_live!=isp);ak_isp_live=NULL;mutex_unlock(&ak_isp_registry_lock);\n1507:  kfree(isp);put_device(dev);\n1508: }\n1509: static int ak_isp_probe(struct platform_device *pdev)\n1510: {\n1511:  struct device *dev=&pdev->dev;struct ak_isp *isp;struct resource *res;int ret;\n1512: #if defined(CONFIG_PM) || defined(CONFIG_ARM_DMA_USE_IOMMU) || defined(CONFIG_XEN) || defined(CONFIG_OF_DYNAMIC)\n1513:  return -EOPNOTSUPP; /* no provider/PM/IOMMU lease contract in this prototype */\n1514: #endif\n1515:  if(!of_machine_is_compatible(\"anyka,qc07f\"))return -EOPNOTSUPP;\n1516:  /* dd.c removes DMA ops/range maps after .remove despite get_device(). Only\n1517:   * default direct ARM DMA with no per-device pool/range/CMA is supported. */\n1518:  if(get_dma_ops(dev) || dev->dma_range_map)return -EOPNOTSUPP;\n1519: #ifdef CONFIG_DMA_DECLARE_COHERENT\n1520:  if(dev->dma_mem)return -EOPNOTSUPP;\n1521: #endif\n1522: #ifdef CONFIG_DMA_CMA\n1523:  if(dev->cma_area)return -EOPNOTSUPP;\n1524: #endif"
+        },
+        {
+          "first": 1557,
+          "last": 1571,
+          "text": "1557:  ret=dma_set_mask_and_coherent(dev,DMA_BIT_MASK(32));if(ret)goto fail;\n1558:  isp->table=qc_isp_alloc(isp,TABLE_ALLOC,&isp->table_dma,GFP_KERNEL);\n1559:  isp->frame=qc_isp_alloc(isp,FRAME_ALLOC,&isp->frame_dma,GFP_KERNEL);\n1560:  isp->reference=qc_isp_alloc(isp,REF_ALLOC,&isp->reference_dma,GFP_KERNEL);\n1561:  if(!isp->table||!isp->frame||!isp->reference){ret=-ENOMEM;goto fail;}\n1562:  if(!ak_isp_owned_dma(isp->table_dma,TABLE_ALLOC)||!ak_isp_owned_dma(isp->frame_dma,FRAME_ALLOC)||\n1563:     !ak_isp_owned_dma(isp->reference_dma,REF_ALLOC)){ret=-ERANGE;goto fail;}\n1564:  memcpy(isp->wb_desired_words,&qc07f_isp_reference[0xd34/4],sizeof(isp->wb_desired_words));\n1565:  isp->wb_desired_changed_ns=ktime_get_ns();isp->last_result=-ENODATA;\n1566:  isp->misc.minor=MISC_DYNAMIC_MINOR;isp->misc.name=\"qc07f-frame\";isp->misc.fops=&ak_isp_fops;\n1567:  isp->misc.parent=dev;isp->misc.mode=0400;platform_set_drvdata(pdev,isp);\n1568:  ret=misc_register(&isp->misc);if(ret)goto fail;isp->misc_registered=true;\n1569:  ret=sysfs_create_group(&dev->kobj,&ak_isp_attr_group);if(ret)goto fail_registered;isp->attrs_registered=true;\n1570:  mutex_lock(&isp->lock);isp->ready=true;mutex_unlock(&isp->lock);\n1571:  dev_info(dev,\"resource03 SOURCE PROTOTYPE manual retained bundle, no capture at probe\\n\");return 0;"
+        },
+        {
+          "first": 1580,
+          "last": 1614,
+          "text": "1580: static void ak_isp_remove(struct platform_device *pdev)\n1581: {\n1582:  struct ak_isp *isp=platform_get_drvdata(pdev);\n1583:  if(!isp)return;\n1584:  kref_get(&isp->references);mutex_lock(&isp->lock);isp->disconnected=true;mutex_unlock(&isp->lock);\n1585:  /* Removal of the sysfs group drains active callbacks; do not hold source lock.\n1586:   * misc_deregister serializes its first-kref/open handoff via misc_mtx. */\n1587:  if(isp->attrs_registered){sysfs_remove_group(&pdev->dev.kobj,&ak_isp_attr_group);isp->attrs_registered=false;}\n1588:  if(isp->misc_registered){misc_deregister(&isp->misc);isp->misc_registered=false;}\n1589:  mutex_lock(&isp->lock);\n1590:  if(!isp->dma_retired && !isp->quarantined){isp->stop_reason=QC_STOP_CLOSE;ak_isp_lifecycle_stop(isp,false);}\n1591:  qc_stage_owner(&isp->telemetry,!!isp->stream_owner,0);\n1592:  if(isp->irq_registered)synchronize_irq(isp->irq);\n1593:  /* No worker/timer exists in frozen72; IRQ synchronization plus source mutex\n1594:   * drains every actual async producer. No invented workqueue success callback. */\n1595:  if(!isp->dma_retired)ak_isp_quarantine(isp,isp->quarantine_result);\n1596:  if(isp->session && !isp->session->receipt.open && isp->dma_retired)\n1597:   ak_isp_consume_retired(isp,isp->session);\n1598:  mutex_unlock(&isp->lock);platform_set_drvdata(pdev,NULL);\n1599:  ak_isp_bundle_put(isp); /* registration */\n1600:  ak_isp_bundle_put(isp); /* remove operation */\n1601:  /* Failed reset retains one registry bundle + its own context/IRQ/MMIO/DMA.\n1602:   * There is deliberately no unsafe automatic recovery access after remove. */\n1603: }\n1604: \n1605: static const struct of_device_id ak_isp_match[] = {\n1606: \t{ .compatible = \"anyka,qc07f-isp-diagnostic\" }, { }\n1607: };\n1608: MODULE_DEVICE_TABLE(of, ak_isp_match);\n1609: static struct platform_driver ak_isp_driver = {\n1610: \t.probe = ak_isp_probe,\n1611:  .remove = ak_isp_remove,\n1612: \t.driver = { .name = \"qc07f-isp-diagnostic\", .of_match_table = ak_isp_match,\n1613: \t\t    .suppress_bind_attrs = true },\n1614: };"
+        }
+      ]
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/qc07f_hwenc.c",
+      "bytes": 25109,
+      "sha256": "e97744838acd469772db41fb1fe0907c95fb6e923577cdbffc84ead0141a026f",
+      "excerpts": [
+        {
+          "first": 155,
+          "last": 169,
+          "text": "155: static int prepare_buffers(void)\n156: {\n157:  if(enc.buffers_ready)return 0;\n158:  enc.input=qc_codec_alloc(INPUT_ALLOC,&enc.input_dma,GFP_KERNEL);\n159:  if(!enc.input)return -ENOMEM;\n160:  enc.output=qc_codec_alloc(OUTPUT_ALLOC,&enc.output_dma,GFP_KERNEL);\n161:  if(!enc.output){if(qc_codec_free(INPUT_ALLOC,enc.input,enc.input_dma))enc.input=NULL;return -ENOMEM;}\n162:  if(!own_dma(enc.input_dma,INPUT_ALLOC)||!own_dma(enc.output_dma,OUTPUT_ALLOC)){\n163:   if(qc_codec_free(INPUT_ALLOC,enc.input,enc.input_dma))enc.input=NULL;\n164:   if(qc_codec_free(OUTPUT_ALLOC,enc.output,enc.output_dma))enc.output=NULL;\n165:   return -ERANGE;\n166:  }\n167:  enc.buffers_ready=true;enc.info.input_dma=enc.input_dma;enc.info.output_dma=enc.output_dma;\n168:  memset(enc.input,0xa5,INPUT_ALLOC);memset(enc.output,0xa5,OUTPUT_ALLOC);\n169:  return 0;"
+        },
+        {
+          "first": 240,
+          "last": 265,
+          "text": "240: static int prepare_h264_buffers(void)\n241: {\n242:  unsigned i;\n243:  if(enc.refs[0])return 0;\n244:  /* Retail allocates each reference separately; do not require a4MiB\n245:   * physically contiguous order10 block on the measured40MiB target.\n246:   */\n247:  for(i=0;i<2;i++){\n248:   enc.refs[i]=qc_codec_alloc(0x200000,&enc.refs_dma[i],GFP_KERNEL);\n249:   if(!enc.refs[i]||!own_dma(enc.refs_dma[i],0x200000))goto failed;\n250:  }\n251:  enc.aux=qc_codec_alloc(0x10000,&enc.aux_dma,GFP_KERNEL);\n252:  if(!enc.aux||!own_dma(enc.aux_dma,0x10000))goto failed;\n253:  for(i=0;i<2;i++){\n254:   memset(enc.refs[i],0xa5,0x200000);\n255:   memset(enc.refs[i],0,1280*720);\n256:   memset(enc.refs[i]+0x100000,0,1280*720/2);\n257:  }\n258:  memset(enc.aux,0,0x10000);memset(enc.aux+0xff00,0xa5,0x100);\n259:  return 0;\n260: failed:\n261:   if(enc.aux&&qc_codec_free(0x10000,enc.aux,enc.aux_dma))enc.aux=NULL;\n262:   for(i=0;i<2;i++){\n263:    if(enc.refs[i]&&qc_codec_free(0x200000,enc.refs[i],enc.refs_dma[i]))enc.refs[i]=NULL;\n264:   }\n265:   return -ENOMEM;"
+        },
+        {
+          "first": 278,
+          "last": 303,
+          "text": "278:  if(job->width!=1280||job->height!=720||job->input_bytes!=bytes||\n279:     job->output_capacity<OUTPUT_LIMIT||!job->input_ptr||!job->output_ptr)return -EINVAL;\n280:  result=codec_identity();if(result)return result;\n281:  if(!(enc.info.config&BIT(27))||(enc.info.config&0xfff)<1280)return -EOPNOTSUPP;\n282:  stamp=ktime_get_ns();\n283:  result=prepare_buffers();\n284:  qc_stage_sample(qc_codec_trace(),QC_PHASE_PREPARE,stamp,ktime_get_ns(),0,result);\n285:  if(result)return result;\n286:  stamp=ktime_get_ns();\n287:  result=prepare_h264_buffers();\n288:  qc_stage_sample(qc_codec_trace(),QC_PHASE_PREPARE,stamp,ktime_get_ns(),0,result);\n289:  if(result)return result;\n290:  if(enc.guarded_input_bytes!=bytes){memset(enc.input+bytes,0xa5,INPUT_ALLOC-bytes);enc.guarded_input_bytes=bytes;}\n291:  /* Retail EncAsicMemAlloc_V2: MB*256 luma, MB*128 chroma;\n292:   * two separate luma/chroma slots, with owned guard gaps. CAVLC selected,\n293:   * CABAC/MV inactive addresses still resolve inside owned auxiliary RAM.\n294:   */\n295:  /* IDR has no previous-frame dependency. Reference allocation is initialized\n296:   * once; hardware-reconstructed contents may persist between independentIDRs.\n297:   * All ref/aux guard gaps are still validated before delivering each frame.\n298:   */\n299:  stamp=ktime_get_ns();\n300:  if(copy_from_user(enc.input,(void __user *)(unsigned long)job->input_ptr,bytes)){\n301:   qc_stage_sample(qc_codec_trace(),QC_PHASE_PIXEL_COPY,stamp,ktime_get_ns(),bytes,-EFAULT);return -EFAULT;\n302:  }\n303:  qc_stage_sample(qc_codec_trace(),QC_PHASE_PIXEL_COPY,stamp,ktime_get_ns(),bytes,0);"
+        },
+        {
+          "first": 321,
+          "last": 359,
+          "text": "321:  enc.dma_uncertain=true;\n322:  dma_wmb();for(i=1;i<63;i++)writel(regs[i],enc.regs+i*4);\n323:  writel(regs[14]|BIT(0),enc.regs+0x38);\n324:  program_end=ktime_get_ns();\n325:  wait_start=ktime_get_ns();\n326:  result=readl_poll_timeout(enc.regs+4,status,status&(BIT(2)|BIT(3)|BIT(4)|BIT(5)),100,1000000);\n327:  wait_end=ktime_get_ns();\n328:  bits=readl(enc.regs+0x60);enc.info.control=readl(enc.regs+0x38);\n329:  writel(enc.info.control&~BIT(0),enc.regs+0x38);\n330:  reset_result=codec_reset_retirement();\n331:  /* Stop/control and the original reset attempt precede bounded aggregation.\n332:   * Failure still skips all guards/copies as before; it is not retirement proof.\n333:   */\n334:  qc_stage_sample(qc_codec_trace(),QC_PHASE_PROGRAM,program_start,program_end,0,0);\n335:  qc_stage_sample(qc_codec_trace(),QC_PHASE_FRAME_WAIT,wait_start,wait_end,0,result);\n336:  if(reset_result)return -EIO;\n337:  dma_rmb();job->status=status;enc.info.status=status;enc.info.last_bytes=0;\n338:  stamp=ktime_get_ns();\n339:  guards=camera_guard_errors_ram(enc.input+bytes,INPUT_ALLOC-bytes);\n340:  guards+=camera_guard_errors_ram(enc.output+OUTPUT_LIMIT,OUTPUT_ALLOC-OUTPUT_LIMIT);\n341:  for(i=0;i<2;i++){\n342:   guards+=camera_guard_errors_ram(enc.refs[i]+pixels,0x100000-pixels);\n343:   guards+=camera_guard_errors_ram(enc.refs[i]+0x100000+pixels/2,0x100000-pixels/2);\n344:  }\n345:  guards+=camera_guard_errors_ram(enc.aux+0xff00,0x100);\n346:  enc.info.guard_errors=guards;\n347:  qc_stage_sample(qc_codec_trace(),QC_PHASE_GUARDS,stamp,ktime_get_ns(),\n348:   INPUT_ALLOC-bytes+OUTPUT_ALLOC-OUTPUT_LIMIT+2*(0x100000-pixels+0x100000-pixels/2)+0x100,guards?-EOVERFLOW:0);\n349:  qc_codec_legacy_trace(\"qc07f-hwenc: H264-%s num=%u result=%d status=%08x bits=%u guards=%u ref0=%pad ref1=%pad aux=%pad\\n\",idr?\"IDR\":\"P\",frame_num,result,status,bits,guards,&enc.refs_dma[0],&enc.refs_dma[1],&enc.aux_dma);\n350:  if(guards){enc.guard_poisoned=true;return -EOVERFLOW;}\n351:  if(result)return result;\n352:  if((status&(BIT(3)|BIT(4)|BIT(5)))||!(status&BIT(2))||!bits||(bits&7)||bits/8>OUTPUT_LIMIT)return -EIO;\n353:  job->output_bytes=bits/8;enc.info.last_bytes=job->output_bytes;\n354:  stamp=ktime_get_ns();\n355:  if(copy_to_user((void __user *)(unsigned long)job->output_ptr,enc.output,job->output_bytes)){\n356:   qc_stage_sample(qc_codec_trace(),QC_PHASE_OUTPUT_COPY,stamp,ktime_get_ns(),job->output_bytes,-EFAULT);return -EFAULT;\n357:  }\n358:  qc_stage_sample(qc_codec_trace(),QC_PHASE_OUTPUT_COPY,stamp,ktime_get_ns(),job->output_bytes,0);\n359:  return 0;"
+        },
+        {
+          "first": 364,
+          "last": 374,
+          "text": "364:  if(command==QC_HWENC_LIFETIME_QUERY){\n365:   struct qc_hwenc_lifetime query={0};\n366:   if(mutex_lock_interruptible(&enc.lock))return -ERESTARTSYS;\n367:   query.version=1;query.struct_bytes=sizeof(query);\n368:   query.quarantined=enc.quarantined;query.dma_uncertain=enc.dma_uncertain;\n369:   query.guard_poisoned=enc.guard_poisoned;query.reset_error=enc.reset_error;\n370:   query.failed_reset_step=enc.failed_reset_step;query.fault_session=enc.fault_session;\n371:   query.session_sequence=enc.session_sequence;query.live_bytes=qc_codec_trace()->live_bytes;\n372:   result=copy_to_user((void __user *)argument,&query,sizeof(query))?-EFAULT:0;\n373:   mutex_unlock(&enc.lock);return result;\n374:  }"
+        },
+        {
+          "first": 429,
+          "last": 457,
+          "text": "429: static int encoder_release(struct inode *inode,struct file *file)\n430: {\n431:  mutex_lock(&enc.lock);\n432:  if(enc.h264_owner==file){\n433:   qc_stage_begin(qc_codec_trace(),QC_STAGE_END,ktime_get_ns());\n434:   enc.h264_owner=NULL;\n435:   qc_stage_owner(qc_codec_trace(),!!enc.h264_owner,0);\n436:   qc_stage_end(qc_codec_trace(),0,0,ktime_get_ns());\n437:  }\n438:  /* File pointer must not survive release. Fault identity is a non-reused\n439:   * numeric session, independent of this allocation and retained forever.\n440:   * Synchronous jobs retire before returning or quarantine; no close retry.\n441:   */\n442:  kfree(file->private_data);file->private_data=NULL;\n443:  mutex_unlock(&enc.lock);return 0;\n444: }\n445: static int encoder_open(struct inode *inode,struct file *file)\n446: {\n447:  struct qc_encoder_session *session;\n448:  int result=0;\n449:  session=kzalloc(sizeof(*session),GFP_KERNEL);if(!session)return -ENOMEM;\n450:  mutex_lock(&enc.lock);\n451:  if(enc.quarantined)result=-EIO;\n452:  else if(enc.guard_poisoned)result=-EOVERFLOW;\n453:  else if(enc.session_sequence==~(u64)0)result=-EOVERFLOW;\n454:  else{session->identity=++enc.session_sequence;file->private_data=session;}\n455:  mutex_unlock(&enc.lock);\n456:  if(result)kfree(session);\n457:  return result;"
+        },
+        {
+          "first": 478,
+          "last": 504,
+          "text": "478: static int __init encoder_init(void)\n479: {\n480:  int result;\n481:  struct qc_stage_context *telemetry;\n482:  mutex_init(&enc.lock);\n483:  result=codec_get_static_syscon();if(result)return result;\n484:  if(regmap_read(enc.sys,0x1c,&enc.original_gate)||regmap_read(enc.sys,0x20,&enc.original_reset)){result=-EIO;goto node;}\n485:  if(!request_mem_region(CODEC_BASE,CODEC_BYTES,\"qc07f-hwenc\")){result=-EBUSY;goto node;}\n486:  enc.regs=ioremap(CODEC_BASE,CODEC_BYTES);if(!enc.regs){result=-ENOMEM;goto release;}\n487:  enc.pdev=platform_device_register_simple(\"qc07f-hwenc-dma\",-1,NULL,0);if(IS_ERR(enc.pdev)){result=PTR_ERR(enc.pdev);goto unmap;}\n488:  telemetry=kzalloc(sizeof(*telemetry),GFP_KERNEL);\n489:  if(!telemetry){result=-ENOMEM;goto device;}\n490:  qc_stage_codec_coverage(telemetry);\n491:  dev_set_drvdata(&enc.pdev->dev,telemetry);\n492:  enc.pdev->dev.coherent_dma_mask=DMA_BIT_MASK(32);enc.pdev->dev.dma_mask=&enc.pdev->dev.coherent_dma_mask;\n493:  result=dma_set_mask_and_coherent(&enc.pdev->dev,DMA_BIT_MASK(32));if(result)goto trace;\n494:  enc.misc.minor=MISC_DYNAMIC_MINOR;enc.misc.name=\"qc07f-encoder\";enc.misc.fops=&encoder_ops;enc.misc.mode=0600;\n495:  result=misc_register(&enc.misc);if(result)goto trace;\n496:  pr_info(\"qc07f-hwenc: explicit owned codec20020000..20020500; no DMA/clock/reset/start at probe\\n\");return 0;\n497: trace:kfree(telemetry);dev_set_drvdata(&enc.pdev->dev,NULL);\n498: device:platform_device_unregister(enc.pdev);enc.pdev=NULL;\n499: unmap:iounmap(enc.regs);\n500: release:release_mem_region(CODEC_BASE,CODEC_BYTES);enc.regs=NULL;\n501: node:of_node_put(enc.sys_np);enc.sys_np=NULL;return result;\n502: }\n503: /* No module_exit: code/provider/device/mappings/backing remain until reset. */\n504: device_initcall(encoder_init);"
+        }
+      ]
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/stage-telemetry.h",
+      "bytes": 8294,
+      "sha256": "3652ae90114c7ce303047497e29c80f3d14c8e1855374f442397accddcfa89cb",
+      "excerpts": [
+        {
+          "first": 108,
+          "last": 128,
+          "text": "108: static inline void qc_stage_alloc(struct qc_stage_context *c,__u64 bytes,__u32 success)\n109: {\n110:  c->alloc_attempts=qc_stage_add(c,c->alloc_attempts,1);\n111:  c->requested_bytes=qc_stage_add(c,c->requested_bytes,bytes); /* includes failed requests */\n112:  if(!success){c->alloc_failures=qc_stage_add(c,c->alloc_failures,1);return;}\n113:  c->alloc_successes=qc_stage_add(c,c->alloc_successes,1);\n114:  c->live_bytes=qc_stage_add(c,c->live_bytes,bytes);\n115:  if(c->live_bytes>c->peak_bytes)c->peak_bytes=c->live_bytes;\n116: }\n117: static inline void qc_stage_free(struct qc_stage_context *c,__u64 bytes)\n118: {\n119:  c->free_calls=qc_stage_add(c,c->free_calls,1);\n120:  c->freed_bytes=qc_stage_add(c,c->freed_bytes,bytes);\n121:  if(bytes>c->live_bytes){c->flags|=QC_STAGE_F_LEDGER_ERROR;return;}\n122:  c->live_bytes-=bytes;\n123: }\n124: static inline void qc_stage_retirement(struct qc_stage_context *c,int result)\n125: {\n126:  if(!result)return;\n127:  c->retire_failures=qc_stage_add(c,c->retire_failures,1);c->flags|=QC_STAGE_F_RETIRE_FAILED;\n128:  if(c->active)c->active_record.retirement_failed=1;"
+        },
+        {
+          "first": 130,
+          "last": 155,
+          "text": "130: static inline int qc_stage_query(const struct qc_stage_context *c,struct qc_stage_query *q)\n131: {\n132:  const struct qc_stage_stat *s;const struct qc_stage_last *last;\n133:  __u32 kind=q->kind,phase=q->phase,record=q->record;\n134:  if(q->version!=QC_STAGE_VERSION||q->struct_bytes!=sizeof(*q)||q->reserved||\n135:     kind>=QC_STAGE_KINDS||phase>=QC_STAGE_PHASES||record>1)return -1;\n136:  memset(q,0,sizeof(*q));q->version=QC_STAGE_VERSION;q->struct_bytes=sizeof(*q);\n137:  q->kind=kind;q->phase=phase;q->record=record;q->clock_source=QC_STAGE_CLOCK_MONOTONIC_KTIME_NS;\n138:  last=record?&c->last_failure:&c->last;\n139:  q->flags=c->flags;q->supported_mask=c->supported_mask[kind];s=&c->stat[kind][phase];\n140:  q->samples=s->samples;q->failed_samples=s->failed;q->total_ns=s->total_ns;\n141:  q->min_ns=s->min_ns;q->max_ns=s->max_ns;q->work_bytes=s->bytes;\n142:  q->failed_total_ns=s->failed_ns;\n143:  q->operation_count=c->operations;q->operation_ok=c->ok;q->operation_failed=c->failed;q->delivered=c->delivered;\n144:  q->last_operation=last->operation;q->last_owner_generation=last->owner_generation;\n145:  q->last_start_ns=last->start_ns;q->last_end_ns=last->end_ns;q->last_phase_mask=last->mask;\n146:  q->last_phase_ns=last->phase_ns[phase];q->last_phase_bytes=last->phase_bytes[phase];\n147:  q->last_phase_start_ns=last->phase_start_ns[phase];q->last_phase_end_ns=last->phase_end_ns[phase];\n148:  q->last_result=last->result;q->last_kind=last->kind;q->owner_active=c->owner_active;\n149:  q->last_retirement_failed=last->retirement_failed;\n150:  q->allocation_attempts=c->alloc_attempts;q->allocation_failures=c->alloc_failures;\n151:  q->allocation_successes=c->alloc_successes;q->free_calls=c->free_calls;\n152:  q->live_requested_bytes=c->live_bytes;q->peak_requested_bytes=c->peak_bytes;\n153:  q->total_requested_bytes=c->requested_bytes;q->total_freed_bytes=c->freed_bytes;q->retire_failures=c->retire_failures;\n154:  q->owner_generation=c->owner_generation;\n155:  return 0;"
+        }
+      ]
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/stage-telemetry-uapi.h",
+      "bytes": 2203,
+      "sha256": "6bab6082882a574ad7a98613c68a64225147dbfe9773ed73bd6e5b0f70d7a9e7",
+      "excerpts": [
+        {
+          "first": 25,
+          "last": 47,
+          "text": "25: /* Query one bounded aggregate + last operation, not a percentile/trace ring.\n26:  * Input: version=1, struct_bytes=sizeof, kind/phase in range, record=0 latest\n27:  * or1 latest failed operation, reserved=0.\n28:  * All remaining fields output. Fixed u32/aligned-u64 ABI; no address input.\n29:  */\n30: struct qc_stage_query {\n31:  __u32 version,struct_bytes,kind,phase,record,clock_source,flags,supported_mask;\n32:  __aligned_u64 samples,failed_samples,total_ns,min_ns,max_ns,work_bytes;\n33:  __aligned_u64 failed_total_ns;\n34:  __aligned_u64 operation_count,operation_ok,operation_failed,delivered;\n35:  __aligned_u64 last_operation,last_owner_generation,last_start_ns,last_end_ns;\n36:  __aligned_u64 last_phase_mask,last_phase_ns,last_phase_bytes;\n37:  __aligned_u64 last_phase_start_ns,last_phase_end_ns;\n38:  __s32 last_result;\n39:  __u32 last_kind,owner_active,last_retirement_failed;\n40:  __u32 reserved;\n41:  __aligned_u64 allocation_attempts,allocation_failures,allocation_successes,free_calls;\n42:  __aligned_u64 live_requested_bytes,peak_requested_bytes,total_requested_bytes,total_freed_bytes;\n43:  __aligned_u64 retire_failures;\n44:  __aligned_u64 owner_generation;\n45: };\n46: #define QC_ISP_STAGE_QUERY _IOWR('I',0x7f,struct qc_stage_query)\n47: #define QC_HWENC_STAGE_QUERY _IOWR('Q',0x65,struct qc_stage_query)"
+        }
+      ]
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/capture-retirement.c",
+      "bytes": 6598,
+      "sha256": "22bd93661c0a80613dbfa224b8f1987ceafe0990ba06b1a4727a7431a0d18c54",
+      "excerpts": [
+        {
+          "first": 42,
+          "last": 79,
+          "text": "42: int qc_retirement_ioctl(struct qc_retirement_file *f,unsigned long cmd,const struct qc_retirement_uaccess *u)\n43: {\n44:  struct qc_capture_receipt q;\n45:  if(!valid(f)||!u||!u->from_user||!u->to_user)return -EINVAL;\n46:  if(!f->open)return -EBADF;\n47:  if(cmd!=QC_ISP_RECEIPT_BIND&&cmd!=QC_ISP_RECEIPT_ARM&&cmd!=QC_ISP_RECEIPT_QUERY&&cmd!=QC_ISP_RECEIPT_ACK)return -ENOTTY;\n48:  if(u->from_user(u->context,&q))return -EFAULT;\n49:  if(!input_clean(&q))return -EINVAL;\n50:  if(cmd==QC_ISP_RECEIPT_BIND){\n51:   if(q.source_instance||q.file_instance||q.generation)return -EINVAL;\n52:   reply(f,&q);return u->to_user(u->context,&q)?-EFAULT:0;\n53:  }\n54:  if(!binding(f,&q))return -ESTALE;\n55:  if(cmd==QC_ISP_RECEIPT_ARM){\n56:   if(q.generation)return -EINVAL;\n57:   if(f->state!=QC_RECEIPT_NONE||f->source->hold)return -EBUSY;\n58:   if(f->source->next_generation==QC_U64_MAX)return -EOVERFLOW;\n59:   __u64 generation=++f->source->next_generation; /* never recycle even on EFAULT */\n60:    reply(f,&q);q.generation=generation;q.state=QC_RECEIPT_ARMED;\n61:    q.reason=QC_STOP_NONE;q.stop_result=0;q.stopped_ns=0;\n62:   /* Publish generation BEFORE any hardware begin. A bad reply must not reserve\n63:    * the owner or run/reset hardware. Begin subsequently needs the committed ARM.\n64:    */\n65:   if(u->to_user(u->context,&q))return -EFAULT;\n66:    f->generation=generation;f->state=QC_RECEIPT_ARMED;\n67:    f->reason=QC_STOP_NONE;f->stop_result=0;f->stopped_ns=0;\n68:    f->source->hold=f;return 0;\n69:  }\n70:  if(!held(f)||q.generation!=f->generation)return -ESTALE;\n71:  if(cmd==QC_ISP_RECEIPT_QUERY){\n72:   reply(f,&q);return u->to_user(u->context,&q)?-EFAULT:0; /* NEVER resets/consumes */\n73:  }\n74:  if(f->state!=QC_RECEIPT_RETIRED||f->stop_result)return -EBUSY;\n75:  /* ACK only consumes a proven receipt. Copy-from and validation precede commit;\n76:   * no copy-to or hardware side effect. A successor invalidates this old key.\n77:   */\n78:  f->source->hold=NULL;f->generation=0;f->state=QC_RECEIPT_NONE;\n79:  f->reason=QC_STOP_NONE;f->stop_result=0;f->stopped_ns=0;return 0;"
+        }
+      ]
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/capture-retirement-uapi.h",
+      "bytes": 1610,
+      "sha256": "887e32a3a9201812be3bd882826d2bc88a518b613a11793c3da862a39458dc39",
+      "excerpts": [
+        {
+          "first": 1,
+          "last": 33,
+          "text": "1: /* SPDX-License-Identifier: GPL-2.0-only */\n2: #ifndef QC_CAPTURE_RETIREMENT_UAPI_H\n3: #define QC_CAPTURE_RETIREMENT_UAPI_H\n4: #include <linux/types.h>\n5: #include <linux/ioctl.h>\n6: #define QC_CAPTURE_RECEIPT_VERSION 1U\n7: enum qc_capture_receipt_state {\n8:  QC_RECEIPT_NONE, QC_RECEIPT_ARMED, QC_RECEIPT_STARTING, QC_RECEIPT_ACTIVE,\n9:  QC_RECEIPT_DRAINING, QC_RECEIPT_RETIRED, QC_RECEIPT_UNCERTAIN\n10: };\n11: enum qc_capture_stop_reason {QC_STOP_NONE, QC_STOP_END, QC_STOP_EXPIRY, QC_STOP_ERROR, QC_STOP_CLOSE};\n12: /* Proposed additive, fixed-size UAPI. Boot/source/file/generation identities are\n13:  * counters backed by retained objects, NOT pointers, FD numbers or auth tokens.\n14:  * Input: version1, exact key (zero key for BIND), all output/reserved words zero.\n15:  * ARM requires bound source/file, generation0; output is a RESERVED generation,\n16:  * never a claim of DMA retirement. Only QUERY state RETIRED / stop_result0 after\n17:  * a successful syscall is proof of the separately executed stop/reset boundary.\n18:  * Do not inspect a partially copied reply after any nonzero syscall result.\n19:  */\n20: struct qc_capture_receipt {\n21:  __u32 version,reserved;\n22:  __aligned_u64 source_instance,file_instance,generation;\n23:  __u32 state,reason;\n24:  __s32 stop_result;\n25:  __u32 reserved2;\n26:  __aligned_u64 stopped_ns;\n27: };\n28: /* Proposed numbers, not installed in the live kernel72 header. */\n29: #define QC_ISP_RECEIPT_BIND  _IOWR('I',0x81,struct qc_capture_receipt)\n30: #define QC_ISP_RECEIPT_ARM   _IOWR('I',0x82,struct qc_capture_receipt)\n31: #define QC_ISP_RECEIPT_QUERY _IOWR('I',0x83,struct qc_capture_receipt)\n32: #define QC_ISP_RECEIPT_ACK   _IOW('I',0x84,struct qc_capture_receipt)\n33: #endif"
+        }
+      ]
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/isp-stream.h",
+      "bytes": 3493,
+      "sha256": "db8ca50e94c811757700ebeb0f7f8e809fa2981dd83c7ad97a8a397470ac1d71",
+      "excerpts": [
+        {
+          "first": 1,
+          "last": 69,
+          "text": "1: /* SPDX-License-Identifier: GPL-2.0-only */\n2: #ifndef QC07F_ISP_STREAM_H\n3: #define QC07F_ISP_STREAM_H\n4: #include <linux/types.h>\n5: #include <linux/ioctl.h>\n6: /* Exclusive gated continuousRGB input; not zero-copy/V4L2 or a free-running\n7:  * ring. All addresses are userspace destinations, never physical DMA values.\n8:  */\n9: struct qc_isp_next {\n10:  __u32 bytes,user_ptr,sequence,status,guard_errors,crc32_bzip2;\n11: };\n12: #define QC_ISP_BEGIN _IO('I',0x71)\n13: #define QC_ISP_NEXT _IOWR('I',0x72,struct qc_isp_next)\n14: #define QC_ISP_END _IO('I',0x73)\n15: /* Idle-only measuredretailYUV-effect UVgain presets, no illumination/GPIO. */\n16: struct qc_isp_colour {__u32 monochrome,uv_gain_readback;};\n17: #define QC_ISP_COLOUR _IOWR('I',0x74,struct qc_isp_colour)\n18: #define QC_ISP_BEGIN_IRQ _IO('I',0x77)\n19: struct qc_isp_ring_test {\n20:  __u32 frames,slot,user_ptr,bytes,completed,irq_status[16],irq_control[16],irq_elapsed_ms[16],slot_crc[4],slot_guards[4];\n21:  __u32 stat_guards[4],main_changed[4],sub_changed[4];\n22:  /* Explicit bounded held-slot diagnostic, never a DMA physical-address API. */\n23:  __u32 hold_selected,held_pre_crc,held_post_crc,held_final_crc,held_shadow_crc;\n24:  /* IRQ progress spans the pre-CRC/copy/post-CRC bracket, not bare memcpy. */\n25:  __u32 held_bracket_start_events,held_bracket_end_events,held_active_bracket;\n26:  /* Negative diagnostic changes only CPU shadow, never sensor/DMA pixels. */\n27:  __u32 corrupt_shadow;\n28: };\n29: #define QC_ISP_RING_TEST _IOWR('I',0x78,struct qc_isp_ring_test)\n30: /* Experimental copied-frame queue. No exported mappings or physical-address\n31:  * input. At most one source lease; callers validate delivered CRC and RETURN\n32:  * its exact token before NEXT. STOP invalidates tokens and retires DMA.\n33:  */\n34: struct qc_isp_queue_frame {\n35:  __u64 token;\n36:  __u32 bytes,user_ptr,slot,status,guard_errors,crc32_bzip2,sequence,irq_events,dropped;\n37: };\n38: #define QC_ISP_QUEUE_BEGIN _IO('I',0x79)\n39: #define QC_ISP_QUEUE_NEXT _IOWR('I',0x7a,struct qc_isp_queue_frame)\n40: #define QC_ISP_QUEUE_RETURN _IOW('I',0x7b,struct qc_isp_queue_frame)\n41: #define QC_ISP_QUEUE_END _IO('I',0x7c)\n42: /* Idle-only WB comparison, not AWB or arbitrary registers. GET reports desired\n43:  * next-table fields, never claims live MMIO readback. set=1 changes RAM state;\n44:  * preset=0 restores snapshot,1=retained first SC1346 pack's manual fields.\n45:  * GET may report CUSTOM (2); legacy SET still accepts only 0/1.\n46:  */\n47: struct qc_isp_whitebalance {__u32 set,preset,gain[3],offset_raw[3];};\n48: #define QC_ISP_WHITEBALANCE _IOWR('I',0x7d,struct qc_isp_whitebalance)\n49: #define QC_ISP_WB_SNAPSHOT 0U\n50: #define QC_ISP_WB_RETAINED_MANUAL 1U\n51: #define QC_ISP_WB_CUSTOM 2U\n52: #define QC_ISP_WB_MANUAL_VERSION 1U\n53: /* Idle-only RAM desired configuration. GET remains available with any owner.\n54:  * SET gains=1..4095, offset_raw=0..1023; signed semantics NOT qualified.\n55:  * Inputs: version=1, set=0/1, reserved=0; gains/offsets used only by SET.\n56:  * All other fields are output. last_prepared_* are valid only when\n57:  * table_prepared=1: RAM table metadata, NOT applied/live MMIO confirmation.\n58:  * Timestamps are CLOCK_MONOTONIC nanoseconds since this kernel boot.\n59:  * camera_id=2 is the stable QC07F inventory ID. No register/address API.\n60:  */\n61: struct qc_isp_whitebalance_manual {\n62:  __u32 version,set,gain[3],offset_raw[3],preset;\n63:  __u32 table_prepared,last_prepared_preset;\n64:  __u32 last_prepared_gain[3],last_prepared_offset_raw[3];\n65:  __u32 camera_id,owner_active,reserved;\n66:  __aligned_u64 desired_changed_ns,last_prepared_ns;\n67: };\n68: #define QC_ISP_WHITEBALANCE_MANUAL _IOWR('I',0x7e,struct qc_isp_whitebalance_manual)\n69: #endif"
+        }
+      ]
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mm/dma-mapping.c",
+      "bytes": 46035,
+      "sha256": "eacfc0c0a847cba87ea8460313337bf769d49a03a1e0dcd0df8cfe0add5282a5",
+      "excerpts": [
+        {
+          "first": 391,
+          "last": 424,
+          "text": "391: static void *__alloc_from_contiguous(struct device *dev, size_t size,\n392: \t\t\t\t     pgprot_t prot, struct page **ret_page,\n393: \t\t\t\t     const void *caller, bool want_vaddr,\n394: \t\t\t\t     int coherent_flag, gfp_t gfp)\n395: {\n396: \tunsigned long order = get_order(size);\n397: \tsize_t count = size >> PAGE_SHIFT;\n398: \tstruct page *page;\n399: \tvoid *ptr = NULL;\n400: \n401: \tpage = dma_alloc_from_contiguous(dev, count, order, gfp & __GFP_NOWARN);\n402: \tif (!page)\n403: \t\treturn NULL;\n404: \n405: \t__dma_clear_buffer(page, size, coherent_flag);\n406: \n407: \tif (!want_vaddr)\n408: \t\tgoto out;\n409: \n410: \tif (PageHighMem(page)) {\n411: \t\tptr = dma_common_contiguous_remap(page, size, prot, caller);\n412: \t\tif (!ptr) {\n413: \t\t\tdma_release_from_contiguous(dev, page, count);\n414: \t\t\treturn NULL;\n415: \t\t}\n416: \t} else {\n417: \t\t__dma_remap(page, size, prot);\n418: \t\tptr = page_address(page);\n419: \t}\n420: \n421:  out:\n422: \t*ret_page = page;\n423: \treturn ptr;\n424: }"
+        },
+        {
+          "first": 533,
+          "last": 599,
+          "text": "533: static void *__dma_alloc(struct device *dev, size_t size, dma_addr_t *handle,\n534: \t\t\t gfp_t gfp, pgprot_t prot, bool is_coherent,\n535: \t\t\t unsigned long attrs, const void *caller)\n536: {\n537: \tu64 mask = min_not_zero(dev->coherent_dma_mask, dev->bus_dma_limit);\n538: \tstruct page *page = NULL;\n539: \tvoid *addr;\n540: \tbool allowblock, cma;\n541: \tstruct arm_dma_buffer *buf;\n542: \tstruct arm_dma_alloc_args args = {\n543: \t\t.dev = dev,\n544: \t\t.size = PAGE_ALIGN(size),\n545: \t\t.gfp = gfp,\n546: \t\t.prot = prot,\n547: \t\t.caller = caller,\n548: \t\t.want_vaddr = ((attrs & DMA_ATTR_NO_KERNEL_MAPPING) == 0),\n549: \t\t.coherent_flag = is_coherent ? COHERENT : NORMAL,\n550: \t};\n551: \n552: #ifdef CONFIG_DMA_API_DEBUG\n553: \tu64 limit = (mask + 1) & ~mask;\n554: \tif (limit && size >= limit) {\n555: \t\tdev_warn(dev, \"coherent allocation too big (requested %#x mask %#llx)\\n\",\n556: \t\t\tsize, mask);\n557: \t\treturn NULL;\n558: \t}\n559: #endif\n560: \n561: \tbuf = kzalloc(sizeof(*buf),\n562: \t\t      gfp & ~(__GFP_DMA | __GFP_DMA32 | __GFP_HIGHMEM));\n563: \tif (!buf)\n564: \t\treturn NULL;\n565: \n566: \tif (mask < 0xffffffffULL)\n567: \t\tgfp |= GFP_DMA;\n568: \n569: \targs.gfp = gfp;\n570: \n571: \t*handle = DMA_MAPPING_ERROR;\n572: \tallowblock = gfpflags_allow_blocking(gfp);\n573: \tcma = allowblock ? dev_get_cma_area(dev) : NULL;\n574: \n575: \tif (cma)\n576: \t\tbuf->allocator = &cma_allocator;\n577: \telse if (is_coherent)\n578: \t\tbuf->allocator = &simple_allocator;\n579: \telse if (allowblock)\n580: \t\tbuf->allocator = &remap_allocator;\n581: \telse\n582: \t\tbuf->allocator = &pool_allocator;\n583: \n584: \taddr = buf->allocator->alloc(&args, &page);\n585: \n586: \tif (page) {\n587: \t\tunsigned long flags;\n588: \n589: \t\t*handle = phys_to_dma(dev, page_to_phys(page));\n590: \t\tbuf->virt = args.want_vaddr ? addr : page;\n591: \n592: \t\tspin_lock_irqsave(&arm_dma_bufs_lock, flags);\n593: \t\tlist_add(&buf->list, &arm_dma_bufs);\n594: \t\tspin_unlock_irqrestore(&arm_dma_bufs_lock, flags);\n595: \t} else {\n596: \t\tkfree(buf);\n597: \t}\n598: \n599: \treturn args.want_vaddr ? addr : page;"
+        },
+        {
+          "first": 1811,
+          "last": 1823,
+          "text": "1811: void *arch_dma_alloc(struct device *dev, size_t size, dma_addr_t *dma_handle,\n1812: \t\tgfp_t gfp, unsigned long attrs)\n1813: {\n1814: \treturn __dma_alloc(dev, size, dma_handle, gfp,\n1815: \t\t\t   __get_dma_pgprot(attrs, PAGE_KERNEL), false,\n1816: \t\t\t   attrs, __builtin_return_address(0));\n1817: }\n1818: \n1819: void arch_dma_free(struct device *dev, size_t size, void *cpu_addr,\n1820: \t\tdma_addr_t dma_handle, unsigned long attrs)\n1821: {\n1822: \t__arm_dma_free(dev, size, cpu_addr, dma_handle, attrs, false);\n1823: }"
+        }
+      ]
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/kernel/dma/mapping.c",
+      "bytes": 30537,
+      "sha256": "715f7fe354130e1f5de083f58d60725da0d82ff2d120dccb441fc01058b52f73",
+      "excerpts": [
+        {
+          "first": 628,
+          "last": 668,
+          "text": "628: void *dma_alloc_attrs(struct device *dev, size_t size, dma_addr_t *dma_handle,\n629: \t\tgfp_t flag, unsigned long attrs)\n630: {\n631: \tconst struct dma_map_ops *ops = get_dma_ops(dev);\n632: \tvoid *cpu_addr;\n633: \n634: \tWARN_ON_ONCE(!dev->coherent_dma_mask);\n635: \n636: \t/*\n637: \t * DMA allocations can never be turned back into a page pointer, so\n638: \t * requesting compound pages doesn't make sense (and can't even be\n639: \t * supported at all by various backends).\n640: \t */\n641: \tif (WARN_ON_ONCE(flag & __GFP_COMP))\n642: \t\treturn NULL;\n643: \n644: \tif (dma_alloc_from_dev_coherent(dev, size, dma_handle, &cpu_addr)) {\n645: \t\ttrace_dma_alloc(dev, cpu_addr, *dma_handle, size,\n646: \t\t\t\tDMA_BIDIRECTIONAL, flag, attrs);\n647: \t\treturn cpu_addr;\n648: \t}\n649: \n650: \t/* let the implementation decide on the zone to allocate from: */\n651: \tflag &= ~(__GFP_DMA | __GFP_DMA32 | __GFP_HIGHMEM);\n652: \n653: \tif (dma_alloc_direct(dev, ops)) {\n654: \t\tcpu_addr = dma_direct_alloc(dev, size, dma_handle, flag, attrs);\n655: \t} else if (use_dma_iommu(dev)) {\n656: \t\tcpu_addr = iommu_dma_alloc(dev, size, dma_handle, flag, attrs);\n657: \t} else if (ops->alloc) {\n658: \t\tcpu_addr = ops->alloc(dev, size, dma_handle, flag, attrs);\n659: \t} else {\n660: \t\ttrace_dma_alloc(dev, NULL, 0, size, DMA_BIDIRECTIONAL, flag,\n661: \t\t\t\tattrs);\n662: \t\treturn NULL;\n663: \t}\n664: \n665: \ttrace_dma_alloc(dev, cpu_addr, *dma_handle, size, DMA_BIDIRECTIONAL,\n666: \t\t\tflag, attrs);\n667: \tdebug_dma_alloc_coherent(dev, size, *dma_handle, cpu_addr, attrs);\n668: \treturn cpu_addr;"
+        }
+      ]
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/kernel/dma/direct.c",
+      "bytes": 18296,
+      "sha256": "6015f4c3e9523c5a1c312c63f7e953c23020b9230aa933b0173f847ecbdf8037",
+      "excerpts": [
+        {
+          "first": 205,
+          "last": 221,
+          "text": "205: \tbool remap = false, set_uncached = false;\n206: \tstruct page *page;\n207: \tvoid *ret;\n208: \n209: \tsize = PAGE_ALIGN(size);\n210: \tif (attrs & DMA_ATTR_NO_WARN)\n211: \t\tgfp |= __GFP_NOWARN;\n212: \n213: \tif ((attrs & DMA_ATTR_NO_KERNEL_MAPPING) &&\n214: \t    !force_dma_unencrypted(dev) && !is_swiotlb_for_alloc(dev))\n215: \t\treturn dma_direct_alloc_no_mapping(dev, size, dma_handle, gfp);\n216: \n217: \tif (!dev_is_dma_coherent(dev)) {\n218: \t\tif (IS_ENABLED(CONFIG_ARCH_HAS_DMA_ALLOC) &&\n219: \t\t    !is_swiotlb_for_alloc(dev))\n220: \t\t\treturn arch_dma_alloc(dev, size, dma_handle, gfp,\n221: \t\t\t\t\t      attrs);"
+        }
+      ]
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/kernel/dma/contiguous.c",
+      "bytes": 14051,
+      "sha256": "22d80f10f4df80233d27a2404a24ab7f3f6a29af2a2479a4eef23eda3f39385a",
+      "excerpts": [
+        {
+          "first": 304,
+          "last": 339,
+          "text": "304: /**\n305:  * dma_alloc_from_contiguous() - allocate pages from contiguous area\n306:  * @dev:   Pointer to device for which the allocation is performed.\n307:  * @count: Requested number of pages.\n308:  * @align: Requested alignment of pages (in PAGE_SIZE order).\n309:  * @no_warn: Avoid printing message about failed allocation.\n310:  *\n311:  * This function allocates memory buffer for specified device. It uses\n312:  * device specific contiguous memory area if available or the default\n313:  * global one. Requires architecture specific dev_get_cma_area() helper\n314:  * function.\n315:  */\n316: struct page *dma_alloc_from_contiguous(struct device *dev, size_t count,\n317: \t\t\t\t       unsigned int align, bool no_warn)\n318: {\n319: \tif (align > CONFIG_CMA_ALIGNMENT)\n320: \t\talign = CONFIG_CMA_ALIGNMENT;\n321: \n322: \treturn cma_alloc(dev_get_cma_area(dev), count, align, no_warn);\n323: }\n324: \n325: /**\n326:  * dma_release_from_contiguous() - release allocated pages\n327:  * @dev:   Pointer to device for which the pages were allocated.\n328:  * @pages: Allocated pages.\n329:  * @count: Number of allocated pages.\n330:  *\n331:  * This function releases memory allocated by dma_alloc_from_contiguous().\n332:  * It returns false when provided pages do not belong to contiguous area and\n333:  * true otherwise.\n334:  */\n335: bool dma_release_from_contiguous(struct device *dev, struct page *pages,\n336: \t\t\t\t int count)\n337: {\n338: \treturn cma_release(dev_get_cma_area(dev), pages, count);\n339: }"
+        }
+      ]
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/include/linux/dma-map-ops.h",
+      "bytes": 14698,
+      "sha256": "411c1fbacca1f8dac2e922684a5b9588212821ecf305dcadcd4a5f639fcabf62",
+      "excerpts": [
+        {
+          "first": 99,
+          "last": 107,
+          "text": "99: #ifdef CONFIG_DMA_CMA\n100: extern struct cma *dma_contiguous_default_area;\n101: \n102: static inline struct cma *dev_get_cma_area(struct device *dev)\n103: {\n104: \tif (dev && dev->cma_area)\n105: \t\treturn dev->cma_area;\n106: \treturn dma_contiguous_default_area;\n107: }"
+        }
+      ]
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/include/linux/dma-direct.h",
+      "bytes": 4118,
+      "sha256": "e38b8799b92b37d96e33acd46e379880d4989170fd6664a96b302feaf383791e",
+      "excerpts": [
+        {
+          "first": 75,
+          "last": 115,
+          "text": "75: #ifdef CONFIG_ARCH_HAS_PHYS_TO_DMA\n76: #include <asm/dma-direct.h>\n77: #ifndef phys_to_dma_unencrypted\n78: #define phys_to_dma_unencrypted\t\tphys_to_dma\n79: #endif\n80: #else\n81: static inline dma_addr_t __phys_to_dma(struct device *dev, phys_addr_t paddr)\n82: {\n83: \tif (dev->dma_range_map)\n84: \t\treturn translate_phys_to_dma(dev, paddr);\n85: \treturn paddr;\n86: }\n87: \n88: static inline dma_addr_t phys_to_dma_unencrypted(struct device *dev,\n89: \t\t\t\t\t\tphys_addr_t paddr)\n90: {\n91: \treturn dma_addr_unencrypted(__phys_to_dma(dev, paddr));\n92: }\n93: /*\n94:  * If memory encryption is supported, phys_to_dma will set the memory encryption\n95:  * bit in the DMA address, and dma_to_phys will clear it.\n96:  * phys_to_dma_unencrypted is for use on special unencrypted memory like swiotlb\n97:  * buffers.\n98:  */\n99: static inline dma_addr_t phys_to_dma(struct device *dev, phys_addr_t paddr)\n100: {\n101: \treturn dma_addr_encrypted(__phys_to_dma(dev, paddr));\n102: }\n103: \n104: static inline phys_addr_t dma_to_phys(struct device *dev, dma_addr_t dma_addr)\n105: {\n106: \tphys_addr_t paddr;\n107: \n108: \tdma_addr = dma_addr_canonical(dma_addr);\n109: \tif (dev->dma_range_map)\n110: \t\tpaddr = translate_dma_to_phys(dev, dma_addr);\n111: \telse\n112: \t\tpaddr = dma_addr;\n113: \n114: \treturn paddr;\n115: }"
+        }
+      ]
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/mm/cma.c",
+      "bytes": 29449,
+      "sha256": "b16905084b53fa823dc57578beed74f12b6957016fcf23d996e055c69b6c5e9d",
+      "excerpts": [
+        {
+          "first": 782,
+          "last": 859,
+          "text": "782: static int cma_range_alloc(struct cma *cma, struct cma_memrange *cmr,\n783: \t\t\t\tunsigned long count, unsigned int align,\n784: \t\t\t\tstruct page **pagep, gfp_t gfp)\n785: {\n786: \tunsigned long bitmap_maxno, bitmap_no, bitmap_count;\n787: \tunsigned long start, pfn, mask, offset;\n788: \tint ret = -EBUSY;\n789: \tstruct page *page = NULL;\n790: \n791: \tmask = cma_bitmap_aligned_mask(cma, align);\n792: \toffset = cma_bitmap_aligned_offset(cma, cmr, align);\n793: \tbitmap_maxno = cma_bitmap_maxno(cma, cmr);\n794: \tbitmap_count = cma_bitmap_pages_to_bits(cma, count);\n795: \n796: \tif (bitmap_count > bitmap_maxno)\n797: \t\tgoto out;\n798: \n799: \tfor (start = 0; ; start = bitmap_no + mask + 1) {\n800: \t\tspin_lock_irq(&cma->lock);\n801: \t\t/*\n802: \t\t * If the request is larger than the available number\n803: \t\t * of pages, stop right away.\n804: \t\t */\n805: \t\tif (count > cma->available_count) {\n806: \t\t\tspin_unlock_irq(&cma->lock);\n807: \t\t\tbreak;\n808: \t\t}\n809: \t\tbitmap_no = bitmap_find_next_zero_area_off(cmr->bitmap,\n810: \t\t\t\tbitmap_maxno, start, bitmap_count, mask,\n811: \t\t\t\toffset);\n812: \t\tif (bitmap_no >= bitmap_maxno) {\n813: \t\t\tspin_unlock_irq(&cma->lock);\n814: \t\t\tbreak;\n815: \t\t}\n816: \n817: \t\tpfn = cmr->base_pfn + (bitmap_no << cma->order_per_bit);\n818: \t\tpage = pfn_to_page(pfn);\n819: \n820: \t\t/*\n821: \t\t * Do not hand out page ranges that are not contiguous, so\n822: \t\t * callers can just iterate the pages without having to worry\n823: \t\t * about these corner cases.\n824: \t\t */\n825: \t\tif (!page_range_contiguous(page, count)) {\n826: \t\t\tspin_unlock_irq(&cma->lock);\n827: \t\t\tpr_warn_ratelimited(\"%s: %s: skipping incompatible area [0x%lx-0x%lx]\",\n828: \t\t\t\t\t    __func__, cma->name, pfn, pfn + count - 1);\n829: \t\t\tcontinue;\n830: \t\t}\n831: \n832: \t\tbitmap_set(cmr->bitmap, bitmap_no, bitmap_count);\n833: \t\tcma->available_count -= count;\n834: \t\t/*\n835: \t\t * It's safe to drop the lock here. We've marked this region for\n836: \t\t * our exclusive use. If the migration fails we will take the\n837: \t\t * lock again and unmark it.\n838: \t\t */\n839: \t\tspin_unlock_irq(&cma->lock);\n840: \n841: \t\tmutex_lock(&cma->alloc_mutex);\n842: \t\tret = alloc_contig_range(pfn, pfn + count, ACR_FLAGS_CMA, gfp);\n843: \t\tmutex_unlock(&cma->alloc_mutex);\n844: \t\tif (!ret)\n845: \t\t\tbreak;\n846: \n847: \t\tcma_clear_bitmap(cma, cmr, pfn, count);\n848: \t\tif (ret != -EBUSY)\n849: \t\t\tbreak;\n850: \n851: \t\tpr_debug(\"%s(): memory range at pfn 0x%lx %p is busy, retrying\\n\",\n852: \t\t\t __func__, pfn, page);\n853: \n854: \t\ttrace_cma_alloc_busy_retry(cma->name, pfn, page, count, align);\n855: \t}\n856: out:\n857: \tif (!ret)\n858: \t\t*pagep = page;\n859: \treturn ret;"
+        },
+        {
+          "first": 990,
+          "last": 1018,
+          "text": "990: {\n991: \tstruct cma_memrange *cmr;\n992: \tunsigned long pfn, end_pfn;\n993: \tint r;\n994: \n995: \tpr_debug(\"%s(page %p, count %lu)\\n\", __func__, (void *)pages, count);\n996: \n997: \tif (!cma_pages_valid(cma, pages, count))\n998: \t\treturn false;\n999: \n1000: \tpfn = page_to_pfn(pages);\n1001: \tend_pfn = pfn + count;\n1002: \n1003: \tfor (r = 0; r < cma->nranges; r++) {\n1004: \t\tcmr = &cma->ranges[r];\n1005: \t\tif (pfn >= cmr->base_pfn &&\n1006: \t\t    pfn < (cmr->base_pfn + cmr->count)) {\n1007: \t\t\tVM_BUG_ON(end_pfn > cmr->base_pfn + cmr->count);\n1008: \t\t\tbreak;\n1009: \t\t}\n1010: \t}\n1011: \n1012: \tif (r == cma->nranges)\n1013: \t\treturn false;\n1014: \n1015: \tfree_contig_range(pfn, count);\n1016: \tcma_clear_bitmap(cma, cmr, pfn, count);\n1017: \tcma_sysfs_account_release_pages(cma, count);\n1018: \ttrace_cma_release(cma->name, pfn, pages, count);"
+        }
+      ]
+    },
+    {
+      "path": "apps/web-media/native-producer/memory_reserve.c",
+      "bytes": 10310,
+      "sha256": "aec0a30d7f67bfc8fc0f2c078cf4a53efb42d78a65b46c0bef22312060070aff",
+      "excerpts": [
+        {
+          "first": 114,
+          "last": 143,
+          "text": "114: int nh_memory_evaluate(const struct nh_memory_ledger *l,const struct nh_memory_values *a,\n115:  const struct nh_memory_values *b,const struct nh_memory_zones *z,uint64_t begin,uint64_t end,\n116:  enum nh_memory_stage stage,struct nh_memory_observation *out)\n117: {\n118:  if(!l||!a||!b||!z||!out||!l->initialized||l->cpu_paid_kib>l->cpu_capacity_kib)return NH_MEM_FORMAT;\n119:  struct nh_memory_observation o={.begin_ns=begin,.end_ns=end,.stage=stage,.reason=NH_MEM_OK};\n120:  if(begin==UINT64_MAX||end==UINT64_MAX||end<begin)o.reason=NH_MEM_CLOCK;\n121:  else if(end-begin>NH_MEMORY_MAX_SAMPLE_NS)o.reason=NH_MEM_STALE;\n122:  o.available=a->available<b->available?a->available:b->available;\n123:  uint64_t free=a->free<b->free?a->free:b->free,cma=a->cma_free>b->cma_free?a->cma_free:b->cma_free;\n124:  o.watermark_kib=z->watermark_kib;o.cpu_debt=l->cpu_capacity_kib-l->cpu_paid_kib;o.dma_debt=l->codec_paid?0:NH_MEMORY_CODEC_KIB;\n125:  o.required_available=o.cpu_debt+o.dma_debt+NH_MEMORY_OVERHEAD_KIB+NH_MEMORY_RESERVE_KIB;\n126:  /* Full unpaid CPU may land in Normal. Resident owned pages may have borrowed\n127:   * CMA and can be evacuated by initial codec allocation. Without qualified\n128:   * placement proof, ALL current occupied CMA is potentially migratable, capped\n129:   * by the still-unpaid codec ranges. This includes own loans without double\n130:   * adding them; known-nonmovable ISP is NOT subtracted on a placement guess. */\n131:  uint64_t minimum_cma=a->cma_free<b->cma_free?a->cma_free:b->cma_free;\n132:  if(z->normal.free_cma*4<minimum_cma)minimum_cma=z->normal.free_cma*4;\n133:  uint64_t occupied=a->cma_total>=minimum_cma?a->cma_total-minimum_cma:UINT64_MAX;\n134:  o.migration_future_kib=l->codec_paid?0:(occupied<o.dma_debt?occupied:o.dma_debt);\n135:  o.required_noncma=o.cpu_debt+o.migration_future_kib+NH_MEMORY_OVERHEAD_KIB+NH_MEMORY_RESERVE_KIB;\n136:  uint64_t zone_noncma=(z->normal.free-z->normal.free_cma)*4;\n137:  if(free>=cma&&zone_noncma<free-cma)free=zone_noncma+cma;\n138:  if(free<cma||free-cma<z->watermark_kib){o.noncma_free=0;if(!o.reason)o.reason=NH_MEM_LOW_NONCMA;}\n139:  else o.noncma_free=free-cma-z->watermark_kib;\n140:  if(!o.reason&&o.available<o.required_available)o.reason=NH_MEM_LOW_AVAILABLE;\n141:  if(!o.reason&&o.noncma_free<o.required_noncma)o.reason=NH_MEM_LOW_NONCMA;\n142:  *out=o;return (int)o.reason;\n143: }"
+        }
+      ]
+    },
+    {
+      "path": "apps/web-media/native-producer/memory_runtime.c",
+      "bytes": 5115,
+      "sha256": "c505e3447cbfa852c88a97816e233269de6dec12080625d16004dca31d152d57",
+      "excerpts": [
+        {
+          "first": 24,
+          "last": 50,
+          "text": "24: int nh_memory_runtime_init(struct nh_memory_runtime *r,uint64_t start,\n25:  uint64_t (*now)(void *),int (*cancelled)(void *),void *context,unsigned raw_reuse)\n26: {\n27:  uint64_t capacity,nonmovable;if(!r||!now||!cancelled||start==UINT64_MAX||nh_memory_own_layout(&capacity,&nonmovable,raw_reuse))return NH_MEM_LAYOUT;\n28:  memset(r,0,sizeof(*r));if(nh_memory_init_mode(&r->ledger,capacity,nonmovable,raw_reuse))return NH_MEM_LAYOUT;\n29:  r->session_start=start;r->now=now;r->cancelled=cancelled;r->context=context;return NH_MEM_OK;\n30: }\n31: int nh_memory_runtime_gate(struct nh_memory_runtime *r,enum nh_memory_stage stage,uint64_t unit_start)\n32: {\n33:  if(!r||!r->ledger.initialized||r->count>=64)return NH_MEM_FORMAT;\n34:  struct nh_memory_observation o={.stage=stage};struct nh_memory_values first,last;struct nh_memory_zones zones;\n35:  uint64_t now;size_t bytes;int reason=checked(r,unit_start,&o.begin_ns);if(reason)goto failed;\n36:  if(nh_memory_read_fixed(0,r->meminfo,sizeof(r->meminfo),&bytes)){reason=NH_MEM_IO;goto failed;}\n37:  if(nh_memory_parse_meminfo(r->meminfo,bytes,&first)){reason=NH_MEM_FORMAT;goto failed;}\n38:  reason=checked(r,unit_start,&now);if(reason)goto failed;\n39:  if(now<o.begin_ns||now-o.begin_ns>NH_MEMORY_MAX_SAMPLE_NS){reason=now<o.begin_ns?NH_MEM_CLOCK:NH_MEM_STALE;goto failed;}\n40:  if(nh_memory_read_fixed(1,r->zoneinfo,sizeof(r->zoneinfo),&bytes)){reason=NH_MEM_IO;goto failed;}\n41:  if(nh_memory_parse_zoneinfo(r->zoneinfo,bytes,&zones)){reason=NH_MEM_LAYOUT;goto failed;}\n42:  reason=checked(r,unit_start,&now);if(reason)goto failed;\n43:  if(now<o.begin_ns||now-o.begin_ns>NH_MEMORY_MAX_SAMPLE_NS){reason=now<o.begin_ns?NH_MEM_CLOCK:NH_MEM_STALE;goto failed;}\n44:  if(nh_memory_read_fixed(0,r->meminfo,sizeof(r->meminfo),&bytes)){reason=NH_MEM_IO;goto failed;}\n45:  if(nh_memory_parse_meminfo(r->meminfo,bytes,&last)){reason=NH_MEM_FORMAT;goto failed;}\n46:  reason=checked(r,unit_start,&o.end_ns);if(reason)goto failed;\n47:  reason=nh_memory_evaluate(&r->ledger,&first,&last,&zones,o.begin_ns,o.end_ns,stage,&o);\n48:  r->observations[r->count++]=o;return reason;\n49: failed:\n50:  o.reason=(enum nh_memory_reason)reason;o.end_ns=r->now(r->context);r->observations[r->count++]=o;return reason;"
+        }
+      ]
+    },
+    {
+      "path": "apps/web-media/native-producer/native_adapter.c",
+      "bytes": 9570,
+      "sha256": "33f65bb1b40a3fbe2b7e756e0c8e5a3a933a762cbb13737cdb16a9be1b5f0f93",
+      "excerpts": [
+        {
+          "first": 36,
+          "last": 91,
+          "text": "36: _Static_assert(sizeof(struct qc_capture_receipt)==56,\"receipt ABI\");\n37: _Static_assert(sizeof(struct qc_hwenc_lifetime)==56,\"kernel75 lifetime ABI\");\n38: static int lifetime(void)\n39: {\n40:  struct qc_hwenc_lifetime q={0};\n41:  if(native.h264_stream_fd<0)native.h264_stream_fd=open(\"/dev/qc07f-encoder\",O_RDWR);\n42:  if(native.h264_stream_fd<0||ioctl(native.h264_stream_fd,QC_HWENC_LIFETIME_QUERY,&q)||\n43:     q.version!=1||q.struct_bytes!=sizeof(q)||q.reserved||q.quarantined||q.dma_uncertain||\n44:     q.guard_poisoned||q.failed_reset_step||q.reset_error||q.fault_session||!q.session_sequence){\n45:   native.retirement_uncertain=1;return CAMERA_IO_ERROR;\n46:  }\n47:  fprintf(stderr,\"NH_CODEC_LIFETIME session_sequence=%llu live_bytes=%llu healthy=1\\n\",\n48:  (unsigned long long)q.session_sequence,(unsigned long long)q.live_bytes);\n49:  codec_live_bytes=q.live_bytes;\n50:  return CAMERA_OK;\n51: }\n52: void nh_native_init(void)\n53: {source_context_init(&native);memset(&source_clock,0,sizeof(source_clock));sensor_baseline_requested=0;memset(&sensor_baseline_report,0,sizeof(sensor_baseline_report));memset(&memory_state,0,sizeof(memory_state));codec_live_bytes=0;storage_selected=0;raw_reuse_requested=0;}\n54: int nh_native_storage_select(const char *mode)\n55: {\n56:  if(!mode||storage_selected||memory_state.ledger.initialized||native.continuous_frame>=0||native.h264_stream_fd>=0)return CAMERA_NOT_READY;\n57:  if(!strcmp(mode,\"raw-reuse-k75\"))raw_reuse_requested=1;\n58:  else if(strcmp(mode,\"separate\"))return CAMERA_INVALID;\n59:  storage_selected=1;return CAMERA_OK;\n60: }\n61: int nh_native_optin_exact139(void)\n62: {\n63:  if(native.retirement_uncertain||native.continuous_frame>=0||native.continuous_sensor>=0||native.h264_stream_fd>=0||sensor_baseline_requested)return CAMERA_NOT_READY;\n64:  sensor_baseline_requested=1;return CAMERA_OK;\n65: }\n66: void nh_native_sensor_report(void){nh_sensor_log(&sensor_baseline_report);}\n67: int nh_native_memory_start(uint64_t start)\n68: {\n69:  if(!storage_selected)return CAMERA_NOT_READY;\n70:  int r=nh_memory_runtime_init(&memory_state,start,nh_native_now,nh_native_cancelled,NULL,raw_reuse_requested);\n71:  if(!r)r=nh_memory_runtime_gate(&memory_state,NH_MEM_INITIAL,start);\n72:  if(r==NH_MEM_CLOCK)native.retirement_uncertain=1;\n73:  return r?CAMERA_NOT_READY:CAMERA_OK;\n74: }\n75: int nh_native_memory_fixed_buffers(void *hub)\n76: {\n77:  uint64_t begin=nh_native_now(NULL);int r=nh_memory_runtime_gate(&memory_state,NH_MEM_FIXED_PAID,begin);\n78:  if(!r)r=nh_memory_prefault_owned(&memory_state,0,raw,sizeof(raw),begin);\n79:  if(!r)r=nh_memory_runtime_gate(&memory_state,NH_MEM_FIXED_PAID,begin);\n80:  if(!r)r=nh_memory_prefault_owned(&memory_state,1,hub,1048576,begin);\n81:  if(!r)r=nh_memory_runtime_gate(&memory_state,NH_MEM_FIXED_PAID,begin);\n82:  if(r==NH_MEM_CLOCK)native.retirement_uncertain=1;\n83:  return r?CAMERA_NOT_READY:CAMERA_OK;\n84: }\n85: int nh_native_memory_gate(void *unused,enum nh_memory_stage stage)\n86: {\n87:  (void)unused;if(!memory_state.ledger.initialized)return CAMERA_NOT_READY;\n88:  if(stage==NH_MEM_POST_FIRST&&nh_memory_credit_codec(&memory_state.ledger,codec_live_bytes,!native.retirement_uncertain&&!source_clock.failed))return CAMERA_NOT_READY;\n89:  uint64_t begin=nh_native_now(NULL);int r=nh_memory_runtime_gate(&memory_state,stage,begin);\n90:  if(r==NH_MEM_CLOCK)native.retirement_uncertain=1;\n91:  return r?CAMERA_NOT_READY:CAMERA_OK;"
+        }
+      ]
+    },
+    {
+      "path": "apps/web-media/native-producer/main.c",
+      "bytes": 5788,
+      "sha256": "754f91d8a58f92c83726a2df4967c3c515eaee3b291c2682c76061e05f7acd6b",
+      "excerpts": [
+        {
+          "first": 18,
+          "last": 37,
+          "text": "18:  if(argc!=12||!nh_sensor_cli_optin(argc,argv)||strcmp(argv[1],\"--parent-protected\")||strcmp(argv[4],\"--peer\")||\n19:     strcmp(argv[6],\"--port\")||nh_tcp_endpoint(argv[5],argv[7],&endpoint)||strcmp(argv[8],\"--memory-reserve\")||strcmp(argv[9],\"normal75-placement-one-shot\")||\n20:     strcmp(argv[10],\"--producer-storage\")||(strcmp(argv[11],\"raw-reuse-k75\")&&strcmp(argv[11],\"separate\"))){\n21:   fprintf(stderr,\"usage: native-handoff --parent-protected --sensor-baseline exact139 --peer 192.168.1.15 --port 17891 --memory-reserve normal75-placement-one-shot --producer-storage raw-reuse-k75|separate\\n\");return 64;\n22:  }\n23:  if(geteuid()!=0){fprintf(stderr,\"root RAM qualification helper only\\n\");return 65;}\n24:  struct rlimit core={0,0};if(setrlimit(RLIMIT_CORE,&core))return 66;\n25:  struct sigaction sa={0};sa.sa_handler=nh_native_cancel;sigemptyset(&sa.sa_mask);\n26:  if(sigaction(SIGTERM,&sa,NULL)||sigaction(SIGINT,&sa,NULL))return 70;\n27:  nh_native_init();struct camera_fmp4_config config;struct nh_report report={0};\n28:  if(nh_native_storage_select(argv[11])||nh_native_optin_exact139()||nh_native_config(&config))return 71;\n29:  struct nh_tcp_sink sink={.fd=-1};uint64_t start=nh_native_now(NULL);\n30:  if(nh_native_memory_start(start)){nh_native_memory_report();if(nh_native_now(NULL)==UINT64_MAX)nh_native_quarantine();return 74;}\n31:  uint8_t *storage=malloc(CAMERA_FMP4_MAX_NAL_BYTES);if(!storage)return 69;\n32:  if(nh_native_memory_fixed_buffers(storage)){nh_native_memory_report();if(nh_native_now(NULL)==UINT64_MAX)nh_native_quarantine();free(storage);return 74;}\n33:  if(nh_tcp_connect(&sink,&endpoint,start,nh_native_now,nh_native_cancelled,NULL)){\n34:   fprintf(stderr,\"NH_TCP_CONNECT_FAILED source_started=0 close_once=%d\\n\",sink.close_attempted);\n35:   if(nh_native_now(NULL)==UINT64_MAX)nh_native_quarantine();\n36:   free(storage);return 72;\n37:  }"
+        }
+      ]
+    },
+    {
+      "path": "apps/web-media/native-producer/build.py",
+      "bytes": 25695,
+      "sha256": "e7835c07ad278276f1a08439b3f8d1ecd4fc1d1fa0f4c9b80ce0849f632c1538",
+      "excerpts": [
+        {
+          "first": 14,
+          "last": 25,
+          "text": "14: PINS = {\n15:  'bringup/qc07f/userland/rtspd.c': '0334c27a8d6a7142d3867778f517f192f7c7447fc849a7aca18098ad306f3898',\n16:  'bringup/qc07f/variants/security75/mach-ak3918ev200/qc07f_hwenc.h': '6723c30c76a3fbd1feaf1ed9d1676a2b9b6289b352ffe7682372bf8e95123731',\n17:  'bringup/qc07f/variants/security75/mach-ak3918ev200/isp.c': '7d0ef80561df4ef058be1deb6698001c35066fab5533f492dec97d2b447bbd50',\n18:  'bringup/qc07f/variants/security75/mach-ak3918ev200/qc07f_hwenc.c': 'e97744838acd469772db41fb1fe0907c95fb6e923577cdbffc84ead0141a026f',\n19:  'bringup/qc07f/initramfs/sc1346-init.h': '98da5eb9e522975d834d99e8c0cdfbefe75ed87dbbcdf84fd9f0fb150f9efbe9',\n20:   'bringup/qc07f/initramfs/init.c': 'b3dd4ee9689bde4bead4c7a3c862284b198b879d4470b920366c1503814598aa',\n21:  'work/lightbulb-camera/implementation-20261008T205404Z/sources/linux-lts/mm/page_alloc.c': '0fc3313f62da1c7e51a4b3f732785a67ede6f6afb1ca9c0f5dd4a745fa6462c0',\n22:  'work/lightbulb-camera/implementation-20261008T205404Z/sources/linux-lts/mm/vmstat.c': 'd3da55b28aefa3e2e92d7d3ed19efa809735397fe93a0696a929553c938ff06e',\n23:  'work/lightbulb-camera/implementation-20261008T205404Z/sources/linux-lts/include/linux/mmzone.h': '8653d8ee6b0ebd419f5e553952a8db29f9ee85d2d902d651a2936ed256f1bebd',\n24:  'work/lightbulb-camera/implementation-20261008T205404Z/sources/linux-lts/fs/binfmt_elf.c': '94de8efdef946d505dec15a2b9cf6e41dcdde21791dceeeca7d8f2e8fdf60d45',\n25: }"
+        },
+        {
+          "first": 164,
+          "last": 175,
+          "text": "164: def main():\n165:  p=argparse.ArgumentParser();p.add_argument('run');p.add_argument('--toolchain',type=Path,required=True)\n166:  args=p.parse_args()\n167:  if not re.fullmatch(r'run[0-9A-Za-z]+',args.run): raise ValueError('fresh runNAME required')\n168:  EVIDENCE.mkdir(parents=True,exist_ok=True);R=EVIDENCE/args.run;R.mkdir()\n169:  I=R/'inputs';D=R/'build';L=R/'logs';T=R/'tmp'\n170:  for d in (I,D,L,T):d.mkdir()\n171:  env={'PATH':'/usr/bin:/bin','LC_ALL':'C','SOURCE_DATE_EPOCH':'1791694800',\n172:       'TMPDIR':str(T),'TMP':str(T),'TEMP':str(T),'PYTHONDONTWRITEBYTECODE':'1'}\n173:  m={'started':datetime.datetime.now(datetime.timezone.utc).isoformat(),'state':'building',\n174:     'commands':[],'environment':env,'source_inputs':{},'tool_inputs':{},'fixture':'HOST synthetic bytes only',\n175:     'native_execution':False,'output_scope_exception':'explicit WRITE ONLY rule wins over suggested local/build path'}"
+        }
+      ]
+    }
+  ],
+  "conditional_dated_i_arithmetic_only": [
+    {
+      "mode": "raw-reuse-k75",
+      "H": 512,
+      "R": 1024,
+      "conditional_fixed_kib": 0,
+      "unknown_occupied_kib": 7168,
+      "future_kib": 7168,
+      "require_N_kib": 11548,
+      "N_margin_kib": -6072,
+      "require_A_kib": 12636,
+      "A_margin_kib": 2120,
+      "placement_proved": false,
+      "native_admission": false
+    },
+    {
+      "mode": "raw-reuse-k75",
+      "H": 512,
+      "R": 1024,
+      "conditional_fixed_kib": 6160,
+      "unknown_occupied_kib": 1008,
+      "future_kib": 1008,
+      "require_N_kib": 5388,
+      "N_margin_kib": 88,
+      "require_A_kib": 12636,
+      "A_margin_kib": 2120,
+      "placement_proved": false,
+      "native_admission": false
+    },
+    {
+      "mode": "separate",
+      "H": 512,
+      "R": 1024,
+      "conditional_fixed_kib": 0,
+      "unknown_occupied_kib": 7168,
+      "future_kib": 7168,
+      "require_N_kib": 12576,
+      "N_margin_kib": -7100,
+      "require_A_kib": 13664,
+      "A_margin_kib": 1092,
+      "placement_proved": false,
+      "native_admission": false
+    },
+    {
+      "mode": "separate",
+      "H": 512,
+      "R": 1024,
+      "conditional_fixed_kib": 6160,
+      "unknown_occupied_kib": 1008,
+      "future_kib": 1008,
+      "require_N_kib": 6416,
+      "N_margin_kib": -940,
+      "require_A_kib": 13664,
+      "A_margin_kib": 1092,
+      "placement_proved": false,
+      "native_admission": false
+    }
+  ],
+  "fixed_request_kib": 6160,
+  "target_placement_receipt_present": false,
+  "parent_v6_rerun_or_76_adoption_complete": false
+}

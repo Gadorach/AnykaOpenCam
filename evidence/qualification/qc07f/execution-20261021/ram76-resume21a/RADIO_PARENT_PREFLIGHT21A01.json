@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-21T05:23:32.052088+00:00",
+  "state": "PARENT_HOST_OWNER_HANDOFF_ADMISSION_PASS",
+  "no_active_operation_lease_or_HOLD": true,
+  "source_pins_match": true,
+  "same_checkpoint_recorder_PID_start_part": true,
+  "sole_adapter_owner": true,
+  "capture_and_catch_remaining_seconds_floor": 6340,
+  "future_catch_armed": true,
+  "exact_TX_continuity": true,
+  "no_reset_or_HCD_diagnostic_since_postboot_checkpoint": true,
+  "target_TX": false,
+  "fresh_runtime_descriptor_FD_gates_still_required_inside_one_trial": true
+}

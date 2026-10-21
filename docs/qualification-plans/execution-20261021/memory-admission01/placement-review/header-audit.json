@@ -1,0 +1,97 @@
+{
+  "utc": "2026-10-21T05:24:49.961250+00:00",
+  "python": "3.14.7 (main, Aug 14 2026, 06:38:32) [GCC 16.2.1 20260810]",
+  "command": "python3 -B docs/qualification-plans/execution-20261021/memory-admission01/placement-review/audit_headers.py",
+  "script": {
+    "path": "docs/qualification-plans/execution-20261021/memory-admission01/placement-review/audit_headers.py",
+    "bytes": 2842,
+    "sha256": "945e4f502f99f3f5e2a782208c61a813017e429ddd91bae86780cf1b5e864d2b"
+  },
+  "manifest": {
+    "path": "evidence/delegated/20261012-native-handoff/run34/manifest.json",
+    "bytes": 265785,
+    "sha256": "8286c85c09d7f34d5bb6af13054803f68ebafad4e2e874da4b1a35aaf9e0d529"
+  },
+  "scope": "public source/header text and existing manifest only; no tests/builds/binaries/target",
+  "comparisons": [
+    {
+      "path": "bringup/qc07f/userland/capture-receipt.h",
+      "bytes": 1751,
+      "sha256": "aa30e333eae75d53c21781990ebb71194261462756880b47382acd3cb81379f0",
+      "expected_sha256": "aa30e333eae75d53c21781990ebb71194261462756880b47382acd3cb81379f0",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/capture-receipt.h",
+      "bytes": 1751,
+      "sha256": "aa30e333eae75d53c21781990ebb71194261462756880b47382acd3cb81379f0",
+      "expected_sha256": "aa30e333eae75d53c21781990ebb71194261462756880b47382acd3cb81379f0",
+      "matches": true
+    },
+    {
+      "path": "bringup/qc07f/userland/capture-retirement-uapi.h",
+      "bytes": 1610,
+      "sha256": "887e32a3a9201812be3bd882826d2bc88a518b613a11793c3da862a39458dc39",
+      "expected_sha256": "887e32a3a9201812be3bd882826d2bc88a518b613a11793c3da862a39458dc39",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/capture-retirement-uapi.h",
+      "bytes": 1610,
+      "sha256": "887e32a3a9201812be3bd882826d2bc88a518b613a11793c3da862a39458dc39",
+      "expected_sha256": "887e32a3a9201812be3bd882826d2bc88a518b613a11793c3da862a39458dc39",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/capture-retirement-uapi.h",
+      "bytes": 1610,
+      "sha256": "887e32a3a9201812be3bd882826d2bc88a518b613a11793c3da862a39458dc39",
+      "expected_sha256": "887e32a3a9201812be3bd882826d2bc88a518b613a11793c3da862a39458dc39",
+      "matches": true
+    },
+    {
+      "path": "bringup/qc07f/variants/security75/mach-ak3918ev200/isp-stream.h",
+      "bytes": 3493,
+      "sha256": "db8ca50e94c811757700ebeb0f7f8e809fa2981dd83c7ad97a8a397470ac1d71",
+      "expected_sha256": "db8ca50e94c811757700ebeb0f7f8e809fa2981dd83c7ad97a8a397470ac1d71",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/isp-stream.h",
+      "bytes": 3493,
+      "sha256": "db8ca50e94c811757700ebeb0f7f8e809fa2981dd83c7ad97a8a397470ac1d71",
+      "expected_sha256": "db8ca50e94c811757700ebeb0f7f8e809fa2981dd83c7ad97a8a397470ac1d71",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/isp-stream.h",
+      "bytes": 3493,
+      "sha256": "db8ca50e94c811757700ebeb0f7f8e809fa2981dd83c7ad97a8a397470ac1d71",
+      "expected_sha256": "db8ca50e94c811757700ebeb0f7f8e809fa2981dd83c7ad97a8a397470ac1d71",
+      "matches": true
+    },
+    {
+      "path": "bringup/qc07f/variants/security75/mach-ak3918ev200/qc07f_hwenc.h",
+      "bytes": 1501,
+      "sha256": "6723c30c76a3fbd1feaf1ed9d1676a2b9b6289b352ffe7682372bf8e95123731",
+      "expected_sha256": "6723c30c76a3fbd1feaf1ed9d1676a2b9b6289b352ffe7682372bf8e95123731",
+      "matches": true
+    },
+    {
+      "path": "evidence/delegated/20261012-native-handoff/run34/inputs/qc07f_hwenc.h",
+      "bytes": 1501,
+      "sha256": "6723c30c76a3fbd1feaf1ed9d1676a2b9b6289b352ffe7682372bf8e95123731",
+      "expected_sha256": "6723c30c76a3fbd1feaf1ed9d1676a2b9b6289b352ffe7682372bf8e95123731",
+      "matches": true
+    },
+    {
+      "path": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/qc07f_hwenc.h",
+      "bytes": 1501,
+      "sha256": "6723c30c76a3fbd1feaf1ed9d1676a2b9b6289b352ffe7682372bf8e95123731",
+      "expected_sha256": "6723c30c76a3fbd1feaf1ed9d1676a2b9b6289b352ffe7682372bf8e95123731",
+      "matches": true
+    }
+  ],
+  "comparison_count": 11,
+  "all_match": true
+}

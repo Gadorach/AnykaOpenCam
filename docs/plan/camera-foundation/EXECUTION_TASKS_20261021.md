@@ -1,5 +1,24 @@
 # Active execution ledger — remaining foundation work
 
+**Latest actual05:23UTC — RADIO TRIAL HOLD:** the single reviewed operation
+completed exit1 after native idle/descriptor/FD admission and all74 data fragments.
+A USB-disconnect printk interrupted the final RUN ACK record; the source RUN-success
+constant and prompt were observed but the strict151-ACK receipt did not pass.
+No state/info or post-load retirement queries followed. **No repeat/fallback/reset/
+repair/target query while follow-up source admission is pending.** Original HOLD
+and private capture/snapshot/traceback retained. See
+`docs/qualification-plans/kernel76-transport-20261021/NATIVE_TRIAL21A_HOLD.md`.
+
+**Active operation05:23UTC:** one reviewed `trial21a.py
+--one-whole-native-load-and-RUN21a` launched, shell
+`sh_15cea5441001X0ygn37rDHAm9G`. Parent host admission passed (sole owner, exact
+handoff/TX, no reset/HCD diagnostic, empty HOLD/no competing lease, future catch,
+6340s bounded coverage at checkpoint). Fresh target idle/descriptor/FD checks are
+inside the fixed trial before its only load. **Wait completion; no concurrent
+UART/RPC/status/progress polling or recipe/helper edits.** No native radio result
+claimed; failures retain HOLD, zero retries/fallbacks/reset. Reviewed closure and
+status committed locally on main as `5edb85b`, ordinary index preserved.
+
 **Latest actual:** resume21a RAM76 upload/CRC/monitor PASS04:36UTC and approved
 fixed read-only idle postcheck PASS04:37UTC. Target ON at idle RAM76 monitor;
 same private21a/candidate, PID1/UID0/CMA16MiB, volatile mounts/modules empty,
@@ -52,9 +71,9 @@ not the requirement to revalidate each later operation. Old20c authority is expi
 |---|---|---|
 | RP-00 | NATIVE-BASELINE-PASS-NARROW | Main source baseline/index preserved, old20c final hashes verified. Fresh21a cold gate and exact76 upload/CRC/monitor + fixed RO idle inventory passed04:36–37UTC; E2 must still be revalidated for later effects |
 | RP-01 | OPEN / prior narrow proofs | Retain76 paired build/basic boot; complete release manifest enforcement/product supervision/serial/watchdog after bounded entry |
-| RP-02 | SOURCE-ENTRY-REVIEWED; NATIVE-GATED | Compiled init/whole74-fragment+automatic RUN entry conditionally GO. Functional trial cannot prove internal MODE/NAK/toggles; awaits current76 runtime/descriptor/owner/retirement admission |
+| RP-02 | NATIVE-STRICT-RECEIPT-HOLD | One native trial passed preadmission/all74 data fragments, but final RUN ACK was interrupted by USB-disconnect printk. No identity/retirement check followed; preserve HOLD, source-review retirement-only follow-up; no reload/retry |
 | RP-03 | QUEUED | Controlled image/timing benchmark after current source/transport baseline; no assumed factory FPS |
-| RP-04 | SOURCE-DECISION-REVIEWED; MEMORY-HOLD |80 identities match; v6=run34, raw overlay saves CPU mapping not codec input. Parent v6 adoption/current placement proof required; no allocation/policy change |
+| RP-04 | SOURCE-DECISION-REVIEWED; MEMORY-HOLD |80 initial +89 placement-review identities match. Conditional6160KiB fixed-ISP exclusion is future-evacuation only with real continuous FD pin; no implementation/policy change or current admission. Parent unchanged-v6 reproduction active |
 | RP-05 | DEPENDENCY | Standard capture/import/overlap after memory/retirement proof |
 | RP-06 | DEPENDENCY | Imaging/codec/rate/profile quality after controlled baseline and ownership work |
 | RP-07 | OPEN / SOURCE-HOST pieces | Integrate existing shared graph/producer/control owners, not a parallel stack |
@@ -136,3 +155,16 @@ or later healthy-status clearance. No second UART sender during transfers or GUI
   permission to reset/retry.24 diagnostic-placement and13 owner/warning probes
   independently refused correctly; no native trial result yet.
 - RP-04 combined memory remains HOLD; no guard/reserve/CMA/allocator change.
+
+### RP-04 source placement review / offline adoption reproduction
+
+- `PLACEMENT_ADOPTION_REVIEW.md` independently supports a conditional6160KiB
+  exclusion from future evacuation **only**, not capacity credit, with exact proved
+  retained CMA extents and a continuous source FD pin. Unknown CMA and H512/R1024
+  remain; dated raw-reuse arithmetic has only88KiB margin and is not admission.
+- Parent inspected the unchanged scoped builder and launched its documented
+  `runParentV6RP04A` reproduction, shell `sh_15cee9094001hhgp6fp8K2kvTZ`. It runs
+  synthetic host fixtures/local loopback and builds/inspects ARM without executing
+  it. No target access or source/policy change; await completion, no progress poll.
+- Reproduction does not implement the exclusion or adopt75-scoped CLI/policy as76.
+  Actual media, placement and combined-memory remain HOLD.

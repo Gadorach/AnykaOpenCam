@@ -1,5 +1,30 @@
 # Project instructions for local agents
 
+## Latest actual — single native radio trial FAILED strict receipt; HOLD retained
+
+shellsh_15cea5441001X0ygn37rDHAm9Gcompletedexit1. Freshidle/USBdescriptors/PID1FD
+admissionPASSthenone native-load. All74datafragments/150complete16BACKsmatched;
+finalRUNrecordinterruptedbyUSBdisconnectprintk. SourceRUNsuccessconstant+prompt
+observedNOTwhole151ACKPASS/identity/retirement. NOstate/info/postmetadatacheck,
+noreset/retry/fallback/module/network/media/effect. Capture+snapshot+traceprivate
+preserved, RADIO_NATIVE76_21A01_HOLD.json public. No targetTXsincefailure;
+failurestickyHOLD. Retirement-onlySOURCEreviewactive; NOhardwarebeforeGO+fresh
+exactowner/TX/runtime/catchgates. Noactivelease/transfernow, but unknownpostload
+ownershipNOTcleared. Watchdogpreferredwhenneededonlyafterknownstategates.
+Latestcommit5edb85bmainlocal/indexpreserved,noremote/push; RP04adoptionHOLD.
+
+## Active hardware — one reviewed finite radio trial launched05:23UTC
+
+Parenthostgate05:23PASS: sole21arecorder/source/peer/start, exactTX/noresetorHCD
+diagnostics, HOLDempty/noactivelease, futurecatcharmed/6340sremainingDATED.
+Committedreviewedclosure5edb85b(mainlocal/indexpreserved), thenlaunchedONE
+trial21a.py --one-whole-native-load-and-RUN21a shellsh_15cea5441001X0ygn37rDHAm9G.
+FreshROruntime/descriptor/FDgatesinsidebeforefirsteffect; resultPENDING.
+NOconcurrentUART/RPC/status/progresspoll/sourcehelperedit. Waitcompletion;
+recipe/parser/helpersFROZEN. No nativePASSclaimyet, noautoretry/256fallback/reset/
+module/network/media/controls. FailuresstickyHOLD. WDguardpreferredifprearmed;
+doNOTinjectresetwhileactive. ParentonlyHW; sourceplacementlaneROdisjoint.
+
 ## Latest review — finite radio trial conditional source GO; fresh hardware gates next
 
 CORE_DIAGNOSTIC_CLOSURE_REVIEW.md SOURCEGO05:20UTC exacttrial6d0ce652…;

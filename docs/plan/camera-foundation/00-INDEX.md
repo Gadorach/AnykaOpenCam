@@ -59,11 +59,14 @@ main now has curated commits/no remote; user requests commits and selected **loc
 now** until a URL is supplied. Preserve the pre-existing staged index; do not commit
 acquisitions/secrets/binaries or publish automatically. [Workflow](../../../GIT_WORKFLOW.md).
 Fresh21a cold entry and exact RAM76 upload/CRC/monitor plus fixed read-only idle
-postcheck passed04:36–37UTC Oct21. Target last observed ON/idle, UART connected;
-capture07:09UTC is DATED/revalidate, not inherited authority. No radio trial/reset
-has run.17 host transport-test methods pass; independent core-diagnostic closure
-review returned conditional SOURCE GO05:20UTC, subject to fresh hardware gates.
-Combined memory and native radio/product gates remain open.
+postcheck passed04:36–37UTC Oct21. Target ON/UART connected; after the05:23UTC
+radio trial, application state/retirement is unverified. Capture07:09UTC is
+DATED/revalidate, not inherited authority.17 host methods and independent
+closure review passed; actual trial passed preadmission/all74 fragments but final
+RUN ACK was interrupted by USB-disconnect printk. Strict receipt **HOLD**, no
+state/info or post-load retirement followed, no reset/retry. See active ledger and
+`NATIVE_TRIAL21A_HOLD.md` under qualification docs. Retirement-only source review
+is pending. Combined memory and native radio/product gates remain open.
 
 ### Latest request — complete remaining-feature/bug plan, October21 (PLAN ONLY)
 
