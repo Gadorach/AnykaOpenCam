@@ -64,9 +64,11 @@ radio trial, application state/retirement is unverified. Capture07:09UTC is
 DATED/revalidate, not inherited authority.17 host methods and independent
 closure review passed; actual trial passed preadmission/all74 fragments but final
 RUN ACK was interrupted by USB-disconnect printk. Strict receipt **HOLD**, no
-state/info or post-load retirement followed, no reset/retry. See active ledger and
-`NATIVE_TRIAL21A_HOLD.md` under qualification docs. Retirement-only source review
-is pending. Combined memory and native radio/product gates remain open.
+state/info followed. A separately reviewed06:00UTC retirement-only cached read
+then passed on the same boot (no PID1 USB/watchdog FD, idle ISP/watchdog/UART),
+preserving original HOLD byte-exact. No reset/retry. See active ledger,
+`NATIVE_TRIAL21A_HOLD.md` and `READONLY_RETIREMENT21A.md` under qualification docs.
+Separate identity admission remains; combined memory/native radio/product gates open.
 
 ### Latest request — complete remaining-feature/bug plan, October21 (PLAN ONLY)
 

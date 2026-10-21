@@ -1,5 +1,23 @@
 # Active execution ledger — remaining foundation work
 
+**Latest actual06:00:08UTC:** the one preserved-HOLD retirement reader completed
+normally: cached descriptors/PID1FDs + full RO idle/sameboot inventory passed, one
+empty refresh/860B TX accounted. No PID1 USB/watchdog FD, ISP idle/logical watchdog
+inactive/UART clean; original failed-trial HOLD byte-exact preserved. No new active
+USB query/reset/reload/RUN/network action. No active read lease now. See
+`READONLY_RETIREMENT21A.md`; radio identity remains unverified, original151-ACK
+trial FAILED/HOLD. Any later operation requires new source/fresh current admission.
+
+**Active reader06:00UTC:** one `retire21a.py
+--one-readonly-retirement-preserve-HOLD21a`, shell
+`sh_15d0b93d7001qG0UyKuzJxAapa`. Source committed locally as `7f2b21c`;
+fresh parent05:59:54UTC host admission passed with original HOLD unchanged,
+derived failure TX/snapshot/source/owner/peer/start identity, no intervening reset/
+HCD/new kernel, future catch and4158s coverage at checkpoint (DATED). **Wait
+completion; no concurrent UART/RPC/status/progress poll or helper/recipe edit.**
+Only cached metadata/full RO inventory, no active USB query/reset/reload. Original
+strict trial stays FAILED/HOLD regardless of this reader; no result claimed yet.
+
 **Retirement-only preparation05:41UTC:** source review conditionally supports one
 cached metadata/full-idle follow-up with original HOLD preserved, not old mains.
 Parent reconciled failed TX from saved28 intent/completion records and source
@@ -84,7 +102,7 @@ not the requirement to revalidate each later operation. Old20c authority is expi
 |---|---|---|
 | RP-00 | NATIVE-BASELINE-PASS-NARROW | Main source baseline/index preserved, old20c final hashes verified. Fresh21a cold gate and exact76 upload/CRC/monitor + fixed RO idle inventory passed04:36–37UTC; E2 must still be revalidated for later effects |
 | RP-01 | OPEN / prior narrow proofs | Retain76 paired build/basic boot; complete release manifest enforcement/product supervision/serial/watchdog after bounded entry |
-| RP-02 | NATIVE-STRICT-RECEIPT-HOLD | One native trial passed preadmission/all74 data fragments, but final RUN ACK was interrupted by USB-disconnect printk. No identity/retirement check followed; preserve HOLD, source-review retirement-only follow-up; no reload/retry |
+| RP-02 | NATIVE-STRICT-RECEIPT-HOLD; SEPARATE-RO-RETIREMENT-OBSERVED | One trial/all74 fragments, final RUN ACK interrupted by printk. Separate06:00 cached FD/descriptors/full idle/sameboot retirement passed without clearing HOLD. Application identity unverified; separate review before state/info; no reload/retry |
 | RP-03 | QUEUED | Controlled image/timing benchmark after current source/transport baseline; no assumed factory FPS |
 | RP-04 | SOURCE-DECISION-REVIEWED; MEMORY-HOLD |80 initial +89 placement-review identities match. Conditional6160KiB fixed-ISP exclusion is future-evacuation only with real continuous FD pin; no implementation/policy change or current admission. Parent unchanged-v6 reproduction active |
 | RP-05 | DEPENDENCY | Standard capture/import/overlap after memory/retirement proof |

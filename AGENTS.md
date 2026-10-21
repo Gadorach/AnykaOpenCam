@@ -1,5 +1,28 @@
 # Project instructions for local agents
 
+## Latest actual —06:00 readonly postfailure retirement observed; original HOLD retained
+
+shellsh_15d0b93d7001qG0UyKuzJxAapacompletednormally06:00:08UTC, exactaeda5136…
+readeroneemptyrefresh+cachedFD/descriptorsshell+14ROinventory/860UARTB. Sameboot/
+PID1consoleFDs0..3/noUSBWDfd/descriptorsa0128400cfg1HS480bulk01/81packet512no
+driver/ISPidle/WDlogicalinactive/UARTerrorsbusy0. OriginalfailedtrialHOLDbyteexact
+PRESERVED, strict151ACKtrialstillFAILED, applicationidentityUNVERIFIED. MemFree
+20864/CMAfree9216snapshotNOTbudget. No radioquery/reset/reload/RUN/fallback/
+module/network/media/effect. Noactivelease; source/freshcurrentgatesbeforelater
+state/info/reset. Freshowner05:59:54/4158scoverage isDATED; capture07:09UTCnot
+inheritedauthority. Mainlocal7f2b21c/indexpreserved/nopush; RP04combinedHOLD.
+
+## Active hardware — ONE preserved-HOLD retirement reader launched06:00UTC
+
+Reviewedreadercommitted7f2b21cmainlocal/indexpreserved. Freshparent05:59:54gate
+PASSoriginalfailedHOLDbyteexact/exactderivedfailureTX/snapshot/source/solepeer/
+PIDstart/unprivilegedidentity/catcharmed4158sremainingDATED/noresetorHCD/newkernel.
+ONEretire21a.py --one-readonly-retirement-preserve-HOLD21a launchedshell
+sh_15d0b93d7001qG0UyKuzJxAapa. WaitcompletionNOconcurrentUART/RPC/status/progress
+poll/helperorrecipeedit. Scopeonlycachedmetadata+14ROidlequeries859/860UARTB;
+noUSBactivequery/state/info/reset/reload/RUN. OriginaltrialFAILED/HOLDmustremain
+evenhealthyreader; failuresticky/noautomaticretry. No nativeretirementclaimyet.
+
 ## Latest review — retirement-only reader conditional SOURCE GO; fresh gates next
 
 RETIREMENT_GUARD_CLOSURE_REVIEW05:55UTC aeda5136…conditionalGOonereader859/860B,

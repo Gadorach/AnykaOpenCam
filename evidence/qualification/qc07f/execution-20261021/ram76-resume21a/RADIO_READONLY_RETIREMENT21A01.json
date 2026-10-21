@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-21T06:00:08.138901+00:00",
+  "state": "READONLY_POSTFAILURE_RETIREMENT_OBSERVED_ORIGINAL_TRIAL_FAILED_HOLD",
+  "image_sha256": "bd8a2a08be1483e1ddcd1efa2c68c9e20549047dec79796137979179197f654f",
+  "part": "foundation-20261021a",
+  "original_trial_failed_HOLD_preserved_byte_exact": true,
+  "same_original_boot_private_UUID": true,
+  "same_original_owner_source_exact_TX": true,
+  "no_new_HCD_diagnostic_or_followup_topology_transition": true,
+  "owned_shell_returned_with_cached_metadata": {
+    "PID1_console_fds_only": true,
+    "PID1_USB_watchdog_fds_absent": true,
+    "owned_a012_8400_config1_speed480": true,
+    "bulk_OUT01_IN81_maxpacket512": true,
+    "no_bound_USB_interface_driver": true
+  },
+  "idle_memory_KiB": {
+    "MemTotal": 33144,
+    "MemFree": 20864,
+    "CmaTotal": 16384,
+    "CmaFree": 9216
+  },
+  "ISP_idle_logical_watchdog_inactive_UART_clean": true,
+  "one_empty_monitor_refresh": true,
+  "no_radio_USB_query_reset_module_network_media_or_persistent_write": true,
+  "all_URB_DMA_electrical_watchdog_or_original_RUN_ACK_proved": false,
+  "recipe_sha256": "aeda5136b55d3cec920e73adcd41209f52c978b526e4ba1709908a6398caa9d1"
+}

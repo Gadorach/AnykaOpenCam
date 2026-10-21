@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-21T05:59:54.149881+00:00",
+  "state": "PARENT_PRESERVED_HOLD_RETIREMENT_HOST_ADMISSION_PASS",
+  "reader_sha256": "aeda5136b55d3cec920e73adcd41209f52c978b526e4ba1709908a6398caa9d1",
+  "original_failed_HOLD_verified_unchanged": true,
+  "no_competing_lease_or_sender": true,
+  "same_original_unprivileged_launch_identity_source_peer_PID_start": true,
+  "saved_counter_completion_and_snapshot_binding_rechecked": true,
+  "exact_current_TX_at_derived_failure_endpoint": true,
+  "no_reset_HCD_or_new_kernel_in_full_original_interval": true,
+  "future_catch_armed": true,
+  "capture_and_catch_remaining_seconds_floor": 4158,
+  "target_TX": false,
+  "single_retirement_reader_not_yet_run": true
+}
