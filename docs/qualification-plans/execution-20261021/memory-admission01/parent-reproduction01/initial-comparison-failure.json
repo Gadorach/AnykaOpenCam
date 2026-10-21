@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-21T05:30:44.707178+00:00",
+  "state": "OFFLINE_COMPARATOR_ASSERTION_FAILED",
+  "script_sha256": "ff082b9f06c620b04d2aef2054fa3292dce8ae3e3614368a490f7ae95b4f0f7d",
+  "assertion": "old tool_inputs dictionary == new tool_inputs dictionary",
+  "cause": "tool_inputs includes generated run-local object paths; run34 and runParentV6RP04A paths differ",
+  "shared_path_tool_hashes_changed": false,
+  "build_failure": false,
+  "native_IO": false,
+  "followup": "Normalize run-local output paths separately, preserve object differences explicitly; require true external tool pins unchanged"
+}

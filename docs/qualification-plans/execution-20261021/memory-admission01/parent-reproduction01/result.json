@@ -1,0 +1,122 @@
+{
+  "utc": "2026-10-21T05:31:08.225712+00:00",
+  "state": "PARENT_UNCHANGED_V6_OFFLINE_REPRODUCTION_PASS_NATIVE_HOLD",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "docs/qualification-plans/execution-20261021/memory-admission01/parent-reproduction01/compare.py"
+  ],
+  "python": "3.14.7 (main, Aug 14 2026, 06:38:32) [GCC 16.2.1 20260810]",
+  "collector_sha256": "292b95b7e1cc23e9158b145930e74667e93828a75905d3a009d4a95d39d7fd77",
+  "build_argv": [
+    "python3",
+    "-B",
+    "apps/web-media/native-producer/build.py",
+    "runParentV6RP04A",
+    "--toolchain",
+    "work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1"
+  ],
+  "build_started": "2026-10-21T05:28:21.217854+00:00",
+  "build_ended": "2026-10-21T05:28:43.526056+00:00",
+  "manifest_sha256": {
+    "run34": "8286c85c09d7f34d5bb6af13054803f68ebafad4e2e874da4b1a35aaf9e0d529",
+    "parent": "b0bac901a5e7b2eaaae8fa5b592b008ddb5ffe160a82ca4e8dd68aca7dec35d2"
+  },
+  "matching_original_source_pin_entries": 55,
+  "normalized_consumed_closure_entries_match": 265,
+  "external_tool_inputs_entries_match": 46,
+  "generated_object_path_sets_match_count": 57,
+  "generated_object_differing_hashes_preserved": [
+    "build/PUBLICDUMMY-loopback-tcp_loopback.o",
+    "build/handoff-host-handoff_test.o",
+    "build/handoff-sanitized-fmp4.o",
+    "build/handoff-sanitized-fmp4_init.o",
+    "build/handoff-sanitized-fmp4_timeline.o",
+    "build/handoff-sanitized-handoff.o",
+    "build/handoff-sanitized-handoff_test.o",
+    "build/handoff-sanitized-packet_hub.o",
+    "build/memory-reserve-host-memory_reserve_test.o",
+    "build/memory-reserve-sanitized-memory_reserve.o",
+    "build/memory-reserve-sanitized-memory_reserve_test.o",
+    "build/native-adapter-host-native_adapter_test.o",
+    "build/native-adapter-sanitized-fmp4.o",
+    "build/native-adapter-sanitized-fmp4_init.o",
+    "build/native-adapter-sanitized-fmp4_timeline.o",
+    "build/native-adapter-sanitized-handoff.o",
+    "build/native-adapter-sanitized-memory_reader.o",
+    "build/native-adapter-sanitized-memory_reserve.o",
+    "build/native-adapter-sanitized-memory_runtime.o",
+    "build/native-adapter-sanitized-native_adapter_test.o",
+    "build/native-adapter-sanitized-packet_hub.o",
+    "build/tcp-sink-host-tcp_sink_test.o",
+    "build/tcp-sink-sanitized-tcp_sink.o",
+    "build/tcp-sink-sanitized-tcp_sink_test.o"
+  ],
+  "all_generated_HOST_objects_byte_identical_claimed": false,
+  "controlled_import_and_ELF_memory_footprint_unchanged": true,
+  "ARM_ELF_byte_identical_to_run34": true,
+  "ARM_ELF_bytes": 91236,
+  "ARM_ELF_sha256": "64434b3c3c7dc9bae28c6ff66bddbc01a4f08a9e6972d0082b0f418036ff2319",
+  "host_cases_each_optimized_and_sanitized": {
+    "handoff": 42,
+    "memory": 35,
+    "adapter": 67,
+    "TCP": 24
+  },
+  "owned_loopback_receiver_cases": 16,
+  "output_log_sha256": {
+    "HOST-regression.txt": "93fbc49b6895d311dd0e3d03cfbd3bc2fbd92a10a65668a8a926773cebc01b98",
+    "HOST-sanitized.txt": "93fbc49b6895d311dd0e3d03cfbd3bc2fbd92a10a65668a8a926773cebc01b98",
+    "HOST-memory-reserve.txt": "b9d82346884f195fd788542a54b62e534b8ea0e1c76d9b2214730cfac1197b17",
+    "HOST-memory-reserve-sanitized.txt": "b9d82346884f195fd788542a54b62e534b8ea0e1c76d9b2214730cfac1197b17",
+    "HOST-imported-adapter.txt": "8d421903964f8eb1f2a83a824e05a2a665fd54dfa5d9829e03ed4d8fd6ddf218",
+    "HOST-imported-adapter-sanitized.txt": "8d421903964f8eb1f2a83a824e05a2a665fd54dfa5d9829e03ed4d8fd6ddf218",
+    "HOST-TCP-mocks.txt": "fa94cd783f9435cbef0345fe24037401c2eb12e70a691fc8646b93209848bb8c",
+    "HOST-TCP-mocks-sanitized.txt": "fa94cd783f9435cbef0345fe24037401c2eb12e70a691fc8646b93209848bb8c",
+    "PUBLICDUMMY-receiver-tests.txt": "2e9ecb4cfe5552cf207c15ba70f3c82aaa488714a43eaf03f3d3358377cfd365"
+  },
+  "native_execution": false,
+  "target_IO": false,
+  "placement_policy_changed": false,
+  "kernel76_adoption_or_native_memory_admission": false,
+  "memory_footprint": {
+    "loads": [
+      {
+        "vaddr": 65536,
+        "memsz": 86180,
+        "pages": 22,
+        "flags": 5,
+        "offset": 0,
+        "filesz": 86180
+      },
+      {
+        "vaddr": 159600,
+        "memsz": 1759100,
+        "pages": 431,
+        "flags": 6,
+        "offset": 89968,
+        "filesz": 396
+      }
+    ],
+    "page_bytes": 4096,
+    "musl_two_large_mapping_capacity_kib": 2056,
+    "nonshared_staging_extra_kib": 4,
+    "CPU_total_unpaid_capacity_kib": 3872,
+    "nonmovable_RX_staging_unpaid_kib": 92,
+    "initial_A_required_kib": 13664,
+    "v4_floor_kib": 13624,
+    "floor_never_reduced": true,
+    "overhead_envelope_kib": 512,
+    "reserve_kib": 1024,
+    "proposal_scope": "parent-approved ONE finite experiment only, NOT peak/security ceiling/memory admission/native proof",
+    "raw_reuse_variant": {
+      "mapped_CPU_capacity_kib": 2844,
+      "removed_mapping_capacity_kib": 1028,
+      "producer_mmap_count": 0,
+      "initial_A_required_kib": 12636,
+      "initial_nonCMA_requirement_before_M_kib": 4380,
+      "current_h_unknown_CMA_migration_upper_kib": 7168,
+      "native_admission": "HOLD until both corrected forecasts and qualified migration/placement bounds pass; no prefault to hope for rescue"
+    }
+  }
+}

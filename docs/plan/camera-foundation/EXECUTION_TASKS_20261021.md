@@ -163,8 +163,11 @@ or later healthy-status clearance. No second UART sender during transfers or GUI
   retained CMA extents and a continuous source FD pin. Unknown CMA and H512/R1024
   remain; dated raw-reuse arithmetic has only88KiB margin and is not admission.
 - Parent inspected the unchanged scoped builder and launched its documented
-  `runParentV6RP04A` reproduction, shell `sh_15cee9094001hhgp6fp8K2kvTZ`. It runs
-  synthetic host fixtures/local loopback and builds/inspects ARM without executing
-  it. No target access or source/policy change; await completion, no progress poll.
+  `runParentV6RP04A` reproduction, shell `sh_15cee9094001hhgp6fp8K2kvTZ`, completed
+  PASS05:28:43UTC. Synthetic host suites42/35/67/24 each optimized/sanitized and16
+  owned-loopback receiver cases pass; ARM built/inspected, never executed.55 source
+  pins/265 consumed closure entries/46 external tool pins match run34; stripped ARM
+  is byte-identical. Comparator initial run-path assertion failure retained.
+  No target access or source/policy change; see `PARENT_V6_REPRODUCTION.md`.
 - Reproduction does not implement the exclusion or adopt75-scoped CLI/policy as76.
   Actual media, placement and combined-memory remain HOLD.
