@@ -1,0 +1,1190 @@
+--- watchdog-v2-app/README.md
++++ owned-provider-app/README.md
+@@ -1,63 +1,62 @@
+-# One owned watchdog v2 — W1-W3 correction candidate, compile only
++# Actual mandatory FD adoption — compile-only source candidate
+ 
+-Fresh byte-derived revision of the frozen v1 app/build04, addressing only review
+-W1-W3. Baseline app/provenance/review custody and exact app/generated deltas are
+-retained in `docs/qualification-plans/qc07f-watchdog-owner-v2-20261022/`.
++Derived from frozen, reviewed watchdog-v2 generated native/producer source;
++frame and persistent encoder custody C/H plus actual query88/UAPI byte-imported.
++See `docs/qualification-plans/qc07f-owned-provider-20261022/OWNERSHIP_CONTRACT.md`
++(written before implementation) for full transfer/state/context/failure contract.
+ 
+-- W1: one-shot memory start refuses repeats before unchanged initializer/accounting
+-  memset. A real-clock-checked nonfuture start, <2s old, seals start+10s in the owner
+-  before setup. Every begin must supply exactly that deadline; failed setup fences
+-  rather than allowing a new session. Memory start still returns only the original
+-  CAMERA_OK/CAMERA_NOT_READY shape. Three memory-policy C units stay unchanged.
+-- W2: each non-NULL outward NEXT packet/key is zeroed before any early refusal;
+-  no private expected packet, backing, loan or FD is cleared to implement it.
+-- W3: after sticky uncertainty/HOLD precedence, a known produced/parked loan is
+-  BUSY before clock/control/legacy codec query. No rearm or private custody change.
+-  Arguments/outputs/slots are trusted stable/disjoint storage, not alias-proofed.
++One real native singleton/producer, not unused helpers, Boolean permission or
++arbitrary-pointer readiness. Expected boot/image/device/session/source/file and
++exclusive serialized open descriptions are independently established by trusted
++bootstrap; fstat/query/CLOEXEC/access mode cannot prove those or admit backing.
++Old76 lacks the mandatory new query and fails ENOTTY without fallback.
+ 
+-One moved actual preopened O_WRONLY/CLOEXEC character-device description, no alias,
+-second open, V write, periodic feeder/guardian or watchdog close. Take means UNKNOWN
+-because preopen already starts hardware. Real SETTIMEOUT5/ENABLE/GETTIMEOUT precede
+-risky work; only validated raw/CRC/keyed ACTIVE capture progress may KEEPALIVE once.
+-Real producer lifetime/cancel/deadline checks remain INSIDE the same owner interval.
+-Successful source/postchecks or normal retirement can DISABLE while retaining FD.
+-Acknowledged disable is logical only; failure may leave it stopped or unknown,
+-so HOLD/retained FD NEVER guarantees armed/electrical recovery or DMA retirement.
++Setup: init -> watchdog UNKNOWN move -> storage/exact139 opt-in -> provider take
++-> old one-shot memory setup -> NEXT/release/normal retire -> watchdog give-back.
++Storage/opt-in guards remain; preloaded active FDs intentionally reject late setup.
+ 
+-`overlay.py` derives exact frozen v6 native adapter/import into fresh run source,
+-not a second producer. `native-watchdog.inc` wraps the real renamed bodies. The
+-source2s and original10s session budgets are checked before/after control and after
+-metadata cost; no servicing after expired/unknown clock. No timeout grows. Sensor
+-exact139 preparation, CRC/receipt checks and memory forecast implementations/table
+-stay byte-exact; sensor code only GETTIMEOUTs the same borrowed owned FD, no ping.
++`nh_native_provider_take` stages actual encoder/frame ownership using the reviewed
++helpers in native context, then sensor and observed helper give-back moves into
++real native FD slots. No duplicate ownership. This is NOT atomic: partial failure
++retains actual moved FDs in stable native/staging slots under sticky HOLD. Remaining
++nonnegative bootstrap slots remain bootstrap-owned. No rollback/close/destructor,
++cleanup/retry or pretend external process-retention sink. Even an initial encoder
++observation failure fences but leaves all bootstrap FD slots unchanged.
+ 
+-Normal provider close now clears its slot BEFORE the single close attempt. An
+-error's former number is diagnostic NOT an actually retained descriptor; there is
+-no close retry. The actual watchdog is never closed by this code. Uncertain work
+-retains its actual remaining FDs/backing and original source process quarantine.
+-No error-return/metadata sink is a substitute for real failed-next process ownership.
++Real producer/lifetime use only the adopted descriptions; no provider open fallback.
++Separate COMMITTED/ACTIVE/CLOSED transfer/source history prevents preloaded frame
++FD from skipping actual BIND/NONE/ARM/exact139/BEGIN. I2C_SLAVE/register operations
++stay under the real watchdog after identity/global-fact admission. Before any
++effectful begin, real adopted tuples/metadata/query and old global lifetime facts
++are reobserved; observation time is charged to the same <2s outer phase.
+ 
+-Fresh singleton init -> move watchdog -> old explicit storage/exact139/memory
+-preparation -> bounded next/release/normal retire -> disabled custody give-back.
+-No reinitialize while owned, uncertainty repair, STOP/END retry or fake qualified
+-flag. Exact core/driver/image/current recovery/sole serialized custody and all
+-provider/backing/resource prerequisites remain mandatory; metadata cannot prove them.
+-Existing large v6 allocations/raw backing are STILL HOLD under128KiB/product limits.
++H264 IP stream only. The truly unused stream-path temporary encoder open is removed,
++not aliased. IDR-only temporary role is refused before effects, not implemented.
++Actual returned codec frame number plus existing stream history constrain THIS_OPEN;
++OTHER_OPEN/fault/unknown schema refuses. Latest fully valid snapshots and expected
++identities survive HOLD. No global-sequence identity or saturation uniqueness guess.
++
++Normal source sensor-off/END/QUERY/RETIRED/ACK/close-once and persistent reference
++release order remain. CPU free stays after logical watchdog-disable ACK. Failed
++disable may already have stopped hardware; retained FD/HOLD is NOT armed recovery
++or electrical/DMA retirement. No close-error numeric-FD retry or watchdog V/close.
++Healthy never-activated role handback is unimplemented: normal retirement refuses
++known COMMITTED before rearm/effects, retaining real custody (no invented END/ACK).
+ 
+ ```sh
+-python3 -B apps/rtsp-auth/qc07f-watchdog-owner-v2/build.py fresh-name --toolchain /path/to/retained/armv5-eabi--musl--stable-2025.08-1
++python3 -B apps/rtsp-auth/qc07f-owned-provider-candidate/build.py fresh-name --toolchain /path/to/retained/armv5-eabi--musl--stable-2025.08-1
+ ```
+ 
+-Fresh outputs only in `docs/qualification-plans/qc07f-watchdog-owner-v2-20261022/runs/`.
+-Only changed real native_adapter/watchdog_owner units compile; archives/REL links
+-reuse the four pinned unchanged v1 object units per platform with their provenance
+-and dependency pins. Ordinary functional checks and every runtime/test remain NOT
+-RUN. No unchanged UAPI suites/driver builds, no full app/provider/RTSP adoption.
+-Exact original/generated source, applied diff, licenses, commands/source/header/tool
+-closure and HOST/ARM archives/REL objects retained. No main/listener, output/test/
+-synthetic/runtime campaign, kernel/module/image/native build/use or target/private
+-IO. New code GPL-2.0-only; original notices/licenses retained, including the
+-watchdog driver's GPL-2.0-or-later notice, not relicensed by this candidate.
+-Source review/native guard qualification and full provider/failed-next/backing/
+-provisioning/listener/admission remain open; no child pin/loopback/radio change or
+-native memory/40MiB/CMA/2MiB-vs4MiB/G2/G3/G8 acceptance follows.
++Fresh compile/archive/REL outputs and exact baseline/generated/app deltas under
++`docs/qualification-plans/qc07f-owned-provider-20261022/runs/`. Compile native
++consumer and imported helper units; reuse only source/header/tool-proven unchanged
++sensor/memory/watchdog objects, never an old embedding native object. No main,
++listener, generator-driven test/UAPI suite, runtime/native/kernel/module/image build.
++Pure overlay generation and build tools only; ordinary functional checks NOT RUN.
++
++Sensor139/table/three memory-policy units, watchdog one-shot10s/<2s/5s and output-zero/
++no-effect held-loan BUSY remain. Old large allocations/external hub pointer are still
++128KiB/backing/memory HOLD, no40MiB/CMA/strict child2MiB/HOST4MiB waiver. Failed-next
++external process owner, backing, provisioning/listener and native qualification
++remain absent. Frozen RTSP glue is not rebased. No full provider/app/G2/G3/G8 GO.
++Preserve all original SPDX/runtime licenses; no global relicensing/publication.
+--- watchdog-v2-app/build.py
++++ owned-provider-app/build.py
+@@ -15,9 +15,9 @@
+ 
+ APP = Path(__file__).resolve().parent
+ ROOT = APP.parents[2]
+-DOC = ROOT / 'docs/qualification-plans/qc07f-watchdog-owner-v2-20261022'
+-OLD_RUN = ROOT / 'docs/qualification-plans/qc07f-watchdog-owner-20261022/runs/build04'
+-NATIVE = ROOT / 'evidence/delegated/20261012-native-handoff/run34'
++DOC = ROOT / 'docs/qualification-plans/qc07f-owned-provider-20261022'
++OLD_RUN = ROOT / 'docs/qualification-plans/qc07f-watchdog-owner-v2-20261022/runs/build01'
++NATIVE = DOC / 'baseline-source'
+ KERNEL = ROOT / 'work/lightbulb-camera/implementation-20261008T205404Z/sources/linux-lts'
+ PLATFORM = ROOT / 'bringup/qc07f/variants/security75/mach-ak3918ev200'
+ RUN_PIN = '8286c85c09d7f34d5bb6af13054803f68ebafad4e2e874da4b1a35aaf9e0d529'
+@@ -42,11 +42,10 @@
+     args = parser.parse_args()
+     if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_-]{0,63}', args.run):
+         parser.error('simple fresh name required')
+-    manifest = NATIVE / 'manifest.json'
+-    if pin(manifest)['sha256'] != RUN_PIN:
+-        raise RuntimeError('original v6 run34 manifest changed')
+-    entries = {e['path'][7:]: e['sha256'] for e in json.loads(manifest.read_text())['files']
+-               if e['path'].startswith('inputs/')}
++    custody = DOC / 'BASELINE_CUSTODY01.json'
++    baseline = json.loads(custody.read_text())
++    entries = {str(Path(n).relative_to(NATIVE.relative_to(ROOT))): p['sha256']
++               for n, p in baseline['baseline_source'].items()}
+     frozen = {}
+     for directory in ('rtsp-runtime-20261022', 'qc07f-provider-20261022',
+                       'qc07f-provider-v2-20261022', 'encoder-identity-20261022',
+@@ -59,13 +58,18 @@
+                     raise RuntimeError('frozen source/evidence changed: ' + name)
+                 frozen[name] = expected
+         frozen[str(path.relative_to(ROOT))] = pin(path)
+-    custody = DOC / 'BASELINE_CUSTODY01.json'
+-    for name, expected in json.loads(custody.read_text())['prior_custody_pins'].items():
++    for name, expected in baseline['prior_custody_pins'].items():
+         if pin(ROOT / name) != expected:
+             raise RuntimeError('v1/review/prior custody changed: ' + name)
+         frozen[name] = expected
+     frozen[str(custody.relative_to(ROOT))] = pin(custody)
+     previous = json.loads((OLD_RUN / 'REPORT.json').read_text())
++    for name, expected in baseline['baseline_source'].items():
++        if pin(ROOT / name) != expected:
++            raise RuntimeError('reviewed source copy changed: ' + name)
++    for name, entry in baseline['byte_imports'].items():
++        if pin(APP / name) != {k: entry[k] for k in ('bytes', 'sha256')}:
++            raise RuntimeError('reviewed byte-import changed: ' + name)
+     pins = next(ast.literal_eval(n.value) for n in ast.parse(
+         (ROOT / 'apps/rtsp-auth/build.py').read_text()).body if
+         isinstance(n, ast.Assign) and isinstance(n.targets[0], ast.Name) and n.targets[0].id == 'ARM_PINS')
+@@ -91,8 +95,8 @@
+               'kernel_module_image_or_app_build': False, 'provider_native_adoption': False,
+               'native_memory_admission': 'HOLD', 'failed_next_process_retention': 'OPEN',
+               'G2': False, 'G3': False, 'G8': False,
+-              'revision': 'W1-W3 ONLY; compile changed native_adapter/watchdog_owner, reuse four pinned v1 units per platform',
+-              'reused_objects': {}, 'compiled_units_per_platform': ['native_adapter', 'watchdog_owner']}
++              'revision': 'Actual mandatory FD source integration from reviewed watchdog-v2; stream only; no native adoption',
++              'reused_objects': {}, 'compiled_units_per_platform': ['native_adapter', 'frame_fd_custody', 'encoder_fd_custody']}
+ 
+     def copy(path, target):
+         before = pin(path)
+@@ -122,12 +126,12 @@
+                  'capture-receipt.h', 'capture-retirement-uapi.h', 'crc-bzip2.h',
+                  'h264-baseline.h', 'isp-stream.h', 'qc07f_hwenc.h', 'sc1346-init.h')
+         for name in names:
+-            original = NATIVE / 'inputs' / name
++            original = NATIVE / name
+             if pin(original)['sha256'] != entries[name]:
+                 raise RuntimeError('native source input changed: ' + name)
+             copy(original, out / 'original' / name)
+-        for path in sorted((NATIVE / 'inputs/framework/include/camera').glob('*.h')):
+-            name = str(path.relative_to(NATIVE / 'inputs'))
++        for path in sorted((NATIVE / 'framework/include/camera').glob('*.h')):
++            name = str(path.relative_to(NATIVE))
+             if pin(path)['sha256'] != entries[name]:
+                 raise RuntimeError('v6 common header changed')
+             copy(path, out / 'source/framework/include/camera' / path.name)
+@@ -135,20 +139,20 @@
+             if path.is_file():
+                 copy(path, out / 'inputs/new' / path.name)
+         copy(custody, out / 'inputs/provenance/BASELINE_CUSTODY01.json')
+-        for path in sorted((DOC / 'baseline-v1-app').iterdir()):
+-            copy(path, out / 'inputs/v1-app' / path.name)
++        for path in sorted((DOC / 'baseline-app').iterdir()):
++            copy(path, out / 'inputs/watchdog-v2-app' / path.name)
+         delta = ''.join(''.join(difflib.unified_diff(
+-            (DOC / 'baseline-v1-app' / p.name).read_text().splitlines(True),
+-            p.read_text().splitlines(True), fromfile='v1-app/' + p.name, tofile='v2-app/' + p.name))
++            (DOC / 'baseline-app' / p.name).read_text().splitlines(True) if (DOC / 'baseline-app' / p.name).exists() else [],
++            p.read_text().splitlines(True), fromfile='watchdog-v2-app/' + p.name, tofile='owned-provider-app/' + p.name))
+             for p in sorted(APP.iterdir()) if p.is_file())
+-        (out / 'v1-to-v2-app.patch').write_text(delta)
+-        report['v1_to_v2_app_patch'] = pin(out / 'v1-to-v2-app.patch')
+-        copy(manifest, out / 'inputs/provenance/run34-manifest.json')
++        (out / 'watchdog-v2-to-provider-app.patch').write_text(delta)
++        report['app_delta'] = pin(out / 'watchdog-v2-to-provider-app.patch')
++        copy(OLD_RUN / 'REPORT.json', out / 'inputs/provenance/watchdog-v2-build.json')
+         for path in (KERNEL / 'drivers/watchdog/watchdog_dev.c', PLATFORM / 'watchdog.c',
+                      KERNEL / 'include/uapi/linux/watchdog.h', KERNEL / 'fs/file_table.c',
+                      ROOT / 'apps/rtsp-auth/build.py'):
+             copy(path, out / 'inputs/provenance' / path.relative_to(ROOT))
+-        for path in sorted((NATIVE / 'inputs').glob('runtime-license-*')):
++        for path in sorted((OLD_RUN / 'inputs/licenses').glob('*')):
+             copy(path, out / 'inputs/licenses' / path.name)
+         spec = importlib.util.spec_from_file_location('watchdog_source_overlay', APP / 'overlay.py')
+         overlay = importlib.util.module_from_spec(spec)
+@@ -164,22 +168,27 @@
+                 patch += ''.join(difflib.unified_diff(original.splitlines(True), text.splitlines(True),
+                     fromfile='a/' + name, tofile='b/' + name))
+         for name in ('watchdog_owner.c', 'watchdog_owner.h', 'native_watchdog.h',
+-                     'source-close-once.inc', 'native-watchdog.inc'):
++                     'source-close-once.inc', 'native-watchdog.inc', 'owned-provider.h',
++                     'owned-provider-types.h', 'provider-observe.inc', 'provider-take.inc',
++                     'frame_fd_custody.c', 'frame_fd_custody.h', 'encoder_fd_custody.c',
++                     'encoder_fd_custody.h', 'encoder-open-query.h', 'stage-telemetry-uapi.h'):
+             text = (APP / name).read_text()
+             (out / 'source' / name).write_text(text)
+-            patch += ''.join(difflib.unified_diff([], text.splitlines(True), fromfile='/dev/null', tofile='b/' + name))
++            original = (NATIVE / name).read_text() if (NATIVE / name).exists() else ''
++            patch += ''.join(difflib.unified_diff(original.splitlines(True), text.splitlines(True),
++                fromfile='a/' + name if (NATIVE / name).exists() else '/dev/null', tofile='b/' + name))
+         (out / 'applied-source.patch').write_text(patch)
+         report['applied_source_patch'] = pin(out / 'applied-source.patch')
+         report['source_files'] = {str(p.relative_to(out / 'source')): pin(p)
+                                   for p in sorted((out / 'source').rglob('*')) if p.is_file()}
+         delta = ''.join(''.join(difflib.unified_diff(
+-            (OLD_RUN / 'source' / n).read_text().splitlines(True),
++            (OLD_RUN / 'source' / n).read_text().splitlines(True) if (OLD_RUN / 'source' / n).exists() else [],
+             (out / 'source' / n).read_text().splitlines(True),
+-            fromfile='v1-source/' + n, tofile='v2-source/' + n)) for n in sorted(report['source_files']))
+-        (out / 'v1-to-v2-generated.patch').write_text(delta)
+-        report['v1_to_v2_generated_patch'] = pin(out / 'v1-to-v2-generated.patch')
+-        report['changed_v1_generated_files'] = [n for n in report['source_files']
+-            if pin(out / 'source' / n) != previous['source_files'][n]]
++            fromfile='watchdog-v2-source/' + n, tofile='owned-provider-source/' + n)) for n in sorted(report['source_files']))
++        (out / 'watchdog-v2-to-provider-generated.patch').write_text(delta)
++        report['generated_delta'] = pin(out / 'watchdog-v2-to-provider-generated.patch')
++        report['changed_or_added_generated_files'] = [n for n in report['source_files']
++            if pin(out / 'source' / n) != previous['source_files'].get(n)]
+         report['unchanged_sensor139'] = pin(out / 'source/sensor_baseline.c') == pin(out / 'original/sensor_baseline.c')
+         report['unchanged_sensor_table'] = pin(out / 'source/sc1346-init.h') == pin(out / 'original/sc1346-init.h')
+         report['unchanged_memory_policy'] = all(pin(out / 'source' / n) == pin(out / 'original' / n)
+@@ -189,8 +198,11 @@
+                  ('arm', prefix + 'gcc', prefix + 'ar', prefix + 'nm', prefix + 'readelf',
+                   ['-Os', '-march=armv5te', '-marm', '-mfloat-abi=soft'])]
+         units = ('native_adapter', 'sensor_baseline', 'memory_reserve', 'memory_runtime',
+-                 'memory_reader', 'watchdog_owner')
++                 'memory_reader', 'watchdog_owner', 'frame_fd_custody', 'encoder_fd_custody')
+         for mode, cc, ar, nm, readelf, flags in modes:
++            for name, path in (('cc', cc), ('ar', ar), ('nm', nm), ('readelf', readelf)):
++                if pin(Path(path)) != {k: previous['tools'][mode][name][k] for k in ('bytes', 'sha256')}:
++                    raise RuntimeError('reused object compiler/tool drift: ' + name)
+             command([cc, '--version'], mode + '-compiler-version')
+             command([cc, '-dumpmachine'], mode + '-compiler-target')
+             objects = []
+@@ -204,6 +216,9 @@
+                     for name in deps:
+                         if pin(Path(name)) != previous['compiled_source_header_closure'][name]:
+                             raise RuntimeError('reused object dependency drift: ' + name)
++                        for src in (OLD_RUN / 'source', ROOT / 'docs/qualification-plans/qc07f-watchdog-owner-20261022/runs/build04/source'):
++                            if Path(name).is_relative_to(src) and pin(out / 'source' / Path(name).relative_to(src)) != pin(Path(name)):
++                                raise RuntimeError('reused object consumes changed project header: ' + name)
+                     for suffix in ('.o', '.d', '.su'):
+                         copy(old.with_suffix(suffix), obj.with_suffix(suffix))
+                     report['reused_objects'][str(old)] = pin(old)
+@@ -211,7 +226,7 @@
+                     continue
+                 # Exact legacy compact-source policy from retained v6 builder;
+                 # no suppression on the new standalone owner implementation.
+-                legacy = ['-Wno-misleading-indentation'] if unit != 'watchdog_owner' else []
++                legacy = ['-Wno-misleading-indentation'] if unit == 'native_adapter' else []
+                 command([cc, *flags, '-std=gnu11', '-Wall', '-Wextra', '-Werror', *legacy,
+                          '-fno-common', '-ffunction-sections', '-fdata-sections', '-fstack-usage',
+                          '-fstack-protector-strong', '-D_FORTIFY_SOURCE=2',
+@@ -219,9 +234,9 @@
+                          '-MD', '-MF', obj.with_suffix('.d'), '-c', out / 'source' / (unit + '.c'), '-o', obj],
+                         mode + '-cc-' + unit)
+                 objects.append(obj)
+-            archive = out / ('libqc07f-native-watchdog-owner-v2-' + mode + '.a')
++            archive = out / ('libqc07f-owned-provider-' + mode + '.a')
+             command([ar, 'rcsD', archive, *objects], mode + '-archive')
+-            reloc = out / (mode + '-native-watchdog-owner-v2-NOT-EXECUTABLE.o')
++            reloc = out / (mode + '-owned-provider-NOT-EXECUTABLE.o')
+             command([cc, *flags, '-nostdlib', '-r', *objects, '-Wl,-Map=' + str(out / (mode + '.map')),
+                      '-o', reloc], mode + '-relocatable-link')
+             command([readelf, '-h', '-A', '-r', '-W', reloc], mode + '-ELF-relocations')
+--- watchdog-v2-app/encoder-open-query.h
++++ owned-provider-app/encoder-open-query.h
+@@ -0,0 +1,46 @@
++/* SPDX-License-Identifier: GPL-2.0-only */
++#ifndef QC_ENCODER_OPEN_QUERY_H
++#define QC_ENCODER_OPEN_QUERY_H
++#include <linux/types.h>
++#include <linux/ioctl.h>
++
++#define QC_HWENC_OPEN_QUERY_VERSION 1U
++enum qc_hwenc_reference_relation {
++ QC_HWENC_REFERENCE_NONE=0,QC_HWENC_REFERENCE_THIS_OPEN=1,
++ QC_HWENC_REFERENCE_OTHER_OPEN=2
++};
++/* Additive output-only snapshot for the exact encoder open description.
++ * No input flag/grant, address, device label, payload or hardware access.
++ * Callers MUST require syscall0/version1/struct_bytes88; ENOTTY means unsupported,
++ * never fall back to global session_sequence as this open's identity.
++ *
++ * Numeric session identities are boot-lifetime/nonreused, assigned on successful
++ * open. dup/fork share an open identity. This does NOT prove exclusive custody,
++ * task binding, present authorization, DMA retirement or safe close/free.
++ *
++ * Reference generation and operation sequence are EXISTING observational stage
++ * counters: saturating, not leases/nonces. telemetry_flags has the existing
++ * QC_STAGE_F_* bits; SATURATED invalidates uniqueness/increment assumptions.
++ * reference_frame_num is the current owner's codec frame number (wraps16 bits),
++ * NOT an operation identity. Relation NONE makes owner identity/frame number0.
++ *
++ * Query takes enc.lock, so it waits behind synchronous jobs. ledger_active is
++ * the actual stage ledger flag, normally0 here, NOT hardware idle/availability.
++ * last_dispatch_identity is the last nonquery command's file identity (including
++ * INFO/denied BUSY); it is historical and can refer to a closed description.
++ * last operation kind/result are global history, not this caller's completion.
++ * operation_sequence0 means no recorded command. Queries do not update counters.
++ */
++struct qc_hwenc_open_query {
++ __u32 version,struct_bytes,reference_relation,reference_frame_num;
++ __u32 quarantined,dma_uncertain,guard_poisoned,telemetry_flags;
++ __aligned_u64 session_identity,reference_owner_identity,reference_generation;
++ __aligned_u64 last_dispatch_identity,operation_sequence;
++ __s32 last_operation_result;
++ __u32 last_operation_kind,ledger_active,reserved;
++};
++/* Candidate encoder-local command: existing exact0x61–0x65 commands unchanged.
++ * Not installed or supported by the frozen kernel76 image. Full command (size,
++ * direction/type/number) comparison makes old kernels return ENOTTY. */
++#define QC_HWENC_OPEN_QUERY _IOR('Q',0x66,struct qc_hwenc_open_query)
++#endif
+--- watchdog-v2-app/encoder_fd_custody.c
++++ owned-provider-app/encoder_fd_custody.c
+@@ -0,0 +1,91 @@
++/* SPDX-License-Identifier: GPL-2.0-only */
++#define _POSIX_C_SOURCE 200809L
++#include "encoder_fd_custody.h"
++#include "stage-telemetry-uapi.h"
++#include <fcntl.h>
++#include <sys/ioctl.h>
++#include <sys/stat.h>
++
++_Static_assert(sizeof(struct qc_hwenc_open_query)==88,"frozen query ABI");
++
++static int schema(const struct qc_hwenc_open_query *q)
++{
++ if(q->version!=QC_HWENC_OPEN_QUERY_VERSION||q->struct_bytes!=sizeof(*q)||
++    q->reserved||!q->session_identity||q->reference_frame_num>65535||
++    q->quarantined>1||q->dma_uncertain>1||q->guard_poisoned>1||q->ledger_active>1)
++  return 0;
++ switch(q->reference_relation){
++ case QC_HWENC_REFERENCE_NONE:
++  return !q->reference_owner_identity&&!q->reference_frame_num;
++ case QC_HWENC_REFERENCE_THIS_OPEN:
++  return q->reference_owner_identity==q->session_identity;
++ case QC_HWENC_REFERENCE_OTHER_OPEN:
++  return q->reference_owner_identity&&q->reference_owner_identity!=q->session_identity;
++ default:return 0;
++ }
++}
++
++static int clear_observation(const struct qc_hwenc_open_query *q)
++{
++ /* Observational refusal predicate, NEVER a health/permission/retirement grant.
++  * Saturating generations/history remain exactly in last_observed. Known error
++  * or unknown telemetry flags refuse, rather than reinterpret a future ABI. */
++ return q->reference_relation==QC_HWENC_REFERENCE_NONE&&
++        !q->reference_owner_identity&&!q->reference_frame_num&&
++        !q->quarantined&&!q->dma_uncertain&&!q->guard_poisoned&&!q->ledger_active&&
++        !(q->telemetry_flags&~QC_STAGE_F_SATURATED);
++}
++
++static int observe(int fd,const struct qc_encoder_fd_identity *expected,
++                    struct stat *node,struct qc_hwenc_open_query *q)
++{
++ if(fd<3)return QC_ENCODER_FD_INVALID;
++ int flags=fcntl(fd,F_GETFL),descriptor_flags=fcntl(fd,F_GETFD);
++ if(flags<0||descriptor_flags<0||fstat(fd,node))return QC_ENCODER_FD_SYSTEM;
++ if((flags&O_ACCMODE)!=O_RDWR||!(descriptor_flags&FD_CLOEXEC)||
++    !S_ISCHR(node->st_mode)||node->st_rdev!=expected->device)
++  return QC_ENCODER_FD_IDENTITY;
++ *q=(struct qc_hwenc_open_query){0};
++ if(ioctl(fd,QC_HWENC_OPEN_QUERY,q))return QC_ENCODER_FD_SYSTEM;
++ /* Output-only query. Never inspect a partial/failed reply, synthesize support
++  * or substitute global LIFETIME/INFO/stage queries, even on ENOTTY. */
++ if(!schema(q))return QC_ENCODER_FD_SNAPSHOT;
++ if(q->session_identity!=expected->session_identity)return QC_ENCODER_FD_IDENTITY;
++ return QC_ENCODER_FD_OK;
++}
++
++int qc_encoder_fd_take(struct qc_encoder_fd_custody *owner,int *bootstrap_slot,
++                       const struct qc_encoder_fd_identity *expected)
++{
++ if(!owner||!bootstrap_slot||!expected||!expected->device||!expected->session_identity||
++    owner->fd!=-1||owner->state!=QC_ENCODER_FD_EMPTY||owner->identity.device||
++    owner->identity.session_identity)return QC_ENCODER_FD_INVALID;
++ struct stat node;
++ struct qc_hwenc_open_query q;
++ int result=observe(*bootstrap_slot,expected,&node,&q);
++ if(result)return result;
++ if(!clear_observation(&q))return QC_ENCODER_FD_NOT_CLEAR;
++ *owner=(struct qc_encoder_fd_custody){.fd=*bootstrap_slot,.state=QC_ENCODER_FD_HELD,
++  .identity=*expected,.node_filesystem=node.st_dev,.node_inode=node.st_ino,.last_observed=q};
++ *bootstrap_slot=-1;
++ return QC_ENCODER_FD_OK;
++}
++
++int qc_encoder_fd_give_back(struct qc_encoder_fd_custody *owner,int *recipient_slot)
++{
++ if(!owner||!recipient_slot||*recipient_slot!=-1)return QC_ENCODER_FD_INVALID;
++ if(owner->state==QC_ENCODER_FD_HOLD)return QC_ENCODER_FD_UNCERTAIN;
++ if(owner->state!=QC_ENCODER_FD_HELD||owner->fd<3)return QC_ENCODER_FD_INVALID;
++ struct stat node;
++ struct qc_hwenc_open_query q;
++ int result=observe(owner->fd,&owner->identity,&node,&q);
++ if(!result)owner->last_observed=q;
++ if(result||node.st_dev!=owner->node_filesystem||node.st_ino!=owner->node_inode||
++    !clear_observation(&q)){
++  owner->state=QC_ENCODER_FD_HOLD;
++  return result?result:QC_ENCODER_FD_UNCERTAIN;
++ }
++ *recipient_slot=owner->fd;
++ *owner=(struct qc_encoder_fd_custody)QC_ENCODER_FD_CUSTODY_EMPTY;
++ return QC_ENCODER_FD_OK;
++}
+--- watchdog-v2-app/encoder_fd_custody.h
++++ owned-provider-app/encoder_fd_custody.h
+@@ -0,0 +1,59 @@
++/* SPDX-License-Identifier: GPL-2.0-only */
++#ifndef QC07F_ENCODER_FD_CUSTODY_H
++#define QC07F_ENCODER_FD_CUSTODY_H
++#include <stdint.h>
++#include <sys/types.h>
++#include "encoder-open-query.h"
++
++/* ONE persistent encoder open description, not the temporary-job role.
++ * TRUSTED PRECONDITIONS: exact admitted boot/image/source/query association;
++ * expected identity independently observed from that actual description;
++ * sole serialized custody, no surviving dup/fork/SCM_RIGHTS aliases, concurrent
++ * I/O/fd-table changes/close or signal reentry. Objects/slots are disjoint.
++ * fstat/query cannot prove these facts, authority, backing or native admission.
++ * This is an in-process source API, not a binary plugin/descriptor wire format.
++ */
++struct qc_encoder_fd_identity {dev_t device;uint64_t session_identity;};
++enum qc_encoder_fd_state {QC_ENCODER_FD_EMPTY,QC_ENCODER_FD_HELD,QC_ENCODER_FD_HOLD};
++enum qc_encoder_fd_result {
++ QC_ENCODER_FD_OK=0,QC_ENCODER_FD_INVALID=-1,QC_ENCODER_FD_SYSTEM=-2,
++ QC_ENCODER_FD_IDENTITY=-3,QC_ENCODER_FD_SNAPSHOT=-4,
++ QC_ENCODER_FD_NOT_CLEAR=-5,QC_ENCODER_FD_UNCERTAIN=-6
++};
++/* Static allocation only. Explicit -1 initializer mandatory; zero/FD0 refuses.
++ * Do not copy/reinitialize/modify while held. Owns the ACTUAL numeric FD plus
++ * last fully valid snapshot, not just metadata pretending to own a process/DMA.
++ */
++struct qc_encoder_fd_custody {
++ int fd;
++ enum qc_encoder_fd_state state;
++ struct qc_encoder_fd_identity identity;
++ dev_t node_filesystem;
++ ino_t node_inode;
++ struct qc_hwenc_open_query last_observed;
++};
++#define QC_ENCODER_FD_CUSTODY_EMPTY { .fd=-1 }
++
++/* Observe preopened FD>=3 with GET-only fcntl/fstat and ONLY OPEN_QUERY; require
++ * O_RDWR/CLOEXEC/matching char node and exact version1/88/reserved0/session tuple.
++ * Commit move ONLY for relationNONE/owner0/frame0, no observed fault/active ledger
++ * or telemetry error/unknown-flag contradiction. Saturation alone is retained,
++ * not converted to a unique generation or discarded history. No open/dup/close,
++ * F_SET, malloc, jobs, resets or fallback to global session_sequence.
++ * Failure before commit leaves bootstrap slot/owner unchanged. Failed ioctl
++ * returns SYSTEM with its errno (including ENOTTY) unchanged; partial replies
++ * are never read. Old frozen76 does not support this candidate query.
++ */
++int qc_encoder_fd_take(struct qc_encoder_fd_custody *,int *bootstrap_slot,
++                       const struct qc_encoder_fd_identity *expected);
++
++/* Recipient MUST be -1. Reobserve then move same FD back; never close/disarm it.
++ * Observation failure latches sticky HOLD retaining FD/identity/last valid full
++ * snapshot (including a valid THIS/OTHER/fault snapshot); never clears HOLD or
++ * attempts cleanup/retry. Invalid caller arguments do not change ownership.
++ * Caller must retain owner/process on HOLD. No destructor/recovery/free API.
++ * Success means custody transfer only: NOT DMA health/retirement, never-used,
++ * readiness, authorization, backing admission, alias exclusivity or kernel pairing.
++ */
++int qc_encoder_fd_give_back(struct qc_encoder_fd_custody *,int *recipient_slot);
++#endif
+--- watchdog-v2-app/frame_fd_custody.c
++++ owned-provider-app/frame_fd_custody.c
+@@ -0,0 +1,83 @@
++/* SPDX-License-Identifier: GPL-2.0-only
++ * Narrow preopened frame-FD custody; no acquisition or provider operation API.
++ */
++#define _POSIX_C_SOURCE 200809L
++#include "frame_fd_custody.h"
++#include <fcntl.h>
++#include <sys/ioctl.h>
++#include <sys/stat.h>
++
++_Static_assert(sizeof(struct qc_capture_receipt)==56,"retained receipt ABI");
++
++static int header(const struct qc_capture_receipt *q)
++{
++ return q->version==QC_CAPTURE_RECEIPT_VERSION&&!q->reserved&&!q->reserved2&&
++        q->source_instance&&q->file_instance&&q->state<=QC_RECEIPT_UNCERTAIN&&
++        q->reason<=QC_STOP_CLOSE;
++}
++
++static int fresh(const struct qc_capture_receipt *q)
++{
++ return !q->generation&&q->state==QC_RECEIPT_NONE&&q->reason==QC_STOP_NONE&&
++        !q->stop_result&&!q->stopped_ns;
++}
++
++static int observe(int fd,const struct qc_frame_fd_identity *expected,
++                    struct stat *node,struct qc_capture_receipt *q)
++{
++ if(fd<3)return QC_FRAME_FD_INVALID;
++ int flags=fcntl(fd,F_GETFL),descriptor_flags=fcntl(fd,F_GETFD);
++ if(flags<0||descriptor_flags<0||fstat(fd,node))return QC_FRAME_FD_SYSTEM;
++ if((flags&O_ACCMODE)!=O_RDONLY||!(descriptor_flags&FD_CLOEXEC)||
++    !S_ISCHR(node->st_mode)||node->st_rdev!=expected->device)
++  return QC_FRAME_FD_IDENTITY;
++ *q=(struct qc_capture_receipt){.version=QC_CAPTURE_RECEIPT_VERSION};
++ /* Exact implementation: BIND copies the existing per-open receipt, no ARM,
++  * generation increment, reservation, reset, allocation or hardware operation.
++  * Never inspect even a partially copied reply on a failed syscall. */
++ if(ioctl(fd,QC_ISP_RECEIPT_BIND,q))return QC_FRAME_FD_SYSTEM;
++ if(!header(q)||q->source_instance!=expected->source_instance||
++    q->file_instance!=expected->file_instance)return QC_FRAME_FD_IDENTITY;
++ return QC_FRAME_FD_OK;
++}
++
++int qc_frame_fd_take(struct qc_frame_fd_custody *owner,int *bootstrap_slot,
++                     const struct qc_frame_fd_identity *expected)
++{
++ if(!owner||!bootstrap_slot||!expected||!expected->device||
++    !expected->source_instance||!expected->file_instance||
++    owner->fd!=-1||owner->state!=QC_FRAME_FD_EMPTY||
++    owner->identity.source_instance||owner->identity.file_instance)
++  return QC_FRAME_FD_INVALID;
++ struct stat node;
++ struct qc_capture_receipt q;
++ int result=observe(*bootstrap_slot,expected,&node,&q);
++ if(result)return result;
++ if(!fresh(&q))return QC_FRAME_FD_NOT_FRESH;
++ /* Caller serializes the entire commit, including signal/fork/fd-table access.
++  * No kernel reference is duplicated; the original owning slot is invalidated. */
++ *owner=(struct qc_frame_fd_custody){.fd=*bootstrap_slot,.state=QC_FRAME_FD_HELD,
++  .identity=*expected,.node_filesystem=node.st_dev,.node_inode=node.st_ino,
++  .last_observed=q};
++ *bootstrap_slot=-1;
++ return QC_FRAME_FD_OK;
++}
++
++int qc_frame_fd_give_back(struct qc_frame_fd_custody *owner,int *recipient_slot)
++{
++ if(!owner||!recipient_slot||*recipient_slot!=-1)return QC_FRAME_FD_INVALID;
++ if(owner->state==QC_FRAME_FD_HOLD)return QC_FRAME_FD_UNCERTAIN;
++ if(owner->state!=QC_FRAME_FD_HELD||owner->fd<3)return QC_FRAME_FD_INVALID;
++ struct stat node;
++ struct qc_capture_receipt q;
++ int result=observe(owner->fd,&owner->identity,&node,&q);
++ if(!result)owner->last_observed=q;
++ if(result||node.st_dev!=owner->node_filesystem||node.st_ino!=owner->node_inode||
++    !fresh(&q)){
++  owner->state=QC_FRAME_FD_HOLD;
++  return result?result:QC_FRAME_FD_UNCERTAIN;
++ }
++ *recipient_slot=owner->fd;
++ *owner=(struct qc_frame_fd_custody)QC_FRAME_FD_CUSTODY_EMPTY;
++ return QC_FRAME_FD_OK;
++}
+--- watchdog-v2-app/frame_fd_custody.h
++++ owned-provider-app/frame_fd_custody.h
+@@ -0,0 +1,59 @@
++/* SPDX-License-Identifier: GPL-2.0-only */
++#ifndef QC07F_FRAME_FD_CUSTODY_H
++#define QC07F_FRAME_FD_CUSTODY_H
++#include <stdint.h>
++#include <sys/types.h>
++#include "capture-retirement-uapi.h"
++
++/* Source API, not a binary plugin, provider-readiness flag or DMA lease.
++ * TRUSTED PRECONDITION: the bootstrap supplied the actual qc07f-frame open
++ * description for the exact pinned kernel, with the independently observed
++ * device/source/file tuple below. It exclusively transfers that description:
++ * no surviving dup/fork/SCM_RIGHTS alias, no concurrent fd-table changes, I/O,
++ * signal-handler reentry or external close. fstat/BIND cannot prove exclusivity.
++ * No task binding exists in this kernel UAPI; do not invent one here.
++ * This precondition is NOT native admission or permission to acquire/open an FD.
++ */
++struct qc_frame_fd_identity {
++ dev_t device;
++ uint64_t source_instance,file_instance;
++};
++enum qc_frame_fd_state {QC_FRAME_FD_EMPTY,QC_FRAME_FD_HELD,QC_FRAME_FD_HOLD};
++enum qc_frame_fd_result {
++ QC_FRAME_FD_OK=0,QC_FRAME_FD_INVALID=-1,QC_FRAME_FD_SYSTEM=-2,
++ QC_FRAME_FD_IDENTITY=-3,QC_FRAME_FD_NOT_FRESH=-4,QC_FRAME_FD_UNCERTAIN=-5
++};
++/* Public for static allocation ONLY. Do not copy, move, reinitialize or modify
++ * while held. This record owns the actual numeric FD, not just a receipt copy.
++ * Explicit -1 initializer is mandatory: zero/FD0 is never an empty owner.
++ */
++struct qc_frame_fd_custody {
++ int fd;
++ enum qc_frame_fd_state state;
++ struct qc_frame_fd_identity identity;
++ dev_t node_filesystem;
++ ino_t node_inode;
++ struct qc_capture_receipt last_observed;
++};
++#define QC_FRAME_FD_CUSTODY_EMPTY { .fd=-1 }
++
++/* Observe an already preopened O_RDONLY|FD_CLOEXEC char FD>=3 using ONLY
++ * fcntl GET/fstat and the existing observational BIND (not ARM/QUERY/ACK).
++ * Require exact expected tuple, NONE/gen0/clean result before committing.
++ * On success move *bootstrap_slot into owner, set slot=-1. On failure the
++ * bootstrap retains its FD and owner is unchanged. No dup/close/set/open/alloc.
++ * Initial observation is not source health, global availability, prior-use,
++ * backing admission or proof that an unknown earlier DMA operation retired.
++ */
++int qc_frame_fd_take(struct qc_frame_fd_custody *owner,int *bootstrap_slot,
++                     const struct qc_frame_fd_identity *expected);
++
++/* Transfer the SAME FD back into an explicit -1 recipient slot, never close it.
++ * A failed/mismatching observation latches HOLD and retains FD/identity/record.
++ * No automatic destructor, reset, ACK, END or recovery API exists. An actual
++ * unexpected generation is retained in last_observed when its identity is valid.
++ * This return is custody transfer ONLY, NOT DMA/normal-close proof or permission
++ * for the recipient to free backing/close a provider. It cannot clear HOLD.
++ */
++int qc_frame_fd_give_back(struct qc_frame_fd_custody *owner,int *recipient_slot);
++#endif
+--- watchdog-v2-app/native-watchdog.inc
++++ owned-provider-app/native-watchdog.inc
+@@ -30,6 +30,7 @@
+  }
+  if(!native_initialized||!native_guard_present()||!storage_selected)return CAMERA_NOT_READY;
+  if(memory_state.ledger.initialized||native.watchdog.session_deadline_ns)return CAMERA_NOT_READY;
++ if(lifetime()){(void)native_guard_failure();return CAMERA_NOT_READY;}
+  /* Bind real-clock-checked original start BEFORE setup; even failed setup cannot
+   * obtain a fresh budget. UNKNOWN/future/backward/late time is not a new epoch. */
+  if(qw_owner_seal_session(&native.watchdog,start)||native_memory_start_legacy(start)){
+@@ -44,12 +45,16 @@
+  if(!native_initialized||native.watchdog.fd<3||
+     native.watchdog.state==QW_EMPTY||native.watchdog.state==QW_HOLD)
+   return CAMERA_NOT_READY;
++ if(!provider_shape(&native))return CAMERA_NOT_READY;
+  uint64_t start=nh_native_now(NULL);
+  if(start==UINT64_MAX||!memory_state.ledger.initialized||
+     !native.watchdog.session_deadline_ns||
+     memory_state.session_start!=native.watchdog.session_start_ns||
+     start<native.watchdog.session_start_ns||start>=native.watchdog.session_deadline_ns)
+   return native_guard_failure();
++ /* Observe exact adopted roles/global facts BEFORE watchdog control. Charge
++  * query cost to the same original outer start; legacy repeats inside guard. */
++ if(lifetime())return native_guard_failure();
+  if(qw_owner_begin(&native.watchdog,start,phase,native.watchdog.session_deadline_ns))
+   return native_guard_failure();
+  return CAMERA_OK;
+@@ -67,7 +72,7 @@
+  if(native.produced_storage||parked_after_stop)return CAMERA_BUSY;
+  /* No lifetime open/query, malloc, sensor/config/capture or codec effect until
+   * actual owned guard and original preparation/paid-buffer prerequisites exist. */
+- if(!sensor_baseline_requested||!storage_selected||!memory_state.ledger.initialized||
++ if(!provider_shape(&native)||!sensor_baseline_requested||!storage_selected||!memory_state.ledger.initialized||
+     !memory_state.ledger.paid[0]||!memory_state.ledger.paid[1])return CAMERA_NOT_READY;
+  int result=native_guard_begin(QW_NEXT);if(result)return result;
+  result=native_next_legacy(context,packet,key);
+@@ -97,6 +102,9 @@
+ int nh_native_retire(void *context)
+ {
+  if(native.produced_storage)return CAMERA_BUSY; /* known held CPU loan, no effect */
++ /* No invented END/ACK proof for preloaded but never-activated roles. A healthy
++  * unactivated handback API is not implemented; retain custody without rearm. */
++ if(native.providers.phase==QP_COMMITTED)return CAMERA_NOT_READY;
+  int result=native_guard_begin(QW_RETIRE);if(result)return result;
+  result=native_retire_body(context);
+  if(result||native.retirement_uncertain||source_clock.failed||
+@@ -111,6 +119,7 @@
+   if(!native.produced_storage||packet->data!=expected.data||packet->bytes!=expected.bytes||
+      packet->monotonic_ns!=expected.monotonic_ns)return native_guard_failure();
+  }else if(native.produced_storage)return native_guard_failure();
++ if(native.providers.phase==QP_COMMITTED)return CAMERA_NOT_READY;
+  int result=native_guard_begin(QW_RETIRE);if(result)return result;
+  result=native_retire_held_legacy(context,packet);
+  if(result||native.retirement_uncertain||source_clock.failed||
+@@ -121,6 +130,8 @@
+ int nh_native_watchdog_give_back(int *slot)
+ {
+  if(!native_initialized||native.retirement_uncertain||source_clock.failed||
++    native.providers.sensor_staged!=-1||native.providers.frame_staged.fd!=-1||
++    native.providers.encoder_staged.fd!=-1||native.providers.phase==QP_MOVING||native.providers.phase==QP_HOLD||
+     native.receipt_armed||native.continuous_frame!=-1||native.continuous_sensor!=-1||
+     native.h264_stream_fd!=-1||native.encoder_hold!=-1||native.produced_storage||
+     native.resident_storage||parked_after_stop||native.close_unknown)return CAMERA_NOT_READY;
+--- watchdog-v2-app/native_watchdog.h
++++ owned-provider-app/native_watchdog.h
+@@ -6,6 +6,9 @@
+ /* Fresh singleton init -> take UNKNOWN actual preopened watchdog -> old explicit
+  * storage/exact139/memory preparation -> bounded next/release/normal retire.
+  * Opening occurred elsewhere and is already an effect. Sole actual description,
++ * This derivative additionally requires mandatory provider adoption AFTER storage/
++ * exact139 opt-in and BEFORE memory setup; see owned-provider.h for real staged
++ * transfer/partial-HOLD semantics. No preloaded-FD setup guard is disabled.
+  * no aliases or external operations; exact core/driver/image/current recovery and
+  * provider/backing admission remain trusted prerequisites, NOT metadata proof.
+  * No native acceptance or permission to call any old allocation/capture helper.
+--- watchdog-v2-app/overlay.py
++++ owned-provider-app/overlay.py
+@@ -1,103 +1,107 @@
+ # SPDX-License-Identifier: GPL-2.0-only
+-"""Exact-context derivative of immutable v6 adapter/import; no execution."""
++"""Exact derivative of reviewed watchdog-v2 generated native/producer bytes."""
+ 
+ 
+ def once(text, old, new):
+     if text.count(old) != 1:
+-        raise RuntimeError('nonunique frozen overlay context: ' + old[:80])
++        raise RuntimeError('nonunique reviewed overlay context: ' + old[:80])
+     return text.replace(old, new)
+ 
+ 
+ def derive(native, source):
+-    source = once(source, '#include "sensor_baseline.h"\n',
+-                  '#include "sensor_baseline.h"\n#include "watchdog_owner.h"\n')
+-    source = once(source, ' int watchdog_hold,encoder_hold,legacy_control;',
+-        ' struct qw_owner watchdog;int encoder_hold,legacy_control;\n int last_close_attempt;unsigned close_unknown;')
++    source = once(source, '#include "watchdog_owner.h"\n',
++        '#include "watchdog_owner.h"\n#include "owned-provider-types.h"\n')
++    source = once(source, ' struct qw_owner watchdog;int encoder_hold,legacy_control;',
++        ' struct qw_owner watchdog;int encoder_hold,legacy_control;\n struct qp_roles providers;')
++    source = once(source, 'c->watchdog=(struct qw_owner)QW_OWNER_EMPTY;}',
++        'c->watchdog=(struct qw_owner)QW_OWNER_EMPTY;c->providers=(struct qp_roles)QP_ROLES_EMPTY;}')
++    source = once(source, 'static int capture_failed(struct qc_rtsp_context *c)',
++        'static void provider_hold(struct qc_rtsp_context *);\nstatic int capture_failed(struct qc_rtsp_context *c)')
++    source = once(source, '{c->retirement_uncertain=1;qw_owner_fail(&c->watchdog);return CAMERA_IO_ERROR;}',
++        '{c->retirement_uncertain=1;qw_owner_fail(&c->watchdog);provider_hold(c);return CAMERA_IO_ERROR;}')
++    source = once(source, '#include "source-close-once.inc"',
++        '#include "provider-observe.inc"\n#include "source-close-once.inc"')
++    source = once(source, ' if(c->retirement_uncertain||qw_owner_check(&c->watchdog))return capture_failed(c);',
++        ' if(c->retirement_uncertain||!provider_shape(c)||qw_owner_check(&c->watchdog))return capture_failed(c);')
++    source = once(source, '   if(c->continuous_frame<0){',
++        '   if(c->providers.phase==QP_COMMITTED){ /* preloaded FD does NOT skip activation */')
+     source = once(source,
+-        'c->h264_stream_fd=c->continuous_sensor=c->continuous_frame=c->watchdog_hold=c->encoder_hold=c->legacy_control=-1;',
+-        'c->h264_stream_fd=c->continuous_sensor=c->continuous_frame=c->encoder_hold=c->legacy_control=-1;c->last_close_attempt=-1;c->watchdog=(struct qw_owner)QW_OWNER_EMPTY;')
++        '    c->continuous_sensor=open("/dev/i2c-0",O_RDWR);\n    if(c->continuous_sensor<0||ioctl(c->continuous_sensor,I2C_SLAVE,0x30)||sensor_read(c->continuous_sensor,0x3107)!=0xda||sensor_read(c->continuous_sensor,0x3108)!=0x4d||sensor_read(c->continuous_sensor,0x0100)!=0)goto done;\n     c->continuous_frame=open("/dev/qc07f-frame",O_RDONLY);\n     if(c->continuous_frame<0)goto done;',
++        '    if(provider_observe(c)||qw_owner_check(&c->watchdog))goto done;')
+     source = once(source,
+-        'static int capture_failed(struct qc_rtsp_context *c)\n{c->retirement_uncertain=1;return CAMERA_IO_ERROR;}',
+-        'static int capture_failed(struct qc_rtsp_context *c)\n{c->retirement_uncertain=1;qw_owner_fail(&c->watchdog);return CAMERA_IO_ERROR;}')
+-    start = source.index('static int protected_guard_finish(')
+-    end = source.index('static int continuous_retire(', start)
+-    source = source[:start] + '#include "source-close-once.inc"\n' + source[end:]
+-    for field in ('continuous_sensor', 'continuous_frame'):
+-        source = once(source, 'if(close(c->'+field+'))return capture_failed(c);c->'+field+'=-1;',
+-                      'if(source_close_once(c,&c->'+field+'))return CAMERA_IO_ERROR;')
++        '     if(ioctl(c->continuous_frame,QC_ISP_RECEIPT_BIND,&bound))goto done;',
++        '     if(ioctl(c->continuous_frame,QC_ISP_RECEIPT_BIND,&bound)||provider_store_frame(c,&bound))goto done;')
++    source = once(source, '     c->last_source_instance=bound.source_instance;c->last_file_instance=bound.file_instance;',
++        '     /* Selector/register observations are effects ONLY under actual guard,\n'
++        '      * after all adopted identities/global lifetime and fresh BIND. */\n'
++        '     if(qw_owner_check(&c->watchdog)||ioctl(c->continuous_sensor,I2C_SLAVE,0x30)||\n'
++        '        sensor_read(c->continuous_sensor,0x3107)!=0xda||sensor_read(c->continuous_sensor,0x3108)!=0x4d||\n'
++        '        sensor_read(c->continuous_sensor,0x0100)!=0)goto done;\n'
++        '     c->last_source_instance=bound.source_instance;c->last_file_instance=bound.file_instance;')
++    source = once(source, '     if(ioctl(c->continuous_frame,QC_ISP_RECEIPT_ARM,&armed))goto done;',
++        '     if(qw_owner_check(&c->watchdog)||ioctl(c->continuous_frame,QC_ISP_RECEIPT_ARM,&armed)||provider_store_frame(c,&armed))goto done;')
++    source = once(source, '     if(sensor_stream(c->continuous_sensor,1))goto done;',
++        '     if(sensor_stream(c->continuous_sensor,1))goto done;\n     c->providers.phase=QP_ACTIVE;')
++    source = source.replace('qc_receipt_query(c->continuous_frame,', 'provider_receipt_query(c,')
++    source = once(source, '  int encoder=-1,result=CAMERA_IO_ERROR;', '  int result=CAMERA_IO_ERROR;')
++    source = once(source, ' encoder=open("/dev/qc07f-encoder",O_RDWR);if(encoder<0)goto done;',
++        '  if(!provider_shape(c)||provider_encoder_observe(c))goto done;')
++    source = once(source, ' if(h264_p_frames){\n   if(c->h264_stream_fd<0)c->h264_stream_fd=open("/dev/qc07f-encoder",O_RDWR);\n   if(c->h264_stream_fd<0)goto done;',
++        '   if(h264_p_frames==1){')
++    source = once(source, '    if(ioctl(c->h264_stream_fd,QC_HWENC_H264_STREAM,&q))goto done;job=q.frame;',
++        '    if(ioctl(c->h264_stream_fd,QC_HWENC_H264_STREAM,&q))goto done;\n'
++        '    if(q.frame_num>65535)goto done;\n'
++        '    c->providers.codec_frame_num=q.frame_num;job=q.frame;')
++    source = once(source, ' }else if(ioctl(encoder,QC_HWENC_H264_IDR,&job))goto done;',
++        ' }else goto done; /* temporary IDR-only role deliberately unsupported */')
+     source = once(source,
+-        'if(c->h264_stream_fd>=0){if(close(c->h264_stream_fd))return capture_failed(c);c->h264_stream_fd=-1;}',
+-        'if(c->h264_stream_fd>=0&&source_close_once(c,&c->h264_stream_fd))return CAMERA_IO_ERROR;')
+-    source = once(source, ' int watchdog=-1,timeout=5,result=-1;', ' int result=-1;')
+-    source = once(source, ' if(c->retirement_uncertain||c->watchdog_hold>=0)return -1;',
+-                  ' if(c->retirement_uncertain||qw_owner_check(&c->watchdog))return capture_failed(c);')
++        '   if(encoder>=0){\n    if(result!=CAMERA_OK)c->encoder_hold=encoder;\n    else if(source_close_once(c,&encoder)){if(encoder>=0)c->encoder_hold=encoder;result=CAMERA_IO_ERROR;}\n   }',
++        '   /* Selected STREAM used only the adopted persistent description.\n'
++        '    * No unused temporary open, alias or per-frame close/session claim. */')
++    source = once(source, '   struct qc_rtsp_context *c=context;if(!c)return CAMERA_INVALID;',
++        '   struct qc_rtsp_context *c=context;if(!c)return CAMERA_INVALID;\n'
++        '   if(!provider_shape(c))return CAMERA_NOT_READY;')
+     source = once(source,
+-        ' watchdog=open("/dev/watchdog0",O_WRONLY);if(watchdog<0||ioctl(watchdog,WDIOC_SETTIMEOUT,&timeout)||timeout!=5)goto done;\n', '')
+-    source = once(source, 'nh_sensor_exact139(c->continuous_sensor,watchdog,',
+-                  'nh_sensor_exact139(c->continuous_sensor,c->watchdog.fd,')
+-    source = once(source,
+-        'c->receipt_evidence=active;c->capture_sequence=q.sequence;c->raw_valid=1;result=0;break;',
+-        'c->receipt_evidence=active;c->capture_sequence=q.sequence;c->raw_valid=1;\n    /* Full extent/status/CRC + keyed ACTIVE receipt succeeded BEFORE this sole ping. */\n    if(qw_owner_capture_progress(&c->watchdog))goto done;result=0;break;')
+-    source = once(source, '  if(protected_guard_finish(c,watchdog,!result)!=CAMERA_OK)result=-1;',
+-                  '  if(!result&&qw_owner_check(&c->watchdog))result=capture_failed(c);')
+-    source = once(source, 'int encoder=-1,guard=-1,result=CAMERA_IO_ERROR,timeout=5;',
+-                  'int encoder=-1,result=CAMERA_IO_ERROR;')
+-    source = once(source, 'c->producer_begin_ns=begin*1000000ULL;',
+-                  'c->producer_begin_ns=c->watchdog.start_ns; /* include outer lifetime/admission cost */')
+-    source = once(source, '   if(prepare_output(c,c->producer_begin_ns)!=CAMERA_OK)return CAMERA_NOT_READY;',
+-                  '   if(qw_owner_check(&c->watchdog))return capture_failed(c);\n   if(prepare_output(c,c->producer_begin_ns)!=CAMERA_OK)return CAMERA_NOT_READY;')
+-    source = once(source,
+-        '  guard=open("/dev/watchdog0",O_WRONLY);if(guard<0||ioctl(guard,WDIOC_SETTIMEOUT,&timeout)||timeout!=5)goto done;',
+-        '  if(qw_owner_check(&c->watchdog))return capture_failed(c);')
+-    source = once(source,
+-        'else if(close(encoder)){c->encoder_hold=encoder;c->retirement_uncertain=1;result=CAMERA_IO_ERROR;}',
+-        'else if(source_close_once(c,&encoder)){if(encoder>=0)c->encoder_hold=encoder;result=CAMERA_IO_ERROR;}')
+-    source = once(source, '   if(protected_guard_finish(c,guard,result==CAMERA_OK)!=CAMERA_OK)result=CAMERA_IO_ERROR;',
+-                  '   if(result==CAMERA_OK&&qw_owner_check(&c->watchdog))result=CAMERA_IO_ERROR;')
+-    source = once(source,
+-        'if(c->h264_stream_fd>=0){int fd=c->h264_stream_fd;c->h264_stream_fd=-1;if(close(fd))c->retirement_uncertain=1;}',
+-        'if(c->h264_stream_fd>=0&&source_close_once(c,&c->h264_stream_fd))return CAMERA_IO_ERROR;')
+-    if '/dev/watchdog0' in source or 'protected_guard_finish' in source or 'watchdog_hold' in source:
+-        raise RuntimeError('old watchdog open/close alias survived derivative')
+-    native = once(native, 'static unsigned storage_selected,raw_reuse_requested;',
+-        'static unsigned storage_selected,raw_reuse_requested;\n'
+-        'static int native_guard_present(void)\n'
+-        '{return !stop&&!native.retirement_uncertain&&!source_clock.failed&&native.watchdog.fd>=3&&\n'
+-        ' (native.watchdog.state==QW_UNKNOWN||native.watchdog.state==QW_DISABLED||native.watchdog.state==QW_ACTIVE5);}')
+-    native = once(native, ' if(c->resident_storage)return CAMERA_OK;',
+-        ' if(qw_owner_check(&c->watchdog)){nh_native_fence(NULL);return CAMERA_IO_ERROR;}\n if(c->resident_storage)return CAMERA_OK;')
+-    for marker in ('int nh_native_memory_start(uint64_t start)\n{',
+-                   'int nh_native_memory_fixed_buffers(void *hub)\n{',
+-                   'int nh_native_memory_gate(void *unused,enum nh_memory_stage stage)\n{'):
+-        native = once(native, marker, marker+'\n if(!native_guard_present())return CAMERA_NOT_READY;')
+-    for old, new in (
+-        ('void nh_native_init(void)', 'static void native_init_legacy(void)'),
+-        ('int nh_native_memory_start(uint64_t start)', 'static int native_memory_start_legacy(uint64_t start)'),
+-        ('int nh_native_next(void *unused,', 'static int native_next_legacy(void *unused,'),
+-        ('int nh_native_release(void *unused,', 'static int native_release_legacy(void *unused,'),
+-        ('int nh_native_retire(void *unused)', 'static int native_retire_body(void *unused)'),
+-        ('int nh_native_retire_held(void *unused,', 'static int native_retire_held_legacy(void *unused,')):
+-        native = once(native, old, new)
+-    native = once(native, 'int r=nh_native_retire(NULL);', 'int r=native_retire_body(NULL);')
++        ' if(c->h264_stream_fd>=0&&source_close_once(c,&c->h264_stream_fd))return CAMERA_IO_ERROR;\n c->h264_stream_frames=0;c->ownership_idr=1;',
++        ' if(c->h264_stream_fd>=0){\n'
++        '  if(provider_encoder_observe(c)||source_close_once(c,&c->h264_stream_fd))return CAMERA_IO_ERROR;\n'
++        ' }\n c->providers.phase=QP_CLOSED;\n c->h264_stream_frames=0;c->ownership_idr=1;')
++    if 'open(' in source:
++        raise RuntimeError('provider open fallback survived derivative')
+     native = once(native,
+-        ' if(!r&&!parked_after_stop&&native.resident_storage){if(native.resident_storage!=raw)free(native.resident_storage);native.resident_storage=NULL;}',
+-        ' if(!r&&qw_owner_check(&native.watchdog)){nh_native_fence(NULL);return CAMERA_IO_ERROR;}\n /* Retain resident backing until outer logical watchdog-disable ACK. */')
++        ' (native.watchdog.state==QW_UNKNOWN||native.watchdog.state==QW_DISABLED||native.watchdog.state==QW_ACTIVE5);}',
++        ' (native.watchdog.state==QW_UNKNOWN||native.watchdog.state==QW_DISABLED||native.watchdog.state==QW_ACTIVE5)&&provider_shape(&native);}')
+     native = once(native,
+-        ' /* Actual normal source END/QUERY/ACK succeeded before this known CPU free. */',
+-        ' /* Actual normal source END/QUERY/ACK succeeded before this known CPU free. */\n if(qw_owner_check(&native.watchdog)){native.produced_storage=parked_after_stop;parked_after_stop=NULL;nh_native_fence(NULL);return CAMERA_IO_ERROR;}')
++        ' if(native.h264_stream_fd<0)native.h264_stream_fd=open("/dev/qc07f-encoder",O_RDWR);',
++        ' if(provider_observe(&native))return CAMERA_IO_ERROR;')
+     native = once(native,
+-        ' if(native.resident_storage!=raw)free(native.resident_storage);native.resident_storage=NULL;parked_after_stop=NULL;memset(&expected,0,sizeof(expected));return CAMERA_OK;',
+-        ' /* Retain actual parked/resident backing until outer disable ACK. */ return CAMERA_OK;')
+-    native = once(native, 'if(now==UINT64_MAX)native.retirement_uncertain=1;',
+-                  'if(now==UINT64_MAX){native.retirement_uncertain=1;qw_owner_fail(&native.watchdog);}')
+-    native = once(native, '{(void)unused;native.retirement_uncertain=1;}',
+-                  '{(void)unused;native.retirement_uncertain=1;qw_owner_fail(&native.watchdog);}')
+-    native = once(native, ' native.retirement_uncertain=1;\n fprintf(stderr,"NH_QUARANTINE',
+-                  '  nh_native_fence(NULL);\n fprintf(stderr,"NH_QUARANTINE')
+-    native = once(native, 'watchdog=%d CPU_loan=',
+-        'watchdog_actual_fd=%d watchdog_state=%u close_unknown=%u last_close_attempt_NOTowned=%d CPU_parked=%u CPU_loan=')
++        ' if(native.h264_stream_fd<0||ioctl(native.h264_stream_fd,QC_HWENC_LIFETIME_QUERY,&q)||\n    q.version!=1||q.struct_bytes!=sizeof(q)||q.reserved||q.quarantined||q.dma_uncertain||\n    q.guard_poisoned||q.failed_reset_step||q.reset_error||q.fault_session||!q.session_sequence){\n  native.retirement_uncertain=1;return CAMERA_IO_ERROR;\n }',
++        ' if(ioctl(native.h264_stream_fd,QC_HWENC_LIFETIME_QUERY,&q)||q.version!=1||\n'
++        '    q.struct_bytes!=sizeof(q)||q.reserved)return capture_failed(&native);\n'
++        ' native.providers.global_last=q; /* full logical snapshot before fault refusal */\n'
++        ' if(q.quarantined||q.dma_uncertain||q.guard_poisoned||q.failed_reset_step||\n'
++        '    q.reset_error||q.fault_session||q.session_sequence<native.providers.encoder_identity.session_identity)\n'
++        '  return capture_failed(&native);')
++    native = native.replace('qc_receipt_query(native.continuous_frame,', 'provider_receipt_query(&native,')
++    native = once(native, '(void)unused;int r=idle_h264_checked(&native);',
++        '(void)unused;if(lifetime())return CAMERA_IO_ERROR;int r=idle_h264_checked(&native);')
+     native = once(native,
+-        'native.encoder_hold,native.watchdog_hold,native.produced_storage!=NULL,',
+-        'native.encoder_hold,native.watchdog.fd,(unsigned)native.watchdog.state,native.close_unknown,native.last_close_attempt,parked_after_stop!=NULL,native.produced_storage!=NULL,')
+-    native += '\n#include "native-watchdog.inc"\n'
++        ' uint64_t begin=nh_native_now(NULL);int r=nh_memory_runtime_gate(&memory_state,NH_MEM_FIXED_PAID,begin);',
++        ' uint64_t begin=nh_native_now(NULL);\n'
++        ' if(lifetime())return CAMERA_NOT_READY; /* reobserve roles before backing touches */\n'
++        ' int r=nh_memory_runtime_gate(&memory_state,NH_MEM_FIXED_PAID,begin);')
++    native = once(native,
++        'void nh_native_fence(void *unused){(void)unused;native.retirement_uncertain=1;qw_owner_fail(&native.watchdog);}',
++        'void nh_native_fence(void *unused){(void)unused;native.retirement_uncertain=1;qw_owner_fail(&native.watchdog);provider_hold(&native);}')
++    native = once(native, ' fflush(stderr);\n for(;;)raise(SIGSTOP);',
++        ' fprintf(stderr,"NH_PROVIDER_HOLD phase=%u staged_sensor=%d staged_frame=%d staged_encoder=%d expected_source=%llu expected_file=%llu expected_session=%llu last_frame_state=%u last_relation=%u\\n",\n'
++        ' (unsigned)native.providers.phase,native.providers.sensor_staged,native.providers.frame_staged.fd,\n'
++        ' native.providers.encoder_staged.fd,(unsigned long long)native.providers.frame_identity.source_instance,\n'
++        ' (unsigned long long)native.providers.frame_identity.file_instance,\n'
++        ' (unsigned long long)native.providers.encoder_identity.session_identity,\n'
++        ' native.providers.frame_last.state,native.providers.encoder_last.reference_relation);\n'
++        ' fflush(stderr);\n for(;;)raise(SIGSTOP);')
++    native += '\n#include "provider-take.inc"\n'
++    if 'open(' in native:
++        raise RuntimeError('native encoder open fallback survived derivative')
+     return {'native_adapter.c': native, 'rtspd-native-import.c': source}
+--- watchdog-v2-app/owned-provider-types.h
++++ owned-provider-app/owned-provider-types.h
+@@ -0,0 +1,24 @@
++/* SPDX-License-Identifier: GPL-2.0-only */
++#ifndef QP_OWNED_PROVIDER_TYPES_H
++#define QP_OWNED_PROVIDER_TYPES_H
++#include "frame_fd_custody.h"
++#include "encoder_fd_custody.h"
++#include "stage-telemetry-uapi.h"
++#include <sys/stat.h>
++enum qp_phase {QP_EMPTY,QP_MOVING,QP_COMMITTED,QP_ACTIVE,QP_CLOSED,QP_HOLD};
++struct qp_roles {
++ enum qp_phase phase; /* transfer/source history, NEVER authorization */
++ int sensor_staged;
++ struct qc_frame_fd_custody frame_staged;
++ struct qc_encoder_fd_custody encoder_staged;
++ dev_t sensor_device,sensor_filesystem,frame_filesystem,encoder_filesystem;
++ ino_t sensor_inode,frame_inode,encoder_inode;
++ struct qc_frame_fd_identity frame_identity;
++ struct qc_encoder_fd_identity encoder_identity;
++ struct qc_capture_receipt frame_last;
++ struct qc_hwenc_open_query encoder_last;
++ struct qc_hwenc_lifetime global_last;
++ uint32_t codec_frame_num;
++};
++#define QP_ROLES_EMPTY { .sensor_staged=-1, .frame_staged=QC_FRAME_FD_CUSTODY_EMPTY, .encoder_staged=QC_ENCODER_FD_CUSTODY_EMPTY }
++#endif
+--- watchdog-v2-app/owned-provider.h
++++ owned-provider-app/owned-provider.h
+@@ -0,0 +1,31 @@
++/* SPDX-License-Identifier: GPL-2.0-only */
++#ifndef QP_OWNED_PROVIDER_H
++#define QP_OWNED_PROVIDER_H
++#include "native_watchdog.h"
++#include "frame_fd_custody.h"
++#include "encoder_fd_custody.h"
++/* Source API only; stable/disjoint slots/expected values/output objects, no
++ * aliases, concurrent FD/I/O/reentry/fork or competing provider dispatch. Trusted
++ * bootstrap independently establishes actual boot/image/source/device/session/
++ * file associations, permitted effects and backing/recovery. Metadata is NOT
++ * proof of these, permission, readiness or DMA retirement. Old76 lacks query88.
++ *
++ * init -> watchdog take UNKNOWN -> storage select + exact139 opt-in -> take roles
++ * -> original one-shot memory setup -> NEXT/release/normal retirement. H264 IP
++ * stream only; no IDR-only temporary role, fallback opens or retry/restart.
++ *
++ * This is NOT atomic: sensor GET metadata, encoder take, frame take, sensor move,
++ * then observed helper give-back moves to ACTUAL native slots. A failed initial
++ * encoder take leaves all slots/bootstrap ownership unchanged. Once any moves,
++ * failure latches partial HOLD retaining actual moved FDs in stable native/staging
++ * records. Bootstrap still owns its nonnegative slots; it MUST retain them and
++ * this real process. Never assume return!=0 means bootstrap owns all descriptions.
++ * No rollback/close/destructor/retry or automatic process retention is provided.
++ * Expected identities and latest valid known snapshots survive HOLD; failed/
++ * malformed/mismatched replies do not overwrite them. No borrowed caller pointer
++ * persists in the native owner; snapshots are not duplicate FD ownership.
++ */
++int nh_native_provider_take(int *sensor_slot,dev_t sensor_device,
++ int *frame_slot,const struct qc_frame_fd_identity *,
++ int *encoder_slot,const struct qc_encoder_fd_identity *);
++#endif
+--- watchdog-v2-app/provider-observe.inc
++++ owned-provider-app/provider-observe.inc
+@@ -0,0 +1,88 @@
++/* SPDX-License-Identifier: GPL-2.0-only
++ * Real observational refusals for the actual adopted descriptions, not grants.
++ */
++static void provider_hold(struct qc_rtsp_context *c)
++{
++ c->providers.phase=QP_HOLD;
++ if(c->providers.frame_staged.fd>=3)c->providers.frame_staged.state=QC_FRAME_FD_HOLD;
++ if(c->providers.encoder_staged.fd>=3)c->providers.encoder_staged.state=QC_ENCODER_FD_HOLD;
++}
++static int provider_shape(const struct qc_rtsp_context *c)
++{
++ return (c->providers.phase==QP_COMMITTED||c->providers.phase==QP_ACTIVE)&&
++  h264_p_frames==1&&width==1280&&height==720&&
++  c->continuous_sensor>=3&&c->continuous_frame>=3&&c->h264_stream_fd>=3&&
++  c->providers.sensor_staged==-1&&c->providers.frame_staged.fd==-1&&
++  c->providers.encoder_staged.fd==-1&&c->providers.sensor_device&&
++  c->providers.frame_identity.source_instance&&c->providers.frame_identity.file_instance&&
++  c->providers.encoder_identity.session_identity;
++}
++static int provider_node(int fd,int mode,dev_t device,dev_t filesystem,ino_t inode)
++{
++ struct stat st;int flags=fcntl(fd,F_GETFL),fdflags=fcntl(fd,F_GETFD);
++ return fd>=3&&flags>=0&&fdflags>=0&&!fstat(fd,&st)&&(flags&O_ACCMODE)==mode&&
++  (fdflags&FD_CLOEXEC)&&S_ISCHR(st.st_mode)&&st.st_rdev==device&&
++  st.st_dev==filesystem&&st.st_ino==inode;
++}
++static int provider_store_frame(struct qc_rtsp_context *c,const struct qc_capture_receipt *q)
++{
++ if(!qc_receipt_header(q)||q->state>QC_RECEIPT_UNCERTAIN||q->reason>QC_STOP_CLOSE||
++    q->source_instance!=c->providers.frame_identity.source_instance||
++    q->file_instance!=c->providers.frame_identity.file_instance)return -1;
++ c->providers.frame_last=*q;return 0;
++}
++static int provider_receipt_query(struct qc_rtsp_context *c,const struct qc_capture_receipt *key,
++ struct qc_capture_receipt *out)
++{
++ if(qc_receipt_query(c->continuous_frame,key,out))return -1;
++ return provider_store_frame(c,out);
++}
++static int provider_encoder_observe(struct qc_rtsp_context *c)
++{
++ struct qp_roles *p=&c->providers;
++ if(!provider_node(c->h264_stream_fd,O_RDWR,p->encoder_identity.device,
++                   p->encoder_filesystem,p->encoder_inode))return capture_failed(c);
++ struct qc_hwenc_open_query q={0};
++ if(ioctl(c->h264_stream_fd,QC_HWENC_OPEN_QUERY,&q))return capture_failed(c);
++ /* Same complete query schema as imported custody. No partial reply, old global
++  * sequence fallback, relation/telemetry guess or saturation uniqueness claim. */
++ if(q.version!=QC_HWENC_OPEN_QUERY_VERSION||q.struct_bytes!=sizeof(q)||q.reserved||
++    !q.session_identity||q.session_identity!=p->encoder_identity.session_identity||
++    q.reference_frame_num>65535||q.quarantined>1||q.dma_uncertain>1||
++    q.guard_poisoned>1||q.ledger_active>1)return capture_failed(c);
++ switch(q.reference_relation){
++ case QC_HWENC_REFERENCE_NONE:
++  if(q.reference_owner_identity||q.reference_frame_num)return capture_failed(c);break;
++ case QC_HWENC_REFERENCE_THIS_OPEN:
++  if(q.reference_owner_identity!=q.session_identity)return capture_failed(c);break;
++ case QC_HWENC_REFERENCE_OTHER_OPEN:
++  if(!q.reference_owner_identity||q.reference_owner_identity==q.session_identity)return capture_failed(c);break;
++ default:return capture_failed(c);
++ }
++ p->encoder_last=q; /* retain valid THIS/OTHER/fault snapshot BEFORE refusing */
++ if(q.quarantined||q.dma_uncertain||q.guard_poisoned||q.ledger_active||
++    (q.telemetry_flags&~QC_STAGE_F_SATURATED))return capture_failed(c);
++ if(c->h264_stream_frames){
++  if(q.reference_relation!=QC_HWENC_REFERENCE_THIS_OPEN||q.reference_frame_num!=p->codec_frame_num)
++   return capture_failed(c);
++ }else if(q.reference_relation!=QC_HWENC_REFERENCE_NONE)return capture_failed(c);
++ return CAMERA_OK;
++}
++static int provider_observe(struct qc_rtsp_context *c)
++{
++ struct qp_roles *p=&c->providers;
++ if(!provider_shape(c)||!provider_node(c->continuous_sensor,O_RDWR,p->sensor_device,
++       p->sensor_filesystem,p->sensor_inode)||
++    !provider_node(c->continuous_frame,O_RDONLY,p->frame_identity.device,
++       p->frame_filesystem,p->frame_inode))return capture_failed(c);
++ struct qc_capture_receipt bound=qc_receipt_request(NULL);
++ if(ioctl(c->continuous_frame,QC_ISP_RECEIPT_BIND,&bound)||provider_store_frame(c,&bound))
++  return capture_failed(c);
++ if(p->phase==QP_COMMITTED){
++  if(bound.generation||bound.state!=QC_RECEIPT_NONE||bound.reason||bound.stop_result||bound.stopped_ns)
++   return capture_failed(c);
++ }else if(!c->receipt_armed||!qc_receipt_same(&bound,&c->receipt_key)||
++    bound.state!=QC_RECEIPT_ACTIVE||bound.reason||bound.stop_result||bound.stopped_ns)
++  return capture_failed(c);
++ return provider_encoder_observe(c);
++}
+--- watchdog-v2-app/provider-take.inc
++++ owned-provider-app/provider-take.inc
+@@ -0,0 +1,55 @@
++/* SPDX-License-Identifier: GPL-2.0-only
++ * Included after the real native/watchdog wrappers. Stable singleton custody.
++ */
++#include "owned-provider.h"
++int nh_native_provider_take(int *sensor_slot,dev_t sensor_device,
++ int *frame_slot,const struct qc_frame_fd_identity *frame,
++ int *encoder_slot,const struct qc_encoder_fd_identity *encoder)
++{
++ if(!sensor_slot||!frame_slot||!encoder_slot||!frame||!encoder||!sensor_device||
++    !frame->device||!frame->source_instance||!frame->file_instance||
++    !encoder->device||!encoder->session_identity)return CAMERA_INVALID;
++ if(!native_initialized||stop||native.retirement_uncertain||source_clock.failed||
++    native.watchdog.state!=QW_UNKNOWN||native.watchdog.fd<3||
++    native.providers.phase!=QP_EMPTY||memory_state.ledger.initialized||
++    !storage_selected||!sensor_baseline_requested||h264_p_frames!=1||width!=1280||height!=720||
++    native.continuous_sensor!=-1||native.continuous_frame!=-1||native.h264_stream_fd!=-1||
++    native.providers.sensor_staged!=-1||native.providers.frame_staged.fd!=-1||
++    native.providers.encoder_staged.fd!=-1||native.produced_storage||native.resident_storage||
++    parked_after_stop)return CAMERA_NOT_READY;
++ if(*sensor_slot<3||*frame_slot<3||*encoder_slot<3||*sensor_slot==*frame_slot||
++    *sensor_slot==*encoder_slot||*frame_slot==*encoder_slot||
++    *sensor_slot==native.watchdog.fd||*frame_slot==native.watchdog.fd||
++    *encoder_slot==native.watchdog.fd)return CAMERA_INVALID;
++ /* GET-only sensor metadata; NOT I2C_SLAVE/register reads or permission. */
++ struct stat sensor;
++ int flags=fcntl(*sensor_slot,F_GETFL),fdflags=fcntl(*sensor_slot,F_GETFD);
++ if(flags<0||fdflags<0||fstat(*sensor_slot,&sensor)||(flags&O_ACCMODE)!=O_RDWR||
++    !(fdflags&FD_CLOEXEC)||!S_ISCHR(sensor.st_mode)||sensor.st_rdev!=sensor_device)
++  return CAMERA_NOT_READY; /* no role moved */
++ struct qp_roles *p=&native.providers;
++ p->sensor_device=sensor_device;p->sensor_filesystem=sensor.st_dev;p->sensor_inode=sensor.st_ino;
++ p->frame_identity=*frame;p->encoder_identity=*encoder;
++ /* First helper failure leaves ALL bootstrap slots owned by bootstrap. Its
++  * uncommitted reply is not exposed; no native ownership/snapshot is invented. */
++ if(qc_encoder_fd_take(&p->encoder_staged,encoder_slot,&p->encoder_identity))
++  return native_guard_failure();
++ p->phase=QP_MOVING;p->encoder_last=p->encoder_staged.last_observed;
++ p->encoder_filesystem=p->encoder_staged.node_filesystem;p->encoder_inode=p->encoder_staged.node_inode;
++ if(qc_frame_fd_take(&p->frame_staged,frame_slot,&p->frame_identity))return native_guard_failure();
++ p->frame_last=p->frame_staged.last_observed;
++ p->frame_filesystem=p->frame_staged.node_filesystem;p->frame_inode=p->frame_staged.node_inode;
++ p->sensor_staged=*sensor_slot;*sensor_slot=-1;
++ /* Actual move, not alias/copy. Every destination slot is explicit -1. */
++ native.continuous_sensor=p->sensor_staged;p->sensor_staged=-1;
++ if(qc_frame_fd_give_back(&p->frame_staged,&native.continuous_frame)){
++  p->frame_last=p->frame_staged.last_observed;return native_guard_failure();
++ }
++ if(qc_encoder_fd_give_back(&p->encoder_staged,&native.h264_stream_fd)){
++  p->encoder_last=p->encoder_staged.last_observed;return native_guard_failure();
++ }
++ p->phase=QP_COMMITTED;
++ /* Reobserve actual native slots after staged records became EMPTY. No role
++  * pointer/qualified flag stands in for actual tuple/metadata observations. */
++ return lifetime(); /* actual per-open AND original global facts, no effect */
++}
+--- watchdog-v2-app/stage-telemetry-uapi.h
++++ owned-provider-app/stage-telemetry-uapi.h
+@@ -0,0 +1,48 @@
++/* SPDX-License-Identifier: GPL-2.0-only */
++#ifndef QC_STAGE_TELEMETRY_UAPI_H
++#define QC_STAGE_TELEMETRY_UAPI_H
++#include <linux/types.h>
++#include <linux/ioctl.h>
++#define QC_STAGE_VERSION 1U
++#define QC_STAGE_CLOCK_MONOTONIC_KTIME_NS 1U
++#define QC_STAGE_KINDS 9U
++#define QC_STAGE_PHASES 17U
++enum qc_stage_kind {
++ QC_STAGE_OTHER, QC_STAGE_BEGIN, QC_STAGE_NEXT, QC_STAGE_END,
++ QC_STAGE_QUEUE, QC_STAGE_H264, QC_STAGE_JPEG, QC_STAGE_INFO, QC_STAGE_NEXT_IRQ
++};
++enum qc_stage_phase {
++ QC_PHASE_RESET, QC_PHASE_PREPARE, QC_PHASE_PRE_IDLE, QC_PHASE_PROGRAM,
++ QC_PHASE_FRAME_WAIT, QC_PHASE_PP_COMMIT, QC_PHASE_PRE_GATE_DRAIN,
++ QC_PHASE_POST_GATE_DRAIN, QC_PHASE_GUARDS, QC_PHASE_CRC_PRE,
++ QC_PHASE_PIXEL_COPY, QC_PHASE_CRC_POST, QC_PHASE_OUTPUT_COPY,
++ QC_PHASE_ALLOC, QC_PHASE_FREE, QC_PHASE_METADATA_COPY, QC_PHASE_RESET_RETIRE
++};
++#define QC_STAGE_F_SATURATED 1U
++#define QC_STAGE_F_CLOCK_ERROR 2U
++#define QC_STAGE_F_LEDGER_ERROR 4U
++#define QC_STAGE_F_RETIRE_FAILED 8U
++/* Query one bounded aggregate + last operation, not a percentile/trace ring.
++ * Input: version=1, struct_bytes=sizeof, kind/phase in range, record=0 latest
++ * or1 latest failed operation, reserved=0.
++ * All remaining fields output. Fixed u32/aligned-u64 ABI; no address input.
++ */
++struct qc_stage_query {
++ __u32 version,struct_bytes,kind,phase,record,clock_source,flags,supported_mask;
++ __aligned_u64 samples,failed_samples,total_ns,min_ns,max_ns,work_bytes;
++ __aligned_u64 failed_total_ns;
++ __aligned_u64 operation_count,operation_ok,operation_failed,delivered;
++ __aligned_u64 last_operation,last_owner_generation,last_start_ns,last_end_ns;
++ __aligned_u64 last_phase_mask,last_phase_ns,last_phase_bytes;
++ __aligned_u64 last_phase_start_ns,last_phase_end_ns;
++ __s32 last_result;
++ __u32 last_kind,owner_active,last_retirement_failed;
++ __u32 reserved;
++ __aligned_u64 allocation_attempts,allocation_failures,allocation_successes,free_calls;
++ __aligned_u64 live_requested_bytes,peak_requested_bytes,total_requested_bytes,total_freed_bytes;
++ __aligned_u64 retire_failures;
++ __aligned_u64 owner_generation;
++};
++#define QC_ISP_STAGE_QUERY _IOWR('I',0x7f,struct qc_stage_query)
++#define QC_HWENC_STAGE_QUERY _IOWR('Q',0x65,struct qc_stage_query)
++#endif

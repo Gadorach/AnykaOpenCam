@@ -1,5 +1,33 @@
 # Active execution ledger — remaining foundation work
 
+**Actual provider derivative narrow SOURCE/API/ownership sufficiency:** no new
+correction-required defect in staged transfers/actual callsites.3,649 prior pins,
+six imports, ten reused dependency/object sets and16 archive member bodies checked;
+4,566 inputs unchanged. Review seal
+`dfcbf0e46f3ceb0bc41a1878cebeeb2b51d1a404555387dad6471d8b9e6c0080`.
+Parent selects fresh pre-memory/nonactivated role custody-return SOURCE subset,
+with actual per-step FD ownership and explicit UNKNOWN watchdog bootstrap handoff
+if supportable, no hardware control/disable/END/ACK/close, no false stopped state.
+Post-memory/failed-state handback, backing/external process retention and native/
+product lifecycle stay blocked. Query77 offline kernel build remains disjoint;
+no target effect, tests, RTSP rebase or full-provider acceptance.
+
+**P4b subset independent narrow SOURCE/API sufficiency:** no correction-required
+defect;90 candidate/595 custody/817 prior reader/204 accepted maps and preserved
+P3/P4a blocks verified,927 unique reader inputs unchanged. Review seal
+`b1aba40d19152adfa9aa870be8cbbc9b8c2afe5c34fa333ce87a9fb43e7f0a11`.
+Full P4b stays BLOCKED on exact topology counts/active alternate and raw/current
+continuity; syntax2/2 cited only, no tests or module/native selection.
+
+**PLAT-01/08 + ENC-02 separate offline build selected:** fresh Linux6.18.55
+qualification image carrying only reviewed observational encoder OPEN_QUERY plus
+explicit new localversion/coherent installed23.1.3 compiler/config/generated-header
+baseline. New query77 builder/docs/source/build/image outputs; preserve all75/76
+and other candidate sources/artifacts. No station/P1/module adoption, target boot,
+installer, runtime/tests or native/full-app acceptance. Configuration differences,
+packaging/DT/initramfs association and actual RAM extents must be reviewed; stop
+if unproved rather than fabricate an image. Provider ownership review stays disjoint.
+
 **Real mandatory provider-FD candidate delivered; focused review selected:**
 staged sensor/frame/persistent-encoder descriptions now route into guarded v6
 source without internal-open fallback. Nonatomic partial transfers retain actual

@@ -1,0 +1,57 @@
+{
+  "utc": "2026-10-22T14:06:41.835078+00:00",
+  "argv": [
+    "-"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "python": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+  "finalization_command_text": "docs/qualification-plans/kernel76-transport-20261021/station-descriptor-admission-p4b-review01/FINALIZATION_COMMAND.txt",
+  "candidate_seal_sha256": "0388936a8782c1e5c1f74c794b78040b47849dd506e6002b70f24dd839ff6653",
+  "source_sha256": "2516c416c20b621414ebb7e0b9b34be67076ca3c657602f7e1d2f2cd66787e0b",
+  "p3_review_seal_sha256": "c449dee74290c8bdd5d318f71816b83576d31a84a407ab05705092094f94db38",
+  "public_inputs_revalidated_unchanged": 927,
+  "disposition": "Narrow SOURCE/API sufficiency for selected cached P4b subset; full P4b BLOCKED on missing exact topology facts. No concrete correction-required defect identified.",
+  "scope": "Static only; no stored script main/compiler/generator/candidate/test/runtime/ARM/module/native/network/private IO/P1/original source/helper/Git/index/central-plan/settings/model/provider/safeguard operation. No next queue.",
+  "files": {
+    "docs/qualification-plans/kernel76-transport-20261021/station-descriptor-admission-p4b-review01/COLLECTION_COMMAND.txt": {
+      "bytes": 8454,
+      "sha256": "ec384820d431b01a32f741c0f572dcd1f48ee048d8598d27dd4722b49a8c9697"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-descriptor-admission-p4b-review01/FINALIZATION_COMMAND.txt": {
+      "bytes": 3293,
+      "sha256": "c6e0e6868117308855acf4bc2baea7a94e0b1c8b4741d75ce39f6ded13ab8d93"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-descriptor-admission-p4b-review01/METHOD.md": {
+      "bytes": 1866,
+      "sha256": "3072566299918f87e27bc7c3ee4945d87b50cb26b796b125a85d24b7f0746905"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-descriptor-admission-p4b-review01/actual-p3-p4b-diff.patch": {
+      "bytes": 5964,
+      "sha256": "df851995abed36cc24923986383ae971cbf628e7ca3db4d05e82d5bcc5fba14a"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-descriptor-admission-p4b-review01/additional-cache-excerpts.json": {
+      "bytes": 3121,
+      "sha256": "9d0289d2b3d5717438db907c41d549de30068bd96774938da5614e5baa3b78da"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-descriptor-admission-p4b-review01/input-receipt.json": {
+      "bytes": 189516,
+      "sha256": "5019e731971570f77af628d549a7cf9bce3059a3bd17be09b108d6f047450085"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-descriptor-admission-p4b-review01/input-seal.json": {
+      "bytes": 189169,
+      "sha256": "465c73152aaa544cd8a533f4fa7b8006624eb573ed8739501cc171be3c81dee9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-descriptor-admission-p4b-review01/public-excerpts.json": {
+      "bytes": 123280,
+      "sha256": "33b824267e398ad9972aa53e14f70bc4751b5f61ba64199e80b3b07f066dfe2c"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-descriptor-admission-p4b-review01/public-pin-verification.json": {
+      "bytes": 12053,
+      "sha256": "e39d5c612157082edbdfebd94fc2fd3473623fc24e4905527fe22b15ce992324"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/STATION76_DESCRIPTOR_ADMISSION_P4B_REVIEW.md": {
+      "bytes": 16312,
+      "sha256": "d6e40db6af504b0e1c9e619988938f6c90137bfb0c962d46531e3dc015e37e48"
+    }
+  }
+}

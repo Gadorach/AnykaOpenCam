@@ -1,0 +1,32 @@
+{
+  "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/drivers/usb/core/config.c": {
+    "bytes": 35033,
+    "sha256": "ab743458a359f987770a0556242d5080e0d0e33bf5ee4f33d1d5342867cf55f7",
+    "excerpts": [
+      {
+        "start_line": 245,
+        "end_line": 291,
+        "text": "static bool endpoint_is_duplicate(struct usb_endpoint_descriptor *e1,\n\t\tstruct usb_endpoint_descriptor *e2)\n{\n\tif (e1->bEndpointAddress == e2->bEndpointAddress)\n\t\treturn true;\n\n\tif (usb_endpoint_xfer_control(e1) || usb_endpoint_xfer_control(e2)) {\n\t\tif (usb_endpoint_num(e1) == usb_endpoint_num(e2))\n\t\t\treturn true;\n\t}\n\n\treturn false;\n}\n\n/*\n * Check for duplicate endpoint addresses in other interfaces and in the\n * altsetting currently being parsed.\n */\nstatic bool config_endpoint_is_duplicate(struct usb_host_config *config,\n\t\tint inum, int asnum, struct usb_endpoint_descriptor *d)\n{\n\tstruct usb_endpoint_descriptor *epd;\n\tstruct usb_interface_cache *intfc;\n\tstruct usb_host_interface *alt;\n\tint i, j, k;\n\n\tfor (i = 0; i < config->desc.bNumInterfaces; ++i) {\n\t\tintfc = config->intf_cache[i];\n\n\t\tfor (j = 0; j < intfc->num_altsetting; ++j) {\n\t\t\talt = &intfc->altsetting[j];\n\n\t\t\tif (alt->desc.bInterfaceNumber == inum &&\n\t\t\t\t\talt->desc.bAlternateSetting != asnum)\n\t\t\t\tcontinue;\n\n\t\t\tfor (k = 0; k < alt->desc.bNumEndpoints; ++k) {\n\t\t\t\tepd = &alt->endpoint[k].desc;\n\n\t\t\t\tif (endpoint_is_duplicate(epd, d))\n\t\t\t\t\treturn true;\n\t\t\t}\n\t\t}\n\t}\n\n\treturn false;\n}\n",
+        "sha256": "a59bcedf59e1e82d9077b4858c4b0cea7dbe144705e6f7093cdcb9ae4cf6d98f"
+      }
+    ]
+  },
+  "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/include/linux/usb.h": {
+    "bytes": 83142,
+    "sha256": "2ed66ba85dc343e09b8f1320c5017e43c26cbc671c1ea201a429aed92e2bb0c2",
+    "excerpts": [
+      {
+        "start_line": 679,
+        "end_line": 688,
+        "text": "\n\tstruct device dev;\n\n\tstruct usb_device_descriptor descriptor;\n\tstruct usb_host_bos *bos;\n\tstruct usb_host_config *config;\n\n\tstruct usb_host_config *actconfig;\n\tstruct usb_host_endpoint *ep_in[16];\n\tstruct usb_host_endpoint *ep_out[16];\n",
+        "sha256": "77aadd938e967df9f8aab261fb76bc2ef7d37fddae2dfc0750d1eb1aec006f6e"
+      },
+      {
+        "start_line": 748,
+        "end_line": 762,
+        "text": "#define to_usb_device(__dev)\tcontainer_of_const(__dev, struct usb_device, dev)\n\nstatic inline struct usb_device *__intf_to_usbdev(struct usb_interface *intf)\n{\n\treturn to_usb_device(intf->dev.parent);\n}\nstatic inline const struct usb_device *__intf_to_usbdev_const(const struct usb_interface *intf)\n{\n\treturn to_usb_device((const struct device *)intf->dev.parent);\n}\n\n#define interface_to_usbdev(intf)\t\t\t\t\t\\\n\t_Generic((intf),\t\t\t\t\t\t\\\n\t\t const struct usb_interface *: __intf_to_usbdev_const,\t\\\n\t\t struct usb_interface *: __intf_to_usbdev)(intf)\n",
+        "sha256": "e0fc1b512bf215eb0687ebecac2a03ef4b6cebe210d75efc7dca0c021a235806"
+      }
+    ]
+  }
+}

@@ -1,0 +1,125 @@
+python3 -B - <<'PY'
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib, json, difflib, sys
+R = Path.cwd()
+D = Path('docs/qualification-plans/kernel76-transport-20261021')
+O = D/'station-descriptor-admission-p4b-review01'
+E = D/'station-descriptor-admission-p4b-source01'
+S = Path('apps/qualification/kernel76-station-descriptor-admission/source')
+B = Path('apps/qualification/kernel76-station-control-owned/source')
+A = Path('apps/qualification/kernel76-station-owner-lifetime/source')
+K = Path('work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux')
+inputs = {}
+def pin(b): return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def read(p):
+ p=Path(p)
+ assert not p.is_absolute() and '..' not in p.parts
+ assert not any(x in str(p)for x in ('station-attach-rx','P1_REVIEW','P1_TOOL'))
+ assert p.is_file() and not p.is_symlink(),str(p)
+ b=p.read_bytes();v=pin(b)
+ assert str(p)not in inputs or inputs[str(p)]==v,str(p)
+ inputs[str(p)]=v
+ return b
+def obj(p): return json.loads(read(p))
+def verify(p,v): assert pin(read(p))==v,str(p)
+def emit(n,v):
+ with (O/n).open('x')as f:f.write(v if isinstance(v,str)else json.dumps(v,indent=2)+'\n')
+def seal(p,h=None):
+ b=read(p)
+ if h: assert pin(b)['sha256']==h,str(p)
+ m=json.loads(b)['files']
+ for k,v in m.items():verify(k,v)
+ return m
+sealpath=E/'candidate-seal.json'
+files=seal(sealpath,'0388936a8782c1e5c1f74c794b78040b47849dd506e6002b70f24dd839ff6653')
+assert len(files)==90
+actual={str(p)for base in (S.parent,E)for p in base.rglob('*')if p.is_file()}
+actual.add(str(D/'STATION76_DESCRIPTOR_ADMISSION_P4B_CANDIDATE.md'))
+assert actual==set(files)|{str(sealpath)}
+copy=obj(E/'copy-baseline.json');inv=obj(E/'source-inventory.json')
+src={str(p.relative_to(S)):pin(read(p))for p in sorted(S.rglob('*'))if p.is_file()}
+base={str(p.relative_to(B)):pin(read(p))for p in sorted(B.rglob('*'))if p.is_file()}
+assert len(src)==len(base)==74 and src==inv['source'] and base==copy['baseline']
+assert set(src)==set(base)
+changed=sorted(k for k in src if src[k]!=base[k])
+assert changed==['hgic_smac/attach_status.c','utils/owner_usb.c']
+sha=hashlib.sha256(json.dumps(src,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+assert sha==inv['source_sha256']=='2516c416c20b621414ebb7e0b9b34be67076ca3c657602f7e1d2f2cd66787e0b'
+delta=''.join(''.join(difflib.unified_diff(read(B/k).decode().replace('\r\n','\n').splitlines(keepends=True),read(S/k).decode().replace('\r\n','\n').splitlines(keepends=True),fromfile='reviewed-p3/'+k,tofile='p4b-subset/'+k))for k in changed)
+assert delta.encode()==read(E/'CACHED_DESCRIPTOR_DELTA.patch')
+union={}
+for n,f in [('station-attach-init-p2-source01','candidate-seal.json'),('station-attach-init-p2-review01','review-seal.json'),('station-attach-init-p2-v2-source01','candidate-seal.json'),('station-attach-init-p2-v2-review01','review-seal.json'),('station-attach-tx-p3-source01','candidate-seal.json'),('station-owner-lifetime-p4a-source01','candidate-seal.json'),('station-owner-lifetime-p4a-review01','review-seal.json'),('station-control-owned-p3-source01','candidate-seal.json'),('station-control-owned-p3-review01','review-seal.json')]:
+ p=D/n/f
+ expected='c449dee74290c8bdd5d318f71816b83576d31a84a407ab05705092094f94db38'if n=='station-control-owned-p3-review01'else None
+ m=seal(p,expected)
+ if n=='station-control-owned-p3-source01':assert pin(read(p))['sha256']=='5d8a96a78e1b6d99f7a16f259d36f0e077644f7e7378c8ecd88b58109add66eb'
+ for k,v in {**m,str(p):pin(read(p))}.items():
+  assert k not in union or union[k]==v
+  union[k]=v
+assert union==copy['frozen_custody']and len(union)==595
+reader=obj(E/'p3-review-reader-custody.json')
+assert reader==obj(D/'station-control-owned-p3-review01/input-seal.json')['inputs']and len(reader)==817
+for k,v in reader.items():verify(k,v)
+accepted=0
+for n,m in copy['accepted'].items():
+ p=D/n/'candidate-seal.json';verify(p,m['seal'])
+ assert {k:v for k,v in obj(p)['files'].items()if '/source/'in k}==m['source']
+ for k,v in m['source'].items():verify(k,v);accepted+=1
+assert accepted==204
+before=read(B/'utils/owner_usb.c');after=read(S/'utils/owner_usb.c')
+parts={
+ 'all_preprobe_P3_P4a_code':(before[:before.index(b'static int hgic_usb_probe(')],after[:after.index(b'/* Historical cached scalars,')]),
+ 'probe_allocation_and_owner_initialization':(before[before.index(b'    usb = kzalloc('):before.index(b"    /* Preserve P2's minimal descriptor policy.")],after[after.index(b'    usb = kzalloc('):after.index(b'    /* Only the exact preallocation-admitted pair;')]),
+ 'allocation_core_probe_publication_32RX_rollback_disconnect_module_return':(before[before.index(b'    error = hgic_usb_alloc_slots(usb);'):],after[after.index(b'    error = hgic_usb_alloc_slots(usb);'):])}
+blocks={}
+for n,(a,b)in parts.items():
+ assert a==b and pin(a)==inv['preserved_blocks'][n],n
+ blocks[n]=pin(a)
+assert read(S/'hgic_smac/attach_status.c')==read(B/'hgic_smac/attach_status.c').replace(b'policy=control-owned-p3-source01 schema=2',b'policy=descriptor-admission-p4b-source01 schema=2')
+def region(p,start,end):
+ b=read(p);i=b.index(start);return b[i:b.index(end,i+len(start))]
+p4a={}
+for rel,start,end,newend in [
+ ('hgic_smac/attach_init.c',b'static void attach_owner_stop(',b'static int attach_core_probe(',None),
+ ('utils/owner_usb.c',b'static void hgic_usb_dispose(',b'static int hgic_usb_probe(',b'/* Historical cached scalars,'),
+ ('utils/owner_usb.c',b'static void hgic_usb_receive(struct urb *urb)\n{',b'static void hgic_usb_tx_complete(struct urb *urb)\n{',None),
+ ('utils/owner_usb.c',b'static void hgic_usb_reserve_slot(',b'static void hgic_usb_requeue(',None)]:
+ a=region(A/rel,start,end);b=region(S/rel,start,newend or end)
+ assert a==b
+ p4a[rel+'::'+start.decode()]=pin(a)
+excerpts={}
+def excerpt(p,a,b):
+ p=Path(p);value=b''.join(read(p).splitlines(keepends=True)[a-1:b])
+ x={'start_line':a,'end_line':b,'text':value.decode(),'sha256':pin(value)['sha256']}
+ excerpts.setdefault(str(p),[]).append(x)
+anchors=obj(E/'public-fact-api-anchors.json');anchor_count=0
+for p,m in anchors.items():
+ verify(p,{k:m[k]for k in ('bytes','sha256')})
+ for x in m['excerpts']:
+  value=b''.join(read(p).splitlines(keepends=True)[x['start_line']-1:x['end_line']])
+  assert value.decode()==x['text']and pin(value)['sha256']==x['sha256']
+  excerpt(p,x['start_line'],x['end_line']);anchor_count+=1
+for p,ranges in {
+ S/'utils/owner_usb.c':[(1,19),(225,345),(348,411),(413,587)],
+ S/'hgic_smac/attach_status.c':[(10,26)],S/'hgic_def.h':[(20,30)],
+ S/'hgic_smac/attach_init.c':[(26,73),(456,515),(700,708)],
+ K/'drivers/usb/core/config.c':[(307,367),(576,658),(666,704),(756,880),(883,913),(922,982)],
+ K/'drivers/usb/core/message.c':[(1545,1584),(2008,2053),(2054,2074),(2155,2206),(2226,2278)],
+ K/'drivers/base/dd.c':[(1162,1208),(1219,1233),(1295,1299)],
+ K/'drivers/usb/core/driver.c':[(319,350),(390,427),(2082,2087)]
+}.items():
+ for a,b in ranges:excerpt(p,a,b)
+syntax=obj(E/'syntax01/receipt.json')
+assert syntax['source']=={str(S/k):v for k,v in src.items()}and syntax['pass']is True
+assert len(syntax['commands'])==2
+for c in syntax['commands']:
+ assert c['returncode']==0 and '-fsyntax-only'in c['argv']
+ verify(E/'syntax01'/c['log'],c['log_pin'])
+read(O/'COLLECTION_COMMAND.txt');read(O/'METHOD.md')
+emit('actual-p3-p4b-diff.patch',delta)
+emit('public-pin-verification.json',{'candidate_exact_set':90,'source':src,'source_sha256':sha,'changed':changed,'unchanged_p3_files':72,'prior_custody_exact_union':595,'p3_reader_inputs':817,'accepted_source_pins':204,'overlap_not_unique_sum':True,'preserved_p3_blocks':blocks,'preserved_p4a_blocks':p4a,'author_fact_api_files':len(anchors),'author_fact_api_excerpts':anchor_count,'syntax01_returncodes':[c['returncode']for c in syntax['commands']],'syntax_rerun':False,'external_installation_rehashed':False})
+emit('public-excerpts.json',{p:{**inputs[p],'excerpts':x}for p,x in excerpts.items()})
+emit('input-receipt.json',{'utc':datetime.now(timezone.utc).isoformat(),'argv':sys.argv,'cwd':str(R),'python':sys.version,'command_text':str(O/'COLLECTION_COMMAND.txt'),'scope':'Public static reads/hash/diff/excerpts/metadata only; no stored script main, imports of candidate code, execution/tests/build/network/private IO/P1 or original edits.','inputs':inputs})
+print(json.dumps({'candidate':90,'prior_custody':595,'p3_reader':817,'accepted':204,'unique_inputs':len(inputs),'excerpts':sum(map(len,excerpts.values()))}))
+PY

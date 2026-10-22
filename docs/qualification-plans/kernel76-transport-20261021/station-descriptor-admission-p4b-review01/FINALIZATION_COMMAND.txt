@@ -1,0 +1,39 @@
+python3 -B - <<'PY'
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib,json,sys
+D=Path('docs/qualification-plans/kernel76-transport-20261021')
+O=D/'station-descriptor-admission-p4b-review01'
+E=D/'station-descriptor-admission-p4b-source01'
+S=Path('apps/qualification/kernel76-station-descriptor-admission')
+REPORT=D/'STATION76_DESCRIPTOR_ADMISSION_P4B_REVIEW.md'
+K=Path('work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux')
+def pin(b):return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+receipt=json.loads((O/'input-receipt.json').read_bytes());inputs=receipt['inputs']
+assert len(inputs)==927
+for p,v in inputs.items():
+ assert not any(x in p for x in ('station-attach-rx','P1_REVIEW','P1_TOOL'))
+ assert pin(Path(p).read_bytes())==v,p
+files=json.loads((E/'candidate-seal.json').read_bytes())['files']
+actual={str(p)for base in(S,E)for p in base.rglob('*')if p.is_file()}
+actual.add(str(D/'STATION76_DESCRIPTOR_ADMISSION_P4B_CANDIDATE.md'))
+assert actual==set(files)|{str(E/'candidate-seal.json')}
+additional={}
+for p,ranges in [(K/'drivers/usb/core/config.c',[(245,291)]),(K/'include/linux/usb.h',[(679,688),(748,762)])]:
+ b=p.read_bytes();assert pin(b)==inputs[str(p)]
+ rows=[]
+ for a,z in ranges:
+  value=b''.join(b.splitlines(keepends=True)[a-1:z])
+  rows.append({'start_line':a,'end_line':z,'text':value.decode(),'sha256':pin(value)['sha256']})
+ additional[str(p)]={**pin(b),'excerpts':rows}
+with(O/'additional-cache-excerpts.json').open('x')as f:f.write(json.dumps(additional,indent=2)+'\n')
+with(O/'input-seal.json').open('x')as f:f.write(json.dumps({'utc':datetime.now(timezone.utc).isoformat(),'public_inputs_revalidated_unchanged':len(inputs),'inputs':inputs,'scope':'Static public bytes only; not execution/build/native proof.'},indent=2)+'\n')
+outputs={str(p):pin(p.read_bytes())for p in sorted(O.rglob('*'))if p.is_file()}
+outputs[str(REPORT)]=pin(REPORT.read_bytes())
+assert len(outputs)==10
+result={'utc':datetime.now(timezone.utc).isoformat(),'argv':sys.argv,'cwd':str(Path.cwd()),'python':sys.version,'finalization_command_text':str(O/'FINALIZATION_COMMAND.txt'),'candidate_seal_sha256':'0388936a8782c1e5c1f74c794b78040b47849dd506e6002b70f24dd839ff6653','source_sha256':'2516c416c20b621414ebb7e0b9b34be67076ca3c657602f7e1d2f2cd66787e0b','p3_review_seal_sha256':'c449dee74290c8bdd5d318f71816b83576d31a84a407ab05705092094f94db38','public_inputs_revalidated_unchanged':len(inputs),'disposition':'Narrow SOURCE/API sufficiency for selected cached P4b subset; full P4b BLOCKED on missing exact topology facts. No concrete correction-required defect identified.','scope':'Static only; no stored script main/compiler/generator/candidate/test/runtime/ARM/module/native/network/private IO/P1/original source/helper/Git/index/central-plan/settings/model/provider/safeguard operation. No next queue.','files':outputs}
+with(O/'review-seal.json').open('x')as f:f.write(json.dumps(result,indent=2)+'\n')
+for p,v in outputs.items():assert pin(Path(p).read_bytes())==v,p
+assert {str(p)for p in O.rglob('*')if p.is_file()}|{str(REPORT)}==set(outputs)|{str(O/'review-seal.json')}
+print(json.dumps({'public_inputs':len(inputs),'sealed_outputs':len(outputs),'review_seal':pin((O/'review-seal.json').read_bytes())}))
+PY

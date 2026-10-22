@@ -1,0 +1,67 @@
+{
+  "UTC": "2026-10-22T14:11:32.147345+00:00",
+  "argv": [
+    "docs/qualification-plans/qc07f-owned-provider-review-20261022/finalize_review.py"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "python": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+  "reader_inputs_revalidated_unchanged": 4566,
+  "source_tree_sha256": "fb9cc61500beaad9c6a2cb518ebf06ce73cd1d7a3d9595e54b8153d8db58dedb",
+  "disposition": "Narrow static SOURCE/API/ownership source-piece and changed/reused-object custody sufficiency; not complete-provider/native/full-app acceptance",
+  "open_blockers": [
+    "healthy never-activated COMMITTED-role handback",
+    "external failed-next/partial-transfer process retention",
+    "admitted backing and allocation design",
+    "provisioning and owned listener",
+    "ordinary functional/native timing/query-driver/watchdog/combined-load qualification",
+    "full app and G2/G3/G8"
+  ],
+  "scope": "public byte/diff/hash/receipt/dependency/archive inspection only; no compiler/generator/candidate/helper/tests/runtime/target/network/private/P1/Git work",
+  "automatic_next_queue": false,
+  "files": {
+    "docs/qualification-plans/qc07f-owned-provider-review-20261022/REVIEW.md": {
+      "bytes": 20030,
+      "sha256": "257705da3b5b60cffcc5992ca2ee0ec8c45d7bfeba5dc47d6ad06f0257c3ebb2"
+    },
+    "docs/qualification-plans/qc07f-owned-provider-review-20261022/actual-applied-source.patch": {
+      "bytes": 52738,
+      "sha256": "2ee3fe892a58ee68f886748a078200289dbb98b8eb14f67dc96a370e56023b5a"
+    },
+    "docs/qualification-plans/qc07f-owned-provider-review-20261022/actual-watchdog-v2-to-provider-app.patch": {
+      "bytes": 74942,
+      "sha256": "fcd2fc4b3b9cf4cc7601206f0792d407d476c79d7f9b26040ef9e5db7b9fedbc"
+    },
+    "docs/qualification-plans/qc07f-owned-provider-review-20261022/actual-watchdog-v2-to-provider-generated.patch": {
+      "bytes": 53379,
+      "sha256": "0e9ed76c0c5c698bc6902a9128798fedc6019ea807dd8a2de117feadc023a3f1"
+    },
+    "docs/qualification-plans/qc07f-owned-provider-review-20261022/captured-public-input-map.json": {
+      "bytes": 148020,
+      "sha256": "cad89a04728abe98807a28c5fecb555bbc316a853b63efbb2183c3a1f723c008"
+    },
+    "docs/qualification-plans/qc07f-owned-provider-review-20261022/finalize_review.py": {
+      "bytes": 2981,
+      "sha256": "75937658b1aed803f9ec2942ca65968cd354f2d8136b7f6db68280b99f880b1c"
+    },
+    "docs/qualification-plans/qc07f-owned-provider-review-20261022/object-custody.json": {
+      "bytes": 35475,
+      "sha256": "e9d2722614ba4e5b97c7b152c6d1776bc2e110e0ebc0102bc47494a92f64108b"
+    },
+    "docs/qualification-plans/qc07f-owned-provider-review-20261022/public-excerpts.json": {
+      "bytes": 68491,
+      "sha256": "91a8927ac011c5ec96da29280f8b9ceb5d129c5492a674268bc5a278a3187068"
+    },
+    "docs/qualification-plans/qc07f-owned-provider-review-20261022/read_public_inputs.py": {
+      "bytes": 18693,
+      "sha256": "2002ba97f03aaf1ead45e131625209cfa9dd9e3883c4dc36d37d720c85b5c4e4"
+    },
+    "docs/qualification-plans/qc07f-owned-provider-review-20261022/reader-receipt.json": {
+      "bytes": 1198729,
+      "sha256": "4d54eef3d471fc3089824dffd3a4e19e7785f6f9492e5ca21a1147314a83b2b1"
+    },
+    "docs/qualification-plans/qc07f-owned-provider-review-20261022/verification.json": {
+      "bytes": 29031,
+      "sha256": "72b402b8753064134318c93d3cdd6bc31aa1e0072328c51b52df74b2d37564fd"
+    }
+  }
+}

@@ -52,11 +52,18 @@ SOURCE sufficiency; syntax02 4/4 cited, no runtime/finite-wait proof. Review:
 `STATION76_OWNER_LIFETIME_P4A_REVIEW.md` under transport docs. P3 heap-request/
 deadline candidate at `apps/qualification/kernel76-station-control-owned/` has
 narrow independent SOURCE/API sufficiency, syntax04 5/5 cited, no runtime proof.
-Bounded P4b cached descriptor candidate delivered at
-`apps/qualification/kernel76-station-descriptor-admission/`, syntax2/2 PASS;
-one reviewer owns new P4b review/evidence. Exact configuration/interface/alternate
-counts and active alternate value stay blocked, not guessed. P1/fullP4/P5,
+Bounded P4b at `apps/qualification/kernel76-station-descriptor-admission/` has
+narrow independent SOURCE/API sufficiency; syntax2/2 cited, no execution. Exact
+configuration/interface/alternate counts and active alternate stay BLOCKED, not
+guessed; cached normalization/policy is not raw-wire exactness. P1/fullP4/P5,
 tests, ARM/module build and native remain unaccepted; old inputs frozen.
+
+**Separate offline build selected:** one worker owns fresh
+`apps/qualification/encoder-query77-build/` + query77 build docs/work outputs for a
+new Linux6.18.55 encoder-query-only qualification image with coherent NEW23.1.3
+compiler/config/header baseline. No old76 reproduction, station module build,
+P1 adoption, boot/installation or app/native acceptance. Original75/76 source/
+images/modules/recipes stay immutable. No target operation is queued.
 
 **App integration source:** real v6→RTSP callback glue at
 `apps/rtsp-auth/qc07f-runtime-candidate/` compiled HOST/ARM (54 commands), not run
@@ -75,10 +82,12 @@ parent static/source-custody disposition preserves it as compile-only candidate.
 Single-owned watchdog v2 W1–W3 has narrow independent SOURCE/API sufficiency;
 HOST/ARM18 commands/eight reused objects verified, not runtime/native acceptance.
 Disposition: `docs/qualification-plans/qc07f-watchdog-owner-v2-20261022/PARENT_DISPOSITION.md`.
-Actual mandatory provider-FD derivative delivered at
-`apps/rtsp-auth/qc07f-owned-provider-candidate/`, HOST/ARM20 commands PASS; one
-reviewer owns fresh owned-provider-review docs for transfer/callsite/reuse review.
-No fallback opens or fake main; never-activated healthy handback remains blocked.
+Actual mandatory provider-FD derivative at
+`apps/rtsp-auth/qc07f-owned-provider-candidate/` has narrow independent SOURCE/API/
+ownership sufficiency; HOST/ARM20 commands/ten reused objects cited/verified.
+One worker owns fresh `apps/rtsp-auth/qc07f-provider-unactivated-return/` for a
+strict pre-memory/nonactivated custody-return subset, explicitly UNKNOWN watchdog
+handoff only, not fake disable/END or post-memory/failed-state cleanup.
 Frozen originals/RTSP glue stay separate. Native watchdog
 qualification, failed-next retention/backing/provisioning/owned listener remain
 blockers. No image/module change, new main or native memory-fit claim.
