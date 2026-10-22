@@ -93,13 +93,17 @@ has narrow independent SOURCE/API/ownership sufficiency; HOST/ARM18 commands cit
 5,108 input pins parent-verified. Disposition:
 `docs/qualification-plans/qc07f-provider-return-20261022/PARENT_DISPOSITION.md`.
 UNKNOWN watchdog handoff is not disable/END, armed recovery or post-memory/
-failed-state cleanup. One isolated source worker owns fresh retention-owner-candidate
-and retention-owner docs for the real external failed-work lifetime prerequisite;
-it must stop on an unsupported bootstrap contract, not invent a metadata owner.
+failed-state cleanup. Retention-owner investigation stopped before code on missing
+real bootstrap/external lifetime/recovery and verifier fork inside serve.91 public
+input hashes unchanged; block/contract preserved in retention-owner docs. Parent
+selected fresh `apps/rtsp-auth/prestarted-backend-candidate/` for a device-free
+backend/serve split, one actual child and no second fork; not media retention GO.
 Second disjoint source lane owns fresh `apps/rtsp-auth/owned-listener-candidate/`
 and `docs/qualification-plans/rtsp-owned-listener-20261022/` for actual preopened
 listener custody, preserving loopback/authentication and compile-only operation.
 Query77/return closeout committed locally `9fd7bb6`; ordinary index unchanged.
+No fresh target/recorder state has been queried; an early-expiry claim in the
+retention report was inherited parent wording, corrected in its parent disposition.
 Frozen originals/RTSP glue stay separate. Native watchdog
 qualification, failed-next retention/backing/provisioning/owned listener remain
 blockers. No deployed image/module change, new main or native memory-fit claim.

@@ -21,7 +21,9 @@ actual mandatory provider-FD integration and strict pre-memory custody return al
 have narrow source dispositions; none is full lifecycle/runtime acceptance or a
 deployable main. Query77's coherent kernel/package has parent offline disposition,
 never booted; its embedded station76 is unsupported. The two active source lanes
-address external failed-work retention and actual preopened-listener custody.
+address device-free backend startup and actual preopened-listener custody. External
+retention investigation stopped before code on absent media bootstrap/recovery
+and the serve-internal fork; it remains blocked, not implemented.
 These artifacts do not check off outstanding app/adoption/load gates below.
 
 ## Build-only deliverable and limitations

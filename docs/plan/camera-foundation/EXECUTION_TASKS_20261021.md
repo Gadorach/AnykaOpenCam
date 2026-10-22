@@ -17,10 +17,13 @@ See `qc07f-provider-return-20261022/PARENT_DISPOSITION.md`. Sequential recipient
 custody/remaining native HOLD is explicit; UNKNOWN watchdog return is not disabled,
 close permission or armed recovery. Post-memory/failed-state/backing remain blocked.
 
-One new isolated SOURCE prerequisite lane is selected for actual external failed-
-work process retention/bootstrap contract, fresh retention-owner-candidate/docs.
-No metadata/PID-only retention or fake success; stop before unsafe implementation
-if bootstrap cannot support it. No tests, native or RTSP rebase selected. Last
+External failed-work retention investigation stopped before production code: actual
+media bootstrap/external lifetime/recovery absent, and serve internally forks the
+verifier.91 input/five output hashes parent-verified. Block/contract and parent
+timing-wording correction preserved in retention-owner docs. New isolated SOURCE
+lane explicitly selected for device-free backend/serve split, one actual child,
+no second fork; not external media retention or full bootstrap acceptance.
+No metadata/PID-only retention, tests, native or RTSP rebase selected. Last
 hardware observation remains original held U-Boot12:12UTC; no current admission,
 old22b controller reuse/reset retry or HOLD clearance. Older entries below are
 chronological handbacks, not active worker queues or current target authority.
@@ -30,7 +33,9 @@ private data or push, ordinary index hash unchanged. Second disjoint SOURCE lane
 selected for actual owned-listener consumption in fresh `owned-listener-candidate/`
 and rtsp-owned-listener docs. Preserve loopback/authentication/verifier constraints;
 no listener/bind/runtime/test execution or fake app main. Only these two new source
-lanes are active; their delivery will require separate parent/source review.
+lanes are active (prestarted-backend and owned-listener); their delivery will
+require separate parent/source review. The earlier retention investigation itself
+is completed/BLOCKED, not an active implementation lane.
 
 **Actual provider derivative narrow SOURCE/API/ownership sufficiency:** no new
 correction-required defect in staged transfers/actual callsites.3,649 prior pins,
