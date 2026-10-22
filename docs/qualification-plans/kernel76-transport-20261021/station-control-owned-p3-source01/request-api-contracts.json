@@ -1,0 +1,74 @@
+{
+  "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/kernel/locking/semaphore.c": {
+    "bytes": 8950,
+    "sha256": "644dbfb08decf1e63d14b5c81066758f1d5b8938de5cd7530cdd2bf000d86ffa",
+    "excerpts": [
+      {
+        "start_line": 158,
+        "end_line": 184,
+        "text": "/**\n * down_trylock - try to acquire the semaphore, without waiting\n * @sem: the semaphore to be acquired\n *\n * Try to acquire the semaphore atomically.  Returns 0 if the semaphore has\n * been acquired successfully or 1 if it cannot be acquired.\n *\n * NOTE: This return value is inverted from both spin_trylock and\n * mutex_trylock!  Be careful about this when converting code.\n *\n * Unlike mutex_trylock, this function can be used from interrupt context,\n * and the semaphore can be released by any task or interrupt.\n */\nint __sched down_trylock(struct semaphore *sem)\n{\n\tunsigned long flags;\n\tint count;\n\n\traw_spin_lock_irqsave(&sem->lock, flags);\n\tcount = sem->count - 1;\n\tif (likely(count >= 0))\n\t\t__sem_acquire(sem);\n\traw_spin_unlock_irqrestore(&sem->lock, flags);\n\n\treturn (count < 0);\n}\nEXPORT_SYMBOL(down_trylock);\n",
+        "sha256": "890cc4f5d0439f82ad0425b25ae178472b897c09c9ad52066073b44dffbbc47e"
+      }
+    ]
+  },
+  "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/kernel/time/time.c": {
+    "bytes": 27429,
+    "sha256": "e757e825d72489c929a273f22aba8fa31487c29738960aea2683ac0274a58e6a",
+    "excerpts": [
+      {
+        "start_line": 782,
+        "end_line": 812,
+        "text": " * nsecs_to_jiffies64 - Convert nsecs in u64 to jiffies64\n *\n * @n:\tnsecs in u64\n *\n * Unlike {m,u}secs_to_jiffies, type of input is not unsigned int but u64.\n * And this doesn't return MAX_JIFFY_OFFSET since this function is designed\n * for scheduler, not for use in device drivers to calculate timeout value.\n *\n * note:\n *   NSEC_PER_SEC = 10^9 = (5^9 * 2^9) = (1953125 * 512)\n *   ULLONG_MAX ns = 18446744073.709551615 secs = about 584 years\n *\n * Return: nsecs converted to jiffies64 value\n */\nu64 nsecs_to_jiffies64(u64 n)\n{\n#if (NSEC_PER_SEC % HZ) == 0\n\t/* Common case, HZ = 100, 128, 200, 250, 256, 500, 512, 1000 etc. */\n\treturn div_u64(n, NSEC_PER_SEC / HZ);\n#elif (HZ % 512) == 0\n\t/* overflow after 292 years if HZ = 1024 */\n\treturn div_u64(n * HZ / 512, NSEC_PER_SEC / 512);\n#else\n\t/*\n\t * Generic case - optimized for cases where HZ is a multiple of 3.\n\t * overflow after 64.99 years, exact for HZ = 60, 72, 90, 120 etc.\n\t */\n\treturn div_u64(n * 9, (9ull * NSEC_PER_SEC + HZ / 2) / HZ);\n#endif\n}\nEXPORT_SYMBOL(nsecs_to_jiffies64);\n",
+        "sha256": "60fcd2e05b62ae0c881fed0e59fac43c54cf8f16c9ea6e6f3ea7e9dc366411f1"
+      }
+    ]
+  },
+  "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/include/linux/timekeeping.h": {
+    "bytes": 9474,
+    "sha256": "4b5ee837f71627db11e1deb8a945359bcfb82595442e4e1b1539d8921dc178e9",
+    "excerpts": [
+      {
+        "start_line": 24,
+        "end_line": 36,
+        "text": "/*\n * ktime_get() family - read the current time in a multitude of ways.\n *\n * The default time reference is CLOCK_MONOTONIC, starting at\n * boot time but not counting the time spent in suspend.\n * For other references, use the functions with \"real\", \"clocktai\",\n * \"boottime\" and \"raw\" suffixes.\n *\n * To get the time in a different format, use the ones with\n * \"ns\", \"ts64\" and \"seconds\" suffix.\n *\n * See Documentation/core-api/timekeeping.rst for more details.\n */\n",
+        "sha256": "86808a99f7ec62c72ed7e3731b96a8e231fe6b4cf5a3656270001f782b50817e"
+      },
+      {
+        "start_line": 168,
+        "end_line": 176,
+        "text": "/**\n * ktime_get_ns - Get the current time in nanoseconds\n *\n * Returns: current time converted to nanoseconds\n */\nstatic inline u64 ktime_get_ns(void)\n{\n\treturn ktime_to_ns(ktime_get());\n}\n",
+        "sha256": "f14f774206d54906e2e1ed00d765542efc7c12adab5d208d43e6b388476a32c1"
+      }
+    ]
+  },
+  "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/kernel/sched/completion.c": {
+    "bytes": 10823,
+    "sha256": "79f10c4e41095aa647591de8edec1ed037fff51737d2b1082e8b88ebbdedcfbe",
+    "excerpts": [
+      {
+        "start_line": 158,
+        "end_line": 174,
+        "text": " * wait_for_completion_timeout: - waits for completion of a task (w/timeout)\n * @x:  holds the state of this particular completion\n * @timeout:  timeout value in jiffies\n *\n * This waits for either a completion of a specific task to be signaled or for a\n * specified timeout to expire. The timeout is in jiffies. It is not\n * interruptible.\n *\n * Return: 0 if timed out, and positive (at least 1, or number of jiffies left\n * till timeout) if completed.\n */\nunsigned long __sched\nwait_for_completion_timeout(struct completion *x, unsigned long timeout)\n{\n\treturn wait_for_common(x, timeout, TASK_UNINTERRUPTIBLE);\n}\nEXPORT_SYMBOL(wait_for_completion_timeout);\n",
+        "sha256": "065d40e97568943d48aecae51d46680d185060c6feb3c93a4ff180f02f862927"
+      }
+    ]
+  },
+  "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/include/linux/refcount.h": {
+    "bytes": 16806,
+    "sha256": "138348cedf2dd2ee4bb5defb880c575db997dab0561abdd805534d83750dca80",
+    "excerpts": [
+      {
+        "start_line": 369,
+        "end_line": 384,
+        "text": "/**\n * refcount_inc - increment a refcount\n * @r: the refcount to increment\n *\n * Similar to atomic_inc(), but will saturate at REFCOUNT_SATURATED and WARN.\n *\n * Provides no memory ordering, it is assumed the caller already has a\n * reference on the object.\n *\n * Will WARN if the refcount is 0, as this represents a possible use-after-free\n * condition.\n */\nstatic inline void refcount_inc(refcount_t *r)\n{\n\t__refcount_inc(r, NULL);\n}\n",
+        "sha256": "68fe4e86efaaaeb5e3296f485dda23e113bf3428e491ca085e63ddb202e68ea4"
+      },
+      {
+        "start_line": 429,
+        "end_line": 450,
+        "text": "\nstatic inline __must_check bool __refcount_dec_and_test(refcount_t *r, int *oldp)\n{\n\treturn __refcount_sub_and_test(1, r, oldp);\n}\n\n/**\n * refcount_dec_and_test - decrement a refcount and test if it is 0\n * @r: the refcount\n *\n * Similar to atomic_dec_and_test(), it will WARN on underflow and fail to\n * decrement when saturated at REFCOUNT_SATURATED.\n *\n * Provides release memory ordering, such that prior loads and stores are done\n * before, and provides an acquire ordering on success such that free()\n * must come after.\n *\n * Return: true if the resulting refcount is 0, false otherwise\n */\nstatic inline __must_check bool refcount_dec_and_test(refcount_t *r)\n{\n\treturn __refcount_dec_and_test(r, NULL);\n",
+        "sha256": "95cdc5c72e219607df105b39f4c6221ad2b4c3859259dd9a977afcae209c60a1"
+      }
+    ]
+  }
+}

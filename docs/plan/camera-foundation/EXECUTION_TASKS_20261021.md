@@ -1,5 +1,16 @@
 # Active execution ledger — remaining foundation work
 
+**P3 owned-control SOURCE candidate delivered; independent review selected:** one
+heap FWINFO request, explicit waiter/registry/pending/queue/worker/submit/callback
+roles, immutable500ms deadline, nonblocking token and actual first-error-serialized
+submit claim. P4a sole producer/join/all-slot poison retained. Final syntax04 5/5
+PASS; all earlier runs preserved, no runtime tests or ARM/module build.451 prior
+custody/204 accepted source pins unchanged;132-file candidate seal
+`5d8a96a78e1b6d99f7a16f259d36f0e077644f7e7378c8ecd88b58109add66eb`.
+Report `STATION76_CONTROL_OWNED_P3_CANDIDATE.md` under transport docs. Fresh reviewer
+owns only P3 review/evidence; no source/native GO, P1/fullP4/P5 adoption or next
+implementation queue. App-watchdog v2 review remains disjoint and in progress.
+
 **Watchdog-owner v2 W1–W3 correction delivered; re-review selected:** actual
 one-shot sealed10s session, zero valid NEXT outputs before early refusals and
 uncertainty-first/no-effect held-loan BUSY branch implemented. HOST/ARM18 commands

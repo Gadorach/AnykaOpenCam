@@ -1,0 +1,1037 @@
+--- p4a/hgic_smac/Makefile
++++ p3-owned/hgic_smac/Makefile
+@@ -13,6 +13,7 @@
+ hgics-objs += ../utils/utils.o
+ hgics-objs += ../utils/fwdl.o
+ hgics-objs += ../utils/fwctrl.o
++hgics-objs += ../utils/owned_control.o
+ hgics-objs += ../utils/ota.o
+ hgics-objs += ../utils/fwinfo.o
+ hgics-objs += ../utils/iwpriv.o
+--- p4a/hgic_smac/attach_init.c
++++ p3-owned/hgic_smac/attach_init.c
+@@ -9,6 +9,7 @@
+ #include <linux/slab.h>
+ #include "hgics.h"
+ #include "event.h"
++#include "../utils/owned_control.h"
+ 
+ #if !defined(CONFIG_HGIC_USB) || !defined(CONFIG_HGIC_2G) || \
+     defined(CONFIG_HGIC_SDIO) || defined(CONFIG_HGIC_AH) || \
+@@ -22,7 +23,7 @@
+ static int bt_en;
+ static int no_bootdl = 1;
+ static int txq_size = 1024;
+-static DEFINE_SPINLOCK(attach_lock);
++DEFINE_SPINLOCK(attach_lock); /* private receipt + owned-request error domain */
+ static struct hgic_attach_receipt attach_receipt;
+ static struct wiphy *attach_wiphy;
+ static bool notifier_registered;
+@@ -42,6 +43,25 @@
+         attach_receipt.init_state = HGIC_ATTACH_FAILED;
+         attach_receipt.init_done = 1;
+     }
++    hgic_control_error_locked(attach_receipt.first_error);
++}
++
++int hgic_attach_cause_locked(void)
++{
++    lockdep_assert_held(&attach_lock);
++    return attach_receipt.first_error;
++}
++
++u32 hgic_attach_generation_locked(void)
++{
++    lockdep_assert_held(&attach_lock);
++    return attach_receipt.generation;
++}
++
++void hgic_attach_fail_locked(int error, unsigned int phase)
++{
++    lockdep_assert_held(&attach_lock);
++    attach_error_locked(error, phase);
+ }
+ 
+ void hgic_attach_error(int error, unsigned int phase)
+@@ -292,24 +312,18 @@
+ static void attach_tx_work(struct work_struct *work)
+ {
+     struct hgics_wdev *hg = container_of(work, struct hgics_wdev, tx_work);
++    struct hgic_control_request *request;
+     struct sk_buff *skb;
+-    unsigned long flags;
+     /* One command only. No credit query, poll, sleep, retry or data loop. */
+-    spin_lock_irqsave(&hg->bus->owner_lock, flags);
+-    if (hg->bus->stopping) {
+-        spin_unlock_irqrestore(&hg->bus->owner_lock, flags);
++    request = hgic_control_take(&hg->ctrl);
++    if (!request)
+         return;
+-    }
+-    skb = skb_dequeue(&hg->ctrl.txq);
+-    spin_unlock_irqrestore(&hg->bus->owner_lock, flags);
+-    if (skb) {
+-        if (test_bit(HGICS_STATE_REMOVE, &hg->state) || hgic_attach_failed())
+-            dev_kfree_skb_any(skb);
+-        else
+-            hg->bus->tx_packet(hg->bus, skb);
+-    }
+-    if (!skb_queue_empty(&hg->ctrl.txq))
+-        hgic_attach_error(-EPERM, HGIC_ATTACH_TX_ADMIT);
++    skb = hgic_control_command(request);
++    if (!skb || test_bit(HGICS_STATE_REMOVE, &hg->state) || hgic_attach_failed())
++        hgic_control_worker_abort(request, -ESHUTDOWN);
++    else
++        hg->bus->tx_packet(hg->bus, skb); /* consumes worker/transport skb once */
++    hgic_control_worker_done(request);
+ }
+ 
+ static void attach_schedule(struct hgic_fwctrl *ctrl)
+--- p4a/hgic_smac/attach_status.c
++++ p3-owned/hgic_smac/attach_status.c
+@@ -11,7 +11,7 @@
+ {
+     struct hgic_attach_receipt r;
+     hgic_attach_snapshot(&r);
+-    seq_puts(seq, "policy=owner-lifetime-p4a-source01 schema=2\n");
++    seq_puts(seq, "policy=control-owned-p3-source01 schema=2\n");
+     seq_printf(seq, "generation=%u init=%u queued=%u starts=%u done=%u fwinfo=%u\n",
+                r.generation, r.init_state, r.init_queued, r.init_starts,
+                r.init_done, r.fwinfo_commands);
+--- p4a/utils/fwctrl.c
++++ p3-owned/utils/fwctrl.c
+@@ -19,6 +19,9 @@
+ #include "fwctrl.h"
+ #include "utils.h"
+ #include "control_receipt.h"
++#include "owned_control.h"
++#include <linux/err.h>
++#include <linux/overflow.h>
+ 
+ #define STR_LEN(s) ((s)?strlen(s):0)
+ 
+@@ -58,13 +61,13 @@
+      * permission. Only this init worker's single allocated command is owned.
+      */
+     if (cmd_id != HGIC_CMD_GET_FW_INFO || ctrl->attach_task != current ||
+-        ctrl->attach_skb != skb || hgic_attach_failed()) {
++        !ctrl->owned || resp != &ctrl->owned->response || hgic_attach_failed()) {
+         hgic_attach_error(-EPERM, HGIC_ATTACH_COMMAND);
+         dev_kfree_skb_any(skb);
+         return NULL;
+     }
+ 
+-    memset(resp, 0, sizeof(*resp));
++    /* Response/completion/list belong to the heap request, already initialized. */
+     resp->cookie = hgic_ctrl_cookie(ctrl);
+     if (resp->cookie > HGIC_TX_COOKIE_MASK || ifidx != HGIC_WDEV_ID_STA) {
+         hgic_attach_error(-EPERM, HGIC_ATTACH_COMMAND);
+@@ -86,7 +89,7 @@
+     int ret = -1;
+     struct sk_buff *skb  = NULL;
+     struct sk_buff *resp = NULL;
+-    struct hgic_cmd_response receipt;
++    struct hgic_control_request *request;
+     unsigned long flags;
+ 
+     if ((!in && in_len) || (!out && out_size)) {
+@@ -110,27 +113,32 @@
+     ctrl->attach_command = true;
+     spin_unlock_irqrestore(&ctrl->lock, flags);
+ 
++    request = hgic_control_create(ctrl);
++    if (IS_ERR(request))
++        return PTR_ERR(request);
++
+     skb = hgic_alloc_ctrl_skb(ctrl, in_len);
+     if (skb) {
+-        spin_lock_irqsave(&ctrl->lock, flags);
+-        ctrl->attach_skb = skb;
+-        spin_unlock_irqrestore(&ctrl->lock, flags);
+         if (in && in_len > 0) {
+             memcpy(skb->data, in, in_len);
+             skb->data[in_len] = 0;
+         }
+ 
+-        resp = hgic_fwctrl_send_cmd(ctrl, ifidx, cmd_id, skb, &receipt);
++        resp = hgic_fwctrl_send_cmd(ctrl, ifidx, cmd_id, skb, &request->response);
+         if (resp) {
+             spin_lock_irqsave(&ctrl->lock, flags);
+-            if (hgic_attach_failed())
+-                ret = hgic_attach_failed();
+-            else if (ctrl->receipt_error)
++            spin_lock(&attach_lock);
++            ret = hgic_control_check_locked(request);
++            if (!ret && ctrl->receipt_error)
+                 ret = ctrl->receipt_error;
+-            else
+-                ret = hgic_ctrl_reply_copy(resp->data, resp->len, receipt.type,
+-                                          receipt.ifidx, receipt.opcode, receipt.cookie,
++            else if (!ret)
++                ret = hgic_ctrl_reply_copy(resp->data, resp->len, request->response.type,
++                                          request->response.ifidx, request->response.opcode, request->response.cookie,
+                                           out, out_size);
++            request->response.skb = NULL;
++            if (ret < 0)
++                hgic_attach_fail_locked(ret, HGIC_ATTACH_COPY);
++            spin_unlock(&attach_lock);
+             spin_unlock_irqrestore(&ctrl->lock, flags);
+             dev_kfree_skb_any(resp);
+         } else if (hgic_attach_failed()) {
+@@ -145,6 +153,7 @@
+         ret = -ENOMEM;
+         hgic_attach_error(ret, HGIC_ATTACH_COMMAND);
+     }
++    hgic_control_waiter_done(request);
+     return ret;
+ }
+ 
+@@ -231,6 +240,9 @@
+         if (resp->cookie == cookie) {
+             /* Duplicate/replayed completion can never replace the first skb. */
+             if (resp->done)
++                goto unlock;
++            /* A reply cannot complete a request that never won submit claim. */
++            if (hgic_control_reply_gate(container_of(resp, struct hgic_control_request, response)))
+                 goto unlock;
+             if (resp->type == HGIC_HDR_TYPE_CMD || resp->type == HGIC_HDR_TYPE_CMD2) {
+                 if (ctrl->receipt_error ||
+@@ -251,7 +263,7 @@
+             }
+             resp->skb = skb;
+             resp->done = true;
+-            complete(&resp->cmpl);
++            hgic_control_response_published(container_of(resp, struct hgic_control_request, response));
+             find = 1;
+             break;
+         }
+@@ -314,9 +326,13 @@
+ {
+     unsigned long flags;
+     struct hgic_ctrl_hdr *hdr;
+-
+-    if (!skb || !resp || skb->len != sizeof(struct hgic_ctrl_hdr) ||
+-        resp->cookie > HGIC_TX_COOKIE_MASK) {
++    struct hgic_control_request *request = ctrl->owned;
++    struct sk_buff *reply;
++    unsigned long budget;
++    int error = -EPERM;
++
++    if (!skb || !request || resp != &request->response || skb_is_nonlinear(skb) ||
++        skb->len != sizeof(struct hgic_ctrl_hdr) || resp->cookie > HGIC_TX_COOKIE_MASK) {
+         hgic_attach_error(-EPERM, HGIC_ATTACH_COMMAND);
+         dev_kfree_skb_any(skb);
+         return NULL;
+@@ -325,64 +341,38 @@
+     resp->type = hdr->hdr.type;
+     resp->ifidx = hdr->hdr.ifidx;
+     resp->opcode = HDR_CMDID(hdr);
+-    /* Direct boot/OTA/BT/tool callers cannot borrow init's command permission. */
+-
+-    init_completion(&resp->cmpl);
+-    spin_lock_irqsave(&ctrl->lock, flags);
+-    if (ctrl->receipt_error || hgic_attach_failed() || ctrl->attach_task != current ||
+-        ctrl->attach_skb != skb || ctrl->attach_queued || !ctrl->attach_command ||
++    /* Exact heap receipt only; direct stack/maintenance callers are refused. */
++    spin_lock_irqsave(&ctrl->bus->owner_lock, flags);
++    spin_lock(&ctrl->lock);
++    if (ctrl->bus->stopping || ctrl->receipt_error || ctrl->attach_task != current || !ctrl->attach_command ||
+         timeout != HGIC_CMD_TIMEOUT || resp->type != HGIC_HDR_TYPE_CMD ||
+         resp->ifidx != HGIC_WDEV_ID_STA ||
+         resp->opcode != HGIC_CMD_GET_FW_INFO - HGIC_CMD_START ||
+         le16_to_cpu(hdr->hdr.magic) != HGIC_HDR_TX_MAGIC ||
+         le16_to_cpu(hdr->hdr.length) != skb->len ||
+         le16_to_cpu(hdr->hdr.cookie) != resp->cookie || !ctrl->schedule) {
+-        spin_unlock_irqrestore(&ctrl->lock, flags);
+-        hgic_attach_error(-EPERM, HGIC_ATTACH_COMMAND);
+-        dev_kfree_skb_any(skb);
++        error = -EPERM;
++    } else {
++        error = hgic_control_publish(request, skb);
++    }
++    spin_unlock(&ctrl->lock);
++    if (!error)
++        ctrl->schedule(ctrl); /* same sole producer, under P4a admission gate */
++    spin_unlock_irqrestore(&ctrl->bus->owner_lock, flags);
++    if (error) {
++        hgic_attach_error(error, HGIC_ATTACH_COMMAND);
++        dev_kfree_skb_any(skb); /* publication failed: never queued/async-owned */
+         return NULL;
+     }
+-    ctrl->attach_queued = true;
+-    list_add(&resp->list, &ctrl->pd_list);
++    /* No skb access after publication: an error may already have canceled it. */
++    budget = hgic_control_wait_budget(request);
++    if (budget && !wait_for_completion_timeout(&resp->cmpl, budget))
++        hgic_attach_error(-ETIMEDOUT, HGIC_ATTACH_COMMAND);
++    spin_lock_irqsave(&ctrl->lock, flags);
++    hgic_control_pending_done(request);
++    reply = resp->skb;
+     spin_unlock_irqrestore(&ctrl->lock, flags);
+-
+-    /* P4a: queue + work admission is serialized with permanent STOP.
+-     * Pending-list lifetime/queue eviction/deadline repair remains P3.
+-     */
+-    spin_lock_irqsave(&ctrl->bus->owner_lock, flags);
+-    if (ctrl->bus->stopping || hgic_attach_failed()) {
+-        spin_unlock_irqrestore(&ctrl->bus->owner_lock, flags);
+-        spin_lock_irqsave(&ctrl->lock, flags);
+-        list_del(&resp->list);
+-        spin_unlock_irqrestore(&ctrl->lock, flags);
+-        hgic_attach_error(-ESHUTDOWN, HGIC_ATTACH_COMMAND);
+-        dev_kfree_skb_any(skb);
+-        return NULL;
+-    }
+-    if (ctrl->txq.qlen > 4) {
+-        kfree_skb(skb_dequeue(&ctrl->txq));
+-        //hgic_err("ctrl txq full, drop data (%d)\r\n", ctrl->txq.qlen);
+-    }
+-
+-    skb_queue_tail(&ctrl->txq, skb);
+-    /* Selected schedule hook requires owner_lock and only queues work. */
+-    ctrl->schedule(ctrl);
+-    spin_unlock_irqrestore(&ctrl->bus->owner_lock, flags);
+-    if (timeout) {
+-        if (!wait_for_completion_timeout(&resp->cmpl, msecs_to_jiffies(timeout))) {
+-            hgic_attach_error(-ETIMEDOUT, HGIC_ATTACH_COMMAND);
+-            /* P3 must cancel owned UNSENT work; P2 does not free an async skb
+-             * or attach this stack waiter to it as a cancellation shortcut.
+-             */
+-        }
+-    }
+-    spin_lock_irqsave(&ctrl->lock, flags);
+-    list_del(&resp->list);
+-    spin_unlock_irqrestore(&ctrl->lock, flags);
+-#ifdef __RTOS__
+-    deinit_completion(&resp->cmpl);
+-#endif
+-    return resp->skb;
++    return reply;
+ }
+ 
+ void hgic_fwctrl_rx(struct hgic_fwctrl *ctrl, u8 *data, int len)
+@@ -448,6 +438,7 @@
+     spin_lock_irqsave(&ctrl->lock, flags);
+     if (!ctrl->receipt_error)
+         ctrl->receipt_error = -ESHUTDOWN;
++    hgic_control_stop_locked(ctrl);
+     list_for_each_entry(resp, &ctrl->pd_list, list) {
+         if (!resp->done) {
+             resp->done = true;
+@@ -461,6 +452,7 @@
+ void hgic_fwctrl_release(struct hgic_fwctrl *ctrl)
+ {
+     cancel_work_sync(&ctrl->work);
++    hgic_control_owner_release(ctrl); /* P4a joins + full poison already returned */
+     hgic_fwctrl_clear_pdlist(ctrl);
+     hgic_clear_queue(&ctrl->txq);
+     hgic_clear_queue(&ctrl->rxq);
+@@ -532,13 +524,19 @@
+ int hgic_fwctrl_attach_fwinfo(struct hgic_fwctrl *ctrl, struct hgic_fw_info *info)
+ {
+     unsigned long flags;
++    u64 deadline;
+     int error;
++    if (check_add_overflow(ktime_get_ns(), (u64)HGIC_CMD_TIMEOUT * NSEC_PER_MSEC, &deadline)) {
++        hgic_attach_error(-EOVERFLOW, HGIC_ATTACH_COMMAND);
++        return -EOVERFLOW;
++    }
+     spin_lock_irqsave(&ctrl->lock, flags);
+-    if (ctrl->attach_called || ctrl->attach_task || !ctrl->wq) {
++    if (ctrl->attach_called || ctrl->attach_task || ctrl->attach_deadline_ns || !ctrl->wq) {
+         spin_unlock_irqrestore(&ctrl->lock, flags);
+         hgic_attach_error(-EPERM, HGIC_ATTACH_COMMAND);
+         return hgic_attach_failed();
+     }
++    ctrl->attach_deadline_ns = deadline;
+     error = hgic_attach_command_begin();
+     if (error) {
+         spin_unlock_irqrestore(&ctrl->lock, flags);
+@@ -558,33 +556,21 @@
+ 
+ int hgic_fwctrl_attach_tx_admit(struct hgic_fwctrl *ctrl, struct sk_buff *skb)
+ {
+-    unsigned long flags;
+     const struct hgic_ctrl_hdr *hdr;
+-    int error = 0;
+-    spin_lock_irqsave(&ctrl->lock, flags);
+-    /* Check local object identity before inspecting any purported wire header.
+-     * Consume this permission once. No async pointer to the stack waiter exists.
+-     */
+-    if (!skb || ctrl->attach_skb != skb || !ctrl->attach_queued ||
+-        ctrl->attach_tx_consumed || hgic_attach_failed() || ctrl->receipt_error ||
+-        skb_is_nonlinear(skb) || skb->len != sizeof(*hdr)) {
+-        error = -EPERM;
+-    } else {
+-        hdr = (const struct hgic_ctrl_hdr *)skb->data;
+-        if (hdr->hdr.type != HGIC_HDR_TYPE_CMD || hdr->hdr.ifidx != HGIC_WDEV_ID_STA ||
+-            le16_to_cpu(hdr->hdr.magic) != HGIC_HDR_TX_MAGIC ||
+-            le16_to_cpu(hdr->hdr.length) != skb->len ||
+-            HDR_CMDID(hdr) != HGIC_CMD_GET_FW_INFO - HGIC_CMD_START)
+-            error = -EPERM;
+-        else {
+-            ctrl->attach_tx_consumed = true;
+-            ctrl->attach_skb = NULL;
+-        }
+-    }
+-    spin_unlock_irqrestore(&ctrl->lock, flags);
+-    if (error)
+-        hgic_attach_error(error, HGIC_ATTACH_TX_ADMIT);
+-    return error;
++    struct hgic_control_request *request = ctrl->owned;
++    if (!skb || !request || hgic_control_from_skb(skb) != request ||
++        skb_is_nonlinear(skb) || skb->len != sizeof(*hdr))
++        goto denied;
++    hdr = (const struct hgic_ctrl_hdr *)skb->data;
++    if (hdr->hdr.type != HGIC_HDR_TYPE_CMD || hdr->hdr.ifidx != HGIC_WDEV_ID_STA ||
++        le16_to_cpu(hdr->hdr.magic) != HGIC_HDR_TX_MAGIC ||
++        le16_to_cpu(hdr->hdr.length) != skb->len ||
++        HDR_CMDID(hdr) != HGIC_CMD_GET_FW_INFO - HGIC_CMD_START)
++        goto denied;
++    return hgic_control_prepare(request, skb); /* final claim occurs at USB entry */
++denied:
++    hgic_attach_error(-EPERM, HGIC_ATTACH_TX_ADMIT);
++    return -EPERM;
+ }
+ 
+ int hgic_fwctrl_set_countryregion(struct hgic_fwctrl *ctrl, u8 ifidx, u8 *country_code)
+--- p4a/utils/fwctrl.h
++++ p3-owned/utils/fwctrl.h
+@@ -3,6 +3,7 @@
+ #define _HGIC_FWCTRL_H_
+ 
+ struct hgic_fw_info;
++struct hgic_control_request;
+ 
+ #include <linux/completion.h>
+ #include <linux/workqueue.h>
+@@ -23,15 +24,14 @@
+     struct device      *dev;
+     u16                 cookie;
+     int                 receipt_error; /* inhibits subsequent station admission */
+-    /* Local P2 ownership only. Never store the stack response in an skb/URB.
+-     * Queue/URB/request cancellation and submit serialization remain P3.
++    /* Init caller grant plus the P3 registry-owned heap request. No stack
++     * response pointer is ever published to pending/queue/worker/USB users.
+      */
+     struct task_struct *attach_task;
+-    struct sk_buff *attach_skb; /* identity comparison only, not an extra ref */
++    u64 attach_deadline_ns; /* sealed once before the init command grant */
++    struct hgic_control_request *owned; /* immutable registry-owned heap request */
+     bool attach_called;
+     bool attach_command;
+-    bool attach_queued;
+-    bool attach_tx_consumed;
+     spinlock_t          lock;    /*ctrl packet pending lock*/
+     struct list_head    pd_list; /*ctrl packet pending queue (for sync cmd)*/
+     struct sk_buff_head rxq;   /*fw ctrl packet rx queue*/
+--- p4a/utils/owner_usb.c
++++ p3-owned/utils/owner_usb.c
+@@ -11,6 +11,7 @@
+ #include <linux/netdevice.h>
+ #include "../hgic_def.h"
+ #include "utils.h"
++#include "owned_control.h"
+ 
+ #define HGIC_PKT_MAX_LEN 2560
+ #define HGIC_TX_URB_CNT 16
+@@ -225,12 +226,16 @@
+ {
+     struct hgic_usb_buf *buf = urb->context;
+     struct hgic_usb *usb = buf->usbdev;
+-    if (urb->status)
+-        hgic_usb_fail(usb, urb->status, HGIC_ATTACH_TX_COMPLETE);
+-    usb->bus.tx_complete(usb->bus.bus_priv, buf->data, !urb->status);
++    struct hgic_control_request *request = hgic_control_from_skb(buf->data);
++    int status = urb->status;
++    if (status)
++        hgic_usb_fail(usb, status, HGIC_ATTACH_TX_COMPLETE);
++    usb->bus.tx_complete(usb->bus.bus_priv, buf->data, !status);
+     buf->data = NULL;
+     hgic_usb_requeue(buf, &usb->tx_freeq);
+     up(&usb->tx_sema);
++    if (request)
++        hgic_control_callback(request, status); /* final request access in callback */
+     /* Leases remain reserved through the return tail. Only the later kernel
+      * poison return proves this callback and its module text have returned.
+      */
+@@ -241,6 +246,7 @@
+     struct hgic_usb *usb = container_of(bus, struct hgic_usb, bus);
+     struct hgic_usb_buf *buf = NULL;
+     struct hgic_hdr *hdr;
++    struct hgic_control_request *request = hgic_control_from_skb(skb);
+     unsigned long flags;
+     bool token = false;
+     int length, error;
+@@ -256,7 +262,7 @@
+      */
+     usb->tx_caller_reserved = 1;
+     spin_unlock_irqrestore(&usb->bus.owner_lock, flags);
+-    if (!usb->bus.attach_tx_admit || !usb->bus.bus_priv) {
++    if (!request || !usb->bus.attach_tx_admit || !usb->bus.bus_priv) {
+         error = -EPERM;
+         goto local_failure;
+     }
+@@ -283,15 +289,15 @@
+         }
+         skb_put_zero(skb, padding);
+     }
+-    /* P3 remains absent: retain the inherited token budget, not a new request
+-     * deadline/cancellation implementation. Native use is still forbidden.
+-     */
+-    error = down_timeout(&usb->tx_sema, 1000);
++    error = hgic_control_prepare(request, skb); /* remaining budget before token */
++    if (error)
++        goto local_failure;
++    error = down_trylock(&usb->tx_sema) ? -EAGAIN : 0;
+     if (error)
+         goto local_failure;
+     token = true;
+     spin_lock_irqsave(&usb->bus.owner_lock, flags);
+-    if (usb->bus.stopping || hgic_attach_failed() || list_empty(&usb->tx_freeq)) {
++    if (usb->bus.stopping || list_empty(&usb->tx_freeq)) {
+         spin_unlock_irqrestore(&usb->bus.owner_lock, flags);
+         error = -ESHUTDOWN;
+         goto local_failure;
+@@ -299,12 +305,21 @@
+     buf = list_first_entry(&usb->tx_freeq, struct hgic_usb_buf, list);
+     list_move_tail(&buf->list, &usb->used);
+     buf->data = skb;
++    error = hgic_control_submit_claim(request, skb);
++    if (error) {
++        spin_unlock_irqrestore(&usb->bus.owner_lock, flags);
++        goto local_failure;
++    }
+     hgic_usb_reserve_slot(buf); /* before USB can call back */
+     spin_unlock_irqrestore(&usb->bus.owner_lock, flags);
+     usb_fill_bulk_urb(buf->urb, usb->udev, usb_sndbulkpipe(usb->udev, usb->ep_out),
+                       skb->data, length, hgic_usb_tx_complete, buf);
+     buf->urb->transfer_flags |= URB_ZERO_PACKET;
+     error = usb_submit_urb(buf->urb, GFP_ATOMIC);
++    /* Only separately referenced request memory, never skb/reused slot, is
++     * touched on successful return. Error guarantees no actual callback.
++     */
++    hgic_control_submit_result(request, error);
+     if (error)
+         goto local_failure; /* no callback for a failed submit */
+     /* Callback may already have freed skb/returned token/requeued buf. */
+@@ -312,12 +327,16 @@
+ 
+ local_failure:
+     hgic_usb_fail(usb, error, HGIC_ATTACH_TX_SUBMIT);
++    if (request)
++        hgic_control_local_failure(request, skb, error);
+     if (buf) {
+         buf->data = NULL;
+         hgic_usb_requeue(buf, &usb->tx_freeq);
+     }
+     if (token)
+         up(&usb->tx_sema);
++    if (request)
++        hgic_control_local_token_returned(request);
+     /* Local skb failure notification, explicitly NOT HCD callback proof. */
+     if (usb->bus.tx_complete && usb->bus.bus_priv)
+         usb->bus.tx_complete(usb->bus.bus_priv, skb, 0);
+--- /dev/null
++++ p3-owned/utils/owned_control.c
+@@ -0,0 +1,432 @@
++/* SPDX-License-Identifier: GPL-2.0-only
++ * One FWINFO request, actual sole P4a TX producer and owner-return proofs only.
++ */
++#include <linux/module.h>
++#include <linux/slab.h>
++#include <linux/err.h>
++#include <linux/jiffies.h>
++#include <linux/netdevice.h>
++#include "../hgic_def.h"
++#include "owned_control.h"
++
++static struct hgic_control_request *active_request; /* registry ref, attach_lock */
++
++static void notify_locked(struct hgic_control_request *r)
++{
++    lockdep_assert_held(&attach_lock);
++    if (!r->notified && (r->error || (r->reply_ready && r->accepted))) {
++        r->notified = true;
++        complete(&r->response.cmpl);
++    }
++}
++
++static void role_get(struct hgic_control_request *r, enum hgic_cr_role role)
++{
++    lockdep_assert_held(&attach_lock);
++    if (r->role[role]) {
++        r->inconsistent = true;
++        return;
++    }
++    r->role[role] = true;
++    refcount_inc(&r->refs);
++}
++
++static void role_put(struct hgic_control_request *r, enum hgic_cr_role role)
++{
++    lockdep_assert_held(&attach_lock);
++    if (!r->role[role]) {
++        r->inconsistent = true;
++        return;
++    }
++    r->role[role] = false;
++    /* Registry is deliberately retained until P4a joins/poison have returned. */
++    if (refcount_dec_and_test(&r->refs))
++        r->inconsistent = true;
++}
++
++static void cancel_locked(struct hgic_control_request *r, int error)
++{
++    lockdep_assert_held(&attach_lock);
++    if (!r->error)
++        r->error = error;
++    if (r->phase == HGIC_CR_QUEUED_UNSENT) {
++        struct sk_buff *skb = r->command;
++        r->command = NULL;
++        r->phase = HGIC_CR_CANCELLED_UNSENT;
++        if (!skb)
++            r->inconsistent = true;
++        role_put(r, HGIC_CR_QUEUE);
++        /* Only the exclusively owned queued UNSENT object; never worker/USB. */
++        dev_kfree_skb_any(skb);
++    }
++    notify_locked(r);
++}
++
++void hgic_control_error_locked(int error)
++{
++    lockdep_assert_held(&attach_lock);
++    if (active_request)
++        cancel_locked(active_request, error);
++}
++
++static int gate_locked(struct hgic_control_request *r)
++{
++    int error;
++    lockdep_assert_held(&attach_lock);
++    error = hgic_attach_cause_locked();
++    if (!error && r->error)
++        error = r->error;
++    if (!error && (r != active_request || r->generation != hgic_attach_generation_locked()))
++        error = -ESHUTDOWN;
++    if (!error && r->inconsistent)
++        error = -EUCLEAN;
++    if (!error && ktime_get_ns() >= r->deadline_ns)
++        error = -ETIMEDOUT;
++    if (error)
++        hgic_attach_fail_locked(error, HGIC_ATTACH_COMMAND);
++    return error;
++}
++
++struct hgic_control_request *hgic_control_create(struct hgic_fwctrl *ctrl)
++{
++    u64 deadline = ctrl->attach_deadline_ns;
++    struct hgic_control_request *r;
++    unsigned long flags;
++    int error;
++    if (!deadline) {
++        hgic_attach_error(-EINVAL, HGIC_ATTACH_COMMAND);
++        return ERR_PTR(-EINVAL);
++    }
++    r = kzalloc(sizeof(*r), GFP_KERNEL);
++    if (!r) {
++        hgic_attach_error(-ENOMEM, HGIC_ATTACH_COMMAND);
++        return ERR_PTR(-ENOMEM);
++    }
++    refcount_set(&r->refs, 1);
++    r->role[HGIC_CR_WAITER] = true;
++    r->ctrl = ctrl;
++    r->deadline_ns = deadline;
++    init_completion(&r->response.cmpl);
++    init_completion(&r->quarantine);
++    INIT_LIST_HEAD(&r->response.list);
++    spin_lock_irqsave(&ctrl->bus->owner_lock, flags);
++    spin_lock(&attach_lock);
++    error = hgic_attach_cause_locked();
++    if (!error && (ctrl->bus->stopping || active_request || ctrl->owned))
++        error = -ESHUTDOWN;
++    if (!error && ktime_get_ns() >= deadline)
++        error = -ETIMEDOUT;
++    if (error) {
++        hgic_attach_fail_locked(error, HGIC_ATTACH_COMMAND);
++    } else {
++        r->generation = hgic_attach_generation_locked();
++        role_get(r, HGIC_CR_REGISTRY);
++        active_request = r;
++        ctrl->owned = r;
++    }
++    spin_unlock(&attach_lock);
++    spin_unlock_irqrestore(&ctrl->bus->owner_lock, flags);
++    if (error) {
++        kfree(r); /* never published; constructor's sole ref */
++        return ERR_PTR(error);
++    }
++    return r;
++}
++
++struct hgic_control_request *hgic_control_from_skb(const struct sk_buff *skb)
++{
++    struct hgic_control_cb cb;
++    struct hgic_control_request *r;
++    unsigned long flags;
++    memcpy(&cb, skb->cb, sizeof(cb));
++    spin_lock_irqsave(&attach_lock, flags);
++    r = cb.request == active_request ? active_request : NULL;
++    spin_unlock_irqrestore(&attach_lock, flags);
++    return r; /* caller already holds worker or actual-callback role */
++}
++
++int hgic_control_publish(struct hgic_control_request *r, struct sk_buff *skb)
++{
++    struct hgic_control_cb cb = { .request = r };
++    int error;
++    lockdep_assert_held(&r->ctrl->bus->owner_lock);
++    lockdep_assert_held(&r->ctrl->lock);
++    spin_lock(&attach_lock);
++    error = gate_locked(r);
++    if (!error && (r->ctrl->bus->stopping || r->phase != HGIC_CR_NEW || r->command))
++        error = -ESHUTDOWN;
++    if (error) {
++        hgic_attach_fail_locked(error, HGIC_ATTACH_COMMAND);
++    } else {
++        memcpy(skb->cb, &cb, sizeof(cb));
++        role_get(r, HGIC_CR_PENDING);
++        list_add(&r->response.list, &r->ctrl->pd_list);
++        role_get(r, HGIC_CR_QUEUE);
++        r->command = skb;
++        r->phase = HGIC_CR_QUEUED_UNSENT;
++    }
++    spin_unlock(&attach_lock);
++    return error;
++}
++
++struct hgic_control_request *hgic_control_take(struct hgic_fwctrl *ctrl)
++{
++    struct hgic_control_request *r;
++    unsigned long flags;
++    spin_lock_irqsave(&ctrl->bus->owner_lock, flags);
++    spin_lock(&attach_lock);
++    r = ctrl->owned;
++    if (!r || ctrl->bus->stopping || gate_locked(r) || r->phase != HGIC_CR_QUEUED_UNSENT) {
++        if (r && ctrl->bus->stopping)
++            cancel_locked(r, -ESHUTDOWN);
++        r = NULL;
++    } else {
++        /* Queue -> worker is one ref transfer, no unowned intermediate. */
++        r->role[HGIC_CR_QUEUE] = false;
++        r->role[HGIC_CR_WORKER] = true;
++        r->phase = HGIC_CR_WORKER_PREPARING;
++    }
++    spin_unlock(&attach_lock);
++    spin_unlock_irqrestore(&ctrl->bus->owner_lock, flags);
++    return r;
++}
++
++struct sk_buff *hgic_control_command(struct hgic_control_request *r)
++{
++    unsigned long flags;
++    struct sk_buff *skb;
++    spin_lock_irqsave(&attach_lock, flags);
++    skb = r->command; /* exclusively worker-owned; error hook cannot free it */
++    spin_unlock_irqrestore(&attach_lock, flags);
++    return skb;
++}
++
++void hgic_control_worker_abort(struct hgic_control_request *r, int error)
++{
++    unsigned long flags;
++    struct sk_buff *skb;
++    spin_lock_irqsave(&attach_lock, flags);
++    hgic_attach_fail_locked(error, HGIC_ATTACH_COMMAND);
++    skb = r->command;
++    r->command = NULL;
++    r->phase = HGIC_CR_LOCAL_FAILED;
++    spin_unlock_irqrestore(&attach_lock, flags);
++    dev_kfree_skb_any(skb);
++}
++
++void hgic_control_worker_done(struct hgic_control_request *r)
++{
++    unsigned long flags;
++    spin_lock_irqsave(&attach_lock, flags);
++    if (r->command || r->role[HGIC_CR_SUBMITTER])
++        r->inconsistent = true;
++    role_put(r, HGIC_CR_WORKER);
++    spin_unlock_irqrestore(&attach_lock, flags);
++}
++
++int hgic_control_prepare(struct hgic_control_request *r, struct sk_buff *skb)
++{
++    unsigned long flags;
++    int error;
++    spin_lock_irqsave(&attach_lock, flags);
++    error = gate_locked(r);
++    if (!error && (r->phase != HGIC_CR_WORKER_PREPARING || r->command != skb ||
++                   !r->role[HGIC_CR_WORKER])) {
++        error = -EPERM;
++        hgic_attach_fail_locked(error, HGIC_ATTACH_COMMAND);
++    }
++    spin_unlock_irqrestore(&attach_lock, flags);
++    return error;
++}
++
++int hgic_control_submit_claim(struct hgic_control_request *r, struct sk_buff *skb)
++{
++    int error;
++    lockdep_assert_held(&r->ctrl->bus->owner_lock);
++    spin_lock(&attach_lock);
++    error = gate_locked(r);
++    if (!error && (r->ctrl->bus->stopping || r->phase != HGIC_CR_WORKER_PREPARING ||
++                   r->command != skb || !r->role[HGIC_CR_WORKER]))
++        error = -ESHUTDOWN;
++    if (error) {
++        hgic_attach_fail_locked(error, HGIC_ATTACH_COMMAND);
++    } else {
++        role_get(r, HGIC_CR_SUBMITTER);
++        role_get(r, HGIC_CR_CALLBACK);
++        r->potentially_submitted = true;
++        r->token_owned = true;
++        r->command = NULL; /* transport/local-failure owner, not error hook */
++        r->phase = HGIC_CR_SUBMITTING;
++    }
++    spin_unlock(&attach_lock);
++    return error;
++}
++
++void hgic_control_submit_result(struct hgic_control_request *r, int error)
++{
++    unsigned long flags;
++    spin_lock_irqsave(&attach_lock, flags);
++    if (error) {
++        hgic_attach_fail_locked(error, HGIC_ATTACH_TX_SUBMIT);
++        if (r->callback_seen)
++            r->inconsistent = true; /* kernel contract forbids error+callback */
++        role_put(r, HGIC_CR_CALLBACK); /* no callback; local owner reconciles */
++        r->phase = HGIC_CR_LOCAL_FAILED;
++    } else {
++        gate_locked(r); /* accepted return may be late; never repairs failure */
++        r->accepted = true;
++        r->phase = r->callback_seen ? HGIC_CR_CALLBACK_RECONCILED : HGIC_CR_SUBMITTED;
++        notify_locked(r);
++    }
++    role_put(r, HGIC_CR_SUBMITTER);
++    spin_unlock_irqrestore(&attach_lock, flags);
++}
++
++void hgic_control_local_failure(struct hgic_control_request *r, struct sk_buff *skb, int error)
++{
++    unsigned long flags;
++    spin_lock_irqsave(&attach_lock, flags);
++    hgic_attach_fail_locked(error, HGIC_ATTACH_TX_SUBMIT);
++    if (r->phase == HGIC_CR_WORKER_PREPARING && r->command == skb) {
++        r->command = NULL;
++        r->phase = HGIC_CR_LOCAL_FAILED;
++    } else if (r->phase != HGIC_CR_LOCAL_FAILED) {
++        r->inconsistent = true;
++    }
++    spin_unlock_irqrestore(&attach_lock, flags);
++}
++
++void hgic_control_local_token_returned(struct hgic_control_request *r)
++{
++    unsigned long flags;
++    spin_lock_irqsave(&attach_lock, flags);
++    r->token_owned = false;
++    spin_unlock_irqrestore(&attach_lock, flags);
++}
++
++void hgic_control_callback(struct hgic_control_request *r, int error)
++{
++    unsigned long flags;
++    spin_lock_irqsave(&attach_lock, flags);
++    if (error)
++        hgic_attach_fail_locked(error, HGIC_ATTACH_TX_COMPLETE);
++    if (r->callback_seen || !r->role[HGIC_CR_CALLBACK] || !r->token_owned)
++        r->inconsistent = true;
++    r->callback_seen = true;
++    r->token_owned = false; /* real callback has already returned the token */
++    if (!r->role[HGIC_CR_SUBMITTER])
++        r->phase = HGIC_CR_CALLBACK_RECONCILED;
++    role_put(r, HGIC_CR_CALLBACK);
++    spin_unlock_irqrestore(&attach_lock, flags);
++}
++
++int hgic_control_reply_gate(struct hgic_control_request *r)
++{
++    unsigned long flags;
++    int error;
++    spin_lock_irqsave(&attach_lock, flags);
++    error = gate_locked(r);
++    if (!error && !r->potentially_submitted) {
++        error = -EPROTO;
++        hgic_attach_fail_locked(error, HGIC_ATTACH_RX);
++    }
++    spin_unlock_irqrestore(&attach_lock, flags);
++    return error;
++}
++
++int hgic_control_check_locked(struct hgic_control_request *r)
++{
++    int error = gate_locked(r);
++    if (!error && (!r->accepted || !r->reply_ready)) {
++        error = -EPROTO;
++        hgic_attach_fail_locked(error, HGIC_ATTACH_COMMAND);
++    }
++    return error;
++}
++
++void hgic_control_response_published(struct hgic_control_request *r)
++{
++    lockdep_assert_held(&r->ctrl->lock);
++    spin_lock(&attach_lock);
++    r->reply_ready = true;
++    notify_locked(r); /* positive reply alone cannot prove submit was accepted */
++    spin_unlock(&attach_lock);
++}
++
++unsigned long hgic_control_wait_budget(struct hgic_control_request *r)
++{
++    unsigned long flags, ticks = 0;
++    u64 now;
++    spin_lock_irqsave(&attach_lock, flags);
++    if (!gate_locked(r) && !r->notified) {
++        now = ktime_get_ns();
++        if (now < r->deadline_ns)
++            ticks = nsecs_to_jiffies64(r->deadline_ns - now);
++        if (!ticks)
++            hgic_attach_fail_locked(-ETIMEDOUT, HGIC_ATTACH_COMMAND);
++    }
++    spin_unlock_irqrestore(&attach_lock, flags);
++    return ticks;
++}
++
++void hgic_control_pending_done(struct hgic_control_request *r)
++{
++    lockdep_assert_held(&r->ctrl->lock);
++    spin_lock(&attach_lock);
++    list_del_init(&r->response.list);
++    role_put(r, HGIC_CR_PENDING);
++    spin_unlock(&attach_lock);
++}
++
++void hgic_control_waiter_done(struct hgic_control_request *r)
++{
++    unsigned long flags;
++    spin_lock_irqsave(&attach_lock, flags);
++    role_put(r, HGIC_CR_WAITER);
++    spin_unlock_irqrestore(&attach_lock, flags);
++}
++
++void hgic_control_stop_locked(struct hgic_fwctrl *ctrl)
++{
++    lockdep_assert_held(&ctrl->lock);
++    spin_lock(&attach_lock);
++    if (ctrl->owned && (ctrl->owned->role[HGIC_CR_PENDING] || ctrl->owned->role[HGIC_CR_QUEUE]))
++        cancel_locked(ctrl->owned, hgic_attach_cause_locked() ?: -ESHUTDOWN);
++    spin_unlock(&attach_lock);
++}
++
++void hgic_control_owner_release(struct hgic_fwctrl *ctrl)
++{
++    struct hgic_control_request *r;
++    unsigned long flags;
++    unsigned int i, roles = 0;
++    bool bad = false;
++    /* Only P4a final release, after full producer join AND all-slot poison. */
++    spin_lock_irqsave(&ctrl->lock, flags);
++    spin_lock(&attach_lock);
++    r = ctrl->owned;
++    if (r) {
++        for (i = 0; i < HGIC_CR_ROLES; i++)
++            roles += r->role[i];
++        bad = r != active_request || r->inconsistent || roles != 1 ||
++              !r->role[HGIC_CR_REGISTRY] || refcount_read(&r->refs) != 1 ||
++              r->command || r->response.skb || r->token_owned ||
++              (r->accepted && !r->callback_seen) || !list_empty(&ctrl->pd_list);
++        if (!bad) {
++            r->phase = HGIC_CR_RETIRED;
++            ctrl->owned = NULL;
++            active_request = NULL;
++            r->role[HGIC_CR_REGISTRY] = false;
++            if (!refcount_dec_and_test(&r->refs))
++                bad = true;
++        }
++    }
++    spin_unlock(&attach_lock);
++    spin_unlock_irqrestore(&ctrl->lock, flags);
++    if (bad) {
++        hgic_attach_error(-EUCLEAN, HGIC_ATTACH_COMMAND);
++        for (;;)
++            wait_for_completion(&r->quarantine); /* do not return/free owners */
++    }
++    kfree(r); /* NULL or sole registry ref reconciled after actual return proofs */
++}
+--- /dev/null
++++ p3-owned/utils/owned_control.h
+@@ -0,0 +1,65 @@
++/* SPDX-License-Identifier: GPL-2.0-only */
++#ifndef HGIC_OWNED_CONTROL_H
++#define HGIC_OWNED_CONTROL_H
++#include <linux/refcount.h>
++#include <linux/ktime.h>
++#include <linux/skbuff.h>
++#include <linux/build_bug.h>
++#include "fwctrl.h"
++
++enum hgic_cr_phase {
++    HGIC_CR_NEW, HGIC_CR_QUEUED_UNSENT, HGIC_CR_WORKER_PREPARING,
++    HGIC_CR_SUBMITTING, HGIC_CR_SUBMITTED, HGIC_CR_CALLBACK_RECONCILED,
++    HGIC_CR_CANCELLED_UNSENT, HGIC_CR_LOCAL_FAILED, HGIC_CR_RETIRED,
++};
++enum hgic_cr_role {
++    HGIC_CR_WAITER, HGIC_CR_REGISTRY, HGIC_CR_PENDING, HGIC_CR_QUEUE,
++    HGIC_CR_WORKER, HGIC_CR_SUBMITTER, HGIC_CR_CALLBACK, HGIC_CR_ROLES,
++};
++struct hgic_control_request {
++    refcount_t refs;
++    bool role[HGIC_CR_ROLES];
++    bool inconsistent, potentially_submitted, accepted, callback_seen, token_owned;
++    bool reply_ready, notified;
++    enum hgic_cr_phase phase;
++    int error;
++    u32 generation;
++    u64 deadline_ns; /* computed before allocation, assigned once before publish */
++    struct hgic_fwctrl *ctrl; /* usable only inside the P4a joined owner lifetime */
++    struct sk_buff *command;
++    struct hgic_cmd_response response;
++    struct completion quarantine;
++};
++struct hgic_control_cb { struct hgic_control_request *request; };
++static_assert(sizeof(struct hgic_control_cb) <= sizeof(((struct sk_buff *)0)->cb));
++static_assert(sizeof(struct hgic_control_request) <= 1024);
++
++/* Actual immutable first-error/receipt lock; not an exported kernel ABI. */
++extern spinlock_t attach_lock;
++int hgic_attach_cause_locked(void);
++u32 hgic_attach_generation_locked(void);
++void hgic_attach_fail_locked(int error, unsigned int phase);
++void hgic_control_error_locked(int error);
++
++struct hgic_control_request *hgic_control_create(struct hgic_fwctrl *ctrl);
++struct hgic_control_request *hgic_control_from_skb(const struct sk_buff *skb);
++int hgic_control_publish(struct hgic_control_request *r, struct sk_buff *skb);
++struct hgic_control_request *hgic_control_take(struct hgic_fwctrl *ctrl);
++struct sk_buff *hgic_control_command(struct hgic_control_request *r);
++void hgic_control_worker_abort(struct hgic_control_request *r, int error);
++void hgic_control_worker_done(struct hgic_control_request *r);
++int hgic_control_prepare(struct hgic_control_request *r, struct sk_buff *skb);
++int hgic_control_submit_claim(struct hgic_control_request *r, struct sk_buff *skb);
++void hgic_control_submit_result(struct hgic_control_request *r, int error);
++void hgic_control_local_failure(struct hgic_control_request *r, struct sk_buff *skb, int error);
++void hgic_control_local_token_returned(struct hgic_control_request *r);
++void hgic_control_callback(struct hgic_control_request *r, int error);
++int hgic_control_reply_gate(struct hgic_control_request *r);
++void hgic_control_response_published(struct hgic_control_request *r);
++int hgic_control_check_locked(struct hgic_control_request *r);
++unsigned long hgic_control_wait_budget(struct hgic_control_request *r);
++void hgic_control_pending_done(struct hgic_control_request *r);
++void hgic_control_waiter_done(struct hgic_control_request *r);
++void hgic_control_stop_locked(struct hgic_fwctrl *ctrl);
++void hgic_control_owner_release(struct hgic_fwctrl *ctrl);
++#endif

@@ -1,0 +1,3915 @@
+{
+  "utc": "2026-10-22T13:12:38.888115+00:00",
+  "argv": [
+    "apps/qualification/kernel76-station-control-owned/check_syntax.py",
+    "syntax02"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "python": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+  "runner": {
+    "bytes": 4290,
+    "sha256": "21b7befb644e444d2571cf82e670603b8a12ef26c58ef7f24b88b656a8f04fe4"
+  },
+  "compiler": {
+    "path": "/usr/bin/clang",
+    "bytes": 124752,
+    "sha256": "583017067c40b0ff0a9b35805d8ac89d5a66fb014221c78ae13a7c21997dd464"
+  },
+  "source": {
+    "apps/qualification/kernel76-station-control-owned/source/Kconfig": {
+      "bytes": 161,
+      "sha256": "9e140d0bd3ed15e444f4a0dc2031306ffb2691edb7a648aa66b8893bfdb7fda6"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/LICENSE": {
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/Makefile": {
+      "bytes": 4406,
+      "sha256": "55a5ccfbf20a88d17e4073b8998dd380aa3a1d8b2f19ddcb4c895618a5319d60"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/README.md": {
+      "bytes": 188,
+      "sha256": "9808fc033ab4ad1030d1f599434dec2dc00b3eb5124d898bd2ab2edd43db0480"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/attach_init.h": {
+      "bytes": 1996,
+      "sha256": "1fda50d95f29848c4e2331760f21d57fd087b64023af1e2001a8f19b3f9f7d92"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic.h": {
+      "bytes": 19805,
+      "sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_def.h": {
+      "bytes": 9220,
+      "sha256": "0609a727a8b3dc85d8fd9329825e4878dcd066364e0671cbc0c2d34fed978b48"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/11ah.c": {
+      "bytes": 14828,
+      "sha256": "db9a43c7df54b06206609ef6ed8cd88dc9295f1253fb5b2e0bb3abc2df37dbef"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/11ah.h": {
+      "bytes": 457,
+      "sha256": "44fb21d39697afa6f718440814735a578b42618811d4f424d2b4fce0f666232c"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/11bgn.c": {
+      "bytes": 6871,
+      "sha256": "9cc08836a4e33491409d538f07b337ade3db88555980e22466d28509f0fccc32"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/11bgn.h": {
+      "bytes": 62,
+      "sha256": "0f5d2470e5da5de778622562374f2177ede3e84ba4d806ce6a2307894093bb8f"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/Kconfig": {
+      "bytes": 281,
+      "sha256": "e454cb3749a2d6bc2b6b23c9abb2cbae9a4f0f79618f19212dd6886d80c65320"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/Makefile": {
+      "bytes": 942,
+      "sha256": "b7bfa29536b261738bb3518b76e63810bdbf2bf14cca3a45dfba5033bd1e3699"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/ap.c": {
+      "bytes": 3558,
+      "sha256": "30e6e8e8ec7eb0a2076626cd6f52a6061dbff7f57cb74ceb5384d0220b6b40fe"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/ap.h": {
+      "bytes": 384,
+      "sha256": "86351448186412fbd0a198bec6b300a3b5a5e774168f4373c6fee9be3f0b1d14"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/attach_init.c": {
+      "bytes": 25011,
+      "sha256": "007546ab2e6bbefa47d93aaa9429d1ff7c865889c95e3cebc84207ed2a599d80"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/attach_status.c": {
+      "bytes": 2198,
+      "sha256": "d955438a23dd19e5be64ccdd0135d67d103d8563433701ae0ffecfdf09d1bd25"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/core.c": {
+      "bytes": 43055,
+      "sha256": "71a578f033148b2290b2b2b8de5ad540aeb7e4d348043a986615fcad07743452"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/event.c": {
+      "bytes": 2534,
+      "sha256": "b00e6ee84c10f676c2ad7d3afe8abb0800d37224b98445d86acdddde774a6345"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/event.h": {
+      "bytes": 229,
+      "sha256": "8abca8bc4d9e6efbb2137647a7290684e74809dcad81606ee8f908e35d0ae1e3"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/hgics.h": {
+      "bytes": 3972,
+      "sha256": "6701f2c7b07c667e70b939af37967acaf73b08e405fe0519f03c0c1f45a52a6a"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/hw.c": {
+      "bytes": 628,
+      "sha256": "28e4fabe668762cd3d01195a75e6194fcfe1b84eadb60ea7d6ad307c1e15fd9a"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/hw.h": {
+      "bytes": 792,
+      "sha256": "c9416377845b6c0eb1226a23c07ecc85a8c575e3a9d3f12a2db16257db11551e"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/procfs.c": {
+      "bytes": 8108,
+      "sha256": "702e2450f3b908776f6f75742c410caa3e3bcd85fc7a02753361bf9fd96c53e6"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/procfs.h": {
+      "bytes": 615,
+      "sha256": "59872a0cb88f59dea27fc916aadf4d1c53a3f305102392ca98fdb62f274faf27"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/rx.c": {
+      "bytes": 10917,
+      "sha256": "600c2bccc48fae9ee5642fa320d83541b261bf24ff8d2d492c7871f6b97e2cf0"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/stabr.c": {
+      "bytes": 8016,
+      "sha256": "91303e06e5705443c6cc98ed1e5c53c9807456c8a44e5280c9ca586ca8432c83"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/stabr.h": {
+      "bytes": 1205,
+      "sha256": "fc0319ed32175cd6aff3566d80346848cf2ea1bda645bddeb77aa3a08a83c189"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/stabr_arp.c": {
+      "bytes": 2741,
+      "sha256": "f2a6c59b9c5a307bd98ee19b080408be2cdb994d178f0cf945d70aba34c39efe"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/stabr_ip.c": {
+      "bytes": 2972,
+      "sha256": "3951bf24ca2396a2171f3ee339a868b1057702572c3ad3775bad9ff9a2030804"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/util.c": {
+      "bytes": 2315,
+      "sha256": "e5fb19ebdc5e9a2c50e0e8e4618924f23e9185c4cfbf23ab5a8e4ce0131bdfe8"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/hgic_smac/util.h": {
+      "bytes": 358,
+      "sha256": "65b23301aa1a012bfe89cb10a816cf2082ca0302db75f7f0cef70b23a2a07f79"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/linux6-compat.h": {
+      "bytes": 382,
+      "sha256": "32ea414d9001da68b3a91cac8c15d1468b4aba0ec8e337efc84fd0875a0d2eff"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/tools/test_app/Makefile": {
+      "bytes": 882,
+      "sha256": "38fb358d7a55ae380a764afe737b45737ac4a0b5356e824ce93dbf7e1d9ab587"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/tools/test_app/blenc.c": {
+      "bytes": 4771,
+      "sha256": "70cd93a88ef7ec008aa734c0d0a438e9a4e5fdfe538fb0fa08eb3e9eb9891953"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/tools/test_app/blenc.h": {
+      "bytes": 2308,
+      "sha256": "11c3a8421f334b7d8fdcd158f6131701447025e820cc76c85a8223b938deb57d"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/tools/test_app/bt_ext_porting_hgic.c": {
+      "bytes": 7688,
+      "sha256": "6f49288311e52dc8fd97b99f6d4795c242bb0b23a118b60b2774e824c9dd5dea"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/tools/test_app/fwinfo.c": {
+      "bytes": 9916,
+      "sha256": "ccee1a7af3ca3f5d3185689af225442cd195fa167dd5fd17f56ec9171d505534"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/tools/test_app/fwinfo.h": {
+      "bytes": 4967,
+      "sha256": "9f1b78f9522f4645c1d40a73201a3cdaba652373fefd0b76a6b1e1ec8ce600a6"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/tools/test_app/hgic.h": {
+      "bytes": 19805,
+      "sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/tools/test_app/hgics.c": {
+      "bytes": 9319,
+      "sha256": "6a94f71e4ccec581b881a79980ce90ace6720c00ba7de6b3b53456b26857514a"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/tools/test_app/hgics_blenc.c": {
+      "bytes": 16471,
+      "sha256": "a8700fb644021797e69c3930ab77dc01acb8d73dad43b269d31f83dd7d66fff3"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/tools/test_app/hgics_relay.c": {
+      "bytes": 13449,
+      "sha256": "7ab3e6363d4d9fad664cbdaa16bcdcf0f092aff63af0ca6dae2780088b92e0da"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/tools/test_app/hgota.c": {
+      "bytes": 10100,
+      "sha256": "2a3b3e5b54fd1e5f3ac09c5df842b1cdf36848e328e298f8f485f667f2286dc2"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/tools/test_app/hgpriv.c": {
+      "bytes": 1890,
+      "sha256": "9396704f4489abbebd70e9c801b3b9fe1d7d24e2fd1b2b5793b7a9e924addf40"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/tools/test_app/hguevent.c": {
+      "bytes": 7822,
+      "sha256": "2d0a658b45ec99c409a4358054a095b6adecd31940f8a77c8775f0c750c7e2cd"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/tools/test_app/iwpriv.c": {
+      "bytes": 41730,
+      "sha256": "0bebaaaabc5433abdd2beaa3b16686cba07bffa645cf763b0977f80906e8c2b6"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/tools/test_app/libnetat.c": {
+      "bytes": 7040,
+      "sha256": "baaf2176ffa9d76154543ee2d1a544d4ed03a6d2b3b9d8aa412a6a17faab1c04"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/tools/test_app/libota.c": {
+      "bytes": 6854,
+      "sha256": "4ec58b202ff421b03cc8d25d2901db56955adcb5352a42f19796b8a4e47ab917"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/tools/test_app/libota.h": {
+      "bytes": 3112,
+      "sha256": "861a309b7fad4f9d95c65f521c2854fd16288d3d57830a7774729b62e725c899"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/tools/test_app/tcp_test.c": {
+      "bytes": 5903,
+      "sha256": "3746d6b5bef6d09d0d41c748ff4a1f1b8f6ee7fcd2c096143ac1621c0eb34060"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/utils/Kconfig": {
+      "bytes": 256,
+      "sha256": "07cfeddf11d5e92259ac8adca1bb04e2fd76499ce9af26009a0b3abe6d1ac4e9"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/utils/ah_freqinfo.c": {
+      "bytes": 8772,
+      "sha256": "7a29b65926e48e22db4f5c85e4e9ed7a570ed5afc1500be14218df1997d492d6"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/utils/bluetooth.c": {
+      "bytes": 2606,
+      "sha256": "4987a59092cd64ca68017dbeeb6f402b0a246e510f40d9a6cbadf7a2b3ffba1e"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/utils/control_receipt.h": {
+      "bytes": 3984,
+      "sha256": "3b80f917e989fd3587f61e94d9dea713bb26059d7243de5cf0c7bbaccc869073"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/utils/fwctrl.c": {
+      "bytes": 51701,
+      "sha256": "bd0f39db566061b789df5a7569fde5f2dec40770b5d2318106e8d4eb9b4ffc5f"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/utils/fwctrl.h": {
+      "bytes": 17785,
+      "sha256": "e4c049762aa2acd8f46138ed9136e28e27d889ca9575046b03d39c78546313a6"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/utils/fwdl.c": {
+      "bytes": 13683,
+      "sha256": "f8c9cf82c6484b1998749ee7814cad44637d8c1db51bc5ee6a7c7fac0314b1fa"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/utils/fwdl.h": {
+      "bytes": 2825,
+      "sha256": "58e939a56bce67649df222dc5ae3f96dc6255e526233f67408dabdf6605c9392"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/utils/fwinfo.c": {
+      "bytes": 9012,
+      "sha256": "4503733cdc0050438f7bf60cf72a18c6afef1c3f1599c6530149cd8aec26f3cf"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/utils/fwinfo.h": {
+      "bytes": 4257,
+      "sha256": "5506f2d97c0879f8bf692ec801161cbfa1de3f4ff5fc4acc3bd8986532fd409b"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/utils/if_sdio.c": {
+      "bytes": 28088,
+      "sha256": "1deebeb0d0c7d886749075fc176d2db473296a279e8c44e156b7cadc1b30f42e"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/utils/if_usb.c": {
+      "bytes": 17294,
+      "sha256": "84c44b31e95bee4a71dff54a7d7091a010fddc67ba4ec9a8bd9f9b4c5ff37cdc"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/utils/iwpriv.c": {
+      "bytes": 57207,
+      "sha256": "887743a70e8d934e8219b7f321cd2e0d9f13e7f75280383010f516c1d62911b8"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/utils/iwpriv.h": {
+      "bytes": 324,
+      "sha256": "9ba6c5cf59f905a35c79f5e5c6011a812b4dc5576f97afa665e068fca350af03"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/utils/mmc_spi.c": {
+      "bytes": 39586,
+      "sha256": "59f3e43c31535c10c033fe5c24f29492abae90443d5d60b2203cf5c0ac7b7460"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/utils/ota.c": {
+      "bytes": 9312,
+      "sha256": "631fb8036bb698347954b2aec5296df78510247eba53ee33ad3cc33b65c63d41"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/utils/ota.h": {
+      "bytes": 765,
+      "sha256": "854a7a381b7ce257e35d9dc5170eb465e35e43d445cbcb5c878a0e9bd7ac7a63"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/utils/owned_control.c": {
+      "bytes": 14024,
+      "sha256": "558ec33f220c66121ceb5fff4b14174e34221cf680a12bb3d380dda3f6804749"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/utils/owned_control.h": {
+      "bytes": 3175,
+      "sha256": "7c70d2025f68a70e507b872245176b31aacc64a7c29669d944ebfb09a062ff61"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/utils/owner_usb.c": {
+      "bytes": 18663,
+      "sha256": "36f74ce8e77f3deb147345066836e2f783ef0de5fbc1ef3d6959bc46366998aa"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/utils/utils.c": {
+      "bytes": 6064,
+      "sha256": "5cfa24c9fa05c5f917281ffe62d4b70c02e6a82b628918680f664f9a13768759"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/utils/utils.h": {
+      "bytes": 4287,
+      "sha256": "5da2e1863bee07b3c59bdb2dc196536e603f8f057861774d366a4f66143afcc9"
+    },
+    "apps/qualification/kernel76-station-control-owned/source/version.h": {
+      "bytes": 30,
+      "sha256": "5a4e17827eabb8ba89d849b7e94a34292adc8328563709df435ec26e154a7649"
+    }
+  },
+  "host_kernel_inputs": {
+    "/usr/src/linux-cachyos-lts/include/generated/utsrelease.h": {
+      "bytes": 44,
+      "sha256": "c63d4909d035441f0627fcab500c9dc39f5ec75a2ebfbe8e3d58e9fb4ef5c1d6"
+    },
+    "/usr/src/linux-cachyos-lts/include/generated/autoconf.h": {
+      "bytes": 357702,
+      "sha256": "ffb3671a9a00de8cec3cade6a1d07512780fd6caa0f2dd31c286f5c1bd05b05d"
+    },
+    "/usr/src/linux-cachyos-lts/.config": {
+      "bytes": 289827,
+      "sha256": "666cd56218342af5b437ccea2767821ed763043f0de84241db0457e56dd38244"
+    }
+  },
+  "dependencies": {
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/hgic_smac/attach_init.c": {
+      "bytes": 25011,
+      "sha256": "007546ab2e6bbefa47d93aaa9429d1ff7c865889c95e3cebc84207ed2a599d80"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/compiler-version.h": {
+      "bytes": 1457,
+      "sha256": "71b523f4f5ae572c6cee7fb2d62617ef900f3024619b1a61c8d9e758dfa002c8"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kconfig.h": {
+      "bytes": 2691,
+      "sha256": "1b51cc51b6e4beb9b249853e0a0774f63679599f9a27b9e9fb8cc26ca14265f1"
+    },
+    "/usr/src/linux-cachyos-lts/include/generated/autoconf.h": {
+      "bytes": 357702,
+      "sha256": "ffb3671a9a00de8cec3cade6a1d07512780fd6caa0f2dd31c286f5c1bd05b05d"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/compiler_types.h": {
+      "bytes": 21464,
+      "sha256": "aa831d618911d6c222ec7f2bee516e8d1c57f56284a6079d6a3062d305085f34"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/compiler-context-analysis.h": {
+      "bytes": 933,
+      "sha256": "148e1930ffcfe5c7b390dce3099cd064c757ea3e6e3a6041fbe43ec39e39dcdd"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/compiler_attributes.h": {
+      "bytes": 16519,
+      "sha256": "860f32920502426b1d840969071dfdabf09e3b9e083cfa8393422bc373fba6ad"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/compiler-clang.h": {
+      "bytes": 5306,
+      "sha256": "441a78d95f255a453281d662d1e7f4ca3649d759008875072b8c22f6f9a38ec4"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/linux6-compat.h": {
+      "bytes": 382,
+      "sha256": "32ea414d9001da68b3a91cac8c15d1468b4aba0ec8e337efc84fd0875a0d2eff"
+    },
+    "/usr/src/linux-cachyos-lts/include/generated/uapi/linux/version.h": {
+      "bytes": 217,
+      "sha256": "14340e5eb321192ce3845477a7c2225ba95127a549f5bf670403dc0268a90821"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/timer.h": {
+      "bytes": 6662,
+      "sha256": "7b819326e4d7f782a0896088c1696f5dd5b3942fbe33b6ffec54e2e65842e3e1"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/list.h": {
+      "bytes": 36549,
+      "sha256": "a8dedf744673005ceabc9e17ff72ad1cb6516dbaf7025bf30e2195567e5401c1"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/container_of.h": {
+      "bytes": 1449,
+      "sha256": "28b735d62e73541345c11101e343bb202694226bc22d93a719c3bf9c57648304"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/build_bug.h": {
+      "bytes": 3120,
+      "sha256": "ede623eec68a1f3fbda34c9c4771aa2b20c4579409b69a2a0d8a4e28a78b6393"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/compiler.h": {
+      "bytes": 13591,
+      "sha256": "cc1b7b0efa54b278f1f5e0eae03e67a25fe2f9bffa5f41b888001b8cb1313775"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/generated/asm/rwonce.h": {
+      "bytes": 32,
+      "sha256": "e65428b6b0334c3fa3b08c940356e87132ccb205a984bb0d561110b122738963"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/rwonce.h": {
+      "bytes": 3205,
+      "sha256": "e572c666ad9efa7eca68a005337a2f04fbb39d541b9a111c48955db6ec903531"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kasan-checks.h": {
+      "bytes": 1495,
+      "sha256": "d6fb283c5ffeea532e1b778fe1bc8d44ea8547b25101068f84f277000a1e391b"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/types.h": {
+      "bytes": 6641,
+      "sha256": "a03b3d471b24744121f708d536649d93beede2e7990864e7d2c452b3583ec9e2"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/types.h": {
+      "bytes": 2035,
+      "sha256": "f22c5bf977c0bb939577ce7aaa3f69c74e2f5cfa4cd42ff6fb768ce119c9c6fd"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/generated/uapi/asm/types.h": {
+      "bytes": 31,
+      "sha256": "b6bdcd528bce555b2ecb58e8a1624e3e13e09312c31318023c4e86b957e2b01f"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/asm-generic/types.h": {
+      "bytes": 248,
+      "sha256": "e768a8355242ccf2c18e629ff7cebd9cbeda19e7f6823e16f163efa02ce29d35"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/int-ll64.h": {
+      "bytes": 863,
+      "sha256": "6adf196af7b0af7c4175e8c749f2acfcda2ffb59b926bb6b665182b0d6d6720a"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/asm-generic/int-ll64.h": {
+      "bytes": 879,
+      "sha256": "faca16150492e943a43c83e6b3069531dd498ef15dc612fb2051b88f7da83afc"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/uapi/asm/bitsperlong.h": {
+      "bytes": 321,
+      "sha256": "8ef5efeb3f25ae47ce03ba892f5caf77631b1257715fc12de72c21e61db17e43"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/bitsperlong.h": {
+      "bytes": 1207,
+      "sha256": "09c1354e4daa869af60b1b9ae76a0f7a5362bb0fc0be62d64c8ad51e3d19aa87"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/asm-generic/bitsperlong.h": {
+      "bytes": 1107,
+      "sha256": "fa25db88dc972820b72f8baf9cea6f39ca7f5bd0cf39182089409f6676fa90b6"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/posix_types.h": {
+      "bytes": 1098,
+      "sha256": "bc68636a383418f235d3457e4b21cf27cefc7c7f3edea4c1f6706f1018db196f"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/stddef.h": {
+      "bytes": 4507,
+      "sha256": "c82111d604529fc0543048f99c4aad5276ac1afcc4427cc6c7c5d33798ca60a0"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/stddef.h": {
+      "bytes": 2275,
+      "sha256": "69910a7b45c6bc74d0a59f0d4404ad9dbd9e1ba47d144461eaed09fb41a6a418"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/posix_types.h": {
+      "bytes": 144,
+      "sha256": "164faac20bfb4165f3c2267c199b75ad78a39f249597e2db015e9a564d7609a1"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/uapi/asm/posix_types_64.h": {
+      "bytes": 609,
+      "sha256": "5cdabc01dac0a3e9731ac16353210a615ca44e85b6ec9eafd2e79206e0b26c76"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/asm-generic/posix_types.h": {
+      "bytes": 2402,
+      "sha256": "059c34f03abc8247a9ad9fbbfc86b12f56b9b620a81fa3b84c0c7dd9214068ab"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kcsan-checks.h": {
+      "bytes": 19130,
+      "sha256": "92309886f1022c575bff725610023a3897021b2a371a1c963a579f823886c0d6"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/poison.h": {
+      "bytes": 3013,
+      "sha256": "84adcca301c008e5d070def3eafa152aca2e218d7ef6d6d7d7000dbe01efc0e2"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/const.h": {
+      "bytes": 100,
+      "sha256": "17aaf8663019f1988881952a031fa12aefa9127af9ea1d546202af632b2f0adf"
+    },
+    "/usr/src/linux-cachyos-lts/include/vdso/const.h": {
+      "bytes": 196,
+      "sha256": "063bec23979bceeb3207d1778776bd86eb44d0f5dd6e30b2b4c39cedc2e32490"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/const.h": {
+      "bytes": 1589,
+      "sha256": "7c7e4ca1e5b509688d5cd246c23271c12824b43abc40ef5cbbda24c40d5ddfd9"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/barrier.h": {
+      "bytes": 2418,
+      "sha256": "3273fc8f86c8634d493960e5a6c69a129d0974d039c04540db4924aba8e48592"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/alternative.h": {
+      "bytes": 12988,
+      "sha256": "dd884b59292f8f45c9a61fc40de7afd21cd9519e6dd3ffe0c3223b3fbc2048af"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/stringify.h": {
+      "bytes": 395,
+      "sha256": "a7fd23c88d861142792d9233eb7a7e535b936690a2873af66524cafd2879d5e4"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/objtool.h": {
+      "bytes": 7201,
+      "sha256": "6f6ccae7add0adc5dbef427973942dc8691fea9422371a1dc7b41dbd967e1d44"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/objtool_types.h": {
+      "bytes": 2158,
+      "sha256": "58e04bf65531968500f437dd0394b8c06f09c42f0744b0d83d374390f722f5af"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/asm.h": {
+      "bytes": 6777,
+      "sha256": "289598f16e99c5bcfe80883e2ee0632cff62032996f9701f0378754345d771e4"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/extable_fixup_types.h": {
+      "bytes": 2396,
+      "sha256": "7b79522de6c715389ab26bc2ff6dadee0bcf5a5bb59a49206b415999cf7fd65e"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/bug.h": {
+      "bytes": 2886,
+      "sha256": "072198f2d2bdeec85c631a45e5aa3da7c7bc9b30538723033ae65ab7c0db7fd1"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/instrumentation.h": {
+      "bytes": 1898,
+      "sha256": "1c86755e66b043b79ac93efe169c3346e6723f2e19fa379a0dd10fb7a3c0002f"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/bug.h": {
+      "bytes": 6412,
+      "sha256": "cad38e6a000499155b2b4c6b1001a58ce350a3d21686c31cd97f7edbfbcfff1f"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/once_lite.h": {
+      "bytes": 926,
+      "sha256": "708801b7f811230138199c06adb6ae04a7e8ef5c45ec0a8408a343528bc124cf"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/panic.h": {
+      "bytes": 3028,
+      "sha256": "e4359b990bb3b1454b8c60e2367c4a129a8ab317aca4ff3ccf015478617d2cfd"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/stdarg.h": {
+      "bytes": 313,
+      "sha256": "789912218665044af9f7040dfbb7a9e17c0b900efb8f1fa326d91857d51b6365"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/printk.h": {
+      "bytes": 24939,
+      "sha256": "1370eb800844965cec14e8545cc4c11fe443bc1d3bb08b39cce7e47642ce9aec"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/init.h": {
+      "bytes": 12096,
+      "sha256": "d932beb0f7ac42f6e77e0b1f7caf58c54e72184fa08dff510f4ecd0cff7dcd35"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kern_levels.h": {
+      "bytes": 1611,
+      "sha256": "335dbe3d399e5c055bf7d3decb962fab05992781e5722b766ad0d021519c19ae"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/linkage.h": {
+      "bytes": 9580,
+      "sha256": "7032c93f8b3be3170944453b633d84767ff62215e7d9b481debe6c31387e6efd"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/export.h": {
+      "bytes": 2730,
+      "sha256": "4ad93a3c87f955bad3fde700801cc787b9d50b30137e6db5aff45001fe678b9d"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/linkage.h": {
+      "bytes": 4380,
+      "sha256": "9281f4420f32b6f50ea7535ab6abe8a2e80378d974568e19f33a8365341a22d7"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/ibt.h": {
+      "bytes": 2640,
+      "sha256": "1189725666b45376b1e0bfafb402ef365472ab69076ec09648d1ebe6f0bfa2e0"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/ratelimit_types.h": {
+      "bytes": 1408,
+      "sha256": "64a3e42f62e01ea44f00c936f3dbf1ae7314a0cc1726151aeefc54b3b0b187aa"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/bits.h": {
+      "bytes": 2898,
+      "sha256": "fec9de74956535b6664b36ef4e1b0399af0cdc63e50002dbe83c09e1c066825f"
+    },
+    "/usr/src/linux-cachyos-lts/include/vdso/bits.h": {
+      "bytes": 209,
+      "sha256": "ef5190bae70874421bd1cd564885f483787203cb65485af5104d57991238538b"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/bits.h": {
+      "bytes": 459,
+      "sha256": "384a342b436c974782d101b5ba6e43d35c23d93de0f6530b22b513d46ff094e8"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/overflow.h": {
+      "bytes": 18235,
+      "sha256": "b802da0ae323a3e428e2e535fa65838c276a4eac256d0d7ef3b380c671933a2a"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/limits.h": {
+      "bytes": 809,
+      "sha256": "0ed7dfdba324e0ce1fc732cd580338a2535727cc6a2103af9fbe027601092e33"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/limits.h": {
+      "bytes": 947,
+      "sha256": "5c047eb319a61e211442af30493b420eb9e721a1eceee552258dce0d5a26dede"
+    },
+    "/usr/src/linux-cachyos-lts/include/vdso/limits.h": {
+      "bytes": 564,
+      "sha256": "653708a73389bd7a9ef4dd85acf45f19227ac60f2dc133d6285af29cff774544"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/param.h": {
+      "bytes": 141,
+      "sha256": "75c3c810ab5732ae2bca3d5947821db5e61d203ba3b00f658472232295d66849"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/generated/uapi/asm/param.h": {
+      "bytes": 31,
+      "sha256": "6bf1865f0ddba5c80877463ad6650d7fee66931486956a07884f53deaa13e2b8"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/param.h": {
+      "bytes": 372,
+      "sha256": "35763c3ded5ab8966539b4f3096a41de2c7b7d374d9e26ad99cf32426e6ffbc5"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/asm-generic/param.h": {
+      "bytes": 422,
+      "sha256": "aebe74d8dfe3078a039a3a5faad35d9840c67e6472239e78bd8340bb6deaebfe"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/spinlock_types_raw.h": {
+      "bytes": 1726,
+      "sha256": "ac3a04935e8ccd0e5a76669cc7c792bbfb5b0f0681834ace6583dc7a2b0020d2"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/spinlock_types.h": {
+      "bytes": 253,
+      "sha256": "506c4e2e82d71ae7d40a04c107227df694b29976a146535d772cf3db0e93338d"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/qspinlock_types.h": {
+      "bytes": 2134,
+      "sha256": "4f1e7b22093c1027586018fc1ec5db3d6e8e1204e74ad38915c02b93e29b0d24"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/qrwlock_types.h": {
+      "bytes": 683,
+      "sha256": "c7c514edea423d48797b6073b4d0d3ad22ee19ef23f2ca0df90a980e196ede8f"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/uapi/asm/byteorder.h": {
+      "bytes": 200,
+      "sha256": "e8927b5fcab215111f961510cd8db7d5e4c76c8e8e4dd17ad3d1681fae04756c"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/byteorder/little_endian.h": {
+      "bytes": 357,
+      "sha256": "7a212870a285445786fa8e4f6e0c7dcf5061b6ee00019c1bd4ce4c3e7bbf4e05"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/byteorder/little_endian.h": {
+      "bytes": 3948,
+      "sha256": "f005eb98e6d873eac1f07f7fbc9a7223be0fdca99579e539c242814172f3556b"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/swab.h": {
+      "bytes": 912,
+      "sha256": "0256ce360a3c5b3f65fd341df2857505334f60889eb83c72cdf8fe3dde338de6"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/swab.h": {
+      "bytes": 7010,
+      "sha256": "ff86981a34dd0092b9ac98549e133f725eef9e6021e0ddf98759e7fe2575207a"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/uapi/asm/swab.h": {
+      "bytes": 769,
+      "sha256": "88df04139500a43e68fe9c469af5f6c672e50531951bba2a5952ee2d833b80b2"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/byteorder/generic.h": {
+      "bytes": 6578,
+      "sha256": "6b3facab3b763a327c3c24c198f1a43ac0f3e8964e5feb0292d909694f90589d"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/lockdep_types.h": {
+      "bytes": 7801,
+      "sha256": "46a38bae728ff9956b635089f9bd8170ae73354de3f82158012c357bb8c75cb0"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/dynamic_debug.h": {
+      "bytes": 11225,
+      "sha256": "7d069d591a5324fe2d91de53f3d2c32c71749161a505f825c34120b9fadb2a67"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/jump_label.h": {
+      "bytes": 16845,
+      "sha256": "2ea12dd858b6ebed6b88419a7b8267c8790397ef9473abc492b0821d01ba7bae"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/cleanup.h": {
+      "bytes": 18320,
+      "sha256": "2fcef5801b03cc15fbad8aa674e8c61c6a38901a8dccc42128123fab2027baeb"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/err.h": {
+      "bytes": 3487,
+      "sha256": "39cb4711c8d97ad37d3bfdacc99e758140eb90cc8f73eca69a3c1bd0d584c10b"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/generated/uapi/asm/errno.h": {
+      "bytes": 31,
+      "sha256": "4ee384515a4325315992e61dd957f0fa91f3858fe7c079de59f56edded51de86"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/asm-generic/errno.h": {
+      "bytes": 5648,
+      "sha256": "fb7b5a504015f3a9074c641e7371b250d867d751d90e4a22a8ac17fced3d50af"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/asm-generic/errno-base.h": {
+      "bytes": 1612,
+      "sha256": "2c148e92b8318deeb767fabd60822113e575ee664ff09a1873aed8f7a495793c"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/args.h": {
+      "bytes": 1021,
+      "sha256": "bf2270bc92ca719ae469ea793c35d91c66f21c25757a24a64feeb9700e1c2b36"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/jump_label.h": {
+      "bytes": 1503,
+      "sha256": "86b92b2486c1b0f7c757a203df357924cf00d5d484677bc055388cbe0a2d5dd8"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/nops.h": {
+      "bytes": 2292,
+      "sha256": "649baa06ab01b7d11533773ddc02f8e3795a20687558b38906f2da41445f5fb4"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/barrier.h": {
+      "bytes": 7543,
+      "sha256": "d067146839425a9d81712d7259e89820fc73a0305fcb2c84d15de9ab185d2b9c"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/ktime.h": {
+      "bytes": 5528,
+      "sha256": "e86942e72ec8a9cf8a72d5956de3fab121691353aea3dd8086b7817c438988d2"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/jiffies.h": {
+      "bytes": 20533,
+      "sha256": "0f1fef80f090052d587e42455e57ae86ccf88b2dcffff6eff5dcabd151546ca6"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/cache.h": {
+      "bytes": 5481,
+      "sha256": "80126344324f512af39227e0c54ea4dc19933e6943fdedf900fb3cbf9d3f654a"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/kernel.h": {
+      "bytes": 209,
+      "sha256": "a569645840e482111fdfb6830bbb8336934bad5c1a7d939c17898d97e108a02f"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/sysinfo.h": {
+      "bytes": 1049,
+      "sha256": "b803e9e4c4d3cb43b265d9d046fcce6b731af8bf04e78b5c0708e926a6d8f9e2"
+    },
+    "/usr/src/linux-cachyos-lts/include/vdso/cache.h": {
+      "bytes": 323,
+      "sha256": "7cf987365a5ed2a3cea1ac1afe31d23c5287af54a9b99417e30f545fdc8a2ded"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/cache.h": {
+      "bytes": 622,
+      "sha256": "a4940ff4b26143d543d46089e40864ede0dc3d50d905de20e1f95e76c9d7f3e5"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/math64.h": {
+      "bytes": 9213,
+      "sha256": "568a0aa14c3be4c8bd813450da842d49812ed41b43d4d9bd24f4ca38f721c5b5"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/math.h": {
+      "bytes": 6462,
+      "sha256": "b5438e316556c1c62286f066117ffad8f0117f222a751ce4aa37d724123b740d"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/div64.h": {
+      "bytes": 2459,
+      "sha256": "849252cc62c629a133c1074578bee1387c9c393ab1d1564920c3b069d9d6bef0"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/div64.h": {
+      "bytes": 6173,
+      "sha256": "288acb881f07893b78dde25bd9df2185db53442a38dc42de4ece20e34a7ccdb9"
+    },
+    "/usr/src/linux-cachyos-lts/include/vdso/math64.h": {
+      "bytes": 1325,
+      "sha256": "3fb06f1564244c3ab205abe547072fb4204ad6252a59cc4c2dfd8050fd9bdb75"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/minmax.h": {
+      "bytes": 10242,
+      "sha256": "b8238217810a9f69b0f44961fba61f346b6fd9d7037a4c083ee65afd5264a777"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/time.h": {
+      "bytes": 3216,
+      "sha256": "1632adf829e28c143aa9bd4cfd4a100d57c2b22b7f13e069f6dae545a2dc1c98"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/time64.h": {
+      "bytes": 4793,
+      "sha256": "4cc08243de589f85df68411aa998af561e77fb7c3ed024dfc2ed7738606ce1b1"
+    },
+    "/usr/src/linux-cachyos-lts/include/vdso/time64.h": {
+      "bytes": 426,
+      "sha256": "7bea2fb74771207f25d0d7659867388c65b74479e0aa7903c4ad0c7e8fac5834"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/time.h": {
+      "bytes": 2207,
+      "sha256": "b0364314ca37dcaf82d18ed6e7bd201fb658cff80f40637dae192ec8665a9eea"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/time_types.h": {
+      "bytes": 1292,
+      "sha256": "45f5bd4a2412fe6c1f1415a1e00e8521ad45f37117ab7dd1e9fafd7f922b224a"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/time32.h": {
+      "bytes": 1795,
+      "sha256": "bc152e162f8ca79b088bcdf35584860a8ff4618fe2294158de0f439609eb31d4"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/timex.h": {
+      "bytes": 6567,
+      "sha256": "cd3b5c33208c1b3ded9a6fc793837e1d1d83d98b8c884e2b314bbc2d6e89052f"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/timex.h": {
+      "bytes": 7884,
+      "sha256": "bb95ba42ac8169c0ddbb4192dac37210cfa883b0200b6db00eabb33a35f6c7ec"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/timex.h": {
+      "bytes": 546,
+      "sha256": "20a4178e860f1d47d63207619c8b72a0e69fac30aecfbef7840f91246e3509a6"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/processor.h": {
+      "bytes": 19982,
+      "sha256": "47836856bc2077be8694a01988390725fe2413aa9e6d296051836f5fbae1dfcb"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/processor-flags.h": {
+      "bytes": 1832,
+      "sha256": "99aa5f884407ac366561df438b149ea39363926b77638381abcf1da740baaffa"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/uapi/asm/processor-flags.h": {
+      "bytes": 7316,
+      "sha256": "8b125df3b4f0cebef759c97d7653af6ed54f588db1505a19cc497560dc457078"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/mem_encrypt.h": {
+      "bytes": 1340,
+      "sha256": "9127d4bf29518838371b32c9ade9fdcbad43cca3a0c19471c1c79e4de5f33133"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/mem_encrypt.h": {
+      "bytes": 3502,
+      "sha256": "8d8cc65206e03447f0707a8d15b3c5b921cd696920d6fdda754b55dbd4299d86"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/cc_platform.h": {
+      "bytes": 3731,
+      "sha256": "125681195c24de026c9c62eebf5c0cab95f61e12be4d9264928088a020c939a3"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/math_emu.h": {
+      "bytes": 395,
+      "sha256": "2fd986c79f8541bcb34ce4c710ce30795216be25ce86d90acdd53f2bb37eceb6"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/ptrace.h": {
+      "bytes": 12313,
+      "sha256": "8c08265be57952a23df7c79409dac28b2593e0055ddd586cf18315f2430c230c"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/segment.h": {
+      "bytes": 10123,
+      "sha256": "3804c264cb0712cdf4899770a68e3f1e8dae204b66b5911bca5bd1016734e3d7"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/page_types.h": {
+      "bytes": 2005,
+      "sha256": "4b710a6891bd7e6e7d51b81a7fb083a8beb6ece020111ea55780bbb5dab1eefd"
+    },
+    "/usr/src/linux-cachyos-lts/include/vdso/page.h": {
+      "bytes": 814,
+      "sha256": "fa583d2a3e6097cc91c569552d971e5320f775feeeda99fb11bb9a664a014596"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/page_64_types.h": {
+      "bytes": 2816,
+      "sha256": "fc9b57203f78df9f4b5e5e94a915965a2fc733cfa09555b881435ea9f2cdeaaf"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/kaslr.h": {
+      "bytes": 398,
+      "sha256": "655f99847b10596ad36f729738102629eddb5c3f44d287faaf62afc2fa275032"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/uapi/asm/ptrace.h": {
+      "bytes": 1632,
+      "sha256": "b6dffdec33919725e67f00014a7e4256effaedaebac37c45d5d60d783cb96d51"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/uapi/asm/ptrace-abi.h": {
+      "bytes": 2040,
+      "sha256": "04f3cd620a5f7714f0bf2083d0af85b53f1828d4491d852bf7acf3695373d9f3"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/paravirt_types.h": {
+      "bytes": 17835,
+      "sha256": "4974218ad4d44ef0fb8a6de8be34e068be2084fd2141b826653ef7fe97cb6ea6"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/desc_defs.h": {
+      "bytes": 4961,
+      "sha256": "7e0077a9c039961ac0c82bbbc47a580cfe2af42b5b3830f4271c29d89ef26e0e"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/pgtable_types.h": {
+      "bytes": 18319,
+      "sha256": "795166fe877c926d9e3ae16c77e13cef16ec365b0a63e1b871b0cfd3a2409ada"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/pgtable_64_types.h": {
+      "bytes": 6007,
+      "sha256": "73a467d12e2db27b5b38ad289cf121bb91c02496002a757081ecf35b41576d01"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/sparsemem.h": {
+      "bytes": 830,
+      "sha256": "9ada507b98c984be0447c21723610253f3fcf1d294674ace23ac69d7a96d0c15"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/nospec-branch.h": {
+      "bytes": 19545,
+      "sha256": "7ea73dca4021fc79079782797c05bad4b24cd344e99275da7f1d5b2de7302948"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/static_key.h": {
+      "bytes": 30,
+      "sha256": "304f1660452c3e2786323b7bbcecd1d4a83017ef71f45339e4b0b2614ce9df63"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/cpufeatures.h": {
+      "bytes": 41015,
+      "sha256": "bbe57d7ffee85c96c4c6de36604d5ecf0e201ce87c2382a9ae1c3e0868a97796"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/msr-index.h": {
+      "bytes": 49911,
+      "sha256": "5f27e1cdd333f7385d74680209fdc6706f30ef15bc8e9a320385715d15f451f0"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/unwind_hints.h": {
+      "bytes": 2077,
+      "sha256": "100567f103b42e151c850a0f5bbc9809388c9bc8db9b04e3cc2d8b8580fde8d1"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/orc_types.h": {
+      "bytes": 2182,
+      "sha256": "f05ddf66ba01438b2d28bdaa0c3c156f9067acc51cf3a7c0a6266576ffb51024"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/percpu.h": {
+      "bytes": 23210,
+      "sha256": "3a0d37eba4df033fe74d06e9270862317a1ada196045695bd274e916da13fe2f"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/percpu.h": {
+      "bytes": 16084,
+      "sha256": "e1fd722c3b85f691094bb954a8e04845859bddcd22d4d83d7dbea8d6f70f1c60"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/threads.h": {
+      "bytes": 1338,
+      "sha256": "ac7161de729d183418eee161e1d0bbc2253839139d20e1d8a278510b6108d130"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/percpu-defs.h": {
+      "bytes": 17822,
+      "sha256": "a5ff95075c3c2a480e6550bf0ad7d1084b4183a552ce147bcfdff2d4a8600145"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/asm-offsets.h": {
+      "bytes": 35,
+      "sha256": "234714b64ab096b675d84d835d92a0acd32b75b0b0514a9bc549ccbd5fb7cf4d"
+    },
+    "/usr/src/linux-cachyos-lts/include/generated/asm-offsets.h": {
+      "bytes": 5759,
+      "sha256": "412ea36f240a326e3ea2b3f687da9a9daff2782600aec9be428f31401061cdbc"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/GEN-for-each-reg.h": {
+      "bytes": 345,
+      "sha256": "be76454dd399caa42f85d45b808f23ac194c042198e53a494612c85334bdf00f"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/proto.h": {
+      "bytes": 1092,
+      "sha256": "3adf7b4a6b184c04334c81d58be07385b7cbc69695e7f04e81a8cf23a16cd4a5"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/uapi/asm/ldt.h": {
+      "bytes": 1308,
+      "sha256": "fb18ddd68baa4d384c54368d716440769e601f15c110d567cf48e6e1da90afbd"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/uapi/asm/sigcontext.h": {
+      "bytes": 9950,
+      "sha256": "84e2cf444ec6a539a4bc0b46717775cb1fd1f591301b7469ba143e56f43afc0c"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/current.h": {
+      "bytes": 761,
+      "sha256": "6b2d348fb95a5bc25d2e1d4ed3b29f7604601f74f30b9b9f7b35dfd87aa37c95"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/cpuid/api.h": {
+      "bytes": 6234,
+      "sha256": "4059518db559c3c29f84b3d4178f3863201cddf6b6d299108300ec3b6c981920"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/cpuid/types.h": {
+      "bytes": 2628,
+      "sha256": "47834143866a6fed0d9d40dbba795a8501b2a1207294451e34de1e7802fd395c"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/string.h": {
+      "bytes": 129,
+      "sha256": "9ad590bfbc1c4eb039f48f84d613da6426c2b229eb1a9426aec24d1221c6b1c5"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/string_64.h": {
+      "bytes": 2616,
+      "sha256": "e30476a2f8363bbd78a7cd8c2de7e5c76af30061907ded9d57a853479421605a"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/paravirt.h": {
+      "bytes": 17772,
+      "sha256": "fffa0105ba01ffd8ee7d4a6299bedd0dd77e981125395c892d0581fd4d639324"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/bug.h": {
+      "bytes": 2391,
+      "sha256": "23db83e55937d09415957272b4348135b720e7c5717912ef9181ab2b3c6457b5"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/cpumask.h": {
+      "bytes": 40958,
+      "sha256": "a93481ac56d2317b770f0eedb1aada44e289aac36d8dc5d405ea08ddded86457"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kernel.h": {
+      "bytes": 6800,
+      "sha256": "cfcd17de58cbac041f21aa35b0fd0fceac077ebfc7140a307b41764ada459038"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/align.h": {
+      "bytes": 139,
+      "sha256": "4da2b94e368dab1745dc81e83bd29f580c6620e4f3fa19c871a77b10c31bee36"
+    },
+    "/usr/src/linux-cachyos-lts/include/vdso/align.h": {
+      "bytes": 551,
+      "sha256": "8e7ce9486c193d4a46395d4f14d56c01a0f9e06e95fd4d5bdd9b35a236d98ff8"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/array_size.h": {
+      "bytes": 332,
+      "sha256": "f57b8e8f14d930b6884384a048fb97f450d2e6cee7e3da2bf6977e89cc1c97da"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/bitops.h": {
+      "bytes": 10342,
+      "sha256": "227976be35dcb5dbd33ec602c9b5affbb678e1c8c0ce8465b1bc7dd5fcd32801"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/typecheck.h": {
+      "bytes": 782,
+      "sha256": "a456610ba55e62234f7c830d6017d3bd17b3c97397b9e5eb009b758da13aa878"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/bitops/generic-non-atomic.h": {
+      "bytes": 5310,
+      "sha256": "2a8c37f42a26734a4313527789c6ad5b0e3437558820456b3e64c08f497b5e80"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/bitops.h": {
+      "bytes": 11342,
+      "sha256": "90f9020b5b66d4d042cee0ed601133d77b27878fb2c839e8fe79fc36e58d7008"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/rmwcc.h": {
+      "bytes": 1362,
+      "sha256": "648f796b6b047f14e3a7beb58d80793dd03b4e6d8c437ecbd5abcdfbd2f6a891"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/bitops/sched.h": {
+      "bytes": 760,
+      "sha256": "9ca18afe9cb77896c5a7ab7905cef16e224c12ab2238606ec9ad07f90c6a9cea"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/arch_hweight.h": {
+      "bytes": 1189,
+      "sha256": "8857cf7d5c782c3fba1ab5dadc55949eadd19ac454078d03c58aaf484366c5f2"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/bitops/const_hweight.h": {
+      "bytes": 1711,
+      "sha256": "9bbc94bc89ae521e00be3fea4c2bc1e33fc7b4bf9b8cfd87df2c46236efe84c4"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/bitops/instrumented-atomic.h": {
+      "bytes": 3058,
+      "sha256": "b1de03c04b6abcb20593dd27806337c92b670a182bcf674b59f87e59d2e47161"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/instrumented.h": {
+      "bytes": 6358,
+      "sha256": "8f1562ec522eb76375c49faec4a6de5c7eb64d7e6e6dc74b77af542ebc5eef8e"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kmsan-checks.h": {
+      "bytes": 2930,
+      "sha256": "87a03d85d44e194eece06879ebe3d72f157cbeb61b86a1f7ffa8bc721b51c7e3"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/bitops/instrumented-non-atomic.h": {
+      "bytes": 4863,
+      "sha256": "d11acfb0ed2115e39ec54a926e9b7766f4bddfd0679d06eccce47260cc0a0547"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/bitops/instrumented-lock.h": {
+      "bytes": 2705,
+      "sha256": "3868d3ff5a3a0550a2d8d718eedd71c433ae2fa966afce8819493348f4676eb9"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/bitops/le.h": {
+      "bytes": 1335,
+      "sha256": "ca674eca51e2b15c33ca511e5b2dd907b7a463df85fbb1386ff8fc77a8ff9811"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/bitops/ext2-atomic-setbit.h": {
+      "bytes": 403,
+      "sha256": "3813ee4bf04de8c65e95e9100329a7620abb09423029c544808e384a126691c8"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/hex.h": {
+      "bytes": 884,
+      "sha256": "b367b30dcb8c0e971110bc73ee1c06801d1059336646e626ce84d66f1f8f6774"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kstrtox.h": {
+      "bytes": 6744,
+      "sha256": "cde8bd2a9838b4dba345461204fd86c90b0bf4a66eaa23a03078bc3deb1aac98"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/log2.h": {
+      "bytes": 6686,
+      "sha256": "7d9ebbffb69b781e5cb75fc768f44dfcf743bbcbafc0e7d12139c3d71e61bfb5"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sprintf.h": {
+      "bytes": 1379,
+      "sha256": "72a0226d5631211916ccce67a50033e53f0bba043ca39823d4f346179ecff9df"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/static_call_types.h": {
+      "bytes": 2809,
+      "sha256": "462653346d9b44dddceb63d41fe440d9266fd9528328beb98a6bd6b6a9928688"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/trace_printk.h": {
+      "bytes": 6903,
+      "sha256": "889c4238f2cd0e9283447d0b2757baf3854c052c961d2c55783e20b2dff0d439"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/instruction_pointer.h": {
+      "bytes": 346,
+      "sha256": "4377b75a38de319f5ed6c066abfa59a875d50267b5f22879589694d99b3b0cb4"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/util_macros.h": {
+      "bytes": 5326,
+      "sha256": "2c42a9cfb9f6f7b7dc9c339154ee90975745b7080306241acbc1f3f01edba07d"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/wordpart.h": {
+      "bytes": 1534,
+      "sha256": "1622fd72851be5e59a98553f5220dd6082bdf3cfecfca45230573cb9cd751391"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/bitmap.h": {
+      "bytes": 29906,
+      "sha256": "69b7f73e5bf226cffb7f8621bd0549154f432edae996d2a366b984ca9a96a16b"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/errno.h": {
+      "bytes": 1481,
+      "sha256": "e49469284a3014e6cbca27f852a75e4e540818d38b33edff7eb2c4fe8dd268c6"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/errno.h": {
+      "bytes": 23,
+      "sha256": "a47fb2f49bce0546a1e88805cec954338abb1b2ac87de042166e8e3a74b23261"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/find.h": {
+      "bytes": 21278,
+      "sha256": "b8b91218c4f7b48ff780e3b1df65f2adc3193775798febea29a2b7c6d73fd000"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/string.h": {
+      "bytes": 18600,
+      "sha256": "6dad7c9cb1d6adf132da850f32fc7c3fbb263086925393db7fe1ef02d4f18881"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/string.h": {
+      "bytes": 296,
+      "sha256": "0ad5788ad9b356a76e9388d0bbff9f7c8e3dbc1dd7ca54bf47c99f5e78f41f7a"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/bitmap-str.h": {
+      "bytes": 856,
+      "sha256": "ea4663231fe9174f4e1307f876dd77f92e0178e3993e9ec57c75e22f1d476637"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/cpumask_types.h": {
+      "bytes": 2232,
+      "sha256": "18fed6ff401fc75c739b468ff7ffdbb5342178051e14796b58d6a0c4efbcc636"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/atomic.h": {
+      "bytes": 2644,
+      "sha256": "4d53d1ce680486a9b9bd97ad529c2382509827784e8afee4835c2bfffa1691ad"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/atomic.h": {
+      "bytes": 4514,
+      "sha256": "1ba1e1ef1403c9be2f00494c1ba22cff87044d442ef90a5da18a863877e88b18"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/cmpxchg.h": {
+      "bytes": 7428,
+      "sha256": "70dc12e5c2f1bf7b3ff0fcc4f7bf908a9d2a79786ef86d8b3ba71c3e04d3ec9c"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/cmpxchg_64.h": {
+      "bytes": 2546,
+      "sha256": "e390dafe7620dbd75eae8965f01916696f5bea936f1de85f5c32a64ca517a816"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/atomic64_64.h": {
+      "bytes": 4418,
+      "sha256": "c7fb549ab4c2342114f9a4b097b175071c8a9926d1192da03f0e718928267757"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/atomic/atomic-arch-fallback.h": {
+      "bytes": 129313,
+      "sha256": "17cf45a143a47a91f9a44fd641742812ba85ed8449b8960ca9a84d1edddee20c"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/atomic/atomic-long.h": {
+      "bytes": 47246,
+      "sha256": "bc1842b39b3ef1765b757b5c7fd452aeffc26ef216721efad4bcf143013624cb"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/atomic/atomic-instrumented.h": {
+      "bytes": 138268,
+      "sha256": "bef32e54acce59c6b99721c90084f12ed5fa24990ef5b56cedece911dd320828"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/gfp_types.h": {
+      "bytes": 16955,
+      "sha256": "679394be954668ab8e1d104df064495e4a1f1acf637884ea27d53f1f3c97f46b"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/numa.h": {
+      "bytes": 1635,
+      "sha256": "d64e28ca042dfe536eb8ac21aa5335e7ec8c3b5d8c4fb1c8a933d4da9f2e4543"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/nodemask.h": {
+      "bytes": 17813,
+      "sha256": "ab508f2919b67dd0cf13face173622b0304ea7549fae8a992103540dd053cc4e"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/nodemask_types.h": {
+      "bytes": 419,
+      "sha256": "5cfa961902f8bf99463bd044ec6fa0821fdaebfc475399a225cf49205e80df66"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/random.h": {
+      "bytes": 5094,
+      "sha256": "0e21fe7e448d2c3497b3ae8d3ae902312ab71bb40123540ea7068ceb4ee3c6f9"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/random.h": {
+      "bytes": 1912,
+      "sha256": "7afc3eb7ff6b48ae8d1474ca0f0d53022c3a4740e43973af03b257fefcca83db"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/ioctl.h": {
+      "bytes": 163,
+      "sha256": "ba73b5892de6605e6c40b151820e367dfcb98cbdb3f8f468c5ef2bd8437df873"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/generated/uapi/asm/ioctl.h": {
+      "bytes": 31,
+      "sha256": "9c6ca9e365296a6b66747cbebdcf76972b8cce7aab91e55bf4ab1f3581df9c2a"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/ioctl.h": {
+      "bytes": 506,
+      "sha256": "f5c298423cf337ec430e1a26272bada9fa2f1bd4681847e407ebcad1550977e9"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/asm-generic/ioctl.h": {
+      "bytes": 3559,
+      "sha256": "8629514cdd724a7100fc6eea84d93db5fbc3285431a1631a77c7f8006b70bce0"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/irqnr.h": {
+      "bytes": 1538,
+      "sha256": "c33a1f71f35d3df836e394380cbf3e7d1b9b51d27520cb202a9ab15baa28c752"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/irqnr.h": {
+      "bytes": 104,
+      "sha256": "e202d1d01363068bfd5f0d11a634c799c7b2299e9282c337a0c37970338b7cf0"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/frame.h": {
+      "bytes": 2562,
+      "sha256": "d1a0d2e3c47a09dd2da20baa13c83f6d2e64de909c51d90569f9d235335745be"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/page.h": {
+      "bytes": 2499,
+      "sha256": "02701c107772edc2bb78b63d0ad292b1e63b2ef3615b59a89f7e1793d229f2fe"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/page_64.h": {
+      "bytes": 3021,
+      "sha256": "c875683ab3d35fba5d8a033fbd76fc91693e9457f4a8e320b11f2ebe51c7b2f7"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/range.h": {
+      "bytes": 1098,
+      "sha256": "53d229eb121f80033e628bf1207794220bb1728a84c09ea13789f3de918f917f"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/memory_model.h": {
+      "bytes": 2387,
+      "sha256": "950e6130b0aae12a508f3be25ff1d2b2dc9649b9dc2b45f6ecb92c8bc523c613"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/pfn.h": {
+      "bytes": 424,
+      "sha256": "3b9a212b275177f0cabbf6d33378c0a5eb2251b78755861f89c123edf59171c8"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/getorder.h": {
+      "bytes": 1262,
+      "sha256": "8a11cb3fb27590a28ee50220547925d7228712f8bcc9eac01c8230d2a2c45506"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/special_insns.h": {
+      "bytes": 7791,
+      "sha256": "08e7aad05817903bc1489a011a8a00a0e3c0b6267f72d6709ad3926eb545dc95"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/irqflags.h": {
+      "bytes": 8153,
+      "sha256": "a75ca718d7055b83e41215e619c410b8cd646a6aa07ea7bf2eb272b07288efd2"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/irqflags_types.h": {
+      "bytes": 563,
+      "sha256": "b3b246519f20d5440a72ae7fddfbf14b387fd41a2692ed6df5b73b8b8efccfac"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/irqflags.h": {
+      "bytes": 3185,
+      "sha256": "39fe3ed664d2c888cf5ebd1f79810b65dbd78f42e9a05ce270ab95ccd863749d"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/fpu/types.h": {
+      "bytes": 15811,
+      "sha256": "22f70100c5ff6092b27e4c70b7b0a60f88e4d50b7c965e0b0b686594020b4542"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/vmxfeatures.h": {
+      "bytes": 6582,
+      "sha256": "313eae24276800b3086f193435fc0680907a87458adc66a409b94847358a1e2f"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/vdso/processor.h": {
+      "bytes": 558,
+      "sha256": "684e2abe6d6dc027cccca3bd9503015865500ce54216c85a05f99d9d53c686d1"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/shstk.h": {
+      "bytes": 1633,
+      "sha256": "a68ab5ad608652bb2cb4f7508f6052d9de938039dd6c44f8e415b1e23ca672fe"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/personality.h": {
+      "bytes": 393,
+      "sha256": "019f12b41a17c6db362a4c8cb46b5091325b9c055f2fd39fce49bd299185e2e7"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/personality.h": {
+      "bytes": 2112,
+      "sha256": "5171b16b3b1aed8db98af650868ec69d5347accc9eb7f562fb3492a67554dbb1"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/tsc.h": {
+      "bytes": 3656,
+      "sha256": "497494f64ae721ddd621b4c6f87033378d090b24e7a402bd64abcda9b45ebe7e"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/cpufeature.h": {
+      "bytes": 4100,
+      "sha256": "d66d502c312b58ccde34910920e706641dd3f1c81644773bbec1c8b20fa2477e"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/generated/asm/cpufeaturemasks.h": {
+      "bytes": 2240,
+      "sha256": "ff11d917cd57d4bb3e1ce01dfa88f765eba00d8aed6fee0d4d7c8d626e41c22a"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/msr.h": {
+      "bytes": 8952,
+      "sha256": "fa53929c548b16758fd623c4e263e1e3d03f9ff1ec355544e474b32731774228"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/cpumask.h": {
+      "bytes": 905,
+      "sha256": "04059c39fe529c3460676cdd213456051b36671956e232d806ecb7fc414eb916"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/uapi/asm/msr.h": {
+      "bytes": 363,
+      "sha256": "bf3abc39d9800ff683f5e90319ec81f52cb7417397eb915488d233de0b2e3ae4"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/shared/msr.h": {
+      "bytes": 210,
+      "sha256": "1c59905e3796d7ae977b5ebc34828b1fdddbee77ece804139cf71fd7a5a3e8f5"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/percpu.h": {
+      "bytes": 5296,
+      "sha256": "44209431de44abef68f3675dd33a7d970effb3c5ce77b06ebfaf50130ad5a9f5"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/alloc_tag.h": {
+      "bytes": 7287,
+      "sha256": "b8e745b2e706b33a8f0ca24487f8784c3cdf9fdde1fbb61a7d5698785e6198d7"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/codetag.h": {
+      "bytes": 3538,
+      "sha256": "ab4c883639125832a6c374222ebc1cd83a5c2fcb950e1a34ced5fbdf98527d0e"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/preempt.h": {
+      "bytes": 16067,
+      "sha256": "9cc25405f07889e8e221b98b4944e6038a791fb1ab4238bca272df75c2defb26"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/preempt.h": {
+      "bytes": 4191,
+      "sha256": "4a0be0a532563e85ee4ac28dcbffe23d7e6592fd6870fe7ce6f7e29dc605bb83"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/smp.h": {
+      "bytes": 8234,
+      "sha256": "dd6b3256853cc4183cf7e94324cdbcc3634502ee4b2c91ff1a1c888cf69bfdb2"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/smp_types.h": {
+      "bytes": 1382,
+      "sha256": "10b6d7896fc9aa4ac4e7d41e91a476b4e83aa492e88493866488c6646c9fefcc"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/llist.h": {
+      "bytes": 11132,
+      "sha256": "9bcf60ea87e78c4c97d4f56b8304b11755e3bed37e6199ba618155c23609bbe8"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/thread_info.h": {
+      "bytes": 6668,
+      "sha256": "73fe213525bc27f67b93958a43f9b916dbf354416998dafefeb7c527a256e396"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/restart_block.h": {
+      "bytes": 1114,
+      "sha256": "85f426110ecc3a198a6c3542fdd996b2f6ef9c9218af7f798d5da49fddff26cb"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/thread_info.h": {
+      "bytes": 7381,
+      "sha256": "4d81ad9802d01396a07ad5d95e9f85eca98a61f15a08a63af89448976a8e1df8"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/thread_info_tif.h": {
+      "bytes": 1596,
+      "sha256": "60e450d7308c84a56fa1cc18520ad7d4fde53650c7b9e0af988f95f0129341f9"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/smp.h": {
+      "bytes": 5065,
+      "sha256": "49596875e45fc2509cd1b84877eb1bb9a7662a20f2e1d31c9f3e2c9fe2f6a1a9"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/mmdebug.h": {
+      "bytes": 4772,
+      "sha256": "b1ee00b23d98985b49657bc6e65e9b812f4cd24f1ae13b0a952c771082d2adac"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sched.h": {
+      "bytes": 71426,
+      "sha256": "b6990cb89f8a3cf9bad5e4ee5430abee0dedd05cc6d13f3ee263bf088a33a2b6"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/sched.h": {
+      "bytes": 6302,
+      "sha256": "2081b07cee6adab443e4ba320d0ccb13db4c97bed64f3eefafbfde2f25c833a4"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/pid_types.h": {
+      "bytes": 282,
+      "sha256": "a75de7369fcec82ace68e84e42a2e0170eb7d2123175147d4483220718543b32"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sem_types.h": {
+      "bytes": 234,
+      "sha256": "059f02e475a32b7d92b639948eebbd0063696c3923de4122779f2eee065055df"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/shm.h": {
+      "bytes": 835,
+      "sha256": "315d1d9ce87d22828cc9865b3d5c6b51280d41e2195dd033482872d377772ccd"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/shmparam.h": {
+      "bytes": 193,
+      "sha256": "217ca536c7a9c7aad2982b0da2edb05b00e986dc25b46d646e1f3ca84e482002"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kmsan_types.h": {
+      "bytes": 906,
+      "sha256": "38ae26869850f435ab1bded9cae66d1a324fa321b9bebceb8c493cdadc496fb2"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/mutex_types.h": {
+      "bytes": 2141,
+      "sha256": "c96488bb111b8b470c993b1ee25456c4e0bb81395df0810fe67c24b65f67f5ab"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/osq_lock.h": {
+      "bytes": 912,
+      "sha256": "33b208bb2c56c99eaf22d98363542595386dcc5197fdaef2b89b849f277ae124"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/spinlock_types.h": {
+      "bytes": 1826,
+      "sha256": "7902577850f337ae011bf873d13d2e44c15704e27536c96b7fb017f7774e1a66"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rwlock_types.h": {
+      "bytes": 1814,
+      "sha256": "6a2732d4a34602cfb0a51d7022d04cd40d89d94157b7fff6882a371ba5b9cfc9"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/plist_types.h": {
+      "bytes": 315,
+      "sha256": "7f32464bc5db2d540b40d7094848d7f20eb1637a075e6184d8f4a7935c006678"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/hrtimer_types.h": {
+      "bytes": 1574,
+      "sha256": "a08b4a143625258acdc48820a330c012671a82288c5d9c5ed8b998256e20c155"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/timerqueue_types.h": {
+      "bytes": 335,
+      "sha256": "c3427ebec62a97fe0040d0a520ae680d74a440cc4b1abb92e1a5be1f51e5b88b"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rbtree_types.h": {
+      "bytes": 946,
+      "sha256": "bb78534d4212776381b3b849ad6ce1009b9d3fdfb87e19f51e5e9449e7f03e22"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/timer_types.h": {
+      "bytes": 477,
+      "sha256": "4c8300df1f7f8d098104e08d71959b40a83ff821ffff041a467ac04ad7937151"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/seccomp_types.h": {
+      "bytes": 834,
+      "sha256": "459da86d2802e665931ccf75afbd9bc6351d1559681e9b2c7eba7ee44c584deb"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/refcount_types.h": {
+      "bytes": 512,
+      "sha256": "1cd15b66e38dc4408329d4bd61ec605222a5c440dde64a0af7e73dcfc1a2472f"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/resource.h": {
+      "bytes": 223,
+      "sha256": "3f2fab184ae97b394a899404a7fe35b2282dcfca7a05e3aef48c7585623ef68a"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/resource.h": {
+      "bytes": 2610,
+      "sha256": "42f158b8dbdb7ad125a7d8c294e58a7f1a0a14107522fbaa2bb7fd92f1ba1922"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/generated/uapi/asm/resource.h": {
+      "bytes": 34,
+      "sha256": "6d9c7f1ca98f275aafe3c5533d274aec702ea6029f8036bdb577b0c53e08f7d9"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/resource.h": {
+      "bytes": 1100,
+      "sha256": "460e855d3182ec31290c986b705a87ec2ba9848d7a9bffa3f314b6b61cc2b783"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/asm-generic/resource.h": {
+      "bytes": 1887,
+      "sha256": "ff487485f1e1b56fa1f4199272288f9984956b9f6b33e56a88544bf87093284d"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/latencytop.h": {
+      "bytes": 1088,
+      "sha256": "72822537bd6fd027403df29fcc36b962befc5b15f115de7a2e0f7ffc9655cb50"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sched/prio.h": {
+      "bytes": 1142,
+      "sha256": "6799482082e27f9bdb43ccd037c5a6a49c406af836dc05a1f5e8c160e2880870"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sched/types.h": {
+      "bytes": 710,
+      "sha256": "0198ec83dbfda783f202d45ea7d18ff0d1c2145dcd8e23c875bd7a0c6d73e71c"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/signal_types.h": {
+      "bytes": 1726,
+      "sha256": "cb4773aeeaf5521855e63b4449bc41a09d00f59650cf678868ac96755c2f5dba"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/signal.h": {
+      "bytes": 403,
+      "sha256": "4744021d82b90e0dd5bbad5283c98361aad73510127d19c2bd4103c7d21234d8"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/signal.h": {
+      "bytes": 2310,
+      "sha256": "44fe33aaa0af7c7d9654af2bd270130dfc46f42484d6bff390afb9f8b80e2da7"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/uapi/asm/signal.h": {
+      "bytes": 2189,
+      "sha256": "4aa8e8c9dd54a2ad66b9f95aba04040bcfeb6046ae5566e13e0dfbd834d271f1"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/asm-generic/signal-defs.h": {
+      "bytes": 2988,
+      "sha256": "6b3e6cb49936df8565f3adce214586d423cc9e5cba4af5ba29b90d3e1f9d9c31"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/uapi/asm/siginfo.h": {
+      "bytes": 422,
+      "sha256": "9bdbf34cba5d10fd6fed612d6d7d8096f38e2e1d2993af5f25ee4423c1db1ea6"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/asm-generic/siginfo.h": {
+      "bytes": 10783,
+      "sha256": "22b270974fa6db12d9278a58bf412411f15c2c4e90ad861e4e0e54e662356e52"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/spinlock.h": {
+      "bytes": 17969,
+      "sha256": "84d5174da1ddc48421c9b4c3ba471a15ab1aeba297ee16380e61e133c919eb27"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/bottom_half.h": {
+      "bytes": 1013,
+      "sha256": "b29af1ca1000c13ed1eaf0f4a0452415972f51c5f97720f0fcc985ca403fe5a4"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/lockdep.h": {
+      "bytes": 21402,
+      "sha256": "e666f5591667dd59308eff030a3a579f9a51c6a9487579e4e8d6cd6492e2c92d"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/generated/asm/mmiowb.h": {
+      "bytes": 32,
+      "sha256": "562185c822e79d362de4f9f76a1a7016e1529a01d88a7da9552140f666c6a947"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/mmiowb.h": {
+      "bytes": 1764,
+      "sha256": "a3c29901be50ed7aef6c26ce8505e0a881189728913a4b02c8829b8f78aa793b"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/spinlock.h": {
+      "bytes": 1214,
+      "sha256": "e7288956807db9612943c060e3e073d2f7e439f54b3fa282cd3221917745c08c"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/qspinlock.h": {
+      "bytes": 3129,
+      "sha256": "813fd5ea658a63fe9ef75621e8feff72fe6434870c1e5bec8a890d9b47754a84"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/qspinlock.h": {
+      "bytes": 4820,
+      "sha256": "59362415fb2ffc9daa2a0c74d0135a0dc6c97037b3d17fe0cbb2f8d261709491"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/qrwlock.h": {
+      "bytes": 199,
+      "sha256": "a6302a5d60a2235646d725e186be8c6df407edcacfbfbf4d06545dd1ce13478a"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/qrwlock.h": {
+      "bytes": 4081,
+      "sha256": "32152ff39cb4229f71fe1127a854fbf77199cb10c6e79bbad2763925f1ba1511"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rwlock.h": {
+      "bytes": 4253,
+      "sha256": "d5fb02b9dcfd89c504fb9e2f891c86a65429c46b183b47c4e932469de05af0db"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/spinlock_api_smp.h": {
+      "bytes": 5355,
+      "sha256": "eaf6095a4d707ee64e15a1246cd4ff384acb62b404c83e0a67a07fb78136c7ed"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rwlock_api_smp.h": {
+      "bytes": 8043,
+      "sha256": "ee1af65f5ca29c91f98b93ee88cfd397180423ac552c33fc456ca44ce0877377"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/syscall_user_dispatch_types.h": {
+      "bytes": 388,
+      "sha256": "d05a0b7d53c38d98f4effa41ddc09e2c0e61220c840be1636e6d89e5c357c04b"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/mm_types_task.h": {
+      "bytes": 2376,
+      "sha256": "dbe5d4b227842a1c54f23ac3278adf0a30cc749237eb134a184ac4b3c312a615"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/tlbbatch.h": {
+      "bytes": 467,
+      "sha256": "01960b19da900982b59eceecf8c70f888fafe72e65d113db74790fd729b2ce63"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/netdevice_xmit.h": {
+      "bytes": 361,
+      "sha256": "809193a59a470383a63622175cf3122582c48a4b26581cb392cde8520c8c0d81"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/task_io_accounting.h": {
+      "bytes": 1159,
+      "sha256": "b7b280bb0a4b6d0373820ac155b104929711238ca6854e844108dd781c035859"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/posix-timers_types.h": {
+      "bytes": 2259,
+      "sha256": "ac76f15816fa0fe641f580e833f15a4b62ae8d814e9d762617697e6ad5de300f"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/rseq.h": {
+      "bytes": 5463,
+      "sha256": "aea8d4292268ef48f76423f78aaf60591620a1b76d70a78dfacdc1d290d56099"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/seqlock_types.h": {
+      "bytes": 3184,
+      "sha256": "f5b7f873421dfcbf40aee47c738beedd155931c5d796921d644da3ecbcfa71e4"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kcsan.h": {
+      "bytes": 2241,
+      "sha256": "a332c6b22f6910f3019e74a8aa9043c02468c9d97e10a8fc76820f3f5b96423a"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rv.h": {
+      "bytes": 3248,
+      "sha256": "adc95c17a7e66cc58ad34cbcfca7bdb90848be320f7cfdabcd453231fc4d8f12"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/uidgid_types.h": {
+      "bytes": 241,
+      "sha256": "ce6861038ba92b3158709823578d38977e0d43fe305164348ab5b2da599184ea"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/tracepoint-defs.h": {
+      "bytes": 2523,
+      "sha256": "95c648ae6bf9155abf96d39632ae1d27624fe2d72e09f257749edf30dd0cbb0b"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/unwind_deferred_types.h": {
+      "bytes": 1096,
+      "sha256": "5163d626060e186a19f6f4b31e41469fcc8b29d57f4375ce431a9f7e24d55aaa"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/generated/asm/kmap_size.h": {
+      "bytes": 35,
+      "sha256": "7245ee3b42b2e5df950a01ce7c2374db7b971a5a4304646d5a4e9ccfa76395ee"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/kmap_size.h": {
+      "bytes": 263,
+      "sha256": "a598fac6d8e12108d3aac7a028fa35e2d546e67e0df381ef0893910f749587f1"
+    },
+    "/usr/src/linux-cachyos-lts/include/generated/rq-offsets.h": {
+      "bytes": 187,
+      "sha256": "e5ff71d4000433f41967317a0aa0c69b6fd1feca5e431c7072abb676fcabffa9"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sched/ext.h": {
+      "bytes": 7468,
+      "sha256": "dece24c6f704c8d068ad3b3e683edaac81f9a3ad22d1a533b528064690d843a7"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rhashtable-types.h": {
+      "bytes": 3810,
+      "sha256": "32fa14be4ab3724a84ba0676de91f25f395d6cb107c4b2cf5d58d54cc1169f05"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/mutex.h": {
+      "bytes": 6961,
+      "sha256": "0a2d01622c134acf57bcf8381e44821b5c058b51ea983eaf304f5085cd51b3e9"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/debug_locks.h": {
+      "bytes": 1606,
+      "sha256": "35cde540de6c6b48044c9ea142508444a19c991b2dcd016f9358cccb936a84e7"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/workqueue_types.h": {
+      "bytes": 564,
+      "sha256": "1355c26bc1c4b351c8bffb42eeb3fca1c6a90e8a2b37b58883da81f2903ea465"
+    },
+    "/usr/src/linux-cachyos-lts/include/vdso/time32.h": {
+      "bytes": 274,
+      "sha256": "3ba3cd73b09102bae2888f1434057163b2bba8ae7cef49ec7aed840edaae7e23"
+    },
+    "/usr/src/linux-cachyos-lts/include/vdso/time.h": {
+      "bytes": 190,
+      "sha256": "d40b62cfecc09799273dc366662d994698eb00e09170579777941b3ed7ab13f9"
+    },
+    "/usr/src/linux-cachyos-lts/include/vdso/jiffies.h": {
+      "bytes": 278,
+      "sha256": "8ddcec4187616b2a4855e4219b454ee0890a4eeb52bad4f51d8384d76a84a3c3"
+    },
+    "/usr/src/linux-cachyos-lts/include/generated/timeconst.h": {
+      "bytes": 1100,
+      "sha256": "da0ba6765f2969482bf8eaf21249552557fe4d6831749d9cfe4c25f4661f8726"
+    },
+    "/usr/src/linux-cachyos-lts/include/vdso/ktime.h": {
+      "bytes": 454,
+      "sha256": "c416fe9f93d429fb83288e6f28c13506fd7e2053f0e26bde1d2e9410aaa45740"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/timekeeping.h": {
+      "bytes": 9474,
+      "sha256": "4b5ee837f71627db11e1deb8a945359bcfb82595442e4e1b1539d8921dc178e9"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/clocksource_ids.h": {
+      "bytes": 333,
+      "sha256": "ed611deecdb3e383f0090e4b36635821ff3d998d6e01aba60f19bf88a52ddfee"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/debugobjects.h": {
+      "bytes": 4193,
+      "sha256": "6e69f0f903311b6e53f97218e1550f96a9875aace57bcca93188b056ad08ebf2"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/proc_fs.h": {
+      "bytes": 9391,
+      "sha256": "5853f6949ddbf7fa3fb43c9d9c62150d4d798a51e8d858b269369abb041006d8"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/fs.h": {
+      "bytes": 137341,
+      "sha256": "cf57d38c28f993d971cda95419507bbc171baeeb51556bc08887e6cb41600cc0"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/vfsdebug.h": {
+      "bytes": 1355,
+      "sha256": "d63161137a5ceb0c5ffa78a36a54c37b8b603be6a6d07f290d5b228dce128356"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/wait_bit.h": {
+      "bytes": 23142,
+      "sha256": "e7ebd3a710c70fb038e036d65571ed447ca5df54c1e7fb6aae84b6aa78c991c0"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/wait.h": {
+      "bytes": 44771,
+      "sha256": "db22e0aae0b41416a4f6696bb1e479b5bc39e813eaf0bc5dc9e1fb90e4910674"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kdev_t.h": {
+      "bytes": 1843,
+      "sha256": "88c47d8d1979f2c0e11aca3ad52f07d8da574db821a5a2b17bf64c5495991015"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/kdev_t.h": {
+      "bytes": 441,
+      "sha256": "232a7c06c56de7bf1c3ba1def81834fda292c3e1771c36d01c7d2085106ca80a"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/dcache.h": {
+      "bytes": 19121,
+      "sha256": "35911060959f449dbd1a15d10c06bce478f26c4c4c423cca46849817708a2f72"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rculist.h": {
+      "bytes": 32462,
+      "sha256": "80b24f738f1bf46dc2a88a746d34fea39791be890e288bfb5c81c7638637c421"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rcupdate.h": {
+      "bytes": 44465,
+      "sha256": "3162164dd021f8f3880de7c188cb5cde34908b1fcfeaebe9554b91b2622849a5"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/context_tracking_irq.h": {
+      "bytes": 633,
+      "sha256": "c96be4f34ef8e3082e2bbed00e876e29e88068349fd7c8617a0694111691a467"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rcutree.h": {
+      "bytes": 4314,
+      "sha256": "659f8ec1960fd0b80d4e782da464218c2d9235960b47eb1f408dfd484c49e6b6"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rculist_bl.h": {
+      "bytes": 3374,
+      "sha256": "4f86cb6c51c5553a1fb91b04a3348315ebcda2e239582d425d61e7cc38c7d2a3"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/list_bl.h": {
+      "bytes": 4905,
+      "sha256": "41efcf2268066221e832a09ef9b0df0e62c16ac94bb91f2131adde5b868227ad"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/bit_spinlock.h": {
+      "bytes": 2396,
+      "sha256": "c067bb6285dab7aa8d5c67df8a2cfaded4b7ed442320e148c579636296f19d99"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/seqlock.h": {
+      "bytes": 40955,
+      "sha256": "0b6f998bd8f081538c2d293ecab8559bde235871f227756b35662b9d9fd5c3a7"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/lockref.h": {
+      "bytes": 1688,
+      "sha256": "9dfbbb0dc51af77e2233f3f118887d7cc5901b503bc3f86b49a9dab07c473867"
+    },
+    "/usr/src/linux-cachyos-lts/include/generated/bounds.h": {
+      "bytes": 435,
+      "sha256": "04aa093c9a0e5555a8c4ad0dbd82c4b5063f0cf6debef6355b7f140901561e48"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/stringhash.h": {
+      "bytes": 2715,
+      "sha256": "d5516b7211c9c44dbec9aa3aff42515eefaaa24afb7a130496c483262cc1891f"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/hash.h": {
+      "bytes": 2998,
+      "sha256": "3619d01cd90fdaa882cccd85e1dfefe200de0578f7e2f5ccccb8cda9add4629c"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/path.h": {
+      "bytes": 752,
+      "sha256": "0e8f5c7649ea4f6830871af1ab6257affe5f5e6c5c12b6034bddce7c80848084"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/stat.h": {
+      "bytes": 1897,
+      "sha256": "189c21c895c453c9b1022da7b2d907e09dc4e0fef5e7bbd165dd32f930a30e1b"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/uapi/asm/stat.h": {
+      "bytes": 3131,
+      "sha256": "5cca0ba1e1a55cfa1e853e326eaf4a69f48c1d0caf2d3724ee41917fff042ca6"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/stat.h": {
+      "bytes": 7879,
+      "sha256": "c900a05e031d999074db5ac3567f651ce2cf2f9f9e0a686810d6453c9f8b9526"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/uidgid.h": {
+      "bytes": 4533,
+      "sha256": "b3f1ccc674126ec3d9a6ffc476b918686bf493c36c94767406f6b676548ef8d4"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/highuid.h": {
+      "bytes": 3194,
+      "sha256": "cf83180733c5f9283367c990224ffef7de7526f132d23061337e8e04534aa7e5"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/list_lru.h": {
+      "bytes": 10035,
+      "sha256": "74ab386c18f67166c53372a776f9738814cbb7419b41b1e504be2a5936365efb"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/shrinker.h": {
+      "bytes": 4987,
+      "sha256": "c6602b4cfe912798c5fda13c372e3c9005553a03406a86a5a733bde0247cc6f2"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/refcount.h": {
+      "bytes": 16806,
+      "sha256": "138348cedf2dd2ee4bb5defb880c575db997dab0561abdd805534d83750dca80"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/completion.h": {
+      "bytes": 4240,
+      "sha256": "db5aac6634fbb92542486d273d93861dfd29061043d461ae494cfa2b2e9f4e4b"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/swait.h": {
+      "bytes": 9694,
+      "sha256": "859a8fedaa8847f64086cd5df319d0ba89e98b8082308ea3890cd79608f150d9"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/xarray.h": {
+      "bytes": 59943,
+      "sha256": "be3707d0f78bbf6ddf64ac16885f0ed4c6ccd083cc3d8197e92f3a9ad2c03dd4"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/gfp.h": {
+      "bytes": 16655,
+      "sha256": "a6fe8c1754daf501a8408cea321557c96e068cbd1636e03cea3c62bc36113b43"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/mmzone.h": {
+      "bytes": 73729,
+      "sha256": "8653d8ee6b0ebd419f5e553952a8db29f9ee85d2d902d651a2936ed256f1bebd"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/list_nulls.h": {
+      "bytes": 4417,
+      "sha256": "f5b20f4769f0a383d9aa6e0a589f7fca33dd3d7085d2189c5508f9b65c8964d0"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/pageblock-flags.h": {
+      "bytes": 3430,
+      "sha256": "8a6f37f60046e3c63bc02619546313d8b5da334116286fbfe5426f5c8d74c4e6"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/page-flags-layout.h": {
+      "bytes": 3851,
+      "sha256": "997aaa25c0560598d630936080a584e4db5f49b10e2f65a959ffab0a33d0fe42"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/mm_types.h": {
+      "bytes": 59233,
+      "sha256": "11daa54c05e2222d13cd629fe0774266a7ed4cb6bd4f7039506f01d71065b0e1"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/auxvec.h": {
+      "bytes": 304,
+      "sha256": "827b08f3e0962054f2164ba5c35a429635c42ce5d41df2bb8171d30fa3259409"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/auxvec.h": {
+      "bytes": 1834,
+      "sha256": "8dadb9bdd5f00bbcbb6439086f5a9d429b4eff457a61b11ce08941d1dd8d60fa"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/uapi/asm/auxvec.h": {
+      "bytes": 546,
+      "sha256": "da5d1b557176a2b5df3c76749608c68f76cbb19f823265258f90d12f4cdf5446"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kref.h": {
+      "bytes": 3932,
+      "sha256": "a77b706c7a47d837edbb0432c674fb840627bbe507887f9c5e88cc7191cb9f20"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rbtree.h": {
+      "bytes": 11590,
+      "sha256": "3ad9041b6544b62183389683691a1504fefa73285cfd760e7b57c46ad5f0fb73"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/maple_tree.h": {
+      "bytes": 30148,
+      "sha256": "c890e4c6de96872ea5d5a697d010157a607b5aca145dbc7821db79d99d769bda"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rwsem.h": {
+      "bytes": 9223,
+      "sha256": "80dea70d8d59bdc46cf194c695e7b0f7fcce9d9fc7634c61a5f04b4a83ff00a3"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/uprobes.h": {
+      "bytes": 10615,
+      "sha256": "f59d02ddb377d8fd7d641853305cedd7148eec97e2ddd353fb4fb0dfadf5cf6e"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/uprobes.h": {
+      "bytes": 1320,
+      "sha256": "a7c2b4a353d2f63f44af41f258d65f37f14273e9420bb75f7f5f70f9711f5c99"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/notifier.h": {
+      "bytes": 8379,
+      "sha256": "b05d41ce3a8bd9e9db094a0c22c0ac97210ced1ef5b38bf5fc9350b6a8fd12b2"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/srcu.h": {
+      "bytes": 18493,
+      "sha256": "eb7623f1c513f8d1050eaaeb96ee03672b2eca4b8e3d6c4c737c7845248970b0"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/workqueue.h": {
+      "bytes": 30679,
+      "sha256": "69d623babcc1d9a482d32c6a86dab97a43913914b2d4705620747bb35b1bb030"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rcu_segcblist.h": {
+      "bytes": 11025,
+      "sha256": "c2f41815e3bbd8c6edfb5d7ecf9c744fd66962fc44ee6114c8634f844d542141"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/srcutree.h": {
+      "bytes": 13124,
+      "sha256": "847eae6e02f48aa952b02266e2844b17e683def8ec349d0a08d17445f6af4a38"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rcu_node_tree.h": {
+      "bytes": 3818,
+      "sha256": "e1f433c9b26d0733c2d62754f404bc30c4629070f7c53dfe927748eeed8a5e57"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/percpu_counter.h": {
+      "bytes": 6977,
+      "sha256": "4a107bc381b3b5425b8ff441f7487d97ba6883dc6f5b426c4bd361ad7cbef896"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/mmu.h": {
+      "bytes": 2473,
+      "sha256": "9309238d9e53facc47c99e5976683825af4cfa46e4f333efe8f3ec7ac322a7d0"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/page-flags.h": {
+      "bytes": 41738,
+      "sha256": "1b9097d3f1a12d18c851b1d0b3ebd48934ef36be4e26708bb0a9cf3139601bae"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/local_lock.h": {
+      "bytes": 3146,
+      "sha256": "d5c23c5c6595a1098e26d75bf7e01b90890c9d41131bb99014e839fa8ceb19d5"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/local_lock_internal.h": {
+      "bytes": 7445,
+      "sha256": "f6cc06cae4652a9d75899553a19cf1f39067a83b75ce20f30326cdf76595ba86"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/zswap.h": {
+      "bytes": 1868,
+      "sha256": "fbf32ca20363162641949cdbec87b5258d30b219687b4d6ba4ae703e94da2b9a"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/memory_hotplug.h": {
+      "bytes": 11076,
+      "sha256": "bbe9855b6122b9a58d8e0b3ee2445d45bdf0f9c118877dea5e9213b6c34ddc6e"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/generated/asm/mmzone.h": {
+      "bytes": 32,
+      "sha256": "e7e492228f28b4845841e044b26f0b936c6e73b273dcbe22c133b02202e762ab"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/mmzone.h": {
+      "bytes": 107,
+      "sha256": "6f3b2216ebc43feb839d52961e00cd2ecd7e92f8063a238daf1f8de796d6c831"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/topology.h": {
+      "bytes": 9791,
+      "sha256": "fedc6ab27374ef64da31b13eaeeb385d3bbdbacc719d3e90dffeafa25ee02521"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/arch_topology.h": {
+      "bytes": 2783,
+      "sha256": "4bcaf2baff1acddfdd83696544c7ff2c011a6f8d269b9d2a38db414f46652117"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/topology.h": {
+      "bytes": 9239,
+      "sha256": "ac55a71b97c50b0a9a5863c64d83f6e4554c2f3ad45f7d069854900be907e76a"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/mpspec.h": {
+      "bytes": 1901,
+      "sha256": "6f8ff664d85a7a412a2f6760d2da4db2d64cc16c49d9fcc3c5e0ae5a99657bf9"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/mpspec_def.h": {
+      "bytes": 4256,
+      "sha256": "3da13ee0cd47e029be9405171b60075a730e84916817dc881c8c8f90cfd4a6ea"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/x86_init.h": {
+      "bytes": 12228,
+      "sha256": "efa82303f6428b802e19e98ff327d04dbd8a486c254288a7503b3b5db83f47f3"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/apicdef.h": {
+      "bytes": 5700,
+      "sha256": "c6990570dac1469f812b9b547a4e64462a36c957f9ee131af251c2e6b997ce1e"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/topology.h": {
+      "bytes": 2219,
+      "sha256": "a1709eadf6f1aa60bd2115d485f20834db67e540b0e5c3af3687a7354e410f5f"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/cpu_smt.h": {
+      "bytes": 1143,
+      "sha256": "5dbac941da623e99712c7d5f7ae93c84c96ac48359675de748aa0332b77a56ef"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sched/mm.h": {
+      "bytes": 17711,
+      "sha256": "511ecf2514231b90db9ff90d8ad0c02cda7e1a2cea55ac2719d179454ae9c120"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sync_core.h": {
+      "bytes": 1052,
+      "sha256": "8d2e00a8620cf78b70559844913d2628598c276b9a4b65d39000eafe39059bd4"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/sync_core.h": {
+      "bytes": 3324,
+      "sha256": "b2c927799c3ce1c392cb5314f299d84a956f3660e876e836d9647de8ef40d972"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sched/coredump.h": {
+      "bytes": 1263,
+      "sha256": "208c7673ba59a6675ae353a4e59e61ec2cda731d61effa682b11ca7d52e6b224"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/radix-tree.h": {
+      "bytes": 16332,
+      "sha256": "fe9a3fcc465541926488720246bf1029424a1ca72ceeaff438647640c823a892"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/pid.h": {
+      "bytes": 9748,
+      "sha256": "d2b857299aa505f9232fa0cff856f9f0a336644549f447964a1f7e31cd1daee8"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/capability.h": {
+      "bytes": 6463,
+      "sha256": "b8edf895734673067a4cca3b3062b16c134b7c068110a85e5746d90f17dd9af4"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/capability.h": {
+      "bytes": 13679,
+      "sha256": "ca365c79695eda6afe5fccdc37c7ce3f4b3bf6a95420b7a8801dd71f2d494311"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/semaphore.h": {
+      "bytes": 1963,
+      "sha256": "f5609f37a5f33ab088b794036ce278f4ad9bd2fa34f0cb1056c6497321e000d1"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/fcntl.h": {
+      "bytes": 1698,
+      "sha256": "3596923a526ffc73d9445e1b7488593a3f3c29c35a05cfe85c6573dae4262078"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/fcntl.h": {
+      "bytes": 6957,
+      "sha256": "d58b0d209a572c4351757404252bf0bb398cabf1879b52bdd27497a2eeea87ba"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/generated/uapi/asm/fcntl.h": {
+      "bytes": 31,
+      "sha256": "716ef40c102b1701970c7b0c34e6633d8a0ea1c89e7527252fcb07e63074221d"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/asm-generic/fcntl.h": {
+      "bytes": 5563,
+      "sha256": "08449ed601f650b5f6afbf8a4cfd7129242107e3d1c46c1f0c0abfedb44a21a4"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/openat2.h": {
+      "bytes": 1465,
+      "sha256": "1c694c33d2d60cb8767c34bf52e536dc9e30dc78b90cbeaf73ac9c6b2271a23c"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/migrate_mode.h": {
+      "bytes": 713,
+      "sha256": "567e4a39413807db4de3717657971422c3688a935ebd5144c82f851624ec1599"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/percpu-rwsem.h": {
+      "bytes": 5054,
+      "sha256": "704b173ba6f67298adf6d8a727457bff7add7d7d7361775cf60d2e9ac3f3fa15"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rcuwait.h": {
+      "bytes": 2058,
+      "sha256": "31ac3086e003b55c23bfe0e3793d83c3ca2dc9f96268a2da4828f59851a9e9eb"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sched/signal.h": {
+      "bytes": 22041,
+      "sha256": "50b6b7f7523ec6e05ba9b0beead7d226ed30da7aea163064ebbf5f9803a88955"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/signal.h": {
+      "bytes": 14116,
+      "sha256": "f6b75a1b35c5fb2b0e5994964ce75ef30bcdd0a4d412f8755c0c791d56a7eab4"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sched/jobctl.h": {
+      "bytes": 1951,
+      "sha256": "a75580ee0688850fdccdb862f4996e4b355b406d77a63803a34a036d0bea41c6"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sched/task.h": {
+      "bytes": 6548,
+      "sha256": "852788879f7ff0cbfad5393d47bbcc03405145de442b54febd96978028c458fd"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/uaccess.h": {
+      "bytes": 19478,
+      "sha256": "f8c6294e16a350b06e5a7b50d382aee248ce137a3beca27f361ad7627d4aef9c"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/fault-inject-usercopy.h": {
+      "bytes": 496,
+      "sha256": "f8650a9e615e0680d3f63d955a169f21f623aab860b1f925cf5a9dd3bf7165cb"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/nospec.h": {
+      "bytes": 2290,
+      "sha256": "4b1c3e8df068c08e39270af094be697d8d7471ca7f7ebbcf94ce7f2d281b1c8d"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/ucopysize.h": {
+      "bytes": 1719,
+      "sha256": "b2fb1ce73b59ce516c4a837e05ef5ebd7a521033359839f5197989316b2291b5"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/uaccess.h": {
+      "bytes": 20566,
+      "sha256": "d2750acb42056d0f7f4e911deac5810e85ef905f2645a4b12891ea0385a65d31"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/mmap_lock.h": {
+      "bytes": 12322,
+      "sha256": "bca50c974db5be77e743406fde7af97f15db1e40e07f27dcde39039bf2cef3b7"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/smap.h": {
+      "bytes": 1724,
+      "sha256": "01200bc6a07ed7a373c344bfde6663b87bb5531e523c02482738f00dd26a4ea5"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/extable.h": {
+      "bytes": 1862,
+      "sha256": "cbd45d0f69dc4d0c0ae3a1a9ffa9857b1bde24eebcade179dbaf5867622aa86c"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/tlbflush.h": {
+      "bytes": 13763,
+      "sha256": "3c287049f1bc49784cdd15790f97a50c083586d4b441ee0c64d74af4c40cc33a"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/mmu_notifier.h": {
+      "bytes": 22211,
+      "sha256": "bd089ee2cdb68344bc8f8425189b0fba4c9cf9b3735917c1842eacab00784416"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/interval_tree.h": {
+      "bytes": 2953,
+      "sha256": "97c4b042b616a25ed6fe09334a7d4e4ef6abdecddea83c9fafbb2f2f06815b85"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/invpcid.h": {
+      "bytes": 1487,
+      "sha256": "76117e3f959a7cb9a13e300465d72f938278cd4584ec30edc7cbd5b2a4b8356b"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/pti.h": {
+      "bytes": 385,
+      "sha256": "e3451698ba98abbcc64402bd9782fb305b1f9e8249c16176417ae95eca3bb82e"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/pgtable.h": {
+      "bytes": 42924,
+      "sha256": "ce8c3bcec9aa6bc931441b9e0a0bac6fb0d4ddb1c0e627d66ede1902a5fd32b1"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/pkru.h": {
+      "bytes": 1346,
+      "sha256": "e141d08c60c0787bbfc612ec59eb9ab279bd8b1ad6dcb660a814a83904b66bee"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/fpu/api.h": {
+      "bytes": 5745,
+      "sha256": "03cfbac752fb52e8771f807b69a0d77b5a878397a5ebfadf9cdb88869a447f34"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/coco.h": {
+      "bytes": 769,
+      "sha256": "a7b232f757927d25006cf856c81f9dd7ccafa6185bd4e27b7a587fe9e2a271fc"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/pgtable_uffd.h": {
+      "bytes": 1052,
+      "sha256": "e5733018640ad9ac848a9717dad98c2ffc8a78eae910ac55dcbfed2ec210a065"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/page_table_check.h": {
+      "bytes": 4107,
+      "sha256": "a74626d75bf676102a9e4f0134cd612bbc678e488fe8e82a2193830143c32cfb"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/pgtable_64.h": {
+      "bytes": 7834,
+      "sha256": "df22a2828d415e60859df275dc8aa792bc97d1d80cc2f7e2471d5580e84319d9"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/fixmap.h": {
+      "bytes": 6096,
+      "sha256": "7a0824b3092f9a70df1d9c8faf295015b63645c6d5d41b6f0466e7ca436204ee"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/uapi/asm/vsyscall.h": {
+      "bytes": 278,
+      "sha256": "816a4246c742f43898720cd9a1c2827450770fb4820558148b77d4a184367667"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/fixmap.h": {
+      "bytes": 2841,
+      "sha256": "a9090e7ed09576a052d2052eb803fba43722a1cc901d2cc57f3c7987ffba6e54"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/pgtable-invert.h": {
+      "bytes": 1093,
+      "sha256": "642a8c215ec105a37a98c881c8c73906a853146ffb6190f2a88877241ae9ebf6"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/uaccess_64.h": {
+      "bytes": 5533,
+      "sha256": "7804499958c177c28e87865f0b8b1d0037b259cc8d26e131d1f2309fd7b49db7"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/access_ok.h": {
+      "bytes": 1404,
+      "sha256": "208c8de8a36d6c8d8169f1b19be991cf658490fb8ae009d3fe516ab0939b1b13"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/cred.h": {
+      "bytes": 12713,
+      "sha256": "dd44541616a54ecf0af6f543d6dc1228999e858d111fb86ad24fba91164d799f"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/key.h": {
+      "bytes": 16447,
+      "sha256": "ecb53d3f3d93d3ea0bc24533a184740bcb74736f56a894b91ab9b652969db888"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sysctl.h": {
+      "bytes": 9664,
+      "sha256": "68ebc4b5a6c877240729b3358eded048a4bdc525c0a2739848471ac9fc9d2b49"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/sysctl.h": {
+      "bytes": 26126,
+      "sha256": "ac767cf015a1c8bacfd8b660f9335af2aa68363aff26551058566ccb6d74e8b4"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/assoc_array.h": {
+      "bytes": 2949,
+      "sha256": "7da09a8548b89f69290d7bb6725296419707dc960b737d003d733dad5421d90c"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sched/user.h": {
+      "bytes": 1596,
+      "sha256": "e7e97a4eda21f25e4336b365b8f8fa56030353a6d52f5946f56e19ec03831972"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/ratelimit.h": {
+      "bytes": 2455,
+      "sha256": "03d803e46c04ad72155723dd5dcc24cdf5136b74d9feb90a0a7c5603041f579c"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/posix-timers.h": {
+      "bytes": 7841,
+      "sha256": "5aa804807519b6f26918c7dab72a3e22bd50e898763f434ab51b2c58c275988c"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/alarmtimer.h": {
+      "bytes": 1879,
+      "sha256": "56f4ac55d0aefeb2b5f94d758f35f50bbb58da6f23a0bf1774d70d7c5b306700"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/hrtimer.h": {
+      "bytes": 11655,
+      "sha256": "b10d9a5ff36c0e999b5a756b291282504e91ea9389e9764ac4d1db13b9d89d39"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/hrtimer_defs.h": {
+      "bytes": 4226,
+      "sha256": "20e88e379907abe980c3e3d43f1f1aac8ee6229580e1e4ef78bed994afe71f1a"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/timerqueue.h": {
+      "bytes": 1208,
+      "sha256": "032cc2f66d2400fa24aff0894c58f9121f0ae2bda25d818b31edd9041aca12a1"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rcuref.h": {
+      "bytes": 5568,
+      "sha256": "a813ad378460a5bdfa1d3fd3e7abc4fdfd28a1ddad165823973dcaabcbbe6c89"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rcu_sync.h": {
+      "bytes": 1441,
+      "sha256": "094a0089e24fc158c77c3bd7f90c5e8f9eab6285480c970d7556977cc616554e"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/delayed_call.h": {
+      "bytes": 709,
+      "sha256": "c139dd95fcefa1d9ff38ab3c8ab232da992295e98d7d7404842003b2f1df18fc"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/uuid.h": {
+      "bytes": 2548,
+      "sha256": "a7c5418fa73f15fc23a1c04a1580fbe48559a9394254c8b396ec2df6924e029e"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/errseq.h": {
+      "bytes": 382,
+      "sha256": "c22d636d1eb4f5812ab7150751869979b34f073475e5a78a42dbee3e75e99a17"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/ioprio.h": {
+      "bytes": 2221,
+      "sha256": "6c2e7b2a57af782db5d7a0a089df894e4fd4ba62e3d515a17977c187add94a15"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sched/rt.h": {
+      "bytes": 2116,
+      "sha256": "4f4fb57b92b2cc1c5fdbd719f5e6ff2ebdc0b5fb303c9fae83a101074064824f"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/iocontext.h": {
+      "bytes": 4225,
+      "sha256": "d2af33ba870c75bd7173a405ccd3d8f8c9d6e4eaea5422eccbd8abc1ff63f903"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/ioprio.h": {
+      "bytes": 4190,
+      "sha256": "b9fbd261e2893ae568f08414300cfd8f9b1cfcd7fd83c706c81b2b0eaeda61c6"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/fs_types.h": {
+      "bytes": 2071,
+      "sha256": "5671cc8c73ab31cc42da2f9f7cbdb4467f3e5432bf278f5b1da1c77028164b32"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/mount.h": {
+      "bytes": 3569,
+      "sha256": "864b744fa4fea2cc020763d39f99ff58811f8c881310b276a30545a40bcf48b0"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/mnt_idmapping.h": {
+      "bytes": 7186,
+      "sha256": "36f4fd5197124979b4da1fe12afcc7b3151815f29a158e0babda6837de4ce04a"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/slab.h": {
+      "bytes": 45580,
+      "sha256": "d3a7999286cbba4e0bb51db023dd5926ce13a355a574e4bbe86d638e6183fed1"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/percpu-refcount.h": {
+      "bytes": 11493,
+      "sha256": "46271ac091f25a74d0560c9dba9d438feb2bb24a616655fb935db07bc705db9e"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kasan.h": {
+      "bytes": 22240,
+      "sha256": "0ab8e8f6842e86a994f084a9e4fb19b7c5102d804487df6ac0f18e9dcfffce92"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kasan-enabled.h": {
+      "bytes": 1242,
+      "sha256": "35a167f9f139dec1af0adf851703c5ab6eb136cf2906c3c5e461477da40da870"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kasan-tags.h": {
+      "bytes": 487,
+      "sha256": "bf08ef46a05060f9663849cfaee0de419d505e38c90da29c444893b02e5e2844"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rw_hint.h": {
+      "bytes": 723,
+      "sha256": "c12e3e2c54ad298d76417511ae55487d9d8d4fd1cbdb8d04d1a3567362c4a992"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/file_ref.h": {
+      "bytes": 6937,
+      "sha256": "6f8d93585a850bfc6205f82a670c266e41fb4c67be943a3bd1a4f88eda8504ae"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/unicode.h": {
+      "bytes": 2102,
+      "sha256": "70f8792e02ed4e64849f1d1d69a0007460007a6fae74c902d05a18ccf20823d1"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/fs.h": {
+      "bytes": 25347,
+      "sha256": "bf3363a0a2afe6165311e9827958d89d9ecbe101a79782a3b4bd76699841d263"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/quota.h": {
+      "bytes": 19211,
+      "sha256": "6acf78eaa04504881dff7f38fc4e85a4a76c0ec1054d123a778ee8e3c7980a5b"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/dqblk_xfs.h": {
+      "bytes": 9388,
+      "sha256": "5fd24b79fce2c9a0de957c8611143555c4d769148a32e77bf14d763e8eb4c3c7"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/dqblk_v1.h": {
+      "bytes": 327,
+      "sha256": "d239362ccec9716023a0eae23aaf34e7d5dd7261fe8076cb862faea0e3c79e77"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/dqblk_v2.h": {
+      "bytes": 406,
+      "sha256": "dd846e5d131f1f60f650a789de05dc7e55a127c0779c6c113bcb03a0d35cd41d"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/dqblk_qtree.h": {
+      "bytes": 2238,
+      "sha256": "ec0dcf5c821ac39532c79dc92e887841739e6a157983cc94faeeb89b9e9e06de"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/projid.h": {
+      "bytes": 2269,
+      "sha256": "a24b5f538550a6f89baee80500bab66c9e10fff8b18af6f6a597883b39381783"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/quota.h": {
+      "bytes": 6327,
+      "sha256": "7512a6620118fd2294f19a307f414b12473b87b29a94af4aefd28112539f901d"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/module.h": {
+      "bytes": 28512,
+      "sha256": "a34d4f8464bc06d08f41bbd7f99f422221552056ecd2d58829e9dd2016309416"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/buildid.h": {
+      "bytes": 767,
+      "sha256": "a8729af936a2b1ebde8c5902b5e51a8f5b3b206ced35e6a087041a7a05e549cf"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kmod.h": {
+      "bytes": 972,
+      "sha256": "530ec2b2debfcd63ea3107db190ea7460dbecfbd72eb40d4e225f075f44b9617"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/umh.h": {
+      "bytes": 1862,
+      "sha256": "f0002537741ab5b124ec980051f2d91c459cf79452e89e1b1684108104f053d5"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/elf.h": {
+      "bytes": 3037,
+      "sha256": "ca735899fd2c19c7d387f6a361d54878b3feff287ab025295f215f606e9f5e3e"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/elf.h": {
+      "bytes": 12165,
+      "sha256": "5c4eaab81345ee84d585dca114f075116da6048b4358975c51b75ae454d12dff"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/ia32.h": {
+      "bytes": 1783,
+      "sha256": "0137e2c7127d41f9533865085a997b707dbbb44c2e6875804505518c07047dea"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/compat.h": {
+      "bytes": 33337,
+      "sha256": "1d97b75af2b9f934da5e38aec84c6281734d68619082661bde525b88cc584858"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sem.h": {
+      "bytes": 495,
+      "sha256": "0a4b119cbb3b9c278dcd8f6d4df94a73c560c654c6a5c365107c65f2bbd7f2c7"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/sem.h": {
+      "bytes": 3094,
+      "sha256": "cc0d091f1065878f38da0e2b7297aa6ee5705871f0397b588c67efec655e9451"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/ipc.h": {
+      "bytes": 619,
+      "sha256": "7f64fc4bd85e8b666cb6a3050460104ee6786fbad803363b5f91ef0cf77a739f"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/ipc.h": {
+      "bytes": 2123,
+      "sha256": "1ec1a9091e5fb18d759d469552b21413adaf353aec4cfc3f5982f67e3c63d392"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/generated/uapi/asm/ipcbuf.h": {
+      "bytes": 32,
+      "sha256": "7d7b26fc15cfa914dc6e03d976570242ea37377491f3619ab287e6169025df66"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/asm-generic/ipcbuf.h": {
+      "bytes": 1035,
+      "sha256": "e827d13174fcc3957db6746c9994fadd1f308461310d9de9e19d52e7390595c9"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/uapi/asm/sembuf.h": {
+      "bytes": 1070,
+      "sha256": "8f7b521c24772ae72d98a1d2d9302795ad6955da58950aa713b7fb1ec1c49124"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/socket.h": {
+      "bytes": 15898,
+      "sha256": "be4fced57587c50436643cdcdafc786e4d5628a1dc8992ac0aa552ae6a9bd18e"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/generated/uapi/asm/socket.h": {
+      "bytes": 32,
+      "sha256": "48e0940e8a6e8861eaaaf90853a685fa803c4e039166060a3c921c8d79001e3c"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/asm-generic/socket.h": {
+      "bytes": 4116,
+      "sha256": "23df5ed2dca8ae80ec5ae21f05b5b6a0d4138bab7851a3e0da087e0b73df3c55"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/generated/uapi/asm/sockios.h": {
+      "bytes": 33,
+      "sha256": "ac496b3bcc37452f0caa104b2205a8a19dde0196a7791988b3b74e23c2174c1e"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/asm-generic/sockios.h": {
+      "bytes": 447,
+      "sha256": "3e46cdcb281f87f1b532901e6388eed77fa687c3c5c56f72aceb8640696a4ef9"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/sockios.h": {
+      "bytes": 6846,
+      "sha256": "69c8cd1427d631cd4950536c189ef4737fd9b6dd6c3833c628551dea55f6b240"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/uio.h": {
+      "bytes": 12215,
+      "sha256": "797f1a6352b23c477e24b8587d536a852ee162662242b76b94e486d8c83a3792"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/uio.h": {
+      "bytes": 1212,
+      "sha256": "872db059bdc6e8faa84360aae36ce2d6e90f7372c918e841a7b0c271e481abc7"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/socket.h": {
+      "bytes": 1055,
+      "sha256": "6658c25f28788d981b271895219981487560cfee6390031682167f18af83a293"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/if.h": {
+      "bytes": 11015,
+      "sha256": "7fb6b621b61c3e9794dfe0a3295df700c04ddaf2d2aaab4753a2426646a7b307"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/libc-compat.h": {
+      "bytes": 7304,
+      "sha256": "4886a3a9d77db62a2e32fa3a0927f9d2f3a3a666781ac07243ef18f7a33d5c4a"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/hdlc/ioctl.h": {
+      "bytes": 2979,
+      "sha256": "882ca3cef2371c5c770ba9225ad457b40eab3a022205925cc6c9c60dc5c9c983"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/aio_abi.h": {
+      "bytes": 3398,
+      "sha256": "1f149322eeb746481527a6627e2432ea384c78dee0ee309797d27886e638d352"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/unistd.h": {
+      "bytes": 220,
+      "sha256": "01a6f7628ed6f3511eade5891e631c05679e141d031e689a6d028e840032e394"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/unistd.h": {
+      "bytes": 1632,
+      "sha256": "34136ba14b5c6a2a1ff35e522aee3b8ee8c6d3282aee5d52a5d33d108ca8638d"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/uapi/asm/unistd.h": {
+      "bytes": 664,
+      "sha256": "a5dbdb6f1396798ef9ec26ccc9e465ffc85680060ec19849f2f8c265f33908fe"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/generated/uapi/asm/unistd_64.h": {
+      "bytes": 10438,
+      "sha256": "d8cfef637d18fc25203be337a3bbc883cc39814a88a48e9d5747d233d75dee56"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/generated/asm/unistd_64_x32.h": {
+      "bytes": 1309,
+      "sha256": "a25c204847e7f32306f67be08f5f026ccc6cde90a099cb1f7ec6b28ba69693b8"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/generated/asm/unistd_32_ia32.h": {
+      "bytes": 14891,
+      "sha256": "0969cdd17b83b26ccad650ff031464b00e1f6d7557754a5673f45172746d267f"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/compat.h": {
+      "bytes": 2405,
+      "sha256": "02467c84b4a324d11b9c385adacf7cef9818b61aca1d2570ff0655e5b8c8727a"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sched/task_stack.h": {
+      "bytes": 2966,
+      "sha256": "73266203a19085eeba7ac724469cbd68312cd0417f9f88afdd25df5ffc49c352"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/magic.h": {
+      "bytes": 3946,
+      "sha256": "e9db5b4791371c03a4f9be955417bb7814987bfae032ad86bd27003d2df8796e"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/user32.h": {
+      "bytes": 2156,
+      "sha256": "49af1b65e29d6846059111c6ef652a3e343884bcade4c786976329c2796d21a7"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/compat.h": {
+      "bytes": 3906,
+      "sha256": "5151ee3279b77ccb5db1a77d7b54f32059f759480ee52e52dceaddc7977f881d"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/syscall_wrapper.h": {
+      "bytes": 9238,
+      "sha256": "0712aa6071c513d040839426470a2702f1807d20b153c9513913823d7cacbbec"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/user.h": {
+      "bytes": 2257,
+      "sha256": "cc58e10aec81cf75a69c3584b8383d7e797a862c0acb32c852db993ac17e6bc6"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/user_64.h": {
+      "bytes": 5192,
+      "sha256": "adbcd49103f151d32046e17222b8eafc30777ad34bfa1699063f3f12d175b025"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/fsgsbase.h": {
+      "bytes": 2068,
+      "sha256": "0417c8b9bd4b4dbd11a437518b3d667e3881e320e30d7194a410a5db8c2defb8"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/vdso.h": {
+      "bytes": 1090,
+      "sha256": "de233d5a04e388f7bf938e5c3f7ac493e7ef6fa9024377bd937560d844a51e53"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/elf.h": {
+      "bytes": 19218,
+      "sha256": "6264e8d45a1be1852bdac5481420f2df4df071e6da3918af01f84bbe9bfc7e07"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/elf-em.h": {
+      "bytes": 2627,
+      "sha256": "e72cca577a97d1fccc7f4e5d37b39b401a527a97f02e589255c247b63cb227d2"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kobject.h": {
+      "bytes": 7124,
+      "sha256": "17078e8c6ec568b14791f13ae1223df70a4a6363cde0e1894872dbe1248ac506"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sysfs.h": {
+      "bytes": 24252,
+      "sha256": "6c508364b156ee9c6b32c562bc57255d5d7b17ae68963dc742c300c3e5ddd474"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kernfs.h": {
+      "bytes": 20213,
+      "sha256": "fe9180b733c8ec2f031ea5028100cc483919d5413efafcac57e62fbeb3cce619"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/idr.h": {
+      "bytes": 10430,
+      "sha256": "8f4de38006634e185c936a8844c49c1e2b75d43305783bcb8bc4000298d9b6ef"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kobject_ns.h": {
+      "bytes": 1832,
+      "sha256": "4b8285e11bf9d28f36647eef81d7b1dbd641d0c55ea6df0e46ba92f7632cc80f"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/moduleparam.h": {
+      "bytes": 23547,
+      "sha256": "72c963dbbc52f0527de7f7c1ea5c5aac4796dedf38c3fc7f4a0c9882da0f7666"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rbtree_latch.h": {
+      "bytes": 6891,
+      "sha256": "97ab1d5953dc0c4a573b6b9dbb6b203a437aec566d0d1fa3b6c154ea7d2ad0f1"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/error-injection.h": {
+      "bytes": 630,
+      "sha256": "ac8e661b257ba4d90fc66c49deb89396101711563449685a4722437172a0308d"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/error-injection.h": {
+      "bytes": 1280,
+      "sha256": "b3d2bae80238c63df91d95300477ca7c4c22f928cf42b7e716821779dab13e5b"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/module.h": {
+      "bytes": 437,
+      "sha256": "712693692cf01845acd22c4b01a0f0651ef6751f1cbcd02a8ac597c1e281243f"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/module.h": {
+      "bytes": 952,
+      "sha256": "faf3c7acfed4e2d2ef20ed2dd6a9cb265020000717be1f5d2d80e39936bb954a"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rtnetlink.h": {
+      "bytes": 7577,
+      "sha256": "92028447ef7a1bb0e9bce82d733bd855d1b48c5cf992ca43522fce9edcd6fd7a"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/netdevice.h": {
+      "bytes": 179852,
+      "sha256": "e172bdce06277d2982c7ced8abb0f872d4f2aa4bbc5c41e4960fbf522bc974e4"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/delay.h": {
+      "bytes": 4276,
+      "sha256": "f9149a9b8e6b48317e5cfb2b9100285a25828d8a69e5417fa49cbea7d654ed34"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/delay.h": {
+      "bytes": 275,
+      "sha256": "9f331d057a892a5196087efe850adf84d978a79c1f5d320e48384440d1a5b946"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/delay.h": {
+      "bytes": 2874,
+      "sha256": "a422b5c0cf937f7e7be9958b7c302da954f98a07dffdb5f4dbba43bc65118f78"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/prefetch.h": {
+      "bytes": 1591,
+      "sha256": "8594533565554a8d6286d61ccdf60b45a3d704c60aafa0638cbcc781038ae5fb"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/local.h": {
+      "bytes": 4278,
+      "sha256": "9d2e42b262b870c6c082be58bec95983d26ed096865792707c29f40667dc5093"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/dynamic_queue_limits.h": {
+      "bytes": 5562,
+      "sha256": "411f7ee98f224fb23186dcfed7f8d20a72aa63cb7b30186941a14eb8d44b02d9"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/net_namespace.h": {
+      "bytes": 14921,
+      "sha256": "97772506f68440c9568543aaa485c2577334ab2afc94bc6d11a0283bc4032421"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/flow.h": {
+      "bytes": 5207,
+      "sha256": "5b55133fa152aebe69a3f105104187777cafd9e51f149f986dacd213a97eae94"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/in6.h": {
+      "bytes": 1861,
+      "sha256": "40ddb27f4fa4f4526cdaedcbb6611133448b66fac8830b055ee6a6b11a116a42"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/in6.h": {
+      "bytes": 7593,
+      "sha256": "4b70a42300079eee8dc3bc9d6c327a04cbd8eb75b2fa9d995d9f0a3306d6b27d"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/inet_dscp.h": {
+      "bytes": 1869,
+      "sha256": "ee65c0d219221783ea6f132848f12f44dbf4e16e25a95b7e6ec569f2949e4b1b"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/netns/core.h": {
+      "bytes": 535,
+      "sha256": "6c85e3ce53478f628b86f5d2323a7f98d70f6f5137811bfd1a9ffd86afc7a3fa"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/netns/mib.h": {
+      "bytes": 1268,
+      "sha256": "5b18e27dfdcb831fb0c4e364171da63502c869d8ec3a2a455e759dcf3cd3c32a"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/snmp.h": {
+      "bytes": 5191,
+      "sha256": "6969cde1e8c458d8b799a488e9c0069eb2d5aa68f55e3d358b2ca43f73ffb3c8"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/snmp.h": {
+      "bytes": 15198,
+      "sha256": "4dec78d89ff1f77abf04d1ed7ac31fab7348bd0bcf9c28d0a5682e43ebb8cafb"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/u64_stats_sync.h": {
+      "bytes": 5747,
+      "sha256": "9c2d9a1e3b25b648e5c6a5e0f65d0fa0212e02c0da5e5186ba2d8d4926245b05"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/generated/asm/local64.h": {
+      "bytes": 33,
+      "sha256": "60fcbd6c2f3f7207d61791f97406e59efeb90d071c82492f56a386ee54ab8c5e"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/local64.h": {
+      "bytes": 4140,
+      "sha256": "46cbdfa06cac054803640d4d121cde7ab6131c9bd79d6f27adc17a67f35e0737"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/netns/unix.h": {
+      "bytes": 392,
+      "sha256": "1a3508bcd5655cd99fdf6fa0f79674f135fee16073ad35423b5f185dbfa5cc92"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/netns/packet.h": {
+      "bytes": 295,
+      "sha256": "57464df5c47f33e1200628306e355908dd84d953db8f690b69f6fb69c88c39d8"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/netns/ipv4.h": {
+      "bytes": 7884,
+      "sha256": "02a6a5e5908246fb755a82a2097749185b96a1e2c875dc924a1b0c5854992013"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/inet_frag.h": {
+      "bytes": 5062,
+      "sha256": "8dab64a0da8eb18232dc1edf5952c271efe6a31d47edfc80ad9d9b5a477148ac"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/dropreason-core.h": {
+      "bytes": 21095,
+      "sha256": "6df629659692017754e878cb45e874415b2b874c62ef77ef865e3c89f42404c1"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/siphash.h": {
+      "bytes": 5791,
+      "sha256": "180953494ea6728a626389d256f5fe2d44920c670353287e3644734c21766aa5"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/netns/ipv6.h": {
+      "bytes": 3368,
+      "sha256": "6f26d228363b73a1ba4c4f05080c8ee79dbabe35e8581349262dafa805225002"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/dst_ops.h": {
+      "bytes": 2116,
+      "sha256": "388f5247da499afef3ae4f1a7f7ad779192aa31a071355bbb6d50e188e3ae524"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/icmpv6.h": {
+      "bytes": 4315,
+      "sha256": "3931cf259cb038e4376478cbafcfd321708feae642549eee0ecb96d61158458f"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/netns/nexthop.h": {
+      "bytes": 456,
+      "sha256": "e3242e97e57b49c35f90fdf847eb5d7102b4199b44769a5f0fdb505469f7e57a"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/netns/ieee802154_6lowpan.h": {
+      "bytes": 395,
+      "sha256": "4e0e6a011b9314f92c46019178f143f95516941b5a0abc0879111f7523c8ffb1"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/netns/sctp.h": {
+      "bytes": 4828,
+      "sha256": "bb1520b125095faac6368a05c71347638b69e788782c5c0926e016e269d7932e"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/netns/netfilter.h": {
+      "bytes": 998,
+      "sha256": "d915bc01bc0730114420ef0fef063e91e15d697601a2f7b6e510a75bba097030"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/netfilter_defs.h": {
+      "bytes": 242,
+      "sha256": "dc258e2b61edf1259ed084b2e4d6de3727006142f1ec9a8dc76a460e190b261e"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/netfilter.h": {
+      "bytes": 1861,
+      "sha256": "8ea412bca540baad9acd5f5ef831cebd57394be513bb7e9dcb4a9e11dbd6a4fc"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/in.h": {
+      "bytes": 2345,
+      "sha256": "bba74fc5fba233945fd15192476f9f106d611a004374045cf8c42431876a359d"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/in.h": {
+      "bytes": 11070,
+      "sha256": "b88e96f1de54fac16537d21160c5c76efb17276e4b6033fdaee431d380f26107"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/netns/conntrack.h": {
+      "bytes": 1989,
+      "sha256": "f5265088e0e25dc840bf1456783802b6b8da19857b4cbfc45d5220b2d5c17dda"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/netfilter/nf_conntrack_tcp.h": {
+      "bytes": 1261,
+      "sha256": "93d74510032e8bf347f63bb7883c43301e9b497973d6cb2482dc8ae2d82b1ef2"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/netfilter/nf_conntrack_tcp.h": {
+      "bytes": 1430,
+      "sha256": "c8347e943cec920f47cc2214a3e219b1c48efd3c108c520f6ca8b56795933fc4"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/netfilter/nf_conntrack_sctp.h": {
+      "bytes": 338,
+      "sha256": "06c7d1ddfd9ec1f65cfc0fc7f3d90419ad784ab18390f036384472c828f8bdc2"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/netfilter/nf_conntrack_sctp.h": {
+      "bytes": 612,
+      "sha256": "1387812accbdc94ead5c96d7ed46706476a59b3f8541083b01f553e08aca12dc"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/netfilter/nf_conntrack_tuple_common.h": {
+      "bytes": 922,
+      "sha256": "1fd95ed79fbe1db8bf06c5e53544dd824618b46ea1045a3b2930ab9ccc6e986e"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/netfilter/nf_conntrack_common.h": {
+      "bytes": 1068,
+      "sha256": "768225ae138bec787cc6380193dc1895b578fd64078ad3cd1294da84add1afa1"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/netfilter/nf_conntrack_common.h": {
+      "bytes": 5041,
+      "sha256": "2cdf2f1c8e9539190c7d6701cd1d16ca9a095d997cf4795d012513f8265f8a05"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/netns/flow_table.h": {
+      "bytes": 287,
+      "sha256": "56833aa0e8494554cf0511c61e9f426264081e5a76dd595158cf4ee22877fbb9"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/netns/nftables.h": {
+      "bytes": 171,
+      "sha256": "c80ee2c9e4a61cc56cfe1dd1ce071f29d8e518e060afd32202222d87b221c3b7"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/netns/xfrm.h": {
+      "bytes": 2165,
+      "sha256": "44d15a1e142de9414a06cbf4e674a46dbbbacab8b59e5d182171c3786747db93"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/xfrm.h": {
+      "bytes": 13349,
+      "sha256": "4f8ef03fccbe1d484aaee21d9c29fee7d940075ebf6af5419bd9cbca100e2cce"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/netns/mpls.h": {
+      "bytes": 397,
+      "sha256": "c28e2565d361567b931eef9d9ccafedcc4ae201193093635ef39b33343f4f381"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/netns/can.h": {
+      "bytes": 1071,
+      "sha256": "0dbb59af837fdd39d953321830c9479d6092a32c9bdf92452ac5050b1223f23b"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/netns/xdp.h": {
+      "bytes": 237,
+      "sha256": "4822ec8b9da28f80e28d31f5cc7d0e3086c91333b080b6b85fdfa34488212e83"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/netns/smc.h": {
+      "bytes": 714,
+      "sha256": "4da112dc0c92f7c883630ba46d8afb46addf5b5f15f7eebb3b889f351d75ec91"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/netns/bpf.h": {
+      "bytes": 631,
+      "sha256": "cdecb2d1f852435c07efc69e41eef773b35c4a0f24f8ef6307c3ba95fb2514c3"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/netns/mctp.h": {
+      "bytes": 1212,
+      "sha256": "7ce1cb1358aa3c5d85775b530c6c74bbfda7438923458a7d424310d9dff35df9"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/hashtable.h": {
+      "bytes": 6827,
+      "sha256": "399a72ba6bf52f6b1a24f5d34b8f487fca8fa68f262ee0dd13d7c0c1f266a48e"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/net_trackers.h": {
+      "bytes": 424,
+      "sha256": "0d40d7cdeb243532c4060ba3a35bbb0c1b731da4ea1a311560ce4a910fd1687d"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/ref_tracker.h": {
+      "bytes": 3527,
+      "sha256": "8f7b1c18800413e2bdc09c6c78db4cf5a6f40f633b241e8bb5653c5bc90f7dfc"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/stackdepot.h": {
+      "bytes": 9165,
+      "sha256": "a20049661946e32496357f3969cfa9e9e69db05116c922496c70fd098c871bd9"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/ns_common.h": {
+      "bytes": 6713,
+      "sha256": "d245e45a582fdf471c966b5e6d23ef97a21033f01ef4e33fd7a8db0626ee568c"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/skbuff.h": {
+      "bytes": 154195,
+      "sha256": "e95dd1c21c1f9ea2e85877ea9d3b0b2067226aba1a54efd47675387aabf153a8"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/bvec.h": {
+      "bytes": 7889,
+      "sha256": "e35c8700b0c774adae2b32e4f26618ca243607e8fc768678a47925e92c401a68"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/highmem.h": {
+      "bytes": 19739,
+      "sha256": "35e77f1fd63078f2fa30e99555498ece3ef8faf2f548f5c6e5b5cbf573604c4b"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/cacheflush.h": {
+      "bytes": 675,
+      "sha256": "adbd8bd9d471d4b9e54a27330de0ef2657406862b5bb15cf92ed511da7be53c1"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/cacheflush.h": {
+      "bytes": 329,
+      "sha256": "399d69e1a677c49ba82c8e8d273d30286ae98abd14eb36627d84b40d9661d764"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/mm.h": {
+      "bytes": 138649,
+      "sha256": "8bc30d5ab2b95e472bb24cf4bcaf211b93ae1d28722a17daee905f4a29981493"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/pgalloc_tag.h": {
+      "bytes": 5319,
+      "sha256": "f8fa19c65f1a7a48594fd13e0a7e4fff1cf2fd1ac42e3b79f2b0dadfb389fa79"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/page_ext.h": {
+      "bytes": 5616,
+      "sha256": "a51f9b39ea892abd1a301e944578724ffb572bd10402d7c0f34668bac2de9b28"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/stacktrace.h": {
+      "bytes": 4097,
+      "sha256": "527ffdc71bc925a7dda45e62f3680b1c3e6f70fd85252759f8c850ddf88aab43"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/page_ref.h": {
+      "bytes": 7756,
+      "sha256": "f1807696021cd696bee12fbc7a353f6e8b45c1811d7219bc41f3cc8fa2fa0694"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sizes.h": {
+      "bytes": 1955,
+      "sha256": "a21721bd920547c0f47e618810fbb71eddc312f3d405c40f02ee980a98d10b88"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/pgtable.h": {
+      "bytes": 60979,
+      "sha256": "3ed7de8f22ac53e76025bc96ea5b3340881d0fc09b11c690625b32137a3fb6ef"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/memremap.h": {
+      "bytes": 8262,
+      "sha256": "ac6c088c59224fe7bfee2b42488f0915269704c090e63d00263d8ea341f12039"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/ioport.h": {
+      "bytes": 15683,
+      "sha256": "0a89db2d5a3231d72cfc6fd4069f7f75ddf078e763cb643d41ac9c2dbfc45fd7"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/cacheinfo.h": {
+      "bytes": 5037,
+      "sha256": "9c59fbc2f9124229dfe74040e6be273269d559f134023d7aa147bb2410e41949"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/cpuhplock.h": {
+      "bytes": 1555,
+      "sha256": "46bc063a134afb726ee816a1befd3fc632cfe7297e1046861283a62afd10b4d9"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/huge_mm.h": {
+      "bytes": 21722,
+      "sha256": "358f42b5f38ded9a2d4250286a8d34f52c6e99ab05d2430afbb940f633d6dc58"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/vmstat.h": {
+      "bytes": 16755,
+      "sha256": "35bf285c4eaefab60500825dbe7ade16c5126e8036ab391ce690c04502f097f7"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/vm_event_item.h": {
+      "bytes": 4526,
+      "sha256": "77a72ded28f757b54011220d01df9dc77edb84a94523ee87ea5be22221f8e2e5"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/cacheflush.h": {
+      "bytes": 2694,
+      "sha256": "e582b6947296f9eb48fc683cb09a6a04618fd7d6c52a43f2537491c886f6df0a"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kmsan.h": {
+      "bytes": 11711,
+      "sha256": "825c3fb3b496d888b76d083be4e3941e2bf7992df8b9d76c9dfae1d0a0ccac2e"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/dma-direction.h": {
+      "bytes": 407,
+      "sha256": "72a8aa889dc17dac3f58e7c674fbf9bdaa8d45b9f7d2f9e4b09795f22749b899"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/hardirq.h": {
+      "bytes": 3327,
+      "sha256": "71537117b656276a3826a93b1b7996b14a7d12c11c02321dc5881b5db5d8560d"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/context_tracking_state.h": {
+      "bytes": 3893,
+      "sha256": "7f648a773d3209a14195d161acf686db731fe5e3492aa68c64672593a03a11ae"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/ftrace_irq.h": {
+      "bytes": 884,
+      "sha256": "28666f49ef06b938309751257cf6b2a670770c30a231b37f9299df317051728b"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/vtime.h": {
+      "bytes": 4858,
+      "sha256": "b29a56f9f5713fe8ec03170e6e944538830048973742b04cd4d419fdc433a19e"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/hardirq.h": {
+      "bytes": 2604,
+      "sha256": "ad2628a1eb63cfbffb16d16e6030b10885c59fdcb766c85a34e19553302821ba"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/highmem-internal.h": {
+      "bytes": 7183,
+      "sha256": "d8efbddf57587aa0c699a80fdcbfd5d5739568e5a39ab194aaf9fdbdf9ceb045"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/checksum.h": {
+      "bytes": 4961,
+      "sha256": "4251ff74db367041713098ed0723713532bfe1436a380fd0a4ad05a8ed16a38a"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/checksum.h": {
+      "bytes": 323,
+      "sha256": "28d894c57bdc4a0a5981f970a1ebdd53332705887af5547a49809e0a6092f8a6"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/checksum_64.h": {
+      "bytes": 5137,
+      "sha256": "7733000786819ef7852f924e2b36e2e45683cb17ead3e00d526d65958db310f1"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/dma-mapping.h": {
+      "bytes": 26443,
+      "sha256": "d8e6f160eff91019bdc96dbaa5a2bc0837dec915fea5731b958f6328366c54d3"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/device.h": {
+      "bytes": 43535,
+      "sha256": "951d5461d34207c54f4007b7fc9d05f30c0bb601a96c37133d7f09e92376ce4c"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/dev_printk.h": {
+      "bytes": 9975,
+      "sha256": "ba476a7261040b824eedb7d55a97c3f65be10870deb73baf8700c4310c56c769"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/energy_model.h": {
+      "bytes": 13903,
+      "sha256": "48eeab266493e24a077e5dca9717ef7eaa2d53162d360ee6925cd99f204c0cb4"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sched/cpufreq.h": {
+      "bytes": 983,
+      "sha256": "4bcfad3bb863714c8b7cddc56fd8adcfb45b7d5660f52dd150ba87de4b831bc5"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sched/topology.h": {
+      "bytes": 7295,
+      "sha256": "01a5de9c2cad90604377f4b9e99644770e19616fe753bbbb2190f5db696e54e5"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sched/idle.h": {
+      "bytes": 2550,
+      "sha256": "f323fb3c2c157012d8be3aa24b65a53650deeb8e7e7e55310f2fd1c90f928bcd"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sched/sd_flags.h": {
+      "bytes": 5200,
+      "sha256": "3948beba57cc1a5ccd046f6558513322bcd97a5c9ca038afcb85dc546429111c"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/klist.h": {
+      "bytes": 1922,
+      "sha256": "36dabc4fdf26834ebe82f128fa2fcae99b3559e24a635b0ba3d26c91af6519cd"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/pm.h": {
+      "bytes": 37465,
+      "sha256": "408aa9ad3d291c01e916cce8fcd9138c87dcc64264afecbe9dd5221fcca356e1"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/device/bus.h": {
+      "bytes": 11128,
+      "sha256": "ecd13dfdc547c3ea25e9659e89efb7cd79de83cece44cb612bd3894b8e800325"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/device/class.h": {
+      "bytes": 7728,
+      "sha256": "f053e3d98422ef129f054be5d825e398e86704cc6c03210d508683775a0b01a3"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/device/devres.h": {
+      "bytes": 5968,
+      "sha256": "275638bcb5e116b7546b9f60607c462b0c40c8814dc8e1ef372eaaed1f3cbd90"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/device/driver.h": {
+      "bytes": 10414,
+      "sha256": "f103b4925305db24e33ce6a2c999e2fa28b1ac967615d312e486336201bbca6c"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/device.h": {
+      "bytes": 176,
+      "sha256": "2e7faa86b72d1914dd4e2f16f7dfe04eb997ad60bd9ada11eb8af790713bce43"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/pm_wakeup.h": {
+      "bytes": 7040,
+      "sha256": "da6e286383312e5ad728c01eb0216e732829080d7df3f113cbd67b73091c8b18"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/scatterlist.h": {
+      "bytes": 22234,
+      "sha256": "a99c1e67fc4765ed6deb1d86bc0ac323d807ad96ff21f53db9ef8a7cc8c4468a"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/io.h": {
+      "bytes": 12174,
+      "sha256": "469f51b24a355b15d88cbb3544d47a858a3b7cb1783de30ca7de9899c9cea1d9"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/generated/asm/early_ioremap.h": {
+      "bytes": 39,
+      "sha256": "b1a54c24a12ce2c0f283661121974436cdb09ae91822497458072f5f97447c5d"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/early_ioremap.h": {
+      "bytes": 1500,
+      "sha256": "af02936336191c0c2bb82a6f566edd43b2eb67cf46ebd05114589533ac18994a"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/shared/io.h": {
+      "bytes": 740,
+      "sha256": "745efc9a1f906caabf0dbc0ff8d0b78d53bd80b58124d4733366f3b5613589ca"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/io.h": {
+      "bytes": 30228,
+      "sha256": "59a7e83c58acc80691f1a30c0ce1cf115d921fdbff848a0be2286654bf82d58d"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/iomap.h": {
+      "bytes": 3407,
+      "sha256": "0486f7b160dbda5771f198d0bc02ed88ce7221a07781702f2d5bf08c3824562f"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/pci_iomap.h": {
+      "bytes": 2003,
+      "sha256": "2929e92da5a1952c814479e8967b19fcdae257e697df24d5fc13bfbac6209aa0"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/logic_pio.h": {
+      "bytes": 3185,
+      "sha256": "7ab50b6cac5faecc9a835781a560ed1722ccfe4628e27c7585448340fa1ae323"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/fwnode.h": {
+      "bytes": 8933,
+      "sha256": "d58b863353cdfdab5031c75d8ff0d85dc786fd05cb99993fd28be68b59de86ad"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/netdev_features.h": {
+      "bytes": 11523,
+      "sha256": "d0ac20d98594311f8565fe954de1086201f000372a3fc4264c9de7483cde116a"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/flow_dissector.h": {
+      "bytes": 12950,
+      "sha256": "d32b0459acf41d630b755c6575f79a678041ab9b34c929a6dd3ae00e0b1ee73e"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/if_ether.h": {
+      "bytes": 8781,
+      "sha256": "4a352ac1313b891cf8028eab09077baba664a99cdf33025ccd8ba548e19f02a5"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/pkt_cls.h": {
+      "bytes": 19541,
+      "sha256": "381a9448e9a69cde89bb2d33387336060e7525b58c4d011a4b4455a71624d2c0"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/pkt_sched.h": {
+      "bytes": 31918,
+      "sha256": "765bd4b2b8c6cee42936b2fea001d466613fa9b901eed5a305ce389f4fd785b2"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/if_packet.h": {
+      "bytes": 8283,
+      "sha256": "0b4e076f669ce3fdc8d8a671d117e5ca7b859672ed9af675bf813cc9696c64d6"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/page_frag_cache.h": {
+      "bytes": 1746,
+      "sha256": "d7d545196cda95a3d70d0757378e7884768f64e88a27909bb782c1965f6f3358"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/net_debug.h": {
+      "bytes": 5352,
+      "sha256": "605b66ce21edd6dc81d4e2dc8c22572ab1e767697b74709bc2ee3ee902d3d14c"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/netmem.h": {
+      "bytes": 12659,
+      "sha256": "d36bed44b0ae0e2fbdf0f03a1ad5daf50a0de9c5bd24cced4e9624551747e549"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/seq_file_net.h": {
+      "bytes": 787,
+      "sha256": "86f8ca3f0f1f6bd726ed68279f423d4bae696c9da7ff527cf217fdbfbc314fea"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/seq_file.h": {
+      "bytes": 10442,
+      "sha256": "100774e0627f263e40b822100f15f996bc4c0c5eab8695c58cc6727b1796ea31"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/string_helpers.h": {
+      "bytes": 3434,
+      "sha256": "a09fedc20fc8c61098d002fdcafa6a0b1989a40bce9ea3663ecea89ea5606cf4"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/ctype.h": {
+      "bytes": 1912,
+      "sha256": "eb8af725f1e42866009e36ed110bc03d0b6e3eb522b475573e7226530f803d50"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/string_choices.h": {
+      "bytes": 2568,
+      "sha256": "057c043cfc1ed90beaab10874e239d4b994d34d850c8a960be1857da31ad20eb"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/dcbnl.h": {
+      "bytes": 5104,
+      "sha256": "e62cd3f8cf8b0ebe8d505fbced39639a98e2b3f10176cfefc616d1fe1e720499"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/dcbnl.h": {
+      "bytes": 25571,
+      "sha256": "9185202f63e4c83a054711795ff678ba06c4aad336f8a7e7ac4f9ef69469559c"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/netprio_cgroup.h": {
+      "bytes": 1047,
+      "sha256": "93eb67f0cd300356cd427a8001ca11044ce7927d97fbad846510e167116cdd6e"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/cgroup.h": {
+      "bytes": 26565,
+      "sha256": "aa82862ee29e5d95467cb142249394e9b831a812b68802807017cfa995a633ad"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/cgroupstats.h": {
+      "bytes": 2105,
+      "sha256": "997dbe3228b648e8653e7d53d3221af13a79682ef6a13054792cacd218038d7e"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/taskstats.h": {
+      "bytes": 8836,
+      "sha256": "0193e07cc8a2dd867438360b569cfb70813b004041e3593d2661c24a72330bc2"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/nsproxy.h": {
+      "bytes": 3288,
+      "sha256": "2f66f36134f8981c3a395267dbd4dea33ae691873c257d87d5098663a6592e5f"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/user_namespace.h": {
+      "bytes": 6803,
+      "sha256": "445489abca4659653f2de0b000c34283fe626e34ff1f262fce84ed927182b800"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rculist_nulls.h": {
+      "bytes": 6760,
+      "sha256": "8b4704cc5ad169c57fcbc48f4552fd353eb694157eca31c69a4eb2543bccd123"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kernel_stat.h": {
+      "bytes": 3717,
+      "sha256": "2683015756d7f394215a8caf0aa914ee1b6709b2f66b1b960530e340ddc4900d"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/interrupt.h": {
+      "bytes": 27830,
+      "sha256": "d0a3a9c9fd86f43aded105780d4bcde1142fe36eaa1a328eb85c6ff327d0f289"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/irqreturn.h": {
+      "bytes": 529,
+      "sha256": "c16fe17d5894d2ecd20f20f3c0828a6ce854dd5245b21399a93663d28523381f"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/irq.h": {
+      "bytes": 1246,
+      "sha256": "56e8c87685df69599e760aaecd4c74d8a51a61ea5cf125a907c7705cdfac8e55"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/irq_vectors.h": {
+      "bytes": 4212,
+      "sha256": "fadae255d75d9d12f0e7a2768f527ecff7ee4717d6db2a3657acb9181467ea98"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/sections.h": {
+      "bytes": 490,
+      "sha256": "1b9cdf5170e6ae7611140de8c82ace704224d24fd68cb9344bee9aee1f176c74"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/sections.h": {
+      "bytes": 7833,
+      "sha256": "b7d898e5c0a6442446d25c3a0c69a0b3e211b1e515c6ec18be04d671dbc2e491"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/cgroup-defs.h": {
+      "bytes": 29496,
+      "sha256": "dc68ccf2106ce591ed668671a7128b685f9852d07c5ea4c0c126015b12d63de7"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/bpf-cgroup-defs.h": {
+      "bytes": 2163,
+      "sha256": "8a4c4088c56678695a8fa09e3292af1b4798e81b45555c758928d37fe0ecb856"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/psi_types.h": {
+      "bytes": 5061,
+      "sha256": "483269b27c82b438450632555aba2ba8a9c47b608243f78a029c4300b3618ccc"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kthread.h": {
+      "bytes": 9241,
+      "sha256": "9208cb960a53e6aa64f5578c225eb118f649bee407cdb7ab12d684a8c4e1248d"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/cgroup_subsys.h": {
+      "bytes": 1315,
+      "sha256": "7b436ec4cf31aa1c363d0ed6a9ac20fe88866445354e2c7118a92595c11ffdea"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/cgroup_namespace.h": {
+      "bytes": 1421,
+      "sha256": "6e8b3d15185f31183f52352a49a7a6c9d52a3e9f2a251ba3ae5e7a3dc9039286"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/cgroup_refcnt.h": {
+      "bytes": 2654,
+      "sha256": "6c6b2b3da572aac8f4c7258b78e68d1f3aa7e3db41182a19f9c92ea55d8fd052"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/neighbour.h": {
+      "bytes": 6386,
+      "sha256": "a977f66a5fdb78e575d0ad7aceb172257a32daa6583bd24c906049ff090809ef"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/netlink.h": {
+      "bytes": 11002,
+      "sha256": "a3306386f5a5a9af16b12a1701dc362d3d3ac6e239b31b1df506ac6448bc88d6"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/scm.h": {
+      "bytes": 2933,
+      "sha256": "cb25a2647fbfec403f71c838bc36c3bccc568d4b00b69452aa8666ee67d207f0"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/net.h": {
+      "bytes": 12081,
+      "sha256": "295efa9a9e601a6b219eec48721e4464d1013d80c103b35a1b96a79674a79c6d"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/once.h": {
+      "bytes": 2726,
+      "sha256": "6db57d3fb47c31574446ab9fdceeffc197d412ab8e7c37954dde1a2cc0ac2722"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/sockptr.h": {
+      "bytes": 4149,
+      "sha256": "9c134512be6b60a1d66df26135115764672a14a62b0b6f58a49e78ee93e7bbc9"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/net.h": {
+      "bytes": 2100,
+      "sha256": "7a3044c1910301b969d43b181208e702d6c6174f2aa07fbc0789020078fcd3de"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/file.h": {
+      "bytes": 8081,
+      "sha256": "33a3333977ffcffb0cb22290b9718c4359cf3939e77ea9876341fc5d664d2637"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/security.h": {
+      "bytes": 67040,
+      "sha256": "86bc0a97e816779d2f8e5400eaf326811aeab7d82cedaf238457b14513c8a583"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kernel_read_file.h": {
+      "bytes": 1656,
+      "sha256": "37222ce100fa92f3aa48ca866412ee45377e96e014fbe568ea4907e0662a6697"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/bpf.h": {
+      "bytes": 120317,
+      "sha256": "d18907a685b4685849caca9057f242e32164c132d4de50c1c87756190dcc698f"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/bpf.h": {
+      "bytes": 283802,
+      "sha256": "6758b1dd0af2e35cee4d4d3341b3078cae74613f8869f79c8750d11290f0ff33"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/bpf_common.h": {
+      "bytes": 1382,
+      "sha256": "adc9e87d1a335379ffe3658547635904cae6ccb8b7d1e578d0c25b50aa44db04"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/filter.h": {
+      "bytes": 2265,
+      "sha256": "8b07bc3c8bcaa4b43318c43e588e36258bdc6a80848efce51158a274b664be7b"
+    },
+    "/usr/src/linux-cachyos-lts/include/crypto/sha2.h": {
+      "bytes": 26596,
+      "sha256": "4e641bbd195343894bf8f3ba071078c10d375ebbd5503b28bc78bc42618dbb2d"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/kallsyms.h": {
+      "bytes": 4342,
+      "sha256": "f9b5ec692eaa59efc3324a875577dc9d67140ffd8401dab39b86cb458a3a5644"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/bpfptr.h": {
+      "bytes": 2171,
+      "sha256": "bf181f0e3b416ccd0f2795d79e8e3b093e529cfbfb0706c0e16636da11110128"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/btf.h": {
+      "bytes": 21023,
+      "sha256": "2b8c886aa74bc2eacc23ec33537b7ae46e79afbc3f7f4b97d80b72b81a8eaff8"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/bsearch.h": {
+      "bytes": 624,
+      "sha256": "3923d8b820f5fa5049739d538b5ec0b651ba178fff0c2a1578c1b5052d74ace4"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/btf_ids.h": {
+      "bytes": 8380,
+      "sha256": "6e02c68637627f692d25cb77833c092f60ecd51130978df1dd5c530a0d68f383"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/btf.h": {
+      "bytes": 5642,
+      "sha256": "757cfa95d42fdd1b64c0b4996bb9c18fd86b936466d3772e1b89de86d2835f15"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rcupdate_trace.h": {
+      "bytes": 3348,
+      "sha256": "c657a3d7f451c08dbdfee5799f5d21e067f8acc99aa0d121fe73fda5dcb6876b"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/static_call.h": {
+      "bytes": 10917,
+      "sha256": "0c23de51f4e7ae7a8cd59949188986daea891651d3217b0df154c44d8eeeff78"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/cpu.h": {
+      "bytes": 7438,
+      "sha256": "dc43b3f7401abc5d1b46f43ea1e82104e710adcb97a835dd2fb74f0743d67410"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/node.h": {
+      "bytes": 5829,
+      "sha256": "032265a3aa63252b739282a5ddc42e2a9d1494b3a8d35ad2763f97d208e1df1c"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/cpuhotplug.h": {
+      "bytes": 17301,
+      "sha256": "bfcb84fea79dd339b708c7ff92ffb7594c1ca65a8abfab3152c86d79101ca056"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/static_call.h": {
+      "bytes": 3059,
+      "sha256": "65851fb86e2c5d3e3882b948ee2339d316c466971ad84424ea5c24472bfa8430"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/text-patching.h": {
+      "bytes": 5836,
+      "sha256": "97718f7199f1f149b0a0a5ec77d87cc74085a940a0a0c3693804c1934bffdb85"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/memcontrol.h": {
+      "bytes": 48884,
+      "sha256": "a45bd0cf3d04c9bd0011a617d375ecc6124855835362bd97a7d5fd5f09dd9fb2"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/page_counter.h": {
+      "bytes": 3372,
+      "sha256": "e47692a3bfff492c1a8a95062eb477e15714ddf30631fd05b260d00afff9386f"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/vmpressure.h": {
+      "bytes": 1724,
+      "sha256": "29f54d6dfb43d5b7f3de3d4f724134308b28881dd4eb0eb6019c5c3a43b387d2"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/eventfd.h": {
+      "bytes": 2153,
+      "sha256": "3e4be8a75902ad79fb7f777a4e7e653850aa9cd592aceaf41f1ed5c905fda293"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/eventfd.h": {
+      "bytes": 279,
+      "sha256": "d1917ce4c807a11f3cd0492f76c06ccff99483e9c8fa66cc53fdd2a324a03e46"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/writeback.h": {
+      "bytes": 12216,
+      "sha256": "836b788c46c987037e58ab22eee624a5355ae39bad56da8b22038badbf503358"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/flex_proportions.h": {
+      "bytes": 2023,
+      "sha256": "4731cdffa5ad2b8eda8ffad4320973fcb6187a6a9dc0b6ac7dbc6c5df0244bbc"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/backing-dev-defs.h": {
+      "bytes": 8786,
+      "sha256": "dd69a35b4def6f5e34a6a950790cc8920b79209bb7af6a39fabd3d7473d24e03"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/blk_types.h": {
+      "bytes": 16400,
+      "sha256": "5411927fca94df9d9441b753b41d6587513259206757804a1ead7fbb01338676"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/pagevec.h": {
+      "bytes": 2693,
+      "sha256": "b5ab95c07fdc938aa773b0bf371c03c03aa2fb8f6c6b2f41628ffc6ad6b5abd4"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/bio.h": {
+      "bytes": 19174,
+      "sha256": "a5cf26516be240f2e8776005a07e964a4fb50b98964b3070ec9ab4f174ad6440"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/mempool.h": {
+      "bytes": 4384,
+      "sha256": "24d115f1d34f7cb889cd56356849c81d6cb37ee7c3ff73200aa29aa1c0bee530"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/cfi.h": {
+      "bytes": 2038,
+      "sha256": "7408d555696d87bd6133248d6cb6fb8c60a8eb0d3ff928e72ce4bce6f3b4685e"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/cfi.h": {
+      "bytes": 3075,
+      "sha256": "d384d4dd1365b9e05904b3817b8268b72a4991c93843432344fa41048562d866"
+    },
+    "/usr/src/linux-cachyos-lts/arch/x86/include/asm/rqspinlock.h": {
+      "bytes": 847,
+      "sha256": "1a858fa2e236e01b97e08fce84f94436052ff8a0e256458c6e26825c5c5d26ac"
+    },
+    "/usr/src/linux-cachyos-lts/include/asm-generic/rqspinlock.h": {
+      "bytes": 8109,
+      "sha256": "681eba122489f4231d41704e8de208de365d6624fb633f519388b0515eb9cfa2"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/bpf_types.h": {
+      "bytes": 6247,
+      "sha256": "2ff3b9f6f68115f5fb55299d24194f642888124523b266f88f355dca1a2a44f3"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/lsm.h": {
+      "bytes": 2646,
+      "sha256": "a19a8afbe91fbc57d8245a23c6e37ebd11b3cfc068771288beace8b24f3c09bb"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/lsm/selinux.h": {
+      "bytes": 371,
+      "sha256": "cc5f989abb43177a789539f2c8404b2730acae692730936df4e37288fe708473"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/lsm/smack.h": {
+      "bytes": 367,
+      "sha256": "df863553df1d764256b3fa7c238d2f1929ddd6bf2621550130fdbc10d7ffcd69"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/lsm/apparmor.h": {
+      "bytes": 378,
+      "sha256": "ee03153fab6cfbbcf4584c89d1245c5faea535c2d5d906951db74638eb7ce047"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/lsm/bpf.h": {
+      "bytes": 319,
+      "sha256": "a140e31adc6212c7a4a78e7bf76287a7de004b4d5ad384485171d1696187bac8"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/compat.h": {
+      "bytes": 2535,
+      "sha256": "b9ef143ff953974bd282ed7baabb3969bac53c24585ac8bd175407fe762507cb"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/netlink.h": {
+      "bytes": 12459,
+      "sha256": "f2b9dec9eb74c84239d345a9bb3aceb187caeab761579b7b58e6834a5ec64070"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/netdevice.h": {
+      "bytes": 2268,
+      "sha256": "e8d91465a7eb29b4f9e5f3d9ff4f9257ec2f4e8787dd0d923c99fe9816b92043"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/if_ether.h": {
+      "bytes": 1401,
+      "sha256": "671b53b2ac40ce16f146a55dac21ddf4c2c2186490b7b0ffff4e7ddb97122734"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/if_link.h": {
+      "bytes": 592,
+      "sha256": "dcaa25803f15447a5f9b50796c50ebda82a174b9b67a2061df56b3564aac2256"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/if_link.h": {
+      "bytes": 56577,
+      "sha256": "39e4683142ae154756c5e55177e92dc48fda6ba50c4cded952a78159c0ed834c"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/if_bonding.h": {
+      "bytes": 5160,
+      "sha256": "e2076105029c5a2b9381e8139581c79484f344ff8789763751990d1a8156bc30"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/netdev.h": {
+      "bytes": 6503,
+      "sha256": "7cc32023b11310b10c34a80de4da8a03340c5241eb9a4aa952860ccea1a5e926"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/neighbour_tables.h": {
+      "bytes": 253,
+      "sha256": "fff70aea93b51c829e14632ff7f7d3af1aefe2ae865817de5fd204f49880e1d6"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/rtnetlink.h": {
+      "bytes": 21954,
+      "sha256": "dd5ae403c27a8e3092a1b68d8cd7471a0d35b1bdb9a49a98ec7735774c1ad2ca"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/if_addr.h": {
+      "bytes": 2179,
+      "sha256": "a8763bdd4e82cae43e9cf136acf1bebb7f79057821dc2e9aa37c93bfbdfbd9d7"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/hgic_smac/hgics.h": {
+      "bytes": 3972,
+      "sha256": "6701f2c7b07c667e70b939af37967acaf73b08e405fe0519f03c0c1f45a52a6a"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/wireless.h": {
+      "bytes": 1600,
+      "sha256": "2360be5da8183451e44971f72b94d56ab06f243f139149153fdd94d37a36bf93"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/wireless.h": {
+      "bytes": 42803,
+      "sha256": "e1e430ccbd3be73efc5cd224815606c26ef59a373c269a3a2946de1d1d40f585"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/ieee80211.h": {
+      "bytes": 106230,
+      "sha256": "8d6eb6ab3ed76eba2638fc327287b57c399754bfcc215e6e8f1af42a42084808"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/etherdevice.h": {
+      "bytes": 19874,
+      "sha256": "4c6f8fb23f7b8b505abebbf289404a47a03414d13a02668c7a6193e7d626bd0c"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/crc32.h": {
+      "bytes": 4172,
+      "sha256": "1e9d1d38fecd017f477975f5da59a6ae6c81e9b55274c33dc1f39302ac6ce9ca"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/bitrev.h": {
+      "bytes": 2594,
+      "sha256": "2804437147c0b1e96d7ce4b2bfae9e345278f2dba96ecef9d7e733072b1ca774"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/unaligned.h": {
+      "bytes": 3211,
+      "sha256": "877cc68addf72f84834a7da87c09fc54b86cb383d6a3d93f2a97a16e751458ce"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/unaligned/packed_struct.h": {
+      "bytes": 1059,
+      "sha256": "a62c3ed307ba2d0417ec6ab4327649bb0a944869da47999b33ed1153e9e4f0e3"
+    },
+    "/usr/src/linux-cachyos-lts/include/vdso/unaligned.h": {
+      "bytes": 457,
+      "sha256": "05fc4b17cc6db5aae3ab23bed11bd47cae124b2d61eb0cdebf860c976015ae34"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/bitfield.h": {
+      "bytes": 7209,
+      "sha256": "0bb8d4d74538627e64531e15e8f7fb092ce0961ec0544d5d7fe4225d37ebb289"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/ieee80211-ht.h": {
+      "bytes": 9549,
+      "sha256": "99fe94dc9dd7efdfeee4ae356d3e78250de1ad37c6e91dd0f855ad55dd4e6a00"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/ieee80211-vht.h": {
+      "bytes": 9220,
+      "sha256": "eaae1e52bcaed0ecb9bbcf1c87a65e03a7ac5ea29733111a90e92bb993741775"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/ieee80211-he.h": {
+      "bytes": 30471,
+      "sha256": "73a51e8e7bafa13c22422178c0a8811cbca5f6bcf92e82e6b04879f118f19ea1"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/ieee80211-eht.h": {
+      "bytes": 39097,
+      "sha256": "36c131e14a1032aaef0e43e27369c2ce69a1c2d131b311615da14db89abc8f2a"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/ieee80211-uhr.h": {
+      "bytes": 6397,
+      "sha256": "de458beb5ce6ccd1beed6d38b7b3c8d420ba0c6624424f029cd3ed13b4de5072"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/ieee80211-mesh.h": {
+      "bytes": 7135,
+      "sha256": "7f6f841d763e1194902dfacef7278fc106d37e597f9ecbcf99d452bc9f99c970"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/mac80211.h": {
+      "bytes": 313658,
+      "sha256": "43b4be700a0aa3d5b4e5ac3483db02d2506ba637e2686343b053a1d05949067f"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/cfg80211.h": {
+      "bytes": 379133,
+      "sha256": "2089f15e0331b788b79ec407c2b0e0cc04c7ec844ad1785bc4552dd0094e5fad"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/ethtool.h": {
+      "bytes": 58845,
+      "sha256": "169e227f4493e180b6118084773d374459a9815822a7b2318d1ea1c138dbaffb"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/ethtool.h": {
+      "bytes": 103951,
+      "sha256": "8c83076d612c76f2a4f3bcef4ad8de510424ba70951b94bf1173400bf6be1bd6"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/ethtool_netlink_generated.h": {
+      "bytes": 22950,
+      "sha256": "94f3ee536dda76ddb9209fd91dab235a3b8e227b1fe189c707c7d3b992f6993b"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/net_tstamp.h": {
+      "bytes": 6556,
+      "sha256": "e9aaf9edd5a9ed7af7ce925f34cebe68afef50ad23f042486fdf876258a74b06"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/rfkill.h": {
+      "bytes": 6623,
+      "sha256": "0e0a08fa3d66b2b5103b42c051e7fc6e7f27e3355447565b1392dc6ab08928da"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/debugfs.h": {
+      "bytes": 16094,
+      "sha256": "cc612bdc46f428ac661da0eb4b3425defefcb35654139bdda7223ebbad3ca8f5"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/nl80211.h": {
+      "bytes": 371399,
+      "sha256": "3c6469b3ad716d62a5a4baa8912880a937cecb63e844483e219a58500ef9767b"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/rfkill.h": {
+      "bytes": 11047,
+      "sha256": "f820c7fd34a9c7efb94a5b561b02f6850f7c2f0f3ef78385d315cb4f911135cb"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/leds.h": {
+      "bytes": 23988,
+      "sha256": "c53046f1d73a31dcbbebd5b84ee74666afa4a76f03c3f2784175b1bea52ed558"
+    },
+    "/usr/src/linux-cachyos-lts/include/dt-bindings/leds/common.h": {
+      "bytes": 3987,
+      "sha256": "d947046ba0607ffb2954dd2d0641add3edeec92752e1dedf95913a81c5956492"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/regulatory.h": {
+      "bytes": 10122,
+      "sha256": "f79e798657c7c688d851fa96d1fb65d8970ee6f866692f411c317f1d6b2ec179"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/codel.h": {
+      "bytes": 6002,
+      "sha256": "5d30ddeb25bd9bdc8634bec0eb3cc6f81b5412c722f1252f149ebab47aec2f80"
+    },
+    "/usr/src/linux-cachyos-lts/include/net/ieee80211_radiotap.h": {
+      "bytes": 23813,
+      "sha256": "eb089b67149c1ef933b48ce38d471f13189eba7092e8593ce0c8771554073f81"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/hgic_smac/../hgic_def.h": {
+      "bytes": 9220,
+      "sha256": "0609a727a8b3dc85d8fd9329825e4878dcd066364e0671cbc0c2d34fed978b48"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/hgic_smac/../hgic.h": {
+      "bytes": 19805,
+      "sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/hgic_smac/../version.h": {
+      "bytes": 30,
+      "sha256": "5a4e17827eabb8ba89d849b7e94a34292adc8328563709df435ec26e154a7649"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/hgic_smac/../attach_init.h": {
+      "bytes": 1996,
+      "sha256": "1fda50d95f29848c4e2331760f21d57fd087b64023af1e2001a8f19b3f9f7d92"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/hgic_smac/../utils/utils.h": {
+      "bytes": 4287,
+      "sha256": "5da2e1863bee07b3c59bdb2dc196536e603f8f057861774d366a4f66143afcc9"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/hgic_smac/../utils/fwdl.h": {
+      "bytes": 2825,
+      "sha256": "58e939a56bce67649df222dc5ae3f96dc6255e526233f67408dabdf6605c9392"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/hgic_smac/../utils/../hgic_def.h": {
+      "bytes": 9220,
+      "sha256": "0609a727a8b3dc85d8fd9329825e4878dcd066364e0671cbc0c2d34fed978b48"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/hgic_smac/../utils/fwctrl.h": {
+      "bytes": 17785,
+      "sha256": "e4c049762aa2acd8f46138ed9136e28e27d889ca9575046b03d39c78546313a6"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/hgic_smac/../utils/ota.h": {
+      "bytes": 765,
+      "sha256": "854a7a381b7ce257e35d9dc5170eb465e35e43d445cbcb5c878a0e9bd7ac7a63"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/hgic_smac/../utils/iwpriv.h": {
+      "bytes": 324,
+      "sha256": "9ba6c5cf59f905a35c79f5e5c6011a812b4dc5576f97afa665e068fca350af03"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/hgic_smac/hw.h": {
+      "bytes": 792,
+      "sha256": "c9416377845b6c0eb1226a23c07ecc85a8c575e3a9d3f12a2db16257db11551e"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/hgic_smac/11ah.h": {
+      "bytes": 457,
+      "sha256": "44fb21d39697afa6f718440814735a578b42618811d4f424d2b4fce0f666232c"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/hgic_smac/procfs.h": {
+      "bytes": 615,
+      "sha256": "59872a0cb88f59dea27fc916aadf4d1c53a3f305102392ca98fdb62f274faf27"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/hgic_smac/event.h": {
+      "bytes": 229,
+      "sha256": "8abca8bc4d9e6efbb2137647a7290684e74809dcad81606ee8f908e35d0ae1e3"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/hgic_smac/../utils/owned_control.h": {
+      "bytes": 3175,
+      "sha256": "7c70d2025f68a70e507b872245176b31aacc64a7c29669d944ebfb09a062ff61"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/hgic_smac/attach_status.c": {
+      "bytes": 2198,
+      "sha256": "d955438a23dd19e5be64ccdd0135d67d103d8563433701ae0ffecfdf09d1bd25"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/utils/fwctrl.c": {
+      "bytes": 51701,
+      "sha256": "bd0f39db566061b789df5a7569fde5f2dec40770b5d2318106e8d4eb9b4ffc5f"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/firmware.h": {
+      "bytes": 6776,
+      "sha256": "987b248daad80ac79231d4f3aefc607e3c345440b04531a895ef05ac0cb35fa8"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/utils/../hgic_def.h": {
+      "bytes": 9220,
+      "sha256": "0609a727a8b3dc85d8fd9329825e4878dcd066364e0671cbc0c2d34fed978b48"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/utils/../hgic.h": {
+      "bytes": 19805,
+      "sha256": "136892a40e10d41f848d51693dc5e3911e780f4901f522f2f63dfed49189c22a"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/utils/../version.h": {
+      "bytes": 30,
+      "sha256": "5a4e17827eabb8ba89d849b7e94a34292adc8328563709df435ec26e154a7649"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/utils/../attach_init.h": {
+      "bytes": 1996,
+      "sha256": "1fda50d95f29848c4e2331760f21d57fd087b64023af1e2001a8f19b3f9f7d92"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/utils/fwdl.h": {
+      "bytes": 2825,
+      "sha256": "58e939a56bce67649df222dc5ae3f96dc6255e526233f67408dabdf6605c9392"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/utils/fwctrl.h": {
+      "bytes": 17785,
+      "sha256": "e4c049762aa2acd8f46138ed9136e28e27d889ca9575046b03d39c78546313a6"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/utils/utils.h": {
+      "bytes": 4287,
+      "sha256": "5da2e1863bee07b3c59bdb2dc196536e603f8f057861774d366a4f66143afcc9"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/utils/control_receipt.h": {
+      "bytes": 3984,
+      "sha256": "3b80f917e989fd3587f61e94d9dea713bb26059d7243de5cf0c7bbaccc869073"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/utils/owned_control.h": {
+      "bytes": 3175,
+      "sha256": "7c70d2025f68a70e507b872245176b31aacc64a7c29669d944ebfb09a062ff61"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/utils/owner_usb.c": {
+      "bytes": 18663,
+      "sha256": "36f74ce8e77f3deb147345066836e2f783ef0de5fbc1ef3d6959bc46366998aa"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/usb.h": {
+      "bytes": 83142,
+      "sha256": "2ed66ba85dc343e09b8f1320c5017e43c26cbc671c1ea201a429aed92e2bb0c2"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/mod_devicetable.h": {
+      "bytes": 26062,
+      "sha256": "557c5bf1c421783f41af9b5e0e1527505d7cc63a95a22de394aa5db381a443ad"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/mei.h": {
+      "bytes": 3474,
+      "sha256": "0648683ead984c854e97a2859a6528ac8b6b447bf250756100737ab573c0563d"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/mei_uuid.h": {
+      "bytes": 753,
+      "sha256": "314ec95b586f037ab64d73a7c534081e3999c16621379f2081905253c0586f89"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/usb/ch9.h": {
+      "bytes": 2186,
+      "sha256": "7df5caf8a59029c9f5df6ad66ef520adb56f6afaa285971dd988783467d7299e"
+    },
+    "/usr/src/linux-cachyos-lts/include/uapi/linux/usb/ch9.h": {
+      "bytes": 40608,
+      "sha256": "c319386b75c3748f12980875af6c53ae0933764cb869537b858bed248811538f"
+    },
+    "/usr/src/linux-cachyos-lts/include/linux/pm_runtime.h": {
+      "bytes": 29507,
+      "sha256": "57f1a335642757d2a7bab26b7e40a3222cba54bc72ed1c3bf8932938698671f2"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/utils/owned_control.c": {
+      "bytes": 14024,
+      "sha256": "558ec33f220c66121ceb5fff4b14174e34221cf680a12bb3d380dda3f6804749"
+    }
+  },
+  "commands": [
+    {
+      "argv": [
+        "/usr/bin/clang",
+        "-fsyntax-only",
+        "-std=gnu11",
+        "-nostdinc",
+        "-D__KERNEL__",
+        "-DMODULE",
+        "-DKBUILD_MODNAME=\"hgics_owned_syntax\"",
+        "-DKBUILD_BASENAME=\"hgics_owned_syntax\"",
+        "-DCONFIG_HGIC_USB",
+        "-DCONFIG_HGIC_2G",
+        "-Werror=implicit-function-declaration",
+        "-Werror=incompatible-pointer-types",
+        "-Wno-address-of-packed-member",
+        "-Wno-pointer-sign",
+        "-Wno-gnu-variable-sized-type-not-at-end",
+        "-I",
+        "/usr/src/linux-cachyos-lts/arch/x86/include",
+        "-I",
+        "/usr/src/linux-cachyos-lts/arch/x86/include/generated",
+        "-I",
+        "/usr/src/linux-cachyos-lts/include",
+        "-I",
+        "/usr/src/linux-cachyos-lts/arch/x86/include/uapi",
+        "-I",
+        "/usr/src/linux-cachyos-lts/arch/x86/include/generated/uapi",
+        "-I",
+        "/usr/src/linux-cachyos-lts/include/uapi",
+        "-I",
+        "/usr/src/linux-cachyos-lts/include/generated/uapi",
+        "-include",
+        "/usr/src/linux-cachyos-lts/include/linux/compiler-version.h",
+        "-include",
+        "/usr/src/linux-cachyos-lts/include/linux/kconfig.h",
+        "-include",
+        "/usr/src/linux-cachyos-lts/include/linux/compiler_types.h",
+        "-include",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/linux6-compat.h",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-owned-p3-source01/syntax02/01-headers.d",
+        "-MT",
+        "syntax-only",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/hgic_smac/attach_init.c"
+      ],
+      "start_utc": "2026-10-22T13:12:35.388156+00:00",
+      "end_utc": "2026-10-22T13:12:36.064777+00:00",
+      "returncode": 0,
+      "log": "01-hgic_smac-attach_init.c.txt",
+      "log_pin": {
+        "bytes": 6400,
+        "sha256": "553fc88b5a416a1dee5d6af475faa89bbf5d5a59f98dd6da29082a97fee81d9b"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/clang",
+        "-fsyntax-only",
+        "-std=gnu11",
+        "-nostdinc",
+        "-D__KERNEL__",
+        "-DMODULE",
+        "-DKBUILD_MODNAME=\"hgics_owned_syntax\"",
+        "-DKBUILD_BASENAME=\"hgics_owned_syntax\"",
+        "-DCONFIG_HGIC_USB",
+        "-DCONFIG_HGIC_2G",
+        "-Werror=implicit-function-declaration",
+        "-Werror=incompatible-pointer-types",
+        "-Wno-address-of-packed-member",
+        "-Wno-pointer-sign",
+        "-Wno-gnu-variable-sized-type-not-at-end",
+        "-I",
+        "/usr/src/linux-cachyos-lts/arch/x86/include",
+        "-I",
+        "/usr/src/linux-cachyos-lts/arch/x86/include/generated",
+        "-I",
+        "/usr/src/linux-cachyos-lts/include",
+        "-I",
+        "/usr/src/linux-cachyos-lts/arch/x86/include/uapi",
+        "-I",
+        "/usr/src/linux-cachyos-lts/arch/x86/include/generated/uapi",
+        "-I",
+        "/usr/src/linux-cachyos-lts/include/uapi",
+        "-I",
+        "/usr/src/linux-cachyos-lts/include/generated/uapi",
+        "-include",
+        "/usr/src/linux-cachyos-lts/include/linux/compiler-version.h",
+        "-include",
+        "/usr/src/linux-cachyos-lts/include/linux/kconfig.h",
+        "-include",
+        "/usr/src/linux-cachyos-lts/include/linux/compiler_types.h",
+        "-include",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/linux6-compat.h",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-owned-p3-source01/syntax02/02-headers.d",
+        "-MT",
+        "syntax-only",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/hgic_smac/attach_status.c"
+      ],
+      "start_utc": "2026-10-22T13:12:36.125286+00:00",
+      "end_utc": "2026-10-22T13:12:36.787543+00:00",
+      "returncode": 0,
+      "log": "02-hgic_smac-attach_status.c.txt",
+      "log_pin": {
+        "bytes": 6400,
+        "sha256": "553fc88b5a416a1dee5d6af475faa89bbf5d5a59f98dd6da29082a97fee81d9b"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/clang",
+        "-fsyntax-only",
+        "-std=gnu11",
+        "-nostdinc",
+        "-D__KERNEL__",
+        "-DMODULE",
+        "-DKBUILD_MODNAME=\"hgics_owned_syntax\"",
+        "-DKBUILD_BASENAME=\"hgics_owned_syntax\"",
+        "-DCONFIG_HGIC_USB",
+        "-DCONFIG_HGIC_2G",
+        "-Werror=implicit-function-declaration",
+        "-Werror=incompatible-pointer-types",
+        "-Wno-address-of-packed-member",
+        "-Wno-pointer-sign",
+        "-Wno-gnu-variable-sized-type-not-at-end",
+        "-I",
+        "/usr/src/linux-cachyos-lts/arch/x86/include",
+        "-I",
+        "/usr/src/linux-cachyos-lts/arch/x86/include/generated",
+        "-I",
+        "/usr/src/linux-cachyos-lts/include",
+        "-I",
+        "/usr/src/linux-cachyos-lts/arch/x86/include/uapi",
+        "-I",
+        "/usr/src/linux-cachyos-lts/arch/x86/include/generated/uapi",
+        "-I",
+        "/usr/src/linux-cachyos-lts/include/uapi",
+        "-I",
+        "/usr/src/linux-cachyos-lts/include/generated/uapi",
+        "-include",
+        "/usr/src/linux-cachyos-lts/include/linux/compiler-version.h",
+        "-include",
+        "/usr/src/linux-cachyos-lts/include/linux/kconfig.h",
+        "-include",
+        "/usr/src/linux-cachyos-lts/include/linux/compiler_types.h",
+        "-include",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/linux6-compat.h",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-owned-p3-source01/syntax02/03-headers.d",
+        "-MT",
+        "syntax-only",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/utils/fwctrl.c"
+      ],
+      "start_utc": "2026-10-22T13:12:36.848706+00:00",
+      "end_utc": "2026-10-22T13:12:37.474183+00:00",
+      "returncode": 0,
+      "log": "03-utils-fwctrl.c.txt",
+      "log_pin": {
+        "bytes": 6400,
+        "sha256": "553fc88b5a416a1dee5d6af475faa89bbf5d5a59f98dd6da29082a97fee81d9b"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/clang",
+        "-fsyntax-only",
+        "-std=gnu11",
+        "-nostdinc",
+        "-D__KERNEL__",
+        "-DMODULE",
+        "-DKBUILD_MODNAME=\"hgics_owned_syntax\"",
+        "-DKBUILD_BASENAME=\"hgics_owned_syntax\"",
+        "-DCONFIG_HGIC_USB",
+        "-DCONFIG_HGIC_2G",
+        "-Werror=implicit-function-declaration",
+        "-Werror=incompatible-pointer-types",
+        "-Wno-address-of-packed-member",
+        "-Wno-pointer-sign",
+        "-Wno-gnu-variable-sized-type-not-at-end",
+        "-I",
+        "/usr/src/linux-cachyos-lts/arch/x86/include",
+        "-I",
+        "/usr/src/linux-cachyos-lts/arch/x86/include/generated",
+        "-I",
+        "/usr/src/linux-cachyos-lts/include",
+        "-I",
+        "/usr/src/linux-cachyos-lts/arch/x86/include/uapi",
+        "-I",
+        "/usr/src/linux-cachyos-lts/arch/x86/include/generated/uapi",
+        "-I",
+        "/usr/src/linux-cachyos-lts/include/uapi",
+        "-I",
+        "/usr/src/linux-cachyos-lts/include/generated/uapi",
+        "-include",
+        "/usr/src/linux-cachyos-lts/include/linux/compiler-version.h",
+        "-include",
+        "/usr/src/linux-cachyos-lts/include/linux/kconfig.h",
+        "-include",
+        "/usr/src/linux-cachyos-lts/include/linux/compiler_types.h",
+        "-include",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/linux6-compat.h",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-owned-p3-source01/syntax02/04-headers.d",
+        "-MT",
+        "syntax-only",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/utils/owner_usb.c"
+      ],
+      "start_utc": "2026-10-22T13:12:37.531595+00:00",
+      "end_utc": "2026-10-22T13:12:38.160869+00:00",
+      "returncode": 0,
+      "log": "04-utils-owner_usb.c.txt",
+      "log_pin": {
+        "bytes": 6400,
+        "sha256": "553fc88b5a416a1dee5d6af475faa89bbf5d5a59f98dd6da29082a97fee81d9b"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/clang",
+        "-fsyntax-only",
+        "-std=gnu11",
+        "-nostdinc",
+        "-D__KERNEL__",
+        "-DMODULE",
+        "-DKBUILD_MODNAME=\"hgics_owned_syntax\"",
+        "-DKBUILD_BASENAME=\"hgics_owned_syntax\"",
+        "-DCONFIG_HGIC_USB",
+        "-DCONFIG_HGIC_2G",
+        "-Werror=implicit-function-declaration",
+        "-Werror=incompatible-pointer-types",
+        "-Wno-address-of-packed-member",
+        "-Wno-pointer-sign",
+        "-Wno-gnu-variable-sized-type-not-at-end",
+        "-I",
+        "/usr/src/linux-cachyos-lts/arch/x86/include",
+        "-I",
+        "/usr/src/linux-cachyos-lts/arch/x86/include/generated",
+        "-I",
+        "/usr/src/linux-cachyos-lts/include",
+        "-I",
+        "/usr/src/linux-cachyos-lts/arch/x86/include/uapi",
+        "-I",
+        "/usr/src/linux-cachyos-lts/arch/x86/include/generated/uapi",
+        "-I",
+        "/usr/src/linux-cachyos-lts/include/uapi",
+        "-I",
+        "/usr/src/linux-cachyos-lts/include/generated/uapi",
+        "-include",
+        "/usr/src/linux-cachyos-lts/include/linux/compiler-version.h",
+        "-include",
+        "/usr/src/linux-cachyos-lts/include/linux/kconfig.h",
+        "-include",
+        "/usr/src/linux-cachyos-lts/include/linux/compiler_types.h",
+        "-include",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/linux6-compat.h",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-control-owned-p3-source01/syntax02/05-headers.d",
+        "-MT",
+        "syntax-only",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/utils/owned_control.c"
+      ],
+      "start_utc": "2026-10-22T13:12:38.218036+00:00",
+      "end_utc": "2026-10-22T13:12:38.830433+00:00",
+      "returncode": 0,
+      "log": "05-utils-owned_control.c.txt",
+      "log_pin": {
+        "bytes": 6400,
+        "sha256": "553fc88b5a416a1dee5d6af475faa89bbf5d5a59f98dd6da29082a97fee81d9b"
+      }
+    }
+  ],
+  "pass": true,
+  "scope": "HOST x86 changed-unit syntax only; no tests/object/link/ARM/module/native execution"
+}

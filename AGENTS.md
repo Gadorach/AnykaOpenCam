@@ -49,10 +49,11 @@ before code because request refs cannot protect USB/core owners through STOP/dra
 Parent revised source order: bounded P4a shared-owner candidate at
 `apps/qualification/kernel76-station-owner-lifetime/` has narrow independent static
 SOURCE sufficiency; syntax02 4/4 cited, no runtime/finite-wait proof. Review:
-`STATION76_OWNER_LIFETIME_P4A_REVIEW.md` under transport docs. One worker now owns
-fresh `apps/qualification/kernel76-station-control-owned/` for resumed P3 request/
-deadline design+implementation on that exact sole-producer/join/poison contract.
-P1/fullP4/P5, tests, ARM/module build and native remain unaccepted; old inputs frozen.
+`STATION76_OWNER_LIFETIME_P4A_REVIEW.md` under transport docs. P3 heap-request/
+deadline candidate delivered at `apps/qualification/kernel76-station-control-owned/`,
+syntax04 5/5 PASS. One independent reviewer owns new P3 review/evidence, checking
+that exact sole-producer/join/poison contract before source adoption. P1/fullP4/P5,
+tests, ARM/module build and native remain unaccepted; old inputs frozen.
 
 **App integration source:** real v6→RTSP callback glue at
 `apps/rtsp-auth/qc07f-runtime-candidate/` compiled HOST/ARM (54 commands), not run

@@ -1,0 +1,93 @@
+In file included from <built-in>:4:
+In file included from /home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/linux6-compat.h:5:
+In file included from /usr/src/linux-cachyos-lts/include/linux/timer.h:5:
+In file included from /usr/src/linux-cachyos-lts/include/linux/list.h:11:
+In file included from /usr/src/linux-cachyos-lts/arch/x86/include/asm/barrier.h:5:
+In file included from /usr/src/linux-cachyos-lts/arch/x86/include/asm/alternative.h:9:
+In file included from /usr/src/linux-cachyos-lts/arch/x86/include/asm/bug.h:108:
+In file included from /usr/src/linux-cachyos-lts/include/asm-generic/bug.h:22:
+In file included from /usr/src/linux-cachyos-lts/include/linux/printk.h:8:
+In file included from /usr/src/linux-cachyos-lts/include/linux/linkage.h:8:
+In file included from /usr/src/linux-cachyos-lts/arch/x86/include/asm/linkage.h:6:
+/usr/src/linux-cachyos-lts/arch/x86/include/asm/ibt.h:77:8: warning: 'nocf_check' attribute ignored; use -fcf-protection to enable the attribute [-Wignored-attributes]
+   77 | extern __noendbr bool is_endbr(u32 *val);
+      |        ^
+/usr/src/linux-cachyos-lts/arch/x86/include/asm/ibt.h:32:34: note: expanded from macro '__noendbr'
+   32 | #define __noendbr       __attribute__((nocf_check))
+      |                                        ^
+/usr/src/linux-cachyos-lts/arch/x86/include/asm/ibt.h:78:8: warning: 'nocf_check' attribute ignored; use -fcf-protection to enable the attribute [-Wignored-attributes]
+   78 | extern __noendbr u64 ibt_save(bool disable);
+      |        ^
+/usr/src/linux-cachyos-lts/arch/x86/include/asm/ibt.h:32:34: note: expanded from macro '__noendbr'
+   32 | #define __noendbr       __attribute__((nocf_check))
+      |                                        ^
+/usr/src/linux-cachyos-lts/arch/x86/include/asm/ibt.h:79:8: warning: 'nocf_check' attribute ignored; use -fcf-protection to enable the attribute [-Wignored-attributes]
+   79 | extern __noendbr void ibt_restore(u64 save);
+      |        ^
+/usr/src/linux-cachyos-lts/arch/x86/include/asm/ibt.h:32:34: note: expanded from macro '__noendbr'
+   32 | #define __noendbr       __attribute__((nocf_check))
+      |                                        ^
+In file included from <built-in>:4:
+In file included from /home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/linux6-compat.h:5:
+In file included from /usr/src/linux-cachyos-lts/include/linux/timer.h:6:
+In file included from /usr/src/linux-cachyos-lts/include/linux/ktime.h:25:
+In file included from /usr/src/linux-cachyos-lts/include/linux/jiffies.h:10:
+In file included from /usr/src/linux-cachyos-lts/include/linux/time.h:60:
+In file included from /usr/src/linux-cachyos-lts/include/linux/time32.h:13:
+In file included from /usr/src/linux-cachyos-lts/include/linux/timex.h:67:
+In file included from /usr/src/linux-cachyos-lts/arch/x86/include/asm/timex.h:5:
+In file included from /usr/src/linux-cachyos-lts/arch/x86/include/asm/processor.h:17:
+/usr/src/linux-cachyos-lts/arch/x86/include/asm/current.h:17:1: warning: multiple identical address spaces specified for type [-Wduplicate-decl-specifier]
+   17 | DECLARE_PER_CPU_CACHE_HOT(struct task_struct * const __percpu_seg_override,
+      | ^
+/usr/src/linux-cachyos-lts/include/linux/percpu-defs.h:124:2: note: expanded from macro 'DECLARE_PER_CPU_CACHE_HOT'
+  124 |         DECLARE_PER_CPU_SECTION(type, name, "..hot.." #name)
+      |         ^
+/usr/src/linux-cachyos-lts/include/linux/percpu-defs.h:100:9: note: expanded from macro 'DECLARE_PER_CPU_SECTION'
+  100 |         extern __PCPU_ATTRS(sec) __typeof__(type) name
+      |                ^
+/usr/src/linux-cachyos-lts/include/linux/percpu-defs.h:48:2: note: expanded from macro '__PCPU_ATTRS'
+   48 |         __percpu __attribute__((section(PER_CPU_BASE_SECTION sec)))     \
+      |         ^
+note: (skipping 4 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/usr/src/linux-cachyos-lts/include/linux/args.h:25:24: note: expanded from macro '__CONCAT'
+   25 | #define __CONCAT(a, b) a ## b
+      |                        ^
+<scratch space>:195:1: note: expanded from here
+  195 | __seg_gs
+      | ^
+<built-in>:383:33: note: expanded from macro '__seg_gs'
+  383 | #define __seg_gs __attribute__((address_space(256)))
+      |                                 ^
+In file included from <built-in>:4:
+In file included from /home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-control-owned/source/linux6-compat.h:5:
+In file included from /usr/src/linux-cachyos-lts/include/linux/timer.h:6:
+In file included from /usr/src/linux-cachyos-lts/include/linux/ktime.h:25:
+In file included from /usr/src/linux-cachyos-lts/include/linux/jiffies.h:10:
+In file included from /usr/src/linux-cachyos-lts/include/linux/time.h:60:
+In file included from /usr/src/linux-cachyos-lts/include/linux/time32.h:13:
+In file included from /usr/src/linux-cachyos-lts/include/linux/timex.h:67:
+In file included from /usr/src/linux-cachyos-lts/arch/x86/include/asm/timex.h:5:
+/usr/src/linux-cachyos-lts/arch/x86/include/asm/processor.h:427:1: warning: multiple identical address spaces specified for type [-Wduplicate-decl-specifier]
+  427 | DECLARE_PER_CPU_CACHE_HOT(const unsigned long __percpu_seg_override,
+      | ^
+/usr/src/linux-cachyos-lts/include/linux/percpu-defs.h:124:2: note: expanded from macro 'DECLARE_PER_CPU_CACHE_HOT'
+  124 |         DECLARE_PER_CPU_SECTION(type, name, "..hot.." #name)
+      |         ^
+/usr/src/linux-cachyos-lts/include/linux/percpu-defs.h:100:9: note: expanded from macro 'DECLARE_PER_CPU_SECTION'
+  100 |         extern __PCPU_ATTRS(sec) __typeof__(type) name
+      |                ^
+/usr/src/linux-cachyos-lts/include/linux/percpu-defs.h:48:2: note: expanded from macro '__PCPU_ATTRS'
+   48 |         __percpu __attribute__((section(PER_CPU_BASE_SECTION sec)))     \
+      |         ^
+note: (skipping 4 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/usr/src/linux-cachyos-lts/include/linux/args.h:25:24: note: expanded from macro '__CONCAT'
+   25 | #define __CONCAT(a, b) a ## b
+      |                        ^
+<scratch space>:15:1: note: expanded from here
+   15 | __seg_gs
+      | ^
+<built-in>:383:33: note: expanded from macro '__seg_gs'
+  383 | #define __seg_gs __attribute__((address_space(256)))
+      |                                 ^
+5 warnings generated.
