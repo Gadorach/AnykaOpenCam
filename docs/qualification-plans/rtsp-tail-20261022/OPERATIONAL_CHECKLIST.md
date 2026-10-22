@@ -6,6 +6,20 @@ items below is a new test queue or a claim that the camera app is complete.
 Keep existing authentication, bounds, isolation and ownership protections intact.
 Do not conceal missing review/coverage or change model/safeguards to obtain a pass.
 
+**Continuation:** later user steering authorizes eligible hardware work with
+watchdog recovery; the build checklist still does not select app/runtime tests.
+RAM76 restore/idle and normal watchdog smoke passed Oct22. A separate reset
+controller failed its password-text classifier; actual reset/catch and later10s
+stable held U-Boot were observed, with both failure HOLDs preserved. Current
+target is **held U-Boot, not Linux**; no C/D item inherits an old Linux epoch.
+See `../kernel76-transport-20261021/WATCHDOG_RESET22B_RESULT.md`.
+
+Real native callback glue, frame/persistent-encoder custody and the observational
+encoder query now have bounded source/compile evidence; they are not integrated
+provider/runtime acceptance or a deployable main. New single-owner watchdog source
+work and independent P4a lifetime review remain in progress. Their artifacts do
+not check off the outstanding app/adoption/load gates below.
+
 ## Build-only deliverable and limitations
 
 `apps/rtsp-auth/build_app.py` compiles and links the current RTSP integration

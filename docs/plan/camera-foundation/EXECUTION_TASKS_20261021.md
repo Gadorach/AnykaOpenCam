@@ -1,5 +1,16 @@
 # Active execution ledger — remaining foundation work
 
+**P4a shared-owner SOURCE candidate delivered; independent review selected:**72
+files from frozen P2v2,65 unchanged/six changed/one new selected owner USB unit.
+Fixed16TX/32RX/2560B slots, STOP/work admission, producer joins, all-slot permanent
+URB poison and deferred frees implemented; no request/deadline/P1/fullP4/P5/native
+adoption. Author syntax02 4/4 PASS; initial missing-include failure preserved.
+All338 prior custody files/204 accepted source pins unchanged.103-file seal
+`49e1c0e6209371e4714e4fb1ff5adad4d8cb042014fe4508f2e5257e37f49490`.
+Report `STATION76_OWNER_LIFETIME_P4A_CANDIDATE.md` under transport docs. Reviewer
+owns only new P4a review/evidence; no tests/compilation/hardware or automatic P3
+continuation. Syntax/author ownership arguments do not establish lifetime GO.
+
 **Persistent encoder-FD custody v2 delivered:** HOST/ARM18 compile/archive/
 relocatable commands PASS, no execution. Parent read full helper/header and verified
 source/report/artifact pins,99 dependency paths, byte-identical frame imports and

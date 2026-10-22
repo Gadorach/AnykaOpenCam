@@ -1,0 +1,92 @@
+{
+  "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/drivers/usb/core/driver.c": {
+    "bytes": 60693,
+    "sha256": "ab8fdede4d3603f0ca3cf8f1583159660e6169d6cdf216fc07803fc1e02d1e7a",
+    "excerpts": [
+      {
+        "start_line": 431,
+        "end_line": 461,
+        "text": "static int usb_unbind_interface(struct device *dev)\n{\n\tstruct usb_driver *driver = to_usb_driver(dev->driver);\n\tstruct usb_interface *intf = to_usb_interface(dev);\n\tstruct usb_host_endpoint *ep, **eps = NULL;\n\tstruct usb_device *udev;\n\tint i, j, error, r;\n\tint lpm_disable_error = -ENODEV;\n\n\tintf->condition = USB_INTERFACE_UNBINDING;\n\n\t/* Autoresume for set_interface call below */\n\tudev = interface_to_usbdev(intf);\n\terror = usb_autoresume_device(udev);\n\n\t/* If hub-initiated LPM policy may change, attempt to disable LPM until\n\t * the driver is unbound.  If LPM isn't disabled, that's fine because it\n\t * wouldn't be enabled unless all the bound interfaces supported\n\t * hub-initiated LPM.\n\t */\n\tif (driver->disable_hub_initiated_lpm)\n\t\tlpm_disable_error = usb_unlocked_disable_lpm(udev);\n\n\t/*\n\t * Terminate all URBs for this interface unless the driver\n\t * supports \"soft\" unbinding and the device is still present.\n\t */\n\tif (!driver->soft_unbind || udev->state == USB_STATE_NOTATTACHED)\n\t\tusb_disable_interface(udev, intf, false);\n\n\tdriver->disconnect(intf);\n",
+        "sha256": "64429f42bbd7852845aa898967f6385ab6ab076c4bff06a0fa1470ceca1e56b4"
+      },
+      {
+        "start_line": 1104,
+        "end_line": 1124,
+        "text": "/**\n * usb_deregister - unregister a USB interface driver\n * @driver: USB operations of the interface driver to unregister\n * Context: must be able to sleep\n *\n * Unlinks the specified driver from the internal USB driver list.\n *\n * NOTE: If you called usb_register_dev(), you still need to call\n * usb_deregister_dev() to clean up your driver's allocated minor numbers,\n * this * call will no longer do it for you.\n */\nvoid usb_deregister(struct usb_driver *driver)\n{\n\tpr_info(\"%s: deregistering interface driver %s\\n\",\n\t\t\tusbcore_name, driver->name);\n\n\tusb_remove_newid_files(driver);\n\tdriver_unregister(&driver->driver);\n\tusb_free_dynids(driver);\n}\nEXPORT_SYMBOL_GPL(usb_deregister);\n",
+        "sha256": "d25af2515cde7f0e5cf9c076ef964dba48b38afab60a4d05b7d26842df46439d"
+      }
+    ]
+  },
+  "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/drivers/base/driver.c": {
+    "bytes": 6982,
+    "sha256": "eb941fd97750d96c5c877fe390fa2ac4ced8cd7eb34a66f4a27f88ecb4341bfa",
+    "excerpts": [
+      {
+        "start_line": 264,
+        "end_line": 279,
+        "text": "/**\n * driver_unregister - remove driver from system.\n * @drv: driver.\n *\n * Again, we pass off most of the work to the bus-level call.\n */\nvoid driver_unregister(struct device_driver *drv)\n{\n\tif (!drv || !drv->p) {\n\t\tWARN(1, \"Unexpected driver unregister!\\n\");\n\t\treturn;\n\t}\n\tdriver_remove_groups(drv, drv->groups);\n\tbus_remove_driver(drv);\n}\nEXPORT_SYMBOL_GPL(driver_unregister);\n",
+        "sha256": "578768d2ffc144154a464ef4094c744f32a24d911a289a9b20b68f44c5d12524"
+      }
+    ]
+  },
+  "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/drivers/base/bus.c": {
+    "bytes": 36764,
+    "sha256": "53975b1d25058a6828ea4a1d0fa2cc3d1a23dc5ba37a8cb8e2a765fb707399e1",
+    "excerpts": [
+      {
+        "start_line": 775,
+        "end_line": 797,
+        "text": " * @drv: driver.\n *\n * Detach the driver from the devices it controls, and remove\n * it from its bus's list of drivers. Finally, we drop the reference\n * to the bus we took in bus_add_driver().\n */\nvoid bus_remove_driver(struct device_driver *drv)\n{\n\tstruct subsys_private *sp = bus_to_subsys(drv->bus);\n\n\tif (!sp)\n\t\treturn;\n\n\tpr_debug(\"bus: '%s': remove driver %s\\n\", sp->bus->name, drv->name);\n\n\tif (!drv->suppress_bind_attrs)\n\t\tremove_bind_files(drv);\n\tdriver_remove_groups(drv, sp->bus->drv_groups);\n\tdriver_remove_file(drv, &driver_attr_uevent);\n\tklist_remove(&drv->p->knode_bus);\n\tdriver_detach(drv);\n\tmodule_remove_driver(drv);\n\tkobject_put(&drv->p->kobj);\n",
+        "sha256": "0d707e74057acf6eb2afc2cfe9bf6de023bb0d405643b335dbf837593fa7e1b5"
+      }
+    ]
+  },
+  "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/drivers/base/dd.c": {
+    "bytes": 38935,
+    "sha256": "26efc05457b05672d7156cc7c6198dfc7c4875bc3a9cb0629ed716992704ed0f",
+    "excerpts": [
+      {
+        "start_line": 1170,
+        "end_line": 1208,
+        "text": " */\nstatic void __device_driver_lock(struct device *dev, struct device *parent)\n{\n\tif (parent && dev->bus->need_parent_lock)\n\t\tdevice_lock(parent);\n\tdevice_lock(dev);\n}\n\n/*\n * __device_driver_unlock - release locks needed to manipulate dev->drv\n * @dev: Device we will update driver info for\n * @parent: Parent device. Needed if the bus requires parent lock\n *\n * This function will release the required locks for manipulating dev->drv.\n * Normally this will just be the @dev lock, but when called for a\n * USB interface, @parent lock will be released as well.\n */\nstatic void __device_driver_unlock(struct device *dev, struct device *parent)\n{\n\tdevice_unlock(dev);\n\tif (parent && dev->bus->need_parent_lock)\n\t\tdevice_unlock(parent);\n}\n\n/**\n * device_driver_attach - attach a specific driver to a specific device\n * @drv: Driver to attach\n * @dev: Device to attach it to\n *\n * Manually attach driver to a device. Will acquire both @dev lock and\n * @dev->parent lock if needed. Returns 0 on success, -ERR on failure.\n */\nint device_driver_attach(const struct device_driver *drv, struct device *dev)\n{\n\tint ret;\n\n\t__device_driver_lock(dev, dev->parent);\n\tret = __driver_probe_device(drv, dev);\n\t__device_driver_unlock(dev, dev->parent);\n",
+        "sha256": "2f39a5b0270f452868193ccbad8a4cf4082133412addf49afd5d5b10ed383d74"
+      },
+      {
+        "start_line": 1295,
+        "end_line": 1297,
+        "text": "\t__device_driver_lock(dev, dev->parent);\n\tdriver_probe_device(drv, dev);\n\t__device_driver_unlock(dev, dev->parent);\n",
+        "sha256": "b23f374778854fc501a0f1dd445c77634a77c19b0b3b5c998dd1bf8821e09817"
+      },
+      {
+        "start_line": 1318,
+        "end_line": 1379,
+        "text": "/*\n * __device_release_driver() must be called with @dev lock held.\n * When called for a USB interface, @dev->parent lock must be held as well.\n */\nstatic void __device_release_driver(struct device *dev, struct device *parent)\n{\n\tstruct device_driver *drv;\n\n\tdrv = dev->driver;\n\tif (drv) {\n\t\tpm_runtime_get_sync(dev);\n\n\t\twhile (device_links_busy(dev)) {\n\t\t\t__device_driver_unlock(dev, parent);\n\n\t\t\tdevice_links_unbind_consumers(dev);\n\n\t\t\t__device_driver_lock(dev, parent);\n\t\t\t/*\n\t\t\t * A concurrent invocation of the same function might\n\t\t\t * have released the driver successfully while this one\n\t\t\t * was waiting, so check for that.\n\t\t\t */\n\t\t\tif (dev->driver != drv) {\n\t\t\t\tpm_runtime_put(dev);\n\t\t\t\treturn;\n\t\t\t}\n\t\t}\n\n\t\tdriver_sysfs_remove(dev);\n\n\t\tbus_notify(dev, BUS_NOTIFY_UNBIND_DRIVER);\n\n\t\tpm_runtime_put_sync(dev);\n\n\t\tdevice_remove(dev);\n\n\t\tif (dev->bus && dev->bus->dma_cleanup)\n\t\t\tdev->bus->dma_cleanup(dev);\n\n\t\tdevice_unbind_cleanup(dev);\n\t\tdevice_links_driver_cleanup(dev);\n\n\t\tklist_remove(&dev->p->knode_driver);\n\t\tdevice_pm_check_callbacks(dev);\n\n\t\tbus_notify(dev, BUS_NOTIFY_UNBOUND_DRIVER);\n\t\tkobject_uevent(&dev->kobj, KOBJ_UNBIND);\n\t}\n}\n\nvoid device_release_driver_internal(struct device *dev,\n\t\t\t\t    const struct device_driver *drv,\n\t\t\t\t    struct device *parent)\n{\n\t__device_driver_lock(dev, parent);\n\n\tif (!drv || drv == dev->driver)\n\t\t__device_release_driver(dev, parent);\n\n\t__device_driver_unlock(dev, parent);\n}\n",
+        "sha256": "d6e0460713693ce911b98e1a9d43d4269e8eb39dc42cdec00baf961b3bd9e335"
+      },
+      {
+        "start_line": 1415,
+        "end_line": 1442,
+        "text": "/**\n * driver_detach - detach driver from all devices it controls.\n * @drv: driver.\n */\nvoid driver_detach(const struct device_driver *drv)\n{\n\tstruct device_private *dev_prv;\n\tstruct device *dev;\n\n\tif (driver_allows_async_probing(drv))\n\t\tasync_synchronize_full();\n\n\tfor (;;) {\n\t\tspin_lock(&drv->p->klist_devices.k_lock);\n\t\tif (list_empty(&drv->p->klist_devices.k_list)) {\n\t\t\tspin_unlock(&drv->p->klist_devices.k_lock);\n\t\t\tbreak;\n\t\t}\n\t\tdev_prv = list_last_entry(&drv->p->klist_devices.k_list,\n\t\t\t\t     struct device_private,\n\t\t\t\t     knode_driver.n_node);\n\t\tdev = dev_prv->device;\n\t\tget_device(dev);\n\t\tspin_unlock(&drv->p->klist_devices.k_lock);\n\t\tdevice_release_driver_internal(dev, drv, dev->parent);\n\t\tput_device(dev);\n\t}\n}\n",
+        "sha256": "3d567090f11d1dd55d217ae1360f159012ac82e3c574ba612c30b13e6b8bb009"
+      }
+    ]
+  },
+  "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/net/core/dev.c": {
+    "bytes": 344485,
+    "sha256": "83a1a83bdf7a979b0aa27170272748c5a71070ad52227243a8f391008ebed80c",
+    "excerpts": [
+      {
+        "start_line": 2002,
+        "end_line": 2037,
+        "text": "/**\n * unregister_netdevice_notifier - unregister a network notifier block\n * @nb: notifier\n *\n * Unregister a notifier previously registered by\n * register_netdevice_notifier(). The notifier is unlinked into the\n * kernel structures and may then be reused. A negative errno code\n * is returned on a failure.\n *\n * After unregistering unregister and down device events are synthesized\n * for all devices on the device list to the removed notifier to remove\n * the need for special case cleanup code.\n */\n\nint unregister_netdevice_notifier(struct notifier_block *nb)\n{\n\tstruct net *net;\n\tint err;\n\n\t/* Close race with setup_net() and cleanup_net() */\n\tdown_write(&pernet_ops_rwsem);\n\trtnl_lock();\n\terr = raw_notifier_chain_unregister(&netdev_chain, nb);\n\tif (err)\n\t\tgoto unlock;\n\n\tfor_each_net(net) {\n\t\t__rtnl_net_lock(net);\n\t\tcall_netdevice_unregister_net_notifiers(nb, net);\n\t\t__rtnl_net_unlock(net);\n\t}\n\nunlock:\n\trtnl_unlock();\n\tup_write(&pernet_ops_rwsem);\n\treturn err;\n",
+        "sha256": "bf8d4ec6683be2e64d9bf38a9b0f16d9133c597b1df7631af5655a3d1b2cc508"
+      },
+      {
+        "start_line": 2220,
+        "end_line": 2244,
+        "text": " *\tcall_netdevice_notifiers_info - call all network notifier blocks\n *\t@val: value passed unmodified to notifier function\n *\t@info: notifier information data\n *\n *\tCall all network notifier blocks.  Parameters and return value\n *\tare as for raw_notifier_call_chain().\n */\n\nint call_netdevice_notifiers_info(unsigned long val,\n\t\t\t\t  struct netdev_notifier_info *info)\n{\n\tstruct net *net = dev_net(info->dev);\n\tint ret;\n\n\tASSERT_RTNL();\n\n\t/* Run per-netns notifier block chain first, then run the global one.\n\t * Hopefully, one day, the global one is going to be removed after\n\t * all notifier block registrators get converted to be per-netns.\n\t */\n\tret = raw_notifier_call_chain(&net->netdev_chain, val, info);\n\tif (ret & NOTIFY_STOP_MASK)\n\t\treturn ret;\n\treturn raw_notifier_call_chain(&netdev_chain, val, info);\n}\n",
+        "sha256": "531a77d378157c3c701793761fd1de3e0eb8715a7cde150e02a023a8d31cab44"
+      }
+    ]
+  }
+}
