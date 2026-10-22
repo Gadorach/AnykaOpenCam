@@ -24,7 +24,10 @@ never booted; its embedded station76 is unsupported. The two active source lanes
 address device-free backend startup and actual preopened-listener custody. External
 retention investigation stopped before code on absent media bootstrap/recovery
 and the serve-internal fork; it remains blocked, not implemented.
-These artifacts do not check off outstanding app/adoption/load gates below.
+Owned listener now has narrow source/API custody sufficiency; prestarted-backend
+source compiled and is under independent lifecycle review. They are separate
+siblings, not an accepted composition. These artifacts do not check off outstanding
+app/adoption/load gates below.
 
 ## Build-only deliverable and limitations
 

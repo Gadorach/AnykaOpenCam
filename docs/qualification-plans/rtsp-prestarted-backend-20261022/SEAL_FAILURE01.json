@@ -1,0 +1,14 @@
+{
+  "scope": "static finalizer bookkeeping failure only; not compilation/runtime/policy",
+  "command": ["python3", "-B", "docs/qualification-plans/rtsp-prestarted-backend-20261022/seal.py"],
+  "exit": 1,
+  "error": "RuntimeError: unexpected delta scope",
+  "original_finalizer_copy": "seal-initial01.py",
+  "original_finalizer_sha256": "6446bc84b49b22dec8e0f820acff6d7a37b394ab8db8305f0457fafdb00935ea",
+  "cause": "New README.md and build.py shared names with frozen baseline files and were mistakenly counted as selected source imports. Seven differing basenames were observed instead of the expected five changed imports.",
+  "correction": "Exclude these two explicitly new authored files only from imported-file delta classification. They remain in the authored aggregate, snapshot verification and final source seal.",
+  "production_or_build_source_changed": false,
+  "repeat_compilation": false,
+  "partial_final_seals_written": false,
+  "policy_rejection_or_reroute": false
+}

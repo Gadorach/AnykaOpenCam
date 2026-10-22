@@ -34,8 +34,9 @@ selected for actual owned-listener consumption in fresh `owned-listener-candidat
 and rtsp-owned-listener docs. Preserve loopback/authentication/verifier constraints;
 no listener/bind/runtime/test execution or fake app main. Only these two new source
 lanes have progressed: owned-listener review completed with narrow SOURCE/API
-custody sufficiency, no correction-required defect; prestarted-backend remains the
-sole active author lane. Parent verified1,281 inputs/six outputs/source aggregate;
+custody sufficiency, no correction-required defect; prestarted-backend delivered
+and now under independent lifecycle review (sole active lane). Parent verified
+listener1,281 inputs/six outputs/source aggregate;
 review seal `2f39d960ba6cff2b236d215d65dea206f0005fad0fc430a621e24de25bd3db61`.
 Owned-listener HOST/ARM52 commands/30 C compilations PASS is cited, not rerun;
 47-file source pin `febab8640027f71dfc8a1ec4aa53c26cba219048ca4bf74578050377101ce557`.
@@ -45,6 +46,16 @@ explicitly not native-provider fork clearance. Narrow source disposition is in
 rtsp-owned-listener docs; no execution or composite/native adoption. The earlier retention investigation itself
 is completed/BLOCKED, not an active implementation lane. See rtsp-owned-listener
 candidate report/contract and completed frozen review docs/evidence.
+
+Prestarted backend source pin
+`867a8b94c43096b90b80f659f87e34ec610e45ba42aa3678d1fca9940b8b4f90`;
+real one-shot device-free start -> serve on same backend/child -> explicit finish,
+stable auth-peer records and partial-start HOLD implemented. Six changed C unit
+compilations HOST/ARM,26 tool commands exit0 plus five expected diff exit1; no
+execution, object reuse or full-app link. Static-finalizer bookkeeping failure is
+preserved/corrected without rebuilding. Reviewer owns only new prestarted-backend
+review docs; no automatic listener composition, external media retention/bootstrap/
+recovery/backing/native acceptance. Reviewed listener source committed `c51e129`.
 
 **Actual provider derivative narrow SOURCE/API/ownership sufficiency:** no new
 correction-required defect in staged transfers/actual callsites.3,649 prior pins,

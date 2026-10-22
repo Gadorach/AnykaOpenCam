@@ -101,8 +101,12 @@ backend/serve split, one actual child and no second fork; not media retention GO
 Owned listener at `apps/rtsp-auth/owned-listener-candidate/` has narrow independent
 SOURCE/API custody sufficiency;52 HOST/ARM commands cited, no execution,1,281
 review inputs parent-verified. Disposition in rtsp-owned-listener qualification docs.
-Backend-startup split remains the sole active author lane, no reviewed composite or
-native adoption. Original authentication/loopback constraints remain intact.
+Prestarted-backend candidate delivered at `apps/rtsp-auth/prestarted-backend-candidate/`,
+source pin `867a8b94c43096b90b80f659f87e34ec610e45ba42aa3678d1fca9940b8b4f90`.
+Six HOST/ARM changed-unit compiles/archive/REL PASS, no execution; one reviewer owns
+fresh rtsp-prestarted-backend-review docs for partial-start/peer/finish ownership.
+No active author or reviewed composite/native adoption. Original authentication/
+loopback constraints remain intact; external media retention stays blocked.
 Query77/return closeout committed locally `9fd7bb6`; ordinary index unchanged.
 No fresh target/recorder state has been queried; an early-expiry claim in the
 retention report was inherited parent wording, corrected in its parent disposition.
