@@ -105,9 +105,13 @@ Prestarted-backend candidate delivered at `apps/rtsp-auth/prestarted-backend-can
 source pin `867a8b94c43096b90b80f659f87e34ec610e45ba42aa3678d1fca9940b8b4f90`.
 Six HOST/ARM changed-unit compiles/archive/REL PASS, but review requires R1: new
 observer can reap verifier, then retired stop/destroy loses still-open IPC FD.
-V1/review frozen and unaccepted. One author owns fresh
-`apps/rtsp-auth/prestarted-backend-v2/` for exact-once terminal IPC disposition,
-sticky close errors and no uncertain-start retry. No composite/native adoption.
+V1/review frozen and unaccepted. R1 v2 delivered at
+`apps/rtsp-auth/prestarted-backend-v2/`, six HOST/ARM changed-unit compiles PASS;
+one reviewer owns fresh v2-review docs for exact-once disposition/sticky close
+errors/no uncertain-start retry. Separate author owns fresh
+`apps/qualification/encoder-query77-client/` and matching client docs for a minimal
+query-only qualification ELF, compile/link only, no boot/upload/run or new native
+recipe. Query77 monitor lacks the88-byte query command. No composite/native adoption.
 Original authentication/loopback constraints and media-retention block remain.
 Query77/return closeout committed locally `9fd7bb6`; ordinary index unchanged.
 No fresh target/recorder state has been queried; an early-expiry claim in the

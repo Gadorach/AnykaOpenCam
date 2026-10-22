@@ -38,8 +38,11 @@ custody sufficiency, no correction-required defect. Prestarted-backend v1 review
 requires R1: observer-reaped verifier leaves IPC FD open, retired stop returns OK,
 then client wipe/free loses custody. Parent verified1,303 inputs/six outputs;
 review seal `d060aaa15deea1526920414f4015505f1024fa73e2f49eff6a502a90049ce323`.
-Fresh v2 author selected only for exact-once terminal IPC disposition/sticky errors,
-not uncertain-start retry; v1 remains frozen/unaccepted. Parent verified
+Fresh v2 R1 correction delivered, same six HOST/ARM consumer compiles PASS, actual
+terminal IPC helper clears slot before one close and preserves sticky errors/former
+NOT-owned diagnostic. No uncertain-start retry; v1 remains frozen/unaccepted.
+V2 source pin `5a42cdc9d76628031c5380edd2e3b2c4dd06aefc6675138c8e10e1b098a28868`.
+Focused v2 re-review is selected. Parent verified
 listener1,281 inputs/six outputs/source aggregate;
 review seal `2f39d960ba6cff2b236d215d65dea206f0005fad0fc430a621e24de25bd3db61`.
 Owned-listener HOST/ARM52 commands/30 C compilations PASS is cited, not rerun;
@@ -60,7 +63,11 @@ execution, object reuse or full-app link. Static-finalizer bookkeeping failure i
 preserved/corrected without rebuilding. Completed review found R1 above, not a
 runtime observation; parent disposition in the candidate docs. No automatic listener
 composition, external media retention/bootstrap/recovery/backing/native acceptance.
-Reviewed listener source committed `c51e129`; v2 source correction is sole active lane.
+Reviewed listener source committed `c51e129`; v2 focused reviewer plus separate
+encoder-query77-client source author are the only active lanes. Client selection
+is compile/link-only qualification ELF, not a camera main or native trial; actual
+query77 monitor is unchanged and lacks query88 command. Original kernel/image/
+module/boot/transport/controllers remain frozen, no new native recipe or effect.
 
 **Actual provider derivative narrow SOURCE/API/ownership sufficiency:** no new
 correction-required defect in staged transfers/actual callsites.3,649 prior pins,
