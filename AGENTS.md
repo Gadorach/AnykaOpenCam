@@ -98,12 +98,11 @@ real bootstrap/external lifetime/recovery and verifier fork inside serve.91 publ
 input hashes unchanged; block/contract preserved in retention-owner docs. Parent
 selected fresh `apps/rtsp-auth/prestarted-backend-candidate/` for a device-free
 backend/serve split, one actual child and no second fork; not media retention GO.
-Owned-listener source candidate delivered at `apps/rtsp-auth/owned-listener-candidate/`,
-HOST/ARM52 commands PASS, no execution;47-file source pin
-`febab8640027f71dfc8a1ec4aa53c26cba219048ca4bf74578050377101ce557`.
-One reviewer owns fresh rtsp-owned-listener-review docs for transfer/child-inheritance/
-close-once review. Backend-startup split remains the other source lane; no composite
-or native adoption. Original authentication/loopback constraints remain intact.
+Owned listener at `apps/rtsp-auth/owned-listener-candidate/` has narrow independent
+SOURCE/API custody sufficiency;52 HOST/ARM commands cited, no execution,1,281
+review inputs parent-verified. Disposition in rtsp-owned-listener qualification docs.
+Backend-startup split remains the sole active author lane, no reviewed composite or
+native adoption. Original authentication/loopback constraints remain intact.
 Query77/return closeout committed locally `9fd7bb6`; ordinary index unchanged.
 No fresh target/recorder state has been queried; an early-expiry claim in the
 retention report was inherited parent wording, corrected in its parent disposition.

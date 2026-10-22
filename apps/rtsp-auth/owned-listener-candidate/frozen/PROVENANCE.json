@@ -1,0 +1,91 @@
+{
+  "created": "2026-10-12T23:25:11.096019+00:00",
+  "derived_V3": [
+    {
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/server-candidate/rtsp_server_candidate.c",
+      "copy": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-candidate/upstream/rtsp_server_candidate.c",
+      "sha256": "d9e0f1fc35da67f33f234a1e7fba6fbba7e93a74e08595444ba389f8d91c9550"
+    },
+    {
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/server-candidate/candidate_auth.h",
+      "copy": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-candidate/upstream/candidate_auth.h",
+      "sha256": "d4c3490948c94e4a04b72acaf1c15d4970be4115c49e2051fd371ccc54dc318d"
+    },
+    {
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/server-candidate/candidate_auth.c",
+      "copy": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-candidate/upstream/candidate_auth.c",
+      "sha256": "ee100638c1983f298c810b99d3544286adcc0ae2253fbed8c1a85832fcba6c98"
+    },
+    {
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/server-candidate/fixture.c",
+      "copy": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-candidate/upstream/fixture.c",
+      "sha256": "d9b540f655d224000d4aa505f04725beedbf7c3499d75b7d2b31dac957998e70"
+    },
+    {
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/server-candidate/client_test.py",
+      "copy": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-candidate/upstream/client_test.py",
+      "sha256": "4d15f3d284afcef5f4c18d573ca5450756f885c329fc2782b29bc95d4dfe8369"
+    },
+    {
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/server-candidate/fault_clock.c",
+      "copy": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-candidate/upstream/fault_clock.c",
+      "sha256": "186361c192d53b34977eb44bafb340dc9deefdf9682c66eb323f96615d971c47"
+    },
+    {
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/server-candidate/build.py",
+      "copy": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-candidate/upstream/build.py",
+      "sha256": "d69ac920160c0e19983482705b81130dd862bcd2bc9e8a5fba3da711e471415a"
+    }
+  ],
+  "reviewed_V2": [
+    {
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier/verifier.h",
+      "sha256": "3f4a97a12ed9acafe678e720b473c798c75b170648e6a6de076a1017ff0ad900"
+    },
+    {
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier/adapter.c",
+      "sha256": "4cdf9a301c5603dd3542f07bd96cffd01f79497c39da15a0cc95b84223a4c8a1"
+    },
+    {
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier/ipc.c",
+      "sha256": "f42968ebf2fa7a361dfc1db31599a061df7f5c7de718a3eac4b0e2e2a4becc01"
+    },
+    {
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier/engine.c",
+      "sha256": "cf298b8096c66859806c6e0c0b449592ac4081f05ad814f21fee35e97262c396"
+    },
+    {
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier/isolation.c",
+      "sha256": "6759d15640e17048d331354bce62376a23588689daeea468e5e5b1a4ec54b135"
+    },
+    {
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier/child.c",
+      "sha256": "b317bac6512a3795fa7b8c82ae339366750dbf39960642d97e53d69d1d3e4ad7"
+    }
+  ],
+  "reviewed_V2_report": "/home/gadorach/Desktop/AnykaOpenCam/local/validation/rtsp-verifier/v2verifier01/REPORT.json",
+  "reviewed_V2_report_sha256": "f324cd0c1e0633f6f6cb3d6084b9adb710cb26a1a5526c0aababfc6712a3a68b",
+  "images": {
+    "native": {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/local/validation/rtsp-verifier/v2verifier01/ARM-native-strict",
+      "bytes": 153060,
+      "sha256": "7a8d66850197ae62dd3db4718c57ba0487ccb4fdcaac1c7819241fd0be10f084",
+      "executed": false
+    },
+    "host": {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/local/validation/rtsp-verifier/v2verifier01/HOST-PUBLICDUMMY-4M",
+      "bytes": 112768,
+      "sha256": "773845239b09c83d1a796ccec43ff7ccd030d40523c5443939f3d55bbc77d09e",
+      "executed": true,
+      "code_mode": "0555 fresh produced public code"
+    },
+    "delay": {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/local/validation/rtsp-verifier/v2verifier01/HOST-PUBLICDUMMY-delay-4M",
+      "bytes": 112768,
+      "sha256": "d637e3d4a2094d8fc0f5fc4575592c1166b39a52f0f8082ea038028a332104af",
+      "executed": true,
+      "code_mode": "0555 fresh produced public code"
+    }
+  },
+  "native_executed": false
+}
