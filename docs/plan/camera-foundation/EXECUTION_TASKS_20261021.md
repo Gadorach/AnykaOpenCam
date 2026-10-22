@@ -63,9 +63,17 @@ Parent separately selected ONE offline normal-use call, PASS18:48:44–18:48:51U
 25 fixed public files/CRCs/spans/package/config/UAPI/basic client ELF, actual host
 metadata/read/close normal path observed. Receipt in inputs parent-observation01,
 not native admission, comprehensive filesystem/memory proof or test campaign.
-No C1/client/firmware/private/current-state/target use. One author now owns C2b
-pure cold-context classifier source/docs, no sender/serial/RPC/capture/target
-interface; stop before code if exact public grammar cannot support it.
+No C1/client/firmware/private/current-state/target use in the C2a observation.
+C2b stopped before code: public tokens/results lacked full record grammar/order;
+11 inputs/five outputs parent-verified. Parent separately selected historical-only
+private evidence inspection, no serial/RPC/current-state/device/HOLD operation.
+Raw/provenance remain private; public cold-grammar OBSERVED_PROFILE.md provides
+one symbolic19-record software profile, SHA
+`daff4d31fcb034354df154fd0c5233824738150ee84ab59f9b862bf0f8c85437`.
+It does not establish all boot variants, actual ON/current owner/quiet/catch/clock.
+One author owns fresh cold-context-v2 pure classifier source/docs; no candidate
+call/sender/serial/RPC/capture/current-state/target interface. Blocked v1/oldreset
+parser/original HOLDs remain unchanged; fresh source still needs independent review.
 No executable native recipe, capture/staging/boot/query or user physical action
 selected. Last target observation remains original held U-Boot12:12UTC; no fresh
 target/recorder/owner/expiry status inherited. Both HOLDs stay untouched. Query77

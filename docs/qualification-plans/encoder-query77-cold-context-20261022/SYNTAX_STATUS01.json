@@ -1,0 +1,14 @@
+{
+  "scope": "C2b blocked design only, before any classifier code",
+  "new_Python_units": 0,
+  "status": "NOT_APPLICABLE_BLOCKED_BEFORE_CODE",
+  "not_a_syntax_or_runtime_PASS": true,
+  "candidate_or_old_helper_AST_compile_import_call": false,
+  "code_object_created_executed_or_serialized": false,
+  "pyc_written": false,
+  "fixtures_or_synthetic_traces_or_tests": false,
+  "parser_or_stub_or_API_or_CLI_supplied": false,
+  "reason": "Inspected public sources expose substring/last-banner heuristics and scalar historical results, not the complete-record grammar required for positive whole-interval classification",
+  "prior_failures_or_HOLDs_reclassified": false,
+  "automatic_next_queue": false
+}

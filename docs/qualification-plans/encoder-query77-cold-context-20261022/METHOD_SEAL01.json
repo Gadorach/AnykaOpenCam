@@ -1,0 +1,68 @@
+{
+  "utc": "2026-10-22T18:58:51.171989+00:00",
+  "disposition": "BLOCKED_PUBLIC_COMPLETE_RECORD_GRAMMAR_MISSING_BEFORE_CODE",
+  "scope": "One bounded C2b source investigation/concrete blocked design; no classifier/library/API/stub or positive classification supplied",
+  "owned_paths_only": [
+    "apps/qualification/encoder-query77-cold-context/",
+    "docs/qualification-plans/encoder-query77-cold-context-20261022/"
+  ],
+  "source_contract_written_first": true,
+  "method": "Dedicated public source/result reads and static SHA256 comparisons only; no candidate or old-helper imports/calls/compile, no capture parsing, fixtures or traces",
+  "first_input_snapshot_utc": "2026-10-22T18:54:39.934791+00:00",
+  "first_snapshot_after_source_reading_and_contract_before_block_report": true,
+  "not_a_pre_use_native_or_build_seal": true,
+  "input_manifest": "INPUT_PINS01.tsv",
+  "input_count": 11,
+  "unchanged_input_count": 11,
+  "aggregate_format": "sorted workspace-relative UTF-8 path + NUL + raw SHA256 digest bytes",
+  "input_aggregate_before": "507e7853d733e6ecee3a4ed3141e91908015da84cc0e8c226738071c57ad7e7c",
+  "input_aggregate_after": "507e7853d733e6ecee3a4ed3141e91908015da84cc0e8c226738071c57ad7e7c",
+  "input_changes": [],
+  "context_note": "Current central checkpoint pins are separate snapshots, not rebased into historical design/source manifests. Harness parent selection update preceded this snapshot; no drift within the comparison window.",
+  "pinned_primitive_sources_match_original_public_design_manifest": {
+    "scripts/qc07f_boot.py": {
+      "bytes": 39829,
+      "sha256": "6ec0bd70513d530e64507c934ab1885da0cb547b907673c5162bf01c89f7d985"
+    },
+    "work/lightbulb-camera/implementation-20261008T205404Z/uart_capture.py": {
+      "bytes": 25426,
+      "sha256": "135a694bf79a1e46d07f089c2256d40ce8c584780c2fd8fa9d7f8b8137a29d00"
+    }
+  },
+  "outputs_excluding_this_seal": {
+    "apps/qualification/encoder-query77-cold-context/README.md": {
+      "bytes": 1605,
+      "sha256": "9b997e23a2fba9d90177a03d43c407c652bd7d8416a55c43409127697041edc5"
+    },
+    "docs/qualification-plans/encoder-query77-cold-context-20261022/SOURCE_CONTRACT.md": {
+      "bytes": 5248,
+      "sha256": "080708e145a9a6434d7b644c034b973be66f74c7d9bdee95c71aa170bd4f1319"
+    },
+    "docs/qualification-plans/encoder-query77-cold-context-20261022/BLOCK_REPORT.md": {
+      "bytes": 10098,
+      "sha256": "b41b32299a2f77e2b554e0813d580e84189a0da55fa8e2cd01c28fef69090463"
+    },
+    "docs/qualification-plans/encoder-query77-cold-context-20261022/INPUT_PINS01.tsv": {
+      "bytes": 1502,
+      "sha256": "3ddc007f07e287a75cb0f7e2fc93445480bef24bf35e9fbf2eef883b32b9ed7b"
+    },
+    "docs/qualification-plans/encoder-query77-cold-context-20261022/SYNTAX_STATUS01.json": {
+      "bytes": 700,
+      "sha256": "acf398bb4362f15b4626d73811e47edaef5608526ca3abaa087428096bee01d6"
+    }
+  },
+  "new_Python_units": 0,
+  "AST_syntax_status": "NOT_APPLICABLE_BLOCKED_BEFORE_CODE_NOT_PASS",
+  "minimum_missing_dependency": "Separately selected parent-prepared privacy-reviewed complete cold-record grammar: full banner/terminators, actual board/banner/DRAM order, every permitted intervening/echo/control record, password-to-held layout and whole-interval contradiction/partial rules; not raw capture or a new hardware operation",
+  "public_grammar_not_authenticated_capture_or_quiet_stability_proof": true,
+  "old_reset_password_classifier_changed_or_retried": false,
+  "historical_radio_or_reset_failure_reclassified_or_cleared": false,
+  "actual_private_raw_HOLD_control_capture_current_state_proc_dev_serial_UART_RPC_network_device_access": false,
+  "candidate_helper_library_generator_test_client_CLI_code_object_import_or_execution": false,
+  "fixtures_synthetic_traces_or_runtime_tests": false,
+  "Git_index_AGENTS_central_plan_prior_source_review_model_provider_safeguard_changes": false,
+  "policy_refusals_or_tool_errors": [],
+  "source_API_or_controller_adoption_or_native_admission": false,
+  "private_inspection_requested_or_queued": false,
+  "physical_action_or_automatic_next_worker_test_native_queue": false
+}
