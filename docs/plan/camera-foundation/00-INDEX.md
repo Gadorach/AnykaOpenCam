@@ -72,6 +72,15 @@ The new image has never booted; its embedded station76 module is unsupported.
 External failed-work retention/backing/bootstrap policy remains the next source
 dependency; do not reuse old22b controllers or treat their catch as unconsumed.
 
+The actual prestarted-backend/owned-listener composition and query77 client reviews
+are now completed with narrow SOURCE/API dispositions, not runtime/native or app
+acceptance. No worker remains active. See
+[composition disposition](../../qualification-plans/rtsp-prestarted-owned-listener-20261022/PARENT_DISPOSITION.md)
+and [query client disposition](../../qualification-plans/encoder-query77-client-20261022/PARENT_DISPOSITION.md).
+Next eligible work is [offline native-method design](../../qualification-plans/encoder-query77-native-method-20261022/METHOD_FINDINGS.md):
+fresh controller/HOLD profile and bounded volatile delivery/observer/recovery.
+No executable native recipe, capture, staging, boot or query is selected.
+
 ### October22 earlier steering — build and functional checklist
 
 Current state is maintained in the [execution ledger](EXECUTION_TASKS_20261021.md)

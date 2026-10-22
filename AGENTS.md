@@ -107,15 +107,21 @@ Six HOST/ARM changed-unit compiles/archive/REL PASS, but review requires R1: new
 observer can reap verifier, then retired stop/destroy loses still-open IPC FD.
 V1/review frozen and unaccepted. R1 v2 at `apps/rtsp-auth/prestarted-backend-v2/`
 has narrow independent SOURCE/API sufficiency; six HOST/ARM compiles cited,1,892
-review inputs parent-verified. One author owns fresh prestarted-owned-listener
-source/docs for actual one-backend/owned-FD composition, not approved by sibling
-results. Query77 client delivered at `apps/qualification/encoder-query77-client/`,
-HOST/ARM static compile/link36 commands PASS; ARM ELF30140B, neither ELF run.
-One reviewer owns fresh encoder-query77-client-review docs for actual query/guard/
-uncertainty and build-custody review. No boot/upload/run or new native recipe.
-Query77 monitor lacks the88-byte query command. No composite/native adoption.
-Original authentication/loopback constraints and media-retention block remain;
-Composition author/query-client reviewer are the only active lanes.
+review inputs parent-verified. Actual composition at
+`apps/rtsp-auth/prestarted-owned-listener/` has narrow independent SOURCE
+composition/API custody sufficiency;30 HOST/ARM C compilations/52 successful tool
+commands cited,3,499 review inputs parent-verified. Parent disposition is in the
+rtsp-prestarted-owned-listener qualification docs. Not runtime/native adoption.
+Query77 client at `apps/qualification/encoder-query77-client/` has narrow conditional
+SOURCE/API sufficiency;36 HOST/ARM compile/link commands cited,4,014 review inputs
+parent-verified. ARM ELF30140B, neither ELF run. Disposition is in query77-client
+qualification docs. No staging/boot/upload/run or executable native recipe.
+Both reviews completed; no active worker, transfer or hardware operation remains.
+Offline native-method findings pin19 public inputs and identify a possible volatile
+BusyBox delivery route, not admitted commands or recovery. Next is bounded offline
+controller/transfer/observer/recovery design in query77-native-method docs. Query77
+monitor lacks the88-byte query command. Authentication/loopback and media-retention
+blocks remain; actual bootstrap/backing/provisioning/main are still missing.
 Query77/return closeout committed locally `9fd7bb6`; ordinary index unchanged.
 No fresh target/recorder state has been queried; an early-expiry claim in the
 retention report was inherited parent wording, corrected in its parent disposition.

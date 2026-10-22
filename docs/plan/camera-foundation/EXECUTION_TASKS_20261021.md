@@ -1,5 +1,39 @@
 # Active execution ledger — remaining foundation work
 
+## Current closeout — completed reviews, no active workers
+
+RP-08/09, CORE-03/04, STREAM-04/07: actual prestarted-backend/owned-listener
+composition independently has narrow SOURCE composition/API custody sufficiency.
+Parent freshly verified3,499 reader inputs/six review outputs and14-file source
+aggregate `09325264c224a43b5664b48123bce1d05ea1269e6f209dcd2c9967424fdcba33`.
+Review seal `0bff07690e47d4817c820735d385c110d5f32b0ffa2a407e372d444ff4d0d7d5`.
+30 HOST/ARM C compilations/52 successful tool commands plus six expected diff exit1
+records cited, not rerun. One actual backend/child and moved listener, no serve-time
+fork/init/hidden finish/internal bind. R1 remains fixed; original failure retained.
+Parent disposition: `rtsp-prestarted-owned-listener-20261022/PARENT_DISPOSITION.md`
+under qualification docs. No full backend/native/app acceptance or v6 glue adoption.
+
+ENC-02 / PLAT-01: query77 client independently has narrow conditional SOURCE/API
+sufficiency; parent freshly verified4,014 reader inputs/ten outputs and five-file
+source aggregate `101afbb482c4562d02e58ab7c2aafed0d3cbb76a7d7b4cc36cf08e667fc80600`.
+Review seal `e05a777864ff87de8d8773caa1bc9c1d6da7581e24a4968f65dcd809818333ab`.
+36 HOST/ARM compile/link/tool commands cited, not rerun; ARM ELF30140B. Neither ELF
+executed. Parent disposition: `encoder-query77-client-20261022/PARENT_DISPOSITION.md`.
+Single watchdog/fixed1.5s phase/query-only source path is not global-idle, armed
+recovery, external retention or native admission. Late disable can remove the timer.
+
+All authors/reviewers completed; no active worker/transfer/hardware operation.
+Offline query77-native-method investigation pins19 public inputs and a possible
+BusyBox volatile delivery route. Next eligible task is bounded offline controller/
+HOLD-profile/transfer/observer/recovery design, stopping on unproved contracts.
+No executable native recipe, capture/staging/boot/query or user physical action
+selected. Last target observation remains original held U-Boot12:12UTC; no fresh
+target/recorder/owner/expiry status inherited. Both HOLDs stay untouched. Query77
+never booted; embedded station76 unsupported. Bootstrap/external media retention,
+backing/provisioning/main/release/native combined-load/G3/G8 remain open.
+
+## Historical handbacks — worker selections below are completed, not queues
+
 **Current parent closeout — query77 and strict pre-memory return:** both workers
 and independent return review completed; neither is an active build/review lane.
 Query77 offline source/build/package baseline accepted after250,219 dependency

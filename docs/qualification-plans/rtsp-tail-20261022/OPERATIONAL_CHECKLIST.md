@@ -20,19 +20,19 @@ encoder query now have bounded source/compile evidence. Single-owner watchdog,
 actual mandatory provider-FD integration and strict pre-memory custody return also
 have narrow source dispositions; none is full lifecycle/runtime acceptance or a
 deployable main. Query77's coherent kernel/package has parent offline disposition,
-never booted; its embedded station76 is unsupported. The two active source lanes
-address device-free backend startup and actual preopened-listener custody. External
-retention investigation stopped before code on absent media bootstrap/recovery
-and the serve-internal fork; it remains blocked, not implemented.
+never booted; its embedded station76 is unsupported. External retention investigation
+stopped before code on absent media bootstrap/recovery and the serve-internal fork;
+the new source split removes that fork from its selected serve path but does not
+implement external media retention or bootstrap/recovery.
 Owned listener now has narrow source/API custody sufficiency; prestarted-backend
 v1 compiled but review requires terminal IPC cleanup after observer-reaped exit.
 Fresh v2 correction has narrow R1 SOURCE/API sufficiency after focused re-review;
-no runtime leak or runtime correction PASS is claimed. A separate query77
-qualification client is source/build work only, not
-a selected hardware trial or app main. These remain separate
-siblings; actual source composition is now an author task, not accepted. These
-artifacts do not check off outstanding
-app/adoption/load gates below.
+no runtime leak or runtime correction PASS is claimed. The actual backend/listener
+composition now has independent narrow SOURCE composition/API custody sufficiency.
+The query77 qualification client also has conditional SOURCE/API sufficiency, not
+a selected hardware trial or app main. Both reviews completed; no worker remains
+active. Parent dispositions preserve all failures and native/bootstrap/retention/
+backing limits. These artifacts do not check off app/adoption/load gates below.
 
 ## Build-only deliverable and limitations
 
