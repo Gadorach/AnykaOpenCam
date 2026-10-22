@@ -1,0 +1,8 @@
+host-native_adapter.o
+host-sensor_baseline.o
+host-memory_reserve.o
+host-memory_runtime.o
+host-memory_reader.o
+host-watchdog_owner.o
+host-frame_fd_custody.o
+host-encoder_fd_custody.o

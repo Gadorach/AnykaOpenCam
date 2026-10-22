@@ -1,0 +1,8 @@
+arm-native_adapter.o
+arm-sensor_baseline.o
+arm-memory_reserve.o
+arm-memory_runtime.o
+arm-memory_reader.o
+arm-watchdog_owner.o
+arm-frame_fd_custody.o
+arm-encoder_fd_custody.o

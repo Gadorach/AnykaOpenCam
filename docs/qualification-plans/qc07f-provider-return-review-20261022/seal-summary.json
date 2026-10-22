@@ -1,0 +1,14 @@
+{
+  "UTC": "2026-10-22T14:37:28.565798+00:00",
+  "source_tree_sha256": "9ac7f363d7395fe944f2d068a4c964a5b20c77e9410e84633c07ce7f8b8a169f",
+  "counts": {
+    "source_files": 20,
+    "report_pins": 5,
+    "evidence_pins": 505,
+    "prior_pins": 4578
+  },
+  "contract_before_code": {
+    "bytes": 6080,
+    "sha256": "0280cc4ba3c35c666b9b2be96e0325876fd6cddbdefc92db94345e5478acf071"
+  }
+}

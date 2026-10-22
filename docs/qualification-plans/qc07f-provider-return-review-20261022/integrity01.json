@@ -1,0 +1,13 @@
+{
+  "UTC": "2026-10-22T14:48:28+00:00",
+  "selected_public_pins_hash_and_size_verified": 5108,
+  "all_4578_prior_pins_unchanged": true,
+  "captured_inputs_verified": 368,
+  "consumed_closure_copies_verified": 259,
+  "exact_app_generated_run_file_sets": true,
+  "no_symlinks": true,
+  "archive_members_body_verified": 16,
+  "source_aggregate": "9ac7f363d7395fe944f2d068a4c964a5b20c77e9410e84633c07ce7f8b8a169f",
+  "no_input_execution": true,
+  "no_policy_rejection": true
+}

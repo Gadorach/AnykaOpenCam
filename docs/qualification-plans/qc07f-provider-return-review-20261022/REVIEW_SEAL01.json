@@ -1,0 +1,95 @@
+{
+  "UTC": "2026-10-22T14:52:05+00:00",
+  "scope": "Independent ordinary static SOURCE/API/ownership and source/build custody review; no candidate/helper/script/compiler/generator/test/runtime/target/network/private/P1/query77/Git work",
+  "disposition": "Narrow strict pre-memory return SOURCE/API/ownership and changed/reused-object custody sufficiency only; not full-provider/native/app/G2/G3/G8",
+  "source_tree_sha256": "9ac7f363d7395fe944f2d068a4c964a5b20c77e9410e84633c07ce7f8b8a169f",
+  "prior_pins_verified": 4578,
+  "input_pins_revalidated": 5108,
+  "compiled_objects_cited_not_rerun": 4,
+  "reused_objects_verified": 12,
+  "archive_member_bodies_verified": 16,
+  "automatic_next_queue": false,
+  "remaining_dependencies": [
+    "bootstrap retention and independently admitted UNKNOWN-watchdog handoff/recovery policy",
+    "post-memory/nonactivated/partial-failed/ACTIVE/error lifecycle boundaries",
+    "external process retention and admitted backing/allocation design",
+    "provisioning/listener/native timing/query-driver/watchdog/combined-load/full app qualification"
+  ],
+  "files": {
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/METHOD.md": {
+      "sha256": "ff175446c34694b7e1a3431594ea130a01c7e4bf14190a65ee7e8117a84e41da"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/REVIEW.md": {
+      "sha256": "d54352f42651622710be7dffd46370ce3b9e300a9ea81b9afaadd03e79028576"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/actual-app.patch": {
+      "sha256": "038bbbf2c4cc26a78b06cb79843bb6314bc9eb152e3cb9d5e36480f750495388"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/actual-app02.patch": {
+      "sha256": "2193f7b7080ae47755ee5c9fe8909d378f44efd753d096de38e746f0e07316be"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/actual-applied.patch": {
+      "sha256": "6a3c151dc859a9eee415ecd03de09bc03c94e7c57720b87d9812efe3633e705e"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/actual-generated.patch": {
+      "sha256": "89f2487225b137e9d5b2126ef0181dd1e42cdd7a2176f99c1fa9d0b38700a1fd"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/app-diff-encoding-difference.patch": {
+      "sha256": "57c9a8f46f64201ce03c5a90591715552193d8a4fc2676bb82e9b1bdaad60347"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/archive-arm-members.txt": {
+      "sha256": "a5cf0b22005e9f7a11bf5c84bf6bdfa26d4fe4fb8c85568df1187bed5a9ea456"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/archive-body-pins.tsv": {
+      "sha256": "7e58451c240781db6b7e20f92e16d247b796acbb57aae88fb526cc980c6880ae"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/archive-host-members.txt": {
+      "sha256": "e340b48af784b8459daf59108952c6aafbb8cc8b12c43e0adc9d9ddeca9f9f3e"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/baseline-verification.json": {
+      "sha256": "1d2b02f3e11147da3e33e13d95a7692b1e0271ba3db9311c7b4488560a891718"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/build-receipt-verification.json": {
+      "sha256": "f9918b2cf1f1ea4dac725a323b6b2d54d04c40cadc28d1db87efe9c5ffa13fd8"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/captured-input-map.json": {
+      "sha256": "d84f9b47dcb90aba7bda1907a295959f63cd3fc48cc9fa13d5363e8f8cf8c872"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/dependency-verification.jsonl": {
+      "sha256": "4c0e1ff0656b809a6cbbe88be02e8929240d90a679ae703d331731e09575caf7"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/frozen-pin-set-equality.json": {
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/input-pins.json": {
+      "sha256": "09216d05288c88bde90c56a5fcb88ec878fdc58ce5b2aec5676878fa15c429f4"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/input-pins.sha256": {
+      "sha256": "4da702adb330bcd66e96be1dcc267d7e7076221d4fada7201991d820e605a917"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/integrity01.json": {
+      "sha256": "0fd0cb1c945a8a8ca196eb9a5e7711ff475aa82038051bda03de6cb1c9b7816d"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/object-custody.json": {
+      "sha256": "0572a863e79bed6df59ed6f12a25fa068b3f79ba3624e82451248759e59ed30d"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/postflight.json": {
+      "sha256": "dd2f3cee5a6e6627fb01c67061b4c2cbbd44e2c451d6ca16220f89112ab5f529"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/root-pins.sha256": {
+      "sha256": "fd117abc6569e4765bf3b8805063d94a39a260b9a85b7f0284104fd581d27d18"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/seal-summary.json": {
+      "sha256": "f8c3f6ef94617eb87ecb8c6dfcaf35bb35719390bdca88c5371e79ac8f68057f"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/source-aggregate.sha256": {
+      "sha256": "1050f68bd0ee5ba5dac08b16ac1829d8301378bf3e8aa4c0c26dbadb459335aa"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/symlinks.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-provider-return-review-20261022/review-files.sha256": {
+      "sha256": "4549a2c2ae343f7c98e3f09e2581f8c106658f125f38c3457fe82df205c2abdd"
+    }
+  }
+}

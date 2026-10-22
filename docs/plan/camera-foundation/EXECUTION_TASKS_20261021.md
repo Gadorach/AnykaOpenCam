@@ -1,14 +1,29 @@
 # Active execution ledger — remaining foundation work
 
-**Pre-memory/nonactivated return candidate delivered; focused review selected:**
-actual sequential sensor/frame/encoder moves, UNKNOWN watchdog last, strict
-uninitialized memory/unsealed session/no local activation history, actual partial
-FD ownership and terminal RETURNED source guards. No controls/close/END/ACK or
-fictional disabled state. HOST/ARM18 commands PASS,12 unchanged objects reused;
-4,578 prior files unchanged. Source pin
-`9ac7f363d7395fe944f2d068a4c964a5b20c77e9410e84633c07ce7f8b8a169f`.
-Reviewer owns provider-return-review docs only. Post-memory/failed-state handback,
-backing/external retention/RTSP/main/native remain blocked; query77 build separate.
+**Current parent closeout — query77 and strict pre-memory return:** both workers
+and independent return review completed; neither is an active build/review lane.
+Query77 offline source/build/package baseline accepted after250,219 dependency
+paths rehashed, exact query-only/five config identity delta, tool/header closure,
+CRCs, unchanged DTB/initramfs and ELF/static bounds checked. Image3603307B, SHA
+`f7c1996073644d8cd6c5c7ba1d2a8c2b71d2d6df4fb4697d01ad59a1e7525a5e`;
+never booted, station76 unpaired/unsupported, PLAT-02/full reproduction still open.
+See `encoder-query77-build-20261022/PARENT_DISPOSITION.md` under qualification docs.
+
+Strict pre-memory return has narrow independent SOURCE/API/ownership sufficiency;
+parent rehashed25 review outputs/5,108 inputs and source aggregate unchanged.
+18-command compile/12 reused objects/16 archive bodies are cited, not executed.
+Review seal `644c052ad930a2b9d132f3ff38d2c85c2d9b76fcc7e9a53423fc0adbee80dbe5`.
+See `qc07f-provider-return-20261022/PARENT_DISPOSITION.md`. Sequential recipient
+custody/remaining native HOLD is explicit; UNKNOWN watchdog return is not disabled,
+close permission or armed recovery. Post-memory/failed-state/backing remain blocked.
+
+One new isolated SOURCE prerequisite lane is selected for actual external failed-
+work process retention/bootstrap contract, fresh retention-owner-candidate/docs.
+No metadata/PID-only retention or fake success; stop before unsafe implementation
+if bootstrap cannot support it. No tests, native or RTSP rebase selected. Last
+hardware observation remains original held U-Boot12:12UTC; no current admission,
+old22b controller reuse/reset retry or HOLD clearance. Older entries below are
+chronological handbacks, not active worker queues or current target authority.
 
 **Actual provider derivative narrow SOURCE/API/ownership sufficiency:** no new
 correction-required defect in staged transfers/actual callsites.3,649 prior pins,
@@ -29,7 +44,7 @@ P3/P4a blocks verified,927 unique reader inputs unchanged. Review seal
 Full P4b stays BLOCKED on exact topology counts/active alternate and raw/current
 continuity; syntax2/2 cited only, no tests or module/native selection.
 
-**PLAT-01/08 + ENC-02 separate offline build selected:** fresh Linux6.18.55
+**Historical selection (now completed above): PLAT-01/08 + ENC-02 offline build:** fresh Linux6.18.55
 qualification image carrying only reviewed observational encoder OPEN_QUERY plus
 explicit new localversion/coherent installed23.1.3 compiler/config/generated-header
 baseline. New query77 builder/docs/source/build/image outputs; preserve all75/76

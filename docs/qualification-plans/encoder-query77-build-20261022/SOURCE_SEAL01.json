@@ -1,0 +1,58 @@
+{
+  "UTC": "2026-10-22T14:44:41.345451+00:00",
+  "image": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-images02/QC6EQ77.UIM",
+  "image_pin": {
+    "bytes": 3603307,
+    "sha256": "f7c1996073644d8cd6c5c7ba1d2a8c2b71d2d6df4fb4697d01ad59a1e7525a5e"
+  },
+  "local_generated_outputs_remain_ignored_not_staged": true,
+  "scope": "Author source/method/evidence freeze, not independent review/native/product acceptance",
+  "source_files": {
+    "apps/qualification/encoder-query77-build/README.md": {
+      "bytes": 4067,
+      "sha256": "0c0db0f6db5cede10396583e965cf35223f0fde7f3b1dc92354e55b46056427b"
+    },
+    "apps/qualification/encoder-query77-build/RECIPE.md": {
+      "bytes": 4626,
+      "sha256": "025bee1622a29052c4ddb962c5ad18809154b756432dc6aa134dcfaf3eae1120"
+    },
+    "apps/qualification/encoder-query77-build/build.py": {
+      "bytes": 25858,
+      "sha256": "dfdc47bd1275a553a208a2c12439b150ec64293ca0f8b5a10f4c73c1fec47482"
+    },
+    "apps/qualification/encoder-query77-build/inspect_build.py": {
+      "bytes": 2040,
+      "sha256": "89579ea6268572840a72554eca652c619a8cac8ffa4273c41630f74a20d56703"
+    },
+    "apps/qualification/encoder-query77-build/package.py": {
+      "bytes": 10754,
+      "sha256": "597310983843731834a772995409288425f0a87a277c778ff8796c8812e06c2d"
+    },
+    "apps/qualification/encoder-query77-build/package02.py": {
+      "bytes": 7748,
+      "sha256": "cdbe8b7e5a00400f4660c8b14483462e324baa1ab692f5e7dd297276f4dbfcf6"
+    },
+    "docs/qualification-plans/encoder-query77-build-20261022/BUILD_MANIFEST01.json": {
+      "bytes": 81242,
+      "sha256": "ea8c84ff4f61605e30e59f03249a6ee9a542ccd2ef3452bc68cea4528df695c6"
+    },
+    "docs/qualification-plans/encoder-query77-build-20261022/BUILD_RESULT.md": {
+      "bytes": 11646,
+      "sha256": "837109f2375f6f6deed8d5760a9a3a166ebbd01bb74d1062efd1d203701c24b6"
+    },
+    "docs/qualification-plans/encoder-query77-build-20261022/METHOD_CORRECTION01.md": {
+      "bytes": 1911,
+      "sha256": "7da7fe9f12c62fe3209ebd0e73780cc764c4e76893f49b446f1200ef2fbfd53f"
+    },
+    "docs/qualification-plans/encoder-query77-build-20261022/METHOD_NOTES.md": {
+      "bytes": 4785,
+      "sha256": "b2690f742c5e3acd498e8835b022f62e0b733fee346e468b34642178ec25856b"
+    }
+  },
+  "source_tree_hash_method": "sorted workspace-relative UTF-8 path + NUL + raw SHA256 bytes",
+  "source_tree_sha256": "a82d60034a051198f5061639e756b138f783eed9f3553a68251e7a16c86cc46f",
+  "work_final_build_seal": {
+    "bytes": 1734721,
+    "sha256": "ed25b875c96fbc9a12472b8ea3af127290156e3501a196472ab919e8ff9eb1c8"
+  }
+}

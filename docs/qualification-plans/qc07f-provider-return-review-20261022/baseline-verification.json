@@ -1,0 +1,11 @@
+{
+  "baseline_app_files": 18,
+  "baseline_source_files": 38,
+  "byte_imports": 6,
+  "baseline_and_imports": "PASS",
+  "original_producer_sensor_memory_helpers_close_unchanged": "cmp PASS",
+  "normal_watchdog_C_prefix": "cmp PASS",
+  "generated_and_applied_patches": "exact cmp PASS",
+  "app_patch": "all code/build deltas exact cmp; README GNU/difflib alignment differs; both inputs inspected",
+  "no_candidate_or_review_script_execution": true
+}

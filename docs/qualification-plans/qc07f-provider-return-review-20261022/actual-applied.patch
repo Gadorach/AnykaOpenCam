@@ -1,0 +1,274 @@
+--- a/native_adapter.c
++++ b/native_adapter.c
+@@ -58,6 +58,7 @@
+ {source_context_init(&native);memset(&source_clock,0,sizeof(source_clock));sensor_baseline_requested=0;memset(&sensor_baseline_report,0,sizeof(sensor_baseline_report));memset(&memory_state,0,sizeof(memory_state));codec_live_bytes=0;storage_selected=0;raw_reuse_requested=0;}
+ int nh_native_storage_select(const char *mode)
+ {
++ if(provider_terminal(&native))return CAMERA_NOT_READY;
+  if(!mode||storage_selected||memory_state.ledger.initialized||native.continuous_frame>=0||native.h264_stream_fd>=0)return CAMERA_NOT_READY;
+  if(!strcmp(mode,"raw-reuse-k75"))raw_reuse_requested=1;
+  else if(strcmp(mode,"separate"))return CAMERA_INVALID;
+@@ -65,6 +66,7 @@
+ }
+ int nh_native_optin_exact139(void)
+ {
++ if(provider_terminal(&native))return CAMERA_NOT_READY;
+  if(native.retirement_uncertain||native.continuous_frame>=0||native.continuous_sensor>=0||native.h264_stream_fd>=0||sensor_baseline_requested)return CAMERA_NOT_READY;
+  sensor_baseline_requested=1;return CAMERA_OK;
+ }
+@@ -172,6 +174,7 @@
+ }
+ int nh_native_config(struct camera_fmp4_config *c)
+ {
++ if(provider_terminal(&native))return CAMERA_NOT_READY;
+  size_t n=qc_h264_parameter_sets(parameters),split=4;
+  while(split+4<n&&memcmp(parameters+split,"\0\0\0\1",4))split++;
+  if(split+4>=n)return CAMERA_INVALID;
+@@ -202,3 +205,5 @@
+ #include "native-watchdog.inc"
+ 
+ #include "provider-take.inc"
++
++#include "provider-return.inc"
+--- a/watchdog_owner.c
++++ b/watchdog_owner.c
+@@ -125,3 +125,21 @@
+  if(qw_owner_idle_observe(o))return -1;
+  *slot=o->fd;*o=(struct qw_owner)QW_OWNER_EMPTY;return 0;
+ }
++int qw_owner_unknown_bootstrap_observe(struct qw_owner *o,uint64_t start)
++{
++ if(!o||o->state==QW_HOLD)return -1;
++ if(o->state!=QW_UNKNOWN||o->fd<3||o->session_start_ns||o->session_deadline_ns||
++    o->start_ns||o->phase||o->capture_progress||start==UINT64_MAX)return fail(o);
++ uint64_t now;
++ if(clock_read(o,&now)||now<start||now-start>=QW_PHASE_NS)return fail(o);
++ if(descriptor(o))return -1;
++ if(clock_read(o,&now)||now<start||now-start>=QW_PHASE_NS)return fail(o);
++ return 0; /* UNKNOWN still; no guard/session initialization or service */
++}
++int qw_owner_return_unknown_bootstrap(struct qw_owner *o,int *slot,uint64_t start)
++{
++ if(!o||!slot||*slot!=-1)return -1;
++ if(qw_owner_unknown_bootstrap_observe(o,start))return -1;
++ *slot=o->fd;o->fd=-1;o->state=QW_RETURNED_UNKNOWN;
++ return 0; /* recipient FD may be RUNNING with unknown timeout; never DISABLED */
++}
+--- a/watchdog_owner.h
++++ b/watchdog_owner.h
+@@ -3,7 +3,7 @@
+ #define QC_WATCHDOG_OWNER_H
+ #include <stdint.h>
+ #include <sys/types.h>
+-enum qw_state {QW_EMPTY,QW_UNKNOWN,QW_ENABLING,QW_ACTIVE5,QW_DISABLED,QW_HOLD};
++enum qw_state {QW_EMPTY,QW_UNKNOWN,QW_ENABLING,QW_ACTIVE5,QW_DISABLED,QW_HOLD,QW_RETURNED_UNKNOWN};
+ enum qw_phase {QW_NEXT=1,QW_RETIRE=2};
+ #define QW_SESSION_NS UINT64_C(10000000000)
+ struct qw_owner {
+@@ -38,6 +38,16 @@
+ int qw_owner_disable_boundary(struct qw_owner *);
+ int qw_owner_idle_observe(struct qw_owner *); /* DISABLED; no servicing */
+ int qw_owner_give_back(struct qw_owner *,int *); /* DISABLED custody move, no close */
++/* Separate pre-session UNKNOWN bootstrap handoff, NOT the DISABLED boundary.
++ * Trusted sole custody/disjoint slots; start is the original real whole-return
++ * start, never refreshed between roles. Real clock + GET descriptor checks only,
++ * <2s pre/post observation, no control/feed/close or finite-wait guarantee.
++ * Opening already started hardware; recipient must retain/service/recover under
++ * independently admitted policy. No timeout/headroom/armed/close permission proof.
++ * Success: actual FD moved to empty recipient; source terminal/fd=-1, metadata
++ * retained. Failure: HOLD retains actual remaining FD, no retry/repair. */
++int qw_owner_unknown_bootstrap_observe(struct qw_owner *,uint64_t);
++int qw_owner_return_unknown_bootstrap(struct qw_owner *,int *,uint64_t);
+ void qw_owner_fail(struct qw_owner *); /* sticky HOLD, no IO, no armed guarantee */
+ /* No reset/close/destructor/HOLD-clear/retry/periodic thread or timer. On failure
+  * actual FD stays owned, unless caller violates trusted custody. Failed disable
+--- a/native-watchdog.inc
++++ b/native-watchdog.inc
+@@ -15,7 +15,7 @@
+ }
+ int nh_native_watchdog_take(int *slot,dev_t device)
+ {
+- if(!native_initialized||native.retirement_uncertain||source_clock.failed||
++ if(!native_initialized||native.retirement_uncertain||source_clock.failed||provider_terminal(&native)||
+     native.continuous_sensor!=-1||native.continuous_frame!=-1||native.h264_stream_fd!=-1||
+     native.encoder_hold!=-1||native.produced_storage||native.resident_storage||
+     parked_after_stop||memory_state.ledger.initialized)return CAMERA_NOT_READY;
+@@ -87,6 +87,7 @@
+ }
+ int nh_native_release(void *context,const struct camera_packet *packet)
+ {
++ if(provider_terminal(&native))return CAMERA_NOT_READY;
+  if(!packet||!native_initialized||native.retirement_uncertain||source_clock.failed||
+     qw_owner_idle_observe(&native.watchdog))return native_guard_failure();
+  int result=native_release_legacy(context,packet);
+@@ -102,8 +103,8 @@
+ int nh_native_retire(void *context)
+ {
+  if(native.produced_storage)return CAMERA_BUSY; /* known held CPU loan, no effect */
+- /* No invented END/ACK proof for preloaded but never-activated roles. A healthy
+-  * unactivated handback API is not implemented; retain custody without rearm. */
++ /* Normal retirement still refuses COMMITTED, with no invented END/ACK. Only
++  * the separate strict pre-memory UNKNOWN custody return may handle that subset. */
+  if(native.providers.phase==QP_COMMITTED)return CAMERA_NOT_READY;
+  int result=native_guard_begin(QW_RETIRE);if(result)return result;
+  result=native_retire_body(context);
+@@ -129,7 +130,7 @@
+ }
+ int nh_native_watchdog_give_back(int *slot)
+ {
+- if(!native_initialized||native.retirement_uncertain||source_clock.failed||
++ if(!native_initialized||native.retirement_uncertain||source_clock.failed||provider_terminal(&native)||
+     native.providers.sensor_staged!=-1||native.providers.frame_staged.fd!=-1||
+     native.providers.encoder_staged.fd!=-1||native.providers.phase==QP_MOVING||native.providers.phase==QP_HOLD||
+     native.receipt_armed||native.continuous_frame!=-1||native.continuous_sensor!=-1||
+--- a/owned-provider-types.h
++++ b/owned-provider-types.h
+@@ -5,7 +5,7 @@
+ #include "encoder_fd_custody.h"
+ #include "stage-telemetry-uapi.h"
+ #include <sys/stat.h>
+-enum qp_phase {QP_EMPTY,QP_MOVING,QP_COMMITTED,QP_ACTIVE,QP_CLOSED,QP_HOLD};
++enum qp_phase {QP_EMPTY,QP_MOVING,QP_COMMITTED,QP_ACTIVE,QP_CLOSED,QP_HOLD,QP_RETURNING,QP_RETURNED};
+ struct qp_roles {
+  enum qp_phase phase; /* transfer/source history, NEVER authorization */
+  int sensor_staged;
+--- a/provider-observe.inc
++++ b/provider-observe.inc
+@@ -1,9 +1,11 @@
+ /* SPDX-License-Identifier: GPL-2.0-only
+  * Real observational refusals for the actual adopted descriptions, not grants.
+  */
++static int provider_terminal(const struct qc_rtsp_context *c)
++{return c->providers.phase==QP_RETURNING||c->providers.phase==QP_RETURNED;}
+ static void provider_hold(struct qc_rtsp_context *c)
+ {
+- c->providers.phase=QP_HOLD;
++ if(c->providers.phase!=QP_RETURNED)c->providers.phase=QP_HOLD;
+  if(c->providers.frame_staged.fd>=3)c->providers.frame_staged.state=QC_FRAME_FD_HOLD;
+  if(c->providers.encoder_staged.fd>=3)c->providers.encoder_staged.state=QC_ENCODER_FD_HOLD;
+ }
+--- /dev/null
++++ b/provider-return.h
+@@ -0,0 +1,29 @@
++/* SPDX-License-Identifier: GPL-2.0-only */
++#ifndef QP_PRE_MEMORY_PROVIDER_RETURN_H
++#define QP_PRE_MEMORY_PROVIDER_RETURN_H
++#include "owned-provider.h"
++/* ONLY healthy fully adopted COMMITTED, before memory/session/control/activation/
++ * local job/history/backing/loan/close. Stop/uncertainty/HOLD/clock failure first.
++ * Not post-memory or partial failed take, ACTIVE handback, END/ACK or recovery.
++ *
++ * Four distinct stable/disjoint writable int destinations, EACH -1. Original
++ * trusted exact boot/image/provider/prior-DMA admission and sole serialized
++ * nonaliased descriptions still required; metadata/NONE is NOT that proof.
++ * No recipient IO, reentry or concurrent FD/provider changes until call returns.
++ *
++ * Observe actual nodes/frame56/query88/global56 then move sensor, frame, encoder,
++ * UNKNOWN watchdog LAST. No controls/I2C selector/ARM/job/END/ACK/reset/write/close.
++ * Same real whole-return start checked <2s, not finite syscall or timer-headroom
++ * proof. Watchdog was already started by preopen and is returned UNKNOWN, not
++ * DISABLED. Bootstrap must retain/service/recover it under its OWN admitted policy;
++ * success is NOT close permission, electrical/DMA retirement or armed recovery.
++ *
++ * NONATOMIC: on later failure, populated destinations own ACTUAL earlier FDs;
++ * their native slots are -1. Remaining native FDs/process/snapshots stay on HOLD.
++ * Never retry/rollback/close/destruct or assume either side owns all. Caller's
++ * destination records and native real process must survive partial failure.
++ * Success is terminal RETURNED, not normal CLOSED, no setup/reinit/restart.
++ */
++int nh_native_return_pre_memory_unknown_bootstrap(int *sensor_slot,int *frame_slot,
++ int *encoder_slot,int *unknown_watchdog_slot);
++#endif
+--- /dev/null
++++ b/provider-return.inc
+@@ -0,0 +1,90 @@
++/* SPDX-License-Identifier: GPL-2.0-only
++ * Included after real provider take/wrappers. No helper or stack-only FD owner.
++ */
++#include "provider-return.h"
++static int return_uncertain(void)
++{
++ return stop||native.retirement_uncertain||source_clock.failed||native.watchdog.state==QW_HOLD||
++  native.providers.phase==QP_HOLD||native.providers.frame_staged.state==QC_FRAME_FD_HOLD||
++  native.providers.encoder_staged.state==QC_ENCODER_FD_HOLD;
++}
++static int return_boundary(uint64_t begin)
++{
++ if(return_uncertain()||qw_owner_unknown_bootstrap_observe(&native.watchdog,begin)||return_uncertain())
++  return native_guard_failure();
++ return CAMERA_OK;
++}
++static int return_receipt_empty(const struct qc_capture_receipt *q)
++{
++ return !q->version&&!q->reserved&&!q->source_instance&&!q->file_instance&&!q->generation&&
++  !q->state&&!q->reason&&!q->stop_result&&!q->reserved2&&!q->stopped_ns;
++}
++static int return_local_history_empty(void)
++{
++ const struct nh_memory_ledger *l=&memory_state.ledger;
++ return native.providers.phase==QP_COMMITTED&&provider_shape(&native)&&
++  native.providers.frame_staged.state==QC_FRAME_FD_EMPTY&&
++  native.providers.encoder_staged.state==QC_ENCODER_FD_EMPTY&&
++  !native.receipt_armed&&!native.last_source_instance&&!native.last_file_instance&&
++  !native.last_capture_generation&&!native.capture_sequence&&!native.receipt_renewals&&
++  !native.ownership_idr&&!native.ownership_idrs&&!native.h264_stream_frames&&!frame_count&&
++  !native.providers.codec_frame_num&&!native.raw_valid&&!native.produced_nal_crc32_bzip2&&
++  !native.producer_begin_ns&&!native.produced_timing.begin&&!native.produced_timing.captured&&
++  !native.produced_timing.encoded&&!native.produced_timing.bytes&&!native.produced_timing.keyframe&&
++  !native.produced_storage&&!native.resident_storage&&!parked_after_stop&&
++  native.encoder_hold==-1&&native.legacy_control==-1&&!native.close_unknown&&native.last_close_attempt==-1&&
++  return_receipt_empty(&native.receipt_key)&&return_receipt_empty(&native.receipt_evidence)&&
++  !expected.lease_token&&!expected.generation&&!expected.monotonic_ns&&!expected.codec&&
++  !expected.keyframe&&!expected.data&&!expected.bytes&&
++  !l->initialized&&!l->cpu_capacity_kib&&!l->cpu_paid_kib&&!l->nonmovable_cpu_debt_kib&&
++  !l->paid[0]&&!l->paid[1]&&!l->paid[2]&&!l->codec_paid&&!l->raw_reuse&&
++  !l->begin[0]&&!l->begin[1]&&!l->begin[2]&&!l->end[0]&&!l->end[1]&&!l->end[2]&&
++  !memory_state.count&&!memory_state.session_start&&!memory_state.now&&!memory_state.cancelled&&!memory_state.context&&
++  native.watchdog.state==QW_UNKNOWN&&native.watchdog.fd>=3&&!native.watchdog.session_start_ns&&
++  !native.watchdog.session_deadline_ns&&!native.watchdog.start_ns&&!native.watchdog.phase&&!native.watchdog.capture_progress;
++}
++static int return_frame_observe(void)
++{
++ struct qp_roles *p=&native.providers;
++ if(!provider_node(native.continuous_frame,O_RDONLY,p->frame_identity.device,
++       p->frame_filesystem,p->frame_inode))return native_guard_failure();
++ struct qc_capture_receipt bound=qc_receipt_request(NULL);
++ if(ioctl(native.continuous_frame,QC_ISP_RECEIPT_BIND,&bound)||provider_store_frame(&native,&bound))
++  return native_guard_failure();
++ if(bound.generation||bound.state!=QC_RECEIPT_NONE||bound.reason||bound.stop_result||bound.stopped_ns)
++  return native_guard_failure();
++ return CAMERA_OK;
++}
++int nh_native_return_pre_memory_unknown_bootstrap(int *sensor_slot,int *frame_slot,
++ int *encoder_slot,int *unknown_watchdog_slot)
++{
++ /* Do not classify already uncertain ownership as a healthy ineligible return. */
++ if(return_uncertain())return native_guard_failure();
++ if(!native_initialized||!return_local_history_empty())return CAMERA_NOT_READY;
++ if(!sensor_slot||!frame_slot||!encoder_slot||!unknown_watchdog_slot||
++    sensor_slot==frame_slot||sensor_slot==encoder_slot||sensor_slot==unknown_watchdog_slot||
++    frame_slot==encoder_slot||frame_slot==unknown_watchdog_slot||encoder_slot==unknown_watchdog_slot||
++    *sensor_slot!=-1||*frame_slot!=-1||*encoder_slot!=-1||*unknown_watchdog_slot!=-1)return CAMERA_INVALID;
++ uint64_t begin=nh_native_now(NULL);
++ if(begin==UINT64_MAX||return_boundary(begin)||lifetime())
++  return native_guard_failure();
++ if(return_boundary(begin))return native_guard_failure();
++ native.providers.phase=QP_RETURNING;
++ struct qp_roles *p=&native.providers;
++ if(!provider_node(native.continuous_sensor,O_RDWR,p->sensor_device,p->sensor_filesystem,p->sensor_inode)||
++    return_boundary(begin))return native_guard_failure();
++ *sensor_slot=native.continuous_sensor;native.continuous_sensor=-1;
++ if(return_uncertain()||return_frame_observe()||return_boundary(begin))
++  return native_guard_failure();
++ *frame_slot=native.continuous_frame;native.continuous_frame=-1;
++ /* All-role observer cannot run after earlier roles moved. Encoder-only observer
++  * is the real existing schema/reference check; no dispatch/recipient IO in between. */
++ if(return_uncertain()||provider_encoder_observe(&native)||return_boundary(begin))
++  return native_guard_failure();
++ *encoder_slot=native.h264_stream_fd;native.h264_stream_fd=-1;
++ if(return_uncertain()||qw_owner_return_unknown_bootstrap(&native.watchdog,unknown_watchdog_slot,begin))
++  return native_guard_failure();
++ native.providers.phase=QP_RETURNED; /* terminal; NOT CLOSED or a retirement proof */
++ if(return_uncertain())return native_guard_failure(); /* all actual FDs already returned */
++ return CAMERA_OK;
++}

@@ -60,8 +60,17 @@ established actual held original U-Boot. Fixed RAM76 upload, independent RAM CRC
 monitor startup and RO idle postcheck passed11:49UTC; normal watchdog smoke passed
 12:05UTC. One selected idle reset controller failed on password-text classification;
 actual reset/catch and separate10s stable original U-Boot observed12:12UTC. Target
-is now held U-Boot, not Linux. Both failure HOLDs remain; no further native queue.
+was last observed held U-Boot at12:12UTC, not Linux. No current runtime/owner/
+recovery admission is inherited. Both failure HOLDs remain; no native queue.
 Prior radio HOLD is preserved; source/helper/operation ownership gates still apply.
+
+Query77 kernel/package and strict pre-memory custody return now have parent
+offline/source dispositions, not native/full-app acceptance. See
+[query77 disposition](../../qualification-plans/encoder-query77-build-20261022/PARENT_DISPOSITION.md)
+and [return disposition](../../qualification-plans/qc07f-provider-return-20261022/PARENT_DISPOSITION.md).
+The new image has never booted; its embedded station76 module is unsupported.
+External failed-work retention/backing/bootstrap policy remains the next source
+dependency; do not reuse old22b controllers or treat their catch as unconsumed.
 
 ### October22 earlier steering — build and functional checklist
 

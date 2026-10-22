@@ -30,8 +30,9 @@ PASS11:49UTC, normal5s watchdog smoke/sameboot idle/FD postflight PASS12:05UTC.
 Then one selected idle watchdog reset **controller FAILED/HOLD** on password-text
 classification; actual full arm message/main-CPU reset/automatic held U-Boot catch
 observed. Separate receive-only reconciliation and10s stability PASS12:12UTC,
-no kernel handoff, no retry/rescue TX/reload. **Target is held original U-Boot,
-not running Linux RAM76.** Old Linux epochs invalidated; future catch consumed.
+no kernel handoff, no retry/rescue TX/reload. **Last target observation was held
+original U-Boot at12:12UTC, not Linux RAM76; no current runtime is inherited.**
+Old Linux epochs invalidated; future catch consumed.
 Original radio HOLD and new reset-failure HOLD remain untouched. No active
 operation/transfer. Result and next native boundary:
 `docs/qualification-plans/kernel76-transport-20261021/WATCHDOG_RESET22B_RESULT.md`.
@@ -58,12 +59,14 @@ configuration/interface/alternate counts and active alternate stay BLOCKED, not
 guessed; cached normalization/policy is not raw-wire exactness. P1/fullP4/P5,
 tests, ARM/module build and native remain unaccepted; old inputs frozen.
 
-**Separate offline build selected:** one worker owns fresh
-`apps/qualification/encoder-query77-build/` + query77 build docs/work outputs for a
-new Linux6.18.55 encoder-query-only qualification image with coherent NEW23.1.3
-compiler/config/header baseline. No old76 reproduction, station module build,
-P1 adoption, boot/installation or app/native acceptance. Original75/76 source/
-images/modules/recipes stay immutable. No target operation is queued.
+**Query77 offline build complete/disposed:** Linux6.18.55/NEW Clang23.1.3 coherent
+source/config/header/image baseline built; parent independently hashed250,219
+dependency paths and checked exact query-only delta/five config identities, CRCs,
+unchanged DTB/initramfs and static staging/decompression fit. Disposition:
+`docs/qualification-plans/encoder-query77-build-20261022/PARENT_DISPOSITION.md`.
+Never booted. Embedded station76 is unpaired/unsupported; PLAT-02 remains open.
+No old76 reproduction, station module build, P1 adoption or installation. All
+originals immutable; old22b controllers/reset must not be reused. No native queue.
 
 **App integration source:** real v6→RTSP callback glue at
 `apps/rtsp-auth/qc07f-runtime-candidate/` compiled HOST/ARM (54 commands), not run
@@ -85,14 +88,17 @@ Disposition: `docs/qualification-plans/qc07f-watchdog-owner-v2-20261022/PARENT_D
 Actual mandatory provider-FD derivative at
 `apps/rtsp-auth/qc07f-owned-provider-candidate/` has narrow independent SOURCE/API/
 ownership sufficiency; HOST/ARM20 commands/ten reused objects cited/verified.
-Strict pre-memory/nonactivated custody-return candidate delivered at
-`apps/rtsp-auth/qc07f-provider-unactivated-return/`, HOST/ARM18 commands PASS;
-one reviewer owns fresh provider-return-review docs before source adoption.
+Strict pre-memory return at `apps/rtsp-auth/qc07f-provider-unactivated-return/`
+has narrow independent SOURCE/API/ownership sufficiency; HOST/ARM18 commands cited,
+5,108 input pins parent-verified. Disposition:
+`docs/qualification-plans/qc07f-provider-return-20261022/PARENT_DISPOSITION.md`.
 UNKNOWN watchdog handoff is not disable/END, armed recovery or post-memory/
-failed-state cleanup. Source/history/partial-result and terminal guards need review.
+failed-state cleanup. One isolated source worker owns fresh retention-owner-candidate
+and retention-owner docs for the real external failed-work lifetime prerequisite;
+it must stop on an unsupported bootstrap contract, not invent a metadata owner.
 Frozen originals/RTSP glue stay separate. Native watchdog
 qualification, failed-next retention/backing/provisioning/owned listener remain
-blockers. No image/module change, new main or native memory-fit claim.
+blockers. No deployed image/module change, new main or native memory-fit claim.
 
 **Latest steering: build-focused, no further penetration/adversarial/mutation
 testing.** User requested a functional checklist and best-effort app build. See

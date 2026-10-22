@@ -1,0 +1,552 @@
+{
+  "verification": "PASS static receipt/closure metadata equality; author commands NOT RERUN",
+  "counts": {
+    "commands": 18,
+    "compiled_objects": 4,
+    "reused_objects": 12,
+    "prior_pins": 4578,
+    "frozen_build_pins": 4579,
+    "generated": 40,
+    "inputs": 368,
+    "consumed": 259,
+    "run_files": 443
+  },
+  "changed": [
+    "native-watchdog.inc",
+    "native_adapter.c",
+    "owned-provider-types.h",
+    "provider-observe.inc",
+    "provider-return.h",
+    "provider-return.inc",
+    "watchdog_owner.c",
+    "watchdog_owner.h"
+  ],
+  "commands": [
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "--version"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T14:29:10.086593+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/logs/host-compiler-version.txt",
+      "exit": 0,
+      "ended": "2026-10-22T14:29:10.088189+00:00",
+      "log_pin": {
+        "bytes": 227,
+        "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-dumpmachine"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T14:29:10.088293+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/logs/host-compiler-target.txt",
+      "exit": 0,
+      "ended": "2026-10-22T14:29:10.089821+00:00",
+      "log_pin": {
+        "bytes": 20,
+        "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-O2",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-misleading-indentation",
+        "-fno-common",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-usage",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/source",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/source/framework/include",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/host-native_adapter.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/source/native_adapter.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/host-native_adapter.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T14:29:10.089989+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/logs/host-cc-native_adapter.txt",
+      "exit": 0,
+      "ended": "2026-10-22T14:29:11.306275+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-O2",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-usage",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/source",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/source/framework/include",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/host-watchdog_owner.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/source/watchdog_owner.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/host-watchdog_owner.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T14:29:11.383686+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/logs/host-cc-watchdog_owner.txt",
+      "exit": 0,
+      "ended": "2026-10-22T14:29:11.598008+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/ar",
+        "rcsD",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/libqc07f-provider-return-host.a",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/host-native_adapter.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/host-sensor_baseline.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/host-memory_reserve.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/host-memory_runtime.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/host-memory_reader.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/host-watchdog_owner.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/host-frame_fd_custody.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/host-encoder_fd_custody.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T14:29:11.642547+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/logs/host-archive.txt",
+      "exit": 0,
+      "ended": "2026-10-22T14:29:12.007411+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-O2",
+        "-nostdlib",
+        "-r",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/host-native_adapter.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/host-sensor_baseline.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/host-memory_reserve.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/host-memory_runtime.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/host-memory_reader.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/host-watchdog_owner.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/host-frame_fd_custody.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/host-encoder_fd_custody.o",
+        "-Wl,-Map=/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/host.map",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/host-provider-return-NOT-EXECUTABLE.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T14:29:12.007613+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/logs/host-relocatable-link.txt",
+      "exit": 0,
+      "ended": "2026-10-22T14:29:12.023474+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/readelf",
+        "-h",
+        "-A",
+        "-r",
+        "-W",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/host-provider-return-NOT-EXECUTABLE.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T14:29:12.023609+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/logs/host-ELF-relocations.txt",
+      "exit": 0,
+      "ended": "2026-10-22T14:29:12.238102+00:00",
+      "log_pin": {
+        "bytes": 151314,
+        "sha256": "1bccb7be8b4e3c39113c324775911813956a65fc63035babdc7b006322ba27f7"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/nm",
+        "-u",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/host-provider-return-NOT-EXECUTABLE.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T14:29:12.239007+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/logs/host-undefined-symbols.txt",
+      "exit": 0,
+      "ended": "2026-10-22T14:29:12.271045+00:00",
+      "log_pin": {
+        "bytes": 599,
+        "sha256": "72d5478f70323a852bb8bd67be6220e0a52c44491be625f74c4a5ef6a08fa5d6"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/nm",
+        "-g",
+        "--defined-only",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/host-provider-return-NOT-EXECUTABLE.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T14:29:12.271206+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/logs/host-defined-symbols.txt",
+      "exit": 0,
+      "ended": "2026-10-22T14:29:12.303238+00:00",
+      "log_pin": {
+        "bytes": 2224,
+        "sha256": "8b4e28d4a9320806331e38cad1e585e1939a469571e0a05dae18c2d0a0078be8"
+      }
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "--version"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T14:29:12.338878+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/logs/arm-compiler-version.txt",
+      "exit": 0,
+      "ended": "2026-10-22T14:29:12.342649+00:00",
+      "log_pin": {
+        "bytes": 288,
+        "sha256": "7b501201183c07e1e9078ca3f8b1f502d07fd67c414e92183c01e8787c00a0d4"
+      }
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-dumpmachine"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T14:29:12.342795+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/logs/arm-compiler-target.txt",
+      "exit": 0,
+      "ended": "2026-10-22T14:29:12.346497+00:00",
+      "log_pin": {
+        "bytes": 29,
+        "sha256": "d0cf670b8c286026ebd268b1f5ecdd6be41552e0e254a949fb50ab0ed085dd23"
+      }
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-misleading-indentation",
+        "-fno-common",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-usage",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/source",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/source/framework/include",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/arm-native_adapter.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/source/native_adapter.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/arm-native_adapter.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T14:29:12.346778+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/logs/arm-cc-native_adapter.txt",
+      "exit": 0,
+      "ended": "2026-10-22T14:29:13.113255+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-usage",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/source",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/source/framework/include",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/arm-watchdog_owner.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/source/watchdog_owner.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/arm-watchdog_owner.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T14:29:13.188103+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/logs/arm-cc-watchdog_owner.txt",
+      "exit": 0,
+      "ended": "2026-10-22T14:29:13.403597+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-ar",
+        "rcsD",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/libqc07f-provider-return-arm.a",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/arm-native_adapter.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/arm-sensor_baseline.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/arm-memory_reserve.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/arm-memory_runtime.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/arm-memory_reader.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/arm-watchdog_owner.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/arm-frame_fd_custody.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/arm-encoder_fd_custody.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T14:29:13.444562+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/logs/arm-archive.txt",
+      "exit": 0,
+      "ended": "2026-10-22T14:29:13.449364+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-nostdlib",
+        "-r",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/arm-native_adapter.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/arm-sensor_baseline.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/arm-memory_reserve.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/arm-memory_runtime.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/arm-memory_reader.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/arm-watchdog_owner.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/arm-frame_fd_custody.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/objects/arm-encoder_fd_custody.o",
+        "-Wl,-Map=/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/arm.map",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/arm-provider-return-NOT-EXECUTABLE.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T14:29:13.449558+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/logs/arm-relocatable-link.txt",
+      "exit": 0,
+      "ended": "2026-10-22T14:29:13.481544+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-readelf",
+        "-h",
+        "-A",
+        "-r",
+        "-W",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/arm-provider-return-NOT-EXECUTABLE.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T14:29:13.481687+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/logs/arm-ELF-relocations.txt",
+      "exit": 0,
+      "ended": "2026-10-22T14:29:13.489456+00:00",
+      "log_pin": {
+        "bytes": 75107,
+        "sha256": "0fd7fc40a291fe9059a0d224000c2b5c79d5b1c9f2d6f99b47494c054f5e5b58"
+      }
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-nm",
+        "-u",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/arm-provider-return-NOT-EXECUTABLE.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T14:29:13.489958+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/logs/arm-undefined-symbols.txt",
+      "exit": 0,
+      "ended": "2026-10-22T14:29:13.493671+00:00",
+      "log_pin": {
+        "bytes": 599,
+        "sha256": "50ee9045e2b75be7068454724004148e80eb4fe9e13d63f0fb8329fe46fc1195"
+      }
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-nm",
+        "-g",
+        "--defined-only",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/arm-provider-return-NOT-EXECUTABLE.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T14:29:13.493810+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/logs/arm-defined-symbols.txt",
+      "exit": 0,
+      "ended": "2026-10-22T14:29:13.497524+00:00",
+      "log_pin": {
+        "bytes": 1784,
+        "sha256": "8b7e99fd28367d28c8e24f5a5e0ceb65f615db128364e2ae464eec0a3db475f2"
+      }
+    }
+  ],
+  "artifacts": {
+    "libqc07f-provider-return-host.a": {
+      "bytes": 119394,
+      "sha256": "5cbc05c22c9d311001ce5a025a5e6a4934bc8a72582355e4fcd83c79621441ec",
+      "executed": false
+    },
+    "host-provider-return-NOT-EXECUTABLE.o": {
+      "bytes": 107904,
+      "sha256": "8f2cdb4f66caa7d34ed59513e087cfc3b1b6444e2ddb4cd1a7308310c97451fd",
+      "executed": false
+    },
+    "libqc07f-provider-return-arm.a": {
+      "bytes": 78878,
+      "sha256": "9e57e778035f397d3a01623b7206fdfe373170ca54bb80a6d6994633c78a7ccf",
+      "executed": false
+    },
+    "arm-provider-return-NOT-EXECUTABLE.o": {
+      "bytes": 69140,
+      "sha256": "499c790163df920b38d9b87b8789f006c1b20e9e33ca04076b2009cf42c9602d",
+      "executed": false
+    }
+  },
+  "tools": {
+    "host": {
+      "cc": {
+        "resolved": "/usr/bin/gcc",
+        "bytes": 2451072,
+        "sha256": "a5f680ca8b01b1e7a98d531cac90f258875a301d841fab28a8b56d513470f988"
+      },
+      "ar": {
+        "resolved": "/usr/bin/ar",
+        "bytes": 55792,
+        "sha256": "8bbb1c48f7d248ff7a4f33691ad2a12426d8f7879ea93de7201854e36611f312"
+      },
+      "nm": {
+        "resolved": "/usr/bin/nm",
+        "bytes": 48560,
+        "sha256": "cf9a8d5beccc243c2010b863cb861e4e8a74cdb294af59dcf122950df2e8c440"
+      },
+      "readelf": {
+        "resolved": "/usr/bin/readelf",
+        "bytes": 867440,
+        "sha256": "b561a09504aff0f2c864da60a268cafee9171fdd1574a23fde6158f95ad55294"
+      }
+    },
+    "arm": {
+      "cc": {
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/toolchain-wrapper",
+        "bytes": 14704,
+        "sha256": "f4db963a226e01244ce6f7b5d1ec6d57474dd811119ff8834429f022835ce9c1"
+      },
+      "ar": {
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-ar",
+        "bytes": 1244216,
+        "sha256": "5c9952d4cbb569f49339fced43b9b5216ac753c5308ab79d71855ba01f46dec2"
+      },
+      "nm": {
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-nm",
+        "bytes": 1226128,
+        "sha256": "ac582b9cd7be2eb532bee0ad0dedcab3857bfa679fde6bb8059759ae77b65ae3"
+      },
+      "readelf": {
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-readelf",
+        "bytes": 1108696,
+        "sha256": "9175d2e15462a4b75c3545bd30407c807d2e82ae3f90468e564c26ecd6554246"
+      }
+    }
+  },
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "LC_ALL": "C",
+    "SOURCE_DATE_EPOCH": "1791763200",
+    "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/tmp",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "byte_imports": {
+    "frame_fd_custody.c": {
+      "original": "apps/rtsp-auth/qc07f-provider-candidate-v2/frame_fd_custody.c",
+      "bytes": 3484,
+      "sha256": "d6c4a65939c2f6bde1498eb6622c9487a92757c0d7170bcc90d3137a7cfcf78d"
+    },
+    "frame_fd_custody.h": {
+      "original": "apps/rtsp-auth/qc07f-provider-candidate-v2/frame_fd_custody.h",
+      "bytes": 2887,
+      "sha256": "6dce51456b7588fa46c8605d73d222a57eb320abc1583399a78f4a6ae45365ae"
+    },
+    "encoder_fd_custody.c": {
+      "original": "apps/rtsp-auth/qc07f-provider-candidate-v2/encoder_fd_custody.c",
+      "bytes": 4006,
+      "sha256": "21e9ce06803eb28a416e8841b66ac0326f7b6b199dd9b433bedafa51bb564ce3"
+    },
+    "encoder_fd_custody.h": {
+      "original": "apps/rtsp-auth/qc07f-provider-candidate-v2/encoder_fd_custody.h",
+      "bytes": 3116,
+      "sha256": "c51cdc00bc4f3999296335de5f45a8c7bafd37388d131fe14847fd0e8c5917d6"
+    },
+    "encoder-open-query.h": {
+      "original": "apps/qualification/kernel76-encoder-identity/encoder-open-query.h",
+      "bytes": 2455,
+      "sha256": "6052069fa5428185eb8c61871404256c53c30c12515eaa5c9ab80c424facde37"
+    },
+    "stage-telemetry-uapi.h": {
+      "original": "docs/qualification-plans/encoder-identity-20261022/runs/build01/candidate/stage-telemetry-uapi.h",
+      "bytes": 2203,
+      "sha256": "6bab6082882a574ad7a98613c68a64225147dbfe9773ed73bd6e5b0f70d7a9e7"
+    }
+  },
+  "contract_before_code": {
+    "bytes": 6080,
+    "sha256": "0280cc4ba3c35c666b9b2be96e0325876fd6cddbdefc92db94345e5478acf071"
+  }
+}
