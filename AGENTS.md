@@ -69,16 +69,14 @@ Narrow static query/API sufficiency, not old76 compiler/ABI pairing or full buil
 Review: `docs/qualification-plans/encoder-identity-clang2313-20261022/PARENT_REVIEW.md`.
 Persistent encoder-FD custody v2 is delivered, HOST/ARM18-command compile PASS;
 parent static/source-custody disposition preserves it as compile-only candidate.
-Single-owned watchdog v1/build04 compiled HOST/ARM26 commands, but focused review
-requires W1 fixed-session renewal, W2 early NEXT output-zero and W3 no-effect
-held-loan BUSY corrections. Fresh `apps/rtsp-auth/qc07f-watchdog-owner-v2/` is
-delivered: HOST/ARM18 commands PASS, eight unchanged objects reused with provenance.
-V1/v2 stay frozen; one reviewer owns fresh watchdog-owner-v2-review docs for focused
-correction/source/reuse review before adoption. Original findings:
-`docs/qualification-plans/qc07f-watchdog-owner-review-20261022/REVIEW.md`.
-Frozen RTSP glue/FD custody stay separate; current kernel/image/source/build01 immutable.
-Watchdog ownership, failed-next retention/backing/provisioning/owned listener remain
-blockers. No new main or native memory-fit claim.
+Single-owned watchdog v2 W1–W3 has narrow independent SOURCE/API sufficiency;
+HOST/ARM18 commands/eight reused objects verified, not runtime/native acceptance.
+Disposition: `docs/qualification-plans/qc07f-watchdog-owner-v2-20261022/PARENT_DISPOSITION.md`.
+One worker owns fresh `apps/rtsp-auth/qc07f-owned-provider-candidate/` for actual
+mandatory provider-FD integration into that guarded native derivative, no fallback
+opens or fake main. Frozen originals/RTSP glue stay separate. Native watchdog
+qualification, failed-next retention/backing/provisioning/owned listener remain
+blockers. No image/module change, new main or native memory-fit claim.
 
 **Latest steering: build-focused, no further penetration/adversarial/mutation
 testing.** User requested a functional checklist and best-effort app build. See

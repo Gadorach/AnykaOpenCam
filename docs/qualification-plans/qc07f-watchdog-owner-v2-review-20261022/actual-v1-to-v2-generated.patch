@@ -1,0 +1,155 @@
+--- v1-source/native-watchdog.inc
++++ v2-source/native-watchdog.inc
+@@ -3,6 +3,7 @@
+  * One real singleton/context, no synthetic producer or success callbacks.
+  */
+ #include "native_watchdog.h"
++_Static_assert(NH_SESSION_NS==QW_SESSION_NS,"original fixed 10s session");
+ static unsigned native_initialized;
+ static int native_guard_failure(void)
+ {nh_native_fence(NULL);return CAMERA_IO_ERROR;}
+@@ -20,6 +21,22 @@
+     parked_after_stop||memory_state.ledger.initialized)return CAMERA_NOT_READY;
+  return qw_owner_take(&native.watchdog,slot,device)?CAMERA_NOT_READY:CAMERA_OK;
+ }
++int nh_native_memory_start(uint64_t start)
++{
++ /* Keep the original CAMERA_OK / CAMERA_NOT_READY API, not NH_MEM_* reasons.
++  * Refuse repeats BEFORE the unchanged initializer can memset accounting. */
++ if(stop||native.retirement_uncertain||source_clock.failed||native.watchdog.state==QW_HOLD){
++  (void)native_guard_failure();return CAMERA_NOT_READY;
++ }
++ if(!native_initialized||!native_guard_present()||!storage_selected)return CAMERA_NOT_READY;
++ if(memory_state.ledger.initialized||native.watchdog.session_deadline_ns)return CAMERA_NOT_READY;
++ /* Bind real-clock-checked original start BEFORE setup; even failed setup cannot
++  * obtain a fresh budget. UNKNOWN/future/backward/late time is not a new epoch. */
++ if(qw_owner_seal_session(&native.watchdog,start)||native_memory_start_legacy(start)){
++  (void)native_guard_failure();return CAMERA_NOT_READY;
++ }
++ return CAMERA_OK;
++}
+ static int native_guard_begin(enum qw_phase phase)
+ {
+  if(native_initialized&&(stop||native.retirement_uncertain||source_clock.failed))
+@@ -29,16 +46,25 @@
+   return CAMERA_NOT_READY;
+  uint64_t start=nh_native_now(NULL);
+  if(start==UINT64_MAX||!memory_state.ledger.initialized||
+-    memory_state.session_start>UINT64_MAX-NH_SESSION_NS||
+-    start<memory_state.session_start||start-memory_state.session_start>=NH_SESSION_NS)
++    !native.watchdog.session_deadline_ns||
++    memory_state.session_start!=native.watchdog.session_start_ns||
++    start<native.watchdog.session_start_ns||start>=native.watchdog.session_deadline_ns)
+   return native_guard_failure();
+- if(qw_owner_begin(&native.watchdog,start,phase,memory_state.session_start+NH_SESSION_NS))
++ if(qw_owner_begin(&native.watchdog,start,phase,native.watchdog.session_deadline_ns))
+   return native_guard_failure();
+  return CAMERA_OK;
+ }
+ int nh_native_next(void *context,struct camera_packet *packet,struct nh_key *key)
+ {
++ /* Trusted caller-owned, stable, disjoint outputs, never private loan/backing. */
++ if(packet)memset(packet,0,sizeof(*packet));
++ if(key)memset(key,0,sizeof(*key));
+  if(!packet||!key)return CAMERA_INVALID;
++ /* Sticky uncertainty precedes known BUSY. No clock/FD/control/query/service
++  * on the known-loan path, and no private expected/loan/custody mutation. */
++ if(stop||native.retirement_uncertain||source_clock.failed||native.watchdog.state==QW_HOLD)
++  return native_guard_failure();
++ if(native.produced_storage||parked_after_stop)return CAMERA_BUSY;
+  /* No lifetime open/query, malloc, sensor/config/capture or codec effect until
+   * actual owned guard and original preparation/paid-buffer prerequisites exist. */
+  if(!sensor_baseline_requested||!storage_selected||!memory_state.ledger.initialized||
+--- v1-source/native_adapter.c
++++ v2-source/native_adapter.c
+@@ -68,7 +68,7 @@
+  sensor_baseline_requested=1;return CAMERA_OK;
+ }
+ void nh_native_sensor_report(void){nh_sensor_log(&sensor_baseline_report);}
+-int nh_native_memory_start(uint64_t start)
++static int native_memory_start_legacy(uint64_t start)
+ {
+  if(!native_guard_present())return CAMERA_NOT_READY;
+  if(!storage_selected)return CAMERA_NOT_READY;
+--- v1-source/native_watchdog.h
++++ v2-source/native_watchdog.h
+@@ -9,6 +9,15 @@
+  * no aliases or external operations; exact core/driver/image/current recovery and
+  * provider/backing admission remain trusted prerequisites, NOT metadata proof.
+  * No native acceptance or permission to call any old allocation/capture helper.
++ * Memory start keeps CAMERA_OK/CAMERA_NOT_READY; setup is one-shot, using a real
++ * monotonic start no later than the actual clock and less than2s old. That start
++ * seals the sole10s deadline, including setup cost, even if setup later fails.
++ * Repeated setup refuses without touching original memory accounting/budget.
++ * All arguments/slots/outputs must be stable and disjoint from each other and
++ * native private owner/expected packet/backing and any still-owned loan bytes.
++ * This is a trusted caller contract, NOT a runtime alias/custody proof. NEXT
++ * clears each non-NULL output before refusals; known held/parked loan is BUSY
++ * without clock/control/query, after sticky uncertainty/HOLD precedence.
+  */
+ int nh_native_watchdog_take(int *bootstrap_slot,dev_t expected_device);
+ /* Only after successful logical disable + known local source normal retirement,
+--- v1-source/watchdog_owner.c
++++ v2-source/watchdog_owner.c
+@@ -42,6 +42,18 @@
+   .node_filesystem=st.st_dev,.node_inode=st.st_ino};
+  *slot=-1;return 0;
+ }
++int qw_owner_seal_session(struct qw_owner *o,uint64_t start)
++{
++ if(!o||o->state==QW_HOLD)return -1;
++ if(o->state!=QW_UNKNOWN||o->session_deadline_ns||
++    start>=UINT64_MAX-QW_SESSION_NS)return fail(o);
++ uint64_t now;
++ if(clock_read(o,&now)||now<start||now-start>=QW_PHASE_NS)return fail(o);
++ if(descriptor(o))return -1;
++ if(clock_read(o,&now)||now<start||now-start>=QW_PHASE_NS)return fail(o);
++ o->session_start_ns=start;o->session_deadline_ns=start+QW_SESSION_NS;
++ return 0;
++}
+ int qw_owner_check(struct qw_owner *o)
+ {
+  if(!o||o->state==QW_HOLD)return -1;
+@@ -66,9 +78,10 @@
+ {
+  if(!o||o->state==QW_HOLD)return -1;
+  if((o->state!=QW_UNKNOWN&&o->state!=QW_DISABLED)||
+-    source_start==UINT64_MAX||session_deadline==UINT64_MAX||session_deadline<=source_start||
++    !o->session_deadline_ns||session_deadline!=o->session_deadline_ns||
++    source_start==UINT64_MAX||source_start<o->session_start_ns||session_deadline<=source_start||
+     (phase!=QW_NEXT&&phase!=QW_RETIRE))return fail(o);
+- o->start_ns=source_start;o->session_deadline_ns=session_deadline;
++ o->start_ns=source_start; /* original sealed session is never overwritten */
+  o->phase=phase;o->capture_progress=0;o->state=QW_ENABLING;
+  int timeout=5,option=WDIOS_ENABLECARD;
+  /* SETTIMEOUT may itself ping/start inherited active hardware. Mark transition
+--- v1-source/watchdog_owner.h
++++ v2-source/watchdog_owner.h
+@@ -5,13 +5,14 @@
+ #include <sys/types.h>
+ enum qw_state {QW_EMPTY,QW_UNKNOWN,QW_ENABLING,QW_ACTIVE5,QW_DISABLED,QW_HOLD};
+ enum qw_phase {QW_NEXT=1,QW_RETIRE=2};
++#define QW_SESSION_NS UINT64_C(10000000000)
+ struct qw_owner {
+  int fd;
+  enum qw_state state;
+  enum qw_phase phase;
+  dev_t device,node_filesystem;
+  ino_t node_inode;
+- uint64_t last_ns,start_ns,session_deadline_ns;
++ uint64_t last_ns,start_ns,session_start_ns,session_deadline_ns;
+  unsigned capture_progress;
+ };
+ #define QW_OWNER_EMPTY { .fd=-1 }
+@@ -21,6 +22,11 @@
+  * armed proof. No actor opens/duplicates/closes here. Source associations and
+  * original provider/backing admission are NOT proved by descriptor metadata. */
+ int qw_owner_take(struct qw_owner *,int *,dev_t);
++/* One-shot before unchanged memory initializer; actual clock must be >=start
++ * and <start+2s. Latches start+10s for this owned lifetime, never renewed by begin.
++ * Failure is sticky HOLD. No watchdog control/service; no setup restart API. */
++int qw_owner_seal_session(struct qw_owner *,uint64_t);
++/* Supplied deadline MUST equal the already sealed one on EVERY begin. */
+ int qw_owner_begin(struct qw_owner *,uint64_t,enum qw_phase,uint64_t);
+ int qw_owner_check(struct qw_owner *); /* active phase, real clock, <2s */
+ /* ONLY exact producer callsite after full raw CRC/extent/status and ACTIVE keyed

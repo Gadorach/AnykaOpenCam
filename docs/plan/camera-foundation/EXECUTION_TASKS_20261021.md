@@ -1,5 +1,16 @@
 # Active execution ledger — remaining foundation work
 
+**Watchdog v2 focused review sufficient at W1–W3 SOURCE/API/reuse scope:** no new
+correction-required defect; eight reused objects/dependencies and both archive
+member sets verified. Final1,619 inputs unchanged; author18-command result cited,
+not rerun. Review seal
+`aa73289cac397d740326527fd2be8b0b495f8056c377d477355ffa7f726a2bc8`.
+Parent source disposition retains all native/functional/memory/failed-next limits,
+and explicitly selects fresh `qc07f-owned-provider-candidate/` real mandatory-FD
+integration into actual guarded native context. No fallback opens, fake readiness,
+main/RTSP adoption, tests, image/module build or hardware operation. Partial custody
+must retain actual FDs/process; all prior sources/reviews and both HOLDs preserved.
+
 **P3 owned-control SOURCE candidate delivered; independent review selected:** one
 heap FWINFO request, explicit waiter/registry/pending/queue/worker/submit/callback
 roles, immutable500ms deadline, nonblocking token and actual first-error-serialized

@@ -1,0 +1,136 @@
+{
+  "UTC": "2026-10-22T13:34:44.751712+00:00",
+  "argv": [
+    "docs/qualification-plans/qc07f-watchdog-owner-v2-review-20261022/finalize_review.py"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "python": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+  "reader_inputs_revalidated_unchanged": 1619,
+  "changed_consumer_final_header_dependencies": [
+    {
+      "mode": "host",
+      "unit": "native_adapter",
+      "dependency_count": 171,
+      "final_project_dependencies_verified": [
+        "native_adapter.c",
+        "native_adapter.h",
+        "handoff.h",
+        "framework/include/camera/fmp4.h",
+        "framework/include/camera/backend.h",
+        "framework/include/camera/packet_hub.h",
+        "memory_reserve.h",
+        "sensor_baseline.h",
+        "framework/include/camera/rtsp_clock.h",
+        "memory_runtime.h",
+        "rtspd-native-import.c",
+        "qc07f_hwenc.h",
+        "h264-baseline.h",
+        "isp-stream.h",
+        "capture-receipt.h",
+        "capture-retirement-uapi.h",
+        "crc-bzip2.h",
+        "framework/include/camera/dma_integrity.h",
+        "watchdog_owner.h",
+        "source-close-once.inc",
+        "native-watchdog.inc",
+        "native_watchdog.h"
+      ]
+    },
+    {
+      "mode": "host",
+      "unit": "watchdog_owner",
+      "dependency_count": 75,
+      "final_project_dependencies_verified": [
+        "watchdog_owner.c",
+        "watchdog_owner.h"
+      ]
+    },
+    {
+      "mode": "arm",
+      "unit": "native_adapter",
+      "dependency_count": 67,
+      "final_project_dependencies_verified": [
+        "native_adapter.c",
+        "native_adapter.h",
+        "handoff.h",
+        "framework/include/camera/fmp4.h",
+        "framework/include/camera/backend.h",
+        "framework/include/camera/packet_hub.h",
+        "memory_reserve.h",
+        "sensor_baseline.h",
+        "framework/include/camera/rtsp_clock.h",
+        "memory_runtime.h",
+        "rtspd-native-import.c",
+        "qc07f_hwenc.h",
+        "h264-baseline.h",
+        "isp-stream.h",
+        "capture-receipt.h",
+        "capture-retirement-uapi.h",
+        "crc-bzip2.h",
+        "framework/include/camera/dma_integrity.h",
+        "watchdog_owner.h",
+        "source-close-once.inc",
+        "native-watchdog.inc",
+        "native_watchdog.h"
+      ]
+    },
+    {
+      "mode": "arm",
+      "unit": "watchdog_owner",
+      "dependency_count": 30,
+      "final_project_dependencies_verified": [
+        "watchdog_owner.c",
+        "watchdog_owner.h"
+      ]
+    }
+  ],
+  "candidate_source_tree_sha256": "e511920a5c4cc53eac99d4d56e1b50e547c726764b790dbc881aa16ef94c7d8b",
+  "disposition": "Narrow static SOURCE/API W1-W3 sufficiency and changed/reused-object custody sufficiency only; no functional/native/provider/RTSP/full-app adoption",
+  "scope": "public static source/diff/dependency/archive-byte/hash metadata only; no compiler/generator/tests/target/private/P1/Git work",
+  "files": {
+    "docs/qualification-plans/qc07f-watchdog-owner-v2-review-20261022/REVIEW.md": {
+      "bytes": 14363,
+      "sha256": "74020728cbdcb6a25fd2c0a785884b7e6260c0d158893c8617b7e434fcda505e"
+    },
+    "docs/qualification-plans/qc07f-watchdog-owner-v2-review-20261022/actual-applied-source.patch": {
+      "bytes": 34337,
+      "sha256": "d64ef36ec9503400b536d30f9e38b2fec9243529fb01c8b1977ff65610a4bd2a"
+    },
+    "docs/qualification-plans/qc07f-watchdog-owner-v2-review-20261022/actual-v1-to-v2-app.patch": {
+      "bytes": 17227,
+      "sha256": "29f090418d651514f7005e3c1a5be1ad80a520e080550e08d1c32af216267ad9"
+    },
+    "docs/qualification-plans/qc07f-watchdog-owner-v2-review-20261022/actual-v1-to-v2-generated.patch": {
+      "bytes": 7812,
+      "sha256": "2206cc5789a3f273e9a9906c61d0c143dd57f33e930ed1510c8b9f5324f4b36f"
+    },
+    "docs/qualification-plans/qc07f-watchdog-owner-v2-review-20261022/captured-public-input-map.json": {
+      "bytes": 136558,
+      "sha256": "dd32b5c393963c012e8b7d5f707f2f385070bc331e706cc158714827d9d481c0"
+    },
+    "docs/qualification-plans/qc07f-watchdog-owner-v2-review-20261022/finalize_review.py": {
+      "bytes": 3798,
+      "sha256": "39a9c755a69da137e1d15245400053f11fd7ac5996485a7794fa6d1b7d84630a"
+    },
+    "docs/qualification-plans/qc07f-watchdog-owner-v2-review-20261022/public-excerpts.json": {
+      "bytes": 42251,
+      "sha256": "0acb522c69cb1c4723a3d148e38c7b25fb4c0209d7fb951609e32ef86d648b51"
+    },
+    "docs/qualification-plans/qc07f-watchdog-owner-v2-review-20261022/read_public_inputs.py": {
+      "bytes": 16994,
+      "sha256": "6291b2b72a74b808773ff7e1802e5fad7da8bf4ff409f7380ca08711475e6c34"
+    },
+    "docs/qualification-plans/qc07f-watchdog-owner-v2-review-20261022/reader-receipt.json": {
+      "bytes": 435155,
+      "sha256": "284a9379ccd8789798f55d4d5d03a5591d20d986e63a9d2cdda8f7e670f25b8c"
+    },
+    "docs/qualification-plans/qc07f-watchdog-owner-v2-review-20261022/reused-object-custody.json": {
+      "bytes": 18484,
+      "sha256": "1ef8b7016a4b15cb7c28abbc5e079be8de2f3f679c6918045676d44ad112a102"
+    },
+    "docs/qualification-plans/qc07f-watchdog-owner-v2-review-20261022/verification.json": {
+      "bytes": 23179,
+      "sha256": "e55dbea0d3d89d47499cdb0af1436c4a9051738d7bfb1fe6b3b7c8b738781916"
+    }
+  }
+}

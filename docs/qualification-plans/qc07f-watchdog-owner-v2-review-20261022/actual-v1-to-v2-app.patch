@@ -1,0 +1,294 @@
+--- v1-app/README.md
++++ v2-app/README.md
+@@ -1,4 +1,19 @@
+-# One owned watchdog across actual v6 capture + encode — compile-only candidate
++# One owned watchdog v2 — W1-W3 correction candidate, compile only
++
++Fresh byte-derived revision of the frozen v1 app/build04, addressing only review
++W1-W3. Baseline app/provenance/review custody and exact app/generated deltas are
++retained in `docs/qualification-plans/qc07f-watchdog-owner-v2-20261022/`.
++
++- W1: one-shot memory start refuses repeats before unchanged initializer/accounting
++  memset. A real-clock-checked nonfuture start, <2s old, seals start+10s in the owner
++  before setup. Every begin must supply exactly that deadline; failed setup fences
++  rather than allowing a new session. Memory start still returns only the original
++  CAMERA_OK/CAMERA_NOT_READY shape. Three memory-policy C units stay unchanged.
++- W2: each non-NULL outward NEXT packet/key is zeroed before any early refusal;
++  no private expected packet, backing, loan or FD is cleared to implement it.
++- W3: after sticky uncertainty/HOLD precedence, a known produced/parked loan is
++  BUSY before clock/control/legacy codec query. No rearm or private custody change.
++  Arguments/outputs/slots are trusted stable/disjoint storage, not alias-proofed.
+ 
+ One moved actual preopened O_WRONLY/CLOEXEC character-device description, no alias,
+ second open, V write, periodic feeder/guardian or watchdog close. Take means UNKNOWN
+@@ -30,10 +45,14 @@
+ Existing large v6 allocations/raw backing are STILL HOLD under128KiB/product limits.
+ 
+ ```sh
+-python3 -B apps/rtsp-auth/qc07f-watchdog-owner-candidate/build.py fresh-name --toolchain /path/to/retained/armv5-eabi--musl--stable-2025.08-1
++python3 -B apps/rtsp-auth/qc07f-watchdog-owner-v2/build.py fresh-name --toolchain /path/to/retained/armv5-eabi--musl--stable-2025.08-1
+ ```
+ 
+-Fresh outputs only in `docs/qualification-plans/qc07f-watchdog-owner-20261022/runs/`.
++Fresh outputs only in `docs/qualification-plans/qc07f-watchdog-owner-v2-20261022/runs/`.
++Only changed real native_adapter/watchdog_owner units compile; archives/REL links
++reuse the four pinned unchanged v1 object units per platform with their provenance
++and dependency pins. Ordinary functional checks and every runtime/test remain NOT
++RUN. No unchanged UAPI suites/driver builds, no full app/provider/RTSP adoption.
+ Exact original/generated source, applied diff, licenses, commands/source/header/tool
+ closure and HOST/ARM archives/REL objects retained. No main/listener, output/test/
+ synthetic/runtime campaign, kernel/module/image/native build/use or target/private
+--- v1-app/build.py
++++ v2-app/build.py
+@@ -15,7 +15,8 @@
+ 
+ APP = Path(__file__).resolve().parent
+ ROOT = APP.parents[2]
+-DOC = ROOT / 'docs/qualification-plans/qc07f-watchdog-owner-20261022'
++DOC = ROOT / 'docs/qualification-plans/qc07f-watchdog-owner-v2-20261022'
++OLD_RUN = ROOT / 'docs/qualification-plans/qc07f-watchdog-owner-20261022/runs/build04'
+ NATIVE = ROOT / 'evidence/delegated/20261012-native-handoff/run34'
+ KERNEL = ROOT / 'work/lightbulb-camera/implementation-20261008T205404Z/sources/linux-lts'
+ PLATFORM = ROOT / 'bringup/qc07f/variants/security75/mach-ak3918ev200'
+@@ -58,6 +59,13 @@
+                     raise RuntimeError('frozen source/evidence changed: ' + name)
+                 frozen[name] = expected
+         frozen[str(path.relative_to(ROOT))] = pin(path)
++    custody = DOC / 'BASELINE_CUSTODY01.json'
++    for name, expected in json.loads(custody.read_text())['prior_custody_pins'].items():
++        if pin(ROOT / name) != expected:
++            raise RuntimeError('v1/review/prior custody changed: ' + name)
++        frozen[name] = expected
++    frozen[str(custody.relative_to(ROOT))] = pin(custody)
++    previous = json.loads((OLD_RUN / 'REPORT.json').read_text())
+     pins = next(ast.literal_eval(n.value) for n in ast.parse(
+         (ROOT / 'apps/rtsp-auth/build.py').read_text()).body if
+         isinstance(n, ast.Assign) and isinstance(n.targets[0], ast.Name) and n.targets[0].id == 'ARM_PINS')
+@@ -82,7 +90,9 @@
+               'outputs_or_tests_executed': False, 'target_or_private_IO': False,
+               'kernel_module_image_or_app_build': False, 'provider_native_adoption': False,
+               'native_memory_admission': 'HOLD', 'failed_next_process_retention': 'OPEN',
+-              'G2': False, 'G3': False, 'G8': False}
++              'G2': False, 'G3': False, 'G8': False,
++              'revision': 'W1-W3 ONLY; compile changed native_adapter/watchdog_owner, reuse four pinned v1 units per platform',
++              'reused_objects': {}, 'compiled_units_per_platform': ['native_adapter', 'watchdog_owner']}
+ 
+     def copy(path, target):
+         before = pin(path)
+@@ -124,6 +134,15 @@
+         for path in sorted(APP.glob('*')):
+             if path.is_file():
+                 copy(path, out / 'inputs/new' / path.name)
++        copy(custody, out / 'inputs/provenance/BASELINE_CUSTODY01.json')
++        for path in sorted((DOC / 'baseline-v1-app').iterdir()):
++            copy(path, out / 'inputs/v1-app' / path.name)
++        delta = ''.join(''.join(difflib.unified_diff(
++            (DOC / 'baseline-v1-app' / p.name).read_text().splitlines(True),
++            p.read_text().splitlines(True), fromfile='v1-app/' + p.name, tofile='v2-app/' + p.name))
++            for p in sorted(APP.iterdir()) if p.is_file())
++        (out / 'v1-to-v2-app.patch').write_text(delta)
++        report['v1_to_v2_app_patch'] = pin(out / 'v1-to-v2-app.patch')
+         copy(manifest, out / 'inputs/provenance/run34-manifest.json')
+         for path in (KERNEL / 'drivers/watchdog/watchdog_dev.c', PLATFORM / 'watchdog.c',
+                      KERNEL / 'include/uapi/linux/watchdog.h', KERNEL / 'fs/file_table.c',
+@@ -153,6 +172,14 @@
+         report['applied_source_patch'] = pin(out / 'applied-source.patch')
+         report['source_files'] = {str(p.relative_to(out / 'source')): pin(p)
+                                   for p in sorted((out / 'source').rglob('*')) if p.is_file()}
++        delta = ''.join(''.join(difflib.unified_diff(
++            (OLD_RUN / 'source' / n).read_text().splitlines(True),
++            (out / 'source' / n).read_text().splitlines(True),
++            fromfile='v1-source/' + n, tofile='v2-source/' + n)) for n in sorted(report['source_files']))
++        (out / 'v1-to-v2-generated.patch').write_text(delta)
++        report['v1_to_v2_generated_patch'] = pin(out / 'v1-to-v2-generated.patch')
++        report['changed_v1_generated_files'] = [n for n in report['source_files']
++            if pin(out / 'source' / n) != previous['source_files'][n]]
+         report['unchanged_sensor139'] = pin(out / 'source/sensor_baseline.c') == pin(out / 'original/sensor_baseline.c')
+         report['unchanged_sensor_table'] = pin(out / 'source/sc1346-init.h') == pin(out / 'original/sc1346-init.h')
+         report['unchanged_memory_policy'] = all(pin(out / 'source' / n) == pin(out / 'original' / n)
+@@ -169,6 +196,19 @@
+             objects = []
+             for unit in units:
+                 obj = out / 'objects' / (mode + '-' + unit + '.o')
++                if unit not in report['compiled_units_per_platform']:
++                    if pin(out / 'source' / (unit + '.c')) != previous['source_files'][unit + '.c']:
++                        raise RuntimeError('reused unit source differs from v1')
++                    old = OLD_RUN / 'objects' / obj.name
++                    deps = shlex.split(old.with_suffix('.d').read_text().replace('\\\n', '').split(':', 1)[1])
++                    for name in deps:
++                        if pin(Path(name)) != previous['compiled_source_header_closure'][name]:
++                            raise RuntimeError('reused object dependency drift: ' + name)
++                    for suffix in ('.o', '.d', '.su'):
++                        copy(old.with_suffix(suffix), obj.with_suffix(suffix))
++                    report['reused_objects'][str(old)] = pin(old)
++                    objects.append(obj)
++                    continue
+                 # Exact legacy compact-source policy from retained v6 builder;
+                 # no suppression on the new standalone owner implementation.
+                 legacy = ['-Wno-misleading-indentation'] if unit != 'watchdog_owner' else []
+@@ -179,9 +219,9 @@
+                          '-MD', '-MF', obj.with_suffix('.d'), '-c', out / 'source' / (unit + '.c'), '-o', obj],
+                         mode + '-cc-' + unit)
+                 objects.append(obj)
+-            archive = out / ('libqc07f-native-watchdog-owner-' + mode + '.a')
++            archive = out / ('libqc07f-native-watchdog-owner-v2-' + mode + '.a')
+             command([ar, 'rcsD', archive, *objects], mode + '-archive')
+-            reloc = out / (mode + '-native-watchdog-owner-NOT-EXECUTABLE.o')
++            reloc = out / (mode + '-native-watchdog-owner-v2-NOT-EXECUTABLE.o')
+             command([cc, *flags, '-nostdlib', '-r', *objects, '-Wl,-Map=' + str(out / (mode + '.map')),
+                      '-o', reloc], mode + '-relocatable-link')
+             command([readelf, '-h', '-A', '-r', '-W', reloc], mode + '-ELF-relocations')
+--- v1-app/native-watchdog.inc
++++ v2-app/native-watchdog.inc
+@@ -3,6 +3,7 @@
+  * One real singleton/context, no synthetic producer or success callbacks.
+  */
+ #include "native_watchdog.h"
++_Static_assert(NH_SESSION_NS==QW_SESSION_NS,"original fixed 10s session");
+ static unsigned native_initialized;
+ static int native_guard_failure(void)
+ {nh_native_fence(NULL);return CAMERA_IO_ERROR;}
+@@ -20,6 +21,22 @@
+     parked_after_stop||memory_state.ledger.initialized)return CAMERA_NOT_READY;
+  return qw_owner_take(&native.watchdog,slot,device)?CAMERA_NOT_READY:CAMERA_OK;
+ }
++int nh_native_memory_start(uint64_t start)
++{
++ /* Keep the original CAMERA_OK / CAMERA_NOT_READY API, not NH_MEM_* reasons.
++  * Refuse repeats BEFORE the unchanged initializer can memset accounting. */
++ if(stop||native.retirement_uncertain||source_clock.failed||native.watchdog.state==QW_HOLD){
++  (void)native_guard_failure();return CAMERA_NOT_READY;
++ }
++ if(!native_initialized||!native_guard_present()||!storage_selected)return CAMERA_NOT_READY;
++ if(memory_state.ledger.initialized||native.watchdog.session_deadline_ns)return CAMERA_NOT_READY;
++ /* Bind real-clock-checked original start BEFORE setup; even failed setup cannot
++  * obtain a fresh budget. UNKNOWN/future/backward/late time is not a new epoch. */
++ if(qw_owner_seal_session(&native.watchdog,start)||native_memory_start_legacy(start)){
++  (void)native_guard_failure();return CAMERA_NOT_READY;
++ }
++ return CAMERA_OK;
++}
+ static int native_guard_begin(enum qw_phase phase)
+ {
+  if(native_initialized&&(stop||native.retirement_uncertain||source_clock.failed))
+@@ -29,16 +46,25 @@
+   return CAMERA_NOT_READY;
+  uint64_t start=nh_native_now(NULL);
+  if(start==UINT64_MAX||!memory_state.ledger.initialized||
+-    memory_state.session_start>UINT64_MAX-NH_SESSION_NS||
+-    start<memory_state.session_start||start-memory_state.session_start>=NH_SESSION_NS)
++    !native.watchdog.session_deadline_ns||
++    memory_state.session_start!=native.watchdog.session_start_ns||
++    start<native.watchdog.session_start_ns||start>=native.watchdog.session_deadline_ns)
+   return native_guard_failure();
+- if(qw_owner_begin(&native.watchdog,start,phase,memory_state.session_start+NH_SESSION_NS))
++ if(qw_owner_begin(&native.watchdog,start,phase,native.watchdog.session_deadline_ns))
+   return native_guard_failure();
+  return CAMERA_OK;
+ }
+ int nh_native_next(void *context,struct camera_packet *packet,struct nh_key *key)
+ {
++ /* Trusted caller-owned, stable, disjoint outputs, never private loan/backing. */
++ if(packet)memset(packet,0,sizeof(*packet));
++ if(key)memset(key,0,sizeof(*key));
+  if(!packet||!key)return CAMERA_INVALID;
++ /* Sticky uncertainty precedes known BUSY. No clock/FD/control/query/service
++  * on the known-loan path, and no private expected/loan/custody mutation. */
++ if(stop||native.retirement_uncertain||source_clock.failed||native.watchdog.state==QW_HOLD)
++  return native_guard_failure();
++ if(native.produced_storage||parked_after_stop)return CAMERA_BUSY;
+  /* No lifetime open/query, malloc, sensor/config/capture or codec effect until
+   * actual owned guard and original preparation/paid-buffer prerequisites exist. */
+  if(!sensor_baseline_requested||!storage_selected||!memory_state.ledger.initialized||
+--- v1-app/native_watchdog.h
++++ v2-app/native_watchdog.h
+@@ -9,6 +9,15 @@
+  * no aliases or external operations; exact core/driver/image/current recovery and
+  * provider/backing admission remain trusted prerequisites, NOT metadata proof.
+  * No native acceptance or permission to call any old allocation/capture helper.
++ * Memory start keeps CAMERA_OK/CAMERA_NOT_READY; setup is one-shot, using a real
++ * monotonic start no later than the actual clock and less than2s old. That start
++ * seals the sole10s deadline, including setup cost, even if setup later fails.
++ * Repeated setup refuses without touching original memory accounting/budget.
++ * All arguments/slots/outputs must be stable and disjoint from each other and
++ * native private owner/expected packet/backing and any still-owned loan bytes.
++ * This is a trusted caller contract, NOT a runtime alias/custody proof. NEXT
++ * clears each non-NULL output before refusals; known held/parked loan is BUSY
++ * without clock/control/query, after sticky uncertainty/HOLD precedence.
+  */
+ int nh_native_watchdog_take(int *bootstrap_slot,dev_t expected_device);
+ /* Only after successful logical disable + known local source normal retirement,
+--- v1-app/overlay.py
++++ v2-app/overlay.py
+@@ -72,6 +72,7 @@
+         native = once(native, marker, marker+'\n if(!native_guard_present())return CAMERA_NOT_READY;')
+     for old, new in (
+         ('void nh_native_init(void)', 'static void native_init_legacy(void)'),
++        ('int nh_native_memory_start(uint64_t start)', 'static int native_memory_start_legacy(uint64_t start)'),
+         ('int nh_native_next(void *unused,', 'static int native_next_legacy(void *unused,'),
+         ('int nh_native_release(void *unused,', 'static int native_release_legacy(void *unused,'),
+         ('int nh_native_retire(void *unused)', 'static int native_retire_body(void *unused)'),
+--- v1-app/watchdog_owner.c
++++ v2-app/watchdog_owner.c
+@@ -42,6 +42,18 @@
+   .node_filesystem=st.st_dev,.node_inode=st.st_ino};
+  *slot=-1;return 0;
+ }
++int qw_owner_seal_session(struct qw_owner *o,uint64_t start)
++{
++ if(!o||o->state==QW_HOLD)return -1;
++ if(o->state!=QW_UNKNOWN||o->session_deadline_ns||
++    start>=UINT64_MAX-QW_SESSION_NS)return fail(o);
++ uint64_t now;
++ if(clock_read(o,&now)||now<start||now-start>=QW_PHASE_NS)return fail(o);
++ if(descriptor(o))return -1;
++ if(clock_read(o,&now)||now<start||now-start>=QW_PHASE_NS)return fail(o);
++ o->session_start_ns=start;o->session_deadline_ns=start+QW_SESSION_NS;
++ return 0;
++}
+ int qw_owner_check(struct qw_owner *o)
+ {
+  if(!o||o->state==QW_HOLD)return -1;
+@@ -66,9 +78,10 @@
+ {
+  if(!o||o->state==QW_HOLD)return -1;
+  if((o->state!=QW_UNKNOWN&&o->state!=QW_DISABLED)||
+-    source_start==UINT64_MAX||session_deadline==UINT64_MAX||session_deadline<=source_start||
++    !o->session_deadline_ns||session_deadline!=o->session_deadline_ns||
++    source_start==UINT64_MAX||source_start<o->session_start_ns||session_deadline<=source_start||
+     (phase!=QW_NEXT&&phase!=QW_RETIRE))return fail(o);
+- o->start_ns=source_start;o->session_deadline_ns=session_deadline;
++ o->start_ns=source_start; /* original sealed session is never overwritten */
+  o->phase=phase;o->capture_progress=0;o->state=QW_ENABLING;
+  int timeout=5,option=WDIOS_ENABLECARD;
+  /* SETTIMEOUT may itself ping/start inherited active hardware. Mark transition
+--- v1-app/watchdog_owner.h
++++ v2-app/watchdog_owner.h
+@@ -5,13 +5,14 @@
+ #include <sys/types.h>
+ enum qw_state {QW_EMPTY,QW_UNKNOWN,QW_ENABLING,QW_ACTIVE5,QW_DISABLED,QW_HOLD};
+ enum qw_phase {QW_NEXT=1,QW_RETIRE=2};
++#define QW_SESSION_NS UINT64_C(10000000000)
+ struct qw_owner {
+  int fd;
+  enum qw_state state;
+  enum qw_phase phase;
+  dev_t device,node_filesystem;
+  ino_t node_inode;
+- uint64_t last_ns,start_ns,session_deadline_ns;
++ uint64_t last_ns,start_ns,session_start_ns,session_deadline_ns;
+  unsigned capture_progress;
+ };
+ #define QW_OWNER_EMPTY { .fd=-1 }
+@@ -21,6 +22,11 @@
+  * armed proof. No actor opens/duplicates/closes here. Source associations and
+  * original provider/backing admission are NOT proved by descriptor metadata. */
+ int qw_owner_take(struct qw_owner *,int *,dev_t);
++/* One-shot before unchanged memory initializer; actual clock must be >=start
++ * and <start+2s. Latches start+10s for this owned lifetime, never renewed by begin.
++ * Failure is sticky HOLD. No watchdog control/service; no setup restart API. */
++int qw_owner_seal_session(struct qw_owner *,uint64_t);
++/* Supplied deadline MUST equal the already sealed one on EVERY begin. */
+ int qw_owner_begin(struct qw_owner *,uint64_t,enum qw_phase,uint64_t);
+ int qw_owner_check(struct qw_owner *); /* active phase, real clock, <2s */
+ /* ONLY exact producer callsite after full raw CRC/extent/status and ACTIVE keyed
