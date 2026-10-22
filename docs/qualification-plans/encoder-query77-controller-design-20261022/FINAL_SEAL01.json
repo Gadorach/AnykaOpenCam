@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-22T17:12:04.468034+00:00",
+  "method": "Python stdlib static regular-file read/SHA256 and receipt comparison only",
+  "initial_inventory_count": 46,
+  "initial_inventory_unchanged_since_before": 43,
+  "contextual_changes_since_before": [
+    "AGENTS.md",
+    "docs/plan/camera-foundation/00-INDEX.md",
+    "docs/plan/camera-foundation/EXECUTION_TASKS_20261021.md"
+  ],
+  "additional_changes_since_recorded_after": [],
+  "supplement_mismatches": [],
+  "public_outputs": {
+    "IMPLEMENTATION_CONTRACT.md": {
+      "bytes": 28098,
+      "sha256": "74e936bf975ce6d2d257c0551428819f37eec7fca9d0a9c1bac642b1d8df1192"
+    },
+    "SOURCE_ANCHORS.md": {
+      "bytes": 10998,
+      "sha256": "a0dcd9434d8097aaa50d93eccb90f6c9237fbf21fc4f47b42ed747a978a40833"
+    },
+    "INPUT_PINS.tsv": {
+      "bytes": 6980,
+      "sha256": "cb438ec0b21ce9e3423e5709d1f70a63a3d43b64815d8db5f60143d5d7be7dc5"
+    },
+    "SUPPLEMENT_PINS.tsv": {
+      "bytes": 356,
+      "sha256": "3c04f45c34eda99c9cde265346e21d1d66468128fc1b14d3778bb1dc03bf1758"
+    },
+    "PIN_CHECK01.json": {
+      "bytes": 2415,
+      "sha256": "9b6d82a905534dfd10c41efa6c0f9ad8150bf6c7088aa0124a3e37d6f405b1da"
+    }
+  },
+  "aggregate_final_46_sha256": "feb5d4ff282b1be4bd97384775452feaa3076b34bb5e43b65927fb80ececb30d",
+  "aggregate_unchanged_43_sha256": "3c1b7841d44627320c3cfb32d7ce40fb44b56d51a675307f2b9e53356e215b92",
+  "scope": "One bounded SOURCE-design packet; not independent source acceptance or native admission",
+  "candidate_script_compiler_generator_client_test_execution": false,
+  "target_serial_network_recorder_private_current_state_access": false,
+  "git_index_central_plan_or_source_changes_by_this_worker": false,
+  "automatic_next_operation_or_worker_queue": false
+}

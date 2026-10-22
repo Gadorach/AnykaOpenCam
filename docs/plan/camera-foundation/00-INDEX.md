@@ -79,8 +79,11 @@ acceptance. Those author/review lanes completed. See
 and [query client disposition](../../qualification-plans/encoder-query77-client-20261022/PARENT_DISPOSITION.md).
 Next eligible work is [offline native-method design](../../qualification-plans/encoder-query77-native-method-20261022/METHOD_FINDINGS.md):
 fresh controller/HOLD profile and bounded volatile delivery/observer/recovery.
-One offline design worker owns new query77-controller-design docs only; no
-executable native recipe, capture, staging, boot or query is selected.
+Controller design is completed; its parent disposition selects only C1 host-local
+dual-HOLD/epoch/crash-sticky ledger source work in encoder-query77-custody. No
+target interface, executable native recipe, capture, staging, boot or query is
+selected. Staging lacks an admitted watchdog receiver and any later manual-OFF
+handoff still needs review plus actual current operator readiness.
 
 ### October22 earlier steering — build and functional checklist
 

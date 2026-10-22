@@ -30,9 +30,15 @@ BusyBox volatile delivery route. Nine supplementary pins/source findings establi
 that monitor shell-return text is not child-success evidence, U-Boot command
 framing is not an ash transport, and finite decoder input plus explicit integrity/
 budget accounting is required. No sender or memory/recovery qualification follows.
-One source-design worker owns fresh query77-controller-design docs; parent integrates
-the method packet. Selected scope is offline controller/HOLD-profile/observer/
-recovery design, stopping on unproved contracts, not implementation or native use.
+Controller-design packet completed; parent verified43 unchanged inputs,three
+recorded parent checkpoint changes,two supplements and five sealed outputs. Parent
+disposition accepts bounded C1 requirements only, not full controller/source/native
+GO. Source findings require a future independently reviewed/current manual-OFF
+handoff for unguarded staging; no such readiness or physical action is requested.
+One author now owns new encoder-query77-custody source/docs for C1 host-local
+dual-HOLD read-only custody, immutable epoch/budget bookkeeping and crash-sticky
+ledger. No UART/RPC/process/current-state/shell/boot/query interface or runtime
+tests selected; no implementation acceptance before separate source review.
 No executable native recipe, capture/staging/boot/query or user physical action
 selected. Last target observation remains original held U-Boot12:12UTC; no fresh
 target/recorder/owner/expiry status inherited. Both HOLDs stay untouched. Query77

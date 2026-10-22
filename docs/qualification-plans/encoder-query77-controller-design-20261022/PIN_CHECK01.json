@@ -1,0 +1,46 @@
+{
+  "scope": "Static public file reads and SHA256 only; no candidate imports/execution, Git, target, serial, network, recorder, private/current state, proc/dev access",
+  "initial_snapshot_utc": "2026-10-22T17:04:18.769346+00:00",
+  "initial_snapshot_after_reading_before_document_authoring": true,
+  "before_manifest": "INPUT_PINS.tsv",
+  "aggregate_format": "sorted workspace-relative UTF-8 path + NUL + raw SHA256 digest bytes",
+  "input_count": 46,
+  "aggregate_before_sha256": "ea1e6a8bb8c2f7ad8167296033f861ac8287f413933e95477972fed30624b688",
+  "prior_investigation_19_pins_matched": true,
+  "after_comparison_utc": "2026-10-22T17:10:27.498956+00:00",
+  "aggregate_after_sha256": "feb5d4ff282b1be4bd97384775452feaa3076b34bb5e43b65927fb80ececb30d",
+  "unchanged_count": 43,
+  "all_inputs_unchanged": false,
+  "historical_helper_controller_client_kernel_artifact_inputs_unchanged": true,
+  "changed_contextual_documents": [
+    {
+      "path": "AGENTS.md",
+      "before_bytes": 23473,
+      "before_sha256": "102f5b7ed2e55200d4197abb1b8c87b9d5c1344c75b74e18992ebf907f82d159",
+      "after_bytes": 23803,
+      "after_sha256": "6286de00a35a79e40abb64b1e2f503ba999bf3031e0f9c2e206fec59d75b0223"
+    },
+    {
+      "path": "docs/plan/camera-foundation/00-INDEX.md",
+      "before_bytes": 119469,
+      "before_sha256": "fd80cf8386942c4e78be0562a1a8dc2b584a40f349387ee0a6159b4e5d8a9d47",
+      "after_bytes": 119552,
+      "after_sha256": "be266ef3e3ae872e62667d28720fb296784c78e7c89f81735989461e2639b0e6"
+    },
+    {
+      "path": "docs/plan/camera-foundation/EXECUTION_TASKS_20261021.md",
+      "before_bytes": 62299,
+      "before_sha256": "a9292ba716f9d6a6cfb3e686aa4328f4726ccf708ff1beefffde2c6f500a9afa",
+      "after_bytes": 62847,
+      "after_sha256": "e83260d92ec5ae40e85200c5deefed601b1032e497768f7a4b820bcc3e4329cc"
+    }
+  ],
+  "change_context": "Harness announced parent AGENTS edit; bounded rereads show parent design-lane/supplement/commit checkpoint. Not this worker's edits; full byte-diff attribution not performed. Original before pins not rebased.",
+  "supplement_manifest": "SUPPLEMENT_PINS.tsv",
+  "supplement_first_snapshot_utc": "2026-10-22T17:10:27.498956+00:00",
+  "supplement_is_not_part_of_initial_46": true,
+  "actual_hold_files_or_private_inputs_read": false,
+  "controller_or_parser_implemented_or_validated": false,
+  "native_admission": false,
+  "automatic_next_queue": false
+}
