@@ -116,13 +116,18 @@ Query77 client at `apps/qualification/encoder-query77-client/` has narrow condit
 SOURCE/API sufficiency;36 HOST/ARM compile/link commands cited,4,014 review inputs
 parent-verified. ARM ELF30140B, neither ELF run. Disposition is in query77-client
 qualification docs. No staging/boot/upload/run or executable native recipe.
-Both reviews completed; no active worker, transfer or hardware operation remains.
+Both reviews completed; no active source author/reviewer from those lanes remains.
 Offline native-method findings pin19 public inputs and identify a possible volatile
-BusyBox delivery route, not admitted commands or recovery. Next is bounded offline
-controller/transfer/observer/recovery design in query77-native-method docs. Query77
+BusyBox delivery route, not admitted commands or recovery. A nine-pin source
+supplement records monitor return/status and shell/decoder/framing limits. One
+offline design worker owns fresh query77-controller-design docs only, no executable
+recipe or target access; parent owns method integration. No transfer/hardware
+operation is active. Query77
 monitor lacks the88-byte query command. Authentication/loopback and media-retention
 blocks remain; actual bootstrap/backing/provisioning/main are still missing.
 Query77/return closeout committed locally `9fd7bb6`; ordinary index unchanged.
+Composition source committed locally `d170304`, client/checkpoint `0ad2c1d`;
+no binaries/private captures or push. Ordinary index remains unchanged.
 No fresh target/recorder state has been queried; an early-expiry claim in the
 retention report was inherited parent wording, corrected in its parent disposition.
 Frozen originals/RTSP glue stay separate. Native watchdog

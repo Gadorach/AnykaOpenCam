@@ -1,0 +1,51 @@
+{
+  "chunk_count_arithmetic": 628,
+  "client_bytes": 30140,
+  "full_chunks_arithmetic": 627,
+  "inputs": {
+    "apps/qualification/encoder-query77-client/encoder-query77-qualification.c": {
+      "bytes": 10258,
+      "sha256": "d132a2eeaae170586aa437a2e7a3102027d9ff656077c5102f57dd79d95268b7"
+    },
+    "bringup/qc07f/initramfs/wifi-monitor.h": {
+      "bytes": 1623,
+      "sha256": "89eac77740e576c7bce0fdcd8a0eb8736e5d87f3b9119679b777eb17dbf26707"
+    },
+    "docs/qualification-plans/encoder-query77-native-method-20261022/INVESTIGATION_INPUTS01.json": {
+      "bytes": 4119,
+      "sha256": "7a3281bbecabedaee841e15d3bfe05d1e8d73ea02c9cceaec0d71e507539dd87"
+    },
+    "docs/qualification-plans/encoder-query77-native-method-20261022/TRANSFER_SOURCE_BOUNDARY.md": {
+      "bytes": 6410,
+      "sha256": "f2ce04aa8f011da92e786b98e776502ec06199870eb1fa0aee8a7988d7285b14"
+    },
+    "scripts/qc07f_boot.py": {
+      "bytes": 39829,
+      "sha256": "6ec0bd70513d530e64507c934ab1885da0cb547b907673c5162bf01c89f7d985"
+    },
+    "work/lightbulb-camera/implementation-20261008T205404Z/build/wifi-userland3/busybox/.config": {
+      "bytes": 38032,
+      "sha256": "bf9042f19eb0465265b242c25ef3a0ae64861f935db64a3288fd0f3ccd359d99"
+    },
+    "work/lightbulb-camera/implementation-20261008T205404Z/sources/busybox-1.37.0/busybox-1.37.0/coreutils/uudecode.c": {
+      "bytes": 10758,
+      "sha256": "09616c4d93e4e9bb584bfb741957b419aa42ee950c2adf2e41aa732de7d2abf2"
+    },
+    "work/lightbulb-camera/implementation-20261008T205404Z/sources/busybox-1.37.0/busybox-1.37.0/libbb/uuencode.c": {
+      "bytes": 7165,
+      "sha256": "a8ca5c917d9172d1fbf0b8247909e66c13e244d908ad43e510dd934ae59b909e"
+    },
+    "work/lightbulb-camera/implementation-20261008T205404Z/sources/busybox-1.37.0/busybox-1.37.0/shell/ash.c": {
+      "bytes": 342923,
+      "sha256": "e8090e5dd0f79097b6b29399a8f14572049f011f86b6c6e4de66dfb75b58cfcd"
+    }
+  },
+  "max_binary_chunk_bytes": 48,
+  "method": "Dedicated reads/grep and Python stdlib byte-count/SHA256; no candidate imports, subprocesses, program/generator/compiler/test/target/RPC/device IO",
+  "prior_19_inputs_revalidated": true,
+  "scope": "Supplementary offline source inspection: monitor return/status, U-Boot-only transaction, BusyBox input/decoder and client output boundaries",
+  "tail_bytes_arithmetic": 44,
+  "transfer_or_memory_or_recovery_qualification": false,
+  "utc": "2026-10-22T17:04:19.045111+00:00",
+  "wire_commands_generated": false
+}

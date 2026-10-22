@@ -22,10 +22,17 @@ executed. Parent disposition: `encoder-query77-client-20261022/PARENT_DISPOSITIO
 Single watchdog/fixed1.5s phase/query-only source path is not global-idle, armed
 recovery, external retention or native admission. Late disable can remove the timer.
 
-All authors/reviewers completed; no active worker/transfer/hardware operation.
+All composition/client authors/reviewers completed. Curated source committed
+locally `d170304` and `0ad2c1d`; ordinary index unchanged, no binaries/private
+captures or push. No transfer/hardware operation is active.
 Offline query77-native-method investigation pins19 public inputs and a possible
-BusyBox volatile delivery route. Next eligible task is bounded offline controller/
-HOLD-profile/transfer/observer/recovery design, stopping on unproved contracts.
+BusyBox volatile delivery route. Nine supplementary pins/source findings establish
+that monitor shell-return text is not child-success evidence, U-Boot command
+framing is not an ash transport, and finite decoder input plus explicit integrity/
+budget accounting is required. No sender or memory/recovery qualification follows.
+One source-design worker owns fresh query77-controller-design docs; parent integrates
+the method packet. Selected scope is offline controller/HOLD-profile/observer/
+recovery design, stopping on unproved contracts, not implementation or native use.
 No executable native recipe, capture/staging/boot/query or user physical action
 selected. Last target observation remains original held U-Boot12:12UTC; no fresh
 target/recorder/owner/expiry status inherited. Both HOLDs stay untouched. Query77

@@ -1,0 +1,85 @@
+{
+  "firmware_or_client_execution": false,
+  "inputs": {
+    "apps/qualification/encoder-query77-client/build01/arm/encoder-query77-qualification": {
+      "bytes": 30140,
+      "sha256": "87a40f291600fee1296d96030726b9db825956e274e0db2a7ee5ea18f6a26ac6"
+    },
+    "bringup/qc07f/initramfs/init.c": {
+      "bytes": 24349,
+      "sha256": "b3dd4ee9689bde4bead4c7a3c862284b198b879d4470b920366c1503814598aa"
+    },
+    "bringup/qc07f/initramfs/wifi-monitor.h": {
+      "bytes": 1623,
+      "sha256": "89eac77740e576c7bce0fdcd8a0eb8736e5d87f3b9119679b777eb17dbf26707"
+    },
+    "docs/qualification-plans/encoder-query77-client-20261022/PARENT_DISPOSITION.md": {
+      "bytes": 3195,
+      "sha256": "6799bb31468926f08be837e81860df8cda6367bbea595171b79820d1d40cfe79"
+    },
+    "docs/qualification-plans/encoder-query77-native-method-20261022/METHOD_FINDINGS.md": {
+      "bytes": 8539,
+      "sha256": "e3a755b8b91e2cc459c24d3fda0eeda41baca81012a0cacc78d877ac58bf644b"
+    },
+    "evidence/qualification/qc07f/execution-20261022/ram76-resume22b/cold_gate.py": {
+      "bytes": 3310,
+      "sha256": "3ebef429e360139c0d00fafde3dd72a8fe20e3e6be0a1baea8e26554a67ab502"
+    },
+    "evidence/qualification/qc07f/execution-20261022/ram76-resume22b/postcheck.py": {
+      "bytes": 10145,
+      "sha256": "361e37f2b0b5977294846bb7e06bf0e131e027121a15b31c6e956c29f4083f5d"
+    },
+    "evidence/qualification/qc07f/execution-20261022/ram76-resume22b/preserved_hold.py": {
+      "bytes": 2312,
+      "sha256": "ad19370f769384cf9513e2a8288b97fc2836f05a0764e148b28537924ef0d9e6"
+    },
+    "evidence/qualification/qc07f/execution-20261022/ram76-resume22b/ram76_boot.py": {
+      "bytes": 6684,
+      "sha256": "7d3c4e880881291fe903e9c840226855a22f06632d8a1b57fa1eacef35a355d4"
+    },
+    "scripts/qc07f_boot.py": {
+      "bytes": 39829,
+      "sha256": "6ec0bd70513d530e64507c934ab1885da0cb547b907673c5162bf01c89f7d985"
+    },
+    "scripts/qc07f_private_root_transfer.py": {
+      "bytes": 12461,
+      "sha256": "cb224d3cd8b635774b7e364b07b259d90640b30de269ea07351e767c3f97fa3c"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/inputs/initramfs-inventory.json": {
+      "bytes": 9904,
+      "sha256": "a5f44222fff55755b2907f6080e974f5cc22057a6981f46af34f664059e8df74"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-images02/QC6EQ77.UIM": {
+      "bytes": 3603307,
+      "sha256": "f7c1996073644d8cd6c5c7ba1d2a8c2b71d2d6df4fb4697d01ad59a1e7525a5e"
+    },
+    "work/lightbulb-camera/implementation-20261008T205404Z/build/wifi-userland3/busybox/.config": {
+      "bytes": 38032,
+      "sha256": "bf9042f19eb0465265b242c25ef3a0ae64861f935db64a3288fd0f3ccd359d99"
+    },
+    "work/lightbulb-camera/implementation-20261008T205404Z/build/wifi-userland3/busybox/busybox": {
+      "bytes": 378104,
+      "sha256": "3f7e15eae5f1c03a0af78ce45a341aaa48ad0eb0a00850a0914512e830b7c3a1"
+    },
+    "work/lightbulb-camera/implementation-20261008T205404Z/build/wifi-userland3/busybox/busybox_unstripped": {
+      "bytes": 486412,
+      "sha256": "91706526eec9fcf482a9cc756704d14e2e5aaf78fef76730f870ee1f31471ecf"
+    },
+    "work/lightbulb-camera/implementation-20261008T205404Z/build/wifi-userland3/busybox/include/applet_tables.h": {
+      "bytes": 2023,
+      "sha256": "be2e4f75fc33f1457f078758fbb12b8bb7dd961b3e92790849871be6c07e844f"
+    },
+    "work/lightbulb-camera/implementation-20261008T205404Z/sources/busybox-1.37.0/busybox-1.37.0/coreutils/uudecode.c": {
+      "bytes": 10758,
+      "sha256": "09616c4d93e4e9bb584bfb741957b419aa42ee950c2adf2e41aa732de7d2abf2"
+    },
+    "work/lightbulb-camera/implementation-20261008T205404Z/sources/busybox-1.37.0/busybox-1.37.0/libbb/uuencode.c": {
+      "bytes": 7165,
+      "sha256": "a8ca5c917d9172d1fbf0b8247909e66c13e244d908ad43e510dd934ae59b909e"
+    }
+  },
+  "new_native_recipe_selected": false,
+  "scope": "Offline public source/artifact read/hash/ELF method investigation only; no controller or native admission",
+  "target_or_device_or_RPC_access": false,
+  "utc": "2026-10-22T16:55:17.914570+00:00"
+}

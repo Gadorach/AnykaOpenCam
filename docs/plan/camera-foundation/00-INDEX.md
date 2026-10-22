@@ -74,12 +74,13 @@ dependency; do not reuse old22b controllers or treat their catch as unconsumed.
 
 The actual prestarted-backend/owned-listener composition and query77 client reviews
 are now completed with narrow SOURCE/API dispositions, not runtime/native or app
-acceptance. No worker remains active. See
+acceptance. Those author/review lanes completed. See
 [composition disposition](../../qualification-plans/rtsp-prestarted-owned-listener-20261022/PARENT_DISPOSITION.md)
 and [query client disposition](../../qualification-plans/encoder-query77-client-20261022/PARENT_DISPOSITION.md).
 Next eligible work is [offline native-method design](../../qualification-plans/encoder-query77-native-method-20261022/METHOD_FINDINGS.md):
 fresh controller/HOLD profile and bounded volatile delivery/observer/recovery.
-No executable native recipe, capture, staging, boot or query is selected.
+One offline design worker owns new query77-controller-design docs only; no
+executable native recipe, capture, staging, boot or query is selected.
 
 ### October22 earlier steering — build and functional checklist
 
