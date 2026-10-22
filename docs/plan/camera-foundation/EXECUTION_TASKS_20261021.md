@@ -67,13 +67,21 @@ preserved/corrected without rebuilding. Completed review found R1 above, not a
 runtime observation; parent disposition in the candidate docs. No automatic listener
 composition, external media retention/bootstrap/recovery/backing/native acceptance.
 Reviewed listener source committed `c51e129`; fresh prestarted-owned-listener
-composition author plus separate encoder-query77-client author are the only active
-lanes. Composition must actually use one backend and moved FD, no second fork/init
+composition author plus separate encoder-query77-client independent reviewer are
+the only active lanes. Composition must actually use one backend and moved FD, no second fork/init
 or internal listener bind; separate sibling findings do not accept the composition.
 Client selection
 is compile/link-only qualification ELF, not a camera main or native trial; actual
 query77 monitor is unchanged and lacks query88 command. Original kernel/image/
 module/boot/transport/controllers remain frozen, no new native recipe or effect.
+Query client delivered: source pin
+`101afbb482c4562d02e58ab7c2aafed0d3cbb76a7d7b4cc36cf08e667fc80600`,36
+HOST/ARM static compile/link/tool commands PASS, ARM ELF30140B, no execution.
+One encoder open/two real88B query calls, actual single watchdog/1.5s whole-phase
+budget and uncertainty-retention paths are candidate source, not native admission.
+Author3,710 inputs/252 build outputs/58 supplementary tool-ELF paths unchanged;
+parent verified source/report/local evidence-manifest pins, reviewer owns new
+encoder-query77-client-review docs only. No auto stage/upload/boot/query or retry.
 
 **Actual provider derivative narrow SOURCE/API/ownership sufficiency:** no new
 correction-required defect in staged transfers/actual callsites.3,649 prior pins,

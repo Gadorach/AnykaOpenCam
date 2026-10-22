@@ -1,0 +1,64 @@
+{
+  "Git_index_or_central_edits": false,
+  "UTC": "2026-10-22T16:14:48.194574+00:00",
+  "documentation_files": {
+    "docs/qualification-plans/encoder-query77-client-20261022/CANDIDATE_REPORT.md": {
+      "bytes": 11665,
+      "sha256": "0b2b73d6f1a6991f7d631995a1c086452514349f52aa654e47af852c6d10b981"
+    },
+    "docs/qualification-plans/encoder-query77-client-20261022/OFFLINE_CLOSURE01.json": {
+      "bytes": 23556,
+      "sha256": "49311a76c365ac4f9faa3113cbf47dd99e2b653c37a301ca1d99bbc3047ebaf3"
+    },
+    "docs/qualification-plans/encoder-query77-client-20261022/SOURCE_CONTRACT.md": {
+      "bytes": 7906,
+      "sha256": "f54370919ad2282af120ec7f49c2bb24687134deb38095e889486c6b7a1ec439"
+    },
+    "docs/qualification-plans/encoder-query77-client-20261022/seal_offline.py": {
+      "bytes": 6263,
+      "sha256": "8fe387ed19bc8f13beecda6881c197cc4764e2ac6c6b3c64aacc8c53e46c8df4"
+    }
+  },
+  "final_captured_input_paths_unchanged": 3710,
+  "final_original_build_outputs_unchanged": 252,
+  "final_tool_ELF_paths_unchanged": 58,
+  "local_build_inputs": {
+    "bytes": 1236086,
+    "sha256": "b5126183bd46410e4529e4d4884fbfe0b6b5bb017e0f8f10e11fbfacdbc394bb"
+  },
+  "local_build_output_seal": {
+    "bytes": 43823,
+    "sha256": "571bd9a464ee12fa8aefb999519e4679cbddc73089775021483cd31ab33387aa"
+  },
+  "local_build_report": {
+    "bytes": 30584,
+    "sha256": "a460907561bfc2888c5fc9b3be180d70cf4ce30c9a7888d63f388a6f49326458"
+  },
+  "native_operation_or_recipe_selected": false,
+  "next": "independent ordinary SOURCE/API/compile-custody review only",
+  "runtime_or_tests_executed": false,
+  "scope": "compile-only source candidate; no execution/native admission",
+  "source_files": {
+    "apps/qualification/encoder-query77-client/.gitignore": {
+      "bytes": 9,
+      "sha256": "21a5fcfef76f67d88bb9ad647f52e2d4fd901709078d884f3063270c790756a4"
+    },
+    "apps/qualification/encoder-query77-client/README.md": {
+      "bytes": 3509,
+      "sha256": "53cfaa6b90d3095486c0cff8e23f2f94ffa4d97d0ddba972780a3259338e29b7"
+    },
+    "apps/qualification/encoder-query77-client/compile_only.py": {
+      "bytes": 14102,
+      "sha256": "883a80339e0135de7430f6251148d8c8e436d253527c33a65b218f1993d620aa"
+    },
+    "apps/qualification/encoder-query77-client/encoder-open-query.h": {
+      "bytes": 2455,
+      "sha256": "6052069fa5428185eb8c61871404256c53c30c12515eaa5c9ab80c424facde37"
+    },
+    "apps/qualification/encoder-query77-client/encoder-query77-qualification.c": {
+      "bytes": 10258,
+      "sha256": "d132a2eeaae170586aa437a2e7a3102027d9ff656077c5102f57dd79d95268b7"
+    }
+  },
+  "source_tree_sha256": "101afbb482c4562d02e58ab7c2aafed0d3cbb76a7d7b4cc36cf08e667fc80600"
+}

@@ -109,12 +109,13 @@ V1/review frozen and unaccepted. R1 v2 at `apps/rtsp-auth/prestarted-backend-v2/
 has narrow independent SOURCE/API sufficiency; six HOST/ARM compiles cited,1,892
 review inputs parent-verified. One author owns fresh prestarted-owned-listener
 source/docs for actual one-backend/owned-FD composition, not approved by sibling
-results. Separate author owns fresh
-`apps/qualification/encoder-query77-client/` and matching client docs for a minimal
-query-only qualification ELF, compile/link only, no boot/upload/run or new native
-recipe. Query77 monitor lacks the88-byte query command. No composite/native adoption.
+results. Query77 client delivered at `apps/qualification/encoder-query77-client/`,
+HOST/ARM static compile/link36 commands PASS; ARM ELF30140B, neither ELF run.
+One reviewer owns fresh encoder-query77-client-review docs for actual query/guard/
+uncertainty and build-custody review. No boot/upload/run or new native recipe.
+Query77 monitor lacks the88-byte query command. No composite/native adoption.
 Original authentication/loopback constraints and media-retention block remain;
-composition/query-client are the only active source lanes, no active reviewers.
+Composition author/query-client reviewer are the only active lanes.
 Query77/return closeout committed locally `9fd7bb6`; ordinary index unchanged.
 No fresh target/recorder state has been queried; an early-expiry claim in the
 retention report was inherited parent wording, corrected in its parent disposition.
