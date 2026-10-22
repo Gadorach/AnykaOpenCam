@@ -56,7 +56,11 @@ reported supported, and no product gate is waived by a build.
   `build02` PASS, see `BUILD_RESULT.md`. This is not bit-reproducible release or
   runtime acceptance.
 - [ ] Confirm architecture/ABI and the intended strict-vs-HOST configuration for
-  each artifact. HOST fixtures must not enter a camera release.
+   each artifact. HOST fixtures must not enter a camera release.
+   Partial static evidence: `../rtsp-artifact-roles-20261022/RESULT.md` confirms
+   seven existing build02 artifacts,73 object headers,28 archive-member bodies
+   and exact strict/HOST compile-define separation. Native ABI and exclusion by
+   a real release packager remain unqualified; this item stays open.
 - [ ] Add real platform entry/provider/provisioning wiring and an explicit release
   manifest before calling this a deployable camera app. No automatic startup.
 - [ ] Review any new runtime image hash before updating existing embedded pins;

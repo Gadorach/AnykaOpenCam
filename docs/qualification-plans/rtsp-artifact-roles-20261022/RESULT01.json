@@ -1,0 +1,1471 @@
+{
+  "artifacts": {
+    "arm-integration-linkcheck-NOT-RUN": {
+      "elf_header": {
+        "class_bits": 32,
+        "flags": 83886592,
+        "machine": 40,
+        "type": 2
+      },
+      "pin": {
+        "bytes": 132128,
+        "sha256": "310793c8a24f3f13088d21f08777f40394f664f6165cd57b24539368ddaf8dea"
+      },
+      "role": "link check only; never run or deploy"
+    },
+    "camera-rtsp-bench.host": {
+      "elf_header": {
+        "class_bits": 64,
+        "flags": 0,
+        "machine": 62,
+        "type": 3
+      },
+      "pin": {
+        "bytes": 116608,
+        "sha256": "1d14c972b7e4bcc7507db711c36ede00dcd7149138f7f0f65da02197d74c1cc9"
+      },
+      "role": "synthetic localhost bench app, not a camera runtime"
+    },
+    "camera-rtsp-verifier.arm": {
+      "elf_header": {
+        "class_bits": 32,
+        "flags": 83886592,
+        "machine": 40,
+        "type": 2
+      },
+      "pin": {
+        "bytes": 133012,
+        "sha256": "642238bb727bf04376daf188838df91a696f5b13c327f5ab764d91502599e940"
+      },
+      "role": "strict verifier companion; no new runtime image pin installed"
+    },
+    "camera-rtsp-verifier.host": {
+      "elf_header": {
+        "class_bits": 64,
+        "flags": 0,
+        "machine": 62,
+        "type": 3
+      },
+      "pin": {
+        "bytes": 103512,
+        "sha256": "c2e388529c4a33d3a19ecb7ae912a8e5aed0d151b873960cc357ff20ef49f6a2"
+      },
+      "role": "strict verifier companion; no new runtime image pin installed"
+    },
+    "host-integration-linkcheck-NOT-RUN": {
+      "elf_header": {
+        "class_bits": 64,
+        "flags": 0,
+        "machine": 62,
+        "type": 3
+      },
+      "pin": {
+        "bytes": 92704,
+        "sha256": "ec49735030a8ca1ce07a0f795f19cbaa08aaecbb906cf18e2b82fc4202977c5c"
+      },
+      "role": "link check only; never run or deploy"
+    },
+    "libcamera-rtsp-integration-arm.a": {
+      "members": [
+        {
+          "bytes": 24184,
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name_field": "/0",
+          "sha256": "e9324cc8d421eaf0acac4364b812f4614ad80069f71e806eeb40ceb29b1944e0"
+        },
+        {
+          "bytes": 12648,
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name_field": "/27",
+          "sha256": "36c27e86aa8b8fb0fd41a7eceaa4040345b1fbb714be666f7f381f6cf0868434"
+        },
+        {
+          "bytes": 15616,
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name_field": "/47",
+          "sha256": "2d2a0f5e50574036b082a668f21e782135da0dbb238bcd6394d43ee3c2a07c67"
+        },
+        {
+          "bytes": 4212,
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name_field": "3-ipc.o/",
+          "sha256": "ed99e63117b5823a126565e28cc054fa77127729184acb00e5cdf15023045b75"
+        },
+        {
+          "bytes": 10328,
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name_field": "/77",
+          "sha256": "9b47c1e10d4a5535b49247d015a00d283fc754e45c4617c8c0d846349f9b6e3e"
+        },
+        {
+          "bytes": 5312,
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name_field": "/99",
+          "sha256": "6b6a6954276a60798e03a7b497668a4cc2a51cb6f2cb49e32ba43ef113bdb368"
+        },
+        {
+          "bytes": 7284,
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name_field": "6-rtsp_input.o/",
+          "sha256": "003da32e41d97670231bca2143382da7f628223928b63de1062febab7cf52e31"
+        },
+        {
+          "bytes": 3656,
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name_field": "7-backend.o/",
+          "sha256": "1585e947e9ff904dd746e8ad9fe5b078070377b487abfbb7dd2df4f316ea3f9a"
+        },
+        {
+          "bytes": 5308,
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name_field": "8-packet_hub.o/",
+          "sha256": "d274f2dc6d9977dd07a55740f5e49ff016e1a2836fad0a639866a13dfa702440"
+        },
+        {
+          "bytes": 11980,
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name_field": "9-producer.o/",
+          "sha256": "0cd5e458d81257d9421810d6e843b7b2a0b01f2e8a2342ce6c7cd4cb907edc02"
+        },
+        {
+          "bytes": 2068,
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name_field": "10-rtp_h264.o/",
+          "sha256": "e03036d2283d615a752d0bcd200b7e9f9bc1210609b5370bce533192485cb0eb"
+        },
+        {
+          "bytes": 6404,
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name_field": "11-sha256.o/",
+          "sha256": "8af64643fcd5f348f2251de7bd1c69359150ab2222425bb5d44b3328c36901ce"
+        },
+        {
+          "bytes": 1736,
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name_field": "/117",
+          "sha256": "d0dedca84e17894c9c1343750c97e107100ca05760fd948830de8baaeb790be6"
+        },
+        {
+          "bytes": 1484,
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name_field": "/137",
+          "sha256": "74469e6f8a2e3d6fb17a0ef6911beaa4d8474c50da816ab52490d339c1d4d742"
+        }
+      ],
+      "pin": {
+        "bytes": 115910,
+        "sha256": "53e42773bbb2dd7ec4abf12ee35f3a85f14064d359cc1f1336a286a58fc98e2f"
+      },
+      "role": "strict integration archive; real camera entry/provider wiring missing"
+    },
+    "libcamera-rtsp-integration-host.a": {
+      "members": [
+        {
+          "bytes": 44904,
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name_field": "/0",
+          "sha256": "d569a023db9ab28737c78707093ad01a0d7e7901f76c35768dcbf8d47c6eecbc"
+        },
+        {
+          "bytes": 17072,
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name_field": "/27",
+          "sha256": "bf1404f1b43755ebb147c1e9d4b181257eac2e44e7470a9f04173afa186583d1"
+        },
+        {
+          "bytes": 21488,
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name_field": "/47",
+          "sha256": "9626cef626bba0e723fe81e1fec146a46c9c1c84e25cb66225de7929e9c168b7"
+        },
+        {
+          "bytes": 6128,
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name_field": "3-ipc.o/",
+          "sha256": "e88502400bc7338553bcff768440cea892b461ac9c718c4bbd89f74a2e7e6818"
+        },
+        {
+          "bytes": 14944,
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name_field": "/77",
+          "sha256": "7d09728d3c5e81f75034279c8f60bc3cb4d0b2a7dd40b19a8e5c61d76cf02c2c"
+        },
+        {
+          "bytes": 7288,
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name_field": "/99",
+          "sha256": "3ea13827a70344154c6c174bb092a54da079bf75764cff15118373bedef08395"
+        },
+        {
+          "bytes": 10520,
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name_field": "6-rtsp_input.o/",
+          "sha256": "754749a1f906cdd32db69a38ad6f8aefc45cb7b00923cd12e65d488d4e11ddcf"
+        },
+        {
+          "bytes": 5352,
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name_field": "7-backend.o/",
+          "sha256": "bfdf3d5d5b3c5d1fff5b8ae8ce0711c72741799b2f2e38769ea0159409269653"
+        },
+        {
+          "bytes": 5624,
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name_field": "8-packet_hub.o/",
+          "sha256": "1cedcf536ed9cf2de073950d60b1492ed0d9286e6385fa2489fa22d2cdb6aff5"
+        },
+        {
+          "bytes": 15096,
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name_field": "9-producer.o/",
+          "sha256": "b469377db799283645160318d491d3cfa8b921bceb0554417b4cff88019093bb"
+        },
+        {
+          "bytes": 2928,
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name_field": "10-rtp_h264.o/",
+          "sha256": "76f042cea897b9d01c157c0eb88507c073a95aa3f903f3c212be90f375d7b948"
+        },
+        {
+          "bytes": 9664,
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name_field": "11-sha256.o/",
+          "sha256": "2dac7dbf7be224f22a9e06155d16122ba1792e72822b6a624df729edcc24324f"
+        },
+        {
+          "bytes": 2544,
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name_field": "/117",
+          "sha256": "d31fd009e3d966a5ecec0e5fd4862da8475a33f15f313bee683f2f74273b66a9"
+        },
+        {
+          "bytes": 1920,
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name_field": "/137",
+          "sha256": "760892342aff65475edfe566cb56bda10b1325297db2e890a841af9f764611f5"
+        }
+      ],
+      "pin": {
+        "bytes": 169162,
+        "sha256": "288b47a9fbd5e5dc9f17180f1d43c679951fe7c11105303cb4f163798f926c41"
+      },
+      "role": "strict integration archive; real camera entry/provider wiring missing"
+    }
+  },
+  "groups": {
+    "arm-integration": {
+      "defines": [
+        "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\""
+      ],
+      "objects": [
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "0-rtsp_server_candidate.o",
+          "pin": {
+            "bytes": 24184,
+            "sha256": "e9324cc8d421eaf0acac4364b812f4614ad80069f71e806eeb40ceb29b1944e0"
+          },
+          "source": "apps/rtsp-auth/isolated-server-host-tail/rtsp_server_candidate.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "1-candidate_auth.o",
+          "pin": {
+            "bytes": 12648,
+            "sha256": "36c27e86aa8b8fb0fd41a7eceaa4040345b1fbb714be666f7f381f6cf0868434"
+          },
+          "source": "apps/rtsp-auth/isolated-server-host-tail/candidate_auth.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "2-verifier_adapter_overlay.o",
+          "pin": {
+            "bytes": 15616,
+            "sha256": "2d2a0f5e50574036b082a668f21e782135da0dbb238bcd6394d43ee3c2a07c67"
+          },
+          "source": "apps/rtsp-auth/isolated-server-host-tail/verifier_adapter_overlay.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "3-ipc.o",
+          "pin": {
+            "bytes": 4212,
+            "sha256": "ed99e63117b5823a126565e28cc054fa77127729184acb00e5cdf15023045b75"
+          },
+          "source": "apps/rtsp-auth/isolated-verifier/ipc.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "4-rtsp_digest_wire.o",
+          "pin": {
+            "bytes": 10328,
+            "sha256": "9b47c1e10d4a5535b49247d015a00d283fc754e45c4617c8c0d846349f9b6e3e"
+          },
+          "source": "framework/src/rtsp_digest_wire.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "5-rtsp_request.o",
+          "pin": {
+            "bytes": 5312,
+            "sha256": "6b6a6954276a60798e03a7b497668a4cc2a51cb6f2cb49e32ba43ef113bdb368"
+          },
+          "source": "framework/src/rtsp_request.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "6-rtsp_input.o",
+          "pin": {
+            "bytes": 7284,
+            "sha256": "003da32e41d97670231bca2143382da7f628223928b63de1062febab7cf52e31"
+          },
+          "source": "framework/src/rtsp_input.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "7-backend.o",
+          "pin": {
+            "bytes": 3656,
+            "sha256": "1585e947e9ff904dd746e8ad9fe5b078070377b487abfbb7dd2df4f316ea3f9a"
+          },
+          "source": "framework/src/backend.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "8-packet_hub.o",
+          "pin": {
+            "bytes": 5308,
+            "sha256": "d274f2dc6d9977dd07a55740f5e49ff016e1a2836fad0a639866a13dfa702440"
+          },
+          "source": "framework/src/packet_hub.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "9-producer.o",
+          "pin": {
+            "bytes": 11980,
+            "sha256": "0cd5e458d81257d9421810d6e843b7b2a0b01f2e8a2342ce6c7cd4cb907edc02"
+          },
+          "source": "framework/src/producer.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "10-rtp_h264.o",
+          "pin": {
+            "bytes": 2068,
+            "sha256": "e03036d2283d615a752d0bcd200b7e9f9bc1210609b5370bce533192485cb0eb"
+          },
+          "source": "framework/src/rtp_h264.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "11-sha256.o",
+          "pin": {
+            "bytes": 6404,
+            "sha256": "8af64643fcd5f348f2251de7bd1c69359150ab2222425bb5d44b3328c36901ce"
+          },
+          "source": "apps/auth-web/service/vendor/mbedtls/library/sha256.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "12-constant_time.o",
+          "pin": {
+            "bytes": 1736,
+            "sha256": "d0dedca84e17894c9c1343750c97e107100ca05760fd948830de8baaeb790be6"
+          },
+          "source": "apps/auth-web/service/vendor/mbedtls/library/constant_time.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "13-platform_util.o",
+          "pin": {
+            "bytes": 1484,
+            "sha256": "74469e6f8a2e3d6fb17a0ef6911beaa4d8474c50da816ab52490d339c1d4d742"
+          },
+          "source": "apps/auth-web/service/vendor/mbedtls/library/platform_util.c"
+        }
+      ]
+    },
+    "arm-verifier": {
+      "defines": [
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\""
+      ],
+      "objects": [
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "0-ipc.o",
+          "pin": {
+            "bytes": 4212,
+            "sha256": "ed99e63117b5823a126565e28cc054fa77127729184acb00e5cdf15023045b75"
+          },
+          "source": "apps/rtsp-auth/isolated-verifier/ipc.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "1-engine.o",
+          "pin": {
+            "bytes": 8564,
+            "sha256": "6484985b24b581e8cc75233173cebd61c75fdb340da6c31f576b132c230a4264"
+          },
+          "source": "apps/rtsp-auth/isolated-verifier/engine.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "2-isolation.o",
+          "pin": {
+            "bytes": 3752,
+            "sha256": "1e07c5529a64d059b790bb74cad101f2832ab509a15d3fec091932c1b331fd75"
+          },
+          "source": "apps/rtsp-auth/isolated-verifier/isolation.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "3-child.o",
+          "pin": {
+            "bytes": 36648,
+            "sha256": "ce9fdf6a15f132f530b2560e15130d3101039cc38c74f085ca9cae38f3fcb108"
+          },
+          "source": "apps/rtsp-auth/isolated-verifier/child.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "4-rtsp_digest.o",
+          "pin": {
+            "bytes": 11136,
+            "sha256": "5dc6b80bedc69eda5a61a3171b26d96dc47adc0d7760cd1bbc50663fdc9c4b4e"
+          },
+          "source": "framework/src/rtsp_digest.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "5-rtsp_digest_wire.o",
+          "pin": {
+            "bytes": 10328,
+            "sha256": "9b47c1e10d4a5535b49247d015a00d283fc754e45c4617c8c0d846349f9b6e3e"
+          },
+          "source": "framework/src/rtsp_digest_wire.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "6-rtsp_request.o",
+          "pin": {
+            "bytes": 5312,
+            "sha256": "6b6a6954276a60798e03a7b497668a4cc2a51cb6f2cb49e32ba43ef113bdb368"
+          },
+          "source": "framework/src/rtsp_request.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "7-rtsp_input.o",
+          "pin": {
+            "bytes": 7284,
+            "sha256": "003da32e41d97670231bca2143382da7f628223928b63de1062febab7cf52e31"
+          },
+          "source": "framework/src/rtsp_input.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "8-access_policy.o",
+          "pin": {
+            "bytes": 10684,
+            "sha256": "a2f63386588894d5e356fb969666201bde814b3b066182d8eec21783a652e5f1"
+          },
+          "source": "framework/src/access_policy.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "9-sha256.o",
+          "pin": {
+            "bytes": 6404,
+            "sha256": "8af64643fcd5f348f2251de7bd1c69359150ab2222425bb5d44b3328c36901ce"
+          },
+          "source": "apps/auth-web/service/vendor/mbedtls/library/sha256.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "10-md5.o",
+          "pin": {
+            "bytes": 6480,
+            "sha256": "4ddea0819b1dcf5d100e8b37155f82e14b9dc1c3ca3da7c435fcea185eda131f"
+          },
+          "source": "apps/auth-web/service/vendor/mbedtls/library/md5.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "11-constant_time.o",
+          "pin": {
+            "bytes": 1736,
+            "sha256": "d0dedca84e17894c9c1343750c97e107100ca05760fd948830de8baaeb790be6"
+          },
+          "source": "apps/auth-web/service/vendor/mbedtls/library/constant_time.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 32,
+            "flags": 83886080,
+            "machine": 40,
+            "type": 1
+          },
+          "name": "12-platform_util.o",
+          "pin": {
+            "bytes": 1484,
+            "sha256": "74469e6f8a2e3d6fb17a0ef6911beaa4d8474c50da816ab52490d339c1d4d742"
+          },
+          "source": "apps/auth-web/service/vendor/mbedtls/library/platform_util.c"
+        }
+      ]
+    },
+    "host-bench": {
+      "defines": [
+        "-DIS_HOST_PUBLIC_ONLY",
+        "-DIS_SYNTHETIC_SOURCE_ONLY",
+        "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\""
+      ],
+      "objects": [
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "0-rtsp_server_candidate.o",
+          "pin": {
+            "bytes": 44904,
+            "sha256": "d569a023db9ab28737c78707093ad01a0d7e7901f76c35768dcbf8d47c6eecbc"
+          },
+          "source": "apps/rtsp-auth/isolated-server-host-tail/rtsp_server_candidate.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "1-candidate_auth.o",
+          "pin": {
+            "bytes": 17520,
+            "sha256": "56fbf744538a3a58781da0a78826615b76f3e17e9efcd7f94ea6dc936de4a49e"
+          },
+          "source": "apps/rtsp-auth/isolated-server-host-tail/candidate_auth.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "2-verifier_adapter_overlay.o",
+          "pin": {
+            "bytes": 21488,
+            "sha256": "9626cef626bba0e723fe81e1fec146a46c9c1c84e25cb66225de7929e9c168b7"
+          },
+          "source": "apps/rtsp-auth/isolated-server-host-tail/verifier_adapter_overlay.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "3-ipc.o",
+          "pin": {
+            "bytes": 6128,
+            "sha256": "e88502400bc7338553bcff768440cea892b461ac9c718c4bbd89f74a2e7e6818"
+          },
+          "source": "apps/rtsp-auth/isolated-verifier/ipc.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "4-rtsp_digest_wire.o",
+          "pin": {
+            "bytes": 14944,
+            "sha256": "7d09728d3c5e81f75034279c8f60bc3cb4d0b2a7dd40b19a8e5c61d76cf02c2c"
+          },
+          "source": "framework/src/rtsp_digest_wire.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "5-rtsp_request.o",
+          "pin": {
+            "bytes": 7288,
+            "sha256": "3ea13827a70344154c6c174bb092a54da079bf75764cff15118373bedef08395"
+          },
+          "source": "framework/src/rtsp_request.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "6-rtsp_input.o",
+          "pin": {
+            "bytes": 10520,
+            "sha256": "754749a1f906cdd32db69a38ad6f8aefc45cb7b00923cd12e65d488d4e11ddcf"
+          },
+          "source": "framework/src/rtsp_input.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "7-backend.o",
+          "pin": {
+            "bytes": 5352,
+            "sha256": "bfdf3d5d5b3c5d1fff5b8ae8ce0711c72741799b2f2e38769ea0159409269653"
+          },
+          "source": "framework/src/backend.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "8-packet_hub.o",
+          "pin": {
+            "bytes": 5624,
+            "sha256": "1cedcf536ed9cf2de073950d60b1492ed0d9286e6385fa2489fa22d2cdb6aff5"
+          },
+          "source": "framework/src/packet_hub.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "9-producer.o",
+          "pin": {
+            "bytes": 15096,
+            "sha256": "b469377db799283645160318d491d3cfa8b921bceb0554417b4cff88019093bb"
+          },
+          "source": "framework/src/producer.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "10-rtp_h264.o",
+          "pin": {
+            "bytes": 2928,
+            "sha256": "76f042cea897b9d01c157c0eb88507c073a95aa3f903f3c212be90f375d7b948"
+          },
+          "source": "framework/src/rtp_h264.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "11-sha256.o",
+          "pin": {
+            "bytes": 9664,
+            "sha256": "2dac7dbf7be224f22a9e06155d16122ba1792e72822b6a624df729edcc24324f"
+          },
+          "source": "apps/auth-web/service/vendor/mbedtls/library/sha256.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "12-constant_time.o",
+          "pin": {
+            "bytes": 2544,
+            "sha256": "d31fd009e3d966a5ecec0e5fd4862da8475a33f15f313bee683f2f74273b66a9"
+          },
+          "source": "apps/auth-web/service/vendor/mbedtls/library/constant_time.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "13-platform_util.o",
+          "pin": {
+            "bytes": 1920,
+            "sha256": "760892342aff65475edfe566cb56bda10b1325297db2e890a841af9f764611f5"
+          },
+          "source": "apps/auth-web/service/vendor/mbedtls/library/platform_util.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "14-fixture.o",
+          "pin": {
+            "bytes": 29600,
+            "sha256": "7d2336488e8ace21faf0e890ff3efff930a42291e705dcde4bc4147baca4d001"
+          },
+          "source": "apps/rtsp-auth/isolated-server-host-tail/fixture.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "15-fault_clock.o",
+          "pin": {
+            "bytes": 2464,
+            "sha256": "ccc81d7e35c28380dac33012ec6769a98f9fd73c03a5780fb8339e1f6b2a004c"
+          },
+          "source": "apps/rtsp-auth/isolated-server-host-tail/fault_clock.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "16-wait_receipt.o",
+          "pin": {
+            "bytes": 2904,
+            "sha256": "b958744462b53eafd9aaa9cec551d58b812bc2774a0d87b04b14b9989e06b03d"
+          },
+          "source": "apps/rtsp-auth/isolated-server-host-tail/wait_receipt.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "17-pread_receipt.o",
+          "pin": {
+            "bytes": 3048,
+            "sha256": "34717cafedf1b873268c1afc65aa24a7307e35a2c7810ae85a392b25cc9c9de3"
+          },
+          "source": "apps/rtsp-auth/isolated-server-host-tail/pread_receipt.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "18-prefix_receipt.o",
+          "pin": {
+            "bytes": 3552,
+            "sha256": "0133c53a2347e6d3e998b00658b4df9b997c41ba55c36120542105d1c6187fb2"
+          },
+          "source": "apps/rtsp-auth/isolated-server-host-tail/prefix_receipt.c"
+        }
+      ]
+    },
+    "host-integration": {
+      "defines": [
+        "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\""
+      ],
+      "objects": [
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "0-rtsp_server_candidate.o",
+          "pin": {
+            "bytes": 44904,
+            "sha256": "d569a023db9ab28737c78707093ad01a0d7e7901f76c35768dcbf8d47c6eecbc"
+          },
+          "source": "apps/rtsp-auth/isolated-server-host-tail/rtsp_server_candidate.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "1-candidate_auth.o",
+          "pin": {
+            "bytes": 17072,
+            "sha256": "bf1404f1b43755ebb147c1e9d4b181257eac2e44e7470a9f04173afa186583d1"
+          },
+          "source": "apps/rtsp-auth/isolated-server-host-tail/candidate_auth.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "2-verifier_adapter_overlay.o",
+          "pin": {
+            "bytes": 21488,
+            "sha256": "9626cef626bba0e723fe81e1fec146a46c9c1c84e25cb66225de7929e9c168b7"
+          },
+          "source": "apps/rtsp-auth/isolated-server-host-tail/verifier_adapter_overlay.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "3-ipc.o",
+          "pin": {
+            "bytes": 6128,
+            "sha256": "e88502400bc7338553bcff768440cea892b461ac9c718c4bbd89f74a2e7e6818"
+          },
+          "source": "apps/rtsp-auth/isolated-verifier/ipc.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "4-rtsp_digest_wire.o",
+          "pin": {
+            "bytes": 14944,
+            "sha256": "7d09728d3c5e81f75034279c8f60bc3cb4d0b2a7dd40b19a8e5c61d76cf02c2c"
+          },
+          "source": "framework/src/rtsp_digest_wire.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "5-rtsp_request.o",
+          "pin": {
+            "bytes": 7288,
+            "sha256": "3ea13827a70344154c6c174bb092a54da079bf75764cff15118373bedef08395"
+          },
+          "source": "framework/src/rtsp_request.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "6-rtsp_input.o",
+          "pin": {
+            "bytes": 10520,
+            "sha256": "754749a1f906cdd32db69a38ad6f8aefc45cb7b00923cd12e65d488d4e11ddcf"
+          },
+          "source": "framework/src/rtsp_input.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "7-backend.o",
+          "pin": {
+            "bytes": 5352,
+            "sha256": "bfdf3d5d5b3c5d1fff5b8ae8ce0711c72741799b2f2e38769ea0159409269653"
+          },
+          "source": "framework/src/backend.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "8-packet_hub.o",
+          "pin": {
+            "bytes": 5624,
+            "sha256": "1cedcf536ed9cf2de073950d60b1492ed0d9286e6385fa2489fa22d2cdb6aff5"
+          },
+          "source": "framework/src/packet_hub.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "9-producer.o",
+          "pin": {
+            "bytes": 15096,
+            "sha256": "b469377db799283645160318d491d3cfa8b921bceb0554417b4cff88019093bb"
+          },
+          "source": "framework/src/producer.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "10-rtp_h264.o",
+          "pin": {
+            "bytes": 2928,
+            "sha256": "76f042cea897b9d01c157c0eb88507c073a95aa3f903f3c212be90f375d7b948"
+          },
+          "source": "framework/src/rtp_h264.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "11-sha256.o",
+          "pin": {
+            "bytes": 9664,
+            "sha256": "2dac7dbf7be224f22a9e06155d16122ba1792e72822b6a624df729edcc24324f"
+          },
+          "source": "apps/auth-web/service/vendor/mbedtls/library/sha256.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "12-constant_time.o",
+          "pin": {
+            "bytes": 2544,
+            "sha256": "d31fd009e3d966a5ecec0e5fd4862da8475a33f15f313bee683f2f74273b66a9"
+          },
+          "source": "apps/auth-web/service/vendor/mbedtls/library/constant_time.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "13-platform_util.o",
+          "pin": {
+            "bytes": 1920,
+            "sha256": "760892342aff65475edfe566cb56bda10b1325297db2e890a841af9f764611f5"
+          },
+          "source": "apps/auth-web/service/vendor/mbedtls/library/platform_util.c"
+        }
+      ]
+    },
+    "host-verifier": {
+      "defines": [
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\""
+      ],
+      "objects": [
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "0-ipc.o",
+          "pin": {
+            "bytes": 6128,
+            "sha256": "e88502400bc7338553bcff768440cea892b461ac9c718c4bbd89f74a2e7e6818"
+          },
+          "source": "apps/rtsp-auth/isolated-verifier/ipc.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "1-engine.o",
+          "pin": {
+            "bytes": 11672,
+            "sha256": "d6e54c72b6e6e131e6c5f59a1fe037b46b5695e081f1901a50052c5042415262"
+          },
+          "source": "apps/rtsp-auth/isolated-verifier/engine.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "2-isolation.o",
+          "pin": {
+            "bytes": 4784,
+            "sha256": "370cd3f6ed2a9f764d41b92481c01e0a472060acd0197f62c8b4b58db7d23921"
+          },
+          "source": "apps/rtsp-auth/isolated-verifier/isolation.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "3-child.o",
+          "pin": {
+            "bytes": 40920,
+            "sha256": "274655fa759df8f5ef7301670c714a9d82e1d7a18f666d16f5cc03a312ba40af"
+          },
+          "source": "apps/rtsp-auth/isolated-verifier/child.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "4-rtsp_digest.o",
+          "pin": {
+            "bytes": 15432,
+            "sha256": "5f6474802d4c1b90ed5ff497264441ee6fe71b1c96553ea580040faef373e3c8"
+          },
+          "source": "framework/src/rtsp_digest.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "5-rtsp_digest_wire.o",
+          "pin": {
+            "bytes": 14944,
+            "sha256": "7d09728d3c5e81f75034279c8f60bc3cb4d0b2a7dd40b19a8e5c61d76cf02c2c"
+          },
+          "source": "framework/src/rtsp_digest_wire.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "6-rtsp_request.o",
+          "pin": {
+            "bytes": 7288,
+            "sha256": "3ea13827a70344154c6c174bb092a54da079bf75764cff15118373bedef08395"
+          },
+          "source": "framework/src/rtsp_request.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "7-rtsp_input.o",
+          "pin": {
+            "bytes": 10520,
+            "sha256": "754749a1f906cdd32db69a38ad6f8aefc45cb7b00923cd12e65d488d4e11ddcf"
+          },
+          "source": "framework/src/rtsp_input.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "8-access_policy.o",
+          "pin": {
+            "bytes": 17432,
+            "sha256": "af774546a7220e7c97aecc8a4041e678d079e0569540e5541636ba4ca718989a"
+          },
+          "source": "framework/src/access_policy.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "9-sha256.o",
+          "pin": {
+            "bytes": 9664,
+            "sha256": "2dac7dbf7be224f22a9e06155d16122ba1792e72822b6a624df729edcc24324f"
+          },
+          "source": "apps/auth-web/service/vendor/mbedtls/library/sha256.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "10-md5.o",
+          "pin": {
+            "bytes": 8056,
+            "sha256": "6251f635df78616ae7304d1b0301e99eadf9dd58218f33dcfa054662efed1d98"
+          },
+          "source": "apps/auth-web/service/vendor/mbedtls/library/md5.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "11-constant_time.o",
+          "pin": {
+            "bytes": 2544,
+            "sha256": "d31fd009e3d966a5ecec0e5fd4862da8475a33f15f313bee683f2f74273b66a9"
+          },
+          "source": "apps/auth-web/service/vendor/mbedtls/library/constant_time.c"
+        },
+        {
+          "elf_header": {
+            "class_bits": 64,
+            "flags": 0,
+            "machine": 62,
+            "type": 1
+          },
+          "name": "12-platform_util.o",
+          "pin": {
+            "bytes": 1920,
+            "sha256": "760892342aff65475edfe566cb56bda10b1325297db2e890a841af9f764611f5"
+          },
+          "source": "apps/auth-web/service/vendor/mbedtls/library/platform_util.c"
+        }
+      ]
+    }
+  },
+  "inspection_source_pin": {
+    "bytes": 8092,
+    "sha256": "2afe33ba368838fae80e493125a7f6521214463f36837e22df03d4baab575d88"
+  },
+  "programs_or_tests_or_generators_executed": false,
+  "rebuilt_or_repackaged_or_deployed": false,
+  "recorded_successful_command_logs_rechecked": 88,
+  "report_pin": {
+    "bytes": 224177,
+    "sha256": "7c995a0a23e6dcc9e7e2a4405eb1c192b309316cc78ad1da564c0afaf3eb334d"
+  },
+  "scope": "STATIC_BUILD_ROLE_INSPECTION_NOT_RELEASE_OR_NATIVE_ABI",
+  "source_header_closure_rechecked": 332,
+  "source_pins_rechecked": 29,
+  "state": "STATIC_ROLE_INSPECTION_PASS_NOT_RELEASE_OR_NATIVE_ABI"
+}
