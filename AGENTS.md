@@ -128,10 +128,18 @@ C2c clock design and continuity feasibility completed/BLOCKED. Parent retains st
 policy/guards: brackets/detection/cooperative inhibitors do not establish the whole-
 interval guarantee.30 local feasibility inputs/seven outputs verified; three URL
 pins association only. No watcher/sampler/host policy/settings change selected.
-One author owns fresh encoder-query77-recorder-timer source/docs: private-status
-observation of original stored timer values only, no timer/catch/lease change.
-This is an unadmitted recorder derivative, not a pure library; no import/call/run,
-installation, original helper/source-pin edit, current-state or hardware action.
+Recorder-timer derivative has narrow independent SOURCE/API sufficiency for its
+three changes;33 unchanged reader inputs/three recorded parent context updates/
+four review outputs verified. HOST AST/syntax only, never imported/called/run;
+stored values are not a deadline or admission. Parent disposition in recorder-
+timer docs. Frozen candidate source and review context diff retain an inherited
+adapter selector and are withheld from Git. One author owns a fresh explicit-port
+recorder source candidate: no default/discovery/fallback, require private caller
+adapter before capture effects. No execution selected. This is an unadmitted
+effectful recorder, not a pure library; no timer/catch/lease change, installation, original
+helper/source-pin edit, current-state or hardware action. Separate static build02
+role inspection matched seven artifacts/73 object headers/28 archive bodies and
+strict-vs-HOST define separation; not native ABI, release packaging or app adoption.
 Staging guard remains unavailable; future manual-OFF handoff requires separate
 review/actual readiness. No physical request or transfer is active. Query77 monitor
 lacks query88 command. Authentication/loopback and media-retention

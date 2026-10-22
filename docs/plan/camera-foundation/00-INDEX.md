@@ -94,8 +94,13 @@ cold-context-v2 has conditional exact-profile source sufficiency plus one parent
 offline observation on saved historical bytes, not native/current-state proof.
 C2c clock contract and continuity feasibility remain strictly blocked; no changed
 policy, watcher/inhibitor/sampler or host reconfiguration. Next separate source
-prerequisite is an observational recorder-timer derivative, original stored values
-to private status only, no timer/catch/lease change or execution/adoption.
+prerequisite is an observational recorder-timer derivative, now conditionally
+SOURCE/API sufficient after independent review, never imported/called/run. It
+exposes original stored values to exact private status only, no timer/catch/lease
+change or execution/adoption. Frozen source/review diff are withheld from Git for
+an inherited adapter selector; fresh explicit-port recorder source work removes
+that default, no discovery/fallback or execution. Separate original-build02 artifact-role inspection
+confirms static architecture/define separation, not native ABI or release packaging.
 Original block/parser/HOLDs
 remain frozen. No
 target interface, executable native recipe, capture, staging, boot or query is

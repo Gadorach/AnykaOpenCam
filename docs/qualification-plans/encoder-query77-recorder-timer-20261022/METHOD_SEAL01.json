@@ -1,0 +1,119 @@
+{
+  "task_date": "2026-10-22",
+  "date_source": "Supplied task context, no current timestamp or clock read",
+  "disposition": "ONE_UNREVIEWED_ACTUAL_RECORDER_DERIVATIVE_STORED_TIMER_PRIVATE_STATUS_SOURCE_ONLY",
+  "owned_paths_only": [
+    "apps/qualification/encoder-query77-recorder-timer/",
+    "docs/qualification-plans/encoder-query77-recorder-timer-20261022/"
+  ],
+  "full_original_322_lines_read_before_contract_and_code": true,
+  "TIMER_CONTRACT_written_before_snapshot_and_code": true,
+  "original_recorder": {
+    "path": "work/lightbulb-camera/implementation-20261008T205404Z/uart_capture.py",
+    "bytes": 25426,
+    "sha256": "135a694bf79a1e46d07f089c2256d40ce8c584780c2fd8fa9d7f8b8137a29d00",
+    "unchanged": true
+  },
+  "candidate": {
+    "path": "apps/qualification/encoder-query77-recorder-timer/uart_capture.py",
+    "lines": 340,
+    "bytes": 26563,
+    "sha256": "be0fee5d7aaa55aba5616d04689e309ee9a38255376188ede074cd5be1c7392d",
+    "full_effectful_recorder_not_pure_library_or_installed_entrypoint": true
+  },
+  "allowed_final_delta_only": [
+    "ROOT fixed to canonical original implementation path; CONTROL/history/output associations preserved without author access",
+    "One pure exact stored-float.hex/integer-duration formatter with type/range/nonfinite fixed-error guards",
+    "One actual status nested-field call under private_capture and exact private_status is True"
+  ],
+  "delta_receipt": "SOURCE_DELTA01.json",
+  "text_diff": {"added_lines": 19, "removed_lines": 1, "hunks": 3},
+  "complete_original_AST_equal_after_projecting_only_allowed_delta": true,
+  "original_time_call_sites_preserved": 15,
+  "original_asserts_preserved_not_newly_qualified": 2,
+  "original_capture_start_duration_predicate_UTC_arm_reply_TX_catch_protected_guards_sourcehash_finalizer_serial_argv_preserved": true,
+  "private_status_field": "native_capture_timer_v1",
+  "stored_float_not_new_raw_sample_or_ns_accuracy": true,
+  "new_deadline_or_now_plus_remaining_or_native_expiry_or_coverage_or_catch_validity": false,
+  "independent_arm_timer_added": false,
+  "new_public_default_nonprivate_status_field_or_capability": false,
+  "new_RPC_action_or_CLI_option": false,
+  "candidate___file___source_hash_not_spoofed_as_original": true,
+  "old_Boot_PrivateBoot_pins_paths_validators_or_launchers_edited": false,
+  "input_manifest": "INPUT_PINS01.tsv",
+  "input_count": 25,
+  "before_order": "After complete original source reads and pre-code contract, before candidate creation",
+  "after_order": "After final source/syntax/report authoring, before this seal",
+  "aggregate_format": "Sorted workspace-relative UTF-8 path + NUL + raw SHA256 digest for each, SHA256 of concatenation",
+  "input_aggregate_before": "070fa707a49df51d7a785d0aa5c85dc3fc6feac97564ce62b7b8d383a850424c",
+  "input_aggregate_after": "070fa707a49df51d7a785d0aa5c85dc3fc6feac97564ce62b7b8d383a850424c",
+  "unchanged_count": 25,
+  "within_window_changes": [],
+  "inherited_checkpoint_drift": "Three central context paths differ from feasibility freeze; old/new pins in CANDIDATE_REPORT.md, not rebased into old manifests. No within-window drift and no full context diff attribution claimed.",
+  "C2c_and_feasibility_sealed_outputs_and_seals_match_frozen_before_pins": true,
+  "no_transitive_prior_URL_or_build_closure_requalification": true,
+  "HOST_syntax": {
+    "method": "Old/new source AST parsing only for requested equivalence; compile new text only in memory, dont_inherit=True,optimize=0, then discard unexecuted object",
+    "python": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+    "ast_parse_old_and_new": "PASS",
+    "new_unit_in_memory_compile": "PASS",
+    "compiled_units": 1,
+    "original_compiled": false,
+    "exact_command": "SYNTAX_METHOD.md",
+    "receipt": "SYNTAX01.json",
+    "candidate_helper_formatter_serial_or_library_import_call": false,
+    "code_object_execution_serialization_or_pyc": false
+  },
+  "author_transcription_correction": "First static diff caught a truncated original diagnostic clause in the new copy; restored in candidate before final syntax/pin. No old source mutation or runtime/test result.",
+  "license_provenance": "Original helper had no explicit SPDX/license header; docstring/shebang retained, NOTICE.md pinned and unchanged. No invented global SPDX/GPL/publication grant; third-party terms unchanged.",
+  "outputs_excluding_this_seal": {
+    "apps/qualification/encoder-query77-recorder-timer/uart_capture.py": {
+      "bytes": 26563,
+      "sha256": "be0fee5d7aaa55aba5616d04689e309ee9a38255376188ede074cd5be1c7392d"
+    },
+    "apps/qualification/encoder-query77-recorder-timer/README.md": {
+      "bytes": 4412,
+      "sha256": "b980eeff43e41038fae898d9953b2761adb439ae3d038df5738bf527037a98d9"
+    },
+    "docs/qualification-plans/encoder-query77-recorder-timer-20261022/CANDIDATE_REPORT.md": {
+      "bytes": 6924,
+      "sha256": "994af87a6234853bdd5237a4bd8dc79b7df270c78c1211ff5688f90a22ed5944"
+    },
+    "docs/qualification-plans/encoder-query77-recorder-timer-20261022/INPUT_PINS01.tsv": {
+      "bytes": 3537,
+      "sha256": "5ba39b96133e9a7237454f0b8abff086cc9622d3ee731e90a7df3729f1ca0c7f"
+    },
+    "docs/qualification-plans/encoder-query77-recorder-timer-20261022/SOURCE_DELTA01.json": {
+      "bytes": 2081,
+      "sha256": "0e1c1d8adfc4f59eecf6bb4c9e4fd34ad6b4869613f0397ac6d3518a2b0cde2b"
+    },
+    "docs/qualification-plans/encoder-query77-recorder-timer-20261022/SOURCE_INSPECTION.md": {
+      "bytes": 7896,
+      "sha256": "0605a7be0982a594c876b10a30383f5b907384c8153cbc743791da778277476c"
+    },
+    "docs/qualification-plans/encoder-query77-recorder-timer-20261022/SYNTAX01.json": {
+      "bytes": 1027,
+      "sha256": "41425c360a71bd13ac45a5f31676ee6e8a46ea70fdd9a40e474501d6d492d98f"
+    },
+    "docs/qualification-plans/encoder-query77-recorder-timer-20261022/SYNTAX_METHOD.md": {
+      "bytes": 4918,
+      "sha256": "3baeb9aced14da6be158511d88888e8e00c8a0dd2c5fb88d53f1b5808a0441b5"
+    },
+    "docs/qualification-plans/encoder-query77-recorder-timer-20261022/TIMER_CONTRACT.md": {
+      "bytes": 6252,
+      "sha256": "b1ce63b00f179871bd32a058dc745793ddbaa769632b62c33805ecdfb7865d8a"
+    }
+  },
+  "functional_checklist": "CANDIDATE_REPORT.md: source-inspected where stated; every runtime entry NOT_RUN, memory/latency/dependency proof unqualified",
+  "mocks_fixtures_synthetic_traces_tests_or_generator_invocation": false,
+  "actual_HOLD_control_private_capture_analysis_current_state_proc_dev_clock_clockinfo_sysconf_serial_UART_RPC_network_device_process_launch": false,
+  "Git_index_AGENTS_centralplan_model_provider_safeguard_or_original_source_changes": false,
+  "strict_continuity_operational_BLOCK_and_unchanged_policy_trust_assumptions_retained": true,
+  "PID_tick_namespace_float_native_bound_actual_source_owner_catch_capture_recovery_manual_readiness_blocks_resolved": false,
+  "C1_integration_or_new_generic_continuity_packet": false,
+  "both_original_HOLD_failures_and_consumed_historical_catch_untouched": true,
+  "tool_errors_or_policy_refusals_this_task": [],
+  "inherited_prior_errors_retried_rerouted_or_relabelled_as_source_execution": false,
+  "independent_narrow_source_API_review_required": true,
+  "automatic_import_call_test_runtime_installation_deployment_settings_native_physical_or_next_worker_queue": false
+}

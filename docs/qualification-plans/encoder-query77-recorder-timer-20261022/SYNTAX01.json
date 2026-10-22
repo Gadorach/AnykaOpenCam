@@ -1,0 +1,18 @@
+{
+  "order": "AFTER_FINAL_SOURCE_CORRECTION_NO_CLOCK_READ_OR_TIMESTAMP",
+  "method": "AST-parse original and candidate text for explicit source-equivalence inspection; in-memory compile candidate only with dont_inherit=True,optimize=0; discard unexecuted code object. No imports/calls of inspected sources or formatter.",
+  "python": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+  "candidate": "apps/qualification/encoder-query77-recorder-timer/uart_capture.py",
+  "candidate_sha256": "be0fee5d7aaa55aba5616d04689e309ee9a38255376188ede074cd5be1c7392d",
+  "candidate_bytes": 26563,
+  "candidate_lines": 340,
+  "ast_parse_old_and_new": "PASS",
+  "new_unit_in_memory_compile": "PASS",
+  "compiled_units": 1,
+  "original_compiled": false,
+  "candidate_original_helper_formatter_serial_or_library_import_call": false,
+  "code_object_execution_or_serialization": false,
+  "pyc_written": false,
+  "fixtures_mocks_synthetic_traces_or_runtime_tests": false,
+  "not_runtime_dependency_or_independent_acceptance": true
+}

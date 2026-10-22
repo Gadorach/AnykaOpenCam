@@ -90,12 +90,29 @@ inputs/seven outputs verified;three URL pins receipt association only. Parent re
 the strict operational block; no unproved host exclusions/detection-as-prevention or
 policy/guard changes. No watcher/sampler/inhibitor/service/configuration/current-state
 or target action. Tick/namespace/actual ownership/recovery remain separate blocks.
-One author now owns encoder-query77-recorder-timer source/docs for the separate
-recorder native-timer observation interface: exact original stored float start/
-integer duration/predicate, private status only. No new clock read, deadline projection,
-timer/catch/lease change or old helper/source-pin mutation. Full inherited recorder
-is not a pure library; AST/syntax only, no import/CLI/capture/formatter/RPC/test/
-installation/current-state/hardware use. Source candidate will need independent review.
+Recorder-timer source candidate delivered:340 lines/26563B, module SHA
+`be0fee5d7aaa55aba5616d04689e309ee9a38255376188ede074cd5be1c7392d`.
+HOST AST/syntax only;25 inputs/nine output pins parent-verified. Independent focused
+review accepts narrow conditional SOURCE/API sufficiency for the exact three deltas;
+33 unchanged reader inputs/three recorded parent context updates/four review outputs
+verified. Seal `a0311797f796cc2632549c254ff6f68f4db7013225a93353b72b5605b6de0b79`.
+Parent disposition in recorder-timer docs; that author/reviewer completed. No new clock
+read, deadline projection, timer/catch/lease change or old helper/source-pin mutation.
+Full inherited recorder is not a pure library; never imported/called/run, no test/
+installation/current-state/hardware use. Source sufficiency is not recorder adoption.
+Privacy staging check found an inherited adapter selector in the frozen candidate
+and review context diff. Both remain local/uncommitted, not redacted/resealed.
+One author now owns fresh recorder-explicit-port source/docs: no default selector,
+discovery/fallback or old-source mutation; every capture requires a private caller
+adapter before effects. New source needs independent review, no library/CLI/UART use.
+
+Build-only independent work: static inspection of original rtsp-app/build02 matched
+all seven artifact pins,73 compile-object headers,28 archive member bodies,29 source
+pins/332 source-header pins/88 command logs and exact strict-vs-HOST define groups.
+Receipt/report in rtsp-artifact-roles-20261022 docs. No rebuild/program/test/listener/
+camera execution. ELF/config facts do not prove native ABI or release exclusion;
+functional checklist A's architecture/packaging item remains open. Old build02 is
+not the later prestarted/provider composition or a deployable camera main.
 No executable native recipe, capture/staging/boot/query or user physical action
 selected. Last target observation remains original held U-Boot12:12UTC; no fresh
 target/recorder/owner/expiry status inherited. Both HOLDs stay untouched. Query77
