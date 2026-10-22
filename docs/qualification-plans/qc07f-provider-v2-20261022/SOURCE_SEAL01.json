@@ -1,0 +1,88 @@
+{
+  "UTC": "2026-10-22T12:29:10.907321+00:00",
+  "scope": "SOURCE/HOST/ARM COMPILE/ARCHIVE/RELOCATABLE ONLY; no runtime/provider/native adoption",
+  "source_tree_sha256": "03d94ebaba4c6928f60582ed68a5101de1f06506bcefb1a0ff3b38f2e9389475",
+  "hash_method": "sorted workspace-relative UTF-8 path + NUL + raw SHA256 bytes",
+  "source_files": {
+    "apps/rtsp-auth/qc07f-provider-candidate-v2/README.md": {
+      "bytes": 2802,
+      "sha256": "95a16ef9466c87db16b1b06f658a77cc1214130b971a751c761c9f130f5b236d"
+    },
+    "apps/rtsp-auth/qc07f-provider-candidate-v2/build.py": {
+      "bytes": 11821,
+      "sha256": "b80479916802356b2294642cc924840610653906e5e32fafa2866d9667c7e69a"
+    },
+    "apps/rtsp-auth/qc07f-provider-candidate-v2/encoder_fd_custody.c": {
+      "bytes": 4006,
+      "sha256": "21e9ce06803eb28a416e8841b66ac0326f7b6b199dd9b433bedafa51bb564ce3"
+    },
+    "apps/rtsp-auth/qc07f-provider-candidate-v2/encoder_fd_custody.h": {
+      "bytes": 3116,
+      "sha256": "c51cdc00bc4f3999296335de5f45a8c7bafd37388d131fe14847fd0e8c5917d6"
+    },
+    "apps/rtsp-auth/qc07f-provider-candidate-v2/frame_fd_custody.c": {
+      "bytes": 3484,
+      "sha256": "d6c4a65939c2f6bde1498eb6622c9487a92757c0d7170bcc90d3137a7cfcf78d"
+    },
+    "apps/rtsp-auth/qc07f-provider-candidate-v2/frame_fd_custody.h": {
+      "bytes": 2887,
+      "sha256": "6dce51456b7588fa46c8605d73d222a57eb320abc1583399a78f4a6ae45365ae"
+    }
+  },
+  "report_pins": {
+    "docs/qualification-plans/qc07f-provider-v2-20261022/CANDIDATE_REPORT.md": {
+      "bytes": 10458,
+      "sha256": "c0cef8db46644429db11535993de584716ad50017a6b511f6407686462d434b5"
+    },
+    "docs/qualification-plans/qc07f-provider-v2-20261022/runs/build01/REPORT.json": {
+      "bytes": 264555,
+      "sha256": "04f06accd58ecd1cb35f3624689195a5133459edc337779e901ce79fe3a49ef0"
+    },
+    "docs/qualification-plans/qc07f-provider-v2-20261022/runs/build02/REPORT.json": {
+      "bytes": 283776,
+      "sha256": "537ee5ed459f1293fc82a9795c7646f9aae210dc57a7c140da3e5641794e18b2"
+    }
+  },
+  "exact_query_source_pin": "ec3b9daa257ce6bd72648b4ba7c907c405be588ef1e8bb35c787b1932e9e9520",
+  "v1_frame_imports_byte_identical": true,
+  "original_snapshot_pins_verified_unchanged": 668,
+  "captured_input_pins_unchanged": 120,
+  "consumed_source_header_paths": 99,
+  "final_build": "build02",
+  "compile_result": "HOST/ARM COMPILE/ARCHIVE/RELOCATABLE PASS; NOT RUN OR ADOPTED",
+  "artifacts": {
+    "libqc07f-provider-custody-v2-host.a": {
+      "bytes": 7882,
+      "sha256": "95711d714df5ec4a52ff57e338a4b24ba70fe7bee2b43322972f2c9d0ca390c8",
+      "executed": false
+    },
+    "host-provider-custody-v2-NOT-EXECUTABLE.o": {
+      "bytes": 6040,
+      "sha256": "f5616682c8ae0458b7a7029b4098d52c3ca59a7a1aec8914aa8235ab5bf877bc",
+      "executed": false
+    },
+    "libqc07f-provider-custody-v2-arm.a": {
+      "bytes": 6336,
+      "sha256": "c13f1f58c2eece7cc6aa6e444402a6c0e54e325869701a73773254c1e67c026a",
+      "executed": false
+    },
+    "arm-provider-custody-v2-NOT-EXECUTABLE.o": {
+      "bytes": 4720,
+      "sha256": "b68d8f9ef9097019855ab5597a365d58c09cd5531770c9ffb9b94f73dea135b3",
+      "executed": false
+    }
+  },
+  "initial_build01": "collector system-header path failure retained; all compilation/link commands had passed",
+  "outputs_or_tests_executed": false,
+  "target_or_private_IO": false,
+  "Git_index_central_plan_changes": false,
+  "driver_UAPI_or_unrelated_suites_rerun": false,
+  "full_kernel_module_image_build": false,
+  "provider_or_native_adoption": false,
+  "failed_next_retention": "BLOCKED",
+  "native_memory_admission": "HOLD",
+  "G2": false,
+  "G3": false,
+  "G8": false,
+  "one_next_dependency": "Separately selected real single-owned watchdog capture/encode lifetime source integration preserving5s recovery semantics, no alias/close shortcut; parent disposition still required."
+}

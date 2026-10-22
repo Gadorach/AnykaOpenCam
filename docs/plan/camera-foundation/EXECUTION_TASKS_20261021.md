@@ -1,5 +1,16 @@
 # Active execution ledger — remaining foundation work
 
+**Persistent encoder-FD custody v2 delivered:** HOST/ARM18 compile/archive/
+relocatable commands PASS, no execution. Parent read full helper/header and verified
+source/report/artifact pins,99 dependency paths, byte-identical frame imports and
+recorded results; no compile rerun. Actual new query/schema/session/NONE checks,
+move-on-commit and retained sticky-HOLD snapshot are source-reviewed custody
+pieces, not native/provider adoption. Build01 collector failure remains. Source pin
+`03d94ebaba4c6928f60582ed68a5101de1f06506bcefb1a0ff3b38f2e9389475`.
+See `qc07f-provider-v2-20261022/PARENT_DISPOSITION.md` under qualification docs.
+Fresh single-owned watchdog lifecycle/native overlay source increment selected,
+not full provider/backing/failed-next/main or a hardware/new image operation.
+
 **Encoder query SOURCE/object disposition:** explicit new Clang23.1.3 real ARM
 whole-driver object compile PASS,19676B, no linker/tests/full build. Parent read
 actual handler/UAPI/legacy lifetime source, independently reconstructed exact
