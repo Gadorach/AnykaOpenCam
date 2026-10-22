@@ -33,9 +33,15 @@ private data or push, ordinary index hash unchanged. Second disjoint SOURCE lane
 selected for actual owned-listener consumption in fresh `owned-listener-candidate/`
 and rtsp-owned-listener docs. Preserve loopback/authentication/verifier constraints;
 no listener/bind/runtime/test execution or fake app main. Only these two new source
-lanes are active (prestarted-backend and owned-listener); their delivery will
-require separate parent/source review. The earlier retention investigation itself
-is completed/BLOCKED, not an active implementation lane.
+lanes are active: prestarted-backend author and owned-listener independent reviewer.
+Owned-listener candidate delivered, HOST/ARM52 commands/30 C compilations PASS;
+47-file source pin `febab8640027f71dfc8a1ec4aa53c26cba219048ca4bf74578050377101ce557`.
+Actual borrowed socket queries, post-verifier-readiness move, poll/accept on moved
+FD and clear-before-one-close outcome implemented; transient child inheritance is
+explicitly not native-provider fork clearance. No source acceptance before review,
+execution or composite/native adoption. The earlier retention investigation itself
+is completed/BLOCKED, not an active implementation lane. See rtsp-owned-listener
+candidate report/contract; reviewer owns only fresh review docs/evidence.
 
 **Actual provider derivative narrow SOURCE/API/ownership sufficiency:** no new
 correction-required defect in staged transfers/actual callsites.3,649 prior pins,
