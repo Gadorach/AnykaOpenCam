@@ -31,9 +31,10 @@ was armed/revalidated before user ON. Actual original U-Boot cold catch and held
 prompt, bootloader pin and neutral readbacks PASS. **Actual RAM76 upload/full CRC/
 monitor and fixed RO idle postcheck PASS11:49UTC**; boot shell
 `sh_1635f1a90001X9X69CSqVph1iw` completed normally. No transfer remains active.
-One normal5s watchdog smoke is separately source-selected; no deliberate reset,
-radio/station/media action. Plan:
-`docs/qualification-plans/kernel76-transport-20261021/WATCHDOG_SMOKE22B_PLAN.md`.
+Normal5s watchdog smoke and sameboot idle/FD postflight PASS12:05UTC; no reset
+occurred. One separately selected controlled idle watchdog reset is prepared,
+ending at held original U-Boot only, no reload/radio/station/media. Plan:
+`docs/qualification-plans/kernel76-transport-20261021/WATCHDOG_RESET22B_PLAN.md`.
 Current source/methods:
 `docs/plan/camera-foundation/RESUME_20261022.md`. Current owner receipt:
 `evidence/qualification/qc07f/stock-reference-20261013/fresh22b-sole-owner-bounded-nextboot-hold01.json`.
@@ -42,10 +43,12 @@ new22b phases use a separate sticky subordinate marker. Parent alone hardware.
 
 **P2 v2:** ordinary focused static review accepts its three callback/presence/error-
 ordering corrections; author changed-unit syntax3/3 passed, not runtime confirmation.
-V1/v2/reviews remain frozen; no P1 adoption or composite/native GO. One worker now
-owns fresh `apps/qualification/kernel76-station-attach-tx/` for P3 actual owned
-request/deadline source only; no P4/P5 implementation, tests, ARM/module build or
-hardware. All accepted old inputs remain immutable.
+V1/v2/reviews remain frozen; no P1 adoption or composite/native GO. P3 stopped
+before code because request refs cannot protect USB/core owners through STOP/drain.
+Parent revised source order: one worker now owns fresh
+`apps/qualification/kernel76-station-owner-lifetime/` for the bounded P4a shared
+owner/submitter/callback retirement prerequisite. No P3 request implementation,
+full P4/P5, tests, ARM/module build or hardware; all old inputs remain immutable.
 
 **App integration source:** real v6→RTSP callback glue at
 `apps/rtsp-auth/qc07f-runtime-candidate/` compiled HOST/ARM (54 commands), not run

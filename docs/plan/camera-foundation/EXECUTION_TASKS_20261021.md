@@ -1,5 +1,22 @@
 # Active execution ledger — remaining foundation work
 
+**Oct22 12:05UTC watchdog smoke native PASS:** one5s timeout/ping/get/magic-close,
+10s passive no-feed interval, fresh sameboot idle/PID1 console-only FD postflight
+and exact TX accounting PASS. No reboot; not electrical stop/reset proof. Receipt:
+`execution-20261022/ram76-resume22b/WATCHDOG_SMOKE22B01.json`. Original radio HOLD
+unchanged. Parent separately selects one controlled idle watchdog reset ending
+at held U-Boot, no reload; see `WATCHDOG_RESET22B_PLAN.md` under transport docs.
+
+**P3 technical stop and explicit source-order revision:** worker preserved71-file
+P2v2 baseline, zero production changes/no compiler/tests. Request refs alone cannot
+protect USB/core owners: shared STOP/free lacks submitter/callback rendezvous,
+used-list emptiness is not callback return, and local failure is not HCD completion.
+Report `STATION76_ATTACH_TX_P3_CANDIDATE.md` documents exact source anchors; seal
+`5c49d06840c74e1704eaccbf7401c30358d8117a79f802065500f3d59ac8d38b`.
+Parent explicitly selects bounded P4a shared-owner lifetime prerequisite first in
+fresh `kernel76-station-owner-lifetime/`; not full P4/P5 or P3 implementation,
+P1 review/adoption, native module build or deferred testing. Existing pins frozen.
+
 **Actual22b RAM76 boot + fixed RO idle PASS11:49UTC:** shell
 `sh_1635f1a90001X9X69CSqVph1iw` completed; full upload/independent RAM CRC/monitor
 and startup watchdog closure observed, then sameboot fixed idle/PID1/UID/mounts/
