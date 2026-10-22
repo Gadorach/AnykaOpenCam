@@ -122,9 +122,14 @@ BusyBox delivery route, not admitted commands or recovery. A nine-pin source
 supplement records monitor return/status and shell/decoder/framing limits. Fresh
 query77-controller design completed:43 inputs unchanged,three contextual parent
 updates retained without rebasing. Parent accepts bounded C1 design input only,
-not a controller/native recipe. One author owns new encoder-query77-custody source/
-docs for host-local dual-HOLD/epoch/crash-sticky ledger only; no UART/RPC/process
-launch/current-state/shell/boot/query interface or runtime tests. Staging guard is
+not a controller/native recipe. C1 encoder-query77-custody candidate delivered:
+one803-line host-only library, HOST AST/syntax compilation only; parent verified
+nine inputs/eight sealed outputs. One independent reviewer owns new custody-review
+docs; no import/library execution or runtime tests. V1 correctly refuses historical
+workspace CONTROL under its overbroad outside-Git rule. Parent path-role amendment
+separates exact in-place read-only historical locks from strictly outside-Git new
+outputs; no v1 edit, migration, copied marker, bypass or new revision selected yet.
+No UART/RPC/process launch/current-state/shell/boot/query interface. Staging guard is
 unavailable on the inspected route; future manual-OFF handoff needs separate review
 and actual readiness. No physical request or transfer/hardware operation is active.
 Query77

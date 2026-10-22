@@ -35,10 +35,15 @@ recorded parent checkpoint changes,two supplements and five sealed outputs. Pare
 disposition accepts bounded C1 requirements only, not full controller/source/native
 GO. Source findings require a future independently reviewed/current manual-OFF
 handoff for unguarded staging; no such readiness or physical action is requested.
-One author now owns new encoder-query77-custody source/docs for C1 host-local
-dual-HOLD read-only custody, immutable epoch/budget bookkeeping and crash-sticky
-ledger. No UART/RPC/process/current-state/shell/boot/query interface or runtime
-tests selected; no implementation acceptance before separate source review.
+C1 candidate delivered in encoder-query77-custody:803-line host-local library,
+module SHA `7dc6d11ff7dee758f49b3b0e4f7e43fb8b45215cda3761a75732519079e12b2e`.
+HOST AST/syntax only, never imported/called; parent verified nine inputs/eight
+sealed outputs. Independent custody-review lane selected, no author remains.
+V1 correctly refuses historical CONTROL under the both-roots-outside-Git rule;
+parent C1_PATH_ROLE_AMENDMENT under native-method docs separates exact in-place
+read-only historical locks from strictly outside-Git outputs. No migration/copied
+marker/ignore-Git switch/v1 mutation/new revision selected. No UART/RPC/process/
+current-state/shell/boot/query interface or runtime tests; source acceptance pending.
 No executable native recipe, capture/staging/boot/query or user physical action
 selected. Last target observation remains original held U-Boot12:12UTC; no fresh
 target/recorder/owner/expiry status inherited. Both HOLDs stay untouched. Query77

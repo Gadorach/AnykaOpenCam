@@ -1,0 +1,41 @@
+{
+  "scope": "HOST static syntax/AST only for the single NEW Python unit; not a functional or runtime test",
+  "python": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+  "unit": "apps/qualification/encoder-query77-custody/custody.py",
+  "method": "Read UTF-8 text; ast.parse(mode=exec); compile(text, custody.py, exec, dont_inherit=True, optimize=0); never execute/serialize/import the resulting code object",
+  "interim": {
+    "utc": "2026-10-22T17:29:16.821767+00:00",
+    "bytes": 34057,
+    "lines": 789,
+    "sha256": "fe9fa2aca14385c1ba676d39827b32041c83ea6a918cc5836a44cae016639005",
+    "ast_parse": "PASS",
+    "syntax_compile": "PASS",
+    "disposition": "Interim text, not final source pin. Then preallocated the two source-FD ownership slots before descriptor acquisition; no runtime exercise. Interim source not separately sealed as an accepted input."
+  },
+  "interim_after_source_slot_preallocation": {
+    "utc": "2026-10-22T17:31:14.478448+00:00",
+    "bytes": 34551,
+    "lines": 800,
+    "sha256": "8d2c800f90098889e6ee34dfe080657a081eeb45de1da8e2fc6a1b7d52e7a94b",
+    "ast_parse": "PASS",
+    "syntax_compile": "PASS",
+    "assert_nodes": 0,
+    "disposition": "Then added explicit required initial Epoch catch state; no inferred ARMED state from catch identity. Interim syntax only, not final source pin."
+  },
+  "final": {
+    "utc": "2026-10-22T17:34:13.146984+00:00",
+    "bytes": 34669,
+    "lines": 803,
+    "sha256": "7dc6d11ff7dee758f49b3b0e4f7e43fb8b45215cda3761a75732519079e12b2e",
+    "ast_parse": "PASS",
+    "syntax_compile": "PASS",
+    "assert_nodes": 0
+  },
+  "pyc_or_other_compiled_output_written": false,
+  "candidate_imported_or_called": false,
+  "candidate_or_generated_code_object_executed": false,
+  "runtime_functional_adversarial_fuzz_mutation_tests": false,
+  "library_private_filesystem_exercise": false,
+  "independent_source_acceptance": false,
+  "native_admission": false
+}

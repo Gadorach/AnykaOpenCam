@@ -1,0 +1,75 @@
+{
+  "utc": "2026-10-22T17:35:57.257670+00:00",
+  "scope": "One bounded unreviewed C1 SOURCE candidate; conditional serialized host-local custody only, not E2/native/controller/manual admission",
+  "method": "Dedicated public source reads/patches and inline stdlib static SHA256/JSON/AST/in-memory syntax compile only; no candidate import or library call",
+  "owned_paths_only": [
+    "apps/qualification/encoder-query77-custody/",
+    "docs/qualification-plans/encoder-query77-custody-20261022/"
+  ],
+  "precode_contract_written_before_module": true,
+  "precode_contract_matches_first_recorded_pin": true,
+  "first_fresh_input_comparison_utc": "2026-10-22T17:29:16.821767+00:00",
+  "first_fresh_input_comparison_after_authoring_began": true,
+  "frozen_design_expected_pins_inherited_from_prior_final_seal": true,
+  "frozen_design_files_count": 6,
+  "frozen_design_files_unchanged": true,
+  "context_documents_count": 3,
+  "context_documents_unchanged_since_first_fresh_snapshot": true,
+  "context_note": "Harness announced parent checkpoint edits before the first fresh C1 comparison. Those contextual pins are separate from the unchanged original design manifests, never rebased into them; no pre-use seal is claimed.",
+  "input_manifest": "INPUT_PINS01.tsv",
+  "input_count": 9,
+  "input_aggregate_order": "INPUT_PINS01.tsv data-row order; each full workspace-relative UTF-8 path + NUL + raw SHA256 digest bytes",
+  "input_aggregate_before": "ccf9332abb90d956c40035b664c08c098e8dda0f10358e880d231ea2c3c4ab46",
+  "input_aggregate_after": "ccf9332abb90d956c40035b664c08c098e8dda0f10358e880d231ea2c3c4ab46",
+  "all_nine_input_pins_matched": true,
+  "source_aggregate_format": "sorted workspace-relative UTF-8 path + NUL + raw SHA256 digest bytes",
+  "two_file_source_aggregate": "5c2d338973ab6384b504b6b52203b072e9ea04a3b9a357127638f1829b2ea286",
+  "outputs_excluding_this_seal": {
+    "apps/qualification/encoder-query77-custody/README.md": {
+      "bytes": 9259,
+      "sha256": "eda250aa1eb7c7bebcaee37aecc9d37381bf8612efab5497e94ab1dd78d5a723"
+    },
+    "apps/qualification/encoder-query77-custody/custody.py": {
+      "bytes": 34669,
+      "sha256": "7dc6d11ff7dee758f49b3b0e4f7e43fb8b45215cda3761a75732519079e12b2e"
+    },
+    "docs/qualification-plans/encoder-query77-custody-20261022/BUILD_RESULT.md": {
+      "bytes": 4480,
+      "sha256": "65e36fed18c7c09ba5b7571b19f37e5f4a74099200273704da66e97d5989bf3d"
+    },
+    "docs/qualification-plans/encoder-query77-custody-20261022/C1_OWNERSHIP_CONTRACT.md": {
+      "bytes": 7758,
+      "sha256": "01fb1a9c173536dbe566f209137aeda1604128cc9980971395e09bb83aafdd65"
+    },
+    "docs/qualification-plans/encoder-query77-custody-20261022/INPUT_PINS01.tsv": {
+      "bytes": 1301,
+      "sha256": "d8dd1ea5cdcd4f73081733e33efc3a94a6c720da858541098c3465cf9d0707ad"
+    },
+    "docs/qualification-plans/encoder-query77-custody-20261022/SOURCE_INSPECTION.md": {
+      "bytes": 9090,
+      "sha256": "819d9310568afbba564e56eeb4f6d3f3c926d68aeece5299f462b62ba754962f"
+    },
+    "docs/qualification-plans/encoder-query77-custody-20261022/SOURCE_INVENTORY01.json": {
+      "bytes": 2416,
+      "sha256": "f7a765b79dbde86ac73b2aa9fa8b05641eac3388bd18d1eb1be72bc3874878de"
+    },
+    "docs/qualification-plans/encoder-query77-custody-20261022/SYNTAX01.json": {
+      "bytes": 1940,
+      "sha256": "fec6b54940e90ee477999ef296ce6c40771dedfbd0ad80847faffd199bccf241"
+    }
+  },
+  "final_source_matches_syntax_receipt": true,
+  "final_source_matches_inventory_receipt": true,
+  "host_syntax_only": "One new Python unit; three successive authored text revisions AST-parsed/compiled in memory, no code object executed or written",
+  "ordinary_authoring_failure_preserved": "One README documentation patch verification error had no applied changes; corrected patch context. No policy refusal or runtime/controller retry occurred.",
+  "candidate_import_or_library_call": false,
+  "code_object_or_generator_or_client_execution": false,
+  "runtime_functional_adversarial_fuzz_mutation_tests": false,
+  "private_actual_hold_control_capture_current_state_proc_device_network_UART_RPC_access": false,
+  "candidate_process_launch_or_signal": false,
+  "git_index_AGENTS_central_plan_old_source_helper_safeguard_changes_by_worker": false,
+  "native_or_manual_action_requested": false,
+  "automatic_next_worker_test_operation_queue": false,
+  "independent_source_acceptance": false,
+  "operational_block": "Both roots are required outside Git; historical workspace CONTROL is refused. No current marker custody, migration/copy/replacement or bypass is proved/authorized. Serialized namespace/source/evidence and external-lifetime prerequisites remain conditional."
+}
