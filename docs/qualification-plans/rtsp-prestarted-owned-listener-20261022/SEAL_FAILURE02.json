@@ -1,0 +1,14 @@
+{
+  "scope": "Author static link-map bookkeeping failure; not build/runtime/policy",
+  "command": "python3 -B docs/qualification-plans/rtsp-prestarted-owned-listener-20261022/seal02.py",
+  "exit": 1,
+  "error": "RuntimeError: map actual object load inventory",
+  "initial_finalizer": "seal02.py",
+  "initial_finalizer_sha256": "9232c5c5f2580bc3fe38a7a71b9622f1c3fedcf3edab5b340d87882c1a49193d",
+  "cause": "ARM GNU ld map lists the fifteen actual object LOAD paths plus one terminal LOAD linker stubs pseudo-entry after OUTPUT. The direct source/object/archive/link arguments agree; this generated linker label is not a sixteenth input file or sibling library. HOST map check had passed.",
+  "correction": "Fresh seal03.py requires exactly the fifteen actual input paths and exactly one final linker stubs pseudo-entry for ARM only, recording it separately. Original seal.py and seal02.py are frozen unchanged. No compiler/app/output/listener/test rerun.",
+  "production_or_build_source_changed": false,
+  "repeat_compilation": false,
+  "partial_final_seals_written": false,
+  "policy_rejection_or_reroute": false
+}

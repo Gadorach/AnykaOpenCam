@@ -1,0 +1,14 @@
+{
+  "scope": "Author static ELF-inventory bookkeeping failure; not build/runtime/policy",
+  "command": "python3 -B docs/qualification-plans/rtsp-prestarted-owned-listener-20261022/seal.py",
+  "exit": 1,
+  "error": "RuntimeError: ELF and recorded relocation/undefined inventory differ",
+  "initial_finalizer": "seal.py",
+  "initial_finalizer_sha256": "fc183bc0841b2887a773ad9aa7ad6a4ccd05d3baf1c97a693e7aa5a04809795b",
+  "cause": "Direct parser counted only global/weak undefined symbols, unlike retained nm -u inventory which also includes three GC-localized undefined camera_rtsp_digest_issue/close/verify names. Independent data-only inspection found identical direct/report undefined and relocation name sets when local undefined names are included. All three localized names have no relocations on either platform.",
+  "correction": "Fresh seal02.py includes all named undefined symbols while keeping defined-symbol inventory global/weak only. Original seal.py is frozen unchanged. No compiler, app, helper, child, listener or test rerun.",
+  "production_or_build_source_changed": false,
+  "repeat_compilation": false,
+  "partial_final_seals_written": false,
+  "policy_rejection_or_reroute": false
+}
