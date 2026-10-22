@@ -25,6 +25,13 @@ hardware observation remains original held U-Boot12:12UTC; no current admission,
 old22b controller reuse/reset retry or HOLD clearance. Older entries below are
 chronological handbacks, not active worker queues or current target authority.
 
+Closeout committed locally `9fd7bb6`,65 curated source/review/status files; no image/
+private data or push, ordinary index hash unchanged. Second disjoint SOURCE lane
+selected for actual owned-listener consumption in fresh `owned-listener-candidate/`
+and rtsp-owned-listener docs. Preserve loopback/authentication/verifier constraints;
+no listener/bind/runtime/test execution or fake app main. Only these two new source
+lanes are active; their delivery will require separate parent/source review.
+
 **Actual provider derivative narrow SOURCE/API/ownership sufficiency:** no new
 correction-required defect in staged transfers/actual callsites.3,649 prior pins,
 six imports, ten reused dependency/object sets and16 archive member bodies checked;

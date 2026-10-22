@@ -10,15 +10,19 @@ Do not conceal missing review/coverage or change model/safeguards to obtain a pa
 watchdog recovery; the build checklist still does not select app/runtime tests.
 RAM76 restore/idle and normal watchdog smoke passed Oct22. A separate reset
 controller failed its password-text classifier; actual reset/catch and later10s
-stable held U-Boot were observed, with both failure HOLDs preserved. Current
-target is **held U-Boot, not Linux**; no C/D item inherits an old Linux epoch.
+stable held U-Boot were observed, with both failure HOLDs preserved. Last target
+observation was **held U-Boot12:12UTC, not Linux**; current runtime/owner/recovery
+is not inherited and no C/D item inherits an old Linux epoch.
 See `../kernel76-transport-20261021/WATCHDOG_RESET22B_RESULT.md`.
 
 Real native callback glue, frame/persistent-encoder custody and the observational
-encoder query now have bounded source/compile evidence; they are not integrated
-provider/runtime acceptance or a deployable main. New single-owner watchdog source
-work and independent P4a lifetime review remain in progress. Their artifacts do
-not check off the outstanding app/adoption/load gates below.
+encoder query now have bounded source/compile evidence. Single-owner watchdog,
+actual mandatory provider-FD integration and strict pre-memory custody return also
+have narrow source dispositions; none is full lifecycle/runtime acceptance or a
+deployable main. Query77's coherent kernel/package has parent offline disposition,
+never booted; its embedded station76 is unsupported. The two active source lanes
+address external failed-work retention and actual preopened-listener custody.
+These artifacts do not check off outstanding app/adoption/load gates below.
 
 ## Build-only deliverable and limitations
 

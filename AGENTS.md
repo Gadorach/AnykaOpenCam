@@ -96,6 +96,10 @@ UNKNOWN watchdog handoff is not disable/END, armed recovery or post-memory/
 failed-state cleanup. One isolated source worker owns fresh retention-owner-candidate
 and retention-owner docs for the real external failed-work lifetime prerequisite;
 it must stop on an unsupported bootstrap contract, not invent a metadata owner.
+Second disjoint source lane owns fresh `apps/rtsp-auth/owned-listener-candidate/`
+and `docs/qualification-plans/rtsp-owned-listener-20261022/` for actual preopened
+listener custody, preserving loopback/authentication and compile-only operation.
+Query77/return closeout committed locally `9fd7bb6`; ordinary index unchanged.
 Frozen originals/RTSP glue stay separate. Native watchdog
 qualification, failed-next retention/backing/provisioning/owned listener remain
 blockers. No deployed image/module change, new main or native memory-fit claim.
