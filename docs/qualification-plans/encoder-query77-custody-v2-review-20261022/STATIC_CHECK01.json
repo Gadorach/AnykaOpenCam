@@ -1,0 +1,88 @@
+{
+  "utc": "2026-10-22T18:07:20.708357+00:00",
+  "scope": "Independent ordinary focused R1/R2/path-role SOURCE/API review; narrow conditional sufficiency, not operational/native admission",
+  "method": "Public bytes/SHA256/JSON/AST/difflib only; no candidate import/call, compile, code-object execution, tests or private IO",
+  "input_manifest": "INPUT_PINS01.tsv",
+  "review_input_count": 35,
+  "snapshot_after_substantive_reading_before_report": true,
+  "aggregate_format": "sorted full workspace-relative UTF-8 path + NUL + raw SHA256 digest bytes",
+  "review_input_aggregate": "a50bc4dc4940d64f33c906c3fef273434cb46f342edf0d1286feadc65b87fedb",
+  "author_input_rows_compared": 26,
+  "author_unchanged_input_count": 23,
+  "author_context_changes": [
+    {
+      "path": "AGENTS.md",
+      "expected": {"bytes": 24765, "sha256": "7c2c816e4121e670e000ed438ad0531da1ce7bbfb5e9897968627c8b8205aa62"},
+      "observed": {"bytes": 24899, "sha256": "944a1b76995164157dc89bb56f07204f4a11724245cce9cbabab8cf4139e7e7f"}
+    },
+    {
+      "path": "docs/plan/camera-foundation/00-INDEX.md",
+      "expected": {"bytes": 120093, "sha256": "fde52c8e1fb07f6534aa67cf540ea6418c19cbe871bf94fd5f7c8d197fb6c381"},
+      "observed": {"bytes": 120135, "sha256": "94d0f2d8a74ebe20a4344eb7a9176bc01b90b5223b003d5c20b30a53a395ff08"}
+    },
+    {
+      "path": "docs/plan/camera-foundation/EXECUTION_TASKS_20261021.md",
+      "expected": {"bytes": 63962, "sha256": "0dfc76a79ea23397f9ce3a7c40f37bac0b92ae108f5181c0f6853f02c6619f89"},
+      "observed": {"bytes": 64157, "sha256": "0f73896e2ac40b5b7fd0c95604571c811dad54c8ed955921895281983ceae382"}
+    }
+  ],
+  "context_note": "Parent delivered-v2/active-review checkpoint steering; no full historical byte-diff attribution, no frozen manifest rebasing",
+  "author_26_input_aggregate_observed": "fffe1c0f4417b23cc36ef211b3eb25d4a5ada0feaed90d1aad623fa5ca0a52d0",
+  "author_26_input_aggregate_expected": "64351d8a014a446209027054961ac187ed3431330a66dd69a12f385630815fb1",
+  "v2_method_eight_output_pins_all_match": true,
+  "v1_method_eight_output_pins_all_match": true,
+  "v1_review_seal_and_three_output_pins_all_match": true,
+  "frozen_six_design_pins_and_five_seal_outputs_all_match": true,
+  "v1_module_method_review_Boot_amendment_expected_pins_all_match": true,
+  "transitive_design_46_input_requalification": false,
+  "v1_source_aggregate": "5c2d338973ab6384b504b6b52203b072e9ea04a3b9a357127638f1829b2ea286",
+  "v2_source_aggregate": "acb2933fd4f9e6a7f52722499905f5c855f31f674cadf52b49bb95c2f4c7d153",
+  "module_bytes": 42123,
+  "module_lines": 962,
+  "module_sha256": "d60176e2d2725460a22c82fee6ce1068a82a07a976daddb7287c52daf3ade16f",
+  "syntax_receipt_pin_matches": true,
+  "author_HOST_syntax_PASS_cited_not_rerun": true,
+  "diff_fingerprint": {
+    "unified_diff_bytes": 21207,
+    "unified_diff_sha256": "fe39190cc97076198a62613490695b212c3460534b4e76b9b9f8cc235b05f627",
+    "unified_diff_added_lines_excluding_header": 212,
+    "unified_diff_removed_lines_excluding_header": 53
+  },
+  "diff_fingerprint_matches_receipt": true,
+  "definition_inventory_matches_receipt": {"changed_definitions": true, "new_definitions": true, "removed_definitions": true, "unchanged_definitions": true},
+  "definition_inventory_counts": {"changed_definitions": 14, "new_definitions": 11, "removed_definitions": 0, "unchanged_definitions": 46},
+  "selected_helper_callsite_lines": {
+    "_available_owner_postchecks": [740],
+    "_check_hold": [551, 719],
+    "_check_op_entry": [569, 707],
+    "_failed_exit": [539, 828],
+    "_failure": [752, 956],
+    "_postchecks": [751, 949],
+    "_validate_previous": [239],
+    "validate_observation": [472, 858, 889]
+  },
+  "external_effect_callsite_lines": {
+    "fcntl.fcntl": [660, 847],
+    "fcntl.flock": [491],
+    "os.close": [354, 902, 908, 916],
+    "os.fstat": [315, 320, 332, 339, 394, 475, 475, 503, 532, 533, 562, 573, 595, 654, 673, 779],
+    "os.fsync": [506, 528, 529, 530, 760, 782],
+    "os.getuid": [467],
+    "os.lseek": [662],
+    "os.mkdir": [501],
+    "os.open": [313, 318, 488, 502, 508, 510],
+    "os.pread": [429, 594, 604, 668],
+    "os.stat": [298, 333, 333, 379, 484, 557, 564, 574, 583],
+    "os.write": [758]
+  },
+  "ast_assert_nodes": 0,
+  "stdlib_import_AST_unchanged": true,
+  "hash_AST_receipts_are_not_semantic_runtime_proof": true,
+  "actual_marker_root_alias_custody_or_current_state_proved": false,
+  "candidate_import_library_code_object_execution_compile_test_generator_controller": false,
+  "private_filesystem_target_current_state_proc_dev_UART_RPC_network_device_process_operations": false,
+  "source_old_review_design_Git_index_AGENTS_central_plan_model_provider_safeguard_edits": false,
+  "policy_refusal_or_reroute": false,
+  "tool_errors": [],
+  "automatic_next_implementation_build_test_worker_native_queue": false
+}

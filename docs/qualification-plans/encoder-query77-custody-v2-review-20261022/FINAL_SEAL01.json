@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-22T18:10:40.718605+00:00",
+  "method": "Final explicit public input/output byte reads/SHA256 and review JSON parse only; no candidate import/call/compile/test",
+  "disposition": "NARROW_CONDITIONAL_SOURCE_API_R1_R2_PATH_ROLE_SUFFICIENT",
+  "additional_correction_required_findings": [],
+  "input_manifest": "INPUT_PINS01.tsv",
+  "input_count": 35,
+  "input_aggregate_before": "a50bc4dc4940d64f33c906c3fef273434cb46f342edf0d1286feadc65b87fedb",
+  "input_aggregate_after": "a50bc4dc4940d64f33c906c3fef273434cb46f342edf0d1286feadc65b87fedb",
+  "changes_since_review_snapshot": [],
+  "unchanged_input_count": 35,
+  "output_pins_excluding_this_seal": {
+    "docs/qualification-plans/encoder-query77-custody-v2-review-20261022/REVIEW.md": {
+      "bytes": 12258,
+      "sha256": "bea15bb8f0201d14820a9e9acaf5df232c531385d951fa0abe8b62a43fe516fd"
+    },
+    "docs/qualification-plans/encoder-query77-custody-v2-review-20261022/INPUT_PINS01.tsv": {
+      "bytes": 5054,
+      "sha256": "5c8d6b0d09cacb651efc87f9fb58af1e60a603800eeedba2ca5abbf4d5ce5509"
+    },
+    "docs/qualification-plans/encoder-query77-custody-v2-review-20261022/STATIC_CHECK01.json": {
+      "bytes": 4829,
+      "sha256": "2cf320fb21592df03c067cc2870c39d25f7737be76836988b90bfe20d081a6f4"
+    }
+  },
+  "v1_source_and_failed_review_remain_frozen_unaccepted": true,
+  "actual_custody_operational_native_method_recovery_or_manual_readiness_proved": false,
+  "candidate_execution_private_IO_hardware_or_native_action": false,
+  "policy_refusal_or_tool_errors": [],
+  "automatic_next_queue": false
+}

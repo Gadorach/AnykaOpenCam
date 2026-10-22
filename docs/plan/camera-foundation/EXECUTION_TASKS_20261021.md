@@ -47,9 +47,14 @@ C1_PATH_ROLE_AMENDMENT: exact in-place read-only historical CONTROL, strict
 outside-Git new outputs.962-line/42123B module SHA
 `d60176e2d2725460a22c82fee6ce1068a82a07a976daddb7287c52daf3ade16f`;
 HOST AST/syntax only;26 input/eight output pins parent-verified. Independent
-R1/R2/path-role review is active, no author. No migration/copied marker/general
-Git exemption, v1 mutation, UART/RPC/process/current-state/shell/boot/query interface
-or runtime tests. Parent disposition under v1 docs; v2 remains unaccepted.
+R1/R2/path-role review now conditionally SOURCE/API sufficient;35 reader inputs/
+three outputs parent-verified, review seal
+`b58ec94be7db1ff6cb33295c14770424ade7566c709f043efe92527a1adbf9d4`.
+Parent disposition in custody-v2 docs accepts source scope only, not actual custody.
+No migration/copied marker/general Git exemption, v1 mutation, library execution,
+private IO, target interface or runtime tests. One author now owns C2a fixed-public-
+input validator source/docs at encoder-query77-inputs, not a controller/sender.
+Future parent offline call requires independent review; no such call selected now.
 No executable native recipe, capture/staging/boot/query or user physical action
 selected. Last target observation remains original held U-Boot12:12UTC; no fresh
 target/recorder/owner/expiry status inherited. Both HOLDs stay untouched. Query77

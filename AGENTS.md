@@ -120,20 +120,15 @@ Both reviews completed; no active source author/reviewer from those lanes remain
 Offline native-method findings pin19 public inputs and identify a possible volatile
 BusyBox delivery route, not admitted commands or recovery. A nine-pin source
 supplement records monitor return/status and shell/decoder/framing limits. Fresh
-query77-controller design completed:43 inputs unchanged,three contextual parent
-updates retained without rebasing. Parent accepts bounded C1 design input only,
-not a controller/native recipe. C1 encoder-query77-custody candidate delivered:
-one803-line host-only library, HOST AST/syntax compilation only; parent verified
-nine inputs/eight sealed outputs. Independent review requires R1 (supplied previous
-record displaces original catch/counter baseline) and R2 (failed calls omit
-historical postcheck).20 review inputs/three outputs parent-verified; v1/review stay
-frozen/unaccepted. Fresh encoder-query77-custody-v2 delivered:962 lines/42123B,
-HOST AST/syntax only;26 inputs/eight outputs parent-verified. Independent focused
-review is active for R1/R2 and the explicit path-role correction: exact in-place
-read-only historical CONTROL, strictly outside-Git new outputs. No active author,
-migration/copied markers/general Git exemption, v1 edits, library execution or
-runtime tests; v2 remains unaccepted pending review.
-No UART/RPC/process launch/current-state/shell/boot/query interface. Staging guard is
+query77-controller design is bounded input, not a native recipe. C1 v1 and its
+R1/R2 failed review remain frozen/unaccepted. Fresh custody-v2 has independent
+conditional SOURCE/API sufficiency for original-epoch constraints, failed-exit
+postchecks and exact read-only historical-control/private-output path roles.
+Parent verified35 reader inputs/three review outputs; HOST AST/syntax only,
+never imported/called or applied to actual HOLDs. Disposition in custody-v2 docs.
+One author owns new encoder-query77-inputs source/docs for C2a fixed-public-input
+pin/format validation only, no current-state/private access or target interface.
+Independent review will precede any offline validator call. Staging guard is
 unavailable on the inspected route; future manual-OFF handoff needs separate review
 and actual readiness. No physical request or transfer/hardware operation is active.
 Query77

@@ -83,9 +83,10 @@ Controller design is completed; its parent disposition selects only C1 host-loca
 dual-HOLD/epoch/crash-sticky ledger source work in encoder-query77-custody, now
 delivered AST/syntax-only but review requires R1 original-epoch constraints and
 R2 failed-call historical postchecks. Fresh custody-v2 source is delivered
-AST/syntax-only and under focused review for those corrections and exact read-only
-historical-root/private-output roles, never
-migration or copied markers. V1 stays frozen/unaccepted. No
+AST/syntax-only and conditionally SOURCE/API sufficient after focused review of
+those corrections and exact read-only historical-root/private-output roles, never
+migration or copied markers. V1 stays frozen/unaccepted. Next selected source is
+C2a fixed-public-input validation, no private/current-state/target interface. No
 target interface, executable native recipe, capture, staging, boot or query is
 selected. Staging lacks an admitted watchdog receiver and any later manual-OFF
 handoff still needs review plus actual current operator readiness.
