@@ -58,10 +58,13 @@ or deployable. Parent source/build disposition:
 Move-only frame-FD custody helper is also delivered/compiled HOST/ARM (16 commands),
 not full provider adoption. Observational encoder session/ref query source is
 delivered at `apps/qualification/kernel76-encoder-identity/`;88-byte HOST/ARM UAPI
-compile PASS, actual driver compile stopped on retained23.1.1/current23.1.3 Clang
-drift. Parent explicitly selected a NEW compile-only23.1.3 baseline in fresh
-`apps/qualification/kernel76-encoder-identity-clang2313/`; not old76 compiler/ABI
-reproduction or a full build. Current kernel/image/source/build01 stay immutable.
+compile PASS; old driver compile stopped on retained23.1.1/current23.1.3 drift.
+Explicit NEW23.1.3 whole-driver ARM object compile PASS; parent checked exact
+three-site source delta,513 consumed source/header files and compiler closure.
+Narrow static query/API sufficiency, not old76 compiler/ABI pairing or full build.
+Review: `docs/qualification-plans/encoder-identity-clang2313-20261022/PARENT_REVIEW.md`.
+One worker now owns fresh `apps/rtsp-auth/qc07f-provider-candidate-v2/` for actual
+observational encoder-FD custody. Current kernel/image/source/build01 stay immutable.
 Watchdog ownership, failed-next retention/backing/provisioning/owned listener remain
 blockers. No new main or native memory-fit claim.
 

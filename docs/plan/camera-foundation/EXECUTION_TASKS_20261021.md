@@ -1,5 +1,21 @@
 # Active execution ledger — remaining foundation work
 
+**Encoder query SOURCE/object disposition:** explicit new Clang23.1.3 real ARM
+whole-driver object compile PASS,19676B, no linker/tests/full build. Parent read
+actual handler/UAPI/legacy lifetime source, independently reconstructed exact
+three-site overlay, verified513 consumed source/header files and compiler closure.
+Narrow static SOURCE/API sufficiency for observational per-open query only; generated
+metadata still describes old23.1.1, so no old76 compiler/config/ABI pairing claim.
+Fresh encoder-FD custody app-side source selected at `qc07f-provider-candidate-v2/`;
+full provider/backing/watchdog/failed-next/main/native gates remain open. See
+`encoder-identity-clang2313-20261022/PARENT_REVIEW.md` under qualification docs.
+
+**Reviewed local source preservation:** RTSP glue/frame-FD helper source and safe
+build metadata committed `3feaf4b`; reviewed P2v2 snapshot/correction/review metadata
+committed `c21aad8`. Upstream whitespace preserved with exact provenance, not
+reformatted; generated binaries/private evidence excluded and ordinary index hash
+unchanged. These are candidate snapshots, not product/native adoption or P1 GO.
+
 **Current native12:12UTC — held original U-Boot; reset trial FAILED/HOLD:** one
 idle watchdog reset from `cfa39ea` source emitted full arm and actual main-CPU reset,
 then controller line81 stopped on password text. Receive-only reconciliation shows

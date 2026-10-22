@@ -1,0 +1,53 @@
+{
+  "UTC": "2026-10-22T12:19:02.040651+00:00",
+  "scope": "NEW EXPLICIT Clang23.1.3 real ARM source object compile only; NOT retained76 Clang23.1.1 pairing",
+  "source_tree_sha256": "a1d9f38074bcbb204460f2289deee8cc61872f64545171b5fbcbca9dbc320ad3",
+  "hash_method": "sorted UTF-8 path + NUL + raw SHA256 bytes; source paths workspace-relative, compiler ELF closure paths resolved absolute",
+  "source_files": {
+    "apps/qualification/kernel76-encoder-identity-clang2313/README.md": {
+      "bytes": 2013,
+      "sha256": "4fb758bb912c88a86c3cbefda0e3d7754e5d3eabaa1ad2c56bdbaf13ddb8e8cb"
+    },
+    "apps/qualification/kernel76-encoder-identity-clang2313/build.py": {
+      "bytes": 12358,
+      "sha256": "2e0afbe066e689cefa2241dd98043005d5b90fc9e3f9014a4eb88394e19f7c96"
+    }
+  },
+  "evidence_pins": {
+    "docs/qualification-plans/encoder-identity-clang2313-20261022/BUILD_RESULT.md": {
+      "bytes": 7154,
+      "sha256": "6294b242c14633d5ee29b06cd1d8b969e8690b7e2dc79159ec7147fe0dc1c178"
+    },
+    "docs/qualification-plans/encoder-identity-clang2313-20261022/runs/build01/REPORT.json": {
+      "bytes": 517374,
+      "sha256": "215dcfd7523cd5217495706193bbb9ecc3c8cbd57c80f1ad4b0d2cb94a1702e8"
+    },
+    "docs/qualification-plans/encoder-identity-clang2313-20261022/runs/build01/objects/encoder-identity-clang2313-ARM.o": {
+      "bytes": 19676,
+      "sha256": "886c46f2dfe39d644d5aec2fb744461884e43b272d28eb56b35bab3bfaf8e2ee"
+    }
+  },
+  "exact_frozen_query_source_pin": "ec3b9daa257ce6bd72648b4ba7c907c405be588ef1e8bb35c787b1932e9e9520",
+  "compiler_loaded_ELF_closure_sha256": "8a4aaa4b3b6276c820d820b8910bd2b5da7aedce1e4f89afc8b8ea1ad7f320c1",
+  "compiler_loaded_ELF_images_including_executable": 16,
+  "compiler_resource_directory": "/usr/lib/clang/23",
+  "resource_header_inventory_files": 334,
+  "consumed_resource_files": [],
+  "consumed_header_source_files": 513,
+  "captured_input_paths_unchanged": 531,
+  "frozen_build01_files_unchanged": 37,
+  "actual_ARM_driver_object_compile": "PASS",
+  "linker_invoked": false,
+  "old_UAPI_compile_repeated": false,
+  "outputs_or_tests_executed": false,
+  "target_or_private_IO": false,
+  "Git_index_plan_changes": false,
+  "retained76_pairing": false,
+  "full_kernel_module_image_build": false,
+  "provider_or_native_adoption": false,
+  "native_memory_admission": "HOLD",
+  "G2": false,
+  "G3": false,
+  "G8": false,
+  "one_next_dependency": "Parent ordinary exact-source/object/method review and disposition; no automatic paired full build or native query."
+}

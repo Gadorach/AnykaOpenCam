@@ -1,0 +1,351 @@
+{
+  "started": "2026-10-22T12:04:19.585466+00:00",
+  "status": "FAILED; outputs preserved",
+  "commands": [
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "--version"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T12:04:19.597620+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-identity-20261022/runs/build01/logs/host-compiler-version.txt",
+      "exit": 0,
+      "ended": "2026-10-22T12:04:19.599405+00:00",
+      "log_pin": {
+        "bytes": 227,
+        "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-identity-20261022/runs/build01/candidate",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-identity-20261022/runs/build01/objects/host-abi.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-identity-20261022/runs/build01/inputs/new/abi_compile.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-identity-20261022/runs/build01/objects/host-abi.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T12:04:19.599536+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-identity-20261022/runs/build01/logs/host-abi-compile.txt",
+      "exit": 0,
+      "ended": "2026-10-22T12:04:19.615441+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "--version"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T12:04:19.615549+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-identity-20261022/runs/build01/logs/arm-compiler-version.txt",
+      "exit": 0,
+      "ended": "2026-10-22T12:04:19.619370+00:00",
+      "log_pin": {
+        "bytes": 288,
+        "sha256": "7b501201183c07e1e9078ca3f8b1f502d07fd67c414e92183c01e8787c00a0d4"
+      }
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=c11",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-identity-20261022/runs/build01/candidate",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-identity-20261022/runs/build01/objects/arm-abi.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-identity-20261022/runs/build01/inputs/new/abi_compile.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-identity-20261022/runs/build01/objects/arm-abi.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T12:04:19.619508+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-identity-20261022/runs/build01/logs/arm-abi-compile.txt",
+      "exit": 0,
+      "ended": "2026-10-22T12:04:19.651804+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/clang",
+        "--version"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T12:04:19.654662+00:00",
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-identity-20261022/runs/build01/logs/driver-compiler-version.txt",
+      "exit": 0,
+      "ended": "2026-10-22T12:04:19.686956+00:00",
+      "log_pin": {
+        "bytes": 92,
+        "sha256": "515e73398b96d9755cd8e88a2f977a4ac68160148e23fc5f5a63c1290c6576eb"
+      }
+    }
+  ],
+  "inputs": {
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/qc07f_hwenc.c": {
+      "bytes": 25109,
+      "sha256": "e97744838acd469772db41fb1fe0907c95fb6e923577cdbffc84ead0141a026f"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/qc07f_hwenc.h": {
+      "bytes": 1501,
+      "sha256": "6723c30c76a3fbd1feaf1ed9d1676a2b9b6289b352ffe7682372bf8e95123731"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/dma_integrity.h": {
+      "bytes": 3561,
+      "sha256": "8c1eddcc8e3296fa807984e588d5876cf179db52741c0a433c0a8a5ccbc2666c"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/stage-telemetry.h": {
+      "bytes": 8294,
+      "sha256": "3652ae90114c7ce303047497e29c80f3d14c8e1855374f442397accddcfa89cb"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/stage-telemetry-uapi.h": {
+      "bytes": 2203,
+      "sha256": "6bab6082882a574ad7a98613c68a64225147dbfe9773ed73bd6e5b0f70d7a9e7"
+    },
+    "apps/qualification/kernel76-encoder-identity/README.md": {
+      "bytes": 2989,
+      "sha256": "baa5c7b8512435b8633047a3347092ccbe51cca3eb47059156664734b39add77"
+    },
+    "apps/qualification/kernel76-encoder-identity/abi_compile.c": {
+      "bytes": 1565,
+      "sha256": "d01f0a7a9401c78df4b7ba7753186bba7743ac1be9cf809f6a214c10d63da411"
+    },
+    "apps/qualification/kernel76-encoder-identity/build.py": {
+      "bytes": 11379,
+      "sha256": "da4678d4f743c1427ba1b10cb8a1d610906aa23c0f1a015bff9d029eb2f037ab"
+    },
+    "apps/qualification/kernel76-encoder-identity/encoder-open-query.h": {
+      "bytes": 2455,
+      "sha256": "6052069fa5428185eb8c61871404256c53c30c12515eaa5c9ab80c424facde37"
+    },
+    "apps/qualification/kernel76-encoder-identity/encoder-open-query.inc": {
+      "bytes": 2220,
+      "sha256": "7247086b8b151e8f3a21f79d996f6c78238521366a103f56c5ee9868f75b013c"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/analysis/native-usb76-package01/build/.config": {
+      "bytes": 58853,
+      "sha256": "9e1f37788d3bd8580f2eb031ea2a7d795f4b61e2c1f89e1b91c11f1a87a6499c"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/analysis/native-usb76-package01/build/Module.symvers": {
+      "bytes": 345626,
+      "sha256": "806467d52330d4cdf2fd8e312aee54d24b0a1437d5eb4bd1b393011f277c4cdc"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/analysis/native-usb76-package01/build/arch/arm/mach-ak3918ev200/.qc07f_hwenc.o.cmd": {
+      "bytes": 112393,
+      "sha256": "705aecf56065cc20f97d1379935d9d6f10de14e69bb279b9e035ba6d4f289c09"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/analysis/native-usb76-package01/build/include/generated/compile.h": {
+      "bytes": 164,
+      "sha256": "7d4fdfc537a18e72e904f11d91ab543061c42e18c524bf587a716b5c54fe5aeb"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/analysis/native-usb76-package01/build/include/generated/autoconf.h": {
+      "bytes": 20055,
+      "sha256": "82c94f2e68a16328fa165228219363a963beff7abe790ebfb8207ed1c8f5836e"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/analysis/native-usb76-package01/build/include/config/kernel.release": {
+      "bytes": 30,
+      "sha256": "5669e74082029fbabd1b9a4b2fa249687d2c5c7c075773d74e9df2cbe83e14f3"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/analysis/native-usb76-package01/package76-manifest.json": {
+      "bytes": 9950,
+      "sha256": "b61a73e245cbac3da4a8a1560f7908ea7020796d87b5eacc1580514f983f2d37"
+    },
+    "apps/rtsp-auth/build.py": {
+      "bytes": 10146,
+      "sha256": "c387627215f784c4202939262affb2df04d9fc5f5a9719a9921f83049fb74f1a"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/COPYING": {
+      "bytes": 496,
+      "sha256": "fb5a425bd3b3cd6071a3a9aff9909a859e7c1158d54d32e07658398cd67eb6a0"
+    }
+  },
+  "candidate_files": {
+    "dma_integrity.h": {
+      "bytes": 3561,
+      "sha256": "8c1eddcc8e3296fa807984e588d5876cf179db52741c0a433c0a8a5ccbc2666c"
+    },
+    "encoder-open-query.h": {
+      "bytes": 2455,
+      "sha256": "6052069fa5428185eb8c61871404256c53c30c12515eaa5c9ab80c424facde37"
+    },
+    "encoder-open-query.inc": {
+      "bytes": 2220,
+      "sha256": "7247086b8b151e8f3a21f79d996f6c78238521366a103f56c5ee9868f75b013c"
+    },
+    "qc07f_hwenc.c": {
+      "bytes": 25218,
+      "sha256": "9bf16b1175befb091d6c61c3ac573121378e1d8c403eed21806a3e8fc80fc946"
+    },
+    "qc07f_hwenc.h": {
+      "bytes": 1533,
+      "sha256": "6da117b504c15c05dd2b0a332f22f821e085f2e1549e4163ded07ede752829bd"
+    },
+    "stage-telemetry-uapi.h": {
+      "bytes": 2203,
+      "sha256": "6bab6082882a574ad7a98613c68a64225147dbfe9773ed73bd6e5b0f70d7a9e7"
+    },
+    "stage-telemetry.h": {
+      "bytes": 8294,
+      "sha256": "3652ae90114c7ce303047497e29c80f3d14c8e1855374f442397accddcfa89cb"
+    }
+  },
+  "artifacts": {},
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "LC_ALL": "C",
+    "SOURCE_DATE_EPOCH": "1791763200",
+    "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-identity-20261022/runs/build01/tmp"
+  },
+  "scope": "FRESH SOURCE OVERLAY; UAPI HOST/ARM; REAL DRIVER ARM OBJECT ONLY",
+  "full_kernel_or_module_build": false,
+  "outputs_executed": false,
+  "tests_executed": false,
+  "target_or_private_IO": false,
+  "provider_adoption": false,
+  "native_memory_admission": "HOLD",
+  "G2": false,
+  "G3": false,
+  "G8": false,
+  "ARM_toolchain_pins": {
+    "bin/toolchain-wrapper": "f4db963a226e01244ce6f7b5d1ec6d57474dd811119ff8834429f022835ce9c1",
+    "bin/arm-buildroot-linux-musleabi-gcc.br_real": "e24ea223e7b521cce1f5889d63c25417e930cdbb35653b072f7b48d9a4b41729",
+    "arm-buildroot-linux-musleabi/sysroot/lib/libc.a": "0982970abc52a36d247326a8e0b5dd487410222ff9728528cc99a4e8bd62e7b5",
+    "lib/gcc/arm-buildroot-linux-musleabi/14.3.0/libgcc.a": "f707f3a5a94033cbbde76f76640d56dbc5dc615ab421be4efc2641c14344f19a"
+  },
+  "applied_source_patch": {
+    "bytes": 5646,
+    "sha256": "9d096489e3ba8cc44556b81feb8192b6c5f08e698c18b2718cdfedbab5aea232"
+  },
+  "retained_Kbuild_argv": [
+    "clang",
+    "-Wp,-MMD,arch/arm/mach-ak3918ev200/.qc07f_hwenc.o.d",
+    "-nostdinc",
+    "-I/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/include",
+    "-I./arch/arm/include/generated",
+    "-I/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/include",
+    "-I./include",
+    "-I/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/include/uapi",
+    "-I./arch/arm/include/generated/uapi",
+    "-I/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/include/uapi",
+    "-I./include/generated/uapi",
+    "-include",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/include/linux/compiler-version.h",
+    "-include",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/include/linux/kconfig.h",
+    "-include",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/include/linux/compiler_types.h",
+    "-D__KERNEL__",
+    "--target=arm-linux-gnueabi",
+    "-fintegrated-as",
+    "-Werror=unknown-warning-option",
+    "-Werror=ignored-optimization-argument",
+    "-Werror=option-ignored",
+    "-Werror=unused-command-line-argument",
+    "-mlittle-endian",
+    "-D__LINUX_ARM_ARCH__=5",
+    "-fmacro-prefix-map=/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/=",
+    "-std=gnu11",
+    "-fshort-wchar",
+    "-funsigned-char",
+    "-fno-common",
+    "-fno-PIE",
+    "-fno-strict-aliasing",
+    "-fno-dwarf2-cfi-asm",
+    "-mabi=aapcs-linux",
+    "-mfpu=vfp",
+    "-funwind-tables",
+    "-meabi",
+    "gnu",
+    "-marm",
+    "-Wa,-W",
+    "-march=armv5te",
+    "-mtune=arm9tdmi",
+    "-msoft-float",
+    "-Uarm",
+    "-fno-delete-null-pointer-checks",
+    "-O2",
+    "-fno-stack-protector",
+    "-fomit-frame-pointer",
+    "-ftrivial-auto-var-init=zero",
+    "-fstrict-flex-arrays=3",
+    "-fno-strict-overflow",
+    "-fno-stack-check",
+    "-fno-builtin-wcslen",
+    "-Wall",
+    "-Wextra",
+    "-Wundef",
+    "-Werror=implicit-function-declaration",
+    "-Werror=implicit-int",
+    "-Werror=return-type",
+    "-Werror=strict-prototypes",
+    "-Wno-format-security",
+    "-Wno-trigraphs",
+    "-Wno-frame-address",
+    "-Wno-address-of-packed-member",
+    "-Wmissing-declarations",
+    "-Wmissing-prototypes",
+    "-Wframe-larger-than=1280",
+    "-Wno-gnu",
+    "-Wno-format-overflow-non-kprintf",
+    "-Wno-format-truncation-non-kprintf",
+    "-Wno-default-const-init-unsafe",
+    "-Wno-pointer-sign",
+    "-Wcast-function-type",
+    "-Wno-unterminated-string-initialization",
+    "-Wimplicit-fallthrough",
+    "-Werror=date-time",
+    "-Werror=incompatible-pointer-types",
+    "-Wenum-conversion",
+    "-Wunused",
+    "-Wno-unused-but-set-variable",
+    "-Wno-unused-const-variable",
+    "-Wno-format-overflow",
+    "-Wno-override-init",
+    "-Wno-pointer-to-enum-cast",
+    "-Wno-tautological-constant-out-of-range-compare",
+    "-Wno-unaligned-access",
+    "-Wno-enum-compare-conditional",
+    "-Wno-missing-field-initializers",
+    "-Wno-type-limits",
+    "-Wno-shift-negative-value",
+    "-Wno-enum-enum-conversion",
+    "-Wno-sign-compare",
+    "-Wno-unused-parameter",
+    "-I/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200",
+    "-Iarch/arm/mach-ak3918ev200",
+    "-DKBUILD_MODFILE=\"arch/arm/mach-ak3918ev200/qc07f_hwenc\"",
+    "-DKBUILD_BASENAME=\"qc07f_hwenc\"",
+    "-DKBUILD_MODNAME=\"qc07f_hwenc\"",
+    "-D__KBUILD_MODNAME=kmod_qc07f_hwenc",
+    "-c",
+    "-o",
+    "arch/arm/mach-ak3918ev200/qc07f_hwenc.o",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/qc07f_hwenc.c"
+  ],
+  "error": "RuntimeError: clang does not match retained76 compiler metadata",
+  "ended": "2026-10-22T12:04:19.687112+00:00"
+}
