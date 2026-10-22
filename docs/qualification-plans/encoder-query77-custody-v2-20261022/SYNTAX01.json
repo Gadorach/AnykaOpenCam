@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-22T17:57:20.902740+00:00",
+  "scope": "HOST new-source AST and in-memory syntax compilation only; no behavior/runtime tests",
+  "python": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+  "unit": "apps/qualification/encoder-query77-custody-v2/custody.py",
+  "bytes": 42123,
+  "lines": 962,
+  "sha256": "d60176e2d2725460a22c82fee6ce1068a82a07a976daddb7287c52daf3ade16f",
+  "method": "ast.parse source text; compile(new_text, custody_v2.py, exec, dont_inherit=True, optimize=0); discard code object without exec/import/serialization; parse v1 AST for static delta only",
+  "ast_parse": "PASS",
+  "syntax_compile": "PASS",
+  "new_python_units": 1,
+  "assert_nodes": 0,
+  "pyc_or_compiled_output_written": false,
+  "candidate_import_or_library_call_or_code_object_execution": false,
+  "synthetic_observations_traces_or_tests_executed": false,
+  "generator_controller_helper_client_execution": false,
+  "private_filesystem_or_current_state_exercise": false,
+  "source_or_native_acceptance": false
+}

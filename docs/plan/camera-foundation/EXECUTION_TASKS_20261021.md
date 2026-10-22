@@ -42,11 +42,14 @@ sealed outputs. Independent review now requires R1: supplied previous records ca
 displace original catch/counter constraints; R2: admitted exceptional operation
 exits skip historical/root/source postchecks.20 inputs/three outputs verified,
 review seal `239b007833ca839d1c391b3594b4a654f915a0d53e856795c333e366ce4d58fd`.
-V1 source/review frozen and unaccepted. Fresh custody-v2 author is selected for
-R1/R2 plus C1_PATH_ROLE_AMENDMENT: exact in-place read-only historical CONTROL,
-strict outside-Git new outputs. No migration/copied marker/general Git exemption,
-v1 mutation, UART/RPC/process/current-state/shell/boot/query interface or runtime
-tests. Parent disposition under v1 docs; fresh revision still needs review.
+V1 source/review frozen and unaccepted. Fresh custody-v2 delivered for R1/R2 plus
+C1_PATH_ROLE_AMENDMENT: exact in-place read-only historical CONTROL, strict
+outside-Git new outputs.962-line/42123B module SHA
+`d60176e2d2725460a22c82fee6ce1068a82a07a976daddb7287c52daf3ade16f`;
+HOST AST/syntax only;26 input/eight output pins parent-verified. Independent
+R1/R2/path-role review is active, no author. No migration/copied marker/general
+Git exemption, v1 mutation, UART/RPC/process/current-state/shell/boot/query interface
+or runtime tests. Parent disposition under v1 docs; v2 remains unaccepted.
 No executable native recipe, capture/staging/boot/query or user physical action
 selected. Last target observation remains original held U-Boot12:12UTC; no fresh
 target/recorder/owner/expiry status inherited. Both HOLDs stay untouched. Query77

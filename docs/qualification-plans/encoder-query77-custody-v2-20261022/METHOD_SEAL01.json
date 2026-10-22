@@ -1,0 +1,82 @@
+{
+  "utc": "2026-10-22T18:03:15.146936+00:00",
+  "scope": "One fresh unreviewed C1 v2 SOURCE candidate for independent R1/R2/path-role review; not SOURCE acceptance, native/controller/E2/manual admission",
+  "method": "Dedicated public source reads/patches, fresh no-clobber text copy, inline stdlib public byte hashes/AST/difflib metadata and in-memory HOST new-text syntax compilation only",
+  "owned_paths_only": [
+    "apps/qualification/encoder-query77-custody-v2/",
+    "docs/qualification-plans/encoder-query77-custody-v2-20261022/"
+  ],
+  "precode_contract_written_first": true,
+  "input_snapshot_utc": "2026-10-22T17:50:49.054553+00:00",
+  "input_snapshot_after_initial_reading_and_precode_contract_before_source_copy_or_patch": true,
+  "input_manifest": "INPUT_PINS01.tsv",
+  "input_count": 26,
+  "unchanged_input_count": 26,
+  "input_aggregate_before": "64351d8a014a446209027054961ac187ed3431330a66dd69a12f385630815fb1",
+  "input_aggregate_after": "64351d8a014a446209027054961ac187ed3431330a66dd69a12f385630815fb1",
+  "changes_since_snapshot": [],
+  "context_note": "Three central document pins are a separate current snapshot, not rebased into any frozen v1/design/review manifest; a harness parent update preceded this snapshot. No drift occurred within this snapshot window.",
+  "all_frozen_v1_design_review_files_and_Boot_amendment_pins_unchanged": true,
+  "expected_selected_pins_matched": {
+    "v1_module_bytes": 34669,
+    "v1_module_sha256": "7dc6d11ff7dee758f49b3b0e4f7e43fb8b45215cda3761a75732519079e12b2e",
+    "v1_two_file_source_aggregate": "5c2d338973ab6384b504b6b52203b072e9ea04a3b9a357127638f1829b2ea286",
+    "v1_method_seal_sha256": "6fbf6f024096ce20e34a120ebb7899a798e14ab726ee580ad3fb2e02e582f597",
+    "review_final_seal_sha256": "239b007833ca839d1c391b3594b4a654f915a0d53e856795c333e366ce4d58fd",
+    "Boot_source_sha256": "6ec0bd70513d530e64507c934ab1885da0cb547b907673c5162bf01c89f7d985",
+    "path_amendment_sha256": "b39b93a5635f3d399b408d8c37ed2d158bb1e41ba85ece5a573eb724172c2df4"
+  },
+  "exact_initial_source_copy_compared_before_v2_patches": true,
+  "copy_comparison_utc": "2026-10-22T17:52:02.491612+00:00",
+  "aggregate_format": "sorted full workspace-relative UTF-8 path + NUL + raw SHA256 digest bytes",
+  "two_file_v2_source_aggregate": "acb2933fd4f9e6a7f52722499905f5c855f31f674cadf52b49bb95c2f4c7d153",
+  "outputs_excluding_this_seal": {
+    "apps/qualification/encoder-query77-custody-v2/README.md": {
+      "bytes": 5574,
+      "sha256": "5fa182d336fb62b83992219c1484c0907f846b039f66636db8817393866b1c9a"
+    },
+    "apps/qualification/encoder-query77-custody-v2/custody.py": {
+      "bytes": 42123,
+      "sha256": "d60176e2d2725460a22c82fee6ce1068a82a07a976daddb7287c52daf3ade16f"
+    },
+    "docs/qualification-plans/encoder-query77-custody-v2-20261022/BUILD_RESULT.md": {
+      "bytes": 3148,
+      "sha256": "e64c26847df5dcf4fc5c3555d8c37367cb56dc788bceae3f9e3093801cb180e4"
+    },
+    "docs/qualification-plans/encoder-query77-custody-v2-20261022/INPUT_PINS01.tsv": {
+      "bytes": 3750,
+      "sha256": "4918a4e65e717ce7cd5d1fd30e5d22adef3f552934137734e769a1da9c3395d1"
+    },
+    "docs/qualification-plans/encoder-query77-custody-v2-20261022/SOURCE_DELTA01.json": {
+      "bytes": 3215,
+      "sha256": "d8ad10f4805418c277b0d47f0f7dbdbabda05939c794cf9fbea98fa447884f34"
+    },
+    "docs/qualification-plans/encoder-query77-custody-v2-20261022/SOURCE_INSPECTION.md": {
+      "bytes": 9968,
+      "sha256": "fbb235ecec4cb62538def51a065b54fba89c61ed96cd8bd7dd66a384aaf3ecef"
+    },
+    "docs/qualification-plans/encoder-query77-custody-v2-20261022/SYNTAX01.json": {
+      "bytes": 1028,
+      "sha256": "d327b571837e79f8f03a209b8e9f7dca8acd2991842a593db2b0fbffbbdff652"
+    },
+    "docs/qualification-plans/encoder-query77-custody-v2-20261022/V2_CORRECTION_CONTRACT.md": {
+      "bytes": 7220,
+      "sha256": "8cd0b5d765faceb40e1d23b903112ed8febdc78349642e53373858a00bba9d2a"
+    }
+  },
+  "new_module_lines": 962,
+  "new_module_below_existing_64KiB_source_input_cap": true,
+  "source_matches_syntax_and_delta_receipts": true,
+  "HOST_AST_and_in_memory_syntax_compile": "PASS, one new Python unit, no code-object execution/serialization or pyc",
+  "candidate_import_execution_library_call": false,
+  "synthetic_traces_or_runtime_functional_adversarial_fuzz_mutation_tests": false,
+  "generator_helper_controller_client_execution": false,
+  "actual_private_HOLD_control_capture_current_state_proc_dev_UARTRPC_network_device_access": false,
+  "candidate_process_launch_or_signal": false,
+  "Git_index_AGENTS_central_plan_frozen_source_helper_model_provider_safeguard_changes": false,
+  "policy_refusals_or_tool_errors": [],
+  "native_or_manual_action_requested": false,
+  "automatic_next_worker_test_operation_queue": false,
+  "independent_source_acceptance": false,
+  "remaining_condition": "Actual canonical marker/namespace/descriptor/source association, serialized lifetime, durability/memory/clock and all native/recovery facts are unproved; constants and supplied records grant no readiness. V1 failed findings remain frozen; v2 requires independent focused review."
+}

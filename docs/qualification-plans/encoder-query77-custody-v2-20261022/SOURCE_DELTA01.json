@@ -1,0 +1,50 @@
+{
+  "utc": "2026-10-22T17:57:20.902740+00:00",
+  "method": "Static stdlib AST comparison and difflib unified textual delta fingerprint, not library execution or a functional/mutation test",
+  "original": "apps/qualification/encoder-query77-custody/custody.py",
+  "original_sha256": "7dc6d11ff7dee758f49b3b0e4f7e43fb8b45215cda3761a75732519079e12b2e",
+  "candidate": "apps/qualification/encoder-query77-custody-v2/custody.py",
+  "candidate_sha256": "d60176e2d2725460a22c82fee6ce1068a82a07a976daddb7287c52daf3ade16f",
+  "exact_copy_before_patches": {
+    "utc": "2026-10-22T17:52:02.491612+00:00",
+    "bytes": 34669,
+    "sha256": "7dc6d11ff7dee758f49b3b0e4f7e43fb8b45215cda3761a75732519079e12b2e",
+    "bytes_equal": true,
+    "method": "Fresh no-clobber static file copy, then public byte comparison; no import, execution or generated code"
+  },
+  "unified_diff_format": "stdlib difflib.unified_diff(old.splitlines(True), new.splitlines(True), fromfile=original, tofile=candidate), default three-line context; UTF-8",
+  "unified_diff_bytes": 21207,
+  "unified_diff_sha256": "fe39190cc97076198a62613490695b212c3460534b4e76b9b9f8cc235b05f627",
+  "unified_diff_added_lines_excluding_header": 212,
+  "unified_diff_removed_lines_excluding_header": 53,
+  "unified_diff_text_separately_saved": false,
+  "diff_reproducible_from_retained_old_and_new_text": true,
+  "ast_comparison": "ast.dump(node, include_attributes=False), so line-number shifts do not count as changed definitions",
+  "changed_definitions": [
+    "Custody", "Custody._append", "Custody._call", "Custody._check_holds",
+    "Custody._check_op", "Custody._check_private", "Custody._failure", "Custody.close",
+    "Custody.open", "_Root", "_Root.__init__", "_Root.acquire", "_Root.check",
+    "validate_observation"
+  ],
+  "new_definitions": [
+    "Custody._available_owner_postchecks", "Custody._check_hold", "Custody._check_op_entry",
+    "Custody._failed_exit", "Custody._postchecks", "_HistoricalRoot",
+    "_HistoricalRoot.__init__", "_HistoricalRoot._git_condition", "_HistoricalRoot.acquire",
+    "_Root._git_condition", "_validate_previous"
+  ],
+  "removed_definitions": [],
+  "unchanged_definitions": [
+    "Budget", "Budget.__post_init__", "C1Error", "C1Error.__init__", "Catch",
+    "CatchRequirement", "Code", "Custody.__init__", "Custody._check_all",
+    "Custody._check_roots", "Custody._private_file", "Custody._source_hash",
+    "Custody._sources_complete", "Custody._teardown", "Custody._write_once",
+    "Custody.begin_local", "Custody.complete_local", "Custody.finish_local", "Custody.observe",
+    "Custody.verify_source_fd", "Epoch", "Epoch.__post_init__", "LocalPhase", "Observation",
+    "Observation.__post_init__", "Profile", "Profile.__post_init__", "SourceSlot", "_Root.close",
+    "_Root.fd", "_association", "_canonical", "_code", "_digest", "_encoded", "_git_absent",
+    "_integer", "_json", "_metadata", "_observation_fields", "_pairs", "_platform",
+    "_read", "_refuse", "_regular", "_text"
+  ],
+  "outside_definition_changes": "New source-provenance docstring and fixed canonical workspace/control/Boot-source constants; GPL notice and stdlib imports unchanged",
+  "no_typing_rewrite_or_new_native_effect_profile": true
+}

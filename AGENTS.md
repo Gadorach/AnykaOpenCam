@@ -127,10 +127,12 @@ one803-line host-only library, HOST AST/syntax compilation only; parent verified
 nine inputs/eight sealed outputs. Independent review requires R1 (supplied previous
 record displaces original catch/counter baseline) and R2 (failed calls omit
 historical postcheck).20 review inputs/three outputs parent-verified; v1/review stay
-frozen/unaccepted. One author owns fresh encoder-query77-custody-v2 for R1/R2 plus
-the explicit path-role correction: exact in-place read-only historical CONTROL,
-strictly outside-Git new outputs. No migration/copied markers/general Git exemption,
-v1 edits, library execution or runtime tests; v2 needs independent review.
+frozen/unaccepted. Fresh encoder-query77-custody-v2 delivered:962 lines/42123B,
+HOST AST/syntax only;26 inputs/eight outputs parent-verified. Independent focused
+review is active for R1/R2 and the explicit path-role correction: exact in-place
+read-only historical CONTROL, strictly outside-Git new outputs. No active author,
+migration/copied markers/general Git exemption, v1 edits, library execution or
+runtime tests; v2 remains unaccepted pending review.
 No UART/RPC/process launch/current-state/shell/boot/query interface. Staging guard is
 unavailable on the inspected route; future manual-OFF handoff needs separate review
 and actual readiness. No physical request or transfer/hardware operation is active.
