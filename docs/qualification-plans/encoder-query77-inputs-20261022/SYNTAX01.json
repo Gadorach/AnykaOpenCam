@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-22T18:26:57.645108+00:00",
+  "scope": "HOST new-text AST and in-memory syntax only; no validator or helper behavior executed",
+  "python": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+  "unit": "apps/qualification/encoder-query77-inputs/selected_inputs.py",
+  "bytes": 18643,
+  "lines": 376,
+  "sha256": "5fbcc656882075c44c1e4f4e5df8a896fe83433a33e770deec1fd50c3792d3f0",
+  "method": "ast.parse(text); compile(text, selected_inputs.py, exec, dont_inherit=True, optimize=0); discard without exec/import/serialization",
+  "ast_parse": "PASS",
+  "syntax_compile": "PASS",
+  "new_python_units": 1,
+  "assert_nodes": 0,
+  "catalog_inspection": "Static AST constants/strings/concatenations only, never call _Pin initializers or candidate functions; all25 literal length/SHA/path rows match separately read public bytes",
+  "catalog_count": 25,
+  "catalog_aggregate_format": "sorted full workspace-relative UTF-8 path + NUL + raw SHA256 digest bytes",
+  "catalog_aggregate": "a4b8dd235103e4b3a66bd09b6066a63c5df8a5ab06fb5daee6dfac0dca2a37b7",
+  "external_authored_IO_callsite_lines": {
+    "os.close": [189, 195],
+    "os.fstat": [134, 141, 154, 159],
+    "os.getuid": [357],
+    "os.open": [152, 157, 167],
+    "os.pread": [302, 318],
+    "os.stat": [135, 135, 142, 162]
+  },
+  "candidate_import_call_or_code_object_execution": false,
+  "candidate_path_permissions_CRC_format_or_cleanup_exercised": false,
+  "pyc_or_other_compiled_output_written": false,
+  "functional_adversarial_fuzz_mutation_runtime_tests_or_traces": false,
+  "private_current_state_or_native_admission": false
+}

@@ -1,0 +1,46 @@
+{
+  "utc": "2026-10-22T18:30:35.914754+00:00",
+  "method": "Static public hashes of inherited frozen manifest and review outputs only; no candidate/library call",
+  "inherited_manifest": "docs/qualification-plans/encoder-query77-custody-v2-review-20261022/INPUT_PINS01.tsv",
+  "inherited_manifest_bytes": 5054,
+  "inherited_manifest_sha256": "5c8d6b0d09cacb651efc87f9fb58af1e60a603800eeedba2ca5abbf4d5ce5509",
+  "inherited_count": 35,
+  "matching_count": 32,
+  "all_32_noncontext_frozen_inputs_match": true,
+  "aggregate_expected": "a50bc4dc4940d64f33c906c3fef273434cb46f342edf0d1286feadc65b87fedb",
+  "aggregate_observed": "679054536ac096304c60cd2741de0f64dfb0235d9f108b20802c618dede9be3a",
+  "aggregate_format": "in inherited sorted row order, workspace-relative UTF-8 path + NUL + raw SHA256 digest bytes",
+  "context_changes_not_rebased": [
+    {
+      "path": "AGENTS.md",
+      "before_sha256": "944a1b76995164157dc89bb56f07204f4a11724245cce9cbabab8cf4139e7e7f",
+      "before_bytes": 24899,
+      "observed_sha256": "3a1ccdf9db4a98b5081849bd0e7b62018008f5bfccece96356a7afc23c9c66f2",
+      "observed_bytes": 24502
+    },
+    {
+      "path": "docs/plan/camera-foundation/00-INDEX.md",
+      "before_sha256": "94d0f2d8a74ebe20a4344eb7a9176bc01b90b5223b003d5c20b30a53a395ff08",
+      "before_bytes": 120135,
+      "observed_sha256": "5d93f986ac34dc3de535c0ce64702faa1aa583afad2a17817ff906d2e7794ba7",
+      "observed_bytes": 120272
+    },
+    {
+      "path": "docs/plan/camera-foundation/EXECUTION_TASKS_20261021.md",
+      "before_sha256": "0f73896e2ac40b5b7fd0c95604571c811dad54c8ed955921895281983ceae382",
+      "before_bytes": 64157,
+      "observed_sha256": "e9463720b4bb79a389f1c2d044dfeb1a07920a53234088769a988bed9979f0e3",
+      "observed_bytes": 64523
+    }
+  ],
+  "context_note": "Harness parent checkpoint update describes C2a selection. No full historical diff attribution or rebase of original source/review manifests; first fresh inherited comparison here follows source authoring, not a pre-use seal.",
+  "review_outputs_match_prior_seal": {
+    "REVIEW.md": "bea15bb8f0201d14820a9e9acaf5df232c531385d951fa0abe8b62a43fe516fd",
+    "INPUT_PINS01.tsv": "5c8d6b0d09cacb651efc87f9fb58af1e60a603800eeedba2ca5abbf4d5ce5509",
+    "STATIC_CHECK01.json": "2cf320fb21592df03c067cc2870c39d25f7737be76836988b90bfe20d081a6f4",
+    "FINAL_SEAL01.json": "b58ec94be7db1ff6cb33295c14770424ade7566c709f043efe92527a1adbf9d4"
+  },
+  "discovery_manifest": "DISCOVERY_INPUTS01.tsv",
+  "discovery_not_added_to_runtime_catalog": true,
+  "no_250219_path_reproduction_or_transitive_full_tree_audit": true
+}

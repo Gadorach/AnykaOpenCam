@@ -1,0 +1,99 @@
+{
+  "utc": "2026-10-22T18:35:46.640968+00:00",
+  "scope": "One bounded unreviewed C2a OFFLINE selected-input validator SOURCE candidate; not an observed API success, controller/C2 runtime, E2/native admission or source adoption",
+  "owned_paths_only": [
+    "apps/qualification/encoder-query77-inputs/",
+    "docs/qualification-plans/encoder-query77-inputs-20261022/"
+  ],
+  "precode_contract_written_first": true,
+  "selected_public_input_snapshot_utc": "2026-10-22T18:18:18.529505+00:00",
+  "selected_snapshot_before_module_creation": true,
+  "static_literal_catalog_comparison_utc": "2026-10-22T18:26:57.645108+00:00",
+  "method": "Public static SHA256/JSON/AST inspection and new-text in-memory HOST syntax compile only; AST catalog decoding handles literal strings/integers/concatenations, never candidate initializers/functions. No candidate path/CRC/format/cleanup logic invoked.",
+  "aggregate_format": "sorted full workspace-relative UTF-8 path + NUL + raw SHA256 digest bytes",
+  "selected_catalog": {
+    "manifest": "SELECTED_INPUTS01.tsv",
+    "count": 25,
+    "matching_count": 25,
+    "aggregate_before": "a4b8dd235103e4b3a66bd09b6066a63c5df8a5ab06fb5daee6dfac0dca2a37b7",
+    "aggregate_after": "a4b8dd235103e4b3a66bd09b6066a63c5df8a5ab06fb5daee6dfac0dca2a37b7",
+    "changes": []
+  },
+  "discovery_sources": {
+    "manifest": "DISCOVERY_INPUTS01.tsv",
+    "count": 5,
+    "matching_count": 5,
+    "aggregate_before": "08e316b6f9f406fc745e70a67b535cace81454967b2732ef3243cb583d66292f",
+    "aggregate_after": "08e316b6f9f406fc745e70a67b535cace81454967b2732ef3243cb583d66292f",
+    "changes": [],
+    "not_part_of_runtime_catalog": true
+  },
+  "inherited_frozen_comparison": {
+    "manifest": "docs/qualification-plans/encoder-query77-custody-v2-review-20261022/INPUT_PINS01.tsv",
+    "first_fresh_comparison_utc": "2026-10-22T18:30:35.914754+00:00",
+    "first_fresh_comparison_after_authoring_not_pre_use_seal": true,
+    "count": 35,
+    "matching_noncontext_count": 32,
+    "aggregate_expected_original": "a50bc4dc4940d64f33c906c3fef273434cb46f342edf0d1286feadc65b87fedb",
+    "aggregate_observed_first": "679054536ac096304c60cd2741de0f64dfb0235d9f108b20802c618dede9be3a",
+    "aggregate_observed_final": "679054536ac096304c60cd2741de0f64dfb0235d9f108b20802c618dede9be3a",
+    "three_context_changes_not_rebased": "Exact old/current central checkpoint pins retained in FROZEN_CHECK01.json; no further changes between comparisons",
+    "all_32_noncontext_frozen_inputs_match": true,
+    "all_four_C1v2_review_outputs_match": true,
+    "review_final_seal_sha256": "b58ec94be7db1ff6cb33295c14770424ade7566c709f043efe92527a1adbf9d4",
+    "groups_overlap_not_additive_unique_file_counts": true,
+    "no_transitive_250219_path_build_reproduction": true
+  },
+  "two_file_source_aggregate": "9456c227e5f4d66d2e55fbbb44694157c7c48e6785dd1b3b5a6f906b6d8b8565",
+  "outputs_excluding_this_seal": {
+    "apps/qualification/encoder-query77-inputs/README.md": {
+      "bytes": 5913,
+      "sha256": "3c7cc3db36ce217c76ca63dc903a5fb33e7d9a89fa7b2b110ebd75bc8bd52c88"
+    },
+    "apps/qualification/encoder-query77-inputs/selected_inputs.py": {
+      "bytes": 18643,
+      "sha256": "5fbcc656882075c44c1e4f4e5df8a896fe83433a33e770deec1fd50c3792d3f0"
+    },
+    "docs/qualification-plans/encoder-query77-inputs-20261022/BUILD_RESULT.md": {
+      "bytes": 2663,
+      "sha256": "19f605d1309eeebe0eb53944024c6f77ada1927a02b321be305a05ae6e2cbe85"
+    },
+    "docs/qualification-plans/encoder-query77-inputs-20261022/DISCOVERY_INPUTS01.tsv": {
+      "bytes": 777,
+      "sha256": "41d12f613f658693fda3e111f9b233c371fc786d351bce7d239a46ad9569297e"
+    },
+    "docs/qualification-plans/encoder-query77-inputs-20261022/FROZEN_CHECK01.json": {
+      "bytes": 2600,
+      "sha256": "94f6494012e95855c7dd29eb406d9672c1a77e57215b520fc5ba2d8160cf52a1"
+    },
+    "docs/qualification-plans/encoder-query77-inputs-20261022/INPUT_CONTRACT.md": {
+      "bytes": 6362,
+      "sha256": "0b2db331c6cc19c878843409a27f5f0be2fb3b210f36b0182ff6c85ad356e877"
+    },
+    "docs/qualification-plans/encoder-query77-inputs-20261022/SELECTED_INPUTS01.tsv": {
+      "bytes": 3908,
+      "sha256": "1769ec11914f90e1c4255cd7eac9768c6979ec2d1470de1352438327cb93fff3"
+    },
+    "docs/qualification-plans/encoder-query77-inputs-20261022/SOURCE_INSPECTION.md": {
+      "bytes": 8762,
+      "sha256": "5601c274e89cea5da98fde4e96a939b9c388dbc9195c5adfc68b07b0461f1947"
+    },
+    "docs/qualification-plans/encoder-query77-inputs-20261022/SYNTAX01.json": {
+      "bytes": 1614,
+      "sha256": "3fbc256b2a036c16da936969062bfe3ff80ed05b15ef0fadb343e1cac0fb6227"
+    }
+  },
+  "source_matches_syntax_receipt": true,
+  "HOST_AST_syntax_only": "PASS; one376-line18643B Python unit, no code-object import/execution/serialization or pyc",
+  "candidate_validator_helper_library_or_client_called": false,
+  "compiler_generator_controller_test_execution_or_synthetic_traces": false,
+  "functional_adversarial_fuzz_mutation_runtime_tests": false,
+  "candidate_path_permissions_CRC_format_cleanup_exercised": false,
+  "actual_HOLD_control_private_capture_current_state_proc_dev_UART_RPC_network_device_access": false,
+  "candidate_process_launch_or_signal": false,
+  "Git_index_AGENTS_central_plan_frozen_sources_model_provider_safeguard_changes": false,
+  "policy_refusals_or_tool_errors": [],
+  "independent_SOURCE_acceptance_or_native_admission": false,
+  "manual_physical_action_or_automatic_next_call_test_worker_native_queue": false,
+  "remaining_limits": "Public byte/pin author observations are not candidate format/path/runtime validation. Closed descriptors do not freeze later inputs or loaded source; actual ownership/clock/catch/recovery and all C2/native/product gates remain unproved. Independent review precedes any parent-selected offline validator call."
+}

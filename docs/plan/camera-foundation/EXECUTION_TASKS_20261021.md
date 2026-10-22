@@ -52,9 +52,14 @@ three outputs parent-verified, review seal
 `b58ec94be7db1ff6cb33295c14770424ade7566c709f043efe92527a1adbf9d4`.
 Parent disposition in custody-v2 docs accepts source scope only, not actual custody.
 No migration/copied marker/general Git exemption, v1 mutation, library execution,
-private IO, target interface or runtime tests. One author now owns C2a fixed-public-
-input validator source/docs at encoder-query77-inputs, not a controller/sender.
-Future parent offline call requires independent review; no such call selected now.
+private IO, target interface or runtime tests. C1 source committed locally `0a86dda`.
+C2a fixed-public-input library delivered at encoder-query77-inputs,376 lines/18643B,
+module SHA `5fbcc656882075c44c1e4f4e5df8a896fe83433a33e770deec1fd50c3792d3f0`.
+HOST AST/syntax only;25 selected/five discovery pins/nine outputs parent-verified.
+Independent focused SOURCE/API review is active, no author. Static byte-pin reads
+are not a validator success or format/path/cleanup runtime proof. No controller/
+sender/private/current-state/target interface. Review precedes any future parent
+offline call; no such call selected now.
 No executable native recipe, capture/staging/boot/query or user physical action
 selected. Last target observation remains original held U-Boot12:12UTC; no fresh
 target/recorder/owner/expiry status inherited. Both HOLDs stay untouched. Query77
