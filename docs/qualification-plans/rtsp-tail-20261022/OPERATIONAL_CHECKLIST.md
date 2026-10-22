@@ -25,7 +25,8 @@ address device-free backend startup and actual preopened-listener custody. Exter
 retention investigation stopped before code on absent media bootstrap/recovery
 and the serve-internal fork; it remains blocked, not implemented.
 Owned listener now has narrow source/API custody sufficiency; prestarted-backend
-source compiled and is under independent lifecycle review. They are separate
+v1 compiled but review requires terminal IPC cleanup after observer-reaped exit.
+Fresh v2 correction is underway; no runtime leak is claimed. They are separate
 siblings, not an accepted composition. These artifacts do not check off outstanding
 app/adoption/load gates below.
 

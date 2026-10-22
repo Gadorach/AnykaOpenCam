@@ -34,8 +34,12 @@ selected for actual owned-listener consumption in fresh `owned-listener-candidat
 and rtsp-owned-listener docs. Preserve loopback/authentication/verifier constraints;
 no listener/bind/runtime/test execution or fake app main. Only these two new source
 lanes have progressed: owned-listener review completed with narrow SOURCE/API
-custody sufficiency, no correction-required defect; prestarted-backend delivered
-and now under independent lifecycle review (sole active lane). Parent verified
+custody sufficiency, no correction-required defect. Prestarted-backend v1 review
+requires R1: observer-reaped verifier leaves IPC FD open, retired stop returns OK,
+then client wipe/free loses custody. Parent verified1,303 inputs/six outputs;
+review seal `d060aaa15deea1526920414f4015505f1024fa73e2f49eff6a502a90049ce323`.
+Fresh v2 author selected only for exact-once terminal IPC disposition/sticky errors,
+not uncertain-start retry; v1 remains frozen/unaccepted. Parent verified
 listener1,281 inputs/six outputs/source aggregate;
 review seal `2f39d960ba6cff2b236d215d65dea206f0005fad0fc430a621e24de25bd3db61`.
 Owned-listener HOST/ARM52 commands/30 C compilations PASS is cited, not rerun;
@@ -53,9 +57,10 @@ real one-shot device-free start -> serve on same backend/child -> explicit finis
 stable auth-peer records and partial-start HOLD implemented. Six changed C unit
 compilations HOST/ARM,26 tool commands exit0 plus five expected diff exit1; no
 execution, object reuse or full-app link. Static-finalizer bookkeeping failure is
-preserved/corrected without rebuilding. Reviewer owns only new prestarted-backend
-review docs; no automatic listener composition, external media retention/bootstrap/
-recovery/backing/native acceptance. Reviewed listener source committed `c51e129`.
+preserved/corrected without rebuilding. Completed review found R1 above, not a
+runtime observation; parent disposition in the candidate docs. No automatic listener
+composition, external media retention/bootstrap/recovery/backing/native acceptance.
+Reviewed listener source committed `c51e129`; v2 source correction is sole active lane.
 
 **Actual provider derivative narrow SOURCE/API/ownership sufficiency:** no new
 correction-required defect in staged transfers/actual callsites.3,649 prior pins,
