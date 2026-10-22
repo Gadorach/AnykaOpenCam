@@ -1,0 +1,589 @@
+--- a/native_adapter.c
++++ b/native_adapter.c
+@@ -14,10 +14,14 @@
+ static struct nh_memory_runtime memory_state;
+ static uint64_t codec_live_bytes;
+ static unsigned storage_selected,raw_reuse_requested;
++static int native_guard_present(void)
++{return !stop&&!native.retirement_uncertain&&!source_clock.failed&&native.watchdog.fd>=3&&
++ (native.watchdog.state==QW_UNKNOWN||native.watchdog.state==QW_DISABLED||native.watchdog.state==QW_ACTIVE5);}
+ static int prepare_output(struct qc_rtsp_context *c,uint64_t begin)
+ {
+  int forecast=nh_memory_runtime_gate(&memory_state,NH_MEM_PRE_NEXT,begin);
+  if(forecast){if(forecast==NH_MEM_CLOCK)native.retirement_uncertain=1;return CAMERA_NOT_READY;}
++ if(qw_owner_check(&c->watchdog)){nh_native_fence(NULL);return CAMERA_IO_ERROR;}
+  if(c->resident_storage)return CAMERA_OK;
+  if(!memory_state.ledger.initialized)return CAMERA_NOT_READY;
+  if(raw_reuse_requested){c->resident_storage=raw;return CAMERA_OK;} /* already-owned/paid raw pages, NEVER credit twice */
+@@ -49,7 +53,7 @@
+  codec_live_bytes=q.live_bytes;
+  return CAMERA_OK;
+ }
+-void nh_native_init(void)
++static void native_init_legacy(void)
+ {source_context_init(&native);memset(&source_clock,0,sizeof(source_clock));sensor_baseline_requested=0;memset(&sensor_baseline_report,0,sizeof(sensor_baseline_report));memset(&memory_state,0,sizeof(memory_state));codec_live_bytes=0;storage_selected=0;raw_reuse_requested=0;}
+ int nh_native_storage_select(const char *mode)
+ {
+@@ -66,6 +70,7 @@
+ void nh_native_sensor_report(void){nh_sensor_log(&sensor_baseline_report);}
+ int nh_native_memory_start(uint64_t start)
+ {
++ if(!native_guard_present())return CAMERA_NOT_READY;
+  if(!storage_selected)return CAMERA_NOT_READY;
+  int r=nh_memory_runtime_init(&memory_state,start,nh_native_now,nh_native_cancelled,NULL,raw_reuse_requested);
+  if(!r)r=nh_memory_runtime_gate(&memory_state,NH_MEM_INITIAL,start);
+@@ -74,6 +79,7 @@
+ }
+ int nh_native_memory_fixed_buffers(void *hub)
+ {
++ if(!native_guard_present())return CAMERA_NOT_READY;
+  uint64_t begin=nh_native_now(NULL);int r=nh_memory_runtime_gate(&memory_state,NH_MEM_FIXED_PAID,begin);
+  if(!r)r=nh_memory_prefault_owned(&memory_state,0,raw,sizeof(raw),begin);
+  if(!r)r=nh_memory_runtime_gate(&memory_state,NH_MEM_FIXED_PAID,begin);
+@@ -84,6 +90,7 @@
+ }
+ int nh_native_memory_gate(void *unused,enum nh_memory_stage stage)
+ {
++ if(!native_guard_present())return CAMERA_NOT_READY;
+  (void)unused;if(!memory_state.ledger.initialized)return CAMERA_NOT_READY;
+  if(stage==NH_MEM_POST_FIRST&&nh_memory_credit_codec(&memory_state.ledger,codec_live_bytes,!native.retirement_uncertain&&!source_clock.failed))return CAMERA_NOT_READY;
+  uint64_t begin=nh_native_now(NULL);int r=nh_memory_runtime_gate(&memory_state,stage,begin);
+@@ -95,7 +102,7 @@
+ uint64_t nh_native_now(void *unused)
+ {
+  (void)unused;uint64_t now=producer_clock_ns(NULL);
+- if(now==UINT64_MAX)native.retirement_uncertain=1;
++ if(now==UINT64_MAX){native.retirement_uncertain=1;qw_owner_fail(&native.watchdog);}
+  return now;
+ }
+ int nh_native_cancelled(void *unused)
+@@ -112,7 +119,7 @@
+  }
+  return 0;
+ }
+-int nh_native_next(void *unused,struct camera_packet *p,struct nh_key *key)
++static int native_next_legacy(void *unused,struct camera_packet *p,struct nh_key *key)
+ {
+  (void)unused;
+  if(stop)return CAMERA_DISCONNECTED;
+@@ -127,14 +134,14 @@
+                      native.receipt_key.generation,native.capture_sequence,native.produced_nal_crc32_bzip2};
+  expected=*p;return CAMERA_OK;
+ }
+-int nh_native_release(void *unused,const struct camera_packet *p)
++static int native_release_legacy(void *unused,const struct camera_packet *p)
+ {
+  (void)unused;
+  if(native.retirement_uncertain||!native.produced_storage||p->data!=expected.data||
+     p->bytes!=expected.bytes||p->monotonic_ns!=expected.monotonic_ns)return CAMERA_IO_ERROR;
+  release_h264_frame(&native,p);memset(&expected,0,sizeof(expected));return CAMERA_OK;
+ }
+-int nh_native_retire(void *unused)
++static int native_retire_body(void *unused)
+ {
+  (void)unused;int r=idle_h264_checked(&native);
+  fprintf(stderr,"NH_NATIVE_RETIRE result=%d source=%llu file=%llu generation=%llu state=%u reason=%u stop_result=%d stopped_ns=%llu armed=%u uncertain=%d\n",
+@@ -142,10 +149,11 @@
+  (unsigned long long)native.receipt_key.generation,native.receipt_evidence.state,native.receipt_evidence.reason,
+  native.receipt_evidence.stop_result,(unsigned long long)native.receipt_evidence.stopped_ns,
+  native.receipt_armed,native.retirement_uncertain);
+- if(!r&&!parked_after_stop&&native.resident_storage){if(native.resident_storage!=raw)free(native.resident_storage);native.resident_storage=NULL;}
++ if(!r&&qw_owner_check(&native.watchdog)){nh_native_fence(NULL);return CAMERA_IO_ERROR;}
++ /* Retain resident backing until outer logical watchdog-disable ACK. */
+  return r;
+ }
+-int nh_native_retire_held(void *unused,const struct camera_packet *p)
++static int native_retire_held_legacy(void *unused,const struct camera_packet *p)
+ {
+  (void)unused;
+  if(native.retirement_uncertain||source_clock.failed||parked_after_stop)return CAMERA_IO_ERROR;
+@@ -153,10 +161,11 @@
+   if(!native.produced_storage||p->data!=expected.data||p->bytes!=expected.bytes||p->monotonic_ns!=expected.monotonic_ns)return CAMERA_IO_ERROR;
+   parked_after_stop=native.produced_storage;native.produced_storage=NULL;
+  }else if(native.produced_storage)return CAMERA_IO_ERROR; /* uncertain/unreturned next() output */
+- int r=nh_native_retire(NULL);
++ int r=native_retire_body(NULL);
+  if(r){native.produced_storage=parked_after_stop;parked_after_stop=NULL;native.retirement_uncertain=1;return r;}
+  /* Actual normal source END/QUERY/ACK succeeded before this known CPU free. */
+- if(native.resident_storage!=raw)free(native.resident_storage);native.resident_storage=NULL;parked_after_stop=NULL;memset(&expected,0,sizeof(expected));return CAMERA_OK;
++ if(qw_owner_check(&native.watchdog)){native.produced_storage=parked_after_stop;parked_after_stop=NULL;nh_native_fence(NULL);return CAMERA_IO_ERROR;}
++ /* Retain actual parked/resident backing until outer disable ACK. */ return CAMERA_OK;
+ }
+ int nh_native_config(struct camera_fmp4_config *c)
+ {
+@@ -167,16 +176,18 @@
+  .pps=parameters+split+4,.pps_bytes=n-split-4,.generation=0};
+  return CAMERA_OK;
+ }
+-void nh_native_fence(void *unused){(void)unused;native.retirement_uncertain=1;}
++void nh_native_fence(void *unused){(void)unused;native.retirement_uncertain=1;qw_owner_fail(&native.watchdog);}
+ void nh_native_quarantine(void)
+ {
+  /* No END/reset/ACK/close retry and no free of uncertain CPU backing.
+   * Existing retained watchdog (if any) and parent's fresh bounded recovery
+   * resolve this stopped process. It cannot resume or acquire another AU. */
+- native.retirement_uncertain=1;
+- fprintf(stderr,"NH_QUARANTINE retained_source_fds=%d,%d encoder=%d,%d watchdog=%d CPU_loan=%u CPU_resident=%u parent_recovery_REQUIRED\n",
++  nh_native_fence(NULL);
++ fprintf(stderr,"NH_QUARANTINE retained_source_fds=%d,%d encoder=%d,%d watchdog_actual_fd=%d watchdog_state=%u close_unknown=%u last_close_attempt_NOTowned=%d CPU_parked=%u CPU_loan=%u CPU_resident=%u parent_recovery_REQUIRED\n",
+  native.continuous_frame,native.continuous_sensor,native.h264_stream_fd,
+- native.encoder_hold,native.watchdog_hold,native.produced_storage!=NULL,native.resident_storage!=NULL);
++ native.encoder_hold,native.watchdog.fd,(unsigned)native.watchdog.state,native.close_unknown,native.last_close_attempt,parked_after_stop!=NULL,native.produced_storage!=NULL,native.resident_storage!=NULL);
+  fflush(stderr);
+  for(;;)raise(SIGSTOP);
+ }
++
++#include "native-watchdog.inc"
+--- a/rtspd-native-import.c
++++ b/rtspd-native-import.c
+@@ -25,6 +25,7 @@
+ #include "capture-receipt.h"
+ #include "crc-bzip2.h"
+ #include "sensor_baseline.h"
++#include "watchdog_owner.h"
+ #define MAIN_PIXELS (1280U * 720U)
+ #define FRAME_BYTES 1728000U
+ static volatile sig_atomic_t stop;
+@@ -38,7 +39,8 @@
+ /* SPDX-License-Identifier: GPL-2.0-only; exact selected rtspd functions */
+ struct qc_rtsp_context {
+  int h264_stream_fd,continuous_sensor,continuous_frame,retirement_uncertain;
+- int watchdog_hold,encoder_hold,legacy_control;
++ struct qw_owner watchdog;int encoder_hold,legacy_control;
++ int last_close_attempt;unsigned close_unknown;
+  struct qc_capture_receipt receipt_key,receipt_evidence;
+  uint64_t last_source_instance,last_file_instance,last_capture_generation;
+  unsigned receipt_armed,capture_sequence,ownership_idr,ownership_idrs,receipt_renewals;
+@@ -46,7 +48,7 @@
+  struct {uint64_t begin,captured,encoded;unsigned bytes;int keyframe;} produced_timing;
+ };
+ static void source_context_init(struct qc_rtsp_context *c)
+-{memset(c,0,sizeof(*c));c->h264_stream_fd=c->continuous_sensor=c->continuous_frame=c->watchdog_hold=c->encoder_hold=c->legacy_control=-1;}
++{memset(c,0,sizeof(*c));c->h264_stream_fd=c->continuous_sensor=c->continuous_frame=c->encoder_hold=c->legacy_control=-1;c->last_close_attempt=-1;c->watchdog=(struct qw_owner)QW_OWNER_EMPTY;}
+ static void on_signal(int sig) { (void)sig; stop = 1; }
+ static struct camera_rtsp_clock source_clock;
+ static uint64_t milliseconds(void)
+@@ -54,15 +56,8 @@
+ static int sensor_read(int fd,uint16_t reg){return nh_sensor_read_byte(fd,reg);}
+ static int sensor_stream(int fd,uint8_t on){return nh_sensor_stream(fd,on);}
+ static int capture_failed(struct qc_rtsp_context *c)
+-{c->retirement_uncertain=1;return CAMERA_IO_ERROR;}
+-static int protected_guard_finish(struct qc_rtsp_context *c,int fd,int proved)
+-{
+- if(fd<0)return proved?CAMERA_OK:CAMERA_IO_ERROR;
+- if(!proved||c->retirement_uncertain){c->watchdog_hold=fd;return capture_failed(c);}
+- if(write(fd,"V",1)!=1){c->watchdog_hold=fd;return capture_failed(c);}
+- if(close(fd)){c->watchdog_hold=fd;return capture_failed(c);}
+- return CAMERA_OK;
+-}
++{c->retirement_uncertain=1;qw_owner_fail(&c->watchdog);return CAMERA_IO_ERROR;}
++#include "source-close-once.inc"
+ static int continuous_retire(struct qc_rtsp_context *c,unsigned expiry_only)
+ {
+  struct qc_capture_receipt proof;
+@@ -90,13 +85,13 @@
+  struct qc_capture_receipt ack=qc_receipt_request(&c->receipt_key);
+  if(ioctl(c->continuous_frame,QC_ISP_RECEIPT_ACK,&ack))return capture_failed(c);
+  c->receipt_armed=0; /* ACK is the admission barrier, not close(fd)/ownerNULL. */
+- if(close(c->continuous_sensor))return capture_failed(c);c->continuous_sensor=-1;
+- if(close(c->continuous_frame))return capture_failed(c);c->continuous_frame=-1;
++ if(source_close_once(c,&c->continuous_sensor))return CAMERA_IO_ERROR;
++ if(source_close_once(c,&c->continuous_frame))return CAMERA_IO_ERROR;
+  /* At this serialized boundary no produced packet is held. A fresh reference
+   * owner must not consume a P frame based on the preceding capture generation.
+   */
+  if(c->produced_storage)return capture_failed(c);
+- if(c->h264_stream_fd>=0){if(close(c->h264_stream_fd))return capture_failed(c);c->h264_stream_fd=-1;}
++ if(c->h264_stream_fd>=0&&source_close_once(c,&c->h264_stream_fd))return CAMERA_IO_ERROR;
+  c->h264_stream_frames=0;c->ownership_idr=1;
+  return CAMERA_OK;
+ }
+@@ -104,9 +99,8 @@
+ {return continuous_retire(c,0);}
+ static int continuous_next(struct qc_rtsp_context *c)
+ {
+- int watchdog=-1,timeout=5,result=-1;
+- if(c->retirement_uncertain||c->watchdog_hold>=0)return -1;
+- watchdog=open("/dev/watchdog0",O_WRONLY);if(watchdog<0||ioctl(watchdog,WDIOC_SETTIMEOUT,&timeout)||timeout!=5)goto done;
++ int result=-1;
++ if(c->retirement_uncertain||qw_owner_check(&c->watchdog))return capture_failed(c);
+  for(unsigned attempt=0;attempt<1;attempt++){
+    if(c->continuous_frame<0){
+     c->continuous_sensor=open("/dev/i2c-0",O_RDWR);
+@@ -131,7 +125,7 @@
+      struct qc_capture_receipt reserved;
+      if(qc_receipt_query(c->continuous_frame,&c->receipt_key,&reserved)||reserved.state!=QC_RECEIPT_ARMED||reserved.reason||reserved.stop_result||reserved.stopped_ns)goto done;
+      c->receipt_evidence=reserved; /* prove exact reservation BEFORE table writes */
+-     if(!sensor_baseline_requested||nh_sensor_exact139(c->continuous_sensor,watchdog,c->producer_begin_ns,&source_clock,&stop,&sensor_baseline_report))goto done;
++     if(!sensor_baseline_requested||nh_sensor_exact139(c->continuous_sensor,c->watchdog.fd,c->producer_begin_ns,&source_clock,&stop,&sensor_baseline_report))goto done;
+      if(qc_receipt_query(c->continuous_frame,&c->receipt_key,&reserved)||reserved.state!=QC_RECEIPT_ARMED||reserved.reason||reserved.stop_result||reserved.stopped_ns)goto done;
+      c->receipt_evidence=reserved; /* exact reservation still ARMED after finite preparation */
+      if(ioctl(c->continuous_frame,capture_irq?QC_ISP_BEGIN_IRQ:QC_ISP_BEGIN))goto done;
+@@ -155,7 +149,9 @@
+    if(!(frame_count%trace_every))fprintf(stderr,"ISP GATED-CONTINUOUS seq=%u status=%08x guards=%u crc_bzip2=%08x\n",q.sequence,q.status,q.guard_errors,q.crc32_bzip2);
+     struct qc_capture_receipt active;
+     if(qc_receipt_query(c->continuous_frame,&c->receipt_key,&active)||active.state!=QC_RECEIPT_ACTIVE||active.reason||active.stop_result||active.stopped_ns)goto done;
+-    c->receipt_evidence=active;c->capture_sequence=q.sequence;c->raw_valid=1;result=0;break;
++    c->receipt_evidence=active;c->capture_sequence=q.sequence;c->raw_valid=1;
++    /* Full extent/status/CRC + keyed ACTIVE receipt succeeded BEFORE this sole ping. */
++    if(qw_owner_capture_progress(&c->watchdog))goto done;result=0;break;
+   }
+   int failure=errno;
+    fprintf(stderr,"ISP NEXT REJECT errno=%d attempt=%u; noframeencoded, receipt-required\n",failure,attempt);
+@@ -163,7 +159,7 @@
+  }
+ done:
+   if(result)capture_failed(c);
+-  if(protected_guard_finish(c,watchdog,!result)!=CAMERA_OK)result=-1;
++  if(!result&&qw_owner_check(&c->watchdog))result=capture_failed(c);
+   return result;
+ }
+ static int prepare_output(struct qc_rtsp_context *,uint64_t);
+@@ -173,16 +169,17 @@
+    struct qc_rtsp_context *c=context;if(!c)return CAMERA_INVALID;
+   uint64_t begin=milliseconds(),captured,encoded;
+    uint8_t *output=NULL;
+-  int encoder=-1,guard=-1,result=CAMERA_IO_ERROR,timeout=5;
++  int encoder=-1,result=CAMERA_IO_ERROR;
+    if(c->produced_storage)return CAMERA_BUSY; c->raw_valid=0; /* no stale RAW view; next complete capture required */
+    if(c->retirement_uncertain)return CAMERA_IO_ERROR;
+-   if(begin==UINT64_MAX){c->retirement_uncertain=1;return CAMERA_IO_ERROR;}c->producer_begin_ns=begin*1000000ULL;
++   if(begin==UINT64_MAX){c->retirement_uncertain=1;return CAMERA_IO_ERROR;}c->producer_begin_ns=c->watchdog.start_ns; /* include outer lifetime/admission cost */
++   if(qw_owner_check(&c->watchdog))return capture_failed(c);
+    if(prepare_output(c,c->producer_begin_ns)!=CAMERA_OK)return CAMERA_NOT_READY;
+    if(continuous_next(c)){c->retirement_uncertain=1;return CAMERA_IO_ERROR;}captured=milliseconds();
+    if(captured==UINT64_MAX){c->retirement_uncertain=1;return CAMERA_IO_ERROR;}
+   output=c->resident_storage;if(!output)return CAMERA_NOT_READY; /* one prefaulted persistent CPU buffer */
+  if(before_encode_gate(c->producer_begin_ns)!=CAMERA_OK)return CAMERA_NOT_READY; /* no encode/DMA allocation on forecast failure; raw remains owned */
+-  guard=open("/dev/watchdog0",O_WRONLY);if(guard<0||ioctl(guard,WDIOC_SETTIMEOUT,&timeout)||timeout!=5)goto done;
++  if(qw_owner_check(&c->watchdog))return capture_failed(c);
+  encoder=open("/dev/qc07f-encoder",O_RDWR);if(encoder<0)goto done;
+  struct qc_hwenc_h264_job job={.width=width,.height=height,.input_bytes=MAIN_PIXELS*3/2,.input_ptr=(uint32_t)(uintptr_t)raw,.output_capacity=0x100000,.output_ptr=(uint32_t)(uintptr_t)output};
+    if(!c->raw_valid)goto done;int ownership_keyframe=c->ownership_idr;
+@@ -224,10 +221,10 @@
+ done:
+    if(encoder>=0){
+     if(result!=CAMERA_OK)c->encoder_hold=encoder;
+-    else if(close(encoder)){c->encoder_hold=encoder;c->retirement_uncertain=1;result=CAMERA_IO_ERROR;}
++    else if(source_close_once(c,&encoder)){if(encoder>=0)c->encoder_hold=encoder;result=CAMERA_IO_ERROR;}
+    }
+    if(result!=CAMERA_OK)c->retirement_uncertain=1;
+-   if(protected_guard_finish(c,guard,result==CAMERA_OK)!=CAMERA_OK)result=CAMERA_IO_ERROR;
++   if(result==CAMERA_OK&&qw_owner_check(&c->watchdog))result=CAMERA_IO_ERROR;
+    if(result!=CAMERA_OK&&output){c->produced_storage=output;output=NULL;}
+     (void)output; /* persistent CPU backing survives loan release and all uncertainty */
+    /* Error returns do not establish reset/DMA retirement on this diagnostic
+@@ -248,7 +245,7 @@
+   if(!c||c->produced_storage)return CAMERA_BUSY;
+  if(source_clock.failed){c->retirement_uncertain=1;return CAMERA_IO_ERROR;}
+  int r=continuous_close_checked(c);if(r)return r;
+- if(c->h264_stream_fd>=0){int fd=c->h264_stream_fd;c->h264_stream_fd=-1;if(close(fd))c->retirement_uncertain=1;}
++ if(c->h264_stream_fd>=0&&source_close_once(c,&c->h264_stream_fd))return CAMERA_IO_ERROR;
+  if(c->retirement_uncertain)return CAMERA_IO_ERROR;
+  c->h264_stream_frames=0;return CAMERA_OK;
+ }
+--- /dev/null
++++ b/watchdog_owner.c
+@@ -0,0 +1,114 @@
++/* SPDX-License-Identifier: GPL-2.0-only */
++#define _POSIX_C_SOURCE 200809L
++#include "watchdog_owner.h"
++#include <fcntl.h>
++#include <linux/watchdog.h>
++#include <sys/ioctl.h>
++#include <sys/stat.h>
++#include <time.h>
++#define QW_PHASE_NS UINT64_C(2000000000)
++
++void qw_owner_fail(struct qw_owner *o)
++{if(o)o->state=QW_HOLD;}
++static int fail(struct qw_owner *o)
++{qw_owner_fail(o);return -1;}
++static int clock_read(struct qw_owner *o,uint64_t *now)
++{
++ struct timespec t;
++ if(clock_gettime(CLOCK_MONOTONIC,&t)||t.tv_sec<0||t.tv_nsec<0||t.tv_nsec>=1000000000L||
++    (uint64_t)t.tv_sec>(UINT64_MAX-(uint64_t)t.tv_nsec)/UINT64_C(1000000000))return fail(o);
++ *now=(uint64_t)t.tv_sec*UINT64_C(1000000000)+(uint64_t)t.tv_nsec;
++ if(*now==UINT64_MAX||*now<o->last_ns)return fail(o);
++ o->last_ns=*now;return 0;
++}
++static int descriptor(struct qw_owner *o)
++{
++ struct stat st;
++ if(o->fd<3)return fail(o);
++ int flags=fcntl(o->fd,F_GETFL),fdflags=fcntl(o->fd,F_GETFD);
++ if(flags<0||fdflags<0||fstat(o->fd,&st)||(flags&O_ACCMODE)!=O_WRONLY||
++    !(fdflags&FD_CLOEXEC)||!S_ISCHR(st.st_mode)||st.st_rdev!=o->device||
++    st.st_dev!=o->node_filesystem||st.st_ino!=o->node_inode)return fail(o);
++ return 0;
++}
++int qw_owner_take(struct qw_owner *o,int *slot,dev_t device)
++{
++ if(!o||!slot||!device||o->fd!=-1||o->state!=QW_EMPTY||*slot<3)return -1;
++ struct stat st;
++ int flags=fcntl(*slot,F_GETFL),fdflags=fcntl(*slot,F_GETFD);
++ if(flags<0||fdflags<0||fstat(*slot,&st)||(flags&O_ACCMODE)!=O_WRONLY||
++    !(fdflags&FD_CLOEXEC)||!S_ISCHR(st.st_mode)||st.st_rdev!=device)return -1;
++ *o=(struct qw_owner){.fd=*slot,.state=QW_UNKNOWN,.device=device,
++  .node_filesystem=st.st_dev,.node_inode=st.st_ino};
++ *slot=-1;return 0;
++}
++int qw_owner_check(struct qw_owner *o)
++{
++ if(!o||o->state==QW_HOLD)return -1;
++ if(o->state!=QW_ENABLING&&o->state!=QW_ACTIVE5)return fail(o);
++ uint64_t now;
++ if(clock_read(o,&now)||now<o->start_ns||now-o->start_ns>=QW_PHASE_NS||
++    now>=o->session_deadline_ns)return fail(o);
++ if(descriptor(o))return -1;
++ /* Metadata syscalls consume the SAME phase budget; re-read immediately before
++  * a caller may service the watchdog, not just before descriptor inspection. */
++ if(clock_read(o,&now)||now<o->start_ns||now-o->start_ns>=QW_PHASE_NS||
++    now>=o->session_deadline_ns)return fail(o);
++ return 0;
++}
++static int control(struct qw_owner *o,unsigned long command,int *value)
++{
++ if(qw_owner_check(o))return -1;
++ if(ioctl(o->fd,command,value))return fail(o);
++ return qw_owner_check(o);
++}
++int qw_owner_begin(struct qw_owner *o,uint64_t source_start,enum qw_phase phase,uint64_t session_deadline)
++{
++ if(!o||o->state==QW_HOLD)return -1;
++ if((o->state!=QW_UNKNOWN&&o->state!=QW_DISABLED)||
++    source_start==UINT64_MAX||session_deadline==UINT64_MAX||session_deadline<=source_start||
++    (phase!=QW_NEXT&&phase!=QW_RETIRE))return fail(o);
++ o->start_ns=source_start;o->session_deadline_ns=session_deadline;
++ o->phase=phase;o->capture_progress=0;o->state=QW_ENABLING;
++ int timeout=5,option=WDIOS_ENABLECARD;
++ /* SETTIMEOUT may itself ping/start inherited active hardware. Mark transition
++  * unknown before the FIRST effect; do not service if phase/clock already bad. */
++ if(control(o,WDIOC_SETTIMEOUT,&timeout)||timeout!=5)return fail(o);
++ if(control(o,WDIOC_SETOPTIONS,&option))return -1;
++ timeout=0;
++ if(control(o,WDIOC_GETTIMEOUT,&timeout)||timeout!=5)return fail(o);
++ o->state=QW_ACTIVE5;return 0;
++}
++int qw_owner_capture_progress(struct qw_owner *o)
++{
++ if(!o||o->state==QW_HOLD)return -1;
++ if(o->state!=QW_ACTIVE5||o->phase!=QW_NEXT||o->capture_progress)return fail(o);
++ int ignored=0;
++ if(control(o,WDIOC_KEEPALIVE,&ignored))return -1;
++ o->capture_progress=1;return 0;
++}
++int qw_owner_disable_boundary(struct qw_owner *o)
++{
++ if(!o||o->state==QW_HOLD)return -1;
++ if(o->state!=QW_ACTIVE5||(o->phase==QW_NEXT&&!o->capture_progress))return fail(o);
++ int option=WDIOS_DISABLECARD;
++ /* Failure/time loss after the syscall leaves UNKNOWN hardware state; do NOT
++  * re-enable, ping, V-close or claim the retained FD guarantees recovery. */
++ if(control(o,WDIOC_SETOPTIONS,&option))return -1;
++ o->state=QW_DISABLED;return 0;
++}
++int qw_owner_idle_observe(struct qw_owner *o)
++{
++ if(!o||o->state==QW_HOLD)return -1;
++ if(o->state!=QW_DISABLED)return fail(o);
++ uint64_t now;
++ if(clock_read(o,&now))return -1;
++ if(descriptor(o))return -1;
++ return clock_read(o,&now);
++}
++int qw_owner_give_back(struct qw_owner *o,int *slot)
++{
++ if(!o||!slot||*slot!=-1)return -1;
++ if(qw_owner_idle_observe(o))return -1;
++ *slot=o->fd;*o=(struct qw_owner)QW_OWNER_EMPTY;return 0;
++}
+--- /dev/null
++++ b/watchdog_owner.h
+@@ -0,0 +1,41 @@
++/* SPDX-License-Identifier: GPL-2.0-only */
++#ifndef QC_WATCHDOG_OWNER_H
++#define QC_WATCHDOG_OWNER_H
++#include <stdint.h>
++#include <sys/types.h>
++enum qw_state {QW_EMPTY,QW_UNKNOWN,QW_ENABLING,QW_ACTIVE5,QW_DISABLED,QW_HOLD};
++enum qw_phase {QW_NEXT=1,QW_RETIRE=2};
++struct qw_owner {
++ int fd;
++ enum qw_state state;
++ enum qw_phase phase;
++ dev_t device,node_filesystem;
++ ino_t node_inode;
++ uint64_t last_ns,start_ns,session_deadline_ns;
++ unsigned capture_progress;
++};
++#define QW_OWNER_EMPTY { .fd=-1 }
++/* Trusted exact driver/core/image and sole open-description custody, no aliases,
++ * concurrent I/O/fd-table changes/reentry. Static fresh/disjoint objects only.
++ * Preopen already STARTS hardware. Move metadata-only take leaves UNKNOWN, never
++ * armed proof. No actor opens/duplicates/closes here. Source associations and
++ * original provider/backing admission are NOT proved by descriptor metadata. */
++int qw_owner_take(struct qw_owner *,int *,dev_t);
++int qw_owner_begin(struct qw_owner *,uint64_t,enum qw_phase,uint64_t);
++int qw_owner_check(struct qw_owner *); /* active phase, real clock, <2s */
++/* ONLY exact producer callsite after full raw CRC/extent/status and ACTIVE keyed
++ * receipt/sequence checks. At most once per NEXT; not a generic feeder API. */
++int qw_owner_capture_progress(struct qw_owner *);
++/* Trusted integration calls ONLY after real successful producer/postchecks or
++ * normal END/QUERY/ACK and cleanup. No caller-supplied 'qualified' Boolean.
++ * DISABLED is ioctl ACK/logical state only, not electrical/DMA stop proof. */
++int qw_owner_disable_boundary(struct qw_owner *);
++int qw_owner_idle_observe(struct qw_owner *); /* DISABLED; no servicing */
++int qw_owner_give_back(struct qw_owner *,int *); /* DISABLED custody move, no close */
++void qw_owner_fail(struct qw_owner *); /* sticky HOLD, no IO, no armed guarantee */
++/* No reset/close/destructor/HOLD-clear/retry/periodic thread or timer. On failure
++ * actual FD stays owned, unless caller violates trusted custody. Failed disable
++ * may already have stopped it; HOLD NEVER guarantees armed recovery. Final close
++ * is outside this API; Linux close error cannot preserve an actual description
++ * merely by retaining its former numeric FD or retrying it. Nominal5s unchanged. */
++#endif
+--- /dev/null
++++ b/native_watchdog.h
+@@ -0,0 +1,18 @@
++/* SPDX-License-Identifier: GPL-2.0-only */
++#ifndef QC_NATIVE_WATCHDOG_OWNER_H
++#define QC_NATIVE_WATCHDOG_OWNER_H
++#include <sys/types.h>
++#include "native_adapter.h"
++/* Fresh singleton init -> take UNKNOWN actual preopened watchdog -> old explicit
++ * storage/exact139/memory preparation -> bounded next/release/normal retire.
++ * Opening occurred elsewhere and is already an effect. Sole actual description,
++ * no aliases or external operations; exact core/driver/image/current recovery and
++ * provider/backing admission remain trusted prerequisites, NOT metadata proof.
++ * No native acceptance or permission to call any old allocation/capture helper.
++ */
++int nh_native_watchdog_take(int *bootstrap_slot,dev_t expected_device);
++/* Only after successful logical disable + known local source normal retirement,
++ * no source/codec FDs/loans/resident backing left. Custody move, not final close,
++ * electrical stop, DMA proof or permission to dispose other owned resources. */
++int nh_native_watchdog_give_back(int *recipient_slot);
++#endif
+--- /dev/null
++++ b/source-close-once.inc
+@@ -0,0 +1,15 @@
++/* SPDX-License-Identifier: GPL-2.0-only
++ * Provider close AFTER original retirement proof, not a watchdog close API.
++ */
++static int source_close_once(struct qc_rtsp_context *c,int *slot)
++{
++ if(!slot||*slot<0||slot==&c->watchdog.fd)return capture_failed(c);
++ if(qw_owner_check(&c->watchdog))return capture_failed(c); /* keep actual FD */
++ int attempted=*slot;
++ *slot=-1; /* Linux can consume the FD even when close returns an error. */
++ if(close(attempted)){
++  c->last_close_attempt=attempted;c->close_unknown=1;
++  return capture_failed(c); /* diagnostic number, NOT an owned description */
++ }
++ return CAMERA_OK;
++}
+--- /dev/null
++++ b/native-watchdog.inc
+@@ -0,0 +1,102 @@
++/* SPDX-License-Identifier: GPL-2.0-only
++ * Included AFTER the actual frozen native adapter bodies (renamed _legacy).
++ * One real singleton/context, no synthetic producer or success callbacks.
++ */
++#include "native_watchdog.h"
++static unsigned native_initialized;
++static int native_guard_failure(void)
++{nh_native_fence(NULL);return CAMERA_IO_ERROR;}
++
++void nh_native_init(void)
++{
++ if(native_initialized){(void)native_guard_failure();return;}
++ native_init_legacy();native_initialized=1;
++}
++int nh_native_watchdog_take(int *slot,dev_t device)
++{
++ if(!native_initialized||native.retirement_uncertain||source_clock.failed||
++    native.continuous_sensor!=-1||native.continuous_frame!=-1||native.h264_stream_fd!=-1||
++    native.encoder_hold!=-1||native.produced_storage||native.resident_storage||
++    parked_after_stop||memory_state.ledger.initialized)return CAMERA_NOT_READY;
++ return qw_owner_take(&native.watchdog,slot,device)?CAMERA_NOT_READY:CAMERA_OK;
++}
++static int native_guard_begin(enum qw_phase phase)
++{
++ if(native_initialized&&(stop||native.retirement_uncertain||source_clock.failed))
++  return native_guard_failure();
++ if(!native_initialized||native.watchdog.fd<3||
++    native.watchdog.state==QW_EMPTY||native.watchdog.state==QW_HOLD)
++  return CAMERA_NOT_READY;
++ uint64_t start=nh_native_now(NULL);
++ if(start==UINT64_MAX||!memory_state.ledger.initialized||
++    memory_state.session_start>UINT64_MAX-NH_SESSION_NS||
++    start<memory_state.session_start||start-memory_state.session_start>=NH_SESSION_NS)
++  return native_guard_failure();
++ if(qw_owner_begin(&native.watchdog,start,phase,memory_state.session_start+NH_SESSION_NS))
++  return native_guard_failure();
++ return CAMERA_OK;
++}
++int nh_native_next(void *context,struct camera_packet *packet,struct nh_key *key)
++{
++ if(!packet||!key)return CAMERA_INVALID;
++ /* No lifetime open/query, malloc, sensor/config/capture or codec effect until
++  * actual owned guard and original preparation/paid-buffer prerequisites exist. */
++ if(!sensor_baseline_requested||!storage_selected||!memory_state.ledger.initialized||
++    !memory_state.ledger.paid[0]||!memory_state.ledger.paid[1])return CAMERA_NOT_READY;
++ int result=native_guard_begin(QW_NEXT);if(result)return result;
++ result=native_next_legacy(context,packet,key);
++ /* The real legacy body includes BOTH lifetime calls, cancellation/receipt and
++  * encoded-begin<2s checks. Its earlier inner guard closes have been removed. */
++ if(result||native.retirement_uncertain||source_clock.failed||
++    qw_owner_disable_boundary(&native.watchdog)){
++  memset(packet,0,sizeof(*packet));memset(key,0,sizeof(*key));
++  return native_guard_failure(); /* actual unreturned backing/FDs retained */
++ }
++ return CAMERA_OK;
++}
++int nh_native_release(void *context,const struct camera_packet *packet)
++{
++ if(!packet||!native_initialized||native.retirement_uncertain||source_clock.failed||
++    qw_owner_idle_observe(&native.watchdog))return native_guard_failure();
++ int result=native_release_legacy(context,packet);
++ return result?native_guard_failure():CAMERA_OK;
++}
++static void native_retired_cpu_release(void)
++{
++ /* Called ONLY after original normal retirement and successful logical guard
++  * disable. A failed disable keeps resident/parked backing in the actual owner. */
++ if(native.resident_storage!=raw)free(native.resident_storage);
++ native.resident_storage=NULL;parked_after_stop=NULL;memset(&expected,0,sizeof(expected));
++}
++int nh_native_retire(void *context)
++{
++ if(native.produced_storage)return CAMERA_BUSY; /* known held CPU loan, no effect */
++ int result=native_guard_begin(QW_RETIRE);if(result)return result;
++ result=native_retire_body(context);
++ if(result||native.retirement_uncertain||source_clock.failed||
++    qw_owner_disable_boundary(&native.watchdog))return native_guard_failure();
++ native_retired_cpu_release();
++ return CAMERA_OK;
++}
++int nh_native_retire_held(void *context,const struct camera_packet *packet)
++{
++ if(native.retirement_uncertain||source_clock.failed||parked_after_stop)return native_guard_failure();
++ if(packet){
++  if(!native.produced_storage||packet->data!=expected.data||packet->bytes!=expected.bytes||
++     packet->monotonic_ns!=expected.monotonic_ns)return native_guard_failure();
++ }else if(native.produced_storage)return native_guard_failure();
++ int result=native_guard_begin(QW_RETIRE);if(result)return result;
++ result=native_retire_held_legacy(context,packet);
++ if(result||native.retirement_uncertain||source_clock.failed||
++    qw_owner_disable_boundary(&native.watchdog))return native_guard_failure();
++ native_retired_cpu_release();
++ return CAMERA_OK;
++}
++int nh_native_watchdog_give_back(int *slot)
++{
++ if(!native_initialized||native.retirement_uncertain||source_clock.failed||
++    native.receipt_armed||native.continuous_frame!=-1||native.continuous_sensor!=-1||
++    native.h264_stream_fd!=-1||native.encoder_hold!=-1||native.produced_storage||
++    native.resident_storage||parked_after_stop||native.close_unknown)return CAMERA_NOT_READY;
++ return qw_owner_give_back(&native.watchdog,slot)?CAMERA_NOT_READY:CAMERA_OK;
++}

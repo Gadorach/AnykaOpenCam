@@ -1,0 +1,46 @@
+{
+  "UTC": "2026-10-22T13:15:24.156430+00:00",
+  "argv": [
+    "docs/qualification-plans/qc07f-watchdog-owner-review-20261022/finalize_review.py"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "python": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+  "reader_inputs_revalidated_unchanged": 1213,
+  "candidate_source_tree_sha256": "2f9e50840a58bbcf8025df1b4e6850278eee0ff5d9a48e0354c531f218b7872a",
+  "disposition": "CORRECTIONS REQUIRED: W1 mutable session/accounting initialization; W2 early NEXT nonzero outputs; W3 guard/codec effects before known held-loan BUSY",
+  "scope": "focused ordinary public static SOURCE/API/diff/hash only; no generator/build/test execution, target/UART/RPC/status/network/private IO, P1 inspection or old-source/Git edits",
+  "files": {
+    "docs/qualification-plans/qc07f-watchdog-owner-review-20261022/REVIEW.md": {
+      "bytes": 17597,
+      "sha256": "1995c625a27324ae19f240190a3ab7bbe2d95b38ccc12cf63df5f78202a97aca"
+    },
+    "docs/qualification-plans/qc07f-watchdog-owner-review-20261022/actual-build04-applied-source.patch": {
+      "bytes": 30953,
+      "sha256": "c7eb5c52c5bd0cd4d79e9ede7a387831a8001163cd1da5393dc4162e7e63a506"
+    },
+    "docs/qualification-plans/qc07f-watchdog-owner-review-20261022/captured-public-input-map.json": {
+      "bytes": 118178,
+      "sha256": "6698dde15266c6056ddef5039955aeb2bf1b05384338fb8e5a0b48faabbaec59"
+    },
+    "docs/qualification-plans/qc07f-watchdog-owner-review-20261022/finalize_review.py": {
+      "bytes": 2162,
+      "sha256": "812e40f182c5319446c38149d034e7a7db77b1d5a9d95f2127934c71f8e1d135"
+    },
+    "docs/qualification-plans/qc07f-watchdog-owner-review-20261022/public-excerpts.json": {
+      "bytes": 80997,
+      "sha256": "1a37cc5d1a67b9083c28bcdbe8259d2f976b3cd7eaeafd0e10bab09dc2cd9d0c"
+    },
+    "docs/qualification-plans/qc07f-watchdog-owner-review-20261022/read_public_inputs.py": {
+      "bytes": 11229,
+      "sha256": "38c0c578e39b48c02474d36b141ca8ce52943788be767878bf65f09a95eb82e1"
+    },
+    "docs/qualification-plans/qc07f-watchdog-owner-review-20261022/reader-receipt.json": {
+      "bytes": 324469,
+      "sha256": "f222d69fffc1ef9ba6196bdde250413570a2c99006dc63e70d4bf4f8781826a3"
+    },
+    "docs/qualification-plans/qc07f-watchdog-owner-review-20261022/verification.json": {
+      "bytes": 36517,
+      "sha256": "6879213e764b190065e715a7830640ed48bfb2ff5e65d19709f0f5f0bdde750e"
+    }
+  }
+}

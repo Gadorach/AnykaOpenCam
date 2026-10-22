@@ -68,11 +68,12 @@ Narrow static query/API sufficiency, not old76 compiler/ABI pairing or full buil
 Review: `docs/qualification-plans/encoder-identity-clang2313-20261022/PARENT_REVIEW.md`.
 Persistent encoder-FD custody v2 is delivered, HOST/ARM18-command compile PASS;
 parent static/source-custody disposition preserves it as compile-only candidate.
-Single-owned watchdog lifetime/real v6 derivative delivered at
-`apps/rtsp-auth/qc07f-watchdog-owner-candidate/`, final build04 HOST/ARM26 commands
-PASS. One reviewer now owns fresh `docs/qualification-plans/qc07f-watchdog-owner-review-20261022/`
-for focused SOURCE/API review; no adoption before disposition. Frozen RTSP glue
-and FD custody remain separate. Current kernel/image/source/build01 stay immutable.
+Single-owned watchdog v1/build04 compiled HOST/ARM26 commands, but focused review
+requires W1 fixed-session renewal, W2 early NEXT output-zero and W3 no-effect
+held-loan BUSY corrections. V1/review frozen; one worker owns fresh
+`apps/rtsp-auth/qc07f-watchdog-owner-v2/` for only those corrections, no adoption.
+Review: `docs/qualification-plans/qc07f-watchdog-owner-review-20261022/REVIEW.md`.
+Frozen RTSP glue/FD custody stay separate; current kernel/image/source/build01 immutable.
 Watchdog ownership, failed-next retention/backing/provisioning/owned listener remain
 blockers. No new main or native memory-fit claim.
 

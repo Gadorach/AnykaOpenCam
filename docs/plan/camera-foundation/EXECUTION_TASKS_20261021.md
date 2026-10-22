@@ -1,5 +1,14 @@
 # Active execution ledger — remaining foundation work
 
+**Watchdog-owner focused review: CORRECTIONS REQUIRED:** actual build04 source
+allows repeated memory initialization to renew10s budget/accounting, leaves early
+NEXT packet/key outputs populated, and rearms/queries before rejecting a held CPU
+loan as BUSY. No runtime failure is claimed.1,213 reader inputs unchanged; author26
+commands cited only. Review `qc07f-watchdog-owner-review-20261022/REVIEW.md`, seal
+`1edf97af9a4d337e55ec5527d2e4ff7bdccc3989f136512fc8c16b301b54c727`.
+Parent selects fresh watchdog-owner-v2 for W1–W3 only; old source/build01–04/review
+stay frozen. No RTSP/provider/native adoption, tests or further hardware queue.
+
 **Single-owned watchdog candidate delivered; focused review selected:** actual
 v6 derivative with one moved watchdog description, real timeout5/enable/progress/
 disable controls, outer guard through post-acquisition checks and normal source
