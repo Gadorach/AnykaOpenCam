@@ -1,5 +1,37 @@
 # Active execution ledger — remaining foundation work
 
+**Oct22 best-effort RTSP app build PASS, no runtime tests:** `build_app.py build02`
+completed04:02:31UTC,88 ordinary compile/archive/link/compiler/ELF commands. Produced
+HOST/ARM integration archives and strict verifier companions plus a synthetic HOST
+bench executable; all remain unexecuted/undeployed. Initial build01 link failure is
+preserved; corrected section-GC roots the real server API without linking unused
+credential-core helpers into the server. Source/header/vendor/toolchain pins and
+artifact hashes are retained. Result/checklist:
+`docs/qualification-plans/rtsp-tail-20261022/BUILD_RESULT.md` and
+`OPERATIONAL_CHECKLIST.md` in that directory. This is not a complete camera binary:
+real platform/provider/provisioning entry wiring and packaging remain. Full B08
+runtime/P1 independent-review/native/product gates remain incomplete; no new tests,
+target effects, default service replacement or old-HOLD clearance occurred.
+
+**Oct22 latest user steering — best-effort build, operational checklist:** user
+asked to stop further penetration/adversarial testing and list desired functional
+confirmation instead. No further P1 independent-review retry or mutation/security
+test campaign is selected. Existing protections, failed evidence, original HOLD
+and incomplete review/native gates remain; deferred checks are not marked passed.
+Checklist: `docs/qualification-plans/rtsp-tail-20261022/OPERATIONAL_CHECKLIST.md`.
+New `apps/rtsp-auth/build_app.py` is selected for ordinary HOST/ARM compile/link
+only, without launching app/test/generator/listener/target operations. It builds
+RTSP integration archives/strict companion and a labelled synthetic HOST bench,
+not a completed camera executable. No P1/station/module build or deployment.
+
+**Oct22 B08 harness candidate delivered:**41 frozen public files at
+`apps/rtsp-auth/isolated-server-host-tail/`, aggregate pin
+`2cc37be5839961f3371f35de81774f0e24bf02d80b7b032295076249827c825f`;
+author12 standalone process-guard cases/9 syntax checks passed. Full C/oracle/
+RTSP runtime reproduction not run or accepted. Build-only selection does not call
+the runtime harness builder or its deferred test campaigns. See
+`docs/qualification-plans/rtsp-tail-20261022/HARNESS_CANDIDATE.md`.
+
 **Oct22 P1 independent review tool-blocked — no source GO:** reviewer session
 `ses_e9e4fd5a0ffewPJUTk4aHuF8ZN` ended with generic `cyber_policy`, no task-specific
 reason/successful handback. Parent metadata found23 partial files/no final report,
@@ -347,8 +379,8 @@ not the requirement to revalidate each later operation. Old20c authority is expi
 | RP-05 | DEPENDENCY | Standard capture/import/overlap after memory/retirement proof |
 | RP-06 | DEPENDENCY | Imaging/codec/rate/profile quality after controlled baseline and ownership work |
 | RP-07 | OPEN / SOURCE-HOST pieces | Integrate existing shared graph/producer/control owners, not a parallel stack |
-| RP-08 | OPEN / B08 HARNESS-CORRECTION-SOURCE Oct22 | Independent source review found R1 owned cleanup and R2 domain-oracle gaps; fresh HOST derivative selected, full builder awaits parent review. Actual76 media/cold/durable authority unqualified |
-| RP-09 | DEPENDENCY / B08 HARNESS-CORRECTION-SOURCE Oct22 | HOST correction is disjoint from P1; B08/v6/UI02/native protected browser/RTSP remain gated |
+| RP-08 | OPEN / B08 CANDIDATE; APP-BUILD-PASS Oct22 | User deferred further adversarial testing. HOST/ARM RTSP components compile/link in build02; checklist written. Runtime/cold/durable authority unqualified |
+| RP-09 | DEPENDENCY / APP-BUILD-PASS Oct22 | Libraries/strict companions/synthetic HOST bench built but not run; real camera main/provider/provisioning/package missing. B08/v6/UI02/native protected browser/RTSP remain gated |
 | RP-10 | DEPENDENCY | Shared L2/clock/analogue implementation with UART-safe lifetime |
 | RP-11 | GATED | Modern76 module/GUI/mechanical/light/input qualification; no automatic effects/homing |
 | RP-12 | GATED | Modern audio provider; scalar-only mic/privacy and UART-isolated speaker constraints stand |

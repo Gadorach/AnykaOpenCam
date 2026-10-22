@@ -1,0 +1,19 @@
+{
+  "HOST_only": true,
+  "supervisor_pid": 16435,
+  "barrier_released": true,
+  "session_owned": true,
+  "subreaper_observed": true,
+  "term_attempts": 1,
+  "kill_attempts": 1,
+  "leader_reaped": true,
+  "adopted_reaped": 1,
+  "signaled_reaped": 2,
+  "all_children_retired": true,
+  "normal_pass": false,
+  "leader_pid": 16436,
+  "leader_exit": -9,
+  "reason": "deadline",
+  "status": "FAIL",
+  "elapsed_ms": 714
+}

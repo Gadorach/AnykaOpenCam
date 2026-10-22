@@ -1,0 +1,2 @@
+DUMMY failure=1
+HOST_GUARD status=FAIL retired=1

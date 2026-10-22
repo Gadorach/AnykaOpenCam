@@ -1,0 +1,100 @@
+{
+  "utc": "2026-10-22T04:05:01.825873+00:00",
+  "scope": "BUILD_METADATA_ONLY_NO_RUNTIME_OR_TEST",
+  "runs": {
+    "build01": {
+      "report_sha256": "b067b30c0fd6090cbc552636c30f79d63b14d16856730708be90662edca9c425",
+      "started": "2026-10-22T04:00:37.611834+00:00",
+      "ended": "2026-10-22T04:00:41.459743+00:00",
+      "status": "BUILD FAILED; prior outputs preserved",
+      "commands": 18
+    },
+    "build02": {
+      "report_sha256": "7c995a0a23e6dcc9e7e2a4405eb1c192b309316cc78ad1da564c0afaf3eb334d",
+      "started": "2026-10-22T04:02:16.429745+00:00",
+      "ended": "2026-10-22T04:02:31.512484+00:00",
+      "status": "BUILD PASS; NOT RUN OR DEPLOYED",
+      "commands": 88
+    }
+  },
+  "static_link_content": {
+    "host": {
+      "argv": [
+        "/usr/bin/nm",
+        "--defined-only",
+        "local/build/rtsp-app/build02/host-integration-linkcheck-NOT-RUN"
+      ],
+      "exit": 0,
+      "required_real_server_API_defined": true,
+      "unwanted_local_credential_functions_defined": false,
+      "application_executed": false
+    },
+    "arm": {
+      "argv": [
+        "work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-nm",
+        "--defined-only",
+        "local/build/rtsp-app/build02/arm-integration-linkcheck-NOT-RUN"
+      ],
+      "exit": 0,
+      "required_real_server_API_defined": true,
+      "unwanted_local_credential_functions_defined": false,
+      "application_executed": false
+    }
+  },
+  "artifacts": {
+    "libcamera-rtsp-integration-host.a": {
+      "bytes": 169162,
+      "sha256": "288b47a9fbd5e5dc9f17180f1d43c679951fe7c11105303cb4f163798f926c41",
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build02/libcamera-rtsp-integration-host.a",
+      "role": "strict integration archive; real camera entry/provider wiring missing",
+      "executed": false
+    },
+    "host-integration-linkcheck-NOT-RUN": {
+      "bytes": 92704,
+      "sha256": "ec49735030a8ca1ce07a0f795f19cbaa08aaecbb906cf18e2b82fc4202977c5c",
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build02/host-integration-linkcheck-NOT-RUN",
+      "role": "link check only; never run or deploy",
+      "executed": false
+    },
+    "camera-rtsp-verifier.host": {
+      "bytes": 103512,
+      "sha256": "c2e388529c4a33d3a19ecb7ae912a8e5aed0d151b873960cc357ff20ef49f6a2",
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build02/camera-rtsp-verifier.host",
+      "role": "strict verifier companion; no new runtime image pin installed",
+      "executed": false
+    },
+    "camera-rtsp-bench.host": {
+      "bytes": 116608,
+      "sha256": "1d14c972b7e4bcc7507db711c36ede00dcd7149138f7f0f65da02197d74c1cc9",
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build02/camera-rtsp-bench.host",
+      "role": "synthetic localhost bench app, not a camera runtime",
+      "executed": false
+    },
+    "libcamera-rtsp-integration-arm.a": {
+      "bytes": 115910,
+      "sha256": "53e42773bbb2dd7ec4abf12ee35f3a85f14064d359cc1f1336a286a58fc98e2f",
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build02/libcamera-rtsp-integration-arm.a",
+      "role": "strict integration archive; real camera entry/provider wiring missing",
+      "executed": false
+    },
+    "arm-integration-linkcheck-NOT-RUN": {
+      "bytes": 132128,
+      "sha256": "310793c8a24f3f13088d21f08777f40394f664f6165cd57b24539368ddaf8dea",
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build02/arm-integration-linkcheck-NOT-RUN",
+      "role": "link check only; never run or deploy",
+      "executed": false
+    },
+    "camera-rtsp-verifier.arm": {
+      "bytes": 133012,
+      "sha256": "642238bb727bf04376daf188838df91a696f5b13c327f5ab764d91502599e940",
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build02/camera-rtsp-verifier.arm",
+      "role": "strict verifier companion; no new runtime image pin installed",
+      "executed": false
+    }
+  },
+  "source_unchanged": true,
+  "tests_executed": false,
+  "application_executed": false,
+  "target_operation": false,
+  "P1_or_full_harness_runtime_review_completed": false
+}

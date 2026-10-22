@@ -1,0 +1,182 @@
+{
+  "copied_utc": "2026-10-22T03:39:27.120249+00:00",
+  "scope": "PUBLIC source/license bytes only; no generated startup records/images",
+  "originals_immutable": true,
+  "files": [
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/PROVENANCE.json",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/PROVENANCE.json",
+      "sha256_before_edits": "940b29c72d05e017a4f0e99a6d4edda8a75d3abb62afbef0c554a62a89b39f42"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/README.md",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/README.md",
+      "sha256_before_edits": "1ff0666bd2ac8dbe59e6619576341b886980135e3422dc48013778d9294a70a9"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/adapter_state.h",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/adapter_state.h",
+      "sha256_before_edits": "cceb534d7cbc1d224c73a1ba36bc840b0eda1f2a154ed267537496fe4588bbdf"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/build.py",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/build.py",
+      "sha256_before_edits": "e64ff1f9c824a801a1450dde7a64d95a4bdc6da96886679523c9987eccca3de5"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/candidate_auth.c",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/candidate_auth.c",
+      "sha256_before_edits": "25fcd9c8994cdf76331ee4e9657712aea657421b56d64c9f72fba8717cc31fe8"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/candidate_auth.h",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/candidate_auth.h",
+      "sha256_before_edits": "cd25c9b95d5fc2138207e7e7ce8140bfd770376297adddc972c8b3a4339635e6"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/client_test.py",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/client_test.py",
+      "sha256_before_edits": "ec0abab0d7fea922d3a981f1067bb77799fe3412cd12ba13b124c71db6111f19"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/delay_pin.h",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/delay_pin.h",
+      "sha256_before_edits": "830654636a64b12bf0e2b63e16d0dddc523275ea5e8c34a9bcadc048efa8b2b6"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/fault_clock.c",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/fault_clock.c",
+      "sha256_before_edits": "98fd203452a43642909b3b8b60d5d893de554a3cff45438f7ac02fb9fc481037"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/fixture.c",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/fixture.c",
+      "sha256_before_edits": "47787404e82fa997e57d329e5f622b834ece3e6da7fbeb753a9c74224074d018"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/host_pin.h",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/host_pin.h",
+      "sha256_before_edits": "fe66ea42fed61071dc60571dc46e68461c6dfdaa7b8c48d05ab6a722cc02a760"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/integration_test.py",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/integration_test.py",
+      "sha256_before_edits": "fe4b540743d6d4e9c0b07c581503fe96188ced5bb6614e8285e9832bcdc477b5"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/memory_shape.c",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/memory_shape.c",
+      "sha256_before_edits": "6965e95f0d914fc6ea9238cd3ce4210d8b116bf744659f5745cabfaa27ef052a"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/native_pin.h",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/native_pin.h",
+      "sha256_before_edits": "1303b91258fd26847a08589bdd1d81d6f9903b47b71aad3c2c7a708eeb4d194c"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/pread_receipt.c",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/pread_receipt.c",
+      "sha256_before_edits": "611c4f986cf6192457e4d0ee875798b5ed66b458e4a51ab2812128d81c32d359"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/public_dummy_material.c",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/public_dummy_material.c",
+      "sha256_before_edits": "4835dac5ee06ac69347c91689b2d47b199b06a7434218ea84ae0f2f652f3a43a"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/rtsp_crypto_config.h",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/rtsp_crypto_config.h",
+      "sha256_before_edits": "7cfb2b4eacf9379bd945a2faa9a95bc228c131bdf956a07e3953fdba6d7f818f"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/rtsp_server_candidate.c",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/rtsp_server_candidate.c",
+      "sha256_before_edits": "6aef0a32c83285b627bbbf80bdbb4ec3abd97ed25fc3b0128fe3c7b0893e9c6c"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/runtime-licenses/GCC-14.3.0-COPYING.RUNTIME",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/runtime-licenses/GCC-14.3.0-COPYING.RUNTIME",
+      "sha256_before_edits": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/runtime-licenses/GCC-14.3.0-COPYING3",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/runtime-licenses/GCC-14.3.0-COPYING3",
+      "sha256_before_edits": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/runtime-licenses/HOST-libgcc-RUNTIME.LIBRARY.EXCEPTION",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/runtime-licenses/HOST-libgcc-RUNTIME.LIBRARY.EXCEPTION",
+      "sha256_before_edits": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/runtime-licenses/MUSL-1.2.5-COPYRIGHT",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/runtime-licenses/MUSL-1.2.5-COPYRIGHT",
+      "sha256_before_edits": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/runtime-licenses/MbedTLS-LICENSE",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/runtime-licenses/MbedTLS-LICENSE",
+      "sha256_before_edits": "9b405ef4c89342f5eae1dd828882f931747f71001cfba7d114801039b52ad09b"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/runtime-licenses/public-acquisition.json",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/runtime-licenses/public-acquisition.json",
+      "sha256_before_edits": "20baeff2c7ec6233225c9b02c018a1138cab35c4b4cbb6cc17037d48f24267b5"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/server_crypto_config.h",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/server_crypto_config.h",
+      "sha256_before_edits": "e38c5a4cb050f7ef380ce3a31a2d6cfdfd9728017fbe34ae3836924c058b84be"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/upstream/build.py",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/upstream/build.py",
+      "sha256_before_edits": "d69ac920160c0e19983482705b81130dd862bcd2bc9e8a5fba3da711e471415a"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/upstream/candidate_auth.c",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/upstream/candidate_auth.c",
+      "sha256_before_edits": "ee100638c1983f298c810b99d3544286adcc0ae2253fbed8c1a85832fcba6c98"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/upstream/candidate_auth.h",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/upstream/candidate_auth.h",
+      "sha256_before_edits": "d4c3490948c94e4a04b72acaf1c15d4970be4115c49e2051fd371ccc54dc318d"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/upstream/client_test.py",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/upstream/client_test.py",
+      "sha256_before_edits": "4d15f3d284afcef5f4c18d573ca5450756f885c329fc2782b29bc95d4dfe8369"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/upstream/fault_clock.c",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/upstream/fault_clock.c",
+      "sha256_before_edits": "186361c192d53b34977eb44bafb340dc9deefdf9682c66eb323f96615d971c47"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/upstream/fixture.c",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/upstream/fixture.c",
+      "sha256_before_edits": "d9b540f655d224000d4aa505f04725beedbf7c3499d75b7d2b31dac957998e70"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/upstream/rtsp_server_candidate.c",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/upstream/rtsp_server_candidate.c",
+      "sha256_before_edits": "d9e0f1fc35da67f33f234a1e7fba6fbba7e93a74e08595444ba389f8d91c9550"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/upstream/verifier_adapter.c",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/upstream/verifier_adapter.c",
+      "sha256_before_edits": "4cdf9a301c5603dd3542f07bd96cffd01f79497c39da15a0cc95b84223a4c8a1"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/verifier_adapter_overlay.c",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/verifier_adapter_overlay.c",
+      "sha256_before_edits": "a47881ae429cb4b73e8f501e0261b01a2837ef25831d22df6f0e96cf2c3abb1f"
+    },
+    {
+      "source": "apps/rtsp-auth/isolated-server-candidate/wait_receipt.c",
+      "copy": "apps/rtsp-auth/isolated-server-host-tail/wait_receipt.c",
+      "sha256_before_edits": "b486a5433135d7fd12aaaee178d195084c6cb0299dca2342479d5451ecdcc2cd"
+    }
+  ]
+}

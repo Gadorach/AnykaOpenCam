@@ -50,19 +50,20 @@ build recipes. Do not rewrite historical absolute paths merely for the rename.
 
 ## Next task
 
-### October22 continuation — bounded source work, no hardware queue
+### October22 current steering — build and functional checklist, no hardware queue
 
 Current state is maintained in the [execution ledger](EXECUTION_TASKS_20261021.md)
-and compact root `AGENTS.md`, not the older “latest” sections below. P1's original
-worker completed one user-requested transparent defensive-scope clarification after
-the provider rejection; candidate is sealed and fresh parent HOST reproduction
-passed. The independent reviewer subsequently hit another generic `cyber_policy`
-restriction; partial evidence is preserved but unaccepted, with no further retry,
-reroute or safeguard changes. P1 source acceptance remains blocked. Independently,
-B08 RTSP-tail review found HOST
-lifetime/oracle gaps; a fresh disjoint harness correction is selected, with full
-builder/native testing gated on review. See
-[parent disposition](../../qualification-plans/rtsp-tail-20261022/PARENT_SOURCE_DISPOSITION.md).
+and compact root `AGENTS.md`, not older “latest” sections below. User now requests
+best-effort app builds and a [functional checklist](../../qualification-plans/rtsp-tail-20261022/OPERATIONAL_CHECKLIST.md),
+not further penetration/adversarial/mutation tests. Select compile/link only via
+`apps/rtsp-auth/build_app.py`: HOST/ARM build02 now PASS, no test/app/generator/
+listener or target execution. [Build result](../../qualification-plans/rtsp-tail-20261022/BUILD_RESULT.md)
+distinguishes libraries/companions/synthetic bench from a deployable camera app;
+real platform/provider/provisioning wiring and packaging remain missing.
+P1 author and fresh parent HOST results are preserved, but independent review is
+provider-blocked, partial and unaccepted. No further retry/reroute is selected.
+The disjoint B08 HOST harness candidate is delivered; compile-only artifacts do
+not satisfy its deferred runtime checks or supply missing camera integration.
 Current target power/runtime/owner/recovery remain unknown; original radio HOLD
 persists. Neither source lane authorizes native station/RTSP work.
 

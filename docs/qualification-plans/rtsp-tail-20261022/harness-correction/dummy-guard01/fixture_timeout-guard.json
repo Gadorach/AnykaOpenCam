@@ -1,0 +1,19 @@
+{
+  "HOST_only": true,
+  "supervisor_pid": 15726,
+  "barrier_released": true,
+  "session_owned": true,
+  "subreaper_observed": true,
+  "term_attempts": 1,
+  "kill_attempts": 1,
+  "leader_reaped": true,
+  "adopted_reaped": 0,
+  "signaled_reaped": 0,
+  "all_children_retired": true,
+  "normal_pass": false,
+  "leader_pid": 15727,
+  "leader_exit": 2,
+  "reason": "leader_exit",
+  "status": "FAIL",
+  "elapsed_ms": 744
+}

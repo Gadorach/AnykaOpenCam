@@ -1,0 +1,19 @@
+{
+  "HOST_only": true,
+  "supervisor_pid": 16292,
+  "barrier_released": true,
+  "session_owned": true,
+  "subreaper_observed": true,
+  "term_attempts": 1,
+  "kill_attempts": 1,
+  "leader_reaped": true,
+  "adopted_reaped": 0,
+  "signaled_reaped": 0,
+  "all_children_retired": true,
+  "normal_pass": true,
+  "leader_pid": 16331,
+  "leader_exit": 0,
+  "reason": "leader_exit",
+  "status": "PASS",
+  "elapsed_ms": 301
+}

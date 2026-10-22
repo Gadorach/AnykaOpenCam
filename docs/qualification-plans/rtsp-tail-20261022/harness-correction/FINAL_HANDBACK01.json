@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-22T03:56:43.243988+00:00",
+  "scope": "final static source handback only; no builds/tests executed by this command",
+  "candidate_pin": "2cc37be5839961f3371f35de81774f0e24bf02d80b7b032295076249827c825f",
+  "changed_sources": [],
+  "unexpected_files": [],
+  "dummy_inputs_still_match": true,
+  "normal_guard_controls": 3,
+  "all_dummy_cases_retired": true,
+  "parent_review_pending": true,
+  "artifact_sha256": {
+    "docs/qualification-plans/rtsp-tail-20261022/harness-correction/CANDIDATE_SOURCE_SEAL01.json": "a01ffe69b73d55874645959f02065b00a9be982bd7910c41aa7ced87ce5a8105",
+    "docs/qualification-plans/rtsp-tail-20261022/HARNESS_CANDIDATE.md": "b4b6f92f76e0cfeda052e951f0ca1066dec39eb644c3aa5485ea570075b78d5d",
+    "docs/qualification-plans/rtsp-tail-20261022/harness-correction/dummy-guard02/REPORT.json": "b3c552f8771b2ccf9ad647cdb1a59a8523691fd029f3379b2162422e8f62a159",
+    "docs/qualification-plans/rtsp-tail-20261022/harness-correction/syntax02.json": "53ad7ed8c76303248fe07b46b91eb6191116434c33736c4ec0ab715e7ed71acf",
+    "docs/qualification-plans/rtsp-tail-20261022/harness-correction/frozen-tail-to-host-harness01.diff": "8fbfc7342b7721d3eb4611cbf5d23240e004a36428bd4035704dce13c56fa79c"
+  }
+}

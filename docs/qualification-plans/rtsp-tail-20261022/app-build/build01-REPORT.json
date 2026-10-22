@@ -1,0 +1,813 @@
+{
+  "started": "2026-10-22T04:00:37.611834+00:00",
+  "argv": [
+    "apps/rtsp-auth/build_app.py",
+    "build01",
+    "--toolchain",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "status": "BUILD FAILED; prior outputs preserved",
+  "scope": "COMPILE_LINK_ONLY",
+  "candidate": {
+    "seal": {
+      "bytes": 21338,
+      "sha256": "a01ffe69b73d55874645959f02065b00a9be982bd7910c41aa7ced87ce5a8105"
+    },
+    "candidate_pin": "2cc37be5839961f3371f35de81774f0e24bf02d80b7b032295076249827c825f",
+    "source_files": 41
+  },
+  "vendor": {
+    "version": "3.6.7",
+    "files": 277,
+    "tree_sha256": "bab965e248c4b691cc84e8bccc7a6bd40101305b8ea789408896b64bfe2281f5",
+    "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls",
+    "licenses": {
+      "/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/LICENSE": "9b405ef4c89342f5eae1dd828882f931747f71001cfba7d114801039b52ad09b"
+    }
+  },
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "LC_ALL": "C",
+    "SOURCE_DATE_EPOCH": "1791763200",
+    "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/tmp"
+  },
+  "commands": [
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "--version"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T04:00:37.767190+00:00",
+      "timeout_seconds": 120,
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/logs/host-compiler-version.txt",
+      "exit": 0,
+      "ended": "2026-10-22T04:00:37.771073+00:00",
+      "log_pin": {
+        "bytes": 227,
+        "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-dumpmachine"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T04:00:37.771180+00:00",
+      "timeout_seconds": 120,
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/logs/host-compiler-target.txt",
+      "exit": 0,
+      "ended": "2026-10-22T04:00:37.772881+00:00",
+      "log_pin": {
+        "bytes": 20,
+        "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=c99",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-usage",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-host-tail",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-Wno-misleading-indentation",
+        "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/0-rtsp_server_candidate.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-host-tail/rtsp_server_candidate.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/0-rtsp_server_candidate.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T04:00:37.782356+00:00",
+      "timeout_seconds": 120,
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/logs/host-integration-cc-0.txt",
+      "exit": 0,
+      "ended": "2026-10-22T04:00:38.809162+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=c99",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-usage",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-host-tail",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/1-candidate_auth.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-host-tail/candidate_auth.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/1-candidate_auth.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T04:00:38.809362+00:00",
+      "timeout_seconds": 120,
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/logs/host-integration-cc-1.txt",
+      "exit": 0,
+      "ended": "2026-10-22T04:00:39.074027+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=c99",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-usage",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-host-tail",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/2-verifier_adapter_overlay.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-host-tail/verifier_adapter_overlay.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/2-verifier_adapter_overlay.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T04:00:39.074173+00:00",
+      "timeout_seconds": 120,
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/logs/host-integration-cc-2.txt",
+      "exit": 0,
+      "ended": "2026-10-22T04:00:39.439262+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=c99",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-usage",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-host-tail",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/3-ipc.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier/ipc.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/3-ipc.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T04:00:39.439864+00:00",
+      "timeout_seconds": 120,
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/logs/host-integration-cc-3.txt",
+      "exit": 0,
+      "ended": "2026-10-22T04:00:39.604443+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=c99",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-usage",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-host-tail",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/4-rtsp_digest_wire.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/framework/src/rtsp_digest_wire.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/4-rtsp_digest_wire.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T04:00:39.604589+00:00",
+      "timeout_seconds": 120,
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/logs/host-integration-cc-4.txt",
+      "exit": 0,
+      "ended": "2026-10-22T04:00:39.919676+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=c99",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-usage",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-host-tail",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/5-rtsp_request.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/framework/src/rtsp_request.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/5-rtsp_request.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T04:00:39.919819+00:00",
+      "timeout_seconds": 120,
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/logs/host-integration-cc-5.txt",
+      "exit": 0,
+      "ended": "2026-10-22T04:00:40.134281+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=c99",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-usage",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-host-tail",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-Wno-misleading-indentation",
+        "-Wno-error=nonnull",
+        "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/6-rtsp_input.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/framework/src/rtsp_input.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/6-rtsp_input.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T04:00:40.134437+00:00",
+      "timeout_seconds": 120,
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/logs/host-integration-cc-6.txt",
+      "exit": 0,
+      "ended": "2026-10-22T04:00:40.348939+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=c99",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-usage",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-host-tail",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/7-backend.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/framework/src/backend.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/7-backend.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T04:00:40.349201+00:00",
+      "timeout_seconds": 120,
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/logs/host-integration-cc-7.txt",
+      "exit": 0,
+      "ended": "2026-10-22T04:00:40.463822+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=c99",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-usage",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-host-tail",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/8-packet_hub.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/framework/src/packet_hub.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/8-packet_hub.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T04:00:40.464016+00:00",
+      "timeout_seconds": 120,
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/logs/host-integration-cc-8.txt",
+      "exit": 0,
+      "ended": "2026-10-22T04:00:40.628841+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=c99",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-usage",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-host-tail",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/9-producer.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/framework/src/producer.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/9-producer.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T04:00:40.629008+00:00",
+      "timeout_seconds": 120,
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/logs/host-integration-cc-9.txt",
+      "exit": 0,
+      "ended": "2026-10-22T04:00:40.894271+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=c99",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-usage",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-host-tail",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/10-rtp_h264.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/framework/src/rtp_h264.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/10-rtp_h264.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T04:00:40.894430+00:00",
+      "timeout_seconds": 120,
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/logs/host-integration-cc-10.txt",
+      "exit": 0,
+      "ended": "2026-10-22T04:00:40.958526+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=c99",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-usage",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-host-tail",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/11-sha256.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library/sha256.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/11-sha256.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T04:00:40.958677+00:00",
+      "timeout_seconds": 120,
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/logs/host-integration-cc-11.txt",
+      "exit": 0,
+      "ended": "2026-10-22T04:00:41.223471+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=c99",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-usage",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-host-tail",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/12-constant_time.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library/constant_time.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/12-constant_time.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T04:00:41.224105+00:00",
+      "timeout_seconds": 120,
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/logs/host-integration-cc-12.txt",
+      "exit": 0,
+      "ended": "2026-10-22T04:00:41.288469+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=c99",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-usage",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-server-host-tail",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/13-platform_util.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library/platform_util.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/13-platform_util.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T04:00:41.288616+00:00",
+      "timeout_seconds": 120,
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/logs/host-integration-cc-13.txt",
+      "exit": 0,
+      "ended": "2026-10-22T04:00:41.352628+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/ar",
+        "rcsD",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/libcamera-rtsp-integration-host.a",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/0-rtsp_server_candidate.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/1-candidate_auth.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/2-verifier_adapter_overlay.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/3-ipc.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/4-rtsp_digest_wire.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/5-rtsp_request.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/6-rtsp_input.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/7-backend.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/8-packet_hub.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/9-producer.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/10-rtp_h264.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/11-sha256.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/12-constant_time.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/objects/host-integration/13-platform_util.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T04:00:41.352772+00:00",
+      "timeout_seconds": 120,
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/logs/host-archive.txt",
+      "exit": 0,
+      "ended": "2026-10-22T04:00:41.394576+00:00",
+      "log_pin": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-O2",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/host-link-only.c",
+        "-Wl,--whole-archive",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/libcamera-rtsp-integration-host.a",
+        "-Wl,--no-whole-archive",
+        "-Wl,-t",
+        "-Wl,-Map=/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/host-integration.map",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/host-integration-linkcheck-NOT-RUN"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "started": "2026-10-22T04:00:41.395326+00:00",
+      "timeout_seconds": 120,
+      "log": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/logs/host-integration-link.txt",
+      "exit": 1,
+      "ended": "2026-10-22T04:00:41.459676+00:00",
+      "log_pin": {
+        "bytes": 2176,
+        "sha256": "a25452f071f7d7f925f996bc0496b5cae83175a833103115e9e87d7de987a8b0"
+      }
+    }
+  ],
+  "artifacts": {
+    "libcamera-rtsp-integration-host.a": {
+      "bytes": 169162,
+      "sha256": "288b47a9fbd5e5dc9f17180f1d43c679951fe7c11105303cb4f163798f926c41",
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/libcamera-rtsp-integration-host.a",
+      "role": "strict integration archive; real camera entry/provider wiring missing",
+      "executed": false
+    }
+  },
+  "application_executed": false,
+  "tests_executed": false,
+  "private_input_or_provisioning": false,
+  "target_operation": false,
+  "deployment_ready": false,
+  "product_complete": false,
+  "P1_independent_review_completed": false,
+  "G3": false,
+  "G8": false,
+  "source_pins": {
+    "apps/auth-web/service/vendor/mbedtls/library/constant_time.c": {
+      "bytes": 8855,
+      "sha256": "1a573edd420fece73f996b70cdf6bb58a05a468e434a6ac0c562df592048d3c6"
+    },
+    "apps/auth-web/service/vendor/mbedtls/library/md5.c": {
+      "bytes": 12545,
+      "sha256": "887eca6a51f8dfd8c3fd1a9dab6ff083e1795644e88b39c87640b56fcd33503b"
+    },
+    "apps/auth-web/service/vendor/mbedtls/library/platform_util.c": {
+      "bytes": 8347,
+      "sha256": "83051fddcd37171831ff5706613dc3d336b2e53c42e6515f2f14ac0f8aa649f1"
+    },
+    "apps/auth-web/service/vendor/mbedtls/library/sha256.c": {
+      "bytes": 30275,
+      "sha256": "632672d0c954d8bc0e20fdc8370c9f1725f3ffc5fcdaacc14949e42a1b5424d7"
+    },
+    "apps/rtsp-auth/build.py": {
+      "bytes": 10146,
+      "sha256": "c387627215f784c4202939262affb2df04d9fc5f5a9719a9921f83049fb74f1a"
+    },
+    "apps/rtsp-auth/build_app.py": {
+      "bytes": 12159,
+      "sha256": "52d2a51bc4f2138d363646a12b8208ba559e671116025e2445aac6d501f3f009"
+    },
+    "apps/rtsp-auth/isolated-server-host-tail/candidate_auth.c": {
+      "bytes": 15228,
+      "sha256": "712de15c116ad7fce88331438822c2b9259d082cd1dba8e32ac7f0a231e8c556"
+    },
+    "apps/rtsp-auth/isolated-server-host-tail/candidate_auth.h": {
+      "bytes": 4042,
+      "sha256": "cd25c9b95d5fc2138207e7e7ce8140bfd770376297adddc972c8b3a4339635e6"
+    },
+    "apps/rtsp-auth/isolated-server-host-tail/fault_clock.c": {
+      "bytes": 644,
+      "sha256": "98fd203452a43642909b3b8b60d5d893de554a3cff45438f7ac02fb9fc481037"
+    },
+    "apps/rtsp-auth/isolated-server-host-tail/fixture.c": {
+      "bytes": 19014,
+      "sha256": "2e25bd18dee19a5dd039e8e39039a0346556864dc8dca01e514404c296c5fda0"
+    },
+    "apps/rtsp-auth/isolated-server-host-tail/pread_receipt.c": {
+      "bytes": 647,
+      "sha256": "611c4f986cf6192457e4d0ee875798b5ed66b458e4a51ab2812128d81c32d359"
+    },
+    "apps/rtsp-auth/isolated-server-host-tail/prefix_receipt.c": {
+      "bytes": 915,
+      "sha256": "97dc425d87a114f313af0962c3698bac9f3da674774e521c23520e3ca73b48fd"
+    },
+    "apps/rtsp-auth/isolated-server-host-tail/rtsp_server_candidate.c": {
+      "bytes": 40022,
+      "sha256": "6aef0a32c83285b627bbbf80bdbb4ec3abd97ed25fc3b0128fe3c7b0893e9c6c"
+    },
+    "apps/rtsp-auth/isolated-server-host-tail/verifier_adapter_overlay.c": {
+      "bytes": 18599,
+      "sha256": "a47881ae429cb4b73e8f501e0261b01a2837ef25831d22df6f0e96cf2c3abb1f"
+    },
+    "apps/rtsp-auth/isolated-server-host-tail/wait_receipt.c": {
+      "bytes": 597,
+      "sha256": "b486a5433135d7fd12aaaee178d195084c6cb0299dca2342479d5451ecdcc2cd"
+    },
+    "apps/rtsp-auth/isolated-verifier/child.c": {
+      "bytes": 3596,
+      "sha256": "b317bac6512a3795fa7b8c82ae339366750dbf39960642d97e53d69d1d3e4ad7"
+    },
+    "apps/rtsp-auth/isolated-verifier/engine.c": {
+      "bytes": 10852,
+      "sha256": "cf298b8096c66859806c6e0c0b449592ac4081f05ad814f21fee35e97262c396"
+    },
+    "apps/rtsp-auth/isolated-verifier/ipc.c": {
+      "bytes": 3666,
+      "sha256": "f42968ebf2fa7a361dfc1db31599a061df7f5c7de718a3eac4b0e2e2a4becc01"
+    },
+    "apps/rtsp-auth/isolated-verifier/isolation.c": {
+      "bytes": 5403,
+      "sha256": "6759d15640e17048d331354bce62376a23588689daeea468e5e5b1a4ec54b135"
+    },
+    "apps/rtsp-auth/isolated-verifier/verifier.h": {
+      "bytes": 6234,
+      "sha256": "3f4a97a12ed9acafe678e720b473c798c75b170648e6a6de076a1017ff0ad900"
+    },
+    "framework/src/access_policy.c": {
+      "bytes": 16030,
+      "sha256": "c3b1b396c32851fe76e2b90460defe3738a0bdb6a2ce2e693d35d5b23f958e45"
+    },
+    "framework/src/backend.c": {
+      "bytes": 4344,
+      "sha256": "cc5462d995479578c83d5acb38164d2c8f3eae8a1adaf0c6e5a7fe7f929ff9f3"
+    },
+    "framework/src/packet_hub.c": {
+      "bytes": 5180,
+      "sha256": "7f3324ce5e180f637a2d0fb0e296f7050ebcb89b99f93918e7cf15521ebf267e"
+    },
+    "framework/src/producer.c": {
+      "bytes": 15017,
+      "sha256": "3b00f0e9a9dafafdb6b25c7530bb2e4e2ac20f89fb99b54f85518c7de33ffd31"
+    },
+    "framework/src/rtp_h264.c": {
+      "bytes": 1930,
+      "sha256": "6f0720ed4fd3c6b5e325094cb2b7422003efb1f5cae41b7011974de3fae51e1a"
+    },
+    "framework/src/rtsp_digest.c": {
+      "bytes": 12142,
+      "sha256": "24ac70a0e3a4d76e2b651c4ad7570b4e89cd6645b62a5291408fd3b00a14e80f"
+    },
+    "framework/src/rtsp_digest_wire.c": {
+      "bytes": 13918,
+      "sha256": "0ecc44fe90618eca56a43d6a95df23ef1e236aac07413b5abf016d1623a7abc9"
+    },
+    "framework/src/rtsp_input.c": {
+      "bytes": 9009,
+      "sha256": "f827dff40c7874650872f6a506c28695ef9af90ae7f3dbbe93b7e4fc0976491f"
+    },
+    "framework/src/rtsp_request.c": {
+      "bytes": 7884,
+      "sha256": "76a15006b09e4ebc372b794c6c47b01e650821425d81a41c08e871a7ddc5b074"
+    }
+  },
+  "ARM_toolchain_pins": {
+    "bin/toolchain-wrapper": "f4db963a226e01244ce6f7b5d1ec6d57474dd811119ff8834429f022835ce9c1",
+    "bin/arm-buildroot-linux-musleabi-gcc.br_real": "e24ea223e7b521cce1f5889d63c25417e930cdbb35653b072f7b48d9a4b41729",
+    "arm-buildroot-linux-musleabi/sysroot/lib/libc.a": "0982970abc52a36d247326a8e0b5dd487410222ff9728528cc99a4e8bd62e7b5",
+    "lib/gcc/arm-buildroot-linux-musleabi/14.3.0/libgcc.a": "f707f3a5a94033cbbde76f76640d56dbc5dc615ab421be4efc2641c14344f19a"
+  },
+  "compilers": {
+    "host": {
+      "version": "cc (GCC) 16.2.1 20260810\nCopyright (C) 2026 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "target": "x86_64-pc-linux-gnu",
+      "compiler_file": {
+        "bytes": 2451072,
+        "sha256": "a5f680ca8b01b1e7a98d531cac90f258875a301d841fab28a8b56d513470f988"
+      }
+    }
+  },
+  "error": "RuntimeError: build command failed: host-integration-link; see /home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/logs/host-integration-link.txt",
+  "ended": "2026-10-22T04:00:41.459743+00:00"
+}

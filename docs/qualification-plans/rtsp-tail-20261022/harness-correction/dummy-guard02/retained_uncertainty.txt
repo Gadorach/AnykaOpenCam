@@ -1,0 +1,2 @@
+DUMMY_HOLD normal_retirement=0
+HOST_GUARD status=FAIL retired=1

@@ -1,0 +1,32 @@
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o
+/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/tmp/ccnU58kL.o
+/home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/libcamera-rtsp-integration-host.a
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s_asneeded.so
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s.so
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libgcc_s.so.1
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libatomic_asneeded.so
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libatomic.so
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libc.so
+/usr/lib/libc.so.6
+/usr/lib/libc_nonshared.a
+/usr/lib/ld-linux-x86-64.so.2
+/usr/lib/libc_nonshared.a
+/usr/lib/ld-linux-x86-64.so.2
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s_asneeded.so
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s.so
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libgcc_s.so.1
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
+/usr/bin/ld: /home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/libcamera-rtsp-integration-host.a(4-rtsp_digest_wire.o): in function `camera_digest_wire_verify':
+rtsp_digest_wire.c:(.text.camera_digest_wire_verify+0x1e5): undefined reference to `camera_rtsp_digest_verify'
+/usr/bin/ld: /home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/libcamera-rtsp-integration-host.a(4-rtsp_digest_wire.o): in function `camera_digest_wire_challenge':
+rtsp_digest_wire.c:(.text.camera_digest_wire_challenge+0x1be): undefined reference to `camera_rtsp_digest_issue'
+/usr/bin/ld: /home/gadorach/Desktop/AnykaOpenCam/local/build/rtsp-app/build01/libcamera-rtsp-integration-host.a(4-rtsp_digest_wire.o): in function `camera_digest_wire_close':
+rtsp_digest_wire.c:(.text.camera_digest_wire_close+0x30): undefined reference to `camera_rtsp_digest_close'
+collect2: error: ld returned 1 exit status

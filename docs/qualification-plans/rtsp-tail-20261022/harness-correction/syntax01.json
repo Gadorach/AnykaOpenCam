@@ -1,0 +1,54 @@
+{
+  "scope": "Python syntax ONLY; no builder/test imports or execution",
+  "command": "python3 -B docs/qualification-plans/rtsp-tail-20261022/harness-correction/syntax_check01.py syntax01",
+  "utc": "2026-10-22T03:48:59.665111+00:00",
+  "python": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+  "files": [
+    {
+      "path": "apps/rtsp-auth/isolated-server-host-tail/build.py",
+      "sha256": "349a9ff5d2d472f54bf3426e0deea7fc58172332c142dd22b32be3f434c906d9",
+      "syntax": "PASS"
+    },
+    {
+      "path": "apps/rtsp-auth/isolated-server-host-tail/client_test.py",
+      "sha256": "7003bcbd39df52519aa5923a193408312e6f228481f25a671a69e1addf79a88b",
+      "syntax": "PASS"
+    },
+    {
+      "path": "apps/rtsp-auth/isolated-server-host-tail/guard_dummy.py",
+      "sha256": "2cc32216e6baf4b2ad9fd0e00da153dad75cbdb6d6be7a7bdded0962d8823752",
+      "syntax": "PASS"
+    },
+    {
+      "path": "apps/rtsp-auth/isolated-server-host-tail/guard_regression.py",
+      "sha256": "5ece3dbcd3f60651eb4d770c3cfaae874a9417ef7b53b6a60b9ef6dba646c339",
+      "syntax": "PASS"
+    },
+    {
+      "path": "apps/rtsp-auth/isolated-server-host-tail/host_guard.py",
+      "sha256": "2c05e83ba59e35601b4b79f34e669ebac39399f6ad461b8894d336eb02651df7",
+      "syntax": "PASS"
+    },
+    {
+      "path": "apps/rtsp-auth/isolated-server-host-tail/host_process.py",
+      "sha256": "01708e19924159441bab31b0aca2ad49bd428b49d21b97fdaefeac0ca05c3239",
+      "syntax": "PASS"
+    },
+    {
+      "path": "apps/rtsp-auth/isolated-server-host-tail/integration_test.py",
+      "sha256": "16d51ae6f03a47e791a2a567a145dd9c779ab49f07d209e4252e271db2ad48ff",
+      "syntax": "PASS"
+    },
+    {
+      "path": "apps/rtsp-auth/isolated-server-host-tail/upstream/build.py",
+      "sha256": "d69ac920160c0e19983482705b81130dd862bcd2bc9e8a5fba3da711e471415a",
+      "syntax": "PASS"
+    },
+    {
+      "path": "apps/rtsp-auth/isolated-server-host-tail/upstream/client_test.py",
+      "sha256": "4d15f3d284afcef5f4c18d573ca5450756f885c329fc2782b29bc95d4dfe8369",
+      "syntax": "PASS"
+    }
+  ],
+  "all_pass": true
+}

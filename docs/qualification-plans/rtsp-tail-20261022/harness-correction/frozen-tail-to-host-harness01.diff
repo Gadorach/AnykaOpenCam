@@ -1,0 +1,446 @@
+--- apps/rtsp-auth/isolated-server-candidate/README.md
++++ apps/rtsp-auth/isolated-server-host-tail/README.md
+@@ -1,4 +1,36 @@
+-# Derived V3 server ↔ owned isolated RTSP verifier — SOURCE / HOST ONLY
++# B08 HOST harness derivative — candidate, not parent-reviewed
++
++This directory is a byte-copied derivative of the frozen RTSP tail, recorded in
++`SOURCE_TAIL_PROVENANCE.json` before any edits. Original source, HALT evidence,
++verifier/framework and licenses are preserved. No native/target applicability.
++
++New `host_guard.py` is a dedicated Linux x86_64 nonroot subreaper with an owned
++session-release barrier and inherited group/session-escape denial. The session
++leader stays unreaped through the final group signal; actual waits to ECHILD,
++not elapsed signals, establish retirement. Any adopted descendant or forced exit
++is failure; an unreaped child parks the owner in HOLD with no repeated signal.
++Do not apply an external kill timeout to that owner. `host_process.py` provides
++direct own-pidfd courtesy TERM/wait and bounded partial-READY/output reads, not
++independent descendant-retirement authority.
++Only the outer supervisor owns final SIGKILL and the post-kill reaping/HOLD phase.
++
++The builder **refuses by default** without `--reviewed-guard-sha256 <exact pin>`.
++That supplied pin is a review acknowledgment, not authorization or an adversarial
++security capability. It writes only fresh
++`docs/qualification-plans/rtsp-tail-20261022/harness-correction/runs/<name>`.
++Its ARM build path is removed. Real builds/RTSP tests require parent review first.
++Only `python3 -B apps/rtsp-auth/isolated-server-host-tail/guard_regression.py <fresh-name>`
++runs standalone public dummy-process guard tests without RTSP/network/material.
++
++See `docs/qualification-plans/rtsp-tail-20261022/HARNESS_CANDIDATE.md` for exact
++pins, observations, source deltas and remaining gates. The copied historical
++documentation below is provenance **only**; its old commands/output paths,
++tested05 counts, HALT state and proposed next actions are not this derivative's
++current build procedure, results or authority.
++
++---
++
++# Historical copied documentation: isolated-server-candidate
+ 
+ ## USER HALT checkpoint — 2026-10-13
+ 
+--- apps/rtsp-auth/isolated-server-candidate/build.py
++++ apps/rtsp-auth/isolated-server-host-tail/build.py
+@@ -1,8 +1,10 @@
+ #!/usr/bin/env python3
+ # SPDX-License-Identifier: GPL-2.0-only
+-"""Only owned PUBLICDUMMY loopback/child executes; ARM + strict native SOURCE HOLD."""
++"""HOST-only derivative. REFUSE unless caller supplies reviewed guard source pin.
++No ARM path; no authorization/acceptance implied by a matching caller pin.
++"""
+ from pathlib import Path
+-import argparse,datetime,difflib,hashlib,importlib.util,json,shlex,shutil,subprocess
++import argparse,datetime,difflib,hashlib,importlib.util,json,os,shlex,shutil,subprocess
+ ROOT=Path(__file__).resolve().parents[3];APP=Path(__file__).resolve().parent;VER=APP.parent/'isolated-verifier';V=ROOT/'apps/auth-web/service/vendor/mbedtls'
+ spec=importlib.util.spec_from_file_location('readonly_rtsp_crypto_build',APP.parent/'build.py');BASE=importlib.util.module_from_spec(spec);spec.loader.exec_module(BASE)
+ FRAME=[ROOT/'framework/src'/n for n in ('rtsp_digest_wire.c','rtsp_request.c','rtsp_input.c','backend.c','packet_hub.c','producer.c','rtp_h264.c')]
+@@ -12,18 +14,31 @@
+ def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+ def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
+ def main():
+- p=argparse.ArgumentParser();p.add_argument('run');p.add_argument('--toolchain',type=Path);a=p.parse_args()
++ p=argparse.ArgumentParser();p.add_argument('run');p.add_argument('--reviewed-guard-sha256');a=p.parse_args()
++ guard=APP/'host_guard.py'
++ if not a.reviewed_guard_sha256 or a.reviewed_guard_sha256!=sha(guard):p.error('REFUSED: exact independently reviewed HOST guard source pin required')
++ if not os.getuid() or os.getuid()!=os.geteuid() or os.getgid()!=os.getegid():p.error('nonroot HOST owner required')
+  if not a.run or not all(c.isalnum() or c in '-_' for c in a.run):p.error('fresh simple name')
+- out=ROOT/'evidence/delegated/20261012-rtsp-isolated-server/runs'/a.run;out.parent.mkdir(parents=True,exist_ok=True)
++ out=ROOT/'docs/qualification-plans/rtsp-tail-20261022/harness-correction/runs'/a.run;out.parent.mkdir(parents=True,exist_ok=True)
+  if out.parent.resolve()!=out.parent:raise RuntimeError('output symlink')
+  out.mkdir()
+  for n in ('logs','objects','inputs','tmp'):(out/n).mkdir()
+  env={'PATH':'/usr/bin:/bin','LC_ALL':'C','SOURCE_DATE_EPOCH':'1791763200','TMPDIR':str(out/'tmp')}
+  r={'started':now(),'evidence_state':'SOURCE / HOST PUBLICDUMMY ONLY','status':'RUNNING','tasks':['SEC-05','SEC-11','STREAM-04','STREAM-07'],
+     'native_executed':False,'PRIVATE_generation':False,'G3':False,'G8':False,'NVR_qualified':False,'product_gates':False,'commands':[],'environment':env}
+- def run(argv,label,timeout=120):
++ def run(argv,label,timeout=120,guarded=False):
+   argv=list(map(str,argv));log=out/'logs'/(label+'.txt');entry={'argv':argv,'cwd':str(ROOT),'log':str(log),'started':now(),'timeout_seconds':timeout};r['commands'].append(entry)
+-  with log.open('xb') as f:v=subprocess.run(argv,cwd=ROOT,env=env,stdout=f,stderr=subprocess.STDOUT,timeout=timeout)
++  actual=argv
++  if guarded:
++   receipt=out/'logs'/(label+'-guard.json')
++   actual=['python3','-B',str(guard),'--receipt',str(receipt),'--deadline',str(timeout),'--',*argv]
++   entry['supervisor_argv']=actual;entry['guard_receipt']=str(receipt)
++  # Guard owns the deadline. Never kill that owner with an external timeout:
++  # UNKNOWN retains its subreaper in HOLD for explicit parent disposition.
++  with log.open('xb') as f:v=subprocess.run(actual,cwd=ROOT,env=env,stdout=f,stderr=subprocess.STDOUT,timeout=None if guarded else timeout)
++  if guarded:
++   observed=json.loads(receipt.read_text());entry['guard']=observed
++   if not observed['normal_pass'] or not observed['all_children_retired']:raise RuntimeError('HOST guard FAIL/HOLD')
+   entry.update(exit=v.returncode,ended=now())
+   if v.returncode:raise RuntimeError('failed '+label+' see '+str(log))
+   return log.read_text()
+@@ -64,17 +79,17 @@
+    f.writelines(difflib.unified_diff((VER/'adapter.c').read_text().splitlines(keepends=True),(APP/'verifier_adapter_overlay.c').read_text().splitlines(keepends=True),fromfile='reviewed-V2/adapter.c',tofile='isolated/verifier_adapter_overlay.c'))
+   compiler('/usr/bin/cc','host')
+   gen=build('/usr/bin/cc','PUBLICDUMMY-bootstrap',['-O2'],GEN,['-DIS_PUBLICDUMMY_GENERATOR'])
+-  opts=['-O2'];fixture=[APP/n for n in ('fixture.c','fault_clock.c','wait_receipt.c','pread_receipt.c')]
+-  strict=build('/usr/bin/cc','strict-native-refusal-SOURCE',opts,SERVER+fixture,['-DIS_SYNTHETIC_SOURCE_ONLY'],('clock_gettime','waitpid','pread'),True)
++  opts=['-O2'];fixture=[APP/n for n in ('fixture.c','fault_clock.c','wait_receipt.c','pread_receipt.c','prefix_receipt.c')]
++  strict=build('/usr/bin/cc','strict-native-refusal-SOURCE',opts,SERVER+fixture,['-DIS_SYNTHETIC_SOURCE_ONLY'],('clock_gettime','waitpid','pread','fork'),True)
+   for label,flags in [('host',opts),('sanitized',['-O1','-g','-fsanitize=address,undefined','-fno-omit-frame-pointer','-fno-pie','-no-pie'])]:
+-   binary=build('/usr/bin/cc',label+'-server',flags,SERVER+fixture,['-DIS_HOST_PUBLIC_ONLY','-DIS_SYNTHETIC_SOURCE_ONLY'],('clock_gettime','waitpid','pread'),True)
+-   r.setdefault('tests',{})[label+'-loopback']=run(['python3','-B',APP/'client_test.py',binary,gen,pins['images']['host']['path'],out/(label+'-campaign')],label+'-loopback',240)
++   binary=build('/usr/bin/cc',label+'-server',flags,SERVER+fixture,['-DIS_HOST_PUBLIC_ONLY','-DIS_SYNTHETIC_SOURCE_ONLY'],('clock_gettime','waitpid','pread','fork'),True)
++   r.setdefault('tests',{})[label+'-loopback']=run(['python3','-B',APP/'client_test.py',binary,gen,pins['images']['host']['path'],out/(label+'-campaign')],label+'-loopback',240,guarded=True)
+    r['binaries'][label+'-server']['executed']=True
+    symbols=run(['/usr/bin/nm','--defined-only',binary],label+'-server-code-symbols')
+    if any(n in symbols for n in ('camera_rtsp_digest_ha1','camera_rtsp_digest_provision','camera_rtsp_digest_verify','camera_access_issue')):raise RuntimeError('in-process credential/principal crypto linked into server')
+    r.setdefault('server_custody',{})[label]='PASS no local Digest HA1/provision/verify or principal issue symbols; child only'
+-   delay=build('/usr/bin/cc',label+'-delay-server',flags,SERVER+fixture,['-DIS_HOST_PUBLIC_ONLY','-DIS_HOST_DELAY_FIXTURE','-DIS_SYNTHETIC_SOURCE_ONLY'],('clock_gettime','waitpid','pread'),True)
+-   r['tests'][label+'-integration']=run(['python3','-B',APP/'integration_test.py',binary,delay,strict,gen,pins['images']['host']['path'],pins['images']['delay']['path'],out/(label+'-integration')],label+'-integration',180)
++   delay=build('/usr/bin/cc',label+'-delay-server',flags,SERVER+fixture,['-DIS_HOST_PUBLIC_ONLY','-DIS_HOST_DELAY_FIXTURE','-DIS_SYNTHETIC_SOURCE_ONLY'],('clock_gettime','waitpid','pread','fork'),True)
++   r['tests'][label+'-integration']=run(['python3','-B',APP/'integration_test.py',binary,delay,strict,gen,pins['images']['host']['path'],pins['images']['delay']['path'],out/(label+'-integration')],label+'-integration',180,guarded=True)
+    r['binaries'][label+'-delay-server']['executed']=True
+   r['binaries']['PUBLICDUMMY-bootstrap']['executed']=True
+   r['binaries']['strict-native-refusal-SOURCE']['executed']=True
+@@ -85,16 +100,7 @@
+   cpp=out/'header.cpp';cpp.write_text('#include "candidate_auth.h"\nint main(){candidate_backend b{};return candidate_backend_destroy(&b);}\n')
+   objs=[f for f in sorted((out/'objects/host-server').glob('*.o')) if not any(f.name.endswith('-'+n+'.o') for n in ('fixture','fault_clock','wait_receipt'))]
+   run(['/usr/bin/c++','-std=c++11','-Wall','-Wextra','-Werror','-I'+str(APP),'-I'+str(VER),'-I'+str(ROOT/'framework/include'),cpp,*objs,'-Wl,--gc-sections','-o',out/'cxx-test'],'cxx-link');run([out/'cxx-test'],'cxx-test',30);r['cxx']='PASS'
+-  if a.toolchain:
+-   a.toolchain=a.toolchain.expanduser().resolve()
+-   for p,h in BASE.ARM_PINS.items():
+-    if sha(a.toolchain/p)!=h:raise RuntimeError('ARM pin mismatch')
+-   cc=a.toolchain/'bin/arm-buildroot-linux-musleabi-gcc';compiler(cc,'arm');r['ARM_toolchain_pins']=BASE.ARM_PINS
+-   flags=['-Os','-march=armv5te','-marm','-mfloat-abi=soft','-static']
+-   for label,sources,defines,wrap,server in [('ARM-server-adapter',SERVER+fixture,('-DIS_SYNTHETIC_SOURCE_ONLY',),('clock_gettime','waitpid','pread'),True),('ARM-child-SOURCE',CHILD,(),(),False),('ARM-memory-shape-SOURCE',[APP/'memory_shape.c',*SERVER[1:]],(),(),True)]:
+-    binary=build(cc,label,flags,sources,defines,wrap,server);run([a.toolchain/'bin/arm-buildroot-linux-musleabi-readelf','-h','-A','-l',binary],label+'-metadata')
+-    if 'memory-shape' in label:r['ARM_memory_shape_section']=run([a.toolchain/'bin/arm-buildroot-linux-musleabi-readelf','-x','.is_shape',binary],label+'-public-scalar-shape-section')
+-   r['ARM_link']='server/adapter + child PASS NEVER EXECUTED; reviewed native IMAGE pin unchanged'
++  r['ARM_link']='DISABLED in HOST-only harness derivative; no target applicability'
+   closure={}
+   for p in (out/'objects').rglob('*.d'):
+    for n in shlex.split(p.read_text().replace('\\\n','').split(':',1)[1]):
+--- apps/rtsp-auth/isolated-server-candidate/candidate_auth.c
++++ apps/rtsp-auth/isolated-server-host-tail/candidate_auth.c
+@@ -14,6 +14,9 @@
+ #ifdef IS_HOST_PUBLIC_ONLY
+ #include "host_pin.h"
+ #include "delay_pin.h"
++/* Fixed HOST-only scalar stage: 1 domain denial, 2 generation denial,
++ * 3 fully accepted prefix. No callback or caller-provided permission. */
++void is_host_prefix_stage(unsigned,unsigned,unsigned);
+ #else
+ #include "native_pin.h"
+ #endif
+@@ -62,17 +65,34 @@
+  if(cfg->material_fd<0||fstat(cfg->material_fd,&st)||!S_ISREG(st.st_mode)||st.st_nlink!=1||st.st_uid!=getuid()||(st.st_mode&07777)!=0600||st.st_size!=1536||
+     (fcntl(cfg->material_fd,F_GETFL)&O_ACCMODE)!=O_RDONLY||lseek(cfg->material_fd,0,SEEK_CUR)!=0||
+     pread(cfg->material_fd,&prefix,offsetof(struct rv_material,username),0)!=(ssize_t)offsetof(struct rv_material,username)||
+-    prefix.abi!=RV_ABI||prefix.bytes!=1536||prefix.domain!=CAMERA_ACCESS_RTSP||prefix.algorithm!=cfg->algorithm||prefix.epoch!=cfg->epoch||
+-    prefix.boot_generation!=cfg->boot_generation||prefix.credential_generation!=cfg->credential_generation||
++     prefix.abi!=RV_ABI||prefix.bytes!=1536||prefix.algorithm!=cfg->algorithm||prefix.epoch!=cfg->epoch||
++     prefix.boot_generation!=cfg->boot_generation||
+     prefix.lengths_and_limits[3]!=cfg->nonce_ttl_ms||prefix.lengths_and_limits[4]!=cfg->rate_window_ms||
+     prefix.lengths_and_limits[5]!=cfg->global_verifies||prefix.lengths_and_limits[6]!=cfg->global_challenges||
+     prefix.lengths_and_limits[7]!=cfg->account_verifies||prefix.lengths_and_limits[8]!=cfg->account_challenges||
+     prefix.lengths_and_limits[9]!=cfg->peer_verifies||prefix.lengths_and_limits[10]!=cfg->peer_challenges||
+-    memcmp(prefix.device,cfg->device_id,64)||memcmp(prefix.account_id,cfg->account_id,64)||memcmp(prefix.sensor,profile->camera_id,64)||memcmp(prefix.profile,cfg->profile_id,64))goto done;
++     memcmp(prefix.device,cfg->device_id,64)||memcmp(prefix.account_id,cfg->account_id,64)||memcmp(prefix.sensor,profile->camera_id,64)||memcmp(prefix.profile,cfg->profile_id,64))goto done;
+ #ifdef IS_HOST_PUBLIC_ONLY
+  if(prefix.account!=UINT64_C(0x505542444d59))goto done;
+ #else
+  if(prefix.account!=1)goto done;
++#endif
++ /* Same accepted predicate set. Split only to observe the actual rejection,
++  * after other nonsecret binding prerequisites, with no payload probing. */
++ if(prefix.domain!=CAMERA_ACCESS_RTSP){
++#ifdef IS_HOST_PUBLIC_ONLY
++  is_host_prefix_stage(1,prefix.credential_generation==cfg->credential_generation,0);
++#endif
++  goto done;
++ }
++ if(prefix.credential_generation!=cfg->credential_generation){
++#ifdef IS_HOST_PUBLIC_ONLY
++  is_host_prefix_stage(2,0,1);
++#endif
++  goto done;
++ }
++#ifdef IS_HOST_PUBLIC_ONLY
++ is_host_prefix_stage(3,1,1);
+ #endif
+  b->config=cfg;b->last_ns=now;
+  if(cfg->random_ready(cfg->context,probe,sizeof(probe)))goto done;
+--- apps/rtsp-auth/isolated-server-candidate/client_test.py
++++ apps/rtsp-auth/isolated-server-host-tail/client_test.py
+@@ -15,6 +15,7 @@
+ import threading
+ import time
+ import os
++from host_process import OwnedProcess, require_guard
+ GENERATOR = CHILD = None
+ 
+ CHECKS = 0
+@@ -65,12 +66,34 @@
+ 
+ 
+ class Server:
+-    def __init__(self, binary, logs, name, alg='SHA-256', ttl=12000, rate=512, refused=False, chunk=0, begin_mode=0, release_mode=0, hardfault=False, clockfault=False):
++    def __init__(self, binary, logs, name, alg='SHA-256', ttl=12000, rate=512, refused=False, chunk=0, begin_mode=0, release_mode=0, hardfault=False, clockfault=False, paired_port=None):
++        require_guard()  # trusted HOST entry contract, not authentication policy
++        self.owned = self.log = None
++        self.clients = []
++        try:
++            self._start(binary, logs, name, alg, ttl, rate, refused, chunk, begin_mode,
++                        release_mode, hardfault, clockfault, paired_port)
++        except BaseException:
++            # Object may never be returned to caller. Close own handles here;
++            # outer subreaper still proves descendant retirement before any PASS.
++            try:
++                if self.owned is not None:
++                    self.owned.abort()
++                    self.owned.close()
++            finally:
++                if self.log is not None:
++                    self.log.close()
++            raise
++
++    def _start(self, binary, logs, name, alg, ttl, rate, refused, chunk, begin_mode, release_mode, hardfault, clockfault, paired_port):
+         self.clients = []
+         # Only our own loopback port reservation, never socket-status discovery.
+         with socket.socket() as reserve:
+             reserve.bind(('127.0.0.1', 0))
+             self.port = reserve.getsockname()[1]
++        if paired_port is not None:
++            check(1024 <= paired_port <= 65535)
++            self.port = paired_port  # just-retired OWN control endpoint, no discovery
+         self.name = name
+         self.log_path = logs / (name + '-server.txt')
+         self.log = self.log_path.open('xb')
+@@ -82,12 +105,17 @@
+             stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=5)
+         check(made.returncode == 0 and made.stdout == made.stderr == b'')
+         material = os.open(scope / 'rtsp-material.bin', os.O_RDONLY | os.O_NOFOLLOW | os.O_CLOEXEC)
+-        image = os.open(CHILD, os.O_RDONLY | os.O_NOFOLLOW | os.O_CLOEXEC)
+-        try:
+-            self.process = subprocess.Popen([str(binary), alg, str(self.port), str(ttl), str(rate), str(chunk), str(begin_mode), str(release_mode), str(image), str(material)],
+-                pass_fds=(image, material), stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=self.log, bufsize=0)
++        image = -1
++        try:
++            image = os.open(CHILD, os.O_RDONLY | os.O_NOFOLLOW | os.O_CLOEXEC)
++            self.owned = OwnedProcess([str(binary), alg, str(self.port), str(ttl), str(rate), str(chunk), str(begin_mode), str(release_mode), str(image), str(material)],
++                pass_fds=(image, material), stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=self.log, bufsize=0,
++                env=dict(os.environ, RTSP_HOST_FIXTURE_PARENT=str(os.getpid())))
++            self.process = self.owned.process
+         finally:
+-            os.close(image);os.close(material)
++            if image >= 0:
++                os.close(image)
++            os.close(material)
+         self.lines = []
+         self.refused = refused
+         self.begin_mode = begin_mode
+@@ -96,12 +124,11 @@
+         self.clockfault = clockfault
+         if refused:
+             self.process.wait(timeout=5)
+-            out = self.process.stdout.read().decode('ascii')
++            out = self.owned.read_end()
+             self.lines.extend(out.splitlines())
+             check(self.process.returncode != 0 and 'READY' not in out)
+         else:
+-            check(bool(select.select([self.process.stdout], [], [], 5)[0]))
+-            line = self.process.stdout.readline().decode('ascii').strip()
++            line = self.owned.read_line(5)
+             check(line == 'HOST_ONLY READY port=' + str(self.port))
+             self.lines.append(line)
+ 
+@@ -122,7 +149,7 @@
+                 except BrokenPipeError:
+                     pass  # owned child can fail-close between poll and pipe write
+                 self.process.wait(timeout=5)
+-            rest = self.process.stdout.read().decode('ascii')
++            rest = self.owned.read_end()
+             self.lines.extend(rest.splitlines())
+             self.process.stdin.close()
+             self.process.stdout.close()
+@@ -139,6 +166,10 @@
+             self.summary = {key: int(value) for key, value in re.findall(r'([A-Za-z_]+)=([0-9]+)', summary)}
+             verifier = next(line for line in self.lines if line.startswith('HOST_ONLY VERIFIER '))
+             self.verifier = {key: int(value) for key, value in re.findall(r'([A-Za-z_0-9]+)=([0-9]+)', verifier)}
++            prefix = next(line for line in self.lines if line.startswith('HOST_ONLY PREFIX '))
++            self.prefix = {key: int(value) for key, value in re.findall(r'([A-Za-z_]+)=([0-9]+)', prefix)}
++            material = next(line for line in self.lines if line.startswith('HOST_ONLY MATERIAL '))
++            self.material = {key: int(value) for key, value in re.findall(r'([A-Za-z_]+)=([0-9]+)', material)}
+             check(self.verifier['retained'] == 0)
+             if not self.refused:
+                 check(self.verifier['owned_exits'] == 1)
+@@ -161,9 +192,10 @@
+         finally:
+             for client in self.clients:
+                 client.close()
+-            if self.process.poll() is None:
+-                self.process.terminate()  # exact child handle only, no PID discovery
+-                self.process.wait(timeout=5)
++            try:
++                self.owned.close()  # bounded own pidfd cleanup; forced path raises
++            finally:
++                self.log.close()
+ 
+ 
+ class Client:
+@@ -323,11 +355,37 @@
+ def campaign(binary, logs):
+     rfc_crypto()
+     completed = []
+-    for mode in ('BAD-DOMAIN', 'BAD-RNG'):
+-        s = Server(binary, logs, mode.lower(), mode, refused=True)
++    # Paired input policy: identical SHA-256 fixture defaults/generation. Only
++    # generator domain differs. No client/challenge/protected source effect.
++    control = Server(binary, logs, 'domain-valid-control')
++    control.finish()
++    check(control.prefix == {'stage': 3, 'generation_match': 1, 'domain_match': 1,
++          'binding_match': 1, 'launch_attempts': 1, 'launched': 1})
++    check(control.source['starts'] == control.source['next'] == control.source['begins'] == 0)
++    check(control.summary['opened'] == control.summary['sdp'] == control.summary['setup'] == control.summary['play'] == control.summary['rtp_calls'] == 0)
++    completed.append('valid-RTSP-domain-no-effect-control')
++    prefix_controls = [{'case': 'valid-RTSP-domain-control', 'prefix': control.prefix,
++                        'verifier': control.verifier, 'source_starts': control.source['starts'],
++                        'source_next': control.source['next']}]
++    for mode in ('BAD-DOMAIN', 'BAD-GENERATION', 'BAD-RNG'):
++        s = Server(binary, logs, mode.lower(), mode, refused=True,
++                   paired_port=control.port if mode == 'BAD-DOMAIN' else None)
+         s.finish()
+-        check(s.source['starts'] == s.source['next'] == 0)
++        stage, generation, domain = {'BAD-DOMAIN': (1, 1, 0),
++            'BAD-GENERATION': (2, 0, 1), 'BAD-RNG': (3, 1, 1)}[mode]
++        check(s.prefix == {'stage': stage, 'generation_match': generation,
++              'domain_match': domain, 'binding_match': 1, 'launch_attempts': 0, 'launched': 0})
++        check(s.verifier['owned_exits'] == s.verifier['wait0'] == s.verifier['signaled'] == 0)
++        check(s.material['parent_read_calls'] == 1)
++        check(s.material['parent_max_read_bytes'] == s.material['prefix_bound_bytes'] == 348)
++        check(s.source['starts'] == s.source['next'] == s.source['begins'] == s.source['attaches'] == s.source['crc_reads'] == 0)
++        prefix_controls.append({'case': mode, 'prefix': s.prefix, 'verifier': s.verifier,
++                                'source_starts': s.source['starts'], 'source_next': s.source['next']})
+         completed.append(mode)
++    with (logs/'PREFIX-CONTROL-TABLE.json').open('x') as f:
++        json.dump({'scope': 'HOST pre-child prefix only; child-domain parsing NOT exercised',
++                   'rows': prefix_controls, 'harness_generated_material_contents_read_or_hashed': False}, f, indent=2)
++        f.write('\n')
+     for alg in ('SHA-256', 'MD5'):
+         s = Server(binary, logs, alg.lower() + '-unauthorized', alg)
+         try:
+@@ -553,6 +611,7 @@
+ 
+ def main():
+     global GENERATOR, CHILD
++    require_guard()
+     binary, GENERATOR, CHILD, directory = map(lambda s: Path(s).resolve(), sys.argv[1:])
+     directory.mkdir()  # fresh per-build campaign, refuse overwrite
+     try:
+--- apps/rtsp-auth/isolated-server-candidate/fixture.c
++++ apps/rtsp-auth/isolated-server-host-tail/fixture.c
+@@ -39,6 +39,7 @@
+ #endif
+ unsigned is_owned_exits(void);unsigned is_owned_wait0(void);unsigned is_owned_signaled(void);
+ void is_watch_material(int);size_t is_material_reads(void);size_t is_material_max_read(void);
++void is_host_prefix_report(void);
+ 
+ static volatile sig_atomic_t stopped;
+ static uint8_t nal[CANDIDATE_HUB_BYTES+32],hub[CANDIDATE_HUB_BYTES+32];
+@@ -98,7 +99,14 @@
+   }
+   if(f->arm_revoke_partial&&b->stats.rtp_bytes>f->cancel_after_bytes){f->arm_revoke_partial=0;if(candidate_backend_revoke(b))return -1;}
+  for(unsigned count=0;count<16;count++) {
+-  n=read(STDIN_FILENO,&command,1);if(n<0&&(errno==EAGAIN||errno==EINTR))return 0;if(n<=0)return 0;
++   n=read(STDIN_FILENO,&command,1);if(n<0&&(errno==EAGAIN||errno==EINTR))return 0;
++   if(n<=0){
++#ifdef IS_HOST_PUBLIC_ONLY
++    stopped=1;return -1; /*HOST owner pipe loss is FAILURE, never orphan-idle*/
++#else
++    return 0; /*unchanged strict/native fixture path; no new supervision there*/
++#endif
++   }
+    if(command=='Q'){candidate_backend_cancel(b,0);stopped=1;return 0;}
+   if(command=='C'){if(candidate_backend_cancel(b,0)==CAMERA_OK)f->cancel_hits++;}
+   else if(command=='1'){if(candidate_backend_cancel(b,1)==CAMERA_OK)f->cancel_hits++;}
+@@ -199,6 +207,15 @@
+ int main(int argc,char **argv)
+ {
+   if(argc!=10||!getuid())return 2; /*fixture CLI NEVER executes as root/native*/
++#ifdef IS_HOST_PUBLIC_ONLY
++  /* HOST-only parent-death backstop; outer owned subreaper still must reap ALL.
++   * This is not target/native lifecycle supervision or retirement evidence. */
++  char *parent_end;const char *parent_text=getenv("RTSP_HOST_FIXTURE_PARENT");
++  if(!parent_text)return 74;
++  long host_parent=strtol(parent_text,&parent_end,10);
++  if(*parent_end||host_parent<=1||(long)getppid()!=host_parent||
++     prctl(PR_SET_PDEATHSIG,SIGKILL)||(long)getppid()!=host_parent)return 74;
++#endif
+   char *end;
+   struct rlimit core={0,0};struct sigaction normal={0};normal.sa_handler=SIG_DFL;sigemptyset(&normal.sa_mask);
+   if(setrlimit(RLIMIT_CORE,&core)||prctl(PR_SET_DUMPABLE,0)||sigaction(SIGCHLD,&normal,NULL))return 2;
+@@ -217,7 +234,8 @@
+  f.release_mode=(unsigned)release_mode;
+  if(!strcmp(argv[1],"SHA-256"))f.algorithm=CAMERA_DIGEST_SHA256;
+  else if(!strcmp(argv[1],"MD5"))f.algorithm=CAMERA_DIGEST_MD5_LEGACY;
+- else if(!strcmp(argv[1],"BAD-DOMAIN")){f.algorithm=CAMERA_DIGEST_SHA256;f.bootstrap_bad=1;}
++  else if(!strcmp(argv[1],"BAD-DOMAIN"))f.algorithm=CAMERA_DIGEST_SHA256;
++  else if(!strcmp(argv[1],"BAD-GENERATION")){f.algorithm=CAMERA_DIGEST_SHA256;f.bootstrap_bad=1;}
+  else if(!strcmp(argv[1],"BAD-RNG")){f.algorithm=CAMERA_DIGEST_SHA256;f.random_bad=1;}
+  else return 2;
+  for(size_t i=0;i<sizeof(nal);i++)nal[i]=(uint8_t)((i-16)*31U^((i-16)>>8));
+@@ -237,7 +255,7 @@
+  static const struct camera_profile profiles[]={{"camera0-main","camera0","host-encoder",16,16,CAMERA_H264}};
+  static const struct camera_resource_group groups[]={{"host-group",0,CAMERA_PRESENT_UNQUALIFIED}};
+  struct camera_graph graph={.devices=devices,.device_count=2,.profiles=profiles,.profile_count=1,.groups=groups,.group_count=1};
+-  f.config=(struct candidate_config){.abi=CANDIDATE_AUTH_ABI,.struct_bytes=sizeof(f.config),.host_fixture_only=1,.algorithm=f.algorithm,.boot_generation=42,.epoch=444,.credential_generation=1,
++   f.config=(struct candidate_config){.abi=CANDIDATE_AUTH_ABI,.struct_bytes=sizeof(f.config),.host_fixture_only=1,.algorithm=f.algorithm,.boot_generation=42,.epoch=444,.credential_generation=f.bootstrap_bad?2:1,
+    .device_id="PUBLICDUMMY-device",.account_id="PUBLICDUMMY-rtsp",.profile_id="camera0-main",.graph=&graph,.nonce_ttl_ms=(uint32_t)ttl,
+   .rate_window_ms=1000,.global_verifies=(uint32_t)rate,.global_challenges=(uint32_t)rate,.account_verifies=(uint32_t)rate,.account_challenges=(uint32_t)rate,
+    .peer_verifies=(uint32_t)rate,.peer_challenges=(uint32_t)rate,.host_send_chunk=(uint32_t)chunk,.begin_contract=CANDIDATE_BEGIN_LOGICAL_ONLY,.context=&f,.random_ready=random_ready,
+@@ -256,11 +274,22 @@
+  int flags=fcntl(STDIN_FILENO,F_GETFL);if(flags<0||fcntl(STDIN_FILENO,F_SETFL,flags|O_NONBLOCK))return 2;
+  signal(SIGTERM,stop_signal);signal(SIGINT,stop_signal);signal(SIGPIPE,SIG_IGN);
+   int result=camera_rtsp_isolated_candidate_serve(&o,&p,&f.config);
+-  close(image_fd);close(material_fd);
++   close(image_fd);close(material_fd);
++   is_host_prefix_report();
+   printf("HOST_ONLY VERIFIER owned_exits=%u wait0=%u signaled=%u retained=%u functional_RTSP_verify_native_NOTtested=1\n",is_owned_exits(),is_owned_wait0(),is_owned_signaled(),f.verifier_retained);
+   printf("HOST_ONLY MATERIAL parent_read_calls=%zu parent_max_read_bytes=%zu parent_secret_bytes_read=0 prefix_bound_bytes=%zu\n",is_material_reads(),is_material_max_read(),offsetof(struct rv_material,username));
+   if(is_material_max_read()>offsetof(struct rv_material,username))f.guard_errors++;
+-  if(f.verifier_retained){fflush(stdout);for(;;)poll(NULL,0,100);} /*parent OWN fixture recovery, no unknown free*/
++   if(f.verifier_retained){
++    printf("HOST_ONLY HOLD verifier_uncertain=1 normal_retirement=0\n");fflush(stdout);
++#ifdef IS_HOST_PUBLIC_ONLY
++    /* HOST process-only recovery: exiting does NOT claim verifier retirement.
++     * Its PDEATHSIG and outer subreaper cleanup must produce actual own waits;
++     * any adopted child makes the campaign guard FAIL even if payload says PASS. */
++    return 74;
++#else
++    for(;;)poll(NULL,0,100); /*unchanged strict/native unknown-ownership HOLD*/
++#endif
++   }
+  printf("HOST_ONLY SOURCE starts=%u idles=%u next=%u releases=%u demands=%u frame_open=%u retained=%u guard_errors=%u cancel_hits=%u raw_NAL_CRC=%u result=%d attaches=%u detaches=%u begins=%u ends=%u crc_reads=%u frame_retained=%u needs_stop=%u stop_pending=%u active_present=%u source_state=%u source_gate_calls=%u source_gate_denied=%u guard_bound=%u release_wipes=%u produced_idr=%u produced_p=%u forced_nexts=%u end_idr=%u end_p=%u end_key_mismatch=%u\n",
+   f.starts,f.idles,f.nexts,f.releases,f.producer.demand_count,f.bridge.frame_open,f.retained,f.guard_errors,f.cancel_hits,f.crc,result,
+   f.attaches,f.detaches,f.begins,f.ends,f.crc_reads,f.frame_retained,f.producer.needs_stop,f.producer.stop_pending,f.producer.active_present,
+--- apps/rtsp-auth/isolated-server-candidate/integration_test.py
++++ apps/rtsp-auth/isolated-server-host-tail/integration_test.py
+@@ -10,6 +10,7 @@
+  line=next(x for x in text.splitlines() if x.startswith('HOST_ONLY IPC '))
+  return {k:int(v) for k,v in re.findall(r'([A-Za-z_]+)=([0-9]+)',line)}
+ def main():
++ C.require_guard()
+  binary,delay,strict,C.GENERATOR,C.CHILD,delay_child,directory=map(lambda s:Path(s).resolve(),sys.argv[1:])
+  directory.mkdir();rows=[]
+  def finish(s,label):

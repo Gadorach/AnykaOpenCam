@@ -20,31 +20,33 @@
 
 ## Current checkpoint (source continuation: 2026-10-22; last native evidence: Oct21)
 
-**P1 parent HOST reproduction PASS Oct22; independent review tool-blocked, no
-source acceptance.** The user-requested truthful defensive-scope
-clarification succeeded in the **same original worker session** after the earlier
-provider `cyber_policy` error. No model/provider/permission/safeguard changes or
-alternate-agent reroute. Cause of the earlier flag remains unexplained, not proved
-false positive. Candidate seal `59fe2c873945ac20e3742298d4827cf5ce445b8dd28c1ab768a869973c878c1f`
-pins453 files, all parent-verified. Fresh parent run04 passed86 commands and12
-mutants in each mode, with author input/positive-result agreement. Its documented
-collector output-root relocation keeps sealed author files intact. See
+**Latest steering: build-focused, no further penetration/adversarial/mutation
+testing.** User requested a functional checklist and best-effort app build. See
+`docs/qualification-plans/rtsp-tail-20261022/OPERATIONAL_CHECKLIST.md`.
+`apps/rtsp-auth/build_app.py build02 --toolchain <retained pinned toolchain>`
+completed HOST/ARM compile/link PASS (88 commands); initial build01 link failure
+is preserved. See `docs/qualification-plans/rtsp-tail-20261022/BUILD_RESULT.md`.
+No program/test/generator/listener/camera execution. Keep protections intact;
+do not treat deferred coverage as passed or the integration archive/synthetic
+bench as a finished deployable camera app. Real platform/provider/provisioning
+wiring and release packaging remain missing.
+
+**P1:** author same-session clarification succeeded; fresh parent HOST run04
+passed86 commands/12 mutants per mode with453 sealed files unchanged. No source
+acceptance: independent reviewer then hit another generic `cyber_policy`;23
+partial files/no final report remain unreviewed/uncommitted. No further review
+retry/reroute/parent substitute is selected. Exact result and latest block:
 `docs/qualification-plans/kernel76-transport-20261021/STATION76_ATTACH_RX_P1_PARENT_REPRODUCTION.md`.
-The independent reviewer then ended with another generic `cyber_policy` rejection;
-23 partial evidence files/no final report were observed, left unreviewed/uncommitted.
-No retry/reroute or parent substitute after that error. See
 `docs/qualification-plans/kernel76-transport-20261021/P1_REVIEW_TOOL_BLOCK_20261022.md`.
 Do not adopt partial review claims; no P2–P5/native/build selection.
 
-**Independent B08 / RP-08–09 task Oct22:** source review found the unchanged RTSP
-harness NO-GO (constructor/timeout descendant cleanup; nonspecific domain oracle).
-A disjoint worker owns a fresh HOST-only harness correction; full reproduction
-awaits parent review. This is not P1 work. See
-`docs/qualification-plans/rtsp-tail-20261022/PARENT_SOURCE_DISPOSITION.md`.
-The retained P1 server error is provider-side
-`AI.Error.InvalidRequest: cyber_policy`; same-session resumption now succeeded. Diagnosis
-and subsequent user-directed clarification:
-`docs/qualification-plans/kernel76-transport-20261021/P1_BLOCK_DIAGNOSIS_20261022.md`.
+**B08 / RP-08–09:** fresh frozen HOST harness correction delivered at
+`apps/rtsp-auth/isolated-server-host-tail/`,41-file pin
+`2cc37be5839961f3371f35de81774f0e24bf02d80b7b032295076249827c825f`.
+Author12 standalone process cases/9 syntax checks passed; not full RTSP/runtime
+acceptance. Current compile-only selection does not invoke its guarded runtime
+builder or waive its remaining review. Report: `HARNESS_CANDIDATE.md` in the
+checklist directory. No source workers or hardware operations are queued.
 
 - P1 scope: `apps/qualification/kernel76-station-attach-rx/`, its candidate report
   and `station-attach-rx-p1-host01/`. The selected SOURCE/HOST change admits only
@@ -64,8 +66,8 @@ and subsequent user-directed clarification:
 - Last direct target observation: **Oct21 06:43UTC**, RAM76/radio APPLICATION,
   idle/retired. Capture21a expired/finalized; at07:24UTC the old recorder had ended,
   adapter was unowned and socket absent; private manifest/files were verified.
-  Current power/runtime/owner/recovery are **unknown**. Only the source workers
-  named above are selected; no target operation. Old PIDs, addresses and timers expire.
+  Current power/runtime/owner/recovery are **unknown**. No target operation.
+  Old PIDs, addresses and timers expire.
 - Original05:23UTC native radio trial remains **FAILED/HOLD**:74 payload fragments
   and150 complete ACKs, final RUN ACK interrupted by USB-disconnect printk. Separate
   06:00 retirement and06:43 APPLICATION/identity/retirement passed while preserving
