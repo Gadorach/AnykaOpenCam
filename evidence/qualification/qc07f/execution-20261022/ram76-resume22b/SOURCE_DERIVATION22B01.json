@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-22T11:25:49.194803+00:00",
+  "argv": [
+    "evidence/qualification/qc07f/execution-20261022/ram76-resume22b/prepare_epoch.py"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "python": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+  "preparer_sha256": "69aad2cfc1a8e0f9d3f8bbdce2a62e670722ccdb026b4ffe95cc42adf33c2dcb",
+  "preserved_hold_sha256": "ad19370f769384cf9513e2a8288b97fc2836f05a0764e148b28537924ef0d9e6",
+  "recipe_source_transforms": [
+    {
+      "file": "cold_gate.py",
+      "original_sha256": "4d9cb412d6e05aa6622a917cc7da8fc53e4dc9d04108d5a650dcd360eb93c154",
+      "new_sha256": "3ebef429e360139c0d00fafde3dd72a8fe20e3e6be0a1baea8e26554a67ab502",
+      "bytes": 3310,
+      "epoch_path_labels_and_retained_HOLD_adapter_only": true
+    },
+    {
+      "file": "ram76_boot.py",
+      "original_sha256": "40f4da4c46ab8159e4aec36af4eb0152d930128b974a3f8d291adae0cea47a28",
+      "new_sha256": "7d3c4e880881291fe903e9c840226855a22f06632d8a1b57fa1eacef35a355d4",
+      "bytes": 6684,
+      "epoch_path_labels_and_retained_HOLD_adapter_only": true
+    },
+    {
+      "file": "postcheck.py",
+      "original_sha256": "3dbf96b9ef84216da89283f19cd09dbca27e45a17d84138c9574112fb06170f0",
+      "new_sha256": "361e37f2b0b5977294846bb7e06bf0e131e027121a15b31c6e956c29f4083f5d",
+      "bytes": 10145,
+      "epoch_path_labels_and_retained_HOLD_adapter_only": true
+    }
+  ],
+  "hardware_or_recipe_executed": false,
+  "original_failed_radio_HOLD_will_remain_byte_exact": true,
+  "new_subordinate_failure_marker_is_sticky": true
+}

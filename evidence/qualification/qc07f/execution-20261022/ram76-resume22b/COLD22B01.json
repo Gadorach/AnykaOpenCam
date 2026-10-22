@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-22T11:26:18.879818+00:00",
+  "state": "FRESH22B_ORIGINAL_UBOOT_COLD_READONLY_GATE_PASS",
+  "part": "foundation-20261022b",
+  "original_bootloader_pin_matches": true,
+  "neutral_mux_direction_latch_pair_IR_and_timers_match": true,
+  "no_GO_RAM_loader_or_Linux_execution": true,
+  "no_manual_GPIO_store": true,
+  "no_flash_ENV_card_write": true,
+  "recipe_sha256": "3ebef429e360139c0d00fafde3dd72a8fe20e3e6be0a1baea8e26554a67ab502"
+}

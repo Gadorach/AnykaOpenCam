@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-22T04:17:13.546165+00:00",
+  "state": "PASSIVE_FRESH_CAPTURE_OBSERVATION_NOT_RUNTIME_PROOF",
+  "part": "foundation-20261022a",
+  "observation_seconds": 8,
+  "rx_bytes_since_capture_open": 0,
+  "tx_bytes": 0,
+  "monitor_prompt_seen": false,
+  "monitor_prompt_is_tail": false,
+  "held_uboot_prompt_seen": false,
+  "Linux_banner_seen": false,
+  "new_CPU_Uboot_banner_seen": false,
+  "future_catch_still_armed": true,
+  "remaining_seconds_at_checkpoint": 14355,
+  "original_failed_HOLD_unchanged": true,
+  "raw_or_private_digest_exported": false
+}

@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-22T11:24:09.004907+00:00",
+  "state": "FRESH22B_USER_ON_MAIN_CPU_UBOOT_CATCH_OBSERVED",
+  "part": "foundation-20261022b",
+  "user_power_ON_confirmed": true,
+  "fresh_original_boot_banner_board5_DRAM64_observed": true,
+  "actual_held_UBoot_prompt": true,
+  "Linux_handoff_not_observed": true,
+  "only_recorder_automatic_catch_TX": true,
+  "tx_bytes": 57,
+  "future_catch_consumed_needs_rearm_before_effect": true,
+  "remaining_seconds_at_checkpoint": 14267,
+  "original_failed_HOLD_unchanged": true,
+  "manual_target_TX": false
+}

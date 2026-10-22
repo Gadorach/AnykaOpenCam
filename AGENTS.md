@@ -18,7 +18,30 @@
   independent work. Do not infer permission for third-party contact, publication,
   account changes or unrelated hardware.
 
-## Current checkpoint (source continuation: 2026-10-22; last native evidence: Oct21)
+## Current checkpoint (2026-10-22)
+
+**Latest autonomy steering:** continue eligible work unattended until completion
+or genuinely required user input. Hardware trials are authorized; prefer reviewed
+prearmed watchdog recovery/known-idle watchdog reset. Further adversarial testing
+remains deferred. The initial RAM76 belief was superseded by the cold handoff below.
+
+**Actual cold handoff:**22a capture expired/finalized/hash-verified while awaiting
+user interaction (no RX/manual TX). User then OFF; fresh reviewed22b receiver/catch
+was armed/revalidated before user ON. Actual original U-Boot cold catch and held
+prompt, bootloader pin and neutral readbacks PASS. Exact RAM76 dry-run PASS; next
+one fixed resume22b then RO idle check, no station shortcut. Current source/methods:
+`docs/plan/camera-foundation/RESUME_20261022.md`. Current owner receipt:
+`evidence/qualification/qc07f/stock-reference-20261013/fresh22b-sole-owner-bounded-nextboot-hold01.json`.
+Revalidate its bounded coverage/owner every operation. Preserve original radio HOLD;
+new22b phases use a separate sticky subordinate marker. Parent alone hardware.
+
+**Independent P2 SOURCE candidate delivered:** new
+`apps/qualification/kernel76-station-attach-init/` plus its report/evidence, deriving
+accepted A2b without touching/adopting blocked P1 or rx.c/event.c. Scope: ordinary
+attach-only init/effects/first-error lifecycle; no P1 retry or P3–P5 implementation,
+ARM/module build, staging, native action or adversarial tests. Final syntax16/16
+translation units PASS; parent source review remains. P1 integration is still an
+unmet dependency; no composite attach source/native GO follows. Worker finished.
 
 **Latest steering: build-focused, no further penetration/adversarial/mutation
 testing.** User requested a functional checklist and best-effort app build. See
@@ -38,7 +61,8 @@ partial files/no final report remain unreviewed/uncommitted. No further review
 retry/reroute/parent substitute is selected. Exact result and latest block:
 `docs/qualification-plans/kernel76-transport-20261021/STATION76_ATTACH_RX_P1_PARENT_REPRODUCTION.md`.
 `docs/qualification-plans/kernel76-transport-20261021/P1_REVIEW_TOOL_BLOCK_20261022.md`.
-Do not adopt partial review claims; no P2–P5/native/build selection.
+Do not adopt partial review claims. P2's disjoint source-only selection above is
+not P1 acceptance; P3–P5/native/build selection remains absent.
 
 **B08 / RP-08–09:** fresh frozen HOST harness correction delivered at
 `apps/rtsp-auth/isolated-server-host-tail/`,41-file pin
@@ -46,7 +70,7 @@ Do not adopt partial review claims; no P2–P5/native/build selection.
 Author12 standalone process cases/9 syntax checks passed; not full RTSP/runtime
 acceptance. Current compile-only selection does not invoke its guarded runtime
 builder or waive its remaining review. Report: `HARNESS_CANDIDATE.md` in the
-checklist directory. No source workers or hardware operations are queued.
+checklist directory. No B08 worker or runtime operation is queued.
 
 - P1 scope: `apps/qualification/kernel76-station-attach-rx/`, its candidate report
   and `station-attach-rx-p1-host01/`. The selected SOURCE/HOST change admits only
@@ -59,15 +83,14 @@ checklist directory. No source workers or hardware operations are queued.
   A2a original USB extent/status (`08949c0`), A2b event suppression (`b940ffe`).
   A2b silently disposes debug event18 without payload interpretation/output and
   denies other IDs, retaining full16-bit EVENT2 identity. These are not full S4 GO.
-- P2 first-error/init/effects, P3 bounded owned TX, P4 lifetime and P5 guarded
-  runner remain plans. Station attachment, ARM build/staging and native station
+- P2 first-error/init/effects now has the unaccepted source candidate above;
+  P3 bounded owned TX, P4 lifetime and P5 guarded runner remain plans. Station attachment, ARM build/staging and native station
   qualification have not been accepted. Async init/guard, automatic recovery,
   TX timeout/ownership, teardown and non-event paths remain technical blockers.
-- Last direct target observation: **Oct21 06:43UTC**, RAM76/radio APPLICATION,
-  idle/retired. Capture21a expired/finalized; at07:24UTC the old recorder had ended,
-  adapter was unowned and socket absent; private manifest/files were verified.
-  Current power/runtime/owner/recovery are **unknown**. No target operation.
-  Old PIDs, addresses and timers expire.
+- Current actual native state is the fresh Oct22 cold handoff above, not Oct21
+  RAM76/radio APPLICATION. Capture21a and22a are expired/finalized; their PIDs,
+  counters, addresses and timers are historical. No current Linux/WLAN/radio state
+  is inherited from them. Old private evidence and original failure remain intact.
 - Original05:23UTC native radio trial remains **FAILED/HOLD**:74 payload fragments
   and150 complete ACKs, final RUN ACK interrupted by USB-disconnect printk. Separate
   06:00 retirement and06:43 APPLICATION/identity/retirement passed while preserving

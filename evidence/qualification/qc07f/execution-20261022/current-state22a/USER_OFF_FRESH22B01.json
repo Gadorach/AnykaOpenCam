@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-22T11:22:19.966348+00:00",
+  "state": "USER_OFF_FRESH22B_OWNER_AND_FUTURE_CATCH_READY",
+  "part": "foundation-20261022b",
+  "user_OFF_confirmed": true,
+  "source_sole_owner_start_and_coverage_revalidated": true,
+  "rx_bytes": 0,
+  "tx_bytes": 0,
+  "catch_armed_unconsumed": true,
+  "catch_ends_by": "2026-10-22T15:21:56.126723+00:00",
+  "prior_22a_expired_finalized_hash_verified": true,
+  "original_failed_HOLD_unchanged": true,
+  "no_target_manual_TX": true
+}

@@ -1,5 +1,42 @@
 # Active execution ledger — remaining foundation work
 
+**Oct22 user OFF/ON → fresh22b cold catch/gate PASS:**22a expired normally08:16UTC
+while awaiting user action; all private final sizes/hashes verified. User OFF then
+reviewed fresh22b receive owner/future catch revalidated before user ON. Actual
+original U-Boot cold banner/held prompt, bootloader pin and neutral readback pass;
+no loader GO/Linux yet. Exact76 image/package/header/CRC/source dry-run passes.
+Prepared new22b native-passed21a recipe copies with only epoch/path/labels and a
+reviewed original-HOLD-preserving subordinate-lock adapter. One fixed RAM76 boot
+then RO idle check is next; no radio/station/media effect. See
+[current continuation](RESUME_20261022.md) and execution-20261022 evidence.
+
+**P2 best-effort SOURCE delivered:** accepted A2b-derived71-file tree, no P1 copy/
+rx.c/event.c changes; final HOST syntax16/16 units pass.153-file seal SHA256
+`c54ff57f63bec1180199a97321fbf1ea38e9b448edf0969c9135953c565b1919`.
+Parent source disposition pending; not behavioral/paired ARM/native acceptance.
+P1/P3–P5/composite attach gates remain missing. Worker finished, no target access.
+
+**Oct22 unattended continuation — fresh receive-only capture, native handoff
+blocked:** user authorizes eligible unattended work/hardware trials with watchdog
+recovery and believes RAM76 is running. Parent verified pinned recorder source,
+adapter actually unowned/socket absent/no operation-lock holder/original radio HOLD
+unchanged. New explicit already-powered-target receive-only admission starts the
+unchanged private recorder for22a and arms its future-only catch, without claiming
+OFF/cold boot/current runtime. Eight seconds passive observation showed0RX/0TX;
+no prompt/current watchdog/runtime proof. Source:
+`apps/qualification/kernel76-current-state/receive22a.py`; fresh owner receipt under
+stock-reference evidence and `current-state22a/PASSIVE_CAPTURE22A01.json` under
+execution-20261022 evidence. Do not send blind watchdog/monitor commands. One user
+physical OFF/fresh cold handoff is needed for native continuation; watchdog is
+preferred once current state and source admit it, not retrofitted to unknown state.
+
+**Oct22 P2 independent ordinary SOURCE-only lane selected:** fresh derivative of
+accepted A2b in `apps/qualification/kernel76-station-attach-init/`, only attach-only
+init/effects/first-error lifecycle. Do not copy/adopt/review/retry blocked P1 or
+change rx.c/event.c; P1 remains an unmet composite-integration dependency. No
+P3–P5 implementation, ARM/module build/staging/target or adversarial-test selection.
+Parent owns central status/hardware; worker owns only new source/report/evidence.
+
 **Oct22 best-effort RTSP app build PASS, no runtime tests:** `build_app.py build02`
 completed04:02:31UTC,88 ordinary compile/archive/link/compiler/ELF commands. Produced
 HOST/ARM integration archives and strict verifier companions plus a synthetic HOST

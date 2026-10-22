@@ -50,6 +50,16 @@ build recipes. Do not rewrite historical absolute paths merely for the rename.
 
 ## Next task
 
+### October22 unattended execution / actual cold handoff
+
+Follow [RESUME_20261022.md](RESUME_20261022.md) and the execution ledger. User
+authorizes unattended eligible work/hardware trials with watchdog recovery until
+genuine interaction is required; further adversarial testing stays deferred.
+After silent receive-only observation, required user OFF/ON under fresh22b catch
+established actual held original U-Boot; cold pin/neutral gate and exact76 dry-run
+pass. One fixed RAM76 resume22b plus RO idle check is next, not a station attach.
+Prior radio HOLD is preserved; source/helper/operation ownership gates still apply.
+
 ### October22 current steering — build and functional checklist, no hardware queue
 
 Current state is maintained in the [execution ledger](EXECUTION_TASKS_20261021.md)
