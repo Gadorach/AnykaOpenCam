@@ -1,0 +1,383 @@
+{
+  "started": "2026-10-22T12:47:36.813981+00:00",
+  "status": "FAILED; exact partial evidence retained",
+  "commands": [],
+  "inputs": {
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/native_adapter.c": {
+      "bytes": 9570,
+      "sha256": "33f65bb1b40a3fbe2b7e756e0c8e5a3a933a762cbb13737cdb16a9be1b5f0f93"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/native_adapter.h": {
+      "bytes": 980,
+      "sha256": "39367be1ff9d62ac204a941bdaf0e76bead8cffa5f9e70943e3275d5ab88ca46"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/rtspd-native-import.c": {
+      "bytes": 16567,
+      "sha256": "ed40ac73b71f2dadd0cf72d0c69ec1020236b431d9a70d7f7ab67b7ed0a79e52"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/sensor_baseline.c": {
+      "bytes": 5688,
+      "sha256": "6994e3ce6e048e6829bd0e85e61049662422d872198aa71e14f3cb95b95676ee"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/sensor_baseline.h": {
+      "bytes": 1099,
+      "sha256": "ed1e8a5ef9586b6c68d71ddabcd499d660cf91e0df97212c8e7ce5076b407503"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/memory_reserve.c": {
+      "bytes": 10310,
+      "sha256": "aec0a30d7f67bfc8fc0f2c078cf4a53efb42d78a65b46c0bef22312060070aff"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/memory_reserve.h": {
+      "bytes": 2193,
+      "sha256": "e09c5ce48a1142df66a71c782367abdc4c8e5557210c27c8ee3f1b67ecfc6eed"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/memory_runtime.c": {
+      "bytes": 5115,
+      "sha256": "c505e3447cbfa852c88a97816e233269de6dec12080625d16004dca31d152d57"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/memory_runtime.h": {
+      "bytes": 921,
+      "sha256": "54aaa1c9bb8e9c297625054160653378c242d9303504bb7093602373ba227b84"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/memory_reader.c": {
+      "bytes": 1079,
+      "sha256": "c9bd8401476f3baf73b43051651e6c306f14a05c1d5a5317531302569d4261c0"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/handoff.h": {
+      "bytes": 2413,
+      "sha256": "9b88ce3e24a3a6c1c16336315323b70b29560c473ac9a48d36043bd60c840113"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/capture-receipt.h": {
+      "bytes": 1751,
+      "sha256": "aa30e333eae75d53c21781990ebb71194261462756880b47382acd3cb81379f0"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/capture-retirement-uapi.h": {
+      "bytes": 1610,
+      "sha256": "887e32a3a9201812be3bd882826d2bc88a518b613a11793c3da862a39458dc39"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/crc-bzip2.h": {
+      "bytes": 594,
+      "sha256": "98c1bdc63d0eb7a5935b379871cc1fe694c401c717d9b5a68e6c3c78eb0d4e44"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/h264-baseline.h": {
+      "bytes": 2099,
+      "sha256": "4b9d6617bb70b92723ef7bdd9eea7e0680b4d11f5276d48133bbbf75042b896f"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/isp-stream.h": {
+      "bytes": 3493,
+      "sha256": "db8ca50e94c811757700ebeb0f7f8e809fa2981dd83c7ad97a8a397470ac1d71"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/qc07f_hwenc.h": {
+      "bytes": 1501,
+      "sha256": "6723c30c76a3fbd1feaf1ed9d1676a2b9b6289b352ffe7682372bf8e95123731"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/sc1346-init.h": {
+      "bytes": 2899,
+      "sha256": "98da5eb9e522975d834d99e8c0cdfbefe75ed87dbbcdf84fd9f0fb150f9efbe9"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/framework/include/camera/backend.h": {
+      "bytes": 5848,
+      "sha256": "6d81a78f05cc82aedb25874e2f0265148da63133894504c4e7b1afd7b2a32097"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/framework/include/camera/dma_integrity.h": {
+      "bytes": 3561,
+      "sha256": "8c1eddcc8e3296fa807984e588d5876cf179db52741c0a433c0a8a5ccbc2666c"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/framework/include/camera/fmp4.h": {
+      "bytes": 4740,
+      "sha256": "474923e415f98f6366ad6a4479d0a86f927a73d7dc3c9bbe51f105983de42818"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/framework/include/camera/packet_hub.h": {
+      "bytes": 2084,
+      "sha256": "969bbafe30dadf5cf317931d56f116cd36ae9e93d3373e134f201bd3df3f7db2"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/framework/include/camera/rtsp_clock.h": {
+      "bytes": 1187,
+      "sha256": "a1a4b6f99c8c64acb9d2db997f01ab423d2888961572fa25a8819035993c22a3"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-watchdog-owner-candidate/README.md": {
+      "bytes": 3018,
+      "sha256": "cb4a663bea9f7db1071e8344d97628742419aa4b2c3dc0e429dea4635b1e978f"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-watchdog-owner-candidate/build.py": {
+      "bytes": 12484,
+      "sha256": "302e9dfa3de716fd096c8b2c86cb7df05dc65b89f3c00f6cf66112d7a56e841c"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-watchdog-owner-candidate/native-watchdog.inc": {
+      "bytes": 4596,
+      "sha256": "aa46d188568b5def01e40a83c99c39fc21a65ffa4b1b6cc402bc493b3cf39358"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-watchdog-owner-candidate/native_watchdog.h": {
+      "bytes": 1033,
+      "sha256": "3ce07f20af4a652767bd90fd61b98c70ce9a5281a22ee360c7147305d121ed3b"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-watchdog-owner-candidate/overlay.py": {
+      "bytes": 6602,
+      "sha256": "65be068ed5f0b41942f346cf0da18f64ae3504acf3cb510e51e1e76fd1c4c200"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-watchdog-owner-candidate/source-close-once.inc": {
+      "bytes": 615,
+      "sha256": "f537ca9df2856c66dc60ff8765b96b956f199a4be09a80dfeb11a1b3b088d8cc"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-watchdog-owner-candidate/watchdog_owner.c": {
+      "bytes": 4525,
+      "sha256": "86278200eb4432b9e5805e444be2323dfe3dd6560e89e2c9a204294712325c51"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-watchdog-owner-candidate/watchdog_owner.h": {
+      "bytes": 2257,
+      "sha256": "7b3d51faef4b8c11283da07532bca362aa06922d18c1876e621f2a13893f5f09"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/manifest.json": {
+      "bytes": 265785,
+      "sha256": "8286c85c09d7f34d5bb6af13054803f68ebafad4e2e874da4b1a35aaf9e0d529"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/linux-lts/drivers/watchdog/watchdog_dev.c": {
+      "bytes": 34141,
+      "sha256": "07e4291f639506d558d9eaf0176f7b901ab132580f1800c58dc2340c70814bf2"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/bringup/qc07f/variants/security75/mach-ak3918ev200/watchdog.c": {
+      "bytes": 4911,
+      "sha256": "d6646a2b894f822ea486c4d24db7a49df2003a5706cf25e9908bc1fe15fe06e9"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/linux-lts/include/uapi/linux/watchdog.h": {
+      "bytes": 2350,
+      "sha256": "d3351c0e7f25dfbd2f7ac1c03ca65f2539f538a61e424fe3c6b587795432b252"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/linux-lts/fs/file_table.c": {
+      "bytes": 16846,
+      "sha256": "bb716695c089bfeae17c103c28209dcd9fa461154137b660f314b411d195846c"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/build.py": {
+      "bytes": 10146,
+      "sha256": "c387627215f784c4202939262affb2df04d9fc5f5a9719a9921f83049fb74f1a"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/runtime-license-GCC-14.3.0-COPYING.RUNTIME": {
+      "bytes": 3324,
+      "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/runtime-license-GCC-14.3.0-COPYING3": {
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/runtime-license-HOST-libgcc-RUNTIME.LIBRARY.EXCEPTION": {
+      "bytes": 3324,
+      "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/runtime-license-MUSL-1.2.5-COPYRIGHT": {
+      "bytes": 6204,
+      "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/evidence/delegated/20261012-native-handoff/run34/inputs/runtime-license-public-acquisition.json": {
+      "bytes": 1222,
+      "sha256": "20baeff2c7ec6233225c9b02c018a1138cab35c4b4cbb6cc17037d48f24267b5"
+    }
+  },
+  "frozen_prior_pins": {
+    "apps/rtsp-auth/qc07f-runtime-candidate/README.md": {
+      "bytes": 3411,
+      "sha256": "7a2a8cb4bde23dd9d141ac22f165c439b4fe72f609035239794d8bdcd3a46ba9"
+    },
+    "apps/rtsp-auth/qc07f-runtime-candidate/build.py": {
+      "bytes": 13568,
+      "sha256": "1b35cc07ff878ea6184393cbb7d99980f9a7ed225feafb37ede1accb97bc402d"
+    },
+    "apps/rtsp-auth/qc07f-runtime-candidate/rtsp_native_source.c": {
+      "bytes": 5136,
+      "sha256": "9854a2da08302996fdcb569175e8423a2b1a0cc1dd95cf1e8e20d8419b297b62"
+    },
+    "apps/rtsp-auth/qc07f-runtime-candidate/rtsp_native_source.h": {
+      "bytes": 1486,
+      "sha256": "a0ce36342ea9413c48be44e0be65baed24458f9a8255c87a00243259776a3da5"
+    },
+    "docs/qualification-plans/rtsp-runtime-20261022/CANDIDATE_REPORT.md": {
+      "bytes": 13612,
+      "sha256": "5aa1a89ed35fa8d28206f654607d9b68adfe87fbd9d6460c1ff0bf2d37c61186"
+    },
+    "docs/qualification-plans/rtsp-runtime-20261022/runs/build01/REPORT.json": {
+      "bytes": 264624,
+      "sha256": "5fa6ce20565ad59b57aabff34a23664584286ddc3e526b2d0609701640f1fcf6"
+    },
+    "docs/qualification-plans/rtsp-runtime-20261022/runs/build02/REPORT.json": {
+      "bytes": 272149,
+      "sha256": "9fb735deffe7686b6a83dbbeb40f426644f598bc89eb36fc72366c230b307773"
+    },
+    "docs/qualification-plans/rtsp-runtime-20261022/SOURCE_SEAL01.json": {
+      "bytes": 2155,
+      "sha256": "a7d6ba5fec6c9292f353e84f75da247f069e0337875d66a17255c25bd9cff3e8"
+    },
+    "apps/rtsp-auth/qc07f-provider-candidate/README.md": {
+      "bytes": 3287,
+      "sha256": "d111604c8ece2f43310d4b4366efd4bc73425d879c2455ec6434749787c1922d"
+    },
+    "apps/rtsp-auth/qc07f-provider-candidate/build.py": {
+      "bytes": 9437,
+      "sha256": "9d5e208841297c555d19bccd2effe710c9093beaca6fe6b0890c4bf4c42441f0"
+    },
+    "apps/rtsp-auth/qc07f-provider-candidate/frame_fd_custody.c": {
+      "bytes": 3484,
+      "sha256": "d6c4a65939c2f6bde1498eb6622c9487a92757c0d7170bcc90d3137a7cfcf78d"
+    },
+    "apps/rtsp-auth/qc07f-provider-candidate/frame_fd_custody.h": {
+      "bytes": 2887,
+      "sha256": "6dce51456b7588fa46c8605d73d222a57eb320abc1583399a78f4a6ae45365ae"
+    },
+    "docs/qualification-plans/qc07f-provider-20261022/CANDIDATE_REPORT.md": {
+      "bytes": 13832,
+      "sha256": "00b892f30e9aa20b4c3565899ec278668dae72468b245b234811d4d3a916cd13"
+    },
+    "docs/qualification-plans/qc07f-provider-20261022/runs/build01/REPORT.json": {
+      "bytes": 43395,
+      "sha256": "572aad22d5e82a56692175654131e7556f625f46be41e9e344b881585e60fc53"
+    },
+    "docs/qualification-plans/qc07f-provider-20261022/SOURCE_SEAL01.json": {
+      "bytes": 2017,
+      "sha256": "ac49d5eca5c7fb807d583887a7d10127112160db53e6e5702c3eea7d5b837f3c"
+    },
+    "apps/rtsp-auth/qc07f-provider-candidate-v2/README.md": {
+      "bytes": 2802,
+      "sha256": "95a16ef9466c87db16b1b06f658a77cc1214130b971a751c761c9f130f5b236d"
+    },
+    "apps/rtsp-auth/qc07f-provider-candidate-v2/build.py": {
+      "bytes": 11821,
+      "sha256": "b80479916802356b2294642cc924840610653906e5e32fafa2866d9667c7e69a"
+    },
+    "apps/rtsp-auth/qc07f-provider-candidate-v2/encoder_fd_custody.c": {
+      "bytes": 4006,
+      "sha256": "21e9ce06803eb28a416e8841b66ac0326f7b6b199dd9b433bedafa51bb564ce3"
+    },
+    "apps/rtsp-auth/qc07f-provider-candidate-v2/encoder_fd_custody.h": {
+      "bytes": 3116,
+      "sha256": "c51cdc00bc4f3999296335de5f45a8c7bafd37388d131fe14847fd0e8c5917d6"
+    },
+    "apps/rtsp-auth/qc07f-provider-candidate-v2/frame_fd_custody.c": {
+      "bytes": 3484,
+      "sha256": "d6c4a65939c2f6bde1498eb6622c9487a92757c0d7170bcc90d3137a7cfcf78d"
+    },
+    "apps/rtsp-auth/qc07f-provider-candidate-v2/frame_fd_custody.h": {
+      "bytes": 2887,
+      "sha256": "6dce51456b7588fa46c8605d73d222a57eb320abc1583399a78f4a6ae45365ae"
+    },
+    "docs/qualification-plans/qc07f-provider-v2-20261022/CANDIDATE_REPORT.md": {
+      "bytes": 10458,
+      "sha256": "c0cef8db46644429db11535993de584716ad50017a6b511f6407686462d434b5"
+    },
+    "docs/qualification-plans/qc07f-provider-v2-20261022/runs/build01/REPORT.json": {
+      "bytes": 264555,
+      "sha256": "04f06accd58ecd1cb35f3624689195a5133459edc337779e901ce79fe3a49ef0"
+    },
+    "docs/qualification-plans/qc07f-provider-v2-20261022/runs/build02/REPORT.json": {
+      "bytes": 283776,
+      "sha256": "537ee5ed459f1293fc82a9795c7646f9aae210dc57a7c140da3e5641794e18b2"
+    },
+    "docs/qualification-plans/qc07f-provider-v2-20261022/SOURCE_SEAL01.json": {
+      "bytes": 3865,
+      "sha256": "720e14eba2b7533ebbed3f4effaceed70fc66a9e918abc576adca167d1280029"
+    },
+    "apps/qualification/kernel76-encoder-identity/README.md": {
+      "bytes": 2989,
+      "sha256": "baa5c7b8512435b8633047a3347092ccbe51cca3eb47059156664734b39add77"
+    },
+    "apps/qualification/kernel76-encoder-identity/abi_compile.c": {
+      "bytes": 1565,
+      "sha256": "d01f0a7a9401c78df4b7ba7753186bba7743ac1be9cf809f6a214c10d63da411"
+    },
+    "apps/qualification/kernel76-encoder-identity/build.py": {
+      "bytes": 11379,
+      "sha256": "da4678d4f743c1427ba1b10cb8a1d610906aa23c0f1a015bff9d029eb2f037ab"
+    },
+    "apps/qualification/kernel76-encoder-identity/encoder-open-query.h": {
+      "bytes": 2455,
+      "sha256": "6052069fa5428185eb8c61871404256c53c30c12515eaa5c9ab80c424facde37"
+    },
+    "apps/qualification/kernel76-encoder-identity/encoder-open-query.inc": {
+      "bytes": 2220,
+      "sha256": "7247086b8b151e8f3a21f79d996f6c78238521366a103f56c5ee9868f75b013c"
+    },
+    "docs/qualification-plans/encoder-identity-20261022/CANDIDATE_REPORT.md": {
+      "bytes": 10426,
+      "sha256": "1247960ba5ab1720eb6ea7fafda9df3e3a8a8f13194a3b4c27ac453ad7fb9475"
+    },
+    "docs/qualification-plans/encoder-identity-20261022/runs/build01/REPORT.json": {
+      "bytes": 15250,
+      "sha256": "6919a0f5ff91d63af1046713eeebc8e1b05e3404b34acc9225e1a07da87d25d5"
+    },
+    "docs/qualification-plans/encoder-identity-20261022/runs/build01/applied-source.patch": {
+      "bytes": 5646,
+      "sha256": "9d096489e3ba8cc44556b81feb8192b6c5f08e698c18b2718cdfedbab5aea232"
+    },
+    "docs/qualification-plans/encoder-identity-20261022/runs/build01/candidate/qc07f_hwenc.c": {
+      "bytes": 25218,
+      "sha256": "9bf16b1175befb091d6c61c3ac573121378e1d8c403eed21806a3e8fc80fc946"
+    },
+    "docs/qualification-plans/encoder-identity-20261022/runs/build01/candidate/qc07f_hwenc.h": {
+      "bytes": 1533,
+      "sha256": "6da117b504c15c05dd2b0a332f22f821e085f2e1549e4163ded07ede752829bd"
+    },
+    "docs/qualification-plans/encoder-identity-20261022/runs/build01/objects/host-abi.o": {
+      "bytes": 1128,
+      "sha256": "58f6fe1028ee195c1e29d020a6c6e26348479f7c88d8eeb9de3b92ad729b51f5"
+    },
+    "docs/qualification-plans/encoder-identity-20261022/runs/build01/objects/arm-abi.o": {
+      "bytes": 940,
+      "sha256": "f63a217d0411e8a48821734f18aed9a8c239b0a81f8bd5a361c4e6e649411135"
+    },
+    "docs/qualification-plans/encoder-identity-20261022/SOURCE_SEAL01.json": {
+      "bytes": 3417,
+      "sha256": "9d6a2701e4bb6b46157e16c0dc0707bd991a576dda7353a77d0dbf98cde71efa"
+    },
+    "apps/qualification/kernel76-encoder-identity-clang2313/README.md": {
+      "bytes": 2013,
+      "sha256": "4fb758bb912c88a86c3cbefda0e3d7754e5d3eabaa1ad2c56bdbaf13ddb8e8cb"
+    },
+    "apps/qualification/kernel76-encoder-identity-clang2313/build.py": {
+      "bytes": 12358,
+      "sha256": "2e0afbe066e689cefa2241dd98043005d5b90fc9e3f9014a4eb88394e19f7c96"
+    },
+    "docs/qualification-plans/encoder-identity-clang2313-20261022/BUILD_RESULT.md": {
+      "bytes": 7154,
+      "sha256": "6294b242c14633d5ee29b06cd1d8b969e8690b7e2dc79159ec7147fe0dc1c178"
+    },
+    "docs/qualification-plans/encoder-identity-clang2313-20261022/runs/build01/REPORT.json": {
+      "bytes": 517374,
+      "sha256": "215dcfd7523cd5217495706193bbb9ecc3c8cbd57c80f1ad4b0d2cb94a1702e8"
+    },
+    "docs/qualification-plans/encoder-identity-clang2313-20261022/runs/build01/objects/encoder-identity-clang2313-ARM.o": {
+      "bytes": 19676,
+      "sha256": "886c46f2dfe39d644d5aec2fb744461884e43b272d28eb56b35bab3bfaf8e2ee"
+    },
+    "docs/qualification-plans/encoder-identity-clang2313-20261022/SOURCE_SEAL01.json": {
+      "bytes": 2526,
+      "sha256": "7aba7837709186c516d99e9833e8e0bb5a012b2b32a8a25195a383703ae6fb40"
+    }
+  },
+  "source_files": {},
+  "artifacts": {},
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "LC_ALL": "C",
+    "SOURCE_DATE_EPOCH": "1791763200",
+    "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-watchdog-owner-20261022/runs/build01/tmp",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "native_run34_manifest_pin": "8286c85c09d7f34d5bb6af13054803f68ebafad4e2e874da4b1a35aaf9e0d529",
+  "ARM_toolchain_pins": {
+    "bin/toolchain-wrapper": "f4db963a226e01244ce6f7b5d1ec6d57474dd811119ff8834429f022835ce9c1",
+    "bin/arm-buildroot-linux-musleabi-gcc.br_real": "e24ea223e7b521cce1f5889d63c25417e930cdbb35653b072f7b48d9a4b41729",
+    "arm-buildroot-linux-musleabi/sysroot/lib/libc.a": "0982970abc52a36d247326a8e0b5dd487410222ff9728528cc99a4e8bd62e7b5",
+    "lib/gcc/arm-buildroot-linux-musleabi/14.3.0/libgcc.a": "f707f3a5a94033cbbde76f76640d56dbc5dc615ab421be4efc2641c14344f19a"
+  },
+  "scope": "REAL V6 SOURCE OVERLAY/HOST/ARM COMPILE/ARCHIVE/REL ONLY",
+  "outputs_or_tests_executed": false,
+  "target_or_private_IO": false,
+  "kernel_module_image_or_app_build": false,
+  "provider_native_adoption": false,
+  "native_memory_admission": "HOLD",
+  "failed_next_process_retention": "OPEN",
+  "G2": false,
+  "G3": false,
+  "G8": false,
+  "error": "RuntimeError: nonunique frozen overlay context: {c->retirement_uncertain=1;return CAMERA_IO_ERROR;}",
+  "original_inputs_unchanged": true,
+  "prior_frozen_pins_unchanged": true,
+  "ended": "2026-10-22T12:47:36.836839+00:00"
+}

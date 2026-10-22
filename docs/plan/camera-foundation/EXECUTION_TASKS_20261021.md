@@ -1,5 +1,15 @@
 # Active execution ledger — remaining foundation work
 
+**Single-owned watchdog candidate delivered; focused review selected:** actual
+v6 derivative with one moved watchdog description, real timeout5/enable/progress/
+disable controls, outer guard through post-acquisition checks and normal source
+retirement. Final build04 HOST/ARM26 compile/archive/relocatable commands PASS;
+build01 overlay-context failure and superseded build02/03 outputs preserved.
+Source pin `2f9e50840a58bbcf8025df1b4e6850278eee0ff5d9a48e0354c531f218b7872a`.
+No runtime/target/provider adoption; logical disable is not electrical stop or
+armed recovery after failure. Reviewer owns fresh watchdog-owner-review docs only.
+FD adoption/backing/failed-next/main/native and all original HOLDs remain open.
+
 **P4a independent static SOURCE sufficiency; P3 resumed by explicit selection:**
 review found no correction-required defect in the selected shared-owner prerequisite;
 103 author/338 prior custody/204 accepted pins and final667 reader inputs unchanged.
