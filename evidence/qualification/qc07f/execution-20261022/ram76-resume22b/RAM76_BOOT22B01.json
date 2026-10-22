@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-22T11:48:46.488778+00:00",
+  "state": "RAM76_BOOT_AND_INERT_MONITOR_OBSERVED",
+  "part": "foundation-20261022b",
+  "image_sha256": "bd8a2a08be1483e1ddcd1efa2c68c9e20549047dec79796137979179197f654f",
+  "full_RAM_image_CRC_verified": true,
+  "startup_watchdog_magic_close_text_observed": true,
+  "manual_GPIO_stores": false,
+  "radio_firmware_load_or_association": false,
+  "media_or_controls_started": false,
+  "flash_ENV_SD_OTP_write": false,
+  "runtime_idle_watchdog_UART_inventory_pending": true,
+  "private_postboot_RX_TX_identity_checkpoint_retained": true,
+  "MTU1500_or_USB_payload_qualification": false,
+  "recipe_sha256": "7d3c4e880881291fe903e9c840226855a22f06632d8a1b57fa1eacef35a355d4"
+}

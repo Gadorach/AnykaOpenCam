@@ -1,5 +1,34 @@
 # Active execution ledger — remaining foundation work
 
+**Actual22b RAM76 boot + fixed RO idle PASS11:49UTC:** shell
+`sh_1635f1a90001X9X69CSqVph1iw` completed; full upload/independent RAM CRC/monitor
+and startup watchdog closure observed, then sameboot fixed idle/PID1/UID/mounts/
+CMA/modules/ISP/watchdog/UART check PASS. MemTotal33144/MemFree21008/CmaFree9216KiB
+is a snapshot, not a load budget. No active transfer, station/radio/media effect
+or old-HOLD clearance. One separate normal5s watchdog smoke source plan/inputs
+admitted, not executed yet; no deliberate reset. See `WATCHDOG_SMOKE22B_PLAN.md`.
+
+**P2 v2 focused static review sufficient for R1–R3:**88 candidate files/204 accepted
+base pins/161 prior frozen entries verified; no further defect in focused delta.
+Author syntax3/3 cited, no runtime/ARM/native acceptance. Fresh distinct P3 owned
+control/deadline SOURCE increment selected, leaving P1/P4/P5/composite gates unmet.
+
+**Provider source increment delivered:** move-only frame-FD custody helper,
+HOST/ARM16 compile/archive/relocatable commands PASS, not run/full adoption. Missing
+per-open encoder identity is next bounded source patch; source-only fresh encoder
+copy selected. Watchdog ownership/backing/failed-next/provisioning/listener remain
+blocked; current kernel/image unchanged. No hardware/source gate is silently waived.
+
+**App-entry source increment delivered:** real v6→RTSP callback glue,4 app-side
+files/C+header142 lines, HOST/ARM54 compile/relocatable-link commands PASS (not an
+executable, not run). Source pin
+`35712f25616610e4e6026436d3a239e9d7020c420ae7fe3de4991a3aa7734288`.
+Parent inspected glue and preserves it as compile-only candidate, no native/memory
+adoption. Preopened provider descriptors, failed-next retention, admitted backing,
+trusted provisioning and owned listener still block a real main. Fresh disjoint
+provider-FD ownership source increment selected; no fake readiness/stub main or
+target action. See `docs/qualification-plans/rtsp-runtime-20261022/`.
+
 **P2 ordinary source review returned CHANGES REQUIRED:** exact153-file candidate
 and204 accepted-base pins match, but v1 lacks required assign/unassign channel
 callbacks, can publish success after netdev registration rollback, and records a

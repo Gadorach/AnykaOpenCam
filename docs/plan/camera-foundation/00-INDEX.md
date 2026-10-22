@@ -56,11 +56,12 @@ Follow [RESUME_20261022.md](RESUME_20261022.md) and the execution ledger. User
 authorizes unattended eligible work/hardware trials with watchdog recovery until
 genuine interaction is required; further adversarial testing stays deferred.
 After silent receive-only observation, required user OFF/ON under fresh22b catch
-established actual held original U-Boot; cold pin/neutral gate and exact76 dry-run
-pass. One fixed RAM76 resume22b plus RO idle check is next, not a station attach.
+established actual held original U-Boot. Fixed RAM76 upload, independent RAM CRC,
+monitor startup and RO idle postcheck passed11:49UTC. One bounded normal watchdog
+smoke is selected next, not a station attach or deliberate reset.
 Prior radio HOLD is preserved; source/helper/operation ownership gates still apply.
 
-### October22 current steering — build and functional checklist, no hardware queue
+### October22 earlier steering — build and functional checklist
 
 Current state is maintained in the [execution ledger](EXECUTION_TASKS_20261021.md)
 and compact root `AGENTS.md`, not older “latest” sections below. User now requests
@@ -74,8 +75,8 @@ P1 author and fresh parent HOST results are preserved, but independent review is
 provider-blocked, partial and unaccepted. No further retry/reroute is selected.
 The disjoint B08 HOST harness candidate is delivered; compile-only artifacts do
 not satisfy its deferred runtime checks or supply missing camera integration.
-Current target power/runtime/owner/recovery remain unknown; original radio HOLD
-persists. Neither source lane authorizes native station/RTSP work.
+The fresh22b handoff above supersedes the earlier unknown target state; original
+radio HOLD persists. Neither source lane authorizes native station/RTSP work.
 
 ### Active execution — October21, reviewed increments committed on main
 

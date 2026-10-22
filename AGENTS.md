@@ -28,24 +28,35 @@ remains deferred. The initial RAM76 belief was superseded by the cold handoff be
 **Actual cold handoff:**22a capture expired/finalized/hash-verified while awaiting
 user interaction (no RX/manual TX). User then OFF; fresh reviewed22b receiver/catch
 was armed/revalidated before user ON. Actual original U-Boot cold catch and held
-prompt, bootloader pin and neutral readbacks PASS. Exact RAM76 dry-run PASS;
-**one fixed resume22b is active**, shell `sh_1635f1a90001X9X69CSqVph1iw`, from
-local commit `25a1ba7`. Wait completion; **NO concurrent UART/RPC/status/progress
-poll or recipe/helper edit**. Only fixed RO idle check after actual completion;
-no station shortcut. Current source/methods:
+prompt, bootloader pin and neutral readbacks PASS. **Actual RAM76 upload/full CRC/
+monitor and fixed RO idle postcheck PASS11:49UTC**; boot shell
+`sh_1635f1a90001X9X69CSqVph1iw` completed normally. No transfer remains active.
+One normal5s watchdog smoke is separately source-selected; no deliberate reset,
+radio/station/media action. Plan:
+`docs/qualification-plans/kernel76-transport-20261021/WATCHDOG_SMOKE22B_PLAN.md`.
+Current source/methods:
 `docs/plan/camera-foundation/RESUME_20261022.md`. Current owner receipt:
 `evidence/qualification/qc07f/stock-reference-20261013/fresh22b-sole-owner-bounded-nextboot-hold01.json`.
 Revalidate its bounded coverage/owner every operation. Preserve original radio HOLD;
 new22b phases use a separate sticky subordinate marker. Parent alone hardware.
 
-**P2 source corrections active:** v1 (`kernel76-station-attach-init/`) syntax16/16
-passed, but ordinary independent review found missing required channel-assignment
-callbacks, stale netdev-registration success and delayed firmware-error latching.
-V1/review remain frozen. One worker owns fresh
-`apps/qualification/kernel76-station-attach-init-v2/` and its report/evidence for
-those three corrections only. Accepted A2b/rx.c/event.c and blocked P1 untouched;
-no P1 retry, P3–P5 implementation, ARM/module build, native action or adversarial
-tests. No composite attach/source/native GO. App-entry source lane is disjoint.
+**P2 v2:** ordinary focused static review accepts its three callback/presence/error-
+ordering corrections; author changed-unit syntax3/3 passed, not runtime confirmation.
+V1/v2/reviews remain frozen; no P1 adoption or composite/native GO. One worker now
+owns fresh `apps/qualification/kernel76-station-attach-tx/` for P3 actual owned
+request/deadline source only; no P4/P5 implementation, tests, ARM/module build or
+hardware. All accepted old inputs remain immutable.
+
+**App integration source:** real v6→RTSP callback glue at
+`apps/rtsp-auth/qc07f-runtime-candidate/` compiled HOST/ARM (54 commands), not run
+or deployable. Parent source/build disposition:
+`docs/qualification-plans/rtsp-runtime-20261022/PARENT_DISPOSITION.md`.
+Move-only frame-FD custody helper is also delivered/compiled HOST/ARM (16 commands),
+not full provider adoption. One disjoint worker now owns fresh
+`apps/qualification/kernel76-encoder-identity/` for the missing observational per-
+open encoder session/ref query, in a source copy only. Current kernel/image stay
+immutable. Watchdog ownership, failed-next retention/backing/provisioning/owned
+listener remain blockers. No new main or native memory-fit claim.
 
 **Latest steering: build-focused, no further penetration/adversarial/mutation
 testing.** User requested a functional checklist and best-effort app build. See
