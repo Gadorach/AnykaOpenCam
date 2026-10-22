@@ -85,9 +85,11 @@ Disposition: `docs/qualification-plans/qc07f-watchdog-owner-v2-20261022/PARENT_D
 Actual mandatory provider-FD derivative at
 `apps/rtsp-auth/qc07f-owned-provider-candidate/` has narrow independent SOURCE/API/
 ownership sufficiency; HOST/ARM20 commands/ten reused objects cited/verified.
-One worker owns fresh `apps/rtsp-auth/qc07f-provider-unactivated-return/` for a
-strict pre-memory/nonactivated custody-return subset, explicitly UNKNOWN watchdog
-handoff only, not fake disable/END or post-memory/failed-state cleanup.
+Strict pre-memory/nonactivated custody-return candidate delivered at
+`apps/rtsp-auth/qc07f-provider-unactivated-return/`, HOST/ARM18 commands PASS;
+one reviewer owns fresh provider-return-review docs before source adoption.
+UNKNOWN watchdog handoff is not disable/END, armed recovery or post-memory/
+failed-state cleanup. Source/history/partial-result and terminal guards need review.
 Frozen originals/RTSP glue stay separate. Native watchdog
 qualification, failed-next retention/backing/provisioning/owned listener remain
 blockers. No image/module change, new main or native memory-fit claim.

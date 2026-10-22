@@ -1,5 +1,15 @@
 # Active execution ledger — remaining foundation work
 
+**Pre-memory/nonactivated return candidate delivered; focused review selected:**
+actual sequential sensor/frame/encoder moves, UNKNOWN watchdog last, strict
+uninitialized memory/unsealed session/no local activation history, actual partial
+FD ownership and terminal RETURNED source guards. No controls/close/END/ACK or
+fictional disabled state. HOST/ARM18 commands PASS,12 unchanged objects reused;
+4,578 prior files unchanged. Source pin
+`9ac7f363d7395fe944f2d068a4c964a5b20c77e9410e84633c07ce7f8b8a169f`.
+Reviewer owns provider-return-review docs only. Post-memory/failed-state handback,
+backing/external retention/RTSP/main/native remain blocked; query77 build separate.
+
 **Actual provider derivative narrow SOURCE/API/ownership sufficiency:** no new
 correction-required defect in staged transfers/actual callsites.3,649 prior pins,
 six imports, ten reused dependency/object sets and16 archive member bodies checked;
