@@ -1,0 +1,48 @@
+{
+  "utc": "2026-10-22T11:55:42.001433+00:00",
+  "argv": [
+    "docs/qualification-plans/kernel76-transport-20261021/station-attach-init-p2-v2-review01/finalize_review.py"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "python": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+  "reader_inputs_revalidated_unchanged": 463,
+  "frozen_v1_review_custody_exact_prior_seal_union": 161,
+  "candidate_seal_sha256": "40928114e2de10bc84b0dc26301db2563f1d9a1df4273b6610a7cc7ba13317bb",
+  "source_sha256": "a23ec7ce1e9794762e086853655e286b3567db5ddb4e449c88bab25390b9c75f",
+  "disposition": "Narrow SOURCE sufficiency: R1-R3 corrections accepted at static source/API scope only",
+  "scope": "static public read/diff/hash only; no compilation, runtime/tests, P1 review, target/UART/RPC/network/private IO or Git/index edits",
+  "files": {
+    "docs/qualification-plans/kernel76-transport-20261021/STATION76_ATTACH_INIT_P2_V2_REVIEW.md": {
+      "bytes": 11998,
+      "sha256": "6c93689c262ae6d897b2342b870364fac38ca995751a0f82bf3a836d43f0300e"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-attach-init-p2-v2-review01/READER_ATTEMPT01.md": {
+      "bytes": 1322,
+      "sha256": "8f680fc1cab88a5ff3a637e063b56775838ddd4d43579c2d20c959ce9f71196e"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-attach-init-p2-v2-review01/actual-v1-v2-diff.patch": {
+      "bytes": 7478,
+      "sha256": "bee9cc919dad318b1408b37ee7b5c007563e9ffce01b894c49795ebd551ec942"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-attach-init-p2-v2-review01/finalize_review.py": {
+      "bytes": 2995,
+      "sha256": "487d257b5f6933c49b666e847ade4fb2b965ea45218a230565adefc3fbf620ec"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-attach-init-p2-v2-review01/public-excerpts.json": {
+      "bytes": 52487,
+      "sha256": "017ca15d3a36324a2b49916160cf068e0f960cc53db277f5d8034cbebeae7ffd"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-attach-init-p2-v2-review01/public-pin-verification.json": {
+      "bytes": 9561,
+      "sha256": "2266ce201b067c38c095a38773d9c776626e48edbd30e4be38a12c55ddb265e5"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-attach-init-p2-v2-review01/read_public_inputs.py": {
+      "bytes": 10803,
+      "sha256": "1aa3a1220b6c29aec6ba2fc3f7269e4a85d7b0a57f82bcc3a69e9879e0eac3c2"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-attach-init-p2-v2-review01/reader-receipt.json": {
+      "bytes": 92734,
+      "sha256": "3e98f201a9b227d19e4d6a46f3e3d09561737629ae9e8db8f9569e9572b7631a"
+    }
+  }
+}

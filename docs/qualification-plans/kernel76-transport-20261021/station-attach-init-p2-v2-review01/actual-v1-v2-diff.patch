@@ -1,0 +1,168 @@
+--- p2-v1/attach_init.h
++++ p2-v2/attach_init.h
+@@ -29,6 +29,8 @@
+     HGIC_ATTACH_TX_COMPLETE,
+     HGIC_ATTACH_HW_REGISTER,
+     HGIC_ATTACH_EFFECT_REFUSED,
++    /* Local absence observation; original REGISTER-chain errno is unknown. */
++    HGIC_ATTACH_NETDEV_LOST,
+ };
+ 
+ /* Fixed module-owned cached scalars; no hg/netdev/request/URB pointer escapes.
+@@ -48,6 +50,13 @@
+     unsigned int usb_registered;
+     int first_error;
+     unsigned int first_phase;
++    /* Schema2 additions; netdev_registered above stays historical. No pointer
++     * or held netdev reference: these are coherent lifecycle observations.
++     */
++    unsigned int netdev_present;
++    unsigned int netdev_removed;
++    unsigned int netdev_teardown;
++    unsigned int netdev_removal_expected;
+ };
+ 
+ void hgic_attach_error(int error, unsigned int phase);
+--- p2-v1/hgic_smac/attach_init.c
++++ p2-v2/hgic_smac/attach_init.c
+@@ -220,6 +220,22 @@
+                                   struct ieee80211_chanctx_conf *ctx, u32 changed)
+ {
+     attach_refuse();
++}
++
++static int attach_assign_vif_chanctx(struct ieee80211_hw *hw,
++                                      struct ieee80211_vif *vif,
++                                      struct ieee80211_bss_conf *link_conf,
++                                      struct ieee80211_chanctx_conf *ctx)
++{
++    return attach_refuse();
++}
++
++static void attach_unassign_vif_chanctx(struct ieee80211_hw *hw,
++                                        struct ieee80211_vif *vif,
++                                        struct ieee80211_bss_conf *link_conf,
++                                        struct ieee80211_chanctx_conf *ctx)
++{
++    /* Assignment never succeeds: no device/channel action exists to undo. */
+ }
+ 
+ static const struct ieee80211_ops attach_ops = {
+@@ -238,6 +254,8 @@
+     .add_chanctx = attach_add_chanctx,
+     .remove_chanctx = attach_remove_chanctx,
+     .change_chanctx = attach_change_chanctx,
++    .assign_vif_chanctx = attach_assign_vif_chanctx,
++    .unassign_vif_chanctx = attach_unassign_vif_chanctx,
+     .configure_filter = attach_filter,
+     .sta_add = attach_sta,
+     .sta_remove = attach_sta,
+@@ -356,18 +374,34 @@
+         hgic_attach_error(error, HGIC_ATTACH_HW_REGISTER);
+         return; /* no failed-init automatic unregister/unload/retry */
+     }
++    /* Netdev registration/rollback/removal notifiers are RTNL serialized.
++     * Reacquire it after register_hw so removal cannot pass its unlist stage
++     * while the final publication still observes an older REGISTER snapshot.
++     * No netdev pointer/reference or device action is needed here.
++     */
++    rtnl_lock();
+     spin_lock_irqsave(&attach_lock, flags);
+     attach_receipt.hw_registered = 1;
+     if (!attach_receipt.first_error && attach_receipt.init_state == HGIC_ATTACH_RUNNING &&
+         attach_receipt.proc_registered && attach_receipt.netdev_registered == 1 &&
++        attach_receipt.netdev_present && !attach_receipt.netdev_removed &&
++        !attach_receipt.netdev_teardown && !test_bit(HGICS_STATE_REMOVE, &hg->state) &&
+         !attach_receipt.netdev_up_seen && !test_bit(HGICS_STATE_START, &hg->state) &&
+         hg->radio_off) {
+         attach_receipt.init_state = HGIC_ATTACH_SUCCEEDED;
+         attach_receipt.init_done = 1;
++    } else if (attach_receipt.netdev_teardown || test_bit(HGICS_STATE_REMOVE, &hg->state)) {
++        attach_error_locked(-ECANCELED, HGIC_ATTACH_INIT);
++    } else if (!attach_receipt.netdev_present || attach_receipt.netdev_removed) {
++        /* Local missing-device condition, NOT the unavailable errno from a
++         * later REGISTER notifier or automatic-interface creation failure.
++         */
++        attach_error_locked(-ENODEV, HGIC_ATTACH_NETDEV_LOST);
+     } else {
+         attach_error_locked(-EPROTO, HGIC_ATTACH_INIT);
+     }
+     spin_unlock_irqrestore(&attach_lock, flags);
++    rtnl_unlock();
+ }
+ 
+ static void attach_probe_post(void *priv)
+@@ -399,6 +433,8 @@
+     set_bit(HGICS_STATE_REMOVE, &hg->state);
+     clear_bit(HGICS_STATE_START, &hg->state);
+     spin_lock_irqsave(&attach_lock, flags);
++    /* Identifies expected core-removal notifications only; not P4 retirement. */
++    attach_receipt.netdev_teardown = 1;
+     if (attach_receipt.init_state == HGIC_ATTACH_NOT_STARTED ||
+         attach_receipt.init_state == HGIC_ATTACH_RUNNING)
+         attach_error_locked(-ECANCELED, HGIC_ATTACH_INIT);
+@@ -538,6 +574,25 @@
+             attach_error_locked(error, HGIC_ATTACH_HW_REGISTER);
+         } else {
+             attach_receipt.netdev_registered = 1;
++            attach_receipt.netdev_present = 1;
++        }
++    } else if (event == NETDEV_UNREGISTER || event == NETDEV_PRE_UNINIT) {
++        /* Both rollback and ordinary removal can follow REGISTER. Keep the
++         * historical milestone, but never infer surviving presence from it.
++         * Repeated UNREGISTER/PRE_UNINIT notifications remain idempotent.
++        */
++        attach_receipt.netdev_present = 0;
++        if (!attach_receipt.netdev_removed) {
++            attach_receipt.netdev_removed = 1;
++            attach_receipt.netdev_removal_expected = attach_receipt.netdev_teardown;
++        }
++        if (!attach_receipt.netdev_removal_expected) {
++            /* The notifier does not expose the original registration errno.
++             * Record only the observed local loss, not a guessed cause.
++             * Returning NOTIFY_DONE does not obstruct the ongoing removal.
++             * Later teardown cannot reclassify the first unexpected removal.
++             */
++            attach_error_locked(-ENODEV, HGIC_ATTACH_NETDEV_LOST);
+         }
+     } else if (event == NETDEV_UP) {
+         attach_receipt.netdev_up_seen = 1;
+--- p2-v1/hgic_smac/attach_status.c
++++ p2-v2/hgic_smac/attach_status.c
+@@ -11,7 +11,7 @@
+ {
+     struct hgic_attach_receipt r;
+     hgic_attach_snapshot(&r);
+-    seq_puts(seq, "policy=attach-init-p2-source01 schema=1\n");
++    seq_puts(seq, "policy=attach-init-p2-v2-source01 schema=2\n");
+     seq_printf(seq, "generation=%u init=%u queued=%u starts=%u done=%u fwinfo=%u\n",
+                r.generation, r.init_state, r.init_queued, r.init_starts,
+                r.init_done, r.fwinfo_commands);
+@@ -19,6 +19,10 @@
+                "netdev_up_seen=%u proc_registered=%u usb_registered=%u\n",
+                r.first_error, r.first_phase, r.hw_registered, r.netdev_registered,
+                r.netdev_up_seen, r.proc_registered, r.usb_registered);
++    seq_printf(seq, "netdev_present=%u netdev_removed=%u netdev_teardown=%u "
++               "netdev_removal_expected=%u\n",
++               r.netdev_present, r.netdev_removed, r.netdev_teardown,
++               r.netdev_removal_expected);
+     return 0;
+ }
+ 
+--- p2-v1/utils/fwctrl.c
++++ p2-v2/utils/fwctrl.c
+@@ -240,6 +240,14 @@
+                     hgic_fwctrl_bad_receipt(ctrl);
+                     goto unlock;
+                 }
++                /* A valid associated signed failure is observed here, before
++                 * publishing the response/waking its waiter. Preserve the
++                 * first response and earlier error; do not call bad_receipt
++                 * or copy negative-response payload. Lock order is the
++                 * existing FWCTRL lock -> attach-receipt lock.
++                 */
++                if (status < 0)
++                    hgic_attach_error(status, HGIC_ATTACH_COMMAND);
+             }
+             resp->skb = skb;
+             resp->done = true;

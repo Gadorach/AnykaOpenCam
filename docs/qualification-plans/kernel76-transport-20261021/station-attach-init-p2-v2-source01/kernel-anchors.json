@@ -1,0 +1,86 @@
+{
+  "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/net/mac80211/main.c": {
+    "bytes": 52239,
+    "sha256": "38047a679e48375f6d8cae18b6b2746d89dac38cde4ee62602ed3e56ca957e74",
+    "excerpts": [
+      {
+        "start_line": 803,
+        "end_line": 832,
+        "text": "\t\t    !ops->configure_filter || !ops->wake_tx_queue))\n\t\treturn NULL;\n\n\tif (WARN_ON(ops->sta_state && (ops->sta_add || ops->sta_remove)))\n\t\treturn NULL;\n\n\tif (WARN_ON(!!ops->link_info_changed != !!ops->vif_cfg_changed ||\n\t\t    (ops->link_info_changed && ops->bss_info_changed)))\n\t\treturn NULL;\n\n\t/* check all or no channel context operations exist */\n\tif (ops->add_chanctx == ieee80211_emulate_add_chanctx &&\n\t    ops->remove_chanctx == ieee80211_emulate_remove_chanctx &&\n\t    ops->change_chanctx == ieee80211_emulate_change_chanctx) {\n\t\tif (WARN_ON(ops->assign_vif_chanctx ||\n\t\t\t    ops->unassign_vif_chanctx))\n\t\t\treturn NULL;\n\t\temulate_chanctx = true;\n\t} else {\n\t\tif (WARN_ON(ops->add_chanctx == ieee80211_emulate_add_chanctx ||\n\t\t\t    ops->remove_chanctx == ieee80211_emulate_remove_chanctx ||\n\t\t\t    ops->change_chanctx == ieee80211_emulate_change_chanctx))\n\t\t\treturn NULL;\n\t\tif (WARN_ON(!ops->add_chanctx ||\n\t\t\t    !ops->remove_chanctx ||\n\t\t\t    !ops->change_chanctx ||\n\t\t\t    !ops->assign_vif_chanctx ||\n\t\t\t    !ops->unassign_vif_chanctx))\n\t\t\treturn NULL;\n\t\temulate_chanctx = false;\n",
+        "sha256": "54f85337ee793606b25bd77fd9a522f949e931d2d32dd9c2bdae8e32f855fdcd"
+      },
+      {
+        "start_line": 1595,
+        "end_line": 1636,
+        "text": "\tresult = wiphy_register(local->hw.wiphy);\n\tif (result < 0)\n\t\tgoto fail_wiphy_register;\n\n\tdebugfs_hw_add(local);\n\trate_control_add_debugfs(local);\n\n\tieee80211_check_wbrf_support(local);\n\n\trtnl_lock();\n\twiphy_lock(hw->wiphy);\n\n\t/* add one default STA interface if supported */\n\tif (local->hw.wiphy->interface_modes & BIT(NL80211_IFTYPE_STATION) &&\n\t    !ieee80211_hw_check(hw, NO_AUTO_VIF)) {\n\t\tstruct vif_params params = {0};\n\n\t\tresult = ieee80211_if_add(local, \"wlan%d\", NET_NAME_ENUM, NULL,\n\t\t\t\t\t  NL80211_IFTYPE_STATION, &params);\n\t\tif (result)\n\t\t\twiphy_warn(local->hw.wiphy,\n\t\t\t\t   \"Failed to add default virtual iface\\n\");\n\t}\n\n\twiphy_unlock(hw->wiphy);\n\trtnl_unlock();\n\n#ifdef CONFIG_INET\n\tlocal->ifa_notifier.notifier_call = ieee80211_ifa_changed;\n\tresult = register_inetaddr_notifier(&local->ifa_notifier);\n\tif (result)\n\t\tgoto fail_ifa;\n#endif\n\n#if IS_ENABLED(CONFIG_IPV6)\n\tlocal->ifa6_notifier.notifier_call = ieee80211_ifa6_changed;\n\tresult = register_inet6addr_notifier(&local->ifa6_notifier);\n\tif (result)\n\t\tgoto fail_ifa6;\n#endif\n\n\treturn 0;\n",
+        "sha256": "4273303e344b4ca9852fb410bdf5cb8e3f005968f9b2f36d7bb7297243f36990"
+      }
+    ]
+  },
+  "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/include/net/mac80211.h": {
+    "bytes": 313658,
+    "sha256": "43b4be700a0aa3d5b4e5ac3483db02d2506ba637e2686343b053a1d05949067f",
+    "excerpts": [
+      {
+        "start_line": 4763,
+        "end_line": 4777,
+        "text": "\tint (*add_chanctx)(struct ieee80211_hw *hw,\n\t\t\t   struct ieee80211_chanctx_conf *ctx);\n\tvoid (*remove_chanctx)(struct ieee80211_hw *hw,\n\t\t\t       struct ieee80211_chanctx_conf *ctx);\n\tvoid (*change_chanctx)(struct ieee80211_hw *hw,\n\t\t\t       struct ieee80211_chanctx_conf *ctx,\n\t\t\t       u32 changed);\n\tint (*assign_vif_chanctx)(struct ieee80211_hw *hw,\n\t\t\t\t  struct ieee80211_vif *vif,\n\t\t\t\t  struct ieee80211_bss_conf *link_conf,\n\t\t\t\t  struct ieee80211_chanctx_conf *ctx);\n\tvoid (*unassign_vif_chanctx)(struct ieee80211_hw *hw,\n\t\t\t\t     struct ieee80211_vif *vif,\n\t\t\t\t     struct ieee80211_bss_conf *link_conf,\n\t\t\t\t     struct ieee80211_chanctx_conf *ctx);\n",
+        "sha256": "17f73f925f7d3f0af62c0767b02e72f3f60e38e3a4c47cab183de09e01153e2f"
+      }
+    ]
+  },
+  "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/net/core/dev.c": {
+    "bytes": 344485,
+    "sha256": "83a1a83bdf7a979b0aa27170272748c5a71070ad52227243a8f391008ebed80c",
+    "excerpts": [
+      {
+        "start_line": 11401,
+        "end_line": 11410,
+        "text": "\t/* Notify protocols, that a new device appeared. */\n\tnetdev_lock_ops(dev);\n\tret = call_netdevice_notifiers(NETDEV_REGISTER, dev);\n\tnetdev_unlock_ops(dev);\n\tret = notifier_to_errno(ret);\n\tif (ret) {\n\t\t/* Expect explicit free_netdev() on failure */\n\t\tdev->needs_free_netdev = false;\n\t\tunregister_netdevice_queue(dev, NULL);\n\t\tgoto out;\n",
+        "sha256": "8eb4ced25362fe0883c1ff9369c5688ad79d44865c50746a60e216b0b62b43e2"
+      },
+      {
+        "start_line": 11422,
+        "end_line": 11430,
+        "text": "err_uninit_notify:\n\tcall_netdevice_notifiers(NETDEV_PRE_UNINIT, dev);\nerr_ifindex_release:\n\tdev_index_release(net, dev->ifindex);\nerr_free_pcpu:\n\tnetdev_do_free_pcpu_stats(dev);\nerr_uninit:\n\tif (dev->netdev_ops->ndo_uninit)\n\t\tdev->netdev_ops->ndo_uninit(dev);\n",
+        "sha256": "b508b335ee16308b04c63667e6dff63ed59eef01ed4389487ac8ee53fa7ba982"
+      },
+      {
+        "start_line": 12280,
+        "end_line": 12290,
+        "text": "void unregister_netdevice_many_notify(struct list_head *head,\n\t\t\t\t      u32 portid, const struct nlmsghdr *nlh)\n{\n\tstruct net_device *dev, *tmp;\n\tLIST_HEAD(close_head);\n\tint cnt = 0;\n\n\tBUG_ON(dev_boot_phase);\n\tASSERT_RTNL();\n\n\tif (list_empty(head))\n",
+        "sha256": "5fa6c4e8fc367c834bed9b0b7c2e0ced1ed097c9451eb6b2c9f2f73043d946a6"
+      },
+      {
+        "start_line": 12328,
+        "end_line": 12376,
+        "text": "\tlist_for_each_entry(dev, head, unreg_list) {\n\t\t/* And unlink it from device chain. */\n\t\tunlist_netdevice(dev);\n\t\tnetdev_lock(dev);\n\t\tWRITE_ONCE(dev->reg_state, NETREG_UNREGISTERING);\n\t\tnetdev_unlock(dev);\n\t}\n\tflush_all_backlogs();\n\n\tsynchronize_net();\n\n\tlist_for_each_entry(dev, head, unreg_list) {\n\t\tstruct sk_buff *skb = NULL;\n\n\t\t/* Shutdown queueing discipline. */\n\t\tnetdev_lock_ops(dev);\n\t\tdev_shutdown(dev);\n\t\tdev_tcx_uninstall(dev);\n\t\tdev_xdp_uninstall(dev);\n\t\tdev_memory_provider_uninstall(dev);\n\t\tnetdev_unlock_ops(dev);\n\t\tbpf_dev_bound_netdev_unregister(dev);\n\n\t\tnetdev_offload_xstats_disable_all(dev);\n\n\t\t/* Notify protocols, that we are about to destroy\n\t\t * this device. They should clean all the things.\n\t\t */\n\t\tcall_netdevice_notifiers(NETDEV_UNREGISTER, dev);\n\n\t\tif (!(dev->rtnl_link_ops && dev->rtnl_link_initializing))\n\t\t\tskb = rtmsg_ifinfo_build_skb(RTM_DELLINK, dev, ~0U, 0,\n\t\t\t\t\t\t     GFP_KERNEL, NULL, 0,\n\t\t\t\t\t\t     portid, nlh);\n\n\t\t/*\n\t\t *\tFlush the unicast and multicast chains\n\t\t */\n\t\tdev_uc_flush(dev);\n\t\tdev_mc_flush(dev);\n\n\t\tnetdev_name_node_alt_flush(dev);\n\t\tnetdev_name_node_free(dev->name_node);\n\n\t\tnetdev_rss_contexts_free(dev);\n\n\t\tcall_netdevice_notifiers(NETDEV_PRE_UNINIT, dev);\n\n\t\tif (dev->netdev_ops->ndo_uninit)\n",
+        "sha256": "e6bce58f6d23115841e7daae1bdfa7847046dcbfea0a4d55163f819efbd0568d"
+      }
+    ]
+  },
+  "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/net/mac80211/iface.c": {
+    "bytes": 69125,
+    "sha256": "461e696280b214723762d85aad60641d9792f57d72a8f1f3c08c90f724aaec6f",
+    "excerpts": [
+      {
+        "start_line": 2376,
+        "end_line": 2390,
+        "text": "\t\tret = cfg80211_register_netdevice(ndev);\n\t\tif (ret) {\n\t\t\tfree_netdev(ndev);\n\t\t\treturn ret;\n\t\t}\n\t}\n\n\tmutex_lock(&local->iflist_mtx);\n\tlist_add_tail_rcu(&sdata->list, &local->interfaces);\n\tmutex_unlock(&local->iflist_mtx);\n\n\tif (new_wdev)\n\t\t*new_wdev = &sdata->wdev;\n\n\treturn 0;\n",
+        "sha256": "e72dc46acd5e4c9f6c8430ce5dd68e17911268f5ea86cb77d6bbe37c9e1ad5fc"
+      },
+      {
+        "start_line": 2393,
+        "end_line": 2407,
+        "text": "void ieee80211_if_remove(struct ieee80211_sub_if_data *sdata)\n{\n\tASSERT_RTNL();\n\tlockdep_assert_wiphy(sdata->local->hw.wiphy);\n\n\tmutex_lock(&sdata->local->iflist_mtx);\n\tlist_del_rcu(&sdata->list);\n\tmutex_unlock(&sdata->local->iflist_mtx);\n\n\tif (sdata->vif.txq)\n\t\tieee80211_txq_purge(sdata->local, to_txq_info(sdata->vif.txq));\n\n\tsynchronize_rcu();\n\n\tcfg80211_unregister_wdev(&sdata->wdev);\n",
+        "sha256": "d4ec7c1d9af96994c972d26632359a94907870d61800115f5dba0564f961b734"
+      },
+      {
+        "start_line": 2422,
+        "end_line": 2427,
+        "text": "void ieee80211_remove_interfaces(struct ieee80211_local *local)\n{\n\tstruct ieee80211_sub_if_data *sdata, *tmp;\n\tLIST_HEAD(unreg_list);\n\n\tASSERT_RTNL();\n",
+        "sha256": "6e66e13952961a1b9e42fce9f941f0fcefb1d6863c37df2385f7af17c39c74cd"
+      }
+    ]
+  }
+}
