@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-22T19:15:27.605728+00:00",
+  "method": "Read only new module text; ast.parse then in-memory compile(text, relative_source_path, 'exec', dont_inherit=True, optimize=0); discard unexecuted code object. AST metadata inspection only, no candidate imports/calls/eval/exec, no transcript inputs or fixtures.",
+  "command_form": "python3 -B - <<'PY' ... standard-library source-text AST/compile inspection ... PY",
+  "python": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+  "source": "apps/qualification/encoder-query77-cold-context-v2/cold_context.py",
+  "bytes": 4019,
+  "sha256": "17986670452b756b16c7bc5c3b1ec3989447ded3369f7e23008b8ab0743fb558",
+  "lines": 98,
+  "ast_parse": "PASS",
+  "in_memory_compile": "PASS",
+  "new_Python_units": 1,
+  "records_count_from_AST": 19,
+  "largest_record_literal_bytes_from_AST": 54,
+  "imports_from_AST": ["dataclasses", "enum"],
+  "top_level_functions_from_AST": ["classify_cold_context"],
+  "classes_from_AST": ["Classification", "ErrorCode", "ColdContextError", "TranscriptFacts"],
+  "candidate_import_or_call_or_code_object_execution": false,
+  "pyc_or_code_object_serialized": false,
+  "source_import_dependencies_resolved_or_executed": false,
+  "fixtures_synthetic_traces_generators_tests_or_examples": false,
+  "not_runtime_API_or_independent_review_acceptance": true
+}

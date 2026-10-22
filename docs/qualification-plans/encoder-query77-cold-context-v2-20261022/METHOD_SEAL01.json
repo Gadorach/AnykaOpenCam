@@ -1,0 +1,108 @@
+{
+  "utc": "2026-10-22T19:17:21.733588+00:00",
+  "disposition": "ONE_UNREVIEWED_EXACT_OBSERVED_PROFILE_PURE_SOURCE_CANDIDATE",
+  "scope": "C2b v2 only; exact public 19-record grammar, offline byte facts NOT_ADMISSION; no controller integration or native recipe",
+  "owned_paths_only": [
+    "apps/qualification/encoder-query77-cold-context-v2/",
+    "docs/qualification-plans/encoder-query77-cold-context-v2-20261022/"
+  ],
+  "precode_contract_written_first": true,
+  "normative_public_spec": {
+    "path": "docs/qualification-plans/encoder-query77-cold-grammar-20261022/OBSERVED_PROFILE.md",
+    "bytes": 7076,
+    "sha256": "daff4d31fcb034354df154fd0c5233824738150ee84ab59f9b862bf0f8c85437",
+    "parent_private_layout_check_inherited_not_author_reproduced": true,
+    "no_author_private_provenance_capture_or_cited_evidence_access": true
+  },
+  "input_manifest": "INPUT_PINS01.tsv",
+  "before_utc": "2026-10-22T19:11:18.288113+00:00",
+  "before_after_contract_before_module": true,
+  "after_utc": "2026-10-22T19:17:21.733588+00:00",
+  "input_count": 18,
+  "unchanged_count": 18,
+  "aggregate_format": "sorted workspace-relative UTF-8 path + NUL + raw SHA256 digest bytes",
+  "input_aggregate_before": "df3343a2a3ce1735f2fcd4b80983613fc61f9ad0aad691050b11240f67ced797",
+  "input_aggregate_after": "df3343a2a3ce1735f2fcd4b80983613fc61f9ad0aad691050b11240f67ced797",
+  "input_changes_within_v2_window": [],
+  "inherited_context_differences_since_original_block": {
+    "count": 3,
+    "paths": ["AGENTS.md", "docs/plan/camera-foundation/00-INDEX.md", "docs/plan/camera-foundation/EXECUTION_TASKS_20261021.md"],
+    "before_original_and_v2_pins_recorded_in": "PROVENANCE.md",
+    "not_authored_here_or_rebased_into_original_manifest": true
+  },
+  "all_inherited_noncontext_pins_and_five_sealed_block_outputs_match": true,
+  "original_block_method_seal_pin": {
+    "bytes": 4119,
+    "sha256": "b63a1185a26cf684c12d358cae56c06828cc2771170517650610aa2e384895ed"
+  },
+  "method": "Dedicated public source/spec reads, author static literal/branch/callsite inspection, one HOST AST parse and in-memory syntax compilation of new text only, then static public input and owned-output hashes. No classifier input was built or supplied.",
+  "HOST_syntax": {
+    "utc": "2026-10-22T19:15:27.605728+00:00",
+    "new_Python_units": 1,
+    "lines": 98,
+    "ast_parse": "PASS",
+    "in_memory_compile": "PASS",
+    "compiler": "Python 3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+    "exact_command": "SYNTAX_METHOD.md",
+    "receipt": "SYNTAX_STATUS01.json",
+    "code_object_discarded_without_execution_or_serialization": true,
+    "pyc_written": false,
+    "candidate_import_call_runtime_or_independent_review_acceptance": false
+  },
+  "outputs_excluding_this_seal": {
+    "apps/qualification/encoder-query77-cold-context-v2/cold_context.py": {
+      "bytes": 4019,
+      "sha256": "17986670452b756b16c7bc5c3b1ec3989447ded3369f7e23008b8ab0743fb558"
+    },
+    "apps/qualification/encoder-query77-cold-context-v2/README.md": {
+      "bytes": 4950,
+      "sha256": "418189dc12dd55edd4994a48ba92a61d04144e7d95c681156f3d24fd7353ac1c"
+    },
+    "docs/qualification-plans/encoder-query77-cold-context-v2-20261022/BUILD_RESULT.md": {
+      "bytes": 2103,
+      "sha256": "57b8df709cf056ec83f71db46acf9512a58b1517c3a9030ea3e1a91b9ca726a2"
+    },
+    "docs/qualification-plans/encoder-query77-cold-context-v2-20261022/CALLSITE_CLOSURE.md": {
+      "bytes": 2305,
+      "sha256": "0f20fc7bd45bd5144c729c5bd9bbe69e60011364cbc34173659caad7829ee5d6"
+    },
+    "docs/qualification-plans/encoder-query77-cold-context-v2-20261022/CONTRACT.md": {
+      "bytes": 5479,
+      "sha256": "de280219506efa79089797097f9b7ccf62a6adfea508a7ea178c7fb3edfe908c"
+    },
+    "docs/qualification-plans/encoder-query77-cold-context-v2-20261022/INPUT_PINS01.tsv": {
+      "bytes": 2540,
+      "sha256": "666cdeb07ae7da4de4c8153d35e13cdbccabf7fa2f4dc259972fadc10d5fb7ec"
+    },
+    "docs/qualification-plans/encoder-query77-cold-context-v2-20261022/PROVENANCE.md": {
+      "bytes": 3394,
+      "sha256": "5a7f3ff7439ec2edca5bd1949eac91865103713a1113bfb0c484ce197841a0a0"
+    },
+    "docs/qualification-plans/encoder-query77-cold-context-v2-20261022/STATIC_INSPECTION.md": {
+      "bytes": 5476,
+      "sha256": "122385df3f49640dc9ad4809a3fd32b4906fda5eebbc4f6d5ad33b8835645f97"
+    },
+    "docs/qualification-plans/encoder-query77-cold-context-v2-20261022/SYNTAX_METHOD.md": {
+      "bytes": 2597,
+      "sha256": "5fc28d665b77f8e8be8dcb64a7dea2846f1ad7deab7ab3f62510ee968c8a2e8a"
+    },
+    "docs/qualification-plans/encoder-query77-cold-context-v2-20261022/SYNTAX_STATUS01.json": {
+      "bytes": 1348,
+      "sha256": "c8d23d80bbed6d255fcd701339f39569eda31f83bd55e9737fcd7f7d71e6406e"
+    }
+  },
+  "license": "GPL-2.0-only SPDX on module; upstream notices unchanged, no global project license or publication grant",
+  "no_assembled_transcript_golden_input_fixture_or_replay": true,
+  "candidate_helper_library_generator_test_client_CLI_code_object_import_or_execution": false,
+  "fixtures_synthetic_traces_or_tests": false,
+  "actual_private_raw_HOLD_control_capture_current_state_proc_dev_serial_UART_RPC_network_device_or_process_operations": false,
+  "shell_scope": "Only permitted static public hashing and new-text HOST syntax; no process inventory or control",
+  "Git_index_AGENTS_central_plan_prior_source_review_model_provider_safeguard_changes": false,
+  "original_radio_reset_HOLDs_or_failed_controller_changed_relabelled_retried": false,
+  "source_API_independent_acceptance_or_controller_adoption": false,
+  "native_admission_current_owner_catch_stable_held_or_physical_readiness_claim": false,
+  "allocation_caps_or_memory_budget_changed": false,
+  "policy_refusals_or_tool_errors": [],
+  "independent_exact_grammar_API_review_required": true,
+  "automatic_import_call_test_next_worker_native_or_physical_queue": false
+}

@@ -90,8 +90,9 @@ C2a fixed-public-input validation, now independently source-sufficient with one
 parent offline public-artifact call PASS (25 inputs, not native admission).
 C2b stopped before code on missing public grammar. Parent offline historical
 inspection supplied a privacy-reviewed symbolic exact-profile grammar; fresh
-cold-context-v2 source work is pure and bounded, with no private/current-state/
-serial/RPC/target interface or candidate execution. Original block/parser/HOLDs
+cold-context-v2 source is delivered AST/syntax-only and under independent review,
+pure and bounded, with no private/current-state/serial/RPC/target interface or
+candidate execution. Original block/parser/HOLDs
 remain frozen. No
 target interface, executable native recipe, capture, staging, boot or query is
 selected. Staging lacks an admitted watchdog receiver and any later manual-OFF

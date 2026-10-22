@@ -134,9 +134,11 @@ Disposition/one-call receipt in inputs docs. C2b stopped before code on missing
 complete public grammar;11 inputs/five outputs parent-verified. Parent separately
 inspected saved historical cold evidence offline, retaining all raw/provenance
 privately, and supplied a symbolic19-record exact-software-profile grammar (not
-current custody/quiet/catch proof). One author owns fresh cold-context-v2 pure
-classifier source/docs; original block/old parser/HOLDs frozen, no sender/serial/
-RPC/capture/current-state/target interface or candidate execution. Staging guard is
+current custody/quiet/catch proof). Cold-context-v2 pure classifier delivered:
+98 lines/4019B, HOST AST/syntax only, never imported/called;18 inputs/ten outputs
+parent-verified. One independent reviewer owns new cold-context-v2-review docs,
+no author. Original block/old parser/HOLDs frozen; no sender/serial/RPC/capture/
+current-state/target interface or candidate execution. Staging guard is
 unavailable on the inspected route; future manual-OFF handoff needs separate review
 and actual readiness. No physical request or transfer/hardware operation is active.
 Query77

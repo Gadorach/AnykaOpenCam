@@ -71,9 +71,12 @@ Raw/provenance remain private; public cold-grammar OBSERVED_PROFILE.md provides
 one symbolic19-record software profile, SHA
 `daff4d31fcb034354df154fd0c5233824738150ee84ab59f9b862bf0f8c85437`.
 It does not establish all boot variants, actual ON/current owner/quiet/catch/clock.
-One author owns fresh cold-context-v2 pure classifier source/docs; no candidate
-call/sender/serial/RPC/capture/current-state/target interface. Blocked v1/oldreset
-parser/original HOLDs remain unchanged; fresh source still needs independent review.
+Cold-context-v2 source delivered:98 lines/4019B, module SHA
+`17986670452b756b16c7bc5c3b1ec3989447ded3369f7e23008b8ab0743fb558`.
+HOST AST/syntax only;18 inputs/ten outputs parent-verified. Independent exact-
+grammar/API review is active, no author. No candidate call/sender/serial/RPC/
+capture/current-state/target interface. Blocked v1/oldreset parser/original HOLDs
+unchanged; fresh source remains unaccepted pending review.
 No executable native recipe, capture/staging/boot/query or user physical action
 selected. Last target observation remains original held U-Boot12:12UTC; no fresh
 target/recorder/owner/expiry status inherited. Both HOLDs stay untouched. Query77
