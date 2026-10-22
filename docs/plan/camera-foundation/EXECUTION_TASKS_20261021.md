@@ -1,5 +1,15 @@
 # Active execution ledger — remaining foundation work
 
+**Watchdog-owner v2 W1–W3 correction delivered; re-review selected:** actual
+one-shot sealed10s session, zero valid NEXT outputs before early refusals and
+uncertainty-first/no-effect held-loan BUSY branch implemented. HOST/ARM18 commands
+PASS, two real changed units/platform compiled and eight unchanged objects reused
+from sealed v1build04 with input/dependency/tool provenance.1,213 prior custody
+pins unchanged. Source pin
+`e511920a5c4cc53eac99d4d56e1b50e547c726764b790dbc881aa16ef94c7d8b`.
+Reviewer owns new watchdog-owner-v2-review docs only; no source adoption yet,
+tests, provider/RTSP integration, native or full-image build. Both HOLDs unchanged.
+
 **Watchdog-owner focused review: CORRECTIONS REQUIRED:** actual build04 source
 allows repeated memory initialization to renew10s budget/accounting, leaves early
 NEXT packet/key outputs populated, and rearms/queries before rejecting a held CPU

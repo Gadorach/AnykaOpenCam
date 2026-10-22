@@ -70,9 +70,11 @@ Persistent encoder-FD custody v2 is delivered, HOST/ARM18-command compile PASS;
 parent static/source-custody disposition preserves it as compile-only candidate.
 Single-owned watchdog v1/build04 compiled HOST/ARM26 commands, but focused review
 requires W1 fixed-session renewal, W2 early NEXT output-zero and W3 no-effect
-held-loan BUSY corrections. V1/review frozen; one worker owns fresh
-`apps/rtsp-auth/qc07f-watchdog-owner-v2/` for only those corrections, no adoption.
-Review: `docs/qualification-plans/qc07f-watchdog-owner-review-20261022/REVIEW.md`.
+held-loan BUSY corrections. Fresh `apps/rtsp-auth/qc07f-watchdog-owner-v2/` is
+delivered: HOST/ARM18 commands PASS, eight unchanged objects reused with provenance.
+V1/v2 stay frozen; one reviewer owns fresh watchdog-owner-v2-review docs for focused
+correction/source/reuse review before adoption. Original findings:
+`docs/qualification-plans/qc07f-watchdog-owner-review-20261022/REVIEW.md`.
 Frozen RTSP glue/FD custody stay separate; current kernel/image/source/build01 immutable.
 Watchdog ownership, failed-next retention/backing/provisioning/owned listener remain
 blockers. No new main or native memory-fit claim.
