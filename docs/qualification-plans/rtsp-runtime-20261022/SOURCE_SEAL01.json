@@ -1,0 +1,50 @@
+{
+  "UTC": "2026-10-22T11:43:16.025022+00:00",
+  "scope": "SOURCE / COMPILE / RELOCATABLE LINK ONLY; NO EXECUTION OR NATIVE ADOPTION",
+  "source_tree_sha256": "35712f25616610e4e6026436d3a239e9d7020c420ae7fe3de4991a3aa7734288",
+  "source_tree_hash_method": "sorted workspace-relative UTF-8 path + NUL + raw SHA256 bytes",
+  "source_files": {
+    "apps/rtsp-auth/qc07f-runtime-candidate/README.md": {
+      "bytes": 3411,
+      "sha256": "7a2a8cb4bde23dd9d141ac22f165c439b4fe72f609035239794d8bdcd3a46ba9"
+    },
+    "apps/rtsp-auth/qc07f-runtime-candidate/build.py": {
+      "bytes": 13568,
+      "sha256": "1b35cc07ff878ea6184393cbb7d99980f9a7ed225feafb37ede1accb97bc402d"
+    },
+    "apps/rtsp-auth/qc07f-runtime-candidate/rtsp_native_source.c": {
+      "bytes": 5136,
+      "sha256": "9854a2da08302996fdcb569175e8423a2b1a0cc1dd95cf1e8e20d8419b297b62"
+    },
+    "apps/rtsp-auth/qc07f-runtime-candidate/rtsp_native_source.h": {
+      "bytes": 1486,
+      "sha256": "a0ce36342ea9413c48be44e0be65baed24458f9a8255c87a00243259776a3da5"
+    }
+  },
+  "report_and_build_receipts": {
+    "docs/qualification-plans/rtsp-runtime-20261022/CANDIDATE_REPORT.md": {
+      "bytes": 13612,
+      "sha256": "5aa1a89ed35fa8d28206f654607d9b68adfe87fbd9d6460c1ff0bf2d37c61186"
+    },
+    "docs/qualification-plans/rtsp-runtime-20261022/runs/build01/REPORT.json": {
+      "bytes": 264624,
+      "sha256": "5fa6ce20565ad59b57aabff34a23664584286ddc3e526b2d0609701640f1fcf6"
+    },
+    "docs/qualification-plans/rtsp-runtime-20261022/runs/build02/REPORT.json": {
+      "bytes": 272149,
+      "sha256": "9fb735deffe7686b6a83dbbeb40f426644f598bc89eb36fc72366c230b307773"
+    }
+  },
+  "final_build": "build02",
+  "all_410_pinned_public_build_inputs_unchanged_at_seal": true,
+  "outputs_executed": false,
+  "tests_executed": false,
+  "private_input_read": false,
+  "target_IO": false,
+  "Git_or_index_changed": false,
+  "native_memory_adoption": "HOLD",
+  "product_complete": false,
+  "G3": false,
+  "G8": false,
+  "next_task": "Specify real preopened owned native provider FD adoption and uncertainty/retirement contracts before a main; retain original memory and release gates."
+}

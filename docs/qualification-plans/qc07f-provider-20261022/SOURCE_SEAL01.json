@@ -1,0 +1,47 @@
+{
+  "UTC": "2026-10-22T11:54:40.865374+00:00",
+  "scope": "SOURCE/COMPILE ONLY: preopened frame FD custody, NOT full provider adoption",
+  "source_tree_sha256": "bcc141c9e57b791d2670b7a45c55c54a33699d2ceb12f4e91d4e0b6fccf49d82",
+  "source_tree_hash_method": "sorted workspace-relative UTF-8 path + NUL + raw SHA256 bytes",
+  "source_files": {
+    "apps/rtsp-auth/qc07f-provider-candidate/README.md": {
+      "bytes": 3287,
+      "sha256": "d111604c8ece2f43310d4b4366efd4bc73425d879c2455ec6434749787c1922d"
+    },
+    "apps/rtsp-auth/qc07f-provider-candidate/build.py": {
+      "bytes": 9437,
+      "sha256": "9d5e208841297c555d19bccd2effe710c9093beaca6fe6b0890c4bf4c42441f0"
+    },
+    "apps/rtsp-auth/qc07f-provider-candidate/frame_fd_custody.c": {
+      "bytes": 3484,
+      "sha256": "d6c4a65939c2f6bde1498eb6622c9487a92757c0d7170bcc90d3137a7cfcf78d"
+    },
+    "apps/rtsp-auth/qc07f-provider-candidate/frame_fd_custody.h": {
+      "bytes": 2887,
+      "sha256": "6dce51456b7588fa46c8605d73d222a57eb320abc1583399a78f4a6ae45365ae"
+    }
+  },
+  "reports": {
+    "docs/qualification-plans/qc07f-provider-20261022/CANDIDATE_REPORT.md": {
+      "bytes": 13832,
+      "sha256": "00b892f30e9aa20b4c3565899ec278668dae72468b245b234811d4d3a916cd13"
+    },
+    "docs/qualification-plans/qc07f-provider-20261022/runs/build01/REPORT.json": {
+      "bytes": 43395,
+      "sha256": "572aad22d5e82a56692175654131e7556f625f46be41e9e344b881585e60fc53"
+    }
+  },
+  "all_29_build_inputs_unchanged": true,
+  "prior_runtime_seal_pinned_files_unchanged": 7,
+  "applied_source_overlays": [],
+  "outputs_executed": false,
+  "tests_executed": false,
+  "target_or_private_IO": false,
+  "Git_or_index_changed": false,
+  "full_provider_adoption": "BLOCKED",
+  "failed_next_retention": "BLOCKED",
+  "native_memory_adoption": "HOLD",
+  "G3": false,
+  "G8": false,
+  "one_next_patch": "Fresh encoder derivative: observational per-open numeric session/reference ownership query, preserving global lifetime ABI and all effect/retirement gates."
+}
