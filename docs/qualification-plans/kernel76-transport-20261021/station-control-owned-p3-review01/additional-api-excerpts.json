@@ -1,0 +1,32 @@
+{
+  "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/net/core/dev.c": {
+    "bytes": 344485,
+    "sha256": "83a1a83bdf7a979b0aa27170272748c5a71070ad52227243a8f391008ebed80c",
+    "excerpts": [
+      {
+        "start_line": 3429,
+        "end_line": 3458,
+        "text": "void dev_kfree_skb_irq_reason(struct sk_buff *skb, enum skb_drop_reason reason)\n{\n\tunsigned long flags;\n\n\tif (unlikely(!skb))\n\t\treturn;\n\n\tif (likely(refcount_read(&skb->users) == 1)) {\n\t\tsmp_rmb();\n\t\trefcount_set(&skb->users, 0);\n\t} else if (likely(!refcount_dec_and_test(&skb->users))) {\n\t\treturn;\n\t}\n\tget_kfree_skb_cb(skb)->reason = reason;\n\tlocal_irq_save(flags);\n\tskb->next = __this_cpu_read(softnet_data.completion_queue);\n\t__this_cpu_write(softnet_data.completion_queue, skb);\n\traise_softirq_irqoff(NET_TX_SOFTIRQ);\n\tlocal_irq_restore(flags);\n}\nEXPORT_SYMBOL(dev_kfree_skb_irq_reason);\n\nvoid dev_kfree_skb_any_reason(struct sk_buff *skb, enum skb_drop_reason reason)\n{\n\tif (in_hardirq() || irqs_disabled())\n\t\tdev_kfree_skb_irq_reason(skb, reason);\n\telse\n\t\tkfree_skb_reason(skb, reason);\n}\nEXPORT_SYMBOL(dev_kfree_skb_any_reason);\n",
+        "sha256": "89bc722a3b42dc776aa9525424f54357ce375ad55990c873ebe503dd94ac1ef3"
+      }
+    ]
+  },
+  "work/lightbulb-camera/foundation-20261011T041148Z/analysis/native-usb76-package01/build/.config": {
+    "bytes": 58853,
+    "sha256": "9e1f37788d3bd8580f2eb031ea2a7d795f4b61e2c1f89e1b91c11f1a87a6499c",
+    "excerpts": [
+      {
+        "start_line": 334,
+        "end_line": 342,
+        "text": "CONFIG_HZ_FIXED=0\nCONFIG_HZ_100=y\n# CONFIG_HZ_200 is not set\n# CONFIG_HZ_250 is not set\n# CONFIG_HZ_300 is not set\n# CONFIG_HZ_500 is not set\n# CONFIG_HZ_1000 is not set\nCONFIG_HZ=100\nCONFIG_AEABI=y\n",
+        "sha256": "85a0ad43145006b9739f0519c7375d3678c99fcd678527a66541e3647c5f88e1"
+      },
+      {
+        "start_line": 499,
+        "end_line": 506,
+        "text": "# end of General architecture-dependent options\n\nCONFIG_RT_MUTEXES=y\nCONFIG_MODULES=y\n# CONFIG_MODULE_FORCE_LOAD is not set\nCONFIG_MODULE_UNLOAD=y\n# CONFIG_MODULE_FORCE_UNLOAD is not set\n# CONFIG_MODULE_UNLOAD_TAINT_TRACKING is not set\n",
+        "sha256": "512c75d6211900524283cc1a69dc9f39b28116497492a5d2f715a89fc62c4e20"
+      }
+    ]
+  }
+}

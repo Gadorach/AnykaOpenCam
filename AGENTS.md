@@ -50,9 +50,11 @@ Parent revised source order: bounded P4a shared-owner candidate at
 `apps/qualification/kernel76-station-owner-lifetime/` has narrow independent static
 SOURCE sufficiency; syntax02 4/4 cited, no runtime/finite-wait proof. Review:
 `STATION76_OWNER_LIFETIME_P4A_REVIEW.md` under transport docs. P3 heap-request/
-deadline candidate delivered at `apps/qualification/kernel76-station-control-owned/`,
-syntax04 5/5 PASS. One independent reviewer owns new P3 review/evidence, checking
-that exact sole-producer/join/poison contract before source adoption. P1/fullP4/P5,
+deadline candidate at `apps/qualification/kernel76-station-control-owned/` has
+narrow independent SOURCE/API sufficiency, syntax04 5/5 cited, no runtime proof.
+One worker owns fresh `apps/qualification/kernel76-station-descriptor-admission/`
+for bounded P4b cached descriptor checks, only source-supported facts before
+allocation/submission; unproven interface/alt facts stay blocked. P1/fullP4/P5,
 tests, ARM/module build and native remain unaccepted; old inputs frozen.
 
 **App integration source:** real v6→RTSP callback glue at

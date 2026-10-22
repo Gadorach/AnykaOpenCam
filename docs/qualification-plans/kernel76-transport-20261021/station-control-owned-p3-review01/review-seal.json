@@ -1,0 +1,56 @@
+{
+  "utc": "2026-10-22T13:38:26.378475+00:00",
+  "argv": [
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-owned-p3-review01/finalize_review.py"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "python": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+  "candidate_seal_sha256": "5d8a96a78e1b6d99f7a16f259d36f0e077644f7e7378c8ecd88b58109add66eb",
+  "p4a_review_seal_sha256": "c677fe73b1e28691365e31383780f12b89b797bafe6baa075f6d7ae366bdc4ff",
+  "source_sha256": "f9865e63c55b09bdd36d6b53ae61acf8dfd4f3b340de5d3409e1a7c31204722e",
+  "public_inputs_unchanged": 817,
+  "disposition": "Narrow SOURCE sufficiency for selected P3 on exact P4a; no concrete correction-required defect identified.",
+  "scope": "No P1 inspection/adoption, candidate/test/compiler/generator/runtime/ARM/module/native/network/private IO or Git/index/source/helper/central-plan changes. All deferred gates remain open; no next queue.",
+  "files": {
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-owned-p3-review01/READER_ATTEMPT01.md": {
+      "bytes": 938,
+      "sha256": "cc36e7df5315a57bd4f4f04687e2307a2409e2693c060b9ad8e6e1afff368f97"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-owned-p3-review01/actual-p4a-p3-diff.patch": {
+      "bytes": 38946,
+      "sha256": "e0f3509214d68a5ed178e827938d53cf3522098885dc9b5280d39a95f2c5c4af"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-owned-p3-review01/additional-api-excerpts.json": {
+      "bytes": 2344,
+      "sha256": "1dd7e04ed313ff9ccaf24a33db78d54c2696ec52624cc808fe0d2608a52efe80"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-owned-p3-review01/finalize_review.py": {
+      "bytes": 3395,
+      "sha256": "83dff5e1e609ef2973af5882bde86da5404c32321bd94e043483aa1344c01c6e"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-owned-p3-review01/input-seal.json": {
+      "bytes": 166072,
+      "sha256": "1eea5b01f91049435833e624caec0b7d0b1418c9d5b365c84a99ca810007a10a"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-owned-p3-review01/public-excerpts.json": {
+      "bytes": 198355,
+      "sha256": "55f4dc9f6208ec19fccc4c7e82bb2d4e671df1528275625ec3e7f165ae92c6d1"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-owned-p3-review01/public-pin-verification.json": {
+      "bytes": 12963,
+      "sha256": "0788cc4fe2add1359b17a9aaf9b251c74ea6aba61441f589f7637016fc35e577"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-owned-p3-review01/read_public_inputs.py": {
+      "bytes": 10407,
+      "sha256": "a6d736a896af7f489440da37c5629c723756f8e324593d9a48f042a2366ccf22"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-control-owned-p3-review01/reader-receipt.json": {
+      "bytes": 166085,
+      "sha256": "7a9948ba1989bf1f860b439310a31d57f47a4da920f00eea49b5d18eb1570f40"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/STATION76_CONTROL_OWNED_P3_REVIEW.md": {
+      "bytes": 19234,
+      "sha256": "022200d4420939821f4533cde2c9dbdd1fd9b3f09d19ae7beef4136fb0bdf377"
+    }
+  }
+}

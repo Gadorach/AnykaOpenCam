@@ -1,5 +1,16 @@
 # Active execution ledger — remaining foundation work
 
+**P3 independent narrow SOURCE/API sufficiency; P4b source subset selected:**
+review identified no concrete correction-required defect in the exact owned
+one-FWINFO paths;132 author/451 prior/204 accepted pins and preserved P4a return
+blocks verified. Review seal
+`c449dee74290c8bdd5d318f71816b83576d31a84a407ab05705092094f94db38`.
+Author syntax5/5 cited, no execution or finite teardown/native proof. Parent selects
+fresh `kernel76-station-descriptor-admission/` for known cached descriptor/topology
+checks before allocation/submission; no guessing unproven interface/alt/config
+counts. Complete P4 accounting/tombstone, P5 and P1 remain unmet; no tests/module/
+image build or hardware queue. Real provider-FD app source lane stays disjoint.
+
 **Watchdog v2 focused review sufficient at W1–W3 SOURCE/API/reuse scope:** no new
 correction-required defect; eight reused objects/dependencies and both archive
 member sets verified. Final1,619 inputs unchanged; author18-command result cited,
