@@ -1,0 +1,295 @@
+{
+  "candidate_seal_sha256": "49e1c0e6209371e4714e4fb1ff5adad4d8cb042014fe4508f2e5257e37f49490",
+  "candidate_sealed_files_verified": 103,
+  "source_files": 72,
+  "source_sha256": "6fc087502ac6d0fe2a1b5988b85404cc81a0d95b0908d0964cfc9fd1686c4dd7",
+  "changed": {
+    "hgic_def.h": {
+      "bytes": 9220,
+      "sha256": "0609a727a8b3dc85d8fd9329825e4878dcd066364e0671cbc0c2d34fed978b48"
+    },
+    "hgic_smac/Makefile": {
+      "bytes": 903,
+      "sha256": "5f81d8601b7e5ff0b8ac8071a67b03175d6baf9b29dc7b2d65433fa824c4fcfa"
+    },
+    "hgic_smac/attach_init.c": {
+      "bytes": 24635,
+      "sha256": "48635884e300d5702914af03cfe6f22f9c619c893942491e5705a54fc6466bcf"
+    },
+    "hgic_smac/attach_status.c": {
+      "bytes": 2200,
+      "sha256": "ba940df79dd7c9e29180e635851c8d3227a709b495ee56cb8fff3a9f2e29e9fc"
+    },
+    "utils/fwctrl.c": {
+      "bytes": 52099,
+      "sha256": "f98c49e46fd676bbe5c691a51553627c2c990e8e281e0da892899f47bfeb0cf5"
+    },
+    "utils/fwctrl.h": {
+      "bytes": 17807,
+      "sha256": "43be59f0879dec5e6a745f98d192702e1824ca69f9ce4627b1e69750a241b1f7"
+    }
+  },
+  "added": {
+    "utils/owner_usb.c": {
+      "bytes": 17895,
+      "sha256": "a7a482522919327132babe6c9302452922ceee21dde827397f0dbd813f2ceab6"
+    }
+  },
+  "unchanged_p2v2": 65,
+  "actual_universal_newline_text_diff_matches_author": true,
+  "frozen_custody_exact_five_seal_union_verified": 338,
+  "accepted_source_pins_verified": 204,
+  "author_contract_fullfile_excerpt_entries_verified": 11,
+  "legacy_if_usb_contracts": "hash/provenance only; not selected active transport",
+  "license": {
+    "bytes": 18092,
+    "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+  },
+  "author_syntax02": {
+    "scope": "HOST x86 changed-unit syntax only; no object/module/ARM build, link, tests or native IO",
+    "commands": [
+      {
+        "argv": [
+          "/usr/bin/clang",
+          "-fsyntax-only",
+          "-std=gnu11",
+          "-nostdinc",
+          "-D__KERNEL__",
+          "-DMODULE",
+          "-DKBUILD_MODNAME=\"hgics_p4a_syntax\"",
+          "-DKBUILD_BASENAME=\"hgics_p4a_syntax\"",
+          "-DCONFIG_HGIC_USB",
+          "-DCONFIG_HGIC_2G",
+          "-Werror=implicit-function-declaration",
+          "-Werror=incompatible-pointer-types",
+          "-Wno-address-of-packed-member",
+          "-Wno-pointer-sign",
+          "-Wno-gnu-variable-sized-type-not-at-end",
+          "-I",
+          "/usr/src/linux-cachyos-lts/arch/x86/include",
+          "-I",
+          "/usr/src/linux-cachyos-lts/arch/x86/include/generated",
+          "-I",
+          "/usr/src/linux-cachyos-lts/include",
+          "-I",
+          "/usr/src/linux-cachyos-lts/arch/x86/include/uapi",
+          "-I",
+          "/usr/src/linux-cachyos-lts/arch/x86/include/generated/uapi",
+          "-I",
+          "/usr/src/linux-cachyos-lts/include/uapi",
+          "-I",
+          "/usr/src/linux-cachyos-lts/include/generated/uapi",
+          "-include",
+          "/usr/src/linux-cachyos-lts/include/linux/compiler-version.h",
+          "-include",
+          "/usr/src/linux-cachyos-lts/include/linux/kconfig.h",
+          "-include",
+          "/usr/src/linux-cachyos-lts/include/linux/compiler_types.h",
+          "-include",
+          "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-owner-lifetime/source/linux6-compat.h",
+          "-MD",
+          "-MF",
+          "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-owner-lifetime-p4a-source01/syntax02/01-headers.d",
+          "-MT",
+          "syntax-only",
+          "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-owner-lifetime/source/hgic_smac/attach_init.c"
+        ],
+        "start_utc": "2026-10-22T12:23:43.089857+00:00",
+        "end_utc": "2026-10-22T12:23:43.780625+00:00",
+        "returncode": 0,
+        "log": "01-hgic_smac-attach_init.c.txt",
+        "log_pin": {
+          "bytes": 6403,
+          "sha256": "7fb27fc89bfd0208421afd5bb7b7b6d1b863730877a2e3097965b0c3b33c5663"
+        }
+      },
+      {
+        "argv": [
+          "/usr/bin/clang",
+          "-fsyntax-only",
+          "-std=gnu11",
+          "-nostdinc",
+          "-D__KERNEL__",
+          "-DMODULE",
+          "-DKBUILD_MODNAME=\"hgics_p4a_syntax\"",
+          "-DKBUILD_BASENAME=\"hgics_p4a_syntax\"",
+          "-DCONFIG_HGIC_USB",
+          "-DCONFIG_HGIC_2G",
+          "-Werror=implicit-function-declaration",
+          "-Werror=incompatible-pointer-types",
+          "-Wno-address-of-packed-member",
+          "-Wno-pointer-sign",
+          "-Wno-gnu-variable-sized-type-not-at-end",
+          "-I",
+          "/usr/src/linux-cachyos-lts/arch/x86/include",
+          "-I",
+          "/usr/src/linux-cachyos-lts/arch/x86/include/generated",
+          "-I",
+          "/usr/src/linux-cachyos-lts/include",
+          "-I",
+          "/usr/src/linux-cachyos-lts/arch/x86/include/uapi",
+          "-I",
+          "/usr/src/linux-cachyos-lts/arch/x86/include/generated/uapi",
+          "-I",
+          "/usr/src/linux-cachyos-lts/include/uapi",
+          "-I",
+          "/usr/src/linux-cachyos-lts/include/generated/uapi",
+          "-include",
+          "/usr/src/linux-cachyos-lts/include/linux/compiler-version.h",
+          "-include",
+          "/usr/src/linux-cachyos-lts/include/linux/kconfig.h",
+          "-include",
+          "/usr/src/linux-cachyos-lts/include/linux/compiler_types.h",
+          "-include",
+          "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-owner-lifetime/source/linux6-compat.h",
+          "-MD",
+          "-MF",
+          "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-owner-lifetime-p4a-source01/syntax02/02-headers.d",
+          "-MT",
+          "syntax-only",
+          "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-owner-lifetime/source/hgic_smac/attach_status.c"
+        ],
+        "start_utc": "2026-10-22T12:23:43.844548+00:00",
+        "end_utc": "2026-10-22T12:23:44.544958+00:00",
+        "returncode": 0,
+        "log": "02-hgic_smac-attach_status.c.txt",
+        "log_pin": {
+          "bytes": 6403,
+          "sha256": "7fb27fc89bfd0208421afd5bb7b7b6d1b863730877a2e3097965b0c3b33c5663"
+        }
+      },
+      {
+        "argv": [
+          "/usr/bin/clang",
+          "-fsyntax-only",
+          "-std=gnu11",
+          "-nostdinc",
+          "-D__KERNEL__",
+          "-DMODULE",
+          "-DKBUILD_MODNAME=\"hgics_p4a_syntax\"",
+          "-DKBUILD_BASENAME=\"hgics_p4a_syntax\"",
+          "-DCONFIG_HGIC_USB",
+          "-DCONFIG_HGIC_2G",
+          "-Werror=implicit-function-declaration",
+          "-Werror=incompatible-pointer-types",
+          "-Wno-address-of-packed-member",
+          "-Wno-pointer-sign",
+          "-Wno-gnu-variable-sized-type-not-at-end",
+          "-I",
+          "/usr/src/linux-cachyos-lts/arch/x86/include",
+          "-I",
+          "/usr/src/linux-cachyos-lts/arch/x86/include/generated",
+          "-I",
+          "/usr/src/linux-cachyos-lts/include",
+          "-I",
+          "/usr/src/linux-cachyos-lts/arch/x86/include/uapi",
+          "-I",
+          "/usr/src/linux-cachyos-lts/arch/x86/include/generated/uapi",
+          "-I",
+          "/usr/src/linux-cachyos-lts/include/uapi",
+          "-I",
+          "/usr/src/linux-cachyos-lts/include/generated/uapi",
+          "-include",
+          "/usr/src/linux-cachyos-lts/include/linux/compiler-version.h",
+          "-include",
+          "/usr/src/linux-cachyos-lts/include/linux/kconfig.h",
+          "-include",
+          "/usr/src/linux-cachyos-lts/include/linux/compiler_types.h",
+          "-include",
+          "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-owner-lifetime/source/linux6-compat.h",
+          "-MD",
+          "-MF",
+          "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-owner-lifetime-p4a-source01/syntax02/03-headers.d",
+          "-MT",
+          "syntax-only",
+          "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-owner-lifetime/source/utils/fwctrl.c"
+        ],
+        "start_utc": "2026-10-22T12:23:44.607102+00:00",
+        "end_utc": "2026-10-22T12:23:45.268123+00:00",
+        "returncode": 0,
+        "log": "03-utils-fwctrl.c.txt",
+        "log_pin": {
+          "bytes": 6403,
+          "sha256": "7fb27fc89bfd0208421afd5bb7b7b6d1b863730877a2e3097965b0c3b33c5663"
+        }
+      },
+      {
+        "argv": [
+          "/usr/bin/clang",
+          "-fsyntax-only",
+          "-std=gnu11",
+          "-nostdinc",
+          "-D__KERNEL__",
+          "-DMODULE",
+          "-DKBUILD_MODNAME=\"hgics_p4a_syntax\"",
+          "-DKBUILD_BASENAME=\"hgics_p4a_syntax\"",
+          "-DCONFIG_HGIC_USB",
+          "-DCONFIG_HGIC_2G",
+          "-Werror=implicit-function-declaration",
+          "-Werror=incompatible-pointer-types",
+          "-Wno-address-of-packed-member",
+          "-Wno-pointer-sign",
+          "-Wno-gnu-variable-sized-type-not-at-end",
+          "-I",
+          "/usr/src/linux-cachyos-lts/arch/x86/include",
+          "-I",
+          "/usr/src/linux-cachyos-lts/arch/x86/include/generated",
+          "-I",
+          "/usr/src/linux-cachyos-lts/include",
+          "-I",
+          "/usr/src/linux-cachyos-lts/arch/x86/include/uapi",
+          "-I",
+          "/usr/src/linux-cachyos-lts/arch/x86/include/generated/uapi",
+          "-I",
+          "/usr/src/linux-cachyos-lts/include/uapi",
+          "-I",
+          "/usr/src/linux-cachyos-lts/include/generated/uapi",
+          "-include",
+          "/usr/src/linux-cachyos-lts/include/linux/compiler-version.h",
+          "-include",
+          "/usr/src/linux-cachyos-lts/include/linux/kconfig.h",
+          "-include",
+          "/usr/src/linux-cachyos-lts/include/linux/compiler_types.h",
+          "-include",
+          "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-owner-lifetime/source/linux6-compat.h",
+          "-MD",
+          "-MF",
+          "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/kernel76-transport-20261021/station-owner-lifetime-p4a-source01/syntax02/04-headers.d",
+          "-MT",
+          "syntax-only",
+          "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/kernel76-station-owner-lifetime/source/utils/owner_usb.c"
+        ],
+        "start_utc": "2026-10-22T12:23:45.324707+00:00",
+        "end_utc": "2026-10-22T12:23:45.955432+00:00",
+        "returncode": 0,
+        "log": "04-utils-owner_usb.c.txt",
+        "log_pin": {
+          "bytes": 6403,
+          "sha256": "7fb27fc89bfd0208421afd5bb7b7b6d1b863730877a2e3097965b0c3b33c5663"
+        }
+      }
+    ],
+    "compiler": {
+      "path": "/usr/bin/clang",
+      "bytes": 124752,
+      "sha256": "583017067c40b0ff0a9b35805d8ac89d5a66fb014221c78ae13a7c21997dd464"
+    },
+    "host_kernel_inputs": {
+      "/usr/src/linux-cachyos-lts/include/generated/utsrelease.h": {
+        "bytes": 44,
+        "sha256": "c63d4909d035441f0627fcab500c9dc39f5ec75a2ebfbe8e3d58e9fb4ef5c1d6"
+      },
+      "/usr/src/linux-cachyos-lts/include/generated/autoconf.h": {
+        "bytes": 357702,
+        "sha256": "ffb3671a9a00de8cec3cade6a1d07512780fd6caa0f2dd31c286f5c1bd05b05d"
+      },
+      "/usr/src/linux-cachyos-lts/.config": {
+        "bytes": 289827,
+        "sha256": "666cd56218342af5b437ccea2767821ed763043f0de84241db0457e56dd38244"
+      }
+    },
+    "same_final_source": true,
+    "reviewer_reran": false,
+    "external_compiler_headers_rehashed": false
+  }
+}

@@ -46,12 +46,13 @@ No further native effect is queued; parent alone hardware.
 ordering corrections; author changed-unit syntax3/3 passed, not runtime confirmation.
 V1/v2/reviews remain frozen; no P1 adoption or composite/native GO. P3 stopped
 before code because request refs cannot protect USB/core owners through STOP/drain.
-Parent revised source order: bounded P4a shared-owner candidate delivered at
-`apps/qualification/kernel76-station-owner-lifetime/`, syntax02 4/4 PASS, no runtime.
-One independent reviewer now owns fresh `STATION76_OWNER_LIFETIME_P4A_REVIEW.md`
-and adjacent review evidence under transport qualification docs. No source GO,
-P3 request implementation, full P4/P5, tests, ARM/module build or hardware;
-all old inputs remain immutable.
+Parent revised source order: bounded P4a shared-owner candidate at
+`apps/qualification/kernel76-station-owner-lifetime/` has narrow independent static
+SOURCE sufficiency; syntax02 4/4 cited, no runtime/finite-wait proof. Review:
+`STATION76_OWNER_LIFETIME_P4A_REVIEW.md` under transport docs. One worker now owns
+fresh `apps/qualification/kernel76-station-control-owned/` for resumed P3 request/
+deadline design+implementation on that exact sole-producer/join/poison contract.
+P1/fullP4/P5, tests, ARM/module build and native remain unaccepted; old inputs frozen.
 
 **App integration source:** real v6→RTSP callback glue at
 `apps/rtsp-auth/qc07f-runtime-candidate/` compiled HOST/ARM (54 commands), not run

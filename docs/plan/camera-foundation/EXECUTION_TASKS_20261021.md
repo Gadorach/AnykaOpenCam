@@ -1,5 +1,16 @@
 # Active execution ledger — remaining foundation work
 
+**P4a independent static SOURCE sufficiency; P3 resumed by explicit selection:**
+review found no correction-required defect in the selected shared-owner prerequisite;
+103 author/338 prior custody/204 accepted pins and final667 reader inputs unchanged.
+Review seal `c677fe73b1e28691365e31383780f12b89b797bafe6baa075f6d7ae366bdc4ff`;
+`STATION76_OWNER_LIFETIME_P4A_REVIEW.md` under transport docs. Author syntax4/4
+cited only; unbounded waits, missing fullP4/P5/IRQ/ARM/native/5s proof remain.
+Parent explicitly selects fresh `kernel76-station-control-owned/` P3 heap-owned
+one-FWINFO request/deadline design+implementation, retaining exact sole ordered TX,
+STOP/work gate, joins and all-slot poison before core/free. No P1 adoption, tests,
+module build/staging or target operation. Prior stopped P3 remains frozen evidence.
+
 **P4a shared-owner SOURCE candidate delivered; independent review selected:**72
 files from frozen P2v2,65 unchanged/six changed/one new selected owner USB unit.
 Fixed16TX/32RX/2560B slots, STOP/work admission, producer joins, all-slot permanent

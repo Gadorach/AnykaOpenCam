@@ -1,0 +1,47 @@
+{
+  "utc": "2026-10-22T12:45:49.016685+00:00",
+  "argv": [
+    "docs/qualification-plans/kernel76-transport-20261021/station-owner-lifetime-p4a-review01/finalize_review.py"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "python": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+  "reader_inputs_revalidated_unchanged": 667,
+  "candidate_seal_sha256": "49e1c0e6209371e4714e4fb1ff5adad4d8cb042014fe4508f2e5257e37f49490",
+  "source_sha256": "6fc087502ac6d0fe2a1b5988b85404cc81a0d95b0908d0964cfc9fd1686c4dd7",
+  "disposition": "Narrow static SOURCE sufficiency for selected shared-owner prerequisite; P3 design may resume only with parent selection and preserved producer/join contract",
+  "scope": "static public read/diff/API/hash only; no compilation/tests, P1 inspection, target/UART/RPC/status/network/private IO or Git/index/source/helper/central-plan edits",
+  "files": {
+    "docs/qualification-plans/kernel76-transport-20261021/STATION76_OWNER_LIFETIME_P4A_REVIEW.md": {
+      "bytes": 18616,
+      "sha256": "fabd6a26871b4ad753dd05818a6a5e28f93a66fa0c28bb3e2a4c24bb135fd393"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-owner-lifetime-p4a-review01/READER_ATTEMPT01.md": {
+      "bytes": 951,
+      "sha256": "d8c90057ba65893ffe8be0efc2663245533ed59418ee35874f68fd3d8218dcbf"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-owner-lifetime-p4a-review01/actual-p2v2-p4a-diff.patch": {
+      "bytes": 28416,
+      "sha256": "7dbdd6393561188119e02b3cbfcd429a13c9bf23488014745bd0fddd901705d8"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-owner-lifetime-p4a-review01/finalize_review.py": {
+      "bytes": 2325,
+      "sha256": "066b5ac8c9764c9cbe17e584743a27c17fab6994d0aaec1809e7521f066d3db5"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-owner-lifetime-p4a-review01/public-excerpts.json": {
+      "bytes": 112280,
+      "sha256": "9af9f0be038cbfad75b4036e03aafbcbdd5a483e553945e67c7c2d5867fbd79b"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-owner-lifetime-p4a-review01/public-pin-verification.json": {
+      "bytes": 11607,
+      "sha256": "f6adec21a1f329c76defd985068d62a4bcaa9376e143c99935e9aa7e9c62abad"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-owner-lifetime-p4a-review01/read_public_inputs.py": {
+      "bytes": 12162,
+      "sha256": "c54f5b5c3ad2ed065024d1ac82bcccb2eb1959841387e663226101918234e7f9"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-owner-lifetime-p4a-review01/reader-receipt.json": {
+      "bytes": 134269,
+      "sha256": "082b6f762e47f150ee6e46484f29e293a0b85e0afc420e76eedcf9770b94a38d"
+    }
+  }
+}
