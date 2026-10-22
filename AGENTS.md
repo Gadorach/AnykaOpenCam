@@ -52,9 +52,10 @@ SOURCE sufficiency; syntax02 4/4 cited, no runtime/finite-wait proof. Review:
 `STATION76_OWNER_LIFETIME_P4A_REVIEW.md` under transport docs. P3 heap-request/
 deadline candidate at `apps/qualification/kernel76-station-control-owned/` has
 narrow independent SOURCE/API sufficiency, syntax04 5/5 cited, no runtime proof.
-One worker owns fresh `apps/qualification/kernel76-station-descriptor-admission/`
-for bounded P4b cached descriptor checks, only source-supported facts before
-allocation/submission; unproven interface/alt facts stay blocked. P1/fullP4/P5,
+Bounded P4b cached descriptor candidate delivered at
+`apps/qualification/kernel76-station-descriptor-admission/`, syntax2/2 PASS;
+one reviewer owns new P4b review/evidence. Exact configuration/interface/alternate
+counts and active alternate value stay blocked, not guessed. P1/fullP4/P5,
 tests, ARM/module build and native remain unaccepted; old inputs frozen.
 
 **App integration source:** real v6→RTSP callback glue at
@@ -74,9 +75,11 @@ parent static/source-custody disposition preserves it as compile-only candidate.
 Single-owned watchdog v2 W1–W3 has narrow independent SOURCE/API sufficiency;
 HOST/ARM18 commands/eight reused objects verified, not runtime/native acceptance.
 Disposition: `docs/qualification-plans/qc07f-watchdog-owner-v2-20261022/PARENT_DISPOSITION.md`.
-One worker owns fresh `apps/rtsp-auth/qc07f-owned-provider-candidate/` for actual
-mandatory provider-FD integration into that guarded native derivative, no fallback
-opens or fake main. Frozen originals/RTSP glue stay separate. Native watchdog
+Actual mandatory provider-FD derivative delivered at
+`apps/rtsp-auth/qc07f-owned-provider-candidate/`, HOST/ARM20 commands PASS; one
+reviewer owns fresh owned-provider-review docs for transfer/callsite/reuse review.
+No fallback opens or fake main; never-activated healthy handback remains blocked.
+Frozen originals/RTSP glue stay separate. Native watchdog
 qualification, failed-next retention/backing/provisioning/owned listener remain
 blockers. No image/module change, new main or native memory-fit claim.
 

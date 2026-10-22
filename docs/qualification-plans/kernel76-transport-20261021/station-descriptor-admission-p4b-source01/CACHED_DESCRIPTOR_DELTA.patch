@@ -1,0 +1,131 @@
+--- reviewed-p3/hgic_smac/attach_status.c
++++ p4b-subset/hgic_smac/attach_status.c
+@@ -11,7 +11,7 @@
+ {
+     struct hgic_attach_receipt r;
+     hgic_attach_snapshot(&r);
+-    seq_puts(seq, "policy=control-owned-p3-source01 schema=2\n");
++    seq_puts(seq, "policy=descriptor-admission-p4b-source01 schema=2\n");
+     seq_printf(seq, "generation=%u init=%u queued=%u starts=%u done=%u fwinfo=%u\n",
+                r.generation, r.init_state, r.init_queued, r.init_starts,
+                r.init_done, r.fwinfo_commands);
+--- reviewed-p3/utils/owner_usb.c
++++ p4b-subset/utils/owner_usb.c
+@@ -410,19 +410,84 @@
+     }
+ }
+ 
++/* Historical cached scalars, not fresh target admission. Pair exclusivity is
++ * a restrictive SOURCE policy; exact config/interface/alt counts and the active
++ * alternate number remain unqualified. Never query or switch USB state here.
++ */
++#define HGIC_EP_OUT_ADDRESS 0x01
++#define HGIC_EP_IN_ADDRESS  0x81
++#define HGIC_EP_MAX_PACKET  512
++
++static int hgic_usb_cached_admit(struct usb_device *udev, struct usb_interface *intf)
++{
++    const struct usb_host_config *config = udev->actconfig;
++    const struct usb_host_interface *desc = intf->cur_altsetting;
++    const struct usb_interface_cache *cache = NULL;
++    unsigned int i, config_matches = 0, interface_matches = 0, alt_matches = 0;
++    bool have_in = false, have_out = false;
++
++    if (!udev->bus || udev->bus->busnum != 1 || strcmp(udev->devpath, "1") ||
++        le16_to_cpu(udev->descriptor.idVendor) != HGIC_VENDOR_ID ||
++        le16_to_cpu(udev->descriptor.idProduct) != HGIC_WLAN_8400 ||
++        udev->speed != USB_SPEED_HIGH || !config || !udev->config ||
++        !udev->descriptor.bNumConfigurations)
++        return -ENODEV;
++
++    /* Core-owned arrays/counts, not raw descriptors or guessed array order. */
++    for (i = 0; i < udev->descriptor.bNumConfigurations; i++)
++        config_matches += config == &udev->config[i];
++    if (config_matches != 1 || config->desc.bDescriptorType != USB_DT_CONFIG ||
++        config->desc.bLength < USB_DT_CONFIG_SIZE ||
++        le16_to_cpu(config->desc.wTotalLength) < config->desc.bLength ||
++        config->desc.bConfigurationValue != 1 || !config->desc.bNumInterfaces ||
++        config->desc.bNumInterfaces > ARRAY_SIZE(config->interface))
++        return -ENODEV;
++    for (i = 0; i < config->desc.bNumInterfaces; i++) {
++        if (config->interface[i] == intf) {
++            interface_matches++;
++            cache = config->intf_cache[i];
++        }
++    }
++    if (interface_matches != 1 || !cache || !intf->altsetting || !desc ||
++        !intf->num_altsetting || intf->num_altsetting != cache->num_altsetting ||
++        intf->altsetting != cache->altsetting)
++        return -ENODEV;
++    /* USB core bounds this cached allocation; no alternate-number assumption. */
++    for (i = 0; i < intf->num_altsetting; i++)
++        alt_matches += desc == &intf->altsetting[i];
++    if (alt_matches != 1 || desc->desc.bDescriptorType != USB_DT_INTERFACE ||
++        desc->desc.bLength < USB_DT_INTERFACE_SIZE ||
++        desc->desc.bInterfaceNumber != 0 || desc->desc.bNumEndpoints != 2 ||
++        !desc->endpoint)
++        return -ENODEV;
++
++    for (i = 0; i < desc->desc.bNumEndpoints; i++) {
++        const struct usb_endpoint_descriptor *ep = &desc->endpoint[i].desc;
++        if (ep->bDescriptorType != USB_DT_ENDPOINT || ep->bLength < USB_DT_ENDPOINT_SIZE ||
++            ep->bmAttributes != USB_ENDPOINT_XFER_BULK ||
++            le16_to_cpu(ep->wMaxPacketSize) != HGIC_EP_MAX_PACKET)
++            return -ENODEV;
++        if (ep->bEndpointAddress == HGIC_EP_OUT_ADDRESS && !have_out)
++            have_out = true;
++        else if (ep->bEndpointAddress == HGIC_EP_IN_ADDRESS && !have_in)
++            have_in = true;
++        else
++            return -ENODEV; /* wrong address, duplicate or extra endpoint */
++    }
++    return have_in && have_out ? 0 : -ENODEV;
++}
++
+ static int hgic_usb_probe(struct usb_interface *intf, const struct usb_device_id *id)
+ {
+     struct usb_device *udev = interface_to_usbdev(intf);
+-    struct usb_host_interface *desc = intf->cur_altsetting;
+     struct hgic_usb *usb;
+     unsigned int i;
+     int error;
+     bool device_ref = false, published = false;
+-    if (udev->bus->busnum != 1 || strcmp(udev->devpath, "1") ||
+-        udev->speed != USB_SPEED_HIGH || !udev->actconfig ||
+-        udev->actconfig->desc.bConfigurationValue != 1 || !desc) {
+-        hgic_attach_error(-ENODEV, HGIC_ATTACH_PROBE);
+-        return -ENODEV;
++    error = hgic_usb_cached_admit(udev, intf);
++    if (error) {
++        hgic_attach_error(error, HGIC_ATTACH_PROBE);
++        return error;
+     }
+     usb = kzalloc(sizeof(*usb), GFP_KERNEL);
+     if (!usb) {
+@@ -441,22 +506,11 @@
+     usb->bus.bootdl_pktlen = 2048;
+     usb->bus.bootdl_cksum = HGIC_BUS_BOOTDL_CHECK_0XFD;
+     usb->bus.probe = probe_hdl;
+-    /* Preserve P2's minimal descriptor policy. Full exact descriptors are P4. */
+-    for (i = 0; i < desc->desc.bNumEndpoints; i++) {
+-        struct usb_endpoint_descriptor *ep = &desc->endpoint[i].desc;
+-        if (usb_endpoint_is_bulk_in(ep)) {
+-            usb->ep_in_size = le16_to_cpu(ep->wMaxPacketSize);
+-            usb->ep_in = usb_endpoint_num(ep);
+-        } else if (usb_endpoint_is_bulk_out(ep)) {
+-            usb->ep_out_size = le16_to_cpu(ep->wMaxPacketSize);
+-            usb->ep_out = usb_endpoint_num(ep);
+-        }
+-    }
++    /* Only the exact preallocation-admitted pair; no last-match selection. */
++    usb->ep_in = HGIC_EP_IN_ADDRESS & USB_ENDPOINT_NUMBER_MASK;
++    usb->ep_out = HGIC_EP_OUT_ADDRESS & USB_ENDPOINT_NUMBER_MASK;
++    usb->ep_in_size = usb->ep_out_size = HGIC_EP_MAX_PACKET;
+     usb->bus.blk_size = usb->ep_out_size;
+-    if (!usb->ep_in || !usb->ep_out || !usb->ep_in_size || !usb->ep_out_size) {
+-        error = -ENODEV;
+-        goto fail;
+-    }
+     error = hgic_usb_alloc_slots(usb);
+     if (error)
+         goto fail;

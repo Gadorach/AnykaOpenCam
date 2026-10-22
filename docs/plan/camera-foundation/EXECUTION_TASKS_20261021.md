@@ -1,5 +1,28 @@
 # Active execution ledger — remaining foundation work
 
+**Real mandatory provider-FD candidate delivered; focused review selected:**
+staged sensor/frame/persistent-encoder descriptions now route into guarded v6
+source without internal-open fallback. Nonatomic partial transfers retain actual
+native/staging FDs and last valid snapshots; bootstrap retains only unmoved slots.
+Selected H264-IP only, unused temporary open removed without aliasing roles;
+original BIND/ARM/exact139/BEGIN and real retirement remain. HOST/ARM build02
+20 commands PASS;3,649 prior custody files unchanged. Source pin
+`fb9cc61500beaad9c6a2cb518ebf06ce73cd1d7a3d9595e54b8153d8db58dedb`.
+Reviewer owns new owned-provider-review docs. Backing, external failed-next owner,
+healthy never-activated role handback and native pairing remain blocked; no full
+provider/main/RTSP adoption, tests or hardware queue. All old images/HOLDs intact.
+
+**P4b cached-admission subset delivered; independent review selected:**74 files,
+only ownerUSB probe helper and policy label changed; syntax01 2/2 PASS. Validates
+known topology/interface0 and restrictive two-endpoint01/81/fullattr02/full512
+cache policy before first driver allocation. Full packet-field/cardinality policy
+is distinguished from masked/partial historical observations; not raw-wire proof.
+Exact configuration/interface/alternate counts and active alternate remain BLOCKED.
+595 custody/817 prior reader/204 accepted maps overlap and are not summed.90-file
+seal `0388936a8782c1e5c1f74c794b78040b47849dd506e6002b70f24dd839ff6653`.
+Reviewer owns only fresh P4b review/evidence. No full-P4/P5/P1/native adoption,
+test/module/image build, USB query or hardware action. Provider-FD source continues.
+
 **P3 independent narrow SOURCE/API sufficiency; P4b source subset selected:**
 review identified no concrete correction-required defect in the exact owned
 one-FWINFO paths;132 author/451 prior/204 accepted pins and preserved P4a return
