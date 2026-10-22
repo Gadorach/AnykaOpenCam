@@ -81,9 +81,10 @@ Next eligible work is [offline native-method design](../../qualification-plans/e
 fresh controller/HOLD profile and bounded volatile delivery/observer/recovery.
 Controller design is completed; its parent disposition selects only C1 host-local
 dual-HOLD/epoch/crash-sticky ledger source work in encoder-query77-custody, now
-delivered AST/syntax-only and under independent static review. Its historical-root
-policy conflict is preserved; a parent path-role amendment proposes read-only
-original locks in place, never migration or copied markers. No
+delivered AST/syntax-only but review requires R1 original-epoch constraints and
+R2 failed-call historical postchecks. Fresh custody-v2 source is selected for
+those corrections and exact read-only historical-root/private-output roles, never
+migration or copied markers. V1 stays frozen/unaccepted. No
 target interface, executable native recipe, capture, staging, boot or query is
 selected. Staging lacks an admitted watchdog receiver and any later manual-OFF
 handoff still needs review plus actual current operator readiness.

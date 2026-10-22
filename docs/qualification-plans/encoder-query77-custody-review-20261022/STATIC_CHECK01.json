@@ -1,0 +1,62 @@
+{
+  "utc": "2026-10-22T17:40:29.004198+00:00",
+  "scope": "Independent ordinary static C1 SOURCE/API review, corrections required R1/R2; not native admission",
+  "method": "Public byte reads/SHA256/JSON receipt comparison and AST parse only; no candidate import, code-object execution, compile, tests or filesystem exercise",
+  "input_manifest": "INPUT_PINS01.tsv",
+  "review_input_count": 20,
+  "snapshot_after_substantive_source_reads_before_report": true,
+  "aggregate_format": "sorted full workspace-relative UTF-8 path + NUL + raw SHA256 digest bytes",
+  "review_input_aggregate_sorted": "beba7efca46b6ff5e37a05d7c68611b10cd1b98c835e067dd31f621e15612e81",
+  "author_nine_input_rows_compared": 9,
+  "frozen_six_design_pins_match": true,
+  "author_context_pin_changes": [
+    {
+      "path": "AGENTS.md",
+      "expected_bytes": 24199,
+      "expected_sha256": "f767f0d5c326e7acb19b3bcde803a28ae0da78ae250b3a0bd943e2a156743bf4",
+      "observed_bytes": 24613,
+      "observed_sha256": "914f7f529f9f5763b74e0e05f91966b889271a9e970311aa4c689e553ed421eb"
+    },
+    {
+      "path": "docs/plan/camera-foundation/00-INDEX.md",
+      "expected_bytes": 119792,
+      "expected_sha256": "a5b56275c3159c71ba93a6ba69faae69921ed3ed0ad3eb446272b60c91df1d9e",
+      "observed_bytes": 120017,
+      "observed_sha256": "7102510068de9e6c3e7e715d76456fcd5a7931a7df878f5ea8b5fa411c8ef74f"
+    },
+    {
+      "path": "docs/plan/camera-foundation/EXECUTION_TASKS_20261021.md",
+      "expected_bytes": 63319,
+      "expected_sha256": "d6179112b1bec798c491eb210620283b473f82863aefa0e01c0445c8621decba",
+      "observed_bytes": 63726,
+      "observed_sha256": "811a5b209bca7a4224c0221036cdc7da7de008354bda77324e4b22c7ec47ec0e"
+    }
+  ],
+  "context_note": "Harness reports parent review/path-role checkpoint update. No full historical byte-diff attribution; original manifests remain unrevised.",
+  "author_input_aggregate_observed_in_author_row_order": "218b2e7d3461a9242a49644ee129fc5d773671db2aec51f9a86750f8d19c4479",
+  "author_input_aggregate_expected": "ccf9332abb90d956c40035b664c08c098e8dda0f10358e880d231ea2c3c4ab46",
+  "author_method_eight_output_pins_all_match": true,
+  "design_final_seal_five_output_pins_all_match": true,
+  "transitive_design_46_inputs_rehashed": false,
+  "source_aggregate": "5c2d338973ab6384b504b6b52203b072e9ea04a3b9a357127638f1829b2ea286",
+  "module_bytes": 34669,
+  "module_lines": 803,
+  "module_sha256": "7dc6d11ff7dee758f49b3b0e4f7e43fb8b45215cda3761a75732519079e12b2e",
+  "ast_all_listed_custody_methods_match_inventory": true,
+  "ast_extra_unlisted_custody_methods": {"__init__": 390},
+  "inventory_scope_note": "Initial whole-method-map equality was false only because the author's table omits the refusing __init__; no listed method was missing or changed. Static AST comparison clarified the scope, not a code execution or review retry.",
+  "ast_effect_calls_match_inventory": true,
+  "ast_assert_nodes": 0,
+  "top_level": "docstring; stdlib imports; class/function definitions and standard declaration decorators only",
+  "inventory_module_pin_matches": true,
+  "final_syntax_pin_matches": true,
+  "author_syntax_receipts_cited_not_rerun": 3,
+  "candidate_imported_or_called": false,
+  "compiler_generator_CLI_client_controller_or_tests_executed": false,
+  "private_actual_HOLD_control_root_current_state_target_UART_RPC_network_proc_dev_access": false,
+  "writes_outside_new_review_directory": false,
+  "git_index_source_AGENTS_central_plan_safeguard_changes": false,
+  "policy_refusal_or_reroute": false,
+  "tool_errors": [],
+  "automatic_next_implementation_build_test_worker_native_queue": false
+}

@@ -124,11 +124,13 @@ query77-controller design completed:43 inputs unchanged,three contextual parent
 updates retained without rebasing. Parent accepts bounded C1 design input only,
 not a controller/native recipe. C1 encoder-query77-custody candidate delivered:
 one803-line host-only library, HOST AST/syntax compilation only; parent verified
-nine inputs/eight sealed outputs. One independent reviewer owns new custody-review
-docs; no import/library execution or runtime tests. V1 correctly refuses historical
-workspace CONTROL under its overbroad outside-Git rule. Parent path-role amendment
-separates exact in-place read-only historical locks from strictly outside-Git new
-outputs; no v1 edit, migration, copied marker, bypass or new revision selected yet.
+nine inputs/eight sealed outputs. Independent review requires R1 (supplied previous
+record displaces original catch/counter baseline) and R2 (failed calls omit
+historical postcheck).20 review inputs/three outputs parent-verified; v1/review stay
+frozen/unaccepted. One author owns fresh encoder-query77-custody-v2 for R1/R2 plus
+the explicit path-role correction: exact in-place read-only historical CONTROL,
+strictly outside-Git new outputs. No migration/copied markers/general Git exemption,
+v1 edits, library execution or runtime tests; v2 needs independent review.
 No UART/RPC/process launch/current-state/shell/boot/query interface. Staging guard is
 unavailable on the inspected route; future manual-OFF handoff needs separate review
 and actual readiness. No physical request or transfer/hardware operation is active.

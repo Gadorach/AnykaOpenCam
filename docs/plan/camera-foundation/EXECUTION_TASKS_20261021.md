@@ -38,12 +38,15 @@ handoff for unguarded staging; no such readiness or physical action is requested
 C1 candidate delivered in encoder-query77-custody:803-line host-local library,
 module SHA `7dc6d11ff7dee758f49b3b0e4f7e43fb8b45215cda3761a75732519079e12b2e`.
 HOST AST/syntax only, never imported/called; parent verified nine inputs/eight
-sealed outputs. Independent custody-review lane selected, no author remains.
-V1 correctly refuses historical CONTROL under the both-roots-outside-Git rule;
-parent C1_PATH_ROLE_AMENDMENT under native-method docs separates exact in-place
-read-only historical locks from strictly outside-Git outputs. No migration/copied
-marker/ignore-Git switch/v1 mutation/new revision selected. No UART/RPC/process/
-current-state/shell/boot/query interface or runtime tests; source acceptance pending.
+sealed outputs. Independent review now requires R1: supplied previous records can
+displace original catch/counter constraints; R2: admitted exceptional operation
+exits skip historical/root/source postchecks.20 inputs/three outputs verified,
+review seal `239b007833ca839d1c391b3594b4a654f915a0d53e856795c333e366ce4d58fd`.
+V1 source/review frozen and unaccepted. Fresh custody-v2 author is selected for
+R1/R2 plus C1_PATH_ROLE_AMENDMENT: exact in-place read-only historical CONTROL,
+strict outside-Git new outputs. No migration/copied marker/general Git exemption,
+v1 mutation, UART/RPC/process/current-state/shell/boot/query interface or runtime
+tests. Parent disposition under v1 docs; fresh revision still needs review.
 No executable native recipe, capture/staging/boot/query or user physical action
 selected. Last target observation remains original held U-Boot12:12UTC; no fresh
 target/recorder/owner/expiry status inherited. Both HOLDs stay untouched. Query77

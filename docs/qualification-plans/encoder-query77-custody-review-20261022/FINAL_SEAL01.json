@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-22T17:43:42.983806+00:00",
+  "method": "Final explicit public input/output read/SHA256 and review JSON parse only; no candidate import/call/compile/test",
+  "disposition": "CORRECTIONS_REQUIRED_R1_R2",
+  "input_manifest": "INPUT_PINS01.tsv",
+  "input_count": 20,
+  "input_aggregate_before": "beba7efca46b6ff5e37a05d7c68611b10cd1b98c835e067dd31f621e15612e81",
+  "input_aggregate_after": "beba7efca46b6ff5e37a05d7c68611b10cd1b98c835e067dd31f621e15612e81",
+  "changes_since_review_snapshot": [],
+  "unchanged_input_count": 20,
+  "source_and_frozen_design_unchanged": true,
+  "output_pins_excluding_this_seal": {
+    "docs/qualification-plans/encoder-query77-custody-review-20261022/REVIEW.md": {
+      "bytes": 12728,
+      "sha256": "c3ff98375b2a3cdc02dacc871bf2cbcb5eb399763b74473dffa9c71111cf64a1"
+    },
+    "docs/qualification-plans/encoder-query77-custody-review-20261022/INPUT_PINS01.tsv": {
+      "bytes": 2834,
+      "sha256": "b3f3152164d39d0db1b7803ef0f029a6c9c9b6a2ddf88d9cfadac894c790c39f"
+    },
+    "docs/qualification-plans/encoder-query77-custody-review-20261022/STATIC_CHECK01.json": {
+      "bytes": 3627,
+      "sha256": "072dec83e7b8c0cb534d43962631b82c8cfa3847b462c46c358e8caa7188141d"
+    }
+  },
+  "operational_CONTROL_path_contract_still_blocked_unreviewed_amendment": true,
+  "policy_refusal_or_tool_errors": [],
+  "candidate_execution_private_IO_native_or_manual_action": false,
+  "automatic_next_queue": false
+}
