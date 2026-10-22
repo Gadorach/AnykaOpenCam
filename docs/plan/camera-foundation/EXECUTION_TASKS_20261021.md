@@ -42,7 +42,10 @@ Fresh v2 R1 correction delivered, same six HOST/ARM consumer compiles PASS, actu
 terminal IPC helper clears slot before one close and preserves sticky errors/former
 NOT-owned diagnostic. No uncertain-start retry; v1 remains frozen/unaccepted.
 V2 source pin `5a42cdc9d76628031c5380edd2e3b2c4dd06aefc6675138c8e10e1b098a28868`.
-Focused v2 re-review is selected. Parent verified
+Focused v2 re-review now narrowly R1 SOURCE/API sufficient, no added defect;
+parent verified1,892 inputs/six outputs, review seal
+`b3310e3a85cc7295137fa46e3aca4aae8fb12653b7377a55ad9d433a42532292`.
+Parent disposition accepts correction only, preserves v1 failure. Parent verified
 listener1,281 inputs/six outputs/source aggregate;
 review seal `2f39d960ba6cff2b236d215d65dea206f0005fad0fc430a621e24de25bd3db61`.
 Owned-listener HOST/ARM52 commands/30 C compilations PASS is cited, not rerun;
@@ -63,8 +66,11 @@ execution, object reuse or full-app link. Static-finalizer bookkeeping failure i
 preserved/corrected without rebuilding. Completed review found R1 above, not a
 runtime observation; parent disposition in the candidate docs. No automatic listener
 composition, external media retention/bootstrap/recovery/backing/native acceptance.
-Reviewed listener source committed `c51e129`; v2 focused reviewer plus separate
-encoder-query77-client source author are the only active lanes. Client selection
+Reviewed listener source committed `c51e129`; fresh prestarted-owned-listener
+composition author plus separate encoder-query77-client author are the only active
+lanes. Composition must actually use one backend and moved FD, no second fork/init
+or internal listener bind; separate sibling findings do not accept the composition.
+Client selection
 is compile/link-only qualification ELF, not a camera main or native trial; actual
 query77 monitor is unchanged and lacks query88 command. Original kernel/image/
 module/boot/transport/controllers remain frozen, no new native recipe or effect.

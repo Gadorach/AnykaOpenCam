@@ -26,10 +26,12 @@ retention investigation stopped before code on absent media bootstrap/recovery
 and the serve-internal fork; it remains blocked, not implemented.
 Owned listener now has narrow source/API custody sufficiency; prestarted-backend
 v1 compiled but review requires terminal IPC cleanup after observer-reaped exit.
-Fresh v2 correction compiled and is under focused re-review; no runtime leak is
-claimed. A separate query77 qualification client is source/build work only, not
+Fresh v2 correction has narrow R1 SOURCE/API sufficiency after focused re-review;
+no runtime leak or runtime correction PASS is claimed. A separate query77
+qualification client is source/build work only, not
 a selected hardware trial or app main. These remain separate
-siblings, not an accepted composition. These artifacts do not check off outstanding
+siblings; actual source composition is now an author task, not accepted. These
+artifacts do not check off outstanding
 app/adoption/load gates below.
 
 ## Build-only deliverable and limitations
