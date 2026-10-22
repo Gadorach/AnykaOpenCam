@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-22T19:24:09.696113+00:00",
+  "method": "Final explicit public input/output read/SHA256 and review JSON parse only; no candidate import/call/compile/input assembly",
+  "disposition": "NARROW_CONDITIONAL_EXACT_PROFILE_SOURCE_API_SUFFICIENT",
+  "correction_required_ordinary_findings": [],
+  "input_manifest": "INPUT_PINS01.tsv",
+  "input_count": 29,
+  "input_aggregate_before": "4aa948c889069002ad2095d09fcacb5782785b2685d0d97ab18e5f313fbd708d",
+  "input_aggregate_after": "4aa948c889069002ad2095d09fcacb5782785b2685d0d97ab18e5f313fbd708d",
+  "changes_since_review_snapshot": [],
+  "unchanged_input_count": 29,
+  "output_pins_excluding_this_seal": {
+    "docs/qualification-plans/encoder-query77-cold-context-v2-review-20261022/REVIEW.md": {
+      "bytes": 10132,
+      "sha256": "aa9ac352c668777ff127a9034bd8c8375b401eec2d25310cf3fcb8fb0a20ccf9"
+    },
+    "docs/qualification-plans/encoder-query77-cold-context-v2-review-20261022/INPUT_PINS01.tsv": {
+      "bytes": 4189,
+      "sha256": "9bde8274853f1c3645731f103fdf348a57e457640dea27563f91388264c996c6"
+    },
+    "docs/qualification-plans/encoder-query77-cold-context-v2-review-20261022/STATIC_CHECK01.json": {
+      "bytes": 7358,
+      "sha256": "4a10047a1483ae068f218eac5301642441ac935a71bd70dce16845475d6f4fd8"
+    }
+  },
+  "normative_parent_private_layout_attestation_inherited_not_reproduced": true,
+  "original_block_and_failed_reset_results_preserved": true,
+  "candidate_invocation_transcript_fixture_or_trace_private_IO_native_or_physical_action": false,
+  "current_origin_owner_catch_budget_quiet_held_recovery_or_memory_proof": false,
+  "policy_refusal_or_tool_errors": [],
+  "automatic_next_adoption_call_integration_worker_test_native_or_physical_queue": false
+}

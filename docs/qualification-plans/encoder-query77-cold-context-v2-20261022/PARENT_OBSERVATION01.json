@@ -1,0 +1,17 @@
+{
+  "candidate_calls": 1,
+  "challenge_record_matched": true,
+  "classification": "EXACT_OBSERVED_PROFILE_NOT_ADMISSION",
+  "current_state_owner_catch_quiet_or_recovery_proof": false,
+  "ended_utc": "2026-10-22T19:26:23.050663+00:00",
+  "matched_records": 19,
+  "new_capture_serial_RPC_or_hardware_operation": false,
+  "raw_private_paths_digests_counts_or_payload_exported": false,
+  "retry_or_native_queue": false,
+  "review_sha256": "a50053fff4c580015d0bcdc6ebb4ca221f9065540f3eaf9ebd061127f8700462",
+  "scope": "ONE_OFFLINE_SAVED_HISTORICAL_CONTEXT_OBSERVATION_NOT_ADMISSION",
+  "source_and_review_unchanged_after_call": true,
+  "source_sha256": "17986670452b756b16c7bc5c3b1ec3989447ded3369f7e23008b8ab0743fb558",
+  "started_utc": "2026-10-22T19:26:23.038091+00:00",
+  "synthetic_fixture_test_campaign": false
+}

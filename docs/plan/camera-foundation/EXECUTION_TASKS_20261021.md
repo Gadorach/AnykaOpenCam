@@ -73,10 +73,17 @@ one symbolic19-record software profile, SHA
 It does not establish all boot variants, actual ON/current owner/quiet/catch/clock.
 Cold-context-v2 source delivered:98 lines/4019B, module SHA
 `17986670452b756b16c7bc5c3b1ec3989447ded3369f7e23008b8ab0743fb558`.
-HOST AST/syntax only;18 inputs/ten outputs parent-verified. Independent exact-
-grammar/API review is active, no author. No candidate call/sender/serial/RPC/
-capture/current-state/target interface. Blocked v1/oldreset parser/original HOLDs
-unchanged; fresh source remains unaccepted pending review.
+HOST AST/syntax cited;18 inputs/ten outputs parent-verified. Independent exact-
+profile SOURCE/API review now conditionally sufficient;29 reader inputs/three
+outputs verified, seal
+`a50053fff4c580015d0bcdc6ebb4ca221f9065540f3eaf9ebd061127f8700462`.
+Parent separately called classifier ONCE on saved historical prefix, returning
+EXACT_OBSERVED_PROFILE_NOT_ADMISSION/19 records; public summary in v2 docs, full
+raw/path/hash/byte count and private provenance outside Git. Not a new capture,
+current-state/quiet/owner/catch or native proof. Original block/oldreset/HOLDs frozen.
+One C2c offline clock-contract design worker is selected: C1v2's exact raw three-
+clock delta equality lacks an admitted sampler. No timestamp fabrication, silent
+guard relaxation/deadline renewal, sampler/controller/current-state/target action.
 No executable native recipe, capture/staging/boot/query or user physical action
 selected. Last target observation remains original held U-Boot12:12UTC; no fresh
 target/recorder/owner/expiry status inherited. Both HOLDs stay untouched. Query77

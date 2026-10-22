@@ -135,10 +135,14 @@ complete public grammar;11 inputs/five outputs parent-verified. Parent separatel
 inspected saved historical cold evidence offline, retaining all raw/provenance
 privately, and supplied a symbolic19-record exact-software-profile grammar (not
 current custody/quiet/catch proof). Cold-context-v2 pure classifier delivered:
-98 lines/4019B, HOST AST/syntax only, never imported/called;18 inputs/ten outputs
-parent-verified. One independent reviewer owns new cold-context-v2-review docs,
-no author. Original block/old parser/HOLDs frozen; no sender/serial/RPC/capture/
-current-state/target interface or candidate execution. Staging guard is
+98 lines/4019B, independently conditional exact-profile SOURCE/API sufficient;
+29 reader inputs/three outputs parent-verified. One separately selected parent
+historical-only call returned EXACT_OBSERVED_PROFILE_NOT_ADMISSION/19 records;
+private raw/provenance excluded, no current state/quiet/owner/catch proof. Original
+block/old parser/HOLDs frozen. One offline C2c clock-contract design worker owns
+new clock-contract docs only: C1v2 exact three-clock equality lacks a raw sampler;
+no fabricated timestamps, protection relaxation or live sampler selected. No
+sender/serial/RPC/capture/current-state/target interface. Staging guard is
 unavailable on the inspected route; future manual-OFF handoff needs separate review
 and actual readiness. No physical request or transfer/hardware operation is active.
 Query77
