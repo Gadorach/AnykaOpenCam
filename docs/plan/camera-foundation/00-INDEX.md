@@ -92,9 +92,10 @@ C2b stopped before code on missing public grammar. Parent offline historical
 inspection supplied a privacy-reviewed symbolic exact-profile grammar; fresh
 cold-context-v2 has conditional exact-profile source sufficiency plus one parent
 offline observation on saved historical bytes, not native/current-state proof.
-C2c clock contract remains strictly blocked on continuity evidence. Next is docs-
-only loss/gap-aware continuity feasibility, not live sampling, policy/protection
-change, host reconfiguration or current-state/serial/RPC/target interface.
+C2c clock contract and continuity feasibility remain strictly blocked; no changed
+policy, watcher/inhibitor/sampler or host reconfiguration. Next separate source
+prerequisite is an observational recorder-timer derivative, original stored values
+to private status only, no timer/catch/lease change or execution/adoption.
 Original block/parser/HOLDs
 remain frozen. No
 target interface, executable native recipe, capture, staging, boot or query is

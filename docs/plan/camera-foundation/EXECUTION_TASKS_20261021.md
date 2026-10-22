@@ -85,12 +85,17 @@ C2c clock-contract design completed/BLOCKED: C1v2 exact raw three-clock equality
 lacks an admitted sampler; real brackets can conservatively shrink lifetime but
 cannot prove no suspend/intervening compensating steps.23 local inputs/six outputs
 parent-verified; author before/after checks one official Python-doc URL, parent
-checked receipt association only. C1/guard/source/policies unchanged. One docs-only
-continuity-feasibility worker selected for source-backed loss/gap-aware prevention/
-event evidence, not implementation or a changed policy. No fabrication/tolerance/
-deadline renewal, sampler/watcher/inhibitor/service/configuration/current-state/
-controller/target action. Source tick/namespace/recorder-native-deadline and all
-actual ownership/recovery boundaries remain independently open.
+checked receipt association only. Continuity feasibility completed/BLOCKED,30 local
+inputs/seven outputs verified;three URL pins receipt association only. Parent retains
+the strict operational block; no unproved host exclusions/detection-as-prevention or
+policy/guard changes. No watcher/sampler/inhibitor/service/configuration/current-state
+or target action. Tick/namespace/actual ownership/recovery remain separate blocks.
+One author now owns encoder-query77-recorder-timer source/docs for the separate
+recorder native-timer observation interface: exact original stored float start/
+integer duration/predicate, private status only. No new clock read, deadline projection,
+timer/catch/lease change or old helper/source-pin mutation. Full inherited recorder
+is not a pure library; AST/syntax only, no import/CLI/capture/formatter/RPC/test/
+installation/current-state/hardware use. Source candidate will need independent review.
 No executable native recipe, capture/staging/boot/query or user physical action
 selected. Last target observation remains original held U-Boot12:12UTC; no fresh
 target/recorder/owner/expiry status inherited. Both HOLDs stay untouched. Query77

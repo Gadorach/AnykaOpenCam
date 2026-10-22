@@ -1,0 +1,4 @@
+sha256	bytes	exact_public_document_url
+f8b0cf9c2315c38b2cc01f5d8ea7626fceea6c210ec32efcce44002c19ca8ba6	86537	https://raw.githubusercontent.com/systemd/systemd/v257/man/org.freedesktop.login1.xml
+3710db7ab8672d9234528a9429565155ea0de911beffbe894305667e4c2a2948	178612	https://raw.githubusercontent.com/systemd/systemd/v257/src/login/logind-dbus.c
+83b7eae8ae81978226f35e3cb91ad840f0e13f6ecb4f289e468f5e79b96e39ad	15186	https://raw.githubusercontent.com/systemd/systemd/v257/src/login/logind-inhibit.c
