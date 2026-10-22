@@ -1,0 +1,198 @@
+{
+  "C1_or_private_HOLD_or_current_state_or_target_access": false,
+  "argv": [
+    "python3",
+    "-B",
+    "docs/qualification-plans/encoder-query77-inputs-20261022/parent_observe01.py"
+  ],
+  "automatic_retry_or_native_queue": false,
+  "candidate_calls_attempted": 1,
+  "candidate_calls_selected": 1,
+  "client_or_firmware_or_test_or_generator_or_listener_execution": false,
+  "ended_utc": "2026-10-22T18:48:51.185556+00:00",
+  "expected_manifest_shape_observed": true,
+  "python_executable_pin": {
+    "bytes": 14424,
+    "sha256": "44fdcdf23cd94aece60aec10b92b15a0e1cf4561e710985eaa53b362a03db48e"
+  },
+  "python_version": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+  "result": {
+    "files": [
+      {
+        "bytes_observed": 3603307,
+        "offline_inspection": "LEGACY_IMAGE_STREAM",
+        "public_label": "image",
+        "sha256": "f7c1996073644d8cd6c5c7ba1d2a8c2b71d2d6df4fb4697d01ad59a1e7525a5e"
+      },
+      {
+        "bytes_observed": 4011,
+        "offline_inspection": "PACKAGE_ASSOCIATION",
+        "public_label": "package",
+        "sha256": "7fb787f19892da10c0c9eac9a256e61f283b8dbf154d2d4189661726f3642d37"
+      },
+      {
+        "bytes_observed": 58859,
+        "offline_inspection": "CONFIG_IDENTITY",
+        "public_label": "config",
+        "sha256": "d7b2ae8f167c8b56f442a201684eb433cc621bce45f52c98c94a87e48879b5bf"
+      },
+      {
+        "bytes_observed": 3600672,
+        "offline_inspection": "PIN_ONLY",
+        "public_label": "zimage",
+        "sha256": "65bb107d9a33ca1733bfbdd8439a00b37e7c72f0f634cecfb9ce2cf924290eb8"
+      },
+      {
+        "bytes_observed": 2571,
+        "offline_inspection": "PIN_ONLY",
+        "public_label": "dtb",
+        "sha256": "d837c58c90b56ebb6ce9346b7c1d69689d5a1122dcef55b0f72341e6d003e0b5"
+      },
+      {
+        "bytes_observed": 2082816,
+        "offline_inspection": "PIN_ONLY",
+        "public_label": "initramfs",
+        "sha256": "510e5fdc6e2a7b6ad4a52d82ad1de9381a85e143f7014a6f2cc3bdfb951e309f"
+      },
+      {
+        "bytes_observed": 30,
+        "offline_inspection": "RELEASE_IDENTITY",
+        "public_label": "release",
+        "sha256": "fa8bfc9743bfd2ff20c3df4b010af4319f43359523b887d5ce180fac6981d348"
+      },
+      {
+        "bytes_observed": 164,
+        "offline_inspection": "COMPILER_METADATA",
+        "public_label": "compile",
+        "sha256": "8c51d471baeb130ce5a5b31b20f006b9d0501433d2142a62cf3b5428f38c6a5c"
+      },
+      {
+        "bytes_observed": 30140,
+        "offline_inspection": "ELF32_STRUCTURE",
+        "public_label": "client",
+        "sha256": "87a40f291600fee1296d96030726b9db825956e274e0db2a7ee5ea18f6a26ac6"
+      },
+      {
+        "bytes_observed": 10258,
+        "offline_inspection": "PIN_ONLY",
+        "public_label": "client_c",
+        "sha256": "d132a2eeaae170586aa437a2e7a3102027d9ff656077c5102f57dd79d95268b7"
+      },
+      {
+        "bytes_observed": 2455,
+        "offline_inspection": "UAPI_BYTE_IDENTITY",
+        "public_label": "uapi_client",
+        "sha256": "6052069fa5428185eb8c61871404256c53c30c12515eaa5c9ab80c424facde37"
+      },
+      {
+        "bytes_observed": 2455,
+        "offline_inspection": "UAPI_BYTE_IDENTITY",
+        "public_label": "uapi_frozen",
+        "sha256": "6052069fa5428185eb8c61871404256c53c30c12515eaa5c9ab80c424facde37"
+      },
+      {
+        "bytes_observed": 2455,
+        "offline_inspection": "UAPI_BYTE_IDENTITY",
+        "public_label": "uapi_kernel",
+        "sha256": "6052069fa5428185eb8c61871404256c53c30c12515eaa5c9ab80c424facde37"
+      },
+      {
+        "bytes_observed": 1872,
+        "offline_inspection": "PIN_ONLY",
+        "public_label": "loader",
+        "sha256": "a1630c90f7f44666e941704778cbf119e5e2e13355113adca52f842bd9046ad1"
+      },
+      {
+        "bytes_observed": 25426,
+        "offline_inspection": "PIN_ONLY",
+        "public_label": "recorder",
+        "sha256": "135a694bf79a1e46d07f089c2256d40ce8c584780c2fd8fa9d7f8b8137a29d00"
+      },
+      {
+        "bytes_observed": 39829,
+        "offline_inspection": "PIN_ONLY",
+        "public_label": "boot",
+        "sha256": "6ec0bd70513d530e64507c934ab1885da0cb547b907673c5162bf01c89f7d985"
+      },
+      {
+        "bytes_observed": 12461,
+        "offline_inspection": "PIN_ONLY",
+        "public_label": "protected",
+        "sha256": "cb224d3cd8b635774b7e364b07b259d90640b30de269ea07351e767c3f97fa3c"
+      },
+      {
+        "bytes_observed": 42123,
+        "offline_inspection": "PIN_ONLY",
+        "public_label": "custody",
+        "sha256": "d60176e2d2725460a22c82fee6ce1068a82a07a976daddb7287c52daf3ade16f"
+      },
+      {
+        "bytes_observed": 4625,
+        "offline_inspection": "PIN_ONLY",
+        "public_label": "build_disposition",
+        "sha256": "c7d4c03c1624b1b34ea95ffbea3b946927146fee3491009094ac376fa4d8de08"
+      },
+      {
+        "bytes_observed": 11646,
+        "offline_inspection": "PIN_ONLY",
+        "public_label": "build_result",
+        "sha256": "837109f2375f6f6deed8d5760a9a3a166ebbd01bb74d1062efd1d203701c24b6"
+      },
+      {
+        "bytes_observed": 3195,
+        "offline_inspection": "PIN_ONLY",
+        "public_label": "client_disposition",
+        "sha256": "6799bb31468926f08be837e81860df8cda6367bbea595171b79820d1d40cfe79"
+      },
+      {
+        "bytes_observed": 7906,
+        "offline_inspection": "PIN_ONLY",
+        "public_label": "client_contract",
+        "sha256": "f54370919ad2282af120ec7f49c2bb24687134deb38095e889486c6b7a1ec439"
+      },
+      {
+        "bytes_observed": 11665,
+        "offline_inspection": "PIN_ONLY",
+        "public_label": "client_report",
+        "sha256": "0b2b73d6f1a6991f7d631995a1c086452514349f52aa654e47af852c6d10b981"
+      },
+      {
+        "bytes_observed": 12258,
+        "offline_inspection": "PIN_ONLY",
+        "public_label": "custody_review",
+        "sha256": "bea15bb8f0201d14820a9e9acaf5df232c531385d951fa0abe8b62a43fe516fd"
+      },
+      {
+        "bytes_observed": 1579,
+        "offline_inspection": "REVIEW_ASSOCIATION",
+        "public_label": "custody_review_seal",
+        "sha256": "b58ec94be7db1ff6cb33295c14770424ade7566c709f043efe92527a1adbf9d4"
+      }
+    ],
+    "limitations": [
+      "DESCRIPTORS_CLOSED_NO_FUTURE_FREEZE_OR_LOADED_CODE_ASSOCIATION",
+      "NO_BUILD_REPRODUCTION_OR_NATIVE_ABI_OWNER_CLOCK_CATCH_RECOVERY_PROOF",
+      "STATIC_RANGES_FROM_PINNED_PACKAGE_NOT_FRESH_DECOMPRESSION_OR_MEMORY_FIT",
+      "ARMV5TE_AND_QUERY88_MEANING_TIED_TO_FROZEN_PINS_NOT_FRESH_ATTRIBUTE_OR_C_COMPILE",
+      "EMBEDDED_STATION76_UNPAIRED_UNSUPPORTED_FORBIDDEN_TO_LOAD_OR_AUTOLOAD"
+    ],
+    "scope": "OFFLINE_NOT_ADMISSION"
+  },
+  "review_pin": {
+    "bytes": 1744,
+    "sha256": "38283e05b5fe2d72799ad2743db9cb7c91d5cea9af4e208af53e5711cad1cc78"
+  },
+  "review_unchanged_after_call": true,
+  "scope": "ONE_OFFLINE_PUBLIC_ARTIFACT_INSPECTION_NOT_ADMISSION",
+  "source_pin": {
+    "bytes": 18643,
+    "sha256": "5fbcc656882075c44c1e4f4e5df8a896fe83433a33e770deec1fd50c3792d3f0"
+  },
+  "source_unchanged_after_call": true,
+  "started_utc": "2026-10-22T18:48:44.996828+00:00",
+  "state": "OFFLINE_OBSERVATION_RETURNED",
+  "wrapper_pin": {
+    "bytes": 3783,
+    "sha256": "450f6a9eb9406444cfe6cad5611210dc5d440b5e1a06eb677e56ed3206064da9"
+  }
+}

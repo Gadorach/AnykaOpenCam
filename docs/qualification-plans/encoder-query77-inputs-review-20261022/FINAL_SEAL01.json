@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-22T18:46:46.453645+00:00",
+  "method": "Final explicit public read/streaming SHA256 and review JSON parse only; no candidate import/call/compile/test",
+  "disposition": "NARROW_CONDITIONAL_SOURCE_API_AND_READ_TIME_BYTE_CUSTODY_SUFFICIENT",
+  "correction_required_ordinary_findings": [],
+  "input_manifest": "INPUT_PINS01.tsv",
+  "input_count": 75,
+  "input_aggregate_before": "6698e907f7a59cc70ae07b8ed9840f6beb7dc1c23d5b2a89efc1040ef3922230",
+  "input_aggregate_after": "6698e907f7a59cc70ae07b8ed9840f6beb7dc1c23d5b2a89efc1040ef3922230",
+  "changes_since_review_snapshot": [],
+  "unchanged_input_count": 75,
+  "output_pins_excluding_this_seal": {
+    "docs/qualification-plans/encoder-query77-inputs-review-20261022/REVIEW.md": {
+      "bytes": 12501,
+      "sha256": "ea67474fa6c9ddc0fe23ccc426ca32e91d29d2d034d8257fa7f1f17fd482acdc"
+    },
+    "docs/qualification-plans/encoder-query77-inputs-review-20261022/INPUT_PINS01.tsv": {
+      "bytes": 11179,
+      "sha256": "e5b8e22a17c83af55c305529a8182b7d250e7fda41fbf1d9ce35734fcb9b24a3"
+    },
+    "docs/qualification-plans/encoder-query77-inputs-review-20261022/STATIC_CHECK01.json": {
+      "bytes": 6190,
+      "sha256": "62cd26062ed76855214a5089f198bd5df5e09786b4d82489a1ca6a0907472b2c"
+    }
+  },
+  "review_tool_error_count": 1,
+  "review_tool_error_note": "One initial static checker inventory KeyError, recorded in STATIC_CHECK01; explicit receipt inventory corrected. No candidate execution/policy refusal/reroute.",
+  "policy_refusal_or_reroute": false,
+  "candidate_validator_invocation_private_IO_source_adoption_or_native_action": false,
+  "actual_operational_custody_composite_freeze_recovery_or_memory_runtime_proof": false,
+  "automatic_next_queue": false
+}

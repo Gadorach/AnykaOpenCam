@@ -1,6 +1,6 @@
 # Active execution ledger — remaining foundation work
 
-## Current closeout — completed reviews, no active workers
+## Current closeout — reviewed source and offline prerequisites
 
 RP-08/09, CORE-03/04, STREAM-04/07: actual prestarted-backend/owned-listener
 composition independently has narrow SOURCE composition/API custody sufficiency.
@@ -56,10 +56,16 @@ private IO, target interface or runtime tests. C1 source committed locally `0a86
 C2a fixed-public-input library delivered at encoder-query77-inputs,376 lines/18643B,
 module SHA `5fbcc656882075c44c1e4f4e5df8a896fe83433a33e770deec1fd50c3792d3f0`.
 HOST AST/syntax only;25 selected/five discovery pins/nine outputs parent-verified.
-Independent focused SOURCE/API review is active, no author. Static byte-pin reads
-are not a validator success or format/path/cleanup runtime proof. No controller/
-sender/private/current-state/target interface. Review precedes any future parent
-offline call; no such call selected now.
+Independent review now conditionally SOURCE/API/read-time byte-custody sufficient;
+75 reader inputs/three outputs parent-verified, review seal
+`38283e05b5fe2d72799ad2743db9cb7c91d5cea9af4e208af53e5711cad1cc78`.
+Parent separately selected ONE offline normal-use call, PASS18:48:44–18:48:51UTC:
+25 fixed public files/CRCs/spans/package/config/UAPI/basic client ELF, actual host
+metadata/read/close normal path observed. Receipt in inputs parent-observation01,
+not native admission, comprehensive filesystem/memory proof or test campaign.
+No C1/client/firmware/private/current-state/target use. One author now owns C2b
+pure cold-context classifier source/docs, no sender/serial/RPC/capture/target
+interface; stop before code if exact public grammar cannot support it.
 No executable native recipe, capture/staging/boot/query or user physical action
 selected. Last target observation remains original held U-Boot12:12UTC; no fresh
 target/recorder/owner/expiry status inherited. Both HOLDs stay untouched. Query77

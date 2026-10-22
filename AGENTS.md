@@ -126,11 +126,13 @@ conditional SOURCE/API sufficiency for original-epoch constraints, failed-exit
 postchecks and exact read-only historical-control/private-output path roles.
 Parent verified35 reader inputs/three review outputs; HOST AST/syntax only,
 never imported/called or applied to actual HOLDs. Disposition in custody-v2 docs.
-C2a encoder-query77-inputs candidate delivered:376-line fixed-public-input library,
-HOST AST/syntax only, never imported/called.25 selected pins/five discovery pins/
-nine sealed outputs parent-verified; one independent reviewer owns new inputs-review
-docs. No author, private/current-state access or target interface. Review precedes
-any future offline validator call; no source acceptance yet. Staging guard is
+C2a encoder-query77-inputs has independent conditional SOURCE/API/read-time byte-
+custody sufficiency;75 reader inputs/three outputs parent-verified. One separately
+selected parent offline validator call PASS18:48UTC:25 fixed public inputs/CRCs/
+spans/config/UAPI/basic ELF, no native admission. C1/client/firmware not called.
+Disposition/one-call receipt in inputs docs. One author owns fresh C2b cold-context
+source/docs for a pure bounded transcript classifier; stop on missing public
+grammar, no sender/serial/RPC/capture/current-state/target interface. Staging guard is
 unavailable on the inspected route; future manual-OFF handoff needs separate review
 and actual readiness. No physical request or transfer/hardware operation is active.
 Query77

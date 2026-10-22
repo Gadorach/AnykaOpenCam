@@ -86,8 +86,10 @@ R2 failed-call historical postchecks. Fresh custody-v2 source is delivered
 AST/syntax-only and conditionally SOURCE/API sufficient after focused review of
 those corrections and exact read-only historical-root/private-output roles, never
 migration or copied markers. V1 stays frozen/unaccepted. Next selected source is
-C2a fixed-public-input validation, now delivered AST/syntax-only and under independent
-review, never imported/called. No private/current-state/target interface. No
+C2a fixed-public-input validation, now independently source-sufficient with one
+parent offline public-artifact call PASS (25 inputs, not native admission).
+Next selected C2b source is a pure bounded cold-context classifier, with no private/
+current-state/serial/RPC/target interface; stop on insufficient public grammar. No
 target interface, executable native recipe, capture, staging, boot or query is
 selected. Staging lacks an admitted watchdog receiver and any later manual-OFF
 handoff still needs review plus actual current operator readiness.
