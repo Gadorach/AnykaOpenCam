@@ -25,21 +25,22 @@ or genuinely required user input. Hardware trials are authorized; prefer reviewe
 prearmed watchdog recovery/known-idle watchdog reset. Further adversarial testing
 remains deferred. The initial RAM76 belief was superseded by the cold handoff below.
 
-**Actual cold handoff:**22a capture expired/finalized/hash-verified while awaiting
-user interaction (no RX/manual TX). User then OFF; fresh reviewed22b receiver/catch
-was armed/revalidated before user ON. Actual original U-Boot cold catch and held
-prompt, bootloader pin and neutral readbacks PASS. **Actual RAM76 upload/full CRC/
-monitor and fixed RO idle postcheck PASS11:49UTC**; boot shell
-`sh_1635f1a90001X9X69CSqVph1iw` completed normally. No transfer remains active.
-Normal5s watchdog smoke and sameboot idle/FD postflight PASS12:05UTC; no reset
-occurred. One separately selected controlled idle watchdog reset is prepared,
-ending at held original U-Boot only, no reload/radio/station/media. Plan:
-`docs/qualification-plans/kernel76-transport-20261021/WATCHDOG_RESET22B_PLAN.md`.
+**Actual native state:**22b cold handoff/RAM76 upload/full CRC/monitor/RO idle
+PASS11:49UTC, normal5s watchdog smoke/sameboot idle/FD postflight PASS12:05UTC.
+Then one selected idle watchdog reset **controller FAILED/HOLD** on password-text
+classification; actual full arm message/main-CPU reset/automatic held U-Boot catch
+observed. Separate receive-only reconciliation and10s stability PASS12:12UTC,
+no kernel handoff, no retry/rescue TX/reload. **Target is held original U-Boot,
+not running Linux RAM76.** Old Linux epochs invalidated; future catch consumed.
+Original radio HOLD and new reset-failure HOLD remain untouched. No active
+operation/transfer. Result and next native boundary:
+`docs/qualification-plans/kernel76-transport-20261021/WATCHDOG_RESET22B_RESULT.md`.
 Current source/methods:
 `docs/plan/camera-foundation/RESUME_20261022.md`. Current owner receipt:
 `evidence/qualification/qc07f/stock-reference-20261013/fresh22b-sole-owner-bounded-nextboot-hold01.json`.
 Revalidate its bounded coverage/owner every operation. Preserve original radio HOLD;
-new22b phases use a separate sticky subordinate marker. Parent alone hardware.
+new22b phases use a separate sticky subordinate marker, now failed-reset HOLD.
+No further native effect is queued; parent alone hardware.
 
 **P2 v2:** ordinary focused static review accepts its three callback/presence/error-
 ordering corrections; author changed-unit syntax3/3 passed, not runtime confirmation.
@@ -55,11 +56,14 @@ full P4/P5, tests, ARM/module build or hardware; all old inputs remain immutable
 or deployable. Parent source/build disposition:
 `docs/qualification-plans/rtsp-runtime-20261022/PARENT_DISPOSITION.md`.
 Move-only frame-FD custody helper is also delivered/compiled HOST/ARM (16 commands),
-not full provider adoption. One disjoint worker now owns fresh
-`apps/qualification/kernel76-encoder-identity/` for the missing observational per-
-open encoder session/ref query, in a source copy only. Current kernel/image stay
-immutable. Watchdog ownership, failed-next retention/backing/provisioning/owned
-listener remain blockers. No new main or native memory-fit claim.
+not full provider adoption. Observational encoder session/ref query source is
+delivered at `apps/qualification/kernel76-encoder-identity/`;88-byte HOST/ARM UAPI
+compile PASS, actual driver compile stopped on retained23.1.1/current23.1.3 Clang
+drift. Parent explicitly selected a NEW compile-only23.1.3 baseline in fresh
+`apps/qualification/kernel76-encoder-identity-clang2313/`; not old76 compiler/ABI
+reproduction or a full build. Current kernel/image/source/build01 stay immutable.
+Watchdog ownership, failed-next retention/backing/provisioning/owned listener remain
+blockers. No new main or native memory-fit claim.
 
 **Latest steering: build-focused, no further penetration/adversarial/mutation
 testing.** User requested a functional checklist and best-effort app build. See

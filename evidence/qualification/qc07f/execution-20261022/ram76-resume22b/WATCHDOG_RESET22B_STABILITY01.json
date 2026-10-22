@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-22T12:12:25.577364+00:00",
+  "state": "RESET22B_ACTUAL_RECOVERY_TO_STABLE_UBOOT_OBSERVED_FAILED_CONTROLLER_HOLD_RETAINED",
+  "complete_arm_marker_seen": true,
+  "main_CPU_reset_banners": 1,
+  "held_original_uboot_stable_passive_seconds": 10,
+  "no_RX_or_TX_during_passive_interval": true,
+  "no_kernel_handoff": true,
+  "password_text_in_reset_boot_before_held_prompt": true,
+  "same_password_text_in_original_successful_cold_boot_before_held_prompt": true,
+  "future_catch_consumed": true,
+  "old_Linux_epoch_invalidated_by_observed_reset": true,
+  "original_and_reset_failure_HOLD_unchanged": true,
+  "reset_controller_PASS": false,
+  "no_retry_or_manual_target_TX": true
+}

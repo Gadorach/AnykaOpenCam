@@ -57,8 +57,10 @@ authorizes unattended eligible work/hardware trials with watchdog recovery until
 genuine interaction is required; further adversarial testing stays deferred.
 After silent receive-only observation, required user OFF/ON under fresh22b catch
 established actual held original U-Boot. Fixed RAM76 upload, independent RAM CRC,
-monitor startup and RO idle postcheck passed11:49UTC. One bounded normal watchdog
-smoke is selected next, not a station attach or deliberate reset.
+monitor startup and RO idle postcheck passed11:49UTC; normal watchdog smoke passed
+12:05UTC. One selected idle reset controller failed on password-text classification;
+actual reset/catch and separate10s stable original U-Boot observed12:12UTC. Target
+is now held U-Boot, not Linux. Both failure HOLDs remain; no further native queue.
 Prior radio HOLD is preserved; source/helper/operation ownership gates still apply.
 
 ### October22 earlier steering — build and functional checklist

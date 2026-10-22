@@ -1,5 +1,23 @@
 # Active execution ledger — remaining foundation work
 
+**Current native12:12UTC — held original U-Boot; reset trial FAILED/HOLD:** one
+idle watchdog reset from `cfa39ea` source emitted full arm and actual main-CPU reset,
+then controller line81 stopped on password text. Receive-only reconciliation shows
+one10B reset +three19B automatic catch packets, original held prompt/no kernel
+handoff, same password text as successful cold22b catch, and later10s with zero
+new RX/TX. Failed result preserved; no parser relaxation/retry/rescue command or
+RAM restore. Both old radio and new reset-failure HOLD remain. Linux epochs are
+invalidated, catch consumed; no active transfer or further native queue. See
+`WATCHDOG_RESET22B_RESULT.md` under transport docs and scalar reconciliation/
+stability receipts under execution-20261022/ram76-resume22b.
+
+**Encoder observational query delivered:**88-byte fixed per-open session/reference/
+history query source, no new effects; HOST/ARM UAPI compile PASS. Actual driver
+compile stopped before invocation on retained Clang23.1.1 versus current23.1.3.
+Parent explicitly selects fresh separately pinned23.1.3 SOURCE-ONLY object compile
+baseline, preserving build01/source/image/config and its failure; not old76 pairing,
+full kernel/module build or native support. Worker owns new clang2313 paths only.
+
 **Oct22 12:05UTC watchdog smoke native PASS:** one5s timeout/ping/get/magic-close,
 10s passive no-feed interval, fresh sameboot idle/PID1 console-only FD postflight
 and exact TX accounting PASS. No reboot; not electrical stop/reset proof. Receipt:

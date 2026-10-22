@@ -1,0 +1,46 @@
+{
+  "utc": "2026-10-22T12:11:28.676464+00:00",
+  "state": "RESET22B_FAILED_RECEIVE_ONLY_RECONCILIATION_NOT_CLEARANCE",
+  "failure_source_line": 81,
+  "sole_owner_source_start_revalidated": true,
+  "complete_watchdog_arm_marker": true,
+  "original_main_CPU_boot_banners": 1,
+  "original_held_uboot_prompt_tail": true,
+  "future_catch_armed": false,
+  "tx_busy": false,
+  "new_tx_bytes": 67,
+  "kernel_handoff_seen": false,
+  "password_prompt_seen": true,
+  "SF_line_count": 0,
+  "SF_initial_detection_only": false,
+  "protected_TX_lengths": [
+    10,
+    19,
+    19,
+    19
+  ],
+  "completed_TX_lengths": [
+    10,
+    19,
+    19,
+    19
+  ],
+  "event_kinds": [
+    "tx_protected_intent",
+    "tx_complete",
+    "rx",
+    "rx",
+    "new_boot_window_reset",
+    "abort_arm_triggered",
+    "tx_protected_intent",
+    "tx_complete",
+    "tx_protected_intent",
+    "tx_complete",
+    "rx",
+    "tx_protected_intent",
+    "tx_complete",
+    "rx"
+  ],
+  "original_and_subordinate_HOLD_preserved": true,
+  "no_new_manual_TX": true
+}
