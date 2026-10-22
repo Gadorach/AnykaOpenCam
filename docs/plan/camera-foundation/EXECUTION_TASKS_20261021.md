@@ -1,5 +1,24 @@
 # Active execution ledger — remaining foundation work
 
+**P2 ordinary source review returned CHANGES REQUIRED:** exact153-file candidate
+and204 accepted-base pins match, but v1 lacks required assign/unassign channel
+callbacks, can publish success after netdev registration rollback, and records a
+validated negative firmware status later than its observation. Syntax PASS did not
+establish these API/ordering semantics. Review:
+`STATION76_ATTACH_INIT_P2_REVIEW.md` under kernel76 transport docs. Parent selected
+fresh `kernel76-station-attach-init-v2/` for only R1–R3 correction; preserve v1/review.
+No P1 adoption/retry, P3–P5, adversarial tests, ARM/module build or native selection.
+Current RAM76 upload remains exclusive; source lanes do not touch hardware/helpers.
+
+**Active22b hardware — fixed RAM76 resume launched:** reviewed recipes/source/
+cold-gate receipts committed locally as `25a1ba7`, ordinary index unchanged. ONE
+`ram76_boot.py --fresh22b-boot-only`, shell `sh_1635f1a90001X9X69CSqVph1iw`.
+Wait completion; no concurrent UART/RPC/status/progress poll or source/helper edit.
+Original failed radio HOLD remains; subordinate22b HOLD owns this phase. Existing
+loader/startup watchdog plus fresh catch retained. No native RAM76 result yet;
+only fixed RO idle postcheck after actual monitor/operation completion. No
+radio/station/network/media/peripheral/flash queue. Parent disjoint source work only.
+
 **Oct22 user OFF/ON → fresh22b cold catch/gate PASS:**22a expired normally08:16UTC
 while awaiting user action; all private final sizes/hashes verified. User OFF then
 reviewed fresh22b receive owner/future catch revalidated before user ON. Actual

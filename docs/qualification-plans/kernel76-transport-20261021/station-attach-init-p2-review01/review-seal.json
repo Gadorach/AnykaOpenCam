@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-22T11:36:15.018530+00:00",
+  "argv": [
+    "docs/qualification-plans/kernel76-transport-20261021/station-attach-init-p2-review01/finalize_review.py"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "python": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+  "public_reader_inputs_revalidated_unchanged": 375,
+  "candidate_seal_sha256": "c54ff57f63bec1180199a97321fbf1ea38e9b448edf0969c9135953c565b1919",
+  "disposition": "CHANGES REQUIRED: P2-R1 missing required chanctx callbacks; P2-R2 surviving registration gap; P2-R3 deferred negative-status first-error capture",
+  "scope": "ordinary SOURCE/build-custody review only; no compilation, runtime/tests, P1 review, Git/index, target/UART/RPC/network/private IO",
+  "files": {
+    "docs/qualification-plans/kernel76-transport-20261021/STATION76_ATTACH_INIT_P2_REVIEW.md": {
+      "bytes": 16561,
+      "sha256": "1b9707d01381c0c89331751813b3d73b0c9a1ec951824a57348f1fa79d8e4a7b"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-attach-init-p2-review01/finalize_review.py": {
+      "bytes": 2195,
+      "sha256": "3acbbd51b0e766b022a204cf34f00fa280424611e4d45b30881a7b584aa07b6c"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-attach-init-p2-review01/public-excerpts.json": {
+      "bytes": 87099,
+      "sha256": "346a3c8aa1a155dc03d19aa661add4e607305c74ba0c8d897b0dc3d5f9dee311"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-attach-init-p2-review01/public-pin-verification.json": {
+      "bytes": 32924,
+      "sha256": "9e673f38b4c179224694a04805b5ee0eda560a1b6b7a569f449de66edd14c82b"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-attach-init-p2-review01/read_public_inputs.py": {
+      "bytes": 7671,
+      "sha256": "52d852b1fb928166b6cbac8e18630e03c1f364d9ef986232acefe1613082272e"
+    },
+    "docs/qualification-plans/kernel76-transport-20261021/station-attach-init-p2-review01/reader-receipt.json": {
+      "bytes": 74834,
+      "sha256": "2fc65e513fa648c846d99ca23e2649c0ecbe24f05d78d3f31016c835ef229c6e"
+    }
+  }
+}
