@@ -1,0 +1,69 @@
+--- TESTED-integration05/README.md
++++ FROZEN-HALT/README.md
+@@ -1,4 +1,27 @@
+ # Derived V3 server ↔ owned isolated RTSP verifier — SOURCE / HOST ONLY
++
++## USER HALT checkpoint — 2026-10-13
++
++**PARTIAL / FROZEN, no queue advancement.** Last completed `integration05`:
++80875 wire/source +5886 focused checks optimized; 80608 +5817 sanitized;
++36+11 campaigns each, C++ PASS, HOST memory shape and ARM server/adapter/child
++static links PASS (ARM never executed). Exact TESTED source is preserved in
++that run's `inputs/`; native integration/product acceptance was not performed.
++
++Three subsequent source edits are **UNBUILT / UNTESTED** at HALT:
++`public_dummy_material.c`, `fixture.c`, `client_test.py`. They correct the
++historical BAD-DOMAIN-labelled fixture, which in integration05 actually tested
++startup credential-generation mismatch, to an explicit PUBLICDUMMY foreign-domain
++marker rejection. No generator/build/test/listener is run after HALT. Do not
++mark the current source tree fully fixture-passed from integration05. This README
++has also received documentation-only HALT text. Tested/current source snapshots,
++exact diff and failures are sealed under the lane evidence directory.
++
++Remaining, only if user resumes: independently review current/tested diff and
++finish a fresh offline build of those last edits; parent controls all subsequent
++native lifecycle/producer qualification and central plan/status updates. No
++central documents, target, new unit/dependency, private generation or Git work.
++The dependency chain below is deferred, **not authorization to proceed now**.
+ 
+ SEC-05/11, STREAM-04/07. **Independent parent review required; native HOLD.**
+ Only this new directory and `evidence/delegated/20261012-rtsp-isolated-server/`
+--- TESTED-integration05/client_test.py
++++ FROZEN-HALT/client_test.py
+@@ -78,7 +78,7 @@
+         scope.mkdir(mode=0o700)
+         #Separate trusted HOST creator. Server sees preopened descriptors, never
+         #password/HA1/username/realm material bytes or their file/payload hashes.
+-        made = subprocess.run([str(GENERATOR), '--PUBLICDUMMY', str(scope), 'MD5' if alg == 'MD5' else 'SHA-256', str(self.port), str(ttl), str(rate)],
++        made = subprocess.run([str(GENERATOR), '--PUBLICDUMMY', str(scope), alg if alg in ('MD5','BAD-DOMAIN') else 'SHA-256', str(self.port), str(ttl), str(rate)],
+             stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=5)
+         check(made.returncode == 0 and made.stdout == made.stderr == b'')
+         material = os.open(scope / 'rtsp-material.bin', os.O_RDONLY | os.O_NOFOLLOW | os.O_CLOEXEC)
+--- TESTED-integration05/fixture.c
++++ FROZEN-HALT/fixture.c
+@@ -237,7 +237,7 @@
+  static const struct camera_profile profiles[]={{"camera0-main","camera0","host-encoder",16,16,CAMERA_H264}};
+  static const struct camera_resource_group groups[]={{"host-group",0,CAMERA_PRESENT_UNQUALIFIED}};
+  struct camera_graph graph={.devices=devices,.device_count=2,.profiles=profiles,.profile_count=1,.groups=groups,.group_count=1};
+-  f.config=(struct candidate_config){.abi=CANDIDATE_AUTH_ABI,.struct_bytes=sizeof(f.config),.host_fixture_only=1,.algorithm=f.algorithm,.boot_generation=42,.epoch=444,.credential_generation=f.bootstrap_bad?2:1,
++  f.config=(struct candidate_config){.abi=CANDIDATE_AUTH_ABI,.struct_bytes=sizeof(f.config),.host_fixture_only=1,.algorithm=f.algorithm,.boot_generation=42,.epoch=444,.credential_generation=1,
+    .device_id="PUBLICDUMMY-device",.account_id="PUBLICDUMMY-rtsp",.profile_id="camera0-main",.graph=&graph,.nonce_ttl_ms=(uint32_t)ttl,
+   .rate_window_ms=1000,.global_verifies=(uint32_t)rate,.global_challenges=(uint32_t)rate,.account_verifies=(uint32_t)rate,.account_challenges=(uint32_t)rate,
+    .peer_verifies=(uint32_t)rate,.peer_challenges=(uint32_t)rate,.host_send_chunk=(uint32_t)chunk,.begin_contract=CANDIDATE_BEGIN_LOGICAL_ONLY,.context=&f,.random_ready=random_ready,
+--- TESTED-integration05/public_dummy_material.c
++++ FROZEN-HALT/public_dummy_material.c
+@@ -19,12 +19,12 @@
+ {
+  struct rv_material m={0};struct stat st;int dir=-1,fd=-1,result=20;char *end;
+  if(argc!=7||strcmp(argv[1],"--PUBLICDUMMY")||!getuid())goto done;
+- if(!strcmp(argv[3],"SHA-256"))m.algorithm=CAMERA_DIGEST_SHA256;else if(!strcmp(argv[3],"MD5"))m.algorithm=CAMERA_DIGEST_MD5_LEGACY;else goto done;
++ if(!strcmp(argv[3],"SHA-256")||!strcmp(argv[3],"BAD-DOMAIN"))m.algorithm=CAMERA_DIGEST_SHA256;else if(!strcmp(argv[3],"MD5"))m.algorithm=CAMERA_DIGEST_MD5_LEGACY;else goto done;
+  unsigned long port=strtoul(argv[4],&end,10);if(*end||port<1024||port>65535)goto done;
+  unsigned long ttl=strtoul(argv[5],&end,10);if(*end||ttl<100||ttl>300000)goto done;
+  unsigned long rate=strtoul(argv[6],&end,10);if(*end||!rate||rate>1024)goto done;
+  dir=open(argv[2],O_RDONLY|O_DIRECTORY|O_NOFOLLOW|O_CLOEXEC);if(dir<0||fstat(dir,&st)||st.st_uid!=getuid()||(st.st_mode&07777)!=0700)goto done;
+- m.abi=RV_ABI;m.bytes=sizeof(m);m.domain=CAMERA_ACCESS_RTSP;m.epoch=444;m.boot_generation=42;m.credential_generation=1;m.account=UINT64_C(0x505542444d59);
++ m.abi=RV_ABI;m.bytes=sizeof(m);m.domain=!strcmp(argv[3],"BAD-DOMAIN")?CAMERA_ACCESS_UI:CAMERA_ACCESS_RTSP;m.epoch=444;m.boot_generation=42;m.credential_generation=1;m.account=UINT64_C(0x505542444d59);
+  strcpy(m.device,"PUBLICDUMMY-device");strcpy(m.account_id,"PUBLICDUMMY-rtsp");strcpy(m.sensor,"camera0");strcpy(m.profile,"camera0-main");
+  memcpy(m.username,"PUBLICDUMMY",11);m.username_bytes=11;
+  const char *realm="PUBLICDUMMY RTSP candidate",*password="PUBLICDUMMY-not-product";

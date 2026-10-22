@@ -1,0 +1,31 @@
+--- reviewed-V2/adapter.c
++++ isolated/verifier_adapter_overlay.c
+@@ -24,6 +24,7 @@
+ struct rv_client {
+  int fd,pidfd;pid_t child;unsigned retired,failed,wiped,pending,discarded,revoking;
+  unsigned barrier_released,barrier_armed,engine_ack;
++ int owned_wait_status;unsigned owned_wait_observed;
+  uint32_t ready_flags,profile;uint64_t epoch,generation,next_sequence,last_ns;
+  struct rv_message active;
+ };
+@@ -33,7 +34,7 @@
+ {
+  int status;pid_t p;if(c->retired)return RV_OK;
+  p=waitpid(c->child,&status,WNOHANG);
+- if(p==c->child){c->retired=1;c->failed=1;c->child=0;if(c->pidfd>=0){close(c->pidfd);c->pidfd=-1;}return RV_OK;}
++  if(p==c->child){c->owned_wait_status=status;c->owned_wait_observed=1;c->retired=1;c->failed=1;c->child=0;if(c->pidfd>=0){close(c->pidfd);c->pidfd=-1;}return RV_OK;}
+  if(!p||(p<0&&errno==EINTR))return RV_MORE;
+  c->failed=1;return RV_UNCERTAIN;
+ }
+@@ -307,6 +308,11 @@
+ uint32_t rv_ready_flags(const struct rv_client *c){return c?c->ready_flags:0;}
+ uint32_t rv_ready_profile(const struct rv_client *c){return c?c->profile:0;}
+ int rv_wipe_observed(const struct rv_client *c){return c&&c->wiped;}
++/*Scoped server integration observer ONLY; original wire/child/adapter authority
++ *unchanged. Zero cannot be inferred from a status code, timeout or signal.*/
++int is_rv_pending_result(const struct rv_client *c){return c?(int)c->pending:-1;}
++size_t is_rv_context_bytes(void){return sizeof(struct rv_client);}
++int is_rv_wait0(const struct rv_client *c){return c&&c->owned_wait_observed&&WIFEXITED(c->owned_wait_status)&&WEXITSTATUS(c->owned_wait_status)==0;}
+ #ifdef RV_TEST_PUBLIC_ONLY
+ int rv_test_owned_pidfd(struct rv_client *c)
+ {return c&&!c->retired&&c->pidfd>=0?fcntl(c->pidfd,F_DUPFD_CLOEXEC,16):-1;}

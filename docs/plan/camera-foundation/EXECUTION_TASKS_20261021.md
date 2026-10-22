@@ -1,5 +1,45 @@
 # Active execution ledger — remaining foundation work
 
+**Oct22 P1 candidate handback — parent reproduction/review active:** the one
+user-requested transparent clarification to the same original worker completed
+normally, without provider/model/permission/safeguard changes. The prior rejection
+remains disclosed; its internal cause is not established. Candidate seal SHA256
+`59fe2c873945ac20e3742298d4827cf5ce445b8dd28c1ab768a869973c878c1f` pins453 files,
+all parent-verified. Fresh parent run04 uses the documented output-root-only
+collector relocation in `station-attach-rx-p1-parent01/`, outside frozen author
+evidence. Separate exact-pin independent P1 review is active. No candidate GO,
+P2–P5 selection, ARM build/staging/target operation or original HOLD clearance yet.
+
+**Oct22 B08 independent review returned NO-GO for unchanged reproduction:** the
+foreign-domain source input is now correct and rejects pre-child, but constructor/
+timeout cleanup can orphan owned fixture descendants and the generic refusal
+oracle cannot establish the rejection cause. Parent confirmed these source gaps
+and selected a fresh isolated HOST harness/oracle correction, not a full builder
+or native test. Source review and parent disposition:
+`docs/qualification-plans/rtsp-tail-20261022/INDEPENDENT_SOURCE_REVIEW.md` and
+`PARENT_SOURCE_DISPOSITION.md` in that directory. Old frozen source/HALT evidence
+remain unchanged. B08 is not closed; no fresh RTSP behavioral PASS is claimed.
+
+**Oct22 user-directed P1 clarification — pending:** user expects a false positive
+and explicitly requested scope clarification/retry or the available refusal reason.
+One transparent clarification was sent to the same original P1 worker session,
+with the earlier rejection disclosed, defensive local SOURCE/synthetic HOST scope,
+and no safeguard/model/provider/permission change. If rejected again, stop and
+report the reason; no alternate-agent reroute or parent completion. No successful
+handback/source acceptance follows from launching that request. B08 review remains
+disjoint; hardware state remains unknown and no target operation is queued.
+
+**Oct22 independent continuation — B08 SOURCE review selected:** user resumed the
+project. The retained server log confirms the P1 failure was a provider
+`AI.Error.InvalidRequest: cyber_policy`, not a demonstrated service crash or test
+failure; no clearance is established. See
+`docs/qualification-plans/kernel76-transport-20261021/P1_BLOCK_DIAGNOSIS_20261022.md`.
+P1 remains paused, without retry/reroute/parent completion. Parent selects the
+independent B08 / RP-08–09 RTSP fixture-tail review, then conditional fresh synthetic
+localhost HOST reproduction. No target operation, station build/attach or native
+RTSP selection follows; current hardware state remains unknown. Source review:
+`docs/qualification-plans/rtsp-tail-20261022/INDEPENDENT_SOURCE_REVIEW.md` (pending).
+
 **P1 PAUSED/INCOMPLETE — tool safety error:** the worker ended with `cyber_policy`,
 not a successful handback. Partial source/report/evidence remain in place,
 unreviewed/uncommitted; no candidate seal observed09:31UTC. Parent did read-only
@@ -287,8 +327,8 @@ not the requirement to revalidate each later operation. Old20c authority is expi
 | RP-05 | DEPENDENCY | Standard capture/import/overlap after memory/retirement proof |
 | RP-06 | DEPENDENCY | Imaging/codec/rate/profile quality after controlled baseline and ownership work |
 | RP-07 | OPEN / SOURCE-HOST pieces | Integrate existing shared graph/producer/control owners, not a parallel stack |
-| RP-08 | OPEN / SOURCE-HOST and RAM75 narrow proofs | Adopt corrected auth/settings candidates; actual76 media/cold/durable authority unqualified |
-| RP-09 | DEPENDENCY | Resolve RTSP tail/v6/UI02 gates, then protected integrated browser/RTSP |
+| RP-08 | OPEN / B08 HARNESS-CORRECTION-SOURCE Oct22 | Independent source review found R1 owned cleanup and R2 domain-oracle gaps; fresh HOST derivative selected, full builder awaits parent review. Actual76 media/cold/durable authority unqualified |
+| RP-09 | DEPENDENCY / B08 HARNESS-CORRECTION-SOURCE Oct22 | HOST correction is disjoint from P1; B08/v6/UI02/native protected browser/RTSP remain gated |
 | RP-10 | DEPENDENCY | Shared L2/clock/analogue implementation with UART-safe lifetime |
 | RP-11 | GATED | Modern76 module/GUI/mechanical/light/input qualification; no automatic effects/homing |
 | RP-12 | GATED | Modern audio provider; scalar-only mic/privacy and UART-isolated speaker constraints stand |

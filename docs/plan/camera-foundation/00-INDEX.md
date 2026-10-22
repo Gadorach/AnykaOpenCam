@@ -50,6 +50,20 @@ build recipes. Do not rewrite historical absolute paths merely for the rename.
 
 ## Next task
 
+### October22 continuation — bounded source work, no hardware queue
+
+Current state is maintained in the [execution ledger](EXECUTION_TASKS_20261021.md)
+and compact root `AGENTS.md`, not the older “latest” sections below. P1's original
+worker completed one user-requested transparent defensive-scope clarification after
+the provider rejection; candidate is sealed and parent reproduction/independent
+review are active, acceptance pending, with no alternate-agent reroute or safeguard
+changes. Independently, B08 RTSP-tail review found HOST
+lifetime/oracle gaps; a fresh disjoint harness correction is selected, with full
+builder/native testing gated on review. See
+[parent disposition](../../qualification-plans/rtsp-tail-20261022/PARENT_SOURCE_DISPOSITION.md).
+Current target power/runtime/owner/recovery remain unknown; original radio HOLD
+persists. Neither source lane authorizes native station/RTSP work.
+
 ### Active execution — October21, reviewed increments committed on main
 
 User approved execution of the consolidated plan. Follow

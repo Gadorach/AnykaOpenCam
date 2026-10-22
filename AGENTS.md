@@ -18,13 +18,28 @@
   independent work. Do not infer permission for third-party contact, publication,
   account changes or unrelated hardware.
 
-## Current checkpoint (last execution evidence: 2026-10-21)
+## Current checkpoint (source continuation: 2026-10-22; last native evidence: Oct21)
 
-**P1 is incomplete after a worker `cyber_policy` tool error.** Partial source,
-tests, report and evidence are preserved, unreviewed and uncommitted; no candidate
-seal was observed at09:31UTC. No successful handback, retry, alternate-agent
-reroute or parent completion was recorded. Resolve the tool block without bypassing
-it before resuming that lane; do not adopt apparent test artifacts as acceptance.
+**P1 candidate delivered Oct22; parent HOST reproduction + independent review
+active, no acceptance yet.** The user-requested truthful defensive-scope
+clarification succeeded in the **same original worker session** after the earlier
+provider `cyber_policy` error. No model/provider/permission/safeguard changes or
+alternate-agent reroute. Cause of the earlier flag remains unexplained, not proved
+false positive. Candidate seal `59fe2c873945ac20e3742298d4827cf5ce445b8dd28c1ab768a869973c878c1f`
+pins453 files, all parent-verified. Fresh parent run04 uses a documented collector
+evidence-root relocation in `station-attach-rx-p1-parent01/`, outside sealed author
+files. Independent review owns `station-attach-rx-p1-review01/` and its report.
+Do not adopt reported tests before those gates; no P2–P5/native/build selection.
+
+**Independent B08 / RP-08–09 task Oct22:** source review found the unchanged RTSP
+harness NO-GO (constructor/timeout descendant cleanup; nonspecific domain oracle).
+A disjoint worker owns a fresh HOST-only harness correction; full reproduction
+awaits parent review. This is not P1 work. See
+`docs/qualification-plans/rtsp-tail-20261022/PARENT_SOURCE_DISPOSITION.md`.
+The retained P1 server error is provider-side
+`AI.Error.InvalidRequest: cyber_policy`; same-session resumption now succeeded. Diagnosis
+and subsequent user-directed clarification:
+`docs/qualification-plans/kernel76-transport-20261021/P1_BLOCK_DIAGNOSIS_20261022.md`.
 
 - P1 scope: `apps/qualification/kernel76-station-attach-rx/`, its candidate report
   and `station-attach-rx-p1-host01/`. The selected SOURCE/HOST change admits only
@@ -44,8 +59,8 @@ it before resuming that lane; do not adopt apparent test artifacts as acceptance
 - Last direct target observation: **Oct21 06:43UTC**, RAM76/radio APPLICATION,
   idle/retired. Capture21a expired/finalized; at07:24UTC the old recorder had ended,
   adapter was unowned and socket absent; private manifest/files were verified.
-  Current power/runtime/owner/recovery are **unknown**. No active worker or target
-  operation is established by this handoff. Old PIDs, addresses and timers expire.
+  Current power/runtime/owner/recovery are **unknown**. Only the source workers
+  named above are selected; no target operation. Old PIDs, addresses and timers expire.
 - Original05:23UTC native radio trial remains **FAILED/HOLD**:74 payload fragments
   and150 complete ACKs, final RUN ACK interrupted by USB-disconnect printk. Separate
   06:00 retirement and06:43 APPLICATION/identity/retirement passed while preserving

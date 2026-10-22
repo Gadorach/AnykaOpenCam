@@ -1,0 +1,15 @@
+{
+  "evidence_class": "SOURCE REVIEW ONLY; final static pin recheck, no tests",
+  "observed_utc": "2026-10-22T03:34:30.019904+00:00",
+  "changed_candidate_sources_since_inventory": [],
+  "changed_additional_sources_since_inventory": [],
+  "review_artifact_sha256": {
+    "docs/qualification-plans/rtsp-tail-20261022/INDEPENDENT_SOURCE_REVIEW.md": "03772d6393d69634be89496745fd83d94c25a771ef9ecff99715981f1bc668c2",
+    "docs/qualification-plans/rtsp-tail-20261022/source-review/collect_public_pins01.py": "85a4343291b3211a2c794ae37b95250eb4a123997ebac9e77f61c429b8a00300",
+    "docs/qualification-plans/rtsp-tail-20261022/source-review/public-source-pins01.json": "716e08501ddcb831ae8099b448fd2fdad17d926030b0cb89b083543b03020054",
+    "docs/qualification-plans/rtsp-tail-20261022/source-review/recomputed-tested05-to-frozen01.diff": "51815a627c40a5b5202eb24789c2904b046acca0203a1327e6f3cb1d517808d4",
+    "docs/qualification-plans/rtsp-tail-20261022/source-review/adapter-overlay01.diff": "db865b7ffc0007eeae42272b74bb9f14cefaef61c6dd00da10f548965bebd462"
+  },
+  "verdict": "NO-GO unchanged unattended builder/harness; domain-marker tail source-consistent",
+  "builder_or_tests_executed": false
+}
