@@ -1,0 +1,1 @@
+PASS A2a actual USB->core ingress->A1 copy: 2806874 assertions, 68448 rejected cases, 68470 modeled sends, 22 submissions

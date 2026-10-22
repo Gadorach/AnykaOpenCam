@@ -1,0 +1,29 @@
+{
+  "all_pass": true,
+  "utc_start": "2026-10-22T03:37:55.161408+00:00",
+  "utc_end": "2026-10-22T03:40:56.004716+00:00",
+  "python": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+  "commands": 86,
+  "input_pins": 1446,
+  "extractions": 117,
+  "mutant_variants": 12,
+  "compiled_runtime_mutant_executions": 24,
+  "p1_totals": {
+    "optimized": {
+      "assertions": 531997726,
+      "fixtures": 16624970,
+      "modeled_command_sends": 1008
+    },
+    "sanitized": {
+      "assertions": 531997726,
+      "fixtures": 16624970,
+      "modeled_command_sends": 1008
+    }
+  },
+  "author_parent_inputs_equal_except_byte_identical_baseline_path": true,
+  "positive_stdout_matches_author": true,
+  "candidate_files_unchanged": 453,
+  "parent_outputs_all_hash_verified": true,
+  "collector_evidence_root_relocation_only": true,
+  "scope": "SYNTHETIC_HOST_ONLY_NO_FULL_S4_BUILD_NATIVE_GO"
+}

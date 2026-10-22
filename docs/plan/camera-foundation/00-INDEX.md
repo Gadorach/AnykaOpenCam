@@ -55,9 +55,11 @@ build recipes. Do not rewrite historical absolute paths merely for the rename.
 Current state is maintained in the [execution ledger](EXECUTION_TASKS_20261021.md)
 and compact root `AGENTS.md`, not the older “latest” sections below. P1's original
 worker completed one user-requested transparent defensive-scope clarification after
-the provider rejection; candidate is sealed and parent reproduction/independent
-review are active, acceptance pending, with no alternate-agent reroute or safeguard
-changes. Independently, B08 RTSP-tail review found HOST
+the provider rejection; candidate is sealed and fresh parent HOST reproduction
+passed. The independent reviewer subsequently hit another generic `cyber_policy`
+restriction; partial evidence is preserved but unaccepted, with no further retry,
+reroute or safeguard changes. P1 source acceptance remains blocked. Independently,
+B08 RTSP-tail review found HOST
 lifetime/oracle gaps; a fresh disjoint harness correction is selected, with full
 builder/native testing gated on review. See
 [parent disposition](../../qualification-plans/rtsp-tail-20261022/PARENT_SOURCE_DISPOSITION.md).

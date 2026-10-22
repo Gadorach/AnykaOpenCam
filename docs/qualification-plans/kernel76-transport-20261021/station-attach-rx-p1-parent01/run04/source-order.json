@@ -1,0 +1,19 @@
+{
+  "ordered_markers": [
+    "if (!data || len < (int)sizeof(struct hgic_hdr))",
+    "    if (data[2] != HGIC_HDR_TYPE_CMD && data[2] != HGIC_HDR_TYPE_CMD2 &&\n        data[2] != HGIC_HDR_TYPE_EVENT && data[2] != HGIC_HDR_TYPE_EVENT2)\n        goto bad_rx;\n",
+    "for (i = 0; i < 4",
+    "hdr->hdr.magic  = le16_to_cpu",
+    "len = (len < hdr->hdr.length",
+    "switch (hdr->hdr.type)"
+  ],
+  "line_numbers": [
+    219,
+    226,
+    232,
+    252,
+    266,
+    267
+  ],
+  "normalization_is_identity_on_LE_not_a_byte_mutation_proof": true
+}

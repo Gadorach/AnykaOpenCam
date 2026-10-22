@@ -1,0 +1,32 @@
+{
+  "utc_start": "2026-10-22T03:37:55.126469+00:00",
+  "argv": [
+    "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-parent01/reproduce.py",
+    "--run",
+    "run04"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "python": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+  "scope": "PARENT_FRESH_SYNTHETIC_HOST_REPRODUCTION_ONLY",
+  "wrapper": {
+    "bytes": 3270,
+    "sha256": "1ea58b6f960f04f9f67da54591581e72ff8aaea2868abd94f09e01d76b83361e"
+  },
+  "original_collector": {
+    "bytes": 13881,
+    "sha256": "ac82b9e37ec637f01a0f6a13a972cf0cf983f61e1037fe50351c2cf60f7491c4"
+  },
+  "candidate_seal": {
+    "bytes": 123168,
+    "sha256": "59fe2c873945ac20e3742298d4827cf5ce445b8dd28c1ab768a869973c878c1f"
+  },
+  "relocation_old": "E = DOC / 'station-attach-rx-p1-host01'",
+  "relocation_new": "E = DOC / 'station-attach-rx-p1-parent01'",
+  "relocated_collector_sha256": "2f03120077675ed0df891165c5bba3a596ce021a66eaeb27193e8021b20b77bf",
+  "only_collector_change": "evidence directory binding; baseline copy byte-exact",
+  "reported_runner_sha256_is_original_file": true,
+  "native_or_ARM_operation": false,
+  "all_pass": true,
+  "all_453_candidate_files_unchanged_after_run": true,
+  "utc_end": "2026-10-22T03:40:56.102228+00:00"
+}

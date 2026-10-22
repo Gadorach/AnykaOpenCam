@@ -1,5 +1,25 @@
 # Active execution ledger — remaining foundation work
 
+**Oct22 P1 independent review tool-blocked — no source GO:** reviewer session
+`ses_e9e4fd5a0ffewPJUTk4aHuF8ZN` ended with generic `cyber_policy`, no task-specific
+reason/successful handback. Parent metadata found23 partial files/no final report,
+preserved unreviewed/uncommitted; all453 candidate pins still match. No retry,
+rephrasing, alternate-agent reroute or parent review substitute after this error.
+Fresh parent run04 HOST PASS remains distinct from missing independent acceptance.
+See `P1_REVIEW_TOOL_BLOCK_20261022.md` and
+`STATION76_P1_REVIEW_TOOL_BLOCK_STATUS02.json` under kernel76 transport docs.
+P2–P5/native/builds remain unselected; B08 correction is independent and ongoing.
+
+**Oct22 P1 fresh parent HOST reproduction PASS:** run04 completed03:40:56UTC,
+531,997,726 P1 invariant assertions/16,624,970 ordered invocations per optimized/
+sanitized mode; A1/A2a/A2b regressions agree with author results. All12 mutant
+designs compile and fail at runtime in each mode. Parent verified1,446 inputs,
+all output hashes and453 unchanged sealed candidate files; only the byte-identical
+baseline-copy input path differs due to documented collector output relocation.
+See `STATION76_ATTACH_RX_P1_PARENT_REPRODUCTION.md` under qualification docs.
+Independent review remains pending; no source GO, P2–P5 selection, ARM build,
+staging, target operation or clearance of original FAILED/HOLD follows.
+
 **Oct22 P1 candidate handback — parent reproduction/review active:** the one
 user-requested transparent clarification to the same original worker completed
 normally, without provider/model/permission/safeguard changes. The prior rejection

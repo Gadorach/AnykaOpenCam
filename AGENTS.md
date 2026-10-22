@@ -20,16 +20,21 @@
 
 ## Current checkpoint (source continuation: 2026-10-22; last native evidence: Oct21)
 
-**P1 candidate delivered Oct22; parent HOST reproduction + independent review
-active, no acceptance yet.** The user-requested truthful defensive-scope
+**P1 parent HOST reproduction PASS Oct22; independent review tool-blocked, no
+source acceptance.** The user-requested truthful defensive-scope
 clarification succeeded in the **same original worker session** after the earlier
 provider `cyber_policy` error. No model/provider/permission/safeguard changes or
 alternate-agent reroute. Cause of the earlier flag remains unexplained, not proved
 false positive. Candidate seal `59fe2c873945ac20e3742298d4827cf5ce445b8dd28c1ab768a869973c878c1f`
-pins453 files, all parent-verified. Fresh parent run04 uses a documented collector
-evidence-root relocation in `station-attach-rx-p1-parent01/`, outside sealed author
-files. Independent review owns `station-attach-rx-p1-review01/` and its report.
-Do not adopt reported tests before those gates; no P2–P5/native/build selection.
+pins453 files, all parent-verified. Fresh parent run04 passed86 commands and12
+mutants in each mode, with author input/positive-result agreement. Its documented
+collector output-root relocation keeps sealed author files intact. See
+`docs/qualification-plans/kernel76-transport-20261021/STATION76_ATTACH_RX_P1_PARENT_REPRODUCTION.md`.
+The independent reviewer then ended with another generic `cyber_policy` rejection;
+23 partial evidence files/no final report were observed, left unreviewed/uncommitted.
+No retry/reroute or parent substitute after that error. See
+`docs/qualification-plans/kernel76-transport-20261021/P1_REVIEW_TOOL_BLOCK_20261022.md`.
+Do not adopt partial review claims; no P2–P5/native/build selection.
 
 **Independent B08 / RP-08–09 task Oct22:** source review found the unchanged RTSP
 harness NO-GO (constructor/timeout descendant cleanup; nonspecific domain oracle).

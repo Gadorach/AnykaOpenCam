@@ -1,0 +1,111 @@
+{
+  "utc": "2026-10-22T03:45:02.841614+00:00",
+  "state": "PARENT_HOST_PASS_INDEPENDENT_REVIEW_TOOL_BLOCKED_NO_SOURCE_GO",
+  "review_session": "ses_e9e4fd5a0ffewPJUTk4aHuF8ZN",
+  "returned_error_code": "cyber_policy",
+  "returned_reason": "This content was flagged for possible cybersecurity risk.",
+  "task_specific_reason_returned": false,
+  "candidate_seal_sha256": "59fe2c873945ac20e3742298d4827cf5ce445b8dd28c1ab768a869973c878c1f",
+  "candidate_files_reverified_unchanged": 453,
+  "parent_run04_all_pass": true,
+  "independent_report_observed": false,
+  "independent_report_bytes": null,
+  "partial_review_metadata_only": [
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/focused.c",
+      "bytes": 9515
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/result.json",
+      "bytes": 105145
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/review-attempt01.py",
+      "bytes": 14619
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/review.py",
+      "bytes": 14753
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/run02/audit.json",
+      "bytes": 18681
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/run02/compiler-target.stderr",
+      "bytes": 0
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/run02/compiler-target.stdout",
+      "bytes": 20
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/run02/compiler-version.stderr",
+      "bytes": 0
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/run02/compiler-version.stdout",
+      "bytes": 227
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/run02/focused-optimized-compile.stderr",
+      "bytes": 0
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/run02/focused-optimized-compile.stdout",
+      "bytes": 0
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/run02/focused-optimized-test.stderr",
+      "bytes": 14
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/run02/focused-optimized-test.stdout",
+      "bytes": 0
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/run02/focused-optimized.host",
+      "bytes": 162240
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/run02/focused-unit.c",
+      "bytes": 26499
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/run02/include/linux/build_bug.h",
+      "bytes": 18
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/run02/include/linux/completion.h",
+      "bytes": 18
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/run02/include/linux/errno.h",
+      "bytes": 30
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/run02/include/linux/etherdevice.h",
+      "bytes": 18
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/run02/include/linux/unaligned.h",
+      "bytes": 18
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/run02/include/linux/workqueue.h",
+      "bytes": 18
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/run02/production.diff",
+      "bytes": 893
+    },
+    {
+      "path": "docs/qualification-plans/kernel76-transport-20261021/station-attach-rx-p1-review01/run02/result.json",
+      "bytes": 419524
+    }
+  ],
+  "partial_evidence_read_executed_or_accepted": false,
+  "review_retry_rephrasing_reroute_after_error": false,
+  "target_or_private_IO": false,
+  "ordinary_index_sha256": "2fe5fa37e83f50131ab6719b144cd727884b87e0ab3cf8c57a378ddbfa3418f3"
+}
