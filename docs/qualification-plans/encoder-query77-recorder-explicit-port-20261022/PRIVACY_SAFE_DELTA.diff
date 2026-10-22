@@ -1,0 +1,25 @@
+--- FROZEN_BASELINE_SELECTOR_OMITTED_NOT_RAW
++++ apps/qualification/encoder-query77-recorder-explicit-port/uart_capture.py
+@@ -16 +15,0 @@
+-PORT='<PRIVATE_SELECTOR_OMITTED>'
+@@ -87 +86,13 @@
+-def capture(duration,part,selected_port=PORT,private_capture_dir=None):
++def _checked_selected_port(selected_port):
++    """Lexical role check only; no lookup, normalization or identity proof."""
++    if type(selected_port) is not str or not 0<len(selected_port)<=512:
++        raise ValueError('Capture requires an explicit valid by-id port')
++    prefix='/dev/serial/by-id/'
++    if not selected_port.startswith(prefix):
++        raise ValueError('Capture requires an explicit valid by-id port')
++    component=selected_port[len(prefix):]
++    if component=='.' or '..' in component or not re.fullmatch(r'[A-Za-z0-9_.:+-]+',component):
++        raise ValueError('Capture requires an explicit valid by-id port')
++
++def capture(duration,part,selected_port,private_capture_dir=None):
++    _checked_selected_port(selected_port)
+@@ -327 +338 @@
+-    parser=argparse.ArgumentParser();parser.add_argument('--capture',action='store_true');parser.add_argument('--seconds',type=int,default=1800);parser.add_argument('--part',default='');parser.add_argument('--port',default=PORT);parser.add_argument('--request');parser.add_argument('--private-capture-dir');args=parser.parse_args()
++    parser=argparse.ArgumentParser();parser.add_argument('--capture',action='store_true');parser.add_argument('--seconds',type=int,default=1800);parser.add_argument('--part',default='');parser.add_argument('--port');parser.add_argument('--request');parser.add_argument('--private-capture-dir');args=parser.parse_args()
+@@ -328,0 +340,2 @@
++        try:_checked_selected_port(args.port)
++        except ValueError:parser.error('Capture requires an explicit valid by-id port')

@@ -102,9 +102,20 @@ Full inherited recorder is not a pure library; never imported/called/run, no tes
 installation/current-state/hardware use. Source sufficiency is not recorder adoption.
 Privacy staging check found an inherited adapter selector in the frozen candidate
 and review context diff. Both remain local/uncommitted, not redacted/resealed.
-One author now owns fresh recorder-explicit-port source/docs: no default selector,
-discovery/fallback or old-source mutation; every capture requires a private caller
-adapter before effects. New source needs independent review, no library/CLI/UART use.
+Fresh recorder-explicit-port delivered:353 lines/27283B, module SHA
+`c8433e225675bf16ca153d3b2c700cb4d3ab80dd70083d4e4a7bc19dffc19445`.
+HOST AST/syntax only;14 inputs/nine output pins parent-verified. Independent review
+now accepts narrow conditional SOURCE/API/selected-privacy sufficiency;29 reader
+inputs/three outputs parent-verified. Review seal
+`8cf6b47128e0c2827a9708d661fb80bd55627532534ee347718f6a74e31037a8`.
+Parent disposition in recorder-explicit-port docs, no active author/reviewer.
+No default/discovery/fallback/old-source mutation; every capture requires explicit
+lexical selection before capture-owned effects. No import/library/CLI/UART use.
+Source/privacy sufficiency is not live recorder adoption or hardware admission.
+Parent initial manifest-column assumption failed; actual
+path/bytes/sha256 header was read and used for the successful pin check, no source
+change or candidate call. Safe timer review metadata committed locally `70428f3`;
+static artifact-role receipt/checklist committed `60f0468`, not pushed.
 
 Build-only independent work: static inspection of original rtsp-app/build02 matched
 all seven artifact pins,73 compile-object headers,28 archive member bodies,29 source

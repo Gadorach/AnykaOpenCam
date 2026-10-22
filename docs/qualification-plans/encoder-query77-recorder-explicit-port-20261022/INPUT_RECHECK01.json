@@ -1,0 +1,6 @@
+{
+  "before_after_equal": true,
+  "count": 14,
+  "phase": "before and after successful static verification/output pass; baseline expected pin also checked during initial read and copy",
+  "frozen_source_diff_unchanged": true
+}

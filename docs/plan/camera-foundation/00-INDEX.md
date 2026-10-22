@@ -98,8 +98,10 @@ prerequisite is an observational recorder-timer derivative, now conditionally
 SOURCE/API sufficient after independent review, never imported/called/run. It
 exposes original stored values to exact private status only, no timer/catch/lease
 change or execution/adoption. Frozen source/review diff are withheld from Git for
-an inherited adapter selector; fresh explicit-port recorder source work removes
-that default, no discovery/fallback or execution. Separate original-build02 artifact-role inspection
+an inherited adapter selector; fresh explicit-port source removes that default,
+now conditionally SOURCE/API/selected-privacy sufficient after independent review,
+never imported/called/run, no discovery/fallback or live profile adoption.
+Separate original-build02 artifact-role inspection
 confirms static architecture/define separation, not native ABI or release packaging.
 Original block/parser/HOLDs
 remain frozen. No

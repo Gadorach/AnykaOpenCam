@@ -1,0 +1,64 @@
+{
+  "task_date": "2026-10-22",
+  "date_source": "supplied task context only; no clock read",
+  "method": "stdlib text/hash/AST metadata inspection; unexecuted HOST in-memory compile; no inspected module import or call",
+  "baseline_source": {
+    "bytes": 26563,
+    "sha256": "be0fee5d7aaa55aba5616d04689e309ee9a38255376188ede074cd5be1c7392d"
+  },
+  "original_source": {
+    "bytes": 25426,
+    "sha256": "135a694bf79a1e46d07f089c2256d40ce8c584780c2fd8fa9d7f8b8137a29d00"
+  },
+  "review_seal": {
+    "bytes": 7442,
+    "sha256": "a0311797f796cc2632549c254ff6f68f4db7013225a93353b72b5605b6de0b79"
+  },
+  "fresh_source": {
+    "bytes": 27283,
+    "sha256": "c8433e225675bf16ca153d3b2c700cb4d3ab80dd70083d4e4a7bc19dffc19445",
+    "lines": 353
+  },
+  "complete_baseline_AST_equal_after_only_explicit_port_projection": true,
+  "projection": [
+    "remove new lexical validator",
+    "remove first capture validator statement",
+    "restore original capture defaults in AST metadata",
+    "restore original CLI --port add_argument statement in AST metadata",
+    "remove capture-branch validation try/except",
+    "restore original PORT assignment in AST metadata only"
+  ],
+  "syntax_compile": "PASS; code object discarded without execution; no import/dependency resolution",
+  "capture_selected_port_required_no_default": true,
+  "both_CLI_capture_calls_supply_args_port": 2,
+  "CLI_capture_validation_before_private_public_branch": true,
+  "capture_first_statement_validation": true,
+  "request_only_CLI_AST_identical": true,
+  "no_PORT_Name_nodes_in_fresh_source": true,
+  "validator_call_functions": [
+    "ValueError",
+    "len",
+    "re.fullmatch",
+    "selected_port.startswith",
+    "type"
+  ],
+  "validator_policy": "exact builtin str; total length 1..512; exact /dev/serial/by-id/ prefix; one ASCII [A-Za-z0-9_.:+-]+ component; reject dot and any double-dot substring",
+  "validator_has_IO_resolution_coercion_clock_or_fallback": false,
+  "timer_formatter_and_capture_status_AST_unchanged": true,
+  "time_call_expressions_order_identical_count": 15,
+  "inherited_assert_count_each": 2,
+  "new_or_baseline_code_executed_imported_or_called": false,
+  "tests_mocks_fixtures_mutations_or_runtime_work": false,
+  "raw_selector_not_printed_or_copied_to_new_files": true,
+  "delta_note": "NOT raw byte-exact baseline diff: private selector replaced only in memory with public omission marker before diffing; context zero. Frozen raw source/diff never written or changed.",
+  "input_pins_count": 14,
+  "before_snapshot_scope": "before this successful verification/output pass, not claimed before initial authoring",
+  "effectful_unadmitted_recorder": true,
+  "parent_alone_hardware": true,
+  "both_FAILED_HOLDs_untouched": true,
+  "current_state_owner_catch_manual_readiness_or_coverage_proven": false,
+  "negative_history": [
+    "First author AST inspection asserted an incorrect main-guard statement index because semicolon-separated parser source creates multiple AST statements. It stopped before writing evidence or compiling. Second inspection selects parser option and capture branch by AST structure; no candidate correction or execution.",
+    "One initial glob of the not-yet-created fresh source directory returned missing-path error; no file read or directory created by that call."
+  ]
+}

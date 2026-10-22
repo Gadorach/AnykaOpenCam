@@ -1,0 +1,92 @@
+{
+  "task_date": "2026-10-22",
+  "date_source": "supplied task context only; no clock read",
+  "disposition": "UNREVIEWED_SOURCE_ONLY_EXPLICIT_PORT_PRIVACY_CANDIDATE_NOT_RUNTIME_OR_ADMISSION",
+  "owned_directories": [
+    "apps/qualification/encoder-query77-recorder-explicit-port/",
+    "docs/qualification-plans/encoder-query77-recorder-explicit-port-20261022/"
+  ],
+  "entry_report": "CANDIDATE_REPORT.md",
+  "pre_code_contract": "ADAPTER_CONTRACT.md",
+  "source_sha256": "c8433e225675bf16ca153d3b2c700cb4d3ab80dd70083d4e4a7bc19dffc19445",
+  "source_lines": 353,
+  "source_two_file_aggregate": "c99c724b53fe3fe2862e97c4c9a33574b8563b8b6a3a19a17e72301b6b8a23ef",
+  "aggregate_format": "SHA256 sorted workspace-relative UTF-8 path + NUL + raw SHA256 digest",
+  "input_manifest": "INPUT_PINS01.tsv",
+  "input_count": 14,
+  "inputs_all_unchanged_at_final_recheck": true,
+  "context_drift": {},
+  "baseline_and_original_source_review_seal_raw_diff_expected_pins_match": true,
+  "frozen_private_source_and_review_diff_unchanged_keep_local_uncommitted": true,
+  "private_selector_removed_in_memory_before_initial_source_write": true,
+  "private_selector_absent_from_all_owned_outputs": true,
+  "raw_diff_not_saved": "PRIVACY_SAFE_DELTA.diff compares in-memory omission-marked baseline, zero context; not raw byte-exact diff",
+  "privacy_safe_delta_hunks_added_removed": [
+    4,
+    16,
+    3
+  ],
+  "source_projection_complete_baseline_AST_equal": true,
+  "required_API_port_and_CLI_capture_validation_first": true,
+  "noncapture_request_branch_AST_unchanged_no_extra_RPC": true,
+  "lexical_policy": "exact builtin str; max512; /dev/serial/by-id/ plus one ASCII [A-Za-z0-9_.:+-]+ component; no dot/double-dot; no coercion/lookup/discovery/fallback",
+  "canonical_ROOT_CONTROL_SOCKET_unchanged": true,
+  "all15_time_calls_and_two_inherited_asserts_unchanged": true,
+  "timer_formatter_private_status_gate_and_all_other_inherited_code_preserved": true,
+  "HOST_AST_syntax": "PASS, code object discarded unexecuted",
+  "candidate_or_original_import_function_CLI_call_or_code_execution": false,
+  "tests_mocks_fixtures_synthetic_histories_mutation_adversarial_runtime": false,
+  "clock_current_state_private_capture_CONTROL_HOLD_proc_dev_serial_UART_RPC_network_device_process_access": false,
+  "frozen_source_with_private_literal_read_in_memory_only": true,
+  "Git_index_centralplan_AGENTS_original_review_guard_settings_changes": false,
+  "independent_review_and_parent_read_reverification_required": true,
+  "new_source_hash_not_old_guard_adoption": true,
+  "effectful_unadmitted_recorder_not_pure_library": true,
+  "current_runtime_owner_catch_manual_readiness_coverage_proven": false,
+  "both_FAILED_HOLDs_and_consumed_catch_untouched": true,
+  "strict_continuity_native_product_and_all_remaining_blocks_preserved": true,
+  "source_docstring_root_NOTICE_preserved_no_invented_license_or_publication_grant": true,
+  "automatic_next_worker_execution_installation_staging_boot_query_or_physical_request": false,
+  "negative_history": [
+    "First author AST inspection asserted an incorrect main-guard statement index because semicolon-separated parser source creates multiple AST statements. It stopped before writing evidence or compiling. Second inspection selects parser option and capture branch by AST structure; no candidate correction or execution.",
+    "One initial glob of the not-yet-created fresh source directory returned missing-path error; no file read or directory created by that call."
+  ],
+  "outputs_excluding_this_seal": {
+    "apps/qualification/encoder-query77-recorder-explicit-port/README.md": {
+      "bytes": 3885,
+      "sha256": "539f2fcbf792febbc167697e19291b231b7dda5ded740e253c5cb20949c5fbed"
+    },
+    "apps/qualification/encoder-query77-recorder-explicit-port/uart_capture.py": {
+      "bytes": 27283,
+      "sha256": "c8433e225675bf16ca153d3b2c700cb4d3ab80dd70083d4e4a7bc19dffc19445"
+    },
+    "docs/qualification-plans/encoder-query77-recorder-explicit-port-20261022/ADAPTER_CONTRACT.md": {
+      "bytes": 5126,
+      "sha256": "be6b2729d941fffd32d8b34ebe8a0c535ace0bf90b7ed10759d97093ca55208f"
+    },
+    "docs/qualification-plans/encoder-query77-recorder-explicit-port-20261022/CANDIDATE_REPORT.md": {
+      "bytes": 7624,
+      "sha256": "15d9e2966f9fa406af346c5d662c57b2a42fd7104bc9e34e58bb8e75be768e58"
+    },
+    "docs/qualification-plans/encoder-query77-recorder-explicit-port-20261022/INPUT_PINS01.tsv": {
+      "bytes": 1857,
+      "sha256": "c441eaf6d520acb24fce3fb7c75eff14135375631f9943b5a5f997c361594a92"
+    },
+    "docs/qualification-plans/encoder-query77-recorder-explicit-port-20261022/INPUT_RECHECK01.json": {
+      "bytes": 227,
+      "sha256": "2f93133fd8011fde4f2b7cdb559072aa603a968b7ce9f50f503c608dff25e34a"
+    },
+    "docs/qualification-plans/encoder-query77-recorder-explicit-port-20261022/PRIVACY_SAFE_DELTA.diff": {
+      "bytes": 1843,
+      "sha256": "98195e56c9662e6c0a179519e88b49a636803c2f053189930afe0d63303d5f3f"
+    },
+    "docs/qualification-plans/encoder-query77-recorder-explicit-port-20261022/STATIC_SYNTAX01.json": {
+      "bytes": 3300,
+      "sha256": "0e2b7355526cb0b66df403a4f44d8ef8f69876765441c32ef3ca5e3baf9baf43"
+    },
+    "docs/qualification-plans/encoder-query77-recorder-explicit-port-20261022/VERIFICATION_METHOD.md": {
+      "bytes": 4044,
+      "sha256": "bd9aca2625023324b8d3b411890541245ff4d257a42c229c54106480925a68de"
+    }
+  }
+}

@@ -133,10 +133,13 @@ three changes;33 unchanged reader inputs/three recorded parent context updates/
 four review outputs verified. HOST AST/syntax only, never imported/called/run;
 stored values are not a deadline or admission. Parent disposition in recorder-
 timer docs. Frozen candidate source and review context diff retain an inherited
-adapter selector and are withheld from Git. One author owns a fresh explicit-port
-recorder source candidate: no default/discovery/fallback, require private caller
-adapter before capture effects. No execution selected. This is an unadmitted
-effectful recorder, not a pure library; no timer/catch/lease change, installation, original
+adapter selector and are withheld from Git. Fresh explicit-port recorder has narrow
+conditional SOURCE/API/selected-privacy sufficiency;29 reader inputs/three review
+outputs parent-verified. No default/discovery/fallback; explicit private caller
+adapter required before capture effects. HOST AST/syntax only, never imported/
+called/run; disposition in recorder-explicit-port docs. No active author/reviewer.
+This is an unadmitted effectful recorder, not a pure library; no timer/catch/lease
+change, installation, original
 helper/source-pin edit, current-state or hardware action. Separate static build02
 role inspection matched seven artifacts/73 object headers/28 archive bodies and
 strict-vs-HOST define separation; not native ABI, release packaging or app adoption.
