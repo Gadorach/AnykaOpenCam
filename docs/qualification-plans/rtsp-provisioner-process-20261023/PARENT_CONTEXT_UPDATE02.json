@@ -1,0 +1,15 @@
+{
+  "scope": "SECOND_KNOWN_PARENT_MUTABLE_INDEX_STATUS_UPDATE_NOT_SOURCE_PIN_REBASE",
+  "utc": "2026-10-23T11:54:55.614906+00:00",
+  "original_manifests_and_review_unchanged": true,
+  "path": "docs/plan/camera-foundation/00-INDEX.md",
+  "before": {
+    "bytes": 125953,
+    "sha256": "54e4136fd71cf9be5d95067754da9ec339980508f2116c2902f17fde374b54a6"
+  },
+  "after": {
+    "bytes": 126297,
+    "sha256": "58c10cce87ca7e51c1e30cf6adcc4994fa2bf8a11d0840379902d843132e853b"
+  },
+  "reason": "parent records reviewed device-free bootstrap composition and next independent randomness-source lane; no product source/API change"
+}

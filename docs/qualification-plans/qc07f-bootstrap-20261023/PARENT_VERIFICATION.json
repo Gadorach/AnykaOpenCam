@@ -1,0 +1,38 @@
+{
+  "scope": "PARENT_READ_ONLY_SOURCE_BUILD_AND_INDEPENDENT_REVIEW_VERIFICATION_NOT_EXECUTION_OR_NATIVE_ADOPTION",
+  "utc": "2026-10-23T11:53:25.068308+00:00",
+  "verified_counts": {
+    "input_pins": 863,
+    "delivery_pins": 48,
+    "artifacts_logs_manifests": 37,
+    "new_dependency_records": 180,
+    "selected_original_dependency_records": 724,
+    "tool_pins": 7,
+    "command_logs": 24,
+    "runtime_archive_member_bodies": 46,
+    "required_API_definitions_per_REL": 10
+  },
+  "pins": {
+    "docs/qualification-plans/qc07f-bootstrap-review-20261023/REVIEW.md": {
+      "bytes": 10025,
+      "sha256": "20691310b9b45c7d831aa097c66ace63238f55de2acb7100cf6181856b6f3a6d"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/DELIVERY_PINS.json": {
+      "bytes": 15548,
+      "sha256": "af30831a26348d47fbd593e8b2cc6182c9374a3c2ebc5458a401ad18baea464d"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/REPORT.json": {
+      "bytes": 34013,
+      "sha256": "86ed8b9404388550593df89b2e86fee76473675eb0474011beebe4fd5098181f"
+    },
+    "apps/rtsp-auth/qc07f-bootstrap-candidate/bootstrap.c": {
+      "bytes": 4877,
+      "sha256": "d67d1f4c752b3809ed11f2f5862b9296ba7c57098df62f3cbe29c46dabf79eb4"
+    },
+    "apps/rtsp-auth/qc07f-bootstrap-candidate/bootstrap_v1.h": {
+      "bytes": 4352,
+      "sha256": "4bbd0bbc39fec24e0acc3d2146bf05e86c29be155bc462b6fc6eecb48306c863"
+    }
+  },
+  "candidate_test_provisioner_verifier_native_credentials_hardware_executed": false
+}

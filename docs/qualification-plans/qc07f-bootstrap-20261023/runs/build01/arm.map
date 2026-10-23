@@ -1,0 +1,2740 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                              (--whole-archive)
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-1-sensor_baseline.o)
+                              (--whole-archive)
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+                              (--whole-archive)
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-3-memory_runtime.o)
+                              (--whole-archive)
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-4-memory_reader.o)
+                              (--whole-archive)
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-5-frame_fd_custody.o)
+                              (--whole-archive)
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-6-encoder_fd_custody.o)
+                              (--whole-archive)
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-7-watchdog_owner.o)
+                              (--whole-archive)
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+                              (--whole-archive)
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+                              (--whole-archive)
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+                              (--whole-archive)
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-11-listener_custody.o)
+                              (--whole-archive)
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-12-ipc.o)
+                              (--whole-archive)
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+                              (--whole-archive)
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-14-rtsp_request.o)
+                              (--whole-archive)
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+                              (--whole-archive)
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-16-backend.o)
+                              (--whole-archive)
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-17-packet_hub.o)
+                              (--whole-archive)
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+                              (--whole-archive)
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-19-rtp_h264.o)
+                              (--whole-archive)
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-20-sha256.o)
+                              (--whole-archive)
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-21-constant_time.o)
+                              (--whole-archive)
+/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-22-platform_util.o)
+                              (--whole-archive)
+
+There are no discarded input sections
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/arm-bootstrap.o
+LOAD /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+LOAD /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o
+LOAD /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-2.o
+LOAD /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+LOAD /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.o
+LOAD /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash
+ *(.hash)
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+
+.rela.text
+ *(.rela.text)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+
+.rela.rodata
+ *(.rela.rodata)
+
+.rel.data.rel.ro
+ *(.rel.data.rel.ro)
+
+.rela.data.rel.ro
+ *(.rela.data.rel.ro)
+
+.rel.data
+ *(.rel.data)
+
+.rela.data
+ *(.rela.data)
+
+.rel.tdata
+ *(.rel.tdata)
+
+.rela.tdata
+ *(.rela.tdata)
+
+.rel.tbss
+ *(.rel.tbss)
+
+.rela.tbss
+ *(.rela.tbss)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.iplt
+ *(.rel.iplt)
+
+.rela.iplt
+ *(.rela.iplt)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt
+ *(.plt)
+
+.iplt
+ *(.iplt)
+
+.text           0x00000000        0x0
+ *(.text .stub)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/arm-bootstrap.o
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-2.o
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.o
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-1-sensor_baseline.o)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-3-memory_runtime.o)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-4-memory_reader.o)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-5-frame_fd_custody.o)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-6-encoder_fd_custody.o)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-7-watchdog_owner.o)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-11-listener_custody.o)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-12-ipc.o)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-14-rtsp_request.o)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-16-backend.o)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-17-packet_hub.o)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-19-rtp_h264.o)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-20-sha256.o)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-21-constant_time.o)
+ .text          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-22-platform_util.o)
+ *(.gnu.warning)
+
+.text.identity  0x00000000      0x104
+ .text.identity
+                0x00000000       0x34 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/arm-bootstrap.o
+ .text.identity
+                0x00000034       0xd0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+
+.text.qc07f_bootstrap_begin_v1
+                0x00000000      0x11c
+ .text.qc07f_bootstrap_begin_v1
+                0x00000000      0x11c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/arm-bootstrap.o
+                0x00000000                qc07f_bootstrap_begin_v1
+
+.text.qc07f_bootstrap_observe_v1
+                0x00000000      0x120
+ .text.qc07f_bootstrap_observe_v1
+                0x00000000      0x120 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/arm-bootstrap.o
+                0x00000000                qc07f_bootstrap_observe_v1
+
+.text.qc07f_bootstrap_start_v1
+                0x00000000      0x1c8
+ .text.qc07f_bootstrap_start_v1
+                0x00000000      0x1c8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/arm-bootstrap.o
+                0x00000000                qc07f_bootstrap_start_v1
+
+.text.qc07f_bootstrap_finish_device_free_v1
+                0x00000000      0x140
+ .text.qc07f_bootstrap_finish_device_free_v1
+                0x00000000      0x140 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/arm-bootstrap.o
+                0x00000000                qc07f_bootstrap_finish_device_free_v1
+
+.text.fresh     0x00000000       0x64
+ .text.fresh    0x00000000       0x64 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+
+.text.config_class
+                0x00000000       0xc0
+ .text.config_class
+                0x00000000       0x60 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+ .text.config_class
+                0x00000060       0x60 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o
+
+.text.directory_check
+                0x00000000      0x114
+ .text.directory_check
+                0x00000000      0x114 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+
+.text.envelope  0x00000000      0x2a4
+ .text.envelope
+                0x00000000      0x2a4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+
+.text.unchanged
+                0x00000000      0x114
+ .text.unchanged
+                0x00000000      0x114 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+
+.text.clock_ms  0x00000000       0xf0
+ .text.clock_ms
+                0x00000000       0xf0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+
+.text.read_part
+                0x00000000      0x180
+ .text.read_part
+                0x00000000      0x180 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+
+.text.material_check
+                0x00000000      0x264
+ .text.material_check
+                0x00000000      0x264 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+
+.text.receive_material.isra.0
+                0x00000000      0x2dc
+ .text.receive_material.isra.0
+                0x00000000      0x2dc /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+
+.text.observe_child
+                0x00000000      0x11c
+ .text.observe_child
+                0x00000000      0x11c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+
+.text.provisioner_child
+                0x00000000      0x328
+ .text.provisioner_child
+                0x00000000      0x328 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+
+.text.qc07f_rtsp_provisioner_begin_v1
+                0x00000000      0x420
+ .text.qc07f_rtsp_provisioner_begin_v1
+                0x00000000      0x420 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+                0x00000000                qc07f_rtsp_provisioner_begin_v1
+
+.text.qc07f_rtsp_provisioner_observe_v1
+                0x00000000      0x200
+ .text.qc07f_rtsp_provisioner_observe_v1
+                0x00000000      0x200 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+                0x00000000                qc07f_rtsp_provisioner_observe_v1
+
+.text.qc07f_rtsp_provisioner_bind_v1
+                0x00000000      0x12c
+ .text.qc07f_rtsp_provisioner_bind_v1
+                0x00000000      0x12c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+                0x00000000                qc07f_rtsp_provisioner_bind_v1
+
+.text.ids_valid
+                0x00000000       0xd0
+ .text.ids_valid
+                0x00000000       0xd0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o
+
+.text.directory_stat
+                0x00000000       0x5c
+ .text.directory_stat
+                0x00000000       0x5c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o
+
+.text.directory_recheck
+                0x00000000       0xe4
+ .text.directory_recheck
+                0x00000000       0xe4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o
+
+.text.material_stat
+                0x00000000       0x70
+ .text.material_stat
+                0x00000000       0x70 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o
+
+.text.named_recheck
+                0x00000000       0xf8
+ .text.named_recheck
+                0x00000000       0xf8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o
+
+.text.readonly_recheck
+                0x00000000      0x15c
+ .text.readonly_recheck
+                0x00000000      0x15c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o
+
+.text.qc07f_rtsp_private_provisioner_harden_v1
+                0x00000000      0x138
+ .text.qc07f_rtsp_private_provisioner_harden_v1
+                0x00000000      0x138 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o
+                0x00000000                qc07f_rtsp_private_provisioner_harden_v1
+
+.text.qc07f_rtsp_private_handoff_create_v1
+                0x00000000      0x494
+ .text.qc07f_rtsp_private_handoff_create_v1
+                0x00000000      0x494 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o
+                0x00000000                qc07f_rtsp_private_handoff_create_v1
+
+.text.qc07f_rtsp_private_handoff_move_v1
+                0x00000000      0x130
+ .text.qc07f_rtsp_private_handoff_move_v1
+                0x00000000      0x130 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o
+                0x00000000                qc07f_rtsp_private_handoff_move_v1
+
+.text.identifier
+                0x00000000       0x84
+ .text.identifier
+                0x00000000       0x84 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-2.o
+
+.text.qc07f_rtsp_startup_material_clear_v1
+                0x00000000       0x10
+ .text.qc07f_rtsp_startup_material_clear_v1
+                0x00000000       0x10 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-2.o
+                0x00000000                qc07f_rtsp_startup_material_clear_v1
+
+.text.qc07f_rtsp_startup_material_build_v1
+                0x00000000      0x4cc
+ .text.qc07f_rtsp_startup_material_build_v1
+                0x00000000      0x4cc /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-2.o
+                0x00000000                qc07f_rtsp_startup_material_build_v1
+
+.text.text      0x00000000       0xa8
+ .text.text     0x00000000       0xa8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+
+.text.method_ok
+                0x00000000       0x64
+ .text.method_ok
+                0x00000000       0x64 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+
+.text.hex       0x00000000       0x74
+ .text.hex      0x00000000       0x48 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+ .text.hex      0x00000048       0x2c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-14-rtsp_request.o)
+
+.text.live      0x00000000       0x44
+ .text.live     0x00000000       0x44 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+
+.text.hash      0x00000000      0x1ec
+ .text.hash     0x00000000      0x1ec /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+
+.text.equal     0x00000000       0x4c
+ .text.equal    0x00000000       0x4c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+
+.text.digit     0x00000000       0x3c
+ .text.digit    0x00000000       0x3c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+
+.text.count     0x00000000       0x64
+ .text.count    0x00000000       0x64 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+
+.text.tick      0x00000000       0xfc
+ .text.tick     0x00000000       0x94 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+ .text.tick     0x00000094       0x68 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+
+.text.advance   0x00000000       0x64
+ .text.advance  0x00000000       0x64 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+
+.text.camera_rtsp_digest_ha1
+                0x00000000      0x144
+ .text.camera_rtsp_digest_ha1
+                0x00000000      0x144 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+                0x00000000                camera_rtsp_digest_ha1
+
+.text.camera_rtsp_digest_response
+                0x00000000      0x244
+ .text.camera_rtsp_digest_response
+                0x00000000      0x244 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+                0x00000000                camera_rtsp_digest_response
+
+.text.camera_rtsp_digest_init
+                0x00000000       0xc4
+ .text.camera_rtsp_digest_init
+                0x00000000       0xc4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+                0x00000000                camera_rtsp_digest_init
+
+.text.camera_rtsp_digest_provision
+                0x00000000      0x120
+ .text.camera_rtsp_digest_provision
+                0x00000000      0x120 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+                0x00000000                camera_rtsp_digest_provision
+
+.text.camera_rtsp_digest_invalidate
+                0x00000000       0x30
+ .text.camera_rtsp_digest_invalidate
+                0x00000000       0x30 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+                0x00000000                camera_rtsp_digest_invalidate
+
+.text.camera_rtsp_digest_issue
+                0x00000000      0x29c
+ .text.camera_rtsp_digest_issue
+                0x00000000      0x29c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+                0x00000000                camera_rtsp_digest_issue
+
+.text.camera_rtsp_digest_verify
+                0x00000000      0x56c
+ .text.camera_rtsp_digest_verify
+                0x00000000      0x56c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+                0x00000000                camera_rtsp_digest_verify
+
+.text.camera_rtsp_digest_check
+                0x00000000      0x1a0
+ .text.camera_rtsp_digest_check
+                0x00000000      0x1a0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+                0x00000000                camera_rtsp_digest_check
+
+.text.camera_rtsp_digest_close
+                0x00000000       0x68
+ .text.camera_rtsp_digest_close
+                0x00000000       0x68 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+                0x00000000                camera_rtsp_digest_close
+
+.text.camera_rtsp_digest_destroy
+                0x00000000       0x10
+ .text.camera_rtsp_digest_destroy
+                0x00000000       0x10 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+                0x00000000                camera_rtsp_digest_destroy
+
+.text.mbedtls_md5_init
+                0x00000000        0xc
+ .text.mbedtls_md5_init
+                0x00000000        0xc /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.o
+                0x00000000                mbedtls_md5_init
+
+.text.mbedtls_md5_free
+                0x00000000       0x10
+ .text.mbedtls_md5_free
+                0x00000000       0x10 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.o
+                0x00000000                mbedtls_md5_free
+
+.text.mbedtls_md5_clone
+                0x00000000       0x10
+ .text.mbedtls_md5_clone
+                0x00000000       0x10 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.o
+                0x00000000                mbedtls_md5_clone
+
+.text.mbedtls_md5_starts
+                0x00000000       0x44
+ .text.mbedtls_md5_starts
+                0x00000000       0x44 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.o
+                0x00000000                mbedtls_md5_starts
+
+.text.mbedtls_internal_md5_process
+                0x00000000      0xc60
+ .text.mbedtls_internal_md5_process
+                0x00000000      0xc60 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.o
+                0x00000000                mbedtls_internal_md5_process
+
+.text.mbedtls_md5_update
+                0x00000000       0xc8
+ .text.mbedtls_md5_update
+                0x00000000       0xc8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.o
+                0x00000000                mbedtls_md5_update
+
+.text.mbedtls_md5_finish
+                0x00000000      0x150
+ .text.mbedtls_md5_finish
+                0x00000000      0x150 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.o
+                0x00000000                mbedtls_md5_finish
+
+.text.mbedtls_md5
+                0x00000000       0xe0
+ .text.mbedtls_md5
+                0x00000000       0xe0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.o
+                0x00000000                mbedtls_md5
+
+.text.qc_bits_put
+                0x00000000       0x44
+ .text.qc_bits_put
+                0x00000000       0x44 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.qc_bits_ue
+                0x00000000       0x28
+ .text.qc_bits_ue
+                0x00000000       0x28 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.qc_h264_nal
+                0x00000000       0xa4
+ .text.qc_h264_nal
+                0x00000000       0xa4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.qc_receipt_header
+                0x00000000       0x54
+ .text.qc_receipt_header
+                0x00000000       0x54 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.return_uncertain
+                0x00000000       0x78
+ .text.return_uncertain
+                0x00000000       0x78 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.return_receipt_empty
+                0x00000000       0x98
+ .text.return_receipt_empty
+                0x00000000       0x98 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.camera_rtsp_common_time
+                0x00000000       0x60
+ .text.camera_rtsp_common_time
+                0x00000000       0x60 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.camera_rtsp_common_after
+                0x00000000       0x7c
+ .text.camera_rtsp_common_after
+                0x00000000       0x7c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.valid     0x00000000       0x9c
+ .text.valid    0x00000000       0x60 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+ .text.valid    0x00000060       0x3c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-17-packet_hub.o)
+
+.text.provider_node
+                0x00000000      0x138
+ .text.provider_node
+                0x00000000      0x138 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.qc_receipt_request
+                0x00000000       0xf0
+ .text.qc_receipt_request
+                0x00000000       0xf0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.native_retired_cpu_release
+                0x00000000       0x68
+ .text.native_retired_cpu_release
+                0x00000000       0x68 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.camera_rtsp_common_complete
+                0x00000000       0xf8
+ .text.camera_rtsp_common_complete
+                0x00000000       0xf8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.camera_rtsp_common_begin
+                0x00000000      0x2d0
+ .text.camera_rtsp_common_begin
+                0x00000000      0x2d0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.camera_rtsp_common_detach
+                0x00000000       0x60
+ .text.camera_rtsp_common_detach
+                0x00000000       0x60 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.native_owns.part.0
+                0x00000000       0xd4
+ .text.native_owns.part.0
+                0x00000000       0xd4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.native_fault
+                0x00000000       0x64
+ .text.native_fault
+                0x00000000       0x64 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.retention_needed
+                0x00000000      0x1a8
+ .text.retention_needed
+                0x00000000      0x1a8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.latch     0x00000000       0x28
+ .text.latch    0x00000000       0x28 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.camera_rtsp_common_attach
+                0x00000000      0x124
+ .text.camera_rtsp_common_attach
+                0x00000000      0x124 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.provider_store_frame.constprop.0
+                0x00000000       0xa8
+ .text.provider_store_frame.constprop.0
+                0x00000000       0xa8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.provider_shape.constprop.0
+                0x00000000       0xac
+ .text.provider_shape.constprop.0
+                0x00000000       0xac /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.native_guard_present
+                0x00000000       0x68
+ .text.native_guard_present
+                0x00000000       0x68 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.provider_hold.constprop.0
+                0x00000000       0x58
+ .text.provider_hold.constprop.0
+                0x00000000       0x58 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.nh_native_fence.constprop.0
+                0x00000000       0x28
+ .text.nh_native_fence.constprop.0
+                0x00000000       0x28 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.return_boundary
+                0x00000000       0x58
+ .text.return_boundary
+                0x00000000       0x58 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.qc_crc_bzip2
+                0x00000000      0x1c4
+ .text.qc_crc_bzip2
+                0x00000000      0x1c4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.camera_rtsp_clock_ns.constprop.0
+                0x00000000      0x270
+ .text.camera_rtsp_clock_ns.constprop.0
+                0x00000000      0x138 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+ .text.camera_rtsp_clock_ns.constprop.0
+                0x00000138      0x138 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.text.milliseconds
+                0x00000000       0x50
+ .text.milliseconds
+                0x00000000       0x28 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+ .text.milliseconds
+                0x00000028       0x28 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.text.nh_native_now
+                0x00000000       0x44
+ .text.nh_native_now
+                0x00000000       0x44 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_now
+
+.text.capture_failed.constprop.0.isra.0
+                0x00000000       0x28
+ .text.capture_failed.constprop.0.isra.0
+                0x00000000       0x28 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.source_close_once.constprop.0
+                0x00000000       0x78
+ .text.source_close_once.constprop.0
+                0x00000000       0x78 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.provider_encoder_observe.constprop.0
+                0x00000000      0x240
+ .text.provider_encoder_observe.constprop.0
+                0x00000000      0x240 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.provider_observe.constprop.0
+                0x00000000      0x1f0
+ .text.provider_observe.constprop.0
+                0x00000000      0x1f0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.lifetime  0x00000000      0x194
+ .text.lifetime
+                0x00000000      0x194 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.native_guard_begin
+                0x00000000      0x178
+ .text.native_guard_begin
+                0x00000000      0x178 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.provider_receipt_query.constprop.0
+                0x00000000      0x18c
+ .text.provider_receipt_query.constprop.0
+                0x00000000      0x18c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.produce_h264_frame.constprop.0
+                0x00000000      0xf3c
+ .text.produce_h264_frame.constprop.0
+                0x00000000      0xf3c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.nh_native_cancelled
+                0x00000000      0x114
+ .text.nh_native_cancelled
+                0x00000000      0x114 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_cancelled
+
+.text.native_retire_body.isra.0
+                0x00000000      0x3e4
+ .text.native_retire_body.isra.0
+                0x00000000      0x3e4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.nh_native_storage_select
+                0x00000000       0xd4
+ .text.nh_native_storage_select
+                0x00000000       0xd4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_storage_select
+
+.text.nh_native_optin_exact139
+                0x00000000       0x60
+ .text.nh_native_optin_exact139
+                0x00000000       0x60 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_optin_exact139
+
+.text.nh_native_sensor_report
+                0x00000000       0x10
+ .text.nh_native_sensor_report
+                0x00000000       0x10 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_sensor_report
+
+.text.nh_native_memory_fixed_buffers
+                0x00000000      0x11c
+ .text.nh_native_memory_fixed_buffers
+                0x00000000      0x11c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_memory_fixed_buffers
+
+.text.nh_native_memory_gate
+                0x00000000       0xe0
+ .text.nh_native_memory_gate
+                0x00000000       0xe0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_memory_gate
+
+.text.nh_native_memory_report
+                0x00000000       0x10
+ .text.nh_native_memory_report
+                0x00000000       0x10 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_memory_report
+
+.text.nh_native_cancel
+                0x00000000       0x18
+ .text.nh_native_cancel
+                0x00000000       0x18 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_cancel
+
+.text.nh_native_config
+                0x00000000      0x270
+ .text.nh_native_config
+                0x00000000      0x270 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_config
+
+.text.nh_native_fence
+                0x00000000       0x28
+ .text.nh_native_fence
+                0x00000000       0x28 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_fence
+
+.text.nh_native_quarantine
+                0x00000000      0x128
+ .text.nh_native_quarantine
+                0x00000000      0x128 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_quarantine
+
+.text.retain    0x00000000       0x18
+ .text.retain   0x00000000       0x18 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.retain_frame
+                0x00000000       0x5c
+ .text.retain_frame
+                0x00000000       0x5c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.retain_demand
+                0x00000000       0x40
+ .text.retain_demand
+                0x00000000       0x40 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.nh_native_init
+                0x00000000      0x12c
+ .text.nh_native_init
+                0x00000000      0x12c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_init
+
+.text.nh_native_watchdog_take
+                0x00000000       0xe0
+ .text.nh_native_watchdog_take
+                0x00000000       0xe0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_watchdog_take
+
+.text.nh_native_memory_start
+                0x00000000      0x1b8
+ .text.nh_native_memory_start
+                0x00000000      0x1b8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_memory_start
+
+.text.nh_native_next_keyframe
+                0x00000000      0x2dc
+ .text.nh_native_next_keyframe
+                0x00000000      0x2dc /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_next_keyframe
+
+.text.nh_native_next
+                0x00000000       0x10
+ .text.nh_native_next
+                0x00000000       0x10 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_next
+
+.text.nh_native_release
+                0x00000000       0xf0
+ .text.nh_native_release
+                0x00000000       0xf0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_release
+
+.text.release_packet
+                0x00000000      0x130
+ .text.release_packet
+                0x00000000      0x130 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.nh_native_retire
+                0x00000000       0x8c
+ .text.nh_native_retire
+                0x00000000       0x8c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_retire
+
+.text.idle_source
+                0x00000000       0x8c
+ .text.idle_source
+                0x00000000       0x8c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.nh_native_retire_held
+                0x00000000      0x244
+ .text.nh_native_retire_held
+                0x00000000      0x244 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_retire_held
+
+.text.nh_native_watchdog_give_back
+                0x00000000      0x100
+ .text.nh_native_watchdog_give_back
+                0x00000000      0x100 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_watchdog_give_back
+
+.text.nh_native_provider_take
+                0x00000000      0x498
+ .text.nh_native_provider_take
+                0x00000000      0x498 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_provider_take
+
+.text.nh_native_return_pre_memory_unknown_bootstrap
+                0x00000000      0x6fc
+ .text.nh_native_return_pre_memory_unknown_bootstrap
+                0x00000000      0x6fc /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                nh_native_return_pre_memory_unknown_bootstrap
+
+.text.qc07f_owned_runtime_cleanup_v1
+                0x00000000       0x7c
+ .text.qc07f_owned_runtime_cleanup_v1
+                0x00000000       0x7c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                qc07f_owned_runtime_cleanup_v1
+
+.text.bind_gate
+                0x00000000       0x9c
+ .text.bind_gate
+                0x00000000       0x9c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.ready     0x00000000      0x1e4
+ .text.ready    0x00000000      0x188 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+ .text.ready    0x00000188       0x5c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+
+.text.next_packet
+                0x00000000      0x274
+ .text.next_packet
+                0x00000000      0x274 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.frame_retire
+                0x00000000      0x1e0
+ .text.frame_retire
+                0x00000000      0x1e0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.frame_end
+                0x00000000      0x25c
+ .text.frame_end
+                0x00000000      0x25c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.source_now
+                0x00000000       0x7c
+ .text.source_now
+                0x00000000       0x7c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.logical_start
+                0x00000000       0x68
+ .text.logical_start
+                0x00000000       0x68 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.text.qc07f_owned_runtime_prepare_v1
+                0x00000000      0x2d0
+ .text.qc07f_owned_runtime_prepare_v1
+                0x00000000      0x2d0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                qc07f_owned_runtime_prepare_v1
+
+.text.qc07f_owned_runtime_bind_postfork_v1
+                0x00000000      0x1e4
+ .text.qc07f_owned_runtime_bind_postfork_v1
+                0x00000000      0x1e4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+                0x00000000                qc07f_owned_runtime_bind_postfork_v1
+
+.text.camera_rtsp_clock_ns
+                0x00000000      0x118
+ .text.camera_rtsp_clock_ns
+                0x00000000      0x118 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-1-sensor_baseline.o)
+
+.text.check     0x00000000       0x84
+ .text.check    0x00000000       0x84 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-1-sensor_baseline.o)
+
+.text.message   0x00000000       0xec
+ .text.message  0x00000000       0xec /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-1-sensor_baseline.o)
+
+.text.read_byte
+                0x00000000       0xc0
+ .text.read_byte
+                0x00000000       0xc0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-1-sensor_baseline.o)
+
+.text.nh_sensor_read_byte
+                0x00000000        0x8
+ .text.nh_sensor_read_byte
+                0x00000000        0x8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-1-sensor_baseline.o)
+                0x00000000                nh_sensor_read_byte
+
+.text.nh_sensor_stream
+                0x00000000       0xb4
+ .text.nh_sensor_stream
+                0x00000000       0xb4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-1-sensor_baseline.o)
+                0x00000000                nh_sensor_stream
+
+.text.nh_sensor_exact139
+                0x00000000      0x478
+ .text.nh_sensor_exact139
+                0x00000000      0x478 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-1-sensor_baseline.o)
+                0x00000000                nh_sensor_exact139
+
+.text.nh_sensor_log
+                0x00000000       0xfc
+ .text.nh_sensor_log
+                0x00000000       0xfc /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-1-sensor_baseline.o)
+                0x00000000                nh_sensor_log
+
+.text.nh_sensor_cli_optin
+                0x00000000       0x5c
+ .text.nh_sensor_cli_optin
+                0x00000000       0x5c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-1-sensor_baseline.o)
+                0x00000000                nh_sensor_cli_optin
+
+.text.white     0x00000000       0x24
+ .text.white    0x00000000       0x24 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+
+.text.skip      0x00000000       0x34
+ .text.skip     0x00000000       0x34 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+
+.text.number    0x00000000       0xa4
+ .text.number   0x00000000       0xa4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+
+.text.word      0x00000000       0x60
+ .text.word     0x00000000       0x60 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+
+.text.scalar    0x00000000       0x88
+ .text.scalar   0x00000000       0x88 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+
+.text.nh_memory_parse_meminfo
+                0x00000000      0x2b8
+ .text.nh_memory_parse_meminfo
+                0x00000000      0x2b8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+                0x00000000                nh_memory_parse_meminfo
+
+.text.nh_memory_parse_zoneinfo
+                0x00000000      0x800
+ .text.nh_memory_parse_zoneinfo
+                0x00000000      0x800 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+                0x00000000                nh_memory_parse_zoneinfo
+
+.text.nh_memory_init_mode
+                0x00000000       0xc0
+ .text.nh_memory_init_mode
+                0x00000000       0xc0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+                0x00000000                nh_memory_init_mode
+
+.text.nh_memory_init
+                0x00000000       0x24
+ .text.nh_memory_init
+                0x00000000       0x24 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+                0x00000000                nh_memory_init
+
+.text.nh_memory_credit_owned
+                0x00000000      0x148
+ .text.nh_memory_credit_owned
+                0x00000000      0x148 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+                0x00000000                nh_memory_credit_owned
+
+.text.nh_memory_credit_codec
+                0x00000000       0x4c
+ .text.nh_memory_credit_codec
+                0x00000000       0x4c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+                0x00000000                nh_memory_credit_codec
+
+.text.nh_memory_evaluate
+                0x00000000      0x41c
+ .text.nh_memory_evaluate
+                0x00000000      0x41c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+                0x00000000                nh_memory_evaluate
+
+.text.nh_memory_own_layout
+                0x00000000      0x374
+ .text.nh_memory_own_layout
+                0x00000000      0x374 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+                0x00000000                nh_memory_own_layout
+
+.text.checked   0x00000000       0xc8
+ .text.checked  0x00000000       0xc8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-3-memory_runtime.o)
+
+.text.nh_memory_runtime_init
+                0x00000000      0x110
+ .text.nh_memory_runtime_init
+                0x00000000      0x110 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-3-memory_runtime.o)
+                0x00000000                nh_memory_runtime_init
+
+.text.nh_memory_runtime_gate
+                0x00000000      0x308
+ .text.nh_memory_runtime_gate
+                0x00000000      0x308 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-3-memory_runtime.o)
+                0x00000000                nh_memory_runtime_gate
+
+.text.nh_memory_prefault_owned
+                0x00000000      0x140
+ .text.nh_memory_prefault_owned
+                0x00000000      0x140 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-3-memory_runtime.o)
+                0x00000000                nh_memory_prefault_owned
+
+.text.nh_memory_log
+                0x00000000      0x11c
+ .text.nh_memory_log
+                0x00000000      0x11c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-3-memory_runtime.o)
+                0x00000000                nh_memory_log
+
+.text.nh_memory_read_fixed
+                0x00000000      0x16c
+ .text.nh_memory_read_fixed
+                0x00000000      0x16c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-4-memory_reader.o)
+                0x00000000                nh_memory_read_fixed
+
+.text.observe   0x00000000      0x334
+ .text.observe  0x00000000      0x15c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-5-frame_fd_custody.o)
+ .text.observe  0x0000015c      0x1d8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-6-encoder_fd_custody.o)
+
+.text.qc_frame_fd_take
+                0x00000000      0x1dc
+ .text.qc_frame_fd_take
+                0x00000000      0x1dc /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-5-frame_fd_custody.o)
+                0x00000000                qc_frame_fd_take
+
+.text.qc_frame_fd_give_back
+                0x00000000      0x198
+ .text.qc_frame_fd_give_back
+                0x00000000      0x198 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-5-frame_fd_custody.o)
+                0x00000000                qc_frame_fd_give_back
+
+.text.qc_encoder_fd_take
+                0x00000000      0x1ac
+ .text.qc_encoder_fd_take
+                0x00000000      0x1ac /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-6-encoder_fd_custody.o)
+                0x00000000                qc_encoder_fd_take
+
+.text.qc_encoder_fd_give_back
+                0x00000000      0x190
+ .text.qc_encoder_fd_give_back
+                0x00000000      0x190 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-6-encoder_fd_custody.o)
+                0x00000000                qc_encoder_fd_give_back
+
+.text.qw_owner_fail
+                0x00000000       0x10
+ .text.qw_owner_fail
+                0x00000000       0x10 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-7-watchdog_owner.o)
+                0x00000000                qw_owner_fail
+
+.text.descriptor
+                0x00000000      0x13c
+ .text.descriptor
+                0x00000000      0x13c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-7-watchdog_owner.o)
+
+.text.clock_read
+                0x00000000      0x124
+ .text.clock_read
+                0x00000000      0x124 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-7-watchdog_owner.o)
+
+.text.qw_owner_take
+                0x00000000      0x184
+ .text.qw_owner_take
+                0x00000000      0x184 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-7-watchdog_owner.o)
+                0x00000000                qw_owner_take
+
+.text.qw_owner_seal_session
+                0x00000000      0x170
+ .text.qw_owner_seal_session
+                0x00000000      0x170 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-7-watchdog_owner.o)
+                0x00000000                qw_owner_seal_session
+
+.text.qw_owner_check
+                0x00000000      0x14c
+ .text.qw_owner_check
+                0x00000000      0x14c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-7-watchdog_owner.o)
+                0x00000000                qw_owner_check
+
+.text.control   0x00000000      0x1c4
+ .text.control  0x00000000       0x4c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-7-watchdog_owner.o)
+ .text.control  0x0000004c      0x178 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.text.qw_owner_begin
+                0x00000000      0x19c
+ .text.qw_owner_begin
+                0x00000000      0x19c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-7-watchdog_owner.o)
+                0x00000000                qw_owner_begin
+
+.text.qw_owner_capture_progress
+                0x00000000       0xc0
+ .text.qw_owner_capture_progress
+                0x00000000       0xc0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-7-watchdog_owner.o)
+                0x00000000                qw_owner_capture_progress
+
+.text.qw_owner_disable_boundary
+                0x00000000       0xcc
+ .text.qw_owner_disable_boundary
+                0x00000000       0xcc /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-7-watchdog_owner.o)
+                0x00000000                qw_owner_disable_boundary
+
+.text.qw_owner_idle_observe
+                0x00000000       0xb4
+ .text.qw_owner_idle_observe
+                0x00000000       0xb4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-7-watchdog_owner.o)
+                0x00000000                qw_owner_idle_observe
+
+.text.qw_owner_give_back
+                0x00000000       0x5c
+ .text.qw_owner_give_back
+                0x00000000       0x5c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-7-watchdog_owner.o)
+                0x00000000                qw_owner_give_back
+
+.text.qw_owner_unknown_bootstrap_observe
+                0x00000000      0x188
+ .text.qw_owner_unknown_bootstrap_observe
+                0x00000000      0x188 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-7-watchdog_owner.o)
+                0x00000000                qw_owner_unknown_bootstrap_observe
+
+.text.qw_owner_return_unknown_bootstrap
+                0x00000000       0x58
+ .text.qw_owner_return_unknown_bootstrap
+                0x00000000       0x58 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-7-watchdog_owner.o)
+                0x00000000                qw_owner_return_unknown_bootstrap
+
+.text.inc       0x00000000       0x28
+ .text.inc      0x00000000       0x28 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+
+.text.latency   0x00000000      0x10c
+ .text.latency  0x00000000      0x10c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+
+.text.id        0x00000000       0x84
+ .text.id       0x00000000       0x84 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+
+.text.candidate_backend_init
+                0x00000000      0x780
+ .text.candidate_backend_init
+                0x00000000      0x780 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+
+.text.candidate_backend_poll
+                0x00000000       0x88
+ .text.candidate_backend_poll
+                0x00000000       0x88 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+                0x00000000                candidate_backend_poll
+
+.text.candidate_peer_close
+                0x00000000      0x1a8
+ .text.candidate_peer_close
+                0x00000000      0x1a8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+                0x00000000                candidate_peer_close
+
+.text.candidate_peer_open
+                0x00000000      0x268
+ .text.candidate_peer_open
+                0x00000000      0x268 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+                0x00000000                candidate_peer_open
+
+.text.candidate_effect_final
+                0x00000000      0x1cc
+ .text.candidate_effect_final
+                0x00000000      0x1cc /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+                0x00000000                candidate_effect_final
+
+.text.candidate_effect
+                0x00000000       0xe8
+ .text.candidate_effect
+                0x00000000       0xe8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+                0x00000000                candidate_effect
+
+.text.candidate_admission_check
+                0x00000000      0x154
+ .text.candidate_admission_check
+                0x00000000      0x154 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+                0x00000000                candidate_admission_check
+
+.text.candidate_challenge
+                0x00000000      0x1a8
+ .text.candidate_challenge
+                0x00000000      0x1a8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+                0x00000000                candidate_challenge
+
+.text.candidate_request_verify
+                0x00000000      0x3d8
+ .text.candidate_request_verify
+                0x00000000      0x3d8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+                0x00000000                candidate_request_verify
+
+.text.candidate_backend_revoke
+                0x00000000       0x90
+ .text.candidate_backend_revoke
+                0x00000000       0x90 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+                0x00000000                candidate_backend_revoke
+
+.text.candidate_backend_cancel
+                0x00000000       0x80
+ .text.candidate_backend_cancel
+                0x00000000       0x80 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+                0x00000000                candidate_backend_cancel
+
+.text.candidate_prestarted_start
+                0x00000000      0x1a0
+ .text.candidate_prestarted_start
+                0x00000000      0x1a0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+                0x00000000                candidate_prestarted_start
+
+.text.candidate_prestarted_finish
+                0x00000000      0x1c8
+ .text.candidate_prestarted_finish
+                0x00000000      0x1c8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+                0x00000000                candidate_prestarted_finish
+
+.text.monotonic_ns
+                0x00000000        0x4
+ .text.monotonic_ns
+                0x00000000        0x4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.text.end_checked
+                0x00000000       0x94
+ .text.end_checked
+                0x00000000       0x94 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.text.failure_client
+                0x00000000      0x12c
+ .text.failure_client
+                0x00000000      0x12c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.text.pause_client
+                0x00000000      0x11c
+ .text.pause_client
+                0x00000000      0x11c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.text.close_client
+                0x00000000      0x170
+ .text.close_client
+                0x00000000      0x170 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.text.retire_checked
+                0x00000000       0x50
+ .text.retire_checked
+                0x00000000       0x50 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.text.guarded   0x00000000       0x90
+ .text.guarded  0x00000000       0x90 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.text.capture_admitted
+                0x00000000      0x124
+ .text.capture_admitted
+                0x00000000      0x124 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.text.write_all
+                0x00000000      0x1d4
+ .text.write_all
+                0x00000000      0x1d4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.text.reply     0x00000000      0x17c
+ .text.reply    0x00000000      0x17c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.text.pending_control
+                0x00000000      0x138
+ .text.pending_control
+                0x00000000      0x138 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.text.finish_au
+                0x00000000      0x368
+ .text.finish_au
+                0x00000000      0x368 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.text.input_failure.isra.0
+                0x00000000       0x44
+ .text.input_failure.isra.0
+                0x00000000       0x44 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.text.process_input
+                0x00000000      0x6b8
+ .text.process_input
+                0x00000000      0x6b8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.text.serve_prestarted_body
+                0x00000000     0x21ac
+ .text.serve_prestarted_body
+                0x00000000     0x21ac /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.text.camera_rtsp_prestarted_owned_listener_serve_v1
+                0x00000000      0x220
+ .text.camera_rtsp_prestarted_owned_listener_serve_v1
+                0x00000000      0x220 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+                0x00000000                camera_rtsp_prestarted_owned_listener_serve_v1
+
+.text.clock_owner
+                0x00000000       0x4c
+ .text.clock_owner
+                0x00000000       0x4c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+
+.text.barrier_receive
+                0x00000000      0x238
+ .text.barrier_receive
+                0x00000000      0x238 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+
+.text.reap      0x00000000       0xf4
+ .text.reap     0x00000000       0xf4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+
+.text.sequence  0x00000000      0x158
+ .text.sequence
+                0x00000000      0x158 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+
+.text.receive_until
+                0x00000000      0x13c
+ .text.receive_until
+                0x00000000      0x13c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+
+.text.ipc_close_once
+                0x00000000       0x78
+ .text.ipc_close_once
+                0x00000000       0x78 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+
+.text.rv_owned_signal
+                0x00000000       0x74
+ .text.rv_owned_signal
+                0x00000000       0x74 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+                0x00000000                rv_owned_signal
+
+.text.rv_rpc    0x00000000      0x2b8
+ .text.rv_rpc   0x00000000      0x2b8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+                0x00000000                rv_rpc
+
+.text.rv_submit
+                0x00000000      0x188
+ .text.rv_submit
+                0x00000000      0x188 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+                0x00000000                rv_submit
+
+.text.rv_discard
+                0x00000000       0x2c
+ .text.rv_discard
+                0x00000000       0x2c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+                0x00000000                rv_discard
+
+.text.rv_owner_revoke
+                0x00000000      0x100
+ .text.rv_owner_revoke
+                0x00000000      0x100 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+                0x00000000                rv_owner_revoke
+
+.text.rv_complete
+                0x00000000      0x3f4
+ .text.rv_complete
+                0x00000000      0x3f4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+                0x00000000                rv_complete
+
+.text.rv_query  0x00000000      0x188
+ .text.rv_query
+                0x00000000      0x188 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+                0x00000000                rv_query
+
+.text.rv_stop   0x00000000      0x234
+ .text.rv_stop  0x00000000      0x234 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+                0x00000000                rv_stop
+
+.text.rv_start  0x00000000      0xe40
+ .text.rv_start
+                0x00000000      0xe40 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+                0x00000000                rv_start
+
+.text.rv_destroy
+                0x00000000       0x50
+ .text.rv_destroy
+                0x00000000       0x50 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+                0x00000000                rv_destroy
+
+.text.rv_retired
+                0x00000000       0x18
+ .text.rv_retired
+                0x00000000       0x18 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+                0x00000000                rv_retired
+
+.text.rv_ready_flags
+                0x00000000        0xc
+ .text.rv_ready_flags
+                0x00000000        0xc /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+                0x00000000                rv_ready_flags
+
+.text.rv_ready_profile
+                0x00000000        0xc
+ .text.rv_ready_profile
+                0x00000000        0xc /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+                0x00000000                rv_ready_profile
+
+.text.rv_wipe_observed
+                0x00000000       0x18
+ .text.rv_wipe_observed
+                0x00000000       0x18 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+                0x00000000                rv_wipe_observed
+
+.text.is_rv_pending_result
+                0x00000000       0x10
+ .text.is_rv_pending_result
+                0x00000000       0x10 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+                0x00000000                is_rv_pending_result
+
+.text.is_rv_context_bytes
+                0x00000000        0xc
+ .text.is_rv_context_bytes
+                0x00000000        0xc /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+                0x00000000                is_rv_context_bytes
+
+.text.is_rv_wait0
+                0x00000000       0x38
+ .text.is_rv_wait0
+                0x00000000       0x38 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+                0x00000000                is_rv_wait0
+
+.text.is_rv_running
+                0x00000000       0x88
+ .text.is_rv_running
+                0x00000000       0x88 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+                0x00000000                is_rv_running
+
+.text.is_rv_ipc_close_outcome
+                0x00000000       0x40
+ .text.is_rv_ipc_close_outcome
+                0x00000000       0x40 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+                0x00000000                is_rv_ipc_close_outcome
+
+.text.socket_integer
+                0x00000000       0xb4
+ .text.socket_integer
+                0x00000000       0xb4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-11-listener_custody.o)
+
+.text.owned_listener_observe
+                0x00000000      0x1d8
+ .text.owned_listener_observe
+                0x00000000      0x1d8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-11-listener_custody.o)
+                0x00000000                owned_listener_observe
+
+.text.owned_listener_move
+                0x00000000      0x11c
+ .text.owned_listener_move
+                0x00000000      0x11c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-11-listener_custody.o)
+                0x00000000                owned_listener_move
+
+.text.owned_listener_close_once
+                0x00000000       0x7c
+ .text.owned_listener_close_once
+                0x00000000       0x7c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-11-listener_custody.o)
+                0x00000000                owned_listener_close_once
+
+.text.rv_clock  0x00000000       0xf8
+ .text.rv_clock
+                0x00000000       0xf8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-12-ipc.o)
+                0x00000000                rv_clock
+
+.text.rv_wipe   0x00000000        0x4
+ .text.rv_wipe  0x00000000        0x4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-12-ipc.o)
+                0x00000000                rv_wipe
+
+.text.rv_put32  0x00000000       0x20
+ .text.rv_put32
+                0x00000000       0x20 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-12-ipc.o)
+                0x00000000                rv_put32
+
+.text.rv_put64  0x00000000       0x34
+ .text.rv_put64
+                0x00000000       0x34 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-12-ipc.o)
+                0x00000000                rv_put64
+
+.text.rv_get32  0x00000000       0x24
+ .text.rv_get32
+                0x00000000       0x24 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-12-ipc.o)
+                0x00000000                rv_get32
+
+.text.rv_get64  0x00000000       0x44
+ .text.rv_get64
+                0x00000000       0x44 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-12-ipc.o)
+                0x00000000                rv_get64
+
+.text.rv_send   0x00000000      0x1d4
+ .text.rv_send  0x00000000      0x1d4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-12-ipc.o)
+                0x00000000                rv_send
+
+.text.rv_receive
+                0x00000000      0x330
+ .text.rv_receive
+                0x00000000      0x330 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-12-ipc.o)
+                0x00000000                rv_receive
+
+.text.hex_digit
+                0x00000000       0x20
+ .text.hex_digit
+                0x00000000       0x20 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+
+.text.token     0x00000000       0xa0
+ .text.token    0x00000000       0x50 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+ .text.token    0x00000050       0x50 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-14-rtsp_request.o)
+
+.text.printable
+                0x00000000       0x8c
+ .text.printable
+                0x00000000       0x8c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+
+.text.ci        0x00000000       0xec
+ .text.ci       0x00000000       0x70 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+ .text.ci       0x00000070       0x7c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+
+.text.camera_digest_wire_clear
+                0x00000000       0x10
+ .text.camera_digest_wire_clear
+                0x00000000       0x10 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+                0x00000000                camera_digest_wire_clear
+
+.text.camera_digest_wire_parse
+                0x00000000      0x6f0
+ .text.camera_digest_wire_parse
+                0x00000000      0x6f0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+                0x00000000                camera_digest_wire_parse
+
+.text.camera_digest_wire_limit_init
+                0x00000000       0x8c
+ .text.camera_digest_wire_limit_init
+                0x00000000       0x8c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+                0x00000000                camera_digest_wire_limit_init
+
+.text.camera_digest_wire_admit
+                0x00000000      0x268
+ .text.camera_digest_wire_admit
+                0x00000000      0x268 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+                0x00000000                camera_digest_wire_admit
+
+.text.camera_digest_wire_adapter_init
+                0x00000000       0x8c
+ .text.camera_digest_wire_adapter_init
+                0x00000000       0x8c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+                0x00000000                camera_digest_wire_adapter_init
+
+.text.camera_digest_wire_verify
+                0x00000000      0x31c
+ .text.camera_digest_wire_verify
+                0x00000000      0x31c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+                0x00000000                camera_digest_wire_verify
+
+.text.camera_digest_wire_format_challenge
+                0x00000000      0x23c
+ .text.camera_digest_wire_format_challenge
+                0x00000000      0x23c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+                0x00000000                camera_digest_wire_format_challenge
+
+.text.camera_digest_wire_challenge
+                0x00000000      0x284
+ .text.camera_digest_wire_challenge
+                0x00000000      0x284 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+                0x00000000                camera_digest_wire_challenge
+
+.text.camera_digest_wire_adapter_clear
+                0x00000000       0x10
+ .text.camera_digest_wire_adapter_clear
+                0x00000000       0x10 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+                0x00000000                camera_digest_wire_adapter_clear
+
+.text.camera_digest_wire_close
+                0x00000000       0x78
+ .text.camera_digest_wire_close
+                0x00000000       0x78 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+                0x00000000                camera_digest_wire_close
+
+.text.line      0x00000000       0x7c
+ .text.line     0x00000000       0x7c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-14-rtsp_request.o)
+
+.text.decimal   0x00000000       0x78
+ .text.decimal  0x00000000       0x78 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-14-rtsp_request.o)
+
+.text.equal_ci  0x00000000       0x7c
+ .text.equal_ci
+                0x00000000       0x7c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-14-rtsp_request.o)
+
+.text.camera_rtsp_request_parse
+                0x00000000      0x908
+ .text.camera_rtsp_request_parse
+                0x00000000      0x908 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-14-rtsp_request.o)
+                0x00000000                camera_rtsp_request_parse
+
+.text.uri_config
+                0x00000000      0x170
+ .text.uri_config
+                0x00000000      0x170 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+
+.text.same      0x00000000       0x44
+ .text.same     0x00000000       0x44 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+
+.text.fail.isra.0
+                0x00000000       0x1c
+ .text.fail.isra.0
+                0x00000000       0x1c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+
+.text.camera_rtsp_registry_init
+                0x00000000       0xec
+ .text.camera_rtsp_registry_init
+                0x00000000       0xec /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+                0x00000000                camera_rtsp_registry_init
+
+.text.camera_rtsp_input_init
+                0x00000000       0x9c
+ .text.camera_rtsp_input_init
+                0x00000000       0x9c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+                0x00000000                camera_rtsp_input_init
+
+.text.camera_rtsp_input_tick
+                0x00000000       0x9c
+ .text.camera_rtsp_input_tick
+                0x00000000       0x9c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+                0x00000000                camera_rtsp_input_tick
+
+.text.camera_rtsp_input_append
+                0x00000000       0xac
+ .text.camera_rtsp_input_append
+                0x00000000       0xac /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+                0x00000000                camera_rtsp_input_append
+
+.text.camera_rtsp_input_next
+                0x00000000      0x314
+ .text.camera_rtsp_input_next
+                0x00000000      0x314 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+                0x00000000                camera_rtsp_input_next
+
+.text.camera_rtsp_input_retire
+                0x00000000       0x88
+ .text.camera_rtsp_input_retire
+                0x00000000       0x88 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+                0x00000000                camera_rtsp_input_retire
+
+.text.camera_rtsp_input_clear
+                0x00000000       0x28
+ .text.camera_rtsp_input_clear
+                0x00000000       0x28 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+                0x00000000                camera_rtsp_input_clear
+
+.text.camera_rtsp_request_policy
+                0x00000000      0x3cc
+ .text.camera_rtsp_request_policy
+                0x00000000      0x3cc /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+                0x00000000                camera_rtsp_request_policy
+
+.text.find_device
+                0x00000000       0x50
+ .text.find_device
+                0x00000000       0x50 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-16-backend.o)
+
+.text.id_valid  0x00000000       0x38
+ .text.id_valid
+                0x00000000       0x38 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-16-backend.o)
+
+.text.camera_backend_validate
+                0x00000000      0x18c
+ .text.camera_backend_validate
+                0x00000000      0x18c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-16-backend.o)
+                0x00000000                camera_backend_validate
+
+.text.camera_graph_validate
+                0x00000000      0x390
+ .text.camera_graph_validate
+                0x00000000      0x390 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-16-backend.o)
+                0x00000000                camera_graph_validate
+
+.text.camera_graph_sensor_count
+                0x00000000       0x60
+ .text.camera_graph_sensor_count
+                0x00000000       0x60 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-16-backend.o)
+                0x00000000                camera_graph_sensor_count
+
+.text.camera_control_stop
+                0x00000000       0x68
+ .text.camera_control_stop
+                0x00000000       0x68 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-16-backend.o)
+                0x00000000                camera_control_stop
+
+.text.consumer_valid
+                0x00000000       0x38
+ .text.consumer_valid
+                0x00000000       0x38 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-17-packet_hub.o)
+
+.text.lose_backlog
+                0x00000000       0x4c
+ .text.lose_backlog
+                0x00000000       0x4c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-17-packet_hub.o)
+
+.text.camera_hub_init_count
+                0x00000000       0xa4
+ .text.camera_hub_init_count
+                0x00000000       0xa4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-17-packet_hub.o)
+                0x00000000                camera_hub_init_count
+
+.text.camera_hub_init
+                0x00000000        0x8
+ .text.camera_hub_init
+                0x00000000        0x8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-17-packet_hub.o)
+                0x00000000                camera_hub_init
+
+.text.camera_hub_subscribe
+                0x00000000       0x70
+ .text.camera_hub_subscribe
+                0x00000000       0x70 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-17-packet_hub.o)
+                0x00000000                camera_hub_subscribe
+
+.text.camera_hub_unsubscribe
+                0x00000000       0xa8
+ .text.camera_hub_unsubscribe
+                0x00000000       0xa8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-17-packet_hub.o)
+                0x00000000                camera_hub_unsubscribe
+
+.text.camera_hub_publish
+                0x00000000      0x294
+ .text.camera_hub_publish
+                0x00000000      0x294 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-17-packet_hub.o)
+                0x00000000                camera_hub_publish
+
+.text.camera_hub_acquire
+                0x00000000      0x114
+ .text.camera_hub_acquire
+                0x00000000      0x114 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-17-packet_hub.o)
+                0x00000000                camera_hub_acquire
+
+.text.camera_hub_release
+                0x00000000       0xa4
+ .text.camera_hub_release
+                0x00000000       0xa4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-17-packet_hub.o)
+                0x00000000                camera_hub_release
+
+.text.camera_hub_lease_valid
+                0x00000000      0x104
+ .text.camera_hub_lease_valid
+                0x00000000      0x104 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-17-packet_hub.o)
+                0x00000000                camera_hub_lease_valid
+
+.text.camera_hub_stop
+                0x00000000       0x54
+ .text.camera_hub_stop
+                0x00000000       0x54 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-17-packet_hub.o)
+                0x00000000                camera_hub_stop
+
+.text.camera_hub_drained
+                0x00000000       0x64
+ .text.camera_hub_drained
+                0x00000000       0x64 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-17-packet_hub.o)
+                0x00000000                camera_hub_drained
+
+.text.clock_check
+                0x00000000       0x3c
+ .text.clock_check
+                0x00000000       0x3c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+
+.text.notify    0x00000000      0x12c
+ .text.notify   0x00000000      0x12c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+
+.text.remove_queue
+                0x00000000       0x4c
+ .text.remove_queue
+                0x00000000       0x4c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+
+.text.cancel_pending
+                0x00000000      0x148
+ .text.cancel_pending
+                0x00000000      0x148 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+
+.text.invalidate_applied
+                0x00000000       0x28
+ .text.invalidate_applied
+                0x00000000       0x28 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+
+.text.cancel_active
+                0x00000000       0x3c
+ .text.cancel_active
+                0x00000000       0x3c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+
+.text.failed    0x00000000       0x44
+ .text.failed   0x00000000       0x44 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+
+.text.drain     0x00000000       0x88
+ .text.drain    0x00000000       0x88 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+
+.text.camera_producer_init
+                0x00000000      0x11c
+ .text.camera_producer_init
+                0x00000000      0x11c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+                0x00000000                camera_producer_init
+
+.text.camera_producer_attach
+                0x00000000      0x120
+ .text.camera_producer_attach
+                0x00000000      0x120 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+                0x00000000                camera_producer_attach
+
+.text.camera_producer_detach
+                0x00000000       0xbc
+ .text.camera_producer_detach
+                0x00000000       0xbc /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+                0x00000000                camera_producer_detach
+
+.text.camera_producer_request_keyframe
+                0x00000000      0x190
+ .text.camera_producer_request_keyframe
+                0x00000000      0x190 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+                0x00000000                camera_producer_request_keyframe
+
+.text.camera_producer_submit
+                0x00000000      0x394
+ .text.camera_producer_submit
+                0x00000000      0x394 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+                0x00000000                camera_producer_submit
+
+.text.camera_producer_cancel
+                0x00000000      0x2e4
+ .text.camera_producer_cancel
+                0x00000000      0x2e4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+                0x00000000                camera_producer_cancel
+
+.text.camera_producer_tick
+                0x00000000       0x84
+ .text.camera_producer_tick
+                0x00000000       0x84 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+                0x00000000                camera_producer_tick
+
+.text.camera_producer_next
+                0x00000000      0x378
+ .text.camera_producer_next
+                0x00000000      0x378 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+                0x00000000                camera_producer_next
+
+.text.camera_producer_active
+                0x00000000       0x74
+ .text.camera_producer_active
+                0x00000000       0x74 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+                0x00000000                camera_producer_active
+
+.text.camera_producer_complete
+                0x00000000      0x294
+ .text.camera_producer_complete
+                0x00000000      0x294 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+                0x00000000                camera_producer_complete
+
+.text.camera_producer_source_failed
+                0x00000000      0x104
+ .text.camera_producer_source_failed
+                0x00000000      0x104 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+                0x00000000                camera_producer_source_failed
+
+.text.camera_producer_recover
+                0x00000000       0x90
+ .text.camera_producer_recover
+                0x00000000       0x90 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+                0x00000000                camera_producer_recover
+
+.text.camera_producer_shutdown
+                0x00000000       0x64
+ .text.camera_producer_shutdown
+                0x00000000       0x64 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+                0x00000000                camera_producer_shutdown
+
+.text.camera_producer_quiescent
+                0x00000000       0x7c
+ .text.camera_producer_quiescent
+                0x00000000       0x7c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+                0x00000000                camera_producer_quiescent
+
+.text.camera_producer_control_snapshot
+                0x00000000       0x80
+ .text.camera_producer_control_snapshot
+                0x00000000       0x80 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+                0x00000000                camera_producer_control_snapshot
+
+.text.camera_rtp_h264_packet
+                0x00000000      0x218
+ .text.camera_rtp_h264_packet
+                0x00000000      0x218 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-19-rtp_h264.o)
+                0x00000000                camera_rtp_h264_packet
+
+.text.camera_rtp_h264_nal
+                0x00000000      0x104
+ .text.camera_rtp_h264_nal
+                0x00000000      0x104 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-19-rtp_h264.o)
+                0x00000000                camera_rtp_h264_nal
+
+.text.mbedtls_sha256_init
+                0x00000000        0xc
+ .text.mbedtls_sha256_init
+                0x00000000        0xc /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-20-sha256.o)
+                0x00000000                mbedtls_sha256_init
+
+.text.mbedtls_sha256_free
+                0x00000000       0x10
+ .text.mbedtls_sha256_free
+                0x00000000       0x10 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-20-sha256.o)
+                0x00000000                mbedtls_sha256_free
+
+.text.mbedtls_sha256_clone
+                0x00000000       0x10
+ .text.mbedtls_sha256_clone
+                0x00000000       0x10 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-20-sha256.o)
+                0x00000000                mbedtls_sha256_clone
+
+.text.mbedtls_sha256_starts
+                0x00000000       0x80
+ .text.mbedtls_sha256_starts
+                0x00000000       0x80 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-20-sha256.o)
+                0x00000000                mbedtls_sha256_starts
+
+.text.mbedtls_internal_sha256_process
+                0x00000000      0x8f8
+ .text.mbedtls_internal_sha256_process
+                0x00000000      0x8f8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-20-sha256.o)
+                0x00000000                mbedtls_internal_sha256_process
+
+.text.mbedtls_sha256_update
+                0x00000000       0xd8
+ .text.mbedtls_sha256_update
+                0x00000000       0xd8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-20-sha256.o)
+                0x00000000                mbedtls_sha256_update
+
+.text.mbedtls_sha256_finish
+                0x00000000      0x1ec
+ .text.mbedtls_sha256_finish
+                0x00000000      0x1ec /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-20-sha256.o)
+                0x00000000                mbedtls_sha256_finish
+
+.text.mbedtls_sha256
+                0x00000000      0x118
+ .text.mbedtls_sha256
+                0x00000000      0x118 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-20-sha256.o)
+                0x00000000                mbedtls_sha256
+
+.text.mbedtls_ct_memcmp
+                0x00000000       0x38
+ .text.mbedtls_ct_memcmp
+                0x00000000       0x38 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-21-constant_time.o)
+                0x00000000                mbedtls_ct_memcmp
+
+.text.mbedtls_ct_memcpy_if
+                0x00000000       0x58
+ .text.mbedtls_ct_memcpy_if
+                0x00000000       0x58 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-21-constant_time.o)
+                0x00000000                mbedtls_ct_memcpy_if
+
+.text.mbedtls_ct_memcpy_offset
+                0x00000000       0x88
+ .text.mbedtls_ct_memcpy_offset
+                0x00000000       0x88 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-21-constant_time.o)
+                0x00000000                mbedtls_ct_memcpy_offset
+
+.text.mbedtls_platform_zeroize
+                0x00000000       0x2c
+ .text.mbedtls_platform_zeroize
+                0x00000000       0x2c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-22-platform_util.o)
+                0x00000000                mbedtls_platform_zeroize
+
+.text.mbedtls_zeroize_and_free
+                0x00000000       0x1c
+ .text.mbedtls_zeroize_and_free
+                0x00000000       0x1c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-22-platform_util.o)
+                0x00000000                mbedtls_zeroize_and_free
+
+.fini
+ *(SORT_NONE(.fini))
+
+.rodata         0x00000000        0xa
+ *(.rodata)
+ .rodata        0x00000000        0x5 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+ .rodata        0x00000005        0x5 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.rodata.material_check.str1.1
+                0x00000000       0x16
+ .rodata.material_check.str1.1
+                0x00000000       0x16 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+
+.rodata.named_recheck.str1.1
+                0x00000000       0x16
+ .rodata.named_recheck.str1.1
+                0x00000000       0x16 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o
+
+.rodata.hash.str1.1
+                0x00000000        0x2
+ .rodata.hash.str1.1
+                0x00000000        0x2 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+
+.rodata.camera_rtsp_digest_response.str1.1
+                0x00000000        0x5
+ .rodata.camera_rtsp_digest_response.str1.1
+                0x00000000        0x5 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+
+.rodata.camera_rtsp_digest_verify.str1.1
+                0x00000000        0xc
+ .rodata.camera_rtsp_digest_verify.str1.1
+                0x00000000        0xc /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+
+.rodata.digits.0
+                0x00000000       0x11
+ .rodata.digits.0
+                0x00000000       0x11 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+
+.rodata.lifetime.str1.1
+                0x00000000       0x43
+ .rodata.lifetime.str1.1
+                0x00000000       0x43 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.rodata.produce_h264_frame.constprop.0.str1.1
+                0x00000000      0x2a2
+ .rodata.produce_h264_frame.constprop.0.str1.1
+                0x00000000      0x2a2 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.rodata.native_retire_body.isra.0.str1.1
+                0x00000000       0x8a
+ .rodata.native_retire_body.isra.0.str1.1
+                0x00000000       0x8a /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.rodata.nh_native_storage_select.str1.1
+                0x00000000       0x17
+ .rodata.nh_native_storage_select.str1.1
+                0x00000000       0x17 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.rodata.nh_native_quarantine.str1.1
+                0x00000000      0x183
+ .rodata.nh_native_quarantine.str1.1
+                0x00000000      0x183 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.rodata.nh_sensor_log.str1.1
+                0x00000000      0x17e
+ .rodata.nh_sensor_log.str1.1
+                0x00000000      0x17e /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-1-sensor_baseline.o)
+
+.rodata.nh_sensor_cli_optin.str1.1
+                0x00000000       0x1b
+ .rodata.nh_sensor_cli_optin.str1.1
+                0x00000000       0x1b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-1-sensor_baseline.o)
+
+.rodata.sc1346_init_table
+                0x00000000      0x22c
+ .rodata.sc1346_init_table
+                0x00000000      0x22c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-1-sensor_baseline.o)
+
+.rodata.scalar.str1.1
+                0x00000000        0x3
+ .rodata.scalar.str1.1
+                0x00000000        0x3 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+
+.rodata.nh_memory_parse_zoneinfo.str1.1
+                0x00000000       0x40
+ .rodata.nh_memory_parse_zoneinfo.str1.1
+                0x00000000       0x40 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+
+.rodata.nh_memory_own_layout.str1.1
+                0x00000000        0x5
+ .rodata.nh_memory_own_layout.str1.1
+                0x00000000        0x5 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+
+.rodata.str1.1  0x00000000       0xb9
+ .rodata.str1.1
+                0x00000000       0x7f /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+ .rodata.str1.1
+                0x0000007f       0x3a /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+
+.rodata.nh_memory_log.str1.1
+                0x00000000      0x1d6
+ .rodata.nh_memory_log.str1.1
+                0x00000000      0x1d6 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-3-memory_runtime.o)
+
+.rodata.nh_memory_read_fixed.str1.1
+                0x00000000       0x1d
+ .rodata.nh_memory_read_fixed.str1.1
+                0x00000000       0x1d /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-4-memory_reader.o)
+
+.rodata.hex.0   0x00000000       0x11
+ .rodata.hex.0  0x00000000       0x11 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+
+.rodata.is_native_sha256
+                0x00000000       0x20
+ .rodata.is_native_sha256
+                0x00000000       0x20 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+
+.rodata.reply.str1.1
+                0x00000000       0x44
+ .rodata.reply.str1.1
+                0x00000000       0x44 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.rodata.pending_control.str1.1
+                0x00000000       0x62
+ .rodata.pending_control.str1.1
+                0x00000000       0x62 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.rodata.finish_au.str1.1
+                0x00000000      0x180
+ .rodata.finish_au.str1.1
+                0x00000000      0x180 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.rodata.input_failure.isra.0.str1.1
+                0x00000000       0x20
+ .rodata.input_failure.isra.0.str1.1
+                0x00000000       0x20 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.rodata.process_input.str1.1
+                0x00000000       0x53
+ .rodata.process_input.str1.1
+                0x00000000       0x53 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.rodata.process_input
+                0x00000000        0x7
+ .rodata.process_input
+                0x00000000        0x7 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.rodata.serve_prestarted_body.str1.1
+                0x00000000      0x3bb
+ .rodata.serve_prestarted_body.str1.1
+                0x00000000      0x3bb /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.rodata.rv_start.str1.1
+                0x00000000       0x1d
+ .rodata.rv_start.str1.1
+                0x00000000       0x1d /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+
+.rodata.token.str1.1
+                0x00000000       0x20
+ .rodata.token.str1.1
+                0x00000000       0x10 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+ .rodata.token.str1.1
+                0x00000010       0x10 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-14-rtsp_request.o)
+
+.rodata.camera_digest_wire_parse.str1.1
+                0x00000000       0x21
+ .rodata.camera_digest_wire_parse.str1.1
+                0x00000000       0x21 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+
+.rodata.camera_digest_wire_parse
+                0x00000000        0x8
+ .rodata.camera_digest_wire_parse
+                0x00000000        0x8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+
+.rodata.camera_digest_wire_format_challenge.str1.1
+                0x00000000       0x9f
+ .rodata.camera_digest_wire_format_challenge.str1.1
+                0x00000000       0x9f /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+
+.rodata.camera_rtsp_request_parse.str1.1
+                0x00000000       0x8c
+ .rodata.camera_rtsp_request_parse.str1.1
+                0x00000000       0x8c /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-14-rtsp_request.o)
+
+.rodata.camera_rtsp_request_parse
+                0x00000000        0x8
+ .rodata.camera_rtsp_request_parse
+                0x00000000        0x8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-14-rtsp_request.o)
+
+.rodata.uri_config.str1.1
+                0x00000000       0x11
+ .rodata.uri_config.str1.1
+                0x00000000       0x11 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+
+.rodata.camera_rtsp_input_next
+                0x00000000        0x4
+ .rodata.camera_rtsp_input_next
+                0x00000000        0x4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+
+.rodata.camera_rtsp_request_policy.str1.1
+                0x00000000       0x5d
+ .rodata.camera_rtsp_request_policy.str1.1
+                0x00000000       0x5d /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+
+.rodata.suffix.0
+                0x00000000       0x17
+ .rodata.suffix.0
+                0x00000000       0x17 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+
+.rodata.camera_producer_next
+                0x00000000        0x5
+ .rodata.camera_producer_next
+                0x00000000        0x5 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+
+.rodata.camera_producer_complete
+                0x00000000        0x5
+ .rodata.camera_producer_complete
+                0x00000000        0x5 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+
+.rodata.K       0x00000000      0x100
+ .rodata.K      0x00000000      0x100 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-20-sha256.o)
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab
+ *(.ARM.extab)
+
+.ARM.exidx
+ *(.ARM.exidx)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.sframe
+ *(.sframe)
+
+.gcc_except_table
+ *(.gcc_except_table)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges)
+
+.eh_frame
+ *(.eh_frame)
+
+.sframe
+ *(.sframe)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table)
+
+.exception_ranges
+ *(.exception_ranges)
+
+.tdata
+ *(.tdata)
+
+.tbss
+ *(.tbss)
+
+.jcr
+ *(.jcr)
+
+.dynamic
+ *(.dynamic)
+
+.got
+ *(.got)
+
+.data           0x00000000       0x40
+ *(.data)
+ .data          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/arm-bootstrap.o
+ .data          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+ .data          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o
+ .data          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-2.o
+ .data          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+ .data          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.o
+ .data          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+ .data          0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-1-sensor_baseline.o)
+ .data          0x00000000       0x40 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+ .data          0x00000040        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-3-memory_runtime.o)
+ .data          0x00000040        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-4-memory_reader.o)
+ .data          0x00000040        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-5-frame_fd_custody.o)
+ .data          0x00000040        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-6-encoder_fd_custody.o)
+ .data          0x00000040        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-7-watchdog_owner.o)
+ .data          0x00000040        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+ .data          0x00000040        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+ .data          0x00000040        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+ .data          0x00000040        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-11-listener_custody.o)
+ .data          0x00000040        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-12-ipc.o)
+ .data          0x00000040        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+ .data          0x00000040        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-14-rtsp_request.o)
+ .data          0x00000040        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+ .data          0x00000040        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-16-backend.o)
+ .data          0x00000040        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-17-packet_hub.o)
+ .data          0x00000040        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+ .data          0x00000040        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-19-rtp_h264.o)
+ .data          0x00000040        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-20-sha256.o)
+ .data          0x00000040        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-21-constant_time.o)
+ .data          0x00000040        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-22-platform_util.o)
+
+.data.rel.ro.local.names.0
+                0x00000000       0x24
+ .data.rel.ro.local.names.0
+                0x00000000       0x24 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+
+.data.rel.ro.memset_func
+                0x00000000        0x4
+ .data.rel.ro.memset_func
+                0x00000000        0x4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-22-platform_util.o)
+
+.data1
+ *(.data1)
+
+.bss            0x00000000        0x0
+ *(.bss)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/arm-bootstrap.o
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-2.o
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.o
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-1-sensor_baseline.o)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-3-memory_runtime.o)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-4-memory_reader.o)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-5-frame_fd_custody.o)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-6-encoder_fd_custody.o)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-7-watchdog_owner.o)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-11-listener_custody.o)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-12-ipc.o)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-14-rtsp_request.o)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-16-backend.o)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-17-packet_hub.o)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-19-rtp_h264.o)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-20-sha256.o)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-21-constant_time.o)
+ .bss           0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-22-platform_util.o)
+
+.bss.active     0x00000000        0x4
+ .bss.active    0x00000000        0x4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/arm-bootstrap.o
+
+.bss.process_attempt
+                0x00000000        0x8
+ .bss.process_attempt
+                0x00000000        0x4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/arm-bootstrap.o
+ .bss.process_attempt
+                0x00000004        0x4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+
+.bss.table.0    0x00000000      0x400
+ .bss.table.0   0x00000000      0x400 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.bss.initialized.1
+                0x00000000        0x4
+ .bss.initialized.1
+                0x00000000        0x4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.bss.runtime    0x00000000        0x4
+ .bss.runtime   0x00000000        0x4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.bss.native_initialized
+                0x00000000        0x4
+ .bss.native_initialized
+                0x00000000        0x4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.bss.raw_reuse_requested
+                0x00000000        0x4
+ .bss.raw_reuse_requested
+                0x00000000        0x4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.bss.storage_selected
+                0x00000000        0x4
+ .bss.storage_selected
+                0x00000000        0x4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.bss.codec_live_bytes
+                0x00000000        0x8
+ .bss.codec_live_bytes
+                0x00000000        0x8 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.bss.memory_state
+                0x00000000     0x6668
+ .bss.memory_state
+                0x00000000     0x6668 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.bss.parked_after_stop
+                0x00000000        0x4
+ .bss.parked_after_stop
+                0x00000000        0x4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.bss.expected   0x00000000       0x28
+ .bss.expected  0x00000000       0x28 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.bss.parameters
+                0x00000000      0x100
+ .bss.parameters
+                0x00000000      0x100 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.bss.native     0x00000000      0x368
+ .bss.native    0x00000000      0x368 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.bss.source_clock
+                0x00000000       0x10
+ .bss.source_clock
+                0x00000000       0x10 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.bss.sensor_baseline_report
+                0x00000000      0x380
+ .bss.sensor_baseline_report
+                0x00000000      0x380 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.bss.sensor_baseline_requested
+                0x00000000        0x4
+ .bss.sensor_baseline_requested
+                0x00000000        0x4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.bss.frame_count
+                0x00000000        0x4
+ .bss.frame_count
+                0x00000000        0x4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.bss.raw        0x00000000   0x1a5e00
+ .bss.raw       0x00000000   0x1a5e00 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.bss.stop       0x00000000        0x4
+ .bss.stop      0x00000000        0x4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+
+.bss.process_owner
+                0x00000000        0x4
+ .bss.process_owner
+                0x00000000        0x4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+
+.bss.owned_entry_active
+                0x00000000        0x4
+ .bss.owned_entry_active
+                0x00000000        0x4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.bss.server_clock
+                0x00000000       0x10
+ .bss.server_clock
+                0x00000000       0x10 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+
+.bss.mbedtls_ct_zero
+                0x00000000        0x4
+ .bss.mbedtls_ct_zero
+                0x00000000        0x4 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-21-constant_time.o)
+                0x00000000                mbedtls_ct_zero
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000      0x5c7
+ *(.comment)
+ .comment       0x00000000       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/arm-bootstrap.o
+ .comment       0x00000033       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+ .comment       0x00000066       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o
+ .comment       0x00000099       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-2.o
+ .comment       0x000000cc       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+ .comment       0x000000ff       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.o
+ .comment       0x00000132       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+ .comment       0x00000165       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-1-sensor_baseline.o)
+ .comment       0x00000198       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+ .comment       0x000001cb       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-3-memory_runtime.o)
+ .comment       0x000001fe       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-4-memory_reader.o)
+ .comment       0x00000231       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-5-frame_fd_custody.o)
+ .comment       0x00000264       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-6-encoder_fd_custody.o)
+ .comment       0x00000297       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-7-watchdog_owner.o)
+ .comment       0x000002ca       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+ .comment       0x000002fd       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+ .comment       0x00000330       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+ .comment       0x00000363       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-11-listener_custody.o)
+ .comment       0x00000396       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-12-ipc.o)
+ .comment       0x000003c9       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+ .comment       0x000003fc       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-14-rtsp_request.o)
+ .comment       0x0000042f       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+ .comment       0x00000462       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-16-backend.o)
+ .comment       0x00000495       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-17-packet_hub.o)
+ .comment       0x000004c8       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+ .comment       0x000004fb       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-19-rtp_h264.o)
+ .comment       0x0000052e       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-20-sha256.o)
+ .comment       0x00000561       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-21-constant_time.o)
+ .comment       0x00000594       0x33 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-22-platform_util.o)
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/arm-bootstrap.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-2.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-1-sensor_baseline.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-3-memory_runtime.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-4-memory_reader.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-5-frame_fd_custody.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-6-encoder_fd_custody.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-7-watchdog_owner.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-11-listener_custody.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-12-ipc.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-14-rtsp_request.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-16-backend.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-17-packet_hub.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-19-rtp_h264.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-20-sha256.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-21-constant_time.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-22-platform_util.o)
+
+.ARM.attributes
+                0x00000000       0x2b
+ .ARM.attributes
+                0x00000000       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/arm-bootstrap.o
+ .ARM.attributes
+                0x0000002b       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o
+ .ARM.attributes
+                0x00000056       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o
+ .ARM.attributes
+                0x00000081       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-2.o
+ .ARM.attributes
+                0x000000ac       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o
+ .ARM.attributes
+                0x000000d7       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.o
+ .ARM.attributes
+                0x00000102       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-0-owned_runtime.o)
+ .ARM.attributes
+                0x0000012d       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-1-sensor_baseline.o)
+ .ARM.attributes
+                0x00000158       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-2-memory_reserve.o)
+ .ARM.attributes
+                0x00000183       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-3-memory_runtime.o)
+ .ARM.attributes
+                0x000001ae       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-4-memory_reader.o)
+ .ARM.attributes
+                0x000001d9       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-5-frame_fd_custody.o)
+ .ARM.attributes
+                0x00000204       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-6-encoder_fd_custody.o)
+ .ARM.attributes
+                0x0000022f       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-7-watchdog_owner.o)
+ .ARM.attributes
+                0x0000025a       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-8-candidate_auth.o)
+ .ARM.attributes
+                0x00000285       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-9-rtsp_server_candidate.o)
+ .ARM.attributes
+                0x000002b0       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-10-verifier_adapter_overlay.o)
+ .ARM.attributes
+                0x000002db       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-11-listener_custody.o)
+ .ARM.attributes
+                0x00000306       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-12-ipc.o)
+ .ARM.attributes
+                0x00000331       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-13-rtsp_digest_wire.o)
+ .ARM.attributes
+                0x0000035c       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-14-rtsp_request.o)
+ .ARM.attributes
+                0x00000387       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-15-rtsp_input.o)
+ .ARM.attributes
+                0x000003b2       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-16-backend.o)
+ .ARM.attributes
+                0x000003dd       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-17-packet_hub.o)
+ .ARM.attributes
+                0x00000408       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-18-producer.o)
+ .ARM.attributes
+                0x00000433       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-19-rtp_h264.o)
+ .ARM.attributes
+                0x0000045e       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-20-sha256.o)
+ .ARM.attributes
+                0x00000489       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-21-constant_time.o)
+ .ARM.attributes
+                0x000004b4       0x2b /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a(arm-22-platform_util.o)
+
+.gnu.build.attributes
+ *(.gnu.build.attributes)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+OUTPUT(/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/bootstrap-arm-NOT-EXECUTABLE.o elf32-littlearm)
+LOAD linker stubs

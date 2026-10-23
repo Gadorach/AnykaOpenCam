@@ -62,16 +62,22 @@ fork/transfer/wait/bind call PASS; parent checked33 inputs/59 delivery pins/1771
 dependency records/84 artifacts/40 logs/five tools. Native hardening/real credentials
 NOT RUN. See rtsp-provisioner-process PARENT_DISPOSITION; no active author/reviewer
 in that lane; committed locally `5269979`. Its original33-input pin set retains
-the pre-closeout index:32 remain unchanged plus one known parent index/status
-update recorded in PARENT_CONTEXT_UPDATE01.json, not rebased. Actual authorized
+the pre-closeout index:32 remain unchanged plus known parent index/status
+updates recorded in PARENT_CONTEXT_UPDATE01/02.json, not rebased. Actual authorized
 external ingress, secret-free launch/FD-env-caps
 hygiene, durable storage/rotation, linked-file retirement/main/external recovery/
 backing remain gaps. Next source connection is known-wait/bind → real device-free
-owned-runtime prepare → real prestarted start. One isolated author now owns fresh
-`apps/rtsp-auth/qc07f-bootstrap-candidate/` and matching bootstrap qualification
-docs for that actual device-free ordering/failed-start custody; compile-only,
-parent independent review required. No test/child/verifier/native/media execution,
-main, synthetic callbacks, provider/backing or hardware adoption selected.
+owned-runtime prepare → real prestarted start. That actual connection at
+`apps/rtsp-auth/qc07f-bootstrap-candidate/` now has narrow independent SOURCE/API/
+order/custody sufficiency,2 HOST/ARM compiles/2 actual REL links/24 commands PASS,
+NOT RUN. Parent checked863 input pins/48 delivery pins/37 artifacts/180 new+724
+reused dependency records/46 archive bodies; no main/native activation/serve export.
+See qc07f-bootstrap PARENT_DISPOSITION, no author/reviewer active in that lane.
+One isolated author owns fresh `apps/rtsp-auth/rtsp-os-random/` and matching docs
+for the missing genuine public RTSP32-byte randomness callback (one nonblocking
+OS getrandom call, no fallback/retry; native entropy remains unqualified).
+No bootstrap test/child/verifier/native/media execution, main, synthetic callbacks,
+provider/backing or hardware adoption selected.
 Original radio/Oct22 reset/23c/23d/23e/23g
 failures untouched. Expired receipts are not current owners; no electrical-rail/
 whole-interval recovery claim or new diagnostic/clock framework.

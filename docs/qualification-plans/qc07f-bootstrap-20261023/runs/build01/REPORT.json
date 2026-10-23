@@ -1,0 +1,834 @@
+{
+  "recorded": "2026-10-23T11:45:06.425943+00:00",
+  "status": "HOST_ARM_CHANGED_UNIT_AND_REAL_RELOCATABLE_CLOSURE_PASS_NOT_RUN",
+  "scope": "2 real new glue C compilations + 2 REL links;56 pinned reused native-shaped object members;NO app/test/child/verifier/runtime/native execution",
+  "invocation": {
+    "argv": [
+      "/usr/bin/env",
+      "-i",
+      "PATH=/usr/bin:/bin",
+      "LANG=C",
+      "LC_ALL=C",
+      "TZ=UTC",
+      "/bin/bash",
+      "apps/rtsp-auth/qc07f-bootstrap-candidate/compile_recipe.sh"
+    ],
+    "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+    "started": "2026-10-23T11:43:36.316742+00:00",
+    "scope": "OFFLINE_NEW_CHANGED_UNIT_COMPILATION_AND_REAL_REL_LINK_ONLY_NO_PROGRAM_EXECUTION",
+    "exit": 0,
+    "ended": "2026-10-23T11:43:36.882426+00:00"
+  },
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C",
+    "LC_ALL": "C",
+    "TZ": "UTC",
+    "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/tmp"
+  },
+  "command_exit_provenance": "audited set -euo pipefail fixed recipe exited0; every command has START/PASS and matching log; no failure/retry",
+  "commands": [
+    {
+      "label": "input-pins",
+      "argv": [
+        "/usr/bin/sha256sum",
+        "--check",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/BUILD_INPUTS.sha256"
+      ],
+      "started": "2026-10-23T11:43:36.321005399Z",
+      "ended": "2026-10-23T11:43:36.405654226Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/input-pins.txt",
+      "bytes": 88441,
+      "sha256": "40f8fc4ded42ad28e4d2998bb899bfe059653c0d4cbdd1aad716acf1430a5c54"
+    },
+    {
+      "label": "host-version",
+      "argv": [
+        "/usr/bin/cc",
+        "--version"
+      ],
+      "started": "2026-10-23T11:43:36.406727972Z",
+      "ended": "2026-10-23T11:43:36.408983260Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/host-version.txt",
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    {
+      "label": "host-machine",
+      "argv": [
+        "/usr/bin/cc",
+        "-dumpmachine"
+      ],
+      "started": "2026-10-23T11:43:36.410468690Z",
+      "ended": "2026-10-23T11:43:36.413013036Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/host-machine.txt",
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    {
+      "label": "host-members",
+      "argv": [
+        "/usr/bin/ar",
+        "t",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-host.a"
+      ],
+      "started": "2026-10-23T11:43:36.414214776Z",
+      "ended": "2026-10-23T11:43:36.417446224Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/host-members.txt",
+      "bytes": 541,
+      "sha256": "4f06b1bb34d5c6b61a736df50a7f102ff26c9a82d9d7d13261b4855da87df59d"
+    },
+    {
+      "label": "host-archive-ELF",
+      "argv": [
+        "/usr/bin/readelf",
+        "-h",
+        "-A",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-host.a"
+      ],
+      "started": "2026-10-23T11:43:36.418433658Z",
+      "ended": "2026-10-23T11:43:36.424356739Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/host-archive-ELF.txt",
+      "bytes": 25665,
+      "sha256": "e39a59a2715468850cd0de74dc52a76ce858b9916d47895a7d195e57d7f2aa99"
+    },
+    {
+      "label": "host-archive-symbols",
+      "argv": [
+        "/usr/bin/nm",
+        "-g",
+        "--defined-only",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-host.a"
+      ],
+      "started": "2026-10-23T11:43:36.425330799Z",
+      "ended": "2026-10-23T11:43:36.444917354Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/host-archive-symbols.txt",
+      "bytes": 7289,
+      "sha256": "3bbd9dae2631e737ceda874c8f4aa8bf3076a765e6d1fce1e057189cdea03158"
+    },
+    {
+      "label": "host-provisioner-ELF",
+      "argv": [
+        "/usr/bin/readelf",
+        "-h",
+        "-A",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-0.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-1.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-2.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-3.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-9.o"
+      ],
+      "started": "2026-10-23T11:43:36.446029882Z",
+      "ended": "2026-10-23T11:43:36.451502666Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/host-provisioner-ELF.txt",
+      "bytes": 5422,
+      "sha256": "95098a5846edbd39c68485814650b83cbc7dd16b1f2f0b0c161ffe7a87def593"
+    },
+    {
+      "label": "host-cc",
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-O2",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/host-bootstrap.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-candidate/bootstrap.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/host-bootstrap.o"
+      ],
+      "started": "2026-10-23T11:43:36.452547881Z",
+      "ended": "2026-10-23T11:43:36.525079279Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/host-cc.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "host-REL",
+      "argv": [
+        "/usr/bin/cc",
+        "-O2",
+        "-nostdlib",
+        "-r",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/host-bootstrap.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-0.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-1.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-2.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-3.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-9.o",
+        "-Wl,--whole-archive",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-host.a",
+        "-Wl,--no-whole-archive",
+        "-Wl,-Map=/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/host.map",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/bootstrap-host-NOT-EXECUTABLE.o"
+      ],
+      "started": "2026-10-23T11:43:36.526679853Z",
+      "ended": "2026-10-23T11:43:36.545476272Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/host-REL.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "host-defined",
+      "argv": [
+        "/usr/bin/nm",
+        "-g",
+        "--defined-only",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/bootstrap-host-NOT-EXECUTABLE.o"
+      ],
+      "started": "2026-10-23T11:43:36.546566895Z",
+      "ended": "2026-10-23T11:43:36.561503394Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/host-defined.txt",
+      "bytes": 8083,
+      "sha256": "03cd4ce9c8878fb5a4a23bf98e20414facc3576bfb3b372a8040433722649c72"
+    },
+    {
+      "label": "host-undefined",
+      "argv": [
+        "/usr/bin/nm",
+        "-u",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/bootstrap-host-NOT-EXECUTABLE.o"
+      ],
+      "started": "2026-10-23T11:43:36.562554389Z",
+      "ended": "2026-10-23T11:43:36.576347751Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/host-undefined.txt",
+      "bytes": 1830,
+      "sha256": "0458fb36a12ba013bf50a6aaebb6ccb1ae6572435634279a4fe9b4bf39e85491"
+    },
+    {
+      "label": "host-ELF",
+      "argv": [
+        "/usr/bin/readelf",
+        "-h",
+        "-A",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/bootstrap-host-NOT-EXECUTABLE.o"
+      ],
+      "started": "2026-10-23T11:43:36.578130062Z",
+      "ended": "2026-10-23T11:43:36.584355505Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/host-ELF.txt",
+      "bytes": 956,
+      "sha256": "6584a6b322caff06a1f4114e1f853d86765fafdc80b0dfe73aee67731ea97e2c"
+    },
+    {
+      "label": "arm-version",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "--version"
+      ],
+      "started": "2026-10-23T11:43:36.585381901Z",
+      "ended": "2026-10-23T11:43:36.587809632Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/arm-version.txt",
+      "bytes": 288,
+      "sha256": "7b501201183c07e1e9078ca3f8b1f502d07fd67c414e92183c01e8787c00a0d4"
+    },
+    {
+      "label": "arm-machine",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-dumpmachine"
+      ],
+      "started": "2026-10-23T11:43:36.588741772Z",
+      "ended": "2026-10-23T11:43:36.590986123Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/arm-machine.txt",
+      "bytes": 29,
+      "sha256": "d0cf670b8c286026ebd268b1f5ecdd6be41552e0e254a949fb50ab0ed085dd23"
+    },
+    {
+      "label": "arm-members",
+      "argv": [
+        "/usr/bin/ar",
+        "t",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a"
+      ],
+      "started": "2026-10-23T11:43:36.592106453Z",
+      "ended": "2026-10-23T11:43:36.596402016Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/arm-members.txt",
+      "bytes": 518,
+      "sha256": "fdf8d564b7b24580e5faeca9d75caeef4a7ab3f32eae9f884b35d2ace40048fc"
+    },
+    {
+      "label": "arm-archive-ELF",
+      "argv": [
+        "/usr/bin/readelf",
+        "-h",
+        "-A",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a"
+      ],
+      "started": "2026-10-23T11:43:36.597371185Z",
+      "ended": "2026-10-23T11:43:36.603114235Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/arm-archive-ELF.txt",
+      "bytes": 34955,
+      "sha256": "1c761c0c290d7368030dd94703364f6e629dee43164f5d21abb7ca3d0aec3a04"
+    },
+    {
+      "label": "arm-archive-symbols",
+      "argv": [
+        "/usr/bin/nm",
+        "-g",
+        "--defined-only",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a"
+      ],
+      "started": "2026-10-23T11:43:36.604200789Z",
+      "ended": "2026-10-23T11:43:36.623757128Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/arm-archive-symbols.txt",
+      "bytes": 5938,
+      "sha256": "b7f4037a8c690aa57c994ec4418e122d8f188f6d9f91cf4a14820c15918a097b"
+    },
+    {
+      "label": "arm-provisioner-ELF",
+      "argv": [
+        "/usr/bin/readelf",
+        "-h",
+        "-A",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-2.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.o"
+      ],
+      "started": "2026-10-23T11:43:36.624733363Z",
+      "ended": "2026-10-23T11:43:36.631962686Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/arm-provisioner-ELF.txt",
+      "bytes": 7446,
+      "sha256": "dd614df213060a5a9b2270a5eb1d14bf5a27a2b26d20efe8132247f822e05348"
+    },
+    {
+      "label": "arm-cc",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/arm-bootstrap.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-candidate/bootstrap.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/arm-bootstrap.o"
+      ],
+      "started": "2026-10-23T11:43:36.633092733Z",
+      "ended": "2026-10-23T11:43:36.706488585Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/arm-cc.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "arm-REL",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-nostdlib",
+        "-r",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/arm-bootstrap.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-2.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.o",
+        "-Wl,--whole-archive",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a",
+        "-Wl,--no-whole-archive",
+        "-Wl,-Map=/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/arm.map",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/bootstrap-arm-NOT-EXECUTABLE.o"
+      ],
+      "started": "2026-10-23T11:43:36.707698326Z",
+      "ended": "2026-10-23T11:43:36.723128451Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/arm-REL.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "arm-defined",
+      "argv": [
+        "/usr/bin/nm",
+        "-g",
+        "--defined-only",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/bootstrap-arm-NOT-EXECUTABLE.o"
+      ],
+      "started": "2026-10-23T11:43:36.724115021Z",
+      "ended": "2026-10-23T11:43:36.738767908Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/arm-defined.txt",
+      "bytes": 6515,
+      "sha256": "df1ded95339db59114d83c9a039c025ce06a226ca3c635b05e3e71716798a383"
+    },
+    {
+      "label": "arm-undefined",
+      "argv": [
+        "/usr/bin/nm",
+        "-u",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/bootstrap-arm-NOT-EXECUTABLE.o"
+      ],
+      "started": "2026-10-23T11:43:36.739932011Z",
+      "ended": "2026-10-23T11:43:36.754320508Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/arm-undefined.txt",
+      "bytes": 1504,
+      "sha256": "0118b39d72f02ba8601437bb9f86c41b44aab8dc649093cfe71846f95adf9f56"
+    },
+    {
+      "label": "arm-ELF",
+      "argv": [
+        "/usr/bin/readelf",
+        "-h",
+        "-A",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/bootstrap-arm-NOT-EXECUTABLE.o"
+      ],
+      "started": "2026-10-23T11:43:36.755540612Z",
+      "ended": "2026-10-23T11:43:36.762143995Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/arm-ELF.txt",
+      "bytes": 1362,
+      "sha256": "3932da7d035fa55c85b1a1537cc048bbbe66c03fc4e180d6376c9139f1f88ac3"
+    },
+    {
+      "label": "final-input-pins",
+      "argv": [
+        "/usr/bin/sha256sum",
+        "--check",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-20261023/BUILD_INPUTS.sha256"
+      ],
+      "started": "2026-10-23T11:43:36.763190730Z",
+      "ended": "2026-10-23T11:43:36.847438673Z",
+      "exit": 0,
+      "log": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/final-input-pins.txt",
+      "bytes": 88441,
+      "sha256": "40f8fc4ded42ad28e4d2998bb899bfe059653c0d4cbdd1aad716acf1430a5c54"
+    }
+  ],
+  "counts": {
+    "C_compilations": 2,
+    "REL_links": 2,
+    "tool_commands": 24,
+    "reused_runtime_archive_members": 46,
+    "reused_provisioner_objects": 10,
+    "new_compiled_dependency_records": 180,
+    "new_compiled_unique_dependency_paths": 145,
+    "original_selected_provisioner_dependency_records_rechecked": 724,
+    "pre_and_post_input_pins": 863,
+    "build_artifact_log_manifest_files": 37
+  },
+  "original_provisioner_dependency_manifest": {
+    "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/DEPENDENCIES.json",
+    "bytes": 529255,
+    "sha256": "8d9fb44307ca94a482ac085a2679a8e9c0d39b848e68b5c21ee436bcec427ee4"
+  },
+  "artifacts_logs_manifests": {
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/COMMANDS.txt": {
+      "bytes": 8050,
+      "sha256": "061449ad0070a16d004cb31c749c0caa7c8f4be7d0351c8ac4e8e5bd32fbac44"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/DEPENDENCIES.json": {
+      "bytes": 59019,
+      "sha256": "89128f36a27a38bbf6325e9082f32361d4ff59455ed943ade189922fec6c15cf"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/TIMES.txt": {
+      "bytes": 2394,
+      "sha256": "72e8b5e7d9c1e71cd495bc049b6db3dce2c76996aa6dd31ca654de064eeffb56"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/arm.map": {
+      "bytes": 169585,
+      "sha256": "e33e9d22665307db187a88b56c1ab0349d19a2280d78e52a2c495d0aba1ecaa7"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/bootstrap-arm-NOT-EXECUTABLE.o": {
+      "bytes": 226540,
+      "sha256": "4d6fc8e71b6786b6a985af0d82d03e53a96c71ae1be38e16b28192c1dfd978d7"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/bootstrap-host-NOT-EXECUTABLE.o": {
+      "bytes": 332136,
+      "sha256": "67bd8499f4fed52f4054270fefd8c0f60b8ea9949a6d90779c1610a82fef9843"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/host.map": {
+      "bytes": 176323,
+      "sha256": "53edba9d0394b3dcfc23ea1c88bd4c96b0582921d3ac1219f48dbe8879e24059"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/arm-ELF.txt": {
+      "bytes": 1362,
+      "sha256": "3932da7d035fa55c85b1a1537cc048bbbe66c03fc4e180d6376c9139f1f88ac3"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/arm-REL.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/arm-archive-ELF.txt": {
+      "bytes": 34955,
+      "sha256": "1c761c0c290d7368030dd94703364f6e629dee43164f5d21abb7ca3d0aec3a04"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/arm-archive-symbols.txt": {
+      "bytes": 5938,
+      "sha256": "b7f4037a8c690aa57c994ec4418e122d8f188f6d9f91cf4a14820c15918a097b"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/arm-cc.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/arm-defined.txt": {
+      "bytes": 6515,
+      "sha256": "df1ded95339db59114d83c9a039c025ce06a226ca3c635b05e3e71716798a383"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/arm-machine.txt": {
+      "bytes": 29,
+      "sha256": "d0cf670b8c286026ebd268b1f5ecdd6be41552e0e254a949fb50ab0ed085dd23"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/arm-members.txt": {
+      "bytes": 518,
+      "sha256": "fdf8d564b7b24580e5faeca9d75caeef4a7ab3f32eae9f884b35d2ace40048fc"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/arm-provisioner-ELF.txt": {
+      "bytes": 7446,
+      "sha256": "dd614df213060a5a9b2270a5eb1d14bf5a27a2b26d20efe8132247f822e05348"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/arm-undefined.txt": {
+      "bytes": 1504,
+      "sha256": "0118b39d72f02ba8601437bb9f86c41b44aab8dc649093cfe71846f95adf9f56"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/arm-version.txt": {
+      "bytes": 288,
+      "sha256": "7b501201183c07e1e9078ca3f8b1f502d07fd67c414e92183c01e8787c00a0d4"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/final-input-pins.txt": {
+      "bytes": 88441,
+      "sha256": "40f8fc4ded42ad28e4d2998bb899bfe059653c0d4cbdd1aad716acf1430a5c54"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/host-ELF.txt": {
+      "bytes": 956,
+      "sha256": "6584a6b322caff06a1f4114e1f853d86765fafdc80b0dfe73aee67731ea97e2c"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/host-REL.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/host-archive-ELF.txt": {
+      "bytes": 25665,
+      "sha256": "e39a59a2715468850cd0de74dc52a76ce858b9916d47895a7d195e57d7f2aa99"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/host-archive-symbols.txt": {
+      "bytes": 7289,
+      "sha256": "3bbd9dae2631e737ceda874c8f4aa8bf3076a765e6d1fce1e057189cdea03158"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/host-cc.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/host-defined.txt": {
+      "bytes": 8083,
+      "sha256": "03cd4ce9c8878fb5a4a23bf98e20414facc3576bfb3b372a8040433722649c72"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/host-machine.txt": {
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/host-members.txt": {
+      "bytes": 541,
+      "sha256": "4f06b1bb34d5c6b61a736df50a7f102ff26c9a82d9d7d13261b4855da87df59d"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/host-provisioner-ELF.txt": {
+      "bytes": 5422,
+      "sha256": "95098a5846edbd39c68485814650b83cbc7dd16b1f2f0b0c161ffe7a87def593"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/host-undefined.txt": {
+      "bytes": 1830,
+      "sha256": "0458fb36a12ba013bf50a6aaebb6ccb1ae6572435634279a4fe9b4bf39e85491"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/host-version.txt": {
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/logs/input-pins.txt": {
+      "bytes": 88441,
+      "sha256": "40f8fc4ded42ad28e4d2998bb899bfe059653c0d4cbdd1aad716acf1430a5c54"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/arm-bootstrap.d": {
+      "bytes": 10171,
+      "sha256": "2961b065e59aa0073fcb053640ce7de1ea2f67e43c284086c7e10166e3573c37"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/arm-bootstrap.o": {
+      "bytes": 3904,
+      "sha256": "82e5bf533e93209b4d762c026ff1a60d31ec73fcc92f4fc12acf0b88fb0ce393"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/arm-bootstrap.su": {
+      "bytes": 643,
+      "sha256": "9e5049a9ea26b7d3af39db1c293a986c9f9985e01d86b7aeb60a6b29459256b5"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/host-bootstrap.d": {
+      "bytes": 6766,
+      "sha256": "2c0edd0852df9be4a8167e229ddd7932e0e389cb870fa3202228d9268bd79a6d"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/host-bootstrap.o": {
+      "bytes": 5296,
+      "sha256": "ac0d07dc5a9c2963b6d1e178a5c9716a23b826c47789c40360690496432454f4"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/objects/host-bootstrap.su": {
+      "bytes": 540,
+      "sha256": "695fc31992b2f21c1c3a88f41059db911b8eb02b131ba366083423d1d980b4ab"
+    }
+  },
+  "new_dependencies": {
+    "path": "docs/qualification-plans/qc07f-bootstrap-20261023/runs/build01/DEPENDENCIES.json",
+    "bytes": 59019,
+    "sha256": "89128f36a27a38bbf6325e9082f32361d4ff59455ed943ade189922fec6c15cf"
+  },
+  "symbols": {
+    "host": {
+      "each_required_API_defined_once": [
+        "qc07f_bootstrap_begin_v1",
+        "qc07f_bootstrap_observe_v1",
+        "qc07f_bootstrap_start_v1",
+        "qc07f_bootstrap_finish_device_free_v1",
+        "qc07f_rtsp_provisioner_begin_v1",
+        "qc07f_rtsp_provisioner_observe_v1",
+        "qc07f_rtsp_provisioner_bind_v1",
+        "qc07f_owned_runtime_prepare_v1",
+        "candidate_prestarted_start",
+        "candidate_prestarted_finish"
+      ],
+      "undefined": [
+        "__errno_location",
+        "__explicit_bzero_chk",
+        "__fprintf_chk",
+        "__snprintf_chk",
+        "__stack_chk_fail",
+        "_exit",
+        "accept",
+        "calloc",
+        "clock_gettime",
+        "close",
+        "dup2",
+        "fcntl",
+        "fflush",
+        "fork",
+        "free",
+        "fstat",
+        "fstatat",
+        "fstatfs",
+        "fsync",
+        "fwrite",
+        "getegid",
+        "geteuid",
+        "getgid",
+        "getgroups",
+        "getpid",
+        "getppid",
+        "getresgid",
+        "getresuid",
+        "getrlimit",
+        "getsockname",
+        "getsockopt",
+        "getuid",
+        "ioctl",
+        "lseek",
+        "malloc",
+        "memchr",
+        "memcmp",
+        "memcpy",
+        "memmove",
+        "memset",
+        "mlockall",
+        "nanosleep",
+        "open",
+        "openat",
+        "poll",
+        "prctl",
+        "pread",
+        "raise",
+        "read",
+        "recv",
+        "recvmsg",
+        "send",
+        "sendmsg",
+        "setgroups",
+        "setresgid",
+        "setresuid",
+        "setrlimit",
+        "setsockopt",
+        "sigaction",
+        "socketpair",
+        "stderr",
+        "strchr",
+        "strcmp",
+        "strlen",
+        "syscall",
+        "waitpid",
+        "write"
+      ],
+      "no_main_or_PUBLICDUMMY": true
+    },
+    "arm": {
+      "each_required_API_defined_once": [
+        "qc07f_bootstrap_begin_v1",
+        "qc07f_bootstrap_observe_v1",
+        "qc07f_bootstrap_start_v1",
+        "qc07f_bootstrap_finish_device_free_v1",
+        "qc07f_rtsp_provisioner_begin_v1",
+        "qc07f_rtsp_provisioner_observe_v1",
+        "qc07f_rtsp_provisioner_bind_v1",
+        "qc07f_owned_runtime_prepare_v1",
+        "candidate_prestarted_start",
+        "candidate_prestarted_finish"
+      ],
+      "undefined": [
+        "_GLOBAL_OFFSET_TABLE_",
+        "__aeabi_uidivmod",
+        "__aeabi_uldivmod",
+        "__bswapsi2",
+        "__clock_gettime64",
+        "__ehdr_start",
+        "__errno_location",
+        "__fstat_time64",
+        "__fstatat_time64",
+        "__nanosleep_time64",
+        "__stack_chk_fail",
+        "__stack_chk_guard",
+        "_exit",
+        "accept",
+        "calloc",
+        "close",
+        "dup2",
+        "explicit_bzero",
+        "fcntl",
+        "fflush",
+        "fork",
+        "fprintf",
+        "fputs",
+        "free",
+        "fstatfs",
+        "fsync",
+        "getegid",
+        "geteuid",
+        "getgid",
+        "getgroups",
+        "getpid",
+        "getppid",
+        "getresgid",
+        "getresuid",
+        "getrlimit",
+        "getsockname",
+        "getsockopt",
+        "getuid",
+        "htonl",
+        "htons",
+        "ioctl",
+        "lseek",
+        "malloc",
+        "memchr",
+        "memcmp",
+        "memcpy",
+        "memmove",
+        "memset",
+        "mlockall",
+        "open",
+        "openat",
+        "poll",
+        "prctl",
+        "pread",
+        "raise",
+        "read",
+        "recv",
+        "recvmsg",
+        "send",
+        "sendmsg",
+        "setgroups",
+        "setresgid",
+        "setresuid",
+        "setrlimit",
+        "setsockopt",
+        "sigaction",
+        "snprintf",
+        "socketpair",
+        "stderr",
+        "strchr",
+        "strcmp",
+        "strlen",
+        "syscall",
+        "waitpid",
+        "write"
+      ],
+      "no_main_or_PUBLICDUMMY": true
+    }
+  },
+  "input_pins_unchanged": true,
+  "tools": {
+    "/usr/bin/cc": {
+      "bytes": 2451072,
+      "sha256": "a5f680ca8b01b1e7a98d531cac90f258875a301d841fab28a8b56d513470f988"
+    },
+    "/usr/bin/ar": {
+      "bytes": 55792,
+      "sha256": "8bbb1c48f7d248ff7a4f33691ad2a12426d8f7879ea93de7201854e36611f312"
+    },
+    "/usr/bin/nm": {
+      "bytes": 48560,
+      "sha256": "cf9a8d5beccc243c2010b863cb861e4e8a74cdb294af59dcf122950df2e8c440"
+    },
+    "/usr/bin/readelf": {
+      "bytes": 867440,
+      "sha256": "b561a09504aff0f2c864da60a268cafee9171fdd1574a23fde6158f95ad55294"
+    },
+    "/usr/bin/sha256sum": {
+      "bytes": 67896,
+      "sha256": "e276fc2d01511e7468c0c8b344cf1085d7e60692dddcf21306c52466d86a458b"
+    },
+    "/usr/bin/date": {
+      "bytes": 129336,
+      "sha256": "1ebe915f0425521d4f7eb318f5976b82e33f5cee83b6c895aa360c86e1d4f6fc"
+    },
+    "/bin/bash": {
+      "bytes": 1268912,
+      "sha256": "917e986de64e7d36e42bef7aff5db73b7ecef5b58477bdb990e595e8dfc930b2"
+    }
+  },
+  "limitations": "REL leaves libc/compiler/final-link support undefined (including ARM __ehdr_start); not executable/release/native ABI or memory-fit proof. Whole archive retains existing native/serve implementations; glue API never invokes/exposes activation/serve. No libc link or dummy provider. No full compiler closure."
+}

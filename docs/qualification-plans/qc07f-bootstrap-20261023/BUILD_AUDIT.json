@@ -1,0 +1,940 @@
+{
+  "recorded": "2026-10-23T11:43:24.464334+00:00",
+  "scope": "READ_ONLY_SOURCE_ARCHIVE_MEMBER_FLAG_PIN_AUDIT_BEFORE_NEW_LINK",
+  "runtime_archives": [
+    {
+      "archive": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-host.a",
+      "member_bodies_equal_reported_objects": true,
+      "members": [
+        {
+          "member": "host-0-owned_runtime.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-0-owned_runtime.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2",
+            "-Wno-misleading-indentation"
+          ]
+        },
+        {
+          "member": "host-1-sensor_baseline.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-1-sensor_baseline.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2"
+          ]
+        },
+        {
+          "member": "host-2-memory_reserve.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-2-memory_reserve.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2",
+            "-Wno-misleading-indentation"
+          ]
+        },
+        {
+          "member": "host-3-memory_runtime.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-3-memory_runtime.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2",
+            "-Wno-misleading-indentation"
+          ]
+        },
+        {
+          "member": "host-4-memory_reader.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-4-memory_reader.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2",
+            "-Wno-misleading-indentation"
+          ]
+        },
+        {
+          "member": "host-5-frame_fd_custody.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-5-frame_fd_custody.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2"
+          ]
+        },
+        {
+          "member": "host-6-encoder_fd_custody.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-6-encoder_fd_custody.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2"
+          ]
+        },
+        {
+          "member": "host-7-watchdog_owner.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-7-watchdog_owner.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2"
+          ]
+        },
+        {
+          "member": "host-8-candidate_auth.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-8-candidate_auth.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2"
+          ]
+        },
+        {
+          "member": "host-9-rtsp_server_candidate.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-9-rtsp_server_candidate.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2",
+            "-Wno-misleading-indentation"
+          ]
+        },
+        {
+          "member": "host-10-verifier_adapter_overlay.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-10-verifier_adapter_overlay.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2"
+          ]
+        },
+        {
+          "member": "host-11-listener_custody.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-11-listener_custody.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2"
+          ]
+        },
+        {
+          "member": "host-12-ipc.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-12-ipc.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2"
+          ]
+        },
+        {
+          "member": "host-13-rtsp_digest_wire.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-13-rtsp_digest_wire.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2"
+          ]
+        },
+        {
+          "member": "host-14-rtsp_request.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-14-rtsp_request.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2"
+          ]
+        },
+        {
+          "member": "host-15-rtsp_input.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-15-rtsp_input.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2",
+            "-Wno-misleading-indentation",
+            "-Wno-error=nonnull"
+          ]
+        },
+        {
+          "member": "host-16-backend.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-16-backend.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2"
+          ]
+        },
+        {
+          "member": "host-17-packet_hub.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-17-packet_hub.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2"
+          ]
+        },
+        {
+          "member": "host-18-producer.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-18-producer.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2"
+          ]
+        },
+        {
+          "member": "host-19-rtp_h264.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-19-rtp_h264.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2"
+          ]
+        },
+        {
+          "member": "host-20-sha256.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-20-sha256.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2"
+          ]
+        },
+        {
+          "member": "host-21-constant_time.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-21-constant_time.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2"
+          ]
+        },
+        {
+          "member": "host-22-platform_util.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/host-22-platform_util.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-O2"
+          ]
+        }
+      ]
+    },
+    {
+      "archive": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a",
+      "member_bodies_equal_reported_objects": true,
+      "members": [
+        {
+          "member": "arm-0-owned_runtime.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-0-owned_runtime.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft",
+            "-Wno-misleading-indentation"
+          ]
+        },
+        {
+          "member": "arm-1-sensor_baseline.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-1-sensor_baseline.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft"
+          ]
+        },
+        {
+          "member": "arm-2-memory_reserve.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-2-memory_reserve.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft",
+            "-Wno-misleading-indentation"
+          ]
+        },
+        {
+          "member": "arm-3-memory_runtime.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-3-memory_runtime.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft",
+            "-Wno-misleading-indentation"
+          ]
+        },
+        {
+          "member": "arm-4-memory_reader.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-4-memory_reader.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft",
+            "-Wno-misleading-indentation"
+          ]
+        },
+        {
+          "member": "arm-5-frame_fd_custody.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-5-frame_fd_custody.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft"
+          ]
+        },
+        {
+          "member": "arm-6-encoder_fd_custody.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-6-encoder_fd_custody.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft"
+          ]
+        },
+        {
+          "member": "arm-7-watchdog_owner.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-7-watchdog_owner.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft"
+          ]
+        },
+        {
+          "member": "arm-8-candidate_auth.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-8-candidate_auth.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft"
+          ]
+        },
+        {
+          "member": "arm-9-rtsp_server_candidate.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-9-rtsp_server_candidate.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft",
+            "-Wno-misleading-indentation"
+          ]
+        },
+        {
+          "member": "arm-10-verifier_adapter_overlay.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-10-verifier_adapter_overlay.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft"
+          ]
+        },
+        {
+          "member": "arm-11-listener_custody.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-11-listener_custody.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft"
+          ]
+        },
+        {
+          "member": "arm-12-ipc.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-12-ipc.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft"
+          ]
+        },
+        {
+          "member": "arm-13-rtsp_digest_wire.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-13-rtsp_digest_wire.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft"
+          ]
+        },
+        {
+          "member": "arm-14-rtsp_request.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-14-rtsp_request.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft"
+          ]
+        },
+        {
+          "member": "arm-15-rtsp_input.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-15-rtsp_input.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft",
+            "-Wno-misleading-indentation",
+            "-Wno-error=nonnull"
+          ]
+        },
+        {
+          "member": "arm-16-backend.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-16-backend.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft"
+          ]
+        },
+        {
+          "member": "arm-17-packet_hub.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-17-packet_hub.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft"
+          ]
+        },
+        {
+          "member": "arm-18-producer.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-18-producer.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft"
+          ]
+        },
+        {
+          "member": "arm-19-rtp_h264.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-19-rtp_h264.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft"
+          ]
+        },
+        {
+          "member": "arm-20-sha256.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-20-sha256.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft"
+          ]
+        },
+        {
+          "member": "arm-21-constant_time.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-21-constant_time.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft"
+          ]
+        },
+        {
+          "member": "arm-22-platform_util.o",
+          "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/objects/arm-22-platform_util.o",
+          "flags": [
+            "-D_FORTIFY_SOURCE=2",
+            "-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"",
+            "-Os",
+            "-march=armv5te",
+            "-marm",
+            "-mfloat-abi=soft"
+          ]
+        }
+      ]
+    }
+  ],
+  "selected_provisioner_objects": [
+    {
+      "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-0.o",
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-0.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-provisioner-process/provisioner_process.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-0.o"
+      ],
+      "exit": 0
+    },
+    {
+      "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-1.o",
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-1.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-private-handoff/private_handoff.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-1.o"
+      ],
+      "exit": 0
+    },
+    {
+      "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-2.o",
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-2.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-startup-material/startup_material.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-2.o"
+      ],
+      "exit": 0
+    },
+    {
+      "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-3.o",
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-3.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/framework/src/rtsp_digest.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-3.o"
+      ],
+      "exit": 0
+    },
+    {
+      "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-9.o",
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-9.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library/md5.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-9.o"
+      ],
+      "exit": 0
+    },
+    {
+      "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-provisioner-process/provisioner_process.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o"
+      ],
+      "exit": 0
+    },
+    {
+      "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-private-handoff/private_handoff.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o"
+      ],
+      "exit": 0
+    },
+    {
+      "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-2.o",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-2.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-startup-material/startup_material.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-2.o"
+      ],
+      "exit": 0
+    },
+    {
+      "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/framework/src/rtsp_digest.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o"
+      ],
+      "exit": 0
+    },
+    {
+      "object": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.o",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library/md5.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.o"
+      ],
+      "exit": 0
+    }
+  ],
+  "runtime_inputs_checked": 364,
+  "runtime_dependencies_checked": 378,
+  "live_snapshot_matches": [
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/README.md",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/build.py",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/owned_runtime.c",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/owned_runtime_v1.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/licenses/GCC-14.3.0-COPYING.RUNTIME",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/licenses/GCC-14.3.0-COPYING3",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/licenses/HOST-libgcc-RUNTIME.LIBRARY.EXCEPTION",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/licenses/MUSL-1.2.5-COPYRIGHT",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/licenses/MbedTLS-LICENSE",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/licenses/public-acquisition.json",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/capture-receipt.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/capture-retirement-uapi.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/crc-bzip2.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/encoder-open-query.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/encoder_fd_custody.c",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/encoder_fd_custody.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/frame_fd_custody.c",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/frame_fd_custody.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/h264-baseline.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/handoff.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/isp-stream.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/memory_reader.c",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/memory_reserve.c",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/memory_reserve.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/memory_runtime.c",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/memory_runtime.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/native-watchdog.inc",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/native_adapter.c",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/native_adapter.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/native_watchdog.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/owned-provider-types.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/owned-provider.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/provider-observe.inc",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/provider-return.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/provider-return.inc",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/provider-take.inc",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/qc07f_hwenc.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/rtspd-native-import.c",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/sc1346-init.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/sensor_baseline.c",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/sensor_baseline.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/source-close-once.inc",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/stage-telemetry-uapi.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/watchdog_owner.c",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/watchdog_owner.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/server/adapter_state.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/server/candidate_auth.c",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/server/candidate_auth.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/server/delay_pin.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/server/host_pin.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/server/listener_custody.c",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/server/listener_custody.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/server/native_pin.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/server/prestarted_owned_listener_v1.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/server/rtsp_server_candidate.c",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/server/server_crypto_config.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/server/verifier_adapter_overlay.c",
+    "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/access_policy.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/backend.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/dma_integrity.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/fmp4.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/lease_pool.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/memory_budget.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/network_transaction_store.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/network_transition.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/packet_hub.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/producer.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/rate_model.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/recording_catalog.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/recording_index_store.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/rtp_h264.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/rtsp_clock.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/rtsp_digest.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/rtsp_digest_wire.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/rtsp_input.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/rtsp_request.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/rtsp_server.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/settings_store.h",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier/ipc.c",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier/verifier.h"
+  ],
+  "excluded": "all PUBLICDUMMY objects, provisioner REL, duplicate graph/wire/parser/SHA/constant-time/zeroize objects",
+  "link_selection": "whole 23-member native-shaped runtime archive + provisioner objects0,1,2,3,9 + new glue; no fake symbols or whole prior provisioner REL",
+  "limits": "artifact/source/compiler-command association, not native ABI/runtime or full compiler closure",
+  "initial_audit_failure": "First inline audit assertion failed before output/tool invocation because reader skipped GNU ar long-name entries. Read-only names inspection identified /offset table; corrected reader compared all46 actual member bodies. No candidate/build ran in failed audit."
+}

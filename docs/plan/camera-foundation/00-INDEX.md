@@ -91,8 +91,13 @@ Hardware qualification is blocked on unexplained serial data, not a permission g
 Separate RTSP provisioner-child/readonly-FD IPC now has narrow independent SOURCE/
 API/custody sufficiency,27 HOST/ARM compiles/40 commands and ONE normal PUBLICDUMMY
 fork/FD-transfer/wait0/bind observation. No real credentials/native hardening or
-product/main/native adoption. Next source connection is actual device-free runtime
-prepare/prestarted-start ordering after known provisioner retirement/bind; see
+product/main/native adoption. The actual device-free runtime prepare/prestarted-
+start connection after known provisioner retirement/bind now has narrow independent
+SOURCE/API/order/custody sufficiency,2 HOST/ARM compiles/2 real REL links/24 commands,
+never called; see
+[bootstrap disposition](../../qualification-plans/qc07f-bootstrap-20261023/PARENT_DISPOSITION.md).
+One source lane implements a real public-RTSP OS randomness callback, not fixture
+entropy or native qualification. Provisioner handback:
 [disposition](../../qualification-plans/rtsp-provisioner-process-20261023/PARENT_DISPOSITION.md).
 PTZ counter source/compile-only correction is committed locally `8ec07ff`, not
 deployed. Private

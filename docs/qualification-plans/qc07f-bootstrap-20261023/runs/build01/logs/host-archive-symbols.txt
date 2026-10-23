@@ -1,0 +1,212 @@
+
+host-0-owned_runtime.o:
+0000000000000000 T nh_native_cancel
+0000000000000000 T nh_native_cancelled
+0000000000000000 T nh_native_config
+0000000000000000 T nh_native_fence
+0000000000000000 T nh_native_init
+0000000000000000 T nh_native_memory_fixed_buffers
+0000000000000000 T nh_native_memory_gate
+0000000000000000 T nh_native_memory_report
+0000000000000000 T nh_native_memory_start
+0000000000000000 T nh_native_next
+0000000000000000 T nh_native_next_keyframe
+0000000000000000 T nh_native_now
+0000000000000000 T nh_native_optin_exact139
+0000000000000000 T nh_native_provider_take
+0000000000000000 T nh_native_quarantine
+0000000000000000 T nh_native_release
+0000000000000000 T nh_native_retire
+0000000000000000 T nh_native_retire_held
+0000000000000000 T nh_native_return_pre_memory_unknown_bootstrap
+0000000000000000 T nh_native_sensor_report
+0000000000000000 T nh_native_storage_select
+0000000000000000 T nh_native_watchdog_give_back
+0000000000000000 T nh_native_watchdog_take
+0000000000000000 T qc07f_owned_runtime_bind_postfork_v1
+0000000000000000 T qc07f_owned_runtime_cleanup_v1
+0000000000000000 T qc07f_owned_runtime_prepare_v1
+
+host-1-sensor_baseline.o:
+0000000000000000 T nh_sensor_cli_optin
+0000000000000000 T nh_sensor_exact139
+0000000000000000 T nh_sensor_log
+0000000000000000 T nh_sensor_read_byte
+0000000000000000 T nh_sensor_stream
+
+host-2-memory_reserve.o:
+0000000000000000 T nh_memory_credit_codec
+0000000000000000 T nh_memory_credit_owned
+0000000000000000 T nh_memory_evaluate
+0000000000000000 T nh_memory_init
+0000000000000000 T nh_memory_init_mode
+0000000000000000 T nh_memory_own_layout
+0000000000000000 T nh_memory_parse_meminfo
+0000000000000000 T nh_memory_parse_zoneinfo
+
+host-3-memory_runtime.o:
+0000000000000000 T nh_memory_log
+0000000000000000 T nh_memory_prefault_owned
+0000000000000000 T nh_memory_runtime_gate
+0000000000000000 T nh_memory_runtime_init
+
+host-4-memory_reader.o:
+0000000000000000 T nh_memory_read_fixed
+
+host-5-frame_fd_custody.o:
+0000000000000000 T qc_frame_fd_give_back
+0000000000000000 T qc_frame_fd_take
+
+host-6-encoder_fd_custody.o:
+0000000000000000 T qc_encoder_fd_give_back
+0000000000000000 T qc_encoder_fd_take
+
+host-7-watchdog_owner.o:
+0000000000000000 T qw_owner_begin
+0000000000000000 T qw_owner_capture_progress
+0000000000000000 T qw_owner_check
+0000000000000000 T qw_owner_disable_boundary
+0000000000000000 T qw_owner_fail
+0000000000000000 T qw_owner_give_back
+0000000000000000 T qw_owner_idle_observe
+0000000000000000 T qw_owner_return_unknown_bootstrap
+0000000000000000 T qw_owner_seal_session
+0000000000000000 T qw_owner_take
+0000000000000000 T qw_owner_unknown_bootstrap_observe
+
+host-8-candidate_auth.o:
+0000000000000000 T candidate_admission_check
+0000000000000000 T candidate_backend_cancel
+0000000000000000 T candidate_backend_poll
+0000000000000000 T candidate_backend_revoke
+0000000000000000 T candidate_challenge
+0000000000000000 T candidate_effect
+0000000000000000 T candidate_effect_final
+0000000000000000 T candidate_peer_close
+0000000000000000 T candidate_peer_open
+0000000000000000 T candidate_prestarted_finish
+0000000000000000 T candidate_prestarted_start
+0000000000000000 T candidate_request_verify
+
+host-9-rtsp_server_candidate.o:
+0000000000000000 T camera_rtsp_prestarted_owned_listener_serve_v1
+
+host-10-verifier_adapter_overlay.o:
+0000000000000000 T is_rv_context_bytes
+0000000000000000 T is_rv_ipc_close_outcome
+0000000000000000 T is_rv_pending_result
+0000000000000000 T is_rv_running
+0000000000000000 T is_rv_wait0
+0000000000000000 T rv_complete
+0000000000000000 T rv_destroy
+0000000000000000 T rv_discard
+0000000000000000 T rv_owned_signal
+0000000000000000 T rv_owner_revoke
+0000000000000000 T rv_query
+0000000000000000 T rv_ready_flags
+0000000000000000 T rv_ready_profile
+0000000000000000 T rv_retired
+0000000000000000 T rv_rpc
+0000000000000000 T rv_start
+0000000000000000 T rv_stop
+0000000000000000 T rv_submit
+0000000000000000 T rv_wipe_observed
+
+host-11-listener_custody.o:
+0000000000000000 T owned_listener_close_once
+0000000000000000 T owned_listener_move
+0000000000000000 T owned_listener_observe
+
+host-12-ipc.o:
+0000000000000000 T rv_clock
+0000000000000000 T rv_get32
+0000000000000000 T rv_get64
+0000000000000000 T rv_put32
+0000000000000000 T rv_put64
+0000000000000000 T rv_receive
+0000000000000000 T rv_send
+0000000000000000 T rv_wipe
+
+host-13-rtsp_digest_wire.o:
+0000000000000000 T camera_digest_wire_adapter_clear
+0000000000000000 T camera_digest_wire_adapter_init
+0000000000000000 T camera_digest_wire_admit
+0000000000000000 T camera_digest_wire_challenge
+0000000000000000 T camera_digest_wire_clear
+0000000000000000 T camera_digest_wire_close
+0000000000000000 T camera_digest_wire_format_challenge
+0000000000000000 T camera_digest_wire_limit_init
+0000000000000000 T camera_digest_wire_parse
+0000000000000000 T camera_digest_wire_verify
+
+host-14-rtsp_request.o:
+0000000000000000 T camera_rtsp_request_parse
+
+host-15-rtsp_input.o:
+0000000000000000 T camera_rtsp_input_append
+0000000000000000 T camera_rtsp_input_clear
+0000000000000000 T camera_rtsp_input_init
+0000000000000000 T camera_rtsp_input_next
+0000000000000000 T camera_rtsp_input_retire
+0000000000000000 T camera_rtsp_input_tick
+0000000000000000 T camera_rtsp_registry_init
+0000000000000000 T camera_rtsp_request_policy
+
+host-16-backend.o:
+0000000000000000 T camera_backend_validate
+0000000000000000 T camera_control_stop
+0000000000000000 T camera_graph_sensor_count
+0000000000000000 T camera_graph_validate
+
+host-17-packet_hub.o:
+0000000000000000 T camera_hub_acquire
+0000000000000000 T camera_hub_drained
+0000000000000000 T camera_hub_init
+0000000000000000 T camera_hub_init_count
+0000000000000000 T camera_hub_lease_valid
+0000000000000000 T camera_hub_publish
+0000000000000000 T camera_hub_release
+0000000000000000 T camera_hub_stop
+0000000000000000 T camera_hub_subscribe
+0000000000000000 T camera_hub_unsubscribe
+
+host-18-producer.o:
+0000000000000000 T camera_producer_active
+0000000000000000 T camera_producer_attach
+0000000000000000 T camera_producer_cancel
+0000000000000000 T camera_producer_complete
+0000000000000000 T camera_producer_control_snapshot
+0000000000000000 T camera_producer_detach
+0000000000000000 T camera_producer_init
+0000000000000000 T camera_producer_next
+0000000000000000 T camera_producer_quiescent
+0000000000000000 T camera_producer_recover
+0000000000000000 T camera_producer_request_keyframe
+0000000000000000 T camera_producer_shutdown
+0000000000000000 T camera_producer_source_failed
+0000000000000000 T camera_producer_submit
+0000000000000000 T camera_producer_tick
+
+host-19-rtp_h264.o:
+0000000000000000 T camera_rtp_h264_nal
+0000000000000000 T camera_rtp_h264_packet
+
+host-20-sha256.o:
+0000000000000000 T mbedtls_internal_sha256_process
+0000000000000000 T mbedtls_sha256
+0000000000000000 T mbedtls_sha256_clone
+0000000000000000 T mbedtls_sha256_finish
+0000000000000000 T mbedtls_sha256_free
+0000000000000000 T mbedtls_sha256_init
+0000000000000000 T mbedtls_sha256_starts
+0000000000000000 T mbedtls_sha256_update
+
+host-21-constant_time.o:
+0000000000000000 T mbedtls_ct_memcmp
+0000000000000000 T mbedtls_ct_memcpy_if
+0000000000000000 T mbedtls_ct_memcpy_offset
+0000000000000000 B mbedtls_ct_zero
+
+host-22-platform_util.o:
+0000000000000000 T mbedtls_platform_zeroize
+0000000000000000 T mbedtls_zeroize_and_free

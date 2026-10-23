@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "/usr/bin/env",
+    "-i",
+    "PATH=/usr/bin:/bin",
+    "LANG=C",
+    "LC_ALL=C",
+    "TZ=UTC",
+    "/bin/bash",
+    "apps/rtsp-auth/qc07f-bootstrap-candidate/compile_recipe.sh"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "started": "2026-10-23T11:43:36.316742+00:00",
+  "scope": "OFFLINE_NEW_CHANGED_UNIT_COMPILATION_AND_REAL_REL_LINK_ONLY_NO_PROGRAM_EXECUTION",
+  "exit": 0,
+  "ended": "2026-10-23T11:43:36.882426+00:00"
+}
