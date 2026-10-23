@@ -48,10 +48,15 @@ Parent checked863 inputs/48 delivery pins/37 artifacts/180 new+724 reused depend
 records/46 archive bodies/seven tools, no project/crypto unresolved APIs. See
 qc07f-bootstrap-20261023/PARENT_DISPOSITION.md. No bootstrap author/reviewer active.
 No test/verifier/native/listener/media execution, fake callbacks/main or external
-provider/backing adoption. One fresh isolated rtsp-os-random author implements
-genuine public RTSP session randomness for actual32-byte callback requests using
-one strict nonblocking getrandom, no fallback/retry/cache; qualified native entropy
-is still an actual gate, not established by source or any future HOST observation.
+provider/backing adoption. Bootstrap closeout committed locally `0b146c4`.
+Actual rtsp-os-random callback now has narrow independent SOURCE/API/bounds
+sufficiency,5 HOST/ARM C compiles/26 commands and ONE real HOST callback call PASS,
+no output bytes retained/hashed. Parent checked548 overlapping public pin records;
+see rtsp-os-random-20261023/PARENT_DISPOSITION.md. Every valid32-byte request uses
+one strict nonblocking getrandom, no fallback/retry/cache. No callback integration
+selected; native syscall/CRNG/entropy quality remains unqualified. No active author/
+reviewer, test/native/capture/cycle queue. Hardware blocks on unexplained serial
+data; no prefix deletion or automatic retry. Eligible offline product work remains.
 PTZ counter guard source/ARM-object compile closeout committed locally `8ec07ff`,
 not deployed; failed-OFF descriptor lifetime/recovery/motor limits still open.
 No image/readback/kernel/motor/flash action occurred. Parent alone hardware. Existing

@@ -1,0 +1,20 @@
+{
+  "name": "host-one-call-symbols",
+  "argv": [
+    "/usr/bin/nm",
+    "-g",
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/HOST-OS-RANDOM-ONE-CALL-NOT-NATIVE"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "LC_ALL": "C"
+  },
+  "returncode": 0,
+  "log": {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-one-call-symbols.txt",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-one-call-symbols.txt",
+    "bytes": 774,
+    "sha256": "2a991543df81c5a20fd61b3615d130622ab81cbf003ef173b748e01de165284e"
+  }
+}

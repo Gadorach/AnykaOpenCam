@@ -1,0 +1,19 @@
+{
+  "name": "host-tool-ld",
+  "argv": [
+    "/usr/bin/cc",
+    "-print-prog-name=ld"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "LC_ALL": "C"
+  },
+  "returncode": 0,
+  "log": {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-tool-ld.txt",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-tool-ld.txt",
+    "bytes": 3,
+    "sha256": "3b6cb8ae51045d062a7c7de7cc488ad8785144cfbc0a7fc9546ed52429e0d97f"
+  }
+}

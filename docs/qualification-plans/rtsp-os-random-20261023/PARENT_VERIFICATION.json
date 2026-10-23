@@ -1,0 +1,22 @@
+{
+  "scope": "PARENT_PUBLIC_SOURCE_AND_EVIDENCE_VERIFICATION_NOT_REBUILD_OR_CALLBACK_CALL",
+  "utc": "2026-10-23T12:07:29.011331+00:00",
+  "verified_counts": {
+    "source_pins": 7,
+    "delivery_pins": 79,
+    "precall_pins": 9,
+    "initial_inputs": 16,
+    "tool_link_inputs": 30,
+    "supplemental_tools": 4,
+    "artifacts": 75,
+    "dependency_records": 328,
+    "command_logs": 26
+  },
+  "overlapping_public_pin_checks": 548,
+  "source_aggregate": "f1a8691ee681b11e3cbb0b4c5d8535721a695840540ac80a307be226c0e3ff64",
+  "review_sha256": "71e9d5d604c6d6b51811a66949c8a62c8b3c0fceec0924d8a5c593b015d90891",
+  "sole_HOST_call_cited_not_repeated": true,
+  "random_output_read_or_hashed": false,
+  "candidate_hardware_or_native_executed": false,
+  "review_context_correction": "The phrase 31 failures in review line150 came from a parent-prompt typo; it is NOT an observed failure inventory or count. Actual historical HOLDs remain as individually recorded."
+}

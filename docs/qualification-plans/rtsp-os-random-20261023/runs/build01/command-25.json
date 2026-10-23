@@ -1,0 +1,21 @@
+{
+  "name": "host-one-call-ELF",
+  "argv": [
+    "/usr/bin/readelf",
+    "-h",
+    "-A",
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/HOST-OS-RANDOM-ONE-CALL-NOT-NATIVE"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "LC_ALL": "C"
+  },
+  "returncode": 0,
+  "log": {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-one-call-ELF.txt",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-one-call-ELF.txt",
+    "bytes": 979,
+    "sha256": "819aeb4ecab4cb009b1b80c93c081ac12a91011fa1e8c55f476489c4082122dc"
+  }
+}

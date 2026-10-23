@@ -1,0 +1,48 @@
+{
+  "aggregate_definition": "sha256 of sorted workspace-relative path + space + sha256 + newline; all candidate source/support files",
+  "aggregate": "f1a8691ee681b11e3cbb0b4c5d8535721a695840540ac80a307be226c0e3ff64",
+  "records": [
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-os-random/.gitignore",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-os-random/.gitignore",
+      "bytes": 20,
+      "sha256": "637400650411cd4eaf40681601af96eed5b72b298b06e54ed82a3d143938956a"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-os-random/LICENSE_NOTICES.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-os-random/LICENSE_NOTICES.md",
+      "bytes": 712,
+      "sha256": "3869c735dee3cce1f65191994d5ae9b20ae560b63e8660448e28db3b3f729de4"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-os-random/compile01.py",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-os-random/compile01.py",
+      "bytes": 6693,
+      "sha256": "2c3052ab5462ab815b1f1d0f438c246ac7abded7393b5658e0c4d86a101b5010"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-os-random/host_once.py",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-os-random/host_once.py",
+      "bytes": 2833,
+      "sha256": "b28a086a87ef198d22bb0a9dd4392e322658fd1b44d54833b4a48347d4d9f08c"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-os-random/host_one_call.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-os-random/host_one_call.c",
+      "bytes": 801,
+      "sha256": "c8d3274b8b512221ce376ae3d652deda5e43bf6d38e5cf28720567e0c68a931a"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-os-random/os_random.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-os-random/os_random.c",
+      "bytes": 858,
+      "sha256": "1e5706a00656ff8dc80aaf48859b66b5dca723461fa9b1a3aade7d03fc1df251"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-os-random/os_random.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-os-random/os_random.h",
+      "bytes": 938,
+      "sha256": "6d04f85c72f29fefd7e9e3a48d3afbef79284b277547c893b3b4801b07b5424e"
+    }
+  ]
+}

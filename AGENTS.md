@@ -73,9 +73,15 @@ order/custody sufficiency,2 HOST/ARM compiles/2 actual REL links/24 commands PAS
 NOT RUN. Parent checked863 input pins/48 delivery pins/37 artifacts/180 new+724
 reused dependency records/46 archive bodies; no main/native activation/serve export.
 See qc07f-bootstrap PARENT_DISPOSITION, no author/reviewer active in that lane.
-One isolated author owns fresh `apps/rtsp-auth/rtsp-os-random/` and matching docs
-for the missing genuine public RTSP32-byte randomness callback (one nonblocking
-OS getrandom call, no fallback/retry; native entropy remains unqualified).
+The genuine public RTSP32-byte randomness callback at rtsp-os-random now has narrow
+independent SOURCE/API/bounds sufficiency,5 HOST/ARM compiles/26 commands and ONE
+real HOST callback call PASS (no bytes retained/hashed). Parent verified548 public
+pin records; see rtsp-os-random PARENT_DISPOSITION. One nonblocking OS getrandom
+call, no fallback/retry/cache; no callback integration or native entropy qualification.
+Bootstrap closeout committed locally `0b146c4`. No source author/reviewer remains
+active. Further hardware is blocked on unexplained serial data; no cycle/boot/
+motor/NOR/native operation selected. Eligible offline product work remains; no
+new diagnostic/clock/receipt framework or deferred adversarial campaign.
 No bootstrap test/child/verifier/native/media execution, main, synthetic callbacks,
 provider/backing or hardware adoption selected.
 Original radio/Oct22 reset/23c/23d/23e/23g

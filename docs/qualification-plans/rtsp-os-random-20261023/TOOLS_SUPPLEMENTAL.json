@@ -1,0 +1,29 @@
+{
+  "scope": "Post-call file-only supplemental pins: interpreter, underlying retained Buildroot GCC driver, potential non-LTO link plugins. Not a traced tool-execution claim. No recompilation/callback call.",
+  "records": [
+    {
+      "path": "/usr/bin/python3",
+      "resolved": "/usr/bin/python3.14",
+      "bytes": 14424,
+      "sha256": "44fdcdf23cd94aece60aec10b92b15a0e1cf4561e710985eaa53b362a03db48e"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc.br_real",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc.br_real",
+      "bytes": 2246200,
+      "sha256": "e24ea223e7b521cce1f5889d63c25417e930cdbb35653b072f7b48d9a4b41729"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/libexec/gcc/arm-buildroot-linux-musleabi/14.3.0/liblto_plugin.so",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/libexec/gcc/arm-buildroot-linux-musleabi/14.3.0/liblto_plugin.so",
+      "bytes": 105664,
+      "sha256": "4947f7eb41648354faea18568b34e641777908582d30082175fbfdfecb8397c5"
+    },
+    {
+      "path": "/usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so",
+      "resolved": "/usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so",
+      "bytes": 75720,
+      "sha256": "7db75ec3f677119b969fbd17c425e9b3af7b072fd32e8ad2f672431307cbf614"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "host-link-one-call",
+  "argv": [
+    "/usr/bin/cc",
+    "-Wl,--gc-sections",
+    "-Wl,-z,relro,-z,now",
+    "-Wl,-Map=/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/host-link.map",
+    "-Wl,-t",
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-one-call.o",
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-random.o",
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-zeroize.o",
+    "-o",
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/HOST-OS-RANDOM-ONE-CALL-NOT-NATIVE"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "LC_ALL": "C"
+  },
+  "returncode": 0,
+  "log": {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-link-one-call.txt",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-link-one-call.txt",
+    "bytes": 1455,
+    "sha256": "33ca3b8f28a3344ae16bb44511696ce058b21e5a6e2bd9b7dfb87c6e97db09e0"
+  }
+}

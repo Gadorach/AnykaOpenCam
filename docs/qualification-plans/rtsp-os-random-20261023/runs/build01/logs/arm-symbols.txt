@@ -1,0 +1,6 @@
+         U free
+         U getrandom
+00000000 T mbedtls_platform_zeroize
+00000000 T mbedtls_zeroize_and_free
+         U memset
+00000000 T qc07f_rtsp_os_random_ready_v1

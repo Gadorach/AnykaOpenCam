@@ -1,0 +1,21 @@
+{
+  "name": "arm-ELF",
+  "argv": [
+    "/usr/bin/readelf",
+    "-h",
+    "-A",
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/arm-random-NOT-EXECUTABLE.o"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "LC_ALL": "C"
+  },
+  "returncode": 0,
+  "log": {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-ELF.txt",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-ELF.txt",
+    "bytes": 1358,
+    "sha256": "d9f237e3ecb2f4386823c8fe3ce43a81fcbb092b7eb751329d203a251c73462a"
+  }
+}

@@ -1,0 +1,1115 @@
+{
+  "status": "COMPILE_INSPECT_PASS_NOT_RUN",
+  "utc": "2026-10-23T11:56:05.644499+00:00",
+  "C_compilations": 5,
+  "commands": [
+    {
+      "name": "host-version",
+      "argv": [
+        "/usr/bin/cc",
+        "--version"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-version.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-version.txt",
+        "bytes": 227,
+        "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+      }
+    },
+    {
+      "name": "host-machine",
+      "argv": [
+        "/usr/bin/cc",
+        "-dumpmachine"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-machine.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-machine.txt",
+        "bytes": 20,
+        "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+      }
+    },
+    {
+      "name": "host-tool-cc1",
+      "argv": [
+        "/usr/bin/cc",
+        "-print-prog-name=cc1"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-tool-cc1.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-tool-cc1.txt",
+        "bytes": 40,
+        "sha256": "c400491dd6f36bdc89c46da99a7c98dbd19a3eb313a62e89576505b07846aec8"
+      }
+    },
+    {
+      "name": "host-tool-as",
+      "argv": [
+        "/usr/bin/cc",
+        "-print-prog-name=as"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-tool-as.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-tool-as.txt",
+        "bytes": 3,
+        "sha256": "8b97bca79750847558d488e2ea4de79903c9c71c9af27ecf1b3dff5dba2abdd9"
+      }
+    },
+    {
+      "name": "host-tool-ld",
+      "argv": [
+        "/usr/bin/cc",
+        "-print-prog-name=ld"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-tool-ld.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-tool-ld.txt",
+        "bytes": 3,
+        "sha256": "3b6cb8ae51045d062a7c7de7cc488ad8785144cfbc0a7fc9546ed52429e0d97f"
+      }
+    },
+    {
+      "name": "host-tool-collect2",
+      "argv": [
+        "/usr/bin/cc",
+        "-print-prog-name=collect2"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-tool-collect2.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-tool-collect2.txt",
+        "bytes": 45,
+        "sha256": "e6b867cff7a7422660b39a5bc3bcfb0cf6e04670ca6ff54a61cdf8fc6a80d4e9"
+      }
+    },
+    {
+      "name": "host-cc-random",
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-random.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-os-random/os_random.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-random.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-cc-random.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-cc-random.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "host-cc-zeroize",
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-zeroize.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library/platform_util.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-zeroize.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-cc-zeroize.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-cc-zeroize.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "host-REL",
+      "argv": [
+        "/usr/bin/cc",
+        "-O2",
+        "-nostdlib",
+        "-r",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-random.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-zeroize.o",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/host-random-NOT-EXECUTABLE.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-REL.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-REL.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "host-ELF",
+      "argv": [
+        "/usr/bin/readelf",
+        "-h",
+        "-A",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/host-random-NOT-EXECUTABLE.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-ELF.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-ELF.txt",
+        "bytes": 952,
+        "sha256": "aa4de5ec9f0349ac09263bb2df95ad284da7764c6792adf485004379db2ce96d"
+      }
+    },
+    {
+      "name": "host-symbols",
+      "argv": [
+        "/usr/bin/nm",
+        "-g",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/host-random-NOT-EXECUTABLE.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-symbols.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-symbols.txt",
+        "bytes": 230,
+        "sha256": "42dc3e537a42661dc0d1206980ba870506d6a435a6a79a7371fd3859ff518fed"
+      }
+    },
+    {
+      "name": "arm-version",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "--version"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-version.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-version.txt",
+        "bytes": 288,
+        "sha256": "7b501201183c07e1e9078ca3f8b1f502d07fd67c414e92183c01e8787c00a0d4"
+      }
+    },
+    {
+      "name": "arm-machine",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-dumpmachine"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-machine.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-machine.txt",
+        "bytes": 29,
+        "sha256": "d0cf670b8c286026ebd268b1f5ecdd6be41552e0e254a949fb50ab0ed085dd23"
+      }
+    },
+    {
+      "name": "arm-tool-cc1",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-print-prog-name=cc1"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-tool-cc1.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-tool-cc1.txt",
+        "bytes": 220,
+        "sha256": "11399c4ad884b1da76486da5e344e5b6e2c541c6e4001b24865a4e5cd4f70fa3"
+      }
+    },
+    {
+      "name": "arm-tool-as",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-print-prog-name=as"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-tool-as.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-tool-as.txt",
+        "bytes": 260,
+        "sha256": "aebf2a97c58e1d1f4676098a8e9b91c8569c49d3c9d06e537fe689c4afcd8b56"
+      }
+    },
+    {
+      "name": "arm-tool-ld",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-print-prog-name=ld"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-tool-ld.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-tool-ld.txt",
+        "bytes": 260,
+        "sha256": "e98fe4335d69760e406f842f1b5a0cd3e92881bf0dee7376ab8f647b78cc0e98"
+      }
+    },
+    {
+      "name": "arm-tool-collect2",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-print-prog-name=collect2"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-tool-collect2.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-tool-collect2.txt",
+        "bytes": 225,
+        "sha256": "59ecc13ab935932c56643bde51197c77806bacd66047d5b920f42353dd8d32c4"
+      }
+    },
+    {
+      "name": "arm-cc-random",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/arm-random.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-os-random/os_random.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/arm-random.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-cc-random.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-cc-random.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "arm-cc-zeroize",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/arm-zeroize.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library/platform_util.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/arm-zeroize.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-cc-zeroize.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-cc-zeroize.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "arm-REL",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-nostdlib",
+        "-r",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/arm-random.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/arm-zeroize.o",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/arm-random-NOT-EXECUTABLE.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-REL.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-REL.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "arm-ELF",
+      "argv": [
+        "/usr/bin/readelf",
+        "-h",
+        "-A",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/arm-random-NOT-EXECUTABLE.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-ELF.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-ELF.txt",
+        "bytes": 1358,
+        "sha256": "d9f237e3ecb2f4386823c8fe3ce43a81fcbb092b7eb751329d203a251c73462a"
+      }
+    },
+    {
+      "name": "arm-symbols",
+      "argv": [
+        "/usr/bin/nm",
+        "-g",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/arm-random-NOT-EXECUTABLE.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-symbols.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-symbols.txt",
+        "bytes": 168,
+        "sha256": "53417396338d33ad9f60bb0533bc3c230b5f78838c1fdfef52b39eb510432cef"
+      }
+    },
+    {
+      "name": "host-cc-one-call",
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-DRTSP_OS_RANDOM_HOST_ONE_CALL",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-one-call.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-os-random/host_one_call.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-one-call.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-cc-one-call.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-cc-one-call.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "host-link-one-call",
+      "argv": [
+        "/usr/bin/cc",
+        "-Wl,--gc-sections",
+        "-Wl,-z,relro,-z,now",
+        "-Wl,-Map=/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/host-link.map",
+        "-Wl,-t",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-one-call.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-random.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-zeroize.o",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/HOST-OS-RANDOM-ONE-CALL-NOT-NATIVE"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-link-one-call.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-link-one-call.txt",
+        "bytes": 1455,
+        "sha256": "33ca3b8f28a3344ae16bb44511696ce058b21e5a6e2bd9b7dfb87c6e97db09e0"
+      }
+    },
+    {
+      "name": "host-one-call-ELF",
+      "argv": [
+        "/usr/bin/readelf",
+        "-h",
+        "-A",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/HOST-OS-RANDOM-ONE-CALL-NOT-NATIVE"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-one-call-ELF.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-one-call-ELF.txt",
+        "bytes": 979,
+        "sha256": "819aeb4ecab4cb009b1b80c93c081ac12a91011fa1e8c55f476489c4082122dc"
+      }
+    },
+    {
+      "name": "host-one-call-symbols",
+      "argv": [
+        "/usr/bin/nm",
+        "-g",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/HOST-OS-RANDOM-ONE-CALL-NOT-NATIVE"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C"
+      },
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-one-call-symbols.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-one-call-symbols.txt",
+        "bytes": 774,
+        "sha256": "2a991543df81c5a20fd61b3615d130622ab81cbf003ef173b748e01de165284e"
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/COMMANDS.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/COMMANDS.txt",
+      "bytes": 9099,
+      "sha256": "20744bf1ebdd257174308468f3d42796c8c18bd8c7dc1501a98b297fe238b677"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/DEPENDENCIES.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/DEPENDENCIES.json",
+      "bytes": 97862,
+      "sha256": "25d3d14a3c16d317b2955de16dd56593bb53ff297d38f275ecaec58079c2414a"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/HOST-OS-RANDOM-ONE-CALL-NOT-NATIVE",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/HOST-OS-RANDOM-ONE-CALL-NOT-NATIVE",
+      "bytes": 16168,
+      "sha256": "58e0f05035ce0b6fc17bb82ce7680ba0b5938916251c43c51610ff005a9e71ab"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/INPUTS.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/INPUTS.json",
+      "bytes": 5000,
+      "sha256": "3200d670fb41e658c5438aa8600cc7f21a097e73f343e6b497695eb789cb0b79"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/TOOLS.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/TOOLS.json",
+      "bytes": 8753,
+      "sha256": "0c6598b3a262002eb2c32feb4560a0819d3a578c25a14b9ede739bceafa47dd4"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/arm-random-NOT-EXECUTABLE.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/arm-random-NOT-EXECUTABLE.o",
+      "bytes": 1928,
+      "sha256": "52bf2049cf4544e7e406098c6aedb080a32cf33661df22b7d1f526f2b016981b"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-01.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-01.json",
+      "bytes": 608,
+      "sha256": "d656c35f56c22bec0dff86e1327f86c4403adbd46f99d720eedcd311e671a081"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-02.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-02.json",
+      "bytes": 610,
+      "sha256": "ec07d397d1be328989f0ec1305e5f5084dc9ae22709361dc860051a8813d3a57"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-03.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-03.json",
+      "bytes": 621,
+      "sha256": "b2177c47b3794af4c7618b56f1cac02630655c3e65133ce3aec46f0805535da6"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-04.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-04.json",
+      "bytes": 616,
+      "sha256": "f07042d886d5825c11c5d634750b45d6d4666fe1e4e5754a4a974af8621651cc"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-05.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-05.json",
+      "bytes": 616,
+      "sha256": "8ce8d98befa590214d7c3b4039fa297913c0aeb1cf830d675e519aee1235ccae"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-06.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-06.json",
+      "bytes": 641,
+      "sha256": "f1d27fe6641fe51152fbeb6c8cd2ce314e2922af4fdabb6847e82ef5ec1b51d3"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-07.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-07.json",
+      "bytes": 1660,
+      "sha256": "567b44fb8db75b6ab675d7efa5dd7ef35db79668ecf34ab4564d285fdac5bfee"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-08.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-08.json",
+      "bytes": 1684,
+      "sha256": "2effe85ec41561070f41b199d0038aff85424d537d7264fbd97ba7eec9f5c752"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-09.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-09.json",
+      "bytes": 1014,
+      "sha256": "278dc5975be5d2bd9c3721c4b6dc66c97bdff79220ced5cf970c99a0f6f26822"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-10.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-10.json",
+      "bytes": 738,
+      "sha256": "f6ac4915cdf9c490f697c177d5d61a8cb4897cc8633af0d3faea8bd1ed9feae3"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-11.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-11.json",
+      "bytes": 735,
+      "sha256": "db394fbbf8b6c715224fd5eac1c57738ee741021d0dc8225acb541a4fb1a8027"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-12.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-12.json",
+      "bytes": 791,
+      "sha256": "e25a12838a9e8468a9a7e15a142d79fcf04aa273dedbe922b9b931916d8006b3"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-13.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-13.json",
+      "bytes": 793,
+      "sha256": "f58e2015fccfa9a61ab250046d8bf5643d793d2123507f902887a68899cbb100"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-14.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-14.json",
+      "bytes": 805,
+      "sha256": "d2f1370be98b26c729c45107124147c8dc523af8e0cfc3abe1c289708a855c93"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-15.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-15.json",
+      "bytes": 801,
+      "sha256": "e6bdf69e08f66957dd8add725c0665d2777018e87f4b56ae0c1325de58929baf"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-16.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-16.json",
+      "bytes": 801,
+      "sha256": "9478673a941c1778a508c231a23b3cc4db597b4a73bd3f5c95974dd4f8b5d9c2"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-17.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-17.json",
+      "bytes": 825,
+      "sha256": "3beaabf9ca71e195394ee769c1e0a064f4482d0ba3264ecad5f3faeb1a2e8502"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-18.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-18.json",
+      "bytes": 1900,
+      "sha256": "03870db26b4cf22e8e2ac31890a864fb57417ec30631cbd4b1a065c3bf848ac4"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-19.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-19.json",
+      "bytes": 1924,
+      "sha256": "799af7f66602f23e92f0c060ed458bea65f7d718f7ebdfdc94fbec0240849a0b"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-20.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-20.json",
+      "bytes": 1253,
+      "sha256": "5db77367673d1a839204f23eb33d1c7e68a858f711e9a182f7d8b9c554ece718"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-21.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-21.json",
+      "bytes": 735,
+      "sha256": "d8d2ee59dd731aa63274a5a67cf3c6226f0bd42b00adfbbff484f638c417af43"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-22.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-22.json",
+      "bytes": 731,
+      "sha256": "29b5b32ba283d5331e8b026e55b87dde371c961edeb35c0c82d89592f453bd1c"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-23.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-23.json",
+      "bytes": 1712,
+      "sha256": "af48e52cadb34a6459efdd26d6ac4235247b7d13ea0b7e17ad8c33fe69d9cde8"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-24.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-24.json",
+      "bytes": 1338,
+      "sha256": "892179e4c8880cf2fd0eecbf9456412f593745364c1d0414fdc1df9e9fcf851a"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-25.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-25.json",
+      "bytes": 771,
+      "sha256": "287d96eb4ddbbf2a0d3227caecb5a74845eecf2725a6ff0c5ecaa2cc348ff36d"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-26.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/command-26.json",
+      "bytes": 768,
+      "sha256": "cc267c7af69e136ed2a8d776ab6d30ffd615854a0f5917b55345e9a27394c31d"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/host-link.map",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/host-link.map",
+      "bytes": 25236,
+      "sha256": "5669440992c3d747bd22e20d218da2458d8e204f5176a6f9d462dcfaa23e8ad8"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/host-random-NOT-EXECUTABLE.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/host-random-NOT-EXECUTABLE.o",
+      "bytes": 2712,
+      "sha256": "9197253cfd9bb6720e17a0fc3b5b23f53aa7afb94738a6ad9cae1dcb15aad50d"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-ELF.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-ELF.txt",
+      "bytes": 1358,
+      "sha256": "d9f237e3ecb2f4386823c8fe3ce43a81fcbb092b7eb751329d203a251c73462a"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-REL.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-REL.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-cc-random.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-cc-random.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-cc-zeroize.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-cc-zeroize.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-machine.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-machine.txt",
+      "bytes": 29,
+      "sha256": "d0cf670b8c286026ebd268b1f5ecdd6be41552e0e254a949fb50ab0ed085dd23"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-symbols.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-symbols.txt",
+      "bytes": 168,
+      "sha256": "53417396338d33ad9f60bb0533bc3c230b5f78838c1fdfef52b39eb510432cef"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-tool-as.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-tool-as.txt",
+      "bytes": 260,
+      "sha256": "aebf2a97c58e1d1f4676098a8e9b91c8569c49d3c9d06e537fe689c4afcd8b56"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-tool-cc1.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-tool-cc1.txt",
+      "bytes": 220,
+      "sha256": "11399c4ad884b1da76486da5e344e5b6e2c541c6e4001b24865a4e5cd4f70fa3"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-tool-collect2.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-tool-collect2.txt",
+      "bytes": 225,
+      "sha256": "59ecc13ab935932c56643bde51197c77806bacd66047d5b920f42353dd8d32c4"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-tool-ld.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-tool-ld.txt",
+      "bytes": 260,
+      "sha256": "e98fe4335d69760e406f842f1b5a0cd3e92881bf0dee7376ab8f647b78cc0e98"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-version.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-version.txt",
+      "bytes": 288,
+      "sha256": "7b501201183c07e1e9078ca3f8b1f502d07fd67c414e92183c01e8787c00a0d4"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-ELF.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-ELF.txt",
+      "bytes": 952,
+      "sha256": "aa4de5ec9f0349ac09263bb2df95ad284da7764c6792adf485004379db2ce96d"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-REL.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-REL.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-cc-one-call.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-cc-one-call.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-cc-random.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-cc-random.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-cc-zeroize.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-cc-zeroize.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-link-one-call.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-link-one-call.txt",
+      "bytes": 1455,
+      "sha256": "33ca3b8f28a3344ae16bb44511696ce058b21e5a6e2bd9b7dfb87c6e97db09e0"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-machine.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-machine.txt",
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-one-call-ELF.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-one-call-ELF.txt",
+      "bytes": 979,
+      "sha256": "819aeb4ecab4cb009b1b80c93c081ac12a91011fa1e8c55f476489c4082122dc"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-one-call-symbols.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-one-call-symbols.txt",
+      "bytes": 774,
+      "sha256": "2a991543df81c5a20fd61b3615d130622ab81cbf003ef173b748e01de165284e"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-symbols.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-symbols.txt",
+      "bytes": 230,
+      "sha256": "42dc3e537a42661dc0d1206980ba870506d6a435a6a79a7371fd3859ff518fed"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-tool-as.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-tool-as.txt",
+      "bytes": 3,
+      "sha256": "8b97bca79750847558d488e2ea4de79903c9c71c9af27ecf1b3dff5dba2abdd9"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-tool-cc1.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-tool-cc1.txt",
+      "bytes": 40,
+      "sha256": "c400491dd6f36bdc89c46da99a7c98dbd19a3eb313a62e89576505b07846aec8"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-tool-collect2.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-tool-collect2.txt",
+      "bytes": 45,
+      "sha256": "e6b867cff7a7422660b39a5bc3bcfb0cf6e04670ca6ff54a61cdf8fc6a80d4e9"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-tool-ld.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-tool-ld.txt",
+      "bytes": 3,
+      "sha256": "3b6cb8ae51045d062a7c7de7cc488ad8785144cfbc0a7fc9546ed52429e0d97f"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-version.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-version.txt",
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/arm-random.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/arm-random.d",
+      "bytes": 5445,
+      "sha256": "bb599811c081bb9ef4737938e665a0f88b9db84e3b93ca895162f3bc5c816816"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/arm-random.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/arm-random.o",
+      "bytes": 1180,
+      "sha256": "326449ca79032f35fba025b29340b0333ad64143c9cc1b4a3476090ebb5eaace"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/arm-random.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/arm-random.su",
+      "bytes": 123,
+      "sha256": "a30e64b9da227b1c52d0200b612023d10f4565f5ae90b5ebf3fc0b6fec888832"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/arm-zeroize.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/arm-zeroize.d",
+      "bytes": 5281,
+      "sha256": "3723edef01acb7bd0000c35e0ef893bbdda94a435092778e8a337e17437b1771"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/arm-zeroize.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/arm-zeroize.o",
+      "bytes": 1492,
+      "sha256": "a68b8b3051d38890da5403d459683e219974941f58cbd4c41335d997995c7470"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/arm-zeroize.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/arm-zeroize.su",
+      "bytes": 273,
+      "sha256": "607e504c8788376d150fa6105e5df3db0fc309149980dbf4080d51bf65f67ba5"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-one-call.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-one-call.d",
+      "bytes": 2654,
+      "sha256": "a6fb111eab9b8d033d8620eef32387782e6de3bd57810498281beaec415adb48"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-one-call.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-one-call.o",
+      "bytes": 2120,
+      "sha256": "7684156cd66292e18416a77dac17c394679c5cda578c95793705d42f4ff2d1ce"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-one-call.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-one-call.su",
+      "bytes": 102,
+      "sha256": "0414f049f26c4569b5a3c5a3498c94c9d545f0235b53b3336bf09c9251635117"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-random.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-random.d",
+      "bytes": 5021,
+      "sha256": "ef5204f4bb946ee2ec90b85bcbcbac48e05257a1dfc4cb5deabbafafe6efa9bf"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-random.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-random.o",
+      "bytes": 1656,
+      "sha256": "e42e9214513ca784af055dd64a5e4f9bf74014c47fd76f9ebfeac06c63c52b72"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-random.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-random.su",
+      "bytes": 123,
+      "sha256": "a30e64b9da227b1c52d0200b612023d10f4565f5ae90b5ebf3fc0b6fec888832"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-zeroize.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-zeroize.d",
+      "bytes": 4349,
+      "sha256": "4f0ecdc789965237fc9c322889853e7a56c725fb3768634170c49b385b53ca0b"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-zeroize.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-zeroize.o",
+      "bytes": 1936,
+      "sha256": "a2a0f6ccb8caf9220c5e7190b27aba4d2a376f1e66dc335b0b9dafa852d35798"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-zeroize.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/objects/host-zeroize.su",
+      "bytes": 275,
+      "sha256": "31ff98e2e08b906d857ed70c6abb7f069ed7e7b639f77de6ab14e9b113980059"
+    }
+  ],
+  "inputs_unchanged": true,
+  "functional_calls": 0,
+  "native_executed": false
+}

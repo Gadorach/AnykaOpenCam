@@ -1,0 +1,22 @@
+{
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "commands_observed_once": [
+    {
+      "argv": [
+        "python3",
+        "apps/rtsp-auth/rtsp-os-random/compile01.py"
+      ],
+      "returncode": 0,
+      "outcome": "COMPILE_INSPECT_PASS: 5 C compiles; HOST harness NOT RUN; ARM NOT RUN"
+    },
+    {
+      "argv": [
+        "python3",
+        "apps/rtsp-auth/rtsp-os-random/host_once.py"
+      ],
+      "returncode": 0,
+      "outcome": "HOST_OS_RANDOM_ONE_CALL_PASS NOT_NATIVE"
+    }
+  ],
+  "note": "Top-level invocations observed via shell tool; exact nested compiler/ELF argv and captured logs are in build01, sole HOST ELF argv/scalar logs in host01. No top-level stdout recapture/replay."
+}

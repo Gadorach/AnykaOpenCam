@@ -1,0 +1,6 @@
+                 U __explicit_bzero_chk
+                 U free
+                 U getrandom
+0000000000000000 T mbedtls_platform_zeroize
+0000000000000000 T mbedtls_zeroize_and_free
+0000000000000000 T qc07f_rtsp_os_random_ready_v1

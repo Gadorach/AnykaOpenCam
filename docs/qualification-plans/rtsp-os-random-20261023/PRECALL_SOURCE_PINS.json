@@ -1,0 +1,51 @@
+{
+  "utc": "2026-10-23T11:57:46.930407+00:00",
+  "records": [
+    {
+      "path": "apps/rtsp-auth/rtsp-os-random/.gitignore",
+      "bytes": 20,
+      "sha256": "637400650411cd4eaf40681601af96eed5b72b298b06e54ed82a3d143938956a"
+    },
+    {
+      "path": "apps/rtsp-auth/rtsp-os-random/LICENSE_NOTICES.md",
+      "bytes": 712,
+      "sha256": "3869c735dee3cce1f65191994d5ae9b20ae560b63e8660448e28db3b3f729de4"
+    },
+    {
+      "path": "apps/rtsp-auth/rtsp-os-random/compile01.py",
+      "bytes": 6693,
+      "sha256": "2c3052ab5462ab815b1f1d0f438c246ac7abded7393b5658e0c4d86a101b5010"
+    },
+    {
+      "path": "apps/rtsp-auth/rtsp-os-random/host_once.py",
+      "bytes": 2833,
+      "sha256": "b28a086a87ef198d22bb0a9dd4392e322658fd1b44d54833b4a48347d4d9f08c"
+    },
+    {
+      "path": "apps/rtsp-auth/rtsp-os-random/host_one_call.c",
+      "bytes": 801,
+      "sha256": "c8d3274b8b512221ce376ae3d652deda5e43bf6d38e5cf28720567e0c68a931a"
+    },
+    {
+      "path": "apps/rtsp-auth/rtsp-os-random/os_random.c",
+      "bytes": 858,
+      "sha256": "1e5706a00656ff8dc80aaf48859b66b5dca723461fa9b1a3aade7d03fc1df251"
+    },
+    {
+      "path": "apps/rtsp-auth/rtsp-os-random/os_random.h",
+      "bytes": 938,
+      "sha256": "6d04f85c72f29fefd7e9e3a48d3afbef79284b277547c893b3b4801b07b5424e"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-os-random-20261023/CONTRACT.md",
+      "bytes": 4375,
+      "sha256": "3846fcf31566608d132992cbc97b14d5f21ee3ad44137b1d327c9c911a69825c"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-os-random-20261023/AUTHOR_AUDIT.md",
+      "bytes": 3279,
+      "sha256": "a67fdac7142f883cc332a452055fbdb0ae31bc9007b07c1d8ccfa4d7f5c02d70"
+    }
+  ],
+  "scope": "Public source and ordinary audit before ONE HOST callback call; no RNG output"
+}

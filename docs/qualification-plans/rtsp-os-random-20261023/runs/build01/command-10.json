@@ -1,0 +1,21 @@
+{
+  "name": "host-ELF",
+  "argv": [
+    "/usr/bin/readelf",
+    "-h",
+    "-A",
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/host-random-NOT-EXECUTABLE.o"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "LC_ALL": "C"
+  },
+  "returncode": 0,
+  "log": {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-ELF.txt",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/host-ELF.txt",
+    "bytes": 952,
+    "sha256": "aa4de5ec9f0349ac09263bb2df95ad284da7764c6792adf485004379db2ce96d"
+  }
+}

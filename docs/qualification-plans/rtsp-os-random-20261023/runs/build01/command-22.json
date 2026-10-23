@@ -1,0 +1,20 @@
+{
+  "name": "arm-symbols",
+  "argv": [
+    "/usr/bin/nm",
+    "-g",
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/arm-random-NOT-EXECUTABLE.o"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "LC_ALL": "C"
+  },
+  "returncode": 0,
+  "log": {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-symbols.txt",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-os-random-20261023/runs/build01/logs/arm-symbols.txt",
+    "bytes": 168,
+    "sha256": "53417396338d33ad9f60bb0533bc3c230b5f78838c1fdfef52b39eb510432cef"
+  }
+}
