@@ -55,9 +55,17 @@ context FAILED/HOLD, no10s quiet; no trimming/classifier change or retry selecte
 OFF/readback/owned stop/wait0/private hashes/PID/socket/fuser postchecks completed.
 See COLD23G_RESULT.md under execution-20261023. Hardware qualification is blocked
 on unexplained serial data; no more power-cycle/catch/native effect selected.
-One isolated source author owns fresh rtsp-provisioner-process app/docs for REAL
-separate child secret ingress/constructor/readonly-FD IPC/known-wait parent bind,
-no hardware or main/native adoption. Original radio/Oct22 reset/23c/23d/23e/23g
+Separate rtsp-provisioner-process now has narrow independent SOURCE/API/custody
+sufficiency for REAL child-only ingress/constructor/readonly-FD IPC/known-wait0/
+explicit parent bind.27 HOST/ARM compiles/40 commands + ONE normal PUBLICDUMMY
+fork/transfer/wait/bind call PASS; parent checked33 inputs/59 delivery pins/1771
+dependency records/84 artifacts/40 logs/five tools. Native hardening/real credentials
+NOT RUN. See rtsp-provisioner-process PARENT_DISPOSITION; no active author/reviewer
+in that lane. Actual authorized external ingress, secret-free launch/FD-env-caps
+hygiene, durable storage/rotation, linked-file retirement/main/external recovery/
+backing remain gaps. Next source connection is known-wait/bind → real device-free
+owned-runtime prepare → real prestarted start, not hardware/main/native adoption.
+Original radio/Oct22 reset/23c/23d/23e/23g
 failures untouched. Expired receipts are not current owners; no electrical-rail/
 whole-interval recovery claim or new diagnostic/clock framework.
 PTZ under-mutex pre-GPIO counter refusal has narrow independent SOURCE sufficiency

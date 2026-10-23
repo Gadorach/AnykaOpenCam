@@ -1,0 +1,1746 @@
+{
+  "scope": "new actual provisioner + original handoff/constructor/crypto/graph/parser REAL units, native-shaped HOST/ARM REL; separate HOST PUBLICDUMMY executable only",
+  "status": "PASS_COMPILE_ONLY_NOT_NATIVE_ADOPTION",
+  "recorded": "2026-10-23T11:24:50.527665+00:00",
+  "invocation": {
+    "argv": [
+      "env",
+      "-i",
+      "PATH=/usr/bin:/bin",
+      "LANG=C",
+      "LC_ALL=C",
+      "TZ=UTC",
+      "/bin/bash",
+      "apps/rtsp-auth/rtsp-provisioner-process/compile_recipe.sh"
+    ],
+    "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+    "started": "2026-10-23T11:22:56.902618+00:00",
+    "finished": "2026-10-23T11:23:01.109083+00:00",
+    "exit": 0,
+    "scope": "compile/link only; no test or native code executed"
+  },
+  "command_exit_provenance": "audited fixed set -euo pipefail recipe completed exit0, no retries",
+  "counts": {
+    "native_shaped_host_C": 12,
+    "native_shaped_arm_C": 12,
+    "separate_publicdummy_C": 3,
+    "C_compilations": 27,
+    "REL_links": 2,
+    "publicdummy_executable_links": 1,
+    "tool_commands": 40,
+    "compile_logs_empty": 27,
+    "dependency_records": 1771,
+    "unique_dependency_paths": 277,
+    "artifacts": 84,
+    "selected_source_context_matched": 33,
+    "selected_source_context_changed": []
+  },
+  "commands": [
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "--version"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-version.txt",
+        "bytes": 227,
+        "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-dumpmachine"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-machine.txt",
+        "bytes": 20,
+        "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-0.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-provisioner-process/provisioner_process.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-0.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-0.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-1.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-private-handoff/private_handoff.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-1.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-1.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-2.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-startup-material/startup_material.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-2.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-2.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-3.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/framework/src/rtsp_digest.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-3.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-3.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-4.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/framework/src/rtsp_digest_wire.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-4.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-4.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-5.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/framework/src/backend.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-5.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-5.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-Wno-misleading-indentation",
+        "-Wno-error=nonnull",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-6.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/framework/src/rtsp_input.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-6.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-6.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-7.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/framework/src/rtsp_request.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-7.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-7.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-8.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library/sha256.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-8.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-8.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-9.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library/md5.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-9.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-9.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-10.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library/constant_time.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-10.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-10.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-11.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library/platform_util.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-11.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-11.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-O2",
+        "-nostdlib",
+        "-r",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-0.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-1.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-2.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-3.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-4.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-5.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-6.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-7.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-8.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-9.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-10.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-11.o",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/provisioner-process-host-NOT-EXECUTABLE.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-REL.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/readelf",
+        "-h",
+        "-A",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/provisioner-process-host-NOT-EXECUTABLE.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-ELF.txt",
+        "bytes": 955,
+        "sha256": "8b97d530bce5976ebb01255cba63e0f4444b3361a567ff9ec5eb637ae9ad3ee1"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/nm",
+        "-u",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/provisioner-process-host-NOT-EXECUTABLE.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-undefined.txt",
+        "bytes": 1076,
+        "sha256": "a349054d5cfd9a444456e5ec95c6fd9ec7fa8bab52631b09ae9d8c627361528b"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "--version"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-version.txt",
+        "bytes": 288,
+        "sha256": "7b501201183c07e1e9078ca3f8b1f502d07fd67c414e92183c01e8787c00a0d4"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-dumpmachine"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-machine.txt",
+        "bytes": 29,
+        "sha256": "d0cf670b8c286026ebd268b1f5ecdd6be41552e0e254a949fb50ab0ed085dd23"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-provisioner-process/provisioner_process.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-0.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-private-handoff/private_handoff.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-1.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-2.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-startup-material/startup_material.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-2.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-2.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/framework/src/rtsp_digest.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-3.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-4.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/framework/src/rtsp_digest_wire.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-4.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-4.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-5.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/framework/src/backend.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-5.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-5.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-Wno-misleading-indentation",
+        "-Wno-error=nonnull",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-6.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/framework/src/rtsp_input.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-6.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-6.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-7.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/framework/src/rtsp_request.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-7.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-7.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-8.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library/sha256.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-8.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-8.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library/md5.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-9.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-10.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library/constant_time.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-10.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-10.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-11.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library/platform_util.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-11.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-11.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-nostdlib",
+        "-r",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-2.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-4.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-5.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-6.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-7.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-8.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-10.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-11.o",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/provisioner-process-arm-NOT-EXECUTABLE.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-REL.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/readelf",
+        "-h",
+        "-A",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/provisioner-process-arm-NOT-EXECUTABLE.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-ELF.txt",
+        "bytes": 1361,
+        "sha256": "5854710cd36884dc54917e1054e10c2e8f396f050a842bdd3663fe901f02d24e"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/nm",
+        "-u",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/provisioner-process-arm-NOT-EXECUTABLE.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-undefined.txt",
+        "bytes": 886,
+        "sha256": "b77619ca5b65ee5540a1fe0d82ec704919bcfebdc19da4c00c44827497d49eb6"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-DRTSP_HANDOFF_HOST_PUBLICDUMMY",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/publicdummy-provisioner_process.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-provisioner-process/provisioner_process.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/publicdummy-provisioner_process.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/publicdummy-cc-provisioner_process.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-DRTSP_HANDOFF_HOST_PUBLICDUMMY",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/publicdummy-positive_publicdummy.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-provisioner-process/positive_publicdummy.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/publicdummy-positive_publicdummy.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/publicdummy-cc-positive_publicdummy.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-common",
+        "-fno-strict-aliasing",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fstack-protector-strong",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-usage",
+        "-DMBEDTLS_CONFIG_FILE=\"rtsp_crypto_config.h\"",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/include",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/apps/auth-web/service/vendor/mbedtls/library",
+        "-O2",
+        "-DRTSP_HANDOFF_HOST_PUBLICDUMMY",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/publicdummy-handoff.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-private-handoff/private_handoff.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/publicdummy-handoff.o"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/publicdummy-cc-handoff.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/cc",
+        "-Wl,--gc-sections",
+        "-Wl,-z,relro,-z,now",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/publicdummy-provisioner_process.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/publicdummy-positive_publicdummy.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/publicdummy-handoff.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-2.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-3.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-4.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-5.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-6.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-7.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-8.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-9.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-10.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-11.o",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/PUBLICDUMMY-NOT-NATIVE"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/publicdummy-link.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/nm",
+        "-g",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/PUBLICDUMMY-NOT-NATIVE"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/publicdummy-symbols.txt",
+        "bytes": 3188,
+        "sha256": "53da2fcbadb0cdbf2cfaf99b2d4e9e4e3deb152bb6613e792ac3cfa5dfd9ee1b"
+      },
+      "exit": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/readelf",
+        "-h",
+        "-A",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/PUBLICDUMMY-NOT-NATIVE"
+      ],
+      "log": {
+        "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/publicdummy-ELF.txt",
+        "bytes": 979,
+        "sha256": "858d4bb17e353b93151b60d9a2b09515d85cdd94363f6957fa3294dac51317e0"
+      },
+      "exit": 0
+    }
+  ],
+  "dependencies_manifest": {
+    "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/DEPENDENCIES.json",
+    "bytes": 529255,
+    "sha256": "8d9fb44307ca94a482ac085a2679a8e9c0d39b848e68b5c21ee436bcec427ee4"
+  },
+  "artifacts": [
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.d",
+      "bytes": 10158,
+      "sha256": "b405179c53e28f900961b6ec35a0a2ac73455c1d86031dc8a5cffd89fd8475c8"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.o",
+      "bytes": 12508,
+      "sha256": "f8d4266ffad99e44ba3cd05bd7ab19145a59ab942069dac2b60f412010b732ba"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-0.su",
+      "bytes": 1973,
+      "sha256": "3c633bba63a7ff7182cbdef33248fb07854ba0cca4fc90038dc1b3fb96c2f41a"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.d",
+      "bytes": 7126,
+      "sha256": "e44c653598eebd959bb321ac55dd0fe4a349ef87c85bab50059a78a36b40ddd9"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.o",
+      "bytes": 7212,
+      "sha256": "183ff5a6a7df9545dcbd3f3a0500daed8a1c3cc7891f78c59b843b6bf5fdfa7b"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-1.su",
+      "bytes": 1275,
+      "sha256": "92eee9376a59d2462320c4cd8be0280732d8c3b669763d8e0ff8244ddbbf9bf0"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-10.d",
+      "bytes": 5171,
+      "sha256": "2d5da6fd50173627f7d51792ebc390f3086fa80fb3d5bc6eb7cc2400354c5b9f"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-10.o",
+      "bytes": 1744,
+      "sha256": "1a7d6b9de71084c8a99525005217f0c875200a76670e23fcf9553b53bc2da3d7"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-10.su",
+      "bytes": 401,
+      "sha256": "2c91ee38cc8df2d3bebc26e207e460cdefa986740806df3f898ad5f309ecdf3b"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-11.d",
+      "bytes": 5286,
+      "sha256": "e6a162d72a03b60cffe33366372db12412a31d20cd1afeb1385a9b6eccdd28b3"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-11.o",
+      "bytes": 1492,
+      "sha256": "a68b8b3051d38890da5403d459683e219974941f58cbd4c41335d997995c7470"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-11.su",
+      "bytes": 273,
+      "sha256": "607e504c8788376d150fa6105e5df3db0fc309149980dbf4080d51bf65f67ba5"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-2.d",
+      "bytes": 5339,
+      "sha256": "141d9ed76989b794d9399e8888b295ccfaee1c7f7524e6cedcff2eb6090c8dc1"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-2.o",
+      "bytes": 3324,
+      "sha256": "348d386d203240039eaba2c6c45bbf1e69782aa70353ef1bfa23d8bbbd3d77cc"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-2.su",
+      "bytes": 407,
+      "sha256": "25de9c9e1dea3095834f2a13496369206e2ef8ea2a84f91cf894ee2cc23ada37"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.d",
+      "bytes": 4354,
+      "sha256": "8884236134d9dda55884c22e2ec9693899ac823fd54ef6cccd8c74fa1e33d4ba"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.o",
+      "bytes": 11612,
+      "sha256": "0b740029c15e9c66335187a352606e97d6d15db4c20fe488250937cb1428c979"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-3.su",
+      "bytes": 1920,
+      "sha256": "8ec21db9885c5d4679d3e32301360abcad341499788640807ae45fd63cbc16c0"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-4.d",
+      "bytes": 4326,
+      "sha256": "b3da9fb365ab0231b6b9c4e3c4e8049174860066e9f5023957bf08b90930e182"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-4.o",
+      "bytes": 10824,
+      "sha256": "4dd063086fb433b9b6ae3a5c728f6cf88abb4b860ecf9c3d9aaf30cef1356151"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-4.su",
+      "bytes": 1503,
+      "sha256": "4acf08a24bb8cf589c29c1812b7e4d54d35fedc200761d0a66bf3f42c8b3643d"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-5.d",
+      "bytes": 2286,
+      "sha256": "495b3b800e37dc8527741efc3438feebfcb344cfb057c5c8e5975bd22c089953"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-5.o",
+      "bytes": 3656,
+      "sha256": "1585e947e9ff904dd746e8ad9fe5b078070377b487abfbb7dd2df4f316ea3f9a"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-5.su",
+      "bytes": 560,
+      "sha256": "18f3f8b4026215a76837261c2f80c99607ad3ebcd70f1c28164fe01592efefac"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-6.d",
+      "bytes": 2371,
+      "sha256": "a81617b43d967c19ad32c3cd91b307bc6dab623e93eb93bb84b6fbc7ab1a3382"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-6.o",
+      "bytes": 7756,
+      "sha256": "e85cfdeade8798d0bf61accdc9dfff01c93855c8c85f19c3543b06a7202a3e0e"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-6.su",
+      "bytes": 1170,
+      "sha256": "278656e585e6bd6a1144cd09fb9a9769b6327196bd872a1c246acc1a9d745c26"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-7.d",
+      "bytes": 2296,
+      "sha256": "25e92ef77e895ca438f0a1c220d30e602cc6fcbc192be3fd38d388167b585ade"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-7.o",
+      "bytes": 5808,
+      "sha256": "bb29f12d79b1b040c1325a5f0a2ddaa1766cedc0f0571cc5379292f9b9b1a18d"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-7.su",
+      "bytes": 543,
+      "sha256": "cf4e97c3fb12d2d4d446c91fe82a9664518a3ae573dc43f8111a196cb2f28d67"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-8.d",
+      "bytes": 5375,
+      "sha256": "8122aa1a4e7a2c052b5978a603a813ca48e4c10f9ca7e35f39e3f75a3380cb48"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-8.o",
+      "bytes": 6572,
+      "sha256": "c34ce80b6c177263b7d5bfee03182084d6aedbfef7fdb0d042bac1c00494d67e"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-8.su",
+      "bytes": 1020,
+      "sha256": "9638dfcbce01d5806adaa6969c51013ffdd66a8252c227a4cec128e36b5efb28"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.d",
+      "bytes": 5369,
+      "sha256": "0250c3968d1b3bd8216c319190026d772d224f7c3214cd3fb3db305f9949d982"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.o",
+      "bytes": 6616,
+      "sha256": "04239898782198695edbd6798762c3659abeb120c048d28c0b7082966361219a"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-9.su",
+      "bytes": 967,
+      "sha256": "d956c82d2814049eb1906b89467624586157198708cdc0dba294afc6f454809f"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-0.d",
+      "bytes": 7326,
+      "sha256": "11bd4a9d417b9cb1aa6b057fa64fe46bc340983b4d73cd9d8c03ef4b8b4288fa"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-0.o",
+      "bytes": 16264,
+      "sha256": "44b9487d0ffa9006e676b8c2b273ae0462ebfc0a3d8092e2ecf3d44ad1a8ca20"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-0.su",
+      "bytes": 1983,
+      "sha256": "cc3b3993a3fa5547a822dbe3fbb2e38bf9bc34c3722198b0bc1753e5c90bc30c"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-1.d",
+      "bytes": 5234,
+      "sha256": "c27ddd00967404c0ebb63aa601e09bd5809dde43cde66f97b4a40cfe274fe39e"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-1.o",
+      "bytes": 9352,
+      "sha256": "a608917993b339c5d1ff586a88768f7af8f9fbd9cedb46cd907ffea4b29374ab"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-1.su",
+      "bytes": 1163,
+      "sha256": "623de17a073f413da35a562790999915b0ae22df6d5de4d5057187a86b20b5d4"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-10.d",
+      "bytes": 3925,
+      "sha256": "f1fd1f12f09d8ad723a53c5fd5f6516aaff82a67b48021aec4fd51404c89f50a"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-10.o",
+      "bytes": 2544,
+      "sha256": "d31fd009e3d966a5ecec0e5fd4862da8475a33f15f313bee683f2f74273b66a9"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-10.su",
+      "bytes": 400,
+      "sha256": "f10a2a92fa0ec2bf0e86278695dbc2bda2bb799955d498c5ed9ccce26af9f352"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-11.d",
+      "bytes": 4354,
+      "sha256": "07be35d72177e999855c0bf77e03ba536e62da1859b9073fec21c6511e6653e8"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-11.o",
+      "bytes": 1936,
+      "sha256": "a2a0f6ccb8caf9220c5e7190b27aba4d2a376f1e66dc335b0b9dafa852d35798"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-11.su",
+      "bytes": 275,
+      "sha256": "31ff98e2e08b906d857ed70c6abb7f069ed7e7b639f77de6ab14e9b113980059"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-2.d",
+      "bytes": 4345,
+      "sha256": "1a84d66cd67c33665296184da54bd4adc26129cbc46cf49d6d25da234ba7d754"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-2.o",
+      "bytes": 4624,
+      "sha256": "856e85eb4debb97994d1c88f723038e173ff5688c4fae25fbecb26165bd97555"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-2.su",
+      "bytes": 423,
+      "sha256": "a7146b91932c41ac371de605ee6489657635f088a5c469dd4749f62617e1e681"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-3.d",
+      "bytes": 2645,
+      "sha256": "59c96454db78235b39fc7706698b5d8a37ce1a6f2f7371c855c19c720065e6dc"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-3.o",
+      "bytes": 15648,
+      "sha256": "2802eea1044293153a9754988c0a0d21b92fa2cecb8b08be8aad0f7049c55ac3"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-3.su",
+      "bytes": 1417,
+      "sha256": "3231c436181d3f460e423cd35cf4cfa63ee03b44e6596f68528092e88af61446"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-4.d",
+      "bytes": 2933,
+      "sha256": "1d3a7c9791c9fd2f6f87db9bbb0915f5e1622128b89cc96df0eba345ca2635d5"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-4.o",
+      "bytes": 14976,
+      "sha256": "a4ecf89e7bd5825574618c81261bc4b4f904418be5a7069e55edfb288796833a"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-4.su",
+      "bytes": 1342,
+      "sha256": "525bfc5d82cf76b55578dd96b736b549e2bc1dc697ee765b740d998895718f74"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-5.d",
+      "bytes": 1123,
+      "sha256": "637fe7f494215b70ebeb4c2858d1574fa90f770187ab8f583b979e658462a10d"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-5.o",
+      "bytes": 5352,
+      "sha256": "bfdf3d5d5b3c5d1fff5b8ae8ce0711c72741799b2f2e38769ea0159409269653"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-5.su",
+      "bytes": 476,
+      "sha256": "b2c771abd770ec4cd246786d88e4ccdf87ea6eabe8e7134fb9aa0021ef8f2bb6"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-6.d",
+      "bytes": 1208,
+      "sha256": "860fee04a73edbb68466738586810a576747ca5a48395785fba9e2acf9b4495c"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-6.o",
+      "bytes": 10544,
+      "sha256": "c552c1802ce1645019dd418a52b9c6ad3119d3848abc520f0387137eb8f6b23f"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-6.su",
+      "bytes": 1007,
+      "sha256": "3d8259deee8f5e89af8c0a3f50d78b8114431d5aaf25563736c47718e9dd317e"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-7.d",
+      "bytes": 1133,
+      "sha256": "2f4b23c3ff5e2e63a7bd0bdfb3ec02f07a4a3da2a9663f67b5cf70409f2588c3"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-7.o",
+      "bytes": 7288,
+      "sha256": "3ea13827a70344154c6c174bb092a54da079bf75764cff15118373bedef08395"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-7.su",
+      "bytes": 288,
+      "sha256": "b4c9e435b88913016537e7bb5885e3ec940a556e8628a854ad492b5c1293492f"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-8.d",
+      "bytes": 4443,
+      "sha256": "464de865d41f52faa386fa18de95f942a17c23bab0f12fbfbb6c9c2de9ed6eab"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-8.o",
+      "bytes": 9664,
+      "sha256": "2dac7dbf7be224f22a9e06155d16122ba1792e72822b6a624df729edcc24324f"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-8.su",
+      "bytes": 1154,
+      "sha256": "24b7541ec8a2fd7b182ab5fcb69eac55e1b0a7941b4152f9a5460fbeb7c59377"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-9.d",
+      "bytes": 4375,
+      "sha256": "940119116f5cef278b5482346acc7930b1b0bbff0e6c73f6418c88dfa35d4aea"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-9.o",
+      "bytes": 8056,
+      "sha256": "6251f635df78616ae7304d1b0301e99eadf9dd58218f33dcfa054662efed1d98"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-9.su",
+      "bytes": 1096,
+      "sha256": "0e0ff9524865e4a200be2c201edcaca59f6c4e09647fecf5629a59c6365bd107"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/publicdummy-handoff.d",
+      "bytes": 5247,
+      "sha256": "29c4b39efa8b586415777ddaebf1a495c0c35a8e2cb552e3cdf026770cf7d3d3"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/publicdummy-handoff.o",
+      "bytes": 8288,
+      "sha256": "bb773ddbf967755ea34f87ec3f52776fb125787d81d8c04fcb1a99848dfb0fa9"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/publicdummy-handoff.su",
+      "bytes": 909,
+      "sha256": "ca1b6afcf333f7a5963a5d38a6c02b3e31f87567863d0be74d04977f42686af1"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/publicdummy-positive_publicdummy.d",
+      "bytes": 7231,
+      "sha256": "0e1660584c4b415b3635576a644f746c11762cf4a58a0127427f5666a2c6a25b"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/publicdummy-positive_publicdummy.o",
+      "bytes": 15112,
+      "sha256": "4dd17fbb6202438e07d449ecbc66bdbaa53076226a24b42f3388bdb3fe906beb"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/publicdummy-positive_publicdummy.su",
+      "bytes": 129,
+      "sha256": "a7dd702028632872b4b5663163ac412ecc0d95fcb4b3f2d151807a33fda7de5d"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/publicdummy-provisioner_process.d",
+      "bytes": 7351,
+      "sha256": "d6e8372d730e8942bcaaab578af00f93be4afdaa3d0f0a23a33ddae010c08c02"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/publicdummy-provisioner_process.o",
+      "bytes": 16160,
+      "sha256": "b89009b18397f9adbebb45d8577c36b72e7c7e8a17afc1ea93889019f23ae6d8"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/publicdummy-provisioner_process.su",
+      "bytes": 1896,
+      "sha256": "e9bc4a5569a704cd17ca03913ffe758248cee83576df701769d0c8a051ce18b9"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/provisioner-process-host-NOT-EXECUTABLE.o",
+      "bytes": 92168,
+      "sha256": "7b5526e027d72e63861648093cba0e8eaee7d950a4c7dbdc38d527a6765a82d2"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/provisioner-process-arm-NOT-EXECUTABLE.o",
+      "bytes": 68016,
+      "sha256": "7391c6f938fc1d18a2bd38fbc76dd2575b1d80efaf0030f712898957a0086bcf"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/PUBLICDUMMY-NOT-NATIVE",
+      "bytes": 62576,
+      "sha256": "2957ea8d3763d43ed86cfefc2b6e68fb85696ea93a86b7f15e4e7c3db0ebd624"
+    }
+  ],
+  "tools": [
+    {
+      "invoked_or_compiler_real_path": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/toolchain-wrapper",
+      "path": "work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+      "bytes": 14704,
+      "sha256": "f4db963a226e01244ce6f7b5d1ec6d57474dd811119ff8834429f022835ce9c1"
+    },
+    {
+      "invoked_or_compiler_real_path": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc.br_real",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc.br_real",
+      "path": "work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc.br_real",
+      "bytes": 2246200,
+      "sha256": "e24ea223e7b521cce1f5889d63c25417e930cdbb35653b072f7b48d9a4b41729"
+    },
+    {
+      "invoked_or_compiler_real_path": "/usr/bin/cc",
+      "resolved": "/usr/bin/gcc",
+      "path": "/usr/bin/cc",
+      "bytes": 2451072,
+      "sha256": "a5f680ca8b01b1e7a98d531cac90f258875a301d841fab28a8b56d513470f988"
+    },
+    {
+      "invoked_or_compiler_real_path": "/usr/bin/nm",
+      "resolved": "/usr/bin/nm",
+      "path": "/usr/bin/nm",
+      "bytes": 48560,
+      "sha256": "cf9a8d5beccc243c2010b863cb861e4e8a74cdb294af59dcf122950df2e8c440"
+    },
+    {
+      "invoked_or_compiler_real_path": "/usr/bin/readelf",
+      "resolved": "/usr/bin/readelf",
+      "path": "/usr/bin/readelf",
+      "bytes": 867440,
+      "sha256": "b561a09504aff0f2c864da60a268cafee9171fdd1574a23fde6158f95ad55294"
+    }
+  ],
+  "tool_pin_limit": "invoked executables and ARM real compiler only; not complete compiler/libc/assembler/linker closure or ABI packaging proof",
+  "command_record": {
+    "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/COMMANDS.txt",
+    "bytes": 34678,
+    "sha256": "d55f4966a650b84d406195a41d187fd05c34e08f6618963a4763e185783aefc8"
+  },
+  "source_pin_manifest": {
+    "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/SOURCE_PINS.json",
+    "bytes": 6328,
+    "sha256": "57fd8e39817870527c62ad99a878cd512550959c75d61bc2058e8dc33f4b2993"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "env",
+    "-i",
+    "PATH=/usr/bin:/bin",
+    "LANG=C",
+    "LC_ALL=C",
+    "TZ=UTC",
+    "/bin/bash",
+    "apps/rtsp-auth/rtsp-provisioner-process/compile_recipe.sh"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "started": "2026-10-23T11:22:56.902618+00:00",
+  "finished": "2026-10-23T11:23:01.109083+00:00",
+  "exit": 0,
+  "scope": "compile/link only; no test or native code executed"
+}

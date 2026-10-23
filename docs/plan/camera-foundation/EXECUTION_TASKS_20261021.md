@@ -25,9 +25,17 @@ before exact profile/trailers. Full-context FAILED/HOLD; no10s quiet/filter/chan
 OFF/owned wait0/private hashes/PID/socket/fuser postchecks passed. No active capture/
 transfer. See COLD23G_RESULT.md. No more power-cycle/catch/native queue: unexplained
 serial data blocks hardware qualification. Do not repeat already confirmed physical
-questions. Original failures preserved. One author owns fresh rtsp-provisioner-process
-for actual device-free separate child private ingress/constructor/FD IPC/known-wait
-parent bind; no real credentials/native hardening/main/hardware selection.
+questions. Original failures preserved. Fresh rtsp-provisioner-process now has
+narrow independent SOURCE/API/custody sufficiency: actual device-free separate
+child-only private ingress/constructor/FD IPC/known-wait0/explicit parent bind;
+27 HOST/ARM compiles/40 commands + ONE normal PUBLICDUMMY fork/transfer/wait/bind
+call PASS. Parent verified33 inputs/59 delivery pins/1771 dependency records/84
+artifacts/40 logs/five tool pins. No real credentials/native hardening/main/hardware
+execution. Disposition: rtsp-provisioner-process-20261023/PARENT_DISPOSITION.md.
+No author/reviewer remains in that lane; actual external ingress/secret-free
+launch/global hygiene/storage/linked-file retirement and bootstrap/main remain.
+Next source connection: known-wait/bind → actual device-free runtime prepare →
+actual prestarted start, before all native/provider ownership; not native GO.
 PTZ counter guard source/ARM-object compile closeout committed locally `8ec07ff`,
 not deployed; failed-OFF descriptor lifetime/recovery/motor limits still open.
 No image/readback/kernel/motor/flash action occurred. Parent alone hardware. Existing

@@ -1,0 +1,36 @@
+{
+  "scope": "ONE normal HOST PUBLICDUMMY child case only",
+  "argv": [
+    "env",
+    "-i",
+    "PATH=/usr/bin:/bin",
+    "LANG=C",
+    "LC_ALL=C",
+    "TZ=UTC",
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/PUBLICDUMMY-NOT-NATIVE"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C",
+    "LC_ALL": "C",
+    "TZ": "UTC"
+  },
+  "started": "2026-10-23T11:23:43.449618+00:00",
+  "finished": "2026-10-23T11:23:43.452860+00:00",
+  "exit": 0,
+  "executed_binary_sha256": "2957ea8d3763d43ed86cfefc2b6e68fb85696ea93a86b7f15e4e7c3db0ebd624",
+  "precall_public_source_pins_matched": 26,
+  "native_hardening_or_verifier_media_launch": false,
+  "real_private_credentials": false,
+  "product_secret_free_fork_proven": false,
+  "payload_readback_or_payload_hash": false,
+  "stdout.txt": {
+    "bytes": 270,
+    "sha256": "8e760c78efe4c3b69b3fd23ad83d6b569be96b90eaa2bc05fb4200640470ddd7"
+  },
+  "stderr.txt": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

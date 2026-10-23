@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "/bin/bash",
+    "-n",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-provisioner-process/compile_recipe.sh"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": ""
+}

@@ -88,8 +88,12 @@ trailers. Outlet OFF, child wait0/final hashes verified; no10s quiet or further
 power-cycle/ON/native queue. See
 [23g result](../../qualification-plans/execution-20261023/COLD23G_RESULT.md).
 Hardware qualification is blocked on unexplained serial data, not a permission gap.
-One author advances actual separate RTSP provisioner-child/readonly-FD IPC source;
-parent review required, not product/main/native adoption.
+Separate RTSP provisioner-child/readonly-FD IPC now has narrow independent SOURCE/
+API/custody sufficiency,27 HOST/ARM compiles/40 commands and ONE normal PUBLICDUMMY
+fork/FD-transfer/wait0/bind observation. No real credentials/native hardening or
+product/main/native adoption. Next source connection is actual device-free runtime
+prepare/prestarted-start ordering after known provisioner retirement/bind; see
+[disposition](../../qualification-plans/rtsp-provisioner-process-20261023/PARENT_DISPOSITION.md).
 PTZ counter source/compile-only correction is committed locally `8ec07ff`, not
 deployed. Private
 RTSP file/FD custody has also received narrow SOURCE/API acceptance with compile/

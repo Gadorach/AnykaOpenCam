@@ -1,0 +1,42 @@
+{
+  "scope": "PARENT_READ_ONLY_PUBLIC_SOURCE_BUILD_DELIVERY_VERIFICATION_NOT_REBUILD_TEST_OR_NATIVE_ACCEPTANCE",
+  "utc": "2026-10-23T11:32:51.021801+00:00",
+  "verified_counts": {
+    "selected_inputs": 33,
+    "delivery_pins": 59,
+    "dependency_records": 1771,
+    "artifacts": 84,
+    "command_logs": 40,
+    "tool_pins": 5
+  },
+  "pins": [
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/DELIVERY_PINS.json",
+      "bytes": 13174,
+      "sha256": "285fa37602511d16306f3b53682b6df6dddf91dea4ed69b94f5b8da97baac95b"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/REPORT.json",
+      "bytes": 78959,
+      "sha256": "49115dc14df26b9b2372a4f00a9b6e0b46b40409960ef28344108fb3bd45c283"
+    },
+    {
+      "path": "apps/rtsp-auth/rtsp-provisioner-process/provisioner_process.c",
+      "bytes": 15986,
+      "sha256": "d929b392110d6563b818aa00993301e07d5542afb3a2f4c37cafebe6f28b3724"
+    },
+    {
+      "path": "apps/rtsp-auth/rtsp-provisioner-process/provisioner_process.h",
+      "bytes": 5271,
+      "sha256": "7208455b184a4a2ed9384b16cff1a05c17217789189ef3fa4812c397ff817bc6"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-review-20261023/REVIEW.md",
+      "bytes": 12137,
+      "sha256": "2cac78eda71928d553e820c0c93c57713f2b0768467a5ea14ce72c3295dccb84"
+    }
+  ],
+  "native_or_real_credentials_executed": false,
+  "one_PUBLICDUMMY_observation_cited_not_repeated": true,
+  "independent_review_read_by_parent": true
+}

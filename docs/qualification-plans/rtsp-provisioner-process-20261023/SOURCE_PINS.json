@@ -1,0 +1,171 @@
+{
+  "scope": "selected public source/context before build; no private material",
+  "recorded": "2026-10-23T11:22:45.368568+00:00",
+  "inputs": [
+    {
+      "path": "apps/rtsp-auth/rtsp-provisioner-process/LICENSE_NOTICES.md",
+      "bytes": 834,
+      "sha256": "a28dc037473abd45f7e6f4986e87c4a95c09b831c24c804b426021f706888808"
+    },
+    {
+      "path": "apps/rtsp-auth/rtsp-provisioner-process/compile_recipe.sh",
+      "bytes": 3692,
+      "sha256": "8e4833df26160fa93307b53abf6ad143e082ebd66528f972df7423ac4c843809"
+    },
+    {
+      "path": "apps/rtsp-auth/rtsp-provisioner-process/positive_publicdummy.c",
+      "bytes": 6845,
+      "sha256": "95c30f8073216debd81163afeb329fa874f850c9453a3d228838a283b7a8e0a8"
+    },
+    {
+      "path": "apps/rtsp-auth/rtsp-provisioner-process/provisioner_process.c",
+      "bytes": 15986,
+      "sha256": "d929b392110d6563b818aa00993301e07d5542afb3a2f4c37cafebe6f28b3724"
+    },
+    {
+      "path": "apps/rtsp-auth/rtsp-provisioner-process/provisioner_process.h",
+      "bytes": 5271,
+      "sha256": "7208455b184a4a2ed9384b16cff1a05c17217789189ef3fa4812c397ff817bc6"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/AUTHOR_AUDIT.md",
+      "bytes": 3411,
+      "sha256": "c9da68cba77ac11600ba061f4caeabf4aa346fa2ba03eb7bf8c3a4e379a987f6"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/CONTRACT.md",
+      "bytes": 6780,
+      "sha256": "eb72166b575cd4a0aabf46e18bdde8dfa6d07d4d75f751e865d2aafcfc0043ab"
+    },
+    {
+      "path": "docs/plan/camera-foundation/00-INDEX.md",
+      "bytes": 125586,
+      "sha256": "06ef6c1a6c92e724ab7d60caebdc4b28eefc541d063e7d1ce9da561d28f5c7c7"
+    },
+    {
+      "path": "docs/plan/camera-foundation/09-SECURITY-AND-CONFIGURATION.md",
+      "bytes": 6286,
+      "sha256": "c363fb6d4894a9ec867e40794a2c2630d213abfc4282484351dbeaf932c879f9"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-private-handoff-20261023/PARENT_DISPOSITION.md",
+      "bytes": 3962,
+      "sha256": "fe3d6bbb73346a17e4a5ec8886034c90d0a63bd3d4f7853d9e12ebb558880ed6"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-private-handoff-20261023/CONTRACT.md",
+      "bytes": 4925,
+      "sha256": "6abc0f2ac02b5d7816d7f0c7d2e1cffb14e4ddd138a21cc40ab173863f41c5e2"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-private-handoff-20261023/HANDOFF.md",
+      "bytes": 10487,
+      "sha256": "258e4735f5974ef1579e58613a14ba8f826018a344c89d5180ba1e5d1ceba6d4"
+    },
+    {
+      "path": "apps/rtsp-auth/rtsp-private-handoff/private_handoff.c",
+      "bytes": 7748,
+      "sha256": "cd3e08600841502f1373c30ea80b43c736aa07e705bed7ec83f20f19d5f5903c"
+    },
+    {
+      "path": "apps/rtsp-auth/rtsp-private-handoff/private_handoff.h",
+      "bytes": 3716,
+      "sha256": "4ad3136dfcf4e8fff5b3a26ab794279a96ee908466bfa547819dd87546fefa44"
+    },
+    {
+      "path": "apps/rtsp-auth/rtsp-startup-material/startup_material.c",
+      "bytes": 5019,
+      "sha256": "5eb23e473750c0b3ae0daecd472c2091ec1a6e8287001c65b9d1634fdd3aceae"
+    },
+    {
+      "path": "apps/rtsp-auth/rtsp-startup-material/startup_material.h",
+      "bytes": 1779,
+      "sha256": "76fb100e06c6b7508b6011400bf35734d273615fd26a3aa8cc57cd2150630206"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-owned-runtime/server/candidate_auth.c",
+      "bytes": 17425,
+      "sha256": "cb27b35e2d8730b8d19f231d339e06cbe4c97fbe0aca7826fe3469d8479825a7"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-owned-runtime/server/candidate_auth.h",
+      "bytes": 6001,
+      "sha256": "94b6ed560677b7db4119eded9726ab01085c2e0eb392bdad29e961ebcd2ed643"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-owned-runtime/server/verifier_adapter_overlay.c",
+      "bytes": 19892,
+      "sha256": "03413c00c829f4a94c8630ace490927be4b718bbac9b48b771997a0905c8880a"
+    },
+    {
+      "path": "apps/rtsp-auth/isolated-verifier/verifier.h",
+      "bytes": 6234,
+      "sha256": "3f4a97a12ed9acafe678e720b473c798c75b170648e6a6de076a1017ff0ad900"
+    },
+    {
+      "path": "apps/rtsp-auth/isolated-verifier/child.c",
+      "bytes": 3596,
+      "sha256": "b317bac6512a3795fa7b8c82ae339366750dbf39960642d97e53d69d1d3e4ad7"
+    },
+    {
+      "path": "apps/rtsp-auth/isolated-verifier/isolation.c",
+      "bytes": 5403,
+      "sha256": "6759d15640e17048d331354bce62376a23588689daeea468e5e5b1a4ec54b135"
+    },
+    {
+      "path": "apps/rtsp-auth/rtsp_crypto_config.h",
+      "bytes": 379,
+      "sha256": "7cfb2b4eacf9379bd945a2faa9a95bc228c131bdf956a07e3953fdba6d7f818f"
+    },
+    {
+      "path": "framework/src/rtsp_digest.c",
+      "bytes": 12142,
+      "sha256": "24ac70a0e3a4d76e2b651c4ad7570b4e89cd6645b62a5291408fd3b00a14e80f"
+    },
+    {
+      "path": "framework/src/rtsp_digest_wire.c",
+      "bytes": 13918,
+      "sha256": "0ecc44fe90618eca56a43d6a95df23ef1e236aac07413b5abf016d1623a7abc9"
+    },
+    {
+      "path": "framework/src/backend.c",
+      "bytes": 4344,
+      "sha256": "cc5462d995479578c83d5acb38164d2c8f3eae8a1adaf0c6e5a7fe7f929ff9f3"
+    },
+    {
+      "path": "framework/src/rtsp_input.c",
+      "bytes": 9009,
+      "sha256": "f827dff40c7874650872f6a506c28695ef9af90ae7f3dbbe93b7e4fc0976491f"
+    },
+    {
+      "path": "framework/src/rtsp_request.c",
+      "bytes": 7884,
+      "sha256": "76a15006b09e4ebc372b794c6c47b01e650821425d81a41c08e871a7ddc5b074"
+    },
+    {
+      "path": "apps/auth-web/service/vendor/mbedtls/library/sha256.c",
+      "bytes": 30275,
+      "sha256": "632672d0c954d8bc0e20fdc8370c9f1725f3ffc5fcdaacc14949e42a1b5424d7"
+    },
+    {
+      "path": "apps/auth-web/service/vendor/mbedtls/library/md5.c",
+      "bytes": 12545,
+      "sha256": "887eca6a51f8dfd8c3fd1a9dab6ff083e1795644e88b39c87640b56fcd33503b"
+    },
+    {
+      "path": "apps/auth-web/service/vendor/mbedtls/library/constant_time.c",
+      "bytes": 8855,
+      "sha256": "1a573edd420fece73f996b70cdf6bb58a05a468e434a6ac0c562df592048d3c6"
+    },
+    {
+      "path": "apps/auth-web/service/vendor/mbedtls/library/platform_util.c",
+      "bytes": 8347,
+      "sha256": "83051fddcd37171831ff5706613dc3d336b2e53c42e6515f2f14ac0f8aa649f1"
+    },
+    {
+      "path": "apps/auth-web/service/vendor/mbedtls/LICENSE",
+      "bytes": 29852,
+      "sha256": "9b405ef4c89342f5eae1dd828882f931747f71001cfba7d114801039b52ad09b"
+    }
+  ]
+}

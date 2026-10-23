@@ -1,0 +1,1 @@
+PUBLICDUMMY normal=PASS actual_fork=1 child_ingress_constructor=1 actual_SCM_RIGHTS=1 received_FDs=1 child_wait0=1 explicit_parent_bind=1 readonly1536=1 cleanup=PASS native_hardening_or_verifier_media_launch=0 payload_readback_or_hash=0 product_secret_free_fork_proof=0

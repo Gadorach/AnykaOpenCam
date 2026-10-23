@@ -1,0 +1,302 @@
+{
+  "scope": "public source/handback/build metadata and scalar HOST observation; no material file or payload hash",
+  "recorded": "2026-10-23T11:27:13.120439+00:00",
+  "count": 59,
+  "inputs": [
+    {
+      "path": "apps/rtsp-auth/rtsp-provisioner-process/LICENSE_NOTICES.md",
+      "bytes": 834,
+      "sha256": "a28dc037473abd45f7e6f4986e87c4a95c09b831c24c804b426021f706888808"
+    },
+    {
+      "path": "apps/rtsp-auth/rtsp-provisioner-process/compile_recipe.sh",
+      "bytes": 3692,
+      "sha256": "8e4833df26160fa93307b53abf6ad143e082ebd66528f972df7423ac4c843809"
+    },
+    {
+      "path": "apps/rtsp-auth/rtsp-provisioner-process/positive_publicdummy.c",
+      "bytes": 6845,
+      "sha256": "95c30f8073216debd81163afeb329fa874f850c9453a3d228838a283b7a8e0a8"
+    },
+    {
+      "path": "apps/rtsp-auth/rtsp-provisioner-process/provisioner_process.c",
+      "bytes": 15986,
+      "sha256": "d929b392110d6563b818aa00993301e07d5542afb3a2f4c37cafebe6f28b3724"
+    },
+    {
+      "path": "apps/rtsp-auth/rtsp-provisioner-process/provisioner_process.h",
+      "bytes": 5271,
+      "sha256": "7208455b184a4a2ed9384b16cff1a05c17217789189ef3fa4812c397ff817bc6"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/AUTHOR_AUDIT.md",
+      "bytes": 3411,
+      "sha256": "c9da68cba77ac11600ba061f4caeabf4aa346fa2ba03eb7bf8c3a4e379a987f6"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/COMPILE01.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/COMPILE01.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/COMPILE01_INVOCATION.json",
+      "bytes": 417,
+      "sha256": "057551e8722de12d9a8d1c8aa7776a5f17f21e3bd948fb5cef981dac1852b09d"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/CONTRACT.md",
+      "bytes": 6780,
+      "sha256": "eb72166b575cd4a0aabf46e18bdde8dfa6d07d4d75f751e865d2aafcfc0043ab"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/HANDOFF.md",
+      "bytes": 11458,
+      "sha256": "050c055b938623d9c2d6fb5a874186bc1a791022b18bcc94a010a383fe6d0972"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/RECIPE_SYNTAX.json",
+      "bytes": 192,
+      "sha256": "4d44cb05fed6f5d6079381a9c902b74c57eebc519c35aa0246d4c26e20abf6aa"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/SOURCE_PINS.json",
+      "bytes": 6328,
+      "sha256": "57fd8e39817870527c62ad99a878cd512550959c75d61bc2058e8dc33f4b2993"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/REPORT.json",
+      "bytes": 78959,
+      "sha256": "49115dc14df26b9b2372a4f00a9b6e0b46b40409960ef28344108fb3bd45c283"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/DEPENDENCIES.json",
+      "bytes": 529255,
+      "sha256": "8d9fb44307ca94a482ac085a2679a8e9c0d39b848e68b5c21ee436bcec427ee4"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/COMMANDS.txt",
+      "bytes": 34678,
+      "sha256": "d55f4966a650b84d406195a41d187fd05c34e08f6618963a4763e185783aefc8"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-ELF.txt",
+      "bytes": 1361,
+      "sha256": "5854710cd36884dc54917e1054e10c2e8f396f050a842bdd3663fe901f02d24e"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-REL.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-0.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-10.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-11.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-2.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-3.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-4.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-5.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-6.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-7.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-8.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-cc-9.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-machine.txt",
+      "bytes": 29,
+      "sha256": "d0cf670b8c286026ebd268b1f5ecdd6be41552e0e254a949fb50ab0ed085dd23"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-undefined.txt",
+      "bytes": 886,
+      "sha256": "b77619ca5b65ee5540a1fe0d82ec704919bcfebdc19da4c00c44827497d49eb6"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/arm-version.txt",
+      "bytes": 288,
+      "sha256": "7b501201183c07e1e9078ca3f8b1f502d07fd67c414e92183c01e8787c00a0d4"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-ELF.txt",
+      "bytes": 955,
+      "sha256": "8b97d530bce5976ebb01255cba63e0f4444b3361a567ff9ec5eb637ae9ad3ee1"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-REL.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-0.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-10.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-11.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-2.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-3.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-4.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-5.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-6.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-7.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-8.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-cc-9.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-machine.txt",
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-undefined.txt",
+      "bytes": 1076,
+      "sha256": "a349054d5cfd9a444456e5ec95c6fd9ec7fa8bab52631b09ae9d8c627361528b"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/host-version.txt",
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/publicdummy-ELF.txt",
+      "bytes": 979,
+      "sha256": "858d4bb17e353b93151b60d9a2b09515d85cdd94363f6957fa3294dac51317e0"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/publicdummy-cc-handoff.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/publicdummy-cc-positive_publicdummy.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/publicdummy-cc-provisioner_process.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/publicdummy-link.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/logs/publicdummy-symbols.txt",
+      "bytes": 3188,
+      "sha256": "53da2fcbadb0cdbf2cfaf99b2d4e9e4e3deb152bb6613e792ac3cfa5dfd9ee1b"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/positive01/OBSERVATION.json",
+      "bytes": 1133,
+      "sha256": "f3013f2c7acb27f12870f803600438553d6d2529e98c3233a80644d3062ec2e7"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/positive01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/positive01/stdout.txt",
+      "bytes": 270,
+      "sha256": "8e760c78efe4c3b69b3fd23ad83d6b569be96b90eaa2bc05fb4200640470ddd7"
+    }
+  ]
+}
