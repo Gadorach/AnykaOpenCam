@@ -26,6 +26,24 @@ provisioning/main remain next concrete feature dependencies; inherited1MiB sites
 are unqualified against128KiB cap. No fake readiness, native adoption, live stream,
 hardware operation or product completion. All functional checks remain NOT RUN.
 
+Owned-runtime source/metadata committed locally `5b3e252`, ordinary index unchanged.
+SEC-01/03/05, STREAM-07 next feature increment delivered: separate real RTSP-only
+operator password→actual verifier startup-record constructor at
+apps/rtsp-auth/rtsp-startup-material/. Existing Digest/Mbed TLS computes secret HA1;
+same actual config/graph/routes/policy binds the existing1536-byte native record.
+No defaults, UI credential reuse, new crypto or media/HTTPS linkage. Independent
+ordinary review found no correction required; parent accepts narrow conditional
+SOURCE/API sufficiency, review hash
+`c8f2a1d9964dba8e496fb4a247dbacf0338cbc9ad233ee03a46c4cdb54555a8e`.
+20 HOST/ARM C compilations/26 commands PASS; parent checked16 inputs/165 dependency
+records/22 artifacts/26 logs. No candidate/test/secret execution; no private input
+or material was read/generated/hashed. No new build framework. See
+rtsp-startup-material-20261023/PARENT_DISPOSITION.md under qualification docs.
+Actual separate hardened provisioning ingress/private descriptor handoff/storage/
+generation authority/rotation and startup/recovery/backing/native gates remain.
+Next feature connection is the real provisioner→bootstrap private FD handoff, not
+another diagnostic-build/clock/receipt lane. No active author/reviewer or native queue.
+
 ## Prior closeout — reviewed source and offline prerequisites
 
 RP-08/09, CORE-03/04, STREAM-04/07: actual prestarted-backend/owned-listener

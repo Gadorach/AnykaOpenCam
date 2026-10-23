@@ -159,6 +159,14 @@ See rtsp-owned-runtime-20261023/PARENT_DISPOSITION.md. No active author/reviewer
 main/native adoption, listener/capture/client execution or hardware action.
 Real bootstrap/external owner/recovery/backing/provisioning remain blockers;
 inherited1MiB sites are unqualified against128KiB cap. Finite STOP, no restart GO.
+Owned-runtime source/metadata committed locally `5b3e252`. Separate real RTSP-only
+password→verifier startup-record constructor at `apps/rtsp-auth/rtsp-startup-material/`
+has narrow independent SOURCE/API sufficiency plus20 HOST/ARM C compilations/
+26 commands PASS, never called. Parent checked16 selected inputs/165 dependency
+records/22 artifacts/26 logs; disposition in rtsp-startup-material-20261023 docs.
+No default credentials, private input/generation/use, media/HTTPS linkage or new
+build framework. Actual hardened secret ingress/private FD handoff/storage/durable
+generation authority/rotation are still missing; no active author/reviewer.
 Staging guard remains unavailable; future manual-OFF handoff requires separate
 review/actual readiness. No physical request or transfer is active. Query77 monitor
 lacks query88 command. Authentication/loopback and media-retention

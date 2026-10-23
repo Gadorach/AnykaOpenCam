@@ -1,0 +1,69 @@
+{
+  "scope": "Selected public source/compile evidence, no credential material or execution",
+  "pins": {
+    "apps/rtsp-auth/rtsp-startup-material/startup_material.c": {
+      "bytes": 5019,
+      "sha256": "5eb23e473750c0b3ae0daecd472c2091ec1a6e8287001c65b9d1634fdd3aceae"
+    },
+    "apps/rtsp-auth/rtsp-startup-material/startup_material.h": {
+      "bytes": 1779,
+      "sha256": "76fb100e06c6b7508b6011400bf35734d273615fd26a3aa8cc57cd2150630206"
+    },
+    "apps/rtsp-auth/rtsp-startup-material/README.md": {
+      "bytes": 2066,
+      "sha256": "33d3062824c296a56c3acf635851d49b58e8d5d4591188e46d081befca8743c9"
+    },
+    "docs/qualification-plans/rtsp-startup-material-20261023/CONTRACT.md": {
+      "bytes": 2468,
+      "sha256": "36b5754f0302ee72c37d0f2afc58d9259769df22a0bb4f60df19939bd555e1e6"
+    },
+    "docs/qualification-plans/rtsp-startup-material-20261023/runs/build01/REPORT.json": {
+      "bytes": 83833,
+      "sha256": "c7e06a428e0306a4daf6dd0a4ff469bdb4355c22765710c322b28f6ffe4ec6e4"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/server/candidate_auth.h": {
+      "bytes": 6001,
+      "sha256": "94b6ed560677b7db4119eded9726ab01085c2e0eb392bdad29e961ebcd2ed643"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/server/candidate_auth.c": {
+      "bytes": 17425,
+      "sha256": "cb27b35e2d8730b8d19f231d339e06cbe4c97fbe0aca7826fe3469d8479825a7"
+    },
+    "apps/rtsp-auth/isolated-verifier/verifier.h": {
+      "bytes": 6234,
+      "sha256": "3f4a97a12ed9acafe678e720b473c798c75b170648e6a6de076a1017ff0ad900"
+    },
+    "apps/rtsp-auth/isolated-verifier/engine.c": {
+      "bytes": 10852,
+      "sha256": "cf298b8096c66859806c6e0c0b449592ac4081f05ad814f21fee35e97262c396"
+    },
+    "framework/src/rtsp_digest.c": {
+      "bytes": 12142,
+      "sha256": "24ac70a0e3a4d76e2b651c4ad7570b4e89cd6645b62a5291408fd3b00a14e80f"
+    },
+    "framework/src/rtsp_digest_wire.c": {
+      "bytes": 13918,
+      "sha256": "0ecc44fe90618eca56a43d6a95df23ef1e236aac07413b5abf016d1623a7abc9"
+    },
+    "framework/src/rtsp_input.c": {
+      "bytes": 9009,
+      "sha256": "f827dff40c7874650872f6a506c28695ef9af90ae7f3dbbe93b7e4fc0976491f"
+    },
+    "framework/src/backend.c": {
+      "bytes": 4344,
+      "sha256": "cc5462d995479578c83d5acb38164d2c8f3eae8a1adaf0c6e5a7fe7f929ff9f3"
+    },
+    "framework/include/camera/rtsp_digest.h": {
+      "bytes": 7432,
+      "sha256": "26294a9e67f663eb3bfc903c48a63396298a300caebd2ea15dcffa5b87745aae"
+    },
+    "framework/include/camera/rtsp_input.h": {
+      "bytes": 2591,
+      "sha256": "bb39c927b8d3da0754da5ed759e420987b700e1e1cfd11d9b78192289f80cac9"
+    },
+    "apps/rtsp-auth/rtsp_crypto_config.h": {
+      "bytes": 379,
+      "sha256": "7cfb2b4eacf9379bd945a2faa9a95bc228c131bdf956a07e3953fdba6d7f818f"
+    }
+  }
+}

@@ -64,6 +64,14 @@ main/external media owner/backing/recovery remain explicit gaps, not fabricated
 ready flags. See the current execution ledger; earlier build selections below
 are retained history and do not override this steering.
 
+Owned-runtime source is committed locally `5b3e252`. The next feature increment,
+RTSP-only operator-password→actual verifier startup-record construction, now has
+narrow independent SOURCE/API sufficiency and20 HOST/ARM compilations/26 commands
+PASS, never called; no real credential material was used. See its
+[parent disposition](../../qualification-plans/rtsp-startup-material-20261023/PARENT_DISPOSITION.md).
+Actual separate hardened provisioner→bootstrap private descriptor handoff remains
+next; storage/generation authority/recovery/backing/native requirements are open.
+
 ### October22 unattended execution / actual cold handoff
 
 Follow [RESUME_20261022.md](RESUME_20261022.md) and the execution ledger. User
