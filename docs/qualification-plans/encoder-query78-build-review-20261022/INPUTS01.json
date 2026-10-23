@@ -1,0 +1,354 @@
+{
+  "/home/gadorach/Desktop/AnykaOpenCam/AGENTS.md": {
+    "bytes": 26754,
+    "sha256": "f5c7b4d3342d0f9b93efbb0713e511a78a17fbbd71d86bce7ed95a0dcbb29a64"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/encoder-query77-build/build.py": {
+    "bytes": 25858,
+    "sha256": "dfdc47bd1275a553a208a2c12439b150ec64293ca0f8b5a10f4c73c1fec47482"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/encoder-query77-build/inspect_build.py": {
+    "bytes": 2040,
+    "sha256": "89579ea6268572840a72554eca652c619a8cac8ffa4273c41630f74a20d56703"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/encoder-query77-build/package.py": {
+    "bytes": 10754,
+    "sha256": "597310983843731834a772995409288425f0a87a277c778ff8796c8812e06c2d"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/encoder-query77-build/package02.py": {
+    "bytes": 7748,
+    "sha256": "cdbe8b7e5a00400f4660c8b14483462e324baa1ab692f5e7dd297276f4dbfcf6"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/encoder-query78-build/.gitignore": {
+    "bytes": 14,
+    "sha256": "9967fbf6a68b4488fb0a6eb19a6c36b1d408a47312b8825b6d38062e10d5c07a"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/encoder-query78-build/README.md": {
+    "bytes": 4508,
+    "sha256": "f60ff80762d531bc3947ef4ba8830f3e45b46c95f40698be6aa98034d4eaa120"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/encoder-query78-build/build.py": {
+    "bytes": 18195,
+    "sha256": "c558bdc15a4f8f9aed1edc0922c8608dc240a5050e683906f5b6df7476329cfb"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/encoder-query78-build/common.py": {
+    "bytes": 10925,
+    "sha256": "f09da28c05b493f69b424c0f580e484e0630ddd41aee63ae8059abb7c2791984"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/encoder-query78-build/newc.py": {
+    "bytes": 8721,
+    "sha256": "06e796f5e31b845988ce980d54bc601544fbd1e069cf4035eb52d4a3344da18a"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/encoder-query78-build/package.py": {
+    "bytes": 16569,
+    "sha256": "967707325ee94835b2258a68d30c92e5364ea093e664ec12d159506ea305a307"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/encoder-query78-client/.gitignore": {
+    "bytes": 9,
+    "sha256": "21a5fcfef76f67d88bb9ad647f52e2d4fd901709078d884f3063270c790756a4"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/encoder-query78-client/README.md": {
+    "bytes": 2704,
+    "sha256": "02a33b0ab32d04cb05c07401d073b6e605f4e2aa48d9f4f2c34cd2de85cd969d"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/encoder-query78-client/build01/INPUTS.json": {
+    "bytes": 1236302,
+    "sha256": "8b0041e994bc7ef26891f9be528a7c468b1ba1f95cdd2434da591bbad3b67dea"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/encoder-query78-client/build01/OUTPUT_SEAL.json": {
+    "bytes": 43823,
+    "sha256": "953247831f12c70486a8a30cac7297696d6a76b466ddc77f20e45c4f20161c8e"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/encoder-query78-client/build01/REPORT.json": {
+    "bytes": 30584,
+    "sha256": "7dea94cc108263059f42014d7ae3754a6128a552ed19c0f88511a0c359411990"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/encoder-query78-client/build01/arm/encoder-query78-qualification": {
+    "bytes": 30140,
+    "sha256": "5947009a526bbecacf1d0843f26aabd10fb2b13d6db42203585a52d48d95b4fa"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/encoder-query78-client/compile_only.py": {
+    "bytes": 14102,
+    "sha256": "03f69988223724f521e17ff5f763bd13af9207fc76e1c88a6103bb5cf189be30"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/encoder-query78-client/encoder-open-query.h": {
+    "bytes": 2455,
+    "sha256": "6052069fa5428185eb8c61871404256c53c30c12515eaa5c9ab80c424facde37"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/encoder-query78-client/encoder-query78-qualification.c": {
+    "bytes": 10258,
+    "sha256": "d3f85cd01f722ce0148531b0f6430c18795733e9dbf4336bff8df426a1946985"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/00-INDEX.md": {
+    "bytes": 122185,
+    "sha256": "b6f4d28a9ca063e0deafe2c2605aae25ba4b9f4ad7d2fcd9785d6e70ce220ec3"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/03-PLATFORM-BUILD-RECOVERY.md": {
+    "bytes": 4539,
+    "sha256": "e5543476350d58b6eb3ccddb0bd9040492f3c0e385c5f60fc39c1f044659c47d"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/06-ENCODER-AND-RATE-CONTROL.md": {
+    "bytes": 4980,
+    "sha256": "8bfbf62790c0ba7badd1baf245cb977ca56fd3ed29d32c3f1d5179c9ded0f3ba"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/EXECUTION_TASKS_20261021.md": {
+    "bytes": 72805,
+    "sha256": "0873b4e36a48a63d3f6e40ba45ebf1c89784016b81576516e3c762aa27a02fb3"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query77-build-20261022/BUILD_MANIFEST01.json": {
+    "bytes": 81242,
+    "sha256": "ea8c84ff4f61605e30e59f03249a6ee9a542ccd2ef3452bc68cea4528df695c6"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query77-build-20261022/PARENT_DISPOSITION.md": {
+    "bytes": 4625,
+    "sha256": "c7d4c03c1624b1b34ea95ffbea3b946927146fee3491009094ac376fa4d8de08"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query77-build-20261022/PARENT_VERIFICATION01.json": {
+    "bytes": 2355,
+    "sha256": "72c03e319f5a00ecf2b6368dc1033d9368a72071d0c69b7e6c8669119f54e3f8"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query77-build-20261022/SOURCE_SEAL01.json": {
+    "bytes": 2614,
+    "sha256": "7e7a8e04b1021165695721bd1d76b8043d784a96d1406f7b12daaa6518c729a0"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-build-20261022/BUILD_CONTRACT.md": {
+    "bytes": 6644,
+    "sha256": "d981ec6bf3acf5814113bc4cc186c4414f69da5abb08f163f21052d8c85d8e78"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-build-20261022/BUILD_DERIVATION.diff": {
+    "bytes": 42772,
+    "sha256": "ef7b9e2f054cedd63301ecb416ec09a6dd17801468204142cf25671ba9ffb5e2"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-build-20261022/BUILD_DERIVATION02.diff": {
+    "bytes": 43350,
+    "sha256": "948f164165f311841a98dd9864a7a7eb1f4f3ca6c4045eba9e5967d763f1b863"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-build-20261022/CALLSITES01.json": {
+    "bytes": 61388,
+    "sha256": "219c73b8c497e085e26813e58b60bc8620d44fdc6ed6f644f9ff07f6d7e0ea14"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-build-20261022/CALLSITES02.json": {
+    "bytes": 62175,
+    "sha256": "c5abdf9578ce7267a47260c8fc7d5f1143a002d8be9c25dc71547ca5867084b2"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-build-20261022/CANDIDATE_REPORT.md": {
+    "bytes": 13138,
+    "sha256": "0ddfcd3ff46fcc8a9a62e43e4336bc35165212d4194b2b9c189ef24300e818f7"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-build-20261022/HANDOFF_SEAL01.json": {
+    "bytes": 4246,
+    "sha256": "57e8ea80d7d41c1da1e91de4aaa932ac37e60068cf14b09855d7944d2c585eeb"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-build-20261022/PACKAGE_DERIVATION.diff": {
+    "bytes": 24178,
+    "sha256": "a5ade3747a84dde0573237f40ac8aa9eb27b9ffbb0edadaecf4e5a5568c2cc36"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-build-20261022/PACKAGE_DERIVATION02.diff": {
+    "bytes": 24178,
+    "sha256": "a5ade3747a84dde0573237f40ac8aa9eb27b9ffbb0edadaecf4e5a5568c2cc36"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-build-20261022/PINNED_INPUTS01.json": {
+    "bytes": 9300,
+    "sha256": "e49f04f0b95523e0bad1768739c5fd870361d7c16ff380bc4af80fbe2d0e620d"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-build-20261022/SYNTAX01.json": {
+    "bytes": 1565,
+    "sha256": "cdc2d110efc5910281f8dcc45df48393bb83cde63c98fc48ffec151ea6f0c3c6"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-build-20261022/SYNTAX02.json": {
+    "bytes": 1784,
+    "sha256": "f2e2192e2f97151348308a2929d155199761db71a7b669e08c71e3be5f890159"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-client-20261022/BUILDER_DELTA.diff": {
+    "bytes": 1978,
+    "sha256": "7f1099da1299fae6d75f405e4786e1b1752b25511adc0a7537bc58bc985f9829"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-client-20261022/CANDIDATE_REPORT.md": {
+    "bytes": 11074,
+    "sha256": "644d1e68c2796d41caaeda831fded42e9d38b51a649bd0fee51e437ff573aaef"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-client-20261022/CLIENT_DELTA.diff": {
+    "bytes": 745,
+    "sha256": "1c1fd172986640cb4d4c6dae4297b09f1be7722c6139e25a75f1d863bae14330"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-client-20261022/CONTRACT.md": {
+    "bytes": 4846,
+    "sha256": "ba040e5f19ad6883b3f544fb37a1e9cbe855ea7234221510439eefcfd6857333"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-client-20261022/HANDOFF_SEAL01.json": {
+    "bytes": 3465,
+    "sha256": "57edc96b008be5e8b326e275f92fa59b4929e04154e9e9a903866007641d8947"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-client-20261022/OFFLINE_CLOSURE01.json": {
+    "bytes": 28903,
+    "sha256": "aaa03ee6a101aced27f323b4eeb2f466a31f7ba937c848c5f846048d6be34bdd"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-client-20261022/PARENT_RECHECK01.json": {
+    "bytes": 952,
+    "sha256": "5c2d4dc87fa66e66e2f091b6ceee969db9c915a62bc6e01c87c47c869c1469e4"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-client-20261022/SOURCE_BEFORE.json": {
+    "bytes": 1351243,
+    "sha256": "c379a1b3c9414fc72b84dafa3cd816ebe86ab9ee03957360754da5f58cb00f55"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-client-20261022/SOURCE_CONTRACT.md": {
+    "bytes": 638,
+    "sha256": "33ffb556862b29f4c0ab02e7d08f402e52d5ac012ac2768b2e33ac39971fd5eb"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-client-20261022/collect_offline.py": {
+    "bytes": 16023,
+    "sha256": "f4532e91db26b91eeb9d1e5b88aca85065aa7b198339b3cf92dc975f8acde17c"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-client-review-20261022/FINAL_SEAL.json": {
+    "bytes": 4937,
+    "sha256": "0f875806f421ab20ffcc7dae4e7c4198ca2b103179dade47b93ed0e7ababe7fe"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-client-review-20261022/REVIEW.md": {
+    "bytes": 13743,
+    "sha256": "83f1b9ec9b1a125c9485038b0571ec5c7c5c241c0fb2b53bbbffddf5646c0f60"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-embedded-image-20261022/BASE_INPUTS01.json": {
+    "bytes": 28468,
+    "sha256": "c763eab61b05dbff10182f7b4bd1b7635ebc8e4d985aa8125fe015ee8582a388"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-embedded-image-20261022/BUILD_CONTRACT.md": {
+    "bytes": 7791,
+    "sha256": "f29ea0e41d947c44bb4ae69a3244bcac3b543a3b2db08474ec4b4e5e9db676a7"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/PACKAGE02.json": {
+    "bytes": 4011,
+    "sha256": "7fb787f19892da10c0c9eac9a256e61f283b8dbf154d2d4189661726f3642d37"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/additional-host-support-inputs02.json": {
+    "bytes": 806818,
+    "sha256": "50dd219a56cbb405dfa9d4be0c1710aaf49ebbbd2300dabdf8aebd7da7cfed4b"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/.config": {
+    "bytes": 58859,
+    "sha256": "d7b2ae8f167c8b56f442a201684eb433cc621bce45f52c98c94a87e48879b5bf"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/include/config/kernel.release": {
+    "bytes": 30,
+    "sha256": "fa8bfc9743bfd2ff20c3df4b010af4319f43359523b887d5ce180fac6981d348"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/include/generated/autoconf.h": {
+    "bytes": 20061,
+    "sha256": "16095db58ef2ff2b64ef6f39e10e4b557c54a0fd42cd961f47a01c520c74c2b0"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/include/generated/compile.h": {
+    "bytes": 164,
+    "sha256": "8c51d471baeb130ce5a5b31b20f006b9d0501433d2142a62cf3b5428f38c6a5c"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/inputs/candidate-source.json": {
+    "bytes": 15767711,
+    "sha256": "aa6e4388b968067a7b61e19b9813263e3f3f481b26a17e78b1be79a83264e981"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/inputs/clang-resources.json": {
+    "bytes": 86086,
+    "sha256": "8db1262a5017333bb173f1ec6a6ba5219ab036074e1f6bc8afe83ab391d698b1"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/inputs/host-headers-and-gcc.json": {
+    "bytes": 10413195,
+    "sha256": "8f1c4e70fb7987cb7158f15d6b3e3e65228b4e1c33c9312ae81554e3bd58e57c"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/inputs/host-tools.json": {
+    "bytes": 9457,
+    "sha256": "cc42250d7c27d54db09dbb4deebd235dd22722a38efd57d21f6d06c609cdf607"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/inputs/prebuild-loaded-host-ELF.json": {
+    "bytes": 9945,
+    "sha256": "a10587f3145df37c412a98cc6bca8c514a19331e766b07314bd00563baf511f3"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/inputs/precompile-tools-and-ELF.json": {
+    "bytes": 19213,
+    "sha256": "612e0ee00a23097ec611cdd3a93a2f7dcdc28a09764aa4c3e6fd424894db77a6"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/loaded-host-ELF.json": {
+    "bytes": 21052,
+    "sha256": "bf862c0b6ff031c32c761c8c6e142688e22ed9501eb430139dd927309b4af93f"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-images02/QC6EQ77.UIM": {
+    "bytes": 3603307,
+    "sha256": "f7c1996073644d8cd6c5c7ba1d2a8c2b71d2d6df4fb4697d01ad59a1e7525a5e"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/LICENSES/preferred/GPL-2.0": {
+    "bytes": 18600,
+    "sha256": "8780e78a1a737e127f25a65f6d95269bffd36158dc261114de7859b490bfc5aa"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/boot/compressed/Makefile": {
+    "bytes": 4673,
+    "sha256": "60ccf9f39b11568cb21f994e9e062cb2cca046cbf60bfd0542bd38e5b3e53685"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/boot/compressed/head.S": {
+    "bytes": 39098,
+    "sha256": "b68aac0b5edfa94c0026f7354a61af40f06f5e6b09b443d333e133c4c25f0f6f"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/boot/compressed/vmlinux.lds.S": {
+    "bytes": 3426,
+    "sha256": "03ce040e58af47cd07512c06c8b2dca4a23cbd82eaec61bae653452b629d687e"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/scripts/setlocalversion": {
+    "bytes": 5322,
+    "sha256": "18dd0a236664f94134ccf6fcface15902b65918a8fa56c5f947b9bb176e5a069"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/inputs/attempt45.dtb": {
+    "bytes": 2571,
+    "sha256": "d837c58c90b56ebb6ce9346b7c1d69689d5a1122dcef55b0f72341e6d003e0b5"
+  },
+  "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/inputs/initramfs76.cpio": {
+    "bytes": 2082816,
+    "sha256": "510e5fdc6e2a7b6ad4a52d82ad1de9381a85e143f7014a6f2cc3bdfb951e309f"
+  },
+  "/usr/bin/clang": {
+    "bytes": 124752,
+    "resolved": "/usr/bin/clang-23",
+    "sha256": "583017067c40b0ff0a9b35805d8ac89d5a66fb014221c78ae13a7c21997dd464",
+    "symlink": "clang-23"
+  },
+  "/usr/bin/clang++": {
+    "bytes": 124752,
+    "resolved": "/usr/bin/clang-23",
+    "sha256": "583017067c40b0ff0a9b35805d8ac89d5a66fb014221c78ae13a7c21997dd464",
+    "symlink": "clang"
+  },
+  "/usr/bin/gzip": {
+    "bytes": 138440,
+    "sha256": "4160b37a8d2af6b6dcbc55ed38d4119dcd0b052e5ffcfba94d6c0aec8882023b"
+  },
+  "/usr/bin/ld.lld": {
+    "bytes": 16008,
+    "resolved": "/usr/bin/lld",
+    "sha256": "4952fef3d097c70179749061a78a6303fa39800889f319c59e426447c43b884a",
+    "symlink": "lld"
+  },
+  "/usr/bin/llvm-ar": {
+    "bytes": 81016,
+    "sha256": "20baccdd8c74a29f9c85868a4f92c37f0853b521e9f94df6127ac0cb5bf5bd15"
+  },
+  "/usr/bin/llvm-nm": {
+    "bytes": 150488,
+    "sha256": "048b43a3e75163ca8898c68b9980a214a07f7af4dc2cc9df7804a7ef8b7aa4e4"
+  },
+  "/usr/bin/llvm-objcopy": {
+    "bytes": 196272,
+    "sha256": "ec62e5beb1827ec611ee439f0d77b8144d125a2ff33c6cea0cbe7f85392fa75b"
+  },
+  "/usr/bin/llvm-readelf": {
+    "bytes": 2181776,
+    "resolved": "/usr/bin/llvm-readobj",
+    "sha256": "f274846a60012d54d600d9e3e068f4fe09910a52bf2f67f8afb18d59d8279791",
+    "symlink": "llvm-readobj"
+  },
+  "/usr/bin/llvm-size": {
+    "bytes": 64840,
+    "sha256": "fef0b332bcd129bc96d03528a84c50f69ecec8443596591e9589589a540d2567"
+  },
+  "/usr/bin/make": {
+    "bytes": 339824,
+    "sha256": "6f36064c643168dbe57adddebc60c63702f7b5cdf23739705d23c87fe5e8dce3"
+  },
+  "/usr/bin/xz": {
+    "bytes": 92896,
+    "sha256": "71ff49173f6819b67922af81722a8f36e5b15f16c36d3a561052e384de9793db"
+  }
+}

@@ -149,9 +149,14 @@ Parent verified4,024 baseline/3,711 input/252 output records and4,293 unchanged
 reader records/four context updates/seven outputs. Review's one public historical
 build-config exclusion separately parent-closed; scope/error records preserved.
 Object v5TE, linked ARM ELF v5TEJ, not native compatibility proof. No client reviewer active.
-One disjoint author owns fresh query78-build source/docs for a closed embedded-
-client/station-omitting recipe, AST/syntax only, never invoked. Client and recipe
-review precede any integration/kernel/image build. See embedded-image contract;
+Query78 client/source closeout committed locally `ba9b645`, no binaries or push.
+Fresh query78-build recipe delivered:four Python units AST/syntax4/4 only,42
+input pins/six source/11 document pins parent-verified. Independent review requires
+R1 final qualification-pin binding/seal-before-terminal and R2 primary-failure
+preservation;100 inputs/seven review outputs parent-verified. V1/review frozen,
+unaccepted. One author owns fresh query78-build-v2 source/docs for those corrections
+only, AST/syntax/no invocation. Re-review and explicit parent selection precede
+archive generation/kernel/image build. See embedded-image contract;
 no image/boot selected. No query/guard/policy change or actual owner facts inherited.
 Parent read-only original-newc inspection matched all50 retained records/no regular
 hard-link groups; no extraction, archive transformation or binary execution.

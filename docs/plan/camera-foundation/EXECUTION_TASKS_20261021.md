@@ -147,10 +147,24 @@ the unpaired station record omitted, original PID1/other records preserved. This
 avoids a future UART file-staging interval, not clock/launch/recovery admission.
 Client source/build review and actual fresh recipe inspection precede integration;
 no full kernel build/image invocation selected yet, no originals changed.
-One disjoint author now owns query78-build source/docs for that closed build recipe,
-AST/syntax/source inspection only, no invocation/archiving/kernel compile. Actual
-client review identity and independent recipe review are required before use;
-no guessed review pin, generic admission Boolean or current-state evidence.
+Client reviewed source/metadata committed locally `ba9b645`; no binaries/push.
+Git staging retained exactly two required space-only empty-context lines in frozen
+diff artifacts, checked all other paths clean, changed no Git policy/configuration;
+PARENT_STAGING_NOTE.md preserves that diagnostic without rewriting sealed diffs.
+Query78-build closed recipe delivered:four Python units AST/syntax4/4 only,42
+input/six source/11 document pins parent-verified. Source aggregate
+`d3ac858dafa835587474bf7708ef0c5f5a17820cccbe42f5cb4619a52e29a373`;
+handoff `57e8ea80d7d41c1da1e91de4aaa932ac37e60068cf14b09855d7944d2c585eeb`.
+Independent SOURCE/build-method review requires R1 final output/closure-to-
+qualification-pin comparisons and completed seal before terminal, plus R2 primary
+exception preservation through receipt failures.100 reader inputs/seven outputs
+parent-verified; review seal
+`3b293d00fa1ea7bdb41cfce9ff0b12e1850c92b02c83ee7b795e97f49a0a5685`.
+V1 source/review frozen/unaccepted. Parent disposition in v1 docs selects fresh
+query78-build-v2 author for R1/R2 only, AST/syntax/source work, no recipe/helper
+call/archive generation/extraction/kernel/image build. Explicit client REVIEW.md
+hash associates reviewed bytes, not native authority or a readiness flag. Fresh
+re-review and separate parent build selection remain mandatory before use.
 Parent read-only original-newc inspection matched all50 retained records, no
 regular hard-link groups, exact bodies/symlink targets/record padding/trailer and
 whole archive before/after pins. BASE_INPUTS01.json is structure evidence only,

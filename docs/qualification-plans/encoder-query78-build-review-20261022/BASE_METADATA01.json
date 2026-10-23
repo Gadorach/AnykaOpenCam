@@ -1,0 +1,141 @@
+{
+  "additional_paths": [
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/arch/arm/boot/.Image.cmd",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/arch/arm/boot/compressed/.head.o.cmd",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/arch/arm/boot/compressed/.piggy.o.cmd",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/arch/arm/boot/compressed/vmlinux",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/scripts/basic/.fixdep.cmd",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/scripts/kconfig/.conf.cmd",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/usr/.initramfs_data.o.cmd",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/usr/.initramfs_inc_data.cmd",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/vmlinux",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/Makefile",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/boot/Makefile",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/scripts/basic/fixdep.c",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/usr/Makefile",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/usr/initramfs_data.S"
+  ],
+  "baseline_ELF_metadata_only": {
+    "old_compressed": {
+      "init_sections": {},
+      "raw_association_or_new_fit_claim": false,
+      "required_symbols": {
+        "__bss_start": [
+          [
+            3600672,
+            0,
+            7
+          ]
+        ],
+        "_edata": [
+          [
+            3600672,
+            0,
+            6
+          ]
+        ],
+        "_end": [
+          [
+            3601720,
+            0,
+            8
+          ]
+        ],
+        "_kernel_bss_size": [
+          [
+            192388,
+            0,
+            65521
+          ]
+        ],
+        "_start": [
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "wont_overwrite": [
+          [
+            516,
+            0,
+            1
+          ]
+        ]
+      },
+      "stack_section": {
+        "address": 3601720,
+        "bytes": 4096,
+        "flags": 3,
+        "offset": 3666208,
+        "type": 8
+      }
+    },
+    "old_kernel": {
+      "init_sections": {},
+      "raw_association_or_new_fit_claim": false,
+      "required_symbols": {
+        "__bss_start": [
+          [
+            3229789244,
+            0,
+            31
+          ]
+        ],
+        "__bss_stop": [
+          [
+            3229981632,
+            0,
+            33
+          ]
+        ],
+        "__initramfs_size": [
+          [
+            3229252896,
+            0,
+            29
+          ]
+        ],
+        "__initramfs_start": [
+          [
+            3228249208,
+            0,
+            29
+          ]
+        ],
+        "_end": [
+          [
+            3229981632,
+            0,
+            33
+          ]
+        ],
+        "_text": [
+          [
+            3221258240,
+            0,
+            1
+          ]
+        ],
+        "swapper_pg_dir": [
+          [
+            3221241856,
+            0,
+            65521
+          ]
+        ]
+      },
+      "stack_section": null
+    }
+  },
+  "derived_archive_created_or_candidate_parser_called": false,
+  "original_raw_records_verified": 50,
+  "original_record_metadata_hashes_equal_parent_BASE": true,
+  "original_trailing_zero_bytes": 196,
+  "reader_input_paths": 100,
+  "representative_optional_Kbuild_wildcard_count": 136,
+  "review_host_UTC": "2026-10-23T01:47:26.590687+00:00",
+  "runtime_or_preflight_or_new_size_fit_result": false,
+  "scope": "independent static saved-original extents/ELF metadata/source reads only",
+  "source_constants_read": "head.S303-477,545-649; compressed Makefile and linker; boot Makefile; usr inclusion; fixdep; setlocalversion"
+}

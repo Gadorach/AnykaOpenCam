@@ -1,0 +1,223 @@
+{
+  "AST_only_units": 4,
+  "accepted_installed_alias_paths": 50365,
+  "all_installed_tool_bodies_or_preflight_verified": false,
+  "all_source_bodies_or_preflight_verified": false,
+  "baseline_autoconf_exact_equal": true,
+  "callsites02_all_exact_to_independent_AST": true,
+  "candidate_compile_or_codeobject_run": false,
+  "candidate_or_helper_or_compiler_or_archive_transform_or_test_invocation": false,
+  "config_symbols": 1624,
+  "context_snapshot": {
+    "/home/gadorach/Desktop/AnykaOpenCam/AGENTS.md": {
+      "bytes": 26754,
+      "sha256": "f5c7b4d3342d0f9b93efbb0713e511a78a17fbbd71d86bce7ed95a0dcbb29a64"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/00-INDEX.md": {
+      "bytes": 122185,
+      "sha256": "b6f4d28a9ca063e0deafe2c2605aae25ba4b9f4ad7d2fcd9785d6e70ce220ec3"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/03-PLATFORM-BUILD-RECOVERY.md": {
+      "bytes": 4539,
+      "sha256": "e5543476350d58b6eb3ccddb0bd9040492f3c0e385c5f60fc39c1f044659c47d"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/06-ENCODER-AND-RATE-CONTROL.md": {
+      "bytes": 4980,
+      "sha256": "8bfbf62790c0ba7badd1baf245cb977ca56fd3ed29d32c3f1d5179c9ded0f3ba"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/EXECUTION_TASKS_20261021.md": {
+      "bytes": 72805,
+      "sha256": "0873b4e36a48a63d3f6e40ba45ebf1c89784016b81576516e3c762aa27a02fb3"
+    }
+  },
+  "final_diffs_regenerate_exactly": true,
+  "interim_common_body_not_reconstructed": true,
+  "interim_textual_diff_pins_verified": {
+    "build.py": {
+      "bytes": 17626,
+      "sha256": "c0993eb41a55f9371db46eb6017134f73c39505f107e429949a6c417f5764177"
+    },
+    "package.py": {
+      "bytes": 16569,
+      "sha256": "967707325ee94835b2258a68d30c92e5364ea093e664ec12d159506ea305a307"
+    }
+  },
+  "pin_groups": {
+    "author_docs": 11,
+    "client_handoff_docs": 8,
+    "client_source": 5,
+    "recipe_source": 6,
+    "selected_public_inputs": 42
+  },
+  "private_or_current_state_or_hardware_access": false,
+  "reader_input_paths": 86,
+  "review_host_UTC": "2026-10-23T01:44:13.579429+00:00",
+  "scope": "STATIC_SOURCE_METHOD_RECEIPT_INSPECTION_ONLY",
+  "selected_manifest_count": 42,
+  "source_manifest_entries": 91270,
+  "source_manifest_links": {
+    "Documentation/Changes": "process/changes.rst",
+    "arch/arm/boot/dts/allwinner/sun8i-a23-ippo-q8h-v1.2.dts": "sun8i-a23-q8-tablet.dts",
+    "arch/arm/boot/dts/allwinner/sun8i-a23-ippo-q8h-v5.dts": "sun8i-a23-q8-tablet.dts",
+    "arch/arm/boot/dts/allwinner/sun8i-a33-et-q8-v1.6.dts": "sun8i-a33-q8-tablet.dts",
+    "arch/arm/boot/dts/allwinner/sun8i-a33-ippo-q8h-v1.2.dts": "sun8i-a33-q8-tablet.dts",
+    "arch/arm64/boot/dts/renesas/r9a07g054l2-smarc-cru-csi-ov5645.dtso": "r9a07g044l2-smarc-cru-csi-ov5645.dtso",
+    "arch/arm64/tools/syscall_64.tbl": "../../../scripts/syscall.tbl",
+    "arch/powerpc/configs/kvm_guest.config": "../../../kernel/configs/kvm_guest.config",
+    "include/dt-bindings/clock/qcom,dispcc-sm8150.h": "qcom,dispcc-sm8250.h",
+    "include/dt-bindings/clock/qcom,dispcc-sm8350.h": "qcom,dispcc-sm8250.h",
+    "include/dt-bindings/clock/qcom,sm8650-dispcc.h": "qcom,sm8550-dispcc.h",
+    "include/dt-bindings/input/linux-event-codes.h": "../../uapi/linux/input-event-codes.h",
+    "scripts/dtc/include-prefixes/arc": "../../../arch/arc/boot/dts",
+    "scripts/dtc/include-prefixes/arm": "../../../arch/arm/boot/dts",
+    "scripts/dtc/include-prefixes/arm64": "../../../arch/arm64/boot/dts",
+    "scripts/dtc/include-prefixes/dt-bindings": "../../../include/dt-bindings",
+    "scripts/dtc/include-prefixes/microblaze": "../../../arch/microblaze/boot/dts",
+    "scripts/dtc/include-prefixes/mips": "../../../arch/mips/boot/dts",
+    "scripts/dtc/include-prefixes/nios2": "../../../arch/nios2/boot/dts",
+    "scripts/dtc/include-prefixes/openrisc": "../../../arch/openrisc/boot/dts",
+    "scripts/dtc/include-prefixes/powerpc": "../../../arch/powerpc/boot/dts",
+    "scripts/dtc/include-prefixes/riscv": "../../../arch/riscv/boot/dts",
+    "scripts/dtc/include-prefixes/sh": "../../../arch/sh/boot/dts",
+    "scripts/dtc/include-prefixes/xtensa": "../../../arch/xtensa/boot/dts",
+    "scripts/dummy-tools/nm": "ld",
+    "scripts/dummy-tools/objcopy": "ld",
+    "scripts/kernel-doc": "kernel-doc.py",
+    "tools/include/linux/pci_ids.h": "../../../include/linux/pci_ids.h",
+    "tools/perf/arch/arm64/entry/syscalls/syscall_64.tbl": "../../../../../scripts/syscall.tbl",
+    "tools/perf/pmu-events/arch/riscv/sifive/bullet-07/firmware.json": "../bullet/firmware.json",
+    "tools/perf/pmu-events/arch/riscv/sifive/bullet-07/instruction.json": "../bullet/instruction.json",
+    "tools/perf/pmu-events/arch/riscv/sifive/bullet-07/memory.json": "../bullet/memory.json",
+    "tools/perf/pmu-events/arch/riscv/sifive/bullet-0d/cycle-and-instruction-count.json": "../bullet-07/cycle-and-instruction-count.json",
+    "tools/perf/pmu-events/arch/riscv/sifive/bullet-0d/firmware.json": "../bullet/firmware.json",
+    "tools/perf/pmu-events/arch/riscv/sifive/bullet-0d/instruction.json": "../bullet/instruction.json",
+    "tools/perf/pmu-events/arch/riscv/sifive/bullet-0d/memory.json": "../bullet/memory.json",
+    "tools/perf/pmu-events/arch/riscv/sifive/bullet-0d/watchpoint.json": "../bullet-07/watchpoint.json",
+    "tools/perf/pmu-events/arch/riscv/sifive/p550/firmware.json": "../bullet/firmware.json",
+    "tools/perf/pmu-events/arch/riscv/sifive/p550/instruction.json": "../bullet/instruction.json",
+    "tools/perf/pmu-events/arch/riscv/sifive/p550/microarch.json": "../bullet/microarch.json",
+    "tools/perf/pmu-events/arch/riscv/sifive/p650/cycle-and-instruction-count.json": "../bullet-07/cycle-and-instruction-count.json",
+    "tools/perf/pmu-events/arch/riscv/sifive/p650/firmware.json": "../bullet/firmware.json",
+    "tools/perf/pmu-events/arch/riscv/sifive/p650/instruction.json": "../bullet/instruction.json",
+    "tools/perf/pmu-events/arch/riscv/sifive/p650/watchpoint.json": "../bullet-07/watchpoint.json",
+    "tools/testing/selftests/bpf/disasm.c": "../../../../kernel/bpf/disasm.c",
+    "tools/testing/selftests/bpf/disasm.h": "../../../../kernel/bpf/disasm.h",
+    "tools/testing/selftests/bpf/json_writer.c": "../../../bpf/bpftool/json_writer.c",
+    "tools/testing/selftests/bpf/json_writer.h": "../../../bpf/bpftool/json_writer.h",
+    "tools/testing/selftests/drivers/net/dsa/bridge_locked_port.sh": "run_net_forwarding_test.sh",
+    "tools/testing/selftests/drivers/net/dsa/bridge_mdb.sh": "run_net_forwarding_test.sh",
+    "tools/testing/selftests/drivers/net/dsa/bridge_mld.sh": "run_net_forwarding_test.sh",
+    "tools/testing/selftests/drivers/net/dsa/bridge_vlan_aware.sh": "run_net_forwarding_test.sh",
+    "tools/testing/selftests/drivers/net/dsa/bridge_vlan_mcast.sh": "run_net_forwarding_test.sh",
+    "tools/testing/selftests/drivers/net/dsa/bridge_vlan_unaware.sh": "run_net_forwarding_test.sh",
+    "tools/testing/selftests/drivers/net/dsa/local_termination.sh": "run_net_forwarding_test.sh",
+    "tools/testing/selftests/drivers/net/dsa/no_forwarding.sh": "run_net_forwarding_test.sh",
+    "tools/testing/selftests/drivers/net/dsa/tc_actions.sh": "run_net_forwarding_test.sh",
+    "tools/testing/selftests/drivers/net/dsa/tc_taprio.sh": "run_net_forwarding_test.sh",
+    "tools/testing/selftests/drivers/net/mlxsw/spectrum-2/port_range_scale.sh": "../spectrum/port_range_scale.sh",
+    "tools/testing/selftests/drivers/net/mlxsw/spectrum-2/rif_counter_scale.sh": "../spectrum/rif_counter_scale.sh",
+    "tools/testing/selftests/net/tcp_ao/icmps-accept.c": "icmps-discard.c",
+    "tools/testing/selftests/powerpc/copyloops/copy_mc_64.S": "../../../../../arch/powerpc/lib/copy_mc_64.S",
+    "tools/testing/selftests/powerpc/copyloops/copyuser_64.S": "../../../../../arch/powerpc/lib/copyuser_64.S",
+    "tools/testing/selftests/powerpc/copyloops/copyuser_power7.S": "../../../../../arch/powerpc/lib/copyuser_power7.S",
+    "tools/testing/selftests/powerpc/copyloops/mem_64.S": "../../../../../arch/powerpc/lib/mem_64.S",
+    "tools/testing/selftests/powerpc/copyloops/memcpy_64.S": "../../../../../arch/powerpc/lib/memcpy_64.S",
+    "tools/testing/selftests/powerpc/copyloops/memcpy_power7.S": "../../../../../arch/powerpc/lib/memcpy_power7.S",
+    "tools/testing/selftests/powerpc/mce/vas-api.h": "../../../../../arch/powerpc/include/uapi/asm/vas-api.h",
+    "tools/testing/selftests/powerpc/nx-gzip/include/vas-api.h": "../../../../../../arch/powerpc/include/uapi/asm/vas-api.h",
+    "tools/testing/selftests/powerpc/primitives/asm/asm-compat.h": "../.././../../../../arch/powerpc/include/asm/asm-compat.h",
+    "tools/testing/selftests/powerpc/primitives/asm/asm-const.h": "../../../../../../arch/powerpc/include/asm/asm-const.h",
+    "tools/testing/selftests/powerpc/primitives/asm/extable.h": "../../../../../../arch/powerpc/include/asm/extable.h",
+    "tools/testing/selftests/powerpc/primitives/asm/feature-fixups.h": "../../../../../../arch/powerpc/include/asm/feature-fixups.h",
+    "tools/testing/selftests/powerpc/primitives/asm/ppc_asm.h": "../../../../../../arch/powerpc/include/asm/ppc_asm.h",
+    "tools/testing/selftests/powerpc/primitives/linux/wordpart.h": "../../../../../../include/linux/wordpart.h",
+    "tools/testing/selftests/powerpc/primitives/word-at-a-time.h": "../../../../../arch/powerpc/include/asm/word-at-a-time.h",
+    "tools/testing/selftests/powerpc/stringloops/memcmp_32.S": "../../../../../arch/powerpc/lib/memcmp_32.S",
+    "tools/testing/selftests/powerpc/stringloops/memcmp_64.S": "../../../../../arch/powerpc/lib/memcmp_64.S",
+    "tools/testing/selftests/powerpc/stringloops/strlen_32.S": "../../../../../arch/powerpc/lib/strlen_32.S",
+    "tools/testing/selftests/powerpc/vphn/asm/vphn.h": "../../../../../../arch/powerpc/include/asm/vphn.h",
+    "tools/testing/selftests/powerpc/vphn/vphn.c": "../../../../../arch/powerpc/platforms/pseries/vphn.c",
+    "tools/testing/selftests/vDSO/vdso_standalone_test_x86.c": "vdso_test_gettimeofday.c",
+    "tools/testing/selftests/vfio/lib/drivers/dsa/registers.h": "../../../../../../../drivers/dma/idxd/registers.h",
+    "tools/testing/selftests/vfio/lib/drivers/ioat/hw.h": "../../../../../../../drivers/dma/ioat/hw.h",
+    "tools/testing/selftests/vfio/lib/drivers/ioat/registers.h": "../../../../../../../drivers/dma/ioat/registers.h"
+  },
+  "source_tree_sha256": "d3ac858dafa835587474bf7708ef0c5f5a17820cccbe42f5cb4619a52e29a373",
+  "syntax02_author_compile_cited_not_rerun": true,
+  "tool_map_entry_counts": {
+    "additional-host-support-inputs02.json": 3261,
+    "inputs/host-headers-and-gcc.json": 46508,
+    "inputs/host-tools.json": 58,
+    "inputs/prebuild-loaded-host-ELF.json": 55,
+    "inputs/precompile-tools-and-ELF.json": 112,
+    "loaded-host-ELF.json": 109
+  },
+  "top_level_current_tool_associations": {
+    "/usr/bin/clang": {
+      "bytes": 124752,
+      "matches_baseline": true,
+      "resolved": "/usr/bin/clang-23",
+      "sha256": "583017067c40b0ff0a9b35805d8ac89d5a66fb014221c78ae13a7c21997dd464"
+    },
+    "/usr/bin/clang++": {
+      "bytes": 124752,
+      "matches_baseline": true,
+      "resolved": "/usr/bin/clang-23",
+      "sha256": "583017067c40b0ff0a9b35805d8ac89d5a66fb014221c78ae13a7c21997dd464"
+    },
+    "/usr/bin/gzip": {
+      "bytes": 138440,
+      "matches_baseline": true,
+      "resolved": "/usr/bin/gzip",
+      "sha256": "4160b37a8d2af6b6dcbc55ed38d4119dcd0b052e5ffcfba94d6c0aec8882023b"
+    },
+    "/usr/bin/ld.lld": {
+      "bytes": 16008,
+      "matches_baseline": true,
+      "resolved": "/usr/bin/lld",
+      "sha256": "4952fef3d097c70179749061a78a6303fa39800889f319c59e426447c43b884a"
+    },
+    "/usr/bin/llvm-ar": {
+      "bytes": 81016,
+      "matches_baseline": true,
+      "resolved": "/usr/bin/llvm-ar",
+      "sha256": "20baccdd8c74a29f9c85868a4f92c37f0853b521e9f94df6127ac0cb5bf5bd15"
+    },
+    "/usr/bin/llvm-nm": {
+      "bytes": 150488,
+      "matches_baseline": true,
+      "resolved": "/usr/bin/llvm-nm",
+      "sha256": "048b43a3e75163ca8898c68b9980a214a07f7af4dc2cc9df7804a7ef8b7aa4e4"
+    },
+    "/usr/bin/llvm-objcopy": {
+      "bytes": 196272,
+      "matches_baseline": true,
+      "resolved": "/usr/bin/llvm-objcopy",
+      "sha256": "ec62e5beb1827ec611ee439f0d77b8144d125a2ff33c6cea0cbe7f85392fa75b"
+    },
+    "/usr/bin/llvm-readelf": {
+      "bytes": 2181776,
+      "matches_baseline": true,
+      "resolved": "/usr/bin/llvm-readobj",
+      "sha256": "f274846a60012d54d600d9e3e068f4fe09910a52bf2f67f8afb18d59d8279791"
+    },
+    "/usr/bin/llvm-size": {
+      "bytes": 64840,
+      "matches_baseline": true,
+      "resolved": "/usr/bin/llvm-size",
+      "sha256": "fef0b332bcd129bc96d03528a84c50f69ecec8443596591e9589589a540d2567"
+    },
+    "/usr/bin/make": {
+      "bytes": 339824,
+      "matches_baseline": true,
+      "resolved": "/usr/bin/make",
+      "sha256": "6f36064c643168dbe57adddebc60c63702f7b5cdf23739705d23c87fe5e8dce3"
+    },
+    "/usr/bin/xz": {
+      "bytes": 92896,
+      "matches_baseline": true,
+      "resolved": "/usr/bin/xz",
+      "sha256": "71ff49173f6819b67922af81722a8f36e5b15f16c36d3a561052e384de9793db"
+    }
+  }
+}

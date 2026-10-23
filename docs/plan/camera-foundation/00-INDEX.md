@@ -108,8 +108,10 @@ and narrowly conditionally SOURCE/API sufficient after independent review, never
 run. Parent separately closed the review's public build-config pin exclusion.
 A proposed future image embeds that reviewed client and omits
 the unpaired station record, preserving original PID1; see embedded-image contract.
-One disjoint author prepares the closed recipe source, AST/syntax only; client
-and recipe review precede use. No full image build, native recipe or boot selected.
+Closed recipe v1 passed syntax only; independent review requires R1 final-pin/
+terminal ordering and R2 primary-failure preservation. V1 stays frozen/unaccepted;
+fresh v2 correction source is selected, not invocation. Re-review and separate
+parent selection precede any archive/kernel/image build; no native recipe or boot.
 Original block/parser/HOLDs
 remain frozen. No
 target interface, executable native recipe, capture, staging, boot or query is

@@ -1,0 +1,12 @@
+{
+  "candidate_or_preflight_or_tool_or_transform_or_runtime_execution": false,
+  "changed_parent_context_not_rebased": {},
+  "configuration_pin_explicitly_checked_this_review": true,
+  "frozen_source_selected_inputs_old_artifacts_mismatches": [],
+  "policy_refusal": false,
+  "previous_client_review_exclusion_not_edited": true,
+  "reader_input_records": 100,
+  "review_host_UTC": "2026-10-23T01:48:39.512785+00:00",
+  "reviewer_collection_errors": [],
+  "unchanged_reader_input_records": 100
+}

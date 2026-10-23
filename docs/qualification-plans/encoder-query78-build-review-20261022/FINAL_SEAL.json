@@ -1,0 +1,69 @@
+{
+  "archive_extraction_generation_kernel_module_image_build": false,
+  "author_handoff_sha256": "57e8ea80d7d41c1da1e91de4aaa932ac37e60068cf14b09855d7944d2c585eeb",
+  "candidate_import_call_preflight_CLI_help_or_codeobject_execution": false,
+  "changed_parent_context_not_rebased": {},
+  "compiler_helper_generator_archive_transform_test_program_ELF_execution": false,
+  "disposition": "CORRECTION_REQUIRED_R1_FINAL_CUSTODY_BINDING_R2_PRIMARY_FAILURE_PRESERVATION",
+  "findings": {
+    "R1": {
+      "anchors": [
+        "apps/qualification/encoder-query78-build/package.py:205-210,270-289",
+        "apps/qualification/encoder-query78-build/build.py:202-203,255-282,295-303"
+      ],
+      "summary": "Final inventories adopt observed generated/image hashes without comparing qualification pins; FINAL precedes completed seal."
+    },
+    "R2": {
+      "anchors": [
+        "apps/qualification/encoder-query78-build/build.py:70-80,299-304"
+      ],
+      "summary": "Exception-path receipt I/O can replace primary command/custody failure."
+    }
+  },
+  "fresh_unchanged_reader_input_paths": 100,
+  "next": "Parent read/reverify/disposition only; fresh R1/R2 revision requires separate selection. No automatic queue.",
+  "only_writes": "docs/qualification-plans/encoder-query78-build-review-20261022/",
+  "policy_refusal": false,
+  "private_capture_analysis_HOLD_CONTROL_current_state_hardware_Git_index_edits": false,
+  "reader_input_manifest": {
+    "bytes": 22503,
+    "sha256": "abd35396ac95c8ba2f4b504ed8f9eea9f57ad81d38841822becdf0b65f0a19b5"
+  },
+  "reader_input_paths": 100,
+  "review_host_UTC": "2026-10-23T01:51:58.686035+00:00",
+  "review_outputs": {
+    "docs/qualification-plans/encoder-query78-build-review-20261022/BASE_METADATA01.json": {
+      "bytes": 4792,
+      "sha256": "f7be901f39dc3ddf87dbf675defb3083ec5c187637d70eceddb0c0c83234a692"
+    },
+    "docs/qualification-plans/encoder-query78-build-review-20261022/INPUTS01.json": {
+      "bytes": 18833,
+      "sha256": "551f96ba28e01e3c9ce6dbaa585841b21edc7e4b61cf8a06a16d578c361e099f"
+    },
+    "docs/qualification-plans/encoder-query78-build-review-20261022/INPUTS02.json": {
+      "bytes": 22503,
+      "sha256": "abd35396ac95c8ba2f4b504ed8f9eea9f57ad81d38841822becdf0b65f0a19b5"
+    },
+    "docs/qualification-plans/encoder-query78-build-review-20261022/POSTCHECK01.json": {
+      "bytes": 495,
+      "sha256": "f6a22d0ee0acdf257d562ab58691425ddb1570036273509b2b5aa9e252ca3419"
+    },
+    "docs/qualification-plans/encoder-query78-build-review-20261022/REVIEW.md": {
+      "bytes": 13838,
+      "sha256": "aa5a2c245921c5dc94548e4fc2a8c0be693398fa0cf0b75fe281924c943d8133"
+    },
+    "docs/qualification-plans/encoder-query78-build-review-20261022/SCOPE.md": {
+      "bytes": 1484,
+      "sha256": "ddc701f9c3279ba5bfe96a9580d3d55ac4e10e9c5a93b0c7d921965a212b6d20"
+    },
+    "docs/qualification-plans/encoder-query78-build-review-20261022/STATIC01.json": {
+      "bytes": 13186,
+      "sha256": "611920fda64f424fd2d79a0b7b17032b4c2e3aaa8a500071bc85179920ba0159"
+    }
+  },
+  "reviewer_collection_errors": [],
+  "scope": "INDEPENDENT_ORDINARY_STATIC_SOURCE_BUILD_METHOD_REVIEW_NO_INVOCATION",
+  "selected_public_input_pins_verified": 42,
+  "source_or_build_method_acceptance_or_invocation_admission": false,
+  "source_tree_sha256": "d3ac858dafa835587474bf7708ef0c5f5a17820cccbe42f5cb4619a52e29a373"
+}
