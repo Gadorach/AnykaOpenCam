@@ -1,0 +1,21 @@
+{
+  "scope": "RECORDED_PARENT_MUTABLE_READER_CONTEXT_UPDATE_NOT_REBASE",
+  "utc": "2026-10-23T11:38:05.754507+00:00",
+  "original_source_pin_manifest_unchanged": true,
+  "unchanged_selected_inputs": 32,
+  "updates": [
+    {
+      "path": "docs/plan/camera-foundation/00-INDEX.md",
+      "before": {
+        "bytes": 125586,
+        "sha256": "06ef6c1a6c92e724ab7d60caebdc4b28eefc541d063e7d1ce9da561d28f5c7c7"
+      },
+      "after": {
+        "bytes": 125953,
+        "sha256": "54e4136fd71cf9be5d95067754da9ec339980508f2116c2902f17fde374b54a6"
+      },
+      "reason": "parent source disposition/status update AFTER read-only verification and independent review; no source/API or original pin edits"
+    }
+  ],
+  "original_build_and_review_pins_remain_historical_before_update": true
+}

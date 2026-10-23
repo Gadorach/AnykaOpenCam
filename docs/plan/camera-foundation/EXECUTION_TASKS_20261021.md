@@ -36,6 +36,14 @@ No author/reviewer remains in that lane; actual external ingress/secret-free
 launch/global hygiene/storage/linked-file retirement and bootstrap/main remain.
 Next source connection: known-wait/bind → actual device-free runtime prepare →
 actual prestarted start, before all native/provider ownership; not native GO.
+Separate process source/public metadata committed locally `5269979`; ordinary
+index unchanged/no push. Its before-closeout source/context pins remain frozen:
+32 unchanged and one later parent index status update recorded explicitly in
+PARENT_CONTEXT_UPDATE01.json, not a rebased manifest. One new isolated author
+owns qc07f-bootstrap-candidate plus matching bootstrap docs for actual known-wait/
+bind → device-free runtime prepare → prestarted-start order and retained failed-
+start custody. Compile/REL-only; no test/verifier/native/listener/media execution,
+fake callbacks/main or external provider/backing adoption. Parent review next.
 PTZ counter guard source/ARM-object compile closeout committed locally `8ec07ff`,
 not deployed; failed-OFF descriptor lifetime/recovery/motor limits still open.
 No image/readback/kernel/motor/flash action occurred. Parent alone hardware. Existing
