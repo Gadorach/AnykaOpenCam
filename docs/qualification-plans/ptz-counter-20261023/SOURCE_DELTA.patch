@@ -1,0 +1,21 @@
+--- bringup/qc07f/variants/security75/mach-ak3918ev200/ptz.c
++++ bringup/qc07f/ptz-counter-candidate/ptz.c
+@@ -8,6 +8,7 @@
+  */
+ #include <linux/delay.h>
+ #include <linux/gpio/consumer.h>
++#include <linux/limits.h>
+ #include <linux/module.h>
+ #include <linux/mutex.h>
+ #include <linux/of.h>
+@@ -46,6 +47,10 @@
+ 	direction = steps > 0 ? 1 : -1;
+ 	steps = abs(steps);
+ 	mutex_lock(&ak_ptz_actuation_lock);
++	if (ptz->issued_steps > U32_MAX - steps) {
++		mutex_unlock(&ak_ptz_actuation_lock);
++		return -EOVERFLOW;
++	}
+ 	ptz->coil_readback_ok = false;
+ 	ptz->coils_off_verified = false;
+ 	lines = gpiod_get_array(dev, "phase", GPIOD_ASIS);
