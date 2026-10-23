@@ -1,0 +1,18 @@
+{
+  "build_or_failure_reproduced": false,
+  "canonical_source_manifest_key": "scripts/dtc/libfdt/fdt.c",
+  "existing_dependency": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/boot/compressed/../../../../lib/../scripts/dtc/libfdt/fdt.c",
+  "future_source_tree_not_queried": true,
+  "old_cmd_evidence": "work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/arch/arm/boot/compressed/.fdt.o.cmd",
+  "old_cmd_line": 100,
+  "old_consumed_paths": 3903,
+  "raw_source_relative_spelling": "arch/arm/boot/compressed/../../../../lib/../scripts/dtc/libfdt/fdt.c",
+  "raw_spelling_in_source_inventory_manifest": false,
+  "recorded_resolved_source_path": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/scripts/dtc/libfdt/fdt.c",
+  "resolved_key_in_source_inventory_manifest": true,
+  "same_saved_body_sha256": "0574facf26b0e9d1fdbce3747ceba66b4bdc16bd161601e2bed6a2791b1774c6",
+  "saved_parent_component_alias_paths": 86,
+  "scope": "STATIC_SAVED_PUBLIC_NAMESPACE_ASSOCIATION_NOT_CANDIDATE_EXECUTION",
+  "v2_closure_preserves_raw_key_anchors": "build.py:276-283,336-339",
+  "v2_finish_raw_inventory_lookup_anchor": "build.py:352-356"
+}

@@ -1,0 +1,124 @@
+{
+  "all_four_v2_callsites_equal_independent_AST": true,
+  "all_protected_comparisons_equal": true,
+  "all_six_diff_files_regenerate_exactly": true,
+  "author_syntax_compile_cited_not_rerun": true,
+  "before_after_current_all68_equal": true,
+  "context_snapshot": {
+    "/home/gadorach/Desktop/AnykaOpenCam/AGENTS.md": {
+      "bytes": 27098,
+      "sha256": "78bd27e0e849efdfeabd9c6be0f9c91f4929935c49d7eb60bce519112a2e8c99"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/00-INDEX.md": {
+      "bytes": 122310,
+      "sha256": "fe8cea68e21a25a910ef446d5721fa19bdee02abb9df456355f68e86d623a4af"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/03-PLATFORM-BUILD-RECOVERY.md": {
+      "bytes": 4539,
+      "sha256": "e5543476350d58b6eb3ccddb0bd9040492f3c0e385c5f60fc39c1f044659c47d"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/06-ENCODER-AND-RATE-CONTROL.md": {
+      "bytes": 4980,
+      "sha256": "8bfbf62790c0ba7badd1baf245cb977ca56fd3ed29d32c3f1d5179c9ded0f3ba"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/EXECUTION_TASKS_20261021.md": {
+      "bytes": 73516,
+      "sha256": "0da6f5f30ff725e132a020165a5630d67c5c2dd768b0e0c8b1c055268932bba4"
+    }
+  },
+  "full_91270_source_or_50000_tool_body_rehash_or_preflight": false,
+  "independent_AST_comparisons": {
+    "build_env_make_assignments": {
+      "self.env": true,
+      "self.make": true
+    },
+    "build_protected_methods": {
+      "configure": true,
+      "stable": true
+    },
+    "common_protected_functions": {
+      "canonical": true,
+      "client_association": true,
+      "config": true,
+      "expected_config": true,
+      "expected_tools": true,
+      "inventory": true,
+      "load": true,
+      "now": true,
+      "ordinary": true,
+      "require": true,
+      "self_pins": true,
+      "tool_row": true,
+      "unchanged": true,
+      "verify_config": true,
+      "verify_source": true
+    },
+    "fixed_path_constant_assignments": {
+      "APP": true,
+      "ARCHIVE": true,
+      "ART": true,
+      "BASE": true,
+      "BUILD": true,
+      "CHUNK": true,
+      "CLIENT": true,
+      "CLIENT_DOC": true,
+      "CLIENT_REVIEW": true,
+      "DTB": true,
+      "IMAGES": true,
+      "LOCALVERSION": true,
+      "MANIFEST": true,
+      "META": true,
+      "OLD": true,
+      "ORIGINAL": true,
+      "OUT": true,
+      "PARENT_BASE": true,
+      "ROOT": true,
+      "SRC": true
+    },
+    "package_helpers": {
+      "at_virtual": true,
+      "binary_association": true,
+      "bounded_bytes": true,
+      "bzip_crc": true,
+      "elf": true,
+      "fdt": true,
+      "uimage": true,
+      "verify_compression": true
+    },
+    "package_layout_assignments": {
+      "base": true,
+      "bss_start, bss_end": true,
+      "data": true,
+      "growth": true,
+      "header": true,
+      "label": true,
+      "live_end": true,
+      "payload": true,
+      "pgdir": true,
+      "phys": true,
+      "stack": true,
+      "stack_end": true,
+      "start, file_end": true,
+      "text, end": true
+    }
+  },
+  "newc_byte_identical": true,
+  "no_candidate_codeobject_import_call_or_execution": true,
+  "old42_preserved_subset": true,
+  "ordinary_remaining_finding": "R1-A admitted lexical dependency alias is used as canonical final inventory key",
+  "pin_groups": {
+    "selected_public_inputs": 68,
+    "v1_source": 6,
+    "v2_docs": 17,
+    "v2_source": 6
+  },
+  "policy_refusal": false,
+  "reader_input_paths": 102,
+  "review_host_UTC": "2026-10-23T02:26:23.811105+00:00",
+  "reviewer_errors_retained": [
+    "COLLECTION_ERROR01.md receipt definitions/class schema assumption"
+  ],
+  "scope": "FOCUSED_STATIC_R1_R2_RE_REVIEW_ONLY",
+  "v1_failed_source_tree_sha256": "d3ac858dafa835587474bf7708ef0c5f5a17820cccbe42f5cb4619a52e29a373",
+  "v2_source_tree_sha256": "e8708daaba932d1b633230917780a5c1dec58bb0a3ba7d953fa2c8d90a3bdd7d"
+}

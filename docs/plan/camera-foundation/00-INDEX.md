@@ -110,7 +110,10 @@ A proposed future image embeds that reviewed client and omits
 the unpaired station record, preserving original PID1; see embedded-image contract.
 Closed recipe v1 passed syntax only; independent review requires R1 final-pin/
 terminal ordering and R2 primary-failure preservation. V1 stays frozen/unaccepted;
-fresh v2 correction source is selected, not invocation. Re-review and separate
+v2 correction passed syntax but re-review requires R1-A dependency inventory
+coordinates; R2 changed error paths narrowly sufficient, not composite GO. Fresh
+v3 R1-A source-only work preserves lexical custody; old packets frozen/unaccepted.
+Re-review and separate
 parent selection precede any archive/kernel/image build; no native recipe or boot.
 Original block/parser/HOLDs
 remain frozen. No

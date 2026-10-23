@@ -160,9 +160,21 @@ qualification-pin comparisons and completed seal before terminal, plus R2 primar
 exception preservation through receipt failures.100 reader inputs/seven outputs
 parent-verified; review seal
 `3b293d00fa1ea7bdb41cfce9ff0b12e1850c92b02c83ee7b795e97f49a0a5685`.
-V1 source/review frozen/unaccepted. Parent disposition in v1 docs selects fresh
-query78-build-v2 author for R1/R2 only, AST/syntax/source work, no recipe/helper
-call/archive generation/extraction/kernel/image build. Explicit client REVIEW.md
+V1 source/review frozen/unaccepted; findings metadata committed locally `64fbaca`.
+Fresh query78-build-v2 delivered for R1/R2 only:four units AST/syntax4/4,68 frozen
+inputs/six source/17 document pins parent-verified; newc.py byte-identical.
+Source aggregate `e8708daaba932d1b633230917780a5c1dec58bb0a3ba7d953fa2c8d90a3bdd7d`;
+handoff `55edc62980d272fbe4deaf914eca2c62ed82e0767b9f9d14936001ed3ed0ec06`.
+Focused re-review requires R1-A: closure captures legitimate Kbuild `..` aliases,
+but final inventory lookup uses those lexical strings instead of walk coordinates.
+Saved query77 `.fdt.o.cmd`/consumed map establish the concrete case, not runtime or
+synthetic failure. R2 changed error paths narrowly source-sufficient, no composite
+method GO.102 inputs/seven outputs parent-verified; review seal
+`88a1edc2c5eb6ef3f92b5633d84a73c0e685732227bb1164e69b349355746c56`.
+V1/v2/reviews frozen/unaccepted. Parent disposition in v2 docs selects fresh
+query78-build-v3 author for R1-A coordinate binding only, preserving lexical full
+endpoint custody/direct-symlink role and every other guard. No recipe/helper call/
+archive generation/extraction/kernel/image build. Explicit client REVIEW.md
 hash associates reviewed bytes, not native authority or a readiness flag. Fresh
 re-review and separate parent build selection remain mandatory before use.
 Parent read-only original-newc inspection matched all50 retained records, no

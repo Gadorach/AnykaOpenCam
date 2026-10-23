@@ -1,0 +1,11 @@
+{
+  "candidate_import_call_preflight_or_codeobject_execution": false,
+  "changed_parent_context": {},
+  "frozen_source_docs_selected_inputs_old_artifacts_mismatches": [],
+  "policy_refusal": false,
+  "reader_input_records": 102,
+  "recipe_tool_archive_kernel_image_or_hardware_action": false,
+  "review_host_UTC": "2026-10-23T02:27:21.579527+00:00",
+  "reviewer_error_retained": "COLLECTION_ERROR01.md",
+  "unchanged_reader_input_records": 102
+}

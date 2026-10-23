@@ -154,8 +154,13 @@ Fresh query78-build recipe delivered:four Python units AST/syntax4/4 only,42
 input pins/six source/11 document pins parent-verified. Independent review requires
 R1 final qualification-pin binding/seal-before-terminal and R2 primary-failure
 preservation;100 inputs/seven review outputs parent-verified. V1/review frozen,
-unaccepted. One author owns fresh query78-build-v2 source/docs for those corrections
-only, AST/syntax/no invocation. Re-review and explicit parent selection precede
+unaccepted. Fresh query78-build-v2 delivered:four units AST/syntax4/4 only,68
+inputs/six source/17 document pins parent-verified; newc.py byte-identical. Re-review
+requires R1-A: admitted Kbuild dependency aliases cannot be raw walk-inventory keys.
+R2 changed paths narrowly source-sufficient, not composite GO;102 inputs/seven
+outputs parent-verified. V1/v2/reviews frozen/unaccepted. One author owns fresh
+query78-build-v3 R1-A coordinate-binding source only. No recipe/helper invoked.
+Focused re-review and explicit parent selection precede
 archive generation/kernel/image build. See embedded-image contract;
 no image/boot selected. No query/guard/policy change or actual owner facts inherited.
 Parent read-only original-newc inspection matched all50 retained records/no regular
