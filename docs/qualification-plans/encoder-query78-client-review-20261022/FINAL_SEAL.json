@@ -1,0 +1,108 @@
+{
+  "actual_HOLD_CONTROL_private_analysis_currentstate_access": false,
+  "author_handoff_sha256": "57edc96b008be5e8b326e275f92fa59b4929e04154e9e9a903866007641d8947",
+  "candidate_import_or_codeobject_execution": false,
+  "candidate_or_compiler_or_tool_execution": false,
+  "changed_parent_context_not_rebased": {
+    "/home/gadorach/Desktop/AnykaOpenCam/AGENTS.md": {
+      "final_observed_pin": {
+        "bytes": 26337,
+        "sha256": "d3dbc6dff8a17043673d99aa4f848528d9c59b664c3259fd5add49738607b37a"
+      },
+      "matches_postcheck_after": true,
+      "original_reader_pin": {
+        "bytes": 26240,
+        "sha256": "52f26dadd510a352cac0fef3f28ffd8cb7718236ba69f8c2183abbd5f07df1a0"
+      },
+      "parent_context_not_candidate": true
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/00-INDEX.md": {
+      "final_observed_pin": {
+        "bytes": 121992,
+        "sha256": "326a7f080a6f65d0137803cdf39e3644ab2cb34790759aa059340fe72b579471"
+      },
+      "matches_postcheck_after": true,
+      "original_reader_pin": {
+        "bytes": 121888,
+        "sha256": "bc1285d3aded617e9ec6566bf7606c78c85b9323ea82e731326fefc0bfbb18e6"
+      },
+      "parent_context_not_candidate": true
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/EXECUTION_TASKS_20261021.md": {
+      "final_observed_pin": {
+        "bytes": 71661,
+        "sha256": "b94dfcf7c3b0382a6e0f4b07b63adfe399392d48b6dde82cfe2d0ab57e69a172"
+      },
+      "matches_postcheck_after": true,
+      "original_reader_pin": {
+        "bytes": 70928,
+        "sha256": "5df16b36180fcc9c03e5a00b8fd06295126693a43ec4f7a333e729ec5da336ea"
+      },
+      "parent_context_not_candidate": true
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-embedded-image-20261022/BUILD_CONTRACT.md": {
+      "final_observed_pin": {
+        "bytes": 7791,
+        "sha256": "f29ea0e41d947c44bb4ae69a3244bcac3b543a3b2db08474ec4b4e5e9db676a7"
+      },
+      "matches_postcheck_after": true,
+      "original_reader_pin": {
+        "bytes": 6761,
+        "sha256": "27664a4d27abf64aa972e92e1e05f175c2360bfa2e778309ef873f5594fc1918"
+      },
+      "parent_context_not_candidate": true
+    }
+  },
+  "disposition": "NARROW_CONDITIONAL_SOURCE_API_SUFFICIENT; compile custody verified except one explicitly unopened historical configuration pin",
+  "excluded_unopened_paths": {
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/.config": "explicit no-analysis/private/current-state boundary"
+  },
+  "fresh_unchanged_reader_input_paths": 4293,
+  "frozen_input_mismatches": [],
+  "next": "parent read/reverify/disposition only; close or preserve single configuration scope exclusion; no automatic queue",
+  "policy_refusal": false,
+  "reader_input_paths": 4297,
+  "reader_manifest": {
+    "bytes": 1385845,
+    "sha256": "c442ab5fec3f6bba1679c20ac7461a3ac8565e1903e3adf7ad60aed020ead6dd"
+  },
+  "review_host_UTC": "2026-10-23T01:24:49.426772+00:00",
+  "review_outputs": {
+    "docs/qualification-plans/encoder-query78-client-review-20261022/ARTIFACTS01.json": {
+      "bytes": 152743,
+      "sha256": "f24a7bb37efdacad1c6b446e3e4915ccdab50eadc73d3408baca5ac43a8880dd"
+    },
+    "docs/qualification-plans/encoder-query78-client-review-20261022/COLLECTION_ERROR01.md": {
+      "bytes": 1267,
+      "sha256": "374670cc0da33925308885930f0e6bcda1f4385550222ef2a21982533a40a3c2"
+    },
+    "docs/qualification-plans/encoder-query78-client-review-20261022/INPUTS01.json": {
+      "bytes": 1385845,
+      "sha256": "c442ab5fec3f6bba1679c20ac7461a3ac8565e1903e3adf7ad60aed020ead6dd"
+    },
+    "docs/qualification-plans/encoder-query78-client-review-20261022/POSTCHECK01.json": {
+      "bytes": 2178,
+      "sha256": "b9efa40d4805173a5a62b054af05d1b363e298d3daaac5c0f3515fc9c5c6a16d"
+    },
+    "docs/qualification-plans/encoder-query78-client-review-20261022/REVIEW.md": {
+      "bytes": 13743,
+      "sha256": "83f1b9ec9b1a125c9485038b0571ec5c7c5c241c0fb2b53bbbffddf5646c0f60"
+    },
+    "docs/qualification-plans/encoder-query78-client-review-20261022/SCOPE.md": {
+      "bytes": 1772,
+      "sha256": "41486882bf7d10870ef1f7434e2c8c2465cdde13ce83f16ac8995a7d65d65bcb"
+    },
+    "docs/qualification-plans/encoder-query78-client-review-20261022/STATIC01.json": {
+      "bytes": 13506,
+      "sha256": "b0c10435c5f3e07d8bec94a38eb67dfd412942e178e2d80f2b4213c30e1b7d89"
+    }
+  },
+  "reviewer_errors_retained": [
+    "one missing guessed plan filename (SCOPE.md)",
+    "one incorrect final ARM attribute assertion (COLLECTION_ERROR01.md)"
+  ],
+  "runtime_tests_or_hardware_operation": false,
+  "scope": "independent focused ordinary SOURCE/API and static recorded compile custody only",
+  "source_or_image_integration_or_Git_adoption": false,
+  "source_tree_sha256": "66f6e86fa51036593eae5d2bc77df299ce513e0549f181fec68562c5a099401e"
+}

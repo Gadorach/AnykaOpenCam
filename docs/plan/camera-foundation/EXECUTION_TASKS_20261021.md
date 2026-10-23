@@ -125,15 +125,32 @@ camera execution. ELF/config facts do not prove native ABI or release exclusion;
 functional checklist A's architecture/packaging item remains open. Old build02 is
 not the later prestarted/provider composition or a deployable camera main.
 User continuation selects the next build-side prerequisite, ENC-02/PLAT-01/02/05/08:
-one author owns fresh encoder-query78-client source/docs and HOST/ARM compile-only
-work. Exact two runtime literal changes from reviewed77: release guard and explicit
-trial argument, no other query/watchdog/UAPI behavior change. No executable run.
+Query78 client delivered:36 HOST/ARM compile/link/ELF commands PASS at actual
+build-hostUTC2026-10-23T01:11:54–01:11:58, neither executable run. Exact two runtime
+literal changes from reviewed77: release guard and explicit trial argument, no
+other query/watchdog/UAPI behavior change. ARM30140B SHA
+`5947009a526bbecacf1d0843f26aabd10fb2b13d6db42203585a52d48d95b4fa`.
+Parent verified4,024 baseline/3,711 input/252 output records (overlap), source/docs/
+handoff pins and exact two-literal reverse byte equality. Independent client review
+now narrowly conditionally SOURCE/API sufficient, no corrective source revision.
+Parent verified4,293 unchanged reader paths/four recorded context updates/seven
+review outputs. Review seal
+`0f875806f421ab20ffcc7dae4e7c4198ca2b103179dade47b93ed0e7ababe7fe`.
+Review excluded one historical public build .config; parent separately matched
+its pin against four manifests, preserving reviewer scope/error history. Object
+attributes v5TE, final ELF v5TEJ, no native compatibility claim. Disposition and
+PARENT_RECHECK01 in client docs; no active client reviewer. Selection paths retain Oct22 identity,
+not a fabricated earlier build timestamp.
 Parent BUILD_CONTRACT.md under encoder-query78-embedded-image docs proposes a fresh
 query77-derived kernel/config with embedded independently reviewed client and only
 the unpaired station record omitted, original PID1/other records preserved. This
 avoids a future UART file-staging interval, not clock/launch/recovery admission.
 Client source/build review and actual fresh recipe inspection precede integration;
 no full kernel build/image invocation selected yet, no originals changed.
+One disjoint author now owns query78-build source/docs for that closed build recipe,
+AST/syntax/source inspection only, no invocation/archiving/kernel compile. Actual
+client review identity and independent recipe review are required before use;
+no guessed review pin, generic admission Boolean or current-state evidence.
 Parent read-only original-newc inspection matched all50 retained records, no
 regular hard-link groups, exact bodies/symlink targets/record padding/trailer and
 whole archive before/after pins. BASE_INPUTS01.json is structure evidence only,

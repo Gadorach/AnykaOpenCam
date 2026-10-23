@@ -1,0 +1,629 @@
+{
+  "UTC": "2026-10-23T01:12:08.327847+00:00",
+  "actual_source_header_dependency_counts": {
+    "arm": 37,
+    "host": 119
+  },
+  "artifacts": {
+    "arm": {
+      "bytes": 30140,
+      "executed": false,
+      "headers": 37,
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/encoder-query78-client/build01/arm/encoder-query78-qualification",
+      "sha256": "5947009a526bbecacf1d0843f26aabd10fb2b13d6db42203585a52d48d95b4fa"
+    },
+    "host": {
+      "bytes": 906640,
+      "executed": false,
+      "headers": 119,
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/encoder-query78-client/build01/host/encoder-query78-qualification",
+      "sha256": "0b220037d53f7209e3ef618da7c51da9ae3bd237b900c1ae8fb18ae89a3760a0"
+    }
+  },
+  "authored_stack_records": {
+    "arm": {
+      "largest_authored_frame": 1496,
+      "not_total_live_stack_or_RSS": true,
+      "records": [
+        {
+          "frame_bytes": 56,
+          "location": "WORKSPACE/apps/qualification/encoder-query78-client/encoder-query78-qualification.c:158:15:number"
+        },
+        {
+          "frame_bytes": 24,
+          "location": "WORKSPACE/apps/qualification/encoder-query78-client/encoder-query78-qualification.c:171:15:numeric_snapshot"
+        },
+        {
+          "frame_bytes": 56,
+          "location": "WORKSPACE/apps/qualification/encoder-query78-client/encoder-query78-qualification.c:45:12:clock_ns"
+        },
+        {
+          "frame_bytes": 24,
+          "location": "WORKSPACE/apps/qualification/encoder-query78-client/encoder-query78-qualification.c:58:13:within_budget"
+        },
+        {
+          "frame_bytes": 176,
+          "location": "WORKSPACE/apps/qualification/encoder-query78-client/encoder-query78-qualification.c:118:13:check_open_node"
+        },
+        {
+          "frame_bytes": 8,
+          "location": "WORKSPACE/apps/qualification/encoder-query78-client/encoder-query78-qualification.c:146:13:query_once"
+        },
+        {
+          "frame_bytes": 24,
+          "location": "WORKSPACE/apps/qualification/encoder-query78-client/encoder-query78-qualification.c:77:12:metadata"
+        },
+        {
+          "frame_bytes": 88,
+          "location": "WORKSPACE/apps/qualification/encoder-query78-client/encoder-query78-qualification.c:90:12:exact_metadata"
+        },
+        {
+          "frame_bytes": 1496,
+          "location": "WORKSPACE/apps/qualification/encoder-query78-client/encoder-query78-qualification.c:186:5:main"
+        }
+      ]
+    },
+    "host": {
+      "largest_authored_frame": 1504,
+      "not_total_live_stack_or_RSS": true,
+      "records": [
+        {
+          "frame_bytes": 64,
+          "location": "WORKSPACE/apps/qualification/encoder-query78-client/encoder-query78-qualification.c:158:15:number"
+        },
+        {
+          "frame_bytes": 32,
+          "location": "WORKSPACE/apps/qualification/encoder-query78-client/encoder-query78-qualification.c:171:15:numeric_snapshot"
+        },
+        {
+          "frame_bytes": 16,
+          "location": "WORKSPACE/apps/qualification/encoder-query78-client/encoder-query78-qualification.c:112:12:node_metadata"
+        },
+        {
+          "frame_bytes": 48,
+          "location": "WORKSPACE/apps/qualification/encoder-query78-client/encoder-query78-qualification.c:45:12:clock_ns"
+        },
+        {
+          "frame_bytes": 48,
+          "location": "WORKSPACE/apps/qualification/encoder-query78-client/encoder-query78-qualification.c:77:12:metadata"
+        },
+        {
+          "frame_bytes": 112,
+          "location": "WORKSPACE/apps/qualification/encoder-query78-client/encoder-query78-qualification.c:90:12:exact_metadata"
+        },
+        {
+          "frame_bytes": 32,
+          "location": "WORKSPACE/apps/qualification/encoder-query78-client/encoder-query78-qualification.c:58:13:within_budget"
+        },
+        {
+          "frame_bytes": 192,
+          "location": "WORKSPACE/apps/qualification/encoder-query78-client/encoder-query78-qualification.c:118:13:check_open_node"
+        },
+        {
+          "frame_bytes": 16,
+          "location": "WORKSPACE/apps/qualification/encoder-query78-client/encoder-query78-qualification.c:146:13:query_once"
+        },
+        {
+          "frame_bytes": 1504,
+          "location": "WORKSPACE/apps/qualification/encoder-query78-client/encoder-query78-qualification.c:186:5:main"
+        }
+      ]
+    }
+  },
+  "build_output_files_verified": 252,
+  "build_output_seal": {
+    "bytes": 43823,
+    "sha256": "953247831f12c70486a8a30cac7297696d6a76b466ddc77f20e45c4f20161c8e"
+  },
+  "build_report": {
+    "bytes": 30584,
+    "sha256": "7dea94cc108263059f42014d7ae3754a6128a552ed19c0f88511a0c359411990"
+  },
+  "captured_input_paths_unchanged": 3711,
+  "compiler_tool_commands_exit0": 36,
+  "embedding_image_ABI_or_memory_fit_claim": false,
+  "immutable_baseline_paths_unchanged": 4024,
+  "link_trace_map_inputs": {
+    "arm": {
+      "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/arm-buildroot-linux-musleabi/sysroot/lib/crt1.o": {
+        "bytes": 1404,
+        "sha256": "9323eb9ef126bf4061de5b41eb8ea4b6664208b6b074aef2e24766cf9627bd06"
+      },
+      "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/arm-buildroot-linux-musleabi/sysroot/lib/crti.o": {
+        "bytes": 824,
+        "sha256": "4779b3448a5956bfded817eaaf5c17778495ef9de7fd5bb70a5664a7786e5126"
+      },
+      "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/arm-buildroot-linux-musleabi/sysroot/lib/crtn.o": {
+        "bytes": 788,
+        "sha256": "532c231ab0265c6ab01e488602ed1aeb7096f2e3abd5709e49b769859dd29fc3"
+      },
+      "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/arm-buildroot-linux-musleabi/sysroot/lib/libc.a": {
+        "bytes": 2498798,
+        "sha256": "0982970abc52a36d247326a8e0b5dd487410222ff9728528cc99a4e8bd62e7b5"
+      },
+      "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/../lib/gcc/arm-buildroot-linux-musleabi/14.3.0/crtbeginT.o": {
+        "bytes": 2556,
+        "sha256": "81450cf5d1a358e87d1a3a110f104d128477a37f8821b34b0a10c5c35ccebe5a"
+      },
+      "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/../lib/gcc/arm-buildroot-linux-musleabi/14.3.0/crtend.o": {
+        "bytes": 1252,
+        "sha256": "4a8627f14752ae6f6a86131fdcf21281b6dc3d34a2e6cc508c4325c848aeebb7"
+      },
+      "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/../lib/gcc/arm-buildroot-linux-musleabi/14.3.0/libgcc.a": {
+        "bytes": 10055414,
+        "sha256": "f707f3a5a94033cbbde76f76640d56dbc5dc615ab421be4efc2641c14344f19a"
+      },
+      "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/../lib/gcc/arm-buildroot-linux-musleabi/14.3.0/libgcc_eh.a": {
+        "bytes": 89504,
+        "sha256": "a2519067fce6f037f7ee23e28cb0ed00266cb63131b870309e5b687fe56f95c1"
+      }
+    },
+    "host": {
+      "/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crt1.o": {
+        "bytes": 2416,
+        "sha256": "0a60929d1ff5dc7b0a7fa56b1351870472e62733b2efa70c34dc32cf0a1d19af"
+      },
+      "/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o": {
+        "bytes": 1240,
+        "sha256": "caf7f0c99019735e97e9bfabf52c376e86e1ef92d1b53a63c36a5bc2688e8fcc"
+      },
+      "/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o": {
+        "bytes": 808,
+        "sha256": "71236f0a232a3686adf2319f3ae172831e8fd8166b9f0764ed184bc4df11be3c"
+      },
+      "/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libc.a": {
+        "bytes": 7256966,
+        "sha256": "98424f4064b590cb2987c3cf9f4d0221e4f5d441193f1043c7f42e4f2e484486"
+      },
+      "/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginT.o": {
+        "bytes": 2992,
+        "sha256": "d9e0937208f169dde4fea579f1c974b5e3b1fd44017362367c7ce1f6a7ed7a33"
+      },
+      "/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtend.o": {
+        "bytes": 1168,
+        "sha256": "bcbcd1dcbc7b235c96ab3ff1f06e5b7f44677fed502fa22c2a0b2f8360db71fd"
+      },
+      "/usr/lib/gcc/x86_64-pc-linux-gnu/16/libatomic_asneeded.a": {
+        "bytes": 155832,
+        "resolved": "/usr/lib/gcc/x86_64-pc-linux-gnu/16/libatomic.a",
+        "sha256": "bbff6021bd5295ee034beb9365e931501500c76ac8b6dd016da81bd8f5ffc543",
+        "symlink": "libatomic.a"
+      },
+      "/usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a": {
+        "bytes": 3297684,
+        "sha256": "9aa4a00e137eea9ed62e0e4fd656a956a398ebded9f6b2949375779612c02212"
+      },
+      "/usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_eh.a": {
+        "bytes": 100358,
+        "sha256": "ce9071c5ca0e2f57a987bd5b96be24f3c274f9e6c72c1bfd45c11ca4861b89cb"
+      }
+    }
+  },
+  "loaded_tool_elf_final_pins": {
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/../lib/gcc/arm-buildroot-linux-musleabi/14.3.0/../../../../arm-buildroot-linux-musleabi/bin/as": {
+      "bytes": 2220088,
+      "sha256": "9444b8d3ffa1e1d2d51be31ff2998eab4ecb3eb53b470947a0d0e297180debe1"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/../lib/gcc/arm-buildroot-linux-musleabi/14.3.0/../../../../arm-buildroot-linux-musleabi/bin/ld": {
+      "bytes": 2346120,
+      "sha256": "28a979288cd5056057d7b78efd6b441979237c4ff0abcb685e184341ca4d5352"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/../libexec/gcc/arm-buildroot-linux-musleabi/14.3.0/cc1": {
+      "bytes": 34599040,
+      "sha256": "caf028c324e59458a82d94018812e9d2c6ef49d369be94b474fc8b0525317028"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/../libexec/gcc/arm-buildroot-linux-musleabi/14.3.0/collect2": {
+      "bytes": 1308832,
+      "sha256": "f7aecfa88e9a6462cf5e7c4c9e1b9b6b8da47d64c87f2c7024dc47eb9e4d809a"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/../libexec/gcc/arm-buildroot-linux-musleabi/14.3.0/liblto_plugin.so": {
+      "bytes": 105664,
+      "sha256": "4947f7eb41648354faea18568b34e641777908582d30082175fbfdfecb8397c5"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc": {
+      "bytes": 14704,
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/toolchain-wrapper",
+      "sha256": "f4db963a226e01244ce6f7b5d1ec6d57474dd811119ff8834429f022835ce9c1",
+      "symlink": "toolchain-wrapper"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc.br_real": {
+      "bytes": 2246200,
+      "sha256": "e24ea223e7b521cce1f5889d63c25417e930cdbb35653b072f7b48d9a4b41729"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-readelf": {
+      "bytes": 1108696,
+      "sha256": "9175d2e15462a4b75c3545bd30407c807d2e82ae3f90468e564c26ecd6554246"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/libexec/gcc/arm-buildroot-linux-musleabi/14.3.0/../../../../lib/libgmp.so.10": {
+      "bytes": 541904,
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/lib/libgmp.so.10.5.0",
+      "sha256": "e7ff19673c444adbdc4378a33539a1cee27fb6494cf966a171faea2dd43c14b8",
+      "symlink": "libgmp.so.10.5.0"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/libexec/gcc/arm-buildroot-linux-musleabi/14.3.0/../../../../lib/libmpc.so.3": {
+      "bytes": 151752,
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/lib/libmpc.so.3.3.1",
+      "sha256": "de5890f1140f4f0f7e5f558065c1ad2e23d9996d0ee2933a84888b08578b4312",
+      "symlink": "libmpc.so.3.3.1"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/libexec/gcc/arm-buildroot-linux-musleabi/14.3.0/../../../../lib/libmpfr.so.6": {
+      "bytes": 750968,
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/lib/libmpfr.so.6.1.1",
+      "sha256": "455074ce3e15dc147ea0fe20c0c1385d2bde8dde11582c19678973d165533881",
+      "symlink": "libmpfr.so.6.1.1"
+    },
+    "/lib64/ld-linux-x86-64.so.2": {
+      "bytes": 283632,
+      "sha256": "2a950d46575efa0210d22440988f5a6b4507ebddc6c86d9a42e6e7ef6f01463e"
+    },
+    "/usr/bin/as": {
+      "bytes": 953448,
+      "sha256": "50bb68c7b159346fedf7c7739e1f997068e7749792a8359fe850c86814bbb18d"
+    },
+    "/usr/bin/cc": {
+      "bytes": 2451072,
+      "resolved": "/usr/bin/gcc",
+      "sha256": "a5f680ca8b01b1e7a98d531cac90f258875a301d841fab28a8b56d513470f988",
+      "symlink": "gcc"
+    },
+    "/usr/bin/ld": {
+      "bytes": 1644584,
+      "sha256": "7bd5014a8b3184c41943da0529ab0451592a5581750a73a9f4a77e4f4e26aa0a"
+    },
+    "/usr/bin/readelf": {
+      "bytes": 867440,
+      "sha256": "b561a09504aff0f2c864da60a268cafee9171fdd1574a23fde6158f95ad55294"
+    },
+    "/usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1": {
+      "bytes": 48442880,
+      "sha256": "373c6240b2adcbc5defb1e950890e534eec72e9e7a5fa12c3ccfda58abe12799"
+    },
+    "/usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2": {
+      "bytes": 1477704,
+      "sha256": "be5fba786c8a65c5241800e14c70255f5e81026a60b120f5b37189317729a26f"
+    },
+    "/usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so": {
+      "bytes": 75720,
+      "sha256": "7db75ec3f677119b969fbd17c425e9b3af7b072fd32e8ad2f672431307cbf614"
+    },
+    "/usr/lib/libbfd-2.47.so": {
+      "bytes": 1475176,
+      "sha256": "beb3986fdc1b4eb2ba987f7e2a03de2223598a0b3bfb8c9d8589a235443b0c1e"
+    },
+    "/usr/lib/libbrotlicommon.so.1": {
+      "bytes": 141264,
+      "resolved": "/usr/lib/libbrotlicommon.so.1.2.0",
+      "sha256": "0a5a0d15264043c6cb99d3076501d4503bafde11eaea28f353e399b4ce6b2981",
+      "symlink": "libbrotlicommon.so.1.2.0"
+    },
+    "/usr/lib/libbrotlidec.so.1": {
+      "bytes": 59264,
+      "resolved": "/usr/lib/libbrotlidec.so.1.2.0",
+      "sha256": "f747ed8ca1a29c53744f6e2b12dbd70d78838682a5914505b173c1ad50db4ca9",
+      "symlink": "libbrotlidec.so.1.2.0"
+    },
+    "/usr/lib/libbrotlienc.so.1": {
+      "bytes": 960992,
+      "resolved": "/usr/lib/libbrotlienc.so.1.2.0",
+      "sha256": "dd19bedf12100d84f6a490af2017a49c8a5dff098dd4f2d03dea501ffaf47d56",
+      "symlink": "libbrotlienc.so.1.2.0"
+    },
+    "/usr/lib/libc.so.6": {
+      "bytes": 2440544,
+      "sha256": "071e34179e645b25f8a8c2e7108894dc665caa9f5f8c939cd579a75b6638bc3f"
+    },
+    "/usr/lib/libcom_err.so.2": {
+      "bytes": 18376,
+      "resolved": "/usr/lib/libcom_err.so.2.1",
+      "sha256": "d08452c4fc1ff493f1ff2a5a37203672e60c040bae88c7f4081c9e87e987e5bc",
+      "symlink": "libcom_err.so.2.1"
+    },
+    "/usr/lib/libcrypto.so.3": {
+      "bytes": 6872600,
+      "sha256": "ecbe60559ed67946cf526aeba3fad8103f3a1de31ad389ca6684d201e10c63b3"
+    },
+    "/usr/lib/libctf-nobfd.so.0": {
+      "bytes": 292896,
+      "resolved": "/usr/lib/libctf-nobfd.so.0.0.0",
+      "sha256": "e6bf890ff4570c69e315594fbc502db6b41681db23df9a4e59b5c28f46027bab",
+      "symlink": "libctf-nobfd.so.0.0.0"
+    },
+    "/usr/lib/libctf.so.0": {
+      "bytes": 305176,
+      "resolved": "/usr/lib/libctf.so.0.0.0",
+      "sha256": "2e973ec539672f4e1f189e8bf3c40f4f3c0b0e55fc17123df21f4c9d325a68aa",
+      "symlink": "libctf.so.0.0.0"
+    },
+    "/usr/lib/libcurl.so.4": {
+      "bytes": 1091176,
+      "resolved": "/usr/lib/libcurl.so.4.8.0",
+      "sha256": "d53ce30e973b9120643dfb53b9c99986330f28d2db245189e6bda6bc1aa55bdd",
+      "symlink": "libcurl.so.4.8.0"
+    },
+    "/usr/lib/libdebuginfod.so.1": {
+      "bytes": 47056,
+      "resolved": "/usr/lib/libdebuginfod-0.197.so",
+      "sha256": "9f624105ce5f57f5a6ac3239969028f66d27bbd0de4cc12f5c771e245d355d9f",
+      "symlink": "libdebuginfod-0.197.so"
+    },
+    "/usr/lib/libdl.so.2": {
+      "bytes": 14352,
+      "sha256": "336a6874f359104ec9bef6d2f2948f11e0f079d347e986880a240f1156a42d4d"
+    },
+    "/usr/lib/libelf.so.1": {
+      "bytes": 120920,
+      "resolved": "/usr/lib/libelf-0.197.so",
+      "sha256": "1cff588f1129943c7391fab3e16d95eaa6586cf3c0483e7f95e50784f1389d94",
+      "symlink": "libelf-0.197.so"
+    },
+    "/usr/lib/libgmp.so.10": {
+      "bytes": 813696,
+      "resolved": "/usr/lib/libgmp.so.10.5.0",
+      "sha256": "638e7ca56edc6dfbdc19d2f21976c82060eb88d533ccedc1660a806c44602b5c",
+      "symlink": "libgmp.so.10.5.0"
+    },
+    "/usr/lib/libgssapi_krb5.so.2": {
+      "bytes": 422176,
+      "resolved": "/usr/lib/libgssapi_krb5.so.2.2",
+      "sha256": "d34e47082433f2c2d76739a5dc4be34abafdee619e16cdcd9453cd6bf92466e4",
+      "symlink": "libgssapi_krb5.so.2.2"
+    },
+    "/usr/lib/libidn2.so.0": {
+      "bytes": 137160,
+      "resolved": "/usr/lib/libidn2.so.0.4.0",
+      "sha256": "d5ed33d85ffb9a8a8d592bb6418963c7752636725e19890e68aac517f93593d8",
+      "symlink": "libidn2.so.0.4.0"
+    },
+    "/usr/lib/libisl.so.23": {
+      "bytes": 2386768,
+      "resolved": "/usr/lib/libisl.so.23.5.0",
+      "sha256": "6d44ded27ee6e9a65cb248037da959f0385c1a101036a9a73dac375640d9b364",
+      "symlink": "libisl.so.23.5.0"
+    },
+    "/usr/lib/libjansson.so.4": {
+      "bytes": 108656,
+      "resolved": "/usr/lib/libjansson.so.4.15.1",
+      "sha256": "2b7062c2f3286a4f1499027d0caddeff91be89f25c1c63517dbd59dca81881b8",
+      "symlink": "libjansson.so.4.15.1"
+    },
+    "/usr/lib/libjson-c.so.5": {
+      "bytes": 88344,
+      "resolved": "/usr/lib/libjson-c.so.5.5.0",
+      "sha256": "5519671516f5f73cdfd9988b47f40c08a0d8d5a9fa44bcfb5a8fdf12c9429d46",
+      "symlink": "libjson-c.so.5.5.0"
+    },
+    "/usr/lib/libk5crypto.so.3": {
+      "bytes": 211008,
+      "resolved": "/usr/lib/libk5crypto.so.3.1",
+      "sha256": "6285765ef3634be251b55a35d0bb0f32984f8dd8414be99d247d1b36dbe4fcda",
+      "symlink": "libk5crypto.so.3.1"
+    },
+    "/usr/lib/libkeyutils.so.1": {
+      "bytes": 22480,
+      "resolved": "/usr/lib/libkeyutils.so.1.10",
+      "sha256": "728c0221c28e6f463774c0e88f1b5c07d90678b81af5c3f7892683dc56dd9340",
+      "symlink": "libkeyutils.so.1.10"
+    },
+    "/usr/lib/libkrb5.so.3": {
+      "bytes": 1054840,
+      "resolved": "/usr/lib/libkrb5.so.3.3",
+      "sha256": "8476242d0d92bce62dbe5421a4ce3efb5a87029a06ceec0373f263da3c523ea0",
+      "symlink": "libkrb5.so.3.3"
+    },
+    "/usr/lib/libkrb5support.so.0": {
+      "bytes": 59640,
+      "resolved": "/usr/lib/libkrb5support.so.0.1",
+      "sha256": "acad85ce0348ebad410afcf104ce69521c0b8a6315a19f3aac4cc11d657173af",
+      "symlink": "libkrb5support.so.0.1"
+    },
+    "/usr/lib/libm.so.6": {
+      "bytes": 1075616,
+      "sha256": "58b6b82e39d59d7810d402ba4ec34359fde058204fdb7cd5a269fda256a35421"
+    },
+    "/usr/lib/libmpc.so.3": {
+      "bytes": 145272,
+      "resolved": "/usr/lib/libmpc.so.3.4.1",
+      "sha256": "578d7155537fe907e033ab5d8aadb6d76d91c9403f4ce7bd03a43015d167e266",
+      "symlink": "libmpc.so.3.4.1"
+    },
+    "/usr/lib/libmpfr.so.6": {
+      "bytes": 796224,
+      "resolved": "/usr/lib/libmpfr.so.6.2.2",
+      "sha256": "331b54aa7a4cdec9f025261dd4c91c8af00a62c809fc7473645f1aa23b79bf51",
+      "symlink": "libmpfr.so.6.2.2"
+    },
+    "/usr/lib/libnghttp2.so.14": {
+      "bytes": 186408,
+      "resolved": "/usr/lib/libnghttp2.so.14.29.5",
+      "sha256": "91c61845d03c19a251802a8292272301d8338538671ee117abcd6a4d37f13c5a",
+      "symlink": "libnghttp2.so.14.29.5"
+    },
+    "/usr/lib/libnghttp3.so.9": {
+      "bytes": 181248,
+      "resolved": "/usr/lib/libnghttp3.so.9.9.0",
+      "sha256": "d90c3ca6a102231f1cb28e85392cc67834afcac711ec0f8fc4aa3dd75c8813bf",
+      "symlink": "libnghttp3.so.9.9.0"
+    },
+    "/usr/lib/libngtcp2.so.16": {
+      "bytes": 456688,
+      "resolved": "/usr/lib/libngtcp2.so.16.11.0",
+      "sha256": "799ff588c662ba4d7b571079671fd1501c90dc83d6b7ba371393c6ed63e164df",
+      "symlink": "libngtcp2.so.16.11.0"
+    },
+    "/usr/lib/libngtcp2_crypto_ossl.so.0": {
+      "bytes": 51160,
+      "resolved": "/usr/lib/libngtcp2_crypto_ossl.so.0.3.1",
+      "sha256": "157e5be3af0e36e9bb178b417068eca837942fe192a88cd96f897fb826b95c08",
+      "symlink": "libngtcp2_crypto_ossl.so.0.3.1"
+    },
+    "/usr/lib/libpsl.so.5": {
+      "bytes": 75640,
+      "resolved": "/usr/lib/libpsl.so.5.3.5",
+      "sha256": "5c77653099a359403697bb3ce2d3d455c8ea44b5e5ea904f1e9d96ec9cc96081",
+      "symlink": "libpsl.so.5.3.5"
+    },
+    "/usr/lib/libpthread.so.0": {
+      "bytes": 14360,
+      "sha256": "bcdf5c8472353bd04780314cee7d27e07594153332ac526a390d6e5b38792ee4"
+    },
+    "/usr/lib/libresolv.so.2": {
+      "bytes": 72000,
+      "sha256": "2d7d7eeb48ccdaacc79f0d74ea3d8633b08d27548b0df8b9cef3c78aff21bc9e"
+    },
+    "/usr/lib/libsframe.so.3": {
+      "bytes": 47128,
+      "resolved": "/usr/lib/libsframe.so.3.0.0",
+      "sha256": "fae4de2be94c1ed55d98417888b9028e0d0923098e244774f26a69e5b3d4752f",
+      "symlink": "libsframe.so.3.0.0"
+    },
+    "/usr/lib/libssh2.so.1": {
+      "bytes": 371232,
+      "resolved": "/usr/lib/libssh2.so.1.0.1",
+      "sha256": "542afac11b8e892122fbbe0f46ed182381d165b3876b2d5fc04f26c43ba531cb",
+      "symlink": "libssh2.so.1.0.1"
+    },
+    "/usr/lib/libssl.so.3": {
+      "bytes": 1146840,
+      "sha256": "0dbcac8fcce57c08d2a1999a5a5cc0667e9685972c871a86a7d08bc4175fa2f9"
+    },
+    "/usr/lib/libunistring.so.5": {
+      "bytes": 2062384,
+      "resolved": "/usr/lib/libunistring.so.5.2.1",
+      "sha256": "9c87875051cffdbc4376ba6f81e8d697ec93125c9606c1d026d50817c1cfc939",
+      "symlink": "libunistring.so.5.2.1"
+    },
+    "/usr/lib/libz.so.1": {
+      "bytes": 223392,
+      "resolved": "/usr/lib/libz.so.1.3.1.zlib-ng",
+      "sha256": "63e814634983bfa53890b48cb56760ca38840fbcf91f66a51222eef85eaa08b7",
+      "symlink": "libz.so.1.3.1.zlib-ng"
+    },
+    "/usr/lib/libzstd.so.1": {
+      "bytes": 1451976,
+      "resolved": "/usr/lib/libzstd.so.1.5.7",
+      "sha256": "28305b9e5e67265edb2b72a6fbd1dcc501dab41816e650dec021a6644af59bbb",
+      "symlink": "libzstd.so.1.5.7"
+    }
+  },
+  "loader_pins_final_observed_not_all_preuse": true,
+  "observed_transfer_names": [
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/../lib/gcc/arm-buildroot-linux-musleabi/14.3.0/../../../../arm-buildroot-linux-musleabi/bin/as",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/../lib/gcc/arm-buildroot-linux-musleabi/14.3.0/../../../../arm-buildroot-linux-musleabi/bin/ld",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/../libexec/gcc/arm-buildroot-linux-musleabi/14.3.0/cc1",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/../libexec/gcc/arm-buildroot-linux-musleabi/14.3.0/collect2",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc.br_real",
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-readelf",
+    "/usr/bin/cc",
+    "/usr/bin/ld",
+    "/usr/bin/readelf",
+    "/usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1",
+    "/usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2",
+    "as"
+  ],
+  "pre_input_paths": 3573,
+  "programs_tests_native_executed": false,
+  "scope": "UNREVIEWED SOURCE/HOST+ARM compile/static ELF custody only",
+  "source_files": {
+    "apps/qualification/encoder-query78-client/.gitignore": {
+      "bytes": 9,
+      "sha256": "21a5fcfef76f67d88bb9ad647f52e2d4fd901709078d884f3063270c790756a4"
+    },
+    "apps/qualification/encoder-query78-client/README.md": {
+      "bytes": 2704,
+      "sha256": "02a33b0ab32d04cb05c07401d073b6e605f4e2aa48d9f4f2c34cd2de85cd969d"
+    },
+    "apps/qualification/encoder-query78-client/compile_only.py": {
+      "bytes": 14102,
+      "sha256": "03f69988223724f521e17ff5f763bd13af9207fc76e1c88a6103bb5cf189be30"
+    },
+    "apps/qualification/encoder-query78-client/encoder-open-query.h": {
+      "bytes": 2455,
+      "sha256": "6052069fa5428185eb8c61871404256c53c30c12515eaa5c9ab80c424facde37"
+    },
+    "apps/qualification/encoder-query78-client/encoder-query78-qualification.c": {
+      "bytes": 10258,
+      "sha256": "d3f85cd01f722ce0148531b0f6430c18795733e9dbf4336bff8df426a1946985"
+    }
+  },
+  "source_tree_hash_method": "sorted workspace-relative UTF-8 path + NUL + raw SHA256 bytes",
+  "source_tree_sha256": "66f6e86fa51036593eae5d2bc77df299ce513e0549f181fec68562c5a099401e",
+  "static_ELF": {
+    "arm": {
+      "GNU_stack": {
+        "flags": 6,
+        "nonexecuting": true
+      },
+      "class": 32,
+      "entry": 67224,
+      "entry_flags": 83886592,
+      "load_memory_bytes_sum": 14468,
+      "machine": 40,
+      "main": {
+        "bytes": 1436,
+        "value": 65788
+      },
+      "runtime_or_memory_fit_proof": false,
+      "segments": [
+        {
+          "file_bytes": 14028,
+          "flags": 5,
+          "memory_bytes": 14028,
+          "virtual_start": 65536
+        },
+        {
+          "file_bytes": 96,
+          "flags": 6,
+          "memory_bytes": 440,
+          "virtual_start": 85948
+        }
+      ],
+      "strong_undefined_symbols": 0,
+      "type": "EXEC"
+    },
+    "host": {
+      "GNU_stack": {
+        "flags": 6,
+        "nonexecuting": true
+      },
+      "class": 64,
+      "entry": 4209568,
+      "entry_flags": 0,
+      "load_memory_bytes_sum": 833165,
+      "machine": 62,
+      "main": {
+        "bytes": 1353,
+        "value": 4208128
+      },
+      "runtime_or_memory_fit_proof": false,
+      "segments": [
+        {
+          "file_bytes": 1280,
+          "flags": 4,
+          "memory_bytes": 1280,
+          "virtual_start": 4194304
+        },
+        {
+          "file_bytes": 567845,
+          "flags": 5,
+          "memory_bytes": 567845,
+          "virtual_start": 4198400
+        },
+        {
+          "file_bytes": 218536,
+          "flags": 4,
+          "memory_bytes": 218536,
+          "virtual_start": 4767744
+        },
+        {
+          "file_bytes": 22712,
+          "flags": 6,
+          "memory_bytes": 45504,
+          "virtual_start": 4989288
+        }
+      ],
+      "strong_undefined_symbols": 0,
+      "type": "EXEC"
+    }
+  }
+}

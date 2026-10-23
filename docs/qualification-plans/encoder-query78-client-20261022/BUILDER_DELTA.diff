@@ -1,0 +1,35 @@
+--- immutable-query77-source
++++ new-query78-source
+@@ -13,7 +13,7 @@
+ 
+ ROOT = Path(__file__).resolve().parents[3]
+ APP = Path(__file__).resolve().parent
+-DOC = ROOT / 'docs/qualification-plans/encoder-query77-client-20261022'
++DOC = ROOT / 'docs/qualification-plans/encoder-query78-client-20261022'
+ F = ROOT / 'work/lightbulb-camera/foundation-20261011T041148Z'
+ K = F / 'artifacts/encoder-query77-source02/linux'
+ PLATFORM = K / 'arch/arm/mach-ak3918ev200'
+@@ -176,7 +176,7 @@
+                   '-fdata-sections', '-fstack-protector-strong', '-fstack-usage',
+                   '-Wframe-larger-than=8192', '-Wstack-usage=8192',
+                   '-I' + str(APP), '-ffile-prefix-map=' + str(ROOT) + '=WORKSPACE']
+-        source = APP / 'encoder-query77-qualification.c'
++        source = APP / 'encoder-query78-qualification.c'
+         for name, cc, elf, flags in platforms:
+             directory = out / name
+             command([cc, '--version'], name + '-compiler-version')
+@@ -201,12 +201,12 @@
+                 if not destination.exists():
+                     with destination.open('xb') as stream:
+                         stream.write(path.read_bytes())
+-            obj = directory / 'encoder-query77-qualification.o'
++            obj = directory / 'encoder-query78-qualification.o'
+             command([cc, *common, *flags, '-MD', '-MF', directory / 'actual.d',
+                      '-c', source, '-o', obj], name + '-compile')
+             if set(map(str, dependencies(directory / 'actual.d'))) != set(map(str, consumed)):
+                 raise RuntimeError('pre/actual header closure differs')
+-            executable = directory / 'encoder-query77-qualification'
++            executable = directory / 'encoder-query78-qualification'
+             command([cc, *flags, '-static', '-no-pie', obj, '-Wl,--gc-sections',
+                      '-Wl,-Map=' + str(directory / 'link.map'), '-Wl,-t', '-o', executable],
+                     name + '-static-link')

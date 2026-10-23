@@ -143,12 +143,16 @@ change, installation, original
 helper/source-pin edit, current-state or hardware action. Separate static build02
 role inspection matched seven artifacts/73 object headers/28 archive bodies and
 strict-vs-HOST define separation; not native ABI, release packaging or app adoption.
-User requested continuation: one author now owns fresh encoder-query78-client
-source/docs and HOST/ARM compile-only work. Only release/trial-argument literals
-change from reviewed77; no query/guard behavior change or ELF execution. Intended
-next offline image may embed that client and omit the unpaired station record,
-avoiding post-boot file staging, but recipe/integration review remains required.
-See encoder-query78-embedded-image BUILD_CONTRACT.md; no image/boot selected yet.
+Query78 client has narrow conditional SOURCE/API/compile-custody sufficiency:
+36 HOST/ARM commands PASS (actual build-hostOct23 01:11:54–58UTC), neither ELF run.
+Parent verified4,024 baseline/3,711 input/252 output records and4,293 unchanged
+reader records/four context updates/seven outputs. Review's one public historical
+build-config exclusion separately parent-closed; scope/error records preserved.
+Object v5TE, linked ARM ELF v5TEJ, not native compatibility proof. No client reviewer active.
+One disjoint author owns fresh query78-build source/docs for a closed embedded-
+client/station-omitting recipe, AST/syntax only, never invoked. Client and recipe
+review precede any integration/kernel/image build. See embedded-image contract;
+no image/boot selected. No query/guard/policy change or actual owner facts inherited.
 Parent read-only original-newc inspection matched all50 retained records/no regular
 hard-link groups; no extraction, archive transformation or binary execution.
 Staging guard remains unavailable; future manual-OFF handoff requires separate

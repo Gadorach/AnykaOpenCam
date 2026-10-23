@@ -103,10 +103,13 @@ now conditionally SOURCE/API/selected-privacy sufficient after independent revie
 never imported/called/run, no discovery/fallback or live profile adoption.
 Separate original-build02 artifact-role inspection
 confirms static architecture/define separation, not native ABI or release packaging.
-User continuation selects fresh query78-client source and HOST/ARM compile-only
-identity derivative. A proposed future image embeds that reviewed client and omits
+User continuation selects fresh query78-client, now HOST/ARM compile/link PASS
+and narrowly conditionally SOURCE/API sufficient after independent review, never
+run. Parent separately closed the review's public build-config pin exclusion.
+A proposed future image embeds that reviewed client and omits
 the unpaired station record, preserving original PID1; see embedded-image contract.
-No full image build, native recipe or boot is selected by that source packet.
+One disjoint author prepares the closed recipe source, AST/syntax only; client
+and recipe review precede use. No full image build, native recipe or boot selected.
 Original block/parser/HOLDs
 remain frozen. No
 target interface, executable native recipe, capture, staging, boot or query is

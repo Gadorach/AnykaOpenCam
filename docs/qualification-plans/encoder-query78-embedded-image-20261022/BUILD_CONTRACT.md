@@ -19,6 +19,21 @@ Same query88 UAPI and all watchdog/query/budget/retention/close/output guards re
 HOST/ARM compile/static-link/ELF inspection is selected, neither executable run.
 Independent source/build review precedes integration of this fresh client.
 
+Client handback is now available:36 HOST/ARM tool commands passed at actual build-
+host UTC2026-10-23T01:11:54–01:11:58; neither ELF ran. ARM30140B SHA256
+`5947009a526bbecacf1d0843f26aabd10fb2b13d6db42203585a52d48d95b4fa`.
+Independent client review is active. Parent verified4,024 baseline paths/3,711
+new input records/252 build outputs and exact two-literal reverse byte equality;
+those counts overlap and do not establish native/kernel ABI or adoption.
+
+In a disjoint lane, parent selects fresh `apps/qualification/encoder-query78-build/`
+and matching docs for the **source-only recipe** described below. Only AST/syntax
+and source inspection are selected there, no recipe invocation/archive generation/
+kernel build. The recipe must refuse integration without a later explicit parent-
+selected identity for the real client review, plus the exact closed source/binary
+pins. It must not invent a future review hash or accept a generic ready Boolean.
+Source authoring can proceed while client review runs; integration cannot.
+
 ## Deliberately small proposed image delta
 
 After that review, a separately inspected fresh build recipe may:

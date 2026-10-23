@@ -1,0 +1,80 @@
+{
+  "UTC": "2026-10-23T01:14:10.664766+00:00",
+  "documentation_files": {
+    "docs/qualification-plans/encoder-query78-client-20261022/BUILDER_DELTA.diff": {
+      "bytes": 1978,
+      "sha256": "7f1099da1299fae6d75f405e4786e1b1752b25511adc0a7537bc58bc985f9829"
+    },
+    "docs/qualification-plans/encoder-query78-client-20261022/CANDIDATE_REPORT.md": {
+      "bytes": 11074,
+      "sha256": "644d1e68c2796d41caaeda831fded42e9d38b51a649bd0fee51e437ff573aaef"
+    },
+    "docs/qualification-plans/encoder-query78-client-20261022/CLIENT_DELTA.diff": {
+      "bytes": 745,
+      "sha256": "1c1fd172986640cb4d4c6dae4297b09f1be7722c6139e25a75f1d863bae14330"
+    },
+    "docs/qualification-plans/encoder-query78-client-20261022/CONTRACT.md": {
+      "bytes": 4846,
+      "sha256": "ba040e5f19ad6883b3f544fb37a1e9cbe855ea7234221510439eefcfd6857333"
+    },
+    "docs/qualification-plans/encoder-query78-client-20261022/OFFLINE_CLOSURE01.json": {
+      "bytes": 28903,
+      "sha256": "aaa03ee6a101aced27f323b4eeb2f466a31f7ba937c848c5f846048d6be34bdd"
+    },
+    "docs/qualification-plans/encoder-query78-client-20261022/SOURCE_BEFORE.json": {
+      "bytes": 1351243,
+      "sha256": "c379a1b3c9414fc72b84dafa3cd816ebe86ab9ee03957360754da5f58cb00f55"
+    },
+    "docs/qualification-plans/encoder-query78-client-20261022/SOURCE_CONTRACT.md": {
+      "bytes": 638,
+      "sha256": "33ffb556862b29f4c0ab02e7d08f402e52d5ac012ac2768b2e33ac39971fd5eb"
+    },
+    "docs/qualification-plans/encoder-query78-client-20261022/collect_offline.py": {
+      "bytes": 16023,
+      "sha256": "f4532e91db26b91eeb9d1e5b88aca85065aa7b198339b3cf92dc975f8acde17c"
+    }
+  },
+  "executed_client_or_tests": false,
+  "final_tool_ELF_paths": 58,
+  "local_build_inputs": {
+    "bytes": 1236302,
+    "sha256": "8b0041e994bc7ef26891f9be528a7c468b1ba1f95cdd2434da591bbad3b67dea"
+  },
+  "local_build_output_seal": {
+    "bytes": 43823,
+    "sha256": "953247831f12c70486a8a30cac7297696d6a76b466ddc77f20e45c4f20161c8e"
+  },
+  "local_build_report": {
+    "bytes": 30584,
+    "sha256": "7dea94cc108263059f42014d7ae3754a6128a552ed19c0f88511a0c359411990"
+  },
+  "native_or_image_integration_selected": false,
+  "next": "parent independent ordinary SOURCE/compile-custody review only; no automatic queue",
+  "scope": "UNREVIEWED SOURCE/build candidate, parent independent review required",
+  "source_files": {
+    "apps/qualification/encoder-query78-client/.gitignore": {
+      "bytes": 9,
+      "sha256": "21a5fcfef76f67d88bb9ad647f52e2d4fd901709078d884f3063270c790756a4"
+    },
+    "apps/qualification/encoder-query78-client/README.md": {
+      "bytes": 2704,
+      "sha256": "02a33b0ab32d04cb05c07401d073b6e605f4e2aa48d9f4f2c34cd2de85cd969d"
+    },
+    "apps/qualification/encoder-query78-client/compile_only.py": {
+      "bytes": 14102,
+      "sha256": "03f69988223724f521e17ff5f763bd13af9207fc76e1c88a6103bb5cf189be30"
+    },
+    "apps/qualification/encoder-query78-client/encoder-open-query.h": {
+      "bytes": 2455,
+      "sha256": "6052069fa5428185eb8c61871404256c53c30c12515eaa5c9ab80c424facde37"
+    },
+    "apps/qualification/encoder-query78-client/encoder-query78-qualification.c": {
+      "bytes": 10258,
+      "sha256": "d3f85cd01f722ce0148531b0f6430c18795733e9dbf4336bff8df426a1946985"
+    }
+  },
+  "source_tree_sha256": "66f6e86fa51036593eae5d2bc77df299ce513e0549f181fec68562c5a099401e",
+  "unchanged_baseline_paths": 4024,
+  "unchanged_build_inputs": 3711,
+  "verified_build_outputs": 252
+}

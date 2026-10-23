@@ -1,0 +1,57 @@
+{
+  "changed_parent_context": {
+    "/home/gadorach/Desktop/AnykaOpenCam/AGENTS.md": {
+      "after": {
+        "bytes": 26337,
+        "sha256": "d3dbc6dff8a17043673d99aa4f848528d9c59b664c3259fd5add49738607b37a"
+      },
+      "before": {
+        "bytes": 26240,
+        "sha256": "52f26dadd510a352cac0fef3f28ffd8cb7718236ba69f8c2183abbd5f07df1a0"
+      },
+      "parent_context_only": true
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/00-INDEX.md": {
+      "after": {
+        "bytes": 121992,
+        "sha256": "326a7f080a6f65d0137803cdf39e3644ab2cb34790759aa059340fe72b579471"
+      },
+      "before": {
+        "bytes": 121888,
+        "sha256": "bc1285d3aded617e9ec6566bf7606c78c85b9323ea82e731326fefc0bfbb18e6"
+      },
+      "parent_context_only": true
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/EXECUTION_TASKS_20261021.md": {
+      "after": {
+        "bytes": 71661,
+        "sha256": "b94dfcf7c3b0382a6e0f4b07b63adfe399392d48b6dde82cfe2d0ab57e69a172"
+      },
+      "before": {
+        "bytes": 70928,
+        "sha256": "5df16b36180fcc9c03e5a00b8fd06295126693a43ec4f7a333e729ec5da336ea"
+      },
+      "parent_context_only": true
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/encoder-query78-embedded-image-20261022/BUILD_CONTRACT.md": {
+      "after": {
+        "bytes": 7791,
+        "sha256": "f29ea0e41d947c44bb4ae69a3244bcac3b543a3b2db08474ec4b4e5e9db676a7"
+      },
+      "before": {
+        "bytes": 6761,
+        "sha256": "27664a4d27abf64aa972e92e1e05f175c2360bfa2e778309ef873f5594fc1918"
+      },
+      "parent_context_only": true
+    }
+  },
+  "excluded_unopened_paths": {
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/.config": "explicit no-analysis/private/current-state boundary"
+  },
+  "frozen_candidate_baseline_tool_header_build_mismatches": [],
+  "no_execution_or_current_state_operation": true,
+  "original_reader_manifest_not_rebased": true,
+  "reader_input_records": 4297,
+  "review_host_UTC": "2026-10-23T01:22:26.225727+00:00",
+  "unchanged_reader_input_records": 4293
+}

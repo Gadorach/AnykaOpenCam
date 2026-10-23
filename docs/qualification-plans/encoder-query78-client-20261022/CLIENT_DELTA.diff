@@ -1,0 +1,15 @@
+--- immutable-query77-source
++++ new-query78-source
+@@ -195,10 +195,10 @@
+     size_t bytes;
+ 
+     /* No effects or metadata reads for the default/refused invocation. */
+-    if (argc != 2 || strcmp(argv[1], "--one-parent-admitted-query77-trial") != 0)
++    if (argc != 2 || strcmp(argv[1], "--one-parent-admitted-query78-trial") != 0)
+         return 2;
+     if (getuid() != 0 || geteuid() != 0 || uname(&release) != 0 ||
+-        strcmp(release.release, "6.18.55-qc07f-encoder-query77") != 0)
++        strcmp(release.release, "6.18.55-qc07f-encoder-query78") != 0)
+         return 3;
+     if (!exact_metadata("/sys/class/watchdog/watchdog0/nowayout", "0\n") ||
+         !exact_metadata("/sys/class/watchdog/watchdog0/state", "inactive\n") ||

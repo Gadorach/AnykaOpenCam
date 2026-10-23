@@ -1,0 +1,18 @@
+{
+  "configuration_is_public_build_input_not_private_capture_or_current_state": true,
+  "excluded_configuration": "work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/.config",
+  "native_or_image_integration_admission": false,
+  "parent_configuration_matches_four_original_manifests": true,
+  "parent_configuration_pin": {
+    "bytes": 58859,
+    "sha256": "d7b2ae8f167c8b56f442a201684eb433cc621bce45f52c98c94a87e48879b5bf"
+  },
+  "reader_input_records_checked": 4297,
+  "reader_inputs_unchanged": 4293,
+  "recorded_parent_context_changes": 4,
+  "review_outputs_checked": 7,
+  "review_seal_sha256": "0f875806f421ab20ffcc7dae4e7c4198ca2b103179dade47b93ed0e7ababe7fe",
+  "reviewer_configuration_scope_exclusion_remains_explicit": true,
+  "scope": "PARENT_STATIC_RECHECK_WITH_EXPLICIT_HISTORICAL_BUILD_CONFIG_CLOSURE_NOT_RUNTIME_OR_KERNEL_REPRODUCTION",
+  "source_builder_compiler_client_or_target_execution": false
+}
