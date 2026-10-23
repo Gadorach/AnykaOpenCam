@@ -54,8 +54,11 @@ build recipes. Do not rewrite historical absolute paths merely for the rename.
 
 Park diagnostic-image/build-semantics work. Query78 v3's review is complete at
 narrow SOURCE/method scope; no recipe/archive/kernel/image invocation follows.
-Current selected source work is the actual guarded owned-provider → authenticated
-RTSP/keyframe adapter in qc07f-owned-runtime, HOST/ARM compilation only. No new
+The actual guarded owned-provider → authenticated RTSP/keyframe adapter in
+qc07f-owned-runtime now has narrow conditional parent SOURCE/API integration
+sufficiency and HOST/ARM compile evidence, no execution. See its
+[parent disposition](../../qualification-plans/rtsp-owned-runtime-20261023/PARENT_DISPOSITION.md).
+Actual app startup/provisioning/backing/external-owner integration remains next. No new
 clock/receipt framework or hardware operation is selected. Startup/provisioning/
 main/external media owner/backing/recovery remain explicit gaps, not fabricated
 ready flags. See the current execution ledger; earlier build selections below

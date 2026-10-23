@@ -1,0 +1,24 @@
+{
+  "scope": "Static selected origin binding only, no old helper invocation or runtime acceptance",
+  "provider_20_source_aggregate": "9ac7f363d7395fe944f2d068a4c964a5b20c77e9410e84633c07ce7f8b8a169f",
+  "provider_source_seal": {
+    "bytes": 1341997,
+    "sha256": "635fee287650084402d8d4e0c2743f5a1ead5b6724f0577494ce9161fcb29899"
+  },
+  "provider_build_seal": {
+    "bytes": 128440,
+    "sha256": "ddc6264dbfb9c38d99777dc19bfaef9f36d2be25cabc0ecdf689c340b9d7426f"
+  },
+  "provider_build_report": {
+    "bytes": 1373202,
+    "sha256": "1cdad2e48e99c9a8b7243eb3e6a5959abcef7b439917070ef88ffdc46971a262"
+  },
+  "generated_40_report_pins_matched": 40,
+  "server_14_source_aggregate": "09325264c224a43b5664b48123bce1d05ea1269e6f209dcd2c9967424fdcba33",
+  "server_source_seal": {
+    "bytes": 230516,
+    "sha256": "fa9d056819662781a46307d94a10b4d3ce820f0eb24678fc0e591371b52ba95b"
+  },
+  "selected_originals_unchanged": true,
+  "generated_framework_headers_identical_current": 5
+}

@@ -10,14 +10,21 @@ No recipe/helper/archive/kernel/image invocation follows. No additional build/
 clock/receipt framework lane is selected. Original failures/candidates/reviews stay.
 See encoder-query78-build-v3-20261022/PARENT_DISPOSITION.md under qualification docs.
 
-CORE-03/04, CAP-05/07, STREAM-01/04/07, RP-08/09: one author owns fresh
-apps/rtsp-auth/qc07f-owned-runtime/ and rtsp-owned-runtime-20261023 docs for real
-current guarded owned-provider → authenticated RTSP callback integration, including
-actual keyframe demand, prestarted stable config ordering and preserving uncertain
-native work before RTSP can unwind. Source + HOST/ARM compile only. No old v6
-unguarded capture adoption, synthetic success, fake readiness/provisioning, new
-native main/boot/listener/capture/client/test/hardware execution. Actual external
-media owner/recovery/backing/provisioning/main/native gates remain, not waived.
+CORE-03/04, CAP-05/07, STREAM-01/04/07, RP-08/09: actual guarded owned-provider →
+authenticated RTSP integration delivered at apps/rtsp-auth/qc07f-owned-runtime/.
+Parent focused ordinary review accepts narrow conditional SOURCE/API integration
+sufficiency; source aggregate
+`410d42008de738bd9b67cdf51ca0333ab72d96159f4fd52da20175128dff0cf0`.
+Actual keyframe forwarding, device-free prepare/postfork bind, keyed packet release,
+common END/STOP and nonreturning uncertainty handling reviewed; no correction
+required in this bounded scope.57 source/87 original input pins, exact four-copy
+delta and final build02 inputs/dependencies/artifacts/logs verified. Author46
+HOST/ARM compilations/62 successful commands cited, not rerun; nothing executed.
+See rtsp-owned-runtime-20261023/PARENT_DISPOSITION.md under qualification docs.
+No active author/reviewer. Real app startup/external owner/recovery/backing/private
+provisioning/main remain next concrete feature dependencies; inherited1MiB sites
+are unqualified against128KiB cap. No fake readiness, native adoption, live stream,
+hardware operation or product completion. All functional checks remain NOT RUN.
 
 ## Prior closeout — reviewed source and offline prerequisites
 

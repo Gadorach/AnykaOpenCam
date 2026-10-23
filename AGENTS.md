@@ -149,11 +149,16 @@ Recipe v3 has narrow conditional SOURCE/build-method sufficiency;134 reader inpu
 five review outputs parent-verified, but no recipe/archive/kernel/image invoked.
 V1/v2 negative reviews and all inputs remain frozen. See v3 PARENT_DISPOSITION.md;
 do not open another diagnostic-build/clock/receipt lane or infer boot permission.
-One feature author owns `apps/rtsp-auth/qc07f-owned-runtime/` and matching Oct23
-qualification docs: actual current guarded owned-provider → authenticated RTSP
-wiring/keyframe forwarding, device-free/prestarted setup order and nonreturning
-uncertainty handling. Source + HOST/ARM compile only; no dummy readiness/provisioning,
-new main/native adoption, listener/capture/client execution or hardware action.
+Owned-runtime feature at `apps/rtsp-auth/qc07f-owned-runtime/` now has narrow
+conditional parent SOURCE/API integration sufficiency: guarded owned-provider →
+authenticated RTSP/keyframe wiring, device-free prepare/postfork bind and
+nonreturning uncertainty handling. Parent checked57 source/87 original inputs,
+exact four-copy delta and final build02 pins/logs;46 HOST/ARM compilations/62
+commands cited, not rerun. Source aggregate `410d42008de738bd9b67cdf51ca0333ab72d96159f4fd52da20175128dff0cf0`.
+See rtsp-owned-runtime-20261023/PARENT_DISPOSITION.md. No active author/reviewer,
+main/native adoption, listener/capture/client execution or hardware action.
+Real bootstrap/external owner/recovery/backing/provisioning remain blockers;
+inherited1MiB sites are unqualified against128KiB cap. Finite STOP, no restart GO.
 Staging guard remains unavailable; future manual-OFF handoff requires separate
 review/actual readiness. No physical request or transfer is active. Query77 monitor
 lacks query88 command. Authentication/loopback and media-retention

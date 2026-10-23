@@ -1,0 +1,133 @@
+--- docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/source/native-watchdog.inc
++++ apps/rtsp-auth/qc07f-owned-runtime/native/native-watchdog.inc
+@@ -59,12 +59,12 @@
+   return native_guard_failure();
+  return CAMERA_OK;
+ }
+-int nh_native_next(void *context,struct camera_packet *packet,struct nh_key *key)
++int nh_native_next_keyframe(void *context,uint32_t force,struct camera_packet *packet,struct nh_key *key)
+ {
+  /* Trusted caller-owned, stable, disjoint outputs, never private loan/backing. */
+  if(packet)memset(packet,0,sizeof(*packet));
+  if(key)memset(key,0,sizeof(*key));
+- if(!packet||!key)return CAMERA_INVALID;
++  if(!packet||!key||force>1)return CAMERA_INVALID;
+  /* Sticky uncertainty precedes known BUSY. No clock/FD/control/query/service
+   * on the known-loan path, and no private expected/loan/custody mutation. */
+  if(stop||native.retirement_uncertain||source_clock.failed||native.watchdog.state==QW_HOLD)
+@@ -75,7 +75,7 @@
+  if(!provider_shape(&native)||!sensor_baseline_requested||!storage_selected||!memory_state.ledger.initialized||
+     !memory_state.ledger.paid[0]||!memory_state.ledger.paid[1])return CAMERA_NOT_READY;
+  int result=native_guard_begin(QW_NEXT);if(result)return result;
+- result=native_next_legacy(context,packet,key);
++  result=native_next_legacy(context,force,packet,key);
+  /* The real legacy body includes BOTH lifetime calls, cancellation/receipt and
+   * encoded-begin<2s checks. Its earlier inner guard closes have been removed. */
+  if(result||native.retirement_uncertain||source_clock.failed||
+@@ -83,8 +83,10 @@
+   memset(packet,0,sizeof(*packet));memset(key,0,sizeof(*key));
+   return native_guard_failure(); /* actual unreturned backing/FDs retained */
+  }
+- return CAMERA_OK;
++  return CAMERA_OK;
+ }
++int nh_native_next(void *context,struct camera_packet *packet,struct nh_key *key)
++{return nh_native_next_keyframe(context,0,packet,key);}
+ int nh_native_release(void *context,const struct camera_packet *packet)
+ {
+  if(provider_terminal(&native))return CAMERA_NOT_READY;
+--- docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/source/native_adapter.c
++++ apps/rtsp-auth/qc07f-owned-runtime/native/native_adapter.c
+@@ -1,5 +1,5 @@
+ /* SPDX-License-Identifier: GPL-2.0-only
+- * Controlled rtspd source import is generated and diffed by build.py.
++ * Direct fresh copy of provider-return build01 generated source; see INPUTS.json.
+  * No JPEG, fixture-file, network, parser, SDK or software codec dependency.
+  */
+ #include "native_adapter.h"
+@@ -124,14 +124,14 @@
+  }
+  return 0;
+ }
+-static int native_next_legacy(void *unused,struct camera_packet *p,struct nh_key *key)
++static int native_next_legacy(void *unused,uint32_t force,struct camera_packet *p,struct nh_key *key)
+ {
+  (void)unused;
+  if(stop)return CAMERA_DISCONNECTED;
+  if(!sensor_baseline_requested)return CAMERA_NOT_READY; /* no silent table preparation */
+  if(native.retirement_uncertain)return CAMERA_IO_ERROR;
+  if(lifetime())return CAMERA_IO_ERROR; /* reject receipt-less/legacy codec ABI before capture */
+- int r=produce_h264_frame(&native,0,p);if(r)return r;
++  int r=produce_h264_frame(&native,force,p);if(r)return r;
+  if(lifetime())return CAMERA_IO_ERROR;
+  if(nh_native_cancelled(NULL))return CAMERA_IO_ERROR;
+  if(native.produced_timing.encoded-native.produced_timing.begin>=2000){native.retirement_uncertain=1;return CAMERA_IO_ERROR;}
+@@ -183,7 +183,7 @@
+  return CAMERA_OK;
+ }
+ void nh_native_fence(void *unused){(void)unused;native.retirement_uncertain=1;qw_owner_fail(&native.watchdog);provider_hold(&native);}
+-void nh_native_quarantine(void)
++_Noreturn void nh_native_quarantine(void)
+ {
+  /* No END/reset/ACK/close retry and no free of uncertain CPU backing.
+   * Existing retained watchdog (if any) and parent's fresh bounded recovery
+--- docs/qualification-plans/qc07f-provider-return-20261022/runs/build01/source/native_adapter.h
++++ apps/rtsp-auth/qc07f-owned-runtime/native/native_adapter.h
+@@ -11,6 +11,8 @@
+ void nh_native_memory_report(void);
+ void nh_native_sensor_report(void);
+ int nh_native_next(void *,struct camera_packet *,struct nh_key *);
++/* Same actual owned guard/check/disable path; force must be 0 or 1. */
++int nh_native_next_keyframe(void *,uint32_t,struct camera_packet *,struct nh_key *);
+ int nh_native_release(void *,const struct camera_packet *);
+ int nh_native_retire(void *);
+ int nh_native_retire_held(void *,const struct camera_packet *);
+@@ -19,5 +21,5 @@
+ int nh_native_config(struct camera_fmp4_config *);
+ void nh_native_cancel(int);
+ void nh_native_fence(void *); /* logical sticky quarantine, no hardware operation */
+-void nh_native_quarantine(void); /* holds FDs/CPU backing, awaits parent recovery */
++_Noreturn void nh_native_quarantine(void); /* process survival only; NOT DMA stop */
+ #endif
+--- apps/rtsp-auth/prestarted-owned-listener/rtsp_server_candidate.c
++++ apps/rtsp-auth/qc07f-owned-runtime/server/rtsp_server_candidate.c
+@@ -11,6 +11,7 @@
+ #include "candidate_auth.h"
+ #include "adapter_state.h"
+ #include "listener_custody.h"
++#include "owned_runtime_v1.h"
+ #include <arpa/inet.h>
+ #include <errno.h>
+ #include <fcntl.h>
+@@ -139,7 +140,10 @@
+ }
+ static void close_client(struct rtsp_client *c,struct camera_packet_hub *hub,unsigned index)
+ {
+- if(c->fd<0)return;
++  /* Native clock/ownership uncertainty cannot unwind live source/server state.
++   * Ordinary auth/socket errors still follow the original cleanup policy. */
++  if(c->backend)qc07f_owned_runtime_cleanup_v1(c->backend->config->context,server_clock.failed,0);
++  if(c->fd<0)return;
+   if(c->lease_uncertain){
+    c->backend->config->retain_uncertain(c->backend->config->context,hub,&c->demand,index);
+    c->lifecycle_error=CAMERA_STALE_LEASE; /* retain source demand; no detach/STOP retry */
+@@ -608,7 +612,8 @@
+    uint64_t scheduled=milliseconds();if(scheduled==UINT64_MAX){result=CAMERA_IO_ERROR;goto clients_done;}next=scheduled+o->interval_ms;
+   }
+   result=*o->stop?CAMERA_OK:CAMERA_IO_ERROR;
+-  clients_done:
++   clients_done:
++    qc07f_owned_runtime_cleanup_v1(config->context,server_clock.failed,0);
+    if(retirement_failed&&!server_clock.failed)for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)if(clients[i].fd>=0&&clients[i].demand_attached){
+     /*A global failed retire is NOT permission to detach/idle/recycle backing.
+      *Keep exact hub/demand through mandatory sink; no cleanup STOP retry.*/
+@@ -627,7 +632,8 @@
+   }else if(!retirement_failed){int retired=idle_checked(p);if(retired!=CAMERA_OK)result=retired;}
+    /* Preserve source/client/hub cleanup order; unbind while the gate is live,
+     * then clear private listener ownership before the one close attempt. */
+-   config->source_guard_bind(config->context,NULL,NULL);
++    qc07f_owned_runtime_cleanup_v1(config->context,server_clock.failed,1);
++    config->source_guard_bind(config->context,NULL,NULL);
+    int listener_close_result=owned_listener_close_once(&listener,outcome);
+    fprintf(stderr,"HOST_ONLY SUMMARY opened=%llu closed=%llu auth_denied=%llu verified=%llu sdp=%llu setup=%llu play=%llu rtp_calls=%llu rtp_bytes=%llu lease_releases=%llu partial_discard=%llu begin_calls=%llu next_calls=%llu frame_ends=%llu hub_publish_calls=%llu boundary_denied=%llu\n",
+     (unsigned long long)backend->stats.opened,(unsigned long long)backend->stats.closed,(unsigned long long)backend->stats.auth_denied,
