@@ -50,6 +50,17 @@ build recipes. Do not rewrite historical absolute paths merely for the rename.
 
 ## Next task
 
+### Oct23 user steering — return to feature integration
+
+Park diagnostic-image/build-semantics work. Query78 v3's review is complete at
+narrow SOURCE/method scope; no recipe/archive/kernel/image invocation follows.
+Current selected source work is the actual guarded owned-provider → authenticated
+RTSP/keyframe adapter in qc07f-owned-runtime, HOST/ARM compilation only. No new
+clock/receipt framework or hardware operation is selected. Startup/provisioning/
+main/external media owner/backing/recovery remain explicit gaps, not fabricated
+ready flags. See the current execution ledger; earlier build selections below
+are retained history and do not override this steering.
+
 ### October22 unattended execution / actual cold handoff
 
 Follow [RESUME_20261022.md](RESUME_20261022.md) and the execution ledger. User
@@ -112,9 +123,9 @@ Closed recipe v1 passed syntax only; independent review requires R1 final-pin/
 terminal ordering and R2 primary-failure preservation. V1 stays frozen/unaccepted;
 v2 correction passed syntax but re-review requires R1-A dependency inventory
 coordinates; R2 changed error paths narrowly sufficient, not composite GO. Fresh
-v3 R1-A source-only work preserves lexical custody; old packets frozen/unaccepted.
-Re-review and separate
-parent selection precede any archive/kernel/image build; no native recipe or boot.
+v3 R1-A source has narrow conditional review sufficiency, but later user steering
+parks this diagnostic lane. Old failures remain frozen; no recipe/archive/kernel/
+image invocation or native recipe/boot is selected.
 Original block/parser/HOLDs
 remain frozen. No
 target interface, executable native recipe, capture, staging, boot or query is

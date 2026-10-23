@@ -1,6 +1,25 @@
 # Active execution ledger — remaining foundation work
 
-## Current closeout — reviewed source and offline prerequisites
+## Current focus — Oct23 feature integration; diagnostic build lane parked
+
+User noted excessive build-semantics work instead of feature development. Parent
+parks query78 diagnostic-image work after completed v3 review: narrow conditional
+SOURCE/build-method sufficiency,134 reader inputs/five outputs verified, review
+seal `2b16ccb47fc99a37d15575dd51330c19f13687dd96267b4cbde4162609da3db1`.
+No recipe/helper/archive/kernel/image invocation follows. No additional build/
+clock/receipt framework lane is selected. Original failures/candidates/reviews stay.
+See encoder-query78-build-v3-20261022/PARENT_DISPOSITION.md under qualification docs.
+
+CORE-03/04, CAP-05/07, STREAM-01/04/07, RP-08/09: one author owns fresh
+apps/rtsp-auth/qc07f-owned-runtime/ and rtsp-owned-runtime-20261023 docs for real
+current guarded owned-provider → authenticated RTSP callback integration, including
+actual keyframe demand, prestarted stable config ordering and preserving uncertain
+native work before RTSP can unwind. Source + HOST/ARM compile only. No old v6
+unguarded capture adoption, synthetic success, fake readiness/provisioning, new
+native main/boot/listener/capture/client/test/hardware execution. Actual external
+media owner/recovery/backing/provisioning/main/native gates remain, not waived.
+
+## Prior closeout — reviewed source and offline prerequisites
 
 RP-08/09, CORE-03/04, STREAM-04/07: actual prestarted-backend/owned-listener
 composition independently has narrow SOURCE composition/API custody sufficiency.
@@ -171,9 +190,16 @@ Saved query77 `.fdt.o.cmd`/consumed map establish the concrete case, not runtime
 synthetic failure. R2 changed error paths narrowly source-sufficient, no composite
 method GO.102 inputs/seven outputs parent-verified; review seal
 `88a1edc2c5eb6ef3f92b5633d84a73c0e685732227bb1164e69b349355746c56`.
-V1/v2/reviews frozen/unaccepted. Parent disposition in v2 docs selects fresh
-query78-build-v3 author for R1-A coordinate binding only, preserving lexical full
-endpoint custody/direct-symlink role and every other guard. No recipe/helper call/
+V1/v2/reviews frozen/unaccepted; R1-A metadata committed locally `5d387f8`.
+Fresh query78-build-v3 delivered for R1-A coordinate binding only, preserving
+lexical full endpoint custody/direct-symlink role and every other guard. AST/syntax
+4/4 only;104 frozen inputs/six source/17 document pins parent-verified; newc/package
+byte-identical to v2. Aggregate
+`7a6207e669ca8480f0fa69020c3b91a585152dc14895c90e6adeafaa4b1ec838`;
+handoff `8b4613f29432ec33cb35a14c07fce27ba368308efba17ccfeb224a7254e31aaa`.
+Focused independent R1-A re-review completed with narrow conditional source/method
+sufficiency;134 inputs/five outputs parent-verified. Later user steering parks this
+lane without invocation; no active author/reviewer or next build queue. No recipe/helper call/
 archive generation/extraction/kernel/image build. Explicit client REVIEW.md
 hash associates reviewed bytes, not native authority or a readiness flag. Fresh
 re-review and separate parent build selection remain mandatory before use.

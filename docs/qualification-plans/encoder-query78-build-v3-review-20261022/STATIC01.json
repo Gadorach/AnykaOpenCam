@@ -1,0 +1,133 @@
+{
+  "all104_before_after_current_equal": true,
+  "all_six_direct_diffs_regenerate": true,
+  "author_syntax_compile_cited_not_rerun": true,
+  "context_snapshot": {
+    "/home/gadorach/Desktop/AnykaOpenCam/AGENTS.md": {
+      "bytes": 27527,
+      "sha256": "11caf994a038bdfd6b7be28ab91c1210c3729add5603c675ae4070f24af69a05"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/00-INDEX.md": {
+      "bytes": 122529,
+      "sha256": "9aa1bf58f1981a8abf056e67a51c9820ff4381b84613576f957cefc332ca79da"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/03-PLATFORM-BUILD-RECOVERY.md": {
+      "bytes": 4539,
+      "sha256": "e5543476350d58b6eb3ccddb0bd9040492f3c0e385c5f60fc39c1f044659c47d"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/06-ENCODER-AND-RATE-CONTROL.md": {
+      "bytes": 4980,
+      "sha256": "8bfbf62790c0ba7badd1baf245cb977ca56fd3ed29d32c3f1d5179c9ded0f3ba"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/EXECUTION_TASKS_20261021.md": {
+      "bytes": 74482,
+      "sha256": "c89379b7bab10efbd808269faaa6b6e8e466f484f35ff72ede2bcbc4652db998"
+    }
+  },
+  "coordinate_identity_inventory_recipe_or_fixture_called": false,
+  "existing_alias_receipt_and_canonical_body_association_only": true,
+  "four_callsites_equal_actual_AST": true,
+  "future_output_roots_or_private_current_state_queried": false,
+  "independent_AST_only_no_codeobjects": true,
+  "independent_protected_logic_checks": {
+    "R2_function_equivalence": {
+      "bytes_new": true,
+      "pin": true,
+      "publish_final": true,
+      "recording": true,
+      "reraise": true,
+      "secondary_note": true,
+      "text_new": true,
+      "write": true
+    },
+    "build_main_same": true,
+    "build_unchanged_methods": {
+      "__init__": true,
+      "bind": true,
+      "bound_files": true,
+      "closure": true,
+      "command": true,
+      "compile": true,
+      "configure": true,
+      "precompile": true,
+      "prepare": true,
+      "recheck": true,
+      "stable": true
+    },
+    "byte_identical_files": {
+      ".gitignore": true,
+      "newc.py": true,
+      "package.py": true
+    },
+    "capture_rows_original_checks_prefix_equal": true,
+    "capture_rows_return_equal": true,
+    "common_unchanged_functions": {
+      "bytes_new": true,
+      "canonical": true,
+      "client_association": true,
+      "config": true,
+      "expected_config": true,
+      "expected_tools": true,
+      "inventory": true,
+      "load": true,
+      "merge_checked": true,
+      "now": true,
+      "ordinary": true,
+      "pin": true,
+      "publish_final": true,
+      "recording": true,
+      "require": true,
+      "reraise": true,
+      "secondary_note": true,
+      "self_pins": true,
+      "text_new": true,
+      "tool_row": true,
+      "unchanged": true,
+      "verify_config": true,
+      "verify_source": true,
+      "write": true
+    },
+    "compare_rows_original_loop_equal": true,
+    "fixed_inputs_only_manifest_hash_changed": true,
+    "fixed_path_limit_expressions": {
+      "APP": true,
+      "ARCHIVE": true,
+      "ART": true,
+      "BASE": true,
+      "BUILD": true,
+      "CHUNK": true,
+      "CLIENT": true,
+      "CLIENT_DOC": true,
+      "CLIENT_REVIEW": true,
+      "DTB": true,
+      "IMAGES": true,
+      "LOCALVERSION": true,
+      "MANIFEST": true,
+      "META": true,
+      "OLD": true,
+      "ORIGINAL": true,
+      "OUT": true,
+      "PARENT_BASE": true,
+      "ROOT": true,
+      "SRC": true
+    },
+    "identity_original_endpoint_fields_expression_equal": true
+  },
+  "new_or_old_kernel_image_archive_tool_or_runtime_operation": false,
+  "old68_exact_subset": true,
+  "pin_groups": {
+    "author_actual_alias_inspection_inputs": 6,
+    "selected_public_inputs": 104,
+    "v2_source": 6,
+    "v3_docs": 17,
+    "v3_source": 6
+  },
+  "policy_refusal": false,
+  "reader_input_paths": 134,
+  "review_host_UTC": "2026-10-23T02:56:57.867797+00:00",
+  "reviewer_collection_errors": [],
+  "scope": "FOCUSED_STATIC_V3_R1_A_RE_REVIEW_ONLY",
+  "v2_negative_source_tree_sha256": "e8708daaba932d1b633230917780a5c1dec58bb0a3ba7d953fa2c8d90a3bdd7d",
+  "v3_source_tree_sha256": "7a6207e669ca8480f0fa69020c3b91a585152dc14895c90e6adeafaa4b1ec838",
+  "whole91270_source_or_50000_tool_rehash_claim": false
+}

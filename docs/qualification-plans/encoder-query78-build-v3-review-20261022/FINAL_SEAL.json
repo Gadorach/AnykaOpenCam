@@ -1,0 +1,56 @@
+{
+  "archive_extraction_transformation_generation_kernel_module_image_build": false,
+  "author_handoff_sha256": "8b4613f29432ec33cb35a14c07fce27ba368308efba17ccfeb224a7254e31aaa",
+  "candidate_import_call_coordinate_identity_inventory_helper_preflight_or_codeobject_execution": false,
+  "compiler_program_test_fixture_syntheticFS_ELF_or_archive_case_execution": false,
+  "conditional_on": "Trusted serialized host/namespace and ordinary local filesystem semantics; endpoint custody only, no atomicity/privileged-race/power-loss proof. Explicit parent disposition/selection and actual future preflight still required.",
+  "context_changes_or_rebase": [],
+  "correction_required_ordinary_defects": [],
+  "disposition": "NARROW_CONDITIONAL_V3_R1_A_PLUS_PRESERVED_R1_R2_SOURCE_BUILD_METHOD_SUFFICIENT",
+  "final_unchanged_reader_input_paths": 134,
+  "frozen_v2_negative_review_seal_sha256": "88a1edc2c5eb6ef3f92b5633d84a73c0e685732227bb1164e69b349355746c56",
+  "future_output_root_state_private_current_state_HOLD_hardware_Git_index_action": false,
+  "minimum_fresh_source_revision_required": false,
+  "next": "Parent read/reverify/disposition only; any actual offline build requires separate explicit selection and fresh input/host admission. No automatic next operation.",
+  "only_writes": "docs/qualification-plans/encoder-query78-build-v3-review-20261022/",
+  "policy_refusal": false,
+  "prior_negative_reviews_and_author_errors_preserved": true,
+  "reader_input_manifest": {
+    "bytes": 30532,
+    "sha256": "55a6ce5fa4a238cedf7cab99d9d002024f56746cc2a9c64f76cdb46951f74ccc"
+  },
+  "reader_input_paths": 134,
+  "review_host_UTC": "2026-10-23T03:01:10.118378+00:00",
+  "review_outputs": {
+    "docs/qualification-plans/encoder-query78-build-v3-review-20261022/INPUTS01.json": {
+      "bytes": 30532,
+      "sha256": "55a6ce5fa4a238cedf7cab99d9d002024f56746cc2a9c64f76cdb46951f74ccc"
+    },
+    "docs/qualification-plans/encoder-query78-build-v3-review-20261022/POSTCHECK01.json": {
+      "bytes": 475,
+      "sha256": "01e5ac6145ad2e0f500a3718828f32650eab09a63d0cb9a202a8b02ab377a579"
+    },
+    "docs/qualification-plans/encoder-query78-build-v3-review-20261022/REVIEW.md": {
+      "bytes": 13734,
+      "sha256": "cd725a25ba43662409602fbd87dad3d7987a4cd089c71d3dea0bf6b7e92baf90"
+    },
+    "docs/qualification-plans/encoder-query78-build-v3-review-20261022/SCOPE.md": {
+      "bytes": 1574,
+      "sha256": "30b5ce91e7720cd57610aa7dbf46d6d850238609c0a4594ce25f29ab31356014"
+    },
+    "docs/qualification-plans/encoder-query78-build-v3-review-20261022/STATIC01.json": {
+      "bytes": 4301,
+      "sha256": "bc33a723e16f88d8a1db7bb6b70470bdac69f7e21f735a94128607c7bc7e0170"
+    }
+  },
+  "reviewer_collection_errors": [],
+  "scope": "FOCUSED_INDEPENDENT_ORDINARY_STATIC_V3_R1_A_SOURCE_BUILD_METHOD_RE_REVIEW",
+  "selected_public_input_pins_verified": 104,
+  "source_adoption_build_invocation_image_integration_native_or_physical_admission": false,
+  "source_findings": {
+    "R1": "All prior generated/built/package/closure associations and seal-before-terminal controls retained.",
+    "R1_A": "Frozen actual object/walk coordinate with preserved complete lexical identity, direct-link role, explicit external association and alias consistency; final values compare at frozen coordinates.",
+    "R2": "Eight helpers/command and outer paths unchanged; narrow authored primary-object/traceback and mandatory recording failure semantics retained, not every library/async intrinsic."
+  },
+  "v3_source_tree_sha256": "7a6207e669ca8480f0fa69020c3b91a585152dc14895c90e6adeafaa4b1ec838"
+}
