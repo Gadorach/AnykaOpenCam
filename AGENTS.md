@@ -28,28 +28,41 @@ Hardware trials are authorized; prefer reviewed
 prearmed watchdog recovery/known-idle watchdog reset. Further adversarial testing
 remains deferred. The initial RAM76 belief was superseded by the cold handoff below.
 
-**Actual native state:** Oct23 passive23b120s0RX/0TX finalized. User then confirmed
-UART-only wiring/physical OFF/readiness; fresh23c original recorder/catch and user ON
-produced one original U-Boot/held prompt, no kernel handoff. Parent full-capture
-EOF call **FAILED/HOLD**: first360B exactly19-record first-prompt profile, trailing236B
-exactly two fixed catch-key echo groups from the remaining packets (3×19B TX).
-Separate offline explanation is not a relabelled PASS;10s quiet was not performed.
-User turned OFF; same-peer stop/private final hashes/PID/socket/visible-owner
-postchecks completed. Original helper lost wait ownership: no wait0 claim.
-**Camera now user-reported OFF plus confirmed ESPHome outlet OFF readback.**
-User confirmed that exact skill-referenced outlet now powers QC07F ONLY, not MS42P;
-GET/one idempotent turn_off POST/GET succeeded, no outlet ON yet. Endpoint/association
-stay private outside Git; do not use the skill's MS42P images/UART/runbook on QC07F.
-No electrical-rail/current Linux/native-watchdog coverage claim. Original radio/
-Oct22 reset HOLDs and new23c caller error remain untouched; both old Linux epochs
-and23c catch consumed. No active capture/transfer. Result:
-`docs/qualification-plans/execution-20261023/COLD23C_RESULT.md`.
-Oct22 history remains in WATCHDOG_RESET22B_RESULT.md; its receipt is expired,
-not a current owner. One isolated author owns fresh `qc07f-cold-entry23` source/docs
-for a complete foreground camera-outlet cold observation with actual owned-child
-wait and correct first-prompt/trailer accounting; AST/syntax only, parent review
-before any invocation. No new image/classifier/clock/receipt framework or native
-effect/retry queued; parent alone hardware.
+**Actual native state:** Camera last independently read controller OFF; no active
+capture/transfer or current Linux/watchdog coverage. User confirmed UART-only wiring,
+correct supply path/visible brief power-up and QC07F-only ESPHome outlet mapping;
+do not repeat those questions. Endpoint/association stay private outside Git; skill's
+MS42P images/UART/runbook do NOT apply.23c held U-Boot then OFF remains FAILED/HOLD
+from parent full-capture EOF misuse (360B exact first profile plus236B fixed catch
+echoes); no10s quiet/wait0 claim. See execution-20261023/COLD23C_RESULT.md.
+V1/v2 cold-entry never invoked. V3's ONE23d attempt remains FAILED/HOLD: initial
+OFF/ON attempted/OFF readback/owned recorder wait0+finalized, but0RX/TX; stopped
+about0.2s before3s wait, ON readback NOT accepted. User saw camera power up.
+Async readback race is hypothesis, not proved diagnosis. See COLD23D_RESULT.md.
+Fresh v4 moves3s wait before single GET ON, adds250ms before single GET OFF and
+separate private power acknowledgement/value/failure-phase fields. Independent
+ordinary SOURCE/API review accepts narrow sufficiency; source
+`40794530f6ef7bb9fec15104fee5f3c06e841ba6a08947794041bac99b3cc8b5`.
+ONE23e invocation FAILED/HOLD BEFORE ON:2 unexpected RX bytes/0TX, initial GET OFF
+accepted, no power POST; owned child wait0/private finalization verified. No bytes
+discarded or called harmless. Independent GET OFF/PID/socket/fuser postchecks passed.
+Separate passive23f nominal120s completed0RX/0TX/noRPC/arm/powerchange, actualwait0,
+final hashes/markers unchanged; not an explanation/relabel of23e. Focused method
+review then parent selection admitted ONE fresh unchanged-v4 23g. Actual ON/OFF
+acks and strict readbacks succeeded, three19B catch packets/57TX; but597RX begins
+with ONE unexplained byte before otherwise exact cold profile/trailers. Full-
+context FAILED/HOLD, no10s quiet; no trimming/classifier change or retry selected.
+OFF/readback/owned stop/wait0/private hashes/PID/socket/fuser postchecks completed.
+See COLD23G_RESULT.md under execution-20261023. Hardware qualification is blocked
+on unexplained serial data; no more power-cycle/catch/native effect selected.
+One isolated source author owns fresh rtsp-provisioner-process app/docs for REAL
+separate child secret ingress/constructor/readonly-FD IPC/known-wait parent bind,
+no hardware or main/native adoption. Original radio/Oct22 reset/23c/23d/23e/23g
+failures untouched. Expired receipts are not current owners; no electrical-rail/
+whole-interval recovery claim or new diagnostic/clock framework.
+PTZ under-mutex pre-GPIO counter refusal has narrow independent SOURCE sufficiency
+and real NEW Clang23.1.3 ARM-object compile evidence; local commit `8ec07ff`, not
+deployed or motor/lifetime/recovery acceptance. See ptz-counter PARENT_DISPOSITION.
 
 **P2 v2:** ordinary focused static review accepts its three callback/presence/error-
 ordering corrections; author changed-unit syntax3/3 passed, not runtime confirmation.
@@ -242,7 +255,7 @@ checklist directory. No B08 worker or runtime operation is queued.
   qualification have not been accepted. Async init/guard, automatic recovery,
   TX timeout/ownership, teardown and non-event paths remain technical blockers.
 - Current actual state is the Oct23 OFF/finalized boundary above, not Oct21/22
-  RAM76/radio APPLICATION. Capture21a/22a/22b/23b/23c are expired/finalized; their PIDs,
+  RAM76/radio APPLICATION. Capture21a/22a/22b/23b/23c/23d/23e/23f/23g are finalized; their PIDs,
   counters, addresses and timers are historical. No current Linux/WLAN/radio state
   is inherited from them. Old private evidence and original failure remain intact.
 - Original05:23UTC native radio trial remains **FAILED/HOLD**:74 payload fragments

@@ -1,0 +1,34 @@
+{
+  "scope": "R2_SOURCE_AST_SYNTAX_ONLY_NOT_IMPORTED_OR_CALLED",
+  "pins": {
+    "apps/qualification/qc07f-cold-entry23-v2/cold_entry.py": {
+      "bytes": 28997,
+      "sha256": "0d46fda61ced57bbbaa768d84f552b3d2d3f1bbc107f4d6a7f6f0cacf59e6bcf"
+    },
+    "apps/qualification/qc07f-cold-entry23-v3/cold_entry.py": {
+      "bytes": 29265,
+      "sha256": "a03c10ee651a820d93ff7dddd4b66027b2e0fd70dd284a4eb25fe60fba111954"
+    },
+    "apps/qualification/qc07f-cold-entry23-v3/README.md": {
+      "bytes": 1296,
+      "sha256": "33d73c6ac24edc68cee28f6a14a80d757a3150e740fccb49c1e68303d5d79065"
+    },
+    "docs/qualification-plans/qc07f-cold-entry23-v3-20261023/CONTRACT.md": {
+      "bytes": 1310,
+      "sha256": "0057b63f9bcba369b873303b56aa76b4680e74f0a5d1d229ee6190175bca55f8"
+    },
+    "docs/qualification-plans/qc07f-cold-entry23-v3-20261023/SOURCE_DELTA.patch": {
+      "bytes": 1609,
+      "sha256": "a7497e7ccb7fdb641c46dc3fbc0e5f462bbf77751f439ed690ca3c41c2e2ed1c"
+    },
+    "docs/qualification-plans/qc07f-cold-entry23-v2-review-20261023/REVIEW.md": {
+      "bytes": 6028,
+      "sha256": "c207c784ccc1c231d5c1a4f8d67a6bcaf70f55b54b0f986626d107c84df43317"
+    },
+    "docs/qualification-plans/qc07f-cold-entry23-v2-r2-review-20261023/REVIEW.md": {
+      "bytes": 5668,
+      "sha256": "da9d50389203779e945596ea897757d2f3c41221d1f053bf29a6894b597278ea"
+    }
+  },
+  "exact_R2_reverse_equals_frozen_v2": true
+}

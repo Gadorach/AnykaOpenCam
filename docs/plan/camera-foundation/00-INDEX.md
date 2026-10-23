@@ -77,8 +77,21 @@ passive23b and operator-assisted cold23c are recorded in the
 [latest hardware result](../../qualification-plans/execution-20261023/COLD23C_RESULT.md):
 camera now OFF, original HOLDs and parent EOF-caller failure preserved, capture
 finalized/no active owner. Confirmed ESPHome outlet now controls QC07F only, not
-MS42P; OFF POST/readback works. One isolated source author prepares a complete
-unattended cold-observation transaction, not a native image/boot queue. Private
+MS42P; OFF POST/readback works. Subsequent v3/23d and v4/23e remain FAILED/HOLD:
+23d stopped before3s wait/ON readback;23e refused BEFORE ON on2 unexplained bytes.
+Both owned recorders exited0/finalized; latest independent GET OFF. Separate
+receive-only23f completed120s0RX/TX, not an explanation/relabel of23e. See
+[23e result](../../qualification-plans/execution-20261023/COLD23E_RESULT.md).
+After a separate method review/selection,23g exercised accepted ON/OFF readbacks
+but retained FAILED/HOLD on1 unexplained prefix byte before the exact profile/
+trailers. Outlet OFF, child wait0/final hashes verified; no10s quiet or further
+power-cycle/ON/native queue. See
+[23g result](../../qualification-plans/execution-20261023/COLD23G_RESULT.md).
+Hardware qualification is blocked on unexplained serial data, not a permission gap.
+One author advances actual separate RTSP provisioner-child/readonly-FD IPC source;
+parent review required, not product/main/native adoption.
+PTZ counter source/compile-only correction is committed locally `8ec07ff`, not
+deployed. Private
 RTSP file/FD custody has also received narrow SOURCE/API acceptance with compile/
 one PUBLICDUMMY observation; actual cross-process provisioning remains unfinished.
 

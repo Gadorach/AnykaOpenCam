@@ -1,0 +1,42 @@
+--- apps/qualification/qc07f-cold-entry23/cold_entry.py
++++ apps/qualification/qc07f-cold-entry23-v2/cold_entry.py
+@@ -161,6 +161,7 @@
+ 
+ def http_power(endpoint, action=None):
+     # endpoint is already strictly numeric/validated: no resolver discovery or redirects.
++    require(action is None or action in ('turn_on', 'turn_off'))
+     u = urlsplit(endpoint)
+     c = http.client.HTTPConnection(u.hostname, u.port or 80, timeout=3)
+     try:
+@@ -168,9 +169,11 @@
+                   body=None if action is None else b'', headers={'Connection': 'close'})
+         response = c.getresponse()
+         require(response.status == 200 and response.getheader('Location') is None)
+-        require(response.getheader('Content-Type', '').split(';')[0].strip().lower() == 'application/json')
+         body = response.read(4097)
+         require(len(body) <= 4096)
++        if action is not None:
++            return None  # Bounded HTTP200 acknowledgement, NEVER state evidence.
++        require(response.getheader('Content-Type', '').split(';')[0].strip().lower() == 'application/json')
+         value = strict_json(body)
+         require(type(value) is dict and value.get('id') == 'switch-outlet_power' and
+                 type(value.get('value')) is bool and
+@@ -427,7 +430,8 @@
+         require(s.get('rx_bytes') == s.get('tx_bytes') == 0 and s.get('abort_armed') is True and
+                 s.get('tx_busy') is False and s.get('read_only_inspection_active') is False)
+         on_attempted, off_proved = True, False  # BEFORE a possibly successful-but-unacknowledged ON.
+-        require(http_power(endpoint, 'turn_on') is True)
++        http_power(endpoint, 'turn_on')
++        require(http_power(endpoint) is True)  # Separate actual GET proves controller ON.
+         time.sleep(3)
+         first = status()
+         raw = capture_bytes(rawpath, 1024)
+@@ -448,7 +452,7 @@
+         if on_attempted:
+             off_attempted = True  # Exactly one attempt, even if POST/GET raises.
+             try:
+-                require(http_power(endpoint, 'turn_off') is False)
++                http_power(endpoint, 'turn_off')
+             except BaseException as exc:
+                 errors.append('OFF_POST_UNCERTAIN: ' + repr(exc))
+             # Read back even after an uncertain POST; NEVER issue a second OFF.

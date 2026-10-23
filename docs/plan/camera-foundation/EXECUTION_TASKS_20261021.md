@@ -9,12 +9,28 @@ cold23c. Its parent full-capture EOF call FAILED/HOLD despite a matched first co
 prefix plus fully explained fixed catch-key echo trailer. User OFF; same-owner
 stop/finalization verified, no wait0 claim. See execution-20261023/COLD23C_RESULT.md.
 User confirmed the ESPHome outlet from the named skill now powers QC07F ONLY;
-GET OFF / idempotent POST OFF / GET OFF verified. Camera remains OFF, no active
-capture/transfer. No image/readback/kernel/motor/flash action occurred. Original
-HOLDs/failed caller/rollback preserved. One author owns fresh qc07f-cold-entry23
-AST/syntax-only source for the complete foreground camera-outlet cold observation;
-not a controller execution/native queue or new diagnostic-image/clock framework.
-Parent alone hardware. Existing
+GET OFF / idempotent POST OFF / GET OFF verified. Later v3 ONE23d attempt FAILED/
+HOLD,0RX/TX: ON attempted but readback NOT accepted, OFF readback and owned wait0/
+capture finalization. User confirmed correct supply/visible brief power-up; do not
+re-ask. Fresh independently reviewed v4 moves existing3s wait before one GET ON,
+adds250ms before one GET OFF/private power fields; no other guards changed. ONE
+fresh23e FAILED/HOLD BEFORE ON due2 unexplained RX bytes/0TX; no power POST, initial
+GET OFF accepted. Owned wait0/finals plus independent GET OFF/PID/socket/fuser
+postchecks passed. Separate passive23f120s0RX/TX/noRPC/arm/powerchange finalized;
+does not explain23e or relabel PASS. See COLD23D_RESULT/COLD23E_RESULT/
+PASSIVE23F_RESULT under execution-20261023 docs. Focused method review then parent
+selection admitted ONE separate unchanged-v4 fresh23g. Actual ON/OFF acknowledgements
+and readbacks accepted,3catch packets57TX, but597RX has1 unexplained leading byte
+before exact profile/trailers. Full-context FAILED/HOLD; no10s quiet/filter/change.
+OFF/owned wait0/private hashes/PID/socket/fuser postchecks passed. No active capture/
+transfer. See COLD23G_RESULT.md. No more power-cycle/catch/native queue: unexplained
+serial data blocks hardware qualification. Do not repeat already confirmed physical
+questions. Original failures preserved. One author owns fresh rtsp-provisioner-process
+for actual device-free separate child private ingress/constructor/FD IPC/known-wait
+parent bind; no real credentials/native hardening/main/hardware selection.
+PTZ counter guard source/ARM-object compile closeout committed locally `8ec07ff`,
+not deployed; failed-OFF descriptor lifetime/recovery/motor limits still open.
+No image/readback/kernel/motor/flash action occurred. Parent alone hardware. Existing
 owned-runtime/startup-material commits are `5b3e252`/`678d4cf`. No new diagnostic
 image/clock/receipt framework, adversarial campaign or publication is selected.
 

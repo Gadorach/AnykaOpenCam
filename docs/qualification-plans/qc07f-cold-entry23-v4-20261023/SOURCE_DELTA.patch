@@ -1,0 +1,78 @@
+--- apps/qualification/qc07f-cold-entry23-v3/cold_entry.py
++++ apps/qualification/qc07f-cold-entry23-v4/cold_entry.py
+@@ -267,6 +267,9 @@
+     retained, errors, child, start, peer = [], [], None, None, None
+     out = endpoint = None
+     on_attempted = off_attempted = initial_off = off_proved = False
++    power_evidence = {'phase': 'not_started', 'failure_phase': None, 'initial_GET_value': None,
++                      'ON_POST_acknowledged': False, 'ON_GET_value': None,
++                      'OFF_POST_acknowledged': False, 'OFF_GET_value': None}
+     observed = final_ok = False
+     argv = realport = port_meta = out_chain = private_chain = None
+ 
+@@ -395,7 +398,9 @@
+             'dependency_scope': 'isolated same interpreter/serial import; ordinary system dependency closure trusted',
+             'user_load_association_is_caller_fact_not_measurement': True,
+             'caller_source_sha256': own_source.digest})
+-        initial_off = http_power(endpoint) is False
++        power_evidence['phase'] = 'initial_GET'
++        power_evidence['initial_GET_value'] = http_power(endpoint)
++        initial_off = power_evidence['initial_GET_value'] is False
+         require(initial_off)
+         off_proved = True
+         argv = [sys.executable, '-I', '-B', str(RECORDER), '--capture', '--part', a.part,
+@@ -437,9 +442,15 @@
+         require(s.get('rx_bytes') == s.get('tx_bytes') == 0 and s.get('abort_armed') is True and
+                 s.get('tx_busy') is False and s.get('read_only_inspection_active') is False)
+         on_attempted, off_proved = True, False  # BEFORE a possibly successful-but-unacknowledged ON.
++        power_evidence['phase'] = 'ON_POST'
+         http_power(endpoint, 'turn_on')
+-        require(http_power(endpoint) is True)  # Separate actual GET proves controller ON.
++        power_evidence['ON_POST_acknowledged'] = True
++        power_evidence['phase'] = 'ON_dispatch_settle'
+         time.sleep(3)
++        power_evidence['phase'] = 'ON_GET'
++        power_evidence['ON_GET_value'] = http_power(endpoint)
++        require(power_evidence['ON_GET_value'] is True)  # Only actual GET is state evidence.
++        power_evidence['phase'] = 'cold_observation'
+         first = status()
+         raw = capture_bytes(rawpath, 1024)
+         first_events = capture_events()
+@@ -454,18 +465,26 @@
+                 observe(raw, quiet_events, second, classifier, child.pid, realport) == count)
+         observed = True
+     except BaseException as exc:
++        power_evidence['failure_phase'] = power_evidence['phase']
+         errors.append(repr(exc))
+     finally:
+         if on_attempted:
+             off_attempted = True  # Exactly one attempt, even if POST/GET raises.
+             try:
++                power_evidence['phase'] = 'OFF_POST'
+                 http_power(endpoint, 'turn_off')
++                power_evidence['OFF_POST_acknowledged'] = True
+             except BaseException as exc:
+                 errors.append('OFF_POST_UNCERTAIN: ' + repr(exc))
+             # Read back even after an uncertain POST; NEVER issue a second OFF.
+             try:
+-                require(http_power(endpoint) is False)
++                power_evidence['phase'] = 'OFF_dispatch_settle'
++                time.sleep(.25)
++                power_evidence['phase'] = 'OFF_GET'
++                power_evidence['OFF_GET_value'] = http_power(endpoint)
++                require(power_evidence['OFF_GET_value'] is False)
+                 off_proved = True
++                power_evidence['phase'] = 'OFF_proved'
+             except BaseException as exc:
+                 errors.append('OFF_UNCERTAIN_MANUAL_OFF_REQUIRED: ' + repr(exc))
+         if child is not None and off_proved:
+@@ -523,7 +542,8 @@
+                 new_json(out / ('result.json' if success else 'failure-HOLD.json'),
+                          {'state': 'PASS_OBSERVATION_ONLY' if success else 'HOLD', 'errors': errors,
+                           'initial_OFF': initial_off, 'ON_attempted': on_attempted, 'OFF_attempted': off_attempted,
+-                          'OFF_readback_proved': off_proved, 'capture_finalized': final_ok,
++                           'OFF_readback_proved': off_proved, 'capture_finalized': final_ok,
++                           'power_evidence': power_evidence,
+                           'owned_child_pid': child.pid if child else None,
+                           'owned_child_returncode': child.returncode if child else None,
+                           'manual_OFF_required': on_attempted and not off_proved,
