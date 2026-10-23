@@ -1,0 +1,151 @@
+{
+  "scope": "PUBLIC_SOURCES_AND_COMPILE_CONTEXT_ONLY_NO_MATERIAL_PAYLOAD",
+  "frozen_constructor_selected_pins_match": {
+    "apps/rtsp-auth/rtsp-startup-material/startup_material.c": true,
+    "apps/rtsp-auth/rtsp-startup-material/startup_material.h": true,
+    "apps/rtsp-auth/rtsp-startup-material/README.md": true,
+    "docs/qualification-plans/rtsp-startup-material-20261023/CONTRACT.md": true,
+    "docs/qualification-plans/rtsp-startup-material-20261023/runs/build01/REPORT.json": true,
+    "apps/rtsp-auth/qc07f-owned-runtime/server/candidate_auth.h": true,
+    "apps/rtsp-auth/qc07f-owned-runtime/server/candidate_auth.c": true,
+    "apps/rtsp-auth/isolated-verifier/verifier.h": true,
+    "apps/rtsp-auth/isolated-verifier/engine.c": true,
+    "framework/src/rtsp_digest.c": true,
+    "framework/src/rtsp_digest_wire.c": true,
+    "framework/src/rtsp_input.c": true,
+    "framework/src/backend.c": true,
+    "framework/include/camera/rtsp_digest.h": true,
+    "framework/include/camera/rtsp_input.h": true,
+    "apps/rtsp-auth/rtsp_crypto_config.h": true
+  },
+  "pins": {
+    "apps/auth-web/service/vendor/mbedtls/LICENSE": {
+      "bytes": 29852,
+      "sha256": "9b405ef4c89342f5eae1dd828882f931747f71001cfba7d114801039b52ad09b"
+    },
+    "apps/rtsp-auth/isolated-verifier/adapter.c": {
+      "bytes": 18035,
+      "sha256": "4cdf9a301c5603dd3542f07bd96cffd01f79497c39da15a0cc95b84223a4c8a1"
+    },
+    "apps/rtsp-auth/isolated-verifier/child.c": {
+      "bytes": 3596,
+      "sha256": "b317bac6512a3795fa7b8c82ae339366750dbf39960642d97e53d69d1d3e4ad7"
+    },
+    "apps/rtsp-auth/isolated-verifier/engine.c": {
+      "bytes": 10852,
+      "sha256": "cf298b8096c66859806c6e0c0b449592ac4081f05ad814f21fee35e97262c396"
+    },
+    "apps/rtsp-auth/isolated-verifier/isolation.c": {
+      "bytes": 5403,
+      "sha256": "6759d15640e17048d331354bce62376a23588689daeea468e5e5b1a4ec54b135"
+    },
+    "apps/rtsp-auth/isolated-verifier/verifier.h": {
+      "bytes": 6234,
+      "sha256": "3f4a97a12ed9acafe678e720b473c798c75b170648e6a6de076a1017ff0ad900"
+    },
+    "apps/rtsp-auth/native-qualification/material_tool.c": {
+      "bytes": 5691,
+      "sha256": "35e037b5af18ccff2adc9f94a04b6a6d7eb451329e59e5bf4ce55e986b011f50"
+    },
+    "apps/rtsp-auth/native-qualification/paths.c": {
+      "bytes": 2214,
+      "sha256": "242cb982bdb4957f60447f77e709a1eb09d303c0e64f1d4c3ed3e96bdd1ee72c"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/server/candidate_auth.c": {
+      "bytes": 17425,
+      "sha256": "cb27b35e2d8730b8d19f231d339e06cbe4c97fbe0aca7826fe3469d8479825a7"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/server/candidate_auth.h": {
+      "bytes": 6001,
+      "sha256": "94b6ed560677b7db4119eded9726ab01085c2e0eb392bdad29e961ebcd2ed643"
+    },
+    "apps/rtsp-auth/rtsp-private-handoff/LICENSE_NOTICES.md": {
+      "bytes": 1562,
+      "sha256": "91f39314913b6ba2229396fff53129a8c19b81a2104b19378e3286eb30d1b174"
+    },
+    "apps/rtsp-auth/rtsp-private-handoff/README.md": {
+      "bytes": 3028,
+      "sha256": "d53725ab48e79e41b179e1acd7f61ba8d74a9348f3e5cea3e78aa909721b742b"
+    },
+    "apps/rtsp-auth/rtsp-private-handoff/compile_recipe.sh": {
+      "bytes": 3344,
+      "sha256": "5fdc9aa50d54806a8b7f6b3706b62811515b68b91529e783e44b6e48ce816d95"
+    },
+    "apps/rtsp-auth/rtsp-private-handoff/positive_publicdummy.c": {
+      "bytes": 5260,
+      "sha256": "1624450b6fc374179fc4e81de491a0f1093f7b65f0eb58d9a02005be8a5a94f6"
+    },
+    "apps/rtsp-auth/rtsp-private-handoff/private_handoff.c": {
+      "bytes": 7748,
+      "sha256": "cd3e08600841502f1373c30ea80b43c736aa07e705bed7ec83f20f19d5f5903c"
+    },
+    "apps/rtsp-auth/rtsp-private-handoff/private_handoff.h": {
+      "bytes": 3716,
+      "sha256": "4ad3136dfcf4e8fff5b3a26ab794279a96ee908466bfa547819dd87546fefa44"
+    },
+    "apps/rtsp-auth/rtsp-startup-material/README.md": {
+      "bytes": 2066,
+      "sha256": "33d3062824c296a56c3acf635851d49b58e8d5d4591188e46d081befca8743c9"
+    },
+    "apps/rtsp-auth/rtsp-startup-material/startup_material.c": {
+      "bytes": 5019,
+      "sha256": "5eb23e473750c0b3ae0daecd472c2091ec1a6e8287001c65b9d1634fdd3aceae"
+    },
+    "apps/rtsp-auth/rtsp-startup-material/startup_material.h": {
+      "bytes": 1779,
+      "sha256": "76fb100e06c6b7508b6011400bf35734d273615fd26a3aa8cc57cd2150630206"
+    },
+    "apps/rtsp-auth/rtsp_crypto_config.h": {
+      "bytes": 379,
+      "sha256": "7cfb2b4eacf9379bd945a2faa9a95bc228c131bdf956a07e3953fdba6d7f818f"
+    },
+    "docs/qualification-plans/rtsp-private-handoff-20261023/.gitignore": {
+      "bytes": 134,
+      "sha256": "3dc2cf3ea8d1ea88fe266fb466e1299bca23174d6517380d2f5c643f33fdd2d8"
+    },
+    "docs/qualification-plans/rtsp-private-handoff-20261023/CONTRACT.md": {
+      "bytes": 4925,
+      "sha256": "6abc0f2ac02b5d7816d7f0c7d2e1cffb14e4ddd138a21cc40ab173863f41c5e2"
+    },
+    "docs/qualification-plans/rtsp-startup-material-20261023/CONTRACT.md": {
+      "bytes": 2468,
+      "sha256": "36b5754f0302ee72c37d0f2afc58d9259769df22a0bb4f60df19939bd555e1e6"
+    },
+    "docs/qualification-plans/rtsp-startup-material-20261023/PARENT_DISPOSITION.md": {
+      "bytes": 3865,
+      "sha256": "c10976bbf687d4ae3546821142061743a092ebfc65790e713f7ad6825d727840"
+    },
+    "docs/qualification-plans/rtsp-startup-material-20261023/runs/build01/REPORT.json": {
+      "bytes": 83833,
+      "sha256": "c7e06a428e0306a4daf6dd0a4ff469bdb4355c22765710c322b28f6ffe4ec6e4"
+    },
+    "docs/qualification-plans/rtsp-startup-material-review-20261023/REVIEW.md": {
+      "bytes": 11157,
+      "sha256": "c8f2a1d9964dba8e496fb4a247dbacf0338cbc9ad233ee03a46c4cdb54555a8e"
+    },
+    "framework/include/camera/rtsp_digest.h": {
+      "bytes": 7432,
+      "sha256": "26294a9e67f663eb3bfc903c48a63396298a300caebd2ea15dcffa5b87745aae"
+    },
+    "framework/include/camera/rtsp_input.h": {
+      "bytes": 2591,
+      "sha256": "bb39c927b8d3da0754da5ed759e420987b700e1e1cfd11d9b78192289f80cac9"
+    },
+    "framework/src/backend.c": {
+      "bytes": 4344,
+      "sha256": "cc5462d995479578c83d5acb38164d2c8f3eae8a1adaf0c6e5a7fe7f929ff9f3"
+    },
+    "framework/src/rtsp_digest.c": {
+      "bytes": 12142,
+      "sha256": "24ac70a0e3a4d76e2b651c4ad7570b4e89cd6645b62a5291408fd3b00a14e80f"
+    },
+    "framework/src/rtsp_digest_wire.c": {
+      "bytes": 13918,
+      "sha256": "0ecc44fe90618eca56a43d6a95df23ef1e236aac07413b5abf016d1623a7abc9"
+    },
+    "framework/src/rtsp_input.c": {
+      "bytes": 9009,
+      "sha256": "f827dff40c7874650872f6a506c28695ef9af90ae7f3dbbe93b7e4fc0976491f"
+    }
+  }
+}

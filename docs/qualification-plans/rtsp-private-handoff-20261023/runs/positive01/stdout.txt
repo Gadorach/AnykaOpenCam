@@ -1,0 +1,1 @@
+PUBLICDUMMY normal_fixture=PASS actual_constructor=1 bytes_written=1536 writer_close_known=1 readonly_metadata=PASS explicit_move=PASS scratch_zero=1 cleanup=PASS native_or_media_launch=0 payload_readback_or_dump=0

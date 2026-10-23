@@ -59,7 +59,7 @@ qc07f-owned-runtime now has narrow conditional parent SOURCE/API integration
 sufficiency and HOST/ARM compile evidence, no execution. See its
 [parent disposition](../../qualification-plans/rtsp-owned-runtime-20261023/PARENT_DISPOSITION.md).
 Actual app startup/provisioning/backing/external-owner integration remains next. No new
-clock/receipt framework or hardware operation is selected. Startup/provisioning/
+clock/receipt framework is selected. Startup/provisioning/
 main/external media owner/backing/recovery remain explicit gaps, not fabricated
 ready flags. See the current execution ledger; earlier build selections below
 are retained history and do not override this steering.
@@ -71,6 +71,16 @@ PASS, never called; no real credential material was used. See its
 [parent disposition](../../qualification-plans/rtsp-startup-material-20261023/PARENT_DISPOSITION.md).
 Actual separate hardened provisioner→bootstrap private descriptor handoff remains
 next; storage/generation authority/recovery/backing/native requirements are open.
+
+Oct23 renewed user approval explicitly includes hardware/motor/NOR work. Actual
+passive23b and operator-assisted cold23c are recorded in the
+[latest hardware result](../../qualification-plans/execution-20261023/COLD23C_RESULT.md):
+camera now OFF, original HOLDs and parent EOF-caller failure preserved, capture
+finalized/no active owner. Confirmed ESPHome outlet now controls QC07F only, not
+MS42P; OFF POST/readback works. One isolated source author prepares a complete
+unattended cold-observation transaction, not a native image/boot queue. Private
+RTSP file/FD custody has also received narrow SOURCE/API acceptance with compile/
+one PUBLICDUMMY observation; actual cross-process provisioning remains unfinished.
 
 ### October22 unattended execution / actual cold handoff
 

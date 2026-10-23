@@ -1,0 +1,4 @@
+# Local compiled artifacts only; parent curates public logs/pins separately.
+runs/*/objects/
+runs/*/*.o
+runs/*/PUBLICDUMMY-NOT-NATIVE

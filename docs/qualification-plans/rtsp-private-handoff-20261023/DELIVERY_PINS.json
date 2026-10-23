@@ -1,0 +1,73 @@
+{
+  "scope": "AUTHOR_DELIVERY_PUBLIC_SOURCE_METADATA_ONLY_PARENT_REVIEW_REQUIRED",
+  "recorded": "2026-10-23T04:25:59.087905+00:00",
+  "verified": {
+    "selected_source_context_files": 32,
+    "unique_consumed_dependency_paths": 243,
+    "artifacts": 75,
+    "command_logs": 37,
+    "one_publicdummy_call_exit": 0
+  },
+  "pins": {
+    "apps/rtsp-auth/rtsp-private-handoff/LICENSE_NOTICES.md": {
+      "bytes": 1562,
+      "sha256": "91f39314913b6ba2229396fff53129a8c19b81a2104b19378e3286eb30d1b174"
+    },
+    "apps/rtsp-auth/rtsp-private-handoff/README.md": {
+      "bytes": 3028,
+      "sha256": "d53725ab48e79e41b179e1acd7f61ba8d74a9348f3e5cea3e78aa909721b742b"
+    },
+    "apps/rtsp-auth/rtsp-private-handoff/compile_recipe.sh": {
+      "bytes": 3344,
+      "sha256": "5fdc9aa50d54806a8b7f6b3706b62811515b68b91529e783e44b6e48ce816d95"
+    },
+    "apps/rtsp-auth/rtsp-private-handoff/positive_publicdummy.c": {
+      "bytes": 5260,
+      "sha256": "1624450b6fc374179fc4e81de491a0f1093f7b65f0eb58d9a02005be8a5a94f6"
+    },
+    "apps/rtsp-auth/rtsp-private-handoff/private_handoff.c": {
+      "bytes": 7748,
+      "sha256": "cd3e08600841502f1373c30ea80b43c736aa07e705bed7ec83f20f19d5f5903c"
+    },
+    "apps/rtsp-auth/rtsp-private-handoff/private_handoff.h": {
+      "bytes": 3716,
+      "sha256": "4ad3136dfcf4e8fff5b3a26ab794279a96ee908466bfa547819dd87546fefa44"
+    },
+    "docs/qualification-plans/rtsp-private-handoff-20261023/.gitignore": {
+      "bytes": 134,
+      "sha256": "3dc2cf3ea8d1ea88fe266fb466e1299bca23174d6517380d2f5c643f33fdd2d8"
+    },
+    "docs/qualification-plans/rtsp-private-handoff-20261023/CONTRACT.md": {
+      "bytes": 4925,
+      "sha256": "6abc0f2ac02b5d7816d7f0c7d2e1cffb14e4ddd138a21cc40ab173863f41c5e2"
+    },
+    "docs/qualification-plans/rtsp-private-handoff-20261023/HANDOFF.md": {
+      "bytes": 10487,
+      "sha256": "258e4735f5974ef1579e58613a14ba8f826018a344c89d5180ba1e5d1ceba6d4"
+    },
+    "docs/qualification-plans/rtsp-private-handoff-20261023/SOURCE_PINS.json": {
+      "bytes": 6547,
+      "sha256": "cb94c39623a6b466c40882db0bcf286d51590ee8a8fec750fcc914829bedd926"
+    },
+    "docs/qualification-plans/rtsp-private-handoff-20261023/runs/build01/COMMANDS.txt": {
+      "bytes": 30801,
+      "sha256": "e16022bdcdd325c6185c85bb202bcedda154ae63cbc1f186c21dfbbb84513234"
+    },
+    "docs/qualification-plans/rtsp-private-handoff-20261023/runs/build01/REPORT.json": {
+      "bytes": 320065,
+      "sha256": "5c5f4ce8b8a8cb82d3fee8a5faf8b93f63ae0651f2917c35117bddb02e3be1b4"
+    },
+    "docs/qualification-plans/rtsp-private-handoff-20261023/runs/positive01/OBSERVATION.json": {
+      "bytes": 568,
+      "sha256": "1ca87cee1f0ea17d4698d07f58eda94b6676ccac7eb521436cdca0d865d1a771"
+    },
+    "docs/qualification-plans/rtsp-private-handoff-20261023/runs/positive01/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/rtsp-private-handoff-20261023/runs/positive01/stdout.txt": {
+      "bytes": 215,
+      "sha256": "db2df2d1476476307276183562ac2bf9749b6162a09e218847a86f07d10737d5"
+    }
+  }
+}

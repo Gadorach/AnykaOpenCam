@@ -2,6 +2,22 @@
 
 ## Current focus — Oct23 feature integration; diagnostic build lane parked
 
+Latest user steering renews unattended continuation through hardware testing and
+explicitly approves motor testing/onboard NOR flashing if needed. Parent selects
+fresh host discovery/passive23b, now completed120s0RX/0TX, then operator-assisted
+cold23c. Its parent full-capture EOF call FAILED/HOLD despite a matched first cold
+prefix plus fully explained fixed catch-key echo trailer. User OFF; same-owner
+stop/finalization verified, no wait0 claim. See execution-20261023/COLD23C_RESULT.md.
+User confirmed the ESPHome outlet from the named skill now powers QC07F ONLY;
+GET OFF / idempotent POST OFF / GET OFF verified. Camera remains OFF, no active
+capture/transfer. No image/readback/kernel/motor/flash action occurred. Original
+HOLDs/failed caller/rollback preserved. One author owns fresh qc07f-cold-entry23
+AST/syntax-only source for the complete foreground camera-outlet cold observation;
+not a controller execution/native queue or new diagnostic-image/clock framework.
+Parent alone hardware. Existing
+owned-runtime/startup-material commits are `5b3e252`/`678d4cf`. No new diagnostic
+image/clock/receipt framework, adversarial campaign or publication is selected.
+
 User noted excessive build-semantics work instead of feature development. Parent
 parks query78 diagnostic-image work after completed v3 review: narrow conditional
 SOURCE/build-method sufficiency,134 reader inputs/five outputs verified, review
@@ -43,6 +59,17 @@ Actual separate hardened provisioning ingress/private descriptor handoff/storage
 generation authority/rotation and startup/recovery/backing/native gates remain.
 Next feature connection is the real provisioner→bootstrap private FD handoff, not
 another diagnostic-build/clock/receipt lane. No active author/reviewer or native queue.
+
+That private-file/FD custody increment is now delivered at rtsp-private-handoff:
+actual constructor/exclusive1536B write/fsync/single writer close/readonly inode
+admission/explicit unused-config move plus real native hardening source. Narrow
+independent SOURCE/API/custody sufficiency accepted;24 HOST/ARM compiles/37 commands
+and ONE normal PUBLICDUMMY call PASS, not native hardening/real secret use. Parent
+verified32 selected inputs/15 delivery pins/1363 dependency records/75 artifacts/
+37 logs; see rtsp-private-handoff-20261023/PARENT_DISPOSITION.md. No worker active
+in that lane. A C-slot move is NOT cross-process IPC: actual secret ingress/launch,
+inherited-FD/capability/environment policy, durable generations/storage/rotation,
+bootstrap/external recovery/backing/main/native requirements remain next work.
 
 ## Prior closeout — reviewed source and offline prerequisites
 

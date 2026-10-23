@@ -1,0 +1,19 @@
+{
+  "scope": "ONE_NORMAL_HOST_PUBLICDUMMY_ONLY",
+  "argv": [
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-private-handoff-20261023/runs/build01/PUBLICDUMMY-NOT-NATIVE"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C",
+    "LC_ALL": "C",
+    "TZ": "UTC"
+  },
+  "started": "2026-10-23T04:21:27.215727+00:00",
+  "exit": 0,
+  "ended": "2026-10-23T04:21:27.217580+00:00",
+  "native_or_real_credential_execution": false,
+  "negative_or_adversarial_tests": 0,
+  "invocations": 1
+}

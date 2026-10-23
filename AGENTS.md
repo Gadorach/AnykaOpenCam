@@ -21,27 +21,35 @@
 ## Current checkpoint (2026-10-23)
 
 **Latest autonomy steering:** continue eligible work unattended until completion
-or genuinely required user input. Hardware trials are authorized; prefer reviewed
+or genuinely required user input. User renewed approval Oct23, explicitly including
+motor testing and onboard NOR flashing if needed; authorization does not establish
+current physical/runtime state or remove bounded procedure/rollback/recovery gates.
+Hardware trials are authorized; prefer reviewed
 prearmed watchdog recovery/known-idle watchdog reset. Further adversarial testing
 remains deferred. The initial RAM76 belief was superseded by the cold handoff below.
 
-**Actual native state:**22b cold handoff/RAM76 upload/full CRC/monitor/RO idle
-PASS11:49UTC, normal5s watchdog smoke/sameboot idle/FD postflight PASS12:05UTC.
-Then one selected idle watchdog reset **controller FAILED/HOLD** on password-text
-classification; actual full arm message/main-CPU reset/automatic held U-Boot catch
-observed. Separate receive-only reconciliation and10s stability PASS12:12UTC,
-no kernel handoff, no retry/rescue TX/reload. **Last target observation was held
-original U-Boot at12:12UTC, not Linux RAM76; no current runtime is inherited.**
-Old Linux epochs invalidated; future catch consumed.
-Original radio HOLD and new reset-failure HOLD remain untouched. No active
-operation/transfer. Result and next native boundary:
-`docs/qualification-plans/kernel76-transport-20261021/WATCHDOG_RESET22B_RESULT.md`.
-Current source/methods:
-`docs/plan/camera-foundation/RESUME_20261022.md`. Current owner receipt:
-`evidence/qualification/qc07f/stock-reference-20261013/fresh22b-sole-owner-bounded-nextboot-hold01.json`.
-Revalidate its bounded coverage/owner every operation. Preserve original radio HOLD;
-new22b phases use a separate sticky subordinate marker, now failed-reset HOLD.
-No further native effect is queued; parent alone hardware.
+**Actual native state:** Oct23 passive23b120s0RX/0TX finalized. User then confirmed
+UART-only wiring/physical OFF/readiness; fresh23c original recorder/catch and user ON
+produced one original U-Boot/held prompt, no kernel handoff. Parent full-capture
+EOF call **FAILED/HOLD**: first360B exactly19-record first-prompt profile, trailing236B
+exactly two fixed catch-key echo groups from the remaining packets (3×19B TX).
+Separate offline explanation is not a relabelled PASS;10s quiet was not performed.
+User turned OFF; same-peer stop/private final hashes/PID/socket/visible-owner
+postchecks completed. Original helper lost wait ownership: no wait0 claim.
+**Camera now user-reported OFF plus confirmed ESPHome outlet OFF readback.**
+User confirmed that exact skill-referenced outlet now powers QC07F ONLY, not MS42P;
+GET/one idempotent turn_off POST/GET succeeded, no outlet ON yet. Endpoint/association
+stay private outside Git; do not use the skill's MS42P images/UART/runbook on QC07F.
+No electrical-rail/current Linux/native-watchdog coverage claim. Original radio/
+Oct22 reset HOLDs and new23c caller error remain untouched; both old Linux epochs
+and23c catch consumed. No active capture/transfer. Result:
+`docs/qualification-plans/execution-20261023/COLD23C_RESULT.md`.
+Oct22 history remains in WATCHDOG_RESET22B_RESULT.md; its receipt is expired,
+not a current owner. One isolated author owns fresh `qc07f-cold-entry23` source/docs
+for a complete foreground camera-outlet cold observation with actual owned-child
+wait and correct first-prompt/trailer accounting; AST/syntax only, parent review
+before any invocation. No new image/classifier/clock/receipt framework or native
+effect/retry queued; parent alone hardware.
 
 **P2 v2:** ordinary focused static review accepts its three callback/presence/error-
 ordering corrections; author changed-unit syntax3/3 passed, not runtime confirmation.
@@ -167,6 +175,13 @@ records/22 artifacts/26 logs; disposition in rtsp-startup-material-20261023 docs
 No default credentials, private input/generation/use, media/HTTPS linkage or new
 build framework. Actual hardened secret ingress/private FD handoff/storage/durable
 generation authority/rotation are still missing; no active author/reviewer.
+Private handoff at `apps/rtsp-auth/rtsp-private-handoff/` now has narrow independent
+SOURCE/API/custody sufficiency plus24 HOST/ARM compiles/37 commands and ONE normal
+PUBLICDUMMY constructor/write/close/readonly/move/zeroization/cleanup call PASS.
+Parent checked32 selected/15 delivery pins/1363 dependency records/75 artifacts/
+37 logs. Native hardening/real credentials NOT RUN. Disposition in rtsp-private-
+handoff-20261023 docs. This is a C-slot move, NOT separate-process IPC/provisioning;
+actual launch/ingress/generation/storage/bootstrap/recovery/backing remain gaps.
 Staging guard remains unavailable; future manual-OFF handoff requires separate
 review/actual readiness. No physical request or transfer is active. Query77 monitor
 lacks query88 command. Authentication/loopback and media-retention
@@ -174,8 +189,9 @@ blocks remain; actual bootstrap/backing/provisioning/main are still missing.
 Query77/return closeout committed locally `9fd7bb6`; ordinary index unchanged.
 Composition source committed locally `d170304`, client/checkpoint `0ad2c1d`;
 no binaries/private captures or push. Ordinary index remains unchanged.
-No fresh target/recorder state has been queried; an early-expiry claim in the
-retention report was inherited parent wording, corrected in its parent disposition.
+The Oct23 hardware observations above supersede earlier no-fresh-state wording.
+An early-expiry claim in the retention report was inherited parent wording,
+corrected in its parent disposition.
 Frozen originals/RTSP glue stay separate. Native watchdog
 qualification, failed-next retention/backing/provisioning/owned listener remain
 blockers. No deployed image/module change, new main or native memory-fit claim.
@@ -225,8 +241,8 @@ checklist directory. No B08 worker or runtime operation is queued.
   P3 bounded owned TX, P4 lifetime and P5 guarded runner remain plans. Station attachment, ARM build/staging and native station
   qualification have not been accepted. Async init/guard, automatic recovery,
   TX timeout/ownership, teardown and non-event paths remain technical blockers.
-- Current actual native state is the fresh Oct22 cold handoff above, not Oct21
-  RAM76/radio APPLICATION. Capture21a and22a are expired/finalized; their PIDs,
+- Current actual state is the Oct23 OFF/finalized boundary above, not Oct21/22
+  RAM76/radio APPLICATION. Capture21a/22a/22b/23b/23c are expired/finalized; their PIDs,
   counters, addresses and timers are historical. No current Linux/WLAN/radio state
   is inherited from them. Old private evidence and original failure remain intact.
 - Original05:23UTC native radio trial remains **FAILED/HOLD**:74 payload fragments
