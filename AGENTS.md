@@ -143,6 +143,14 @@ change, installation, original
 helper/source-pin edit, current-state or hardware action. Separate static build02
 role inspection matched seven artifacts/73 object headers/28 archive bodies and
 strict-vs-HOST define separation; not native ABI, release packaging or app adoption.
+User requested continuation: one author now owns fresh encoder-query78-client
+source/docs and HOST/ARM compile-only work. Only release/trial-argument literals
+change from reviewed77; no query/guard behavior change or ELF execution. Intended
+next offline image may embed that client and omit the unpaired station record,
+avoiding post-boot file staging, but recipe/integration review remains required.
+See encoder-query78-embedded-image BUILD_CONTRACT.md; no image/boot selected yet.
+Parent read-only original-newc inspection matched all50 retained records/no regular
+hard-link groups; no extraction, archive transformation or binary execution.
 Staging guard remains unavailable; future manual-OFF handoff requires separate
 review/actual readiness. No physical request or transfer is active. Query77 monitor
 lacks query88 command. Authentication/loopback and media-retention

@@ -124,6 +124,21 @@ Receipt/report in rtsp-artifact-roles-20261022 docs. No rebuild/program/test/lis
 camera execution. ELF/config facts do not prove native ABI or release exclusion;
 functional checklist A's architecture/packaging item remains open. Old build02 is
 not the later prestarted/provider composition or a deployable camera main.
+User continuation selects the next build-side prerequisite, ENC-02/PLAT-01/02/05/08:
+one author owns fresh encoder-query78-client source/docs and HOST/ARM compile-only
+work. Exact two runtime literal changes from reviewed77: release guard and explicit
+trial argument, no other query/watchdog/UAPI behavior change. No executable run.
+Parent BUILD_CONTRACT.md under encoder-query78-embedded-image docs proposes a fresh
+query77-derived kernel/config with embedded independently reviewed client and only
+the unpaired station record omitted, original PID1/other records preserved. This
+avoids a future UART file-staging interval, not clock/launch/recovery admission.
+Client source/build review and actual fresh recipe inspection precede integration;
+no full kernel build/image invocation selected yet, no originals changed.
+Parent read-only original-newc inspection matched all50 retained records, no
+regular hard-link groups, exact bodies/symlink targets/record padding/trailer and
+whole archive before/after pins. BASE_INPUTS01.json is structure evidence only,
+not a transformed archive, new client admission or packager execution.
+
 No executable native recipe, capture/staging/boot/query or user physical action
 selected. Last target observation remains original held U-Boot12:12UTC; no fresh
 target/recorder/owner/expiry status inherited. Both HOLDs stay untouched. Query77

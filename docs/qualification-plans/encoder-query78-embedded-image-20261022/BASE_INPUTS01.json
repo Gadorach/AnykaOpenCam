@@ -1,0 +1,1209 @@
+{
+  "archive_extracted_or_entries_executed": false,
+  "entries": [
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 0,
+      "gid": 0,
+      "inode": 1,
+      "mode": "0o40755",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 0,
+      "path": "dev",
+      "payload_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_name": "dev",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 116,
+      "record_sha256": "ac551599c69a1a34e0bf91cf676f4cb62ae82820853593d22ea7cb96593a7c0b",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 0,
+      "gid": 0,
+      "inode": 2,
+      "mode": "0o40755",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 116,
+      "path": "proc",
+      "payload_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_name": "proc",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 116,
+      "record_sha256": "1fe55c9163eb573815671e74eee665bcf9d40d3b3b2fe2a4fcde6c39dc34cc62",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 0,
+      "gid": 0,
+      "inode": 3,
+      "mode": "0o40755",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 232,
+      "path": "sys",
+      "payload_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_name": "sys",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 116,
+      "record_sha256": "a03fa3150239ace04cbec77c0815927d0fe488597a5591ee8f2c9d5d80dea399",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 0,
+      "gid": 0,
+      "inode": 4,
+      "mode": "0o40755",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 348,
+      "path": "bin",
+      "payload_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_name": "bin",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 116,
+      "record_sha256": "941ed223dcf38a10e6eaaeeb9f2e7239a6e9fc2976e7ca643dc706134df95648",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 0,
+      "gid": 0,
+      "inode": 5,
+      "mode": "0o40755",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 464,
+      "path": "run",
+      "payload_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_name": "run",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 116,
+      "record_sha256": "752add3494fa0480767d3746d6017048fe92eaffa33732d794e10084dadd0696",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 0,
+      "gid": 0,
+      "inode": 6,
+      "mode": "0o40755",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 580,
+      "path": "etc",
+      "payload_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_name": "etc",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 116,
+      "record_sha256": "4409cb1ed0eb3e53897aa8031145181920a2aa3b6479cf9d384662a4a4259c88",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 0,
+      "gid": 0,
+      "inode": 7,
+      "mode": "0o40755",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 696,
+      "path": "tmp",
+      "payload_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_name": "tmp",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 116,
+      "record_sha256": "dd46a91a4a5481032951d1e323e6b929c10d75afeed383f91e5dff199ef71eca",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 0,
+      "gid": 0,
+      "inode": 8,
+      "mode": "0o20600",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 812,
+      "path": "dev/console",
+      "payload_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_name": "dev/console",
+      "rdev": [
+        5,
+        1
+      ],
+      "record_bytes": 124,
+      "record_sha256": "afe92163d49192dd8223e76d0fb33d4dc1aa60c9a673cef266325a33b8d8bee3",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 174248,
+      "gid": 0,
+      "inode": 9,
+      "mode": "0o100755",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 936,
+      "path": "init",
+      "payload_sha256": "8c8e1a5e083914c8fd2fce7bbcfe10a4065691f49a8a5ea026a4ff12c20bb899",
+      "raw_name": "init",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 174364,
+      "record_sha256": "da847ac6eebce5e8cc64ecf22a7d7685a8f1356d00c967e6d599d444571db311",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 163720,
+      "gid": 0,
+      "inode": 10,
+      "mode": "0o100444",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 175300,
+      "path": "hgics.ko",
+      "payload_sha256": "e667ed2a1f726c137330638f6ff64eeab085c0bc3247ed2cac1919594e29ef29",
+      "raw_name": "hgics.ko",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 163840,
+      "record_sha256": "5468b0b6d966a9b86dd24861e4df7fc0e5c4ee11e0efd5bbc3bf1d0e443b2963",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 378104,
+      "gid": 0,
+      "inode": 11,
+      "mode": "0o100755",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 339140,
+      "path": "bin/busybox",
+      "payload_sha256": "3f7e15eae5f1c03a0af78ce45a341aaa48ad0eb0a00850a0914512e830b7c3a1",
+      "raw_name": "bin/busybox",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 378228,
+      "record_sha256": "557f18754ee8d77d9b217714a73c6d1596f1b513ae334b37726947246c0b874a",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 849968,
+      "gid": 0,
+      "inode": 12,
+      "mode": "0o100755",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 717368,
+      "path": "bin/wpa_supplicant",
+      "payload_sha256": "10ef4a33db93377bbecb15a1edcfb338e58344dfe8bee0a066cd82d75b81a477",
+      "raw_name": "bin/wpa_supplicant",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 850100,
+      "record_sha256": "11faf084af3371f8813de6d10cd0830800e22013a921c7347cb04adfb4198022",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 141376,
+      "gid": 0,
+      "inode": 13,
+      "mode": "0o100755",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 1567468,
+      "path": "bin/wpa_cli",
+      "payload_sha256": "eb9959872f6e575a06c5ff7589d606caa7365238bf7d56076602b6573299d0e5",
+      "raw_name": "bin/wpa_cli",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 141500,
+      "record_sha256": "14e69d8f29e533b19a594e074795000720de0053728d97f74d33d5849a2b5ced",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 359520,
+      "gid": 0,
+      "inode": 14,
+      "mode": "0o100755",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 1708968,
+      "path": "bin/rtspd",
+      "payload_sha256": "ddc45d7bd18ed8ab525c309e5ed617db127147670d5f9da0eefeeef6e3f467dd",
+      "raw_name": "bin/rtspd",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 359640,
+      "record_sha256": "9d0c3c4947e764cafb611172ffe3701d2cef720d6f929a6ab20090687c847652",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 15,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2068608,
+      "path": "bin/sh",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/sh",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "8a012d3abee77d0c6a6726e8e4de4eef3842598fb29ff5ad502a265e47428f00",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 16,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2068736,
+      "path": "bin/ash",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/ash",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "7b764b9a0159c5ba576148dd674a99552aa863fa478b1c95e95149a86ac5f253",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 17,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2068864,
+      "path": "bin/cat",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/cat",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "1b33f073d9f67749fa09d33451d28eb7ff1d9ea432536b91581cb55b4c0cd3bd",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 18,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2068992,
+      "path": "bin/ls",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/ls",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "fddc99c842d3f223d19e96920b415d756fab08df6007147db2acfa38f066ab0a",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 19,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2069120,
+      "path": "bin/ps",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/ps",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "79a2f7f3583178cfba87c0b7c79700f27c132f5ca32335a9ce41fc69151184dd",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 20,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2069248,
+      "path": "bin/ifconfig",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/ifconfig",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 132,
+      "record_sha256": "ea4fb8383c5aa326e35a91a7d3aed6edbde903d2445b51b0a30bced2e17dd507",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 21,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2069380,
+      "path": "bin/route",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/route",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "374be6e8bf6b99517c1c823c3010e3639eedec89cfa95e1fbea6b40fd26f9702",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 22,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2069508,
+      "path": "bin/ip",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/ip",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "fa72916d7a16ae13c718729ed1b15585fe9031a3e5f557ae40ff6b3b77460a94",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 23,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2069636,
+      "path": "bin/ping",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/ping",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "b227409262567c936debc9e1f0dc1c785201a8ae6d491a1865bff7a8cb01f779",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 24,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2069764,
+      "path": "bin/udhcpc",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/udhcpc",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 132,
+      "record_sha256": "1f58dee897458f2ebeec1aed3b1245f70bb39f091699988d2f7a307cb80b22ae",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 25,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2069896,
+      "path": "bin/echo",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/echo",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "5b8891cf9751ec49813cfe2ce2c29e165229a2097cab20d7ec62f32d94d3e710",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 26,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2070024,
+      "path": "bin/printf",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/printf",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 132,
+      "record_sha256": "c29b856b148234c6b0942e72919630d48f7baae1ce1c98bd1523b67b3ec85b98",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 27,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2070156,
+      "path": "bin/test",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/test",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "119bb09643723e6219454d30fb3c0e790b6be7dec1a06dc29ac99b7df139787b",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 28,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2070284,
+      "path": "bin/mkdir",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/mkdir",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "235613bdfceddabc607f773325b946d5d074deba95a15e5253eb097d2b9cb612",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 29,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2070412,
+      "path": "bin/sleep",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/sleep",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "e671b3390207a4e625eacd341e9f8402e63c5b80e05d53dad28ad2b1832a5adc",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 30,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2070540,
+      "path": "bin/usleep",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/usleep",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 132,
+      "record_sha256": "ffbea0a8dba064ecaa32979fc17b4d1c73f6faab4e7ac6ac65e6672a833185d4",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 31,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2070672,
+      "path": "bin/stty",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/stty",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "e6c3e4e99d0c69aeaef7afa2ad4b5053ed11638cf98c4fce2180bb3edd3d292b",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 32,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2070800,
+      "path": "bin/env",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/env",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "68f2ea85602a4a97ba4dd4e0be5c440749543b1c90d32e77fc2f126f2bc879ab",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 33,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2070928,
+      "path": "bin/cp",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/cp",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "1b53441decd5f3ce8f082bb8a94dfc33a5b868cb122de685b8225bafa8c66e64",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 34,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2071056,
+      "path": "bin/chmod",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/chmod",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "41fbb01ca7fbc8c830b2165fe8269d1eb6480783bddf56d4df8243ae531e0db2",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 35,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2071184,
+      "path": "bin/rm",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/rm",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "629cd14abf2a0fedc072abe63e034d9c78309dfe88b67ca90e552e39fa634b2b",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 36,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2071312,
+      "path": "bin/grep",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/grep",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "8ad9b23e97e773ace7130695401eac6adf6a08198fa16e597d75eaebafcf5374",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 37,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2071440,
+      "path": "bin/head",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/head",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "9fa4bce02f7cf1aac0986d7e4e4654a9f03f12bf5c71699878d05d4e9a36bc75",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 38,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2071568,
+      "path": "bin/tail",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/tail",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "9934264413d3bf8b063b5bac7df6376e6f3ae359fa40d7206891b3574453f3a7",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 39,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2071696,
+      "path": "bin/wc",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/wc",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "62fee30c7e5f3b3051d19e363ed440d0f554fa81193b7550b2e0b1d99da7f2bb",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 40,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2071824,
+      "path": "bin/nc",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/nc",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "37923f959541f71e2f888e11fd6a41b287847506cd7b6c05cd2ccd5b584381dc",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 41,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2071952,
+      "path": "bin/wget",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/wget",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "de5182e84f8663101a40b815e65a846dbf9bb9b7e5184d2a6e8b538a0293f6c8",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 42,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2072080,
+      "path": "bin/hostname",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/hostname",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 132,
+      "record_sha256": "3ad186391f798c0f8a7f53e30f6382a6eff846cd702406565247ceb5c90871f6",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 43,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2072212,
+      "path": "bin/base64",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/base64",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 132,
+      "record_sha256": "9b9280f4ab45bee6ae1c95cd837976b0d16b6dffe50d8be9f9cb369cfed18a1b",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 44,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2072344,
+      "path": "bin/sha256sum",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/sha256sum",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 132,
+      "record_sha256": "8d3f4664e78c224be812eb01db14b60f05542116ab861dcc4704bb95610de479",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 45,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2072476,
+      "path": "bin/dd",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/dd",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "d7a4dbc9b737db6566b26c11f86d69ac5ba0ffcea37638adcd203361e06b4ca1",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 46,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2072604,
+      "path": "bin/insmod",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/insmod",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 132,
+      "record_sha256": "106df58e039543e115073225cfc6f520cc7de1fef4e7d6a336f1a4d25090f339",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 7,
+      "gid": 0,
+      "inode": 47,
+      "link": "busybox",
+      "mode": "0o120777",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2072736,
+      "path": "bin/rmmod",
+      "payload_sha256": "9d75f0d7c398df565d7ac04c6819b62d6d8f9560f5eb4672596ecd8f7e96ae91",
+      "raw_name": "bin/rmmod",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 128,
+      "record_sha256": "2392d9343a84a8ac0d94e56524d5745dcb7c29913f9873fdd83084bb21baf1f6",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 380,
+      "gid": 0,
+      "inode": 48,
+      "mode": "0o100755",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2072864,
+      "path": "bin/udhcpc.script",
+      "payload_sha256": "0730929790325e9da6429702224e9a3b734b566baa724192d8104dc93f47b472",
+      "raw_name": "bin/udhcpc.script",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 508,
+      "record_sha256": "fd3850e3b0de24e4beb64f3f3bafb83c4f571f36f5bba117a8b432f493d589ad",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 8984,
+      "gid": 0,
+      "inode": 50,
+      "mode": "0o100755",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2073372,
+      "path": "bin/qc07f-dhcp-script-bridge",
+      "payload_sha256": "6c7766557c1d0fe9e83ef33a5339f3836c78a29f84e2a4a02ae64b0d2bb39ef2",
+      "raw_name": "bin/qc07f-dhcp-script-bridge",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 9124,
+      "record_sha256": "eec12fb3ddbaa1ed57497ddbf61468d32c422ca5cac37100cbbd4a6b8e414471",
+      "uid": 0
+    },
+    {
+      "archive_device": [
+        0,
+        0
+      ],
+      "bytes": 0,
+      "gid": 0,
+      "inode": 49,
+      "mode": "0o0",
+      "mtime": 0,
+      "nlink": 1,
+      "offset": 2082496,
+      "path": "TRAILER!!!",
+      "payload_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_name": "TRAILER!!!",
+      "rdev": [
+        0,
+        0
+      ],
+      "record_bytes": 124,
+      "record_sha256": "26d9073ed3c3861ce193ed7c8d576d84d658a1ba341ec197203cb04cdfc07513",
+      "uid": 0
+    }
+  ],
+  "fixed_future_remove": [
+    "hgics.ko"
+  ],
+  "input": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/inputs/initramfs76.cpio",
+  "new_client_pin_admitted": false,
+  "original_inventory_pin": {
+    "bytes": 9904,
+    "sha256": "a5f44222fff55755b2907f6080e974f5cc22057a6981f46af34f664059e8df74"
+  },
+  "output_archive_or_image_built": false,
+  "pin": {
+    "bytes": 2082816,
+    "sha256": "510e5fdc6e2a7b6ad4a52d82ad1de9381a85e143f7014a6f2cc3bdfb951e309f"
+  },
+  "proposed_future_add": [
+    "bin/encoder-query78-qualification"
+  ],
+  "record_count": 50,
+  "regular_hardlink_records": [],
+  "scope": "READ_ONLY_ORIGINAL_ARCHIVE_STRUCTURE_NOT_TRANSFORMATION_OR_ADMISSION",
+  "trailing_zero_bytes": 196
+}
