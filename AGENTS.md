@@ -116,9 +116,30 @@ consumer-tagged views bind validation AND scalar release.4 HOST/ARM compiles,
 frozen files/exact membership/diffs and222 v1 records/33 logs. Parent closeout:
 span-hub-parent-20261024/V2_DISPOSITION.md, outside sealed original directories.
 V1 remains NOT ADOPTED; no source author/reviewer active, v2 runtime observations0.
-Use ONLY v2 header/C, not old hubs/RELs. Real server adoption/native contiguous1MiB
-output/raw/prefault ledger/process2MiB/combined-load/external recovery remain open;
-no rerun, negative test, runtime/cap/native adoption or hardware queue.
+Use ONLY v2 header/C, not old hubs/RELs. Local commit `8dab03a`; no v2 execution.
+Actual authenticated sender derivative at rtsp-span-server-candidate now delivered:
+borrowed pristine v2 hub, typed nonreturning uncertainty sink, actual shared copy →
+producer release/END → consumer-bound span packets/partial-send checks. Finalbuild03
+6 HOST/ARM compiles/2 rooted REL links/26 commands PASS, NOT RUN; build01/02 link-
+inspection failures preserved (12 compiles/4 REL tools/50 successful commands total,
+two failed recipe dispositions). Independent review now requires R1/R2: clock-
+fault AU cleanup retires cursor state before retention, and demand_attached clears
+before detach acknowledgment. V1 frozen NOT ADOPTED; parent disposition in rtsp-
+span-server-parent-20261024/V1_DISPOSITION.md. Fresh rtsp-span-server-v2 correction
+delivered: only pause/close/finish_au bodies changed; retain before observed-uncertain
+cleanup and clear demand only after detach0 plus valid post-clock.6 HOST/ARM compiles,
+2 rooted REL links/26 commands PASS, zero executions;217 frozen inputs unchanged.
+Independent ordinary review active at rtsp-span-server-v2-review-20261024; no
+adoption. Disjoint qc07f-span-memory candidate now delivered:
+actual eight-range whole-hub prefault/atomic page credit, scalar hub kind1 refusal,
+sticky unpaid failed attempt and conservative28KiB extra data-extent page cover.
+10 HOST/ARM compiles/2 real REL links/26 commands PASS, zero candidate executions.
+Narrow independent SOURCE/API/ledger/prefault sufficiency now accepted; parent
+checked288 overlapping records and both regenerated diffs. See qc07f-span-memory
+PARENT_DISPOSITION; no author/reviewer active in that lane, no function invocation.
+Actual native adapter/ready/return-history integration,1MiB output/
+raw/process2MiB/combined-load/external recovery remain open; no rerun, negative
+test, runtime/cap/native adoption or hardware queue.
 No new diagnostic/clock/receipt framework or hardware phase selected.
 No bootstrap test/child/verifier/native/media execution, main, synthetic callbacks,
 provider/backing or hardware adoption selected.

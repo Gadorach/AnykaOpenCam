@@ -1,0 +1,77 @@
+[
+  {
+    "path": "apps/rtsp-auth/qc07f-owned-runtime/native/memory_reserve.c",
+    "bytes": 10310,
+    "sha256": "aec0a30d7f67bfc8fc0f2c078cf4a53efb42d78a65b46c0bef22312060070aff"
+  },
+  {
+    "path": "apps/rtsp-auth/qc07f-owned-runtime/native/memory_reserve.h",
+    "bytes": 2193,
+    "sha256": "e09c5ce48a1142df66a71c782367abdc4c8e5557210c27c8ee3f1b67ecfc6eed"
+  },
+  {
+    "path": "apps/rtsp-auth/qc07f-owned-runtime/native/memory_runtime.c",
+    "bytes": 5115,
+    "sha256": "c505e3447cbfa852c88a97816e233269de6dec12080625d16004dca31d152d57"
+  },
+  {
+    "path": "apps/rtsp-auth/qc07f-owned-runtime/native/memory_runtime.h",
+    "bytes": 921,
+    "sha256": "54aaa1c9bb8e9c297625054160653378c242d9303504bb7093602373ba227b84"
+  },
+  {
+    "path": "apps/rtsp-auth/qc07f-owned-runtime/native/memory_reader.c",
+    "bytes": 1079,
+    "sha256": "c9bd8401476f3baf73b43051651e6c306f14a05c1d5a5317531302569d4261c0"
+  },
+  {
+    "path": "apps/rtsp-auth/qc07f-owned-runtime/native/handoff.h",
+    "bytes": 2413,
+    "sha256": "9b88ce3e24a3a6c1c16336315323b70b29560c473ac9a48d36043bd60c840113"
+  },
+  {
+    "path": "apps/rtsp-auth/qc07f-owned-runtime/native/native_adapter.c",
+    "bytes": 11628,
+    "sha256": "1fcd2a68750c64a0f1d1b3a96f1124f6f21369b9eb19f4b89a9bcbd1774754bf"
+  },
+  {
+    "path": "apps/rtsp-auth/qc07f-owned-runtime/native/provider-return.inc",
+    "bytes": 5400,
+    "sha256": "ba81cfcfe6c81d15bf86d7241db1a8a166f106e3c0dac91fa99a1d27fd7e62c5"
+  },
+  {
+    "path": "apps/rtsp-auth/qc07f-owned-runtime/owned_runtime.c",
+    "bytes": 11809,
+    "sha256": "5e21fcb2559911b79ffbd7732b951b8d8931a84e2e33f03a52f39d09de0dbd43"
+  },
+  {
+    "path": "apps/rtsp-auth/span-hub-v2/span_hub.c",
+    "bytes": 9081,
+    "sha256": "bcf50041bb1fe1b20352d92d1ec9ba61d9e70156fa2cf4c96b06378d837322b1"
+  },
+  {
+    "path": "apps/rtsp-auth/span-hub-v2/span_hub.h",
+    "bytes": 5719,
+    "sha256": "310160cf0b3bf753daa199193a5674e9e223e036af467e320cc5905e415b3454"
+  },
+  {
+    "path": "apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.c",
+    "bytes": 2586,
+    "sha256": "a608fe8ee8a292b1172ce62c62f19c2a61f9969f64d71385f1a742fdd326560e"
+  },
+  {
+    "path": "apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.h",
+    "bytes": 1660,
+    "sha256": "41126a8b9827894d6ecb71788cd1cc71bf3b5b036e44fddf998f4c5740f05f91"
+  },
+  {
+    "path": "docs/qualification-plans/span-hub-parent-20261024/V2_DISPOSITION.md",
+    "bytes": 4214,
+    "sha256": "3bc9454af6953f074b11e3e8ec29e0109873126b16753c937205cd4ab0dd24a5"
+  },
+  {
+    "path": "docs/qualification-plans/span-hub-v2-20261024/runs/build01/TOOLS.json",
+    "bytes": 4137,
+    "sha256": "0ed61aa8de258016dae1fa97823b404faed63c923680f30035cbbbaa10e85c53"
+  }
+]

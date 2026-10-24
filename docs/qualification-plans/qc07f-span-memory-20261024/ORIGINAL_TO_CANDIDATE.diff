@@ -1,0 +1,303 @@
+--- apps/rtsp-auth/qc07f-owned-runtime/native/memory_reserve.c
++++ apps/rtsp-auth/qc07f-span-memory/memory_reserve.c
+@@ -94,18 +94,63 @@
+  if(!l||raw_reuse>1||capacity<(raw_reuse?NH_MEMORY_RAW_REUSE_MIN_CPU_KIB:NH_MEMORY_MIN_CPU_KIB)||capacity>16384||nonmovable>capacity)return -1;
+  memset(l,0,sizeof(*l));l->cpu_capacity_kib=capacity;l->nonmovable_cpu_debt_kib=nonmovable;l->initialized=1;l->raw_reuse=raw_reuse;return 0;
+ }
++static int overlaps(uintptr_t a,uintptr_t b,uintptr_t c,uintptr_t d)
++{return a<d&&b>c;}
++/* Division/remainder avoids a+4095 overflow on a 64-bit HOST uintptr_t. */
++static uint64_t interior_kib(uintptr_t a,uintptr_t b)
++{
++ uint64_t first=a/4096+(a%4096!=0),last=b/4096;
++ return first<last?(last-first)*4:0;
++}
+ int nh_memory_credit_owned(struct nh_memory_ledger *l,unsigned kind,const void *data,size_t bytes)
+ {
+- if(!l||!l->initialized||kind>=3||(l->raw_reuse&&kind==2)||l->paid[kind]||!data||!bytes||bytes>1728000||bytes>UINTPTR_MAX-(uintptr_t)data)return -1;
++ if(kind==1)return -1; /* never inspect/touch a purported flat hub */
++ if(!l||!l->initialized||kind>=3||(l->raw_reuse&&kind==2)||l->paid[kind]||!data||!bytes||bytes>1728000||bytes>UINTPTR_MAX-(uintptr_t)data||
++    l->cpu_paid_kib>l->cpu_capacity_kib||l->hub.count>NH_MEMORY_HUB_RANGES)return -1;
+  uintptr_t a=(uintptr_t)data,b=a+bytes;
+  /* Credit full interior pages only; no double credit of shared boundary pages
+   * or allocator padding whose residency was not directly touched. */
+- uint64_t first=((uint64_t)a+4095)/4096,last=(uint64_t)b/4096;
+- if(first>=last)return -1;
+- for(unsigned i=0;i<3;i++)if(l->paid[i]&&a<l->end[i]&&b>l->begin[i])return -1;
+- uint64_t credit=(last-first)*4;
++ uint64_t credit=interior_kib(a,b);if(!credit)return -1;
++ for(unsigned i=0;i<3;i++)if(l->paid[i]&&overlaps(a,b,l->begin[i],l->end[i]))return -1;
++ for(unsigned i=0;i<l->hub.count;i++)if(overlaps(a,b,l->hub.begin[i],l->hub.end[i]))return -1;
+  if(credit>l->cpu_capacity_kib-l->cpu_paid_kib)return -1;
+  l->begin[kind]=a;l->end[kind]=b;l->paid[kind]=1;l->cpu_paid_kib+=credit;return 0;
++}
++_Static_assert(CAMERA_SPAN_HUB_V1_CHUNKS==NH_MEMORY_HUB_RANGES&&
++ CAMERA_SPAN_HUB_V1_CHUNK_BYTES==NH_MEMORY_HUB_BYTES&&
++ NH_MEMORY_HUB_RANGES*NH_MEMORY_HUB_BYTES==1048576U,"exact accepted v2 backing");
++_Static_assert(sizeof(struct nh_memory_hub_ranges)<512&&sizeof(struct nh_memory_ledger)<1024,
++ "bounded metadata, no full-AU allocation");
++int nh_memory_span_hub_forecast(const struct nh_memory_ledger *l,
++ const struct camera_span_hub_v1 *h,struct nh_memory_hub_ranges *out)
++{
++ if(!l||!l->initialized||!h||!out||l->paid[1]||l->begin[1]||l->end[1]||
++    l->hub.owner||l->hub.count||l->hub.credit_kib||l->cpu_paid_kib>l->cpu_capacity_kib)return -1;
++ if(h->self!=h||h->phase!=CAMERA_SPAN_HUB_V1_ACTIVE||h->generation||h->issued_token||
++    h->monotonic_ns||h->codec||h->keyframe||h->subscribers||h->need_keyframe||h->pending||h->acquired||h->bytes||
++    h->allocation_calls!=8||h->allocated_bytes!=1048576||h->maximum_allocation!=131072)return -1;
++ for(unsigned i=0;i<CAMERA_SPAN_HUB_V1_CONSUMERS;i++)if(h->active_token[i])return -1;
++ struct nh_memory_hub_ranges next={.owner=h,.count=NH_MEMORY_HUB_RANGES};
++ for(unsigned i=0;i<NH_MEMORY_HUB_RANGES;i++){
++  if(l->hub.begin[i]||l->hub.end[i]||!h->chunks[i])return -1;
++  uintptr_t a=(uintptr_t)h->chunks[i];if(NH_MEMORY_HUB_BYTES>UINTPTR_MAX-a)return -1;
++  uintptr_t b=a+NH_MEMORY_HUB_BYTES;
++  for(unsigned j=0;j<i;j++)if(overlaps(a,b,next.begin[j],next.end[j]))return -1;
++  for(unsigned j=0;j<3;j++)if(l->paid[j]&&overlaps(a,b,l->begin[j],l->end[j]))return -1;
++  uint64_t credit=interior_kib(a,b);
++  if(!credit||credit>UINT64_MAX-next.credit_kib)return -1;
++  next.begin[i]=a;next.end[i]=b;next.credit_kib+=credit;
++ }
++ if(next.credit_kib>l->cpu_capacity_kib-l->cpu_paid_kib)return -1;
++ *out=next;return 0;
++}
++int nh_memory_credit_span_hub(struct nh_memory_ledger *l,const struct camera_span_hub_v1 *h)
++{
++ struct nh_memory_hub_ranges next;
++ if(nh_memory_span_hub_forecast(l,h,&next))return -1;
++ /* Logical atomic whole-kind commit: no fallible operation/callback from here.
++  * Scalar hub slots remain empty. Never pays unrequested boundary/padding pages. */
++ l->hub=next;l->cpu_paid_kib+=next.credit_kib;l->paid[1]=1;return 0;
+ }
+ int nh_memory_credit_codec(struct nh_memory_ledger *l,uint64_t bytes,unsigned healthy)
+ {
+@@ -144,9 +189,7 @@
+ int nh_memory_own_layout(uint64_t *capacity,uint64_t *nonmovable,unsigned raw_reuse)
+ {
+  if(raw_reuse>1)return -1;
+-#ifdef NH_MEMORY_PUBLIC_FIXTURE
+- *capacity=raw_reuse?2804:3832;*nonmovable=80;return 0;
+-#elif defined(__arm__)
++#if defined(__arm__)
+  extern const unsigned char __ehdr_start[];const Elf32_Ehdr *e=(const Elf32_Ehdr *)__ehdr_start;
+  if(memcmp(e->e_ident,ELFMAG,4)||e->e_ident[EI_CLASS]!=ELFCLASS32||e->e_ident[EI_DATA]!=ELFDATA2LSB||e->e_machine!=EM_ARM||e->e_type!=ET_EXEC||
+     e->e_phentsize!=sizeof(Elf32_Phdr)||!e->e_phnum||e->e_phnum>8||e->e_phoff>4096||e->e_phoff+e->e_phnum*sizeof(Elf32_Phdr)>4096||
+@@ -161,8 +204,9 @@
+  uint64_t file_end=(uint64_t)e->e_shoff+(uint64_t)e->e_shnum*e->e_shentsize,file_pages=(file_end+4095)/4096;
+  if(loads!=2||!rx_file_pages||file_pages<rx_file_pages||file_pages>256)return -1;
+  uint64_t stage=(file_pages-rx_file_pages)*4; /* nonshared data/trailer staging; RX not counted twice */
+- uint64_t minimum=raw_reuse?2804:3832;
+- *capacity=mapped+(raw_reuse?1:2)*1028+stage;if(*capacity<minimum)*capacity=minimum;
++ uint64_t minimum=raw_reuse?2832:3860;
++ /* Eight user extents: 8*33 pages vs old flat257; NOT allocator overhead. */
++ *capacity=mapped+1056+(raw_reuse?0:1028)+stage;if(*capacity<minimum)*capacity=minimum;
+  *nonmovable=rx_file_pages*4+stage;return 0;
+ #else
+  (void)capacity;(void)nonmovable;return -1; /* no unqualified HOST proc/runtime fallback */
+--- apps/rtsp-auth/qc07f-owned-runtime/native/memory_reserve.h
++++ apps/rtsp-auth/qc07f-span-memory/memory_reserve.h
+@@ -1,16 +1,27 @@
+-/* SPDX-License-Identifier: GPL-2.0-only */
++/* SPDX-License-Identifier: GPL-2.0-only
++ * SOURCE replacement: retained names/guards, NEW layout, never old+new units.
++ */
+ #ifndef NH_MEMORY_RESERVE_H
+ #define NH_MEMORY_RESERVE_H
+ #include <stddef.h>
+ #include <stdint.h>
++#include "../span-hub-v2/span_hub.h"
++/* TRUSTED source API: valid stable disjoint ledger/owner/output/private chunks,
++ * true-fresh storage and actual v2 allocation history, no mutable aliases,
++ * reentry/signals/fork/concurrency or callbacks mutating any of these objects.
++ * Never reset/copy/edit ledgers or owner/range association to regain credit.
++ * Retain owner/backing until separately proved real retirement. Nonnull/self/
++ * history checks are NOT hostile-pointer, malloc or residency validation. */
+ #define NH_MEMINFO_CAP 4096U
+ #define NH_ZONEINFO_CAP 16384U
+ #define NH_MEMORY_MAX_SAMPLE_NS 100000000ULL
+ #define NH_MEMORY_OVERHEAD_KIB 512ULL
+ #define NH_MEMORY_RESERVE_KIB 1024ULL
+ #define NH_MEMORY_CODEC_KIB 8256ULL
+-#define NH_MEMORY_MIN_CPU_KIB 3832ULL
+-#define NH_MEMORY_RAW_REUSE_MIN_CPU_KIB 2804ULL
++#define NH_MEMORY_MIN_CPU_KIB 3860ULL
++#define NH_MEMORY_RAW_REUSE_MIN_CPU_KIB 2832ULL
++#define NH_MEMORY_HUB_RANGES 8U
++#define NH_MEMORY_HUB_BYTES 131072U
+ enum nh_memory_stage {NH_MEM_INITIAL,NH_MEM_FIXED_PAID,NH_MEM_PRE_NEXT,NH_MEM_POST_FIRST};
+ enum nh_memory_reason {NH_MEM_OK,NH_MEM_FORMAT,NH_MEM_LAYOUT,NH_MEM_STALE,NH_MEM_CLOCK,NH_MEM_LOW_AVAILABLE,NH_MEM_LOW_NONCMA,NH_MEM_CREDIT,NH_MEM_IO,NH_MEM_CANCEL};
+ struct nh_memory_values {uint64_t total,free,available,cma_total,cma_free,swap_total;};
+@@ -18,9 +29,16 @@
+  uint64_t free,boost,min,low,high,promo,spanned,present,managed,cma,protection[2],free_cma;
+ };
+ struct nh_memory_zones {struct nh_memory_zone normal,movable;uint64_t watermark_kib;};
++struct nh_memory_hub_ranges {
++ const struct camera_span_hub_v1 *owner;
++ uintptr_t begin[NH_MEMORY_HUB_RANGES],end[NH_MEMORY_HUB_RANGES];
++ unsigned count;uint64_t credit_kib;
++};
+ struct nh_memory_ledger {
+  uint64_t cpu_capacity_kib,cpu_paid_kib,nonmovable_cpu_debt_kib;
+  uintptr_t begin[3],end[3];unsigned paid[3],codec_paid,initialized,raw_reuse;
++ /* begin/end[1] stay zero: there is NO flat hub extent. */
++ struct nh_memory_hub_ranges hub;
+ };
+ struct nh_memory_observation {
+  uint64_t begin_ns,end_ns,available,noncma_free,watermark_kib,cpu_debt,dma_debt,required_available,required_noncma;
+@@ -29,11 +47,20 @@
+ };
+ int nh_memory_parse_meminfo(const char *,size_t,struct nh_memory_values *);
+ int nh_memory_parse_zoneinfo(const char *,size_t,struct nh_memory_zones *);
++/* Trusted true-fresh storage only, once; no reset/reinit of retained histories. */
+ int nh_memory_init(struct nh_memory_ledger *,uint64_t,uint64_t);
+ int nh_memory_init_mode(struct nh_memory_ledger *,uint64_t,uint64_t,unsigned);
++/* Scalar raw(0)/producer(2) metadata half. Hub(1) ALWAYS refuses before touch. */
+ int nh_memory_credit_owned(struct nh_memory_ledger *,unsigned,const void *,size_t);
++/* Metadata preflight only, no chunk reads/writes. Output unchanged on refusal. */
++int nh_memory_span_hub_forecast(const struct nh_memory_ledger *,
++ const struct camera_span_hub_v1 *,struct nh_memory_hub_ranges *);
++/* Metadata half ONLY: trusted prior actual touch of ALL eight whole chunks is
++ * mandatory. Not native admission/residency proof or an alternative ready flag.
++ * Refusal leaves the entire ledger unchanged; caller retains owner/backing. */
++int nh_memory_credit_span_hub(struct nh_memory_ledger *,const struct camera_span_hub_v1 *);
+ int nh_memory_credit_codec(struct nh_memory_ledger *,uint64_t,unsigned);
+ int nh_memory_evaluate(const struct nh_memory_ledger *,const struct nh_memory_values *,
+  const struct nh_memory_values *,const struct nh_memory_zones *,uint64_t,uint64_t,enum nh_memory_stage,struct nh_memory_observation *);
+-int nh_memory_own_layout(uint64_t *,uint64_t *,unsigned); /* explicit raw-reuse vs separate mapping */
++int nh_memory_own_layout(uint64_t *,uint64_t *,unsigned);
+ #endif
+--- apps/rtsp-auth/qc07f-owned-runtime/native/memory_runtime.c
++++ apps/rtsp-auth/qc07f-span-memory/memory_runtime.c
+@@ -13,6 +13,7 @@
+ #include <string.h>
+ #include <sys/statfs.h>
+ #include <unistd.h>
++_Static_assert(sizeof(struct nh_memory_runtime)<131072U,"bounded runtime metadata");
+ static int checked(struct nh_memory_runtime *r,uint64_t start,uint64_t *now)
+ {
+  *now=r->now(r->context);
+@@ -24,13 +25,14 @@
+ int nh_memory_runtime_init(struct nh_memory_runtime *r,uint64_t start,
+  uint64_t (*now)(void *),int (*cancelled)(void *),void *context,unsigned raw_reuse)
+ {
+- uint64_t capacity,nonmovable;if(!r||!now||!cancelled||start==UINT64_MAX||nh_memory_own_layout(&capacity,&nonmovable,raw_reuse))return NH_MEM_LAYOUT;
++ uint64_t capacity,nonmovable;if(!r||r->ledger.initialized||r->span_attempt!=NH_MEM_SPAN_FRESH||!now||!cancelled||start==UINT64_MAX||nh_memory_own_layout(&capacity,&nonmovable,raw_reuse))return NH_MEM_LAYOUT;
+  memset(r,0,sizeof(*r));if(nh_memory_init_mode(&r->ledger,capacity,nonmovable,raw_reuse))return NH_MEM_LAYOUT;
+  r->session_start=start;r->now=now;r->cancelled=cancelled;r->context=context;return NH_MEM_OK;
+ }
+ int nh_memory_runtime_gate(struct nh_memory_runtime *r,enum nh_memory_stage stage,uint64_t unit_start)
+ {
+  if(!r||!r->ledger.initialized||r->count>=64)return NH_MEM_FORMAT;
++ if(r->span_attempt==NH_MEM_SPAN_HOLD)return (int)r->span_failure;
+  struct nh_memory_observation o={.stage=stage};struct nh_memory_values first,last;struct nh_memory_zones zones;
+  uint64_t now;size_t bytes;int reason=checked(r,unit_start,&o.begin_ns);if(reason)goto failed;
+  if(nh_memory_read_fixed(0,r->meminfo,sizeof(r->meminfo),&bytes)){reason=NH_MEM_IO;goto failed;}
+@@ -51,8 +53,10 @@
+ }
+ int nh_memory_prefault_owned(struct nh_memory_runtime *r,unsigned kind,void *buffer,size_t bytes,uint64_t start)
+ {
++ if(kind==1)return NH_MEM_CREDIT; /* refuse legacy flat hub BEFORE pointer touch */
+  if(!r||!buffer||!bytes||bytes>1728000||kind>=3||r->ledger.paid[kind])return NH_MEM_CREDIT;
+- /* Only newly owned raw/hub/producer buffers, never an acquired/current AU.
++ if(r->span_attempt==NH_MEM_SPAN_HOLD)return (int)r->span_failure;
++ /* Only newly owned raw/producer buffers, never an acquired/current AU.
+   * Volatile read/write of SAME byte faults private writable backing; no copy,
+   * CRC shortcut, mlock policy or pixel/value modification. */
+  volatile unsigned char *p=buffer;uint64_t now;int result=checked(r,start,&now);if(result)return result;
+@@ -61,10 +65,56 @@
+  result=checked(r,start,&now);if(result)return result;
+  return nh_memory_credit_owned(&r->ledger,kind,buffer,bytes)?NH_MEM_CREDIT:NH_MEM_OK;
+ }
++static int span_hold(struct nh_memory_runtime *r,int reason)
++{
++ /* No ledger changes, cleanup, reset or chunk/owner mutation. */
++ r->span_failure=(enum nh_memory_reason)reason;r->span_attempt=NH_MEM_SPAN_HOLD;
++ return reason;
++}
++static int same_ranges(const struct nh_memory_hub_ranges *a,const struct nh_memory_hub_ranges *b)
++{
++ if(a->owner!=b->owner||a->count!=b->count||a->credit_kib!=b->credit_kib)return 0;
++ for(unsigned i=0;i<NH_MEMORY_HUB_RANGES;i++)
++  if(a->begin[i]!=b->begin[i]||a->end[i]!=b->end[i])return 0;
++ return 1;
++}
++int nh_memory_prefault_span_hub(struct nh_memory_runtime *r,
++ struct camera_span_hub_v1 *h,uint64_t start)
++{
++ if(!r)return NH_MEM_CREDIT;
++ if(r->span_attempt==NH_MEM_SPAN_HOLD)return (int)r->span_failure;
++ if(r->span_attempt!=NH_MEM_SPAN_FRESH||!r->now||!r->cancelled||r->count>62)return NH_MEM_CREDIT;
++ struct nh_memory_hub_ranges forecast;
++ if(nh_memory_span_hub_forecast(&r->ledger,h,&forecast))return NH_MEM_CREDIT;
++ /* Whole non-effectful shape/credit preflight precedes one irrevocable attempt.
++  * Borrow exact canonical ranges even on pre-touch clock/gate/cancel failure. */
++ r->span_retained=forecast;r->span_attempt=NH_MEM_SPAN_TOUCHING;
++ uint64_t now;int reason=checked(r,start,&now);if(reason)return span_hold(r,reason);
++ reason=nh_memory_runtime_gate(r,NH_MEM_FIXED_PAID,start);
++ if(reason)return span_hold(r,reason); /* UNPAID whole chunk debt in this gate */
++ for(unsigned chunk=0;chunk<NH_MEMORY_HUB_RANGES;chunk++){
++  reason=checked(r,start,&now);if(reason)return span_hold(r,reason);
++  volatile unsigned char *p=h->chunks[chunk];
++  for(size_t i=0;i<NH_MEMORY_HUB_BYTES;i+=4096){
++   unsigned char old=p[i];p[i]=old;
++   if((i/4096)%16==0){reason=checked(r,start,&now);if(reason)return span_hold(r,reason);}
++  }
++  {unsigned char old=p[NH_MEMORY_HUB_BYTES-1];p[NH_MEMORY_HUB_BYTES-1]=old;}
++  reason=checked(r,start,&now);if(reason)return span_hold(r,reason);
++ }
++ /* Still unpaid: any final gate/association/credit refusal retains all backing. */
++ reason=nh_memory_runtime_gate(r,NH_MEM_FIXED_PAID,start);
++ if(reason)return span_hold(r,reason);
++ if(nh_memory_span_hub_forecast(&r->ledger,h,&forecast)||
++    !same_ranges(&r->span_retained,&forecast))return span_hold(r,NH_MEM_CREDIT);
++ if(nh_memory_credit_span_hub(&r->ledger,h))return span_hold(r,NH_MEM_CREDIT);
++ /* NO fallible operation/callback after the actual whole-kind credit. */
++ r->span_attempt=NH_MEM_SPAN_PAID;return NH_MEM_OK;
++}
+ void nh_memory_log(const struct nh_memory_runtime *r)
+ {
+-  fprintf(stderr,"NH_MEMORY_POLICY normal75-placement-one-shot producer_storage=%s CPU_capacity_kib=%llu CPU_paid_buffer_kib=%llu RX_staging_debt_kib=%llu codec_paid=%u overhead_envelope_kib=512 reserve_kib=1024 paid_buffers_not_RSS_peak=1\n",
+-  r->ledger.raw_reuse?"raw-reuse-k75":"separate",(unsigned long long)r->ledger.cpu_capacity_kib,(unsigned long long)r->ledger.cpu_paid_kib,(unsigned long long)r->ledger.nonmovable_cpu_debt_kib,r->ledger.codec_paid);
++   fprintf(stderr,"NH_MEMORY_POLICY normal75-placement-one-shot producer_storage=%s CPU_capacity_kib=%llu CPU_paid_buffer_kib=%llu RX_staging_debt_kib=%llu codec_paid=%u overhead_envelope_kib=512 reserve_kib=1024 paid_buffers_not_RSS_peak=1\n",
++   r->ledger.raw_reuse?"raw-reuse-k75":"separate",(unsigned long long)r->ledger.cpu_capacity_kib,(unsigned long long)r->ledger.cpu_paid_kib,(unsigned long long)r->ledger.nonmovable_cpu_debt_kib,r->ledger.codec_paid);
+  for(unsigned i=0;i<r->count;i++){
+   const struct nh_memory_observation *o=&r->observations[i];
+   fprintf(stderr,"NH_MEMORY_GATE stage=%u reason=%u begin_ns=%llu end_ns=%llu available_kib=%llu nonCMA_above_W_kib=%llu W_kib=%llu CPU_unpaid_kib=%llu DMA_unpaid_kib=%llu require_A_kib=%llu require_nonCMA_kib=%llu future_migration_kib=%llu\n",
+--- apps/rtsp-auth/qc07f-owned-runtime/native/memory_runtime.h
++++ apps/rtsp-auth/qc07f-span-memory/memory_runtime.h
+@@ -1,18 +1,36 @@
+-/* SPDX-License-Identifier: GPL-2.0-only */
++/* SPDX-License-Identifier: GPL-2.0-only
++ * SOURCE replacement only; rebuild consumers, never old+new memory units.
++ */
+ #ifndef NH_MEMORY_RUNTIME_H
+ #define NH_MEMORY_RUNTIME_H
+ #include "memory_reserve.h"
++enum nh_memory_span_attempt {NH_MEM_SPAN_FRESH,NH_MEM_SPAN_TOUCHING,NH_MEM_SPAN_HOLD,NH_MEM_SPAN_PAID};
+ struct nh_memory_runtime {
+  struct nh_memory_ledger ledger;
+  struct nh_memory_observation observations[64];unsigned count; /* finite forecast points for13 AUs, not a frame/deadline ceiling change */
+  char meminfo[NH_MEMINFO_CAP],zoneinfo[NH_ZONEINFO_CAP];
+  uint64_t session_start;
+  uint64_t (*now)(void *);int (*cancelled)(void *);void *context;
++ /* Exact borrowed association survives EVERY admitted attempt outcome. */
++ struct nh_memory_hub_ranges span_retained;
++ enum nh_memory_span_attempt span_attempt;
++ enum nh_memory_reason span_failure;
+ };
+ int nh_memory_read_fixed(unsigned,char *,size_t,size_t *); /* ONLY meminfo/zoneinfo */
++/* True-fresh zeroed persistent runtime, once. No reset/reinitialization. */
+ int nh_memory_runtime_init(struct nh_memory_runtime *,uint64_t,
+  uint64_t (*)(void *),int (*)(void *),void *,unsigned);
+ int nh_memory_runtime_gate(struct nh_memory_runtime *,enum nh_memory_stage,uint64_t);
+ int nh_memory_prefault_owned(struct nh_memory_runtime *,unsigned,void *,size_t,uint64_t);
++/* Actual typed bridge, not called by this source-only delivery. Valid stable
++ * disjoint runtime/owner/chunks, private writable backing; no aliases/copies,
++ * concurrency/reentry/signals/fork or callbacks changing ledger/hub/config.
++ * Borrow exact owner/ranges through HOLD/success until real retirement elsewhere.
++ * Caller must not dispose/publish/subscribe/mutate during this whole operation.
++ * Failures after admission retain unpaid backing permanently; no retry/free.
++ * No hostile-pointer probing or fault catching; callbacks use REAL clock/cancel.
++ */
++int nh_memory_prefault_span_hub(struct nh_memory_runtime *,
++ struct camera_span_hub_v1 *,uint64_t);
+ void nh_memory_log(const struct nh_memory_runtime *);
+ #endif

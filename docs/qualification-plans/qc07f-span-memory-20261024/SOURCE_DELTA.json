@@ -1,0 +1,554 @@
+{
+  "kind": "STATIC_SOURCE_COMPARISON_NOT_EXECUTION",
+  "files": [
+    {
+      "original": {
+        "path": "apps/rtsp-auth/qc07f-owned-runtime/native/memory_reserve.c",
+        "bytes": 10310,
+        "sha256": "aec0a30d7f67bfc8fc0f2c078cf4a53efb42d78a65b46c0bef22312060070aff"
+      },
+      "candidate": {
+        "path": "apps/rtsp-auth/qc07f-span-memory/memory_reserve.c",
+        "bytes": 12968,
+        "sha256": "3de7e750b5f846c1a77804113862881947074f42ed5718627efe70942337316a"
+      },
+      "identical": false,
+      "forward_inverse_exact_in_memory": true,
+      "opcodes": [
+        [
+          "equal",
+          0,
+          96,
+          0,
+          96
+        ],
+        [
+          "insert",
+          96,
+          96,
+          96,
+          104
+        ],
+        [
+          "equal",
+          96,
+          98,
+          104,
+          106
+        ],
+        [
+          "replace",
+          98,
+          99,
+          106,
+          109
+        ],
+        [
+          "equal",
+          99,
+          102,
+          109,
+          112
+        ],
+        [
+          "replace",
+          102,
+          106,
+          112,
+          115
+        ],
+        [
+          "equal",
+          106,
+          108,
+          115,
+          117
+        ],
+        [
+          "insert",
+          108,
+          108,
+          117,
+          153
+        ],
+        [
+          "equal",
+          108,
+          146,
+          153,
+          191
+        ],
+        [
+          "replace",
+          146,
+          149,
+          191,
+          192
+        ],
+        [
+          "equal",
+          149,
+          163,
+          192,
+          206
+        ],
+        [
+          "replace",
+          163,
+          165,
+          206,
+          209
+        ],
+        [
+          "equal",
+          165,
+          170,
+          209,
+          214
+        ]
+      ]
+    },
+    {
+      "original": {
+        "path": "apps/rtsp-auth/qc07f-owned-runtime/native/memory_reserve.h",
+        "bytes": 2193,
+        "sha256": "e09c5ce48a1142df66a71c782367abdc4c8e5557210c27c8ee3f1b67ecfc6eed"
+      },
+      "candidate": {
+        "path": "apps/rtsp-auth/qc07f-span-memory/memory_reserve.h",
+        "bytes": 3790,
+        "sha256": "9893a15d37fd9867d1595bd0b5485fd7f19157b8ee28a7b4b3046cc94bd66e0e"
+      },
+      "identical": false,
+      "forward_inverse_exact_in_memory": true,
+      "opcodes": [
+        [
+          "replace",
+          0,
+          1,
+          0,
+          3
+        ],
+        [
+          "equal",
+          1,
+          5,
+          3,
+          7
+        ],
+        [
+          "insert",
+          5,
+          5,
+          7,
+          14
+        ],
+        [
+          "equal",
+          5,
+          11,
+          14,
+          20
+        ],
+        [
+          "replace",
+          11,
+          13,
+          20,
+          24
+        ],
+        [
+          "equal",
+          13,
+          20,
+          24,
+          31
+        ],
+        [
+          "insert",
+          20,
+          20,
+          31,
+          36
+        ],
+        [
+          "equal",
+          20,
+          23,
+          36,
+          39
+        ],
+        [
+          "insert",
+          23,
+          23,
+          39,
+          41
+        ],
+        [
+          "equal",
+          23,
+          31,
+          41,
+          49
+        ],
+        [
+          "insert",
+          31,
+          31,
+          49,
+          50
+        ],
+        [
+          "equal",
+          31,
+          33,
+          50,
+          52
+        ],
+        [
+          "insert",
+          33,
+          33,
+          52,
+          53
+        ],
+        [
+          "equal",
+          33,
+          34,
+          53,
+          54
+        ],
+        [
+          "insert",
+          34,
+          34,
+          54,
+          61
+        ],
+        [
+          "equal",
+          34,
+          37,
+          61,
+          64
+        ],
+        [
+          "replace",
+          37,
+          38,
+          64,
+          65
+        ],
+        [
+          "equal",
+          38,
+          39,
+          65,
+          66
+        ]
+      ]
+    },
+    {
+      "original": {
+        "path": "apps/rtsp-auth/qc07f-owned-runtime/native/memory_runtime.c",
+        "bytes": 5115,
+        "sha256": "c505e3447cbfa852c88a97816e233269de6dec12080625d16004dca31d152d57"
+      },
+      "candidate": {
+        "path": "apps/rtsp-auth/qc07f-span-memory/memory_runtime.c",
+        "bytes": 7911,
+        "sha256": "0e0434b5a8a80493e2582f8efa890fb634dd21543da35808ffd706c3a0a00332"
+      },
+      "identical": false,
+      "forward_inverse_exact_in_memory": true,
+      "opcodes": [
+        [
+          "equal",
+          0,
+          15,
+          0,
+          15
+        ],
+        [
+          "insert",
+          15,
+          15,
+          15,
+          16
+        ],
+        [
+          "equal",
+          15,
+          26,
+          16,
+          27
+        ],
+        [
+          "replace",
+          26,
+          27,
+          27,
+          28
+        ],
+        [
+          "equal",
+          27,
+          33,
+          28,
+          34
+        ],
+        [
+          "insert",
+          33,
+          33,
+          34,
+          35
+        ],
+        [
+          "equal",
+          33,
+          53,
+          35,
+          55
+        ],
+        [
+          "insert",
+          53,
+          53,
+          55,
+          56
+        ],
+        [
+          "equal",
+          53,
+          54,
+          56,
+          57
+        ],
+        [
+          "replace",
+          54,
+          55,
+          57,
+          59
+        ],
+        [
+          "equal",
+          55,
+          63,
+          59,
+          67
+        ],
+        [
+          "insert",
+          63,
+          63,
+          67,
+          113
+        ],
+        [
+          "equal",
+          63,
+          65,
+          113,
+          115
+        ],
+        [
+          "replace",
+          65,
+          67,
+          115,
+          117
+        ],
+        [
+          "equal",
+          67,
+          75,
+          117,
+          125
+        ]
+      ]
+    },
+    {
+      "original": {
+        "path": "apps/rtsp-auth/qc07f-owned-runtime/native/memory_runtime.h",
+        "bytes": 921,
+        "sha256": "54aaa1c9bb8e9c297625054160653378c242d9303504bb7093602373ba227b84"
+      },
+      "candidate": {
+        "path": "apps/rtsp-auth/qc07f-span-memory/memory_runtime.h",
+        "bytes": 2039,
+        "sha256": "eafa9773488bdd03d0e4bcf2dfd218810c30351e5dc029275be0e0bac53dfcd5"
+      },
+      "identical": false,
+      "forward_inverse_exact_in_memory": true,
+      "opcodes": [
+        [
+          "replace",
+          0,
+          1,
+          0,
+          3
+        ],
+        [
+          "equal",
+          1,
+          4,
+          3,
+          6
+        ],
+        [
+          "insert",
+          4,
+          4,
+          6,
+          7
+        ],
+        [
+          "equal",
+          4,
+          10,
+          7,
+          13
+        ],
+        [
+          "insert",
+          10,
+          10,
+          13,
+          17
+        ],
+        [
+          "equal",
+          10,
+          12,
+          17,
+          19
+        ],
+        [
+          "insert",
+          12,
+          12,
+          19,
+          20
+        ],
+        [
+          "equal",
+          12,
+          16,
+          20,
+          24
+        ],
+        [
+          "insert",
+          16,
+          16,
+          24,
+          34
+        ],
+        [
+          "equal",
+          16,
+          18,
+          34,
+          36
+        ]
+      ]
+    },
+    {
+      "original": {
+        "path": "apps/rtsp-auth/qc07f-owned-runtime/native/memory_reader.c",
+        "bytes": 1079,
+        "sha256": "c9bd8401476f3baf73b43051651e6c306f14a05c1d5a5317531302569d4261c0"
+      },
+      "candidate": {
+        "path": "apps/rtsp-auth/qc07f-span-memory/memory_reader.c",
+        "bytes": 1079,
+        "sha256": "c9bd8401476f3baf73b43051651e6c306f14a05c1d5a5317531302569d4261c0"
+      },
+      "identical": true,
+      "forward_inverse_exact_in_memory": true,
+      "opcodes": [
+        [
+          "equal",
+          0,
+          24,
+          0,
+          24
+        ]
+      ]
+    },
+    {
+      "original": {
+        "path": "apps/rtsp-auth/qc07f-owned-runtime/native/handoff.h",
+        "bytes": 2413,
+        "sha256": "9b88ce3e24a3a6c1c16336315323b70b29560c473ac9a48d36043bd60c840113"
+      },
+      "candidate": {
+        "path": "apps/rtsp-auth/qc07f-span-memory/handoff.h",
+        "bytes": 2413,
+        "sha256": "9b88ce3e24a3a6c1c16336315323b70b29560c473ac9a48d36043bd60c840113"
+      },
+      "identical": true,
+      "forward_inverse_exact_in_memory": true,
+      "opcodes": [
+        [
+          "equal",
+          0,
+          50,
+          0,
+          50
+        ]
+      ]
+    }
+  ],
+  "unchanged_regions": [
+    {
+      "file": "memory_reserve.c",
+      "start": "struct line {",
+      "old_end": "int nh_memory_init(",
+      "new_end": "int nh_memory_init(",
+      "bytes": 4522,
+      "sha256": "b58a4c7e59490dbfbdbff0f8e680db0278bdaa9385aebc18c90fe5ea032e4667",
+      "byte_identical": true
+    },
+    {
+      "file": "memory_reserve.c",
+      "start": "int nh_memory_init(",
+      "old_end": "int nh_memory_credit_owned(",
+      "new_end": "static int overlaps(",
+      "bytes": 538,
+      "sha256": "197d677988c57b066bf0cb0801aa406c7b6f1a00cc48e555a50b0da5808ffe94",
+      "byte_identical": true
+    },
+    {
+      "file": "memory_reserve.c",
+      "start": "int nh_memory_credit_codec(",
+      "old_end": "int nh_memory_own_layout(",
+      "new_end": "int nh_memory_own_layout(",
+      "bytes": 2396,
+      "sha256": "9476b2b2a83b1c90d99dcbab027cf5e18d6346e697ad048ed38a388773c87d28",
+      "byte_identical": true
+    },
+    {
+      "file": "memory_runtime.c",
+      "start": "static int checked(",
+      "old_end": "int nh_memory_runtime_init(",
+      "new_end": "int nh_memory_runtime_init(",
+      "bytes": 342,
+      "sha256": "49ec1272ad86f807dd865bfebd095a3143cacf085fca4e31c927327dab50d54a",
+      "byte_identical": true
+    },
+    {
+      "file": "memory_runtime.c",
+      "start": "int nh_memory_runtime_gate(",
+      "end": "int nh_memory_prefault_owned(",
+      "sha256_original": "ae821160fc4eae4109f676de42ae2189f7502d73890befdbdaed8af2b9f00ce1",
+      "exact_original_after_removing_one_HOLD_guard": true,
+      "guard": " if(r->span_attempt==NH_MEM_SPAN_HOLD)return (int)r->span_failure;\n"
+    }
+  ],
+  "actual_candidate_calls": 0
+}

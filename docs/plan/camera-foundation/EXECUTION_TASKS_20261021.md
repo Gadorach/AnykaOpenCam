@@ -57,6 +57,30 @@ V1 remains NOT ADOPTED; v2 runtime observations0, no active author/reviewer. No
 negative/adversarial test, second HOST run or runtime adoption. Real server/hub
 accounting/lifetime connection is next: native contiguous1MiB output/raw/prefault/
 process2MiB/whole-load/external recovery remain open, no cap waiver or hardware action.
+Hub v2 closeout committed locally `8dab03a`. User requested continue. Actual
+authenticated sender derivative delivered at rtsp-span-server-candidate: borrowed
+v2 hub, explicit typed nonreturning retention, real shared copy/release/END and
+consumer-bound packetization/partial sends. Finalbuild03:6 HOST/ARM compiles,
+2 rooted REL links/26 commands PASS, zero runtime calls. Build01/02 link-inspection
+failures remain FAILED_PRESERVED; across all recipes12 compiles/4 REL tools/50
+successful commands/two failed recipe dispositions. Independent ordinary review
+now requires R1/R2: retain clock-fault AU/cursor state before any cleanup and keep
+demand_attached until actual detach0 plus valid post-clock acknowledgment. V1
+frozen NOT ADOPTED; see rtsp-span-server-parent-20261024/V1_DISPOSITION.md. One
+fresh rtsp-span-server-v2 correction now delivered: only pause/close/finish_au
+bodies change retention order and acknowledgment handling.6 HOST/ARM compiles,
+2 rooted REL links/26 commands PASS, zero candidate/test executions;217 frozen
+inputs unchanged. Independent ordinary review active at rtsp-span-server-v2-review-
+20261024; no adoption or runtime/negative test selected. Separately fresh
+qc07f-span-memory app/docs for actual whole eight-chunk prefault and atomic ledger
+credit without boundary/padding/duplicate credit, conservative extra28KiB extent-
+page debt and explicit refusal of old flat hub credit. Candidate now delivered:
+10 HOST/ARM compiles/2 real REL links/26 commands PASS, zero candidate executions.
+Narrow independent SOURCE/API/ledger/prefault sufficiency now accepted; parent
+verified288 overlapping records and regenerated both source diffs. See qc07f-span-
+memory-20261024/PARENT_DISPOSITION.md. No author/reviewer active in that lane, zero
+function calls. Native adapter/ready/return-history/backing integration remains next,
+not solved by source shape or a caller Boolean. No new diagnostic/clock framework.
 
 Latest user steering renews unattended continuation through hardware testing and
 explicitly approves motor testing/onboard NOR flashing if needed. Parent selects

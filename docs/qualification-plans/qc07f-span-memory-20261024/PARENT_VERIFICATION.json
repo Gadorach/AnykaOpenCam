@@ -1,0 +1,18 @@
+{
+  "scope": "PARENT_PUBLIC_SOURCE_DIFF_BUILD_AND_REVIEW_VERIFICATION_NOT_EXECUTION",
+  "recorded_host_utc": "2026-10-24T04:40:06.811533+00:00",
+  "verified_records_including_overlap": 288,
+  "counts": {
+    "delivery": 19,
+    "selected_inputs": 29,
+    "consumed_dependencies": 98,
+    "tools": 12,
+    "artifacts": 89,
+    "frozen_references": 15,
+    "successful_command_logs": 26
+  },
+  "forward_and_inverse_diffs_regenerated_exactly": true,
+  "review_sha256": "d2f7794ffda9e566fbe5d5d45eb875ffa43f59132c04b5d8b7d77444b9acfbee",
+  "candidate_credit_prefault_reader_test_or_hardware_calls": 0,
+  "native_adapter_ready_return_history_adopted": false
+}
