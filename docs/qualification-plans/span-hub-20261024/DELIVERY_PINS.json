@@ -1,0 +1,101 @@
+{
+  "scope": "AUTHOR_DELIVERY_SOURCE_AND_RETAINED_SOLE_NORMAL_HOST_EVIDENCE_NOT_ADOPTION",
+  "utc": "2026-10-24T03:37:08.319082+00:00",
+  "pins": [
+    {
+      "path": "apps/rtsp-auth/span-hub-candidate/LICENSE_NOTICES.md",
+      "bytes": 854,
+      "sha256": "380f490c17abc6cde0509bbd31a960e2dd150d5473fabb199d0e5bc33c149180"
+    },
+    {
+      "path": "apps/rtsp-auth/span-hub-candidate/compile01.py",
+      "bytes": 6824,
+      "sha256": "6a242e4b21c6610ac93f45ac6da5ebc319d55d7317e20a3533d37e771de3e9dc"
+    },
+    {
+      "path": "apps/rtsp-auth/span-hub-candidate/host_normal.c",
+      "bytes": 6621,
+      "sha256": "7b5ac823f1cad92181f7d870a92d306f855c19cb339052e35f39a5b8390e685f"
+    },
+    {
+      "path": "apps/rtsp-auth/span-hub-candidate/host_once.py",
+      "bytes": 3339,
+      "sha256": "210f9598978b6b0b7abba43cb8e6a88309770e63d7a958326b3d92836e0c2671"
+    },
+    {
+      "path": "apps/rtsp-auth/span-hub-candidate/span_hub.c",
+      "bytes": 8894,
+      "sha256": "40c6d84c1e78c29a78384bee4dc1f435a53032f31655e122949921275a5c2289"
+    },
+    {
+      "path": "apps/rtsp-auth/span-hub-candidate/span_hub.h",
+      "bytes": 4909,
+      "sha256": "8c45f279a09dce01b53d928e2fa024663093f6955c469d0b71bb18ba72947c47"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-20261024/.gitignore",
+      "bytes": 7,
+      "sha256": "127672b43b817aa8f10c44cdb48d4eeef8c0201da894e8a2430cce505ab49933"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-20261024/AUTHOR_AUDIT.md",
+      "bytes": 8767,
+      "sha256": "21daea06896d29da18528a587b6becba62e6c51cee19d77999d7b5d29c7d1dfa"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-20261024/BUILD_INSPECTION.json",
+      "bytes": 560,
+      "sha256": "56191ec4882fb89ee97f3d82b32d59c9726f50f1692116074a4cda016499485b"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-20261024/CONTRACT.md",
+      "bytes": 6130,
+      "sha256": "193420b9cb3c973da44f908f982c5d0860f698f793aef14992efb267ef9ad4ef"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-20261024/HANDOFF.md",
+      "bytes": 9975,
+      "sha256": "25d412487320d38e673523484dab044d88db6d0b8ae921ae6d6fe427d2b35828"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-20261024/PRECALL_AUDIT.json",
+      "bytes": 4337,
+      "sha256": "d27d86f074110e8f1c9449e7a4ce9ed3b1513430747cefff0d8f91dd1f0c6086"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-20261024/runs/build01/REPORT.json",
+      "bytes": 70106,
+      "sha256": "1c6ab0a62b64f21a36ae69cf1b8e67590335811ca094142852286d800b068ce0"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-20261024/runs/host01/ATTEMPT.json",
+      "bytes": 140,
+      "sha256": "83b5d27ef65bdc818ce621dca2cac5edba37ab5f66f12d9bc432aec7c36f5e4d"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-20261024/runs/host01/INVOCATION.json",
+      "bytes": 256,
+      "sha256": "870ea203c634a434d4fe54942c63e3ea24b6610f205ddb964b54d20d6060d7f8"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-20261024/runs/host01/OBSERVATION.json",
+      "bytes": 317,
+      "sha256": "ba7c6624edf3a3a6cf92d5188dad7d8a9bc688b3be4bb65f5de7a4d1fbe046aa"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-20261024/runs/host01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-20261024/runs/host01/stdout.txt",
+      "bytes": 236,
+      "sha256": "3f3457a0cfaa2ced1b627a5ba8bb7431169b907d3e7d4558952aa3c6c1df7067"
+    }
+  ],
+  "overlapping_build_and_audit_pin_records_reverified": 204,
+  "HOST_processes": 1,
+  "normal_NAL_cases": 1,
+  "ARM_code_executed": false,
+  "independent_review_and_parent_adoption_required": true
+}

@@ -1,0 +1,23 @@
+{
+  "scope": "PARENT_READ_ONLY_PUBLIC_SOURCE_BUILD_AND_REVIEW_VERIFICATION_NOT_EXECUTION",
+  "recorded_host_utc": "2026-10-24T03:55:27.012619+00:00",
+  "v1_verified_records_including_overlap": 222,
+  "v1_successful_command_logs": 33,
+  "v2_verified_records_including_overlap": 282,
+  "v2_counts": {
+    "delivery": 17,
+    "selected_inputs": 19,
+    "consumed_dependencies": 42,
+    "tools": 12,
+    "artifacts": 59,
+    "successful_command_logs": 20,
+    "frozen_files": 113
+  },
+  "exact_frozen_directory_membership": true,
+  "forward_and_inverse_diffs_match_actual_sources": true,
+  "allocation_publication_packet_wrapper_stop_disposal_regions_unchanged": true,
+  "v1_normal_HOST_result_preserved_not_R1_acceptance": true,
+  "v2_review_sha256": "01876c2ff2276e3ed7696627d8569338ebbeac55a66f505a6160a8c8a684152e",
+  "v2_runtime_observations": 0,
+  "build_candidate_test_private_or_hardware_execution_by_parent": false
+}

@@ -113,8 +113,15 @@ API/bounds/wire-semantics sufficiency,3 HOST/ARM C compiles/20 commands and ONE
 174080B synthetic HOST case/126 packets PASS. No runtime/cap/native acceptance:
 the existing1MiB output/hub remain unchanged. See
 [packetizer disposition](../../qualification-plans/rtp-span-20261024/PARENT_DISPOSITION.md).
-Next bounded feature is actual chunk-backed CPU hub/consumer leases using<=128KiB
-allocations and a real span-packetizer connection, not a diagnostic/clock framework.
+The actual chunk-backed CPU hub/accepted-packetizer connection delivered eight
+separate128KiB allocations and one normal four-consumer HOST case, but v1 remains
+NOT ADOPTED after R1 shared consumer-token review. Fresh v2 fixes validation AND
+release using distinct per-acquisition/per-consumer tokens; narrow independent
+SOURCE/API/ownership sufficiency,4 HOST/ARM compiles/2 REL links/20 commands, NOT RUN.
+See [v2 parent closeout](../../qualification-plans/span-hub-parent-20261024/V2_DISPOSITION.md).
+Next feature connection must reconcile actual runtime backing/accounting/lifetime;
+native1MiB output/raw/prefault/process2MiB/combined-load and external recovery remain
+open, not satisfied by CPU chunks or a normal v1 test. No hardware phase selected.
 Separate RTSP provisioner-child/readonly-FD IPC now has narrow independent SOURCE/
 API/custody sufficiency,27 HOST/ARM compiles/40 commands and ONE normal PUBLICDUMMY
 fork/FD-transfer/wait0/bind observation. No real credentials/native hardening or

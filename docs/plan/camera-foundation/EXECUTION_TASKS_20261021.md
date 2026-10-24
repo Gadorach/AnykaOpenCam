@@ -39,9 +39,24 @@ SOURCE/API/bounds/wire-semantics sufficiency: direct borrowed-chunk packetizatio
 no whole-NAL temporary/allocation, output<=1404B.3 HOST/ARM C compiles/20 commands,
 ONE174080B synthetic HOST NAL/126 packets PASS;169 public pin records checked.
 No second case/call; runtime1MiB output/hub/old cursor still unchanged. See
-rtp-span-20261024/PARENT_DISPOSITION.md. Next bounded feature is actual chunk-backed
-shared CPU hub/consumer leases with<=128KiB allocations and a real packetizer
-connection; not native cap acceptance or a new diagnostic/build framework.
+rtp-span-20261024/PARENT_DISPOSITION.md; source committed locally `e45b595`.
+Actual chunk-backed shared CPU hub at span-hub-candidate now delivered: eight
+separate128KiB allocations, shared single-copy backing, four consumer leases,
+production wrapper → actual accepted span packetizer.5 HOST/ARM compiles/2 actual
+REL links/33 commands and ONE174080B synthetic HOST case/four consumers/504 packets/
+release/STOP/drain/dispose PASS, but independent review found R1 consumer-identity
+defect: shared token/generation permits wrong-consumer validation/release. V1
+frozen NOT ADOPTED; normal correct-cursor HOST PASS is not R1 coverage. Parent
+disposition: span-hub-parent-20261024/V1_DISPOSITION.md. Fresh span-hub-v2 adds
+distinct monotonic acquisition identities/canonical active-token slots/consumer
+view tag; now narrow independent SOURCE/API/ownership sufficiency for R1.
+4 HOST/ARM compiles/2 real REL links/20 commands PASS, never called. Parent verified
+282 v2 records/113 frozen files/exact membership/diffs and222 v1 records/33 logs.
+Parent closeout outside frozen directories: span-hub-parent-20261024/V2_DISPOSITION.md.
+V1 remains NOT ADOPTED; v2 runtime observations0, no active author/reviewer. No
+negative/adversarial test, second HOST run or runtime adoption. Real server/hub
+accounting/lifetime connection is next: native contiguous1MiB output/raw/prefault/
+process2MiB/whole-load/external recovery remain open, no cap waiver or hardware action.
 
 Latest user steering renews unattended continuation through hardware testing and
 explicitly approves motor testing/onboard NOR flashing if needed. Parent selects
@@ -80,7 +95,7 @@ actual prestarted start, before all native/provider ownership; not native GO.
 Separate process source/public metadata committed locally `5269979`; ordinary
 index unchanged/no push. Its before-closeout source/context pins remain frozen:
 32 unchanged and later parent index status updates recorded explicitly in
-PARENT_CONTEXT_UPDATE01.json through PARENT_CONTEXT_UPDATE07.json, not a rebased
+PARENT_CONTEXT_UPDATE01.json through PARENT_CONTEXT_UPDATE08.json, not a rebased
 manifest. One new isolated author
 owns qc07f-bootstrap-candidate plus matching bootstrap docs for actual known-wait/
 bind → device-free runtime prepare → prestarted-start order and retained failed-

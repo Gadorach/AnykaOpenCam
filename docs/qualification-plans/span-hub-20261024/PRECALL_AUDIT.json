@@ -1,0 +1,83 @@
+{
+  "disposition": "AUTHOR_AUDITED_ONE_NORMAL_HOST_ONLY",
+  "utc": "2026-10-24T03:34:33.374343+00:00",
+  "audit_kind": "ordinary_author_not_independent_review",
+  "selected_processes": 1,
+  "selected_NAL_cases": 1,
+  "candidate_executions_before_this_record": 0,
+  "negative_adversarial_mutation_fuzz_or_native_selected": false,
+  "pins": [
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-candidate/LICENSE_NOTICES.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-candidate/LICENSE_NOTICES.md",
+      "bytes": 854,
+      "sha256": "380f490c17abc6cde0509bbd31a960e2dd150d5473fabb199d0e5bc33c149180"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-candidate/compile01.py",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-candidate/compile01.py",
+      "bytes": 6824,
+      "sha256": "6a242e4b21c6610ac93f45ac6da5ebc319d55d7317e20a3533d37e771de3e9dc"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-candidate/host_normal.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-candidate/host_normal.c",
+      "bytes": 6621,
+      "sha256": "7b5ac823f1cad92181f7d870a92d306f855c19cb339052e35f39a5b8390e685f"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-candidate/host_once.py",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-candidate/host_once.py",
+      "bytes": 3339,
+      "sha256": "210f9598978b6b0b7abba43cb8e6a88309770e63d7a958326b3d92836e0c2671"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-candidate/span_hub.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-candidate/span_hub.c",
+      "bytes": 8894,
+      "sha256": "40c6d84c1e78c29a78384bee4dc1f435a53032f31655e122949921275a5c2289"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-candidate/span_hub.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-candidate/span_hub.h",
+      "bytes": 4909,
+      "sha256": "8c45f279a09dce01b53d928e2fa024663093f6955c469d0b71bb18ba72947c47"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-20261024/CONTRACT.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-20261024/CONTRACT.md",
+      "bytes": 6130,
+      "sha256": "193420b9cb3c973da44f908f982c5d0860f698f793aef14992efb267ef9ad4ef"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-20261024/AUTHOR_AUDIT.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-20261024/AUTHOR_AUDIT.md",
+      "bytes": 8767,
+      "sha256": "21daea06896d29da18528a587b6becba62e6c51cee19d77999d7b5d29c7d1dfa"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-20261024/BUILD_INSPECTION.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-20261024/BUILD_INSPECTION.json",
+      "bytes": 560,
+      "sha256": "56191ec4882fb89ee97f3d82b32d59c9726f50f1692116074a4cda016499485b"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-20261024/runs/build01/REPORT.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-20261024/runs/build01/REPORT.json",
+      "bytes": 70106,
+      "sha256": "1c6ab0a62b64f21a36ae69cf1b8e67590335811ca094142852286d800b068ce0"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.c",
+      "bytes": 2586,
+      "sha256": "a608fe8ee8a292b1172ce62c62f19c2a61f9969f64d71385f1a742fdd326560e"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.h",
+      "bytes": 1660,
+      "sha256": "41126a8b9827894d6ecb71788cd1cc71bf3b5b036e44fddf998f4c5740f05f91"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "scope": "author read/hash/log/ELF-role inspection only; not independent review or production execution",
+  "verified_record_counts": {
+    "selected_inputs": 19,
+    "dependencies": 42,
+    "tools": 12,
+    "artifacts": 59,
+    "command_logs": 20,
+    "frozen_files": 113
+  },
+  "commands": 20,
+  "C_compiles": 4,
+  "real_REL_links": 2,
+  "all_returncodes_zero": true,
+  "compile_logs_empty": true,
+  "frozen_trees_exact_membership_and_bytes": true,
+  "link_traces_exact_two_real_objects": true,
+  "accepted_packetizer_symbol_resolved": true,
+  "no_main_or_old_packetizer_symbols": true,
+  "REL_only_no_executables": true,
+  "production_or_test_executions": 0,
+  "report": {
+    "path": "docs/qualification-plans/span-hub-v2-20261024/runs/build01/REPORT.json",
+    "bytes": 47904,
+    "sha256": "609b7588a343f7814ef75e3587150afc787d7a7a401d594a887a7d34a968d169"
+  },
+  "REL_artifacts": [
+    {
+      "path": "docs/qualification-plans/span-hub-v2-20261024/runs/build01/host-HUB-REAL-SPANS-REL.o",
+      "bytes": 7640,
+      "sha256": "3760bf130a175a215e0e9223920d529e88b39578d0dc7789d48bb18c227e6dff"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-v2-20261024/runs/build01/arm-HUB-REAL-SPANS-REL.o",
+      "bytes": 5300,
+      "sha256": "2637896af43fc03bb6b9cf8328d5959376099135a6382aa70b5381bc4d87288a"
+    }
+  ]
+}

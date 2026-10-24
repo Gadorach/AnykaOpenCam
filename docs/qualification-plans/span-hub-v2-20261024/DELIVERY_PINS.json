@@ -1,0 +1,90 @@
+{
+  "scope": "focused R1 source correction; compile/REL only; independent review pending",
+  "files": [
+    {
+      "path": "apps/rtsp-auth/span-hub-v2/LICENSE_NOTICES.md",
+      "bytes": 917,
+      "sha256": "54eb1112a44d0817cafea791d1db7c0d840bfe0d3f92621785f2b08ceae35a56"
+    },
+    {
+      "path": "apps/rtsp-auth/span-hub-v2/compile01.py",
+      "bytes": 6437,
+      "sha256": "1f193fc20dde70feb03302c36cc1ecf85c19be58605a609886c03f38e89f8b08"
+    },
+    {
+      "path": "apps/rtsp-auth/span-hub-v2/span_hub.c",
+      "bytes": 9081,
+      "sha256": "bcf50041bb1fe1b20352d92d1ec9ba61d9e70156fa2cf4c96b06378d837322b1"
+    },
+    {
+      "path": "apps/rtsp-auth/span-hub-v2/span_hub.h",
+      "bytes": 5719,
+      "sha256": "310160cf0b3bf753daa199193a5674e9e223e036af467e320cc5905e415b3454"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-v2-20261024/.gitignore",
+      "bytes": 7,
+      "sha256": "127672b43b817aa8f10c44cdb48d4eeef8c0201da894e8a2430cce505ab49933"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-v2-20261024/AUTHOR_AUDIT.md",
+      "bytes": 5862,
+      "sha256": "55296cc0a67c86d13b7306b21320d5125c0caaa90426a5a1064a4a71eebe8645"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-v2-20261024/BUILD_INSPECTION.json",
+      "bytes": 1335,
+      "sha256": "cea76d4e6ade096791d48b93d97ef9e658c9e003a5f5e8b5320a887ce8cf254b"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-v2-20261024/CONTRACT.md",
+      "bytes": 5367,
+      "sha256": "c1093cf778dc10341faeca15223487822c33a9bfbf98d6fa2071a766f42145d0"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-v2-20261024/FROZEN_INPUTS.json",
+      "bytes": 23427,
+      "sha256": "c97692a75864faf1b02e748cee92f46c1be5aeb6a0f0f8e085170e9d23916f7c"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-v2-20261024/HANDOFF.md",
+      "bytes": 7371,
+      "sha256": "856d5ce1df25ee1f0722c5809622891736b8e536744353081ba4d9aad491ae90"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-v2-20261024/SOURCE_DELTA.json",
+      "bytes": 954,
+      "sha256": "9d86cb7e43feeddd2aa509bb55520c5ec6343a42b034e831a62a6849b278050b"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-v2-20261024/V1_TO_V2.diff",
+      "bytes": 5469,
+      "sha256": "780ca1f4a4098647674a17e5ae1a9d09fd76d6f65dd2dac1b8f74a9db5197d10"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-v2-20261024/V2_TO_V1.diff",
+      "bytes": 5469,
+      "sha256": "e756392117e70fc40772ad36af338e36e0f5b62388b67c9c0f85065af435aadf"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-v2-20261024/runs/build01/REPORT.json",
+      "bytes": 47904,
+      "sha256": "609b7588a343f7814ef75e3587150afc787d7a7a401d594a887a7d34a968d169"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-v2-20261024/runs/build01/INPUTS.json",
+      "bytes": 6060,
+      "sha256": "55514f25b52d2ecb51c8e7cb07f69bb63ee2d063be9abed36b9368198bd13eaa"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-v2-20261024/runs/build01/DEPENDENCIES.json",
+      "bytes": 12711,
+      "sha256": "c08aa95bb6dc18573191126941984a2988e5433187490fc6beae4c4665bc0c0c"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-v2-20261024/runs/build01/TOOLS.json",
+      "bytes": 4137,
+      "sha256": "0ed61aa8de258016dae1fa97823b404faed63c923680f30035cbbbaa10e85c53"
+    }
+  ]
+}

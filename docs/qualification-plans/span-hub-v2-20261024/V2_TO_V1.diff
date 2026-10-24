@@ -1,0 +1,112 @@
+--- apps/rtsp-auth/span-hub-v2/span_hub.c
++++ apps/rtsp-auth/span-hub-candidate/span_hub.c
+@@ -148,10 +148,9 @@
+  uint32_t bit=1U<<c;
+  if(h->acquired&bit)return CAMERA_BUSY;
+  if(!(h->pending&bit))return CAMERA_NOT_READY;
+- if(h->issued_token==UINT64_MAX)return CAMERA_NOT_READY;
+- struct camera_span_hub_view_v1 v={.owner=h,.lease_token=h->issued_token+1,
++ struct camera_span_hub_view_v1 v={.owner=h,.lease_token=h->generation,
+   .generation=h->generation,.monotonic_ns=h->monotonic_ns,.codec=h->codec,
+-  .keyframe=h->keyframe,.consumer=c,.bytes=h->bytes};
++  .keyframe=h->keyframe,.bytes=h->bytes};
+  size_t remaining=h->bytes;
+  while(remaining){
+   size_t take=remaining;
+@@ -159,7 +158,6 @@
+   v.spans[v.span_count]=(struct camera_rtp_h264_span_v1){h->chunks[v.span_count],take};
+   v.span_count++;remaining-=take;
+  }
+- h->issued_token=v.lease_token;h->active_token[c]=v.lease_token;
+  h->acquired|=bit;*view=v;
+  return CAMERA_OK;
+ }
+@@ -168,10 +166,9 @@
+  uint64_t token,uint64_t generation)
+ {
+  if(!consumer_valid(h,c)||!token||!generation)return CAMERA_INVALID;
+- if(token!=h->active_token[c]||generation!=h->generation)return CAMERA_STALE_LEASE;
++ if(token!=h->generation||generation!=h->generation)return CAMERA_STALE_LEASE;
+  uint32_t bit=1U<<c;
+  if(!(h->acquired&bit))return CAMERA_INVALID;
+- h->active_token[c]=0;
+  h->acquired&=~bit;h->pending&=~bit;
+  return CAMERA_OK;
+ }
+@@ -181,7 +178,7 @@
+ {
+  if(!consumer_valid(h,c)||!v||h->phase!=CAMERA_SPAN_HUB_V1_ACTIVE||
+     !(h->acquired&(1U<<c))||v->owner!=h||!v->lease_token||!v->generation||
+-    v->consumer!=c||v->lease_token!=h->active_token[c]||v->generation!=h->generation||
++    v->lease_token!=h->generation||v->generation!=h->generation||
+     v->codec!=h->codec||v->keyframe!=h->keyframe||v->monotonic_ns!=h->monotonic_ns||
+     !h->bytes||v->bytes!=h->bytes||
+     v->span_count!=(h->bytes-1)/CAMERA_SPAN_HUB_V1_CHUNK_BYTES+1)return 0;
+--- apps/rtsp-auth/span-hub-v2/span_hub.h
++++ apps/rtsp-auth/span-hub-candidate/span_hub.h
+@@ -1,7 +1,5 @@
+ /* SPDX-License-Identifier: GPL-2.0-only
+  * Derived from camera/packet_hub.h; see LICENSE_NOTICES.md.
+- * V2 explicit source replacement ONLY: owner/view layout is NOT V1 binary ABI.
+- * Never include/link both hub versions or reuse a V1 combined REL.
+  */
+ #ifndef CAMERA_SPAN_HUB_V1_H
+ #define CAMERA_SPAN_HUB_V1_H
+@@ -23,8 +21,6 @@
+  enum camera_span_hub_phase_v1 phase;
+  uint8_t *chunks[CAMERA_SPAN_HUB_V1_CHUNKS];
+  uint64_t generation,monotonic_ns;
+- /* One owner lifetime: issued never resets; active_token[c] iff acquired bit. */
+- uint64_t issued_token,active_token[CAMERA_SPAN_HUB_V1_CONSUMERS];
+  enum camera_codec codec;
+  uint32_t keyframe,subscribers,need_keyframe,pending,acquired;
+  size_t bytes;
+@@ -46,7 +42,7 @@
+  const struct camera_span_hub_v1 *owner;
+  uint64_t lease_token,generation,monotonic_ns;
+  enum camera_codec codec;
+- uint32_t keyframe,consumer;
++ uint32_t keyframe;
+  size_t bytes,span_count;
+  struct camera_rtp_h264_span_v1 spans[CAMERA_SPAN_HUB_V1_CHUNKS];
+ };
+@@ -57,8 +53,6 @@
+  * valid, stable and disjoint from each other and from owner/chunks; input source
+  * objects are mutually disjoint. No mutable aliases into chunks. Nonnull/self
+  * checks are not hostile-pointer/plugin validation. No post-dispose use/calls.
+- * Tokens identify acquisitions within this owner only, not authorization across
+- * owners/processes/cameras. Retained V1 names/guard require exclusive replacement.
+  *
+  * Init stores each malloc result directly in its canonical slot. Failed init
+  * retains partial known CPU chunks until explicit dispose, never auto-cleans or
+@@ -77,17 +71,12 @@
+  */
+ int camera_span_hub_publish_v1(struct camera_span_hub_v1 *hub,
+  const struct camera_span_hub_input_v1 *input);
+-/* Success issues a distinct nonzero token and canonical active token[consumer].
+- * Checked UINT64_MAX refuses before output/state changes; no wrap/reuse/reset.
+- * Publication generation is separate. Only exact release clears an active token.
+- */
+ int camera_span_hub_acquire_v1(struct camera_span_hub_v1 *hub,uint32_t consumer,
+  struct camera_span_hub_view_v1 *view);
+ int camera_span_hub_release_v1(struct camera_span_hub_v1 *hub,uint32_t consumer,
+  uint64_t token,uint64_t generation);
+ /* Small view metadata borrows const chunks until release. Validate this exact
+- * consumer-tagged view/canonical active token before EVERY deferred packet
+- * build/send/effect under caller serialization.
++ * view before EVERY deferred packet build/send/effect under caller serialization.
+  * STOP invalidates effects immediately but old exact releases still drain it.
+  */
+ int camera_span_hub_lease_valid_v1(const struct camera_span_hub_v1 *hub,
+@@ -103,9 +92,8 @@
+  uint8_t packet[CAMERA_RTP_PACKET_BYTES],size_t *packet_bytes,size_t *next_offset);
+ int camera_span_hub_stop_v1(struct camera_span_hub_v1 *hub);
+ int camera_span_hub_drained_v1(const struct camera_span_hub_v1 *hub);
+-/* Only INIT_FAILED/no published view or STOPPED/drained (active tokens zero by
+- * invariant). Clear each canonical chunk slot BEFORE its known-CPU void free;
+- * preserve phase/generation/issued-token/history.
++/* Only INIT_FAILED/no published view or STOPPED/drained. Clear each canonical
++ * chunk slot BEFORE its known-CPU void free; preserve phase/generation/history.
+  * Never native END/ACK, external retirement, automatic cleanup or retry authority.
+  */
+ int camera_span_hub_dispose_v1(struct camera_span_hub_v1 *hub);

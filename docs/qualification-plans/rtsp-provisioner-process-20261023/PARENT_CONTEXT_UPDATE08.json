@@ -1,0 +1,15 @@
+{
+  "scope": "EIGHTH_KNOWN_PARENT_MUTABLE_INDEX_STATUS_UPDATE_NOT_SOURCE_PIN_REBASE",
+  "recorded_host_utc": "2026-10-24T03:56:43.023982+00:00",
+  "original_manifests_and_review_unchanged": true,
+  "path": "docs/plan/camera-foundation/00-INDEX.md",
+  "before": {
+    "bytes": 128590,
+    "sha256": "fc25ad6e3685cc69f818b766bc458f9bb63922f75299d88924f80e61cff2a103"
+  },
+  "after": {
+    "bytes": 129179,
+    "sha256": "1557eafa5d4ef5afce33750ab3af23059fd6e7bc175a18e7b3d3f34e81cba2be"
+  },
+  "reason": "parent preserves chunk-hub v1 R1 non-adoption and closes independently reviewed v2 consumer-token correction at compile/source scope only; no v2 test, runtime or hardware execution"
+}

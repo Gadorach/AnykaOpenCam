@@ -1,0 +1,27 @@
+{
+  "files": [
+    {
+      "file": "span_hub.c",
+      "v1_sha256": "40c6d84c1e78c29a78384bee4dc1f435a53032f31655e122949921275a5c2289",
+      "v2_sha256": "bcf50041bb1fe1b20352d92d1ec9ba61d9e70156fa2cf4c96b06378d837322b1",
+      "added_lines": 7,
+      "removed_lines": 4,
+      "forward_applied_in_memory_exact": true,
+      "inverse_applied_in_memory_exact": true
+    },
+    {
+      "file": "span_hub.h",
+      "v1_sha256": "8c45f279a09dce01b53d928e2fa024663093f6955c469d0b71bb18ba72947c47",
+      "v2_sha256": "310160cf0b3bf753daa199193a5674e9e223e036af467e320cc5905e415b3454",
+      "added_lines": 16,
+      "removed_lines": 4,
+      "forward_applied_in_memory_exact": true,
+      "inverse_applied_in_memory_exact": true
+    }
+  ],
+  "preserved_regions": {
+    "C_prefix_before_acquire_identical": true,
+    "C_suffix_from_packet_wrapper_identical": true
+  },
+  "execution": "stdlib-only public text/hash/diff inspection; no candidate import/call"
+}

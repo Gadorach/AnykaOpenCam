@@ -55,7 +55,7 @@ dependency records/84 artifacts/40 logs/five tools. Native hardening/real creden
 NOT RUN. See rtsp-provisioner-process PARENT_DISPOSITION; no active author/reviewer
 in that lane; committed locally `5269979`. Its original33-input pin set retains
 the pre-closeout index:32 remain unchanged plus known parent index/status
-updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE07.json`,
+updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE08.json`,
 not rebased. Actual authorized
 external ingress, secret-free launch/FD-env-caps
 hygiene, durable storage/rotation, linked-file retirement/main/external recovery/
@@ -99,10 +99,26 @@ child/native/motor/NOR action. Inherited1MiB backing versus128KiB allocation-cap
 work now has a real borrowed-span RTP packetizer at rtp-span-candidate with narrow
 independent SOURCE/API/bounds/wire-semantics sufficiency.3 HOST/ARM C compiles/20
 commands and ONE174080B synthetic HOST NAL/126 packets PASS;169 public pin records
-parent-verified, no repeated execution. See rtp-span PARENT_DISPOSITION; no active
-author/reviewer. Frozen runtime/hub/encoder APIs remain unchanged; no cap/native
-acceptance. Next bounded feature is a shared chunk-backed CPU hub with explicit
-consumer leases and<=128KiB allocations, then actual span-packetizer connection.
+parent-verified, no repeated execution. Committed locally `e45b595`; see rtp-span
+PARENT_DISPOSITION; no author/reviewer active in that lane. Frozen runtime/hub/
+encoder APIs remain unchanged; no cap/native acceptance. New span-hub-candidate
+delivers eight separate128KiB allocations, shared single-copy CPU backing, four
+consumer leases and actual accepted-packetizer connection.5 HOST/ARM compiles,
+2 real REL links/33 commands + ONE174080B synthetic HOST case/four consumers/
+504 packets/release/STOP/drain/dispose PASS, but independent review found R1:
+shared token/generation lets one consumer's unchanged view/token validate/release
+another consumer's lease. V1 is frozen NOT ADOPTED; normal HOST PASS is not R1
+coverage. Parent disposition in span-hub-parent-20261024/V1_DISPOSITION.md.
+Fresh span-hub-v2 now has narrow independent SOURCE/API/ownership sufficiency for
+R1: distinct monotonic acquisition tokens/canonical per-consumer active slots/
+consumer-tagged views bind validation AND scalar release.4 HOST/ARM compiles,
+2 real REL links/20 commands PASS, NOT RUN. Parent verified282 v2 records/113
+frozen files/exact membership/diffs and222 v1 records/33 logs. Parent closeout:
+span-hub-parent-20261024/V2_DISPOSITION.md, outside sealed original directories.
+V1 remains NOT ADOPTED; no source author/reviewer active, v2 runtime observations0.
+Use ONLY v2 header/C, not old hubs/RELs. Real server adoption/native contiguous1MiB
+output/raw/prefault ledger/process2MiB/combined-load/external recovery remain open;
+no rerun, negative test, runtime/cap/native adoption or hardware queue.
 No new diagnostic/clock/receipt framework or hardware phase selected.
 No bootstrap test/child/verifier/native/media execution, main, synthetic callbacks,
 provider/backing or hardware adoption selected.

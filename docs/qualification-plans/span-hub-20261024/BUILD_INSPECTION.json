@@ -1,0 +1,19 @@
+{
+  "scope": "AUTHOR_READ_ONLY_PUBLIC_BUILD_AUDIT_NOT_CANDIDATE_EXECUTION",
+  "utc": "2026-10-24T03:33:01.735978+00:00",
+  "verified_pin_counts": {
+    "inputs": 19,
+    "dependencies": 53,
+    "tools": 30,
+    "artifacts": 90
+  },
+  "successful_commands": 33,
+  "C_compiles": 5,
+  "empty_compile_logs": 5,
+  "real_production_REL_links": 2,
+  "actual_hub_reference_resolved_to_accepted_span_builder": true,
+  "production_main_or_old_packetizer": false,
+  "python_AST_parses": 2,
+  "candidate_processes_so_far": 0,
+  "native_ABI_or_tool_closure_claim": false
+}
