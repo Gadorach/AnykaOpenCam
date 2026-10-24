@@ -142,7 +142,16 @@ API/order/ownership/lifetime sufficiency,16 HOST/ARM compiles/2 rooted REL links
 close/watchdog disable plus real producer/hub drain, and retains terminal scalar
 history while retiring live pointers. No lender disposal/restart/recovery claim.
 See [composition disposition](../../qualification-plans/qc07f-span-serve-20261024/PARENT_DISPOSITION.md).
-No candidate function invoked. Native1MiB output/raw/process2MiB/combined-load
+An additive real encoder CPU-output span sink now has narrow independent SOURCE/
+API/bounds/ownership/order sufficiency: fixed128B request/eight128KiB destinations
+after actual DMA retirement/guards/status, data+metadata success before reference
+commit. Saved HOST/ARM ABI and NEW Clang23.1.3 whole-driver object compile PASS,
+12 commands; NOT RUN. Earlier build01 ABI-assertion failure remains preserved;
+host-restart handback/review completed without recompilation. See
+[encoder span disposition](../../qualification-plans/qc07f-encoder-output-spans-20261024/PARENT_DISPOSITION.md).
+No paired kernel/image build or native support follows; current userspace still
+uses its old contiguous-output ioctl. No candidate function invoked.
+Native1MiB output/raw/process2MiB/combined-load
 and external recovery remain open, not satisfied by CPU chunks or source review.
 No test, new clock/diagnostic framework or hardware phase selected.
 Separate RTSP provisioner-child/readonly-FD IPC now has narrow independent SOURCE/

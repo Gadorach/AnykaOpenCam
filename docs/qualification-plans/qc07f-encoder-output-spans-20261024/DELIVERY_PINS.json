@@ -1,0 +1,95 @@
+{
+  "UTC": "2026-10-24T10:43:25.351254+00:00",
+  "scope": "21 public source/docs/reports/diffs; no binary object/toolchain/image/private delivery; self excluded",
+  "file_count": 21,
+  "files": {
+    "apps/qualification/qc07f-encoder-output-spans/LICENSE_NOTICES.md": {
+      "bytes": 790,
+      "sha256": "6754bf952279ad4738421f6ee849e3cd7e0b717eeee22f3c06351be2b4dcaa37"
+    },
+    "apps/qualification/qc07f-encoder-output-spans/README.md": {
+      "bytes": 2602,
+      "sha256": "2f497b4a30cd3032289dee5fd6515d3c0854f7cfcbd6f8b59399a01ae0761f6e"
+    },
+    "apps/qualification/qc07f-encoder-output-spans/abi_compile.c": {
+      "bytes": 3036,
+      "sha256": "031c5337f231ad38ed8cb6bac7f43ee4816a3f3da72fe173193b680c8979b656"
+    },
+    "apps/qualification/qc07f-encoder-output-spans/build.py": {
+      "bytes": 12421,
+      "sha256": "ea4391963e1f49ea40358ad2a2c0b42611c427e5a9496e1066de6b8b9eca0fc9"
+    },
+    "apps/qualification/qc07f-encoder-output-spans/encoder-output-spans.h": {
+      "bytes": 1559,
+      "sha256": "4267d4074177468898937926b35029fbfb2b392c25ea987832c83137841cb6e6"
+    },
+    "apps/qualification/qc07f-encoder-output-spans/encoder-output-spans.inc": {
+      "bytes": 3227,
+      "sha256": "0a49fd1ce8cf1962f747df0f05db66b7614570885a39f1515780a5f560f7a415"
+    },
+    "apps/qualification/qc07f-encoder-output-spans/qc07f_hwenc.c": {
+      "bytes": 26761,
+      "sha256": "36bc80fadc0a16ded4525f24f805022faf22ee0ac8cb77cdfa4b390ba23e6b50"
+    },
+    "apps/qualification/qc07f-encoder-output-spans/qc07f_hwenc.h": {
+      "bytes": 1567,
+      "sha256": "f2c651e522e7b5444a26c4c8aec05a10e483ee0e1fb41a655219ddf91d3f63e7"
+    },
+    "docs/qualification-plans/qc07f-encoder-output-spans-20261024/AUTHOR_FINAL_VERIFICATION.json": {
+      "bytes": 14024,
+      "sha256": "173d261ee7a8329e80a89f925a2c211624cafc46c3f72bc293c89acfc491a302"
+    },
+    "docs/qualification-plans/qc07f-encoder-output-spans-20261024/BUILD01_DISPOSITION.md": {
+      "bytes": 1344,
+      "sha256": "ae6133a83cfb036657a986b1484d577a33f22e4d72604871fa4dae0df6b7f010"
+    },
+    "docs/qualification-plans/qc07f-encoder-output-spans-20261024/BUILD02_SELECTION.json": {
+      "bytes": 6921,
+      "sha256": "9d56f3ffe1b97ca37cb9cc0c60d0e5c0a94e0d0edad3c9460ccc64a8c70548e4"
+    },
+    "docs/qualification-plans/qc07f-encoder-output-spans-20261024/CONTRACT.md": {
+      "bytes": 6985,
+      "sha256": "4e5ea0e4c3e252c5b4a742162c2c6e40d944316060eff355e30afb345d413fb3"
+    },
+    "docs/qualification-plans/qc07f-encoder-output-spans-20261024/HANDOFF.md": {
+      "bytes": 12136,
+      "sha256": "863beda2ed084d1268ff0dd258bd3b5cc4b5186f1b560ccb660b5d2ada268dbf"
+    },
+    "docs/qualification-plans/qc07f-encoder-output-spans-20261024/INPUTS.json": {
+      "bytes": 4358,
+      "sha256": "7c0c2becb44fa988fa819e8de57d8a2ba772c2ed593ce24752c294c1994f8d98"
+    },
+    "docs/qualification-plans/qc07f-encoder-output-spans-20261024/SOURCE_DELTA.json": {
+      "bytes": 6218,
+      "sha256": "7008b010a686dcd4eafefdf376711518d25cf28f6662604c6f273b9ca999cd6d"
+    },
+    "docs/qualification-plans/qc07f-encoder-output-spans-20261024/runs/build01/REPORT.json": {
+      "bytes": 31021,
+      "sha256": "2f1740eec954ee8cfb512a0e5e31ca576e2476d03bd14fa3933ab4939b17bcef"
+    },
+    "docs/qualification-plans/qc07f-encoder-output-spans-20261024/runs/build01/inverse.patch": {
+      "bytes": 10054,
+      "sha256": "8075354a5e990b49b6cb156b2991096f99e0754b132c463c1460ed6fdf8208b9"
+    },
+    "docs/qualification-plans/qc07f-encoder-output-spans-20261024/runs/build01/source.patch": {
+      "bytes": 10054,
+      "sha256": "36ed101bec455e25a8155f6ae98294e2c81f77f26accf99af58c5fbcaa6c29f6"
+    },
+    "docs/qualification-plans/qc07f-encoder-output-spans-20261024/runs/build02/REPORT.json": {
+      "bytes": 348870,
+      "sha256": "065e38cd805575ae918464929e70f737d8a41bb880ccc6709892f445d55f6538"
+    },
+    "docs/qualification-plans/qc07f-encoder-output-spans-20261024/runs/build02/inverse.patch": {
+      "bytes": 10054,
+      "sha256": "8075354a5e990b49b6cb156b2991096f99e0754b132c463c1460ed6fdf8208b9"
+    },
+    "docs/qualification-plans/qc07f-encoder-output-spans-20261024/runs/build02/source.patch": {
+      "bytes": 10054,
+      "sha256": "36ed101bec455e25a8155f6ae98294e2c81f77f26accf99af58c5fbcaa6c29f6"
+    }
+  },
+  "aggregate_sha256": "19d75f3598eb36d917b935c1c702b95b86730a3f9aa197b8003767c6350479fe",
+  "aggregate_method": "sorted workspace-relative UTF-8 path + NUL + raw SHA256 bytes",
+  "adoption": false,
+  "automatic_execution_queue": false
+}

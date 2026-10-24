@@ -1,0 +1,207 @@
+--- b/qc07f_hwenc.c
++++ a/qc07f_hwenc.c
+@@ -264,9 +264,7 @@
+   }
+   return -ENOMEM;
+ }
+-#include "encoder-output-spans.inc"
+-static int encode_h264(struct qc_hwenc_h264_job *job,bool idr,u32 frame_num,u32 read_ref,
+- const struct qc_h264_destination *destination)
++static int encode_h264(struct qc_hwenc_h264_job *job,bool idr,u32 frame_num,u32 read_ref)
+ {
+  u32 regs[64]={0},status=0,bits,i,guards=0;
+  const u32 pixels=1280*720,bytes=pixels*3/2;
+@@ -277,10 +275,8 @@
+  job->output_bytes=0;job->status=0;
+  if(enc.quarantined)return -EIO;
+  if(enc.guard_poisoned)return -EOVERFLOW;
+- if(job->width!=1280||job->height!=720||job->input_bytes!=bytes||!job->input_ptr)return -EINVAL;
+- if(destination->kind==QC_H264_CONTIGUOUS){
+-  if(job->output_capacity<OUTPUT_LIMIT||!job->output_ptr)return -EINVAL;
+- }else if(destination->kind!=QC_H264_SPANS||!destination->spans)return -EINVAL;
++ if(job->width!=1280||job->height!=720||job->input_bytes!=bytes||
++    job->output_capacity<OUTPUT_LIMIT||!job->input_ptr||!job->output_ptr)return -EINVAL;
+  result=codec_identity();if(result)return result;
+  if(!(enc.info.config&BIT(27))||(enc.info.config&0xfff)<1280)return -EOPNOTSUPP;
+  stamp=ktime_get_ns();
+@@ -356,12 +352,6 @@
+  if((status&(BIT(3)|BIT(4)|BIT(5)))||!(status&BIT(2))||!bits||(bits&7)||bits/8>OUTPUT_LIMIT)return -EIO;
+  job->output_bytes=bits/8;enc.info.last_bytes=job->output_bytes;
+  stamp=ktime_get_ns();
+- if(destination->kind==QC_H264_SPANS){
+-  u32 copied;
+-  result=qc_h264_scatter_copy(destination->spans,job->output_bytes,&copied);
+-  qc_stage_sample(qc_codec_trace(),QC_PHASE_OUTPUT_COPY,stamp,ktime_get_ns(),copied,result);
+-  return result;
+- }
+  if(copy_to_user((void __user *)(unsigned long)job->output_ptr,enc.output,job->output_bytes)){
+   qc_stage_sample(qc_codec_trace(),QC_PHASE_OUTPUT_COPY,stamp,ktime_get_ns(),job->output_bytes,-EFAULT);return -EFAULT;
+  }
+@@ -392,7 +382,7 @@
+   else result=copy_to_user((void __user *)argument,&query,sizeof(query))?-EFAULT:0;
+   mutex_unlock(&enc.lock);return result;
+  }
+- if(command!=QC_HWENC_INFO && command!=QC_HWENC_JPEG && command!=QC_HWENC_H264_IDR && command!=QC_HWENC_H264_STREAM && command!=QC_HWENC_H264_STREAM_SPANS)return -ENOTTY;
++ if(command!=QC_HWENC_INFO && command!=QC_HWENC_JPEG && command!=QC_HWENC_H264_IDR && command!=QC_HWENC_H264_STREAM)return -ENOTTY;
+  if(mutex_lock_interruptible(&enc.lock))return -ERESTARTSYS;
+  if(enc.quarantined){mutex_unlock(&enc.lock);return -EIO;}
+  enc.active_session=((struct qc_encoder_session *)file->private_data)->identity;
+@@ -404,25 +394,6 @@
+  if(command==QC_HWENC_INFO){
+   result=codec_identity();
+   if(!result&&copy_to_user((void __user *)argument,&enc.info,sizeof(enc.info)))result=-EFAULT;
+- }else if(command==QC_HWENC_H264_STREAM_SPANS){
+-  struct qc_hwenc_h264_spans_job job;
+-  result=qc_h264_spans_snapshot(argument,&job);
+-  if(!result&&!job.keyframe&&!enc.h264_owner)result=-ENODATA;
+-  if(!result){
+-   struct qc_hwenc_h264_job frame={.width=job.width,.height=job.height,
+-    .input_bytes=job.input_bytes,.input_ptr=job.input_ptr};
+-   const struct qc_h264_destination destination={QC_H264_SPANS,job.spans};
+-   u32 num=job.keyframe?0:(enc.h264_frame_num+1)&0xffff;
+-   u32 ref=job.keyframe?0:enc.h264_ref_index;
+-   result=encode_h264(&frame,job.keyframe,num,ref,&destination);
+-   if(!result){
+-    job.output_bytes=frame.output_bytes;job.status=frame.status;job.frame_num=num;
+-    if(copy_to_user((void __user *)argument,&job,sizeof(job)))result=-EFAULT;
+-   }
+-   if(!result){enc.h264_owner=file;enc.h264_frame_num=num;enc.h264_ref_index=ref^1;
+-    qc_stage_owner(qc_codec_trace(),1,job.keyframe);}
+-   else enc.h264_owner=NULL; /* logical invalidation, NEVER quarantine/reset clear */
+-  }
+  }else if(command==QC_HWENC_H264_STREAM){
+   struct qc_hwenc_h264_stream_job job;
+   if(copy_from_user(&job,(void __user *)argument,sizeof(job)))result=-EFAULT;
+@@ -431,7 +402,7 @@
+   else{
+    u32 num=job.keyframe?0:(enc.h264_frame_num+1)&0xffff;
+    u32 ref=job.keyframe?0:enc.h264_ref_index;
+-    result=encode_h264(&job.frame,job.keyframe,num,ref,&qc_h264_contiguous);job.frame_num=num;
++   result=encode_h264(&job.frame,job.keyframe,num,ref);job.frame_num=num;
+     if(copy_to_user((void __user *)argument,&job,sizeof(job))&&!enc.quarantined)result=-EFAULT;
+     if(!result){enc.h264_owner=file;enc.h264_frame_num=num;enc.h264_ref_index=ref^1;
+      qc_stage_owner(qc_codec_trace(),1,job.keyframe);}
+@@ -441,7 +412,7 @@
+   struct qc_hwenc_h264_job job;
+   if(copy_from_user(&job,(void __user *)argument,sizeof(job)))result=-EFAULT;
+   else{
+-    result=enc.h264_owner?-EBUSY:encode_h264(&job,true,0,0,&qc_h264_contiguous);
++   result=enc.h264_owner?-EBUSY:encode_h264(&job,true,0,0);
+     if(copy_to_user((void __user *)argument,&job,sizeof(job))&&!enc.quarantined)result=-EFAULT;
+   }
+  }else{
+--- b/qc07f_hwenc.h
++++ a/qc07f_hwenc.h
+@@ -34,5 +34,4 @@
+ };
+ #define QC_HWENC_LIFETIME_QUERY _IOR('Q',0x65,struct qc_hwenc_lifetime)
+ #include "encoder-open-query.h"
+-#include "encoder-output-spans.h"
+ #endif
+--- b/encoder-output-spans.h
++++ /dev/null
+@@ -1,34 +0,0 @@
+-/* SPDX-License-Identifier: GPL-2.0-only */
+-#ifndef QC_ENCODER_OUTPUT_SPANS_H
+-#define QC_ENCODER_OUTPUT_SPANS_H
+-#include <linux/types.h>
+-#include <linux/ioctl.h>
+-
+-#define QC_HWENC_OUTPUT_SPANS_VERSION 1U
+-#define QC_HWENC_OUTPUT_SPANS_COUNT 8U
+-#define QC_HWENC_OUTPUT_SPAN_BYTES 131072U
+-
+-struct qc_hwenc_output_span {
+- __u32 user_address,bytes;
+-};
+-/* CPU-copy destinations, NOT DMA/physical addresses or a user-MMIO interface.
+- * Caller supplies stable ordinary CPU memory and serializes mapping/alias use
+- * through the whole ioctl. access_ok does not reserve pages or prove aliasing.
+- * Exactly eight full128KiB capacities, mutually virtual-disjoint and disjoint
+- * from the complete raw input and this complete control request. No tail copy.
+- * All output fields and reserved words MUST be zero on input. On syscall0 only,
+- * output_bytes/status/frame_num describe delivery. Any error invalidates ALL
+- * output, even complete-looking partial data/metadata. No retry/repair; a failed
+- * actual job loses its logical P reference and requires a newly admitted IDR.
+- * Preflight-only rejection preserves the old owner. No errno proves retirement.
+- * Old kernels: ENOTTY, no fallback to contiguous or another command.
+- */
+-struct qc_hwenc_h264_spans_job {
+- __u32 version,struct_bytes,keyframe,span_count;
+- __u32 width,height,input_bytes,input_ptr;
+- struct qc_hwenc_output_span spans[QC_HWENC_OUTPUT_SPANS_COUNT];
+- __u32 output_bytes,status,frame_num;
+- __u32 reserved[5];
+-};
+-#define QC_HWENC_H264_STREAM_SPANS _IOWR('Q',0x67,struct qc_hwenc_h264_spans_job)
+-#endif
+--- b/encoder-output-spans.inc
++++ /dev/null
+@@ -1,67 +0,0 @@
+-/* SPDX-License-Identifier: GPL-2.0-only
+- * Included in the actual driver before its ONE H.264 body. All callers hold
+- * enc.lock. Only the real new dispatcher branch supplies the validated snapshot.
+- */
+-enum qc_h264_destination_kind { QC_H264_CONTIGUOUS,QC_H264_SPANS };
+-struct qc_h264_destination {
+- enum qc_h264_destination_kind kind;
+- const struct qc_hwenc_output_span *spans;
+-};
+-static const struct qc_h264_destination qc_h264_contiguous={QC_H264_CONTIGUOUS,NULL};
+-
+-static int qc_h264_user_range(u32 address,u32 bytes)
+-{
+- /* Conservative u32 endpoint, never a wrapping addition or truncated pointer. */
+- if(!address||!bytes||bytes>~(u32)0-address)return -EINVAL;
+- if(!access_ok((void __user *)(unsigned long)address,bytes))return -EFAULT;
+- return 0;
+-}
+-static bool qc_h264_overlap(u32 a,u32 a_bytes,u32 b,u32 b_bytes)
+-{return (u64)a+(u64)a_bytes>b&&(u64)b+(u64)b_bytes>a;}
+-
+-static int qc_h264_spans_snapshot(unsigned long argument,struct qc_hwenc_h264_spans_job *job)
+-{
+- u32 i,j,control;
+- int result;
+- if(!argument||argument>~(u32)0)return -EINVAL;
+- control=argument;
+- result=qc_h264_user_range(control,sizeof(*job));if(result)return result;
+- /* The sole request/descriptor read. No later userspace descriptor reload. */
+- if(copy_from_user(job,(void __user *)argument,sizeof(*job)))return -EFAULT;
+- if(job->version!=QC_HWENC_OUTPUT_SPANS_VERSION||job->struct_bytes!=sizeof(*job)||
+-    job->keyframe>1||job->span_count!=QC_HWENC_OUTPUT_SPANS_COUNT||
+-    job->width!=1280||job->height!=720||job->input_bytes!=1382400||
+-    job->output_bytes||job->status||job->frame_num)return -EINVAL;
+- for(i=0;i<ARRAY_SIZE(job->reserved);i++)if(job->reserved[i])return -EINVAL;
+- result=qc_h264_user_range(job->input_ptr,job->input_bytes);if(result)return result;
+- for(i=0;i<QC_HWENC_OUTPUT_SPANS_COUNT;i++){
+-  const struct qc_hwenc_output_span *span=&job->spans[i];
+-  if(span->bytes!=QC_HWENC_OUTPUT_SPAN_BYTES)return -EINVAL;
+-  result=qc_h264_user_range(span->user_address,span->bytes);if(result)return result;
+-  if(qc_h264_overlap(span->user_address,span->bytes,job->input_ptr,job->input_bytes)||
+-     qc_h264_overlap(span->user_address,span->bytes,control,sizeof(*job)))return -EINVAL;
+-  for(j=0;j<i;j++)if(qc_h264_overlap(span->user_address,span->bytes,
+-     job->spans[j].user_address,job->spans[j].bytes))return -EINVAL;
+- }
+- /* Fixed checked count * fixed checked capacity cannot undercount or overflow. */
+- static_assert(QC_HWENC_OUTPUT_SPANS_COUNT*QC_HWENC_OUTPUT_SPAN_BYTES==OUTPUT_LIMIT);
+- return 0;
+-}
+-
+-static int qc_h264_scatter_copy(const struct qc_hwenc_output_span *spans,u32 bytes,u32 *copied)
+-{
+- u32 i,offset=0;
+- *copied=0;
+- /* Caller already retired real DMA, dma_rmb'd, checked every guard and admitted
+-  * 0<bytes<=OUTPUT_LIMIT. Descriptor snapshot/capacities passed preflight.
+-  * No tail writes, no new output allocation, no retry after a partial fault.
+-  */
+- for(i=0;i<QC_HWENC_OUTPUT_SPANS_COUNT&&offset<bytes;i++){
+-  u32 chunk=min(bytes-offset,QC_HWENC_OUTPUT_SPAN_BYTES);
+-  unsigned long left=copy_to_user((void __user *)(unsigned long)spans[i].user_address,
+-                                enc.output+offset,chunk);
+-  offset+=chunk-left;*copied=offset;
+-  if(left)return -EFAULT;
+- }
+- return offset==bytes?0:-EIO;
+-}

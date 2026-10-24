@@ -20,6 +20,17 @@
 
 ## Current checkpoint (2026-10-23)
 
+**USER RESUME — after 2026-10-24 host-restart pause:** User explicitly requested
+continue. Reconciled HEAD `26d7e4c` and unchanged ordinary index; saved encoder
+build01 failure/build02 compile-PASS reports remain present. The old author was
+cancelled, not an inherited live worker. Resumed author added only final handback/
+verification/delivery pins:96 existing files unchanged, no source/build rerun.
+Independent ordinary encoder review and parent source closeout are now complete
+at narrow SOURCE/API/bounds/ownership/order scope, NOT RUN. No build was rerun.
+Historical
+pause boundary: `docs/plan/camera-foundation/PAUSE_20261024_HOST_RESTART.md`.
+No fresh target observation, transfer or native/hardware phase is selected.
+
 **Latest autonomy steering:** continue eligible work unattended until completion
 or genuinely required user input. User renewed approval Oct23, explicitly including
 motor testing and onboard NOR flashing if needed; authorization does not establish
@@ -55,7 +66,7 @@ dependency records/84 artifacts/40 logs/five tools. Native hardening/real creden
 NOT RUN. See rtsp-provisioner-process PARENT_DISPOSITION; no active author/reviewer
 in that lane; committed locally `5269979`. Its original33-input pin set retains
 the pre-closeout index:32 remain unchanged plus known parent index/status
-updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE11.json`,
+updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE12.json`,
 not rebased. Actual authorized
 external ingress, secret-free launch/FD-env-caps
 hygiene, durable storage/rotation, linked-file retirement/main/external recovery/
@@ -166,10 +177,27 @@ Terminal scalar history remains; live owner pointers retire only at that boundar
 16 HOST/ARM compiles/2 rooted REL links/46 commands PASS, zero candidate calls.
 Parent verified22 delivery/101 frozen pins,1066 overlapping build records/logs,
 exact membership/eight literal+two aggregate diffs/twelve unchanged sender bodies,
-46 archive bodies/32 selected bodies. See qc07f-span-serve PARENT_DISPOSITION;
+46 archive bodies/32 selected bodies. Committed locally `26d7e4c`; see
+qc07f-span-serve PARENT_DISPOSITION;
 no source author/reviewer active, no candidate invocation or hardware phase.
 This normal CPU borrow release is not lender destruction, native/cap acceptance,
-history reset, caller-ready Boolean or survival/recovery claim. Remaining1MiB output/
+history reset, caller-ready Boolean or survival/recovery claim. User requested
+continue. qc07f-encoder-output-spans author handback is now complete for an
+actual additive kernel H.264 stream output-copy sink into eight bounded128KiB user
+ranges, preserving existing DMA/reset/guard/reference ownership and old ioctls.
+HOST/ARM UAPI + explicit NEW Clang23.1.3 whole-driver source-object compile only;
+not a kernel/module/image build, query78 diagnostic lane, native pairing or app
+adoption. Saved build01 wrong two ABI assertions remains FAILED_PRESERVED; build02
+has three actual C compiles/12 commands PASS, NOT RUN. Resumed handback checked603
+input pins,96 unchanged existing files and exact31 failed-run membership; only
+two documented ABI-assertion constants differ from its failed consumed copy.
+Narrow independent SOURCE/API/bounds/ownership/order sufficiency now accepted;
+parent checked21 delivery pins,603 inputs/555 overlapping dependencies/4 tools/
+5 artifacts/24 build02 logs, failed-run custody and exact patches/consumed copies.
+All99 original files unchanged; N1 Path-vs-string aggregate ordering reconciled,
+no evidence rewrite. See encoder-output-spans PARENT_DISPOSITION; no source
+author/reviewer active.21 public delivery pins, no function calls. No ioctl,
+test/function call, new framework or hardware phase. Remaining1MiB output/
 raw/process2MiB/combined-load/external recovery remain open; no rerun, negative
 test, runtime/cap/native adoption or hardware queue.
 No new diagnostic/clock/receipt framework or hardware phase selected.

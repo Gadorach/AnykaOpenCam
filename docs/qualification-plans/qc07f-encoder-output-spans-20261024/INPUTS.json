@@ -1,0 +1,86 @@
+{
+  "recorded": "2026-10-24T10:01:17.034383+00:00",
+  "scope": "Read-only source/bounds/method references, no native ABI adoption",
+  "files": {
+    "apps/qualification/kernel76-encoder-identity-clang2313/build.py": {
+      "bytes": 12358,
+      "sha256": "2e0afbe066e689cefa2241dd98043005d5b90fc9e3f9014a4eb88394e19f7c96"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/native_adapter.c": {
+      "bytes": 11628,
+      "sha256": "1fcd2a68750c64a0f1d1b3a96f1124f6f21369b9eb19f4b89a9bcbd1774754bf"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/rtspd-native-import.c": {
+      "bytes": 16881,
+      "sha256": "00ee594e91442b3fb256834f0069d653d71d379e781c4bce7a4390e68f3339be"
+    },
+    "apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.h": {
+      "bytes": 1660,
+      "sha256": "41126a8b9827894d6ecb71788cd1cc71bf3b5b036e44fddf998f4c5740f05f91"
+    },
+    "apps/rtsp-auth/span-hub-v2/span_hub.h": {
+      "bytes": 5719,
+      "sha256": "310160cf0b3bf753daa199193a5674e9e223e036af467e320cc5905e415b3454"
+    },
+    "docs/qualification-plans/encoder-identity-20261022/SOURCE_SEAL01.json": {
+      "bytes": 3417,
+      "sha256": "9d6a2701e4bb6b46157e16c0dc0707bd991a576dda7353a77d0dbf98cde71efa"
+    },
+    "docs/qualification-plans/encoder-identity-20261022/runs/build01/candidate/dma_integrity.h": {
+      "bytes": 3561,
+      "sha256": "8c1eddcc8e3296fa807984e588d5876cf179db52741c0a433c0a8a5ccbc2666c"
+    },
+    "docs/qualification-plans/encoder-identity-20261022/runs/build01/candidate/encoder-open-query.h": {
+      "bytes": 2455,
+      "sha256": "6052069fa5428185eb8c61871404256c53c30c12515eaa5c9ab80c424facde37"
+    },
+    "docs/qualification-plans/encoder-identity-20261022/runs/build01/candidate/encoder-open-query.inc": {
+      "bytes": 2220,
+      "sha256": "7247086b8b151e8f3a21f79d996f6c78238521366a103f56c5ee9868f75b013c"
+    },
+    "docs/qualification-plans/encoder-identity-20261022/runs/build01/candidate/qc07f_hwenc.c": {
+      "bytes": 25218,
+      "sha256": "9bf16b1175befb091d6c61c3ac573121378e1d8c403eed21806a3e8fc80fc946"
+    },
+    "docs/qualification-plans/encoder-identity-20261022/runs/build01/candidate/qc07f_hwenc.h": {
+      "bytes": 1533,
+      "sha256": "6da117b504c15c05dd2b0a332f22f821e085f2e1549e4163ded07ede752829bd"
+    },
+    "docs/qualification-plans/encoder-identity-20261022/runs/build01/candidate/stage-telemetry-uapi.h": {
+      "bytes": 2203,
+      "sha256": "6bab6082882a574ad7a98613c68a64225147dbfe9773ed73bd6e5b0f70d7a9e7"
+    },
+    "docs/qualification-plans/encoder-identity-20261022/runs/build01/candidate/stage-telemetry.h": {
+      "bytes": 8294,
+      "sha256": "3652ae90114c7ce303047497e29c80f3d14c8e1855374f442397accddcfa89cb"
+    },
+    "docs/qualification-plans/encoder-identity-clang2313-20261022/BUILD_RESULT.md": {
+      "bytes": 7154,
+      "sha256": "6294b242c14633d5ee29b06cd1d8b969e8690b7e2dc79159ec7147fe0dc1c178"
+    },
+    "docs/qualification-plans/encoder-identity-clang2313-20261022/PARENT_REVIEW.md": {
+      "bytes": 4155,
+      "sha256": "3bc76523b361b94946020e4a696c2f7b7636bd7755f152bfeed8cd3e7af36707"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/dma_integrity.h": {
+      "bytes": 3561,
+      "sha256": "8c1eddcc8e3296fa807984e588d5876cf179db52741c0a433c0a8a5ccbc2666c"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/qc07f_hwenc.c": {
+      "bytes": 25109,
+      "sha256": "e97744838acd469772db41fb1fe0907c95fb6e923577cdbffc84ead0141a026f"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/qc07f_hwenc.h": {
+      "bytes": 1501,
+      "sha256": "6723c30c76a3fbd1feaf1ed9d1676a2b9b6289b352ffe7682372bf8e95123731"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/stage-telemetry-uapi.h": {
+      "bytes": 2203,
+      "sha256": "6bab6082882a574ad7a98613c68a64225147dbfe9773ed73bd6e5b0f70d7a9e7"
+    },
+    "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/linux/arch/arm/mach-ak3918ev200/stage-telemetry.h": {
+      "bytes": 8294,
+      "sha256": "3652ae90114c7ce303047497e29c80f3d14c8e1855374f442397accddcfa89cb"
+    }
+  }
+}

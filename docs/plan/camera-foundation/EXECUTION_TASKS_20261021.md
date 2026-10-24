@@ -1,5 +1,18 @@
 # Active execution ledger — remaining foundation work
 
+## USER RESUME — after 2026-10-24 host restart
+
+User explicitly requested continue. Reconciled HEAD `26d7e4c` and unchanged ordinary
+index; encoder build01 failure/build02 compile-PASS reports are present. No old
+worker is assumed live. Resumed author handback is complete: only three final
+documents added,96 existing files unchanged;603 build02 input pins and exact31
+build01 members reconciled. No source/recipe/compile rerun. Independent ordinary
+encoder review and parent closeout now accept narrow SOURCE/API/bounds/ownership/
+order sufficiency, NOT RUN. No author/reviewer active.
+No candidate function/test or hardware operation selected.
+Preserve [historical pause checkpoint](PAUSE_20261024_HOST_RESTART.md) and both build
+attempts. Camera last OFF/finalized23h remains historical, not a fresh observation.
+
 ## Current focus — Oct23 feature integration; diagnostic build lane parked
 
 Latest user reseated probes, explicitly requested retry and asked whether parsing
@@ -112,7 +125,23 @@ memberships/eight literal+two aggregate diffs/twelve unchanged sender bodies,
 46 archive bodies/32 selected bodies. See qc07f-span-serve PARENT_DISPOSITION;
 no source author/reviewer active. This is normal CPU borrow release, not lender
 destruction/native/cap/product acceptance or history reset. No function/test/
-hardware queue or survival/recovery claim.
+hardware queue or survival/recovery claim. Composition source closeout committed
+locally `26d7e4c`. User requested continue; parent selected one isolated author at
+qc07f-encoder-output-spans app/docs for B07/CAP/ENC's actual additive kernel H.264
+encoded-output CPU copy into eight<=128KiB user ranges. Keep one real encode path,
+existing DMA/reset/guards/reference/refusal semantics and old ioctls. Compile-only
+HOST/ARM UAPI + NEW Clang23.1.3 whole-driver object, no paired kernel/module/image
+build, diagnostic-query lane or actual ioctl. Contract before code; independent
+ordinary review now accepts narrow SOURCE/API/bounds/ownership/order sufficiency;
+see encoder-output-spans PARENT_DISPOSITION. No source author/reviewer active.
+Static resumed handback completed without changing96 existing files;
+saved build02 three actual C compiles/12 commands PASS, NOT RUN, build01 ABI
+assertion failure remains FAILED_PRESERVED.21 public delivery pins/603 build02
+input records reconciled. Parent checked555 overlapping dependencies/4 tools/
+5 artifacts/24 build02 logs, failed custody and exact patches/consumed copies;
+all99 pre-closeout files unchanged. N1 aggregate Path-vs-string ordering reconciled
+without evidence rewrite, no runtime/cap/native acceptance. Current userspace still uses the old
+contiguous-output ioctl; no cap/native/app acceptance follows.
 Actual backing remains next,
 not solved by source shape or a caller Boolean. No new diagnostic/clock framework.
 

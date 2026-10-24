@@ -1,0 +1,38 @@
+{
+  "qc07f_hwenc.c": [
+    {
+      "before": "  return -ENOMEM;\n}\nstatic int encode_h264(struct qc_hwenc_h264_job *job,bool idr,u32 frame_num,u32 read_ref)\n{\n u32 regs[64]={0},status=0,bits,i,guards=0;\n",
+      "after": "  return -ENOMEM;\n}\n#include \"encoder-output-spans.inc\"\nstatic int encode_h264(struct qc_hwenc_h264_job *job,bool idr,u32 frame_num,u32 read_ref,\n const struct qc_h264_destination *destination)\n{\n u32 regs[64]={0},status=0,bits,i,guards=0;\n"
+    },
+    {
+      "before": " if(enc.quarantined)return -EIO;\n if(enc.guard_poisoned)return -EOVERFLOW;\n if(job->width!=1280||job->height!=720||job->input_bytes!=bytes||\n    job->output_capacity<OUTPUT_LIMIT||!job->input_ptr||!job->output_ptr)return -EINVAL;\n result=codec_identity();if(result)return result;\n if(!(enc.info.config&BIT(27))||(enc.info.config&0xfff)<1280)return -EOPNOTSUPP;\n",
+      "after": " if(enc.quarantined)return -EIO;\n if(enc.guard_poisoned)return -EOVERFLOW;\n if(job->width!=1280||job->height!=720||job->input_bytes!=bytes||!job->input_ptr)return -EINVAL;\n if(destination->kind==QC_H264_CONTIGUOUS){\n  if(job->output_capacity<OUTPUT_LIMIT||!job->output_ptr)return -EINVAL;\n }else if(destination->kind!=QC_H264_SPANS||!destination->spans)return -EINVAL;\n result=codec_identity();if(result)return result;\n if(!(enc.info.config&BIT(27))||(enc.info.config&0xfff)<1280)return -EOPNOTSUPP;\n"
+    },
+    {
+      "before": " job->output_bytes=bits/8;enc.info.last_bytes=job->output_bytes;\n stamp=ktime_get_ns();\n if(copy_to_user((void __user *)(unsigned long)job->output_ptr,enc.output,job->output_bytes)){\n  qc_stage_sample(qc_codec_trace(),QC_PHASE_OUTPUT_COPY,stamp,ktime_get_ns(),job->output_bytes,-EFAULT);return -EFAULT;\n",
+      "after": " job->output_bytes=bits/8;enc.info.last_bytes=job->output_bytes;\n stamp=ktime_get_ns();\n if(destination->kind==QC_H264_SPANS){\n  u32 copied;\n  result=qc_h264_scatter_copy(destination->spans,job->output_bytes,&copied);\n  qc_stage_sample(qc_codec_trace(),QC_PHASE_OUTPUT_COPY,stamp,ktime_get_ns(),copied,result);\n  return result;\n }\n if(copy_to_user((void __user *)(unsigned long)job->output_ptr,enc.output,job->output_bytes)){\n  qc_stage_sample(qc_codec_trace(),QC_PHASE_OUTPUT_COPY,stamp,ktime_get_ns(),job->output_bytes,-EFAULT);return -EFAULT;\n"
+    },
+    {
+      "before": "  mutex_unlock(&enc.lock);return result;\n }\n if(command!=QC_HWENC_INFO && command!=QC_HWENC_JPEG && command!=QC_HWENC_H264_IDR && command!=QC_HWENC_H264_STREAM)return -ENOTTY;\n if(mutex_lock_interruptible(&enc.lock))return -ERESTARTSYS;\n if(enc.quarantined){mutex_unlock(&enc.lock);return -EIO;}\n",
+      "after": "  mutex_unlock(&enc.lock);return result;\n }\n if(command!=QC_HWENC_INFO && command!=QC_HWENC_JPEG && command!=QC_HWENC_H264_IDR && command!=QC_HWENC_H264_STREAM && command!=QC_HWENC_H264_STREAM_SPANS)return -ENOTTY;\n if(mutex_lock_interruptible(&enc.lock))return -ERESTARTSYS;\n if(enc.quarantined){mutex_unlock(&enc.lock);return -EIO;}\n"
+    },
+    {
+      "before": "  result=codec_identity();\n  if(!result&&copy_to_user((void __user *)argument,&enc.info,sizeof(enc.info)))result=-EFAULT;\n }else if(command==QC_HWENC_H264_STREAM){\n  struct qc_hwenc_h264_stream_job job;\n",
+      "after": "  result=codec_identity();\n  if(!result&&copy_to_user((void __user *)argument,&enc.info,sizeof(enc.info)))result=-EFAULT;\n }else if(command==QC_HWENC_H264_STREAM_SPANS){\n  struct qc_hwenc_h264_spans_job job;\n  result=qc_h264_spans_snapshot(argument,&job);\n  if(!result&&!job.keyframe&&!enc.h264_owner)result=-ENODATA;\n  if(!result){\n   struct qc_hwenc_h264_job frame={.width=job.width,.height=job.height,\n    .input_bytes=job.input_bytes,.input_ptr=job.input_ptr};\n   const struct qc_h264_destination destination={QC_H264_SPANS,job.spans};\n   u32 num=job.keyframe?0:(enc.h264_frame_num+1)&0xffff;\n   u32 ref=job.keyframe?0:enc.h264_ref_index;\n   result=encode_h264(&frame,job.keyframe,num,ref,&destination);\n   if(!result){\n    job.output_bytes=frame.output_bytes;job.status=frame.status;job.frame_num=num;\n    if(copy_to_user((void __user *)argument,&job,sizeof(job)))result=-EFAULT;\n   }\n   if(!result){enc.h264_owner=file;enc.h264_frame_num=num;enc.h264_ref_index=ref^1;\n    qc_stage_owner(qc_codec_trace(),1,job.keyframe);}\n   else enc.h264_owner=NULL; /* logical invalidation, NEVER quarantine/reset clear */\n  }\n }else if(command==QC_HWENC_H264_STREAM){\n  struct qc_hwenc_h264_stream_job job;\n"
+    },
+    {
+      "before": "   u32 num=job.keyframe?0:(enc.h264_frame_num+1)&0xffff;\n   u32 ref=job.keyframe?0:enc.h264_ref_index;\n   result=encode_h264(&job.frame,job.keyframe,num,ref);job.frame_num=num;\n    if(copy_to_user((void __user *)argument,&job,sizeof(job))&&!enc.quarantined)result=-EFAULT;\n    if(!result){enc.h264_owner=file;enc.h264_frame_num=num;enc.h264_ref_index=ref^1;\n",
+      "after": "   u32 num=job.keyframe?0:(enc.h264_frame_num+1)&0xffff;\n   u32 ref=job.keyframe?0:enc.h264_ref_index;\n    result=encode_h264(&job.frame,job.keyframe,num,ref,&qc_h264_contiguous);job.frame_num=num;\n    if(copy_to_user((void __user *)argument,&job,sizeof(job))&&!enc.quarantined)result=-EFAULT;\n    if(!result){enc.h264_owner=file;enc.h264_frame_num=num;enc.h264_ref_index=ref^1;\n"
+    },
+    {
+      "before": "  if(copy_from_user(&job,(void __user *)argument,sizeof(job)))result=-EFAULT;\n  else{\n   result=enc.h264_owner?-EBUSY:encode_h264(&job,true,0,0);\n    if(copy_to_user((void __user *)argument,&job,sizeof(job))&&!enc.quarantined)result=-EFAULT;\n  }\n",
+      "after": "  if(copy_from_user(&job,(void __user *)argument,sizeof(job)))result=-EFAULT;\n  else{\n    result=enc.h264_owner?-EBUSY:encode_h264(&job,true,0,0,&qc_h264_contiguous);\n    if(copy_to_user((void __user *)argument,&job,sizeof(job))&&!enc.quarantined)result=-EFAULT;\n  }\n"
+    }
+  ],
+  "qc07f_hwenc.h": [
+    {
+      "before": "#define QC_HWENC_LIFETIME_QUERY _IOR('Q',0x65,struct qc_hwenc_lifetime)\n#include \"encoder-open-query.h\"\n#endif\n",
+      "after": "#define QC_HWENC_LIFETIME_QUERY _IOR('Q',0x65,struct qc_hwenc_lifetime)\n#include \"encoder-open-query.h\"\n#include \"encoder-output-spans.h\"\n#endif\n"
+    }
+  ]
+}

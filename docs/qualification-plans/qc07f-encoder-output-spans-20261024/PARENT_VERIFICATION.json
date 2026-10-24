@@ -1,0 +1,35 @@
+{
+  "scope": "PARENT_PUBLIC_SAVED_SOURCE_BUILD_REVIEW_VERIFICATION_NOT_EXECUTION",
+  "recorded_host_utc": "2026-10-24T10:54:04.845453+00:00",
+  "delivery_pins": 21,
+  "build01_members": 31,
+  "build02_members": 52,
+  "build01": {
+    "inputs": 78,
+    "unchanged_current_inputs": 77,
+    "documented_ABI_input_checked_against_original_consumed_copy": 1,
+    "dependencies": 0,
+    "tools": 3,
+    "artifacts": 2,
+    "logs": 10,
+    "successful_commands": 4,
+    "failed_commands": 1,
+    "status": "FAILED_PRESERVED"
+  },
+  "build02": {
+    "inputs": 603,
+    "overlapping_dependency_records": 555,
+    "tools": 4,
+    "artifacts": 5,
+    "logs": 24,
+    "successful_commands": 12
+  },
+  "source_consumed_copies_and_forward_inverse_patches_exact": true,
+  "only_two_documented_ABI_assertion_constants_changed": true,
+  "existing99_complete_relative_string_order_sha256": "a143809530a3d8181698930d9ac6a4183408ed67d44b3a5de4d9d91e42ec8419",
+  "protected96_Path_component_order_sha256": "b88eb1a37b9988bbb810d8e97258be4d04361f19c167ff8859921b5136bf3368",
+  "distinct_lexical_paths_hashed": 668,
+  "review_sha256": "2a66d8e53fd1b5f9fe49466f24647c187422a50493fed8fa51637029f07f047b",
+  "compiler_build_test_candidate_ioctl_native_hardware_calls": 0,
+  "native_pairing_application_adoption_or_cap_acceptance": false
+}

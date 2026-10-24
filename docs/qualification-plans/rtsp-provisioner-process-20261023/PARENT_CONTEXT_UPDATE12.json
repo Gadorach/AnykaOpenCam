@@ -1,0 +1,15 @@
+{
+  "scope": "TWELFTH_KNOWN_PARENT_MUTABLE_INDEX_STATUS_UPDATE_NOT_SOURCE_PIN_REBASE",
+  "recorded_host_date": "2026-10-24",
+  "original_manifests_and_review_unchanged": true,
+  "path": "docs/plan/camera-foundation/00-INDEX.md",
+  "before": {
+    "bytes": 131073,
+    "sha256": "de47eb5ef4029fdf34cffe97fe66c6ff75be1ccd9e434f9fc93ed9d3a8a972f7"
+  },
+  "after": {
+    "bytes": 131776,
+    "sha256": "84ce1587cb7a197e9a8ca5cf7def8ccccb99713f56f2260cb219d078b7531eb7"
+  },
+  "reason": "after explicit user resume, parent closes narrow independently reviewed encoder CPU-output spans SOURCE/API/bounds/ownership/order scope with saved compile-only evidence; host pause, original ABI assertion failure and unadopted userspace/native pairing remain explicit; no rerun or execution"
+}

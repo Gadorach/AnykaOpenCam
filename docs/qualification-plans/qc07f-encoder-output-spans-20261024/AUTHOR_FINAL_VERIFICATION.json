@@ -1,0 +1,371 @@
+{
+  "UTC": "2026-10-24T10:43:25.345969+00:00",
+  "scope": "AUTHOR public static handback after explicit host-restart resume; not independent review/adoption",
+  "task_ids": [
+    "B07",
+    "RP-04",
+    "RP-05",
+    "RP-09",
+    "CAP-01",
+    "CAP-05",
+    "CAP-06",
+    "CAP-07",
+    "ENC-03",
+    "ENC-05"
+  ],
+  "interrupted_author_before_handback": true,
+  "finished_author_handback_now": true,
+  "independent_review_complete": false,
+  "parent_adopted": false,
+  "resumed_actions": "stdlib file reads/hash/JSON/text/diff only; exclusively added three final documents",
+  "no_recipe_import_or_execution_after_resume": true,
+  "no_compiler_ELF_tool_test_candidate_callback_ioctl_native_hardware_execution_after_resume": true,
+  "no_Git_index_private_network_device_or_settings_operation": true,
+  "last_target_evidence": "Historical23h OFF/finalized only; no fresh observation/lease",
+  "protected_existing_files": {
+    "count": 96,
+    "app_files": 8,
+    "prior_top_level_qualification_files": 5,
+    "build01_files": 31,
+    "build02_files": 52,
+    "all_before_after_hashes_equal": true,
+    "corpus_sha256": "b88eb1a37b9988bbb810d8e97258be4d04361f19c167ff8859921b5136bf3368",
+    "method": "sorted workspace-relative UTF-8 path + NUL + raw SHA256 bytes; excludes three added final files"
+  },
+  "app_files": {
+    "apps/qualification/qc07f-encoder-output-spans/LICENSE_NOTICES.md": {
+      "bytes": 790,
+      "sha256": "6754bf952279ad4738421f6ee849e3cd7e0b717eeee22f3c06351be2b4dcaa37"
+    },
+    "apps/qualification/qc07f-encoder-output-spans/README.md": {
+      "bytes": 2602,
+      "sha256": "2f497b4a30cd3032289dee5fd6515d3c0854f7cfcbd6f8b59399a01ae0761f6e"
+    },
+    "apps/qualification/qc07f-encoder-output-spans/abi_compile.c": {
+      "bytes": 3036,
+      "sha256": "031c5337f231ad38ed8cb6bac7f43ee4816a3f3da72fe173193b680c8979b656"
+    },
+    "apps/qualification/qc07f-encoder-output-spans/build.py": {
+      "bytes": 12421,
+      "sha256": "ea4391963e1f49ea40358ad2a2c0b42611c427e5a9496e1066de6b8b9eca0fc9"
+    },
+    "apps/qualification/qc07f-encoder-output-spans/encoder-output-spans.h": {
+      "bytes": 1559,
+      "sha256": "4267d4074177468898937926b35029fbfb2b392c25ea987832c83137841cb6e6"
+    },
+    "apps/qualification/qc07f-encoder-output-spans/encoder-output-spans.inc": {
+      "bytes": 3227,
+      "sha256": "0a49fd1ce8cf1962f747df0f05db66b7614570885a39f1515780a5f560f7a415"
+    },
+    "apps/qualification/qc07f-encoder-output-spans/qc07f_hwenc.c": {
+      "bytes": 26761,
+      "sha256": "36bc80fadc0a16ded4525f24f805022faf22ee0ac8cb77cdfa4b390ba23e6b50"
+    },
+    "apps/qualification/qc07f-encoder-output-spans/qc07f_hwenc.h": {
+      "bytes": 1567,
+      "sha256": "f2c651e522e7b5444a26c4c8aec05a10e483ee0e1fb41a655219ddf91d3f63e7"
+    }
+  },
+  "app_tree_sha256": "1519d8d6c998ac2f4a33961d7d9d88597135a87254ed59d9f2e9716340113dc0",
+  "app_tree_hash_method": "sorted workspace-relative UTF-8 path + NUL + raw SHA256 bytes",
+  "compiled_source_files": {
+    "dma_integrity.h": {
+      "bytes": 3561,
+      "sha256": "8c1eddcc8e3296fa807984e588d5876cf179db52741c0a433c0a8a5ccbc2666c"
+    },
+    "encoder-open-query.h": {
+      "bytes": 2455,
+      "sha256": "6052069fa5428185eb8c61871404256c53c30c12515eaa5c9ab80c424facde37"
+    },
+    "encoder-open-query.inc": {
+      "bytes": 2220,
+      "sha256": "7247086b8b151e8f3a21f79d996f6c78238521366a103f56c5ee9868f75b013c"
+    },
+    "encoder-output-spans.h": {
+      "bytes": 1559,
+      "sha256": "4267d4074177468898937926b35029fbfb2b392c25ea987832c83137841cb6e6"
+    },
+    "encoder-output-spans.inc": {
+      "bytes": 3227,
+      "sha256": "0a49fd1ce8cf1962f747df0f05db66b7614570885a39f1515780a5f560f7a415"
+    },
+    "qc07f_hwenc.c": {
+      "bytes": 26761,
+      "sha256": "36bc80fadc0a16ded4525f24f805022faf22ee0ac8cb77cdfa4b390ba23e6b50"
+    },
+    "qc07f_hwenc.h": {
+      "bytes": 1567,
+      "sha256": "f2c651e522e7b5444a26c4c8aec05a10e483ee0e1fb41a655219ddf91d3f63e7"
+    },
+    "stage-telemetry-uapi.h": {
+      "bytes": 2203,
+      "sha256": "6bab6082882a574ad7a98613c68a64225147dbfe9773ed73bd6e5b0f70d7a9e7"
+    },
+    "stage-telemetry.h": {
+      "bytes": 8294,
+      "sha256": "3652ae90114c7ce303047497e29c80f3d14c8e1855374f442397accddcfa89cb"
+    }
+  },
+  "compiled_source_snapshot_files": 9,
+  "current_app_matches_build02_consumed_copies": 8,
+  "reports": {
+    "build01": {
+      "report_pin": {
+        "bytes": 31021,
+        "sha256": "2f1740eec954ee8cfb512a0e5e31ca576e2476d03bd14fa3933ab4939b17bcef"
+      },
+      "saved_status": "FAILED_PRESERVED; no retry/altered flags",
+      "saved_started": "2026-10-24T10:02:05.007812+00:00",
+      "saved_ended": "2026-10-24T10:02:05.877417+00:00",
+      "commands": 5,
+      "successful_commands": 4,
+      "failed_commands": 1,
+      "input_records": 78,
+      "current_matching_input_records": 77,
+      "documented_current_input_drift": [
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/qualification/qc07f-encoder-output-spans/abi_compile.c"
+      ],
+      "saved_inputs_unchanged_at_build_end": true,
+      "logs_verified": 10,
+      "artifact_pins_verified": 2,
+      "dependency_records_by_mode": {},
+      "files": 31
+    },
+    "build02": {
+      "report_pin": {
+        "bytes": 348870,
+        "sha256": "065e38cd805575ae918464929e70f737d8a41bb880ccc6709892f445d55f6538"
+      },
+      "saved_status": "PASS: HOST/ARM ABI + NEW Clang23.1.3 whole ARM driver object; NOT RUN",
+      "saved_started": "2026-10-24T10:02:54.855165+00:00",
+      "saved_ended": "2026-10-24T10:02:56.427908+00:00",
+      "commands": 12,
+      "successful_commands": 12,
+      "failed_commands": 0,
+      "input_records": 603,
+      "current_matching_input_records": 603,
+      "documented_current_input_drift": [],
+      "saved_inputs_unchanged_at_build_end": true,
+      "logs_verified": 24,
+      "artifact_pins_verified": 5,
+      "dependency_records_by_mode": {
+        "host-abi": 21,
+        "arm-abi": 19,
+        "driver-ARM": 515
+      },
+      "files": 52
+    }
+  },
+  "build01_membership_matches_exact_saved_selection": true,
+  "build02_exact_expected_membership": [
+    "REPORT.json",
+    "inputs/CONTRACT.md",
+    "inputs/INPUTS.json",
+    "inputs/LICENSE_NOTICES.md",
+    "inputs/README.md",
+    "inputs/SOURCE_DELTA.json",
+    "inputs/abi_compile.c",
+    "inputs/build.py",
+    "inverse.patch",
+    "logs/arm-abi-ELF.stderr",
+    "logs/arm-abi-ELF.stdout",
+    "logs/arm-abi-compile.stderr",
+    "logs/arm-abi-compile.stdout",
+    "logs/arm-abi-dependencies.stderr",
+    "logs/arm-abi-dependencies.stdout",
+    "logs/arm-version.stderr",
+    "logs/arm-version.stdout",
+    "logs/driver-ARM-ELF.stderr",
+    "logs/driver-ARM-ELF.stdout",
+    "logs/driver-ARM-compile.stderr",
+    "logs/driver-ARM-compile.stdout",
+    "logs/driver-ARM-dependencies.stderr",
+    "logs/driver-ARM-dependencies.stdout",
+    "logs/driver-version.stderr",
+    "logs/driver-version.stdout",
+    "logs/host-abi-ELF.stderr",
+    "logs/host-abi-ELF.stdout",
+    "logs/host-abi-compile.stderr",
+    "logs/host-abi-compile.stdout",
+    "logs/host-abi-dependencies.stderr",
+    "logs/host-abi-dependencies.stdout",
+    "logs/host-version.stderr",
+    "logs/host-version.stdout",
+    "objects/arm-abi.d",
+    "objects/arm-abi.o",
+    "objects/arm-abi.pre.d",
+    "objects/driver-ARM.d",
+    "objects/driver-ARM.o",
+    "objects/driver-ARM.pre.d",
+    "objects/host-abi.d",
+    "objects/host-abi.o",
+    "objects/host-abi.pre.d",
+    "source.patch",
+    "source/dma_integrity.h",
+    "source/encoder-open-query.h",
+    "source/encoder-open-query.inc",
+    "source/encoder-output-spans.h",
+    "source/encoder-output-spans.inc",
+    "source/qc07f_hwenc.c",
+    "source/qc07f_hwenc.h",
+    "source/stage-telemetry-uapi.h",
+    "source/stage-telemetry.h"
+  ],
+  "build02_saved_dependency_records_total_overlapping": 555,
+  "prior_source_seal_identity": "ec3b9daa257ce6bd72648b4ba7c907c405be588ef1e8bb35c787b1932e9e9520",
+  "prior_seal_records_verified": 12,
+  "prior_seven_file_baseline_verified": 7,
+  "baseline_files": {
+    "dma_integrity.h": {
+      "bytes": 3561,
+      "sha256": "8c1eddcc8e3296fa807984e588d5876cf179db52741c0a433c0a8a5ccbc2666c"
+    },
+    "encoder-open-query.h": {
+      "bytes": 2455,
+      "sha256": "6052069fa5428185eb8c61871404256c53c30c12515eaa5c9ab80c424facde37"
+    },
+    "encoder-open-query.inc": {
+      "bytes": 2220,
+      "sha256": "7247086b8b151e8f3a21f79d996f6c78238521366a103f56c5ee9868f75b013c"
+    },
+    "qc07f_hwenc.c": {
+      "bytes": 25218,
+      "sha256": "9bf16b1175befb091d6c61c3ac573121378e1d8c403eed21806a3e8fc80fc946"
+    },
+    "qc07f_hwenc.h": {
+      "bytes": 1533,
+      "sha256": "6da117b504c15c05dd2b0a332f22f821e085f2e1549e4163ded07ede752829bd"
+    },
+    "stage-telemetry-uapi.h": {
+      "bytes": 2203,
+      "sha256": "6bab6082882a574ad7a98613c68a64225147dbfe9773ed73bd6e5b0f70d7a9e7"
+    },
+    "stage-telemetry.h": {
+      "bytes": 8294,
+      "sha256": "3652ae90114c7ce303047497e29c80f3d14c8e1855374f442397accddcfa89cb"
+    }
+  },
+  "read_only_reference_records_verified": 20,
+  "literal_inverse_groups": {
+    "qc07f_hwenc.c": 7,
+    "qc07f_hwenc.h": 1
+  },
+  "literal_inverse_exact_baseline": true,
+  "both_runs_saved_forward_and_inverse_patches_regenerate_exactly": true,
+  "unchanged_regions": {
+    "pre_H264_prefix_including_JPEG_DMA_reset_alloc": true,
+    "release_open_init_suffix": true,
+    "actual_H264_hardware_core_through_final_valid_length_stamp": true,
+    "open_lifetime_stage_query_block": true,
+    "legacy_header_removing_only_new_include": true
+  },
+  "build01_current_ABI_diff": "Exactly two assertion literals: stage304->296, stage ioctl0xc1305165->0xc1285165; original consumed ABI/log/report not rebased",
+  "tool_hash_comparisons_read_only_no_invocation": {
+    "/usr/bin/cc": {
+      "saved": {
+        "resolved": "/usr/bin/gcc",
+        "bytes": 2451072,
+        "sha256": "a5f680ca8b01b1e7a98d531cac90f258875a301d841fab28a8b56d513470f988"
+      },
+      "current_pin": {
+        "bytes": 2451072,
+        "sha256": "a5f680ca8b01b1e7a98d531cac90f258875a301d841fab28a8b56d513470f988"
+      },
+      "current_resolved": "/usr/bin/gcc",
+      "hash_matches_saved": true,
+      "resolved_path_matches_saved": true,
+      "invoked_after_resume": false
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc": {
+      "saved": {
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/toolchain-wrapper",
+        "bytes": 14704,
+        "sha256": "f4db963a226e01244ce6f7b5d1ec6d57474dd811119ff8834429f022835ce9c1"
+      },
+      "current_pin": {
+        "bytes": 14704,
+        "sha256": "f4db963a226e01244ce6f7b5d1ec6d57474dd811119ff8834429f022835ce9c1"
+      },
+      "current_resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/toolchain-wrapper",
+      "hash_matches_saved": true,
+      "resolved_path_matches_saved": true,
+      "invoked_after_resume": false
+    },
+    "/usr/bin/clang": {
+      "saved": {
+        "resolved": "/usr/bin/clang-23",
+        "bytes": 124752,
+        "sha256": "583017067c40b0ff0a9b35805d8ac89d5a66fb014221c78ae13a7c21997dd464"
+      },
+      "current_pin": {
+        "bytes": 124752,
+        "sha256": "583017067c40b0ff0a9b35805d8ac89d5a66fb014221c78ae13a7c21997dd464"
+      },
+      "current_resolved": "/usr/bin/clang-23",
+      "hash_matches_saved": true,
+      "resolved_path_matches_saved": true,
+      "invoked_after_resume": false
+    },
+    "/usr/bin/readelf": {
+      "saved": {
+        "resolved": "/usr/bin/readelf",
+        "bytes": 867440,
+        "sha256": "b561a09504aff0f2c864da60a268cafee9171fdd1574a23fde6158f95ad55294"
+      },
+      "current_pin": {
+        "bytes": 867440,
+        "sha256": "b561a09504aff0f2c864da60a268cafee9171fdd1574a23fde6158f95ad55294"
+      },
+      "current_resolved": "/usr/bin/readelf",
+      "hash_matches_saved": true,
+      "resolved_path_matches_saved": true,
+      "invoked_after_resume": false
+    }
+  },
+  "actual_userspace_missing_connection_references": {
+    "apps/rtsp-auth/qc07f-span-serve-candidate/owned_runtime.c": {
+      "bytes": 26783,
+      "sha256": "384bac52a5142bd3f6888715a3e4d9b6e061a85433d4267e11f046b1307bba10"
+    },
+    "apps/rtsp-auth/qc07f-span-runtime-candidate/native/native_adapter.c": {
+      "bytes": 12242,
+      "sha256": "b0b97dc3946e001023bb0c00d22e0aa1d5104ec61b93b4d5770c8d7245a18f5f"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/rtspd-native-import.c": {
+      "bytes": 16881,
+      "sha256": "00ee594e91442b3fb256834f0069d653d71d379e781c4bce7a4390e68f3339be"
+    }
+  },
+  "ABI": {
+    "version": 1,
+    "struct_bytes": 128,
+    "align": 4,
+    "span_count": 8,
+    "each_capacity": 131072,
+    "total_capacity": 1048576,
+    "command": "0xc0805167",
+    "input_bytes": 1382400,
+    "width": 1280,
+    "height": 720
+  },
+  "saved_real_driver_object": {
+    "bytes": 21668,
+    "sha256": "c9a39012806ab0bc481a906b780d19970716ee0b9b49d4d792841ea658b8f40f",
+    "executed": false
+  },
+  "new_builds_tests_or_coverage_after_resume": 0,
+  "new_framework_or_automatic_queue": false,
+  "not_qualified": [
+    "overall128KiB allocation cap",
+    "raw/process2MiB budget",
+    "existing2MiB DMA/reference allocations",
+    "40MiB/CMA/combined TLS load",
+    "native ABI/Clang23.1.1 metadata pairing",
+    "kernel/module/image/source pairing",
+    "strict C1/independent recovery",
+    "userspace producer/controller/provider/hub adoption",
+    "normal/negative/adversarial/mutation/fuzz behavior",
+    "product acceptance"
+  ],
+  "next_boundary": "STOP; independent ordinary source/evidence review and explicit parent disposition before use; corrections require fresh selection"
+}
