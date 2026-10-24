@@ -1,0 +1,26 @@
+{
+  "recorded": "2026-10-24T13:33:00.883874+00:00",
+  "scope": "HANDBACK_CUSTODY_ONLY_NOT_BUILD_RESUMPTION",
+  "status": "FAILED_PRESERVED_NO_RETRY",
+  "report": {
+    "bytes": 150068,
+    "sha256": "a68bbf16b8dbadf1cdf8026534686a4c1026c2a2f95e52a7c423f6358391fea7"
+  },
+  "original_files": 110,
+  "original_roots": 12,
+  "original_drift": [],
+  "membership_drift": [],
+  "recorded_artifacts": 15,
+  "artifact_drift": [],
+  "recorded_consumed_inputs": 394,
+  "consumed_drift": [],
+  "source_copy_drift": [],
+  "run_files": 16,
+  "run_unexpected": [],
+  "run_missing": [],
+  "new_C_compiles": 0,
+  "new_REL_links": 0,
+  "candidate_calls": 0,
+  "later_compiler_or_build_invocation": false,
+  "no_source_recipe_correction": true
+}

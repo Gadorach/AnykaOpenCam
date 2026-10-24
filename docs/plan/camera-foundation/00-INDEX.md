@@ -172,8 +172,17 @@ order/ownership/lifetime sufficiency,16 HOST/ARM compiles/2 rooted REL links/
 46 commands PASS, NOT RUN. It observes publication AFTER runtime release/exact END/
 commit; real native/client/common/hub drain gates pointer-free normal borrow-end.
 See [typed writer sender disposition](../../qualification-plans/qc07f-writer-serve-20261024/PARENT_DISPOSITION.md).
-Old frontend/layout is NOT compatible and real bootstrap has not adopted the new
-runtime. No lender disposal/restart/recovery/native or product acceptance follows.
+The actual provisioning/bootstrap successor now has narrow independent SOURCE/API/
+order/custody/lifetime sufficiency for known wait/bind → API5 prepare/start → explicit
+postfork/setup → typed serve → separate finish/material retirement, with strict
+device-free finish distinct.2 HOST/ARM compiles/2 rooted REL links/30 commands PASS,
+NOT RUN. Build01 pin-map failure and later extra Digest verification assertion stay
+failed; independent N1 resolves unused GC-discarded functions vs retained required
+constructor crypto, not a repaired author seal. See
+[writer bootstrap disposition](../../qualification-plans/qc07f-writer-bootstrap-20261024/PARENT_DISPOSITION.md).
+Old frontend/bootstrap layouts are NOT compatible. Authorized external ingress,
+fresh launch/FD-env-caps hygiene, durable authority/storage/main/release and native
+qualification remain missing. No lender disposal/restart/recovery/product acceptance.
 No candidate function invoked.
 Native1MiB output/raw/process2MiB/combined-load
 and external recovery remain open, not satisfied by CPU chunks or source review.

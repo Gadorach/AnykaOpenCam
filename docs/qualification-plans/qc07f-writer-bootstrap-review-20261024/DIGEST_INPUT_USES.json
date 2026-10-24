@@ -1,0 +1,70 @@
+{
+  "scope": "RAW_SAVED_60_INDIVIDUAL_OBJECT_RELOCATIONS_ONLY",
+  "all_uses": [
+    {
+      "object": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-host/host-13-rtsp_digest_wire.o",
+      "arch": "host",
+      "section": ".text.camera_digest_wire_verify",
+      "symbol_index": 38,
+      "name": "camera_rtsp_digest_verify",
+      "offset": 485
+    },
+    {
+      "object": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-host/host-13-rtsp_digest_wire.o",
+      "arch": "host",
+      "section": ".text.camera_digest_wire_challenge",
+      "symbol_index": 44,
+      "name": "camera_rtsp_digest_issue",
+      "offset": 446
+    },
+    {
+      "object": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-host/host-13-rtsp_digest_wire.o",
+      "arch": "host",
+      "section": ".text.camera_digest_wire_close",
+      "symbol_index": 47,
+      "name": "camera_rtsp_digest_close",
+      "offset": 48
+    },
+    {
+      "object": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/host-2.o",
+      "arch": "host",
+      "section": ".text.qc07f_rtsp_startup_material_build_v1",
+      "symbol_index": 13,
+      "name": "camera_rtsp_digest_ha1",
+      "offset": 967
+    },
+    {
+      "object": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-arm/arm-13-rtsp_digest_wire.o",
+      "arch": "arm",
+      "section": ".text.camera_digest_wire_verify",
+      "symbol_index": 79,
+      "name": "camera_rtsp_digest_verify",
+      "offset": 676
+    },
+    {
+      "object": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-arm/arm-13-rtsp_digest_wire.o",
+      "arch": "arm",
+      "section": ".text.camera_digest_wire_challenge",
+      "symbol_index": 83,
+      "name": "camera_rtsp_digest_issue",
+      "offset": 360
+    },
+    {
+      "object": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-arm/arm-13-rtsp_digest_wire.o",
+      "arch": "arm",
+      "section": ".text.camera_digest_wire_close",
+      "symbol_index": 86,
+      "name": "camera_rtsp_digest_close",
+      "offset": 52
+    },
+    {
+      "object": "docs/qualification-plans/rtsp-provisioner-process-20261023/runs/build01/objects/arm-2.o",
+      "arch": "arm",
+      "section": ".text.qc07f_rtsp_startup_material_build_v1",
+      "symbol_index": 24,
+      "name": "camera_rtsp_digest_ha1",
+      "offset": 800
+    }
+  ],
+  "candidate_calls": 0
+}

@@ -1,0 +1,297 @@
+{
+  "unchanged_regions": {
+    "static int same_inode(": {
+      "bytes": 3446,
+      "sha256": "98bf20d553a412577343bea0269ee5b1c2bc2283272cc34e2762e50189b51046"
+    },
+    "int qc07f_bootstrap_begin_v1(": {
+      "bytes": 2063,
+      "sha256": "792a1c21f8232f5a684444dc83fd853df6c3ee4599fafb00139fcc465b835178"
+    },
+    " if(!material_check(b))return leave(hold(b,QC07F_BS_E_MATERIAL_PREFLIGHT));": {
+      "bytes": 1566,
+      "sha256": "e7ddbb9fd1ed325a099c83e3c1b7d9dc830c3c71c95ead444a6dc1b45e3b8a3b"
+    }
+  },
+  "deltas": {
+    "bootstrap.c": [
+      {
+        "tag": "replace",
+        "baseline_0based": [
+          2,
+          3
+        ],
+        "candidate_0based": [
+          2,
+          3
+        ]
+      },
+      {
+        "tag": "insert",
+        "baseline_0based": [
+          13,
+          13
+        ],
+        "candidate_0based": [
+          13,
+          14
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_0based": [
+          24,
+          25
+        ],
+        "candidate_0based": [
+          25,
+          33
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_0based": [
+          164,
+          165
+        ],
+        "candidate_0based": [
+          172,
+          173
+        ]
+      },
+      {
+        "tag": "insert",
+        "baseline_0based": [
+          182,
+          182
+        ],
+        "candidate_0based": [
+          190,
+          346
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_0based": [
+          188,
+          189
+        ],
+        "candidate_0based": [
+          352,
+          353
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_0based": [
+          192,
+          194
+        ],
+        "candidate_0based": [
+          356,
+          358
+        ]
+      },
+      {
+        "tag": "insert",
+        "baseline_0based": [
+          202,
+          202
+        ],
+        "candidate_0based": [
+          366,
+          394
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_0based": [
+          206,
+          207
+        ],
+        "candidate_0based": [
+          398,
+          401
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_0based": [
+          214,
+          217
+        ],
+        "candidate_0based": [
+          408,
+          409
+        ]
+      },
+      {
+        "tag": "insert",
+        "baseline_0based": [
+          229,
+          229
+        ],
+        "candidate_0based": [
+          421,
+          422
+        ]
+      }
+    ],
+    "writer_bootstrap_v1.h": [
+      {
+        "tag": "replace",
+        "baseline_0based": [
+          1,
+          4
+        ],
+        "candidate_0based": [
+          1,
+          4
+        ]
+      },
+      {
+        "tag": "insert",
+        "baseline_0based": [
+          8,
+          8
+        ],
+        "candidate_0based": [
+          8,
+          11
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_0based": [
+          9,
+          16
+        ],
+        "candidate_0based": [
+          12,
+          16
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_0based": [
+          20,
+          21
+        ],
+        "candidate_0based": [
+          20,
+          23
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_0based": [
+          27,
+          28
+        ],
+        "candidate_0based": [
+          29,
+          33
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_0based": [
+          33,
+          42
+        ],
+        "candidate_0based": [
+          38,
+          47
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_0based": [
+          47,
+          48
+        ],
+        "candidate_0based": [
+          52,
+          53
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_0based": [
+          54,
+          56
+        ],
+        "candidate_0based": [
+          59,
+          61
+        ]
+      },
+      {
+        "tag": "insert",
+        "baseline_0based": [
+          65,
+          65
+        ],
+        "candidate_0based": [
+          70,
+          79
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_0based": [
+          70,
+          85
+        ],
+        "candidate_0based": [
+          84,
+          93
+        ]
+      },
+      {
+        "tag": "delete",
+        "baseline_0based": [
+          88,
+          91
+        ],
+        "candidate_0based": [
+          96,
+          96
+        ]
+      },
+      {
+        "tag": "delete",
+        "baseline_0based": [
+          92,
+          97
+        ],
+        "candidate_0based": [
+          97,
+          97
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_0based": [
+          98,
+          106
+        ],
+        "candidate_0based": [
+          98,
+          127
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_0based": [
+          107,
+          119
+        ],
+        "candidate_0based": [
+          128,
+          141
+        ]
+      }
+    ]
+  }
+}

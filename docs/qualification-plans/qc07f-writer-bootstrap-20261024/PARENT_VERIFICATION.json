@@ -1,0 +1,31 @@
+{
+  "scope": "PARENT_PUBLIC_SOURCE_DIFF_SAVED_BUILD_REVIEW_VERIFICATION_NOT_EXECUTION",
+  "recorded_host_utc": "2026-10-24T14:03:33.723076+00:00",
+  "original_delivery_records": 27,
+  "custody_only_delivery_records": 86,
+  "all87_original_members_matched": true,
+  "original28_files_preserved": true,
+  "preselection30_files_preserved": true,
+  "frozen_files": 110,
+  "exact_frozen_roots": 12,
+  "build02": {
+    "inputs": 804,
+    "new_dependencies": 193,
+    "reused_dependencies": 466,
+    "tools": 16,
+    "artifacts": 51,
+    "successful_commands_and_logs": 30,
+    "individual_object_roles": 60,
+    "public_roots": 76,
+    "exact_build_members": 52
+  },
+  "both_runs_source_diffs_regions_and_consumed_copies_exact": true,
+  "only_two_selected_recipe_lines_changed": true,
+  "author_extra_GLOBAL_Digest_verification_still_FAILED_PRESERVED": true,
+  "N1_discarded_close_issue_verify_and_required_ha1_saved_metadata_corroborated": true,
+  "no_referenced_unresolved_project_symbol_indices_in_saved_report": true,
+  "distinct_lexical_paths_hashed": 912,
+  "review_sha256": "154018df984756f5bcf02ccb81d827b031c7d8f591e3c3d8d740b6579b950e92",
+  "compiler_build_test_candidate_child_native_or_hardware_calls": 0,
+  "runtime_native_cap_or_product_acceptance": false
+}

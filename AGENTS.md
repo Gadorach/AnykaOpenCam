@@ -66,7 +66,7 @@ dependency records/84 artifacts/40 logs/five tools. Native hardening/real creden
 NOT RUN. See rtsp-provisioner-process PARENT_DISPOSITION; no active author/reviewer
 in that lane; committed locally `5269979`. Its original33-input pin set retains
 the pre-closeout index:32 remain unchanged plus known parent index/status
-updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE16.json`,
+updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE17.json`,
 not rebased. Actual authorized
 external ingress, secret-free launch/FD-env-caps
 hygiene, durable storage/rotation, linked-file retirement/main/external recovery/
@@ -242,8 +242,20 @@ no copy/recommit/fake packet/ready receipt.16 HOST/ARM compiles/2 rooted REL lin
 46 commands PASS, zero candidate calls. Parent checked22 delivery/114 frozen pins/
 eight roots,543 inputs/322 new+320 reused dependencies/16 tools/146 artifacts/
 46 logs/46 archive bodies/32 extractions/eight exact diffs/17 unchanged regions.
-See qc07f-writer-serve PARENT_DISPOSITION; no author/reviewer active. Old frontend
-remains excluded; real bootstrap has not adopted this new layout. No invocation,
+See qc07f-writer-serve PARENT_DISPOSITION; committed locally `b4313ea`, no author/
+reviewer active there. qc07f-writer-bootstrap-candidate now has narrow independent
+SOURCE/API/order/custody/lifetime sufficiency: actual known-wait/bind → API5 prepare/
+start → controlled explicit postfork/setup → typed serve → acknowledged separate
+finish → explicit logical material retirement. Strict device-free path stays
+distinct. Build01 .d pin-map failure (5 metadata/0 C/REL) preserved; exact two-line
+recipe correction build02:2 HOST/ARM compiles/2 rooted REL links/30 commands PASS,
+NOT RUN. Extra author GLOBAL Digest assertion FAILED and remains failed/custody-only;
+N1 independent review proves unused close/issue/verify and callers were GC-discarded,
+required constructor HA1/hash/crypto chain retained, no referenced project gap.
+Parent checked27 old+86 custody pins/all87 files,110 frozen/12 roots,804 inputs/
+193 new+466 reused dependencies/16 tools/51 artifacts/30 logs/exact diffs/source.
+See writer-bootstrap PARENT_DISPOSITION; no author/reviewer active. No new FD opens,
+default credentials or whole-process/native-release claim. Old units excluded; no invocation,
 native acceptance or hardware phase. Complete new-layout consumers need integration.
 21 encoder public delivery pins, no function calls. No ioctl,
 test/function call, new framework or hardware phase. Remaining1MiB output/

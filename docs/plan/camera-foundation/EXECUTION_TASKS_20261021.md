@@ -185,8 +185,21 @@ packet/ready receipt.16 HOST/ARM compiles/2 rooted REL links/46 commands PASS,
 NOT RUN. Parent checked22 delivery/114 frozen/eight roots,543 inputs/322 new+320
 reused dependencies/16 tools/146 artifacts/46 logs/46 archive bodies/32 extractions/
 eight exact diffs/17 unchanged regions. See qc07f-writer-serve PARENT_DISPOSITION,
-no author/reviewer active. Old frontend excluded, real bootstrap new-layout
-adoption still missing. No invocation/hardware phase or C1 prevention claim,
+no author/reviewer active in that lane; committed locally `b4313ea`. One isolated
+source lane qc07f-writer-bootstrap-candidate now has narrow independent SOURCE/API/
+order/custody/lifetime sufficiency for actual known-wait/bind → API5 prepare/start
+→ controlled postfork/setup → typed serve → separate acknowledged finish → explicit
+logical material retirement. Strict device-free route remains distinct. Build01
+pin-map failure preserved (5 metadata/0 C/REL); build02 exact two-line correction:
+2 HOST/ARM compiles/2 rooted REL links/30 commands PASS, NOT RUN. Extra author GLOBAL
+Digest assertion remains FAILED/custody-only; N1 independently reconciles unused
+GC-discarded close/issue/verify vs retained required HA1/hash/crypto chain, not a
+project relocation gap or repaired seal. Parent checked27 old+86 custody/all87
+members/110 frozen/12 roots/804 inputs/193 new+466 reused dependencies/16 tools/
+51 artifacts/30 logs/exact deltas. See writer-bootstrap PARENT_DISPOSITION, no
+author/reviewer active. No new FD opens/default credentials/native cleanup claim;
+old units excluded.
+No invocation/hardware phase or C1 prevention claim,
 new clock framework or old frontend adoption,
 function/ioctl execution or hardware phase; typed frontend remains separate.
 Current userspace still uses the old

@@ -1,0 +1,352 @@
+{
+  "recorded": "2026-10-24T13:44:13.391729+00:00",
+  "scope": "CUSTODY_ONLY_AFTER_FINAL_METADATA_ASSERTION_FAILURE_NO_REINSPECTION_OR_RETRY",
+  "status": "BUILD02_COMPILE_REL_PASS_FINAL_VERIFICATION_FAILED_PRESERVED_STOP",
+  "candidate_calls": 0,
+  "files": {
+    "apps/rtsp-auth/qc07f-writer-bootstrap-candidate/LICENSE_NOTICES.md": {
+      "bytes": 877,
+      "sha256": "fc53d0e043cc5fc69c1e7fc2196ee0b523483425aee6d17f7cc1dde2fac24afc"
+    },
+    "apps/rtsp-auth/qc07f-writer-bootstrap-candidate/README.md": {
+      "bytes": 2000,
+      "sha256": "dc89c3e1bb0ff21a5893998c3ae5d33f200cf8ceeff5b3aa29f14b849a224620"
+    },
+    "apps/rtsp-auth/qc07f-writer-bootstrap-candidate/bootstrap.c": {
+      "bytes": 22065,
+      "sha256": "83e15200b19860d46872838adfdd97593669e86a0faf0828339359ce96bfd6be"
+    },
+    "apps/rtsp-auth/qc07f-writer-bootstrap-candidate/build01.py": {
+      "bytes": 19539,
+      "sha256": "52aeddb1008c278d329842848c767cd6b1b2d4f662423818b85350d1a2688b25"
+    },
+    "apps/rtsp-auth/qc07f-writer-bootstrap-candidate/build02.py": {
+      "bytes": 19535,
+      "sha256": "8d0a86d27b7b962dad176d339a0540657487748fbf93205638a4a2a2dc449cf4"
+    },
+    "apps/rtsp-auth/qc07f-writer-bootstrap-candidate/writer_bootstrap_v1.h": {
+      "bytes": 9012,
+      "sha256": "293ca993b3a9eadbf5b8444797921ffb8647c3240ff9e647fe89c14e3e2a0202"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/AUTHOR_AUDIT.md": {
+      "bytes": 5751,
+      "sha256": "cdb7866f5336eadb926c62af1e98f6c05bc60d76e665bec0293db51618d406eb"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/BUILD02_HANDOFF.md": {
+      "bytes": 6815,
+      "sha256": "429a8282b71b7ec49b5064a49f611ea157d7bdb555d39d368c09047b917fce8b"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/BUILD02_SELECTION.json": {
+      "bytes": 1291917,
+      "sha256": "9484c532a42263ed9b05ad17c2aaeb0acdc80273eeb7864e918455ef578ff369"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/BUILD02_SELECTION.md": {
+      "bytes": 3689,
+      "sha256": "a9ca39ffa4dd05fada4f72bc809758b9afdbc9a6e05bca9d24585f60c7e1e2b4"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/BUILD02_VERIFICATION.json": {
+      "bytes": 215208,
+      "sha256": "be7664a3e9a77115498c206720e66b1e32f4995aa104da7271251660dc7a5230"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/BUILD02_VERIFICATION_STOP.md": {
+      "bytes": 2788,
+      "sha256": "71321ff90dcfbe1f9d1af4873e4a278f2f5914cedafff0475fc57c355f0ea60c"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/BUILD_FAILURE.md": {
+      "bytes": 2245,
+      "sha256": "84c4d38131335538ff6466ec3017e1657e71d3581e71ab25af70b6be25bade7b"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/CONTRACT.md": {
+      "bytes": 9964,
+      "sha256": "73f1322486fe899e8cf40ad38345cd8a0aa48acdf6093204b18f17edebd17864"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/DELIVERY_PINS.json": {
+      "bytes": 5574,
+      "sha256": "09688ad60118833f8c3d2be36bf069fa998e8ca34e74128fb25782e177fa03d7"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/FINAL_CUSTODY.json": {
+      "bytes": 728,
+      "sha256": "d43ca415461eef46e78d32be5beadf6a3314def9d888b909d9aa666b6ba2ded6"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/FROZEN_INPUTS.json": {
+      "bytes": 20293,
+      "sha256": "bb632d631abbfa8c3f8126396e37689427773c50939058b88866ca2411bf6d21"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/HANDBACK.md": {
+      "bytes": 5368,
+      "sha256": "02bca5aab1812fd2c745806dec082b52bb1f88c98b9c8f6f8f2af504936198d3"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build01/REPORT.json": {
+      "bytes": 150068,
+      "sha256": "a68bbf16b8dbadf1cdf8026534686a4c1026c2a2f95e52a7c423f6358391fea7"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build01/SOURCE_PROOF.json": {
+      "bytes": 5046,
+      "sha256": "9f864ca2e8633b1eb45ffa1ed953b27e51fa3872c7f0ec00e378778559e6a3ac"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build01/bootstrap.c.forward.diff": {
+      "bytes": 14693,
+      "sha256": "ead87fba16f980bec43db95f963ac822ac8c3ef45da98287e1bf42f7b39cd5f6"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build01/bootstrap.c.inverse.diff": {
+      "bytes": 14766,
+      "sha256": "3be48d8e81d01926d922297d8b6735d19bfcf14e8ba6e081a14b882b63c03b9c"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build01/logs/host-machine.txt": {
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build01/logs/host-tool-as.txt": {
+      "bytes": 3,
+      "sha256": "8b97bca79750847558d488e2ea4de79903c9c71c9af27ecf1b3dff5dba2abdd9"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build01/logs/host-tool-cc1.txt": {
+      "bytes": 40,
+      "sha256": "c400491dd6f36bdc89c46da99a7c98dbd19a3eb313a62e89576505b07846aec8"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build01/logs/host-tool-ld.txt": {
+      "bytes": 3,
+      "sha256": "3b6cb8ae51045d062a7c7de7cc488ad8785144cfbc0a7fc9546ed52429e0d97f"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build01/logs/host-version.txt": {
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build01/source/LICENSE_NOTICES.md": {
+      "bytes": 877,
+      "sha256": "fc53d0e043cc5fc69c1e7fc2196ee0b523483425aee6d17f7cc1dde2fac24afc"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build01/source/README.md": {
+      "bytes": 2000,
+      "sha256": "dc89c3e1bb0ff21a5893998c3ae5d33f200cf8ceeff5b3aa29f14b849a224620"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build01/source/bootstrap.c": {
+      "bytes": 22065,
+      "sha256": "83e15200b19860d46872838adfdd97593669e86a0faf0828339359ce96bfd6be"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build01/source/build01.py": {
+      "bytes": 19539,
+      "sha256": "52aeddb1008c278d329842848c767cd6b1b2d4f662423818b85350d1a2688b25"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build01/source/writer_bootstrap_v1.h": {
+      "bytes": 9012,
+      "sha256": "293ca993b3a9eadbf5b8444797921ffb8647c3240ff9e647fe89c14e3e2a0202"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build01/writer_bootstrap_v1.h.forward.diff": {
+      "bytes": 13819,
+      "sha256": "ed762a3d3fd33d8dab45dc77c3b7998a1a1bb4e355e0bf158a7c43e3c72d3053"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build01/writer_bootstrap_v1.h.inverse.diff": {
+      "bytes": 13819,
+      "sha256": "4fc1b52dd6f38506939cdaf6a089e2018fe44aa55a38269621b5288ccc7b0ed8"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/REPORT.json": {
+      "bytes": 595213,
+      "sha256": "e8f1da78e3d4aae3baac03bfa287b83ab3873cb273a054bcbbf8a0418ff49418"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/SOURCE_PROOF.json": {
+      "bytes": 5046,
+      "sha256": "9f864ca2e8633b1eb45ffa1ed953b27e51fa3872c7f0ec00e378778559e6a3ac"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/arm-WRITER-BOOTSTRAP-NOT-EXECUTABLE.o": {
+      "bytes": 240128,
+      "sha256": "ecc80d2d45fa2316899992ff7cc1799d8f6950dfd165634a81edf828db9b797e"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/arm.map": {
+      "bytes": 172163,
+      "sha256": "ada66b5cf351419faa857b1e333a0887e0a7aef1055b6c42cae63c5224e58b04"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/bootstrap.c.forward.diff": {
+      "bytes": 14693,
+      "sha256": "ead87fba16f980bec43db95f963ac822ac8c3ef45da98287e1bf42f7b39cd5f6"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/bootstrap.c.inverse.diff": {
+      "bytes": 14766,
+      "sha256": "3be48d8e81d01926d922297d8b6735d19bfcf14e8ba6e081a14b882b63c03b9c"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/host-WRITER-BOOTSTRAP-NOT-EXECUTABLE.o": {
+      "bytes": 343920,
+      "sha256": "37ef2b79c4966c76c591ac4a6021c974089d7cc0f7c4332c038bbe6311f94da4"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/host.map": {
+      "bytes": 180166,
+      "sha256": "38ebd110605594bc23ba9e3e24517aa33475a01bf8396a8aafdf32b8433ecfd9"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/arm-ELF.txt": {
+      "bytes": 59561,
+      "sha256": "9159e8d2594d0480c0d6333d9502e0de422decaef048ef082962a20b539caf01"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/arm-REL.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/arm-all-symbols.txt": {
+      "bytes": 30056,
+      "sha256": "b682c369666fd09a1069106d018119ba22e78433e2f556f3da60bec2a534779b"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/arm-compile-bootstrap.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/arm-defined.txt": {
+      "bytes": 6003,
+      "sha256": "dcd49dfe8b226e04a897ea6532a82ffb3d145a6a17c528cfa605dc943f5ff0db"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/arm-machine.txt": {
+      "bytes": 29,
+      "sha256": "d0cf670b8c286026ebd268b1f5ecdd6be41552e0e254a949fb50ab0ed085dd23"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/arm-relocations.txt": {
+      "bytes": 231913,
+      "sha256": "aae896106bb52cb8e54a3675669fa95f0cc1053e2449b3b284261c9fea47cd56"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/arm-reused-ELF.txt": {
+      "bytes": 44917,
+      "sha256": "268b35a6edfc9c0d8a47ba0f09d7975f1a63e4ecf66dbd29760688ca26327957"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/arm-reused-symbols.txt": {
+      "bytes": 11143,
+      "sha256": "cd6892a37080cea5cd2c66c42292f50b210e009ddfab7ef6b470a9502bdf9dbb"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/arm-symbol-table.txt": {
+      "bytes": 104572,
+      "sha256": "9b8ee290a027be11d1c2f85d035826cc7db71ad263c5268c4b70a0f9580478d3"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/arm-tool-as.txt": {
+      "bytes": 260,
+      "sha256": "aebf2a97c58e1d1f4676098a8e9b91c8569c49d3c9d06e537fe689c4afcd8b56"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/arm-tool-cc1.txt": {
+      "bytes": 220,
+      "sha256": "11399c4ad884b1da76486da5e344e5b6e2c541c6e4001b24865a4e5cd4f70fa3"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/arm-tool-ld.txt": {
+      "bytes": 260,
+      "sha256": "e98fe4335d69760e406f842f1b5a0cd3e92881bf0dee7376ab8f647b78cc0e98"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/arm-undefined.txt": {
+      "bytes": 1545,
+      "sha256": "033a0a1206d806a4b5ab986c9797e4735f6af7e2ab6fff8da9c7e5ea0dab25b1"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/arm-version.txt": {
+      "bytes": 288,
+      "sha256": "7b501201183c07e1e9078ca3f8b1f502d07fd67c414e92183c01e8787c00a0d4"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/host-ELF.txt": {
+      "bytes": 87120,
+      "sha256": "1bf248fb6a76ebbd9bbd88ff6767a248627b902951d6d13a2d301d0bb1b45ec7"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/host-REL.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/host-all-symbols.txt": {
+      "bytes": 34880,
+      "sha256": "3e7fbf318f1c333f81d21c1edec46e07d2c10312b20cde4d200249ecdc99af78"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/host-compile-bootstrap.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/host-defined.txt": {
+      "bytes": 7402,
+      "sha256": "09320cacc62a10c6e5953b07abac9a7e2d4893316013172be2e7da2f0ac38204"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/host-machine.txt": {
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/host-relocations.txt": {
+      "bytes": 375794,
+      "sha256": "8e8b282d21872f2c94b0559425381b0c48d20d97bd6a6b8983adeb891697e8ff"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/host-reused-ELF.txt": {
+      "bytes": 32786,
+      "sha256": "97d2c9c36badae0dcff9e6f8ce482c113b1188879af743bcacd0b7a7cf4458e4"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/host-reused-symbols.txt": {
+      "bytes": 12853,
+      "sha256": "94ee6638247ec05c4622682460029691362adbf2b33d0a9aa1c3385cc4aaf880"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/host-symbol-table.txt": {
+      "bytes": 71453,
+      "sha256": "9a233fbdcb6df302631d990feadfcb5d92d05b69fa046e5daab09af54e0d5d0b"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/host-tool-as.txt": {
+      "bytes": 3,
+      "sha256": "8b97bca79750847558d488e2ea4de79903c9c71c9af27ecf1b3dff5dba2abdd9"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/host-tool-cc1.txt": {
+      "bytes": 40,
+      "sha256": "c400491dd6f36bdc89c46da99a7c98dbd19a3eb313a62e89576505b07846aec8"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/host-tool-ld.txt": {
+      "bytes": 3,
+      "sha256": "3b6cb8ae51045d062a7c7de7cc488ad8785144cfbc0a7fc9546ed52429e0d97f"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/host-undefined.txt": {
+      "bytes": 1928,
+      "sha256": "96c199a7903983b0e6fdc8b23eb559b4d10cddb0298081a6c06709e6a335dd78"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/logs/host-version.txt": {
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/objects/arm-bootstrap.d": {
+      "bytes": 13397,
+      "sha256": "b2c7d348fe4737927cc108abfe976b12dc1dd5a9a77e72aa8bfd54701dc8d190"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/objects/arm-bootstrap.o": {
+      "bytes": 16336,
+      "sha256": "0a64bd78466b605b622038167c9e98b85ef83e6ec10f3172aecef60159fafd31"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/objects/arm-bootstrap.su": {
+      "bytes": 3043,
+      "sha256": "87d73b2b446f332a11582ca73be0dc2912af4758e5d70f87b010c555bf99bab2"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/objects/host-bootstrap.d": {
+      "bytes": 9722,
+      "sha256": "f3a1b925123bf5527fa482a1d24bab363a32cbc9adf17766455594dac3af5d43"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/objects/host-bootstrap.o": {
+      "bytes": 21696,
+      "sha256": "f2cb5f581e215f458ebb0ef2b8b196c8b1a5deab07125fd7e12cbf8bb2b2191d"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/objects/host-bootstrap.su": {
+      "bytes": 2931,
+      "sha256": "9ab7feb11004027422b044328fb302cb623d72076fb324c2fc927a924a475d6a"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/source/LICENSE_NOTICES.md": {
+      "bytes": 877,
+      "sha256": "fc53d0e043cc5fc69c1e7fc2196ee0b523483425aee6d17f7cc1dde2fac24afc"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/source/README.md": {
+      "bytes": 2000,
+      "sha256": "dc89c3e1bb0ff21a5893998c3ae5d33f200cf8ceeff5b3aa29f14b849a224620"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/source/bootstrap.c": {
+      "bytes": 22065,
+      "sha256": "83e15200b19860d46872838adfdd97593669e86a0faf0828339359ce96bfd6be"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/source/build01.py": {
+      "bytes": 19539,
+      "sha256": "52aeddb1008c278d329842848c767cd6b1b2d4f662423818b85350d1a2688b25"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/source/build02.py": {
+      "bytes": 19535,
+      "sha256": "8d0a86d27b7b962dad176d339a0540657487748fbf93205638a4a2a2dc449cf4"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/source/writer_bootstrap_v1.h": {
+      "bytes": 9012,
+      "sha256": "293ca993b3a9eadbf5b8444797921ffb8647c3240ff9e647fe89c14e3e2a0202"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/writer_bootstrap_v1.h.forward.diff": {
+      "bytes": 13819,
+      "sha256": "ed762a3d3fd33d8dab45dc77c3b7998a1a1bb4e355e0bf158a7c43e3c72d3053"
+    },
+    "docs/qualification-plans/qc07f-writer-bootstrap-20261024/runs/build02/writer_bootstrap_v1.h.inverse.diff": {
+      "bytes": 13819,
+      "sha256": "4fc1b52dd6f38506939cdaf6a089e2018fe44aa55a38269621b5288ccc7b0ed8"
+    }
+  }
+}

@@ -1,0 +1,283 @@
+--- /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-material-retire/bootstrap.c
++++ /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-writer-bootstrap-candidate/bootstrap.c
+@@ -1,6 +1,6 @@
+ /* SPDX-License-Identifier: GPL-2.0-only */
+ #define _GNU_SOURCE
+-#include "bootstrap_v1.h"
++#include "writer_bootstrap_v1.h"
+ #include "../rtsp-os-random/os_random.h"
+ #include <errno.h>
+ #include <fcntl.h>
+@@ -11,6 +11,7 @@
+  __typeof__(&qc07f_rtsp_os_random_ready_v1)),
+  "owned-runtime random_ready callback type changed");
+ _Static_assert(sizeof(struct rv_material)==1536,"actual material ABI");
++_Static_assert(sizeof(struct qc07f_bootstrap_v1)<131072U,"bounded bootstrap metadata");
+ 
+ static struct qc07f_bootstrap_v1 *process_attempt;
+ static unsigned active;
+@@ -22,7 +23,14 @@
+ {if(b->error==QC07F_BS_E_NONE)b->error=error;}
+ 
+ static int hold(struct qc07f_bootstrap_v1 *b,enum qc07f_bootstrap_error error)
+-{latch(b,error);b->phase=QC07F_BS_HOLD;return QC07F_BS_REFUSED;}
++{
++ latch(b,error);b->phase=QC07F_BS_HOLD;
++ /* Actual runtime knows private moved/partial/native/paid ownership. Never infer
++  * no ownership from a failed take. Final cleanup retains BEFORE unsafe unwind;
++  * a normal return still requires every external object/remaining slot retained. */
++ if(b->postfork_attempted)qc07f_owned_runtime_cleanup_v4(&b->runtime,0,1);
++ return QC07F_BS_REFUSED;
++}
+ 
+ static int leave(int result)
+ {active=0;return result;}
+@@ -162,7 +170,7 @@
+  if(!capture_material(b))return leave(hold(b,QC07F_BS_E_MATERIAL_SNAPSHOT));
+  /* Config NOW owns material_fd. Prepare's config changes are permitted only
+   * after real bind has completed all unchanged-snapshot/known-wait checks. */
+- b->prepare_result=qc07f_owned_runtime_prepare_v1(&b->runtime,b->config,
++ b->prepare_result=qc07f_owned_runtime_prepare_v4(&b->runtime,b->config,
+   &b->owner,b->bootstrap);
+  if(b->prepare_result!=CAMERA_OK)return leave(hold(b,QC07F_BS_E_PREPARE));
+  b->start_attempted=1;
+@@ -180,18 +188,174 @@
+  return leave(hold(b,QC07F_BS_E_START));
+ }
+ 
++static int runtime_identity(const struct qc07f_bootstrap_v1 *b)
++{
++ const struct qc07f_owned_runtime_v4 *r=&b->runtime;
++ return r->self==r&&r->config==b->config&&r->owner==&b->owner&&
++  r->graph==b->config->graph&&b->config->context==r&&r->bootstrap==b->bootstrap&&
++  b->config->random_ready==qc07f_rtsp_os_random_ready_v1;
++}
++
++static int device_free(const struct qc07f_bootstrap_v1 *b)
++{
++ const struct qc07f_owned_runtime_v4 *r=&b->runtime;
++ /* No-earlier-native ANYWHERE is still an essential trusted prerequisite. */
++ return !b->postfork_attempted&&!b->setup_attempted&&!b->watchdog_attempted&&
++  !b->storage_attempted&&!b->exact139_attempted&&!b->provider_attempted&&
++  !b->memory_attempted&&!b->hub_attempted&&!b->serve_attempted&&
++  !b->served_finish_attempted&&runtime_identity(b)&&!r->bound&&!r->error&&
++  !r->retired&&!r->span_hub&&!r->span_setup_attempt&&!r->span_native_retire&&
++  r->pipeline==QCW_IDLE&&!r->attempts&&!r->last_token&&!r->last_generation&&
++  !r->span_relinquished&&!r->span_owner_retired&&!r->completed_frame_id;
++}
++
++static int ready_owner(const struct qc07f_bootstrap_v1 *b)
++{
++ const struct candidate_prestarted *o=&b->owner;
++ const struct candidate_backend *p=&o->backend;
++ if(b->error||!b->start_attempted||b->start_result||b->prepare_result||
++    !b->material_snapshot_valid||b->bind_result||!bound_known(b)||!runtime_identity(b)||
++    o->self!=o||o->config!=b->config||o->phase!=CANDIDATE_PS_READY||
++    o->start_result||o->source_hold||p->config!=b->config||!p->initialized||
++    !p->child||p->failed||p->pending||p->pending_peer||p->revoked||p->revoke_pending)
++  return 0;
++ for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)if(p->peers[i]||o->peers[i].live)return 0;
++ return 1;
++}
++
++int qc07f_bootstrap_bind_postfork_v1(struct qc07f_bootstrap_v1 *b)
++{
++ if(active)return QC07F_BS_BUSY;
++ if(!identity(b))return QC07F_BS_REFUSED;
++ active=1;
++ if(b->phase==QC07F_BS_HOLD)return leave(QC07F_BS_REFUSED);
++ if(b->phase!=QC07F_BS_READY||!ready_owner(b)||!device_free(b)||b->finish_attempted)
++  return leave(hold(b,QC07F_BS_E_ORDER));
++ b->postfork_attempted=1;b->phase=QC07F_BS_POSTFORK_BINDING;
++ b->postfork_result=qc07f_owned_runtime_bind_postfork_v4(&b->runtime);
++ if(b->postfork_result||b->runtime.bound!=1||b->runtime.error)
++  return leave(hold(b,QC07F_BS_E_POSTFORK));
++ b->phase=QC07F_BS_POSTFORK_BOUND;return leave(QC07F_BS_OK);
++}
++
++int qc07f_bootstrap_setup_writer_v1(struct qc07f_bootstrap_v1 *b,
++ int *watchdog_slot,dev_t watchdog_device,int *sensor_slot,dev_t sensor_device,
++ int *frame_slot,const struct qc_frame_fd_identity *frame,
++ int *encoder_slot,const struct qc_encoder_fd_identity *encoder,
++ struct camera_span_hub_v1 *hub,uint64_t real_start_ns)
++{
++ if(active)return QC07F_BS_BUSY;
++ if(!identity(b))return QC07F_BS_REFUSED;
++ active=1;
++ if(b->phase==QC07F_BS_HOLD)return leave(QC07F_BS_REFUSED);
++ if(b->phase!=QC07F_BS_POSTFORK_BOUND||!ready_owner(b)||b->setup_attempted||
++    b->postfork_attempted!=1||b->postfork_result||b->runtime.bound!=1)
++  return leave(hold(b,QC07F_BS_E_ORDER));
++ if(!watchdog_slot||!sensor_slot||!frame_slot||!encoder_slot||!frame||!encoder||!hub||
++    !watchdog_device||!sensor_device||!frame->device||!frame->source_instance||
++    !frame->file_instance||!encoder->device||!encoder->session_identity||real_start_ns==UINT64_MAX||
++    watchdog_slot==sensor_slot||watchdog_slot==frame_slot||watchdog_slot==encoder_slot||
++    sensor_slot==frame_slot||sensor_slot==encoder_slot||frame_slot==encoder_slot)
++  return leave(hold(b,QC07F_BS_E_SETUP_ARGUMENT));
++ int *slots[4]={watchdog_slot,sensor_slot,frame_slot,encoder_slot};
++ for(unsigned i=0;i<4;i++){
++  if(*slots[i]<3||*slots[i]==b->config->image.fd||*slots[i]==b->config->material_fd||
++     *slots[i]==b->material_directory_fd)return leave(hold(b,QC07F_BS_E_SETUP_ARGUMENT));
++  for(unsigned j=0;j<i;j++)if(*slots[i]==*slots[j])return leave(hold(b,QC07F_BS_E_SETUP_ARGUMENT));
++ }
++ b->setup_attempted=1;b->phase=QC07F_BS_WRITER_SETUP;
++ b->watchdog_attempted=1;
++ b->watchdog_result=nh_native_watchdog_take(watchdog_slot,watchdog_device);
++ if(b->watchdog_result)return leave(hold(b,QC07F_BS_E_WATCHDOG));
++ b->storage_attempted=1;b->storage_result=nh_native_storage_select("separate");
++ if(b->storage_result)return leave(hold(b,QC07F_BS_E_STORAGE));
++ b->exact139_attempted=1;b->exact139_result=nh_native_optin_exact139();
++ if(b->exact139_result)return leave(hold(b,QC07F_BS_E_EXACT139));
++ b->provider_attempted=1;
++ b->provider_result=nh_native_provider_take(sensor_slot,sensor_device,frame_slot,frame,encoder_slot,encoder);
++ if(b->provider_result)return leave(hold(b,QC07F_BS_E_PROVIDER));
++ b->memory_attempted=1;b->memory_result=nh_native_memory_start(real_start_ns);
++ if(b->memory_result)return leave(hold(b,QC07F_BS_E_MEMORY));
++ b->hub_attempted=1;
++ b->hub_result=qc07f_owned_runtime_memory_span_hub_v4(&b->runtime,hub);
++ if(b->hub_result)return leave(hold(b,QC07F_BS_E_HUB));
++ b->phase=QC07F_BS_WRITER_READY;return leave(QC07F_BS_OK);
++}
++
++static int setup_known(const struct qc07f_bootstrap_v1 *b)
++{
++ return b->postfork_attempted==1&&!b->postfork_result&&b->setup_attempted==1&&
++  b->watchdog_attempted==1&&!b->watchdog_result&&b->storage_attempted==1&&!b->storage_result&&
++  b->exact139_attempted==1&&!b->exact139_result&&b->provider_attempted==1&&!b->provider_result&&
++  b->memory_attempted==1&&!b->memory_result&&b->hub_attempted==1&&!b->hub_result;
++}
++
++static int writer_terminal(const struct qc07f_bootstrap_v1 *b)
++{
++ const struct qc07f_owned_runtime_v4 *r=&b->runtime;
++ const struct camera_producer *p=&r->producer;
++ if(!runtime_identity(b)||!setup_known(b)||!b->serve_attempted||b->serve_result||
++    !b->serve_options||!b->listener_slot||*b->listener_slot!=-1||
++    b->listener_outcome.consumed!=1||b->listener_outcome.close_attempted!=1||
++    b->listener_outcome.close_errno||b->listener_outcome.result||
++    r->bound!=1||r->retired!=1||r->error||r->span_native_retire!=2||
++    r->span_setup_attempt!=1||r->span_relinquished!=1||r->span_hub||
++    !r->span_owner_retired||r->pipeline!=QCW_IDLE||!r->attempts||
++    r->attempts!=r->last_token||!r->last_generation||!r->completed_frame_id||
++    r->completed_frame_id!=r->bridge.frame.id||
++    r->completed_common_generation!=p->generation||r->gate||r->gate_context||
++    r->bridge.producer!=p||r->bridge.context!=r||r->bridge.frame_open||r->bridge.clock_failed||
++    !p->initialized||p->state!=CAMERA_PRODUCER_STOPPED||p->demand_count||p->active_present||
++    p->needs_stop||p->queue_count||p->stop_pending||p->keyframe_pending)return 0;
++ for(unsigned i=0;i<CAMERA_PRODUCER_CONSUMERS;i++)if(p->consumers[i].attached)return 0;
++ /* Corroborates THIS actual serve ACK chain, not a native receipt. Actual runtime
++  * final cleanup separately checks PRIVATE native/paid/pointer-free history. */
++ return 1;
++}
++
++static int served_owner(const struct qc07f_bootstrap_v1 *b)
++{
++ const struct candidate_prestarted *o=&b->owner;const struct candidate_backend *p=&o->backend;
++ if(o->self!=o||o->config!=b->config||o->phase!=CANDIDATE_PS_SERVED||
++    o->start_result||o->serve_result||o->source_hold||p->config!=b->config||
++    !p->initialized||!p->child||p->failed||p->pending||p->pending_peer||
++    p->revoked||p->revoke_pending)return 0;
++ for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)if(p->peers[i]||o->peers[i].live)return 0;
++ return 1;
++}
++
++int qc07f_bootstrap_serve_writer_v1(struct qc07f_bootstrap_v1 *b,
++ const struct camera_rtsp_options *options,int *listener_slot)
++{
++ if(active)return QC07F_BS_BUSY;
++ if(!identity(b))return QC07F_BS_REFUSED;
++ active=1;
++ if(b->phase==QC07F_BS_HOLD)return leave(QC07F_BS_REFUSED);
++ if(b->phase!=QC07F_BS_WRITER_READY||!ready_owner(b)||!setup_known(b)||
++    b->serve_attempted||b->finish_attempted||!options||!listener_slot)
++  return leave(hold(b,QC07F_BS_E_ORDER));
++ b->serve_options=options;b->listener_slot=listener_slot;
++ b->serve_attempted=1;b->phase=QC07F_BS_SERVING;
++ b->serve_result=qc07f_owned_runtime_writer_serve_v5(&b->runtime,b->serve_options,
++  b->listener_slot,&b->listener_outcome);
++ if(b->serve_result||!served_owner(b)||!writer_terminal(b))
++  return leave(hold(b,QC07F_BS_E_SERVE));
++ qc07f_owned_runtime_cleanup_v4(&b->runtime,0,1);
++ b->phase=QC07F_BS_SERVED;return leave(QC07F_BS_OK);
++}
++
+ int qc07f_bootstrap_finish_device_free_v1(struct qc07f_bootstrap_v1 *b)
+ {
+  if(active)return QC07F_BS_BUSY;
+  if(!identity(b))return QC07F_BS_REFUSED;
+  active=1;
+  if(b->phase==QC07F_BS_HOLD)return leave(QC07F_BS_REFUSED);
+- if(b->finish_attempted||b->owner.self!=&b->owner||b->owner.config!=b->config||
++ if(!device_free(b)||b->finish_attempted||b->owner.self!=&b->owner||b->owner.config!=b->config||
+     !((b->phase==QC07F_BS_READY&&b->owner.phase==CANDIDATE_PS_READY)||
+       (b->phase==QC07F_BS_START_FAILED&&b->owner.phase==CANDIDATE_PS_START_FAILED)))
+   return leave(hold(b,QC07F_BS_E_ORDER));
+- /* This API exposes no activation or serve. Trusted no-earlier-native/media
+-  * anywhere + private handles are essential, NOT inferred from backend fields. */
++ /* No earlier native/media ANYWHERE remains a trusted condition. Selecting ANY
++  * postfork bind/setup permanently excludes this STRICT device-free route. */
+  b->finish_attempted=1;b->phase=QC07F_BS_FINISHING;
+  b->finish_result=candidate_prestarted_finish(&b->owner);
+  if(b->finish_result!=CAMERA_OK||b->owner.phase!=CANDIDATE_PS_FINISHED)
+@@ -200,11 +364,41 @@
+  return leave(QC07F_BS_OK);
+ }
+ 
++static int backend_finished(const struct candidate_prestarted *o)
++{
++ const struct candidate_backend *p=&o->backend;
++ if(o->phase!=CANDIDATE_PS_FINISHED||o->finish_result||o->source_hold||
++    p->child||p->config||p->initialized||p->failed||p->pending||p->pending_peer||
++    p->revoked||p->revoke_pending)return 0;
++ for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)if(p->peers[i]||o->peers[i].live)return 0;
++ return 1;
++}
++
++int qc07f_bootstrap_finish_served_v1(struct qc07f_bootstrap_v1 *b)
++{
++ if(active)return QC07F_BS_BUSY;
++ if(!identity(b))return QC07F_BS_REFUSED;
++ active=1;
++ if(b->phase==QC07F_BS_HOLD)return leave(QC07F_BS_REFUSED);
++ if(b->phase!=QC07F_BS_SERVED||b->error||b->finish_attempted||
++    !served_owner(b)||!writer_terminal(b))return leave(hold(b,QC07F_BS_E_ORDER));
++ /* Actual private native ACK/common drain/paid terminal audit, not public flags.
++  * No former live hub pointer is accessed. Verifier finish remains separate. */
++ qc07f_owned_runtime_cleanup_v4(&b->runtime,0,1);
++ b->finish_attempted=1;b->served_finish_attempted=1;b->phase=QC07F_BS_FINISHING;
++ b->finish_result=candidate_prestarted_finish(&b->owner);
++ if(b->finish_result!=CAMERA_OK||!backend_finished(&b->owner))
++  return leave(hold(b,QC07F_BS_E_FINISH));
++ b->phase=QC07F_BS_FINISHED_SERVED;return leave(QC07F_BS_OK);
++}
++
+ static int normal_finished(const struct qc07f_bootstrap_v1 *b)
+ {
+  const struct candidate_prestarted *o=&b->owner;
+  const struct candidate_backend *backend=&o->backend;
+- if(b->phase!=QC07F_BS_FINISHED_DEVICE_FREE||b->error!=QC07F_BS_E_NONE||
++ int route=(b->phase==QC07F_BS_FINISHED_DEVICE_FREE&&device_free(b))||
++  (b->phase==QC07F_BS_FINISHED_SERVED&&b->served_finish_attempted==1&&writer_terminal(b));
++ if(!route||b->error!=QC07F_BS_E_NONE||
+     !b->material_snapshot_valid||!b->start_attempted||!b->finish_attempted||
+     b->bind_result!=RTSP_PP_OK||b->prepare_result!=CAMERA_OK||
+     b->start_result!=CAMERA_OK||b->finish_result!=CAMERA_OK||!bound_known(b)||
+@@ -212,9 +406,7 @@
+     o->start_result!=CAMERA_OK||o->finish_result!=CAMERA_OK||o->serve_result||o->source_hold||
+     backend->child||backend->config||backend->initialized||backend->failed||
+     backend->pending||backend->pending_peer||backend->revoked||backend->revoke_pending||
+-    b->runtime.self!=&b->runtime||b->runtime.config!=b->config||
+-    b->runtime.owner!=o||b->config->context!=&b->runtime||b->runtime.bound||
+-    b->runtime.error||b->runtime.loan_present)return 0;
++    !runtime_identity(b)||!backend_finished(o))return 0;
+  for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)if(backend->peers[i])return 0;
+  return 1;
+ }
+@@ -227,6 +419,7 @@
+  if(b->material_retire_attempted)return leave(QC07F_BS_REFUSED);
+  b->material_retire_attempted=1; /* explicit request consumed, even if refused */
+  if(b->phase==QC07F_BS_HOLD)return leave(QC07F_BS_REFUSED);
++ if(b->postfork_attempted)qc07f_owned_runtime_cleanup_v4(&b->runtime,0,1);
+  if(!normal_finished(b))return leave(hold(b,QC07F_BS_E_ORDER));
+  if(!material_check(b))return leave(hold(b,QC07F_BS_E_MATERIAL_PREFLIGHT));
+  b->phase=QC07F_BS_MATERIAL_RETIRING;
