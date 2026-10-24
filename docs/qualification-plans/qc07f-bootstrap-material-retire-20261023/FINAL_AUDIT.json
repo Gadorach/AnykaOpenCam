@@ -1,0 +1,21 @@
+{
+  "recorded": "2026-10-24T02:51:08.448167+00:00",
+  "assigned_lane": "20261023",
+  "status": "SOURCE_IMPLEMENTED_HOST_ARM_COMPILE_REL_ONLY_REVIEW_PENDING",
+  "source_aggregate": "bb8cef1970e563f6f1091d99c3cc3a2e2f416a37be84252885c8752df3e6bbbe",
+  "input_pins_unchanged": 916,
+  "artifact_pins_verified": 37,
+  "new_dependencies_verified": 221,
+  "reused_dependencies_verified": 871,
+  "static_syscall_sites": {
+    "close": 1,
+    "unlinkat": 1,
+    "fsync": 1
+  },
+  "static_order": "actual normal finished gate -> metadata -> clear cfg owning slot -> one close -> named metadata -> one fixed-name unlink -> directory fsync -> terminal",
+  "no_content_read_offset_or_atime_gate": true,
+  "no_candidate_function_test_callback_child_random_retirement_credential_native_hardware_execution": true,
+  "independent_review_and_parent_adoption": "REQUIRED_NOT_DONE",
+  "scope": "only assigned app/docs written; no Git/index/shared source/status/AGENTS edits; no native/current-state assertions",
+  "metadata_reader_corrections": "two inline metadata failures retained in BUILD_AUDIT; no candidate/source/build change followed"
+}

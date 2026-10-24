@@ -1,0 +1,53 @@
+{
+  "files": [
+    {
+      "file": "bootstrap.c",
+      "base": {
+        "path": "apps/rtsp-auth/qc07f-bootstrap-os-random/bootstrap.c",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-os-random/bootstrap.c",
+        "bytes": 5309,
+        "sha256": "abd2ad799c635f011c726dee493b417bfebd672ff2fb6a0bba0528ca55894c94"
+      },
+      "candidate": {
+        "path": "apps/rtsp-auth/qc07f-bootstrap-material-retire/bootstrap.c",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-material-retire/bootstrap.c",
+        "bytes": 12081,
+        "sha256": "b89782a3522dd16d201a1dc3b24e64b8ce0a5c2e519af3a89e9ad45c7a054b60"
+      },
+      "diff": {
+        "path": "docs/qualification-plans/qc07f-bootstrap-material-retire-20261023/bootstrap.c.diff",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-material-retire-20261023/bootstrap.c.diff",
+        "bytes": 8495,
+        "sha256": "0e2f58b41758e7c6c2e7f8f55296467ebd8f2602469e24490759d98b3c4cc45c"
+      },
+      "reverse_recovers_base": true,
+      "reversed_sha256": "abd2ad799c635f011c726dee493b417bfebd672ff2fb6a0bba0528ca55894c94"
+    },
+    {
+      "file": "bootstrap_v1.h",
+      "base": {
+        "path": "apps/rtsp-auth/qc07f-bootstrap-os-random/bootstrap_v1.h",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-os-random/bootstrap_v1.h",
+        "bytes": 4994,
+        "sha256": "f965a8075d6079f7d1d02a9e966ba17c2802b3e8e7221ae423e4fbbb1310c076"
+      },
+      "candidate": {
+        "path": "apps/rtsp-auth/qc07f-bootstrap-material-retire/bootstrap_v1.h",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-material-retire/bootstrap_v1.h",
+        "bytes": 7088,
+        "sha256": "aec5a98dd3d3a7cd867ebf93d224c7e049b44d2c8caff8fcf0fd2795c450f529"
+      },
+      "diff": {
+        "path": "docs/qualification-plans/qc07f-bootstrap-material-retire-20261023/bootstrap_v1.h.diff",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-material-retire-20261023/bootstrap_v1.h.diff",
+        "bytes": 5235,
+        "sha256": "d0b34977a9af0503342e4bfd66b57114002bda814cca4bc3eb894b615b6a1146"
+      },
+      "reverse_recovers_base": true,
+      "reversed_sha256": "f965a8075d6079f7d1d02a9e966ba17c2802b3e8e7221ae423e4fbbb1310c076"
+    }
+  ],
+  "begin_observe_finish_byte_identical": true,
+  "start_delta": "one capture_material after real bind; one start_attempted write immediately before actual start",
+  "no_candidate_called": true
+}

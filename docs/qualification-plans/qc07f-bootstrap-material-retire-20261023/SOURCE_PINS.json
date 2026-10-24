@@ -1,0 +1,30 @@
+{
+  "files": [
+    {
+      "path": "apps/rtsp-auth/qc07f-bootstrap-material-retire/LICENSE_NOTICES.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-material-retire/LICENSE_NOTICES.md",
+      "bytes": 967,
+      "sha256": "b2b8ae0c11346df6d4db3ac4575700a56a081887c02f80f755117acd11dd7027"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-bootstrap-material-retire/bootstrap.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-material-retire/bootstrap.c",
+      "bytes": 12081,
+      "sha256": "b89782a3522dd16d201a1dc3b24e64b8ce0a5c2e519af3a89e9ad45c7a054b60"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-bootstrap-material-retire/bootstrap_v1.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-material-retire/bootstrap_v1.h",
+      "bytes": 7088,
+      "sha256": "aec5a98dd3d3a7cd867ebf93d224c7e049b44d2c8caff8fcf0fd2795c450f529"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-bootstrap-material-retire/compile_recipe.sh",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-material-retire/compile_recipe.sh",
+      "bytes": 3124,
+      "sha256": "f0a7df6f65f7948c6e3e82a564eae74636bb99ab3642862e292cda9f5aa1aec2"
+    }
+  ],
+  "source_aggregate_method": "sorted SHA256 + two spaces + workspace-relative path + LF",
+  "sha256": "bb8cef1970e563f6f1091d99c3cc3a2e2f416a37be84252885c8752df3e6bbbe"
+}

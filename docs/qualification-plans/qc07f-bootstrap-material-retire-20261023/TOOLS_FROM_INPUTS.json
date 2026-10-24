@@ -1,0 +1,108 @@
+{
+  "scope": "freshly verified subset of already-sealed inputs; tool binaries not candidate programs",
+  "files": [
+    {
+      "path": "/bin/bash",
+      "resolved": "/usr/bin/bash",
+      "bytes": 1268912,
+      "sha256": "917e986de64e7d36e42bef7aff5db73b7ecef5b58477bdb990e595e8dfc930b2"
+    },
+    {
+      "path": "work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/../lib/gcc/arm-buildroot-linux-musleabi/14.3.0/../../../../arm-buildroot-linux-musleabi/bin/as",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/arm-buildroot-linux-musleabi/bin/as",
+      "bytes": 2220088,
+      "sha256": "9444b8d3ffa1e1d2d51be31ff2998eab4ecb3eb53b470947a0d0e297180debe1"
+    },
+    {
+      "path": "work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/../lib/gcc/arm-buildroot-linux-musleabi/14.3.0/../../../../arm-buildroot-linux-musleabi/bin/ld",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/arm-buildroot-linux-musleabi/bin/ld",
+      "bytes": 2346120,
+      "sha256": "28a979288cd5056057d7b78efd6b441979237c4ff0abcb685e184341ca4d5352"
+    },
+    {
+      "path": "work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/../libexec/gcc/arm-buildroot-linux-musleabi/14.3.0/cc1",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/libexec/gcc/arm-buildroot-linux-musleabi/14.3.0/cc1",
+      "bytes": 34599040,
+      "sha256": "caf028c324e59458a82d94018812e9d2c6ef49d369be94b474fc8b0525317028"
+    },
+    {
+      "path": "work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/../libexec/gcc/arm-buildroot-linux-musleabi/14.3.0/collect2",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/libexec/gcc/arm-buildroot-linux-musleabi/14.3.0/collect2",
+      "bytes": 1308832,
+      "sha256": "f7aecfa88e9a6462cf5e7c4c9e1b9b6b8da47d64c87f2c7024dc47eb9e4d809a"
+    },
+    {
+      "path": "work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-ar",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-ar",
+      "bytes": 1244216,
+      "sha256": "5c9952d4cbb569f49339fced43b9b5216ac753c5308ab79d71855ba01f46dec2"
+    },
+    {
+      "path": "work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/toolchain-wrapper",
+      "bytes": 14704,
+      "sha256": "f4db963a226e01244ce6f7b5d1ec6d57474dd811119ff8834429f022835ce9c1"
+    },
+    {
+      "path": "work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-nm",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-nm",
+      "bytes": 1226128,
+      "sha256": "ac582b9cd7be2eb532bee0ad0dedcab3857bfa679fde6bb8059759ae77b65ae3"
+    },
+    {
+      "path": "work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-readelf",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-readelf",
+      "bytes": 1108696,
+      "sha256": "9175d2e15462a4b75c3545bd30407c807d2e82ae3f90468e564c26ecd6554246"
+    },
+    {
+      "path": "/usr/bin/ar",
+      "resolved": "/usr/bin/ar",
+      "bytes": 55792,
+      "sha256": "8bbb1c48f7d248ff7a4f33691ad2a12426d8f7879ea93de7201854e36611f312"
+    },
+    {
+      "path": "/usr/bin/as",
+      "resolved": "/usr/bin/as",
+      "bytes": 953448,
+      "sha256": "50bb68c7b159346fedf7c7739e1f997068e7749792a8359fe850c86814bbb18d"
+    },
+    {
+      "path": "/usr/bin/cc",
+      "resolved": "/usr/bin/gcc",
+      "bytes": 2451072,
+      "sha256": "a5f680ca8b01b1e7a98d531cac90f258875a301d841fab28a8b56d513470f988"
+    },
+    {
+      "path": "/usr/bin/date",
+      "resolved": "/usr/bin/date",
+      "bytes": 129336,
+      "sha256": "1ebe915f0425521d4f7eb318f5976b82e33f5cee83b6c895aa360c86e1d4f6fc"
+    },
+    {
+      "path": "/usr/bin/ld",
+      "resolved": "/usr/bin/ld",
+      "bytes": 1644584,
+      "sha256": "7bd5014a8b3184c41943da0529ab0451592a5581750a73a9f4a77e4f4e26aa0a"
+    },
+    {
+      "path": "/usr/bin/nm",
+      "resolved": "/usr/bin/nm",
+      "bytes": 48560,
+      "sha256": "cf9a8d5beccc243c2010b863cb861e4e8a74cdb294af59dcf122950df2e8c440"
+    },
+    {
+      "path": "/usr/bin/readelf",
+      "resolved": "/usr/bin/readelf",
+      "bytes": 867440,
+      "sha256": "b561a09504aff0f2c864da60a268cafee9171fdd1574a23fde6158f95ad55294"
+    },
+    {
+      "path": "/usr/bin/sha256sum",
+      "resolved": "/usr/bin/sha256sum",
+      "bytes": 67896,
+      "sha256": "e276fc2d01511e7468c0c8b344cf1085d7e60692dddcf21306c52466d86a458b"
+    }
+  ],
+  "limit": "not a full dynamic compiler process closure"
+}

@@ -55,7 +55,7 @@ dependency records/84 artifacts/40 logs/five tools. Native hardening/real creden
 NOT RUN. See rtsp-provisioner-process PARENT_DISPOSITION; no active author/reviewer
 in that lane; committed locally `5269979`. Its original33-input pin set retains
 the pre-closeout index:32 remain unchanged plus known parent index/status
-updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE05.json`,
+updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE06.json`,
 not rebased. Actual authorized
 external ingress, secret-free launch/FD-env-caps
 hygiene, durable storage/rotation, linked-file retirement/main/external recovery/
@@ -87,10 +87,15 @@ select real function before actual snapshot, preserve selection/HOLD on failure.
 inputs/56 delivery pins/37 artifacts/182 new+871 reused dependency records/46
 archive bodies and exact reverse to original. REPLACE old bootstrap unit, never
 link both; original observe/start/finish tails unchanged. Native entropy still open.
-One isolated author owns qc07f-bootstrap-material-retire app/docs for EXPLICIT
-logical material FD/file retirement only AFTER real normal verifier finish0;
-unknown/failed paths retain ownership. No actual close/unlink/test/child/native/
-motor/NOR execution selected. Independent review required before use.
+Explicit logical material FD/fixed-file retirement at qc07f-bootstrap-material-retire
+now has narrow independent SOURCE/API/order/custody sufficiency: only actual normal
+start + finish0/PS_FINISHED; unknown/failed paths retain ownership.2 HOST/ARM compiles,
+2 real REL links/24 commands PASS, NOT RUN. Parent checked916 inputs/56 delivery
+pins/37 artifacts/221 new+871 reused dependencies/46 archive bodies and inverse
+proofs. See its PARENT_DISPOSITION; no author/reviewer active. Replacement C/new
+header only, never old bootstrap units/combined RELs. No actual retirement/test/
+child/native/motor/NOR action. Next feature investigation is inherited1MiB backing
+versus128KiB allocation cap; no new diagnostic/clock/receipt framework selected.
 No bootstrap test/child/verifier/native/media execution, main, synthetic callbacks,
 provider/backing or hardware adoption selected.
 Original radio/Oct22 reset/23c/23d/23e/23g

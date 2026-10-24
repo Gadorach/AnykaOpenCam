@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "/usr/bin/env",
+    "-i",
+    "PATH=/usr/bin:/bin",
+    "LANG=C",
+    "LC_ALL=C",
+    "TZ=UTC",
+    "/bin/bash",
+    "apps/rtsp-auth/qc07f-bootstrap-material-retire/compile_recipe.sh"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "started": "2026-10-24T02:47:38.574965+00:00",
+  "scope": "COMPILE_REL_PUBLIC_METADATA_ONLY_ZERO_CANDIDATE_FUNCTION_EXECUTION",
+  "finished": "2026-10-24T02:47:39.831683+00:00",
+  "exit": 0
+}

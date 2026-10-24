@@ -1,0 +1,15 @@
+{
+  "scope": "SIXTH_KNOWN_PARENT_MUTABLE_INDEX_STATUS_UPDATE_NOT_SOURCE_PIN_REBASE",
+  "recorded_host_utc": "2026-10-24T03:06:16.320632+00:00",
+  "original_manifests_and_review_unchanged": true,
+  "path": "docs/plan/camera-foundation/00-INDEX.md",
+  "before": {
+    "bytes": 127711,
+    "sha256": "cf7c9df8aca68c1bdae011762a615c9977ea330f8510ac62436dc02067a1f7c8"
+  },
+  "after": {
+    "bytes": 128115,
+    "sha256": "7daa8f1d851accb182788662756abc68ce7aae1b332fb82b2f06bc8fef7b7553"
+  },
+  "reason": "parent closes independently reviewed explicit normal-finish material retirement and selects inherited backing/allocation-cap feature investigation; no candidate or hardware execution"
+}

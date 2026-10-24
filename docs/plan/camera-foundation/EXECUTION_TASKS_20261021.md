@@ -25,10 +25,16 @@ actual provisioner snapshot. Bind/prepare/start/HOLD/finish tails unchanged.
 902 inputs/56 delivery pins/37 artifacts/182 new+871 reused dependencies/46 archive
 bodies and inverse proof. Replacement unit only, not coexistence. See bootstrap-
 os-random PARENT_DISPOSITION. Actual build UTC is Oct24; assigned Oct23 names kept,
-not clock admission. One author now owns fresh qc07f-bootstrap-material-retire
-for explicit logical FD/fixed staging-file retirement AFTER actual normal verifier
-finish0. No automatic cleanup on failure or private-file/test/native operation;
-independent review next. Native recovery/C1/entropy/main/backing still open.
+not clock admission. Explicit logical FD/fixed staging-file retirement at
+qc07f-bootstrap-material-retire now has narrow independent SOURCE/API/order/custody
+sufficiency after review: actual normal start + finish0/PS_FINISHED only, one close/
+unlink/directory ACK with sticky uncertainty and no retry.2 HOST/ARM compiles,
+2 real REL links/24 commands PASS, never called. Parent checked916 inputs/56 delivery
+pins/37 artifacts/221 new+871 reused dependencies/46 archive bodies/inverse proofs.
+See its PARENT_DISPOSITION; no author/reviewer active. Replacement C/new header only;
+no actual close/unlink, test, child or native action. Native recovery/C1/entropy/main/
+backing still open. Next eligible feature investigation: actual inherited1MiB
+backing sites versus128KiB allocation cap, not a new diagnostic/build framework.
 
 Latest user steering renews unattended continuation through hardware testing and
 explicitly approves motor testing/onboard NOR flashing if needed. Parent selects
@@ -67,7 +73,7 @@ actual prestarted start, before all native/provider ownership; not native GO.
 Separate process source/public metadata committed locally `5269979`; ordinary
 index unchanged/no push. Its before-closeout source/context pins remain frozen:
 32 unchanged and later parent index status updates recorded explicitly in
-PARENT_CONTEXT_UPDATE01.json through PARENT_CONTEXT_UPDATE05.json, not a rebased
+PARENT_CONTEXT_UPDATE01.json through PARENT_CONTEXT_UPDATE06.json, not a rebased
 manifest. One new isolated author
 owns qc07f-bootstrap-candidate plus matching bootstrap docs for actual known-wait/
 bind → device-free runtime prepare → prestarted-start order and retained failed-

@@ -1,0 +1,52 @@
+{
+  "scope": "PARENT_READ_ONLY_PUBLIC_SOURCE_BUILD_REVIEW_CLOSEOUT_NOT_EXECUTION",
+  "recorded_host_utc": "2026-10-24T03:05:04.562794+00:00",
+  "assigned_lane": "20261023",
+  "verified_counts": {
+    "DELIVERY_PINS.json": 56,
+    "BUILD_INPUTS.json": 916,
+    "REUSED_DEPENDENCIES.json": 871,
+    "runs/build01/DEPENDENCIES.json": 221,
+    "artifacts": 37,
+    "successful_command_logs": 24,
+    "runtime_archive_bodies_previously_verified": 46,
+    "integration_APIs_per_REL": 12,
+    "retained_tool_input_records": 17
+  },
+  "source_aggregate": "bb8cef1970e563f6f1091d99c3cc3a2e2f416a37be84252885c8752df3e6bbbe",
+  "prior_parent_checks": {
+    "both_diff_inverses_recover_accepted_base": true,
+    "begin_observe_finish_bodies_identical": true,
+    "start_changes_only_capture_and_start_attempt": true,
+    "archive_bodies_equal_original_objects": 46,
+    "actual_zeroizer_defined_once_per_REL": true
+  },
+  "pins": {
+    "docs/qualification-plans/qc07f-bootstrap-material-retire-review-20261023/REVIEW.md": {
+      "bytes": 8928,
+      "sha256": "7fb7a89b0371e3ceeda7b8b8fb556ef7be6f56d21aff2181a8d6c41c8869f8f8"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-material-retire-review-20261023/INPUT_PINS.sha256": {
+      "bytes": 2817,
+      "sha256": "094c63965c74b9049574897f8c70afc2eb3a9e5e47c3999c0e0d38855cd4b6f0"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-material-retire-20261023/DELIVERY_PINS.json": {
+      "bytes": 21369,
+      "sha256": "4616c6f4da7a3c737268989832126ad9bc88b9ba9fb6146413d1a404c10ff98d"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-material-retire-20261023/runs/build01/REPORT.json": {
+      "bytes": 49939,
+      "sha256": "12c970fda1a38d7e980f6c1154d274d43c11fd83baa9889935b78b9627fc4026"
+    },
+    "apps/rtsp-auth/qc07f-bootstrap-material-retire/bootstrap.c": {
+      "bytes": 12081,
+      "sha256": "b89782a3522dd16d201a1dc3b24e64b8ce0a5c2e519af3a89e9ad45c7a054b60"
+    },
+    "apps/rtsp-auth/qc07f-bootstrap-material-retire/bootstrap_v1.h": {
+      "bytes": 7088,
+      "sha256": "aec5a98dd3d3a7cd867ebf93d224c7e049b44d2c8caff8fcf0fd2795c450f529"
+    }
+  },
+  "candidate_test_callback_child_native_credentials_material_retirement_hardware_executed": false,
+  "reader_corrections": "Prior parent schema inspection used old closure key names; corrected read-only association, no candidate/build rerun."
+}

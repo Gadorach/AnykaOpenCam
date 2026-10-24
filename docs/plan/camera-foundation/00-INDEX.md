@@ -102,8 +102,13 @@ sufficiency,2 HOST/ARM compiles/2 real REL links/24 commands, never called; it
 selects the real callback BEFORE provisioning snapshots and refuses replacement
 of any prepopulated callback. No entropy/native GO. See
 [registration disposition](../../qualification-plans/qc07f-bootstrap-os-random-20261023/PARENT_DISPOSITION.md).
-One source lane adds explicit material FD/fixed staging-file retirement only after
-actual successful verifier finish, not automatic failure cleanup or secure erasure.
+Explicit material FD/fixed staging-file retirement now has narrow independent
+SOURCE/API/order/custody sufficiency,2 HOST/ARM compiles/2 REL links/24 commands,
+never called. Only actual normal start + successful verifier finish admits it;
+not automatic failure cleanup or secure erasure. See
+[retirement disposition](../../qualification-plans/qc07f-bootstrap-material-retire-20261023/PARENT_DISPOSITION.md).
+Next eligible feature investigation is actual inherited1MiB backing versus128KiB
+allocation cap; no native or new diagnostic-image/build/clock framework selected.
 Separate RTSP provisioner-child/readonly-FD IPC now has narrow independent SOURCE/
 API/custody sufficiency,27 HOST/ARM compiles/40 commands and ONE normal PUBLICDUMMY
 fork/FD-transfer/wait0/bind observation. No real credentials/native hardening or
