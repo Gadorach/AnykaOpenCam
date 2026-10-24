@@ -1,0 +1,76 @@
+{
+  "scope": "STATIC_TEXT_ONLY_NOT_C_EXECUTION",
+  "changed_functions": [
+    "process_input",
+    "serve_prestarted_body"
+  ],
+  "functions": {
+    "process_input": [
+      {
+        "bytes": 5050,
+        "sha256": "2961ba1f87cf5a349b30dcbd192e9c4a7a19946a9f1b258226b67931ffdbf49b"
+      },
+      {
+        "bytes": 5568,
+        "sha256": "b7f4bc4d4cc9f42b6221e38795d6f03bd1035b81bc150347c7bcec3c13625036"
+      }
+    ],
+    "serve_prestarted_body": [
+      {
+        "bytes": 17485,
+        "sha256": "518c5c56abdfecab852ff49bedb440dfe1cae24e77632029f43064074f07fdf8"
+      },
+      {
+        "bytes": 18741,
+        "sha256": "0ddf2d9512de5cbc566ddc8bcdf0b92048c223fe07c5a74d783d8ed947dec1c1"
+      }
+    ]
+  },
+  "inputs": {
+    "apps/rtsp-auth/rtsp-span-server-v2/rtsp_span_server.c": {
+      "bytes": 49313,
+      "sha256": "8bebe38b59a2690921074bb1fd348c2504503716433b0d416925a7e2592cc020"
+    },
+    "apps/rtsp-auth/rtsp-span-server-v3/rtsp_span_server.c": {
+      "bytes": 51087,
+      "sha256": "73c0f5886a54ca8fc064b27c72b7c877180730502673e8a6ee106f085a7304d0"
+    },
+    "apps/rtsp-auth/rtsp-span-server-v2/rtsp_span_server_v1.h": {
+      "bytes": 3700,
+      "sha256": "ae1fcbe656a5ded4fba5b06c7d5114ee9652f9287187df66c65c3b2b8333a7b1"
+    },
+    "apps/rtsp-auth/rtsp-span-server-v3/rtsp_span_server_v1.h": {
+      "bytes": 3859,
+      "sha256": "3b81af3ff9e7478ec19b3ab7f91414bdffa74cea231c8fc9d6b180a5f63f5333"
+    },
+    "apps/rtsp-auth/rtsp-span-server-v2/build.py": {
+      "bytes": 14612,
+      "sha256": "52f010b9ce4a67d634ed13e7877923458af5c0ee37ff50965ec6f19664e78e18"
+    },
+    "apps/rtsp-auth/rtsp-span-server-v3/build.py": {
+      "bytes": 14608,
+      "sha256": "ec057cb3c0d0bd955ef14d6636e6a68b8ca2bc59253f89876e6c87d576eaf20c"
+    },
+    "apps/rtsp-auth/rtsp-span-server-v2/LICENSE_NOTICES.md": {
+      "bytes": 1293,
+      "sha256": "2ff6da57865eea15d4dd52825094f30ab51d9174f084e9ff221574dec414bfba"
+    },
+    "apps/rtsp-auth/rtsp-span-server-v3/LICENSE_NOTICES.md": {
+      "bytes": 1462,
+      "sha256": "bb24cf0278b76124b00fc71d0a79e759f7cfc3ff06bd375396a6430c12c87c00"
+    }
+  },
+  "all_bytes_outside_two_functions_identical": true,
+  "selected_unchanged_functions": {
+    "pause_client": "c08a28cf61813650dfbf6fc4cb65a901772446a4e478c6fcee736fb038292a2c",
+    "close_client": "5b2565d64c0cae474cabd4056ea8ecfcf7f011a10a541b86545fe25041abdce4",
+    "finish_au": "a99b62a17e5233a72ed8c0680b495238e82a103dd4c073b75995e9973b0dba26",
+    "guarded": "87175bcbe614431f950bdc2f695b07fe434bb4e2f17f7a64a5831f40d771bb72",
+    "capture_admitted": "74626038f6351dbf1631302996b29d715aacae86988aa84798814ed19bbbdb3c",
+    "retain_span": "b5fbbd717ec75f02e698ca8f393b2817a146235881fca1d206464a794ff3eaed",
+    "retain_frame": "d76d983044363939541d26748df0433792d7b629f6684ac9c4f65b9c2ef7a7f2"
+  },
+  "header_noncomment_bytes_identical": true,
+  "fresh_recipe_ast_parse": "PASS_NOT_IMPORTED_OR_CALLED",
+  "frozen_membership_and_bytes_checked": 332
+}

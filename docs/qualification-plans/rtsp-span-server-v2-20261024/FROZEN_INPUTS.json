@@ -1,0 +1,880 @@
+{
+  "captured": "2026-10-24T04:31:57.307933+00:00",
+  "roots": [
+    "apps/rtsp-auth/rtsp-span-server-candidate",
+    "docs/qualification-plans/rtsp-span-server-20261024",
+    "docs/qualification-plans/rtsp-span-server-review-20261024",
+    "apps/rtsp-auth/span-hub-v2",
+    "apps/rtsp-auth/rtp-span-candidate"
+  ],
+  "files": {
+    "apps/rtsp-auth/rtsp-span-server-candidate/LICENSE_NOTICES.md": {
+      "bytes": 1069,
+      "sha256": "c0c0f6af4d5f5ac23a3c6e094b60279605e8ae0f9767d1fd2b7cdc9dd05e22ad"
+    },
+    "apps/rtsp-auth/rtsp-span-server-candidate/build.py": {
+      "bytes": 12419,
+      "sha256": "2568bcf4ef6712a712981a99a6adb4ed5e98452933855cebffa3fc97de242951"
+    },
+    "apps/rtsp-auth/rtsp-span-server-candidate/rtsp_span_server.c": {
+      "bytes": 47501,
+      "sha256": "529fd4902931467dc896b6faa12d502a20846cc0ba4cb76060044b453a018f97"
+    },
+    "apps/rtsp-auth/rtsp-span-server-candidate/rtsp_span_server_v1.h": {
+      "bytes": 3458,
+      "sha256": "8f6488595576c4205b9e9548f18f5e63109b41398cfab6319ce702261b980a07"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/AUTHOR_STATIC_CHECKS.json": {
+      "bytes": 1431,
+      "sha256": "fb4c9aa877d7148970f23fd15e430d677723115fc9df31fcd056caf8bf226400"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/CONTRACT.md": {
+      "bytes": 4523,
+      "sha256": "fe06ef5512529366bced1c5bbda7095b87ef167adba4297d6e9afd6401387ea6"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/DELIVERY_PINS.json": {
+      "bytes": 42926,
+      "sha256": "8190b6b062de0a7b4f6f3e7837e4fa3786b8f097495fe9916c11474250bbc603"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/HANDBACK.md": {
+      "bytes": 12979,
+      "sha256": "666cb889ae41280dfb239f64609e1ce6bbcf932bd60901aa03c4e0df2b5c40ca"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/REPORT.json": {
+      "bytes": 128347,
+      "sha256": "06a4e68f844260db4997c1ddac7f6cb6e0026fe2ca110e5a84ea90590393b5da"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/SERVER_DELTA.patch": {
+      "bytes": 33334,
+      "sha256": "e7d00d73355c68ee101773184ac806b6a0bf41ae54b9f836d27638f202537173"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/SERVER_INVERSE.patch": {
+      "bytes": 33341,
+      "sha256": "7b5a5b3b1b64e76392c83f0faa8cb1d455edbdf98ff579c43b03b6168678d4da"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/consumed-build.py": {
+      "bytes": 10662,
+      "sha256": "b0e3a38df490bfa15167a0c5416adb622454d396fb4a892c7baa7b0563136627"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/consumed-rtsp_span_server.c": {
+      "bytes": 47501,
+      "sha256": "529fd4902931467dc896b6faa12d502a20846cc0ba4cb76060044b453a018f97"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/consumed-rtsp_span_server_v1.h": {
+      "bytes": 3458,
+      "sha256": "8f6488595576c4205b9e9548f18f5e63109b41398cfab6319ce702261b980a07"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/host-span-server-NOT-EXECUTABLE.o": {
+      "bytes": 286936,
+      "sha256": "2a7b00a1ecdf67d4299c473b7f5dcbd45660df98857ba1448fd9be4430f9aa98"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/host.map": {
+      "bytes": 138113,
+      "sha256": "6f5d4567408086e3e3f6b794f4777669343273917cca829de24b12faa67ea459"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/logs/host-ELF.txt": {
+      "bytes": 73279,
+      "sha256": "3d1cf13b6dd0c96a81aefeb323cf7881c24d73ea5d46bf335624fe297e065f68"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/logs/host-REL.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/logs/host-archive-members.txt": {
+      "bytes": 541,
+      "sha256": "4f06b1bb34d5c6b61a736df50a7f102ff26c9a82d9d7d13261b4855da87df59d"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/logs/host-compile-0.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/logs/host-compile-1.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/logs/host-compile-2.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/logs/host-compiler-target.txt": {
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/logs/host-compiler-version.txt": {
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/logs/host-defined.txt": {
+      "bytes": 6919,
+      "sha256": "0615a00ca2bd6e323aeb52759809c045aa34f3875b215a1aa2589d5d724d0166"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/logs/host-member-roles.txt": {
+      "bytes": 22903,
+      "sha256": "86ede1368a5abc7ec1c27aa9670be732b7f6353ec5c6d7353fa0b0727fea0e3d"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/logs/host-selected-members.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/logs/host-undefined.txt": {
+      "bytes": 1747,
+      "sha256": "1de0c29f40df67260637cef0586741326022396e9cc6b0d41e2bb3ba3ad850e9"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/members-host/host-0-owned_runtime.o": {
+      "bytes": 90048,
+      "sha256": "056dd640da658440f8516d34ce923f7f50761645ea5d77976b6894b48f881a39"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/members-host/host-1-sensor_baseline.o": {
+      "bytes": 8592,
+      "sha256": "b486be85badf7dd9586bd650dd7c5e9fe2f4f1c9ebda00fe0ceac159bcd682f9"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/members-host/host-10-verifier_adapter_overlay.o": {
+      "bytes": 22752,
+      "sha256": "c35e566a0e96a736e20c93f651a267e2cdb2f02c12b9485629e489b5ebf16f69"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/members-host/host-11-listener_custody.o": {
+      "bytes": 3832,
+      "sha256": "ee44913ef768289143b78e04475fde7f17e32722b9e23b47e72b3d740e5f4c77"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/members-host/host-12-ipc.o": {
+      "bytes": 6128,
+      "sha256": "e88502400bc7338553bcff768440cea892b461ac9c718c4bbd89f74a2e7e6818"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/members-host/host-13-rtsp_digest_wire.o": {
+      "bytes": 14976,
+      "sha256": "a4ecf89e7bd5825574618c81261bc4b4f904418be5a7069e55edfb288796833a"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/members-host/host-14-rtsp_request.o": {
+      "bytes": 7288,
+      "sha256": "3ea13827a70344154c6c174bb092a54da079bf75764cff15118373bedef08395"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/members-host/host-15-rtsp_input.o": {
+      "bytes": 10544,
+      "sha256": "c552c1802ce1645019dd418a52b9c6ad3119d3848abc520f0387137eb8f6b23f"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/members-host/host-16-backend.o": {
+      "bytes": 5352,
+      "sha256": "bfdf3d5d5b3c5d1fff5b8ae8ce0711c72741799b2f2e38769ea0159409269653"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/members-host/host-18-producer.o": {
+      "bytes": 15096,
+      "sha256": "b469377db799283645160318d491d3cfa8b921bceb0554417b4cff88019093bb"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/members-host/host-19-rtp_h264.o": {
+      "bytes": 2928,
+      "sha256": "76f042cea897b9d01c157c0eb88507c073a95aa3f903f3c212be90f375d7b948"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/members-host/host-2-memory_reserve.o": {
+      "bytes": 12504,
+      "sha256": "61397a4abbe40885cb7d614bdc023f33de4fedaff73d43957b9cc11059822093"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/members-host/host-20-sha256.o": {
+      "bytes": 9664,
+      "sha256": "2dac7dbf7be224f22a9e06155d16122ba1792e72822b6a624df729edcc24324f"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/members-host/host-21-constant_time.o": {
+      "bytes": 2544,
+      "sha256": "d31fd009e3d966a5ecec0e5fd4862da8475a33f15f313bee683f2f74273b66a9"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/members-host/host-22-platform_util.o": {
+      "bytes": 1936,
+      "sha256": "a2a0f6ccb8caf9220c5e7190b27aba4d2a376f1e66dc335b0b9dafa852d35798"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/members-host/host-3-memory_runtime.o": {
+      "bytes": 6872,
+      "sha256": "005f963ee0191bfbb4c363d8e0a03efd99d1441860fdfd8fcb17e200ff6e69f2"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/members-host/host-4-memory_reader.o": {
+      "bytes": 2544,
+      "sha256": "f575edb74b2b750cedbaf6ab337eb3d37c9e6eae767f9e9a38c06a861a03a7f1"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/members-host/host-5-frame_fd_custody.o": {
+      "bytes": 3664,
+      "sha256": "3ab957b7d44d231543e49c4c888f3f7a4d49612621b10d691bf532af2d39bb45"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/members-host/host-6-encoder_fd_custody.o": {
+      "bytes": 3816,
+      "sha256": "4ef1063a2e6fffd75b1632433f2cf0d2e1a2edc4bda98099c23ba430cca7cc85"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/members-host/host-7-watchdog_owner.o": {
+      "bytes": 9224,
+      "sha256": "d177561c447ffc0e19986d670b014e7778a610332eaddad31f10b48d4ec35a9a"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/members-host/host-8-candidate_auth.o": {
+      "bytes": 18536,
+      "sha256": "495c530f9a0659555942d3b322944b07c622564848d8d175878654015afe52c6"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/objects/host-rtp_h264_spans.d": {
+      "bytes": 1315,
+      "sha256": "6e2c3a37d4ea3ffc2943b48285a192084f9a4206bb77e19a44c5c4333a4a3d06"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/objects/host-rtp_h264_spans.o": {
+      "bytes": 2496,
+      "sha256": "e9d59a640fad13ba0403d7600dd1fb8328390cbdafd4ec0f4961e12eed897a0e"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/objects/host-rtp_h264_spans.su": {
+      "bytes": 135,
+      "sha256": "75c9a871c0ca7ea8ce43882f789e7530567ecb69163cb4ef5c41cfb5dd5873b6"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/objects/host-rtsp_span_server.d": {
+      "bytes": 8960,
+      "sha256": "cec509f19d554c4d0147369bfb54b1cc61b681746c0a2aabe8fe375a333d392c"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/objects/host-rtsp_span_server.o": {
+      "bytes": 50184,
+      "sha256": "e6812ee07fd67e9e72e8623c8ed224c278c9f5717dedb706d36b099a35aa9377"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/objects/host-rtsp_span_server.su": {
+      "bytes": 2680,
+      "sha256": "127198b38e6a24a80db566957c893667d201532b960f37b2b444c804ee1be099"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/objects/host-span_hub.d": {
+      "bytes": 2495,
+      "sha256": "1b35c7025a144b6e2e0985112b46b17e95bdcb714a49a4557af263516a73c27e"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/objects/host-span_hub.o": {
+      "bytes": 8040,
+      "sha256": "8cbdeca984cd7293ee46ac0a7a9aa63711a2bb166622aa64b74ac3538286a989"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build01/objects/host-span_hub.su": {
+      "bytes": 1500,
+      "sha256": "3b2af75bc5d0c1f6168fc5dd1fed8f98273cf19e0878bf5fb28b9a48604f7146"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/REPORT.json": {
+      "bytes": 130341,
+      "sha256": "616243bddc2d0e65de74e4cc0393f758dd7d528b4965a7b5937fad224ac37418"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/SERVER_DELTA.patch": {
+      "bytes": 33334,
+      "sha256": "e7d00d73355c68ee101773184ac806b6a0bf41ae54b9f836d27638f202537173"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/SERVER_INVERSE.patch": {
+      "bytes": 33341,
+      "sha256": "7b5a5b3b1b64e76392c83f0faa8cb1d455edbdf98ff579c43b03b6168678d4da"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/consumed-LICENSE_NOTICES.md": {
+      "bytes": 1069,
+      "sha256": "c0c0f6af4d5f5ac23a3c6e094b60279605e8ae0f9767d1fd2b7cdc9dd05e22ad"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/consumed-build.py": {
+      "bytes": 11905,
+      "sha256": "97615902151367d509365fd08027c1d1934b7d3e4afb91040c12dbe409f3680e"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/consumed-rtsp_span_server.c": {
+      "bytes": 47501,
+      "sha256": "529fd4902931467dc896b6faa12d502a20846cc0ba4cb76060044b453a018f97"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/consumed-rtsp_span_server_v1.h": {
+      "bytes": 3458,
+      "sha256": "8f6488595576c4205b9e9548f18f5e63109b41398cfab6319ce702261b980a07"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/host-span-server-NOT-EXECUTABLE.o": {
+      "bytes": 257176,
+      "sha256": "ef00f535eacc3014b71882128751c110e899fa9ab3f00c5a662b98354ab55e54"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/host.map": {
+      "bytes": 132521,
+      "sha256": "4fc35d43230443d3a2bee1e7b3ccde9ca992f221103c6ec1ffc5b5d23164b85e"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/logs/host-ELF.txt": {
+      "bytes": 62196,
+      "sha256": "05ebc0cec39c31b9ec808118181599202f621e12a5e28ec657ad16e818c0baa1"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/logs/host-REL.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/logs/host-archive-members.txt": {
+      "bytes": 541,
+      "sha256": "4f06b1bb34d5c6b61a736df50a7f102ff26c9a82d9d7d13261b4855da87df59d"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/logs/host-compile-0.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/logs/host-compile-1.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/logs/host-compile-2.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/logs/host-compiler-target.txt": {
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/logs/host-compiler-version.txt": {
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/logs/host-defined.txt": {
+      "bytes": 5373,
+      "sha256": "7b25b3dc66236c7986a42230e345c95366692a6ae1bf8768736cc68ae3894d07"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/logs/host-member-roles.txt": {
+      "bytes": 22903,
+      "sha256": "96f874f4b6b84454d19023acefc9948cba6f3f7eef1d7f17297c84f552ebf60d"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/logs/host-selected-members.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/logs/host-undefined.txt": {
+      "bytes": 1747,
+      "sha256": "1de0c29f40df67260637cef0586741326022396e9cc6b0d41e2bb3ba3ad850e9"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/members-host/host-0-owned_runtime.o": {
+      "bytes": 90048,
+      "sha256": "056dd640da658440f8516d34ce923f7f50761645ea5d77976b6894b48f881a39"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/members-host/host-1-sensor_baseline.o": {
+      "bytes": 8592,
+      "sha256": "b486be85badf7dd9586bd650dd7c5e9fe2f4f1c9ebda00fe0ceac159bcd682f9"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/members-host/host-10-verifier_adapter_overlay.o": {
+      "bytes": 22752,
+      "sha256": "c35e566a0e96a736e20c93f651a267e2cdb2f02c12b9485629e489b5ebf16f69"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/members-host/host-11-listener_custody.o": {
+      "bytes": 3832,
+      "sha256": "ee44913ef768289143b78e04475fde7f17e32722b9e23b47e72b3d740e5f4c77"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/members-host/host-12-ipc.o": {
+      "bytes": 6128,
+      "sha256": "e88502400bc7338553bcff768440cea892b461ac9c718c4bbd89f74a2e7e6818"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/members-host/host-13-rtsp_digest_wire.o": {
+      "bytes": 14976,
+      "sha256": "a4ecf89e7bd5825574618c81261bc4b4f904418be5a7069e55edfb288796833a"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/members-host/host-14-rtsp_request.o": {
+      "bytes": 7288,
+      "sha256": "3ea13827a70344154c6c174bb092a54da079bf75764cff15118373bedef08395"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/members-host/host-15-rtsp_input.o": {
+      "bytes": 10544,
+      "sha256": "c552c1802ce1645019dd418a52b9c6ad3119d3848abc520f0387137eb8f6b23f"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/members-host/host-16-backend.o": {
+      "bytes": 5352,
+      "sha256": "bfdf3d5d5b3c5d1fff5b8ae8ce0711c72741799b2f2e38769ea0159409269653"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/members-host/host-18-producer.o": {
+      "bytes": 15096,
+      "sha256": "b469377db799283645160318d491d3cfa8b921bceb0554417b4cff88019093bb"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/members-host/host-19-rtp_h264.o": {
+      "bytes": 2928,
+      "sha256": "76f042cea897b9d01c157c0eb88507c073a95aa3f903f3c212be90f375d7b948"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/members-host/host-2-memory_reserve.o": {
+      "bytes": 12504,
+      "sha256": "61397a4abbe40885cb7d614bdc023f33de4fedaff73d43957b9cc11059822093"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/members-host/host-20-sha256.o": {
+      "bytes": 9664,
+      "sha256": "2dac7dbf7be224f22a9e06155d16122ba1792e72822b6a624df729edcc24324f"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/members-host/host-21-constant_time.o": {
+      "bytes": 2544,
+      "sha256": "d31fd009e3d966a5ecec0e5fd4862da8475a33f15f313bee683f2f74273b66a9"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/members-host/host-22-platform_util.o": {
+      "bytes": 1936,
+      "sha256": "a2a0f6ccb8caf9220c5e7190b27aba4d2a376f1e66dc335b0b9dafa852d35798"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/members-host/host-3-memory_runtime.o": {
+      "bytes": 6872,
+      "sha256": "005f963ee0191bfbb4c363d8e0a03efd99d1441860fdfd8fcb17e200ff6e69f2"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/members-host/host-4-memory_reader.o": {
+      "bytes": 2544,
+      "sha256": "f575edb74b2b750cedbaf6ab337eb3d37c9e6eae767f9e9a38c06a861a03a7f1"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/members-host/host-5-frame_fd_custody.o": {
+      "bytes": 3664,
+      "sha256": "3ab957b7d44d231543e49c4c888f3f7a4d49612621b10d691bf532af2d39bb45"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/members-host/host-6-encoder_fd_custody.o": {
+      "bytes": 3816,
+      "sha256": "4ef1063a2e6fffd75b1632433f2cf0d2e1a2edc4bda98099c23ba430cca7cc85"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/members-host/host-7-watchdog_owner.o": {
+      "bytes": 9224,
+      "sha256": "d177561c447ffc0e19986d670b014e7778a610332eaddad31f10b48d4ec35a9a"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/members-host/host-8-candidate_auth.o": {
+      "bytes": 18536,
+      "sha256": "495c530f9a0659555942d3b322944b07c622564848d8d175878654015afe52c6"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/objects/host-rtp_h264_spans.d": {
+      "bytes": 1315,
+      "sha256": "86624eccec0dbea82d86f4a16af5d2dc41176ae5212dd38d7777e350c7aeb9be"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/objects/host-rtp_h264_spans.o": {
+      "bytes": 2496,
+      "sha256": "e9d59a640fad13ba0403d7600dd1fb8328390cbdafd4ec0f4961e12eed897a0e"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/objects/host-rtp_h264_spans.su": {
+      "bytes": 135,
+      "sha256": "75c9a871c0ca7ea8ce43882f789e7530567ecb69163cb4ef5c41cfb5dd5873b6"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/objects/host-rtsp_span_server.d": {
+      "bytes": 8960,
+      "sha256": "e5fe0a514da2badc523d8b4483d0ca2304ea9fd296dfd8094a9c700681473d5c"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/objects/host-rtsp_span_server.o": {
+      "bytes": 50184,
+      "sha256": "e6812ee07fd67e9e72e8623c8ed224c278c9f5717dedb706d36b099a35aa9377"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/objects/host-rtsp_span_server.su": {
+      "bytes": 2680,
+      "sha256": "127198b38e6a24a80db566957c893667d201532b960f37b2b444c804ee1be099"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/objects/host-span_hub.d": {
+      "bytes": 2495,
+      "sha256": "2746da216abcc7408821809ee2bb0d870fd77a7355923e5cfa431f89fff6edc1"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/objects/host-span_hub.o": {
+      "bytes": 8040,
+      "sha256": "8cbdeca984cd7293ee46ac0a7a9aa63711a2bb166622aa64b74ac3538286a989"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build02/objects/host-span_hub.su": {
+      "bytes": 1500,
+      "sha256": "3b2af75bc5d0c1f6168fc5dd1fed8f98273cf19e0878bf5fb28b9a48604f7146"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/REPORT.json": {
+      "bytes": 264757,
+      "sha256": "ed3d1b1ceb2574f3a7d35e909a962b490c28e7c8fd0350572552deeab2a31ec5"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/SERVER_DELTA.patch": {
+      "bytes": 33334,
+      "sha256": "e7d00d73355c68ee101773184ac806b6a0bf41ae54b9f836d27638f202537173"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/SERVER_INVERSE.patch": {
+      "bytes": 33341,
+      "sha256": "7b5a5b3b1b64e76392c83f0faa8cb1d455edbdf98ff579c43b03b6168678d4da"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/arm-span-server-NOT-EXECUTABLE.o": {
+      "bytes": 171968,
+      "sha256": "e6e4a2daa882df087b7081c4023ab31ef94596dae923d08eebadb6a1085d379f"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/arm.map": {
+      "bytes": 126398,
+      "sha256": "2bb34814d10d82ca65caf5c4288fd103893b702f254fb555d47e25d6cfe6e6fc"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/consumed-LICENSE_NOTICES.md": {
+      "bytes": 1069,
+      "sha256": "c0c0f6af4d5f5ac23a3c6e094b60279605e8ae0f9767d1fd2b7cdc9dd05e22ad"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/consumed-build.py": {
+      "bytes": 12419,
+      "sha256": "2568bcf4ef6712a712981a99a6adb4ed5e98452933855cebffa3fc97de242951"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/consumed-rtsp_span_server.c": {
+      "bytes": 47501,
+      "sha256": "529fd4902931467dc896b6faa12d502a20846cc0ba4cb76060044b453a018f97"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/consumed-rtsp_span_server_v1.h": {
+      "bytes": 3458,
+      "sha256": "8f6488595576c4205b9e9548f18f5e63109b41398cfab6319ce702261b980a07"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/host-span-server-NOT-EXECUTABLE.o": {
+      "bytes": 257176,
+      "sha256": "ef00f535eacc3014b71882128751c110e899fa9ab3f00c5a662b98354ab55e54"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/host.map": {
+      "bytes": 132521,
+      "sha256": "cd62d21abf329886f2b6e1f0d3a7a4f8b939cad50674e1c98e7bebf175021d19"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/arm-ELF.txt": {
+      "bytes": 44648,
+      "sha256": "6a7446270e0ed024bba344324263d6b053a0365fcc1101704d936e6d31406dc6"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/arm-REL.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/arm-archive-members.txt": {
+      "bytes": 518,
+      "sha256": "fdf8d564b7b24580e5faeca9d75caeef4a7ab3f32eae9f884b35d2ace40048fc"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/arm-compile-0.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/arm-compile-1.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/arm-compile-2.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/arm-compiler-target.txt": {
+      "bytes": 29,
+      "sha256": "d0cf670b8c286026ebd268b1f5ecdd6be41552e0e254a949fb50ab0ed085dd23"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/arm-compiler-version.txt": {
+      "bytes": 288,
+      "sha256": "7b501201183c07e1e9078ca3f8b1f502d07fd67c414e92183c01e8787c00a0d4"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/arm-defined.txt": {
+      "bytes": 4337,
+      "sha256": "14148189de3aae08b1596b65a8afbfe1cbe35d63b702b984e3228cc06bd72b92"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/arm-member-roles.txt": {
+      "bytes": 31385,
+      "sha256": "268dfe523bd7cf2bf111964925842510d36feb2f435243055938ae1a72233f3a"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/arm-relocations.txt": {
+      "bytes": 172242,
+      "sha256": "5e5d2e963d988d99c03c689a36dd1955d4dfc335589243d0107dfc0aef7e101d"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/arm-selected-members.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/arm-undefined.txt": {
+      "bytes": 1452,
+      "sha256": "be91ce8f576eb3094fa1ef5fd14d4b18afaded359eda30d07df1b5982df5e64b"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/host-ELF.txt": {
+      "bytes": 62196,
+      "sha256": "05ebc0cec39c31b9ec808118181599202f621e12a5e28ec657ad16e818c0baa1"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/host-REL.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/host-archive-members.txt": {
+      "bytes": 541,
+      "sha256": "4f06b1bb34d5c6b61a736df50a7f102ff26c9a82d9d7d13261b4855da87df59d"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/host-compile-0.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/host-compile-1.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/host-compile-2.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/host-compiler-target.txt": {
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/host-compiler-version.txt": {
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/host-defined.txt": {
+      "bytes": 5373,
+      "sha256": "7b25b3dc66236c7986a42230e345c95366692a6ae1bf8768736cc68ae3894d07"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/host-member-roles.txt": {
+      "bytes": 22903,
+      "sha256": "e939452077f3eafd442029542e4c4848f99f9b0314e4801a39a472533caf4691"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/host-relocations.txt": {
+      "bytes": 292044,
+      "sha256": "1422b6d7305eeb226da237448b4e813f351760b21435cce8e702dad6dc8959d9"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/host-selected-members.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/logs/host-undefined.txt": {
+      "bytes": 1747,
+      "sha256": "1de0c29f40df67260637cef0586741326022396e9cc6b0d41e2bb3ba3ad850e9"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-arm/arm-0-owned_runtime.o": {
+      "bytes": 52312,
+      "sha256": "9c71921713cfc89f1d1ac11243a8447b224011c1cf0ce2f3fe758632ee2732bb"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-arm/arm-1-sensor_baseline.o": {
+      "bytes": 7040,
+      "sha256": "513ef336b41c9cf31b3fbc19cdf8cd6876b5544f3c883f3a91e61aa94fc39c88"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-arm/arm-10-verifier_adapter_overlay.o": {
+      "bytes": 17116,
+      "sha256": "ba3f10f46523a81bce11fe6d01b7af7e1406a82501e980f026f7fd8581dacad0"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-arm/arm-11-listener_custody.o": {
+      "bytes": 3200,
+      "sha256": "d8d21b383994723acec592eb38059b93bd496bfe61fcfce027894b4577fc9282"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-arm/arm-12-ipc.o": {
+      "bytes": 4400,
+      "sha256": "32c36f7dcf591483b852022ce186a3dcfafc9a8719a808d914fb165112a88eb3"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-arm/arm-13-rtsp_digest_wire.o": {
+      "bytes": 10824,
+      "sha256": "4dd063086fb433b9b6ae3a5c728f6cf88abb4b860ecf9c3d9aaf30cef1356151"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-arm/arm-14-rtsp_request.o": {
+      "bytes": 5808,
+      "sha256": "bb29f12d79b1b040c1325a5f0a2ddaa1766cedc0f0571cc5379292f9b9b1a18d"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-arm/arm-15-rtsp_input.o": {
+      "bytes": 7756,
+      "sha256": "e85cfdeade8798d0bf61accdc9dfff01c93855c8c85f19c3543b06a7202a3e0e"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-arm/arm-16-backend.o": {
+      "bytes": 3656,
+      "sha256": "1585e947e9ff904dd746e8ad9fe5b078070377b487abfbb7dd2df4f316ea3f9a"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-arm/arm-18-producer.o": {
+      "bytes": 12496,
+      "sha256": "a74b9bdfe7a839282b564da1f936675d83bc1b85deb9201190c44697a1f613ae"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-arm/arm-19-rtp_h264.o": {
+      "bytes": 2156,
+      "sha256": "b79e244c64127a26591c2f92067a8b0059477040f363c3d8ea5404b48c013c1c"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-arm/arm-2-memory_reserve.o": {
+      "bytes": 10736,
+      "sha256": "a4169c23dff29d3df823bfa8ef7029d7db9a7c44f0569f22e7ffb6aca1369053"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-arm/arm-20-sha256.o": {
+      "bytes": 6572,
+      "sha256": "c34ce80b6c177263b7d5bfee03182084d6aedbfef7fdb0d042bac1c00494d67e"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-arm/arm-21-constant_time.o": {
+      "bytes": 1744,
+      "sha256": "1a7d6b9de71084c8a99525005217f0c875200a76670e23fcf9553b53bc2da3d7"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-arm/arm-22-platform_util.o": {
+      "bytes": 1492,
+      "sha256": "a68b8b3051d38890da5403d459683e219974941f58cbd4c41335d997995c7470"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-arm/arm-3-memory_runtime.o": {
+      "bytes": 4976,
+      "sha256": "a6cd8e8f1a91dcede527653587508fdde58957aa2f70c81ff44f4e3169c5ac03"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-arm/arm-4-memory_reader.o": {
+      "bytes": 1792,
+      "sha256": "053e16e52582a655ed60075079e9dd2524762e5fbfa216251866cf6557babb6f"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-arm/arm-5-frame_fd_custody.o": {
+      "bytes": 2908,
+      "sha256": "5ce250a3920d4ce264ce90225b1330a3d16197bdd57397b565c34c12c744110f"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-arm/arm-6-encoder_fd_custody.o": {
+      "bytes": 3028,
+      "sha256": "c47aa1e505755d824c25181d9dc3e41eaa2dfabd7378af3910826eefa439a057"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-arm/arm-7-watchdog_owner.o": {
+      "bytes": 7656,
+      "sha256": "858a84e87d57ee1b7abff818423a96a4fea2759a0b353b4c3b83fd4723aada41"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-arm/arm-8-candidate_auth.o": {
+      "bytes": 14044,
+      "sha256": "a870c75b4310fb06bdf45a04d52acee57a98032d5246c96f5ce35d8d986c6475"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-host/host-0-owned_runtime.o": {
+      "bytes": 90048,
+      "sha256": "056dd640da658440f8516d34ce923f7f50761645ea5d77976b6894b48f881a39"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-host/host-1-sensor_baseline.o": {
+      "bytes": 8592,
+      "sha256": "b486be85badf7dd9586bd650dd7c5e9fe2f4f1c9ebda00fe0ceac159bcd682f9"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-host/host-10-verifier_adapter_overlay.o": {
+      "bytes": 22752,
+      "sha256": "c35e566a0e96a736e20c93f651a267e2cdb2f02c12b9485629e489b5ebf16f69"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-host/host-11-listener_custody.o": {
+      "bytes": 3832,
+      "sha256": "ee44913ef768289143b78e04475fde7f17e32722b9e23b47e72b3d740e5f4c77"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-host/host-12-ipc.o": {
+      "bytes": 6128,
+      "sha256": "e88502400bc7338553bcff768440cea892b461ac9c718c4bbd89f74a2e7e6818"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-host/host-13-rtsp_digest_wire.o": {
+      "bytes": 14976,
+      "sha256": "a4ecf89e7bd5825574618c81261bc4b4f904418be5a7069e55edfb288796833a"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-host/host-14-rtsp_request.o": {
+      "bytes": 7288,
+      "sha256": "3ea13827a70344154c6c174bb092a54da079bf75764cff15118373bedef08395"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-host/host-15-rtsp_input.o": {
+      "bytes": 10544,
+      "sha256": "c552c1802ce1645019dd418a52b9c6ad3119d3848abc520f0387137eb8f6b23f"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-host/host-16-backend.o": {
+      "bytes": 5352,
+      "sha256": "bfdf3d5d5b3c5d1fff5b8ae8ce0711c72741799b2f2e38769ea0159409269653"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-host/host-18-producer.o": {
+      "bytes": 15096,
+      "sha256": "b469377db799283645160318d491d3cfa8b921bceb0554417b4cff88019093bb"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-host/host-19-rtp_h264.o": {
+      "bytes": 2928,
+      "sha256": "76f042cea897b9d01c157c0eb88507c073a95aa3f903f3c212be90f375d7b948"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-host/host-2-memory_reserve.o": {
+      "bytes": 12504,
+      "sha256": "61397a4abbe40885cb7d614bdc023f33de4fedaff73d43957b9cc11059822093"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-host/host-20-sha256.o": {
+      "bytes": 9664,
+      "sha256": "2dac7dbf7be224f22a9e06155d16122ba1792e72822b6a624df729edcc24324f"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-host/host-21-constant_time.o": {
+      "bytes": 2544,
+      "sha256": "d31fd009e3d966a5ecec0e5fd4862da8475a33f15f313bee683f2f74273b66a9"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-host/host-22-platform_util.o": {
+      "bytes": 1936,
+      "sha256": "a2a0f6ccb8caf9220c5e7190b27aba4d2a376f1e66dc335b0b9dafa852d35798"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-host/host-3-memory_runtime.o": {
+      "bytes": 6872,
+      "sha256": "005f963ee0191bfbb4c363d8e0a03efd99d1441860fdfd8fcb17e200ff6e69f2"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-host/host-4-memory_reader.o": {
+      "bytes": 2544,
+      "sha256": "f575edb74b2b750cedbaf6ab337eb3d37c9e6eae767f9e9a38c06a861a03a7f1"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-host/host-5-frame_fd_custody.o": {
+      "bytes": 3664,
+      "sha256": "3ab957b7d44d231543e49c4c888f3f7a4d49612621b10d691bf532af2d39bb45"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-host/host-6-encoder_fd_custody.o": {
+      "bytes": 3816,
+      "sha256": "4ef1063a2e6fffd75b1632433f2cf0d2e1a2edc4bda98099c23ba430cca7cc85"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-host/host-7-watchdog_owner.o": {
+      "bytes": 9224,
+      "sha256": "d177561c447ffc0e19986d670b014e7778a610332eaddad31f10b48d4ec35a9a"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/members-host/host-8-candidate_auth.o": {
+      "bytes": 18536,
+      "sha256": "495c530f9a0659555942d3b322944b07c622564848d8d175878654015afe52c6"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/objects/arm-rtp_h264_spans.d": {
+      "bytes": 2478,
+      "sha256": "3d4c3b951e70283146993d52cb2578f8644955aa742163f8a868a379cc2d152b"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/objects/arm-rtp_h264_spans.o": {
+      "bytes": 1756,
+      "sha256": "efb75e7b8f158bc4d05c2aa580e41d5177c2cdfc97a0de9c266adf87d24e7c00"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/objects/arm-rtp_h264_spans.su": {
+      "bytes": 134,
+      "sha256": "04c5251704cdf1d5f634fbcfa3b06a7a8fe6228268815b19aef8017cd66e5aef"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/objects/arm-rtsp_span_server.d": {
+      "bytes": 15410,
+      "sha256": "b9992b6d89d92dbd97cd09aaa8fd3f0f12a315a236768b7c104b76bf697770e7"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/objects/arm-rtsp_span_server.o": {
+      "bytes": 28524,
+      "sha256": "68451b336db445f44d38d7cea6cf2dc28ead8900e471f248f9ac175d250a2c7f"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/objects/arm-rtsp_span_server.su": {
+      "bytes": 2824,
+      "sha256": "1b1a516b715e8dff6e589b5b1bc5b7085aa330901408e62cf8b8ed638606cb25"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/objects/arm-span_hub.d": {
+      "bytes": 2995,
+      "sha256": "cbb759b859900ce6ff94ce01ebcdceaffaf98bb297cc28a1a15a10ba325ae1f4"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/objects/arm-span_hub.o": {
+      "bytes": 6428,
+      "sha256": "b5cd6da459514a7717d0e3d0485a5e41458d3739f18bcc66fcc8eeb0e3c02c04"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/objects/arm-span_hub.su": {
+      "bytes": 1600,
+      "sha256": "ec75b811ebb9919e58653176abc4801c441dfb71d13075e7aeded94a886cbcca"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/objects/host-rtp_h264_spans.d": {
+      "bytes": 1315,
+      "sha256": "0382d55ab7ccdbaed1da4342f6132878f8f61debc86ef8a9a64fd8926ab45cd1"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/objects/host-rtp_h264_spans.o": {
+      "bytes": 2496,
+      "sha256": "e9d59a640fad13ba0403d7600dd1fb8328390cbdafd4ec0f4961e12eed897a0e"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/objects/host-rtp_h264_spans.su": {
+      "bytes": 135,
+      "sha256": "75c9a871c0ca7ea8ce43882f789e7530567ecb69163cb4ef5c41cfb5dd5873b6"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/objects/host-rtsp_span_server.d": {
+      "bytes": 8960,
+      "sha256": "82d03d22287b08c90611cc085ef1cf1a187a4834ed15a6c7c1fb2ff22b09c279"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/objects/host-rtsp_span_server.o": {
+      "bytes": 50184,
+      "sha256": "e6812ee07fd67e9e72e8623c8ed224c278c9f5717dedb706d36b099a35aa9377"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/objects/host-rtsp_span_server.su": {
+      "bytes": 2680,
+      "sha256": "127198b38e6a24a80db566957c893667d201532b960f37b2b444c804ee1be099"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/objects/host-span_hub.d": {
+      "bytes": 2495,
+      "sha256": "8a3f99e1e2afdf5ded070973faaf5c5786666e43383ccb7598fbba3ec1705c63"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/objects/host-span_hub.o": {
+      "bytes": 8040,
+      "sha256": "8cbdeca984cd7293ee46ac0a7a9aa63711a2bb166622aa64b74ac3538286a989"
+    },
+    "docs/qualification-plans/rtsp-span-server-20261024/build03/objects/host-span_hub.su": {
+      "bytes": 1500,
+      "sha256": "3b2af75bc5d0c1f6168fc5dd1fed8f98273cf19e0878bf5fb28b9a48604f7146"
+    },
+    "docs/qualification-plans/rtsp-span-server-review-20261024/REVIEW.md": {
+      "bytes": 12789,
+      "sha256": "5ae6708f00f3e5e6465730b9b47c6726278964a4bc3e294cba25bae8cf4b9871"
+    },
+    "apps/rtsp-auth/span-hub-v2/LICENSE_NOTICES.md": {
+      "bytes": 917,
+      "sha256": "54eb1112a44d0817cafea791d1db7c0d840bfe0d3f92621785f2b08ceae35a56"
+    },
+    "apps/rtsp-auth/span-hub-v2/compile01.py": {
+      "bytes": 6437,
+      "sha256": "1f193fc20dde70feb03302c36cc1ecf85c19be58605a609886c03f38e89f8b08"
+    },
+    "apps/rtsp-auth/span-hub-v2/span_hub.c": {
+      "bytes": 9081,
+      "sha256": "bcf50041bb1fe1b20352d92d1ec9ba61d9e70156fa2cf4c96b06378d837322b1"
+    },
+    "apps/rtsp-auth/span-hub-v2/span_hub.h": {
+      "bytes": 5719,
+      "sha256": "310160cf0b3bf753daa199193a5674e9e223e036af467e320cc5905e415b3454"
+    },
+    "apps/rtsp-auth/rtp-span-candidate/LICENSE_NOTICES.md": {
+      "bytes": 822,
+      "sha256": "4c5c334be13a6d424a86ab29a21465c9eca2e696c6a4d68e059c316f6416c383"
+    },
+    "apps/rtsp-auth/rtp-span-candidate/compile01.py": {
+      "bytes": 5382,
+      "sha256": "565b9a5908b6639beaea8134ff6cd23f35f209e8d2f76cb89c8c2e5fef983fa4"
+    },
+    "apps/rtsp-auth/rtp-span-candidate/host_normal.c": {
+      "bytes": 3064,
+      "sha256": "eb1e237785e33669ee5ae77266d3cf7c47b64757a4ebdbf87e697f377cd566e6"
+    },
+    "apps/rtsp-auth/rtp-span-candidate/host_once.py": {
+      "bytes": 2993,
+      "sha256": "f680ecf0a2a8e8f31ab66658c601bad16ee2d54776eaaa812cacce937a9dd27b"
+    },
+    "apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.c": {
+      "bytes": 2586,
+      "sha256": "a608fe8ee8a292b1172ce62c62f19c2a61f9969f64d71385f1a742fdd326560e"
+    },
+    "apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.h": {
+      "bytes": 1660,
+      "sha256": "41126a8b9827894d6ecb71788cd1cc71bf3b5b036e44fddf998f4c5740f05f91"
+    }
+  }
+}

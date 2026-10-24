@@ -119,9 +119,24 @@ NOT ADOPTED after R1 shared consumer-token review. Fresh v2 fixes validation AND
 release using distinct per-acquisition/per-consumer tokens; narrow independent
 SOURCE/API/ownership sufficiency,4 HOST/ARM compiles/2 REL links/20 commands, NOT RUN.
 See [v2 parent closeout](../../qualification-plans/span-hub-parent-20261024/V2_DISPOSITION.md).
-Next feature connection must reconcile actual runtime backing/accounting/lifetime;
-native1MiB output/raw/prefault/process2MiB/combined-load and external recovery remain
-open, not satisfied by CPU chunks or a normal v1 test. No hardware phase selected.
+Actual authenticated span sender v3 now has narrow independent SOURCE/API/order/
+lifetime sufficiency for retain-before-cleanup and detach-ack ordering,6 HOST/ARM
+compiles/2 rooted REL links/26 commands PASS, NOT RUN. V1/v2 remain NOT ADOPTED;
+their negative reviews and earlier link-check failures stay frozen. See
+[sender v3 disposition](../../qualification-plans/rtsp-span-server-parent-20261024/V3_DISPOSITION.md).
+Whole eight-chunk prefault/atomic interior-page ledger credit also has narrow
+independent SOURCE/API sufficiency,10 HOST/ARM compiles/2 REL links/26 commands,
+NOT RUN; scalar flat-hub kind1 refuses and extra28KiB data-extent page cover is
+charged, not allocator-overhead qualification. See
+[chunk memory disposition](../../qualification-plans/qc07f-span-memory-20261024/PARENT_DISPOSITION.md).
+The actual private runtime connection is delivered and under independent review:
+typed prefault, exact paid owner/range readiness and complete pre-memory return
+history. Build02:14 HOST/ARM compiles/2 rooted REL links/42 commands PASS, zero calls;
+build01 pre-compilation reuse refusal preserved. No author active. Borrowed-hub
+lifetime remains retained after native END with no relinquishment API. Sender and
+runtime are NOT composed or invoked. Native1MiB output/raw/process2MiB/combined-load
+and external recovery remain open, not satisfied by CPU chunks or source review.
+No test, new clock/diagnostic framework or hardware phase selected.
 Separate RTSP provisioner-child/readonly-FD IPC now has narrow independent SOURCE/
 API/custody sufficiency,27 HOST/ARM compiles/40 commands and ONE normal PUBLICDUMMY
 fork/FD-transfer/wait0/bind observation. No real credentials/native hardening or

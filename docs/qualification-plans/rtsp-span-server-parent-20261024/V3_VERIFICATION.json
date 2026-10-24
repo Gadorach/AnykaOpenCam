@@ -1,0 +1,23 @@
+{
+  "scope": "PARENT_READ_ONLY_PUBLIC_SOURCE_BUILD_AND_REVIEW_VERIFICATION_NOT_EXECUTION",
+  "recorded_host_utc": "2026-10-24T05:03:29.491569+00:00",
+  "verified_counts": {
+    "delivery": 117,
+    "selected_inputs": 203,
+    "new_dependencies": 251,
+    "reused_dependencies": 363,
+    "artifacts": 98,
+    "frozen_files": 332,
+    "successful_command_logs": 26,
+    "actual_runtime_archive_bodies": 46,
+    "selected_extracted_bodies": 42
+  },
+  "distinct_lexical_paths_hashed": 1017,
+  "exact_frozen_membership_and_bytes": true,
+  "server_and_header_diffs_regenerated_both_directions": true,
+  "all_C_outside_two_changed_functions_identical": true,
+  "header_noncomment_tokens_identical": true,
+  "review_sha256": "0de714bb22519f6b9c924b217cf3821678c556e0b1c4b398f8cba81017e5108c",
+  "v1_build01_and_build02_still_FAILED_PRESERVED": true,
+  "candidate_build_test_callback_client_private_or_hardware_calls_by_parent": 0
+}

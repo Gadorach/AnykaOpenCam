@@ -1,0 +1,76 @@
+--- /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-span-server-v2/rtsp_span_server.c
++++ /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-span-server-v3/rtsp_span_server.c
+@@ -287,9 +287,19 @@
+        if(!guarded(c)||camera_span_hub_subscribe_v1(hub,index)!=CAMERA_OK)return -1;
+       if(c->lifecycle){
+        uint64_t now=monotonic_ns();if(now==UINT64_MAX){c->lifecycle_error=CAMERA_IO_ERROR;return -1;}
+-         if(!guarded(c)){if(camera_span_hub_unsubscribe_v1(hub,index)!=CAMERA_OK)retain_span(c->span,&c->demand,index);return -1;}
+-        int attached=c->lifecycle->attach(c->lifecycle->context,now,&c->demand);
+-        if(attached!=CAMERA_OK){if(camera_span_hub_unsubscribe_v1(hub,index)!=CAMERA_OK)retain_span(c->span,&c->demand,index);return -1;}
++          if(!guarded(c)){
++           /* Guard refusal is not permission to retire observed-uncertain state. */
++           if(server_clock.failed||c->lifecycle_error||c->lease_uncertain||monotonic_ns()==UINT64_MAX)
++            retain_span(c->span,&c->demand,index);
++           if(camera_span_hub_unsubscribe_v1(hub,index)!=CAMERA_OK)retain_span(c->span,&c->demand,index);return -1;
++          }
++         int attached=c->lifecycle->attach(c->lifecycle->context,now,&c->demand);
++         if(attached!=CAMERA_OK){
++          /* The actual callback may itself have discovered the clock fault. */
++          if(server_clock.failed||c->lifecycle_error||c->lease_uncertain||monotonic_ns()==UINT64_MAX)
++           retain_span(c->span,&c->demand,index);
++          if(camera_span_hub_unsubscribe_v1(hub,index)!=CAMERA_OK)retain_span(c->span,&c->demand,index);return -1;
++         }
+        c->demand_attached=1;
+        if(monotonic_ns()==UINT64_MAX){c->lifecycle_error=CAMERA_IO_ERROR;return -1;}
+       if(c->demand.owner!=c->lifecycle->owner||!c->demand.id||c->demand.slot>=CAMERA_PRODUCER_CONSUMERS)return -1;
+@@ -656,9 +666,11 @@
+      struct camera_packet packet={0};int produced=p->next(p->context,force,&packet);
+     struct source_packet_facts facts={0};
+     int packet_valid=produced==CAMERA_OK?source_packet_validate(&packet,life,source,o->packet_capacity,&facts):CAMERA_INVALID;
+-    if(monotonic_ns()==UINT64_MAX){
+-     if(produced==CAMERA_OK)p->release(p->context,&packet); /*may wipe packet; no reads afterwards*/
+-      retain_frame(&span,source,CAMERA_IO_ERROR); /*no fabricated END time / independent DMA-stop claim*/
++     for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)if(clients[i].lifecycle_error||clients[i].lease_uncertain)
++      retain_frame(&span,source,clients[i].lifecycle_error?clients[i].lifecycle_error:CAMERA_IO_ERROR);
++     if(server_clock.failed||monotonic_ns()==UINT64_MAX){
++       /* Keep the actual packet/native owner/frame bracket live on uncertainty. */
++       retain_frame(&span,source,CAMERA_IO_ERROR); /*no fabricated END time / independent DMA-stop claim*/
+     }
+    if(produced!=CAMERA_OK){
+        if(life){backend->stats.frame_ends++;int ended=end_checked(life,source,produced,0);if(ended!=CAMERA_OK)retain_frame(&span,source,ended);}
+@@ -672,7 +684,11 @@
+    unsigned allowed=0;
+    for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)if(clients[i].playing){
+     if(guarded(&clients[i]))allowed++;
+-     else {if(camera_span_hub_unsubscribe_v1(hub,i)!=CAMERA_OK)retain_span(&span,&clients[i].demand,i);clients[i].playing=0;clients[i].deferred_close=1;}
++      else {
++       if(server_clock.failed||clients[i].lifecycle_error||clients[i].lease_uncertain||monotonic_ns()==UINT64_MAX)
++        retain_frame(&span,source,clients[i].lifecycle_error?clients[i].lifecycle_error:CAMERA_IO_ERROR);
++       if(camera_span_hub_unsubscribe_v1(hub,i)!=CAMERA_OK)retain_span(&span,&clients[i].demand,i);clients[i].playing=0;clients[i].deferred_close=1;
++      }
+    }
+     int published=packet_valid;
+     if(published==CAMERA_OK&&allowed){
+@@ -682,10 +698,18 @@
+      published=source_packet_validate(&packet,life,source,o->packet_capacity,&facts);
+       /*Each child CHECK may block. Require one CURRENT peer immediately before
+        *publish, not an earlier count whose last peer has expired in other IPC.*/
+-      if(published==CAMERA_OK)published=capture_admitted(&gate);
+-        if(published==CAMERA_OK){backend->stats.hub_publish_calls++;published=publish_source(hub,&packet);}
+-    }
+-    p->release(p->context,&packet);
++       if(published==CAMERA_OK)published=capture_admitted(&gate);
++       /* A precopy guard may observe MAX even when another peer was admitted. */
++       for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)if(clients[i].lifecycle_error||clients[i].lease_uncertain)
++        retain_frame(&span,source,clients[i].lifecycle_error?clients[i].lifecycle_error:CAMERA_IO_ERROR);
++       if(server_clock.failed||monotonic_ns()==UINT64_MAX)retain_frame(&span,source,CAMERA_IO_ERROR);
++         if(published==CAMERA_OK){backend->stats.hub_publish_calls++;published=publish_source(hub,&packet);}
++     }
++     /* Safe denials still release/END normally; observed uncertainty never does. */
++     for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)if(clients[i].lifecycle_error||clients[i].lease_uncertain)
++      retain_frame(&span,source,clients[i].lifecycle_error?clients[i].lifecycle_error:CAMERA_IO_ERROR);
++     if(server_clock.failed||monotonic_ns()==UINT64_MAX)retain_frame(&span,source,CAMERA_IO_ERROR);
++     p->release(p->context,&packet);
+     /* RELEASE is void and may invalidate/zero all packet metadata and payload.
+      * From here on only independent scalars / hub-owned copies may be used. */
+     if(monotonic_ns()==UINT64_MAX){

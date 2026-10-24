@@ -1,0 +1,621 @@
+{
+  "scope": "author read-only public bytes/symbol/dependency/text verification, not independent review or runtime",
+  "checked": "2026-10-24T04:36:05.628424+00:00",
+  "build_report": {
+    "bytes": 269161,
+    "sha256": "a4fb08f2c98e0c24eefe50361079fd90f1ad415aaed8b6f00c69edc0dd188d1a"
+  },
+  "frozen_manifest": {
+    "bytes": 44999,
+    "sha256": "6354023c9dac58cbdd35195318ef57466dfe5573e251a22424b5a3e6ca5e4c21"
+  },
+  "frozen_membership_and_all_bytes_unchanged": true,
+  "frozen_file_count": 217,
+  "report_records_verified": {
+    "inputs": 203,
+    "dependencies": 251,
+    "reused_dependencies": 363,
+    "artifacts": 98
+  },
+  "all_26_command_logs_exit0_pin_match": true,
+  "new_dependency_membership_exact": true,
+  "selected_source_context_pins": {
+    "framework/include/camera/rtsp_clock.h": {
+      "bytes": 1187,
+      "sha256": "a1a4b6f99c8c64acb9d2db997f01ab423d2888961572fa25a8819035993c22a3"
+    },
+    "framework/include/camera/rtsp_server.h": {
+      "bytes": 11389,
+      "sha256": "b6b4c2a180b44f44a2a1653ac7df76c8066fdf2289ad70fb43f70a37afde1245"
+    },
+    "framework/src/producer.c": {
+      "bytes": 15017,
+      "sha256": "3b00f0e9a9dafafdb6b25c7530bb2e4e2ac20f89fb99b54f85518c7de33ffd31"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/owned_runtime.c": {
+      "bytes": 11809,
+      "sha256": "5e21fcb2559911b79ffbd7732b951b8d8931a84e2e33f03a52f39d09de0dbd43"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/owned_runtime_v1.h": {
+      "bytes": 3375,
+      "sha256": "024ff9282840c97208644674601181fcbe97befd4e7222c34627e75d5c8b3621"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/server/candidate_auth.c": {
+      "bytes": 17425,
+      "sha256": "cb27b35e2d8730b8d19f231d339e06cbe4c97fbe0aca7826fe3469d8479825a7"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/native_adapter.c": {
+      "bytes": 11628,
+      "sha256": "1fcd2a68750c64a0f1d1b3a96f1124f6f21369b9eb19f4b89a9bcbd1774754bf"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/native_adapter.h": {
+      "bytes": 1137,
+      "sha256": "44dbf880edebdccf99ca33a4bd6d4fad33c547ca0e35a1afbe7a5b7625fe01b3"
+    },
+    "docs/qualification-plans/span-hub-parent-20261024/V2_DISPOSITION.md": {
+      "bytes": 4214,
+      "sha256": "3bc9454af6953f074b11e3e8ec29e0109873126b16753c937205cd4ab0dd24a5"
+    },
+    "docs/qualification-plans/rtp-span-20261024/PARENT_DISPOSITION.md": {
+      "bytes": 3811,
+      "sha256": "17a6fd6f644f634d1c12faf76ffe11d6c7667aed726a53e0323fe12e42352ca7"
+    }
+  },
+  "elf_metadata_proof": {
+    "host": {
+      "elf_class": 64,
+      "machine": 62,
+      "type": "REL",
+      "entry": 0,
+      "program_headers": 0,
+      "pin": {
+        "bytes": 259064,
+        "sha256": "f6863373166954b320af723c21f400c7e4cb49c790c42a62973d9546476484a0"
+      },
+      "archive_bodies": 23,
+      "selected_real_bodies": 21,
+      "nonempty_global_function_roots_and_actual_APIs": {
+        "camera_rtsp_prestarted_span_listener_serve_v1": [
+          "568:",
+          "0000000000000000",
+          "707",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "52",
+          "camera_rtsp_prestarted_span_listener_serve_v1"
+        ],
+        "candidate_prestarted_start": [
+          "612:",
+          "0000000000000000",
+          "482",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "304",
+          "candidate_prestarted_start"
+        ],
+        "candidate_prestarted_finish": [
+          "501:",
+          "0000000000000000",
+          "832",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "306",
+          "candidate_prestarted_finish"
+        ],
+        "qc07f_owned_runtime_prepare_v1": [
+          "550:",
+          "0000000000000000",
+          "998",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "185",
+          "qc07f_owned_runtime_prepare_v1"
+        ],
+        "qc07f_owned_runtime_bind_postfork_v1": [
+          "595:",
+          "0000000000000000",
+          "681",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "187",
+          "qc07f_owned_runtime_bind_postfork_v1"
+        ],
+        "nh_native_watchdog_take": [
+          "530:",
+          "0000000000000000",
+          "142",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "145",
+          "nh_native_watchdog_take"
+        ],
+        "nh_native_provider_take": [
+          "632:",
+          "0000000000000000",
+          "1671",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "163",
+          "nh_native_provider_take"
+        ],
+        "nh_native_storage_select": [
+          "522:",
+          "0000000000000000",
+          "133",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "126",
+          "nh_native_storage_select"
+        ],
+        "nh_native_optin_exact139": [
+          "577:",
+          "0000000000000000",
+          "94",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "128",
+          "nh_native_optin_exact139"
+        ],
+        "nh_native_memory_start": [
+          "616:",
+          "0000000000000000",
+          "327",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "147",
+          "nh_native_memory_start"
+        ],
+        "nh_native_memory_fixed_buffers": [
+          "579:",
+          "0000000000000000",
+          "468",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "130",
+          "nh_native_memory_fixed_buffers"
+        ],
+        "nh_native_return_pre_memory_unknown_bootstrap": [
+          "504:",
+          "0000000000000000",
+          "2022",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "165",
+          "nh_native_return_pre_memory_unknown_bootstrap"
+        ],
+        "nh_native_watchdog_give_back": [
+          "587:",
+          "0000000000000000",
+          "182",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "161",
+          "nh_native_watchdog_give_back"
+        ],
+        "nh_native_next": [
+          "681:",
+          "0000000000000000",
+          "13",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "151",
+          "nh_native_next"
+        ],
+        "candidate_backend_revoke": [
+          "639:",
+          "0000000000000000",
+          "178",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "301",
+          "candidate_backend_revoke"
+        ],
+        "candidate_backend_cancel": [
+          "557:",
+          "0000000000000000",
+          "142",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "303",
+          "candidate_backend_cancel"
+        ],
+        "camera_span_hub_init_v1": [
+          "603:",
+          "0000000000000000",
+          "212",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "59",
+          "camera_span_hub_init_v1"
+        ],
+        "camera_span_hub_dispose_v1": [
+          "494:",
+          "0000000000000000",
+          "262",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "74",
+          "camera_span_hub_dispose_v1"
+        ],
+        "qc07f_owned_runtime_cleanup_v1": [
+          "615:",
+          "0000000000000000",
+          "166",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "167",
+          "qc07f_owned_runtime_cleanup_v1"
+        ],
+        "camera_span_hub_publish_v1": [
+          "537:",
+          "0000000000000000",
+          "773",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "63",
+          "camera_span_hub_publish_v1"
+        ],
+        "camera_span_hub_packet_v1": [
+          "517:",
+          "0000000000000000",
+          "75",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "70",
+          "camera_span_hub_packet_v1"
+        ],
+        "camera_rtp_h264_spans_packet_v1": [
+          "563:",
+          "0000000000000000",
+          "932",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "76",
+          "camera_rtp_h264_spans_packet_v1"
+        ]
+      },
+      "project_relocation_closure": true,
+      "local_digest_und_proof": {
+        "camera_rtsp_digest_close": {
+          "symbol_row": [
+            "490:",
+            "0000000000000000",
+            "0",
+            "NOTYPE",
+            "LOCAL",
+            "DEFAULT",
+            "UND",
+            "camera_rtsp_digest_close"
+          ],
+          "retained_relocation_references": 0
+        },
+        "camera_rtsp_digest_issue": {
+          "symbol_row": [
+            "489:",
+            "0000000000000000",
+            "0",
+            "NOTYPE",
+            "LOCAL",
+            "DEFAULT",
+            "UND",
+            "camera_rtsp_digest_issue"
+          ],
+          "retained_relocation_references": 0
+        },
+        "camera_rtsp_digest_verify": {
+          "symbol_row": [
+            "491:",
+            "0000000000000000",
+            "0",
+            "NOTYPE",
+            "LOCAL",
+            "DEFAULT",
+            "UND",
+            "camera_rtsp_digest_verify"
+          ],
+          "retained_relocation_references": 0
+        }
+      }
+    },
+    "arm": {
+      "elf_class": 32,
+      "machine": 40,
+      "type": "REL",
+      "entry": 0,
+      "program_headers": 0,
+      "pin": {
+        "bytes": 172324,
+        "sha256": "1ca1a251e327180bf8e44340f18d07c2e6296d085452852c8a45167a0f2ff30d"
+      },
+      "archive_bodies": 23,
+      "selected_real_bodies": 21,
+      "nonempty_global_function_roots_and_actual_APIs": {
+        "camera_rtsp_prestarted_span_listener_serve_v1": [
+          "1116:",
+          "00000000",
+          "580",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "42",
+          "camera_rtsp_prestarted_span_listener_serve_v1"
+        ],
+        "candidate_prestarted_start": [
+          "1163:",
+          "00000000",
+          "416",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "306",
+          "candidate_prestarted_start"
+        ],
+        "candidate_prestarted_finish": [
+          "1045:",
+          "00000000",
+          "456",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "308",
+          "candidate_prestarted_finish"
+        ],
+        "qc07f_owned_runtime_prepare_v1": [
+          "1097:",
+          "00000000",
+          "720",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "198",
+          "qc07f_owned_runtime_prepare_v1"
+        ],
+        "qc07f_owned_runtime_bind_postfork_v1": [
+          "1144:",
+          "00000000",
+          "484",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "200",
+          "qc07f_owned_runtime_bind_postfork_v1"
+        ],
+        "nh_native_watchdog_take": [
+          "1076:",
+          "00000000",
+          "224",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "160",
+          "nh_native_watchdog_take"
+        ],
+        "nh_native_provider_take": [
+          "1182:",
+          "00000000",
+          "1176",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "178",
+          "nh_native_provider_take"
+        ],
+        "nh_native_storage_select": [
+          "1068:",
+          "00000000",
+          "212",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "142",
+          "nh_native_storage_select"
+        ],
+        "nh_native_optin_exact139": [
+          "1126:",
+          "00000000",
+          "96",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "144",
+          "nh_native_optin_exact139"
+        ],
+        "nh_native_memory_start": [
+          "1167:",
+          "00000000",
+          "440",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "162",
+          "nh_native_memory_start"
+        ],
+        "nh_native_memory_fixed_buffers": [
+          "1128:",
+          "00000000",
+          "284",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "146",
+          "nh_native_memory_fixed_buffers"
+        ],
+        "nh_native_return_pre_memory_unknown_bootstrap": [
+          "1048:",
+          "00000000",
+          "1788",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "180",
+          "nh_native_return_pre_memory_unknown_bootstrap"
+        ],
+        "nh_native_watchdog_give_back": [
+          "1136:",
+          "00000000",
+          "256",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "176",
+          "nh_native_watchdog_give_back"
+        ],
+        "nh_native_next": [
+          "1234:",
+          "00000000",
+          "16",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "166",
+          "nh_native_next"
+        ],
+        "candidate_backend_revoke": [
+          "1189:",
+          "00000000",
+          "144",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "303",
+          "candidate_backend_revoke"
+        ],
+        "candidate_backend_cancel": [
+          "1104:",
+          "00000000",
+          "128",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "305",
+          "candidate_backend_cancel"
+        ],
+        "camera_span_hub_init_v1": [
+          "1153:",
+          "00000000",
+          "180",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "47",
+          "camera_span_hub_init_v1"
+        ],
+        "camera_span_hub_dispose_v1": [
+          "1037:",
+          "00000000",
+          "160",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "67",
+          "camera_span_hub_dispose_v1"
+        ],
+        "qc07f_owned_runtime_cleanup_v1": [
+          "1166:",
+          "00000000",
+          "124",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "182",
+          "qc07f_owned_runtime_cleanup_v1"
+        ],
+        "camera_span_hub_publish_v1": [
+          "1084:",
+          "00000000",
+          "632",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "53",
+          "camera_span_hub_publish_v1"
+        ],
+        "camera_span_hub_packet_v1": [
+          "1062:",
+          "00000000",
+          "68",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "61",
+          "camera_span_hub_packet_v1"
+        ],
+        "camera_rtp_h264_spans_packet_v1": [
+          "1110:",
+          "00000000",
+          "720",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT",
+          "69",
+          "camera_rtp_h264_spans_packet_v1"
+        ]
+      },
+      "project_relocation_closure": true,
+      "local_digest_und_proof": {
+        "camera_rtsp_digest_close": {
+          "symbol_row": [
+            "1004:",
+            "00000000",
+            "0",
+            "NOTYPE",
+            "LOCAL",
+            "DEFAULT",
+            "UND",
+            "camera_rtsp_digest_close"
+          ],
+          "retained_relocation_references": 0
+        },
+        "camera_rtsp_digest_issue": {
+          "symbol_row": [
+            "1003:",
+            "00000000",
+            "0",
+            "NOTYPE",
+            "LOCAL",
+            "DEFAULT",
+            "UND",
+            "camera_rtsp_digest_issue"
+          ],
+          "retained_relocation_references": 0
+        },
+        "camera_rtsp_digest_verify": {
+          "symbol_row": [
+            "1005:",
+            "00000000",
+            "0",
+            "NOTYPE",
+            "LOCAL",
+            "DEFAULT",
+            "UND",
+            "camera_rtsp_digest_verify"
+          ],
+          "retained_relocation_references": 0
+        }
+      }
+    }
+  },
+  "runtime_calls": 0
+}

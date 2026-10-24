@@ -1,0 +1,17 @@
+--- /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-span-server-v3/rtsp_span_server_v1.h
++++ /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-span-server-v2/rtsp_span_server_v1.h
+@@ -5,12 +5,10 @@
+ #include "../span-hub-v2/span_hub.h"
+ 
+ /* SOURCE ONLY, not drop-in binary ABI/native admission. Read CONTRACT.md in
+- * docs/qualification-plans/rtsp-span-server-v3-20261024 before any use.
+- * V3 residual-R1 replacement: SAME exports/types/guard, never link v1/v2 too.
++ * docs/qualification-plans/rtsp-span-server-v2-20261024 before any use.
++ * V2 R1/R2 source replacement: SAME exports/types/guard, never link v1 too.
+  * Sticky/observed clock or ownership faults retain before cleanup; demand stays
+  * attached through one detach ACK + valid post-clock, otherwise nonreturn HOLD.
+- * Direct rollback and producer-release fences preserve live source ownership on
+- * observed uncertainty; they do NOT prove whole-interval clock prevention.
+  * Compile callers with this entry and ONLY the new server C + v2 hub C/header;
+  * never old server/hubs/combined RELs. Original backend/start/finish/listener
+  * types and implementation remain unchanged. No serve-time fork/init/destroy.

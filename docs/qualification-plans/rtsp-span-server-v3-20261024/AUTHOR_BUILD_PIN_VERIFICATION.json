@@ -1,0 +1,26 @@
+{
+  "scope": "AUTHOR_STATIC_METADATA_ONLY_NOT_PROGRAM_EXECUTION",
+  "status": "HOST_ARM_6_COMPILES_2_REAL_REL_PASS_NOT_RUN",
+  "report": {
+    "bytes": 269158,
+    "sha256": "b5abd45f47ce98596d4f9005ad6536e32e9906c840e6e2f3951337ee3df53e51"
+  },
+  "counts": {
+    "inputs": 203,
+    "dependencies": 251,
+    "reused_dependencies": 363,
+    "artifacts": 98,
+    "commands": 26
+  },
+  "frozen_exact_membership_and_bytes": 332,
+  "compile_commands": 6,
+  "real_REL_links": 2,
+  "runtime_calls": 0,
+  "dependency_memberships_exact": true,
+  "empty_compile_and_link_logs": 8,
+  "all_consumed_app_files_exact": true,
+  "source_diff_proof": {
+    "bytes": 2253,
+    "sha256": "fb5bc326f06d1b2cf2620039c1406c350f59887c88edfeb599cfb67171d3c215"
+  }
+}

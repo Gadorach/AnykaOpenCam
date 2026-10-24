@@ -1,0 +1,48 @@
+{
+  "scope": "textual forward/inverse application in memory; no candidate execution",
+  "pairs": {
+    "rtsp_span_server.c": {
+      "original": {
+        "bytes": 47501,
+        "sha256": "529fd4902931467dc896b6faa12d502a20846cc0ba4cb76060044b453a018f97"
+      },
+      "replacement": {
+        "bytes": 49313,
+        "sha256": "8bebe38b59a2690921074bb1fd348c2504503716433b0d416925a7e2592cc020"
+      },
+      "forward_patch": {
+        "bytes": 7574,
+        "sha256": "e0025158619612d6e684374157bb24668e08f4eae7b66a5c209c1d26fd3e0c5e"
+      },
+      "inverse_patch": {
+        "bytes": 7574,
+        "sha256": "f39929e7a681f658314ae0c9f7f150e700fca645ba88735258e646095190c494"
+      },
+      "forward_exact": true,
+      "reverse_exact": true,
+      "regenerated_diffs_exact": true
+    },
+    "rtsp_span_server_v1.h": {
+      "original": {
+        "bytes": 3458,
+        "sha256": "8f6488595576c4205b9e9548f18f5e63109b41398cfab6319ce702261b980a07"
+      },
+      "replacement": {
+        "bytes": 3700,
+        "sha256": "ae1fcbe656a5ded4fba5b06c7d5114ee9652f9287187df66c65c3b2b8333a7b1"
+      },
+      "forward_patch": {
+        "bytes": 964,
+        "sha256": "2f75c7e53dfb6d4407f31436d37e9d02366bdb5735f0c575026b0ebc9aea935b"
+      },
+      "inverse_patch": {
+        "bytes": 964,
+        "sha256": "0b1c89a3dff2926cdd33fbfb6eee7fd790b0e452566bda8b3c0d55b218d199c4"
+      },
+      "forward_exact": true,
+      "reverse_exact": true,
+      "regenerated_diffs_exact": true
+    }
+  },
+  "header_noncomment_bytes_identical": true
+}

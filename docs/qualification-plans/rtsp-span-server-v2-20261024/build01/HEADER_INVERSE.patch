@@ -1,0 +1,14 @@
+--- /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-span-server-v2/rtsp_span_server_v1.h
++++ /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-span-server-candidate/rtsp_span_server_v1.h
+@@ -5,10 +5,7 @@
+ #include "../span-hub-v2/span_hub.h"
+ 
+ /* SOURCE ONLY, not drop-in binary ABI/native admission. Read CONTRACT.md in
+- * docs/qualification-plans/rtsp-span-server-v2-20261024 before any use.
+- * V2 R1/R2 source replacement: SAME exports/types/guard, never link v1 too.
+- * Sticky/observed clock or ownership faults retain before cleanup; demand stays
+- * attached through one detach ACK + valid post-clock, otherwise nonreturn HOLD.
++ * docs/qualification-plans/rtsp-span-server-20261024 before any use.
+  * Compile callers with this entry and ONLY the new server C + v2 hub C/header;
+  * never old server/hubs/combined RELs. Original backend/start/finish/listener
+  * types and implementation remain unchanged. No serve-time fork/init/destroy.

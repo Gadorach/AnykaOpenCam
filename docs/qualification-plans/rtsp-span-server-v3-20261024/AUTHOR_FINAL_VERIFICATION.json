@@ -1,0 +1,59 @@
+{
+  "checked": "2026-10-24T04:55:12.198493+00:00",
+  "scope": "AUTHOR_FINAL_STATIC_SOURCE_BUILD_PIN_CHECK_ONLY_NOT_ADOPTION",
+  "frozen_files_exact_membership_and_bytes": 332,
+  "build_status": "HOST_ARM_6_COMPILES_2_REAL_REL_PASS_NOT_RUN",
+  "build_pin_counts": {
+    "inputs": 203,
+    "dependencies": 251,
+    "reused_dependencies": 363,
+    "artifacts": 98,
+    "commands": 26
+  },
+  "all_consumed_app_files_exact": true,
+  "all_original_new_source_proof_pins_match": true,
+  "runtime_calls": 0,
+  "independent_review_and_parent_disposition": "REQUIRED_BEFORE_SOURCE_USE",
+  "proof_pins": {
+    "docs/qualification-plans/rtsp-span-server-v3-20261024/CONTRACT.md": {
+      "bytes": 5079,
+      "sha256": "166a96aeb885fc9ae939702d255f124d98d9b5ca881e26ff3fa425d500e1b3fe"
+    },
+    "docs/qualification-plans/rtsp-span-server-v3-20261024/HANDBACK.md": {
+      "bytes": 8516,
+      "sha256": "37b934e6f802f4f6ef4bd805d03c3787ba846623a1cd7ee56241d4e13ac9b724"
+    },
+    "docs/qualification-plans/rtsp-span-server-v3-20261024/AUTHOR_CONTROL_FLOW_AUDIT.md": {
+      "bytes": 8136,
+      "sha256": "5852a12e23940e0f2db83ae50c062603bea8069ef7402772985f65798e1d7864"
+    },
+    "docs/qualification-plans/rtsp-span-server-v3-20261024/SOURCE_INSPECTION_NOTE.md": {
+      "bytes": 1129,
+      "sha256": "5b92b80a2b1b0b33410a15677ef016f2094f1052c6430041be5b762661023175"
+    },
+    "docs/qualification-plans/rtsp-span-server-v3-20261024/FROZEN_INPUTS.json": {
+      "bytes": 69123,
+      "sha256": "26a64600c64a0e810e26305d924b40e616ea19ea5fb0e21d74373192d8265340"
+    },
+    "docs/qualification-plans/rtsp-span-server-v3-20261024/AUTHOR_SOURCE_PROOF.json": {
+      "bytes": 2972,
+      "sha256": "872e849da2d7c1816e81ac248177d138cc7b78a4ace790f23251912365bfda2d"
+    },
+    "docs/qualification-plans/rtsp-span-server-v3-20261024/SOURCE_DIFF_PROOF.json": {
+      "bytes": 2253,
+      "sha256": "fb5bc326f06d1b2cf2620039c1406c350f59887c88edfeb599cfb67171d3c215"
+    },
+    "docs/qualification-plans/rtsp-span-server-v3-20261024/AUTHOR_BUILD_PIN_VERIFICATION.json": {
+      "bytes": 742,
+      "sha256": "29183af4705ffb44b49cb97b7ec5dc4d34505a26c3d22be4313df92a68cbe558"
+    },
+    "docs/qualification-plans/rtsp-span-server-v3-20261024/AUTHOR_ELF_ARCHIVE_PROOF.json": {
+      "bytes": 9470,
+      "sha256": "36c811afec9301e0790656db06325ba0c7116b17875388269391792596db8755"
+    },
+    "docs/qualification-plans/rtsp-span-server-v3-20261024/build01/REPORT.json": {
+      "bytes": 269158,
+      "sha256": "b5abd45f47ce98596d4f9005ad6536e32e9906c840e6e2f3951337ee3df53e51"
+    }
+  }
+}

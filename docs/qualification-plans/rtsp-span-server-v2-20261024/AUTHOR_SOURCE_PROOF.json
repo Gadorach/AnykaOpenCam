@@ -1,0 +1,29 @@
+{
+  "scope": "SOURCE text/recipe AST metadata only; no import/call/C execution",
+  "created": "2026-10-24T04:34:27.608940+00:00",
+  "changed_C_functions": [
+    "pause_client",
+    "close_client",
+    "finish_au"
+  ],
+  "all_C_outside_three_functions_byte_identical": {
+    "prefix": {
+      "bytes": 8297,
+      "sha256": "5b1345c125a829212e7f4135ccc08ba64bd576530a5a7a1b8f479f7e7502cafc",
+      "byte_identical": true
+    },
+    "input_auth_control_cursor": {
+      "bytes": 7674,
+      "sha256": "a333a00aa7f688aab184d51d9424eb3dff30c0eb6eda2875581f0560875fc3ba",
+      "byte_identical": true
+    },
+    "sender_producer_serve_entry_tail": {
+      "bytes": 27629,
+      "sha256": "c4ed5291fc4b1a0ebca76f857936fb1cad3a52ae6dcd0b2f71679f5b1fd178cf",
+      "byte_identical": true
+    }
+  },
+  "recipe_AST_parse": "PASS",
+  "header_changes": "comments only; declarations/type spellings/include guard/exports unchanged",
+  "runtime_calls": 0
+}

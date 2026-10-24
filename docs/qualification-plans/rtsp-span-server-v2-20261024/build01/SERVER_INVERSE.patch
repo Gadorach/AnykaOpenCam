@@ -1,0 +1,112 @@
+--- /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-span-server-v2/rtsp_span_server.c
++++ /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-span-server-candidate/rtsp_span_server.c
+@@ -174,25 +174,20 @@
+ }
+ static int pause_client(struct rtsp_client *c,struct camera_span_hub_v1 *hub,unsigned index)
+ {
+-  if(server_clock.failed||c->lifecycle_error||c->lease_uncertain)
+-   retain_span(c->span,&c->demand,index);
+-  if(monotonic_ns()==UINT64_MAX){c->lifecycle_error=CAMERA_IO_ERROR;retain_span(c->span,&c->demand,index);}
+-  int r=CAMERA_OK;
++ int r=CAMERA_OK;
+   if(hub->subscribers&(1U<<index))r=camera_span_hub_unsubscribe_v1(hub,index);
+   if(r!=CAMERA_OK)retain_span(c->span,&c->demand,index);
+  c->playing=0;
+  if(c->demand_attached){
+    uint64_t now=monotonic_ns();
+-    if(now==UINT64_MAX){c->lifecycle_error=CAMERA_IO_ERROR;retain_span(c->span,&c->demand,index);}
+-    int detached=c->lifecycle->detach(c->lifecycle->context,c->demand,now);
+-    uint64_t after=monotonic_ns();if(after==UINT64_MAX&&detached==CAMERA_OK)detached=CAMERA_IO_ERROR;
+-   if(detached!=CAMERA_OK){
+-    struct camera_rtsp_frame_handle source={c->lifecycle->owner,0,c->lifecycle->owner->generation,c->lifecycle->context};
+-     c->lifecycle_error=detached;failure_client(c,source,CAMERA_RTSP_DETACH_FAILURE,detached,after);
+-     /* Notification is not an ACK; keep the actual detach error and ownership. */
+-     c->lifecycle_error=detached;retain_span(c->span,&c->demand,index);
+-   }
+-    c->demand_attached=0; /* ONE acknowledged call plus valid post-clock only. */
++   if(now==UINT64_MAX){c->lifecycle_error=CAMERA_IO_ERROR;return CAMERA_IO_ERROR;}
++   c->demand_attached=0; /* exact once, including reply/send/error cleanup */
++   int detached=c->lifecycle->detach(c->lifecycle->context,c->demand,now);
++   uint64_t after=monotonic_ns();if(after==UINT64_MAX)detached=CAMERA_IO_ERROR;
++  if(detached!=CAMERA_OK){
++   struct camera_rtsp_frame_handle source={c->lifecycle->owner,0,c->lifecycle->owner->generation,c->lifecycle->context};
++    c->lifecycle_error=detached;failure_client(c,source,CAMERA_RTSP_DETACH_FAILURE,detached,after);r=detached;
++  }
+  }
+  return r;
+ }
+@@ -200,10 +195,7 @@
+ {
+   /* Native clock/ownership uncertainty cannot unwind live source/server state.
+    * Ordinary auth/socket errors still follow the original cleanup policy. */
+-   if(server_clock.failed||c->lifecycle_error||c->lease_uncertain)
+-    retain_span(c->span,&c->demand,index);
+-   if(monotonic_ns()==UINT64_MAX){c->lifecycle_error=CAMERA_IO_ERROR;retain_span(c->span,&c->demand,index);}
+-   if(c->backend)qc07f_owned_runtime_cleanup_v1(c->backend->config->context,server_clock.failed,0);
++  if(c->backend)qc07f_owned_runtime_cleanup_v1(c->backend->config->context,server_clock.failed,0);
+   if(c->fd<0)return;
+   if(c->lease_uncertain){
+     retain_span(c->span,&c->demand,index);
+@@ -212,19 +204,13 @@
+    if(paused!=CAMERA_OK)c->lifecycle_error=paused;
+     if(c->lifecycle_error)retain_span(c->span,&c->demand,index);
+   }
+-  int lifecycle_error=c->lifecycle_error;
+-  if(monotonic_ns()==UINT64_MAX){c->lifecycle_error=CAMERA_IO_ERROR;retain_span(c->span,&c->demand,index);}
+-  close(c->fd);camera_rtsp_input_clear(&c->input);
+-    candidate_peer_close(c->backend,c->auth);
+-  /* Peer retirement may block; no newly observed fault may clear this slot. */
+-  if(server_clock.failed||c->lifecycle_error||c->lease_uncertain)
+-   retain_span(c->span,&c->demand,index);
+-  if(monotonic_ns()==UINT64_MAX){c->lifecycle_error=CAMERA_IO_ERROR;retain_span(c->span,&c->demand,index);}
++ int lifecycle_error=c->lifecycle_error;
++ close(c->fd);camera_rtsp_input_clear(&c->input);
++   candidate_peer_close(c->backend,c->auth);
+  /* Keep nonsecret ownership tokens after uncertainty. Socket close is not a
+   * detach or STOP receipt. Never retry an attempted callback on this slot. */
+    if(server_clock.failed||lifecycle_error||(c->backend->pending&&c->backend->pending_peer==c->auth)){c->fd=-1;c->setup=c->playing=0;c->lifecycle_error=lifecycle_error?lifecycle_error:CAMERA_IO_ERROR;return;}
+-  struct span_binding *span=c->span;
+-  memset(c,0,sizeof(*c));c->fd=-1;c->lifecycle_error=lifecycle_error;c->span=span;
++ memset(c,0,sizeof(*c));c->fd=-1;c->lifecycle_error=lifecycle_error;
+ }
+ static int input_failure(struct rtsp_client *c,unsigned index,enum camera_rtsp_input_failure code)
+ {
+@@ -355,31 +341,21 @@
+ };
+ static void finish_au(struct rtsp_client *c,struct au_cursor *a,struct camera_span_hub_v1 *hub,unsigned i,int failed)
+ {
+-  if(server_clock.failed||c->lifecycle_error||c->lease_uncertain)
+-   retain_span(c->span,&c->demand,i);
+-  uint64_t now=milliseconds();
+-  uint64_t elapsed=now==UINT64_MAX||now<a->started?0:now-a->started;
+-  if(now==UINT64_MAX){c->send_error=EIO;c->lifecycle_error=CAMERA_IO_ERROR;retain_span(c->span,&c->demand,i);}
++ uint64_t now=milliseconds();
++ uint64_t elapsed=now==UINT64_MAX||now<a->started?0:now-a->started;
++ if(now==UINT64_MAX){failed=1;c->send_error=EIO;c->lifecycle_error=CAMERA_IO_ERROR;}
+  if(failed||elapsed>500){
+   struct tcp_info info={0};socklen_t bytes=sizeof(info);
+   if(!getsockopt(c->fd,IPPROTO_TCP,TCP_INFO,&info,&bytes)&&bytes>=104)
+    fprintf(stderr,"SHARED RTSP TCP consumer=%u timestamp=%u state=%u rto_us=%u rtt_us=%u unacked=%u lost=%u retransmits=%u total_retrans=%u snd_cwnd=%u snd_mss=%u rcv_space=%u\n",i,a->timestamp,info.tcpi_state,info.tcpi_rto,info.tcpi_rtt,info.tcpi_unacked,info.tcpi_lost,info.tcpi_retransmits,info.tcpi_total_retrans,info.tcpi_snd_cwnd,info.tcpi_snd_mss,info.tcpi_rcv_space);
+  }
+-  if(c->report_au||failed||elapsed>500)
+-   fprintf(stderr,"SHARED RTSP AU consumer=%u timestamp=%u nal_bytes=%zu keyframe=%u send_ms=%llu wire_bytes=%zu packet_calls=%zu complete=%u errno=%d\n",i,a->timestamp,a->lease.bytes,a->lease.keyframe,(unsigned long long)elapsed,c->sent_bytes,c->packet_calls,!failed,c->send_error);
+-   /* Diagnostics may block. Observe again BEFORE exact release/flag retirement. */
+-   if(server_clock.failed||c->lifecycle_error||c->lease_uncertain)
+-    retain_span(c->span,&c->demand,i);
+-   if(milliseconds()==UINT64_MAX){c->lifecycle_error=CAMERA_IO_ERROR;retain_span(c->span,&c->demand,i);}
++ if(c->report_au||failed||elapsed>500)
++  fprintf(stderr,"SHARED RTSP AU consumer=%u timestamp=%u nal_bytes=%zu keyframe=%u send_ms=%llu wire_bytes=%zu packet_calls=%zu complete=%u errno=%d\n",i,a->timestamp,a->lease.bytes,a->lease.keyframe,(unsigned long long)elapsed,c->sent_bytes,c->packet_calls,!failed,c->send_error);
+    int released=camera_span_hub_release_v1(hub,i,a->lease.lease_token,a->lease.generation);
+    if(released!=CAMERA_OK){c->lifecycle_error=released;c->lease_uncertain=1;retain_span(c->span,&c->demand,i);}
+   else c->backend->stats.lease_releases++;
+-   a->active=0;c->media_lease_active=0;
+-   if(!failed&&c->pending_reply&&pending_control(c,hub,i))failed=1;
+-   /* Control/auth/notification can discover a NEW fault after safe CPU release. */
+-   if(server_clock.failed||c->lifecycle_error||c->lease_uncertain)
+-    retain_span(c->span,&c->demand,i);
+-   if(milliseconds()==UINT64_MAX){c->lifecycle_error=CAMERA_IO_ERROR;retain_span(c->span,&c->demand,i);}
++  a->active=0;c->media_lease_active=0;
++  if(!failed&&c->pending_reply&&pending_control(c,hub,i))failed=1;
+   if(failed&&a->written){c->backend->stats.partial_discard++;explicit_bzero(a->packet,sizeof(a->packet));a->written=a->packet_bytes=0;}
+  if(failed){fprintf(stderr,"SHARED RTSP consumer%u disconnected on bounded send failure; partial AU is not usable video\n",i);close_client(c,hub,i);}
+ }

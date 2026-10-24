@@ -70,8 +70,16 @@ frozen NOT ADOPTED; see rtsp-span-server-parent-20261024/V1_DISPOSITION.md. One
 fresh rtsp-span-server-v2 correction now delivered: only pause/close/finish_au
 bodies change retention order and acknowledgment handling.6 HOST/ARM compiles,
 2 rooted REL links/26 commands PASS, zero candidate/test executions;217 frozen
-inputs unchanged. Independent ordinary review active at rtsp-span-server-v2-review-
-20261024; no adoption or runtime/negative test selected. Separately fresh
+inputs unchanged. Independent v2 review corrected local R1/R2 but still requires
+R1 at direct guard-failure unsubscribe branches; v2 frozen NOT ADOPTED. Parent
+also identified adjacent producer release after observed clock MAX under the
+same rule. See rtsp-span-server-parent-20261024/V2_DISPOSITION.md. Fresh v3 now has
+narrow independent SOURCE/API/order/lifetime sufficiency for those bounded fixes,
+R2 preserved.6 HOST/ARM compiles/2 rooted REL links/26 commands PASS, zero calls.
+Parent verified117 delivery/203 inputs/251 new+363 reused dependencies/98 artifacts/
+332 frozen files/26 logs/46 archive bodies/42 selected bodies and exact diffs.
+See rtsp-span-server-parent-20261024/V3_DISPOSITION.md; no source author/reviewer
+active in this lane. V1/v2 remain NOT ADOPTED. Separately fresh
 qc07f-span-memory app/docs for actual whole eight-chunk prefault and atomic ledger
 credit without boundary/padding/duplicate credit, conservative extra28KiB extent-
 page debt and explicit refusal of old flat hub credit. Candidate now delivered:
@@ -79,7 +87,15 @@ page debt and explicit refusal of old flat hub credit. Candidate now delivered:
 Narrow independent SOURCE/API/ledger/prefault sufficiency now accepted; parent
 verified288 overlapping records and regenerated both source diffs. See qc07f-span-
 memory-20261024/PARENT_DISPOSITION.md. No author/reviewer active in that lane, zero
-function calls. Native adapter/ready/return-history/backing integration remains next,
+function calls; committed locally `7479364`. qc07f-span-runtime-candidate is now
+delivered and under independent ordinary review for actual typed native hub prefault,
+exact paid owner/range readiness and complete new-history pre-memory return refusal.
+Build02:14 HOST/ARM compiles/2 rooted REL links/42 commands PASS, zero candidate calls;
+build01 pre-compilation reuse refusal preserved. No source author active. One actual
+private native owner, no ready Boolean/old flat admission path. Borrowed hub history
+persists after normal native END; final cleanup intentionally nonreturns while
+borrowed, no external relinquishment API. No sender/runtime composition, tests or
+hardware adoption. Actual backing remains next,
 not solved by source shape or a caller Boolean. No new diagnostic/clock framework.
 
 Latest user steering renews unattended continuation through hardware testing and

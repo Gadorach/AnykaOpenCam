@@ -1,0 +1,56 @@
+--- /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-span-server-v3/build.py
++++ /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-span-server-v2/build.py
+@@ -11,7 +11,7 @@
+ 
+ APP = Path(__file__).resolve().parent
+ ROOT = APP.parents[2]
+-DOC = ROOT / 'docs/qualification-plans/rtsp-span-server-v3-20261024'
++DOC = ROOT / 'docs/qualification-plans/rtsp-span-server-v2-20261024'
+ OLD = ROOT / 'docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02'
+ RUNTIME = ROOT / 'apps/rtsp-auth/qc07f-owned-runtime'
+ 
+@@ -27,7 +27,7 @@
+ 
+ def main():
+     out = DOC / 'build01'
+-    out.mkdir()  # exclusive fresh v3 output; no overwrite or automatic retry
++    out.mkdir()  # exclusive fresh v2 output; no overwrite or automatic retry
+     for name in ('logs', 'objects', 'members-host', 'members-arm', 'tmp'):
+         (out / name).mkdir()
+     env = {'PATH': '/usr/bin:/bin', 'LC_ALL': 'C', 'TMPDIR': str(out / 'tmp'),
+@@ -59,13 +59,13 @@
+                   for p in (ROOT / root).rglob('*') if p.is_file()}
+         if actual != set(frozen['files']) or any(
+                 pin(ROOT / name) != expected for name, expected in frozen['files'].items()):
+-            raise RuntimeError('frozen v1/v2/reviews/accepted input membership or bytes changed')
++            raise RuntimeError('frozen v1/review/accepted input membership or bytes changed')
+         report['frozen_input_files_checked'] = len(actual)
+         for name in ('rtsp_span_server.c', 'rtsp_span_server_v1.h'):
+-            keep(APP.parent / 'rtsp-span-server-v2' / name)
++            keep(APP.parent / 'rtsp-span-server-candidate' / name)
+         for name in ('CONTRACT.md', 'HANDBACK.md'):
+-            keep(ROOT / 'docs/qualification-plans/rtsp-span-server-v2-20261024' / name)
+-        keep(ROOT / 'docs/qualification-plans/rtsp-span-server-v2-review-20261024/REVIEW.md')
++            keep(ROOT / 'docs/qualification-plans/rtsp-span-server-20261024' / name)
++        keep(ROOT / 'docs/qualification-plans/rtsp-span-server-review-20261024/REVIEW.md')
+         keep(OLD / 'REPORT.json')
+         old = json.loads((OLD / 'REPORT.json').read_text())
+         if old['status'] != 'HOST_ARM_COMPILE_ARCHIVE_REL_PASS_NOT_RUN':
+@@ -94,7 +94,7 @@
+                 for p in sorted((APP.parent / directory).glob(suffix)):
+                     keep(p)
+         keep(DOC / 'CONTRACT.md')
+-        base = APP.parent / 'rtsp-span-server-v2/rtsp_span_server.c'
++        base = APP.parent / 'rtsp-span-server-candidate/rtsp_span_server.c'
+         new = APP / 'rtsp_span_server.c'
+         for name, a, b in (('SERVER_DELTA.patch', base, new),
+                            ('SERVER_INVERSE.patch', new, base),
+@@ -176,7 +176,7 @@
+             reloc = out / (target + '-span-server-NOT-EXECUTABLE.o')
+             # Same explicit rooted section-GC method as retained build02.
+             # Keep frozen v1 build03 roots/actual-relocation closure inspection.
+-            # V1 build01/02 failures remain historical, not v3 test evidence.
++            # V1 build01/02 failures remain historical, not v2 test evidence.
+             roots = ('camera_rtsp_prestarted_span_listener_serve_v1',
+                      'candidate_prestarted_start', 'candidate_prestarted_finish',
+                      'qc07f_owned_runtime_prepare_v1', 'qc07f_owned_runtime_bind_postfork_v1',

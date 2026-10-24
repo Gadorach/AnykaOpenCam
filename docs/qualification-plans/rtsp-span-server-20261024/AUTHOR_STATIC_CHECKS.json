@@ -1,0 +1,43 @@
+{
+  "scope": "STATIC AUTHOR AUDIT; no C/preprocessor/target/test execution",
+  "unchanged_functions": {
+    "guarded": true,
+    "capture_admitted": true,
+    "milliseconds": true,
+    "monotonic_ns": true,
+    "write_counted": true,
+    "write_all": true,
+    "reply": true,
+    "challenge_reply": true,
+    "failure_client": true,
+    "input_failure": true,
+    "retire_checked": true,
+    "idle_checked": true,
+    "begin_checked": true,
+    "end_checked": true,
+    "source_packet_validate": true
+  },
+  "build03_report": {
+    "bytes": 264757,
+    "sha256": "ed3d1b1ceb2574f3a7d35e909a962b490c28e7c8fd0350572552deeab2a31ec5"
+  },
+  "current_inputs_dependencies_reused_unchanged": true,
+  "delivery": {
+    "apps/rtsp-auth/rtsp-span-server-candidate/LICENSE_NOTICES.md": {
+      "bytes": 1069,
+      "sha256": "c0c0f6af4d5f5ac23a3c6e094b60279605e8ae0f9767d1fd2b7cdc9dd05e22ad"
+    },
+    "apps/rtsp-auth/rtsp-span-server-candidate/build.py": {
+      "bytes": 12419,
+      "sha256": "2568bcf4ef6712a712981a99a6adb4ed5e98452933855cebffa3fc97de242951"
+    },
+    "apps/rtsp-auth/rtsp-span-server-candidate/rtsp_span_server.c": {
+      "bytes": 47501,
+      "sha256": "529fd4902931467dc896b6faa12d502a20846cc0ba4cb76060044b453a018f97"
+    },
+    "apps/rtsp-auth/rtsp-span-server-candidate/rtsp_span_server_v1.h": {
+      "bytes": 3458,
+      "sha256": "8f6488595576c4205b9e9548f18f5e63109b41398cfab6319ce702261b980a07"
+    }
+  }
+}

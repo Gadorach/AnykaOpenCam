@@ -1,0 +1,66 @@
+{
+  "docs/qualification-plans/rtsp-span-server-v3-20261024/build01/SERVER_DELTA.patch": {
+    "pin": {
+      "bytes": 5567,
+      "sha256": "a749d8ed8bf4fc31f22ec6ed08d09b7eb7d24d1afb1ce2202b867e696274e7fd"
+    },
+    "regenerated_exact": true,
+    "applied_in_memory_exact": true
+  },
+  "docs/qualification-plans/rtsp-span-server-v3-20261024/build01/SERVER_INVERSE.patch": {
+    "pin": {
+      "bytes": 5567,
+      "sha256": "f6976b106907092e7c36b158417ea323eedafcb79c44ef211d2d350c03e7de1c"
+    },
+    "regenerated_exact": true,
+    "applied_in_memory_exact": true
+  },
+  "docs/qualification-plans/rtsp-span-server-v3-20261024/build01/HEADER_DELTA.patch": {
+    "pin": {
+      "bytes": 1200,
+      "sha256": "9809271703c684b5a64ce5a5339bd1433818e77f44de34c672054f598153c7a8"
+    },
+    "regenerated_exact": true,
+    "applied_in_memory_exact": true
+  },
+  "docs/qualification-plans/rtsp-span-server-v3-20261024/build01/HEADER_INVERSE.patch": {
+    "pin": {
+      "bytes": 1200,
+      "sha256": "a92e86f423c03fe1231410c2ac49eba8f115612255f38d1efccdfc17d59628ca"
+    },
+    "regenerated_exact": true,
+    "applied_in_memory_exact": true
+  },
+  "docs/qualification-plans/rtsp-span-server-v3-20261024/RECIPE_DELTA.patch": {
+    "pin": {
+      "bytes": 3332,
+      "sha256": "6a2ab5b14bd02b5067e390402c62c6c2b3bedc0ee7ecd3f255972b4862c0df6c"
+    },
+    "regenerated_exact": true,
+    "applied_in_memory_exact": true
+  },
+  "docs/qualification-plans/rtsp-span-server-v3-20261024/RECIPE_INVERSE.patch": {
+    "pin": {
+      "bytes": 3332,
+      "sha256": "f6ab07b1bd125750a5b1a8490965eb2d6d9a4cf7dfc71018c8cf74e8b1436312"
+    },
+    "regenerated_exact": true,
+    "applied_in_memory_exact": true
+  },
+  "docs/qualification-plans/rtsp-span-server-v3-20261024/NOTICES_DELTA.patch": {
+    "pin": {
+      "bytes": 1097,
+      "sha256": "814b5e3270db1863de5caa59de00ad40de9cad6ede8cb7571b94531fcd5519d7"
+    },
+    "regenerated_exact": true,
+    "applied_in_memory_exact": true
+  },
+  "docs/qualification-plans/rtsp-span-server-v3-20261024/NOTICES_INVERSE.patch": {
+    "pin": {
+      "bytes": 1097,
+      "sha256": "fe9ddf17e96ebcd478003f7fcf427ed2b00a44c78f56cee7cda1aa68a7d9f1a9"
+    },
+    "regenerated_exact": true,
+    "applied_in_memory_exact": true
+  }
+}

@@ -1,0 +1,100 @@
+--- /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-span-server-candidate/build.py
++++ /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-span-server-v2/build.py
+@@ -11,7 +11,7 @@
+ 
+ APP = Path(__file__).resolve().parent
+ ROOT = APP.parents[2]
+-DOC = ROOT / 'docs/qualification-plans/rtsp-span-server-20261024'
++DOC = ROOT / 'docs/qualification-plans/rtsp-span-server-v2-20261024'
+ OLD = ROOT / 'docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02'
+ RUNTIME = ROOT / 'apps/rtsp-auth/qc07f-owned-runtime'
+ 
+@@ -26,8 +26,8 @@
+ 
+ 
+ def main():
+-    out = DOC / 'build03'
+-    out.mkdir()  # fixed fresh name; build01/02 failures preserved, no automatic retry
++    out = DOC / 'build01'
++    out.mkdir()  # exclusive fresh v2 output; no overwrite or automatic retry
+     for name in ('logs', 'objects', 'members-host', 'members-arm', 'tmp'):
+         (out / name).mkdir()
+     env = {'PATH': '/usr/bin:/bin', 'LC_ALL': 'C', 'TMPDIR': str(out / 'tmp'),
+@@ -53,6 +53,19 @@
+         return log.read_text()
+ 
+     try:
++        keep(DOC / 'FROZEN_INPUTS.json')
++        frozen = json.loads((DOC / 'FROZEN_INPUTS.json').read_text())
++        actual = {str(p.relative_to(ROOT)) for root in frozen['roots']
++                  for p in (ROOT / root).rglob('*') if p.is_file()}
++        if actual != set(frozen['files']) or any(
++                pin(ROOT / name) != expected for name, expected in frozen['files'].items()):
++            raise RuntimeError('frozen v1/review/accepted input membership or bytes changed')
++        report['frozen_input_files_checked'] = len(actual)
++        for name in ('rtsp_span_server.c', 'rtsp_span_server_v1.h'):
++            keep(APP.parent / 'rtsp-span-server-candidate' / name)
++        for name in ('CONTRACT.md', 'HANDBACK.md'):
++            keep(ROOT / 'docs/qualification-plans/rtsp-span-server-20261024' / name)
++        keep(ROOT / 'docs/qualification-plans/rtsp-span-server-review-20261024/REVIEW.md')
+         keep(OLD / 'REPORT.json')
+         old = json.loads((OLD / 'REPORT.json').read_text())
+         if old['status'] != 'HOST_ARM_COMPILE_ARCHIVE_REL_PASS_NOT_RUN':
+@@ -81,10 +94,14 @@
+                 for p in sorted((APP.parent / directory).glob(suffix)):
+                     keep(p)
+         keep(DOC / 'CONTRACT.md')
+-        base = RUNTIME / 'server/rtsp_server_candidate.c'
++        base = APP.parent / 'rtsp-span-server-candidate/rtsp_span_server.c'
+         new = APP / 'rtsp_span_server.c'
+         for name, a, b in (('SERVER_DELTA.patch', base, new),
+-                           ('SERVER_INVERSE.patch', new, base)):
++                           ('SERVER_INVERSE.patch', new, base),
++                           ('HEADER_DELTA.patch', base.with_name('rtsp_span_server_v1.h'),
++                            APP / 'rtsp_span_server_v1.h'),
++                           ('HEADER_INVERSE.patch', APP / 'rtsp_span_server_v1.h',
++                            base.with_name('rtsp_span_server_v1.h'))):
+             with (out / name).open('x') as f:
+                 f.writelines(difflib.unified_diff(a.read_text().splitlines(True),
+                              b.read_text().splitlines(True), str(a), str(b)))
+@@ -158,9 +175,8 @@
+                 fresh.append(obj)
+             reloc = out / (target + '-span-server-NOT-EXECUTABLE.o')
+             # Same explicit rooted section-GC method as retained build02.
+-            # Generic unused digest wrappers in framework rtsp_digest_wire.o
+-            # otherwise refer to unselected camera_rtsp_digest_*; build01 records
+-            # that actual unrooted closure failure, not a passing composition.
++            # Keep frozen v1 build03 roots/actual-relocation closure inspection.
++            # V1 build01/02 failures remain historical, not v2 test evidence.
+             roots = ('camera_rtsp_prestarted_span_listener_serve_v1',
+                      'candidate_prestarted_start', 'candidate_prestarted_finish',
+                      'qc07f_owned_runtime_prepare_v1', 'qc07f_owned_runtime_bind_postfork_v1',
+@@ -176,7 +192,7 @@
+                      '-Wl,-Map=' + str(out / (target + '.map')), '-o', reloc], target + '-REL')
+             defined = command([nm, '-g', '--defined-only', reloc], target + '-defined')
+             undefined = command([nm, '-u', reloc], target + '-undefined')
+-            command([elf, '-h', '-A', '-S', reloc], target + '-ELF')
++            symbols = command([elf, '-h', '-A', '-S', '-s', '-W', reloc], target + '-ELF')
+             relocations = command([elf, '-r', '-W', reloc], target + '-relocations')
+             required = (*roots, 'camera_rtsp_prestarted_span_listener_serve_v1', 'candidate_prestarted_start',
+                      'candidate_prestarted_finish', 'qc07f_owned_runtime_cleanup_v1',
+@@ -195,6 +211,19 @@
+             report.setdefault('unresolved_references', {})[target] = referenced
+             if any(n.startswith(('camera_', 'candidate_', 'qc07f_', 'qw_', 'qp_', 'nh_', 'rv_', 'is_rv_', 'mbedtls_')) for n in referenced):
+                 raise RuntimeError('unresolved actual project symbol')
++            # Preserve raw names AND relocation proof. Only the three known
++            # unreferenced LOCAL/NOTYPE Digest remnants receive this treatment.
++            local_digest = [n for n in unresolved if n.startswith('camera_rtsp_digest_')]
++            if set(local_digest) != {'camera_rtsp_digest_close', 'camera_rtsp_digest_issue', 'camera_rtsp_digest_verify'}:
++                raise RuntimeError('unexpected raw Digest UND membership')
++            proof = {}
++            for name in local_digest:
++                rows = [line.split() for line in symbols.splitlines()
++                        if len(line.split()) == 8 and line.split()[-1] == name]
++                if len(rows) != 1 or rows[0][3:7] != ['NOTYPE', 'LOCAL', 'DEFAULT', 'UND'] or name in referenced:
++                    raise RuntimeError('Digest remnant lacks LOCAL/unreferenced proof')
++                proof[name] = {'symbol_row': rows[0], 'retained_relocation_references': 0}
++            report.setdefault('local_digest_und_proof', {})[target] = proof
+         for dep in sorted((out / 'objects').glob('*.d')):
+             for name in shlex.split(dep.read_text().replace('\\\n', '').split(':', 1)[1]):
+                 report['dependencies'][name] = pin(Path(name))

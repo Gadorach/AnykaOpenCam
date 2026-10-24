@@ -1,0 +1,15 @@
+{
+  "scope": "NINTH_KNOWN_PARENT_MUTABLE_INDEX_STATUS_UPDATE_NOT_SOURCE_PIN_REBASE",
+  "recorded_host_date": "2026-10-24",
+  "original_manifests_and_review_unchanged": true,
+  "path": "docs/plan/camera-foundation/00-INDEX.md",
+  "before": {
+    "bytes": 129179,
+    "sha256": "1557eafa5d4ef5afce33750ab3af23059fd6e7bc175a18e7b3d3f34e81cba2be"
+  },
+  "after": {
+    "bytes": 130384,
+    "sha256": "9e3593da438e4d8168e254c6f1a473288e43aaecddebe3accaf8b3d0f5659a2a"
+  },
+  "reason": "parent closes independently reviewed span sender v3 and whole-hub memory at SOURCE/compile-only scope, preserves sender v1/v2 negative history, and records delivered private runtime candidate pending independent review; no candidate execution, sender/runtime composition or hardware action"
+}

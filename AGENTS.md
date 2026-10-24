@@ -55,7 +55,7 @@ dependency records/84 artifacts/40 logs/five tools. Native hardening/real creden
 NOT RUN. See rtsp-provisioner-process PARENT_DISPOSITION; no active author/reviewer
 in that lane; committed locally `5269979`. Its original33-input pin set retains
 the pre-closeout index:32 remain unchanged plus known parent index/status
-updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE08.json`,
+updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE09.json`,
 not rebased. Actual authorized
 external ingress, secret-free launch/FD-env-caps
 hygiene, durable storage/rotation, linked-file retirement/main/external recovery/
@@ -129,15 +129,32 @@ span-server-parent-20261024/V1_DISPOSITION.md. Fresh rtsp-span-server-v2 correct
 delivered: only pause/close/finish_au bodies changed; retain before observed-uncertain
 cleanup and clear demand only after detach0 plus valid post-clock.6 HOST/ARM compiles,
 2 rooted REL links/26 commands PASS, zero executions;217 frozen inputs unchanged.
-Independent ordinary review active at rtsp-span-server-v2-review-20261024; no
-adoption. Disjoint qc07f-span-memory candidate now delivered:
+Independent v2 review still requires R1: direct guard-failure unsubscribe branches
+bypass those corrected functions. R2 is fixed locally; v2 frozen NOT ADOPTED. See
+rtsp-span-server-parent-20261024/V2_DISPOSITION.md, including adjacent observed-clock
+producer-release ordering. Fresh rtsp-span-server-v3 now has narrow independent
+SOURCE/API/order/lifetime sufficiency for the bounded call-site/source-packet
+retention fixes; R2 preserved.6 HOST/ARM compiles/2 rooted REL links/26 commands
+PASS, zero executions. Parent verified117 delivery/203 inputs/251 new+363 reused
+dependencies/98 artifacts/332 frozen files/26 logs/46 archive bodies/42 selected
+bodies and exact diffs. See rtsp-span-server-parent-20261024/V3_DISPOSITION.md;
+no source author/reviewer active in the sender lane. V1/v2 remain NOT ADOPTED.
+Disjoint qc07f-span-memory candidate now delivered:
 actual eight-range whole-hub prefault/atomic page credit, scalar hub kind1 refusal,
 sticky unpaid failed attempt and conservative28KiB extra data-extent page cover.
 10 HOST/ARM compiles/2 real REL links/26 commands PASS, zero candidate executions.
 Narrow independent SOURCE/API/ledger/prefault sufficiency now accepted; parent
 checked288 overlapping records and both regenerated diffs. See qc07f-span-memory
-PARENT_DISPOSITION; no author/reviewer active in that lane, no function invocation.
-Actual native adapter/ready/return-history integration,1MiB output/
+PARENT_DISPOSITION; committed locally `7479364`, no author/reviewer active in that
+lane, no function invocation. qc07f-span-runtime-candidate is delivered and under
+independent ordinary review: actual private native typed hub prefault, exact paid
+owner/range readiness and complete pre-memory return-history refusal. Build02:
+14 HOST/ARM compiles/2 rooted REL links/42 commands PASS, zero executions; build01
+pre-compilation reuse refusal preserved. No source author remains active. One real
+private native owner, no ready Boolean or old flat admission path. Borrowed hub
+history remains retained even after normal native END; final cleanup intentionally
+nonreturns while borrowed, no external relinquishment API. No sender/runtime
+composition or hardware phase selected. Remaining1MiB output/
 raw/process2MiB/combined-load/external recovery remain open; no rerun, negative
 test, runtime/cap/native adoption or hardware queue.
 No new diagnostic/clock/receipt framework or hardware phase selected.
