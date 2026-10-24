@@ -28,11 +28,16 @@ and new build-semantics lanes. Real source fixes may proceed, but progress towar
 driver readiness must distinguish compiled source from target-observed operation.
 No automatic homing, guessed limits, GPIO sweep or bypass of existing recovery/
 review blocks. Wi-Fi P1 provider-review restriction is not permission to reroute it.
-Retained RAM entry is blocked on uncovered recovery phases and strict C1 admission;
-do not manufacture fresh state or watchdog protection from old receipts.
+User is available for manual intervention; use the confirmed smart switch as normal
+cutoff and human backup for host failure. User explicitly selected supervised
+detect-and-abort timing admission instead of whole-interval prevention proof;
+strict C1 remains unproved, not product-qualified. See
+`docs/plan/camera-foundation/SUPERVISED_DRIVER_BENCH_20261024.md`. Preserve original
+deadlines/checks/failures/uncertain ownership; no unpaired-driver use or fresh state
+inference. Prepare reviewed paired-driver image and supervised entry before effects.
 
 Host-restart pause was explicitly lifted; preserve its historical checkpoint at
-`docs/plan/camera-foundation/PAUSE_20261024_HOST_RESTART.md`. HEAD remains `4a562c0`
+`docs/plan/camera-foundation/PAUSE_20261024_HOST_RESTART.md`. HEAD is local `33ec694`
 with ordinary index unchanged. V2 capability-profile remaining static review is
 now complete, but parent closeout/commit is parked, not native adoption. No active
 backend source author/reviewer or fresh target observation/transfer at this boundary.
@@ -42,9 +47,25 @@ OFF and partial-direction effects. Sticky both-axis HOLD, no widened motion/phas
 homing/reset API. ONE actual ARM object compile/three commands PASS, NOT RUN; actual
 compile is built-in/no MODULE define, modular lifetime reviewed at SOURCE only.
 Parent checked421+six input records/15 delivery pins/394 dependencies/two tools/
-three artifacts/three logs/exact diffs. See ptz-off-retain PARENT_DISPOSITION.
+three artifacts/three logs/exact diffs. Committed locally `33ec694`; see
+ptz-off-retain PARENT_DISPOSITION. Parked backend candidate files were not staged.
 No author/reviewer active. Not physical STOP/thermal/deadline or hardware-ready;
 retention can leave coils energized, provider unbind/recovery remain unqualified.
+One isolated author now owns driver-foundation-image app/docs and separate fresh
+work outputs for an actual paired6.18.55/Clang23.1.3 RAM image with that exact PTZ
+source, unchanged board DTB and removal of unsupported station/stale RTSP archive
+payloads. Single offline build is author-reported running; await its final handback,
+do not start another build or poll it. Preserve rollback and all other driver/config
+policy. Closed qc07f-driver-entry24 v1 source was delivered but review required R1:
+unknown OFF/already-exited child skipped available final evidence. V1 frozen NOT
+ADOPTED. Fresh driver-entry24-v2 adds22 finalizer lines only; independent correction
+review and parent SOURCE/METHOD/custody/order disposition now accept that boundary.
+29 originals/four exact roots/eight delivery pins/38 unchanged functions checked.
+No author/reviewer active in the entry lane; source/AST only, no invocation. Exact
+reviewed image/selection and fresh supervised admission still required before ON.
+No old22b invocation, transport retries, arbitrary command/profile widening or new
+clock/receipt framework. No query78/audio/backend/boot/flash/module/hardware action;
+independent image/entry review and parent admission before any target effect.
 
 **Latest autonomy steering:** continue eligible work unattended until completion
 or genuinely required user input. User renewed approval Oct23, explicitly including
@@ -81,7 +102,7 @@ dependency records/84 artifacts/40 logs/five tools. Native hardening/real creden
 NOT RUN. See rtsp-provisioner-process PARENT_DISPOSITION; no active author/reviewer
 in that lane; committed locally `5269979`. Its original33-input pin set retains
 the pre-closeout index:32 remain unchanged plus known parent index/status
-updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE21.json`,
+updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE23.json`,
 not rebased. Actual authorized
 external ingress, secret-free launch/FD-env-caps
 hygiene, durable storage/rotation, linked-file retirement/main/external recovery/

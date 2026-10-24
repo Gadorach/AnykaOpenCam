@@ -1,0 +1,31 @@
+--- a/apps/qualification/qc07f-driver-entry24/driver_entry.py
++++ b/apps/qualification/qc07f-driver-entry24-v2/driver_entry.py
+@@ -1080,6 +1080,28 @@
+                 record('EVENTUAL_FINAL_ACCOUNTING_FAILED: ' + repr(exc))
+             # This is NOT successful controlled stop/finalization or power proof.
+             self.final_ok = False
++        elif self.child is not None and not self.off_proved and self.child.returncode is not None:
++            cleanup_phase = 'already_exited_unknown_power'
++            # The preceding own poll reaped this child. Exit status is neither
++            # controlled-stop completion nor OFF proof; do not send another RPC.
++            self.final_ok = False
++            record('ALREADY_EXITED_RECORDER_STATUS_POWER_UNCERTAIN: ' + str(self.child.returncode))
++            for label, check in (
++                ('already_exited_owned_PID_absence', lambda: not (Path('/proc') / str(self.child.pid)).exists()),
++                ('already_exited_socket_absence', lambda: not os.path.lexists(h['SOCKET'])),
++                ('already_exited_visible_owner_absence', lambda: h['fuser'](self.realport) is None)):
++                try:
++                    require(check())
++                except BaseException as exc:
++                    record(label + ': ' + repr(exc))
++            try:
++                obj = h['Retained'](self.finalpath, 0o600, 100000)
++                try:
++                    self.audit_final(h['strict_json'](obj.data), controlled=False)
++                finally:
++                    os.close(obj.fd)
++            except BaseException as exc:
++                record('ALREADY_EXITED_FINAL_ACCOUNTING_FAILED: ' + repr(exc))
+         # No preceding postcheck failure may skip another original input/marker.
+         cleanup_phase = 'individual_retained_input_postchecks'
+         for obj in self.retained:

@@ -1,0 +1,15 @@
+{
+  "scope": "TWENTY_SECOND_KNOWN_PARENT_MUTABLE_INDEX_STATUS_UPDATE_NOT_SOURCE_PIN_REBASE",
+  "recorded_host_date": "2026-10-24",
+  "original_manifests_and_reviews_unchanged": true,
+  "path": "docs/plan/camera-foundation/00-INDEX.md",
+  "before": {
+    "bytes": 137521,
+    "sha256": "0388203413bf13651b4e9ffb2183afabc8485c828a1fd448e9574b196002f4c6"
+  },
+  "after": {
+    "bytes": 138199,
+    "sha256": "2839a8ca647d98504ef94b452d04894d813e4281d7a7204fec4abee99d081d4f"
+  },
+  "reason": "explicit user allows supervised detection/abort timing policy and manual host-loss fallback with normal smart-switch cutoff; strict C1/product prevention remains unproved. Select paired PTZ driver-foundation RAM-image preparation and reviewed supervised entry, not hardware execution or query78/backend/audio activation"
+}

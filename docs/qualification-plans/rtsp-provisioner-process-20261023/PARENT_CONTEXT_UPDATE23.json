@@ -1,0 +1,15 @@
+{
+  "scope": "TWENTY_THIRD_KNOWN_PARENT_MUTABLE_INDEX_STATUS_UPDATE_NOT_SOURCE_PIN_REBASE",
+  "recorded_host_date": "2026-10-24",
+  "original_manifests_and_reviews_unchanged": true,
+  "path": "docs/plan/camera-foundation/00-INDEX.md",
+  "before": {
+    "bytes": 138199,
+    "sha256": "2839a8ca647d98504ef94b452d04894d813e4281d7a7204fec4abee99d081d4f"
+  },
+  "after": {
+    "bytes": 138603,
+    "sha256": "bf188ddf9e0c6666a7efe036a3b8140126391ea40d70259ac760665a6d905ef4"
+  },
+  "reason": "conditional SOURCE/METHOD review and parent disposition of closed supervised driver RAM-entry v2; original v1 unknown-OFF/already-exited accounting defect frozen, no invocation; image handback/review/selection and fresh live supervision/ownership still required"
+}

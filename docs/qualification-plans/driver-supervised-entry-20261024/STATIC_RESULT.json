@@ -1,0 +1,20 @@
+{
+  "scope": "SOURCE_CANDIDATE_AST_ONLY_REVIEW_REQUIRED_NOT_RUN",
+  "source": "apps/qualification/qc07f-driver-entry24/driver_entry.py",
+  "source_bytes": 65982,
+  "source_lines": 1166,
+  "source_sha256": "262ec18013905e2774eb197c4d509061bf928724188c77337c8a1ddb030bf765",
+  "syntax": "AST_PARSE_PASS_NO_BYTECODE_COMPILE_OR_IMPORT",
+  "direct_Popen_source_sites": 1,
+  "author_candidate_calls": 0,
+  "author_project_helper_imports_or_calls": 0,
+  "author_tests": 0,
+  "author_recorder_or_target_process_launches": 0,
+  "author_private_proc_dev_or_current_state_reads": 0,
+  "author_UART_RPC_power_or_network_operations": 0,
+  "actual_new_image_pin_supplied": false,
+  "independent_review_or_parent_adoption_claimed": false,
+  "native_evidence": "NONE",
+  "pin_scope": "Selected public source/reference inputs and delivery only; not a complete dependency closure or pre-use build seal. PINS.tsv excludes itself.",
+  "next_action": "Parent independent ordinary source review; actual reviewed paired image selection and fresh parent admission remain mandatory. No invocation selected."
+}

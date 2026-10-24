@@ -1,0 +1,11 @@
+# Fresh v2 delivery only; excludes this manifest itself. Originals are pinned without rebase in ORIGINAL_INPUTS.json.
+# SOURCE/AST/text/hash evidence only, not review/adoption/runtime admission or a dependency/build seal.
+bytes	sha256	path
+67303	38d9764bb29c942d15fba1e188d02f32780fe32ff635e101c7c3358d5ce04fb7	apps/qualification/qc07f-driver-entry24-v2/driver_entry.py
+1189	bb14aaf722e67c8cc43668adaff1a26a95e20be28f26c769a36435864f3ea127	apps/qualification/qc07f-driver-entry24-v2/README.md
+3198	f9248062a45654d726fe718319e299ad10017508fa6666b674a41f56c8f8a352	docs/qualification-plans/driver-supervised-entry-v2-20261024/CONTRACT.md
+6062	9a67cac2ec597729cd31eaac4fa1e1ac8df09cf35239773dc0023a9948fbb689	docs/qualification-plans/driver-supervised-entry-v2-20261024/ORIGINAL_INPUTS.json
+1866	edb35c4dbe92ca5ee373c464beb885d31707a2f3dea1d27840ae9a111ea2581d	docs/qualification-plans/driver-supervised-entry-v2-20261024/SOURCE_DELTA.patch
+1866	fef4c17502c1954221f9f4131c23e4206ffce785b4c7b99937f375051fa3dc51	docs/qualification-plans/driver-supervised-entry-v2-20261024/INVERSE.patch
+1924	1956cd2c6547815d483281c93f7a1eab13dcf43f839f2ee1671baa306390b3de	docs/qualification-plans/driver-supervised-entry-v2-20261024/STATIC_RESULT.json
+4196	42056672e1d3786913b3590aab1459e9d4dfcfd39de6847ec42ba8ff24805ba7	docs/qualification-plans/driver-supervised-entry-v2-20261024/HANDBACK.md

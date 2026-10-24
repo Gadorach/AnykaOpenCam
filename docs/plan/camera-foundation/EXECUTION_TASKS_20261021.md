@@ -22,18 +22,44 @@ continue expanding provisioning/backend abstractions before these hardware-drive
 foundations are stable. Preserve functional bench controls and all source/failed
 evidence; target-observed behavior, not source/compile counts, closes readiness.
 No automatic homing/full travel or relaxation of recovery/privacy/review gates.
-No fresh target state/lease exists. RAM75 entry still needs actual uncovered-phase
-recovery plus strict C1 admission; P1 remains provider-review blocked without reroute.
+No fresh target state/lease exists. User now provides manual fallback availability
+and explicitly approves supervised clock-detection/abort/cutoff admission instead
+of whole-interval prevention proof. See SUPERVISED_DRIVER_BENCH_20261024.md. This
+scoped policy supersedes the earlier strict-C1 native-selection block for supervised
+bench trials only, not a C1 proof or product timing guarantee. Keep fixed deadlines,
+failures/retention/fresh ownership; smart switch normal cutoff, human host-loss
+backup. Paired-driver image/entry review still precede effects; no target action
+selected here. P1 remains provider-review blocked without reroute.
 First concrete driver correction ptz-off-retain-candidate now has narrow independent
 SOURCE/API/bounds/ownership/lifetime sufficiency: real descriptors/device/code retain
 on unknown OFF/possibly partial direction, sticky bank-wide refusal before new
 effects. ±4/20ms/phase/counter/unknown position preserved. ONE ARM-object compile/
 three commands PASS, NOT RUN; built-in/no MODULE define, not modular ABI evidence.
 Parent checked421+six inputs/15 delivery pins/394 dependencies/two tools/three
-artifacts/three logs/exact diffs; see ptz-off-retain PARENT_DISPOSITION. No active
+artifacts/three logs/exact diffs; see ptz-off-retain PARENT_DISPOSITION. Committed
+locally `33ec694`, ordinary index unchanged, parked backend files not staged. No active
 author/reviewer. Physical STOP/coil current/thermal/mechanics/zeroing/native pairing/
 provider unbind/recovery remain open; retention may leave coils energized. No
 target action or homing claim.
+User manual fallback and supervised timing policy now permit preparation of actual
+driver hardware trials, not unpaired execution. One isolated source/build author
+owns driver-foundation-image app/docs/fresh work outputs for6.18.55/Clang23.1.3 with
+the exact reviewed PTZ fix; same board DTB, no config/driver changes beyond paired
+PTZ/localversion/fresh archive input and removal of unsupported station/stale RTSP
+payloads. RAM-only, preserve originals; no diagnostic/query78/backend expansion or
+audio/provider/driver-ready fiction. Parent prepares supervised entry. Both image
+and entry need independent review; no target command or power change yet. Image
+author reports the single offline build still running, final handback pending; no
+second invocation/polling. Closed qc07f-driver-entry24 v1 was delivered but ordinary
+review required R1: unknown OFF/already-exited child skipped available final capture
+accounting. V1 frozen NOT ADOPTED. Fresh entry24-v2 adds22 finalizer lines only;
+independent correction review/parent SOURCE/METHOD/custody/order disposition accept
+the bounded correction. Parent checked29 original pins/four exact roots/eight
+delivery records/38 unchanged functions and literal diffs. See v2 PARENT_DISPOSITION.
+No entry author/reviewer active, no invocation. Actual independently reviewed image/
+selection plus fresh supervision/sole ownership still precede ON. Same-pinned
+recorder/private custody/supervised detect/abort, no new framework or old22b execution.
+Parent alone owns actual device work after admission; image handback still awaited.
 
 Latest user reseated probes, explicitly requested retry and asked whether parsing
 caused previous failures. ONE fresh23h with UNCHANGED v4/parser now PASS cold

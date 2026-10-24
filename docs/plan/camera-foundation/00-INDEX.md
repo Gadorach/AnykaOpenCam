@@ -60,12 +60,25 @@ must lead backend readiness. Source/compile passes do not establish hardware GO.
 Preserve no automatic homing/guessed limits, scalar-only microphone evidence and
 all recovery/review gates. First concrete source correction is motor GPIO ownership
 after unknown OFF/partial direction; Wi-Fi P1 review and fresh RAM-entry recovery/
-C1 are still explicit blockers, not permission to reroute or skip them.
+C1 findings remain preserved, not permission to reroute or skip review gates.
+User now supplies manual intervention and explicitly permits supervised detect-and-
+abort timing admission with smart-switch cutoff; whole-interval prevention/product
+timing remains unproved. See [supervised bench policy](SUPERVISED_DRIVER_BENCH_20261024.md).
+Prepare actual paired-driver RAM image and reviewed entry before any live effects.
 That PTZ OFF-retention correction now has narrow independent SOURCE/API/bounds/
 ownership/lifetime sufficiency and ONE built-in ARM-object compile PASS, NOT RUN.
 Actual descriptors/device/code retain on uncertainty and both axes refuse further
 pulses; no physical STOP/thermal/zeroing or provider-unbind safety claim. See
 [PTZ correction](../../qualification-plans/ptz-off-retain-20261024/PARENT_DISPOSITION.md).
+Paired driver-foundation-image source/build is now selected with the exact PTZ
+correction and coherent6.18.55/Clang23.1.3 baseline; remove unsupported station/stale
+RTSP payloads from the fresh initramfs, retain DT and rollback. No new diagnostic
+lane/audio activation/backend or hardware operation; image/entry review required.
+Closed supervised entry source v2 now has conditional SOURCE/METHOD/custody/order
+sufficiency after correcting v1's already-exited-recorder/unknown-OFF accounting
+gap. V1 stays NOT ADOPTED; no entry has run. Actual paired-image review/selection
+and fresh supervised admission remain before ON. See
+[entry disposition](../../qualification-plans/driver-supervised-entry-v2-20261024/PARENT_DISPOSITION.md).
 
 Earlier integration history is retained below, not the selected next-work queue.
 Query78 v3's review is complete at narrow SOURCE/method scope; no recipe/archive/
