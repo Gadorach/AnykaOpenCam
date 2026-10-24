@@ -1,0 +1,15 @@
+{
+  "scope": "FOURTH_KNOWN_PARENT_MUTABLE_INDEX_STATUS_UPDATE_NOT_SOURCE_PIN_REBASE",
+  "utc": "2026-10-24T02:26:35.278309+00:00",
+  "original_manifests_and_review_unchanged": true,
+  "path": "docs/plan/camera-foundation/00-INDEX.md",
+  "before": {
+    "bytes": 127039,
+    "sha256": "2741b760d3d786ef2b0b54afa7ba0a5c8b94d7e68f5d31cd669e4cf0f9bb37c5"
+  },
+  "after": {
+    "bytes": 127296,
+    "sha256": "2f9c02cb459d5047a9f9da87bd51c90ea50a9aa0413791ab5d8bfae8254ca1c0"
+  },
+  "reason": "parent records retained-image RAM75 recovery/clock block and selects offline real OS-callback registration; no native source or hardware effect"
+}

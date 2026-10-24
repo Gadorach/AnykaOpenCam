@@ -92,10 +92,13 @@ controller PASSED exact596RX/57TX plus10s quiet; actual ON/OFF GETs, owned wait0
 finalization and independent final GET OFF/PID/socket/fuser checks. See
 [23h result](../../qualification-plans/execution-20261023/COLD23H_RESULT.md).
 No old failure relabelled or prefix trimmed; cause of earlier bytes remains
-unknown. Camera OFF/no active capture or live native lease. One offline method
-lane prepares separately reviewed retained-image RAM75 entry/idle, not a new
-diagnostic build, controller invocation or clock/receipt framework. Actual native
-state/image/memory/recovery/clock gates remain; no motor/NOR/boot queue.
+unknown. Camera OFF/no active capture or live native lease. Retained-image RAM75
+entry method is BLOCKED before code: uncovered recovery/watchdog handoffs and
+strict C1 clock admission, not image corruption or a permission gap. See
+[method disposition](../../qualification-plans/qc07f-ram75-entry23-20261023/PARENT_DISPOSITION.md).
+No controller/new image/clock framework/motor/NOR/boot queue. One source lane
+instead connects the real OS-random callback BEFORE provisioning snapshots in a
+fresh bootstrap derivative; no callback/child/native execution or entropy GO.
 Separate RTSP provisioner-child/readonly-FD IPC now has narrow independent SOURCE/
 API/custody sufficiency,27 HOST/ARM compiles/40 commands and ONE normal PUBLICDUMMY
 fork/FD-transfer/wait0/bind observation. No real credentials/native hardening or

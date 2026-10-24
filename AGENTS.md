@@ -55,7 +55,7 @@ dependency records/84 artifacts/40 logs/five tools. Native hardening/real creden
 NOT RUN. See rtsp-provisioner-process PARENT_DISPOSITION; no active author/reviewer
 in that lane; committed locally `5269979`. Its original33-input pin set retains
 the pre-closeout index:32 remain unchanged plus known parent index/status
-updates recorded in PARENT_CONTEXT_UPDATE01/02/03.json, not rebased. Actual authorized
+updates recorded in PARENT_CONTEXT_UPDATE01/02/03/04.json, not rebased. Actual authorized
 external ingress, secret-free launch/FD-env-caps
 hygiene, durable storage/rotation, linked-file retirement/main/external recovery/
 backing remain gaps. Next source connection is known-wait/bind → real device-free
@@ -71,12 +71,17 @@ real HOST callback call PASS (no bytes retained/hashed). Parent verified548 publ
 pin records; see rtsp-os-random PARENT_DISPOSITION. One nonblocking OS getrandom
 call, no fallback/retry/cache; no callback integration or native entropy qualification.
 Bootstrap/OS-random closeouts committed locally `0b146c4`/`4b11b79`; no source
-author/reviewer remains in those lanes. One isolated offline method author owns
-qc07f-ram75-entry23 qualification docs for a separately reviewed existing-image
-RAM75 entry/inert-idle phase after23h. NO controller/source invocation, new image,
-native/motor/NOR queue or clock/receipt framework. Actual image/memory/owner/
-watchdog/recovery and strict native-clock/C1 gates must be satisfied or explicitly
-blocked before code; remote same-host outlet is NOT independent host-hang recovery.
+author/reviewer remains in those lanes. Retained RAM75 entry method is CLOSED/
+BLOCKED before code/native selection:51 public pins/image/header/CRCs/static ranges
+checked; automatic sensor reset/radio-power/ISP allocation documented. Watchdog
+gaps at ON/staging/READY, after QCL commit and PID1 magic-close plus strict C1 clock
+admission remain. Parent read-only outlet capability sample found no advertised
+autonomous cutoff; same-host HTTP is NOT independent host-loss recovery. See
+qc07f-ram75-entry23 PARENT_DISPOSITION. No new image/controller/clock framework.
+One isolated author owns fresh qc07f-bootstrap-os-random app/docs for actual
+OS-callback registration BEFORE provisioning snapshots; reject existing callback,
+preserve original bind→prepare→start and failed-owner custody. Compile/REL-only,
+independent review required; no test/child/native/motor/NOR execution selected.
 No bootstrap test/child/verifier/native/media execution, main, synthetic callbacks,
 provider/backing or hardware adoption selected.
 Original radio/Oct22 reset/23c/23d/23e/23g
