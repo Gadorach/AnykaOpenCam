@@ -134,9 +134,15 @@ ownership sufficiency: typed prefault, exact paid owner/range readiness and comp
 pre-memory return history. Build02:14 HOST/ARM compiles/2 rooted REL links/42 commands
 PASS, zero calls; build01 pre-compilation reuse refusal preserved. See
 [runtime disposition](../../qualification-plans/qc07f-span-runtime-20261024/PARENT_DISPOSITION.md).
-No source author/reviewer active. Sender closeout committed locally `7f4c120`. Borrowed-hub
-lifetime remains retained after native END with no relinquishment API. Sender and
-runtime are NOT composed or invoked. Native1MiB output/raw/process2MiB/combined-load
+No source author/reviewer active. Sender closeout committed locally `7f4c120` and
+runtime closeout `5375584`. That baseline retains the hub borrow after native END.
+Fresh actual sender/private-runtime composition now has narrow independent SOURCE/
+API/order/ownership/lifetime sufficiency,16 HOST/ARM compiles/2 rooted REL links/
+46 commands PASS, NOT RUN. Normal CPU borrow end requires actual native END/ACK/
+close/watchdog disable plus real producer/hub drain, and retains terminal scalar
+history while retiring live pointers. No lender disposal/restart/recovery claim.
+See [composition disposition](../../qualification-plans/qc07f-span-serve-20261024/PARENT_DISPOSITION.md).
+No candidate function invoked. Native1MiB output/raw/process2MiB/combined-load
 and external recovery remain open, not satisfied by CPU chunks or source review.
 No test, new clock/diagnostic framework or hardware phase selected.
 Separate RTSP provisioner-child/readonly-FD IPC now has narrow independent SOURCE/

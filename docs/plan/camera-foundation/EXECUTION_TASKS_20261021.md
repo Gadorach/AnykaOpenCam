@@ -95,11 +95,25 @@ Build02:14 HOST/ARM compiles/2 rooted REL links/42 commands PASS, zero candidate
 build01 pre-compilation reuse refusal preserved. Parent checked20 delivery/67 frozen
 pins,985 build02+199 build01 overlapping records/logs, exact membership/aggregate/
 diffs,46 archive bodies/32 selected bodies; see qc07f-span-runtime PARENT_DISPOSITION.
-No source author/reviewer active. One actual
+Runtime source closeout committed locally `5375584`. No source author/reviewer
+active in that lane. One actual
 private native owner, no ready Boolean/old flat admission path. Borrowed hub history
 persists after normal native END; final cleanup intentionally nonreturns while
 borrowed, no external relinquishment API. No sender/runtime composition, tests or
-hardware adoption. Actual backing remains next,
+hardware adoption accepted. Fresh qc07f-span-serve-candidate now has narrow
+independent SOURCE/API/order/ownership/lifetime sufficiency: actual typed
+sender/runtime composition, persistent
+real nonreturning sink and known-normal CPU hub borrow relinquishment only after
+native END/ACK/close, logical watchdog disable and real producer/hub drain. Terminal
+scalar history remains, live owner pointers retire only at that boundary.16 HOST/
+ARM compiles/2 rooted REL links/46 commands PASS, zero candidate calls. Parent
+verified22 delivery/101 frozen pins,1066 overlapping build records/logs, exact
+memberships/eight literal+two aggregate diffs/twelve unchanged sender bodies,
+46 archive bodies/32 selected bodies. See qc07f-span-serve PARENT_DISPOSITION;
+no source author/reviewer active. This is normal CPU borrow release, not lender
+destruction/native/cap/product acceptance or history reset. No function/test/
+hardware queue or survival/recovery claim.
+Actual backing remains next,
 not solved by source shape or a caller Boolean. No new diagnostic/clock framework.
 
 Latest user steering renews unattended continuation through hardware testing and

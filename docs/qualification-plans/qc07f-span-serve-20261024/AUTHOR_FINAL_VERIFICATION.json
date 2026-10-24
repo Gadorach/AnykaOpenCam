@@ -1,0 +1,41 @@
+{
+  "scope": "READ_ONLY_PUBLIC_METADATA_SOURCE_AND_ELF_NO_CANDIDATE_CALLS",
+  "status": "HOST_ARM_16_COMPILES_2_ROOTED_REL_PASS_NOT_RUN",
+  "build_report": {
+    "bytes": 322698,
+    "sha256": "3b3200efcb5d298e1f490856a6d790893180cbca23aebc7e12cd7e74fb7a4a21"
+  },
+  "checked": {
+    "inputs": 229,
+    "dependencies": 323,
+    "reused_dependencies": 320,
+    "artifacts": 132,
+    "tools": 16,
+    "logs": 46,
+    "frozen": 101
+  },
+  "exact_new_dependency_membership": true,
+  "extracted_bodies_matched": 32,
+  "ELF": {
+    "host": {
+      "path": "docs/qualification-plans/qc07f-span-serve-20261024/runs/build01/host-span-serve-NOT-EXECUTABLE.o",
+      "bytes": 279280,
+      "sha256": "1f919a48d6cf0099e1bb755156a1c38ec57aaa5d4f235ecb4baa56838489168a",
+      "ET_REL": true,
+      "machine": 62,
+      "entry": 0,
+      "program_headers": 0
+    },
+    "arm": {
+      "path": "docs/qualification-plans/qc07f-span-serve-20261024/runs/build01/arm-span-serve-NOT-EXECUTABLE.o",
+      "bytes": 186536,
+      "sha256": "90fc57d5fc8d0daceb2d2930f7af3194c1c953dc5144dcd35ab84e8543a67bce",
+      "ET_REL": true,
+      "machine": 40,
+      "entry": 0,
+      "program_headers": 0
+    }
+  },
+  "runtime_calls": 0,
+  "no_execution_queue": true
+}

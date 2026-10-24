@@ -1,0 +1,24 @@
+{
+  "scope": "PARENT_PUBLIC_SOURCE_DIFF_BUILD_REVIEW_VERIFICATION_NOT_EXECUTION",
+  "recorded_host_utc": "2026-10-24T05:41:22.077112+00:00",
+  "delivery": 22,
+  "frozen_inputs": 101,
+  "build_records": {
+    "inputs": 229,
+    "new_dependencies": 323,
+    "reused_dependencies": 320,
+    "tools": 16,
+    "artifacts": 132,
+    "successful_command_logs": 46
+  },
+  "archive_bodies_checked": 46,
+  "selected_extracted_bodies_matched": 32,
+  "unchanged_sender_functions_compared": 12,
+  "all_eight_literal_and_two_aggregate_diffs_regenerated_exactly": true,
+  "exact_original_and_candidate_source_memberships": true,
+  "distinct_lexical_paths_hashed": 772,
+  "review_sha256": "1359c67450f46793457aa4c5577fbe6a56517c5f55a19b320b83ed563fdf0291",
+  "parent_metadata_comparison_initial_error": "aggregate diffs use absolute path labels, unlike top-level relative labels; regenerated each exact format without source/build changes",
+  "candidate_build_test_reader_prefault_credit_callback_native_or_hardware_calls": 0,
+  "native_cap_or_product_acceptance": false
+}

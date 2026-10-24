@@ -1,0 +1,63 @@
+{
+  "scope": "SOURCE_TEXT_ONLY_NO_FUNCTION_EXECUTION",
+  "baseline_expected": {
+    "apps/rtsp-auth/qc07f-span-runtime-candidate/owned_runtime.c": "4557ccab74d8f4a499da91acc3626ddb5fdd28befc744817dcd3221e61d05a74",
+    "apps/rtsp-auth/qc07f-span-runtime-candidate/native/native_adapter.c": "b0b97dc3946e001023bb0c00d22e0aa1d5104ec61b93b4d5770c8d7245a18f5f",
+    "apps/rtsp-auth/rtsp-span-server-v3/rtsp_span_server.c": "73c0f5886a54ca8fc064b27c72b7c877180730502673e8a6ee106f085a7304d0"
+  },
+  "unchanged_sender_functions": {
+    "pause_client": {
+      "bytes": 1323,
+      "sha256": "46ebdb3dc74e7c5369d980bf2003b46eedbcf592acfe3003a2c14d1bbf966f16"
+    },
+    "finish_au": {
+      "bytes": 2524,
+      "sha256": "550f30ae8e968388db939a1a295533f5af3e42ca8c9861d647f168f4a5afabcc"
+    },
+    "process_input": {
+      "bytes": 5568,
+      "sha256": "b7f4bc4d4cc9f42b6221e38795d6f03bd1035b81bc150347c7bcec3c13625036"
+    },
+    "send_access_unit": {
+      "bytes": 5022,
+      "sha256": "ee630f186958eb4c2c2d7be7154f2e477e4de2085e37d2951687fc01ac1daa4b"
+    },
+    "publish_source": {
+      "bytes": 775,
+      "sha256": "95091f8c33791f68869e9ee7c26da79ffcaa55be04fe1e795a732ff98e1da6ec"
+    },
+    "source_packet_validate": {
+      "bytes": 789,
+      "sha256": "28affdeeb357a13f5c40f356f809848eaba56313e2c54c6fee5c5e9fd7a16033"
+    },
+    "capture_admitted": {
+      "bytes": 702,
+      "sha256": "9bf41770b4d39e82d3d87b1901a5f514224630aeea38f4787515bde7e60e54e9"
+    },
+    "retain_span": {
+      "bytes": 344,
+      "sha256": "e1d1ac1a1f53f09f66092ee3325cfd5ad3eeefc702830463ae32932448869b72"
+    },
+    "retain_frame": {
+      "bytes": 320,
+      "sha256": "245b4b1707757e91def447f893fb7e10100d59bf00251c7c0bfbe06e2839856f"
+    },
+    "retire_checked": {
+      "bytes": 237,
+      "sha256": "199810e331b655d5bd5b88d92fd8593d2380d3f379ec56fbc924e83c6cd43b99"
+    },
+    "begin_checked": {
+      "bytes": 304,
+      "sha256": "fc0ee9418878f42da4d47cc5e514d0f5533930dc9bcaf2c20257e5e36b7eb903"
+    },
+    "end_checked": {
+      "bytes": 322,
+      "sha256": "54893d9c20899c559fcfa9e8c8762c984b2f05ef897daec70345fe0bdcda7c52"
+    }
+  },
+  "native_adapter_included_unchanged": {
+    "path": "apps/rtsp-auth/qc07f-span-runtime-candidate/native/native_adapter.c",
+    "bytes": 12242,
+    "sha256": "b0b97dc3946e001023bb0c00d22e0aa1d5104ec61b93b4d5770c8d7245a18f5f"
+  }
+}

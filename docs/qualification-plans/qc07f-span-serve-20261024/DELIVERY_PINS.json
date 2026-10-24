@@ -1,0 +1,112 @@
+[
+  {
+    "path": "apps/rtsp-auth/qc07f-span-serve-candidate/LICENSE_NOTICES.md",
+    "bytes": 1234,
+    "sha256": "9c4980851f266bee5825ace261121c2a8717000a91ab55a7e3a4f4913626c16b"
+  },
+  {
+    "path": "apps/rtsp-auth/qc07f-span-serve-candidate/README.md",
+    "bytes": 935,
+    "sha256": "ce1d4fab5d0ef5736b32c2595de66190ff4cf4d7160255a34438b7a2815ec7f5"
+  },
+  {
+    "path": "apps/rtsp-auth/qc07f-span-serve-candidate/build01.py",
+    "bytes": 15538,
+    "sha256": "9f9c4aaf5548240c0f505f9a0df4cd4ff7bda69cd09542f1f0dba0027d367af7"
+  },
+  {
+    "path": "apps/rtsp-auth/qc07f-span-serve-candidate/owned_runtime.c",
+    "bytes": 26783,
+    "sha256": "384bac52a5142bd3f6888715a3e4d9b6e061a85433d4267e11f046b1307bba10"
+  },
+  {
+    "path": "apps/rtsp-auth/qc07f-span-serve-candidate/owned_runtime_v1.h",
+    "bytes": 5920,
+    "sha256": "a0c620b2e4aba7cbc19c4f1f6c53b6c8a3ecc46e6bff862c0a3f6abceca06815"
+  },
+  {
+    "path": "apps/rtsp-auth/qc07f-span-serve-candidate/rtsp_span_server.c",
+    "bytes": 53857,
+    "sha256": "1b3d9c67341832acb76f25ea84052bd1321cbaf85ae6b6aeca7f6a9574669a9b"
+  },
+  {
+    "path": "apps/rtsp-auth/qc07f-span-serve-candidate/rtsp_span_server_v1.h",
+    "bytes": 4107,
+    "sha256": "2ecee18cbe6d53d5ef950d9aa78045dbaba9b1317e5743b9a928576699742e53"
+  },
+  {
+    "path": "docs/qualification-plans/qc07f-span-serve-20261024/AUTHOR_AUDIT.md",
+    "bytes": 7613,
+    "sha256": "c698a71eb2913c73a7ae6b99dcf06ea45c9a2d90125e75de4ea23e3ddf37f799"
+  },
+  {
+    "path": "docs/qualification-plans/qc07f-span-serve-20261024/AUTHOR_FINAL_VERIFICATION.json",
+    "bytes": 1237,
+    "sha256": "b5c3f31b06a85c8c6b4d2c73543e11b6837973f620093ae40222d0f356358dd4"
+  },
+  {
+    "path": "docs/qualification-plans/qc07f-span-serve-20261024/CONTRACT.md",
+    "bytes": 7118,
+    "sha256": "8d46875c6d8b6225fcd409d8cd5617636029464c626544f2c852a2b5e8f8658b"
+  },
+  {
+    "path": "docs/qualification-plans/qc07f-span-serve-20261024/FROZEN_INPUTS.json",
+    "bytes": 18382,
+    "sha256": "6e4ba6931def8403dbed7693e825026638ec62465a5ea3a26598f3ec0546a07a"
+  },
+  {
+    "path": "docs/qualification-plans/qc07f-span-serve-20261024/HANDBACK.md",
+    "bytes": 9743,
+    "sha256": "2972ac28673fff8857dac7b0ae176dcb08cabfaac017fd8b33c04c8e4f4d3536"
+  },
+  {
+    "path": "docs/qualification-plans/qc07f-span-serve-20261024/SOURCE_PROOF.json",
+    "bytes": 2367,
+    "sha256": "ce566abb8382e84afbf46e2635f0bf5524121192a233f261c04e9d0584fa6775"
+  },
+  {
+    "path": "docs/qualification-plans/qc07f-span-serve-20261024/owned_runtime.c.FORWARD.diff",
+    "bytes": 18512,
+    "sha256": "f2c7ef34d86eec64a291c638bb474113a8a7f3e478a8fa0287cec171abce937e"
+  },
+  {
+    "path": "docs/qualification-plans/qc07f-span-serve-20261024/owned_runtime.c.INVERSE.diff",
+    "bytes": 18512,
+    "sha256": "db72ff80968ae43f8dd54147030d7c1169234179953210165cc8a6c3f42d0835"
+  },
+  {
+    "path": "docs/qualification-plans/qc07f-span-serve-20261024/owned_runtime_v1.h.FORWARD.diff",
+    "bytes": 3469,
+    "sha256": "d2114ee5bc6ba54b8e2f92fdad163c5ab5336955e9f1fe25131c561d6b522b32"
+  },
+  {
+    "path": "docs/qualification-plans/qc07f-span-serve-20261024/owned_runtime_v1.h.INVERSE.diff",
+    "bytes": 3469,
+    "sha256": "136ae0379177d74578d18c508326fe508169abfab7d8cccaa207341eb28c8841"
+  },
+  {
+    "path": "docs/qualification-plans/qc07f-span-serve-20261024/rtsp_span_server.c.FORWARD.diff",
+    "bytes": 7679,
+    "sha256": "b829ce390c9d25993bbe8f3ae265720406907060370cdc8ec86422f3e5daae56"
+  },
+  {
+    "path": "docs/qualification-plans/qc07f-span-serve-20261024/rtsp_span_server.c.INVERSE.diff",
+    "bytes": 7679,
+    "sha256": "2d644a918a3037f12183613dbdecb17dbd0e307e1857b68dd452e1c22aa0078a"
+  },
+  {
+    "path": "docs/qualification-plans/qc07f-span-serve-20261024/rtsp_span_server_v1.h.FORWARD.diff",
+    "bytes": 4413,
+    "sha256": "b716e36f0261f8024e35b62762c0a2624c54cfe1170dae9c6bdee01b7940a789"
+  },
+  {
+    "path": "docs/qualification-plans/qc07f-span-serve-20261024/rtsp_span_server_v1.h.INVERSE.diff",
+    "bytes": 4413,
+    "sha256": "5a2307a24351519dd797cef34fa44cdbac18674dc5511811b92f16919bb00f72"
+  },
+  {
+    "path": "docs/qualification-plans/qc07f-span-serve-20261024/runs/build01/REPORT.json",
+    "bytes": 322698,
+    "sha256": "3b3200efcb5d298e1f490856a6d790893180cbca23aebc7e12cd7e74fb7a4a21"
+  }
+]

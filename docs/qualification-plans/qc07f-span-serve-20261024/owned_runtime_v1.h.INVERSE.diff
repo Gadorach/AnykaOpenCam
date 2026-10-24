@@ -1,0 +1,62 @@
+--- apps/rtsp-auth/qc07f-span-serve-candidate/owned_runtime_v1.h
++++ apps/rtsp-auth/qc07f-span-runtime-candidate/owned_runtime_v1.h
+@@ -3,13 +3,12 @@
+  */
+ #ifndef QC07F_OWNED_RUNTIME_V1_H
+ #define QC07F_OWNED_RUNTIME_V1_H
+-#include "../qc07f-span-runtime-candidate/native/native_adapter.h"
+-#include "rtsp_span_server_v1.h"
++#include "native/native_adapter.h"
+ #include "../qc07f-owned-runtime/server/prestarted_owned_listener_v1.h"
+ #include "../qc07f-owned-runtime/native/native_watchdog.h"
+ #include "../qc07f-owned-runtime/native/owned-provider.h"
+ #include "../qc07f-owned-runtime/native/provider-return.h"
+-#define QC07F_OWNED_RUNTIME_SOURCE_API 3U
++#define QC07F_OWNED_RUNTIME_SOURCE_API 2U
+ 
+ /* Static fresh zero storage only. Public for allocation, private after prepare.
+  * One singleton/native provider + common producer, NOT one per RTSP peer.
+@@ -35,16 +34,9 @@
+  struct camera_packet packet;
+  struct nh_key key; /* real native capture identity, not a common/hub token */
+  /* Set ONLY by the actual typed call, never cleared on failure or source END.
+-  * Borrowed caller CPU owner, NOT native.resident_storage or a free authority.
+-  * Only the integrated normal server tail retires these LIVE pointers. */
++  * Borrowed caller CPU owner, NOT native.resident_storage or a free authority. */
+  struct camera_span_hub_v1 *span_hub;
+  unsigned span_setup_attempt;
+- /* Scalar one-use history survives normal pointer retirement. Stage1 precedes
+-  * actual native STOP; stage2 follows its ACK, never a caller success flag.
+-  * Output integers are captured before the unchanged native output free. */
+- unsigned span_native_retire,span_relinquished;
+- uintptr_t span_output_begin,span_output_end,span_owner_retired;
+- struct camera_rtsp_span_retention_v1 span_sink; /* actual persistent typed sink */
+ };
+ 
+ /* BEFORE candidate_prestarted_start: device-free addresses/references only.
+@@ -77,8 +69,8 @@
+  * Pre-borrow no-effect refusal may return; every later failure quarantines the
+  * actual process without unwind. All owner/backing/config/runtime addresses
+  * survive every outcome. Success is source history, not native fit/readiness.
+- * No ownership move/init/allocation/disposal/retry is provided here. ONLY the
+- * composed serve's actual known-normal tail may relinquish the CPU borrow.
++ * No ownership move, init/allocation/disposal/retry/retirement is provided here.
++ * Even normal source END does not release this borrow or dispose caller hub.
+  */
+ int qc07f_owned_runtime_memory_span_hub_v1(struct qc07f_owned_runtime_v1 *,
+  struct camera_span_hub_v1 *);
+@@ -90,14 +82,4 @@
+  * Known pre-effect refusals can return. No public RTSP contract is relaxed.
+  */
+ void qc07f_owned_runtime_cleanup_v1(void *,int clock_failed,unsigned final);
+-
+-/* Internal typed composition checks, NOT general owner/retirement permissions.
+- * End is called ONLY from the real server tail after its actual client drain,
+- * same-hub STOP/drain/token checks and successful common retirement. It verifies
+- * private native/ledger facts and exact still-bound gate. No IO/callback/retry.
+- * Failure after borrow quarantines. Success retires pointers, NEVER history,
+- * lender/native/watchdog lifetime or caller hub storage. */
+-int qc07f_owned_runtime_span_entry_v1(struct qc07f_owned_runtime_v1 *);
+-void qc07f_owned_runtime_span_end_borrow_v1(struct qc07f_owned_runtime_v1 *,
+- struct camera_span_hub_v1 *,int (*gate)(void *),void *gate_context);
+ #endif

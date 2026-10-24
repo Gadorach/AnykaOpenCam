@@ -55,7 +55,7 @@ dependency records/84 artifacts/40 logs/five tools. Native hardening/real creden
 NOT RUN. See rtsp-provisioner-process PARENT_DISPOSITION; no active author/reviewer
 in that lane; committed locally `5269979`. Its original33-input pin set retains
 the pre-closeout index:32 remain unchanged plus known parent index/status
-updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE10.json`,
+updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE11.json`,
 not rebased. Actual authorized
 external ingress, secret-free launch/FD-env-caps
 hygiene, durable storage/rotation, linked-file retirement/main/external recovery/
@@ -153,12 +153,23 @@ exact paid owner/range readiness and complete pre-memory return-history refusal.
 14 HOST/ARM compiles/2 rooted REL links/42 commands PASS, zero executions; build01
 pre-compilation reuse refusal preserved. Parent checked20 delivery/67 frozen pins,
 985 build02+199 build01 overlapping records/logs, exact membership/aggregate/diffs,
-46 archive bodies/32 selected bodies. See qc07f-span-runtime PARENT_DISPOSITION.
+46 archive bodies/32 selected bodies. Committed locally `5375584`; see
+qc07f-span-runtime PARENT_DISPOSITION.
 No source author/reviewer remains active. One real
-private native owner, no ready Boolean or old flat admission path. Borrowed hub
-history remains retained even after normal native END; final cleanup intentionally
-nonreturns while borrowed, no external relinquishment API. No sender/runtime
-composition or hardware phase selected. Remaining1MiB output/
+private native owner, no ready Boolean or old flat admission path. That original
+runtime still retains borrowed hub history after native END and has no borrow-end
+API. Fresh qc07f-span-serve-candidate now has narrow independent SOURCE/API/order/
+ownership/lifetime sufficiency: typed actual sender/runtime
+connection, persistent real nonreturning sink and known-normal CPU borrow end
+after actual native END/ACK/close, logical watchdog disable and producer/hub drain.
+Terminal scalar history remains; live owner pointers retire only at that boundary.
+16 HOST/ARM compiles/2 rooted REL links/46 commands PASS, zero candidate calls.
+Parent verified22 delivery/101 frozen pins,1066 overlapping build records/logs,
+exact membership/eight literal+two aggregate diffs/twelve unchanged sender bodies,
+46 archive bodies/32 selected bodies. See qc07f-span-serve PARENT_DISPOSITION;
+no source author/reviewer active, no candidate invocation or hardware phase.
+This normal CPU borrow release is not lender destruction, native/cap acceptance,
+history reset, caller-ready Boolean or survival/recovery claim. Remaining1MiB output/
 raw/process2MiB/combined-load/external recovery remain open; no rerun, negative
 test, runtime/cap/native adoption or hardware queue.
 No new diagnostic/clock/receipt framework or hardware phase selected.
