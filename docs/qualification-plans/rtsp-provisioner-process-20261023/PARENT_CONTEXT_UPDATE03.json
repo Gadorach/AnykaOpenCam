@@ -1,0 +1,15 @@
+{
+  "scope": "THIRD_KNOWN_PARENT_MUTABLE_INDEX_STATUS_UPDATE_NOT_SOURCE_PIN_REBASE",
+  "utc": "2026-10-24T02:13:23.635507+00:00",
+  "original_manifests_and_review_unchanged": true,
+  "path": "docs/plan/camera-foundation/00-INDEX.md",
+  "before": {
+    "bytes": 126297,
+    "sha256": "58c10cce87ca7e51c1e30cf6adcc4994fa2bf8a11d0840379902d843132e853b"
+  },
+  "after": {
+    "bytes": 127039,
+    "sha256": "2741b760d3d786ef2b0b54afa7ba0a5c8b94d7e68f5d31cd669e4cf0f9bb37c5"
+  },
+  "reason": "user reseated probes/requested retry; fresh23h unchanged-code cold observation PASS then OFF, OS-random closeout and separately gated retained-image RAM-entry method preparation"
+}

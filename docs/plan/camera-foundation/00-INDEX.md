@@ -87,7 +87,15 @@ but retained FAILED/HOLD on1 unexplained prefix byte before the exact profile/
 trailers. Outlet OFF, child wait0/final hashes verified; no10s quiet or further
 power-cycle/ON/native queue. See
 [23g result](../../qualification-plans/execution-20261023/COLD23G_RESULT.md).
-Hardware qualification is blocked on unexplained serial data, not a permission gap.
+User subsequently reseated probes/requested retry. Fresh23h with UNCHANGED parser/
+controller PASSED exact596RX/57TX plus10s quiet; actual ON/OFF GETs, owned wait0/
+finalization and independent final GET OFF/PID/socket/fuser checks. See
+[23h result](../../qualification-plans/execution-20261023/COLD23H_RESULT.md).
+No old failure relabelled or prefix trimmed; cause of earlier bytes remains
+unknown. Camera OFF/no active capture or live native lease. One offline method
+lane prepares separately reviewed retained-image RAM75 entry/idle, not a new
+diagnostic build, controller invocation or clock/receipt framework. Actual native
+state/image/memory/recovery/clock gates remain; no motor/NOR/boot queue.
 Separate RTSP provisioner-child/readonly-FD IPC now has narrow independent SOURCE/
 API/custody sufficiency,27 HOST/ARM compiles/40 commands and ONE normal PUBLICDUMMY
 fork/FD-transfer/wait0/bind observation. No real credentials/native hardening or
@@ -96,8 +104,10 @@ start connection after known provisioner retirement/bind now has narrow independ
 SOURCE/API/order/custody sufficiency,2 HOST/ARM compiles/2 real REL links/24 commands,
 never called; see
 [bootstrap disposition](../../qualification-plans/qc07f-bootstrap-20261023/PARENT_DISPOSITION.md).
-One source lane implements a real public-RTSP OS randomness callback, not fixture
-entropy or native qualification. Provisioner handback:
+The real public-RTSP OS randomness callback now has narrow independent SOURCE/API/
+bounds sufficiency,5 HOST/ARM compiles/26 commands and ONE HOST OS call PASS; no
+callback integration/native entropy qualification. Local commit `4b11b79`.
+Provisioner handback:
 [disposition](../../qualification-plans/rtsp-provisioner-process-20261023/PARENT_DISPOSITION.md).
 PTZ counter source/compile-only correction is committed locally `8ec07ff`, not
 deployed. Private

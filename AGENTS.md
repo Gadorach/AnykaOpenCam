@@ -28,33 +28,25 @@ Hardware trials are authorized; prefer reviewed
 prearmed watchdog recovery/known-idle watchdog reset. Further adversarial testing
 remains deferred. The initial RAM76 belief was superseded by the cold handoff below.
 
-**Actual native state:** Camera last independently read controller OFF; no active
-capture/transfer or current Linux/watchdog coverage. User confirmed UART-only wiring,
-correct supply path/visible brief power-up and QC07F-only ESPHome outlet mapping;
-do not repeat those questions. Endpoint/association stay private outside Git; skill's
-MS42P images/UART/runbook do NOT apply.23c held U-Boot then OFF remains FAILED/HOLD
-from parent full-capture EOF misuse (360B exact first profile plus236B fixed catch
-echoes); no10s quiet/wait0 claim. See execution-20261023/COLD23C_RESULT.md.
-V1/v2 cold-entry never invoked. V3's ONE23d attempt remains FAILED/HOLD: initial
-OFF/ON attempted/OFF readback/owned recorder wait0+finalized, but0RX/TX; stopped
-about0.2s before3s wait, ON readback NOT accepted. User saw camera power up.
-Async readback race is hypothesis, not proved diagnosis. See COLD23D_RESULT.md.
-Fresh v4 moves3s wait before single GET ON, adds250ms before single GET OFF and
-separate private power acknowledgement/value/failure-phase fields. Independent
-ordinary SOURCE/API review accepts narrow sufficiency; source
-`40794530f6ef7bb9fec15104fee5f3c06e841ba6a08947794041bac99b3cc8b5`.
-ONE23e invocation FAILED/HOLD BEFORE ON:2 unexpected RX bytes/0TX, initial GET OFF
-accepted, no power POST; owned child wait0/private finalization verified. No bytes
-discarded or called harmless. Independent GET OFF/PID/socket/fuser postchecks passed.
-Separate passive23f nominal120s completed0RX/0TX/noRPC/arm/powerchange, actualwait0,
-final hashes/markers unchanged; not an explanation/relabel of23e. Focused method
-review then parent selection admitted ONE fresh unchanged-v4 23g. Actual ON/OFF
-acks and strict readbacks succeeded, three19B catch packets/57TX; but597RX begins
-with ONE unexplained byte before otherwise exact cold profile/trailers. Full-
-context FAILED/HOLD, no10s quiet; no trimming/classifier change or retry selected.
-OFF/readback/owned stop/wait0/private hashes/PID/socket/fuser postchecks completed.
-See COLD23G_RESULT.md under execution-20261023. Hardware qualification is blocked
-on unexplained serial data; no more power-cycle/catch/native effect selected.
+**Actual native state:** After user reseated probes and requested retry, ONE fresh
+23h with UNCHANGED v4/parser **PASS cold observation only**:596RX exactly360B/19
+first-prompt records +236B controlled echo groups;3×19B/57TX original catch, no
+extra prefix/window reset, separate10s unchanged RX/TX/raw/events. Actual ON/OFF
+acknowledgements and strict GETs, known-child stop/wait0/private final hashes and
+all original-input/marker postchecks passed. Independent final GET OFF, PID/socket
+absent/no visible tty owner. **Camera controller OFF; no active capture/transfer,
+current Linux or watchdog lease.**23h is finalized, not live held-prompt authority.
+See execution-20261023/COLD23H_SELECTION.md and COLD23H_RESULT.md.
+User already confirmed UART-only wiring, correct supply/visible power-up and
+QC07F-only ESPHome outlet mapping; do not repeat those questions. Endpoint/private
+evidence remain outside Git; skill's MS42P images/UART/runbook do NOT apply.
+Earlier radio/reset/23c/23d/23e/23g failures stay independently FAILED/HOLD.
+23c WAS parent full-capture EOF misuse;23e/23g unexpected bytes are in saved raw
+before parsing. This clean unchanged-code23h proves a new observation, NOT electrical
+origin/driver correctness/relay noise, a proved reseating fix or retrospective PASS.
+See earlier COLD23C/D/E/G and PASSIVE23F results for exact failed boundaries.
+V1/v2 never invoked; v3 once23d and v4 once23e/once23g/once23h, no retry loop or
+byte trimming. V4 source `40794530f6ef7bb9fec15104fee5f3c06e841ba6a08947794041bac99b3cc8b5`.
 Separate rtsp-provisioner-process now has narrow independent SOURCE/API/custody
 sufficiency for REAL child-only ingress/constructor/readonly-FD IPC/known-wait0/
 explicit parent bind.27 HOST/ARM compiles/40 commands + ONE normal PUBLICDUMMY
@@ -63,7 +55,7 @@ dependency records/84 artifacts/40 logs/five tools. Native hardening/real creden
 NOT RUN. See rtsp-provisioner-process PARENT_DISPOSITION; no active author/reviewer
 in that lane; committed locally `5269979`. Its original33-input pin set retains
 the pre-closeout index:32 remain unchanged plus known parent index/status
-updates recorded in PARENT_CONTEXT_UPDATE01/02.json, not rebased. Actual authorized
+updates recorded in PARENT_CONTEXT_UPDATE01/02/03.json, not rebased. Actual authorized
 external ingress, secret-free launch/FD-env-caps
 hygiene, durable storage/rotation, linked-file retirement/main/external recovery/
 backing remain gaps. Next source connection is known-wait/bind → real device-free
@@ -78,10 +70,13 @@ independent SOURCE/API/bounds sufficiency,5 HOST/ARM compiles/26 commands and ON
 real HOST callback call PASS (no bytes retained/hashed). Parent verified548 public
 pin records; see rtsp-os-random PARENT_DISPOSITION. One nonblocking OS getrandom
 call, no fallback/retry/cache; no callback integration or native entropy qualification.
-Bootstrap closeout committed locally `0b146c4`. No source author/reviewer remains
-active. Further hardware is blocked on unexplained serial data; no cycle/boot/
-motor/NOR/native operation selected. Eligible offline product work remains; no
-new diagnostic/clock/receipt framework or deferred adversarial campaign.
+Bootstrap/OS-random closeouts committed locally `0b146c4`/`4b11b79`; no source
+author/reviewer remains in those lanes. One isolated offline method author owns
+qc07f-ram75-entry23 qualification docs for a separately reviewed existing-image
+RAM75 entry/inert-idle phase after23h. NO controller/source invocation, new image,
+native/motor/NOR queue or clock/receipt framework. Actual image/memory/owner/
+watchdog/recovery and strict native-clock/C1 gates must be satisfied or explicitly
+blocked before code; remote same-host outlet is NOT independent host-hang recovery.
 No bootstrap test/child/verifier/native/media execution, main, synthetic callbacks,
 provider/backing or hardware adoption selected.
 Original radio/Oct22 reset/23c/23d/23e/23g
@@ -282,7 +277,7 @@ checklist directory. No B08 worker or runtime operation is queued.
   qualification have not been accepted. Async init/guard, automatic recovery,
   TX timeout/ownership, teardown and non-event paths remain technical blockers.
 - Current actual state is the Oct23 OFF/finalized boundary above, not Oct21/22
-  RAM76/radio APPLICATION. Capture21a/22a/22b/23b/23c/23d/23e/23f/23g are finalized; their PIDs,
+  RAM76/radio APPLICATION. Capture21a/22a/22b/23b/23c/23d/23e/23f/23g/23h are finalized; their PIDs,
   counters, addresses and timers are historical. No current Linux/WLAN/radio state
   is inherited from them. Old private evidence and original failure remain intact.
 - Original05:23UTC native radio trial remains **FAILED/HOLD**:74 payload fragments
