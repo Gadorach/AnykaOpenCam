@@ -1,0 +1,1123 @@
+{
+  "status": "COMPILE_ROOTED_REL_METADATA_PASS_NOT_RUN",
+  "utc": "2026-10-24T11:07:46.945017+00:00",
+  "C_compiles": 4,
+  "real_rooted_REL_links": 2,
+  "commands": [
+    {
+      "name": "host-version",
+      "argv": [
+        "/usr/bin/cc",
+        "--version"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/tmp"
+      },
+      "started_utc": "2026-10-24T11:07:45.084217+00:00",
+      "finished_utc": "2026-10-24T11:07:45.087048+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-version.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-version.txt",
+        "bytes": 227,
+        "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+      }
+    },
+    {
+      "name": "host-machine",
+      "argv": [
+        "/usr/bin/cc",
+        "-dumpmachine"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/tmp"
+      },
+      "started_utc": "2026-10-24T11:07:45.094433+00:00",
+      "finished_utc": "2026-10-24T11:07:45.095718+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-machine.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-machine.txt",
+        "bytes": 20,
+        "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+      }
+    },
+    {
+      "name": "host-tool-cc1",
+      "argv": [
+        "/usr/bin/cc",
+        "-print-prog-name=cc1"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/tmp"
+      },
+      "started_utc": "2026-10-24T11:07:45.103402+00:00",
+      "finished_utc": "2026-10-24T11:07:45.104808+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-tool-cc1.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-tool-cc1.txt",
+        "bytes": 40,
+        "sha256": "c400491dd6f36bdc89c46da99a7c98dbd19a3eb313a62e89576505b07846aec8"
+      }
+    },
+    {
+      "name": "host-tool-as",
+      "argv": [
+        "/usr/bin/cc",
+        "-print-prog-name=as"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/tmp"
+      },
+      "started_utc": "2026-10-24T11:07:45.553446+00:00",
+      "finished_utc": "2026-10-24T11:07:45.554891+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-tool-as.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-tool-as.txt",
+        "bytes": 3,
+        "sha256": "8b97bca79750847558d488e2ea4de79903c9c71c9af27ecf1b3dff5dba2abdd9"
+      }
+    },
+    {
+      "name": "host-tool-ld",
+      "argv": [
+        "/usr/bin/cc",
+        "-print-prog-name=ld"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/tmp"
+      },
+      "started_utc": "2026-10-24T11:07:45.575616+00:00",
+      "finished_utc": "2026-10-24T11:07:45.577145+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-tool-ld.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-tool-ld.txt",
+        "bytes": 3,
+        "sha256": "3b6cb8ae51045d062a7c7de7cc488ad8785144cfbc0a7fc9546ed52429e0d97f"
+      }
+    },
+    {
+      "name": "host-compile-hub",
+      "argv": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wpedantic",
+        "-fno-common",
+        "-fstack-usage",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-O2",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-hub.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-producer-candidate/span_hub.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-hub.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/tmp"
+      },
+      "started_utc": "2026-10-24T11:07:45.590480+00:00",
+      "finished_utc": "2026-10-24T11:07:45.905157+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-compile-hub.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-compile-hub.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "host-compile-spans",
+      "argv": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wpedantic",
+        "-fno-common",
+        "-fstack-usage",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-O2",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-spans.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-spans.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/tmp"
+      },
+      "started_utc": "2026-10-24T11:07:45.911907+00:00",
+      "finished_utc": "2026-10-24T11:07:45.969019+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-compile-spans.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-compile-spans.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "host-integration-REL",
+      "argv": [
+        "/usr/bin/ld",
+        "-r",
+        "--gc-sections",
+        "-t",
+        "-Map=/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/host-rel.map",
+        "-u",
+        "camera_span_hub_init_v1",
+        "-u",
+        "camera_span_hub_subscribe_v1",
+        "-u",
+        "camera_span_hub_resync_v1",
+        "-u",
+        "camera_span_hub_unsubscribe_v1",
+        "-u",
+        "camera_span_hub_publish_v1",
+        "-u",
+        "camera_span_hub_producer_reserve_v3",
+        "-u",
+        "camera_span_hub_producer_cancel_v3",
+        "-u",
+        "camera_span_hub_producer_arm_v3",
+        "-u",
+        "camera_span_hub_producer_commit_v3",
+        "-u",
+        "camera_span_hub_producer_hold_v3",
+        "-u",
+        "camera_span_hub_acquire_v1",
+        "-u",
+        "camera_span_hub_release_v1",
+        "-u",
+        "camera_span_hub_lease_valid_v1",
+        "-u",
+        "camera_span_hub_packet_v1",
+        "-u",
+        "camera_span_hub_stop_v1",
+        "-u",
+        "camera_span_hub_drained_v1",
+        "-u",
+        "camera_span_hub_dispose_v1",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-hub.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-spans.o",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/host-HUB-REAL-SPANS-REL.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/tmp"
+      },
+      "started_utc": "2026-10-24T11:07:45.973812+00:00",
+      "finished_utc": "2026-10-24T11:07:45.979793+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-integration-REL.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-integration-REL.txt",
+        "bytes": 242,
+        "sha256": "f7ed98eb5075b3f80b64a4c12bd1082777aca51b2a7f1d363c91a3c992815117"
+      }
+    },
+    {
+      "name": "host-REL-ELF",
+      "argv": [
+        "/usr/bin/readelf",
+        "-h",
+        "-A",
+        "-S",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/host-HUB-REAL-SPANS-REL.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/tmp"
+      },
+      "started_utc": "2026-10-24T11:07:45.983173+00:00",
+      "finished_utc": "2026-10-24T11:07:46.021168+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-REL-ELF.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-REL-ELF.txt",
+        "bytes": 8006,
+        "sha256": "7510477d5187a74cd80a6cd1a3e25abc5baf66c81b16ac90d45813d613c31a60"
+      }
+    },
+    {
+      "name": "host-REL-symbols",
+      "argv": [
+        "/usr/bin/nm",
+        "-g",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/host-HUB-REAL-SPANS-REL.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/tmp"
+      },
+      "started_utc": "2026-10-24T11:07:46.022180+00:00",
+      "finished_utc": "2026-10-24T11:07:46.096381+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-REL-symbols.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-REL-symbols.txt",
+        "bytes": 983,
+        "sha256": "806ccb3ef5738463d4e042695f04954b8abeef6501c96798495b667e329b986a"
+      }
+    },
+    {
+      "name": "host-REL-relocations",
+      "argv": [
+        "/usr/bin/readelf",
+        "-rW",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/host-HUB-REAL-SPANS-REL.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/tmp"
+      },
+      "started_utc": "2026-10-24T11:07:46.099688+00:00",
+      "finished_utc": "2026-10-24T11:07:46.105004+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-REL-relocations.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-REL-relocations.txt",
+        "bytes": 8871,
+        "sha256": "269520426f0731c60aa5b4ef63ba3349c9e064d4037423541ba47426a29d4b79"
+      }
+    },
+    {
+      "name": "arm-version",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "--version"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/tmp"
+      },
+      "started_utc": "2026-10-24T11:07:46.112742+00:00",
+      "finished_utc": "2026-10-24T11:07:46.115620+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-version.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-version.txt",
+        "bytes": 288,
+        "sha256": "7b501201183c07e1e9078ca3f8b1f502d07fd67c414e92183c01e8787c00a0d4"
+      }
+    },
+    {
+      "name": "arm-machine",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-dumpmachine"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/tmp"
+      },
+      "started_utc": "2026-10-24T11:07:46.116161+00:00",
+      "finished_utc": "2026-10-24T11:07:46.118353+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-machine.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-machine.txt",
+        "bytes": 29,
+        "sha256": "d0cf670b8c286026ebd268b1f5ecdd6be41552e0e254a949fb50ab0ed085dd23"
+      }
+    },
+    {
+      "name": "arm-tool-cc1",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-print-prog-name=cc1"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/tmp"
+      },
+      "started_utc": "2026-10-24T11:07:46.118886+00:00",
+      "finished_utc": "2026-10-24T11:07:46.120983+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-tool-cc1.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-tool-cc1.txt",
+        "bytes": 220,
+        "sha256": "11399c4ad884b1da76486da5e344e5b6e2c541c6e4001b24865a4e5cd4f70fa3"
+      }
+    },
+    {
+      "name": "arm-tool-as",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-print-prog-name=as"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/tmp"
+      },
+      "started_utc": "2026-10-24T11:07:46.242328+00:00",
+      "finished_utc": "2026-10-24T11:07:46.245032+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-tool-as.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-tool-as.txt",
+        "bytes": 260,
+        "sha256": "aebf2a97c58e1d1f4676098a8e9b91c8569c49d3c9d06e537fe689c4afcd8b56"
+      }
+    },
+    {
+      "name": "arm-tool-ld",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-print-prog-name=ld"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/tmp"
+      },
+      "started_utc": "2026-10-24T11:07:46.255240+00:00",
+      "finished_utc": "2026-10-24T11:07:46.257092+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-tool-ld.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-tool-ld.txt",
+        "bytes": 260,
+        "sha256": "e98fe4335d69760e406f842f1b5a0cd3e92881bf0dee7376ab8f647b78cc0e98"
+      }
+    },
+    {
+      "name": "arm-compile-hub",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wpedantic",
+        "-fno-common",
+        "-fstack-usage",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-hub.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-producer-candidate/span_hub.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-hub.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/tmp"
+      },
+      "started_utc": "2026-10-24T11:07:46.266418+00:00",
+      "finished_utc": "2026-10-24T11:07:46.500469+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-compile-hub.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-compile-hub.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "arm-compile-spans",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wpedantic",
+        "-fno-common",
+        "-fstack-usage",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-I/home/gadorach/Desktop/AnykaOpenCam/framework/include",
+        "-Os",
+        "-march=armv5te",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-MD",
+        "-MF",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-spans.d",
+        "-c",
+        "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.c",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-spans.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/tmp"
+      },
+      "started_utc": "2026-10-24T11:07:46.501165+00:00",
+      "finished_utc": "2026-10-24T11:07:46.551586+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-compile-spans.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-compile-spans.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "arm-integration-REL",
+      "argv": [
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/../lib/gcc/arm-buildroot-linux-musleabi/14.3.0/../../../../arm-buildroot-linux-musleabi/bin/ld",
+        "-r",
+        "--gc-sections",
+        "-t",
+        "-Map=/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/arm-rel.map",
+        "-u",
+        "camera_span_hub_init_v1",
+        "-u",
+        "camera_span_hub_subscribe_v1",
+        "-u",
+        "camera_span_hub_resync_v1",
+        "-u",
+        "camera_span_hub_unsubscribe_v1",
+        "-u",
+        "camera_span_hub_publish_v1",
+        "-u",
+        "camera_span_hub_producer_reserve_v3",
+        "-u",
+        "camera_span_hub_producer_cancel_v3",
+        "-u",
+        "camera_span_hub_producer_arm_v3",
+        "-u",
+        "camera_span_hub_producer_commit_v3",
+        "-u",
+        "camera_span_hub_producer_hold_v3",
+        "-u",
+        "camera_span_hub_acquire_v1",
+        "-u",
+        "camera_span_hub_release_v1",
+        "-u",
+        "camera_span_hub_lease_valid_v1",
+        "-u",
+        "camera_span_hub_packet_v1",
+        "-u",
+        "camera_span_hub_stop_v1",
+        "-u",
+        "camera_span_hub_drained_v1",
+        "-u",
+        "camera_span_hub_dispose_v1",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-hub.o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-spans.o",
+        "-o",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/arm-HUB-REAL-SPANS-REL.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/tmp"
+      },
+      "started_utc": "2026-10-24T11:07:46.558447+00:00",
+      "finished_utc": "2026-10-24T11:07:46.561587+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-integration-REL.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-integration-REL.txt",
+        "bytes": 240,
+        "sha256": "f3c50197c484e14e8dd2d9e56ba1263dccceb050b3bf340630fb3a76ca192f1c"
+      }
+    },
+    {
+      "name": "arm-REL-ELF",
+      "argv": [
+        "/usr/bin/readelf",
+        "-h",
+        "-A",
+        "-S",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/arm-HUB-REAL-SPANS-REL.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/tmp"
+      },
+      "started_utc": "2026-10-24T11:07:46.564436+00:00",
+      "finished_utc": "2026-10-24T11:07:46.570163+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-REL-ELF.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-REL-ELF.txt",
+        "bytes": 6099,
+        "sha256": "833e3a1ecd76ff5b9d1212cfed1da1bdbad0d7475d989d791c7e50d7b96dedc1"
+      }
+    },
+    {
+      "name": "arm-REL-symbols",
+      "argv": [
+        "/usr/bin/nm",
+        "-g",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/arm-HUB-REAL-SPANS-REL.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/tmp"
+      },
+      "started_utc": "2026-10-24T11:07:46.570776+00:00",
+      "finished_utc": "2026-10-24T11:07:46.593131+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-REL-symbols.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-REL-symbols.txt",
+        "bytes": 887,
+        "sha256": "94b9671cda68af218ff056f75128ca5aaa406f3f4c591040d4b297f13466fe31"
+      }
+    },
+    {
+      "name": "arm-REL-relocations",
+      "argv": [
+        "/usr/bin/readelf",
+        "-rW",
+        "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/arm-HUB-REAL-SPANS-REL.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/tmp"
+      },
+      "started_utc": "2026-10-24T11:07:46.595868+00:00",
+      "finished_utc": "2026-10-24T11:07:46.602113+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-REL-relocations.txt",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-REL-relocations.txt",
+        "bytes": 7559,
+        "sha256": "c82c4c9d137f8e8cd0a8b08b8527f0dddd6a6d5361d0f3ca53c675420a2bcd08"
+      }
+    }
+  ],
+  "roots": [
+    "camera_span_hub_init_v1",
+    "camera_span_hub_subscribe_v1",
+    "camera_span_hub_resync_v1",
+    "camera_span_hub_unsubscribe_v1",
+    "camera_span_hub_publish_v1",
+    "camera_span_hub_producer_reserve_v3",
+    "camera_span_hub_producer_cancel_v3",
+    "camera_span_hub_producer_arm_v3",
+    "camera_span_hub_producer_commit_v3",
+    "camera_span_hub_producer_hold_v3",
+    "camera_span_hub_acquire_v1",
+    "camera_span_hub_release_v1",
+    "camera_span_hub_lease_valid_v1",
+    "camera_span_hub_packet_v1",
+    "camera_span_hub_stop_v1",
+    "camera_span_hub_drained_v1",
+    "camera_span_hub_dispose_v1"
+  ],
+  "frozen_files": 519,
+  "frozen_membership_bytes_unchanged": true,
+  "selected_inputs_tools_unchanged": true,
+  "dependencies": 42,
+  "tools": 12,
+  "artifacts": [
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/DEPENDENCIES.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/DEPENDENCIES.json",
+      "bytes": 12792,
+      "sha256": "e6915927326949d6fc0432fb41c85a8989b23a877a47ec13a721928d1c132dbb"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/FROZEN_INPUTS.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/FROZEN_INPUTS.json",
+      "bytes": 203537,
+      "sha256": "894f5407219d418d49e1d5f2b55798a1b2288e7be8dba6daf9c58cddc6a37d7f"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/INPUTS.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/INPUTS.json",
+      "bytes": 2931,
+      "sha256": "794b44fea1054bb8d640c202ac36c254d049e5aab9c50c10b86afa4e5015e6cb"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/PRODUCER_TO_V2-span_hub.c.diff",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/PRODUCER_TO_V2-span_hub.c.diff",
+      "bytes": 17063,
+      "sha256": "8113a6351c8f3e5badad55f091fca1b9c379535e33eb083dbaab9b8989c89514"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/PRODUCER_TO_V2-span_hub.h.diff",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/PRODUCER_TO_V2-span_hub.h.diff",
+      "bytes": 10928,
+      "sha256": "15c1448fc8172647da69f831deaf04af5b2169796187ed7f8a0d02351dfe6904"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/SOURCE_DELTA.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/SOURCE_DELTA.json",
+      "bytes": 3534,
+      "sha256": "e3bf6d00d804a77c9757687a8af8e5a0b42e09d433bca346bb7f34207b352702"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/TOOLS.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/TOOLS.json",
+      "bytes": 4137,
+      "sha256": "0ed61aa8de258016dae1fa97823b404faed63c923680f30035cbbbaa10e85c53"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/V2_TO_PRODUCER-span_hub.c.diff",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/V2_TO_PRODUCER-span_hub.c.diff",
+      "bytes": 16927,
+      "sha256": "537ed0ba023ca6f2a7889aeaea678517e207d9270f88cce8de6406c730fc677a"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/V2_TO_PRODUCER-span_hub.h.diff",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/V2_TO_PRODUCER-span_hub.h.diff",
+      "bytes": 10928,
+      "sha256": "1733d46f09c432244886469f106223c0fede44d4acd85a6060207a711f7910dc"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/arm-HUB-REAL-SPANS-REL.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/arm-HUB-REAL-SPANS-REL.o",
+      "bytes": 12036,
+      "sha256": "80934c4c3eeb28a92db5101aaaa56373627e24b765218f1d198598ffc71d69a3"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/arm-rel.map",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/arm-rel.map",
+      "bytes": 13627,
+      "sha256": "d61196a6080a5926bf92b86e2cdf7ce2db05136f4e3249e7927857757d9fa658"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-01.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-01.json",
+      "bytes": 879,
+      "sha256": "16092ded93688811b2f459d182d7b8b24c149e0f71c760bbe6e0e8e6e8a341e3"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-02.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-02.json",
+      "bytes": 881,
+      "sha256": "f0938e5483c202ca320f2a9f8b6a9d489373645a7370798e888a7407b221b5cf"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-03.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-03.json",
+      "bytes": 892,
+      "sha256": "91c97debe566d9970bf65cc36b07feda3c28bf8422be0d1c5f0ff89ff1ed4648"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-04.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-04.json",
+      "bytes": 887,
+      "sha256": "e80024d2934671f3e6dce79fb5f22eadc22b31a575806e01d1002beb33cab4d6"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-05.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-05.json",
+      "bytes": 887,
+      "sha256": "e2166890414df1cc273acc08fde0f399df3425e33c652c9c9b13dc4b85aaf166"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-06.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-06.json",
+      "bytes": 1506,
+      "sha256": "6421c4a49d3733aa4b5308af4170294789de7afcbbb0349f2448ecb2cce995b9"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-07.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-07.json",
+      "bytes": 1513,
+      "sha256": "27b7f7dffdb3a7779d505c0d717de1f27e56f7b623d05a07e3d2e9ecf0b11324"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-08.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-08.json",
+      "bytes": 2239,
+      "sha256": "7a3fe123410423c30631cdac5042caada14ec4e45ac61e8d7f37152898d44efd"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-09.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-09.json",
+      "bytes": 1032,
+      "sha256": "8d7158be45ccc03ef645c7e1fcff6ce9262f24d238f4a1ea5d855b01fd161da9"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-10.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-10.json",
+      "bytes": 1018,
+      "sha256": "0854e2e42872482e3a85c39c7433cf1417ea13e52a3db78c0f847e8a39dba8ef"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-11.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-11.json",
+      "bytes": 1037,
+      "sha256": "474223e076347f8f12e1ffb0cacb53327167112badd2b689b47085e10a7c63d8"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-12.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-12.json",
+      "bytes": 1062,
+      "sha256": "cc9f6c12c520754f773d8dc529fe88c5d43510b00c1d05ac09e2129ad3427bfb"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-13.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-13.json",
+      "bytes": 1064,
+      "sha256": "cac57aecb59d0987e4db11bb736abffea4c36289e09eb6afeb2d4de6ff78120f"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-14.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-14.json",
+      "bytes": 1076,
+      "sha256": "1e7dcc3c9cb597438f30d2fddf497b8705eb1dd5d362172b907ccb66244843c0"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-15.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-15.json",
+      "bytes": 1072,
+      "sha256": "2688373e9f425678fb0ce12a5cdc01aba0a6e3f6ad5ed06dbba0404fc34c71b2"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-16.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-16.json",
+      "bytes": 1072,
+      "sha256": "fac127d36463a98e3a2f896c450ce69ad9174a3b3155f862de784af0b931148e"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-17.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-17.json",
+      "bytes": 1746,
+      "sha256": "674e3b605eef6cedf9ad25ff901f52b095c68a5090fbe36993181a2476b6f980"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-18.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-18.json",
+      "bytes": 1753,
+      "sha256": "6204ccad9469ad44749bc315a03603d677dae469ff65d0726a696e5121626b25"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-19.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-19.json",
+      "bytes": 2480,
+      "sha256": "e37d51a0e8ab9cb070f6335a1926cca69185e024fa9b4f6f6bc598f192f0c001"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-20.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-20.json",
+      "bytes": 1028,
+      "sha256": "c57fedd7a186c2a19c848773308c988fac6aeb2ea94c7ad9449d14ceafad1ac6"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-21.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-21.json",
+      "bytes": 1014,
+      "sha256": "bb5323f30d17408ebf405be74f63b5fea251836fa680758082cc7a438ee2aad6"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-22.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-22.json",
+      "bytes": 1033,
+      "sha256": "39b463bef6659dda51c57d62acc15b5b602e59282ae4aa953b02e364e831a87a"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/host-HUB-REAL-SPANS-REL.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/host-HUB-REAL-SPANS-REL.o",
+      "bytes": 14704,
+      "sha256": "955681929434b06db5dac95d216ffa1aff952b8276a5cd71a1be9212871f2ad9"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/host-rel.map",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/host-rel.map",
+      "bytes": 13559,
+      "sha256": "daa84aa945bf279c34798d6a604b74033774912caf428835f93a404d4b7d08ab"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-REL-ELF.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-REL-ELF.txt",
+      "bytes": 6099,
+      "sha256": "833e3a1ecd76ff5b9d1212cfed1da1bdbad0d7475d989d791c7e50d7b96dedc1"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-REL-relocations.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-REL-relocations.txt",
+      "bytes": 7559,
+      "sha256": "c82c4c9d137f8e8cd0a8b08b8527f0dddd6a6d5361d0f3ca53c675420a2bcd08"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-REL-symbols.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-REL-symbols.txt",
+      "bytes": 887,
+      "sha256": "94b9671cda68af218ff056f75128ca5aaa406f3f4c591040d4b297f13466fe31"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-compile-hub.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-compile-hub.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-compile-spans.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-compile-spans.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-integration-REL.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-integration-REL.txt",
+      "bytes": 240,
+      "sha256": "f3c50197c484e14e8dd2d9e56ba1263dccceb050b3bf340630fb3a76ca192f1c"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-machine.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-machine.txt",
+      "bytes": 29,
+      "sha256": "d0cf670b8c286026ebd268b1f5ecdd6be41552e0e254a949fb50ab0ed085dd23"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-tool-as.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-tool-as.txt",
+      "bytes": 260,
+      "sha256": "aebf2a97c58e1d1f4676098a8e9b91c8569c49d3c9d06e537fe689c4afcd8b56"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-tool-cc1.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-tool-cc1.txt",
+      "bytes": 220,
+      "sha256": "11399c4ad884b1da76486da5e344e5b6e2c541c6e4001b24865a4e5cd4f70fa3"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-tool-ld.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-tool-ld.txt",
+      "bytes": 260,
+      "sha256": "e98fe4335d69760e406f842f1b5a0cd3e92881bf0dee7376ab8f647b78cc0e98"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-version.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-version.txt",
+      "bytes": 288,
+      "sha256": "7b501201183c07e1e9078ca3f8b1f502d07fd67c414e92183c01e8787c00a0d4"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-REL-ELF.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-REL-ELF.txt",
+      "bytes": 8006,
+      "sha256": "7510477d5187a74cd80a6cd1a3e25abc5baf66c81b16ac90d45813d613c31a60"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-REL-relocations.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-REL-relocations.txt",
+      "bytes": 8871,
+      "sha256": "269520426f0731c60aa5b4ef63ba3349c9e064d4037423541ba47426a29d4b79"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-REL-symbols.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-REL-symbols.txt",
+      "bytes": 983,
+      "sha256": "806ccb3ef5738463d4e042695f04954b8abeef6501c96798495b667e329b986a"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-compile-hub.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-compile-hub.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-compile-spans.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-compile-spans.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-integration-REL.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-integration-REL.txt",
+      "bytes": 242,
+      "sha256": "f7ed98eb5075b3f80b64a4c12bd1082777aca51b2a7f1d363c91a3c992815117"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-machine.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-machine.txt",
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-tool-as.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-tool-as.txt",
+      "bytes": 3,
+      "sha256": "8b97bca79750847558d488e2ea4de79903c9c71c9af27ecf1b3dff5dba2abdd9"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-tool-cc1.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-tool-cc1.txt",
+      "bytes": 40,
+      "sha256": "c400491dd6f36bdc89c46da99a7c98dbd19a3eb313a62e89576505b07846aec8"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-tool-ld.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-tool-ld.txt",
+      "bytes": 3,
+      "sha256": "3b6cb8ae51045d062a7c7de7cc488ad8785144cfbc0a7fc9546ed52429e0d97f"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-version.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-version.txt",
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-hub.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-hub.d",
+      "bytes": 2599,
+      "sha256": "68b154ffc71d93e123e5dda1d6ae75950dc782d8fceb8f87a51fbf076dec4270"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-hub.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-hub.o",
+      "bytes": 11224,
+      "sha256": "65a69b989efc728f6cff85b3780a2eeb87d21abe3311e8e13906ddb2e17f3f17"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-hub.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-hub.su",
+      "bytes": 3133,
+      "sha256": "090f94f6a62935017abab11aaf1104335479352b8bfaa06f3954e60a2f910860"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-spans.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-spans.d",
+      "bytes": 2252,
+      "sha256": "435269c7d052c1e782e08cb1cbe88bc36970538975810010c99b33669a1aa8c9"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-spans.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-spans.o",
+      "bytes": 1756,
+      "sha256": "efb75e7b8f158bc4d05c2aa580e41d5177c2cdfc97a0de9c266adf87d24e7c00"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-spans.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-spans.su",
+      "bytes": 134,
+      "sha256": "04c5251704cdf1d5f634fbcfa3b06a7a8fe6228268815b19aef8017cd66e5aef"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-hub.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-hub.d",
+      "bytes": 1418,
+      "sha256": "211a652113876aa3a854338ec735adbd946122eefab51510eca5edbec5096de2"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-hub.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-hub.o",
+      "bytes": 13424,
+      "sha256": "18081a1e92f694d39ff3e60bff309fcff5783117aeca048fdc619f75f07060f0"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-hub.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-hub.su",
+      "bytes": 2645,
+      "sha256": "570bdc26c3031c1d81777b3b0a8068ae401b29c82583eb0d463a26b73d6f3df1"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-spans.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-spans.d",
+      "bytes": 1133,
+      "sha256": "2ae670a39dcaa9df881511e2cb7515dfd61b31b806bd124d71ec9ee365256b22"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-spans.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-spans.o",
+      "bytes": 2496,
+      "sha256": "58044cfebd6c72da81841357c2f4fa0f1e80d5b0b34ec8f3b01329e61e1ea295"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-spans.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-spans.su",
+      "bytes": 135,
+      "sha256": "75c9a871c0ca7ea8ce43882f789e7530567ecb69163cb4ef5c41cfb5dd5873b6"
+    }
+  ],
+  "candidate_library_helper_test_function_calls": 0,
+  "executable_built": false,
+  "compiler_closure_or_native_ABI_claim": false
+}

@@ -1,0 +1,15 @@
+{
+  "scope": "THIRTEENTH_KNOWN_PARENT_MUTABLE_INDEX_STATUS_UPDATE_NOT_SOURCE_PIN_REBASE",
+  "recorded_host_date": "2026-10-24",
+  "original_manifests_and_review_unchanged": true,
+  "path": "docs/plan/camera-foundation/00-INDEX.md",
+  "before": {
+    "bytes": 131776,
+    "sha256": "84ce1587cb7a197e9a8ca5cf7def8ccccb99713f56f2260cb219d078b7531eb7"
+  },
+  "after": {
+    "bytes": 132347,
+    "sha256": "0f0bcc170d9d5fe0d6cc7ce403d758b0ddb65d8cf3eeb3515ea196fce12e12f7"
+  },
+  "reason": "parent closes narrow independently reviewed exclusive hub producer custody and logical NAL slicing SOURCE scope, preserving consumer identity and armed-HOLD retention; no candidate calls or actual native/memory/runtime adoption"
+}

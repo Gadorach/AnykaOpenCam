@@ -1,0 +1,23 @@
+{
+  "scope": "PARENT_PUBLIC_SOURCE_DIFF_BUILD_REVIEW_VERIFICATION_NOT_EXECUTION",
+  "recorded_host_utc": "2026-10-24T11:18:00.941746+00:00",
+  "counts": {
+    "delivery_pins": 8,
+    "selected_inputs": 9,
+    "consumed_dependencies": 42,
+    "tools": 12,
+    "artifacts": 69,
+    "frozen_files": 519,
+    "exact_frozen_roots": 12,
+    "successful_commands_and_logs": 22
+  },
+  "original78_files_aggregate": "6366dcecd732b8a4210f2bee7989242f028abd4ab9f262913f36862ccc242d5e",
+  "aggregate_method": "sort complete workspace-relative strings; concatenate path TAB decimal_bytes TAB sha256 LF; SHA256",
+  "all_four_literal_diffs_regenerated_exactly": true,
+  "unchanged_function_bodies_compared": 5,
+  "exact_dependency_membership": true,
+  "distinct_lexical_paths_hashed": 646,
+  "review_sha256": "cebd4c0c171c1745b9a99e3dfecc6e1ca6c1ea6272f38b6cc8bee6174df2d66c",
+  "compiler_build_hub_library_test_ioctl_native_or_hardware_calls": 0,
+  "runtime_memory_or_native_adopted": false
+}

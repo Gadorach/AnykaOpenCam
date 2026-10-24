@@ -140,7 +140,18 @@ assertion failure remains FAILED_PRESERVED.21 public delivery pins/603 build02
 input records reconciled. Parent checked555 overlapping dependencies/4 tools/
 5 artifacts/24 build02 logs, failed custody and exact patches/consumed copies;
 all99 pre-closeout files unchanged. N1 aggregate Path-vs-string ordering reconciled
-without evidence rewrite, no runtime/cap/native acceptance. Current userspace still uses the old
+without evidence rewrite, no runtime/cap/native acceptance. Encoder source closed
+and committed locally `930afde`. Fresh span-hub-producer-candidate now has narrow
+independent SOURCE/API/bounds/ownership/order sufficiency: exclusive producer
+reserve/arm/commit custody of existing eight chunks, prefix slicing into actual
+consumer-bound accepted packetization, no full-NAL copy/allocation. Reserved/
+unexposed cancellation only; armed failure or STOP retains terminal HOLD and
+cannot drain/dispose.4 HOST/ARM compiles/2 rooted REL links/22 commands PASS, zero
+candidate calls. Parent checked8 delivery/9 inputs/42 dependencies/12 tools/
+69 artifacts/22 logs/519 frozen files/12 exact roots, four exact diffs and five
+unchanged bodies. See span-hub-producer PARENT_DISPOSITION, no author/reviewer
+active. No function/ioctl/native/memory/runtime adoption.
+Current userspace still uses the old
 contiguous-output ioctl; no cap/native/app acceptance follows.
 Actual backing remains next,
 not solved by source shape or a caller Boolean. No new diagnostic/clock framework.

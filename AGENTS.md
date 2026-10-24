@@ -66,7 +66,7 @@ dependency records/84 artifacts/40 logs/five tools. Native hardening/real creden
 NOT RUN. See rtsp-provisioner-process PARENT_DISPOSITION; no active author/reviewer
 in that lane; committed locally `5269979`. Its original33-input pin set retains
 the pre-closeout index:32 remain unchanged plus known parent index/status
-updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE12.json`,
+updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE13.json`,
 not rebased. Actual authorized
 external ingress, secret-free launch/FD-env-caps
 hygiene, durable storage/rotation, linked-file retirement/main/external recovery/
@@ -195,8 +195,19 @@ Narrow independent SOURCE/API/bounds/ownership/order sufficiency now accepted;
 parent checked21 delivery pins,603 inputs/555 overlapping dependencies/4 tools/
 5 artifacts/24 build02 logs, failed-run custody and exact patches/consumed copies.
 All99 original files unchanged; N1 Path-vs-string aggregate ordering reconciled,
-no evidence rewrite. See encoder-output-spans PARENT_DISPOSITION; no source
-author/reviewer active.21 public delivery pins, no function calls. No ioctl,
+no evidence rewrite. Committed locally `930afde`; see encoder-output-spans
+PARENT_DISPOSITION; no source author/reviewer active in that lane. Fresh
+span-hub-producer-candidate now has narrow independent SOURCE/API/bounds/ownership/
+order sufficiency: exclusive producer reserve/arm/commit custody of existing eight
+chunks and logical prefix slicing into consumer-bound actual span packetization.
+Reserved cancellation only before writable aliases; armed uncertainty/STOP retains
+terminal HOLD, never drain/free.4 HOST/ARM compiles/2 rooted REL links/22 commands
+PASS, zero candidate calls. Parent checked8 delivery/9 inputs/42 dependencies/
+12 tools/69 artifacts/22 logs/519 frozen files/12 exact roots, four exact diffs and
+five unchanged bodies. See span-hub-producer PARENT_DISPOSITION; no author/reviewer
+active. No actual ioctl/native/runtime/memory adoption; complete new-layout consumers
+need separate integration.
+21 encoder public delivery pins, no function calls. No ioctl,
 test/function call, new framework or hardware phase. Remaining1MiB output/
 raw/process2MiB/combined-load/external recovery remain open; no rerun, negative
 test, runtime/cap/native adoption or hardware queue.

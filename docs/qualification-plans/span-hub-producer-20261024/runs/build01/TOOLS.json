@@ -1,0 +1,74 @@
+[
+  {
+    "path": "/usr/bin/python3",
+    "resolved": "/usr/bin/python3.14",
+    "bytes": 14424,
+    "sha256": "44fdcdf23cd94aece60aec10b92b15a0e1cf4561e710985eaa53b362a03db48e"
+  },
+  {
+    "path": "/usr/bin/cc",
+    "resolved": "/usr/bin/gcc",
+    "bytes": 2451072,
+    "sha256": "a5f680ca8b01b1e7a98d531cac90f258875a301d841fab28a8b56d513470f988"
+  },
+  {
+    "path": "/usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1",
+    "resolved": "/usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1",
+    "bytes": 48442880,
+    "sha256": "373c6240b2adcbc5defb1e950890e534eec72e9e7a5fa12c3ccfda58abe12799"
+  },
+  {
+    "path": "/usr/bin/as",
+    "resolved": "/usr/bin/as",
+    "bytes": 953448,
+    "sha256": "50bb68c7b159346fedf7c7739e1f997068e7749792a8359fe850c86814bbb18d"
+  },
+  {
+    "path": "/usr/bin/ld",
+    "resolved": "/usr/bin/ld",
+    "bytes": 1644584,
+    "sha256": "7bd5014a8b3184c41943da0529ab0451592a5581750a73a9f4a77e4f4e26aa0a"
+  },
+  {
+    "path": "/usr/bin/readelf",
+    "resolved": "/usr/bin/readelf",
+    "bytes": 867440,
+    "sha256": "b561a09504aff0f2c864da60a268cafee9171fdd1574a23fde6158f95ad55294"
+  },
+  {
+    "path": "/usr/bin/nm",
+    "resolved": "/usr/bin/nm",
+    "bytes": 48560,
+    "sha256": "cf9a8d5beccc243c2010b863cb861e4e8a74cdb294af59dcf122950df2e8c440"
+  },
+  {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc.br_real",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc.br_real",
+    "bytes": 2246200,
+    "sha256": "e24ea223e7b521cce1f5889d63c25417e930cdbb35653b072f7b48d9a4b41729"
+  },
+  {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/toolchain-wrapper",
+    "bytes": 14704,
+    "sha256": "f4db963a226e01244ce6f7b5d1ec6d57474dd811119ff8834429f022835ce9c1"
+  },
+  {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/../libexec/gcc/arm-buildroot-linux-musleabi/14.3.0/cc1",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/libexec/gcc/arm-buildroot-linux-musleabi/14.3.0/cc1",
+    "bytes": 34599040,
+    "sha256": "caf028c324e59458a82d94018812e9d2c6ef49d369be94b474fc8b0525317028"
+  },
+  {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/../lib/gcc/arm-buildroot-linux-musleabi/14.3.0/../../../../arm-buildroot-linux-musleabi/bin/as",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/arm-buildroot-linux-musleabi/bin/as",
+    "bytes": 2220088,
+    "sha256": "9444b8d3ffa1e1d2d51be31ff2998eab4ecb3eb53b470947a0d0e297180debe1"
+  },
+  {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/../lib/gcc/arm-buildroot-linux-musleabi/14.3.0/../../../../arm-buildroot-linux-musleabi/bin/ld",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/arm-buildroot-linux-musleabi/bin/ld",
+    "bytes": 2346120,
+    "sha256": "28a979288cd5056057d7b78efd6b441979237c4ff0abcb685e184341ca4d5352"
+  }
+]

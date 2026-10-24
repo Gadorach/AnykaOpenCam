@@ -1,0 +1,62 @@
+{
+  "status": "AUTHOR_HANDBACK_COMPILE_ONLY_REVIEW_PENDING_NOT_RUN",
+  "verification": {
+    "selected_build_inputs_rechecked": 9,
+    "consumed_dependency_paths_rechecked": 42,
+    "retained_matching_tools_rechecked": 12,
+    "frozen_files_rechecked": 519,
+    "frozen_directories_exact_membership_rechecked": 12,
+    "build01_exact_file_membership": 70,
+    "successful_command_logs_rechecked": 22,
+    "all_report_artifact_pins_rechecked": true,
+    "no_source_or_compile_rerun_after_report": true,
+    "candidate_library_helper_test_function_calls": 0,
+    "hardware_actions": 0,
+    "independent_review_or_parent_adoption_claim": false,
+    "expected_assigned_directory_file_count_including_this_seal": 78
+  },
+  "pins": [
+    {
+      "path": "apps/rtsp-auth/span-hub-producer-candidate/LICENSE_NOTICES.md",
+      "bytes": 868,
+      "sha256": "42ae704c2b6398f64c820a29755e755a178325a86dd3a8569ea926e694624029"
+    },
+    {
+      "path": "apps/rtsp-auth/span-hub-producer-candidate/compile01.py",
+      "bytes": 10704,
+      "sha256": "4d9a39da0755a5180020477a546475d17ac8b295ccb7fc92040f5241249b2175"
+    },
+    {
+      "path": "apps/rtsp-auth/span-hub-producer-candidate/span_hub.c",
+      "bytes": 17177,
+      "sha256": "72e06177ae86c8659972ba8a59c81208302d44e0cb78f29b6114f8a4d5631f93"
+    },
+    {
+      "path": "apps/rtsp-auth/span-hub-producer-candidate/span_hub.h",
+      "bytes": 7936,
+      "sha256": "460320064f85d1f1f8ada1a9afd1e282c287583fdff34787ba63c7354adeed8e"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-producer-20261024/AUTHOR_AUDIT.md",
+      "bytes": 5247,
+      "sha256": "d9b0d2dff5ff9141fdce680c25bd924dff46698c4734bc5335f1bb487d2fc50c"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-producer-20261024/CONTRACT.md",
+      "bytes": 8261,
+      "sha256": "172e71aecf079426963d029f2f4185267c75dfbab12ddc876a99484930acd94c"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-producer-20261024/HANDOFF.md",
+      "bytes": 7986,
+      "sha256": "a192586138a5f2ddf818f5e5888c0ce3fbc00e70ce7af47ac4f35dc8bda18cab"
+    },
+    {
+      "path": "docs/qualification-plans/span-hub-producer-20261024/runs/build01/REPORT.json",
+      "bytes": 58399,
+      "sha256": "680b6b7bc317c76443267e6c5b1a557afe79377a84f9ee29db8d5d5d49ff561b"
+    }
+  ],
+  "build_record_transitive_pin_scope": "REPORT pins all69 pre-report run files; INPUTS/DEPENDENCIES/TOOLS/FROZEN_INPUTS and four inverse-proven literal deltas retain their own exact records. Counts overlap and are not a complete compiler closure. Seal does not hash itself.",
+  "scope": "Only assigned fresh app/docs directories written; no Git/index/centralplans/AGENTS/private/device/network/hardware access. Current native/runtime/memory/frontserver not adopted. No next queue."
+}

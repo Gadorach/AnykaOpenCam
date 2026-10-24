@@ -149,8 +149,15 @@ commit. Saved HOST/ARM ABI and NEW Clang23.1.3 whole-driver object compile PASS,
 12 commands; NOT RUN. Earlier build01 ABI-assertion failure remains preserved;
 host-restart handback/review completed without recompilation. See
 [encoder span disposition](../../qualification-plans/qc07f-encoder-output-spans-20261024/PARENT_DISPOSITION.md).
-No paired kernel/image build or native support follows; current userspace still
-uses its old contiguous-output ioctl. No candidate function invoked.
+No paired kernel/image build or native support follows. Exclusive hub producer
+reserve/arm/commit and logical NAL slicing now have narrow independent SOURCE/API/
+bounds/ownership/order sufficiency,4 HOST/ARM compiles/2 rooted REL links/22 commands,
+NOT RUN. Armed uncertainty or STOP retains terminal HOLD/backing; only unexposed
+reservation can cancel. Consumer-token validation reaches the accepted packetizer.
+See [producer hub disposition](../../qualification-plans/span-hub-producer-20261024/PARENT_DISPOSITION.md).
+Current userspace/memory/runtime still use old layouts and contiguous-output ioctl;
+actual new-history audits and typed source connection remain missing, not a relink.
+No candidate function invoked.
 Native1MiB output/raw/process2MiB/combined-load
 and external recovery remain open, not satisfied by CPU chunks or source review.
 No test, new clock/diagnostic framework or hardware phase selected.
