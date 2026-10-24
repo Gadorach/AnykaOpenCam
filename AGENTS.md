@@ -66,7 +66,7 @@ dependency records/84 artifacts/40 logs/five tools. Native hardening/real creden
 NOT RUN. See rtsp-provisioner-process PARENT_DISPOSITION; no active author/reviewer
 in that lane; committed locally `5269979`. Its original33-input pin set retains
 the pre-closeout index:32 remain unchanged plus known parent index/status
-updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE13.json`,
+updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE14.json`,
 not rebased. Actual authorized
 external ingress, secret-free launch/FD-env-caps
 hygiene, durable storage/rotation, linked-file retirement/main/external recovery/
@@ -204,9 +204,18 @@ Reserved cancellation only before writable aliases; armed uncertainty/STOP retai
 terminal HOLD, never drain/free.4 HOST/ARM compiles/2 rooted REL links/22 commands
 PASS, zero candidate calls. Parent checked8 delivery/9 inputs/42 dependencies/
 12 tools/69 artifacts/22 logs/519 frozen files/12 exact roots, four exact diffs and
-five unchanged bodies. See span-hub-producer PARENT_DISPOSITION; no author/reviewer
-active. No actual ioctl/native/runtime/memory adoption; complete new-layout consumers
-need separate integration.
+five unchanged bodies. Committed locally `b4cbbca`; see span-hub-producer
+PARENT_DISPOSITION; no author/reviewer active in that lane. qc07f-producer-memory
+now has narrow independent SOURCE/API/bounds/ownership/order sufficiency for actual
+whole-hub forecast/prefault/atomic credit against version3, refusing all prior
+writer/reservation/exposure/HOLD/slice history before touch and before payment.
+Runtime/header/reader/handoff byte-identical; original debt/timing/unpaid HOLD kept.
+10 HOST/ARM compiles/2 rooted REL links/28 commands PASS, zero candidate calls.
+Parent verified18 delivery/13 inputs/98 dependencies/12 tools/107 artifacts/28 logs/
+216 frozen files/10 exact roots and all12 diffs. See qc07f-producer-memory
+PARENT_DISPOSITION; no source author/reviewer active. No actual ioctl/native/runtime
+adoption; complete new-
+layout consumers need separate integration.
 21 encoder public delivery pins, no function calls. No ioctl,
 test/function call, new framework or hardware phase. Remaining1MiB output/
 raw/process2MiB/combined-load/external recovery remain open; no rerun, negative

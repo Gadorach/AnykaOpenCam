@@ -150,7 +150,16 @@ cannot drain/dispose.4 HOST/ARM compiles/2 rooted REL links/22 commands PASS, ze
 candidate calls. Parent checked8 delivery/9 inputs/42 dependencies/12 tools/
 69 artifacts/22 logs/519 frozen files/12 exact roots, four exact diffs and five
 unchanged bodies. See span-hub-producer PARENT_DISPOSITION, no author/reviewer
-active. No function/ioctl/native/memory/runtime adoption.
+active in that lane; committed locally `b4cbbca`. qc07f-producer-memory now has
+narrow independent SOURCE/API/bounds/ownership/order sufficiency for actual whole8
+prefault/atomic credit with version3 and exhaustive zero writer/reservation/
+exposure/error/slice history at preflight/precredit. Cancelled reservation cannot
+become fresh again; runtime/header/reader/handoff byte-identical, original debt/
+timing/sticky unpaid HOLD remain.10 HOST/ARM compiles/2 rooted REL links/28 commands
+PASS, zero candidate calls. Parent checked18 delivery/13 inputs/98 dependencies/
+12 tools/107 artifacts/28 logs/216 frozen files/10 exact roots and all12 diffs.
+See qc07f-producer-memory PARENT_DISPOSITION; no source author/reviewer active.
+No function/ioctl/native/runtime adoption.
 Current userspace still uses the old
 contiguous-output ioctl; no cap/native/app acceptance follows.
 Actual backing remains next,

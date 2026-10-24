@@ -1,0 +1,80 @@
+[
+  {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/LICENSE_NOTICES.md",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/LICENSE_NOTICES.md",
+    "bytes": 901,
+    "sha256": "0957bd5af1053e46a5050e3a124ad887636d2a55cdbb94b65c696318bb59a224"
+  },
+  {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/compile01.py",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/compile01.py",
+    "bytes": 12765,
+    "sha256": "72c262b3042b04aae29dbcb7265ee944b3717b27b13bf2978a2f55a840a81e86"
+  },
+  {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/handoff.h",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/handoff.h",
+    "bytes": 2413,
+    "sha256": "9b88ce3e24a3a6c1c16336315323b70b29560c473ac9a48d36043bd60c840113"
+  },
+  {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/memory_reader.c",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/memory_reader.c",
+    "bytes": 1079,
+    "sha256": "c9bd8401476f3baf73b43051651e6c306f14a05c1d5a5317531302569d4261c0"
+  },
+  {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/memory_reserve.c",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/memory_reserve.c",
+    "bytes": 13350,
+    "sha256": "f5c3d87aa2c6272fc5a54eb3f95af6590ceca7a5d6e95e52c1dd969790c1ec48"
+  },
+  {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/memory_reserve.h",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/memory_reserve.h",
+    "bytes": 4312,
+    "sha256": "429563e8a85b71ce66fd9e0f6ba6d6ef386173126efa3bcadf5ce7e543c14195"
+  },
+  {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/memory_runtime.c",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/memory_runtime.c",
+    "bytes": 7911,
+    "sha256": "0e0434b5a8a80493e2582f8efa890fb634dd21543da35808ffd706c3a0a00332"
+  },
+  {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/memory_runtime.h",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/memory_runtime.h",
+    "bytes": 2039,
+    "sha256": "eafa9773488bdd03d0e4bcf2dfd218810c30351e5dc029275be0e0bac53dfcd5"
+  },
+  {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/CONTRACT.md",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/CONTRACT.md",
+    "bytes": 5496,
+    "sha256": "3ff6ddcb0624a0adfe770eb6c172af95d6d707a3fe914c12cb517c03183366ae"
+  },
+  {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/AUTHOR_AUDIT.md",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/AUTHOR_AUDIT.md",
+    "bytes": 4683,
+    "sha256": "7ee4a64b9e0b8f6e28b09e6a02674d2485763a7883ebf0b70fe570a8581cb930"
+  },
+  {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/TOOLS.json",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/TOOLS.json",
+    "bytes": 4137,
+    "sha256": "0ed61aa8de258016dae1fa97823b404faed63c923680f30035cbbbaa10e85c53"
+  },
+  {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/backend.h",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/framework/include/camera/backend.h",
+    "bytes": 5848,
+    "sha256": "6d81a78f05cc82aedb25874e2f0265148da63133894504c4e7b1afd7b2a32097"
+  },
+  {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-serve-20261024/PARENT_DISPOSITION.md",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-serve-20261024/PARENT_DISPOSITION.md",
+    "bytes": 6608,
+    "sha256": "690d75fa86703eb41f7c440e8377127e9658f0e0f46db7a7201341e2a65446cf"
+  }
+]

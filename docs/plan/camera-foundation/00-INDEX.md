@@ -155,7 +155,12 @@ bounds/ownership/order sufficiency,4 HOST/ARM compiles/2 rooted REL links/22 com
 NOT RUN. Armed uncertainty or STOP retains terminal HOLD/backing; only unexposed
 reservation can cancel. Consumer-token validation reaches the accepted packetizer.
 See [producer hub disposition](../../qualification-plans/span-hub-producer-20261024/PARENT_DISPOSITION.md).
-Current userspace/memory/runtime still use old layouts and contiguous-output ioctl;
+Actual version3 writer-history-aware whole-hub forecast/prefault/atomic credit now
+has narrow independent SOURCE/API/bounds/ownership/order sufficiency,10 HOST/ARM
+compiles/2 rooted REL links/28 commands PASS, NOT RUN; original runtime transaction/
+debt/timing remain unchanged, prior writer history refuses before touch/payment.
+See [producer memory disposition](../../qualification-plans/qc07f-producer-memory-20261024/PARENT_DISPOSITION.md).
+Current private userspace/runtime still use old layouts and contiguous-output ioctl;
 actual new-history audits and typed source connection remain missing, not a relink.
 No candidate function invoked.
 Native1MiB output/raw/process2MiB/combined-load

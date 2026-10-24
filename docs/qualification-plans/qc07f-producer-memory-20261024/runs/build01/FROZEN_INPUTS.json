@@ -1,0 +1,1318 @@
+{
+  "apps/rtsp-auth/qc07f-span-memory": [
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/LICENSE_NOTICES.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/LICENSE_NOTICES.md",
+      "bytes": 694,
+      "sha256": "27fd9954156ca49536e7b6c7056ed80534693abb0ede718647187213122d7593"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/compile01.py",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/compile01.py",
+      "bytes": 7766,
+      "sha256": "de0fc7f20eda25c2a4c174d760f80b11241345816659616ce44c471817f49ca7"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/handoff.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/handoff.h",
+      "bytes": 2413,
+      "sha256": "9b88ce3e24a3a6c1c16336315323b70b29560c473ac9a48d36043bd60c840113"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/memory_reader.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/memory_reader.c",
+      "bytes": 1079,
+      "sha256": "c9bd8401476f3baf73b43051651e6c306f14a05c1d5a5317531302569d4261c0"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/memory_reserve.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/memory_reserve.c",
+      "bytes": 12968,
+      "sha256": "3de7e750b5f846c1a77804113862881947074f42ed5718627efe70942337316a"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/memory_reserve.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/memory_reserve.h",
+      "bytes": 3790,
+      "sha256": "9893a15d37fd9867d1595bd0b5485fd7f19157b8ee28a7b4b3046cc94bd66e0e"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/memory_runtime.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/memory_runtime.c",
+      "bytes": 7911,
+      "sha256": "0e0434b5a8a80493e2582f8efa890fb634dd21543da35808ffd706c3a0a00332"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/memory_runtime.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/memory_runtime.h",
+      "bytes": 2039,
+      "sha256": "eafa9773488bdd03d0e4bcf2dfd218810c30351e5dc029275be0e0bac53dfcd5"
+    }
+  ],
+  "docs/qualification-plans/qc07f-span-memory-20261024": [
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/AUTHOR_AUDIT.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/AUTHOR_AUDIT.md",
+      "bytes": 6696,
+      "sha256": "668d166fcd15695efa6e91d031b84766d1743f109def2fe699d2585b5b986fbb"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/CANDIDATE_TO_ORIGINAL.diff",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/CANDIDATE_TO_ORIGINAL.diff",
+      "bytes": 18697,
+      "sha256": "a4f16222736a3e1431ddba9112ead014868de927f0ad300b22a0053e9f66eb03"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/CONTRACT.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/CONTRACT.md",
+      "bytes": 4276,
+      "sha256": "5c5a5b44c48ed8d42d3fe4a44305629e384abe40d94d53d3c5fde3686486ee4e"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/DELIVERY.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/DELIVERY.json",
+      "bytes": 3875,
+      "sha256": "fe3b8352b91ffa983d029858931f289cf94d54c056ebc6bdd36eeb56eb09df7f"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/FROZEN_INPUTS.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/FROZEN_INPUTS.json",
+      "bytes": 2699,
+      "sha256": "09b11a718eb97f6a2503bf08947c8f905003d8121a8b2ea27873ddf2acf99cd0"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/HANDOFF.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/HANDOFF.md",
+      "bytes": 6565,
+      "sha256": "281d5b4c9fc67337ef2855e5725082751a0f5b4748ed5869fb44de935716d679"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/ORIGINAL_TO_CANDIDATE.diff",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/ORIGINAL_TO_CANDIDATE.diff",
+      "bytes": 18697,
+      "sha256": "2805173ecad59e50d5193d9b03fa5bf3a851dad42b71b0f0059021aeb5967694"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/PARENT_DISPOSITION.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/PARENT_DISPOSITION.md",
+      "bytes": 4124,
+      "sha256": "e49b74d65ea34d3f062578ac236fe4439a4abd3561444a8d0dfd5590d2841dfd"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/PARENT_VERIFICATION.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/PARENT_VERIFICATION.json",
+      "bytes": 655,
+      "sha256": "94b34ca4d908cf4e110a76b26fb2cf5213ad6098aceaf470427f45e941aea73c"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/SOURCE_DELTA.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/SOURCE_DELTA.json",
+      "bytes": 10491,
+      "sha256": "37a335facca55dc90b984d3171053d3519b61f2d39d8e53d71636888a7c2b807"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/DEPENDENCIES.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/DEPENDENCIES.json",
+      "bytes": 29437,
+      "sha256": "9be007eca0d97d9759755993dc9dbf35e31e6b044b6998ab67b7c46e51177f1d"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/INPUTS.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/INPUTS.json",
+      "bytes": 9553,
+      "sha256": "9edf673bf94e89f843537ce1051d459eedc066db8216621888bc13646f8099d5"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/REPORT.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/REPORT.json",
+      "bytes": 72906,
+      "sha256": "12327c7f7f084f85d92159323c2736e3d9683cc979255f252b7f988a7a7319d6"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/TOOLS.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/TOOLS.json",
+      "bytes": 4137,
+      "sha256": "0ed61aa8de258016dae1fa97823b404faed63c923680f30035cbbbaa10e85c53"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/arm-MEMORY-REAL-HUB-SPANS-REL.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/arm-MEMORY-REAL-HUB-SPANS-REL.o",
+      "bytes": 19456,
+      "sha256": "0b6ad3d40c2c9500c925e0726695e937c8c7df8fcf91186f445f20b1937f7176"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/arm-rel.map",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/arm-rel.map",
+      "bytes": 11637,
+      "sha256": "257f319926a971231251ab567c49a9cb36a0dbcc4592c2bb296f352f33b709b0"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-01.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-01.json",
+      "bytes": 879,
+      "sha256": "ec470d44dbadee976483f5a3c6008d323299b177258b89afcf55ffe84d9a2aff"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-02.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-02.json",
+      "bytes": 881,
+      "sha256": "49584cdd3fcd24540dc24ebc4f2b15496ed6241498996a647fec42652532bb18"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-03.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-03.json",
+      "bytes": 892,
+      "sha256": "23a40b3908e43a46a674facce4b497568f6ba271c6ae26a7d5e48a9a4aea4352"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-04.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-04.json",
+      "bytes": 887,
+      "sha256": "9327e18a0b832c0b9c3a1368f7e80a642b527597efd7381306ef14f1b425e935"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-05.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-05.json",
+      "bytes": 887,
+      "sha256": "769dd06e1ca416a3e7abf5cd617af9bbf17ef80e4fd325a6d969f15fedcd3cf5"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-06.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-06.json",
+      "bytes": 1507,
+      "sha256": "27105ae6e2080346a76003f423c9baa457d4c750b20e3dad6ad3ae50d9561f00"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-07.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-07.json",
+      "bytes": 1507,
+      "sha256": "150078e48dd53416b8324dde040a79d50a2cb0d6aa909218063ff1e0498eead9"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-08.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-08.json",
+      "bytes": 1501,
+      "sha256": "845a71fbd198d6d4a5fdf055162e49eeb79a89477d09cc9a2100c357c2101dfc"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-09.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-09.json",
+      "bytes": 1475,
+      "sha256": "4c9dd3f3bab0175764a88122d5e71f1254c865e6c9f1d167e4bf6c007bdd9a91"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-10.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-10.json",
+      "bytes": 1498,
+      "sha256": "93508eafd6c3755640c05fa71324f5b0d777bd21d84adfaf85a4490d2ceda1a6"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-11.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-11.json",
+      "bytes": 1831,
+      "sha256": "053f2fb01c28d1a6da2203b8db5dfa427360890427a3e54a5569395f9d89ea17"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-12.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-12.json",
+      "bytes": 1028,
+      "sha256": "c366f9b05a5b8fd76a9218141a0ec6194dbde77b0aab4ffe89f588dae382725e"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-13.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-13.json",
+      "bytes": 1026,
+      "sha256": "aa61b2edd297c9889ef88a2df3eb4401159ec2720062b0d5cee6fd0b3270b5ce"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-14.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-14.json",
+      "bytes": 1062,
+      "sha256": "46a3bf1252559c01f6d5ef46f1d95a6dc2690751311b35c31114579fe4cdb16b"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-15.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-15.json",
+      "bytes": 1064,
+      "sha256": "def3b76211a88a31ab2c1402398a6ffd0843668c2e284d925de824080e9d4598"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-16.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-16.json",
+      "bytes": 1076,
+      "sha256": "ed78f26bba1a1d431621aee8f5cf26e4119883db9405055d3567e2d3c32ec385"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-17.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-17.json",
+      "bytes": 1072,
+      "sha256": "c903c2eabe26e12bda7084811a18438e0ea0500475dd9b1d5404192296c5f665"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-18.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-18.json",
+      "bytes": 1072,
+      "sha256": "2fa9962ff869bdaa0c001c79e6f4b3d10b02b8bb68450b46b9c146536c26aadc"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-19.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-19.json",
+      "bytes": 1747,
+      "sha256": "3138307e2c0e71100cca8a6980f63ac9b0114e40ba54a39d859bbe76e5f8cce6"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-20.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-20.json",
+      "bytes": 1747,
+      "sha256": "a051eeba8d2714db4c8757bd6c525596aac0b9bda0e05093563ba8c96734c3c7"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-21.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-21.json",
+      "bytes": 1741,
+      "sha256": "f2da676f63e3bd7a0cd3c5ab8a87b84f728bd2ef43429edeab42db506e5f25f3"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-22.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-22.json",
+      "bytes": 1715,
+      "sha256": "582a2fd7a8db33124b91d07a8732b0315349a10bedac98de3b85b1701701afb4"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-23.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-23.json",
+      "bytes": 1738,
+      "sha256": "24ccb94e15a138250e0be6c8bc3df5c301fd0edf52e1c1cd35823a15827caf19"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-24.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-24.json",
+      "bytes": 2069,
+      "sha256": "b06525c83153ae4abc6d6cbd7d4c7aaef7291b97c73b0edc996288608a58fda0"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-25.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-25.json",
+      "bytes": 1025,
+      "sha256": "2c87370865f06f1a5841f0e57b559694a144541a6ee98e41b6a473c184999138"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-26.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/command-26.json",
+      "bytes": 1022,
+      "sha256": "ded05974d1d5f1ad4dfbd2bce06c3f54f8387d484a5dc99e248c2e9a3157f0a3"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/host-MEMORY-REAL-HUB-SPANS-REL.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/host-MEMORY-REAL-HUB-SPANS-REL.o",
+      "bytes": 26168,
+      "sha256": "6712825ec270c524e1384fc52e199e98005ed0a579d3561546e07b3bab674caf"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/host-rel.map",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/host-rel.map",
+      "bytes": 14222,
+      "sha256": "6b4740dfd6334107a291c5141fd017b70b30675d4b34a38857b569b0cf299ede"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-REL-ELF.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-REL-ELF.txt",
+      "bytes": 1359,
+      "sha256": "3db35096e5e3c4fde484bb143d1d3ce381111f704dec120a201c8b4815f3662c"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-REL-symbols.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-REL-symbols.txt",
+      "bytes": 1406,
+      "sha256": "5ba87f9f4bf9b77cce47be927c74f680298ed1ce3742bcff2e359d230b08c191"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-compile-hub.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-compile-hub.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-compile-reader.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-compile-reader.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-compile-reserve.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-compile-reserve.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-compile-runtime.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-compile-runtime.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-compile-spans.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-compile-spans.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-integration-REL.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-integration-REL.txt",
+      "bytes": 608,
+      "sha256": "b2269d2be1dcb8490b4418e50f8a34d6d4607763dd67525fe96868e8c92522fd"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-machine.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-machine.txt",
+      "bytes": 29,
+      "sha256": "d0cf670b8c286026ebd268b1f5ecdd6be41552e0e254a949fb50ab0ed085dd23"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-tool-as.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-tool-as.txt",
+      "bytes": 260,
+      "sha256": "aebf2a97c58e1d1f4676098a8e9b91c8569c49d3c9d06e537fe689c4afcd8b56"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-tool-cc1.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-tool-cc1.txt",
+      "bytes": 220,
+      "sha256": "11399c4ad884b1da76486da5e344e5b6e2c541c6e4001b24865a4e5cd4f70fa3"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-tool-ld.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-tool-ld.txt",
+      "bytes": 260,
+      "sha256": "e98fe4335d69760e406f842f1b5a0cd3e92881bf0dee7376ab8f647b78cc0e98"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-version.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/arm-version.txt",
+      "bytes": 288,
+      "sha256": "7b501201183c07e1e9078ca3f8b1f502d07fd67c414e92183c01e8787c00a0d4"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-REL-ELF.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-REL-ELF.txt",
+      "bytes": 953,
+      "sha256": "c446b22b03888da6a57f59813f116b471915b1b04525912feec36419f1b80368"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-REL-symbols.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-REL-symbols.txt",
+      "bytes": 1636,
+      "sha256": "666880ca3236cf47a67a20b48007c5602c013b4f91ae8ec91728d8cef2dfe1fa"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-compile-hub.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-compile-hub.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-compile-reader.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-compile-reader.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-compile-reserve.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-compile-reserve.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-compile-runtime.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-compile-runtime.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-compile-spans.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-compile-spans.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-integration-REL.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-integration-REL.txt",
+      "bytes": 613,
+      "sha256": "868620d9871f31b024ea8ba3823238a80a3676c5767d846252bdd9b881153b35"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-machine.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-machine.txt",
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-tool-as.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-tool-as.txt",
+      "bytes": 3,
+      "sha256": "8b97bca79750847558d488e2ea4de79903c9c71c9af27ecf1b3dff5dba2abdd9"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-tool-cc1.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-tool-cc1.txt",
+      "bytes": 40,
+      "sha256": "c400491dd6f36bdc89c46da99a7c98dbd19a3eb313a62e89576505b07846aec8"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-tool-ld.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-tool-ld.txt",
+      "bytes": 3,
+      "sha256": "3b6cb8ae51045d062a7c7de7cc488ad8785144cfbc0a7fc9546ed52429e0d97f"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-version.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/logs/host-version.txt",
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-hub.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-hub.d",
+      "bytes": 2551,
+      "sha256": "f5808506aba7b9f8229b62e860b2fc05e8d4711db5e3e7a81694a91b0d6d49fe"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-hub.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-hub.o",
+      "bytes": 4456,
+      "sha256": "c936deae4070f533c16943b31c6ab11ddda43faeb7a0a7b466f52fb05c93b66b"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-hub.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-hub.su",
+      "bytes": 1600,
+      "sha256": "6fadd3489031897f42ea9e80b8b1f54e27598168a0ca50d3c3fbb8719e9a12d4"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-reader.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-reader.d",
+      "bytes": 4143,
+      "sha256": "23a4cb8f5976d7c55fa0f5ada3186c7a6ea7d3da89d6a80eaa30f32616937022"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-reader.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-reader.o",
+      "bytes": 1684,
+      "sha256": "e0c89cfd5b6bfc6173fea422df09fa071ad2f6b648c55350f0bccb91483a7b9a"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-reader.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-reader.su",
+      "bytes": 122,
+      "sha256": "a5d7a7af4639c5d412b424fb1a09757d9a83b7c2437707057e285e9533136ccc"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-reserve.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-reserve.d",
+      "bytes": 2695,
+      "sha256": "f865f689ce66c259385cd762daad4645eb3ae0da01e79ad211567f84126a8b48"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-reserve.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-reserve.o",
+      "bytes": 10112,
+      "sha256": "6f91383ff00ad7a8f82c239693756daf388b47aa253120166a21c1d4e6891f89"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-reserve.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-reserve.su",
+      "bytes": 1782,
+      "sha256": "5f17d1b17925c330ffab024cded17f8545e31c49c9c658aa1aea4d6c490b3a47"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-runtime.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-runtime.d",
+      "bytes": 5041,
+      "sha256": "665208ff266fad6862b227ca745e18ee1ab54b6913dc2fb33e98bf088d4eb837"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-runtime.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-runtime.o",
+      "bytes": 5460,
+      "sha256": "07d596224356b8bca8d6cf23267a52acfdc359d513229390f87208427d9e119c"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-runtime.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-runtime.su",
+      "bytes": 862,
+      "sha256": "546388ce1b867260806de308955ef58a09123f494f24724a409c12d64b875210"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-spans.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-spans.d",
+      "bytes": 2252,
+      "sha256": "cda097e545d6290d5a409db6d581a0587b62dc3e79a625e40cc9f2f9b2a3790a"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-spans.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-spans.o",
+      "bytes": 1664,
+      "sha256": "24f8f35f56deaef520c18b0960114ed9f511a8560954bd745fb07374cabc6be0"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-spans.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/arm-spans.su",
+      "bytes": 134,
+      "sha256": "04c5251704cdf1d5f634fbcfa3b06a7a8fe6228268815b19aef8017cd66e5aef"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-hub.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-hub.d",
+      "bytes": 1370,
+      "sha256": "9da06bdf44ef3ec40fa30c597858c494cb9f14e874b0efb80a9b7f32ebbbbaaf"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-hub.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-hub.o",
+      "bytes": 6296,
+      "sha256": "3a9c7d1342535993ce424322cabe42a471ce9369bec130f7b3fe07521a164985"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-hub.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-hub.su",
+      "bytes": 1500,
+      "sha256": "70beecd46c6dcbedeeafb34ef6fa634b8da0f5aa49a5e303060509d5495a9f6d"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-reader.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-reader.d",
+      "bytes": 2039,
+      "sha256": "fd892b4010878089f1b2640c1a0a18bcffc60154b040d50f9a825182087925dd"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-reader.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-reader.o",
+      "bytes": 2432,
+      "sha256": "3633f9a85eabbe2917c1eafda1bd8e873e43c90c2a1bcd13613c8eb33c18a020"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-reader.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-reader.su",
+      "bytes": 122,
+      "sha256": "6358803fe1d40153ae9ef1f9c1b46e1a499f8fb8ba18cfa75bf68874cb592e23"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-reserve.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-reserve.d",
+      "bytes": 1379,
+      "sha256": "ec52cfce4cab7169024a3bbec0895189993ed7afd30a704e30f9f3590e5b28fd"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-reserve.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-reserve.o",
+      "bytes": 12408,
+      "sha256": "69d3eab8ffdb9019526069a684ae6ebff029561235b6c0367ff35cdc2ad0808a"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-reserve.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-reserve.su",
+      "bytes": 1456,
+      "sha256": "ed84b76585fd8fd98f3a196dc4f06490591b0ddd5bee9b1b638ccbddc0c8d39e"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-runtime.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-runtime.d",
+      "bytes": 2869,
+      "sha256": "dfa5ba3c49657cd22400b2759f7558aad6c13f225d2d3eb2f944efda7bf28ac0"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-runtime.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-runtime.o",
+      "bytes": 7648,
+      "sha256": "2376a8699054817f4181b3b5263c5a99ee91382a28572b6461935c2dfcff609d"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-runtime.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-runtime.su",
+      "bytes": 879,
+      "sha256": "f18d567a3a2d006f178c725d5e100f8410ac2dc06f2c3bbcf2c2079e8399bee0"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-spans.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-spans.d",
+      "bytes": 1133,
+      "sha256": "a3a114816e7a7392abbe641872320f105c38203b28432fe536d4298a7a4fe573"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-spans.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-spans.o",
+      "bytes": 2392,
+      "sha256": "92e0dc4dd8c72f0aae3817bd52fb9478cb3815310ce2f4e43a2760bdea31b82b"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-spans.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-20261024/runs/build01/objects/host-spans.su",
+      "bytes": 135,
+      "sha256": "75c9a871c0ca7ea8ce43882f789e7530567ecb69163cb4ef5c41cfb5dd5873b6"
+    }
+  ],
+  "docs/qualification-plans/qc07f-span-memory-review-20261024": [
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-review-20261024/REVIEW.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-span-memory-review-20261024/REVIEW.md",
+      "bytes": 10644,
+      "sha256": "d2f7794ffda9e566fbe5d5d45eb875ffa43f59132c04b5d8b7d77444b9acfbee"
+    }
+  ],
+  "apps/rtsp-auth/span-hub-producer-candidate": [
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-producer-candidate/LICENSE_NOTICES.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-producer-candidate/LICENSE_NOTICES.md",
+      "bytes": 868,
+      "sha256": "42ae704c2b6398f64c820a29755e755a178325a86dd3a8569ea926e694624029"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-producer-candidate/compile01.py",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-producer-candidate/compile01.py",
+      "bytes": 10704,
+      "sha256": "4d9a39da0755a5180020477a546475d17ac8b295ccb7fc92040f5241249b2175"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-producer-candidate/span_hub.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-producer-candidate/span_hub.c",
+      "bytes": 17177,
+      "sha256": "72e06177ae86c8659972ba8a59c81208302d44e0cb78f29b6114f8a4d5631f93"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-producer-candidate/span_hub.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-producer-candidate/span_hub.h",
+      "bytes": 7936,
+      "sha256": "460320064f85d1f1f8ada1a9afd1e282c287583fdff34787ba63c7354adeed8e"
+    }
+  ],
+  "docs/qualification-plans/span-hub-producer-20261024": [
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/AUTHOR_AUDIT.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/AUTHOR_AUDIT.md",
+      "bytes": 5247,
+      "sha256": "d9b0d2dff5ff9141fdce680c25bd924dff46698c4734bc5335f1bb487d2fc50c"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/CONTRACT.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/CONTRACT.md",
+      "bytes": 8261,
+      "sha256": "172e71aecf079426963d029f2f4185267c75dfbab12ddc876a99484930acd94c"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/DELIVERY_PINS.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/DELIVERY_PINS.json",
+      "bytes": 2788,
+      "sha256": "15fb48df2ee1694f8802c2d268efdfd8f72ad690038a6b8cb920ff34fe5e0e2a"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/HANDOFF.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/HANDOFF.md",
+      "bytes": 7986,
+      "sha256": "a192586138a5f2ddf818f5e5888c0ce3fbc00e70ce7af47ac4f35dc8bda18cab"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/PARENT_DISPOSITION.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/PARENT_DISPOSITION.md",
+      "bytes": 6204,
+      "sha256": "50c4db8d0de7195a9f3bfa93ab4332fc2600b46afb75698b43157258f117969f"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/PARENT_VERIFICATION.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/PARENT_VERIFICATION.json",
+      "bytes": 979,
+      "sha256": "43aff84d9134e92983bc8287f9f83d6eb81e63cbd1e5c2b1e151198ce449ae6d"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/DEPENDENCIES.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/DEPENDENCIES.json",
+      "bytes": 12792,
+      "sha256": "e6915927326949d6fc0432fb41c85a8989b23a877a47ec13a721928d1c132dbb"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/FROZEN_INPUTS.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/FROZEN_INPUTS.json",
+      "bytes": 203537,
+      "sha256": "894f5407219d418d49e1d5f2b55798a1b2288e7be8dba6daf9c58cddc6a37d7f"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/INPUTS.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/INPUTS.json",
+      "bytes": 2931,
+      "sha256": "794b44fea1054bb8d640c202ac36c254d049e5aab9c50c10b86afa4e5015e6cb"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/PRODUCER_TO_V2-span_hub.c.diff",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/PRODUCER_TO_V2-span_hub.c.diff",
+      "bytes": 17063,
+      "sha256": "8113a6351c8f3e5badad55f091fca1b9c379535e33eb083dbaab9b8989c89514"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/PRODUCER_TO_V2-span_hub.h.diff",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/PRODUCER_TO_V2-span_hub.h.diff",
+      "bytes": 10928,
+      "sha256": "15c1448fc8172647da69f831deaf04af5b2169796187ed7f8a0d02351dfe6904"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/REPORT.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/REPORT.json",
+      "bytes": 58399,
+      "sha256": "680b6b7bc317c76443267e6c5b1a557afe79377a84f9ee29db8d5d5d49ff561b"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/SOURCE_DELTA.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/SOURCE_DELTA.json",
+      "bytes": 3534,
+      "sha256": "e3bf6d00d804a77c9757687a8af8e5a0b42e09d433bca346bb7f34207b352702"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/TOOLS.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/TOOLS.json",
+      "bytes": 4137,
+      "sha256": "0ed61aa8de258016dae1fa97823b404faed63c923680f30035cbbbaa10e85c53"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/V2_TO_PRODUCER-span_hub.c.diff",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/V2_TO_PRODUCER-span_hub.c.diff",
+      "bytes": 16927,
+      "sha256": "537ed0ba023ca6f2a7889aeaea678517e207d9270f88cce8de6406c730fc677a"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/V2_TO_PRODUCER-span_hub.h.diff",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/V2_TO_PRODUCER-span_hub.h.diff",
+      "bytes": 10928,
+      "sha256": "1733d46f09c432244886469f106223c0fede44d4acd85a6060207a711f7910dc"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/arm-HUB-REAL-SPANS-REL.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/arm-HUB-REAL-SPANS-REL.o",
+      "bytes": 12036,
+      "sha256": "80934c4c3eeb28a92db5101aaaa56373627e24b765218f1d198598ffc71d69a3"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/arm-rel.map",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/arm-rel.map",
+      "bytes": 13627,
+      "sha256": "d61196a6080a5926bf92b86e2cdf7ce2db05136f4e3249e7927857757d9fa658"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-01.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-01.json",
+      "bytes": 879,
+      "sha256": "16092ded93688811b2f459d182d7b8b24c149e0f71c760bbe6e0e8e6e8a341e3"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-02.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-02.json",
+      "bytes": 881,
+      "sha256": "f0938e5483c202ca320f2a9f8b6a9d489373645a7370798e888a7407b221b5cf"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-03.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-03.json",
+      "bytes": 892,
+      "sha256": "91c97debe566d9970bf65cc36b07feda3c28bf8422be0d1c5f0ff89ff1ed4648"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-04.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-04.json",
+      "bytes": 887,
+      "sha256": "e80024d2934671f3e6dce79fb5f22eadc22b31a575806e01d1002beb33cab4d6"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-05.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-05.json",
+      "bytes": 887,
+      "sha256": "e2166890414df1cc273acc08fde0f399df3425e33c652c9c9b13dc4b85aaf166"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-06.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-06.json",
+      "bytes": 1506,
+      "sha256": "6421c4a49d3733aa4b5308af4170294789de7afcbbb0349f2448ecb2cce995b9"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-07.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-07.json",
+      "bytes": 1513,
+      "sha256": "27b7f7dffdb3a7779d505c0d717de1f27e56f7b623d05a07e3d2e9ecf0b11324"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-08.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-08.json",
+      "bytes": 2239,
+      "sha256": "7a3fe123410423c30631cdac5042caada14ec4e45ac61e8d7f37152898d44efd"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-09.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-09.json",
+      "bytes": 1032,
+      "sha256": "8d7158be45ccc03ef645c7e1fcff6ce9262f24d238f4a1ea5d855b01fd161da9"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-10.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-10.json",
+      "bytes": 1018,
+      "sha256": "0854e2e42872482e3a85c39c7433cf1417ea13e52a3db78c0f847e8a39dba8ef"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-11.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-11.json",
+      "bytes": 1037,
+      "sha256": "474223e076347f8f12e1ffb0cacb53327167112badd2b689b47085e10a7c63d8"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-12.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-12.json",
+      "bytes": 1062,
+      "sha256": "cc9f6c12c520754f773d8dc529fe88c5d43510b00c1d05ac09e2129ad3427bfb"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-13.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-13.json",
+      "bytes": 1064,
+      "sha256": "cac57aecb59d0987e4db11bb736abffea4c36289e09eb6afeb2d4de6ff78120f"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-14.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-14.json",
+      "bytes": 1076,
+      "sha256": "1e7dcc3c9cb597438f30d2fddf497b8705eb1dd5d362172b907ccb66244843c0"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-15.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-15.json",
+      "bytes": 1072,
+      "sha256": "2688373e9f425678fb0ce12a5cdc01aba0a6e3f6ad5ed06dbba0404fc34c71b2"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-16.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-16.json",
+      "bytes": 1072,
+      "sha256": "fac127d36463a98e3a2f896c450ce69ad9174a3b3155f862de784af0b931148e"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-17.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-17.json",
+      "bytes": 1746,
+      "sha256": "674e3b605eef6cedf9ad25ff901f52b095c68a5090fbe36993181a2476b6f980"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-18.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-18.json",
+      "bytes": 1753,
+      "sha256": "6204ccad9469ad44749bc315a03603d677dae469ff65d0726a696e5121626b25"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-19.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-19.json",
+      "bytes": 2480,
+      "sha256": "e37d51a0e8ab9cb070f6335a1926cca69185e024fa9b4f6f6bc598f192f0c001"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-20.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-20.json",
+      "bytes": 1028,
+      "sha256": "c57fedd7a186c2a19c848773308c988fac6aeb2ea94c7ad9449d14ceafad1ac6"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-21.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-21.json",
+      "bytes": 1014,
+      "sha256": "bb5323f30d17408ebf405be74f63b5fea251836fa680758082cc7a438ee2aad6"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-22.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/command-22.json",
+      "bytes": 1033,
+      "sha256": "39b463bef6659dda51c57d62acc15b5b602e59282ae4aa953b02e364e831a87a"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/host-HUB-REAL-SPANS-REL.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/host-HUB-REAL-SPANS-REL.o",
+      "bytes": 14704,
+      "sha256": "955681929434b06db5dac95d216ffa1aff952b8276a5cd71a1be9212871f2ad9"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/host-rel.map",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/host-rel.map",
+      "bytes": 13559,
+      "sha256": "daa84aa945bf279c34798d6a604b74033774912caf428835f93a404d4b7d08ab"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-REL-ELF.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-REL-ELF.txt",
+      "bytes": 6099,
+      "sha256": "833e3a1ecd76ff5b9d1212cfed1da1bdbad0d7475d989d791c7e50d7b96dedc1"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-REL-relocations.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-REL-relocations.txt",
+      "bytes": 7559,
+      "sha256": "c82c4c9d137f8e8cd0a8b08b8527f0dddd6a6d5361d0f3ca53c675420a2bcd08"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-REL-symbols.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-REL-symbols.txt",
+      "bytes": 887,
+      "sha256": "94b9671cda68af218ff056f75128ca5aaa406f3f4c591040d4b297f13466fe31"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-compile-hub.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-compile-hub.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-compile-spans.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-compile-spans.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-integration-REL.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-integration-REL.txt",
+      "bytes": 240,
+      "sha256": "f3c50197c484e14e8dd2d9e56ba1263dccceb050b3bf340630fb3a76ca192f1c"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-machine.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-machine.txt",
+      "bytes": 29,
+      "sha256": "d0cf670b8c286026ebd268b1f5ecdd6be41552e0e254a949fb50ab0ed085dd23"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-tool-as.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-tool-as.txt",
+      "bytes": 260,
+      "sha256": "aebf2a97c58e1d1f4676098a8e9b91c8569c49d3c9d06e537fe689c4afcd8b56"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-tool-cc1.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-tool-cc1.txt",
+      "bytes": 220,
+      "sha256": "11399c4ad884b1da76486da5e344e5b6e2c541c6e4001b24865a4e5cd4f70fa3"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-tool-ld.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-tool-ld.txt",
+      "bytes": 260,
+      "sha256": "e98fe4335d69760e406f842f1b5a0cd3e92881bf0dee7376ab8f647b78cc0e98"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-version.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/arm-version.txt",
+      "bytes": 288,
+      "sha256": "7b501201183c07e1e9078ca3f8b1f502d07fd67c414e92183c01e8787c00a0d4"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-REL-ELF.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-REL-ELF.txt",
+      "bytes": 8006,
+      "sha256": "7510477d5187a74cd80a6cd1a3e25abc5baf66c81b16ac90d45813d613c31a60"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-REL-relocations.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-REL-relocations.txt",
+      "bytes": 8871,
+      "sha256": "269520426f0731c60aa5b4ef63ba3349c9e064d4037423541ba47426a29d4b79"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-REL-symbols.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-REL-symbols.txt",
+      "bytes": 983,
+      "sha256": "806ccb3ef5738463d4e042695f04954b8abeef6501c96798495b667e329b986a"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-compile-hub.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-compile-hub.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-compile-spans.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-compile-spans.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-integration-REL.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-integration-REL.txt",
+      "bytes": 242,
+      "sha256": "f7ed98eb5075b3f80b64a4c12bd1082777aca51b2a7f1d363c91a3c992815117"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-machine.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-machine.txt",
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-tool-as.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-tool-as.txt",
+      "bytes": 3,
+      "sha256": "8b97bca79750847558d488e2ea4de79903c9c71c9af27ecf1b3dff5dba2abdd9"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-tool-cc1.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-tool-cc1.txt",
+      "bytes": 40,
+      "sha256": "c400491dd6f36bdc89c46da99a7c98dbd19a3eb313a62e89576505b07846aec8"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-tool-ld.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-tool-ld.txt",
+      "bytes": 3,
+      "sha256": "3b6cb8ae51045d062a7c7de7cc488ad8785144cfbc0a7fc9546ed52429e0d97f"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-version.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/logs/host-version.txt",
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-hub.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-hub.d",
+      "bytes": 2599,
+      "sha256": "68b154ffc71d93e123e5dda1d6ae75950dc782d8fceb8f87a51fbf076dec4270"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-hub.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-hub.o",
+      "bytes": 11224,
+      "sha256": "65a69b989efc728f6cff85b3780a2eeb87d21abe3311e8e13906ddb2e17f3f17"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-hub.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-hub.su",
+      "bytes": 3133,
+      "sha256": "090f94f6a62935017abab11aaf1104335479352b8bfaa06f3954e60a2f910860"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-spans.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-spans.d",
+      "bytes": 2252,
+      "sha256": "435269c7d052c1e782e08cb1cbe88bc36970538975810010c99b33669a1aa8c9"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-spans.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-spans.o",
+      "bytes": 1756,
+      "sha256": "efb75e7b8f158bc4d05c2aa580e41d5177c2cdfc97a0de9c266adf87d24e7c00"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-spans.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/arm-spans.su",
+      "bytes": 134,
+      "sha256": "04c5251704cdf1d5f634fbcfa3b06a7a8fe6228268815b19aef8017cd66e5aef"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-hub.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-hub.d",
+      "bytes": 1418,
+      "sha256": "211a652113876aa3a854338ec735adbd946122eefab51510eca5edbec5096de2"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-hub.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-hub.o",
+      "bytes": 13424,
+      "sha256": "18081a1e92f694d39ff3e60bff309fcff5783117aeca048fdc619f75f07060f0"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-hub.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-hub.su",
+      "bytes": 2645,
+      "sha256": "570bdc26c3031c1d81777b3b0a8068ae401b29c82583eb0d463a26b73d6f3df1"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-spans.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-spans.d",
+      "bytes": 1133,
+      "sha256": "2ae670a39dcaa9df881511e2cb7515dfd61b31b806bd124d71ec9ee365256b22"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-spans.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-spans.o",
+      "bytes": 2496,
+      "sha256": "58044cfebd6c72da81841357c2f4fa0f1e80d5b0b34ec8f3b01329e61e1ea295"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-spans.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-20261024/runs/build01/objects/host-spans.su",
+      "bytes": 135,
+      "sha256": "75c9a871c0ca7ea8ce43882f789e7530567ecb69163cb4ef5c41cfb5dd5873b6"
+    }
+  ],
+  "docs/qualification-plans/span-hub-producer-review-20261024": [
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-review-20261024/REVIEW.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/span-hub-producer-review-20261024/REVIEW.md",
+      "bytes": 12058,
+      "sha256": "cebd4c0c171c1745b9a99e3dfecc6e1ca6c1ea6272f38b6cc8bee6174df2d66c"
+    }
+  ],
+  "apps/rtsp-auth/rtp-span-candidate": [
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/LICENSE_NOTICES.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/LICENSE_NOTICES.md",
+      "bytes": 822,
+      "sha256": "4c5c334be13a6d424a86ab29a21465c9eca2e696c6a4d68e059c316f6416c383"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/compile01.py",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/compile01.py",
+      "bytes": 5382,
+      "sha256": "565b9a5908b6639beaea8134ff6cd23f35f209e8d2f76cb89c8c2e5fef983fa4"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/host_normal.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/host_normal.c",
+      "bytes": 3064,
+      "sha256": "eb1e237785e33669ee5ae77266d3cf7c47b64757a4ebdbf87e697f377cd566e6"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/host_once.py",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/host_once.py",
+      "bytes": 2993,
+      "sha256": "f680ecf0a2a8e8f31ab66658c601bad16ee2d54776eaaa812cacce937a9dd27b"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.c",
+      "bytes": 2586,
+      "sha256": "a608fe8ee8a292b1172ce62c62f19c2a61f9969f64d71385f1a742fdd326560e"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.h",
+      "bytes": 1660,
+      "sha256": "41126a8b9827894d6ecb71788cd1cc71bf3b5b036e44fddf998f4c5740f05f91"
+    }
+  ],
+  "apps/rtsp-auth/span-hub-v2": [
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-v2/LICENSE_NOTICES.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-v2/LICENSE_NOTICES.md",
+      "bytes": 917,
+      "sha256": "54eb1112a44d0817cafea791d1db7c0d840bfe0d3f92621785f2b08ceae35a56"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-v2/compile01.py",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-v2/compile01.py",
+      "bytes": 6437,
+      "sha256": "1f193fc20dde70feb03302c36cc1ecf85c19be58605a609886c03f38e89f8b08"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-v2/span_hub.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-v2/span_hub.c",
+      "bytes": 9081,
+      "sha256": "bcf50041bb1fe1b20352d92d1ec9ba61d9e70156fa2cf4c96b06378d837322b1"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-v2/span_hub.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/span-hub-v2/span_hub.h",
+      "bytes": 5719,
+      "sha256": "310160cf0b3bf753daa199193a5674e9e223e036af467e320cc5905e415b3454"
+    }
+  ],
+  "apps/rtsp-auth/qc07f-span-runtime-candidate": [
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/LICENSE_NOTICES.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/LICENSE_NOTICES.md",
+      "bytes": 872,
+      "sha256": "41d30b83e6d8350f07628fe1705988380595d6d7d359e4fe751da6c9cb000961"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/README.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/README.md",
+      "bytes": 1852,
+      "sha256": "feec59c87d7ff9d7c0aa594dcccd48d929bb7c81f5273a18dc3e7b8910257004"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/build.py",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/build.py",
+      "bytes": 16396,
+      "sha256": "570f762a63960848e2ddecacf0caaaa333beb63cfa9475e5912933d266b62504"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/build02.py",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/build02.py",
+      "bytes": 14540,
+      "sha256": "6b044026ac623ec4e0a4e666f3a0c6905e82cc9274e2f62d950cfc86a4abf436"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/native/native_adapter.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/native/native_adapter.c",
+      "bytes": 12242,
+      "sha256": "b0b97dc3946e001023bb0c00d22e0aa1d5104ec61b93b4d5770c8d7245a18f5f"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/native/native_adapter.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/native/native_adapter.h",
+      "bytes": 1392,
+      "sha256": "57876304bc483349b89faaf3b4c82c7df840d53b3c229f202ea7ac11dae730b0"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/native/provider-return.inc",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/native/provider-return.inc",
+      "bytes": 5872,
+      "sha256": "281bea5950da27f9cf7b04aa624405160cf4876ecb59a752f6adf517da480b44"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/owned_runtime.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/owned_runtime.c",
+      "bytes": 18092,
+      "sha256": "4557ccab74d8f4a499da91acc3626ddb5fdd28befc744817dcd3221e61d05a74"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/owned_runtime_v1.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/owned_runtime_v1.h",
+      "bytes": 4677,
+      "sha256": "1cda7bcc58fc0d0b39437097171990a99053f82085cd12cfec0fb65f462d0afa"
+    }
+  ],
+  "apps/rtsp-auth/qc07f-span-serve-candidate": [
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-serve-candidate/LICENSE_NOTICES.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-serve-candidate/LICENSE_NOTICES.md",
+      "bytes": 1234,
+      "sha256": "9c4980851f266bee5825ace261121c2a8717000a91ab55a7e3a4f4913626c16b"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-serve-candidate/README.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-serve-candidate/README.md",
+      "bytes": 935,
+      "sha256": "ce1d4fab5d0ef5736b32c2595de66190ff4cf4d7160255a34438b7a2815ec7f5"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-serve-candidate/build01.py",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-serve-candidate/build01.py",
+      "bytes": 15538,
+      "sha256": "9f9c4aaf5548240c0f505f9a0df4cd4ff7bda69cd09542f1f0dba0027d367af7"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-serve-candidate/owned_runtime.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-serve-candidate/owned_runtime.c",
+      "bytes": 26783,
+      "sha256": "384bac52a5142bd3f6888715a3e4d9b6e061a85433d4267e11f046b1307bba10"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-serve-candidate/owned_runtime_v1.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-serve-candidate/owned_runtime_v1.h",
+      "bytes": 5920,
+      "sha256": "a0c620b2e4aba7cbc19c4f1f6c53b6c8a3ecc46e6bff862c0a3f6abceca06815"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-serve-candidate/rtsp_span_server.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-serve-candidate/rtsp_span_server.c",
+      "bytes": 53857,
+      "sha256": "1b3d9c67341832acb76f25ea84052bd1321cbaf85ae6b6aeca7f6a9574669a9b"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-serve-candidate/rtsp_span_server_v1.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-serve-candidate/rtsp_span_server_v1.h",
+      "bytes": 4107,
+      "sha256": "2ecee18cbe6d53d5ef950d9aa78045dbaba9b1317e5743b9a928576699742e53"
+    }
+  ]
+}

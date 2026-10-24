@@ -1,0 +1,30 @@
+--- BASE_TO_PRODUCER/old/memory_reserve.h
++++ BASE_TO_PRODUCER/new/memory_reserve.h
+@@ -5,9 +5,10 @@
+ #define NH_MEMORY_RESERVE_H
+ #include <stddef.h>
+ #include <stdint.h>
+-#include "../span-hub-v2/span_hub.h"
++#include "../span-hub-producer-candidate/span_hub.h"
+ /* TRUSTED source API: valid stable disjoint ledger/owner/output/private chunks,
+- * true-fresh storage and actual v2 allocation history, no mutable aliases,
++ * true-fresh storage and actual version3 allocation AND zero writer history,
++ * no mutable aliases,
+  * reentry/signals/fork/concurrency or callbacks mutating any of these objects.
+  * Never reset/copy/edit ledgers or owner/range association to regain credit.
+  * Retain owner/backing until separately proved real retirement. Nonnull/self/
+@@ -52,7 +53,13 @@
+ int nh_memory_init_mode(struct nh_memory_ledger *,uint64_t,uint64_t,unsigned);
+ /* Scalar raw(0)/producer(2) metadata half. Hub(1) ALWAYS refuses before touch. */
+ int nh_memory_credit_owned(struct nh_memory_ledger *,unsigned,const void *,size_t);
+-/* Metadata preflight only, no chunk reads/writes. Output unchanged on refusal. */
++/* Metadata preflight only, no chunk reads/writes. Output unchanged on refusal.
++ * Exhaustive v3 pristine history: IDLE alone cannot admit cancelled reservations;
++ * All writer issuance/current/next-generation/exposure/error and slice offset
++ * must be zero, alongside all existing consumer/publication/allocation checks.
++ * Actual typed prefault checks this before attempt/callback/touch AND precredit.
++ * This is UNPAID admission only: legitimate later writer activity is not fresh;
++ * paid readiness/return/borrow-end need separate actual typed integration. */
+ int nh_memory_span_hub_forecast(const struct nh_memory_ledger *,
+  const struct camera_span_hub_v1 *,struct nh_memory_hub_ranges *);
+ /* Metadata half ONLY: trusted prior actual touch of ALL eight whole chunks is

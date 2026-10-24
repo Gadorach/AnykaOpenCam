@@ -1,0 +1,15 @@
+{
+  "scope": "FOURTEENTH_KNOWN_PARENT_MUTABLE_INDEX_STATUS_UPDATE_NOT_SOURCE_PIN_REBASE",
+  "recorded_host_date": "2026-10-24",
+  "original_manifests_and_review_unchanged": true,
+  "path": "docs/plan/camera-foundation/00-INDEX.md",
+  "before": {
+    "bytes": 132347,
+    "sha256": "0f0bcc170d9d5fe0d6cc7ce403d758b0ddb65d8cf3eeb3515ea196fce12e12f7"
+  },
+  "after": {
+    "bytes": 132793,
+    "sha256": "1b0767ea7ca1a6b55572b22518216b906c271fb4f190ff1fc0e6c481bcd100f2"
+  },
+  "reason": "parent closes narrowly independently reviewed writer-history-aware version3 whole-hub memory SOURCE scope; original debt/timing/transaction retained, zero candidate calls and no actual private runtime/native/frontend adoption"
+}

@@ -1,0 +1,199 @@
+{
+  "base": [
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/memory_reserve.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/memory_reserve.c",
+      "bytes": 12968,
+      "sha256": "3de7e750b5f846c1a77804113862881947074f42ed5718627efe70942337316a"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/memory_reserve.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/memory_reserve.h",
+      "bytes": 3790,
+      "sha256": "9893a15d37fd9867d1595bd0b5485fd7f19157b8ee28a7b4b3046cc94bd66e0e"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/memory_runtime.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/memory_runtime.c",
+      "bytes": 7911,
+      "sha256": "0e0434b5a8a80493e2582f8efa890fb634dd21543da35808ffd706c3a0a00332"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/memory_runtime.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/memory_runtime.h",
+      "bytes": 2039,
+      "sha256": "eafa9773488bdd03d0e4bcf2dfd218810c30351e5dc029275be0e0bac53dfcd5"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/memory_reader.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/memory_reader.c",
+      "bytes": 1079,
+      "sha256": "c9bd8401476f3baf73b43051651e6c306f14a05c1d5a5317531302569d4261c0"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/handoff.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-memory/handoff.h",
+      "bytes": 2413,
+      "sha256": "9b88ce3e24a3a6c1c16336315323b70b29560c473ac9a48d36043bd60c840113"
+    }
+  ],
+  "candidate": [
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/memory_reserve.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/memory_reserve.c",
+      "bytes": 13350,
+      "sha256": "f5c3d87aa2c6272fc5a54eb3f95af6590ceca7a5d6e95e52c1dd969790c1ec48"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/memory_reserve.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/memory_reserve.h",
+      "bytes": 4312,
+      "sha256": "429563e8a85b71ce66fd9e0f6ba6d6ef386173126efa3bcadf5ce7e543c14195"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/memory_runtime.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/memory_runtime.c",
+      "bytes": 7911,
+      "sha256": "0e0434b5a8a80493e2582f8efa890fb634dd21543da35808ffd706c3a0a00332"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/memory_runtime.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/memory_runtime.h",
+      "bytes": 2039,
+      "sha256": "eafa9773488bdd03d0e4bcf2dfd218810c30351e5dc029275be0e0bac53dfcd5"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/memory_reader.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/memory_reader.c",
+      "bytes": 1079,
+      "sha256": "c9bd8401476f3baf73b43051651e6c306f14a05c1d5a5317531302569d4261c0"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/handoff.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-producer-memory/handoff.h",
+      "bytes": 2413,
+      "sha256": "9b88ce3e24a3a6c1c16336315323b70b29560c473ac9a48d36043bd60c840113"
+    }
+  ],
+  "diffs": [
+    {
+      "diff": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/BASE_TO_PRODUCER-memory_reserve.c.diff",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/BASE_TO_PRODUCER-memory_reserve.c.diff",
+        "bytes": 1630,
+        "sha256": "03a57bbdf96e5312940a2cb5ac1db68d8fd7547437d3a9a3929f368b992281d2"
+      },
+      "reconstruction_exact": true
+    },
+    {
+      "diff": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/PRODUCER_TO_BASE-memory_reserve.c.diff",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/PRODUCER_TO_BASE-memory_reserve.c.diff",
+        "bytes": 1630,
+        "sha256": "5c70cc5ed6c9958afde76ec06073c0b46a06c11614a1709827f9e5c77e9cb79e"
+      },
+      "reconstruction_exact": true
+    },
+    {
+      "diff": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/BASE_TO_PRODUCER-memory_reserve.h.diff",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/BASE_TO_PRODUCER-memory_reserve.h.diff",
+        "bytes": 1903,
+        "sha256": "b62398dd4d84288ed432a5d42cbcee262a240141d3af4a24f9646c7db38eb119"
+      },
+      "reconstruction_exact": true
+    },
+    {
+      "diff": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/PRODUCER_TO_BASE-memory_reserve.h.diff",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/PRODUCER_TO_BASE-memory_reserve.h.diff",
+        "bytes": 1903,
+        "sha256": "fc51d02f5b5ff5f4cda94d6fa3653392debcb31c96e13b058da654912f809961"
+      },
+      "reconstruction_exact": true
+    },
+    {
+      "diff": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/BASE_TO_PRODUCER-memory_runtime.c.diff",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/BASE_TO_PRODUCER-memory_runtime.c.diff",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "reconstruction_exact": true
+    },
+    {
+      "diff": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/PRODUCER_TO_BASE-memory_runtime.c.diff",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/PRODUCER_TO_BASE-memory_runtime.c.diff",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "reconstruction_exact": true
+    },
+    {
+      "diff": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/BASE_TO_PRODUCER-memory_runtime.h.diff",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/BASE_TO_PRODUCER-memory_runtime.h.diff",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "reconstruction_exact": true
+    },
+    {
+      "diff": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/PRODUCER_TO_BASE-memory_runtime.h.diff",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/PRODUCER_TO_BASE-memory_runtime.h.diff",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "reconstruction_exact": true
+    },
+    {
+      "diff": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/BASE_TO_PRODUCER-memory_reader.c.diff",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/BASE_TO_PRODUCER-memory_reader.c.diff",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "reconstruction_exact": true
+    },
+    {
+      "diff": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/PRODUCER_TO_BASE-memory_reader.c.diff",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/PRODUCER_TO_BASE-memory_reader.c.diff",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "reconstruction_exact": true
+    },
+    {
+      "diff": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/BASE_TO_PRODUCER-handoff.h.diff",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/BASE_TO_PRODUCER-handoff.h.diff",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "reconstruction_exact": true
+    },
+    {
+      "diff": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/PRODUCER_TO_BASE-handoff.h.diff",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/PRODUCER_TO_BASE-handoff.h.diff",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "reconstruction_exact": true
+    }
+  ],
+  "identical_files": [
+    "memory_runtime.c",
+    "memory_runtime.h",
+    "memory_reader.c",
+    "handoff.h"
+  ],
+  "identical_reserve_regions": [
+    "before first hub static assertion",
+    "credit_span_hub through EOF"
+  ],
+  "binary_ABI_claim": false
+}

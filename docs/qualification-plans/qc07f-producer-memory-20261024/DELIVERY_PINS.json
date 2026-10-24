@@ -1,0 +1,703 @@
+{
+  "status": "AUTHOR_DELIVERED_SOURCE_COMPILE_ONLY_NOT_RUN_NOT_ADOPTED",
+  "records": [
+    {
+      "path": "apps/rtsp-auth/qc07f-producer-memory/LICENSE_NOTICES.md",
+      "bytes": 901,
+      "sha256": "0957bd5af1053e46a5050e3a124ad887636d2a55cdbb94b65c696318bb59a224"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-producer-memory/compile01.py",
+      "bytes": 12765,
+      "sha256": "72c262b3042b04aae29dbcb7265ee944b3717b27b13bf2978a2f55a840a81e86"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-producer-memory/handoff.h",
+      "bytes": 2413,
+      "sha256": "9b88ce3e24a3a6c1c16336315323b70b29560c473ac9a48d36043bd60c840113"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-producer-memory/memory_reader.c",
+      "bytes": 1079,
+      "sha256": "c9bd8401476f3baf73b43051651e6c306f14a05c1d5a5317531302569d4261c0"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-producer-memory/memory_reserve.c",
+      "bytes": 13350,
+      "sha256": "f5c3d87aa2c6272fc5a54eb3f95af6590ceca7a5d6e95e52c1dd969790c1ec48"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-producer-memory/memory_reserve.h",
+      "bytes": 4312,
+      "sha256": "429563e8a85b71ce66fd9e0f6ba6d6ef386173126efa3bcadf5ce7e543c14195"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-producer-memory/memory_runtime.c",
+      "bytes": 7911,
+      "sha256": "0e0434b5a8a80493e2582f8efa890fb634dd21543da35808ffd706c3a0a00332"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-producer-memory/memory_runtime.h",
+      "bytes": 2039,
+      "sha256": "eafa9773488bdd03d0e4bcf2dfd218810c30351e5dc029275be0e0bac53dfcd5"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/CONTRACT.md",
+      "bytes": 5496,
+      "sha256": "3ff6ddcb0624a0adfe770eb6c172af95d6d707a3fe914c12cb517c03183366ae"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/AUTHOR_AUDIT.md",
+      "bytes": 4683,
+      "sha256": "7ee4a64b9e0b8f6e28b09e6a02674d2485763a7883ebf0b70fe570a8581cb930"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/HANDOFF.md",
+      "bytes": 7318,
+      "sha256": "456cd29edf19a4dfa4e6045b747eeaf02cd78c6c53ecf56007e60ff7c14d838e"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/AUTHOR_VERIFICATION.json",
+      "bytes": 9114,
+      "sha256": "fc8a64b881f1bb43487313f941b14603ee2f4fc4ecbb26a779b9c4d3fdbb6e49"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/REPORT.json",
+      "bytes": 89548,
+      "sha256": "53f7d77fffcabdf10d04f8ecc2865af9aa5f36c92dbd4b27188ed468121d1f20"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/SOURCE_DELTA.json",
+      "bytes": 10332,
+      "sha256": "75fce40909872a76fdf08f922673e4b52f5d39da46ee8298948c8cec2c2b54f2"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/FROZEN_INPUTS.json",
+      "bytes": 83466,
+      "sha256": "f40c2989f35cb5e99235462c1dde662d25e736c44afd9ab5291ba20aa2b834c8"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/INPUTS.json",
+      "bytes": 4291,
+      "sha256": "65a886f78734b3797f27f3498be2b25de67fc524211615905d2f4ce95c5d1978"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/DEPENDENCIES.json",
+      "bytes": 29622,
+      "sha256": "d9418b2da6c8bc22cdcb409240054f07cb017d96b785b1b8a1981ad18c2dc2d6"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/TOOLS.json",
+      "bytes": 4137,
+      "sha256": "0ed61aa8de258016dae1fa97823b404faed63c923680f30035cbbbaa10e85c53"
+    }
+  ],
+  "exact_pre_manifest_members": [
+    {
+      "path": "apps/rtsp-auth/qc07f-producer-memory/LICENSE_NOTICES.md",
+      "bytes": 901,
+      "sha256": "0957bd5af1053e46a5050e3a124ad887636d2a55cdbb94b65c696318bb59a224"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-producer-memory/compile01.py",
+      "bytes": 12765,
+      "sha256": "72c262b3042b04aae29dbcb7265ee944b3717b27b13bf2978a2f55a840a81e86"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-producer-memory/handoff.h",
+      "bytes": 2413,
+      "sha256": "9b88ce3e24a3a6c1c16336315323b70b29560c473ac9a48d36043bd60c840113"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-producer-memory/memory_reader.c",
+      "bytes": 1079,
+      "sha256": "c9bd8401476f3baf73b43051651e6c306f14a05c1d5a5317531302569d4261c0"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-producer-memory/memory_reserve.c",
+      "bytes": 13350,
+      "sha256": "f5c3d87aa2c6272fc5a54eb3f95af6590ceca7a5d6e95e52c1dd969790c1ec48"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-producer-memory/memory_reserve.h",
+      "bytes": 4312,
+      "sha256": "429563e8a85b71ce66fd9e0f6ba6d6ef386173126efa3bcadf5ce7e543c14195"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-producer-memory/memory_runtime.c",
+      "bytes": 7911,
+      "sha256": "0e0434b5a8a80493e2582f8efa890fb634dd21543da35808ffd706c3a0a00332"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-producer-memory/memory_runtime.h",
+      "bytes": 2039,
+      "sha256": "eafa9773488bdd03d0e4bcf2dfd218810c30351e5dc029275be0e0bac53dfcd5"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/AUTHOR_AUDIT.md",
+      "bytes": 4683,
+      "sha256": "7ee4a64b9e0b8f6e28b09e6a02674d2485763a7883ebf0b70fe570a8581cb930"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/AUTHOR_VERIFICATION.json",
+      "bytes": 9114,
+      "sha256": "fc8a64b881f1bb43487313f941b14603ee2f4fc4ecbb26a779b9c4d3fdbb6e49"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/CONTRACT.md",
+      "bytes": 5496,
+      "sha256": "3ff6ddcb0624a0adfe770eb6c172af95d6d707a3fe914c12cb517c03183366ae"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/HANDOFF.md",
+      "bytes": 7318,
+      "sha256": "456cd29edf19a4dfa4e6045b747eeaf02cd78c6c53ecf56007e60ff7c14d838e"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/BASE_TO_PRODUCER-handoff.h.diff",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/BASE_TO_PRODUCER-memory_reader.c.diff",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/BASE_TO_PRODUCER-memory_reserve.c.diff",
+      "bytes": 1630,
+      "sha256": "03a57bbdf96e5312940a2cb5ac1db68d8fd7547437d3a9a3929f368b992281d2"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/BASE_TO_PRODUCER-memory_reserve.h.diff",
+      "bytes": 1903,
+      "sha256": "b62398dd4d84288ed432a5d42cbcee262a240141d3af4a24f9646c7db38eb119"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/BASE_TO_PRODUCER-memory_runtime.c.diff",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/BASE_TO_PRODUCER-memory_runtime.h.diff",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/DEPENDENCIES.json",
+      "bytes": 29622,
+      "sha256": "d9418b2da6c8bc22cdcb409240054f07cb017d96b785b1b8a1981ad18c2dc2d6"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/FROZEN_INPUTS.json",
+      "bytes": 83466,
+      "sha256": "f40c2989f35cb5e99235462c1dde662d25e736c44afd9ab5291ba20aa2b834c8"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/INPUTS.json",
+      "bytes": 4291,
+      "sha256": "65a886f78734b3797f27f3498be2b25de67fc524211615905d2f4ce95c5d1978"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/PRODUCER_TO_BASE-handoff.h.diff",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/PRODUCER_TO_BASE-memory_reader.c.diff",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/PRODUCER_TO_BASE-memory_reserve.c.diff",
+      "bytes": 1630,
+      "sha256": "5c70cc5ed6c9958afde76ec06073c0b46a06c11614a1709827f9e5c77e9cb79e"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/PRODUCER_TO_BASE-memory_reserve.h.diff",
+      "bytes": 1903,
+      "sha256": "fc51d02f5b5ff5f4cda94d6fa3653392debcb31c96e13b058da654912f809961"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/PRODUCER_TO_BASE-memory_runtime.c.diff",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/PRODUCER_TO_BASE-memory_runtime.h.diff",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/REPORT.json",
+      "bytes": 89548,
+      "sha256": "53f7d77fffcabdf10d04f8ecc2865af9aa5f36c92dbd4b27188ed468121d1f20"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/SOURCE_DELTA.json",
+      "bytes": 10332,
+      "sha256": "75fce40909872a76fdf08f922673e4b52f5d39da46ee8298948c8cec2c2b54f2"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/TOOLS.json",
+      "bytes": 4137,
+      "sha256": "0ed61aa8de258016dae1fa97823b404faed63c923680f30035cbbbaa10e85c53"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/arm-PRODUCER-MEMORY-REAL-HUB-SPANS-REL.o",
+      "bytes": 29968,
+      "sha256": "2f98b89ead85edcbc3e6126c5deb3100ec428e4d0f0c139a6027b204192cdeda"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/arm-rel.map",
+      "bytes": 25588,
+      "sha256": "12dee636f7aee0c30398ef7c3156b423cf4acac232681807ca4f839fc1f4ee4e"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-01.json",
+      "bytes": 891,
+      "sha256": "1218b8c59211d4a906465e088df01c332c7e347f08c002dcd916a9ec8dc1b37f"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-02.json",
+      "bytes": 893,
+      "sha256": "f6f2005be7691d229fa9a4dafd471f60b17f28fd1605776aab49a2bbe366bde1"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-03.json",
+      "bytes": 904,
+      "sha256": "e2fd0c13b87fd52c399f8f75f6e1fce16c2a0b9414b392e1cbe560810a25456f"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-04.json",
+      "bytes": 899,
+      "sha256": "ff062f1ffe91592d54b0c726e3c9a7804cfe4ce68c01126db5e91577d92e2198"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-05.json",
+      "bytes": 899,
+      "sha256": "7ded1beea81e28e9c370ff4d75f70ca9ad88ac342e1485ffcf650cf7fb93af9e"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-06.json",
+      "bytes": 1581,
+      "sha256": "9679458cc6216fa9fe867dfba1e3ea16e85e133e45529fc5cd7eeec842f06ecd"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-07.json",
+      "bytes": 1581,
+      "sha256": "d5726435fb85d69d00f0f8a4c59f1b134557e3a77aeb0c31bb3ef73f1991150c"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-08.json",
+      "bytes": 1575,
+      "sha256": "c50fe2a3dca63212ebc5d27d703665525faa467eb0a75020f4a64541354034f8"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-09.json",
+      "bytes": 1561,
+      "sha256": "9be2df810dff447d0ae1342e8b99a2c44fbc02f23fc36c3866265df6e4b5487b"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-10.json",
+      "bytes": 1568,
+      "sha256": "9ad62d635f118dc6ad210733cc791600f83d744b58ff7387a92bd17f58f60dd5"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-11.json",
+      "bytes": 3317,
+      "sha256": "7dfe4a067b07552a3ec2aebbd56a862c902d212936a04cdafeb9c90fa3d2cdb3"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-12.json",
+      "bytes": 1065,
+      "sha256": "0cdc26ff5f4986252e5a48cb8dc9548360c5a03368adc179737a493e941f742e"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-13.json",
+      "bytes": 1051,
+      "sha256": "014e5d44312d38262295da2b91b1416f5b904d237b5f187bc10f9c8ac4da35fc"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-14.json",
+      "bytes": 1070,
+      "sha256": "ff68208ce912de98317d7b128bd0bcc04f32b3a3bf5bd3ea5888a8644c14abee"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-15.json",
+      "bytes": 1074,
+      "sha256": "97d0292f64d354fbb2405c38c7326752ef847ee6383a81bbe231f03a874dd4c9"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-16.json",
+      "bytes": 1076,
+      "sha256": "7e2a877ecfb4cc5bc14c16a42e3c72b0e2f51666d428893524f792a484b7ad3a"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-17.json",
+      "bytes": 1088,
+      "sha256": "f5d38759063a583f33ef3c21803f4226bbda5519f0a83737819843462e9638d8"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-18.json",
+      "bytes": 1084,
+      "sha256": "f671586e68d3f9982a947bb413fb4b70407bba5df57cd4cbf504274b51bbe7e1"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-19.json",
+      "bytes": 1084,
+      "sha256": "31596c5c4e913c8b02816749dc366879a348e256de04d18700d40c54d7ed5c51"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-20.json",
+      "bytes": 1821,
+      "sha256": "b42738d501cf9fb37f6d3bd210a32c8b2b939306d62ff447c78cced15fc6f2ab"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-21.json",
+      "bytes": 1821,
+      "sha256": "692ecd8b748786030bc3d91f21f5c555608b043c1f280ebc998c09d4cfe2d918"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-22.json",
+      "bytes": 1815,
+      "sha256": "380c0c4122bc99216b1b4c08b5d4f37a87af626d54169ba24a9ca976cbc5f6c5"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-23.json",
+      "bytes": 1801,
+      "sha256": "360db5c7bbc5e317c33c1994cbd161875a62b6dfd5f90e7a3b3a4feed3fa00d9"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-24.json",
+      "bytes": 1808,
+      "sha256": "4fad92921e09058d952df3d47670b2033d8ef4c99a0da62985dd081820e5c77a"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-25.json",
+      "bytes": 3555,
+      "sha256": "22436ee277b4cfc1e78c32aa781cc37ba6acb6183e3c82cd0d7d77b25cbca6d2"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-26.json",
+      "bytes": 1061,
+      "sha256": "af1fa5bbeec19ec4e23d2d52fd48ab2ec04d466e573e79c6d8262e272dcd204a"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-27.json",
+      "bytes": 1047,
+      "sha256": "9deb4e55e872dd4b8cb3d7fcfb0bf5fe4340018276a7d1c2262b328e8b49cce5"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/command-28.json",
+      "bytes": 1066,
+      "sha256": "e3ca60bec0e602134a51e182f2efa8aac79bce3834e4a3a361f97b0e5e782c9f"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/host-PRODUCER-MEMORY-REAL-HUB-SPANS-REL.o",
+      "bytes": 37656,
+      "sha256": "6f896eee5691329ffd131fad920732b4a3385dee9b4329d3a332765b30abbf65"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/host-rel.map",
+      "bytes": 26498,
+      "sha256": "ef34cf15074ca18c303ec0ecc4e2e9a38395897c7b3b47f3c586fb4966cbf362"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/arm-REL-ELF.txt",
+      "bytes": 10115,
+      "sha256": "4be8ae98d62663ff0df6f11192fab46351dff0f1ce6b6c3557355eaa0f17da57"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/arm-REL-relocations.txt",
+      "bytes": 21828,
+      "sha256": "7835c170dcb2c0982073825c511bc91166c77926d0fe6a7615186c9c61aa94cb"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/arm-REL-symbols.txt",
+      "bytes": 1632,
+      "sha256": "0717bb8cd3083243364e5a0510a0469523d8be605554732c892830633c19efa3"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/arm-compile-hub.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/arm-compile-reader.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/arm-compile-reserve.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/arm-compile-runtime.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/arm-compile-spans.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/arm-integration-REL.txt",
+      "bytes": 628,
+      "sha256": "d21279e792ebce212aa014577af4e6398777537db05a14ade3a6e5efafa792e9"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/arm-machine.txt",
+      "bytes": 29,
+      "sha256": "d0cf670b8c286026ebd268b1f5ecdd6be41552e0e254a949fb50ab0ed085dd23"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/arm-tool-as.txt",
+      "bytes": 260,
+      "sha256": "aebf2a97c58e1d1f4676098a8e9b91c8569c49d3c9d06e537fe689c4afcd8b56"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/arm-tool-cc1.txt",
+      "bytes": 220,
+      "sha256": "11399c4ad884b1da76486da5e344e5b6e2c541c6e4001b24865a4e5cd4f70fa3"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/arm-tool-ld.txt",
+      "bytes": 260,
+      "sha256": "e98fe4335d69760e406f842f1b5a0cd3e92881bf0dee7376ab8f647b78cc0e98"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/arm-version.txt",
+      "bytes": 288,
+      "sha256": "7b501201183c07e1e9078ca3f8b1f502d07fd67c414e92183c01e8787c00a0d4"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/host-REL-ELF.txt",
+      "bytes": 13291,
+      "sha256": "da4fde6ec92bbd044fbf7fc3a99eb3f9e31def170c7b43eabba71f686cb84e09"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/host-REL-relocations.txt",
+      "bytes": 24845,
+      "sha256": "862f34b571a65f7693bb80ba0600721043f0fc6b8b078d2487ffad7646b8c3c9"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/host-REL-symbols.txt",
+      "bytes": 1902,
+      "sha256": "9cab672f0acad887109f41d6ebbff40a369411a5e376d823471bd4f20801f59f"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/host-compile-hub.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/host-compile-reader.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/host-compile-reserve.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/host-compile-runtime.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/host-compile-spans.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/host-integration-REL.txt",
+      "bytes": 633,
+      "sha256": "2073a387a0683012ed19bd28dbda909a22ce096f7a55248168bdfb9f8f978813"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/host-machine.txt",
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/host-tool-as.txt",
+      "bytes": 3,
+      "sha256": "8b97bca79750847558d488e2ea4de79903c9c71c9af27ecf1b3dff5dba2abdd9"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/host-tool-cc1.txt",
+      "bytes": 40,
+      "sha256": "c400491dd6f36bdc89c46da99a7c98dbd19a3eb313a62e89576505b07846aec8"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/host-tool-ld.txt",
+      "bytes": 3,
+      "sha256": "3b6cb8ae51045d062a7c7de7cc488ad8785144cfbc0a7fc9546ed52429e0d97f"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/logs/host-version.txt",
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-hub.d",
+      "bytes": 2603,
+      "sha256": "d95e31c36e319475f910af2293c6c0d203ad5c5ec0db67c847276be1aa78b12a"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-hub.o",
+      "bytes": 11224,
+      "sha256": "65a69b989efc728f6cff85b3780a2eeb87d21abe3311e8e13906ddb2e17f3f17"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-hub.su",
+      "bytes": 3133,
+      "sha256": "090f94f6a62935017abab11aaf1104335479352b8bfaa06f3954e60a2f910860"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-reader.d",
+      "bytes": 4199,
+      "sha256": "1c22a29eb08121c5ed25a6bd44e978b0dc152e815989942286b43f4dd91a21b5"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-reader.o",
+      "bytes": 1792,
+      "sha256": "053e16e52582a655ed60075079e9dd2524762e5fbfa216251866cf6557babb6f"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-reader.su",
+      "bytes": 126,
+      "sha256": "ce9e61199dddba8de063fc6242e944dc54c84de4e3587f58b50bdbf98c086b40"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-reserve.d",
+      "bytes": 2747,
+      "sha256": "269f3d59f721ecb6a22fe32ebb398bbc4693c907f125452d663ce3774b536c7e"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-reserve.o",
+      "bytes": 12472,
+      "sha256": "e52b6c2f9252b699fb3ce29b0a191ff802b2c72462d3d9de9a13de8758289569"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-reserve.su",
+      "bytes": 1842,
+      "sha256": "0b9efc1abbe4360cc5c2489e1e46dbf56363b29adaaef4e8aa61a898e8972bc8"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-runtime.d",
+      "bytes": 5101,
+      "sha256": "1e0f76fef040194b8407518e248238962d862983b466d5da44e87db2f7403791"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-runtime.o",
+      "bytes": 6396,
+      "sha256": "fe631695b4e9ed105b5fff70579faa14db55a75bb76b16ea9504045eca209c75"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-runtime.su",
+      "bytes": 890,
+      "sha256": "ab2aa377e41b9bc5ad6e37a907b9c0698a20074ebcfe0b7ef945031f4fa9ffb3"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-spans.d",
+      "bytes": 2256,
+      "sha256": "0600b313f09395853848d684b408d5ce4cac2c840b36d5018abfbfda9f638b53"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-spans.o",
+      "bytes": 1756,
+      "sha256": "efb75e7b8f158bc4d05c2aa580e41d5177c2cdfc97a0de9c266adf87d24e7c00"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-spans.su",
+      "bytes": 134,
+      "sha256": "04c5251704cdf1d5f634fbcfa3b06a7a8fe6228268815b19aef8017cd66e5aef"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-hub.d",
+      "bytes": 1422,
+      "sha256": "cf2af1466da385515f83e5012bda5647ea571db4378a8b9d94f6d236b2796025"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-hub.o",
+      "bytes": 13424,
+      "sha256": "18081a1e92f694d39ff3e60bff309fcff5783117aeca048fdc619f75f07060f0"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-hub.su",
+      "bytes": 2645,
+      "sha256": "570bdc26c3031c1d81777b3b0a8068ae401b29c82583eb0d463a26b73d6f3df1"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-reader.d",
+      "bytes": 2095,
+      "sha256": "10a87e645d39eea9ad5f443ef64afcb065e314447070d1f964364287a71e6647"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-reader.o",
+      "bytes": 2544,
+      "sha256": "760c8b28974770d8c1770f39a4e38db935b210cb25ad728a388ccc308cb06e95"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-reader.su",
+      "bytes": 126,
+      "sha256": "2fb7fdf0ed09a959ff72cfe35188b81f0ef168ca26a36f26a7579db3cbc5266d"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-reserve.d",
+      "bytes": 1431,
+      "sha256": "4eda177b06236b5b6498d6669374f51509aed833416971e65265470d6da1ca41"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-reserve.o",
+      "bytes": 14824,
+      "sha256": "12a56e229cc7e4842922d4afb188bbe10830eefb279a2b72193e8937a04a8ec2"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-reserve.su",
+      "bytes": 1504,
+      "sha256": "58cc9dc963768b53560dd57f71e3aad38cc4e5274a202ddd4758528095b38d47"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-runtime.d",
+      "bytes": 2929,
+      "sha256": "c623bde2b2258932769e037e1ea88a2dfd57290784d83d62eef779d799bbe9db"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-runtime.o",
+      "bytes": 9120,
+      "sha256": "7543bb707bec959eeb483b522f8bf23fc7d708a1f225f0ffd38e52df8ba1690b"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-runtime.su",
+      "bytes": 907,
+      "sha256": "f1bcc7c5f4bde7006f9b47ef8e488b9a4ec3f2da5979bcb1532815c46b807797"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-spans.d",
+      "bytes": 1137,
+      "sha256": "fa1f2ff6d9c3d0da5e3ef6a814b007fff3ee9fcbc4e26bfa4ac4b76aaebf37a3"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-spans.o",
+      "bytes": 2496,
+      "sha256": "58044cfebd6c72da81841357c2f4fa0f1e80d5b0b34ec8f3b01329e61e1ea295"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-spans.su",
+      "bytes": 135,
+      "sha256": "75c9a871c0ca7ea8ce43882f789e7530567ecb69163cb4ef5c41cfb5dd5873b6"
+    }
+  ],
+  "pre_manifest_member_count": 120,
+  "pre_manifest_aggregate_sha256": "224f4ad1c4d27d2b3dd1054f90384f5058f4f685586d92eac9edda65127e65a8",
+  "aggregate_format": "sort workspace-relative path strings; UTF-8 path TAB decimal_bytes TAB sha256 LF; SHA256",
+  "manifest_itself_excluded": true,
+  "review_parent_disposition_required_before_use": true,
+  "candidate_function_calls": 0
+}

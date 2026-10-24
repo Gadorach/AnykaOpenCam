@@ -1,0 +1,230 @@
+{
+  "status": "AUTHOR_STATIC_CUSTODY_ELF_CHECK_PASS_NOT_INDEPENDENT_REVIEW",
+  "utc": "2026-10-24T11:30:29.872969+00:00",
+  "report": {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/REPORT.json",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/REPORT.json",
+    "bytes": 89548,
+    "sha256": "53f7d77fffcabdf10d04f8ecc2865af9aa5f36c92dbd4b27188ed468121d1f20"
+  },
+  "overlapping_record_counts": {
+    "selected_inputs": 13,
+    "dependencies": 98,
+    "tools": 12,
+    "artifacts": 107,
+    "frozen_files": 216,
+    "frozen_roots": 10,
+    "command_logs": 28
+  },
+  "exact_build_members": 108,
+  "dependency_membership_from_ten_d_files_exact": true,
+  "producer_header_selected_no_old_memory_or_hub_dependencies": true,
+  "frozen_membership_bytes_unchanged": true,
+  "twelve_literal_diffs_regenerated_and_reverse_reconstructed": true,
+  "four_unchanged_local_files": [
+    "memory_runtime.c",
+    "memory_runtime.h",
+    "memory_reader.c",
+    "handoff.h"
+  ],
+  "reserve_unchanged_prefix_and_credit_through_EOF": true,
+  "memory_roots": [
+    "nh_memory_parse_meminfo",
+    "nh_memory_parse_zoneinfo",
+    "nh_memory_init",
+    "nh_memory_init_mode",
+    "nh_memory_credit_owned",
+    "nh_memory_span_hub_forecast",
+    "nh_memory_credit_span_hub",
+    "nh_memory_credit_codec",
+    "nh_memory_evaluate",
+    "nh_memory_own_layout",
+    "nh_memory_read_fixed",
+    "nh_memory_runtime_init",
+    "nh_memory_runtime_gate",
+    "nh_memory_prefault_owned",
+    "nh_memory_prefault_span_hub",
+    "nh_memory_log"
+  ],
+  "hub_roots": [
+    "camera_span_hub_init_v1",
+    "camera_span_hub_subscribe_v1",
+    "camera_span_hub_resync_v1",
+    "camera_span_hub_unsubscribe_v1",
+    "camera_span_hub_publish_v1",
+    "camera_span_hub_producer_reserve_v3",
+    "camera_span_hub_producer_cancel_v3",
+    "camera_span_hub_producer_arm_v3",
+    "camera_span_hub_producer_commit_v3",
+    "camera_span_hub_producer_hold_v3",
+    "camera_span_hub_acquire_v1",
+    "camera_span_hub_release_v1",
+    "camera_span_hub_lease_valid_v1",
+    "camera_span_hub_packet_v1",
+    "camera_span_hub_stop_v1",
+    "camera_span_hub_drained_v1",
+    "camera_span_hub_dispose_v1"
+  ],
+  "ELF_metadata": [
+    {
+      "file": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/arm-PRODUCER-MEMORY-REAL-HUB-SPANS-REL.o",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/arm-PRODUCER-MEMORY-REAL-HUB-SPANS-REL.o",
+        "bytes": 29968,
+        "sha256": "2f98b89ead85edcbc3e6126c5deb3100ec428e4d0f0c139a6027b204192cdeda"
+      },
+      "class": 1,
+      "machine": 40,
+      "REL": true,
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "file": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/host-PRODUCER-MEMORY-REAL-HUB-SPANS-REL.o",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/host-PRODUCER-MEMORY-REAL-HUB-SPANS-REL.o",
+        "bytes": 37656,
+        "sha256": "6f896eee5691329ffd131fad920732b4a3385dee9b4329d3a332765b30abbf65"
+      },
+      "class": 2,
+      "machine": 62,
+      "REL": true,
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "file": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-hub.o",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-hub.o",
+        "bytes": 11224,
+        "sha256": "65a69b989efc728f6cff85b3780a2eeb87d21abe3311e8e13906ddb2e17f3f17"
+      },
+      "class": 1,
+      "machine": 40,
+      "REL": true,
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "file": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-reader.o",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-reader.o",
+        "bytes": 1792,
+        "sha256": "053e16e52582a655ed60075079e9dd2524762e5fbfa216251866cf6557babb6f"
+      },
+      "class": 1,
+      "machine": 40,
+      "REL": true,
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "file": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-reserve.o",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-reserve.o",
+        "bytes": 12472,
+        "sha256": "e52b6c2f9252b699fb3ce29b0a191ff802b2c72462d3d9de9a13de8758289569"
+      },
+      "class": 1,
+      "machine": 40,
+      "REL": true,
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "file": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-runtime.o",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-runtime.o",
+        "bytes": 6396,
+        "sha256": "fe631695b4e9ed105b5fff70579faa14db55a75bb76b16ea9504045eca209c75"
+      },
+      "class": 1,
+      "machine": 40,
+      "REL": true,
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "file": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-spans.o",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/arm-spans.o",
+        "bytes": 1756,
+        "sha256": "efb75e7b8f158bc4d05c2aa580e41d5177c2cdfc97a0de9c266adf87d24e7c00"
+      },
+      "class": 1,
+      "machine": 40,
+      "REL": true,
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "file": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-hub.o",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-hub.o",
+        "bytes": 13424,
+        "sha256": "18081a1e92f694d39ff3e60bff309fcff5783117aeca048fdc619f75f07060f0"
+      },
+      "class": 2,
+      "machine": 62,
+      "REL": true,
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "file": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-reader.o",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-reader.o",
+        "bytes": 2544,
+        "sha256": "760c8b28974770d8c1770f39a4e38db935b210cb25ad728a388ccc308cb06e95"
+      },
+      "class": 2,
+      "machine": 62,
+      "REL": true,
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "file": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-reserve.o",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-reserve.o",
+        "bytes": 14824,
+        "sha256": "12a56e229cc7e4842922d4afb188bbe10830eefb279a2b72193e8937a04a8ec2"
+      },
+      "class": 2,
+      "machine": 62,
+      "REL": true,
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "file": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-runtime.o",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-runtime.o",
+        "bytes": 9120,
+        "sha256": "7543bb707bec959eeb483b522f8bf23fc7d708a1f225f0ffd38e52df8ba1690b"
+      },
+      "class": 2,
+      "machine": 62,
+      "REL": true,
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "file": {
+        "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-spans.o",
+        "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-producer-memory-20261024/runs/build01/objects/host-spans.o",
+        "bytes": 2496,
+        "sha256": "58044cfebd6c72da81841357c2f4fa0f1e80d5b0b34ec8f3b01329e61e1ea295"
+      },
+      "class": 2,
+      "machine": 62,
+      "REL": true,
+      "entry": 0,
+      "program_headers": 0
+    }
+  ],
+  "actual_five_input_objects_per_role": true,
+  "scoped_tools_match_retained": true,
+  "candidate_library_helper_test_function_calls": 0,
+  "review_adoption_or_native_ABI_claim": false
+}

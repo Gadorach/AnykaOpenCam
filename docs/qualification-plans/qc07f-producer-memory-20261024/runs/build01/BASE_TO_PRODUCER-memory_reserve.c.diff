@@ -1,0 +1,25 @@
+--- BASE_TO_PRODUCER/old/memory_reserve.c
++++ BASE_TO_PRODUCER/new/memory_reserve.c
+@@ -116,9 +116,11 @@
+  if(credit>l->cpu_capacity_kib-l->cpu_paid_kib)return -1;
+  l->begin[kind]=a;l->end[kind]=b;l->paid[kind]=1;l->cpu_paid_kib+=credit;return 0;
+ }
++_Static_assert(CAMERA_SPAN_HUB_LAYOUT_VERSION==3U&&CAMERA_SPAN_HUB_PRODUCER_API_VERSION==3U,
++ "exclusive producer-layout source selection; rebuild every consumer");
+ _Static_assert(CAMERA_SPAN_HUB_V1_CHUNKS==NH_MEMORY_HUB_RANGES&&
+  CAMERA_SPAN_HUB_V1_CHUNK_BYTES==NH_MEMORY_HUB_BYTES&&
+- NH_MEMORY_HUB_RANGES*NH_MEMORY_HUB_BYTES==1048576U,"exact accepted v2 backing");
++ NH_MEMORY_HUB_RANGES*NH_MEMORY_HUB_BYTES==1048576U,"exact accepted producer backing");
+ _Static_assert(sizeof(struct nh_memory_hub_ranges)<512&&sizeof(struct nh_memory_ledger)<1024,
+  "bounded metadata, no full-AU allocation");
+ int nh_memory_span_hub_forecast(const struct nh_memory_ledger *l,
+@@ -126,6 +128,9 @@
+ {
+  if(!l||!l->initialized||!h||!out||l->paid[1]||l->begin[1]||l->end[1]||
+     l->hub.owner||l->hub.count||l->hub.credit_kib||l->cpu_paid_kib>l->cpu_capacity_kib)return -1;
++ if(h->layout_version!=3U||h->writer_phase!=CAMERA_SPAN_WRITER_V3_IDLE||
++    h->issued_writer_token||h->writer_token||h->writer_generation||
++    h->armed_writer_token||h->writer_error||h->data_offset)return -1;
+  if(h->self!=h||h->phase!=CAMERA_SPAN_HUB_V1_ACTIVE||h->generation||h->issued_token||
+     h->monotonic_ns||h->codec||h->keyframe||h->subscribers||h->need_keyframe||h->pending||h->acquired||h->bytes||
+     h->allocation_calls!=8||h->allocated_bytes!=1048576||h->maximum_allocation!=131072)return -1;
