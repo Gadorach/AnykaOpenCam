@@ -181,8 +181,17 @@ failed; independent N1 resolves unused GC-discarded functions vs retained requir
 constructor crypto, not a repaired author seal. See
 [writer bootstrap disposition](../../qualification-plans/qc07f-writer-bootstrap-20261024/PARENT_DISPOSITION.md).
 Old frontend/bootstrap layouts are NOT compatible. Authorized external ingress,
-fresh launch/FD-env-caps hygiene, durable authority/storage/main/release and native
-qualification remain missing. No lender disposal/restart/recovery/product acceptance.
+fresh media-parent launch, durable authority/storage/main/release and native
+qualification remain missing. Three-class clean-exec provisioner now has narrow
+independent conditional SOURCE/API/order/custody/lifetime/security-boundary
+sufficiency: actual worker main, full pointer-free public codec, typed exec/wait/
+bind owner.32 HOST/ARM compiles/4 partial links/1 static ARM link/127 commands PASS,
+NOT RUN. See [exec disposition](../../qualification-plans/rtsp-provisioner-exec-20261024/PARENT_DISPOSITION.md).
+Current ARM ELF is INELIGIBLE: capability header37 versus retained kernel40 rejects
+before exec/secrets; Thumb-2/native instruction risk and user-owned0755 admission
+remain unresolved. Worker boundary is not parent secret-history or hostile-code
+filesystem/syscall isolation; old fork/API5 bootstrap not adopted. No lender
+disposal/restart/recovery/product acceptance or execution/hardware queue.
 No candidate function invoked.
 Native1MiB output/raw/process2MiB/combined-load
 and external recovery remain open, not satisfied by CPU chunks or source review.

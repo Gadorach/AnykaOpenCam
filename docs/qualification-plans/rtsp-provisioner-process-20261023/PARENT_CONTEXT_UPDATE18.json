@@ -1,0 +1,15 @@
+{
+  "scope": "EIGHTEENTH_KNOWN_PARENT_MUTABLE_INDEX_STATUS_UPDATE_NOT_SOURCE_PIN_REBASE",
+  "recorded_host_date": "2026-10-24",
+  "original_manifests_and_review_unchanged": true,
+  "path": "docs/plan/camera-foundation/00-INDEX.md",
+  "before": {
+    "bytes": 134629,
+    "sha256": "572b0681cdeb2d40b13e7a62813169c917ee527d8a747dc2965352674ea65e00"
+  },
+  "after": {
+    "bytes": 135369,
+    "sha256": "97f038d03ac7b56f03146be71e0811401720924adbb0580c4af1483aec3752c8"
+  },
+  "reason": "parent closes conditional SOURCE-only three-class clean-exec worker boundary, explicitly retaining current ARM image ineligibility for capability37/kernel40 mismatch, unresolved Thumb-2 risk and user ownership; no execution/native/bootstrap/product adoption"
+}

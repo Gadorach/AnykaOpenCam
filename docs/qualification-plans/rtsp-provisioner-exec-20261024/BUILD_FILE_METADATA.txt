@@ -1,0 +1,3 @@
+docs/qualification-plans/rtsp-provisioner-exec-20261024/build01/COMMANDS.txt | bytes=222883 | mode=644 | owner=gadorach:gadorach | modified=2026-10-24 11:47:47.364592460 -0300
+docs/qualification-plans/rtsp-provisioner-exec-20261024/build01/RESULT.txt | bytes=83 | mode=644 | owner=gadorach:gadorach | modified=2026-10-24 11:47:47.373592627 -0300
+docs/qualification-plans/rtsp-provisioner-exec-20261024/build01/worker-arm-static-NOT-ADMITTED.elf | bytes=68080 | mode=755 | owner=gadorach:gadorach | modified=2026-10-24 11:47:46.909584024 -0300

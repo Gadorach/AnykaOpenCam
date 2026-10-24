@@ -1,0 +1,31 @@
+{
+  "scope": "PARENT_PUBLIC_SAVED_SOURCE_BUILD_REVIEW_VERIFICATION_NOT_EXECUTION",
+  "recorded_host_utc": "2026-10-24T15:23:38.773682+00:00",
+  "delivery_records": 270,
+  "all271_original_members_match": true,
+  "manifest_records": {
+    "consumed_dependencies_including_duplicates": 1957,
+    "frozen_before": 17,
+    "frozen_after": 17,
+    "selected_before": 22,
+    "selected_after": 22,
+    "artifacts": 106,
+    "metadata_tools": 6,
+    "supplementary_static_link_inputs": 9
+  },
+  "successful_commands_and_exact_logs": 127,
+  "C_compilations": 32,
+  "partial_REL_links": 4,
+  "static_ARM_companion_links": 1,
+  "exact_consumed_C_sources": 16,
+  "static_worker_named_undefined_symbols": 0,
+  "distinct_manifest_paths_hashed": 605,
+  "consumed_ARM_capability_header_bound": 37,
+  "consumed_HOST_capability_header_bound": 40,
+  "retained_kernel_capability_bound": 40,
+  "retained_kernel_capability_header_sha256": "ca365c79695eda6afe5fccdc37c7ce3f4b3bf6a95420b7a8801dd71f2d494311",
+  "review_sha256": "0c4f4a6912c9843e2b0a4ff8835d8c0e1603553fe7cd0353cd338d3882418e80",
+  "parent_reader_initial_error": "cp source-copy argv includes --; corrected read-only operand extraction to the penultimate argv element, no source/build change",
+  "compiler_build_helper_worker_runtime_or_hardware_calls": 0,
+  "current_worker_native_image_eligible": false
+}

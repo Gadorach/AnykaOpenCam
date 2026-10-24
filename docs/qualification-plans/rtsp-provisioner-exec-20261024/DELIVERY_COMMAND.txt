@@ -1,0 +1,6 @@
+# Final public-file hash manifest only. Run once, refuse overwrite; excludes its own output.
+set -euo pipefail
+set -o noclobber
+app=apps/rtsp-auth/rtsp-provisioner-exec-candidate
+out=docs/qualification-plans/rtsp-provisioner-exec-20261024
+/usr/bin/sha256sum "$app/"* "$out/"*.md "$out/BUILD_FILE_METADATA.txt" "$out/STATIC_LINK_INPUTS.sha256" "$out/SUPPLEMENT_COMMANDS.txt" "$out/DELIVERY_COMMAND.txt" "$out/build01/COMMANDS.txt" "$out/build01/SUCCESS.txt" "$out/build01/RESULT.txt" "$out/build01/DEPENDENCIES.sha256" "$out/build01/"*.o "$out/build01/"*.map "$out/build01/"*.elf "$out/build01/objects/"* "$out/build01/logs/"* "$out/build01/consumed/"* > "$out/DELIVERY.sha256"

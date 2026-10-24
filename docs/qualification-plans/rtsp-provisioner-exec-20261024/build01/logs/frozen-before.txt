@@ -1,0 +1,17 @@
+cd3e08600841502f1373c30ea80b43c736aa07e705bed7ec83f20f19d5f5903c  /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-private-handoff/private_handoff.c
+4ad3136dfcf4e8fff5b3a26ab794279a96ee908466bfa547819dd87546fefa44  /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-private-handoff/private_handoff.h
+5eb23e473750c0b3ae0daecd472c2091ec1a6e8287001c65b9d1634fdd3aceae  /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-startup-material/startup_material.c
+76fb100e06c6b7508b6011400bf35734d273615fd26a3aa8cc57cd2150630206  /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-startup-material/startup_material.h
+d929b392110d6563b818aa00993301e07d5542afb3a2f4c37cafebe6f28b3724  /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-provisioner-process/provisioner_process.c
+7208455b184a4a2ed9384b16cff1a05c17217789189ef3fa4812c397ff817bc6  /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtsp-provisioner-process/provisioner_process.h
+94b6ed560677b7db4119eded9726ab01085c2e0eb392bdad29e961ebcd2ed643  /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/server/candidate_auth.h
+03413c00c829f4a94c8630ace490927be4b718bbac9b48b771997a0905c8880a  /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/server/verifier_adapter_overlay.c
+3f4a97a12ed9acafe678e720b473c798c75b170648e6a6de076a1017ff0ad900  /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier/verifier.h
+6759d15640e17048d331354bce62376a23588689daeea468e5e5b1a4ec54b135  /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/isolated-verifier/isolation.c
+83e15200b19860d46872838adfdd97593669e86a0faf0828339359ce96bfd6be  /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-writer-bootstrap-candidate/bootstrap.c
+c93e4a6f2a491df781ab5a6cfe071e711eade845087aca433cf0b69a57db81df  /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-exec-20261024/../rtsp-provisioner-exec-design-20261024/FEASIBILITY.md
+b9102e8e76daab39b9fe0b00655a8e4e18c0223c1cb7637a26c5fed16ff3338e  /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-exec-20261024/../rtsp-provisioner-exec-design-20261024/CONTRACT_DRAFT.md
+a2619240444e6eef9f3cdddad8282e512e01c04951a4dc1e358bf3430d3a0dbd  /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-exec-20261024/../rtsp-provisioner-process-20261023/PARENT_DISPOSITION.md
+fe3d6bbb73346a17e4a5ec8886034c90d0a63bd3d4f7853d9e12ebb558880ed6  /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-exec-20261024/../rtsp-private-handoff-20261023/PARENT_DISPOSITION.md
+c10976bbf687d4ae3546821142061743a092ebfc65790e713f7ad6825d727840  /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-exec-20261024/../rtsp-startup-material-20261023/PARENT_DISPOSITION.md
+bc731a15ebd83130e0635a52e70a138aa734f56e7853d4d75ed0a513485eafa8  /home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-provisioner-exec-20261024/../qc07f-writer-bootstrap-20261024/PARENT_DISPOSITION.md

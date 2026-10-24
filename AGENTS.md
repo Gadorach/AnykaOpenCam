@@ -66,7 +66,7 @@ dependency records/84 artifacts/40 logs/five tools. Native hardening/real creden
 NOT RUN. See rtsp-provisioner-process PARENT_DISPOSITION; no active author/reviewer
 in that lane; committed locally `5269979`. Its original33-input pin set retains
 the pre-closeout index:32 remain unchanged plus known parent index/status
-updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE17.json`,
+updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE18.json`,
 not rebased. Actual authorized
 external ingress, secret-free launch/FD-env-caps
 hygiene, durable storage/rotation, linked-file retirement/main/external recovery/
@@ -254,7 +254,23 @@ N1 independent review proves unused close/issue/verify and callers were GC-disca
 required constructor HA1/hash/crypto chain retained, no referenced project gap.
 Parent checked27 old+86 custody pins/all87 files,110 frozen/12 roots,804 inputs/
 193 new+466 reused dependencies/16 tools/51 artifacts/30 logs/exact diffs/source.
-See writer-bootstrap PARENT_DISPOSITION; no author/reviewer active. No new FD opens,
+See writer-bootstrap PARENT_DISPOSITION; committed locally `296511e`, no author/
+reviewer active there. Clean-exec source feasibility/draft is complete at rtsp-
+provisioner-exec-design-20261024, no runtime effects. rtsp-provisioner-exec-candidate
+now has narrow independent conditional SOURCE/API/order/custody/lifetime/security-
+boundary sufficiency: actual worker main, full pointer-free public codec, typed
+exec/own-wait/bind owner.32 HOST/ARM compiles/4 REL links/1 static ARM link/127
+commands PASS, zero candidate calls. Parent checked270 delivery/all271 originals,
+1957 dependency records/17 frozen before+after/22 selected before+after/106 artifacts/
+six metadata tools/nine static inputs/exact commands+logs/16 source copies.
+Current ARM image INELIGIBLE: N1 SDK cap bound37 vs retained kernel40 fail-closes
+before exec/secrets; N2 CPU5TEJ+Thumb-2 attributes unresolved and user-owned0755 not
+root-admitted. No native/worker-image eligibility; see exec PARENT_DISPOSITION.
+Narrow worker FD/argv/env/cap SOURCE scope only, not secret-free media-parent or
+hostile-code filesystem/syscall sandbox. No author/reviewer active; old fork/API5
+bootstrap owners remain unadopted. No worker/fork/exec/hardening/credential/host
+policy/account operation; provenance/syscalls/mlock/storage/backing/recovery open.
+No new FD opens,
 default credentials or whole-process/native-release claim. Old units excluded; no invocation,
 native acceptance or hardware phase. Complete new-layout consumers need integration.
 21 encoder public delivery pins, no function calls. No ioctl,

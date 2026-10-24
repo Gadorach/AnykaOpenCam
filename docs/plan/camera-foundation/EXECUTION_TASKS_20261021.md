@@ -197,8 +197,21 @@ GC-discarded close/issue/verify vs retained required HA1/hash/crypto chain, not 
 project relocation gap or repaired seal. Parent checked27 old+86 custody/all87
 members/110 frozen/12 roots/804 inputs/193 new+466 reused dependencies/16 tools/
 51 artifacts/30 logs/exact deltas. See writer-bootstrap PARENT_DISPOSITION, no
-author/reviewer active. No new FD opens/default credentials/native cleanup claim;
-old units excluded.
+author/reviewer active there; committed locally `296511e`. Read-only clean-exec
+feasibility/draft is complete. rtsp-provisioner-exec-candidate now has narrow
+independent conditional SOURCE/API/order/custody/lifetime/security-boundary
+sufficiency for actual worker main/public codec/typed exec-own-wait-bind owner.
+32 HOST/ARM compiles/4 REL links/1 static ARM link/127 commands PASS, NOT RUN.
+Parent checked270 delivery/all271 originals/1957 dependencies/17 frozen before+
+after/22 selected before+after/106 artifacts/six metadata tools/nine static inputs/
+127 exact command+log pairs/16 consumed copies. See exec PARENT_DISPOSITION,
+no author/reviewer active. Current ARM worker INELIGIBLE: cap bound37 vs retained
+kernel40 fail-closes before exec/secrets; CPU5TEJ+Thumb-2/native instruction risk
+unresolved and user-owned0755 not root-admitted. Worker FD/argv/env/cap SOURCE only,
+not a secret-free parent or hostile-code filesystem/syscall sandbox. Old fork/API5
+bootstrap unadopted. No worker/candidate/fork/exec/hardening/credential/host policy/
+account operation. Provenance/syscalls/mlock2MiB/storage/backing/recovery open.
+No new FD opens/default credentials/native cleanup claim; old units excluded.
 No invocation/hardware phase or C1 prevention claim,
 new clock framework or old frontend adoption,
 function/ioctl execution or hardware phase; typed frontend remains separate.

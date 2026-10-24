@@ -1,0 +1,8 @@
+# Public-input hash and workspace-public artifact metadata only, after successful build01.
+# No recompilation, candidate execution, image admission, permission or policy change.
+set -euo pipefail
+set -o noclobber
+base=/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1
+out=docs/qualification-plans/rtsp-provisioner-exec-20261024
+/usr/bin/sha256sum "$base/arm-buildroot-linux-musleabi/sysroot/lib/crt1.o" "$base/arm-buildroot-linux-musleabi/sysroot/lib/crti.o" "$base/lib/gcc/arm-buildroot-linux-musleabi/14.3.0/crtbeginT.o" "$base/lib/gcc/arm-buildroot-linux-musleabi/14.3.0/libgcc.a" "$base/lib/gcc/arm-buildroot-linux-musleabi/14.3.0/libgcc_eh.a" "$base/arm-buildroot-linux-musleabi/sysroot/lib/libc.a" "$base/lib/gcc/arm-buildroot-linux-musleabi/14.3.0/crtend.o" "$base/arm-buildroot-linux-musleabi/sysroot/lib/crtn.o" "$base/bin/arm-buildroot-linux-musleabi-gcc.br_real" > "$out/STATIC_LINK_INPUTS.sha256"
+/usr/bin/stat -c '%n | bytes=%s | mode=%a | owner=%U:%G | modified=%y' "$out/build01/COMMANDS.txt" "$out/build01/RESULT.txt" "$out/build01/worker-arm-static-NOT-ADMITTED.elf" > "$out/BUILD_FILE_METADATA.txt"
