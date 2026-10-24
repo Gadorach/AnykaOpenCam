@@ -1,0 +1,33 @@
+{
+  "scope": "PARENT_PUBLIC_SOURCE_DIFF_BUILD_REVIEW_VERIFICATION_NOT_EXECUTION",
+  "recorded_host_utc": "2026-10-24T05:11:50.614795+00:00",
+  "delivery_records": 20,
+  "frozen_records": 67,
+  "build01": {
+    "inputs": 118,
+    "new_dependencies": 0,
+    "reused_dependencies": 59,
+    "tools": 8,
+    "artifacts": 8,
+    "successful_metadata_command_logs": 6,
+    "status": "FAILED_PRESERVED"
+  },
+  "build02": {
+    "inputs": 207,
+    "new_dependencies": 278,
+    "reused_dependencies": 320,
+    "tools": 16,
+    "artifacts": 122,
+    "successful_command_logs": 42
+  },
+  "archive_bodies_checked": 46,
+  "selected_extracted_bodies_matched": 32,
+  "exact_original_and_candidate_source_membership": true,
+  "forward_and_inverse_diffs_regenerated_at_top_and_both_build_contexts": true,
+  "source_aggregate_sha256": "d6e781d22fe67e863bf2550e7231f3b6d952b2f7abf9e3914492a278268aea33",
+  "review_sha256": "49595d79064fb2aebc8111b694048e209863fd571fa04190b8e7176c14eab344",
+  "distinct_lexical_paths_hashed": 732,
+  "parent_metadata_reader_initial_type_assumption_error": "source_files is a count, not iterable; corrected read-only membership comparison against frozen files; no candidate or build change",
+  "candidate_build_test_reader_prefault_credit_callback_native_or_hardware_calls": 0,
+  "sender_composition_or_native_acceptance": false
+}

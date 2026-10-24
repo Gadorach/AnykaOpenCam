@@ -1,0 +1,368 @@
+--- /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/owned_runtime.c
++++ /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/owned_runtime.c
+@@ -1,34 +1,17 @@
+ /* SPDX-License-Identifier: GPL-2.0-only
+- * Explicit source derivative. Direct inclusion keeps ONE real private native
+- * owner. Never compile native_adapter.c separately or link the original unit.
++ * Fresh direct snapshot inclusion keeps ONE real private native owner. Never
++ * compile native_adapter.c separately. See INPUTS.json for exact provenance.
+  */
+ #define _POSIX_C_SOURCE 200809L
+ #define _DEFAULT_SOURCE
++#include "native/native_adapter.c"
+ #include "owned_runtime_v1.h"
+-#include "../qc07f-span-memory/memory_runtime.h"
+ 
+ static struct qc07f_owned_runtime_v1 *runtime;
+-
+-static int span_ranges_empty(const struct nh_memory_hub_ranges *a)
+-{
+- if(a->owner||a->count||a->credit_kib)return 0;
+- for(unsigned i=0;i<NH_MEMORY_HUB_RANGES;i++)if(a->begin[i]||a->end[i])return 0;
+- return 1;
+-}
+-static int runtime_span_history_empty(void)
+-{return !runtime||(!runtime->span_hub&&!runtime->span_setup_attempt);}
+-
+-#include "native/native_adapter.c"
+ 
+ static int valid(const struct qc07f_owned_runtime_v1 *r)
+ {return r&&r==runtime&&r->self==r&&r->config&&r->config->context==r&&r->config->graph==r->graph;}
+ 
+-static int span_history_present(const struct qc07f_owned_runtime_v1 *r)
+-{
+- return (r&&(r->span_hub||r->span_setup_attempt))||
+-  !span_ranges_empty(&memory_state.ledger.hub)||!span_ranges_empty(&memory_state.span_retained)||
+-  memory_state.span_attempt!=NH_MEM_SPAN_FRESH||memory_state.span_failure;
+-}
+ static int native_owns(void)
+ {
+  if(!native_initialized)return 0; /* static zero FD fields are NOT ownership */
+@@ -36,17 +19,17 @@
+   native.h264_stream_fd>=3||native.encoder_hold>=3||native.legacy_control>=3||
+   native.providers.sensor_staged>=3||native.providers.frame_staged.fd>=3||
+   native.providers.encoder_staged.fd>=3||native.produced_storage||native.resident_storage||
+-  parked_after_stop||native.receipt_armed||native.close_unknown||span_history_present(runtime);
++  parked_after_stop||native.receipt_armed||native.close_unknown;
+ }
+ static int native_fault(void)
+ {return native_initialized&&(native.retirement_uncertain||source_clock.failed||
+- native.watchdog.state==QW_HOLD||native.providers.phase==QP_HOLD||
+- memory_state.span_attempt==NH_MEM_SPAN_HOLD||memory_state.span_failure);}
++ native.watchdog.state==QW_HOLD||native.providers.phase==QP_HOLD);}
+ 
+ static int retired_actual(const struct qc07f_owned_runtime_v1 *r)
+ {
+- /* Source END never retires caller's borrowed hub; no span history is cleared. */
+- return !span_history_present(r)&&r->retired&&!native_fault()&&native.providers.phase==QP_CLOSED&&
++ /* r->retired is set ONLY from successful actual nh_native_retire. Corroborate
++  * its remaining owner shape; no public permission bool creates this fact. */
++ return r->retired&&!native_fault()&&native.providers.phase==QP_CLOSED&&
+   native.continuous_sensor==-1&&native.continuous_frame==-1&&native.h264_stream_fd==-1&&
+   native.encoder_hold==-1&&native.legacy_control==-1&&!native.receipt_armed&&
+   !native.produced_storage&&!native.resident_storage&&!parked_after_stop&&
+@@ -54,7 +37,6 @@
+ }
+ static int retention_needed(const struct qc07f_owned_runtime_v1 *r)
+ {
+- if(span_history_present(r))return 1; /* includes pre-touch borrow/failure */
+  if(!native_initialized||retired_actual(r))return 0;
+  return (native_fault()&&native_owns())||native.receipt_armed||native.last_capture_generation||
+   native.providers.phase==QP_ACTIVE||native.produced_storage||native.resident_storage||
+@@ -76,54 +58,6 @@
+  if((native_fault()&&native_owns())||
+     ((clock_failed||r->bridge.clock_failed||final)&&retention_needed(r)))retain(r,CAMERA_IO_ERROR);
+ }
+-static int span_overlap(uintptr_t a,uintptr_t b,uintptr_t c,uintptr_t d)
+-{return a<d&&b>c;}
+-static uint64_t span_interior_kib(uintptr_t a,uintptr_t b)
+-{
+- uint64_t first=a/4096+(a%4096!=0),last=b/4096;
+- return first<last?(last-first)*4:0;
+-}
+-static int span_paid_association(const struct qc07f_owned_runtime_v1 *r)
+-{
+- const struct nh_memory_ledger *l=&memory_state.ledger;
+- const struct nh_memory_hub_ranges *a=&l->hub,*b=&memory_state.span_retained;
+- const struct camera_span_hub_v1 *h=r->span_hub;
+- if(r->span_setup_attempt!=1||!h||h->self!=h||h->phase!=CAMERA_SPAN_HUB_V1_ACTIVE||
+-    h->allocation_calls!=8||h->allocated_bytes!=1048576||h->maximum_allocation!=131072||
+-    memory_state.span_attempt!=NH_MEM_SPAN_PAID||memory_state.span_failure||
+-    !l->initialized||l->paid[0]!=1||l->paid[1]!=1||l->paid[2]>1||l->raw_reuse>1||
+-    l->begin[1]||l->end[1]||a->owner!=h||b->owner!=h||
+-    a->count!=NH_MEMORY_HUB_RANGES||b->count!=NH_MEMORY_HUB_RANGES||
+-    a->credit_kib!=b->credit_kib||l->cpu_paid_kib>l->cpu_capacity_kib)return 0;
+- /* Original actual raw ownership/payment must still agree, not just paid[0]. */
+- uintptr_t raw_begin=(uintptr_t)raw;
+- if(sizeof(raw)>UINTPTR_MAX-raw_begin||l->begin[0]!=raw_begin||
+-    l->end[0]!=raw_begin+sizeof(raw))return 0;
+- uint64_t scalar=span_interior_kib(l->begin[0],l->end[0]),credit=0;
+- if(!scalar)return 0;
+- if(l->paid[2]){
+-  if(l->raw_reuse||!native.resident_storage||
+-     l->begin[2]!=(uintptr_t)native.resident_storage||
+-     1048576U>UINTPTR_MAX-l->begin[2]||l->end[2]!=l->begin[2]+1048576U||
+-     span_overlap(l->begin[0],l->end[0],l->begin[2],l->end[2]))return 0;
+-  uint64_t extra=span_interior_kib(l->begin[2],l->end[2]);
+-  if(!extra||extra>UINT64_MAX-scalar)return 0;scalar+=extra;
+- }else if(l->begin[2]||l->end[2])return 0;
+- for(unsigned i=0;i<NH_MEMORY_HUB_RANGES;i++){
+-  uintptr_t begin=(uintptr_t)h->chunks[i];
+-  if(!begin||NH_MEMORY_HUB_BYTES>UINTPTR_MAX-begin)return 0;
+-  uintptr_t end=begin+NH_MEMORY_HUB_BYTES;
+-  if(a->begin[i]!=begin||a->end[i]!=end||b->begin[i]!=begin||b->end[i]!=end)return 0;
+-  for(unsigned j=0;j<i;j++)if(span_overlap(begin,end,a->begin[j],a->end[j]))return 0;
+-  for(unsigned j=0;j<3;j++)if(j!=1&&l->paid[j]&&span_overlap(begin,end,l->begin[j],l->end[j]))return 0;
+-  uint64_t part=span_interior_kib(begin,end);
+-  if(!part||part>UINT64_MAX-credit)return 0;credit+=part;
+- }
+- /* No generation/token/client/pristine test: legitimate publications are OK.
+-  * Never call unpaid-only forecast after payment. Exact source history only. */
+- return credit==a->credit_kib&&credit<=UINT64_MAX-scalar&&
+-  l->cpu_paid_kib==scalar+credit;
+-}
+ static int ready(void *context,uint64_t connection,uint64_t now)
+ {
+  struct qc07f_owned_runtime_v1 *r=context;(void)connection;
+@@ -131,13 +65,9 @@
+  qc07f_owned_runtime_cleanup_v1(r,now==UINT64_MAX,0);
+  if(!r->bound||!native_initialized)return CAMERA_NOT_READY;
+  if(r->error)return r->error;
+- if(!span_paid_association(r)){
+-  if(span_history_present(r))retain(r,CAMERA_IO_ERROR);
+-  return CAMERA_NOT_READY;
+- }
+  if(stop||native_fault()||provider_terminal(&native)||!provider_shape(&native)||
+     !sensor_baseline_requested||!storage_selected||!memory_state.ledger.initialized||
+-    !memory_state.ledger.paid[0]||
++    !memory_state.ledger.paid[0]||!memory_state.ledger.paid[1]||
+     native.watchdog.fd<3||!native.watchdog.session_deadline_ns||
+     now<native.watchdog.session_start_ns||now>=native.watchdog.session_deadline_ns||
+     (native.watchdog.state!=QW_UNKNOWN&&native.watchdog.state!=QW_DISABLED))return CAMERA_NOT_READY;
+@@ -276,7 +206,7 @@
+ {
+  if(!r||!config||!owner||!config->graph||!config->random_ready||!config->retain_verifier)
+   return CAMERA_INVALID;
+- if(runtime||r->self||r->span_hub||r->span_setup_attempt||native_initialized||owner->phase!=CANDIDATE_PS_EMPTY||
++ if(runtime||r->self||native_initialized||owner->phase!=CANDIDATE_PS_EMPTY||
+     owner->self||owner->config||owner->backend.child)return CAMERA_NOT_READY;
+  if(camera_graph_validate(config->graph))return CAMERA_INVALID;
+  const struct camera_profile *profile=NULL;
+@@ -322,45 +252,3 @@
+  latch(r,result);
+  return result;
+ }
+-
+-int qc07f_owned_runtime_memory_span_hub_v1(struct qc07f_owned_runtime_v1 *r,
+- struct camera_span_hub_v1 *hub)
+-{
+- if(!valid(r))return CAMERA_INVALID;
+- qc07f_owned_runtime_cleanup_v1(r,0,0);
+- if(!r->bound||!native_initialized)return CAMERA_NOT_READY;
+- if(r->error){if(retention_needed(r))retain(r,r->error);return r->error;}
+- if(stop||native_fault()){if(retention_needed(r))retain(r,CAMERA_IO_ERROR);return CAMERA_NOT_READY;}
+- /* A prior borrow is NEVER replaced. A paid repeat is a no-effect refusal;
+-  * an incomplete previous call is uncertain and cannot unwind/retry. */
+- if(span_history_present(r)){
+-  if(!span_paid_association(r))retain(r,CAMERA_IO_ERROR);
+-  return CAMERA_NOT_READY;
+- }
+- struct candidate_prestarted *o=r->owner;
+- const struct nh_memory_ledger *l=&memory_state.ledger;
+- if(!o||o->self!=o||o->config!=r->config||o->phase!=CANDIDATE_PS_READY||
+-    o->backend.config!=r->config||!o->backend.initialized||o->backend.failed||
+-    o->backend.revoked||o->backend.revoke_pending||o->backend.pending||o->backend.pending_peer||
+-    !o->backend.child||o->source_hold||r->gate||r->gate_context||r->loan_present||r->retired||r->post_first||
+-    r->config->source_ready!=ready||r->config->source_guard_bind!=bind_gate||
+-    r->config->retain_uncertain!=retain_demand||r->config->retain_frame_uncertain!=retain_frame||
+-    native.providers.phase!=QP_COMMITTED||!native_guard_present()||
+-    !sensor_baseline_requested||!storage_selected||native.receipt_armed||native.last_capture_generation||
+-    native.produced_storage||native.resident_storage||parked_after_stop||native.close_unknown||
+-    !l->initialized||l->paid[0]||l->paid[1]||l->paid[2]||l->codec_paid||l->cpu_paid_kib||
+-    l->begin[0]||l->begin[1]||l->begin[2]||l->end[0]||l->end[1]||l->end[2]||
+-    l->raw_reuse!=raw_reuse_requested||memory_state.count>60||
+-    memory_state.now!=nh_native_now||memory_state.cancelled!=nh_native_cancelled||memory_state.context||
+-    native.watchdog.state!=QW_UNKNOWN||native.watchdog.fd<3||!native.watchdog.session_deadline_ns||
+-    memory_state.session_start!=native.watchdog.session_start_ns)return CAMERA_NOT_READY;
+- for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)if(o->backend.peers[i])return CAMERA_NOT_READY;
+- struct nh_memory_hub_ranges forecast;
+- if(nh_memory_span_hub_forecast(l,hub,&forecast))return CAMERA_NOT_READY;
+- /* Acquisition point precedes even the first native clock/query/raw touch.
+-  * No call-scope owner, setter, callback success flag, reset or cleanup. */
+- r->span_hub=hub;r->span_setup_attempt=1;
+- int result=native_memory_fixed_span_buffers(hub);
+- if(result)retain(r,result); /* first error, actual owner and true credit survive */
+- return CAMERA_OK; /* no post-credit callback/check or renewed unit start */
+-}
+--- /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/owned_runtime_v1.h
++++ /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/owned_runtime_v1.h
+@@ -1,14 +1,12 @@
+-/* SPDX-License-Identifier: GPL-2.0-only
+- * Explicit source replacement, NEW layout, not the original binary ABI.
+- */
++/* SPDX-License-Identifier: GPL-2.0-only */
+ #ifndef QC07F_OWNED_RUNTIME_V1_H
+ #define QC07F_OWNED_RUNTIME_V1_H
++#include "server/prestarted_owned_listener_v1.h"
+ #include "native/native_adapter.h"
+-#include "../qc07f-owned-runtime/server/prestarted_owned_listener_v1.h"
+-#include "../qc07f-owned-runtime/native/native_watchdog.h"
+-#include "../qc07f-owned-runtime/native/owned-provider.h"
+-#include "../qc07f-owned-runtime/native/provider-return.h"
+-#define QC07F_OWNED_RUNTIME_SOURCE_API 2U
++#include "native/native_watchdog.h"
++#include "native/owned-provider.h"
++#include "native/provider-return.h"
++#define QC07F_OWNED_RUNTIME_SOURCE_API 1U
+ 
+ /* Static fresh zero storage only. Public for allocation, private after prepare.
+  * One singleton/native provider + common producer, NOT one per RTSP peer.
+@@ -33,10 +31,6 @@
+  struct camera_rtsp_producer source;
+  struct camera_packet packet;
+  struct nh_key key; /* real native capture identity, not a common/hub token */
+- /* Set ONLY by the actual typed call, never cleared on failure or source END.
+-  * Borrowed caller CPU owner, NOT native.resident_storage or a free authority. */
+- struct camera_span_hub_v1 *span_hub;
+- unsigned span_setup_attempt;
+ };
+ 
+ /* BEFORE candidate_prestarted_start: device-free addresses/references only.
+@@ -61,20 +55,6 @@
+  */
+ int qc07f_owned_runtime_bind_postfork_v1(struct qc07f_owned_runtime_v1 *);
+ 
+-/* AFTER that bind, watchdog take, storage/exact139, provider take and original
+- * one-shot memory_start. True pristine accepted v2 hub at its final address,
+- * all8 canonical chunks private writable/stable/disjoint, caller initialized
+- * AFTER last fork. No publish/subscribe/mutation/callback aliases during setup.
+- * Exactly one admitted borrow/setup; actual raw prefault then WHOLE hub helper.
+- * Pre-borrow no-effect refusal may return; every later failure quarantines the
+- * actual process without unwind. All owner/backing/config/runtime addresses
+- * survive every outcome. Success is source history, not native fit/readiness.
+- * No ownership move, init/allocation/disposal/retry/retirement is provided here.
+- * Even normal source END does not release this borrow or dispose caller hub.
+- */
+-int qc07f_owned_runtime_memory_span_hub_v1(struct qc07f_owned_runtime_v1 *,
+- struct camera_span_hub_v1 *);
+-
+ /* Internal fresh-server cleanup boundary. Not an owner/retirement API. On native
+  * uncertainty/clock uncertainty with retained work, or final unretired work,
+  * enters ACTUAL nonreturning native quarantine BEFORE stack/FD cleanup. Does not
+--- /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/native/native_adapter.c
++++ /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/native_adapter.c
+@@ -1,11 +1,11 @@
+ /* SPDX-License-Identifier: GPL-2.0-only
+- * Minimal derivative of the actual owned-runtime adapter, directly included by
+- * owned_runtime.c ONLY. All imported native/provider/watchdog bodies frozen.
++ * Direct fresh copy of provider-return build01 generated source; see INPUTS.json.
++ * No JPEG, fixture-file, network, parser, SDK or software codec dependency.
+  */
+ #include "native_adapter.h"
+-#include "../../qc07f-owned-runtime/native/sensor_baseline.h"
+-#include "../../qc07f-span-memory/memory_runtime.h"
+-#include "../../qc07f-owned-runtime/native/rtspd-native-import.c"
++#include "sensor_baseline.h"
++#include "memory_runtime.h"
++#include "rtspd-native-import.c"
+ #include <sys/resource.h>
+ static struct qc_rtsp_context native;
+ static uint8_t parameters[256];
+@@ -82,8 +82,16 @@
+ }
+ int nh_native_memory_fixed_buffers(void *hub)
+ {
+- (void)hub;
+- return CAMERA_NOT_READY; /* flat hub bypass: NO clock/query/touch/payment */
++ if(!native_guard_present())return CAMERA_NOT_READY;
++ uint64_t begin=nh_native_now(NULL);
++ if(lifetime())return CAMERA_NOT_READY; /* reobserve roles before backing touches */
++ int r=nh_memory_runtime_gate(&memory_state,NH_MEM_FIXED_PAID,begin);
++ if(!r)r=nh_memory_prefault_owned(&memory_state,0,raw,sizeof(raw),begin);
++ if(!r)r=nh_memory_runtime_gate(&memory_state,NH_MEM_FIXED_PAID,begin);
++ if(!r)r=nh_memory_prefault_owned(&memory_state,1,hub,1048576,begin);
++ if(!r)r=nh_memory_runtime_gate(&memory_state,NH_MEM_FIXED_PAID,begin);
++ if(r==NH_MEM_CLOCK)native.retirement_uncertain=1;
++ return r?CAMERA_NOT_READY:CAMERA_OK;
+ }
+ int nh_native_memory_gate(void *unused,enum nh_memory_stage stage)
+ {
+@@ -194,26 +202,8 @@
+  for(;;)raise(SIGSTOP);
+ }
+ 
+-#include "../../qc07f-owned-runtime/native/native-watchdog.inc"
++#include "native-watchdog.inc"
+ 
+-#include "../../qc07f-owned-runtime/native/provider-take.inc"
+-
+-/* Private: ONLY the actual typed runtime call borrows/adopts setup history.
+- * No second native instance, callback substitution or publicly callable bypass. */
+-static int native_memory_fixed_span_buffers(struct camera_span_hub_v1 *hub)
+-{
+- if(!native_guard_present())return CAMERA_NOT_READY;
+- uint64_t begin=nh_native_now(NULL);
+- if(begin==UINT64_MAX)return native_guard_failure();
+- if(lifetime())return CAMERA_NOT_READY; /* original actual role reobservation */
+- int r=nh_memory_runtime_gate(&memory_state,NH_MEM_FIXED_PAID,begin);
+- if(!r)r=nh_memory_prefault_owned(&memory_state,0,raw,sizeof(raw),begin);
+- if(!r)r=nh_memory_runtime_gate(&memory_state,NH_MEM_FIXED_PAID,begin);
+- if(!r)r=nh_memory_prefault_span_hub(&memory_state,hub,begin);
+- /* Helper's final unpaid gate precedes atomic whole credit. No fallible work
+-  * after payment; public success returns with actual credit/history intact. */
+- if(r==NH_MEM_CLOCK)native.retirement_uncertain=1;
+- return r?CAMERA_NOT_READY:CAMERA_OK;
+-}
++#include "provider-take.inc"
+ 
+ #include "provider-return.inc"
+--- /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/native/native_adapter.h
++++ /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/native_adapter.h
+@@ -1,15 +1,11 @@
+-/* SPDX-License-Identifier: GPL-2.0-only
+- * Complete source replacement of the original adapter header. Selecting the
+- * accepted memory/handoff definitions changes layouts: recompile consumers.
+- */
++/* SPDX-License-Identifier: GPL-2.0-only */
+ #ifndef QC_NATIVE_ADAPTER_H
+ #define QC_NATIVE_ADAPTER_H
+-#include "../../qc07f-span-memory/handoff.h"
++#include "handoff.h"
+ void nh_native_init(void);
+ int nh_native_optin_exact139(void);
+ int nh_native_storage_select(const char *);
+ int nh_native_memory_start(uint64_t);
+-/* Legacy flat hub admission is permanently refused, without any effect. */
+ int nh_native_memory_fixed_buffers(void *);
+ int nh_native_memory_gate(void *,enum nh_memory_stage);
+ void nh_native_memory_report(void);
+--- /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/native/provider-return.inc
++++ /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/provider-return.inc
+@@ -1,13 +1,12 @@
+ /* SPDX-License-Identifier: GPL-2.0-only
+  * Included after real provider take/wrappers. No helper or stack-only FD owner.
+  */
+-#include "../../qc07f-owned-runtime/native/provider-return.h"
++#include "provider-return.h"
+ static int return_uncertain(void)
+ {
+  return stop||native.retirement_uncertain||source_clock.failed||native.watchdog.state==QW_HOLD||
+   native.providers.phase==QP_HOLD||native.providers.frame_staged.state==QC_FRAME_FD_HOLD||
+-  native.providers.encoder_staged.state==QC_ENCODER_FD_HOLD||
+-  memory_state.span_attempt==NH_MEM_SPAN_HOLD||memory_state.span_failure;
++  native.providers.encoder_staged.state==QC_ENCODER_FD_HOLD;
+ }
+ static int return_boundary(uint64_t begin)
+ {
+@@ -23,11 +22,6 @@
+ static int return_local_history_empty(void)
+ {
+  const struct nh_memory_ledger *l=&memory_state.ledger;
+- /* Elementwise exact zeros, never padding memcmp. Runtime borrow precedes
+-  * any new native setup effect; even pre-touch failure cannot masquerade empty. */
+- if(!runtime_span_history_empty()||!span_ranges_empty(&l->hub)||
+-    !span_ranges_empty(&memory_state.span_retained)||
+-    memory_state.span_attempt!=NH_MEM_SPAN_FRESH||memory_state.span_failure)return 0;
+  return native.providers.phase==QP_COMMITTED&&provider_shape(&native)&&
+   native.providers.frame_staged.state==QC_FRAME_FD_EMPTY&&
+   native.providers.encoder_staged.state==QC_ENCODER_FD_EMPTY&&

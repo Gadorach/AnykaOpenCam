@@ -78,7 +78,8 @@ narrow independent SOURCE/API/order/lifetime sufficiency for those bounded fixes
 R2 preserved.6 HOST/ARM compiles/2 rooted REL links/26 commands PASS, zero calls.
 Parent verified117 delivery/203 inputs/251 new+363 reused dependencies/98 artifacts/
 332 frozen files/26 logs/46 archive bodies/42 selected bodies and exact diffs.
-See rtsp-span-server-parent-20261024/V3_DISPOSITION.md; no source author/reviewer
+Committed locally `7f4c120`. See rtsp-span-server-parent-20261024/V3_DISPOSITION.md;
+no source author/reviewer
 active in this lane. V1/v2 remain NOT ADOPTED. Separately fresh
 qc07f-span-memory app/docs for actual whole eight-chunk prefault and atomic ledger
 credit without boundary/padding/duplicate credit, conservative extra28KiB extent-
@@ -87,11 +88,14 @@ page debt and explicit refusal of old flat hub credit. Candidate now delivered:
 Narrow independent SOURCE/API/ledger/prefault sufficiency now accepted; parent
 verified288 overlapping records and regenerated both source diffs. See qc07f-span-
 memory-20261024/PARENT_DISPOSITION.md. No author/reviewer active in that lane, zero
-function calls; committed locally `7479364`. qc07f-span-runtime-candidate is now
-delivered and under independent ordinary review for actual typed native hub prefault,
+function calls; committed locally `7479364`. qc07f-span-runtime-candidate now has
+narrow independent SOURCE/API/order/ownership sufficiency for actual typed native hub prefault,
 exact paid owner/range readiness and complete new-history pre-memory return refusal.
 Build02:14 HOST/ARM compiles/2 rooted REL links/42 commands PASS, zero candidate calls;
-build01 pre-compilation reuse refusal preserved. No source author active. One actual
+build01 pre-compilation reuse refusal preserved. Parent checked20 delivery/67 frozen
+pins,985 build02+199 build01 overlapping records/logs, exact membership/aggregate/
+diffs,46 archive bodies/32 selected bodies; see qc07f-span-runtime PARENT_DISPOSITION.
+No source author/reviewer active. One actual
 private native owner, no ready Boolean/old flat admission path. Borrowed hub history
 persists after normal native END; final cleanup intentionally nonreturns while
 borrowed, no external relinquishment API. No sender/runtime composition, tests or

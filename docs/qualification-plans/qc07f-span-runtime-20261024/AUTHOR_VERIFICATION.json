@@ -1,0 +1,51 @@
+{
+  "utc": "2026-10-24T05:00:31.205511+00:00",
+  "scope": "author public source/tool/dependency/artifact bookkeeping, NOT independent review or runtime",
+  "builds": {
+    "build01": {
+      "status": "FAILED_PRESERVED",
+      "report_pin": {
+        "bytes": 42689,
+        "sha256": "125c5552d9b2b99ab84df5189ad01568558fc526629e80103c871cb665b1774b"
+      },
+      "rechecked_overlapping_records": 199,
+      "commands": 6,
+      "C_compiles": 0,
+      "REL_tools": 0
+    },
+    "build02": {
+      "status": "HOST_ARM_14_COMPILES_2_ROOTED_REL_PASS_NOT_RUN",
+      "report_pin": {
+        "bytes": 299066,
+        "sha256": "748ce4bc39b479c9e18f82d342b472cc54286d9a5760d3c797cbe1147dcd0bb8"
+      },
+      "rechecked_overlapping_records": 985,
+      "commands": 42,
+      "C_compiles": 14,
+      "REL_tools": 2
+    }
+  },
+  "counts": {
+    "build01": {
+      "commands": 6,
+      "inputs": 118,
+      "dependencies": 0,
+      "reused_dependencies": 59,
+      "artifacts": 8,
+      "tools": 8,
+      "object_roles": 2
+    },
+    "build02": {
+      "commands": 42,
+      "inputs": 207,
+      "dependencies": 278,
+      "reused_dependencies": 320,
+      "artifacts": 122,
+      "tools": 16,
+      "object_roles": 46
+    }
+  },
+  "source_forward_inverse_and_regions_verified": true,
+  "candidate_function_calls": 0,
+  "no_executable_or_test_built": true
+}

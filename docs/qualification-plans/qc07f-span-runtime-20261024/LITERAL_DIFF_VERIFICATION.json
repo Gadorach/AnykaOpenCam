@@ -1,0 +1,156 @@
+{
+  "scope": "literal source-text diff application to in-memory strings ONLY; no candidate function/test execution",
+  "utc": "2026-10-24T05:02:46.802184+00:00",
+  "records": [
+    {
+      "diff": "ORIGINAL_TO_CANDIDATE.diff",
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/owned_runtime.c",
+      "target": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/owned_runtime.c",
+      "hunks": 7,
+      "literal_application_matches": true,
+      "source_pin": {
+        "bytes": 11809,
+        "sha256": "5e21fcb2559911b79ffbd7732b951b8d8931a84e2e33f03a52f39d09de0dbd43"
+      },
+      "target_pin": {
+        "bytes": 18092,
+        "sha256": "4557ccab74d8f4a499da91acc3626ddb5fdd28befc744817dcd3221e61d05a74"
+      }
+    },
+    {
+      "diff": "ORIGINAL_TO_CANDIDATE.diff",
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/owned_runtime_v1.h",
+      "target": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/owned_runtime_v1.h",
+      "hunks": 3,
+      "literal_application_matches": true,
+      "source_pin": {
+        "bytes": 3375,
+        "sha256": "024ff9282840c97208644674601181fcbe97befd4e7222c34627e75d5c8b3621"
+      },
+      "target_pin": {
+        "bytes": 4677,
+        "sha256": "1cda7bcc58fc0d0b39437097171990a99053f82085cd12cfec0fb65f462d0afa"
+      }
+    },
+    {
+      "diff": "ORIGINAL_TO_CANDIDATE.diff",
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/native_adapter.c",
+      "target": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/native/native_adapter.c",
+      "hunks": 3,
+      "literal_application_matches": true,
+      "source_pin": {
+        "bytes": 11628,
+        "sha256": "1fcd2a68750c64a0f1d1b3a96f1124f6f21369b9eb19f4b89a9bcbd1774754bf"
+      },
+      "target_pin": {
+        "bytes": 12242,
+        "sha256": "b0b97dc3946e001023bb0c00d22e0aa1d5104ec61b93b4d5770c8d7245a18f5f"
+      }
+    },
+    {
+      "diff": "ORIGINAL_TO_CANDIDATE.diff",
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/native_adapter.h",
+      "target": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/native/native_adapter.h",
+      "hunks": 1,
+      "literal_application_matches": true,
+      "source_pin": {
+        "bytes": 1137,
+        "sha256": "44dbf880edebdccf99ca33a4bd6d4fad33c547ca0e35a1afbe7a5b7625fe01b3"
+      },
+      "target_pin": {
+        "bytes": 1392,
+        "sha256": "57876304bc483349b89faaf3b4c82c7df840d53b3c229f202ea7ac11dae730b0"
+      }
+    },
+    {
+      "diff": "ORIGINAL_TO_CANDIDATE.diff",
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/provider-return.inc",
+      "target": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/native/provider-return.inc",
+      "hunks": 2,
+      "literal_application_matches": true,
+      "source_pin": {
+        "bytes": 5400,
+        "sha256": "ba81cfcfe6c81d15bf86d7241db1a8a166f106e3c0dac91fa99a1d27fd7e62c5"
+      },
+      "target_pin": {
+        "bytes": 5872,
+        "sha256": "281bea5950da27f9cf7b04aa624405160cf4876ecb59a752f6adf517da480b44"
+      }
+    },
+    {
+      "diff": "CANDIDATE_TO_ORIGINAL.diff",
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/owned_runtime.c",
+      "target": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/owned_runtime.c",
+      "hunks": 7,
+      "literal_application_matches": true,
+      "source_pin": {
+        "bytes": 18092,
+        "sha256": "4557ccab74d8f4a499da91acc3626ddb5fdd28befc744817dcd3221e61d05a74"
+      },
+      "target_pin": {
+        "bytes": 11809,
+        "sha256": "5e21fcb2559911b79ffbd7732b951b8d8931a84e2e33f03a52f39d09de0dbd43"
+      }
+    },
+    {
+      "diff": "CANDIDATE_TO_ORIGINAL.diff",
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/owned_runtime_v1.h",
+      "target": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/owned_runtime_v1.h",
+      "hunks": 3,
+      "literal_application_matches": true,
+      "source_pin": {
+        "bytes": 4677,
+        "sha256": "1cda7bcc58fc0d0b39437097171990a99053f82085cd12cfec0fb65f462d0afa"
+      },
+      "target_pin": {
+        "bytes": 3375,
+        "sha256": "024ff9282840c97208644674601181fcbe97befd4e7222c34627e75d5c8b3621"
+      }
+    },
+    {
+      "diff": "CANDIDATE_TO_ORIGINAL.diff",
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/native/native_adapter.c",
+      "target": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/native_adapter.c",
+      "hunks": 3,
+      "literal_application_matches": true,
+      "source_pin": {
+        "bytes": 12242,
+        "sha256": "b0b97dc3946e001023bb0c00d22e0aa1d5104ec61b93b4d5770c8d7245a18f5f"
+      },
+      "target_pin": {
+        "bytes": 11628,
+        "sha256": "1fcd2a68750c64a0f1d1b3a96f1124f6f21369b9eb19f4b89a9bcbd1774754bf"
+      }
+    },
+    {
+      "diff": "CANDIDATE_TO_ORIGINAL.diff",
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/native/native_adapter.h",
+      "target": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/native_adapter.h",
+      "hunks": 1,
+      "literal_application_matches": true,
+      "source_pin": {
+        "bytes": 1392,
+        "sha256": "57876304bc483349b89faaf3b4c82c7df840d53b3c229f202ea7ac11dae730b0"
+      },
+      "target_pin": {
+        "bytes": 1137,
+        "sha256": "44dbf880edebdccf99ca33a4bd6d4fad33c547ca0e35a1afbe7a5b7625fe01b3"
+      }
+    },
+    {
+      "diff": "CANDIDATE_TO_ORIGINAL.diff",
+      "source": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/native/provider-return.inc",
+      "target": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/provider-return.inc",
+      "hunks": 2,
+      "literal_application_matches": true,
+      "source_pin": {
+        "bytes": 5872,
+        "sha256": "281bea5950da27f9cf7b04aa624405160cf4876ecb59a752f6adf517da480b44"
+      },
+      "target_pin": {
+        "bytes": 5400,
+        "sha256": "ba81cfcfe6c81d15bf86d7241db1a8a166f106e3c0dac91fa99a1d27fd7e62c5"
+      }
+    }
+  ]
+}

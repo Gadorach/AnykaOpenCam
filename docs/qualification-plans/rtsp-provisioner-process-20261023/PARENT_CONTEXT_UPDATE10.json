@@ -1,0 +1,15 @@
+{
+  "scope": "TENTH_KNOWN_PARENT_MUTABLE_INDEX_STATUS_UPDATE_NOT_SOURCE_PIN_REBASE",
+  "recorded_host_date": "2026-10-24",
+  "original_manifests_and_review_unchanged": true,
+  "path": "docs/plan/camera-foundation/00-INDEX.md",
+  "before": {
+    "bytes": 130384,
+    "sha256": "9e3593da438e4d8168e254c6f1a473288e43aaecddebe3accaf8b3d0f5659a2a"
+  },
+  "after": {
+    "bytes": 130574,
+    "sha256": "88cee0dd00799a138993225e3b8cc19b1bb686d75f980022e16fb9aacc6ed568"
+  },
+  "reason": "parent accepts narrow independently reviewed private chunk-memory runtime SOURCE/API/order/ownership sufficiency and records sender source commit; build01 refusal, final borrowed-hub nonreturning cleanup, zero candidate execution and uncomposed sender/runtime remain explicit"
+}

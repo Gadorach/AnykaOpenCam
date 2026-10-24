@@ -129,10 +129,12 @@ independent SOURCE/API sufficiency,10 HOST/ARM compiles/2 REL links/26 commands,
 NOT RUN; scalar flat-hub kind1 refuses and extra28KiB data-extent page cover is
 charged, not allocator-overhead qualification. See
 [chunk memory disposition](../../qualification-plans/qc07f-span-memory-20261024/PARENT_DISPOSITION.md).
-The actual private runtime connection is delivered and under independent review:
-typed prefault, exact paid owner/range readiness and complete pre-memory return
-history. Build02:14 HOST/ARM compiles/2 rooted REL links/42 commands PASS, zero calls;
-build01 pre-compilation reuse refusal preserved. No author active. Borrowed-hub
+The actual private runtime connection now has narrow independent SOURCE/API/order/
+ownership sufficiency: typed prefault, exact paid owner/range readiness and complete
+pre-memory return history. Build02:14 HOST/ARM compiles/2 rooted REL links/42 commands
+PASS, zero calls; build01 pre-compilation reuse refusal preserved. See
+[runtime disposition](../../qualification-plans/qc07f-span-runtime-20261024/PARENT_DISPOSITION.md).
+No source author/reviewer active. Sender closeout committed locally `7f4c120`. Borrowed-hub
 lifetime remains retained after native END with no relinquishment API. Sender and
 runtime are NOT composed or invoked. Native1MiB output/raw/process2MiB/combined-load
 and external recovery remain open, not satisfied by CPU chunks or source review.

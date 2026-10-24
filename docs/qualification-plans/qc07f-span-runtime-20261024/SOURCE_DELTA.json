@@ -1,0 +1,113 @@
+{
+  "scope": "static source reconstruction only, no compiled code invocation",
+  "pairs": [
+    {
+      "original": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/owned_runtime.c",
+      "candidate": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/owned_runtime.c",
+      "original_pin": {
+        "bytes": 11809,
+        "sha256": "5e21fcb2559911b79ffbd7732b951b8d8931a84e2e33f03a52f39d09de0dbd43"
+      },
+      "candidate_pin": {
+        "bytes": 18092,
+        "sha256": "4557ccab74d8f4a499da91acc3626ddb5fdd28befc744817dcd3221e61d05a74"
+      },
+      "forward_and_inverse_reconstruction": true,
+      "diff_lines": 198
+    },
+    {
+      "original": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/owned_runtime_v1.h",
+      "candidate": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/owned_runtime_v1.h",
+      "original_pin": {
+        "bytes": 3375,
+        "sha256": "024ff9282840c97208644674601181fcbe97befd4e7222c34627e75d5c8b3621"
+      },
+      "candidate_pin": {
+        "bytes": 4677,
+        "sha256": "1cda7bcc58fc0d0b39437097171990a99053f82085cd12cfec0fb65f462d0afa"
+      },
+      "forward_and_inverse_reconstruction": true,
+      "diff_lines": 55
+    },
+    {
+      "original": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/native_adapter.c",
+      "candidate": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/native/native_adapter.c",
+      "original_pin": {
+        "bytes": 11628,
+        "sha256": "1fcd2a68750c64a0f1d1b3a96f1124f6f21369b9eb19f4b89a9bcbd1774754bf"
+      },
+      "candidate_pin": {
+        "bytes": 12242,
+        "sha256": "b0b97dc3946e001023bb0c00d22e0aa1d5104ec61b93b4d5770c8d7245a18f5f"
+      },
+      "forward_and_inverse_reconstruction": true,
+      "diff_lines": 68
+    },
+    {
+      "original": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/native_adapter.h",
+      "candidate": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/native/native_adapter.h",
+      "original_pin": {
+        "bytes": 1137,
+        "sha256": "44dbf880edebdccf99ca33a4bd6d4fad33c547ca0e35a1afbe7a5b7625fe01b3"
+      },
+      "candidate_pin": {
+        "bytes": 1392,
+        "sha256": "57876304bc483349b89faaf3b4c82c7df840d53b3c229f202ea7ac11dae730b0"
+      },
+      "forward_and_inverse_reconstruction": true,
+      "diff_lines": 20
+    },
+    {
+      "original": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-owned-runtime/native/provider-return.inc",
+      "candidate": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-runtime-candidate/native/provider-return.inc",
+      "original_pin": {
+        "bytes": 5400,
+        "sha256": "ba81cfcfe6c81d15bf86d7241db1a8a166f106e3c0dac91fa99a1d27fd7e62c5"
+      },
+      "candidate_pin": {
+        "bytes": 5872,
+        "sha256": "281bea5950da27f9cf7b04aa624405160cf4876ecb59a752f6adf517da480b44"
+      },
+      "forward_and_inverse_reconstruction": true,
+      "diff_lines": 30
+    }
+  ],
+  "unchanged_regions": [
+    {
+      "name": "runtime common callbacks, capture/loan/key/release/END unchanged",
+      "bytes": 5047,
+      "sha256": "a9cf326a8099c9c411a5b01d64f17294c615b0e83d4ec34b6436732627f4d070",
+      "byte_identical": true
+    },
+    {
+      "name": "actual postfork bind body",
+      "bytes": 1207,
+      "sha256": "8a360b0be0f60a9e1e49a0c4047cffa76ead467716b125fd5e5f1b1a4dd73a51",
+      "byte_identical": true
+    },
+    {
+      "name": "native private owner/raw/output/lifetime/init/storage/memory-start",
+      "bytes": 4129,
+      "sha256": "5ee66314b11864dd997cf808a80848313e961a20567acfbbbc5e9b7dbc852b89",
+      "byte_identical": true
+    },
+    {
+      "name": "native memory-gate/cancel/NEXT/key/release/retire/fence/quarantine",
+      "bytes": 6361,
+      "sha256": "9330089d2bc405dc97f5c3a276f096a1c61badfe4634fc6c43d6a9684d43fa09",
+      "byte_identical": true
+    },
+    {
+      "name": "actual return observations and four-FD transfer tail",
+      "bytes": 2630,
+      "sha256": "a76edddaddc5f33161146722c286a2efc14da5cff8ca16e77a7a4f3189a6c2e9",
+      "byte_identical": true
+    }
+  ],
+  "new_runtime_fields": [
+    "span_hub",
+    "span_setup_attempt"
+  ],
+  "layout_requires_recompilation": true,
+  "old_config_source_ready_callback_field_unchanged": true
+}
