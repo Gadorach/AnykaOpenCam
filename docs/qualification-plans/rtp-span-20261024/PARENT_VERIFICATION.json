@@ -1,0 +1,21 @@
+{
+  "scope": "PARENT_READ_ONLY_PUBLIC_SOURCE_AND_EVIDENCE_VERIFICATION_NOT_NEW_EXECUTION",
+  "recorded_host_utc": "2026-10-24T03:19:54.441770+00:00",
+  "verified_records_including_overlap": 169,
+  "counts": {
+    "delivery": 17,
+    "selected_inputs": 14,
+    "dependencies": 46,
+    "tools_link_inputs": 27,
+    "artifacts": 54,
+    "precall": 11,
+    "successful_command_logs": 20
+  },
+  "review_sha256": "9df72854face237bbbb4b24f575b044a18c18f83ebe6757b5277e523991ae52b",
+  "delivery_sha256": "c120807c6385dbb5ea376fadbc5872d3017aa89f57a84254632398e29dc1f50f",
+  "sole_normal_HOST_process_cited_not_repeated": true,
+  "normal_case_NAL_bytes": 174080,
+  "normal_case_packet_calls": 126,
+  "candidate_build_payload_hash_private_or_hardware_operation_by_parent": false,
+  "provenance_note": "HANDOFF line11 should say parent-reported commit, not user-reported. Retained handback remains unchanged; parent independently committed retirement source as a3d2b75, with no retirement execution."
+}

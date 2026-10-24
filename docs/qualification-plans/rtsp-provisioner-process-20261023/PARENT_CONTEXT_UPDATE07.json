@@ -1,0 +1,15 @@
+{
+  "scope": "SEVENTH_KNOWN_PARENT_MUTABLE_INDEX_STATUS_UPDATE_NOT_SOURCE_PIN_REBASE",
+  "recorded_host_utc": "2026-10-24T03:21:08.030507+00:00",
+  "original_manifests_and_review_unchanged": true,
+  "path": "docs/plan/camera-foundation/00-INDEX.md",
+  "before": {
+    "bytes": 128115,
+    "sha256": "7daa8f1d851accb182788662756abc68ce7aae1b332fb82b2f06bc8fef7b7553"
+  },
+  "after": {
+    "bytes": 128590,
+    "sha256": "fc25ad6e3685cc69f818b766bc458f9bb63922f75299d88924f80e61cff2a103"
+  },
+  "reason": "parent closes independently reviewed borrowed-span RTP packetizer with sole normal HOST evidence; chunk-backed CPU hub remains next integration work, no native or hardware execution"
+}

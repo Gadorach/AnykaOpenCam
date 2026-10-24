@@ -55,7 +55,7 @@ dependency records/84 artifacts/40 logs/five tools. Native hardening/real creden
 NOT RUN. See rtsp-provisioner-process PARENT_DISPOSITION; no active author/reviewer
 in that lane; committed locally `5269979`. Its original33-input pin set retains
 the pre-closeout index:32 remain unchanged plus known parent index/status
-updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE06.json`,
+updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE07.json`,
 not rebased. Actual authorized
 external ingress, secret-free launch/FD-env-caps
 hygiene, durable storage/rotation, linked-file retirement/main/external recovery/
@@ -92,10 +92,18 @@ now has narrow independent SOURCE/API/order/custody sufficiency: only actual nor
 start + finish0/PS_FINISHED; unknown/failed paths retain ownership.2 HOST/ARM compiles,
 2 real REL links/24 commands PASS, NOT RUN. Parent checked916 inputs/56 delivery
 pins/37 artifacts/221 new+871 reused dependencies/46 archive bodies and inverse
-proofs. See its PARENT_DISPOSITION; no author/reviewer active. Replacement C/new
+proofs. Local commit `a3d2b75`; see its PARENT_DISPOSITION; no author/reviewer active.
+Replacement C/new
 header only, never old bootstrap units/combined RELs. No actual retirement/test/
-child/native/motor/NOR action. Next feature investigation is inherited1MiB backing
-versus128KiB allocation cap; no new diagnostic/clock/receipt framework selected.
+child/native/motor/NOR action. Inherited1MiB backing versus128KiB allocation-cap
+work now has a real borrowed-span RTP packetizer at rtp-span-candidate with narrow
+independent SOURCE/API/bounds/wire-semantics sufficiency.3 HOST/ARM C compiles/20
+commands and ONE174080B synthetic HOST NAL/126 packets PASS;169 public pin records
+parent-verified, no repeated execution. See rtp-span PARENT_DISPOSITION; no active
+author/reviewer. Frozen runtime/hub/encoder APIs remain unchanged; no cap/native
+acceptance. Next bounded feature is a shared chunk-backed CPU hub with explicit
+consumer leases and<=128KiB allocations, then actual span-packetizer connection.
+No new diagnostic/clock/receipt framework or hardware phase selected.
 No bootstrap test/child/verifier/native/media execution, main, synthetic callbacks,
 provider/backing or hardware adoption selected.
 Original radio/Oct22 reset/23c/23d/23e/23g

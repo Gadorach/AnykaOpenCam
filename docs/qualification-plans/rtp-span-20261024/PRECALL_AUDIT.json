@@ -1,0 +1,84 @@
+{
+  "disposition": "AUTHOR_AUDITED_ONE_NORMAL_HOST_ONLY",
+  "utc": "2026-10-24T03:14:05.264531+00:00",
+  "python_version": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+  "compile_invocation": [
+    "python3",
+    "apps/rtsp-auth/rtp-span-candidate/compile01.py"
+  ],
+  "selected_observation_invocation": [
+    "python3",
+    "apps/rtsp-auth/rtp-span-candidate/host_once.py"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "pins": [
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/LICENSE_NOTICES.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/LICENSE_NOTICES.md",
+      "bytes": 822,
+      "sha256": "4c5c334be13a6d424a86ab29a21465c9eca2e696c6a4d68e059c316f6416c383"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/compile01.py",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/compile01.py",
+      "bytes": 5382,
+      "sha256": "565b9a5908b6639beaea8134ff6cd23f35f209e8d2f76cb89c8c2e5fef983fa4"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/host_normal.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/host_normal.c",
+      "bytes": 3064,
+      "sha256": "eb1e237785e33669ee5ae77266d3cf7c47b64757a4ebdbf87e697f377cd566e6"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/host_once.py",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/host_once.py",
+      "bytes": 2993,
+      "sha256": "f680ecf0a2a8e8f31ab66658c601bad16ee2d54776eaaa812cacce937a9dd27b"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.c",
+      "bytes": 2586,
+      "sha256": "a608fe8ee8a292b1172ce62c62f19c2a61f9969f64d71385f1a742fdd326560e"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.h",
+      "bytes": 1660,
+      "sha256": "41126a8b9827894d6ecb71788cd1cc71bf3b5b036e44fddf998f4c5740f05f91"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtp-span-20261024/CONTRACT.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtp-span-20261024/CONTRACT.md",
+      "bytes": 4478,
+      "sha256": "0e559041ff5f4c8928a22ad88eaf75003b5f683bb76fa2bc6278f7dacd811f89"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtp-span-20261024/AUTHOR_AUDIT.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtp-span-20261024/AUTHOR_AUDIT.md",
+      "bytes": 5171,
+      "sha256": "6a1632747e82c48c11248e0b2c7099e20b44c72429858fc6cfae2a6ae097ba27"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtp-span-20261024/runs/build01/REPORT.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtp-span-20261024/runs/build01/REPORT.json",
+      "bytes": 38484,
+      "sha256": "41774e80a0928a114e569a0d739a4eaad119f7bd942ee1f9687790a55f406b0b"
+    },
+    {
+      "path": "/usr/bin/python3",
+      "resolved": "/usr/bin/python3.14",
+      "bytes": 14424,
+      "sha256": "44fdcdf23cd94aece60aec10b92b15a0e1cf4561e710985eaa53b362a03db48e"
+    },
+    {
+      "path": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc.br_real",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/implementation-20261008T205404Z/sources/toolchain-armv5-musl-202508/armv5-eabi--musl--stable-2025.08-1/bin/arm-buildroot-linux-musleabi-gcc.br_real",
+      "bytes": 2246200,
+      "sha256": "e24ea223e7b521cce1f5889d63c25417e930cdbb35653b072f7b48d9a4b41729"
+    }
+  ],
+  "independent_review": false,
+  "native": false
+}

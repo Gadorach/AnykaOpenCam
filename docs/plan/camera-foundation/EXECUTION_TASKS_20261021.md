@@ -33,8 +33,15 @@ unlink/directory ACK with sticky uncertainty and no retry.2 HOST/ARM compiles,
 pins/37 artifacts/221 new+871 reused dependencies/46 archive bodies/inverse proofs.
 See its PARENT_DISPOSITION; no author/reviewer active. Replacement C/new header only;
 no actual close/unlink, test, child or native action. Native recovery/C1/entropy/main/
-backing still open. Next eligible feature investigation: actual inherited1MiB
-backing sites versus128KiB allocation cap, not a new diagnostic/build framework.
+backing still open. Retirement source committed locally `a3d2b75`, never called.
+The next allocation-cap feature, rtp-span-candidate, now has narrow independent
+SOURCE/API/bounds/wire-semantics sufficiency: direct borrowed-chunk packetization,
+no whole-NAL temporary/allocation, output<=1404B.3 HOST/ARM C compiles/20 commands,
+ONE174080B synthetic HOST NAL/126 packets PASS;169 public pin records checked.
+No second case/call; runtime1MiB output/hub/old cursor still unchanged. See
+rtp-span-20261024/PARENT_DISPOSITION.md. Next bounded feature is actual chunk-backed
+shared CPU hub/consumer leases with<=128KiB allocations and a real packetizer
+connection; not native cap acceptance or a new diagnostic/build framework.
 
 Latest user steering renews unattended continuation through hardware testing and
 explicitly approves motor testing/onboard NOR flashing if needed. Parent selects
@@ -73,7 +80,7 @@ actual prestarted start, before all native/provider ownership; not native GO.
 Separate process source/public metadata committed locally `5269979`; ordinary
 index unchanged/no push. Its before-closeout source/context pins remain frozen:
 32 unchanged and later parent index status updates recorded explicitly in
-PARENT_CONTEXT_UPDATE01.json through PARENT_CONTEXT_UPDATE06.json, not a rebased
+PARENT_CONTEXT_UPDATE01.json through PARENT_CONTEXT_UPDATE07.json, not a rebased
 manifest. One new isolated author
 owns qc07f-bootstrap-candidate plus matching bootstrap docs for actual known-wait/
 bind → device-free runtime prepare → prestarted-start order and retained failed-

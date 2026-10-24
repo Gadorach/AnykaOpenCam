@@ -1,0 +1,103 @@
+{
+  "utc": "2026-10-24T03:15:44.092283+00:00",
+  "status": "AUTHOR_SOURCE_COMPILE_AND_ONE_NORMAL_HOST_PASS_PENDING_INDEPENDENT_REVIEW",
+  "source_and_metadata": [
+    {
+      "path": "apps/rtsp-auth/rtp-span-candidate/LICENSE_NOTICES.md",
+      "bytes": 822,
+      "sha256": "4c5c334be13a6d424a86ab29a21465c9eca2e696c6a4d68e059c316f6416c383"
+    },
+    {
+      "path": "apps/rtsp-auth/rtp-span-candidate/compile01.py",
+      "bytes": 5382,
+      "sha256": "565b9a5908b6639beaea8134ff6cd23f35f209e8d2f76cb89c8c2e5fef983fa4"
+    },
+    {
+      "path": "apps/rtsp-auth/rtp-span-candidate/host_normal.c",
+      "bytes": 3064,
+      "sha256": "eb1e237785e33669ee5ae77266d3cf7c47b64757a4ebdbf87e697f377cd566e6"
+    },
+    {
+      "path": "apps/rtsp-auth/rtp-span-candidate/host_once.py",
+      "bytes": 2993,
+      "sha256": "f680ecf0a2a8e8f31ab66658c601bad16ee2d54776eaaa812cacce937a9dd27b"
+    },
+    {
+      "path": "apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.c",
+      "bytes": 2586,
+      "sha256": "a608fe8ee8a292b1172ce62c62f19c2a61f9969f64d71385f1a742fdd326560e"
+    },
+    {
+      "path": "apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.h",
+      "bytes": 1660,
+      "sha256": "41126a8b9827894d6ecb71788cd1cc71bf3b5b036e44fddf998f4c5740f05f91"
+    },
+    {
+      "path": "docs/qualification-plans/rtp-span-20261024/.gitignore",
+      "bytes": 7,
+      "sha256": "127672b43b817aa8f10c44cdb48d4eeef8c0201da894e8a2430cce505ab49933"
+    },
+    {
+      "path": "docs/qualification-plans/rtp-span-20261024/AUTHOR_AUDIT.md",
+      "bytes": 5171,
+      "sha256": "6a1632747e82c48c11248e0b2c7099e20b44c72429858fc6cfae2a6ae097ba27"
+    },
+    {
+      "path": "docs/qualification-plans/rtp-span-20261024/CONTRACT.md",
+      "bytes": 4478,
+      "sha256": "0e559041ff5f4c8928a22ad88eaf75003b5f683bb76fa2bc6278f7dacd811f89"
+    },
+    {
+      "path": "docs/qualification-plans/rtp-span-20261024/HANDOFF.md",
+      "bytes": 7446,
+      "sha256": "fe554ef54822cf813e3c7356b708d78e257d751cf9495fc398e34350ede00094"
+    },
+    {
+      "path": "docs/qualification-plans/rtp-span-20261024/PRECALL_AUDIT.json",
+      "bytes": 4275,
+      "sha256": "b6dc361f3df5a9b4a5fc8ca616398d84be2ad6bb54d1e7e43ec3f1b719c3163a"
+    },
+    {
+      "path": "docs/qualification-plans/rtp-span-20261024/runs/build01/REPORT.json",
+      "bytes": 38484,
+      "sha256": "41774e80a0928a114e569a0d739a4eaad119f7bd942ee1f9687790a55f406b0b"
+    },
+    {
+      "path": "docs/qualification-plans/rtp-span-20261024/runs/host01/ATTEMPT.json",
+      "bytes": 104,
+      "sha256": "4e93add5cafbc3adf67c66e7cff3511c5abc9aec89f1a963adecfb0bc7cf5a29"
+    },
+    {
+      "path": "docs/qualification-plans/rtp-span-20261024/runs/host01/INVOCATION.json",
+      "bytes": 231,
+      "sha256": "3dff759949a8ad1b75122e840d20dffa1d500de9d3bfc1f6ef4af1b8e7a5f90c"
+    },
+    {
+      "path": "docs/qualification-plans/rtp-span-20261024/runs/host01/OBSERVATION.json",
+      "bytes": 223,
+      "sha256": "5ee26f1952caf3af1d5c5cc54cc9a300894961294e7ec332894be474f1844d9b"
+    },
+    {
+      "path": "docs/qualification-plans/rtp-span-20261024/runs/host01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/rtp-span-20261024/runs/host01/stdout.txt",
+      "bytes": 155,
+      "sha256": "5e637730f34cc6180c7242045bdbd93c7c0da0404656bb7df64fbb2982a93656"
+    }
+  ],
+  "verified_build_input_tool_dependency_artifact_audit_records": 152,
+  "original_selected_inputs_unchanged": true,
+  "C_compiles": 3,
+  "successful_build_commands": 20,
+  "normal_host_process_executions": 1,
+  "normal_NAL_cases": 1,
+  "packet_calls_in_that_case": 126,
+  "other_candidate_execution": false,
+  "arm_execution": false,
+  "hardware_operations": false,
+  "git_operations": false,
+  "native_product_or_allocation_cap_acceptance": false
+}

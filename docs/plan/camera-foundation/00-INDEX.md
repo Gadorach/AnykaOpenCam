@@ -107,8 +107,14 @@ SOURCE/API/order/custody sufficiency,2 HOST/ARM compiles/2 REL links/24 commands
 never called. Only actual normal start + successful verifier finish admits it;
 not automatic failure cleanup or secure erasure. See
 [retirement disposition](../../qualification-plans/qc07f-bootstrap-material-retire-20261023/PARENT_DISPOSITION.md).
-Next eligible feature investigation is actual inherited1MiB backing versus128KiB
-allocation cap; no native or new diagnostic-image/build/clock framework selected.
+Retirement closeout committed locally `a3d2b75`, never called. The next allocation-
+cap feature, direct borrowed-span RTP packetization, has narrow independent SOURCE/
+API/bounds/wire-semantics sufficiency,3 HOST/ARM C compiles/20 commands and ONE
+174080B synthetic HOST case/126 packets PASS. No runtime/cap/native acceptance:
+the existing1MiB output/hub remain unchanged. See
+[packetizer disposition](../../qualification-plans/rtp-span-20261024/PARENT_DISPOSITION.md).
+Next bounded feature is actual chunk-backed CPU hub/consumer leases using<=128KiB
+allocations and a real span-packetizer connection, not a diagnostic/clock framework.
 Separate RTSP provisioner-child/readonly-FD IPC now has narrow independent SOURCE/
 API/custody sufficiency,27 HOST/ARM compiles/40 commands and ONE normal PUBLICDUMMY
 fork/FD-transfer/wait0/bind observation. No real credentials/native hardening or
