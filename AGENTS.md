@@ -37,7 +37,7 @@ deadlines/checks/failures/uncertain ownership; no unpaired-driver use or fresh s
 inference. Prepare reviewed paired-driver image and supervised entry before effects.
 
 Host-restart pause was explicitly lifted; preserve its historical checkpoint at
-`docs/plan/camera-foundation/PAUSE_20261024_HOST_RESTART.md`. HEAD is local `33ec694`
+`docs/plan/camera-foundation/PAUSE_20261024_HOST_RESTART.md`. HEAD is local `1282626`
 with ordinary index unchanged. V2 capability-profile remaining static review is
 now complete, but parent closeout/commit is parked, not native adoption. No active
 backend source author/reviewer or fresh target observation/transfer at this boundary.
@@ -51,17 +51,26 @@ three artifacts/three logs/exact diffs. Committed locally `33ec694`; see
 ptz-off-retain PARENT_DISPOSITION. Parked backend candidate files were not staged.
 No author/reviewer active. Not physical STOP/thermal/deadline or hardware-ready;
 retention can leave coils energized, provider unbind/recovery remain unqualified.
-One isolated author now owns driver-foundation-image app/docs and separate fresh
-work outputs for an actual paired6.18.55/Clang23.1.3 RAM image with that exact PTZ
-source, unchanged board DTB and removal of unsupported station/stale RTSP archive
-payloads. Single offline build is author-reported running; await its final handback,
-do not start another build or poll it. Preserve rollback and all other driver/config
-policy. Closed qc07f-driver-entry24 v1 source was delivered but review required R1:
+Driver-foundation ONE full6.18.55/Clang23.1.3 Kbuild completed, then the original
+verifier FAILED on unsuffixed HOLD/local-state_show assumptions; no original image
+was produced. Independent raw95-relocation/PTZ callback review resolves the method
+error without relabelling failure or rebuilding. FIRST separate packaging-only run
+and independent package/layout review passed. Actual QC6DF01.UIM is3403371B SHA
+`d37615e86699ef5d80b159eb690ec130049c4ee023785e9d6d80fc169f543cee`,
+BZIP2 `f8371c93`, load82408000/entry82408040; conservative end8275f878 below CMA.
+See driver-foundation-package PARENT_IMAGE_SELECTION and ENTRY_SELECTION.json.
+Original failures preserved; N2 changed FINAL-ONLY Brotli HOST libs limit complete
+toolchain claims, N3 scratch-end figure is an original-DTB model. No active author/
+reviewer. Fresh parent read-only preflight saw outlet OFF/adapter present/no visible
+owner or socket, NOT a live catch/lease. Current supervision still required before
+the selected ONE boot/fixed-RO/OFF invocation; no power/UART change yet. Preserve
+rollback and no unpaired station/audio/backend action. Closed entry24 v1 required R1:
 unknown OFF/already-exited child skipped available final evidence. V1 frozen NOT
 ADOPTED. Fresh driver-entry24-v2 adds22 finalizer lines only; independent correction
 review and parent SOURCE/METHOD/custody/order disposition now accept that boundary.
 29 originals/four exact roots/eight delivery pins/38 unchanged functions checked.
-No author/reviewer active in the entry lane; source/AST only, no invocation. Exact
+Entry source/policy committed locally `1282626`; no author/reviewer active in that
+lane, source/AST only, no invocation. Exact
 reviewed image/selection and fresh supervised admission still required before ON.
 No old22b invocation, transport retries, arbitrary command/profile widening or new
 clock/receipt framework. No query78/audio/backend/boot/flash/module/hardware action;
@@ -102,7 +111,7 @@ dependency records/84 artifacts/40 logs/five tools. Native hardening/real creden
 NOT RUN. See rtsp-provisioner-process PARENT_DISPOSITION; no active author/reviewer
 in that lane; committed locally `5269979`. Its original33-input pin set retains
 the pre-closeout index:32 remain unchanged plus known parent index/status
-updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE23.json`,
+updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE24.json`,
 not rebased. Actual authorized
 external ingress, secret-free launch/FD-env-caps
 hygiene, durable storage/rotation, linked-file retirement/main/external recovery/

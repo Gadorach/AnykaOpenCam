@@ -50,16 +50,31 @@ payloads. RAM-only, preserve originals; no diagnostic/query78/backend expansion 
 audio/provider/driver-ready fiction. Parent prepares supervised entry. Both image
 and entry need independent review; no target command or power change yet. Image
 author reports the single offline build still running, final handback pending; no
-second invocation/polling. Closed qc07f-driver-entry24 v1 was delivered but ordinary
+second invocation/polling. That original command is now complete: ONE full Kbuild
+exit0, then author verifier FAILED unsuffixed-HOLD/name-keyed state_show assumption.
+Original failure remains. Independent indexed95-relocation/PTZ callback/source/
+config/DT/archive association review passed, no kernel correction/rebuild. Parent
+selected FIRST separate packaging-only run; actual3403371B QC6DF01.UIM SHA
+`d37615e86699ef5d80b159eb690ec130049c4ee023785e9d6d80fc169f543cee`,
+BZIP2 f8371c93/load82408000/entry82408040, conservative end8275f878. Independent
+package/layout review and parent image selection now complete. N2 FINAL-ONLY three
+changed Brotli HOST libs limit provenance; N3 scratch end original-DTB-size model,
+conservative bound unchanged. No active image author/reviewer. Fresh read-only
+parent preflight: confirmed outlet GET OFF/adapter present/no visible owner/socket,
+no UART open or power POST. See driver-foundation-package PARENT_IMAGE_SELECTION/
+ENTRY_SELECTION.json. Live current supervision still precedes ONE supervised boot/
+fixed-RO/OFF attempt; no target effect yet. Closed entry24 v1 was delivered but ordinary
 review required R1: unknown OFF/already-exited child skipped available final capture
 accounting. V1 frozen NOT ADOPTED. Fresh entry24-v2 adds22 finalizer lines only;
 independent correction review/parent SOURCE/METHOD/custody/order disposition accept
 the bounded correction. Parent checked29 original pins/four exact roots/eight
 delivery records/38 unchanged functions and literal diffs. See v2 PARENT_DISPOSITION.
-No entry author/reviewer active, no invocation. Actual independently reviewed image/
+Entry source/policy committed locally `1282626`, ordinary index unchanged; no entry
+author/reviewer active or invocation. Actual independently reviewed image/
 selection plus fresh supervision/sole ownership still precede ON. Same-pinned
 recorder/private custody/supervised detect/abort, no new framework or old22b execution.
-Parent alone owns actual device work after admission; image handback still awaited.
+Parent alone owns actual device work after admission; image handback/reviews now
+complete as recorded above. No automatic motor/Wi-Fi/mic phase or flash operation.
 
 Latest user reseated probes, explicitly requested retry and asked whether parsing
 caused previous failures. ONE fresh23h with UNCHANGED v4/parser now PASS cold

@@ -1,0 +1,917 @@
+{
+  "DTB": {
+    "bytes": 2571,
+    "sha256": "d837c58c90b56ebb6ce9346b7c1d69689d5a1122dcef55b0f72341e6d003e0b5"
+  },
+  "PTZ_actual_source": {
+    "bytes": 7551,
+    "sha256": "a0c7d152b8a2e163ed20419e2bfbd6a7fe765056870dd939b3e5b78511a6ce87"
+  },
+  "PTZ_exact_baseline_flags_new_root_no_MODULE": true,
+  "PTZ_object_identical_to_prior_reviewed_object": true,
+  "actual_invocation": [
+    "python3",
+    "-u",
+    "bringup/qc07f/driver-foundation-image/build.py"
+  ],
+  "baseline_source_build_selected_rollback_postfailure_unchanged": true,
+  "collected_UTC": "2026-10-24T17:30:09.607627+00:00",
+  "collection": "Read-only postfailure public metadata/hash collection; no recipe import/call, compiler/linker/package retry or target execution. Kernel/source/build/logs/failure left unchanged. Only fresh failure-handback metadata written.",
+  "commands": [
+    {
+      "argv": [
+        "/usr/bin/dtc",
+        "-I",
+        "dtb",
+        "-O",
+        "dts",
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/inputs/attempt45.dtb"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "ended": "2026-10-24T17:23:35.144197+00:00",
+      "environment": {
+        "HOME": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/home",
+        "KBUILD_BUILD_HOST": "offline",
+        "KBUILD_BUILD_TIMESTAMP": "2026-10-22 00:00:00 UTC",
+        "KBUILD_BUILD_USER": "qualification",
+        "KBUILD_BUILD_VERSION": "1",
+        "LANG": "C",
+        "LC_ALL": "C",
+        "LD_DEBUG": "files,libs",
+        "LD_DEBUG_OUTPUT": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/loader/trace",
+        "LOCALVERSION": "",
+        "PATH": "/usr/bin:/bin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "SOURCE_DATE_EPOCH": "1792627200",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/tmp"
+      },
+      "exit": 0,
+      "log": "work/lightbulb-camera/driver-foundation-20261024/logs/retained-DTB.log",
+      "log_pin": {
+        "bytes": 3145,
+        "sha256": "5a407e761b789d6d6ce90e0a18b662194b77303e63b6a5ce1d02233a2b58f5a8"
+      },
+      "recipe": {
+        "bytes": 31232,
+        "sha256": "952ae8c2a0d8dd0a47b704956179892bd2fbede4830131891c9ca8288d78f52f"
+      },
+      "started": "2026-10-24T17:23:35.142100+00:00"
+    },
+    {
+      "argv": [
+        "/usr/bin/clang",
+        "--version"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "ended": "2026-10-24T17:24:26.530481+00:00",
+      "environment": {
+        "HOME": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/home",
+        "KBUILD_BUILD_HOST": "offline",
+        "KBUILD_BUILD_TIMESTAMP": "2026-10-22 00:00:00 UTC",
+        "KBUILD_BUILD_USER": "qualification",
+        "KBUILD_BUILD_VERSION": "1",
+        "LANG": "C",
+        "LC_ALL": "C",
+        "LD_DEBUG": "files,libs",
+        "LD_DEBUG_OUTPUT": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/loader/trace",
+        "LOCALVERSION": "",
+        "PATH": "/usr/bin:/bin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "SOURCE_DATE_EPOCH": "1792627200",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/tmp"
+      },
+      "exit": 0,
+      "log": "work/lightbulb-camera/driver-foundation-20261024/logs/clang-version.log",
+      "log_pin": {
+        "bytes": 92,
+        "sha256": "515e73398b96d9755cd8e88a2f977a4ac68160148e23fc5f5a63c1290c6576eb"
+      },
+      "recipe": {
+        "bytes": 31232,
+        "sha256": "952ae8c2a0d8dd0a47b704956179892bd2fbede4830131891c9ca8288d78f52f"
+      },
+      "started": "2026-10-24T17:24:26.365233+00:00"
+    },
+    {
+      "argv": [
+        "/usr/bin/ld.lld",
+        "--version"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "ended": "2026-10-24T17:24:26.595831+00:00",
+      "environment": {
+        "HOME": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/home",
+        "KBUILD_BUILD_HOST": "offline",
+        "KBUILD_BUILD_TIMESTAMP": "2026-10-22 00:00:00 UTC",
+        "KBUILD_BUILD_USER": "qualification",
+        "KBUILD_BUILD_VERSION": "1",
+        "LANG": "C",
+        "LC_ALL": "C",
+        "LD_DEBUG": "files,libs",
+        "LD_DEBUG_OUTPUT": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/loader/trace",
+        "LOCALVERSION": "",
+        "PATH": "/usr/bin:/bin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "SOURCE_DATE_EPOCH": "1792627200",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/tmp"
+      },
+      "exit": 0,
+      "log": "work/lightbulb-camera/driver-foundation-20261024/logs/ld.lld-version.log",
+      "log_pin": {
+        "bytes": 41,
+        "sha256": "4d049888c8d28ef45d15faaf8740dcae098c17d93c5c6b1641d9e5d6168aedce"
+      },
+      "recipe": {
+        "bytes": 31232,
+        "sha256": "952ae8c2a0d8dd0a47b704956179892bd2fbede4830131891c9ca8288d78f52f"
+      },
+      "started": "2026-10-24T17:24:26.530765+00:00"
+    },
+    {
+      "argv": [
+        "/usr/bin/make",
+        "--version"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "ended": "2026-10-24T17:24:26.761121+00:00",
+      "environment": {
+        "HOME": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/home",
+        "KBUILD_BUILD_HOST": "offline",
+        "KBUILD_BUILD_TIMESTAMP": "2026-10-22 00:00:00 UTC",
+        "KBUILD_BUILD_USER": "qualification",
+        "KBUILD_BUILD_VERSION": "1",
+        "LANG": "C",
+        "LC_ALL": "C",
+        "LD_DEBUG": "files,libs",
+        "LD_DEBUG_OUTPUT": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/loader/trace",
+        "LOCALVERSION": "",
+        "PATH": "/usr/bin:/bin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "SOURCE_DATE_EPOCH": "1792627200",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/tmp"
+      },
+      "exit": 0,
+      "log": "work/lightbulb-camera/driver-foundation-20261024/logs/make-version.log",
+      "log_pin": {
+        "bytes": 300,
+        "sha256": "cb84250d994234272d0a465014ce2931be76e9e0cb114b9bffa078c3c211e8eb"
+      },
+      "recipe": {
+        "bytes": 31232,
+        "sha256": "952ae8c2a0d8dd0a47b704956179892bd2fbede4830131891c9ca8288d78f52f"
+      },
+      "started": "2026-10-24T17:24:26.596095+00:00"
+    },
+    {
+      "argv": [
+        "/usr/bin/llvm-ar",
+        "--version"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "ended": "2026-10-24T17:24:26.793822+00:00",
+      "environment": {
+        "HOME": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/home",
+        "KBUILD_BUILD_HOST": "offline",
+        "KBUILD_BUILD_TIMESTAMP": "2026-10-22 00:00:00 UTC",
+        "KBUILD_BUILD_USER": "qualification",
+        "KBUILD_BUILD_VERSION": "1",
+        "LANG": "C",
+        "LC_ALL": "C",
+        "LD_DEBUG": "files,libs",
+        "LD_DEBUG_OUTPUT": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/loader/trace",
+        "LOCALVERSION": "",
+        "PATH": "/usr/bin:/bin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "SOURCE_DATE_EPOCH": "1792627200",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/tmp"
+      },
+      "exit": 0,
+      "log": "work/lightbulb-camera/driver-foundation-20261024/logs/llvm-ar-version.log",
+      "log_pin": {
+        "bytes": 66,
+        "sha256": "0fcea651d6b4a09578344485e64dab696a473fc2d65f6d3f9f9944b43b3baaaa"
+      },
+      "recipe": {
+        "bytes": 31232,
+        "sha256": "952ae8c2a0d8dd0a47b704956179892bd2fbede4830131891c9ca8288d78f52f"
+      },
+      "started": "2026-10-24T17:24:26.761576+00:00"
+    },
+    {
+      "argv": [
+        "/usr/bin/llvm-objcopy",
+        "--version"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "ended": "2026-10-24T17:24:26.810583+00:00",
+      "environment": {
+        "HOME": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/home",
+        "KBUILD_BUILD_HOST": "offline",
+        "KBUILD_BUILD_TIMESTAMP": "2026-10-22 00:00:00 UTC",
+        "KBUILD_BUILD_USER": "qualification",
+        "KBUILD_BUILD_VERSION": "1",
+        "LANG": "C",
+        "LC_ALL": "C",
+        "LD_DEBUG": "files,libs",
+        "LD_DEBUG_OUTPUT": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/loader/trace",
+        "LOCALVERSION": "",
+        "PATH": "/usr/bin:/bin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "SOURCE_DATE_EPOCH": "1792627200",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/tmp"
+      },
+      "exit": 0,
+      "log": "work/lightbulb-camera/driver-foundation-20261024/logs/llvm-objcopy-version.log",
+      "log_pin": {
+        "bytes": 108,
+        "sha256": "aaf5efc2374acf42c549762c15ebf1f8a5e5f46ea60ed85e826c39a02cb5db30"
+      },
+      "recipe": {
+        "bytes": 31232,
+        "sha256": "952ae8c2a0d8dd0a47b704956179892bd2fbede4830131891c9ca8288d78f52f"
+      },
+      "started": "2026-10-24T17:24:26.794229+00:00"
+    },
+    {
+      "argv": [
+        "/usr/bin/llvm-readelf",
+        "--version"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "ended": "2026-10-24T17:24:26.827243+00:00",
+      "environment": {
+        "HOME": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/home",
+        "KBUILD_BUILD_HOST": "offline",
+        "KBUILD_BUILD_TIMESTAMP": "2026-10-22 00:00:00 UTC",
+        "KBUILD_BUILD_USER": "qualification",
+        "KBUILD_BUILD_VERSION": "1",
+        "LANG": "C",
+        "LC_ALL": "C",
+        "LD_DEBUG": "files,libs",
+        "LD_DEBUG_OUTPUT": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/loader/trace",
+        "LOCALVERSION": "",
+        "PATH": "/usr/bin:/bin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "SOURCE_DATE_EPOCH": "1792627200",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/tmp"
+      },
+      "exit": 0,
+      "log": "work/lightbulb-camera/driver-foundation-20261024/logs/llvm-readelf-version.log",
+      "log_pin": {
+        "bytes": 66,
+        "sha256": "0fcea651d6b4a09578344485e64dab696a473fc2d65f6d3f9f9944b43b3baaaa"
+      },
+      "recipe": {
+        "bytes": 31232,
+        "sha256": "952ae8c2a0d8dd0a47b704956179892bd2fbede4830131891c9ca8288d78f52f"
+      },
+      "started": "2026-10-24T17:24:26.810937+00:00"
+    },
+    {
+      "argv": [
+        "/usr/bin/dtc",
+        "--version"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "ended": "2026-10-24T17:24:26.829502+00:00",
+      "environment": {
+        "HOME": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/home",
+        "KBUILD_BUILD_HOST": "offline",
+        "KBUILD_BUILD_TIMESTAMP": "2026-10-22 00:00:00 UTC",
+        "KBUILD_BUILD_USER": "qualification",
+        "KBUILD_BUILD_VERSION": "1",
+        "LANG": "C",
+        "LC_ALL": "C",
+        "LD_DEBUG": "files,libs",
+        "LD_DEBUG_OUTPUT": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/loader/trace",
+        "LOCALVERSION": "",
+        "PATH": "/usr/bin:/bin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "SOURCE_DATE_EPOCH": "1792627200",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/tmp"
+      },
+      "exit": 0,
+      "log": "work/lightbulb-camera/driver-foundation-20261024/logs/dtc-version.log",
+      "log_pin": {
+        "bytes": 20,
+        "sha256": "e4b8f01eca53ba952c5e3e1fc8b6093fa13291cf12a1e6272ecea10c9926f175"
+      },
+      "recipe": {
+        "bytes": 31232,
+        "sha256": "952ae8c2a0d8dd0a47b704956179892bd2fbede4830131891c9ca8288d78f52f"
+      },
+      "started": "2026-10-24T17:24:26.827665+00:00"
+    },
+    {
+      "argv": [
+        "/usr/bin/make",
+        "-C",
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/linux",
+        "O=/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/build",
+        "ARCH=arm",
+        "LLVM=1",
+        "LLVM_IAS=1",
+        "HOSTCC=clang",
+        "HOSTCXX=clang++",
+        "LOCALVERSION=",
+        "V=1",
+        "olddefconfig"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "ended": "2026-10-24T17:24:31.555567+00:00",
+      "environment": {
+        "HOME": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/home",
+        "KBUILD_BUILD_HOST": "offline",
+        "KBUILD_BUILD_TIMESTAMP": "2026-10-22 00:00:00 UTC",
+        "KBUILD_BUILD_USER": "qualification",
+        "KBUILD_BUILD_VERSION": "1",
+        "LANG": "C",
+        "LC_ALL": "C",
+        "LD_DEBUG": "files,libs",
+        "LD_DEBUG_OUTPUT": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/loader/trace",
+        "LOCALVERSION": "",
+        "PATH": "/usr/bin:/bin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "SOURCE_DATE_EPOCH": "1792627200",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/tmp"
+      },
+      "exit": 0,
+      "log": "work/lightbulb-camera/driver-foundation-20261024/logs/olddefconfig.log",
+      "log_pin": {
+        "bytes": 7166,
+        "sha256": "b9bc6c679f78bd4110d1a6963e25787bfc5fb75762425eeecad876221a118302"
+      },
+      "recipe": {
+        "bytes": 31232,
+        "sha256": "952ae8c2a0d8dd0a47b704956179892bd2fbede4830131891c9ca8288d78f52f"
+      },
+      "started": "2026-10-24T17:24:26.829743+00:00"
+    },
+    {
+      "argv": [
+        "/usr/bin/make",
+        "-C",
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/linux",
+        "O=/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/build",
+        "ARCH=arm",
+        "LLVM=1",
+        "LLVM_IAS=1",
+        "HOSTCC=clang",
+        "HOSTCXX=clang++",
+        "LOCALVERSION=",
+        "V=1",
+        "-j4",
+        "zImage",
+        "vmlinux"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "ended": "2026-10-24T17:27:57.621593+00:00",
+      "environment": {
+        "HOME": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/home",
+        "KBUILD_BUILD_HOST": "offline",
+        "KBUILD_BUILD_TIMESTAMP": "2026-10-22 00:00:00 UTC",
+        "KBUILD_BUILD_USER": "qualification",
+        "KBUILD_BUILD_VERSION": "1",
+        "LANG": "C",
+        "LC_ALL": "C",
+        "LD_DEBUG": "files,libs",
+        "LD_DEBUG_OUTPUT": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/loader/trace",
+        "LOCALVERSION": "",
+        "PATH": "/usr/bin:/bin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "SOURCE_DATE_EPOCH": "1792627200",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/tmp"
+      },
+      "exit": 0,
+      "log": "work/lightbulb-camera/driver-foundation-20261024/logs/kernel-builtins.log",
+      "log_pin": {
+        "bytes": 3571244,
+        "sha256": "3aca96ba9d0c4b81b21822c495edcf70fced05580378a69de9b26d252563fd1d"
+      },
+      "recipe": {
+        "bytes": 31232,
+        "sha256": "952ae8c2a0d8dd0a47b704956179892bd2fbede4830131891c9ca8288d78f52f"
+      },
+      "started": "2026-10-24T17:24:31.568223+00:00"
+    },
+    {
+      "argv": [
+        "/usr/bin/llvm-readelf",
+        "-h",
+        "-l",
+        "-S",
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/build/vmlinux"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "ended": "2026-10-24T17:27:57.678526+00:00",
+      "environment": {
+        "HOME": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/home",
+        "KBUILD_BUILD_HOST": "offline",
+        "KBUILD_BUILD_TIMESTAMP": "2026-10-22 00:00:00 UTC",
+        "KBUILD_BUILD_USER": "qualification",
+        "KBUILD_BUILD_VERSION": "1",
+        "LANG": "C",
+        "LC_ALL": "C",
+        "LD_DEBUG": "files,libs",
+        "LD_DEBUG_OUTPUT": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/loader/trace",
+        "LOCALVERSION": "",
+        "PATH": "/usr/bin:/bin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "SOURCE_DATE_EPOCH": "1792627200",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/tmp"
+      },
+      "exit": 0,
+      "log": "work/lightbulb-camera/driver-foundation-20261024/logs/vmlinux-ELF.log",
+      "log_pin": {
+        "bytes": 7340,
+        "sha256": "553d1ab52020ffcab947d1a7fe9bbf058ece65b346ed36ac163ee72ff8e2d1d3"
+      },
+      "recipe": {
+        "bytes": 31232,
+        "sha256": "952ae8c2a0d8dd0a47b704956179892bd2fbede4830131891c9ca8288d78f52f"
+      },
+      "started": "2026-10-24T17:27:57.646005+00:00"
+    },
+    {
+      "argv": [
+        "/usr/bin/llvm-readelf",
+        "-h",
+        "-l",
+        "-S",
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/build/arch/arm/boot/compressed/vmlinux"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "ended": "2026-10-24T17:27:57.695397+00:00",
+      "environment": {
+        "HOME": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/home",
+        "KBUILD_BUILD_HOST": "offline",
+        "KBUILD_BUILD_TIMESTAMP": "2026-10-22 00:00:00 UTC",
+        "KBUILD_BUILD_USER": "qualification",
+        "KBUILD_BUILD_VERSION": "1",
+        "LANG": "C",
+        "LC_ALL": "C",
+        "LD_DEBUG": "files,libs",
+        "LD_DEBUG_OUTPUT": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/loader/trace",
+        "LOCALVERSION": "",
+        "PATH": "/usr/bin:/bin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "SOURCE_DATE_EPOCH": "1792627200",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/tmp"
+      },
+      "exit": 0,
+      "log": "work/lightbulb-camera/driver-foundation-20261024/logs/compressed-ELF.log",
+      "log_pin": {
+        "bytes": 3478,
+        "sha256": "ef4b6e8168ac0dbfa053bb92e1f1ea75d209c06d19e70904af03273756a77513"
+      },
+      "recipe": {
+        "bytes": 31232,
+        "sha256": "952ae8c2a0d8dd0a47b704956179892bd2fbede4830131891c9ca8288d78f52f"
+      },
+      "started": "2026-10-24T17:27:57.678821+00:00"
+    },
+    {
+      "argv": [
+        "/usr/bin/llvm-nm",
+        "-n",
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/build/vmlinux"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "ended": "2026-10-24T17:27:57.910999+00:00",
+      "environment": {
+        "HOME": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/home",
+        "KBUILD_BUILD_HOST": "offline",
+        "KBUILD_BUILD_TIMESTAMP": "2026-10-22 00:00:00 UTC",
+        "KBUILD_BUILD_USER": "qualification",
+        "KBUILD_BUILD_VERSION": "1",
+        "LANG": "C",
+        "LC_ALL": "C",
+        "LD_DEBUG": "files,libs",
+        "LD_DEBUG_OUTPUT": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/loader/trace",
+        "LOCALVERSION": "",
+        "PATH": "/usr/bin:/bin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "SOURCE_DATE_EPOCH": "1792627200",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/tmp"
+      },
+      "exit": 0,
+      "log": "work/lightbulb-camera/driver-foundation-20261024/logs/vmlinux-symbols.log",
+      "log_pin": {
+        "bytes": 1681118,
+        "sha256": "468ab657abff1cd36f58191fb25bd8ad140b5214fd8c97b63e38ecfced705f18"
+      },
+      "recipe": {
+        "bytes": 31232,
+        "sha256": "952ae8c2a0d8dd0a47b704956179892bd2fbede4830131891c9ca8288d78f52f"
+      },
+      "started": "2026-10-24T17:27:57.695706+00:00"
+    },
+    {
+      "argv": [
+        "/usr/bin/llvm-readelf",
+        "-h",
+        "-A",
+        "-s",
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/build/arch/arm/mach-ak3918ev200/ptz.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "ended": "2026-10-24T17:27:57.932623+00:00",
+      "environment": {
+        "HOME": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/home",
+        "KBUILD_BUILD_HOST": "offline",
+        "KBUILD_BUILD_TIMESTAMP": "2026-10-22 00:00:00 UTC",
+        "KBUILD_BUILD_USER": "qualification",
+        "KBUILD_BUILD_VERSION": "1",
+        "LANG": "C",
+        "LC_ALL": "C",
+        "LD_DEBUG": "files,libs",
+        "LD_DEBUG_OUTPUT": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/loader/trace",
+        "LOCALVERSION": "",
+        "PATH": "/usr/bin:/bin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "SOURCE_DATE_EPOCH": "1792627200",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/tmp"
+      },
+      "exit": 0,
+      "log": "work/lightbulb-camera/driver-foundation-20261024/logs/PTZ-ELF.log",
+      "log_pin": {
+        "bytes": 7817,
+        "sha256": "dee9bda406321046bd946c94876e787151ab7d64bb42b96a923a85d0332df8a8"
+      },
+      "recipe": {
+        "bytes": 31232,
+        "sha256": "952ae8c2a0d8dd0a47b704956179892bd2fbede4830131891c9ca8288d78f52f"
+      },
+      "started": "2026-10-24T17:27:57.916450+00:00"
+    },
+    {
+      "argv": [
+        "/usr/bin/llvm-objdump",
+        "-dr",
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/build/arch/arm/mach-ak3918ev200/ptz.o"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "ended": "2026-10-24T17:27:58.108430+00:00",
+      "environment": {
+        "HOME": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/home",
+        "KBUILD_BUILD_HOST": "offline",
+        "KBUILD_BUILD_TIMESTAMP": "2026-10-22 00:00:00 UTC",
+        "KBUILD_BUILD_USER": "qualification",
+        "KBUILD_BUILD_VERSION": "1",
+        "LANG": "C",
+        "LC_ALL": "C",
+        "LD_DEBUG": "files,libs",
+        "LD_DEBUG_OUTPUT": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/loader/trace",
+        "LOCALVERSION": "",
+        "PATH": "/usr/bin:/bin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "SOURCE_DATE_EPOCH": "1792627200",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/tmp"
+      },
+      "exit": 0,
+      "log": "work/lightbulb-camera/driver-foundation-20261024/logs/PTZ-object-code.log",
+      "log_pin": {
+        "bytes": 35611,
+        "sha256": "fbe08e991a6b308ed58ebe771ebd0a0a981f18601efe9ff9ba6e31749d778726"
+      },
+      "recipe": {
+        "bytes": 31232,
+        "sha256": "952ae8c2a0d8dd0a47b704956179892bd2fbede4830131891c9ca8288d78f52f"
+      },
+      "started": "2026-10-24T17:27:57.932965+00:00"
+    },
+    {
+      "argv": [
+        "/usr/bin/llvm-objdump",
+        "-d",
+        "--disassemble-symbols=pulse_store,state_show,ak_ptz_probe",
+        "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/build/vmlinux"
+      ],
+      "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+      "ended": "2026-10-24T17:27:58.223601+00:00",
+      "environment": {
+        "HOME": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/home",
+        "KBUILD_BUILD_HOST": "offline",
+        "KBUILD_BUILD_TIMESTAMP": "2026-10-22 00:00:00 UTC",
+        "KBUILD_BUILD_USER": "qualification",
+        "KBUILD_BUILD_VERSION": "1",
+        "LANG": "C",
+        "LC_ALL": "C",
+        "LD_DEBUG": "files,libs",
+        "LD_DEBUG_OUTPUT": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/loader/trace",
+        "LOCALVERSION": "",
+        "PATH": "/usr/bin:/bin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "SOURCE_DATE_EPOCH": "1792627200",
+        "TMPDIR": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/tmp"
+      },
+      "exit": 0,
+      "log": "work/lightbulb-camera/driver-foundation-20261024/logs/PTZ-linked-code.log",
+      "log_pin": {
+        "bytes": 42231,
+        "sha256": "cf4103cfda46abf7edab54c4e152e0f870512d2cf2c9cfa299f142a0ff840851"
+      },
+      "recipe": {
+        "bytes": 31232,
+        "sha256": "952ae8c2a0d8dd0a47b704956179892bd2fbede4830131891c9ca8288d78f52f"
+      },
+      "started": "2026-10-24T17:27:58.108856+00:00"
+    }
+  ],
+  "config": {
+    "delta": {
+      "CONFIG_INITRAMFS_SOURCE": {
+        "new": "\"/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/inputs/initramfs-driver-foundation01.cpio\"",
+        "old": "\"/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/native-usb76-source01/inputs/initramfs76.cpio\""
+      },
+      "CONFIG_LOCALVERSION": {
+        "new": "\"-qc07f-driver-foundation01\"",
+        "old": "\"-qc07f-encoder-query77\""
+      }
+    },
+    "pin": {
+      "bytes": 58848,
+      "sha256": "0e503122fb7915afead493a6783545b0f3dc71e581da6886ea974b09ab034b48"
+    }
+  },
+  "counts": {
+    "baseline_build_members": 3913,
+    "baseline_source_members": 91270,
+    "consumed_dependency_paths": 3903,
+    "full_Kbuild_invocations": 1,
+    "host_tools": 58,
+    "kbuild_command_files": 1612,
+    "loaded_host_ELF_final_only": 82,
+    "new_source_members": 91270,
+    "successful_top_level_commands": 16
+  },
+  "driver_ready": false,
+  "failure": {
+    "UTC": "2026-10-24T17:27:58.284426+00:00",
+    "error": "RuntimeError: actual linked PTZ definitions absent",
+    "path": "work/lightbulb-camera/driver-foundation-20261024/FAILURE.json",
+    "pin": {
+      "bytes": 25183,
+      "sha256": "6005b4c42f1a9decc303b85abd6c7454edf26745a4fbcf6537d6f35c655b5807"
+    },
+    "source_line": 429,
+    "unsupported_assumption": "Exact single ak_ptz_hold symbol required; actual compiler emitted ak_ptz_hold.0/.1/.3/.4/.5/.6/.7/.8. Six local state_show names also make name-only symbol dictionaries ambiguous. No correction or passing disposition applied."
+  },
+  "fresh_source_exact_one_delta_postfailure": true,
+  "full_Kbuild_result": "PASS exit0; make zImage vmlinux completed once, not modules/install",
+  "image": null,
+  "image_CRCs": null,
+  "image_eligible": false,
+  "image_hash": null,
+  "image_size": null,
+  "independent_review_and_parent_disposition_required": true,
+  "initramfs": {
+    "after": {
+      "bytes": 1559552,
+      "sha256": "a0916c00a3a8c85495b2d6db5b34f7009c32ff302764f734b541b5a29cf37219"
+    },
+    "before": {
+      "bytes": 2082816,
+      "sha256": "510e5fdc6e2a7b6ad4a52d82ad1de9381a85e143f7014a6f2cc3bdfb951e309f"
+    },
+    "embedded_matches_fresh_archive": true,
+    "proof": "work/lightbulb-camera/driver-foundation-20261024/inputs/initramfs-transform.json",
+    "removed": [
+      "hgics.ko",
+      "bin/rtspd"
+    ]
+  },
+  "input_and_failure_metadata_pins": {
+    "work/lightbulb-camera/driver-foundation-20261024/CONFIG.json": {
+      "bytes": 610,
+      "sha256": "f3f7be2db8dc127e3708d150e5ad12858e321d3cad584afadb4f904f79f6ef18"
+    },
+    "work/lightbulb-camera/driver-foundation-20261024/FAILURE.json": {
+      "bytes": 25183,
+      "sha256": "6005b4c42f1a9decc303b85abd6c7454edf26745a4fbcf6537d6f35c655b5807"
+    },
+    "work/lightbulb-camera/driver-foundation-20261024/PREBUILD.json": {
+      "bytes": 2448,
+      "sha256": "9aeb35baf76a92fa99d1e2bfff4c9a21dee9cc449b4c7e8377045fa0512d51af"
+    },
+    "work/lightbulb-camera/driver-foundation-20261024/commands.jsonl": {
+      "bytes": 19807,
+      "sha256": "2051724d673e740b8249601a406e19e9872c30b9992e6058430c3e468234c1bb"
+    },
+    "work/lightbulb-camera/driver-foundation-20261024/failure-handback/consumed-dependencies-final-only.json": {
+      "bytes": 1424010,
+      "sha256": "5d1704b8534d64293638cbb1c0ceda67e454c7e26194dd2e546e7a58a6b125dd"
+    },
+    "work/lightbulb-camera/driver-foundation-20261024/failure-handback/kbuild-command-files.json": {
+      "bytes": 229011,
+      "sha256": "5ba50c85ebbb9fbf0e3df3fe0dcae730412f23db42310a678f3dde04edb1d38a"
+    },
+    "work/lightbulb-camera/driver-foundation-20261024/failure-handback/loaded-host-ELF-final-only.json": {
+      "bytes": 15054,
+      "sha256": "fd70b8221e73a906bab41883ec0eb2e729408b27537bda60750326ca228c1aec"
+    },
+    "work/lightbulb-camera/driver-foundation-20261024/inputs/CONTRACT.md": {
+      "bytes": 5969,
+      "sha256": "7ee8e363dc62f425a0286c629fafe0f3a8ef5f7b5f2eb32c80a334348c867393"
+    },
+    "work/lightbulb-camera/driver-foundation-20261024/inputs/NOTICES.md": {
+      "bytes": 1086,
+      "sha256": "bd7a824d43c7c5e3b035e07705c4298a3bd10be40615752512a2164e0aba8130"
+    },
+    "work/lightbulb-camera/driver-foundation-20261024/inputs/attempt45.dtb": {
+      "bytes": 2571,
+      "sha256": "d837c58c90b56ebb6ce9346b7c1d69689d5a1122dcef55b0f72341e6d003e0b5"
+    },
+    "work/lightbulb-camera/driver-foundation-20261024/inputs/baseline-and-rollback.json": {
+      "bytes": 3249,
+      "sha256": "3ad85e99fbd5b19620862c7fb72acaa4e457269c851d57179e17c0935e557cd3"
+    },
+    "work/lightbulb-camera/driver-foundation-20261024/inputs/build.py": {
+      "bytes": 31232,
+      "sha256": "952ae8c2a0d8dd0a47b704956179892bd2fbede4830131891c9ca8288d78f52f"
+    },
+    "work/lightbulb-camera/driver-foundation-20261024/inputs/config.diff": {
+      "bytes": 861,
+      "sha256": "3f0b71aabe402cdf14621119b56d06e5e7b5252b754670dbf605bf3d2ce135b6"
+    },
+    "work/lightbulb-camera/driver-foundation-20261024/inputs/initramfs-driver-foundation01.cpio": {
+      "bytes": 1559552,
+      "sha256": "a0916c00a3a8c85495b2d6db5b34f7009c32ff302764f734b541b5a29cf37219"
+    },
+    "work/lightbulb-camera/driver-foundation-20261024/inputs/initramfs-transform.json": {
+      "bytes": 31531,
+      "sha256": "48ce3d2670736d6ab9d8392f969bc792787e5b3b16964a72eda289bcb8a6184a"
+    },
+    "work/lightbulb-camera/driver-foundation-20261024/inputs/ptz.patch": {
+      "bytes": 7034,
+      "sha256": "2fc001b5a06687d55fb1a89cf4726a5067e928363540d175df31667ad435ebc5"
+    },
+    "work/lightbulb-camera/driver-foundation-20261024/inputs/reviewed-ptz.c": {
+      "bytes": 7551,
+      "sha256": "a0c7d152b8a2e163ed20419e2bfbd6a7fe765056870dd939b3e5b78511a6ce87"
+    },
+    "work/lightbulb-camera/driver-foundation-20261024/inputs/source-baseline-reference.json": {
+      "bytes": 317,
+      "sha256": "c0677431b30d607c16be0761f3963a1d1fef430095d78a08d7383ac50799d215"
+    },
+    "work/lightbulb-camera/driver-foundation-20261024/inputs/source-delta.json": {
+      "bytes": 340,
+      "sha256": "90ee7eafc542a307f280de26061bf5c1b6434ef56b43211fae57f32f90ac2a77"
+    },
+    "work/lightbulb-camera/driver-foundation-20261024/inputs/tools-before.json": {
+      "bytes": 9457,
+      "sha256": "cc42250d7c27d54db09dbb4deebd235dd22722a38efd57d21f6d06c609cdf607"
+    }
+  },
+  "intended_only_header": {
+    "entry": "0x82408040",
+    "load": "0x82408000"
+  },
+  "kernel_release": "6.18.55-qc07f-driver-foundation01",
+  "licenses": {
+    "COPYING": {
+      "bytes": 496,
+      "sha256": "fb5a425bd3b3cd6071a3a9aff9909a859e7c1158d54d32e07658398cd67eb6a0"
+    },
+    "Documentation/process/license-rules.rst": {
+      "bytes": 18352,
+      "sha256": "187ec351ff615334fe0374051318b7e6a306ee348f6cc39c2abc15b60cd37031"
+    },
+    "LICENSES/exceptions/Linux-syscall-note": {
+      "bytes": 1258,
+      "sha256": "8e378ab93586eb55135d3bc119cce787f7324f48394777d00c34fa3d0be3303f"
+    },
+    "LICENSES/preferred/GPL-2.0": {
+      "bytes": 18600,
+      "sha256": "8780e78a1a737e127f25a65f6d95269bffd36158dc261114de7859b490bfc5aa"
+    }
+  },
+  "no_hardware_or_Git_operation": true,
+  "no_target_or_candidate_or_test_execution": true,
+  "observed_symbols_from_saved_nm": [
+    "c00280ec t state_show",
+    "c0028eb0 t ak_ptz_probe",
+    "c0028f9c t pulse_store",
+    "c00297d4 t ak_ptz_off",
+    "c002984c t state_show",
+    "c02dd5fc t state_show",
+    "c02f3b78 t state_show",
+    "c03006dc t state_show",
+    "c052defc t state_show",
+    "c05656b0 d ak_ptz_group",
+    "c062d248 d ak_ptz_phases",
+    "c068f254 t ak_ptz_driver_init",
+    "c06ab36c t ak_ptz_driver_exit",
+    "c077ef90 d ak_ptz_driver",
+    "c077eff8 d ak_ptz_attrs",
+    "c077f014 d ak_ptz_actuation_lock",
+    "c07fb32c b ak_ptz_hold.0",
+    "c07fb330 b ak_ptz_hold.1",
+    "c07fb334 b ak_ptz_hold.3",
+    "c07fb338 b ak_ptz_hold.4",
+    "c07fb33c b ak_ptz_hold.5",
+    "c07fb340 b ak_ptz_hold.6",
+    "c07fb344 b ak_ptz_hold.7",
+    "c07fb348 b ak_ptz_hold.8"
+  ],
+  "outputs": {
+    ".config": {
+      "bytes": 58848,
+      "sha256": "0e503122fb7915afead493a6783545b0f3dc71e581da6886ea974b09ab034b48"
+    },
+    "System.map": {
+      "bytes": 1179743,
+      "sha256": "36b640fcf4d6231f2a963e0ecc98bf7e1eaac90669bf43577d9995242c456e20"
+    },
+    "arch/arm/boot/Image": {
+      "bytes": 8334396,
+      "sha256": "b3f2e07cc88e35754b7b88349d789ce3fec06b46e45ddf20174fd110eb7f8751"
+    },
+    "arch/arm/boot/compressed/piggy_data": {
+      "bytes": 3361792,
+      "sha256": "5ffafac05c16e97c1e6b0379a782be8da17d8d8d76698231ce668aa24f030417"
+    },
+    "arch/arm/boot/compressed/vmlinux": {
+      "bytes": 3475400,
+      "sha256": "05a93ea3d0d4bba0c5cc1017711ea19b8ad5e3c1444de34ff5fca6eaabd54495"
+    },
+    "arch/arm/boot/zImage": {
+      "bytes": 3400736,
+      "sha256": "8e3d9c9c041a425845b0b57d2dcc09cd4b4eafa7af3a9f33d7e4e2f81ce64114"
+    },
+    "arch/arm/mach-ak3918ev200/.built-in.a.cmd": {
+      "bytes": 297,
+      "sha256": "bc9e213d39a388fc6dc6c8f7250871362d30f151f98353cd496e1bd42ac627e8"
+    },
+    "arch/arm/mach-ak3918ev200/.ptz.o.cmd": {
+      "bytes": 72931,
+      "sha256": "43491b079b64a86cd8ffd59e44dc8bcb4d5a6768a758519f6394db9950e217d5"
+    },
+    "arch/arm/mach-ak3918ev200/built-in.a": {
+      "bytes": 904,
+      "sha256": "aa3ebd205b2a6e27dc0a250df847f98e4f684cd333fdfccc2b88a88933423be8"
+    },
+    "arch/arm/mach-ak3918ev200/ptz.o": {
+      "bytes": 8580,
+      "sha256": "6d06084ca2908a580764787df6b977b85315343b08a074f90d6f0fda1c0b1ae4"
+    },
+    "include/config/kernel.release": {
+      "bytes": 34,
+      "sha256": "36594960473292f7af66bc5b125e08dacaf5a10da8d512e5edcc896367a8ab93"
+    },
+    "include/generated/autoconf.h": {
+      "bytes": 20050,
+      "sha256": "b973c116c5dc6d5749a4e9f438f8af6e1ea8006b1d99ecf28b3b736fd7d69346"
+    },
+    "include/generated/compile.h": {
+      "bytes": 164,
+      "sha256": "8c51d471baeb130ce5a5b31b20f006b9d0501433d2142a62cf3b5428f38c6a5c"
+    },
+    "usr/initramfs_inc_data": {
+      "bytes": 802447,
+      "sha256": "ff788cd70012918cb43d7a4c8bcb534ae3a098c432196d5c93ce7632cd1d28b8"
+    },
+    "vmlinux": {
+      "bytes": 10704800,
+      "sha256": "7323778a647aed1fc60875192d39b1ca0cadf7ae55b0ae18493d689d0cf7ea1f"
+    },
+    "vmlinux.symvers": {
+      "bytes": 345626,
+      "sha256": "806467d52330d4cdf2fd8e312aee54d24b0a1437d5eb4bd1b393011f277c4cdc"
+    },
+    "vmlinux.unstripped": {
+      "bytes": 10956436,
+      "sha256": "f7a365ca476be1176ed24aeaab4a9f3da56d5a05577eabb8a24f8f6d7e502097"
+    }
+  },
+  "raw_kernel_symbols_only_not_layout_acceptance": {
+    "__bss_start": {
+      "physical": "0x81ffac3c",
+      "virtual": "0xc07fac3c"
+    },
+    "__bss_stop": {
+      "physical": "0x82029be0",
+      "virtual": "0xc0829be0"
+    },
+    "_end": {
+      "physical": "0x82029be0",
+      "virtual": "0xc0829be0"
+    },
+    "_text": {
+      "physical": "0x81808000",
+      "virtual": "0xc0008000"
+    },
+    "swapper_pg_dir": {
+      "physical": "0x81804000",
+      "virtual": "0xc0004000"
+    }
+  },
+  "recipe_pin": {
+    "bytes": 31232,
+    "sha256": "952ae8c2a0d8dd0a47b704956179892bd2fbede4830131891c9ca8288d78f52f"
+  },
+  "retry_performed": false,
+  "static_package_layout_fit": "NOT REACHED; no UIM produced or eligibility claim",
+  "status": "FAILED_PRESERVED_POSTBUILD_SYMBOL_ASSERTION_NO_PACKAGE",
+  "tools_and_clang_resources_postfailure_unchanged": true
+}

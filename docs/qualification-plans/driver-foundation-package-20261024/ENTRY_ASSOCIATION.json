@@ -1,0 +1,30 @@
+{
+  "profile": "qc07f-driver-foundation01",
+  "image": {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-package-20261024/images/QC6DF01.UIM",
+    "sha256": "d37615e86699ef5d80b159eb690ec130049c4ee023785e9d6d80fc169f543cee",
+    "bytes": 3403371,
+    "crc32_bzip2": "f8371c93"
+  },
+  "kernel_release": "6.18.55-qc07f-driver-foundation01",
+  "dtb": {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/driver-foundation-20261024/inputs/attempt45.dtb",
+    "sha256": "d837c58c90b56ebb6ce9346b7c1d69689d5a1122dcef55b0f72341e6d003e0b5",
+    "bytes": 2571
+  },
+  "ptz_source": {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/bringup/qc07f/ptz-off-retain-candidate/ptz.c",
+    "sha256": "a0c7d152b8a2e163ed20419e2bfbd6a7fe765056870dd939b3e5b78511a6ce87",
+    "bytes": 7551
+  },
+  "build_review": {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/driver-foundation-package-review-20261024/REVIEW.md",
+    "sha256": "169eb3b3636fcfc1e52f4e6a1e06e6806ee4e3bb2c9801bbac0c080994050b87",
+    "bytes": 12183
+  },
+  "parent_context": {
+    "path": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/driver-foundation-package-20261024/PARENT_IMAGE_SELECTION.md",
+    "sha256": "03f08e850f0735766e472af7b8508fc128daed316f867d0b4358c063ab625447",
+    "bytes": 4130
+  }
+}

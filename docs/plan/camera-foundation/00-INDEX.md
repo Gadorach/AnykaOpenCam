@@ -79,6 +79,13 @@ sufficiency after correcting v1's already-exited-recorder/unknown-OFF accounting
 gap. V1 stays NOT ADOPTED; no entry has run. Actual paired-image review/selection
 and fresh supervised admission remain before ON. See
 [entry disposition](../../qualification-plans/driver-supervised-entry-v2-20261024/PARENT_DISPOSITION.md).
+The full driver kernel built once; original symbol-name verifier failure remains
+preserved. Independent indexed PTZ pairing review then FIRST separate packaging
+and independent layout review now establish actual QC6DF01.UIM3403371B/SHA
+`d37615e86699ef5d80b159eb690ec130049c4ee023785e9d6d80fc169f543cee`,
+BZIP2 f8371c93. See [image selection](../../qualification-plans/driver-foundation-package-20261024/PARENT_IMAGE_SELECTION.md).
+N2 HOST-library provenance/N3 original-DTB scratch-model caveats remain. No boot or
+driver test has run; fresh current supervision/sole-owner admission still required.
 
 Earlier integration history is retained below, not the selected next-work queue.
 Query78 v3's review is complete at narrow SOURCE/method scope; no recipe/archive/

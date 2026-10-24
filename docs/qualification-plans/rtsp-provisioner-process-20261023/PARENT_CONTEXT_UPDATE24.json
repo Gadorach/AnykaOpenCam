@@ -1,0 +1,15 @@
+{
+  "scope": "TWENTY_FOURTH_KNOWN_PARENT_MUTABLE_INDEX_STATUS_UPDATE_NOT_SOURCE_PIN_REBASE",
+  "recorded_host_date": "2026-10-24",
+  "original_manifests_and_reviews_unchanged": true,
+  "path": "docs/plan/camera-foundation/00-INDEX.md",
+  "before": {
+    "bytes": 138603,
+    "sha256": "bf188ddf9e0c6666a7efe036a3b8140126391ea40d70259ac760665a6d905ef4"
+  },
+  "after": {
+    "bytes": 139202,
+    "sha256": "fe642f63df44fd0d2dd1f92f6d6286ac156a7a258ecbdb49947c81b6b1849189"
+  },
+  "reason": "original driver kernel compile completed with preserved symbol-verifier failure; independent indexed pairing review and FIRST separate package/layout review now establish actual paired RAM image, parent conditional image selection and source entry ready for fresh supervised admission only; no boot/power/driver test or backend work"
+}

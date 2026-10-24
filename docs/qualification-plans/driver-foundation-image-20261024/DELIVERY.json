@@ -1,0 +1,38 @@
+{
+  "UTC": "2026-10-24T17:32:21.332641+00:00",
+  "author_owned_public_files_before_delivery": 6,
+  "image": null,
+  "image_eligible": false,
+  "local_work_root": "work/lightbulb-camera/driver-foundation-20261024",
+  "no_retry_or_hardware": true,
+  "original_failure_unchanged": true,
+  "pins": {
+    "bringup/qc07f/driver-foundation-image/NOTICES.md": {
+      "bytes": 1086,
+      "sha256": "bd7a824d43c7c5e3b035e07705c4298a3bd10be40615752512a2164e0aba8130"
+    },
+    "bringup/qc07f/driver-foundation-image/build.py": {
+      "bytes": 31232,
+      "sha256": "952ae8c2a0d8dd0a47b704956179892bd2fbede4830131891c9ca8288d78f52f"
+    },
+    "docs/qualification-plans/driver-foundation-image-20261024/BUILD_MANIFEST.json": {
+      "bytes": 36507,
+      "sha256": "41ac7af70b87453b9304b653ea07ba9bb07d0ba2286db33b61ef42676b7f84a3"
+    },
+    "docs/qualification-plans/driver-foundation-image-20261024/BUILD_RESULT.md": {
+      "bytes": 8476,
+      "sha256": "5a936a4ef43e19c7b8854f0ad8c9da56c8b04079d2f6803fa8e35d1089ebf393"
+    },
+    "docs/qualification-plans/driver-foundation-image-20261024/CONTRACT.md": {
+      "bytes": 5969,
+      "sha256": "7ee8e363dc62f425a0286c629fafe0f3a8ef5f7b5f2eb32c80a334348c867393"
+    },
+    "docs/qualification-plans/driver-foundation-image-20261024/HANDBACK.md": {
+      "bytes": 3171,
+      "sha256": "0a646cd02f78b6e616e6265df7d760f7b0ac659ff1d4661bd1413af828ceb722"
+    }
+  },
+  "review_and_parent_disposition_required": true,
+  "source_recipe_frozen": true,
+  "status": "FAILED_PRESERVED_POSTBUILD_SYMBOL_ASSERTION_NO_PACKAGE"
+}
