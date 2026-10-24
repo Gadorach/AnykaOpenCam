@@ -1,0 +1,25 @@
+{
+  "scope": "PARENT_PUBLIC_SOURCE_DIFF_BUILD_REVIEW_VERIFICATION_NOT_EXECUTION",
+  "recorded_host_utc": "2026-10-24T13:12:05.708988+00:00",
+  "delivery_pins": 22,
+  "frozen_files": 114,
+  "exact_frozen_roots": 8,
+  "build": {
+    "inputs": 543,
+    "new_dependencies": 322,
+    "reused_dependencies": 320,
+    "tools": 16,
+    "artifacts": 146,
+    "successful_commands_and_logs": 46,
+    "exact_members": 147
+  },
+  "unchanged_regions_matched": 17,
+  "all_eight_source_diffs_regenerated_exactly": true,
+  "all_seven_consumed_source_copies_match": true,
+  "actual_archive_bodies_checked": 46,
+  "selected_extracted_bodies_matched": 32,
+  "distinct_lexical_paths_hashed": 782,
+  "review_sha256": "0cf62fbd96a9ccdbcd2887e3da12bdd3d2898d9a8bd069145ab99c6334939dce",
+  "compiler_build_test_candidate_native_or_hardware_calls": 0,
+  "native_cap_product_or_release_acceptance": false
+}

@@ -1,0 +1,454 @@
+--- /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-writer-serve-candidate/rtsp_span_server.c
++++ /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-serve-candidate/rtsp_span_server.c
+@@ -14,7 +14,7 @@
+ #include "candidate_auth.h"
+ #include "adapter_state.h"
+ #include "listener_custody.h"
+-#include "owned_runtime_v4.h"
++#include "owned_runtime_v1.h"
+ #include "rtsp_span_server_v1.h"
+ #include <arpa/inet.h>
+ #include <errno.h>
+@@ -30,12 +30,9 @@
+ #include <unistd.h>
+ 
+ struct span_binding {
+- struct qc07f_owned_runtime_v4 *runtime;
+-  struct candidate_prestarted *owner;
+-  struct camera_span_hub_v1 *hub;
+-  const struct camera_rtsp_span_retention_v1 *sink;
+- struct camera_rtsp_frame_handle published_frame;
+- struct qc07f_writer_loan_v4 published_loan;
++ struct candidate_prestarted *owner;
++ struct camera_span_hub_v1 *hub;
++ const struct camera_rtsp_span_retention_v1 *sink;
+ };
+ struct rtsp_client {
+  int fd,setup,playing;struct camera_rtsp_input input;
+@@ -59,7 +56,7 @@
+ {
+  s->owner->source_hold=1;s->owner->phase=CANDIDATE_PS_HOLD;
+  s->sink->retain(s->sink->context,s->hub,demand,index);
+-  qc07f_owned_runtime_cleanup_v4(s->runtime,server_clock.failed,1);
++ qc07f_owned_runtime_cleanup_v1(s->owner->config->context,server_clock.failed,1);
+  for(;;)raise(SIGSTOP);
+ }
+ static _Noreturn void retain_frame(struct span_binding *s,
+@@ -75,9 +72,7 @@
+ {
+  if(!h||h->self!=h||h->phase!=CAMERA_SPAN_HUB_V1_ACTIVE||h->generation||
+     h->monotonic_ns||h->issued_token||h->keyframe||h->subscribers||
+-     h->need_keyframe||h->pending||h->acquired||h->bytes||h->codec||h->data_offset||
+-     h->layout_version!=3||h->writer_phase!=CAMERA_SPAN_WRITER_V3_IDLE||h->writer_error||
+-     h->issued_writer_token||h->writer_token||h->writer_generation||h->armed_writer_token||
++    h->need_keyframe||h->pending||h->acquired||h->bytes||h->codec||
+     h->allocation_calls!=CAMERA_SPAN_HUB_V1_CHUNKS||
+     h->allocated_bytes!=CAMERA_RTP_H264_NAL_V1_BYTES||
+     h->maximum_allocation!=CAMERA_SPAN_HUB_V1_CHUNK_BYTES)return 0;
+@@ -112,13 +107,7 @@
+    if(now==UINT64_MAX||candidate_effect(c->backend,c->auth,now)!=CAMERA_OK)return guard_denied(c);
+  /* Callback/crypto latency never grants extra lease/nonce/send time. */
+   now=camera_rtsp_clock_ns(&server_clock);
+-   if(now==UINT64_MAX||candidate_effect_final(c->backend,c->auth,now)!=CAMERA_OK)return guard_denied(c);
+-   /* Actual auth/child checks may block. Charge that cost to the real source
+-    * session too. Entry pins this callback to ready(): bounded private metadata,
+-    * not a new grant, syscall, alternate provider or recursive auth callback. */
+-   now=camera_rtsp_clock_ns(&server_clock);
+-   return now!=UINT64_MAX&&c->backend->config->source_ready(c->backend->config->context,
+-          c->auth->connection,now)==CAMERA_OK?1:guard_denied(c);
++    return now!=UINT64_MAX&&candidate_effect_final(c->backend,c->auth,now)==CAMERA_OK?1:guard_denied(c);
+ }
+ struct capture_gate {
+  struct rtsp_client *clients;struct candidate_backend *backend;
+@@ -224,7 +213,7 @@
+    if(server_clock.failed||c->lifecycle_error||c->lease_uncertain)
+     retain_span(c->span,&c->demand,index);
+    if(monotonic_ns()==UINT64_MAX){c->lifecycle_error=CAMERA_IO_ERROR;retain_span(c->span,&c->demand,index);}
+-    if(c->backend)qc07f_owned_runtime_cleanup_v4(c->span->runtime,server_clock.failed,0);
++   if(c->backend)qc07f_owned_runtime_cleanup_v1(c->backend->config->context,server_clock.failed,0);
+   if(c->fd<0)return;
+   if(c->lease_uncertain){
+     retain_span(c->span,&c->demand,index);
+@@ -416,7 +405,7 @@
+   if(failed&&a->written){c->backend->stats.partial_discard++;explicit_bzero(a->packet,sizeof(a->packet));a->written=a->packet_bytes=0;}
+  if(failed){fprintf(stderr,"SHARED RTSP consumer%u disconnected on bounded send failure; partial AU is not usable video\n",i);close_client(c,hub,i);}
+ }
+-static void send_access_unit(struct rtsp_client clients[CAMERA_HUB_CONSUMERS],struct camera_span_hub_v1 *hub,const struct qc07f_writer_source_v4 *p,const struct camera_rtsp_options *o,uint32_t budget,int report)
++static void send_access_unit(struct rtsp_client clients[CAMERA_HUB_CONSUMERS],struct camera_span_hub_v1 *hub,const struct camera_rtsp_producer *p,const struct camera_rtsp_options *o,uint32_t budget,int report)
+ {
+  struct au_cursor cursors[CAMERA_HUB_CONSUMERS];memset(cursors,0,sizeof(cursors));
+  const uint8_t *params=p->parameter_sets;size_t count=p->parameter_set_bytes,split=4;
+@@ -424,10 +413,8 @@
+  if(valid){while(split+4<count&&memcmp(params+split,"\0\0\0\1",4))split++;valid=split+4<count;}
+  for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++){
+   struct rtsp_client *c=&clients[i];struct au_cursor *a=&cursors[i];
+-    if(!c->playing)continue;
+-    if(qc07f_owned_runtime_writer_publication_v5(c->span->runtime,
+-       c->span->published_frame,&c->span->published_loan)!=CAMERA_OK){close_client(c,hub,i);continue;}
+-    if(!guarded(c)){close_client(c,hub,i);continue;}
++   if(!c->playing)continue;
++   if(!guarded(c)){close_client(c,hub,i);continue;}
+     if(camera_span_hub_acquire_v1(hub,i,&a->lease)!=CAMERA_OK)continue;
+    a->active=1;c->media_lease_active=1;a->timestamp=(uint32_t)(a->lease.monotonic_ns/1000000ULL*90);
+    a->started=milliseconds();
+@@ -505,55 +492,71 @@
+  int r=life->retire(life->context,now);
+  return monotonic_ns()==UINT64_MAX?CAMERA_IO_ERROR:r;
+ }
++static int idle_checked(const struct camera_rtsp_producer *p)
++{
++ if(monotonic_ns()==UINT64_MAX)return CAMERA_IO_ERROR;
++ int r=CAMERA_OK;if(p->idle_checked)r=p->idle_checked(p->context);else p->idle(p->context);
++ return monotonic_ns()==UINT64_MAX?CAMERA_IO_ERROR:r;
++}
+ static int begin_checked(const struct camera_rtsp_lifecycle *life,uint32_t *force,struct camera_rtsp_frame_handle *source)
+ {
+  uint64_t now=monotonic_ns();if(now==UINT64_MAX)return CAMERA_IO_ERROR;
+  int r=life->begin(life->context,now,force,source);
+  return monotonic_ns()==UINT64_MAX?CAMERA_IO_ERROR:r;
+ }
+-static int end_checked(struct candidate_backend *backend,const struct camera_rtsp_lifecycle *life,struct camera_rtsp_frame_handle source,int result,uint32_t keyframe)
+-{
+-  uint64_t now=monotonic_ns();if(now==UINT64_MAX)return CAMERA_IO_ERROR;
+-  backend->stats.frame_ends++; /* actual call, not a pre-clock refusal */
++static int end_checked(const struct camera_rtsp_lifecycle *life,struct camera_rtsp_frame_handle source,int result,uint32_t keyframe)
++{
++ uint64_t now=monotonic_ns();if(now==UINT64_MAX)return CAMERA_IO_ERROR;
+  int r=life->end(life->context,source,result,keyframe,now);
+  return monotonic_ns()==UINT64_MAX?CAMERA_IO_ERROR:r;
+ }
+-/* Actual scalar loan from THIS private writer, never an arbitrary packet/provider.
+- * Native release revalidates all key fields; no writable/payload alias is read. */
+-static int writer_loan_validate(const struct qc07f_owned_runtime_v4 *r,
+- const struct qc07f_writer_loan_v4 *loan,struct camera_rtsp_frame_handle frame,size_t capacity)
+-{
+- const struct camera_rtsp_lifecycle *life=&r->lifecycle;
+- if(frame.owner!=&r->producer||frame.namespace_context!=&r->bridge||!frame.id||
+-    frame.generation!=r->producer.generation||r->producer.state!=CAMERA_PRODUCER_RUNNING||
+-    !r->bridge.frame_open||r->bridge.frame.id!=frame.id||life->context!=&r->bridge||
+-    r->pipeline!=QCW_LOAN||r->release_attempt||r->end_attempt||r->commit_attempt)return CAMERA_STALE_LEASE;
+- if(!loan->token||!loan->generation||r->last_token==UINT64_MAX||r->last_generation==UINT64_MAX||
+-    loan->token!=r->last_token+1||loan->generation!=r->last_generation+1||
+-    loan->token!=r->loan.token||loan->generation!=r->loan.generation||
+-    loan->monotonic_ns!=r->loan.monotonic_ns||loan->monotonic_ns==UINT64_MAX||
+-    loan->written_bytes!=r->loan.written_bytes||loan->prefix_bytes!=r->loan.prefix_bytes||
+-    loan->keyframe!=r->loan.keyframe||loan->keyframe>1||loan->written_bytes>capacity||
+-    loan->written_bytes<3||loan->prefix_bytes>=loan->written_bytes-1||
+-    (loan->prefix_bytes!=0&&loan->prefix_bytes!=3&&loan->prefix_bytes!=4)||
+-    loan->key.source!=r->loan.key.source||loan->key.file!=r->loan.key.file||
+-    loan->key.generation!=r->loan.key.generation||loan->key.sequence!=r->loan.key.sequence||
+-    loan->key.nal_crc32_bzip2!=r->loan.key.nal_crc32_bzip2)return CAMERA_INVALID;
++struct source_packet_facts {
++ uint32_t keyframe;uint64_t lease_token,generation;size_t bytes;
++};
++/* Producer lease token/generation are opaque producer-owned scalar identities,
++ * NOT the common frame-handle or hub CPU-lease namespace. Validate that common
++ * bracket explicitly; do not invent equality/nonzero/DMA receipt semantics for
++ * packet fields. Native next/release must validate their own export internally.
++ * No payload pointer survives release; only validated scalar facts do. */
++static int source_packet_validate(const struct camera_packet *packet,const struct camera_rtsp_lifecycle *life,
++ struct camera_rtsp_frame_handle source,size_t capacity,struct source_packet_facts *facts)
++{
++ memset(facts,0,sizeof(*facts));
++ if(!life||source.owner!=life->owner||source.namespace_context!=life->context||!source.id||
++    source.generation!=life->owner->generation||life->owner->state!=CAMERA_PRODUCER_RUNNING)return CAMERA_STALE_LEASE;
++ if(packet->codec!=CAMERA_H264||!packet->data||packet->bytes<2||packet->bytes>capacity||packet->keyframe>1||
++    (packet->data[0]&31)!=(packet->keyframe?5U:1U))return CAMERA_INVALID;
++ facts->keyframe=packet->keyframe;facts->lease_token=packet->lease_token;facts->generation=packet->generation;facts->bytes=packet->bytes;
+  return CAMERA_OK;
+ }
+-static int serve_prestarted_body(struct qc07f_owned_runtime_v4 *r,const struct camera_rtsp_options *o,
+-  int *caller_listener,struct camera_rtsp_owned_listener_outcome_v1 *outcome)
+-{
+-  struct candidate_prestarted *owner=r->owner;
+-  const struct qc07f_writer_source_v4 *p=&r->source;
+-  struct camera_span_hub_v1 *hub=r->span_hub;
+-  const struct camera_rtsp_span_retention_v1 *sink=&r->span_sink;
++/* Borrowed contiguous source -> <=8 copy-input spans, not allocation-cap proof
++ * for the actual producer. No input pointer is stored by successful publish. */
++static int publish_source(struct camera_span_hub_v1 *hub,const struct camera_packet *packet)
++{
++ if(!packet||!packet->data||!packet->bytes||packet->bytes>CAMERA_RTP_H264_NAL_V1_BYTES)return CAMERA_INVALID;
++ struct camera_rtp_h264_span_v1 spans[CAMERA_SPAN_HUB_V1_CHUNKS];
++ size_t offset=0,count=0;
++ while(offset<packet->bytes){
++  size_t take=packet->bytes-offset;
++  if(take>CAMERA_SPAN_HUB_V1_CHUNK_BYTES)take=CAMERA_SPAN_HUB_V1_CHUNK_BYTES;
++  spans[count++]=(struct camera_rtp_h264_span_v1){packet->data+offset,take};
++  offset+=take;
++ }
++ const struct camera_span_hub_input_v1 input={.codec=packet->codec,
++  .keyframe=packet->keyframe,.monotonic_ns=packet->monotonic_ns,
++  .bytes=packet->bytes,.span_count=count,.spans=spans};
++ return camera_span_hub_publish_v1(hub,&input);
++}
++static int serve_prestarted_body(struct candidate_prestarted *owner,const struct camera_rtsp_options *o,const struct camera_rtsp_producer *p,
++ struct camera_span_hub_v1 *hub,const struct camera_rtsp_span_retention_v1 *sink,
++ int *caller_listener,struct camera_rtsp_owned_listener_outcome_v1 *outcome)
++{
+  struct candidate_backend *backend=&owner->backend;
+  const struct candidate_config *config=owner->config;
+  if(!o||!p||!o->bind_address||!o->sdp||o->port<1024||!o->stop||o->interval_ms>5000||
+       !o->resources||(o->request_deadline_ms&&(o->request_deadline_ms<500||o->request_deadline_ms>5000))||
+      (o->send_deadline_ms&&(o->send_deadline_ms<10||o->send_deadline_ms>2000))||o->tcp_coalesce>1||o->trace_every>1000||
+-       !p->next||!p->release||!p->lifecycle||!p->parameter_sets||!p->parameter_set_bytes||
++      !p->next||!p->release||(!p->idle&&!p->idle_checked&&!p->lifecycle)||!p->parameter_sets||!p->parameter_set_bytes||
+       p->parameter_set_bytes>256||o->hub_storage||!sink->context||!sink->retain||!pristine_hub(hub))return CAMERA_INVALID;
+    const struct camera_rtsp_lifecycle *life=p->lifecycle;
+    if(strcmp(o->bind_address,"127.0.0.1")||o->send_deadline_ms!=2000||o->hub_slots!=1||o->packet_capacity!=CANDIDATE_HUB_BYTES||!life)return CAMERA_INVALID;
+@@ -563,7 +566,7 @@
+     if(camera_rtsp_registry_init(&checked_resources,o->resources->live_uri,o->resources->track_uri))return CAMERA_INVALID;
+     if(life&&(!life->owner||!life->attach||!life->detach||!life->begin||!life->end||!life->retire))return CAMERA_INVALID;
+  uint32_t send_budget=o->send_deadline_ms?o->send_deadline_ms:100;
+-    struct span_binding span={.runtime=r,.owner=owner,.hub=hub,.sink=sink};
++   struct span_binding span={owner,hub,sink};
+    struct owned_listener_observation borrowed;
+    int result=owned_listener_observe(*caller_listener,o->port,&borrowed);
+    if(result!=CAMERA_OK)return result; /* Caller still owns actual listener. */
+@@ -585,7 +588,7 @@
+    for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++){clients[i].fd=-1;clients[i].span=&span;}
+    struct capture_gate gate={clients,backend,o,life};
+   config->source_guard_bind(config->context,capture_admitted,&gate);
+-   uint64_t next=0;uint32_t force=0;int retirement_failed=0;unsigned long trace_frame=0;
++  uint64_t next=0;uint32_t force=0;int was_active=0,retirement_failed=0;unsigned long trace_frame=0;
+   uint32_t trace_every=o->trace_every?o->trace_every:1;
+    fprintf(stderr,"HOST_ONLY RTSP DIGEST CANDIDATE fanout=4 TCP-unencrypted whole_AU_ms=2000 hub_slots=1 NOT-NATIVE NOT-NVR\n");
+    if(config->listener_ready)config->listener_ready(config->context,o->port);
+@@ -632,51 +635,110 @@
+    active=0;for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)active+=clients[i].playing;
+    for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)if(clients[i].lifecycle_error){result=clients[i].lifecycle_error;goto clients_done;}
+    if(life){int retired=retire_checked(life);if(retired!=CAMERA_OK){retirement_failed=1;result=retired;goto clients_done;}}
+-    if(!active)continue;
+-    uint64_t due=milliseconds();if(due==UINT64_MAX){result=CAMERA_IO_ERROR;goto clients_done;}if(due<next)continue;
++   if(!active){
++    if(!life&&was_active){
++      int retired=idle_checked(p);if(retired!=CAMERA_OK){retirement_failed=1;result=retired;goto clients_done;}
++    }
++    was_active=0;continue;
++   }
++   was_active=1;uint64_t due=milliseconds();if(due==UINT64_MAX){result=CAMERA_IO_ERROR;goto clients_done;}if(due<next)continue;
+      for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)if(clients[i].playing&&!guarded(&clients[i]))close_client(&clients[i],hub,i);
+     active=0;for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)active+=clients[i].playing;
+     if(!active)continue;
+-     struct camera_rtsp_frame_handle source={0};
+-      if(capture_admitted(&gate)!=CAMERA_OK)retain_frame(&span,source,CAMERA_NOT_READY);
+-       backend->stats.begin_calls++;
+-     int prepared=begin_checked(life,&force,&source);
+-     if(prepared!=CAMERA_OK||!source.id||source.namespace_context!=life->context||
+-        source.owner!=life->owner||source.generation!=life->owner->generation)
+-      retain_frame(&span,source,prepared?prepared:CAMERA_STALE_LEASE);
+-     /* BEGIN/auth/source failure is NOT an error-END permission for this writer.
+-      * Retain current frame/native/paid backing BEFORE any client cleanup. */
+-     int admitted=capture_admitted(&gate);
+-     if(admitted!=CAMERA_OK||life->owner->state!=CAMERA_PRODUCER_RUNNING||source.generation!=life->owner->generation){
+-      backend->stats.boundary_denied++;
+-      retain_frame(&span,source,admitted?admitted:CAMERA_STALE_LEASE);
++    struct camera_rtsp_frame_handle source={0};
++     if(capture_admitted(&gate)!=CAMERA_OK){result=CAMERA_NOT_READY;goto clients_done;}
++      backend->stats.begin_calls++;
++    int prepared=life?begin_checked(life,&force,&source):CAMERA_OK;
++   if(life&&(source.namespace_context!=life->context||source.owner!=life->owner||source.generation!=life->owner->generation)){
++    if(prepared==CAMERA_OK)prepared=CAMERA_STALE_LEASE;
++    source=(struct camera_rtsp_frame_handle){life->owner,0,life->owner->generation,life->context};
++   }
++   if(prepared!=CAMERA_OK){
++    fprintf(stderr,"SHARED RTSP lifecycle begin failed=%d generation=%llu; fail closed\n",prepared,(unsigned long long)source.generation);
++    uint64_t happened=monotonic_ns();
++     for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)if(clients[i].playing){failure_client(&clients[i],source,CAMERA_RTSP_START_FAILURE,prepared,happened);close_client(&clients[i],hub,i);}
++    result=prepared;goto clients_done;
++   }
++    /* BEGIN may consume the nonce/owner/readiness interval. Never let its prior
++     * admission authorize driver acquisition. An abort ends EXACT source with
++     * a failure result, not a fabricated P/keyframe success or reference reset. */
++    int admitted=capture_admitted(&gate);
++    if(admitted!=CAMERA_OK||life->owner->state!=CAMERA_PRODUCER_RUNNING||source.generation!=life->owner->generation){
++      backend->stats.boundary_denied++;backend->stats.frame_ends++;
++     int ended=end_checked(life,source,CAMERA_NOT_READY,0);
++      if(ended!=CAMERA_OK)retain_frame(&span,source,ended);
++     for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)if(clients[i].demand_attached){
++      if(ended!=CAMERA_OK)clients[i].lifecycle_error=ended;
++       close_client(&clients[i],hub,i);
+      }
+-     backend->stats.next_calls++;
+-     struct qc07f_writer_loan_v4 loan={0};
+-     int produced=p->next(p->context,source,force,&loan);
+-     if(produced!=CAMERA_OK)retain_frame(&span,source,produced);
+-     int loan_valid=writer_loan_validate(r,&loan,source,o->packet_capacity);
+-     if(loan_valid!=CAMERA_OK)retain_frame(&span,source,loan_valid);
++     result=ended!=CAMERA_OK?ended:admitted!=CAMERA_OK?admitted:CAMERA_STALE_LEASE;
++     goto clients_done; /* no next/release/publish, no automatic END/STOP retry */
++    }
++      backend->stats.next_calls++;
++     struct camera_packet packet={0};int produced=p->next(p->context,force,&packet);
++    struct source_packet_facts facts={0};
++    int packet_valid=produced==CAMERA_OK?source_packet_validate(&packet,life,source,o->packet_capacity,&facts):CAMERA_INVALID;
+      for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)if(clients[i].lifecycle_error||clients[i].lease_uncertain)
+       retain_frame(&span,source,clients[i].lifecycle_error?clients[i].lifecycle_error:CAMERA_IO_ERROR);
+-     if(server_clock.failed||monotonic_ns()==UINT64_MAX||capture_admitted(&gate)!=CAMERA_OK)
++     if(server_clock.failed||monotonic_ns()==UINT64_MAX){
++       /* Keep the actual packet/native owner/frame bracket live on uncertainty. */
++       retain_frame(&span,source,CAMERA_IO_ERROR); /*no fabricated END time / independent DMA-stop claim*/
++    }
++   if(produced!=CAMERA_OK){
++       if(life){backend->stats.frame_ends++;int ended=end_checked(life,source,produced,0);if(ended!=CAMERA_OK)retain_frame(&span,source,ended);}
++    fprintf(stderr,"SHARED RTSP producer failed=%d; no silent fallback\n",produced);
++    uint64_t happened=monotonic_ns();
++     for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)if(clients[i].playing){failure_client(&clients[i],source,CAMERA_RTSP_SOURCE_FAILURE,produced,happened);close_client(&clients[i],hub,i);}
++    if(life){result=produced;goto clients_done;}
++    {int retired=idle_checked(p);if(retired!=CAMERA_OK){retirement_failed=1;result=retired;goto clients_done;}}
++    was_active=0;force=1;continue;
++  }
++   unsigned allowed=0;
++   for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)if(clients[i].playing){
++    if(guarded(&clients[i]))allowed++;
++      else {
++       if(server_clock.failed||clients[i].lifecycle_error||clients[i].lease_uncertain||monotonic_ns()==UINT64_MAX)
++        retain_frame(&span,source,clients[i].lifecycle_error?clients[i].lifecycle_error:CAMERA_IO_ERROR);
++       if(camera_span_hub_unsubscribe_v1(hub,i)!=CAMERA_OK)retain_span(&span,&clients[i].demand,i);clients[i].playing=0;clients[i].deferred_close=1;
++      }
++   }
++    int published=packet_valid;
++    if(published==CAMERA_OK&&allowed){
++     /* Revalidate source generation/namespace after readiness callbacks, before
++      * owned copy. Hub publish establishes its own token/generation; deferred
++       * RTP effects continue to use v2 consumer lease validation, never producer facts. */
++     published=source_packet_validate(&packet,life,source,o->packet_capacity,&facts);
++      /*Each child CHECK may block. Require one CURRENT peer immediately before
++       *publish, not an earlier count whose last peer has expired in other IPC.*/
++       if(published==CAMERA_OK)published=capture_admitted(&gate);
++       /* A precopy guard may observe MAX even when another peer was admitted. */
++       for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)if(clients[i].lifecycle_error||clients[i].lease_uncertain)
++        retain_frame(&span,source,clients[i].lifecycle_error?clients[i].lifecycle_error:CAMERA_IO_ERROR);
++       if(server_clock.failed||monotonic_ns()==UINT64_MAX)retain_frame(&span,source,CAMERA_IO_ERROR);
++         if(published==CAMERA_OK){backend->stats.hub_publish_calls++;published=publish_source(hub,&packet);}
++     }
++     /* Safe denials still release/END normally; observed uncertainty never does. */
++     for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)if(clients[i].lifecycle_error||clients[i].lease_uncertain)
++      retain_frame(&span,source,clients[i].lifecycle_error?clients[i].lifecycle_error:CAMERA_IO_ERROR);
++     if(server_clock.failed||monotonic_ns()==UINT64_MAX)retain_frame(&span,source,CAMERA_IO_ERROR);
++     p->release(p->context,&packet);
++    /* RELEASE is void and may invalidate/zero all packet metadata and payload.
++     * From here on only independent scalars / hub-owned copies may be used. */
++    if(monotonic_ns()==UINT64_MAX){
+       retain_frame(&span,source,CAMERA_IO_ERROR);
+-     /* Typed release ACK retires only the CPU loan. Writer remains ARMED; no
+-      * unsubscribe/detach/false error-END can clear it on any failing path. */
+-     int released=p->release(p->context,source,&loan);
+-     if(released!=CAMERA_OK||server_clock.failed||monotonic_ns()==UINT64_MAX)
+-      retain_frame(&span,source,released?released:CAMERA_IO_ERROR);
+-     int ended=end_checked(backend,life,source,CAMERA_OK,loan.keyframe);
+-     if(ended!=CAMERA_OK)retain_frame(&span,source,ended);
+-     /* Actual runtime common-END0 + post-cost guards + real hub COMMIT already
+-      * happened. OBSERVE only: never camera_span_hub_publish/second commit/copy. */
+-     int published=qc07f_owned_runtime_writer_publication_v5(r,source,&loan);
+-     if(published!=CAMERA_OK){result=published;goto clients_done;}
+-     backend->stats.hub_publish_calls++;
+-     span.published_frame=source;span.published_loan=loan;
+-   force=0;
++    }
++       if(life){backend->stats.frame_ends++;int ended=end_checked(life,source,published,facts.keyframe);if(ended!=CAMERA_OK)retain_frame(&span,source,ended);}
++   if(published!=CAMERA_OK){
++   fprintf(stderr,"SHARED RTSP packet rejected=%d; disconnect affected consumers\n",published);
++    uint64_t happened=monotonic_ns();
++     for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)if(clients[i].playing){failure_client(&clients[i],source,CAMERA_RTSP_PACKET_FAILURE,published,happened);close_client(&clients[i],hub,i);}
++    if(life){result=published;goto clients_done;}
++    {int retired=idle_checked(p);if(retired!=CAMERA_OK){retirement_failed=1;result=retired;goto clients_done;}}
++    was_active=0;force=1;continue;
++  }
++  force=0;
+    int report=!(trace_frame++%trace_every);
+-     if(report)fprintf(stderr,"SHARED RTSP committed consumers=%u keyframe=%u one-writer\n",active,loan.keyframe);
++    if(report)fprintf(stderr,"SHARED RTSP published consumers=%u keyframe=%u one-producer\n",active,facts.keyframe);
+       for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)if(clients[i].deferred_close)close_client(&clients[i],hub,i);
+       send_access_unit(clients,hub,p,o,send_budget,report);
+    for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)if(clients[i].lifecycle_error){result=clients[i].lifecycle_error;goto clients_done;}
+@@ -685,7 +747,7 @@
+   }
+   result=*o->stop?CAMERA_OK:CAMERA_IO_ERROR;
+     clients_done:
+-      qc07f_owned_runtime_cleanup_v4(r,server_clock.failed,0);
++     qc07f_owned_runtime_cleanup_v1(config->context,server_clock.failed,0);
+      if(retirement_failed||server_clock.failed||owner->source_hold||backend->failed||
+         backend->revoked||backend->revoke_pending||backend->pending||backend->pending_peer)
+      retain_span(&span,NULL,CAMERA_RTSP_SPAN_SERVER_SOURCE_INDEX_V1);
+@@ -703,7 +765,7 @@
+   if(server_clock.failed){result=CAMERA_IO_ERROR;fprintf(stderr,"RTSP clock fault; terminal, retain owner demands/work; NO retirement claim\n");}
+   else if(life){
+     if(!retirement_failed&&life->owner->state!=CAMERA_PRODUCER_FAILED){int retired=retire_checked(life);if(retired!=CAMERA_OK)retain_span(&span,NULL,CAMERA_RTSP_SPAN_SERVER_SOURCE_INDEX_V1);}
+-   }
++  }else if(!retirement_failed){int retired=idle_checked(p);if(retired!=CAMERA_OK)result=retired;}
+    /* Preserve source/client/hub cleanup order; unbind while the gate is live,
+     * then clear private listener ownership before the one close attempt. */
+       if(life->owner->state!=CAMERA_PRODUCER_STOPPED||life->owner->demand_count||life->owner->active_present)
+@@ -721,9 +783,8 @@
+       if(server_clock.failed||monotonic_ns()==UINT64_MAX||
+          gate.clients!=clients||gate.backend!=backend||gate.options!=o||gate.life!=life)
+        retain_span(&span,NULL,CAMERA_RTSP_SPAN_SERVER_SOURCE_INDEX_V1);
+-       qc07f_owned_runtime_writer_end_borrow_v5(r,hub,capture_admitted,&gate);
+-       hub=NULL;span.hub=NULL; /* no live hub pointer survives this actual tail */
+-       qc07f_owned_runtime_cleanup_v4(r,server_clock.failed,1);
++      qc07f_owned_runtime_span_end_borrow_v1(config->context,hub,capture_admitted,&gate);
++      qc07f_owned_runtime_cleanup_v1(config->context,server_clock.failed,1);
+     config->source_guard_bind(config->context,NULL,NULL);
+    int listener_close_result=owned_listener_close_once(&listener,outcome);
+    fprintf(stderr,"HOST_ONLY SUMMARY opened=%llu closed=%llu auth_denied=%llu verified=%llu sdp=%llu setup=%llu play=%llu rtp_calls=%llu rtp_bytes=%llu lease_releases=%llu partial_discard=%llu begin_calls=%llu next_calls=%llu frame_ends=%llu hub_publish_calls=%llu boundary_denied=%llu\n",
+@@ -746,14 +807,14 @@
+    return result; /* actual stable backend left for explicit owner finish */
+ }
+ 
+-static int serve_bound_runtime(struct qc07f_owned_runtime_v4 *r,
+-   const struct camera_rtsp_options *options,
+-  int *listener_fd,struct camera_rtsp_owned_listener_outcome_v1 *outcome)
++static int serve_bound_runtime(struct candidate_prestarted *owner,
++  const struct camera_rtsp_options *options,const struct camera_rtsp_producer *producer,
++ struct camera_span_hub_v1 *hub,const struct camera_rtsp_span_retention_v1 *sink,
++ int *listener_fd,struct camera_rtsp_owned_listener_outcome_v1 *outcome)
+ {
+  /* FIRST: never clobber active caller state/outcome, even for nested NULL args. */
+-  if(owned_entry_active)return CAMERA_BUSY;
+-  struct candidate_prestarted *owner=r->owner;
+-   if(!owner||!listener_fd||!outcome||!r->span_hub||owner->self!=owner||!owner->config)return CAMERA_INVALID;
++ if(owned_entry_active)return CAMERA_BUSY;
++  if(!owner||!listener_fd||!outcome||!hub||!sink||owner->self!=owner||!owner->config)return CAMERA_INVALID;
+  if(owner->phase!=CANDIDATE_PS_READY)return CAMERA_NOT_READY;
+  owned_entry_active=1;
+  owner->phase=CANDIDATE_PS_SERVING; /* consumes even an entry/option refusal */
+@@ -765,7 +826,7 @@
+     rv_ready_profile(b->child)==owner->config->image.profile&&is_rv_running(b->child)){
+   unsigned occupied=0;
+   for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)occupied|=b->peers[i]!=NULL;
+-    if(!occupied)result=serve_prestarted_body(r,options,listener_fd,outcome);
++   if(!occupied)result=serve_prestarted_body(owner,options,producer,hub,sink,listener_fd,outcome);
+  }
+  unsigned unresolved=b->pending||b->pending_peer||b->failed||b->revoked||owner->source_hold;
+  for(unsigned i=0;i<CAMERA_HUB_CONSUMERS;i++)unresolved|=b->peers[i]!=NULL;
+@@ -777,23 +838,24 @@
+   return final;
+ }
+ 
+-int qc07f_owned_runtime_writer_serve_v5(struct qc07f_owned_runtime_v4 *r,
++int qc07f_owned_runtime_span_serve_v1(struct qc07f_owned_runtime_v1 *r,
+  const struct camera_rtsp_options *options,int *listener_fd,
+  struct camera_rtsp_owned_listener_outcome_v1 *outcome)
+ {
+  /* Preserve BUSY-first/no-outcome-touch. Trusted caller prohibits reentry. */
+  if(owned_entry_active)return CAMERA_BUSY;
+-  int result=qc07f_owned_runtime_writer_entry_v5(r);
++ int result=qc07f_owned_runtime_span_entry_v1(r);
+  if(result!=CAMERA_OK){
+-   qc07f_owned_runtime_cleanup_v4(r,0,1);
++  qc07f_owned_runtime_cleanup_v1(r,0,1);
+   return result;
+  }
+  /* Only THIS runtime's stable actual source/owner/paid hub/typed native sink. */
+-  result=serve_bound_runtime(r,options,listener_fd,outcome);
++ result=serve_bound_runtime(r->owner,options,&r->source,r->span_hub,&r->span_sink,
++                           listener_fd,outcome);
+  /* Includes ordinary pre-move option/backend refusal. Live borrowed/native
+   * custody cannot unwind into an owner's ordinary destructor/finish path.
+   * After acknowledged normal borrow end this checks native + scalar terminal
+   * history without ever following a retired hub/ledger owner pointer. */
+-  qc07f_owned_runtime_cleanup_v4(r,server_clock.failed,1);
++ qc07f_owned_runtime_cleanup_v1(r,server_clock.failed,1);
+  return result;
+ }

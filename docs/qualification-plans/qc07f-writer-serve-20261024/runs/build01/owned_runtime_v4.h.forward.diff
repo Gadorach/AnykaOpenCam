@@ -1,0 +1,54 @@
+--- /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-writer-runtime-v2/owned_runtime_v4.h
++++ /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-writer-serve-candidate/owned_runtime_v4.h
+@@ -9,7 +9,10 @@
+ #include "../qc07f-owned-runtime/native/owned-provider.h"
+ #include "../qc07f-owned-runtime/native/provider-return.h"
+ #include "../../qualification/qc07f-encoder-output-spans/encoder-output-spans.h"
+-#define QC07F_OWNED_RUNTIME_SOURCE_API 4U
++#include "rtsp_span_server_v1.h"
++#define QC07F_OWNED_RUNTIME_SOURCE_API 5U
++/* EXCLUSIVE SOURCE_API5 replacement/new allocation layout. Retained v4 tags and
++ * setup exports do NOT retain ABI. Rebuild ALL consumers, never link old units. */
+ 
+ /* REAL scalar output, no payload pointers and no camera_packet surrogate. */
+ struct qc07f_writer_loan_v4 {
+@@ -29,7 +32,7 @@
+ /* Allocation layout ONLY, private after prepare. Static zero storage at final
+  * address. Serialized trusted C; no edits/copies/aliases/reentry/signals/threads/
+  * later fork/FD-table mutation. See CONTRACT.md. This is NOT an old frontend ABI.
+- * Source, config, actual child/native owner and ALL backing survive HOLD forever
++ * Source, config, actual child/native owner and ALL currently borrowed backing survive HOLD
+  * until independently admitted recovery; no destructor or reset API. */
+ struct qc07f_owned_runtime_v4 {
+  const struct qc07f_owned_runtime_v4 *self;
+@@ -52,7 +55,15 @@
+  struct camera_span_hub_result_v3 result;
+  struct qc07f_writer_loan_v4 loan;
+  struct camera_rtsp_frame_handle frame;
+- uint64_t operation_begin_ns;
++  uint64_t operation_begin_ns;
++  /* Scalar completed history only: no source payload or writable hub aliases. */
++  uint64_t completed_frame_id,completed_common_generation,completed_operation_begin_ns;
++  struct qc07f_writer_loan_v4 completed_loan;
++  unsigned span_relinquished;
++  uintptr_t span_owner_retired;
++  size_t span_terminal_offset,span_terminal_bytes;
++  uint64_t span_terminal_consumer_issuance;
++  struct camera_rtsp_span_retention_v1 span_sink;
+ };
+ int qc07f_owned_runtime_prepare_v4(struct qc07f_owned_runtime_v4 *,
+  struct candidate_config *,struct candidate_prestarted *,void *);
+@@ -80,6 +91,11 @@
+ int nh_native_release(void *,const struct camera_packet *);
+ int nh_native_retire_held(void *,const struct camera_packet *);
+ int nh_native_retire(void *);
+-/* NO serve/main or borrow-end export. Future typed frontend must supply its REAL
+- * source/common/client/hub drain tail before the persistent CPU borrow may end. */
++/* Internal ONLY actual typed-server composition. Not general retirement APIs.
++ * Every failed check with live custody retains; no caller-selected provider. */
++int qc07f_owned_runtime_writer_entry_v5(struct qc07f_owned_runtime_v4 *);
++int qc07f_owned_runtime_writer_publication_v5(struct qc07f_owned_runtime_v4 *,
++ struct camera_rtsp_frame_handle,const struct qc07f_writer_loan_v4 *);
++void qc07f_owned_runtime_writer_end_borrow_v5(struct qc07f_owned_runtime_v4 *,
++ struct camera_span_hub_v1 *,int (*)(void *),void *);
+ #endif

@@ -176,8 +176,17 @@ then FIRST unchanged recipe build01:14 HOST/ARM compiles/2 rooted REL links/
 44 commands PASS, NOT RUN. Parent checked30 old+191 new pins/all192 delivery members/
 31 prior files,283 frozen/11 roots,723 inputs/272 new+320 reused dependencies/
 16 tools/138 artifacts/44 logs/46 archive bodies/32 extractions and exact deltas.
-See qc07f-writer-runtime-v2 PARENT_DISPOSITION; no author/reviewer active, v1 NOT
-ADOPTED. No C1 prevention claim,
+See qc07f-writer-runtime-v2 PARENT_DISPOSITION; committed locally `6dc3807`, no
+author/reviewer active there, v1 NOT ADOPTED. qc07f-writer-serve-candidate now has
+narrow independent SOURCE/API/order/ownership/lifetime sufficiency: typed sender
+observes post-runtime-END/commit publication, real native/client/common/hub drain
+gates borrow-end and pointer-free terminal history. R1 exact; no copy/recommit/fake
+packet/ready receipt.16 HOST/ARM compiles/2 rooted REL links/46 commands PASS,
+NOT RUN. Parent checked22 delivery/114 frozen/eight roots,543 inputs/322 new+320
+reused dependencies/16 tools/146 artifacts/46 logs/46 archive bodies/32 extractions/
+eight exact diffs/17 unchanged regions. See qc07f-writer-serve PARENT_DISPOSITION,
+no author/reviewer active. Old frontend excluded, real bootstrap new-layout
+adoption still missing. No invocation/hardware phase or C1 prevention claim,
 new clock framework or old frontend adoption,
 function/ioctl execution or hardware phase; typed frontend remains separate.
 Current userspace still uses the old

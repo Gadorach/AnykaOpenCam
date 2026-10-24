@@ -66,7 +66,7 @@ dependency records/84 artifacts/40 logs/five tools. Native hardening/real creden
 NOT RUN. See rtsp-provisioner-process PARENT_DISPOSITION; no active author/reviewer
 in that lane; committed locally `5269979`. Its original33-input pin set retains
 the pre-closeout index:32 remain unchanged plus known parent index/status
-updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE15.json`,
+updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE16.json`,
 not rebased. Actual authorized
 external ingress, secret-free launch/FD-env-caps
 hygiene, durable storage/rotation, linked-file retirement/main/external recovery/
@@ -233,8 +233,17 @@ unchanged recipe build01:14 HOST/ARM compiles/2 rooted REL links/44 commands PAS
 NOT RUN. Parent checked30 old+191 new delivery pins/all192 members/31 prior files,
 283 frozen files/11 roots,723 inputs/272 new+320 reused dependencies/16 tools/
 138 artifacts/44 logs,46 archive bodies/32 extractions and exact deltas. See v2
-PARENT_DISPOSITION; no author/reviewer active, v1 remains NOT ADOPTED.
-Old frontend remains excluded until a separate typed derivative; no invocation,
+PARENT_DISPOSITION; committed locally `6dc3807`, no author/reviewer active in that
+lane, v1 remains NOT ADOPTED. qc07f-writer-serve-candidate now has narrow independent
+SOURCE/API/order/ownership/lifetime sufficiency: typed authenticated sender observes
+publication only AFTER runtime exact END/commit, real native/client/common/hub
+drain gates borrow-end, terminal scalar history is pointer-free. R1 remains exact,
+no copy/recommit/fake packet/ready receipt.16 HOST/ARM compiles/2 rooted REL links/
+46 commands PASS, zero candidate calls. Parent checked22 delivery/114 frozen pins/
+eight roots,543 inputs/322 new+320 reused dependencies/16 tools/146 artifacts/
+46 logs/46 archive bodies/32 extractions/eight exact diffs/17 unchanged regions.
+See qc07f-writer-serve PARENT_DISPOSITION; no author/reviewer active. Old frontend
+remains excluded; real bootstrap has not adopted this new layout. No invocation,
 native acceptance or hardware phase. Complete new-layout consumers need integration.
 21 encoder public delivery pins, no function calls. No ioctl,
 test/function call, new framework or hardware phase. Remaining1MiB output/

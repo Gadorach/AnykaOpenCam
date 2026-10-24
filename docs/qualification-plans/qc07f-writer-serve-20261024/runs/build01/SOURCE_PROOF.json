@@ -1,0 +1,864 @@
+{
+  "scope": "TEXT_ONLY_NOT_EXECUTION",
+  "unchanged_regions": {
+    "owned_runtime.c:static void checked_source(": {
+      "bytes": 1496,
+      "sha256": "ffd7d14d4637cd5a696e0192df2f4962c91004d4eb6a8e2d65305a2956b209ff"
+    },
+    "owned_runtime.c:static void build_request(": {
+      "bytes": 1538,
+      "sha256": "7e58559aede161a254f3c5a5d8643cdb7e639509462257c718b4a955b7ef700a"
+    },
+    "owned_runtime.c:static void parse_result(": {
+      "bytes": 2263,
+      "sha256": "9ee0772e8cd87d70febb7bc0cefb0de097ed59ae4da17da3e27c544a89be0ff5"
+    },
+    "owned_runtime.c:static int pipeline_exact(": {
+      "bytes": 2040,
+      "sha256": "970e8cef2187a429cc42817a2daa8679f2e7479a708fdfffe9b7f7243ee0695f"
+    },
+    "owned_runtime.c:static int frame_end(": {
+      "bytes": 1553,
+      "sha256": "e55504ed422fc28821a3497614173285053ed8c77b6ea7febe64280ea72b6c6f"
+    },
+    "owned_runtime.c:static int idle_source(": {
+      "bytes": 589,
+      "sha256": "396e893a7626d7922f117ceef2f53440d3910c999191708fbbdf8e2507fe5d27"
+    },
+    "owned_runtime.c:static int frame_retire(": {
+      "bytes": 420,
+      "sha256": "4e87cd8dfa8a7fc45146f85bbb2b2c139804c473490f93345c308db5e946d4b8"
+    },
+    "rtsp_span_server.c:static int pause_client(": {
+      "bytes": 1324,
+      "sha256": "c08a28cf61813650dfbf6fc4cb65a901772446a4e478c6fcee736fb038292a2c"
+    },
+    "rtsp_span_server.c:static void finish_au(": {
+      "bytes": 2525,
+      "sha256": "a99b62a17e5233a72ed8c0680b495238e82a103dd4c073b75995e9973b0dba26"
+    },
+    "rtsp_span_server.c:static int capture_admitted(": {
+      "bytes": 703,
+      "sha256": "74626038f6351dbf1631302996b29d715aacae86988aa84798814ed19bbbdb3c"
+    },
+    "rtsp_span_server.c:static int write_counted(": {
+      "bytes": 1020,
+      "sha256": "38804067ac76b785e302c11de828fcaf38bc7050ad1cf7a0f15e14a51b89c0fa"
+    },
+    "rtsp_span_server.c:static int reply(": {
+      "bytes": 574,
+      "sha256": "dc5acdbf85cf31b86093db8c277781d1ed559e7ea40375b6df4b0da818b5f4b9"
+    },
+    "rtsp_span_server.c:static int challenge_reply(": {
+      "bytes": 378,
+      "sha256": "81416e6105f40e00a8109156d40ca8d466fd6f3811b0bf2ea1e442f1f6aa9aca"
+    },
+    "rtsp_span_server.c:static void failure_client(": {
+      "bytes": 515,
+      "sha256": "dcba82484a2ae2707e55033aa930ebf7b304defd56faa9faf4aefafae0d96dc1"
+    },
+    "rtsp_span_server.c:static int process_input(": {
+      "bytes": 5569,
+      "sha256": "bb75fc949b42ce5362a7db256657cf79c10d17b9aa170164360264ceeeef3fa4"
+    },
+    "rtsp_span_server.c:static int control(": {
+      "bytes": 1010,
+      "sha256": "ad46d0a125c949e18a0fe432b419b2cfccb8a658b1a479cd19685cd8c1c4e694"
+    },
+    "rtsp_span_server.c:static int pending_control(": {
+      "bytes": 678,
+      "sha256": "e6fa0ba17b9f78995a50969fad49180e33b0321b15637a548c1060adad177bbe"
+    }
+  },
+  "changed_regions": {
+    "owned_runtime.c": [
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          1,
+          2
+        ],
+        "candidate_lines_0based": [
+          1,
+          2
+        ]
+      },
+      {
+        "tag": "insert",
+        "baseline_lines_0based": [
+          6,
+          6
+        ],
+        "candidate_lines_0based": [
+          6,
+          9
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          42,
+          43
+        ],
+        "candidate_lines_0based": [
+          45,
+          46
+        ]
+      },
+      {
+        "tag": "insert",
+        "baseline_lines_0based": [
+          44,
+          44
+        ],
+        "candidate_lines_0based": [
+          47,
+          51
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          47,
+          48
+        ],
+        "candidate_lines_0based": [
+          54,
+          55
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          50,
+          51
+        ],
+        "candidate_lines_0based": [
+          57,
+          58
+        ]
+      },
+      {
+        "tag": "insert",
+        "baseline_lines_0based": [
+          68,
+          68
+        ],
+        "candidate_lines_0based": [
+          75,
+          115
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          69,
+          71
+        ],
+        "candidate_lines_0based": [
+          116,
+          122
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          90,
+          91
+        ],
+        "candidate_lines_0based": [
+          141,
+          143
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          152,
+          153
+        ],
+        "candidate_lines_0based": [
+          204,
+          205
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          156,
+          159
+        ],
+        "candidate_lines_0based": [
+          208,
+          212
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          172,
+          173
+        ],
+        "candidate_lines_0based": [
+          225,
+          226
+        ]
+      },
+      {
+        "tag": "insert",
+        "baseline_lines_0based": [
+          175,
+          175
+        ],
+        "candidate_lines_0based": [
+          228,
+          229
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          179,
+          180
+        ],
+        "candidate_lines_0based": [
+          233,
+          236
+        ]
+      },
+      {
+        "tag": "insert",
+        "baseline_lines_0based": [
+          196,
+          196
+        ],
+        "candidate_lines_0based": [
+          252,
+          276
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          202,
+          203
+        ],
+        "candidate_lines_0based": [
+          282,
+          283
+        ]
+      },
+      {
+        "tag": "insert",
+        "baseline_lines_0based": [
+          221,
+          221
+        ],
+        "candidate_lines_0based": [
+          301,
+          308
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          331,
+          332
+        ],
+        "candidate_lines_0based": [
+          418,
+          419
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          397,
+          399
+        ],
+        "candidate_lines_0based": [
+          484,
+          487
+        ]
+      },
+      {
+        "tag": "insert",
+        "baseline_lines_0based": [
+          412,
+          412
+        ],
+        "candidate_lines_0based": [
+          500,
+          504
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          468,
+          469
+        ],
+        "candidate_lines_0based": [
+          560,
+          562
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          480,
+          481
+        ],
+        "candidate_lines_0based": [
+          573,
+          575
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          499,
+          500
+        ],
+        "candidate_lines_0based": [
+          593,
+          594
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          518,
+          519
+        ],
+        "candidate_lines_0based": [
+          612,
+          613
+        ]
+      },
+      {
+        "tag": "insert",
+        "baseline_lines_0based": [
+          520,
+          520
+        ],
+        "candidate_lines_0based": [
+          614,
+          699
+        ]
+      }
+    ],
+    "owned_runtime_v4.h": [
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          11,
+          12
+        ],
+        "candidate_lines_0based": [
+          11,
+          15
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          31,
+          32
+        ],
+        "candidate_lines_0based": [
+          34,
+          35
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          54,
+          55
+        ],
+        "candidate_lines_0based": [
+          57,
+          66
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          82,
+          84
+        ],
+        "candidate_lines_0based": [
+          93,
+          100
+        ]
+      }
+    ],
+    "rtsp_span_server.c": [
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          16,
+          17
+        ],
+        "candidate_lines_0based": [
+          16,
+          17
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          32,
+          35
+        ],
+        "candidate_lines_0based": [
+          32,
+          38
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          58,
+          59
+        ],
+        "candidate_lines_0based": [
+          61,
+          62
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          74,
+          75
+        ],
+        "candidate_lines_0based": [
+          77,
+          80
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          109,
+          110
+        ],
+        "candidate_lines_0based": [
+          114,
+          121
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          215,
+          216
+        ],
+        "candidate_lines_0based": [
+          226,
+          227
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          407,
+          408
+        ],
+        "candidate_lines_0based": [
+          418,
+          419
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          415,
+          417
+        ],
+        "candidate_lines_0based": [
+          426,
+          430
+        ]
+      },
+      {
+        "tag": "delete",
+        "baseline_lines_0based": [
+          494,
+          500
+        ],
+        "candidate_lines_0based": [
+          507,
+          507
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          506,
+          507
+        ],
+        "candidate_lines_0based": [
+          513,
+          514
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          508,
+          509
+        ],
+        "candidate_lines_0based": [
+          515,
+          517
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          512,
+          522
+        ],
+        "candidate_lines_0based": [
+          520,
+          524
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          523,
+          529
+        ],
+        "candidate_lines_0based": [
+          525,
+          541
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          531,
+          534
+        ],
+        "candidate_lines_0based": [
+          543,
+          545
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          535,
+          553
+        ],
+        "candidate_lines_0based": [
+          546,
+          550
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          558,
+          559
+        ],
+        "candidate_lines_0based": [
+          555,
+          556
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          568,
+          569
+        ],
+        "candidate_lines_0based": [
+          565,
+          566
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          590,
+          591
+        ],
+        "candidate_lines_0based": [
+          587,
+          588
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          637,
+          644
+        ],
+        "candidate_lines_0based": [
+          634,
+          636
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          647,
+          672
+        ],
+        "candidate_lines_0based": [
+          639,
+          652
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          673,
+          680
+        ],
+        "candidate_lines_0based": [
+          653,
+          659
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          682,
+          727
+        ],
+        "candidate_lines_0based": [
+          661,
+          662
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          728,
+          739
+        ],
+        "candidate_lines_0based": [
+          663,
+          677
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          740,
+          741
+        ],
+        "candidate_lines_0based": [
+          678,
+          679
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          749,
+          750
+        ],
+        "candidate_lines_0based": [
+          687,
+          688
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          767,
+          768
+        ],
+        "candidate_lines_0based": [
+          705,
+          706
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          785,
+          787
+        ],
+        "candidate_lines_0based": [
+          723,
+          726
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          809,
+          813
+        ],
+        "candidate_lines_0based": [
+          748,
+          751
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          815,
+          817
+        ],
+        "candidate_lines_0based": [
+          753,
+          756
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          828,
+          829
+        ],
+        "candidate_lines_0based": [
+          767,
+          768
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          840,
+          841
+        ],
+        "candidate_lines_0based": [
+          779,
+          780
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          846,
+          847
+        ],
+        "candidate_lines_0based": [
+          785,
+          786
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          848,
+          849
+        ],
+        "candidate_lines_0based": [
+          787,
+          788
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          852,
+          854
+        ],
+        "candidate_lines_0based": [
+          791,
+          792
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          858,
+          859
+        ],
+        "candidate_lines_0based": [
+          796,
+          797
+        ]
+      }
+    ],
+    "rtsp_span_server_v1.h": [
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          1,
+          3
+        ],
+        "candidate_lines_0based": [
+          1,
+          4
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          4,
+          5
+        ],
+        "candidate_lines_0based": [
+          5,
+          6
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          6,
+          16
+        ],
+        "candidate_lines_0based": [
+          7,
+          14
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          17,
+          29
+        ],
+        "candidate_lines_0based": [
+          15,
+          23
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          30,
+          40
+        ],
+        "candidate_lines_0based": [
+          24,
+          30
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          41,
+          49
+        ],
+        "candidate_lines_0based": [
+          31,
+          44
+        ]
+      },
+      {
+        "tag": "replace",
+        "baseline_lines_0based": [
+          56,
+          63
+        ],
+        "candidate_lines_0based": [
+          51,
+          55
+        ]
+      }
+    ]
+  }
+}

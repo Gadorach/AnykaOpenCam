@@ -1,0 +1,109 @@
+--- /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-span-serve-candidate/rtsp_span_server_v1.h
++++ /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-writer-serve-candidate/rtsp_span_server_v1.h
+@@ -1,52 +1,47 @@
+ /* SPDX-License-Identifier: GPL-2.0-only */
+-#ifndef CAMERA_RTSP_SPAN_SERVER_V1_H
+-#define CAMERA_RTSP_SPAN_SERVER_V1_H
++#ifndef QC07F_WRITER_SERVER_V5_H
++#define QC07F_WRITER_SERVER_V5_H
++#include "../qc07f-producer-memory/handoff.h"
+ #include "../qc07f-owned-runtime/server/prestarted_owned_listener_v1.h"
+-#include "../span-hub-v2/span_hub.h"
++#include "../span-hub-producer-candidate/span_hub.h"
+ 
+-/* SOURCE ONLY, new exclusive composition entry/layout, not native admission.
+- * Read docs/qualification-plans/qc07f-span-serve-20261024/CONTRACT.md.
+- * V3 retention fixes preserved; never link old sender/runtime/hubs too.
+- * Sticky/observed clock or ownership faults retain before cleanup; demand stays
+- * attached through one detach ACK + valid post-clock, otherwise nonreturn HOLD.
+- * Direct rollback and producer-release fences preserve live source ownership on
+- * observed uncertainty; they do NOT prove whole-interval clock prevention.
+- * Compile callers with this entry and ONLY the new server C + v2 hub C/header;
+- * never old server/hubs/combined RELs. Original backend/start/finish/listener
+- * types and implementation remain unchanged. No serve-time fork/init/destroy.
++/* EXCLUSIVE SOURCE_API5 replacement, not a binary ABI or execution admission.
++ * Rebuild ALL consumers; never old runtime/server/memory/hub/combined RELs.
++ * Only actual prepared/bound runtime/owner/config/source/lifecycle/paid hub3 and
++ * real persistent nonreturning sink. No camera_packet compatibility or alternate
++ * caller-selected source. Actual release/exact runtime END0/commit precede all
++ * consumer acquisitions/packetization/sends; no copy/recommit/fake error END.
++ * Read docs/qualification-plans/qc07f-writer-serve-20261024/CONTRACT.md.
+  *
+- * Trusted serialized, stable, disjoint storage; no mutable aliases, reentry,
+- * signals, concurrency, FD duplication/mutation or fork. Caller initializes the
+- * actual persistent hub ONCE after LAST verifier fork and required ownership
+- * ordering, and independently admits actual chunk backing before entry. ACTIVE
+- * pristine/canonical shape checks do NOT prove that ordering, allocation origin,
+- * prefault/residency/ledger or memory fit. This entry connects the actual private
+- * paid chunk runtime, NOT the old contiguous native ledger. Native use remains
+- * unadmitted; do not pass chunks to old void* hub.
+- * Caller retains hub/chunks + source/prestarted/config/context/external owner
+- * through ALL refusal/return/HOLD paths. No server init/dispose/free/reinit.
+- * Legacy options.hub_storage MUST be NULL; other fixed options unchanged.
+- * SPS/PPS combined Annex-B parameter storage is stable and bounded to 256 bytes.
++ * True-fresh final-address private disjoint persistent objects/backing; serialized
++ * calls, immutable callbacks/config, no aliases/edits/copies/reentry/signals/
++ * threads/concurrency/later fork or FD mutation. One real child start completes
++ * BEFORE native/provider/watchdog/backing/listener setup. This entry never forks,
++ * initializes/destroys a backend or supplies provisioning/backing/recovery/main.
++ * Real crypto/auth/random policy is unchanged. <=256B stable SPS/PPS, original
++ * options/loopback/listener custody and fixed2s/10s/128-frame limits remain.
++ * Shape/tokens/metadata are not origin/residency/physical-safety/strict-C1 proof.
+  *
+- * Sink/context are the persistent real native sink installed by runtime prepare.
+- * Sink retains the entire source/media process (including current stack/cursors,
+- * hub, demands, native runtime and external media owner), not merely pointers.
+- * It must not return/unwind/exit/free/close/END/retry or mutate these objects.
+- * No synthetic/noop sink is supplied. A local nonreturning fallback
+- * invokes original runtime cleanup and repeatedly SIGSTOPs if sink returns.
+- * This retains process-local storage, NOT survival, all-domain recovery or an
+- * implementation of external ownership. Original retain_verifier stays mandatory.
+- * demand is an actual live record for consumer<4; NULL/index4 denotes whole
+- * server/source uncertainty, retaining ALL demands/cursors, not no ownership.
++ * BUSY first/no-touch. Invalid required pointers/owner/phase do not touch outcome;
++ * valid READY required records consume one-use owner attempt before options or
++ * backend refusal. Before move caller owns listener; after move one actual
++ * clear-before-close on known cleanup. Errors never clean SERVED. After custody,
++ * ordinary pre-entry/options/backend refusal still requires actual final runtime
++ * retention, not destructor/unwind. Invalid identity is not destruction authority.
+  *
+- * Original one-use phase/listener contract applies: BUSY first, invalid required
+- * pointers/owner/phase do not touch outcome; READY valid required pointers consume
+- * attempt before options/pristine/backend refusals. Before move listener remains
+- * caller-owned; after move clear-before-close once only on known source cleanup.
+- * Any uncertain ownership is nonreturning before stack/FD cleanup. Clean return
+- * requires actual native END/ACK/closes/disable and real producer/client/hub
+- * STOP/drain before live pointer retirement; scalar history stays terminal.
+- * No disposal; verifier finish and lender/watchdog lifetime stay separate.
++ * Uncertainty retains CURRENT actual native/writer/hub/demands/cursors/stack and
++ * entire media process BEFORE cleanup. Sink is installed by prepare, never a noop;
++ * it must not return/unwind/exit/free/close/retry/END. Fallback actual cleanup plus
++ * repeated SIGSTOP remains if it returns. demand=NULL/index4 means whole process,
++ * not no owner. No old-hub cast/NULL surrogate enters retain_uncertain.
++ *
++ * V3 retain-before-cleanup and detach0 plus valid post-clock fences remain. Safe
++ * post-publication auth/socket/deadline failures release exact consumer tokens
++ * and close partial connections. Known normal return additionally requires actual
++ * native END/query/ACK/closes/disable, all clients/common/hub STOP/drain and exact
++ * still-bound gate. Only that tail retires live hub pointers, preserving terminal
++ * scalar history. No hub free/watchdog giveback/verifier finish/material retirement
++ * or survival/recovery claim. Caller storage survives ALL uncertain outcomes.
+  */
+ #define CAMERA_RTSP_SPAN_SERVER_SOURCE_INDEX_V1 CAMERA_SPAN_HUB_V1_CONSUMERS
+ struct camera_rtsp_span_retention_v1 {
+@@ -54,11 +49,8 @@
+  void (*retain)(void *,const struct camera_span_hub_v1 *,
+                 const struct camera_producer_demand *,unsigned);
+ };
+-struct qc07f_owned_runtime_v1;
+-/* SAME private runtime owner/source/config/paid hub and sink, never caller-selected
+- * alternative callbacks. Early serve refusal still performs actual final runtime
+- * retention when custody exists. No serve-time start/finish/fork/init/destroy. */
+-int qc07f_owned_runtime_span_serve_v1(struct qc07f_owned_runtime_v1 *,
+- const struct camera_rtsp_options *,int *listener_fd,
+- struct camera_rtsp_owned_listener_outcome_v1 *outcome);
++struct qc07f_owned_runtime_v4;
++int qc07f_owned_runtime_writer_serve_v5(struct qc07f_owned_runtime_v4 *,
++ const struct camera_rtsp_options *,int *,
++ struct camera_rtsp_owned_listener_outcome_v1 *);
+ #endif

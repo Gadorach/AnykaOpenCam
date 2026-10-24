@@ -1,0 +1,352 @@
+--- /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-writer-runtime-v2/owned_runtime.c
++++ /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-writer-serve-candidate/owned_runtime.c
+@@ -1,9 +1,12 @@
+ /* SPDX-License-Identifier: GPL-2.0-only
+- * ONE actual singleton TU, exclusive SOURCE_API4 derivative. No frontend/main.
++ * ONE actual singleton TU, exclusive SOURCE_API5 derivative. No main.
+  */
+ #define _POSIX_C_SOURCE 200809L
+ #define _DEFAULT_SOURCE
+ #include "owned_runtime_v4.h"
++#include "../qc07f-owned-runtime/server/adapter_state.h"
++_Static_assert(QC07F_OWNED_RUNTIME_SOURCE_API==5U&&CAMERA_SPAN_HUB_LAYOUT_VERSION==3U,
++ "exclusive complete writer/sender/hub definitions");
+ _Static_assert(sizeof(struct qc07f_owned_runtime_v4)<131072U,"bounded private metadata");
+ static struct qc07f_owned_runtime_v4 *runtime;
+ static int frame_zero(struct camera_rtsp_frame_handle f)
+@@ -40,15 +43,19 @@
+ {
+  if(a->owner||a->count||a->credit_kib)return 0;
+  for(unsigned i=0;i<8;i++)if(a->begin[i]||a->end[i])return 0;
+- return 1;
+-}
++  return 1;
++}
++static int added_history_empty(const struct qc07f_owned_runtime_v4 *r)
++{return !r->completed_frame_id&&!r->completed_common_generation&&!r->completed_operation_begin_ns&&
++ loan_zero(&r->completed_loan)&&!r->span_relinquished&&!r->span_owner_retired&&
++ !r->span_terminal_offset&&!r->span_terminal_bytes&&!r->span_terminal_consumer_issuance;}
+ static int runtime_span_history_empty(void)
+ {return !runtime||(!runtime->span_hub&&!runtime->span_setup_attempt&&!runtime->span_native_retire&&
+  !runtime->pipeline&&!runtime->attempts&&!runtime->last_token&&!runtime->last_generation&&
+- !runtime->error&&!runtime->retired&&!runtime->post_first&&live_pipeline_empty(runtime));}
++ !runtime->error&&!runtime->retired&&!runtime->post_first&&live_pipeline_empty(runtime)&&added_history_empty(runtime));}
+ static int writer_native_busy(void)
+ {return runtime&&(runtime->pipeline!=QCW_IDLE||runtime->error||!live_pipeline_empty(runtime));}
+-#include "native_adapter.inc"
++#include "../qc07f-writer-runtime-v2/native_adapter.inc"
+ 
+ static int valid(const struct qc07f_owned_runtime_v4 *r)
+ {return r&&r==runtime&&r->self==r&&r->config&&r->config->context==r&&r->config->graph==r->graph;}
+@@ -66,9 +73,53 @@
+ static int native_fault(void)
+ {return native_initialized&&(stop||native.retirement_uncertain||source_clock.failed||native.watchdog.state==QW_HOLD||
+  native.providers.phase==QP_HOLD||memory_state.span_attempt==NH_MEM_SPAN_HOLD||memory_state.span_failure);}
++static int common_drained(const struct qc07f_owned_runtime_v4 *r)
++{
++ if(!r->producer.initialized||r->bridge.producer!=&r->producer||r->bridge.context!=r||r->bridge.frame_open||r->bridge.clock_failed||
++    r->producer.state!=CAMERA_PRODUCER_STOPPED||r->producer.demand_count||r->producer.active_present||
++    r->producer.needs_stop||r->producer.queue_count||r->producer.stop_pending||r->producer.keyframe_pending)return 0;
++ for(unsigned i=0;i<CAMERA_PRODUCER_CONSUMERS;i++)if(r->producer.consumers[i].attached)return 0;
++ return 1;
++}
++static int completed_native_exact(const struct qc07f_owned_runtime_v4 *r)
++{
++ const struct qc07f_writer_loan_v4 *p=&r->completed_loan;
++ return r->attempts&&r->attempts==r->last_token&&r->last_token==p->token&&r->last_generation==p->generation&&
++  r->completed_frame_id&&r->completed_frame_id<=r->bridge.frame_sequence&&
++  r->completed_common_generation==r->producer.generation&&r->completed_common_generation==r->bridge.frame.generation&&
++  r->bridge.frame.owner==&r->producer&&r->bridge.frame.namespace_context==&r->bridge&&
++  r->completed_operation_begin_ns!=UINT64_MAX&&p->monotonic_ns!=UINT64_MAX&&
++  p->written_bytes>p->prefix_bytes+1&&p->written_bytes<=1048576U&&
++  (p->prefix_bytes==0||p->prefix_bytes==3||p->prefix_bytes==4)&&p->keyframe<=1&&
++  p->key.source==native.receipt_key.source_instance&&p->key.file==native.receipt_key.file_instance&&
++  p->key.generation==native.receipt_key.generation&&p->key.sequence==native.capture_sequence&&p->key.sequence&&
++  p->key.nal_crc32_bzip2==native.produced_nal_crc32_bzip2&&
++  p->written_bytes==native.produced_timing.bytes&&p->keyframe==(uint32_t)native.produced_timing.keyframe&&
++  native.produced_timing.captured<=UINT64_MAX/1000000ULL&&p->monotonic_ns==native.produced_timing.captured*1000000ULL;
++}
++static int native_retired_actual(const struct qc07f_owned_runtime_v4 *r)
++{
++ return native_initialized&&!stop&&r->retired==1&&r->span_native_retire==2&&!r->error&&!native_fault()&&
++  r->pipeline==QCW_IDLE&&live_pipeline_empty(r)&&!r->bridge.frame_open&&!r->bridge.clock_failed&&completed_native_exact(r)&&
++  r->completed_frame_id==r->bridge.frame.id&&
++  native.providers.phase==QP_CLOSED&&native.providers.sensor_staged==-1&&
++  native.providers.frame_staged.fd==-1&&native.providers.encoder_staged.fd==-1&&
++  native.continuous_sensor==-1&&native.continuous_frame==-1&&native.h264_stream_fd==-1&&
++  native.encoder_hold==-1&&native.legacy_control==-1&&!native.receipt_armed&&
++   !native.produced_storage&&!native.resident_storage&&!parked_after_stop&&!native.raw_valid&&!native.close_unknown&&
++  native.watchdog.state==QW_DISABLED&&native.watchdog.fd>=3&&native.watchdog.phase==QW_RETIRE&&
++  native.watchdog.device&&native.watchdog.session_deadline_ns&&
++  qc_receipt_same(&native.receipt_key,&native.receipt_evidence)&&
++  qc_receipt_retired(&native.receipt_evidence)&&native.receipt_evidence.reason==QC_STOP_END;
++}
++static int terminal_span_history(const struct qc07f_owned_runtime_v4 *r);
+ static int retention_needed(void)
+-{return span_history_present()||(native_initialized&&(native_owns()||native.raw_valid||native.h264_stream_frames||
+- memory_state.ledger.initialized||native.watchdog.session_deadline_ns));}
++{
++ if(runtime&&runtime->span_relinquished)
++  return !(native_retired_actual(runtime)&&common_drained(runtime)&&terminal_span_history(runtime));
++ return span_history_present()||(native_initialized&&(native_owns()||native.raw_valid||native.h264_stream_frames||
++  memory_state.ledger.initialized||native.watchdog.session_deadline_ns));
++}
+ static void latch(struct qc07f_owned_runtime_v4 *r,int error)
+ {if(error&&!r->error)r->error=camera_rtsp_common_result(error);}
+ static _Noreturn void retain(struct qc07f_owned_runtime_v4 *r,int error)
+@@ -88,7 +139,8 @@
+ }
+ void qc07f_owned_runtime_cleanup_v4(void *context,int clock_failed,unsigned final)
+ {
+- struct qc07f_owned_runtime_v4 *r=context;if(!valid(r))return;
++  struct qc07f_owned_runtime_v4 *r=context;if(!valid(r))return;
++  if(r->span_relinquished&&retention_needed())retain(r,CAMERA_IO_ERROR);
+  if(((native_fault()||r->error||r->pipeline==QCW_HOLD||clock_failed||r->bridge.clock_failed)&&native_owns())||
+     (final&&retention_needed()))retain(r,CAMERA_IO_ERROR);
+ }
+@@ -150,13 +202,14 @@
+  const struct camera_span_hub_v1 *h=r->span_hub;
+  if(h->layout_version!=3||h->writer_error||h->issued_writer_token!=h->writer_token||
+     h->generation!=r->last_generation||h->armed_writer_token>h->writer_token)return 0;
+- if(r->pipeline==QCW_IDLE){
++  if(r->pipeline==QCW_IDLE){
+   if(!live_pipeline_empty(r)||r->attempts!=r->last_token||h->writer_phase!=CAMERA_SPAN_WRITER_V3_IDLE||
+      h->writer_token!=r->last_token||h->writer_generation!=r->last_generation||
+      h->armed_writer_token!=r->last_token)return 0;
+-  if(!r->last_token)return !h->generation&&!h->data_offset&&!h->bytes&&!h->codec&&!h->keyframe&&!h->monotonic_ns;
+-  return h->bytes&&h->bytes<=1048576U&&h->data_offset<1048576U&&h->bytes<=1048576U-h->data_offset&&
+-   (h->data_offset==0||h->data_offset==3||h->data_offset==4)&&h->codec==CAMERA_H264&&h->keyframe<=1&&h->monotonic_ns!=UINT64_MAX;
++   if(!r->last_token)return added_history_empty(r)&&!h->generation&&!h->data_offset&&!h->bytes&&!h->codec&&!h->keyframe&&!h->monotonic_ns;
++   return completed_native_exact(r)&&h->data_offset==r->completed_loan.prefix_bytes&&
++    h->bytes==r->completed_loan.written_bytes-r->completed_loan.prefix_bytes&&
++    h->codec==CAMERA_H264&&h->keyframe==r->completed_loan.keyframe&&h->monotonic_ns==r->completed_loan.monotonic_ns;
+  }
+  if(r->pipeline<QCW_RESERVED||r->pipeline>QCW_ENDED||r->last_token==UINT64_MAX||r->last_generation==UINT64_MAX||
+     r->attempts!=r->last_token+1||r->reservation.owner!=h||r->reservation.token!=r->last_token+1||
+@@ -170,14 +223,17 @@
+  for(unsigned i=0;i<8;i++)if(r->writer.spans[i].data!=h->chunks[i]||r->writer.spans[i].capacity!=131072)return 0;
+  return 1;
+ }
+-enum paid_mode {PAID_ACTIVE,PAID_RETIRING};
++enum paid_mode {PAID_ACTIVE,PAID_RETIRING,PAID_FINAL};
+ static int paid_association(const struct qc07f_owned_runtime_v4 *r,enum paid_mode mode)
+ {
++  if(r->span_relinquished)return 0; /* BEFORE any former live owner/hub access */
+  const struct nh_memory_ledger *l=&memory_state.ledger;
+  const struct nh_memory_hub_ranges *a=&l->hub,*b=&memory_state.span_retained;
+  const struct camera_span_hub_v1 *h=r->span_hub;
+  if(r->span_setup_attempt!=1||!h||h->self!=h||
+-    (h->phase!=CAMERA_SPAN_HUB_V1_ACTIVE&&(mode!=PAID_RETIRING||h->phase!=CAMERA_SPAN_HUB_V1_STOPPED))||
++     (mode==PAID_FINAL?h->phase!=CAMERA_SPAN_HUB_V1_STOPPED:
++      (h->phase!=CAMERA_SPAN_HUB_V1_ACTIVE&&(mode!=PAID_RETIRING||h->phase!=CAMERA_SPAN_HUB_V1_STOPPED)))||
++     (mode==PAID_FINAL?r->span_native_retire!=2:r->span_native_retire!=0)||
+     h->allocation_calls!=8||h->allocated_bytes!=1048576||h->maximum_allocation!=131072||
+     memory_state.span_attempt!=NH_MEM_SPAN_PAID||memory_state.span_failure||!l->initialized||
+     l->paid[0]!=1||l->paid[1]!=1||l->paid[2]||l->raw_reuse||raw_reuse_requested||
+@@ -194,13 +250,37 @@
+   for(unsigned j=0;j<i;j++)if(overlap(begin,end,a->begin[j],a->end[j]))return 0;
+   uint64_t part=interior(begin,end);if(!part||part>UINT64_MAX-credit)return 0;credit+=part;
+  }
++  return credit==a->credit_kib&&credit<=UINT64_MAX-scalar&&l->cpu_paid_kib==scalar+credit;
++}
++/* Only numeric terminal ranges, never read/compare/reconstruct an old pointer. */
++static int terminal_span_history(const struct qc07f_owned_runtime_v4 *r)
++{
++ const struct nh_memory_ledger *l=&memory_state.ledger;
++ const struct nh_memory_hub_ranges *a=&l->hub,*b=&memory_state.span_retained;
++ if(r->span_relinquished!=1||r->span_setup_attempt!=1||r->span_native_retire!=2||!r->span_owner_retired||
++    r->span_hub||a->owner||b->owner||!live_pipeline_empty(r)||!completed_native_exact(r)||
++    r->span_terminal_offset!=r->completed_loan.prefix_bytes||
++    r->span_terminal_bytes!=r->completed_loan.written_bytes-r->completed_loan.prefix_bytes||
++    memory_state.span_attempt!=NH_MEM_SPAN_PAID||memory_state.span_failure||
++    !l->initialized||l->paid[0]!=1||l->paid[1]!=1||l->paid[2]||l->raw_reuse||raw_reuse_requested||
++    l->begin[1]||l->end[1]||l->begin[2]||l->end[2]||a->count!=8||b->count!=8||
++    a->credit_kib!=b->credit_kib||l->cpu_paid_kib>l->cpu_capacity_kib||
++    l->begin[0]!=(uintptr_t)raw||sizeof(raw)>UINTPTR_MAX-l->begin[0]||l->end[0]!=l->begin[0]+sizeof(raw))return 0;
++ uint64_t scalar=interior(l->begin[0],l->end[0]),credit=0;if(!scalar)return 0;
++ for(unsigned i=0;i<8;i++){
++  uintptr_t begin=a->begin[i],end=a->end[i];
++  if(!begin||131072U>UINTPTR_MAX-begin||end!=begin+131072U||b->begin[i]!=begin||b->end[i]!=end||
++     overlap(begin,end,l->begin[0],l->end[0]))return 0;
++  for(unsigned j=0;j<i;j++)if(overlap(begin,end,a->begin[j],a->end[j]))return 0;
++  uint64_t part=interior(begin,end);if(!part||part>UINT64_MAX-credit)return 0;credit+=part;
++ }
+  return credit==a->credit_kib&&credit<=UINT64_MAX-scalar&&l->cpu_paid_kib==scalar+credit;
+ }
+ static int ready(void *context,uint64_t connection,uint64_t now)
+ {
+  struct qc07f_owned_runtime_v4 *r=context;(void)connection;if(!valid(r))return CAMERA_INVALID;
+  qc07f_owned_runtime_cleanup_v4(r,now==UINT64_MAX,0);
+- if(r->retired||!r->bound||!native_initialized)return CAMERA_NOT_READY;
++  if(r->span_relinquished||r->retired||!r->bound||!native_initialized)return CAMERA_NOT_READY;
+  if(r->error)return r->error;
+  if(!paid_association(r,PAID_ACTIVE)){if(span_history_present())retain(r,CAMERA_IO_ERROR);return CAMERA_NOT_READY;}
+  if(stop||native_fault()||provider_terminal(&native)||!provider_shape(&native)||!sensor_baseline_requested||!storage_selected||
+@@ -219,6 +299,13 @@
+ {struct qc07f_owned_runtime_v4 *r=context;(void)h;(void)d;(void)i;if(valid(r))retain(r,CAMERA_IO_ERROR);}
+ static void retain_frame(void *context,struct camera_rtsp_frame_handle f,int result)
+ {struct qc07f_owned_runtime_v4 *r=context;(void)f;if(valid(r))retain(r,result);}
++static _Noreturn void retain_native_span(void *context,const struct camera_span_hub_v1 *hub,
++ const struct camera_producer_demand *demand,unsigned index)
++{
++ struct qc07f_owned_runtime_v4 *r=context;(void)hub;(void)demand;(void)index;
++ if(!valid(r))nh_native_quarantine();
++ retain(r,CAMERA_IO_ERROR); /* actual native/writer/process unconditionally */
++}
+ static uint64_t source_now(void *context)
+ {
+  struct qc07f_owned_runtime_v4 *r=context;if(!valid(r)||!r->bound||!native_initialized)return UINT64_MAX;
+@@ -329,7 +416,7 @@
+ {
+  struct qc07f_owned_runtime_v4 *r=context;
+  if(!valid(r)||!out||force>1)return CAMERA_INVALID;
+- if(r->retired||!r->bound||!native_initialized)return CAMERA_NOT_READY;
++  if(r->span_relinquished||r->retired||!r->bound||!native_initialized)return CAMERA_NOT_READY;
+  qc07f_owned_runtime_cleanup_v4(r,0,0);
+  if(writer_native_busy())retain(r,CAMERA_BUSY);
+  if(!current_frame(r,frame)||(r->bridge.keyframe.id&&!force))retain(r,CAMERA_STALE_LEASE);
+@@ -395,8 +482,9 @@
+  a->written_bytes==b->written_bytes&&a->prefix_bytes==b->prefix_bytes&&a->keyframe==b->keyframe;}
+ static int typed_release(void *context,struct camera_rtsp_frame_handle frame,const struct qc07f_writer_loan_v4 *loan)
+ {
+- struct qc07f_owned_runtime_v4 *r=context;if(!valid(r))return CAMERA_INVALID;
+- qc07f_owned_runtime_cleanup_v4(r,0,0);
++  struct qc07f_owned_runtime_v4 *r=context;if(!valid(r))return CAMERA_INVALID;
++  if(r->span_relinquished||r->retired)return CAMERA_NOT_READY;
++  qc07f_owned_runtime_cleanup_v4(r,0,0);
+  if(!loan||r->pipeline!=QCW_LOAN||r->release_attempt||!current_frame(r,frame)||
+     !frame_same(frame,r->frame)||!loan_same(loan,&r->loan))retain(r,CAMERA_STALE_LEASE);
+  /* Unlike old void release, this is the ACTUAL typed native CPU-loan boundary:
+@@ -410,6 +498,10 @@
+ }
+ static void retire_live_aliases(struct qc07f_owned_runtime_v4 *r)
+ {
++  /* New typed frontend observes ONLY these private completed scalar facts.
++   * This is after actual commit0; never expose/keep a writable alias as receipt. */
++  r->completed_frame_id=r->frame.id;r->completed_common_generation=r->frame.generation;
++  r->completed_operation_begin_ns=r->operation_begin_ns;r->completed_loan=r->loan;
+  /* No callback/fallible action after actual commit. Keep monotonic numeric
+   * histories but retire EVERY live source/writer/reservation alias immediately. */
+  r->last_token=r->reservation.token;r->last_generation=r->reservation.generation;
+@@ -466,7 +558,8 @@
+  struct candidate_prestarted *owner,void *bootstrap)
+ {
+  if(!r||!config||!owner||!config->graph||!config->random_ready||!config->retain_verifier)return CAMERA_INVALID;
+- if(runtime||r->self||r->span_hub||r->span_setup_attempt||r->span_native_retire||r->pipeline||r->attempts||
++  if(runtime||r->self||r->span_hub||r->span_setup_attempt||r->span_native_retire||r->pipeline||r->attempts||
++     !added_history_empty(r)||r->span_sink.context||r->span_sink.retain||
+     r->last_token||r->last_generation||r->error||r->retired||r->post_first||!live_pipeline_empty(r)||
+     native_initialized||owner->phase!=CANDIDATE_PS_EMPTY||owner->self||owner->config||owner->backend.child)return CAMERA_NOT_READY;
+  if(camera_graph_validate(config->graph))return CAMERA_INVALID;
+@@ -478,7 +571,8 @@
+  r->lifecycle=camera_rtsp_common_hooks(&r->bridge);r->lifecycle.end=frame_end;r->lifecycle.retire=frame_retire;
+  r->source=(struct qc07f_writer_source_v4){r,typed_next,typed_release,parameters,0,&r->lifecycle};
+  config->context=r;config->source_ready=ready;config->source_guard_bind=bind_gate;
+- config->retain_uncertain=retain_demand;config->retain_frame_uncertain=retain_frame;runtime=r;return CAMERA_OK;
++  config->retain_uncertain=retain_demand;config->retain_frame_uncertain=retain_frame;
++  r->span_sink=(struct camera_rtsp_span_retention_v1){r,retain_native_span};runtime=r;return CAMERA_OK;
+ }
+ int qc07f_owned_runtime_bind_postfork_v4(struct qc07f_owned_runtime_v4 *r)
+ {
+@@ -497,7 +591,7 @@
+ int qc07f_owned_runtime_memory_span_hub_v4(struct qc07f_owned_runtime_v4 *r,struct camera_span_hub_v1 *hub)
+ {
+  if(!valid(r))return CAMERA_INVALID;qc07f_owned_runtime_cleanup_v4(r,0,0);
+- if(r->retired||!r->bound||!native_initialized)return CAMERA_NOT_READY;
++  if(r->span_relinquished||r->retired||!r->bound||!native_initialized)return CAMERA_NOT_READY;
+  if(r->error||stop||native_fault()){if(retention_needed())retain(r,CAMERA_IO_ERROR);return CAMERA_NOT_READY;}
+  if(span_history_present()){if(!paid_association(r,PAID_ACTIVE))retain(r,CAMERA_IO_ERROR);return CAMERA_NOT_READY;}
+  struct candidate_prestarted *o=r->owner;const struct nh_memory_ledger *l=&memory_state.ledger;
+@@ -516,5 +610,90 @@
+  for(unsigned i=0;i<4;i++)if(o->backend.peers[i])return CAMERA_NOT_READY;
+  struct nh_memory_hub_ranges forecast;if(nh_memory_span_hub_forecast(l,hub,&forecast))return CAMERA_NOT_READY;
+  r->span_hub=hub;r->span_setup_attempt=1;
+- int result=native_memory_fixed_span_buffers(hub);if(result)retain(r,result);return CAMERA_OK;
+-}
++  int result=native_memory_fixed_span_buffers(hub);if(result)retain(r,result);return CAMERA_OK;
++}
++
++static int actual_owner(const struct qc07f_owned_runtime_v4 *r,enum candidate_prestarted_phase phase)
++{
++ const struct candidate_prestarted *o=r->owner;
++ if(!o||o->self!=o||o->config!=r->config||o->phase!=phase||o->source_hold)return 0;
++ const struct candidate_backend *b=&o->backend;
++ return b->config==r->config&&b->initialized&&!b->failed&&!b->revoked&&!b->revoke_pending&&
++  !b->pending&&!b->pending_peer&&b->child&&rv_ready_flags(b->child)==RV_FLAGS15&&
++  rv_ready_profile(b->child)==r->config->image.profile&&is_rv_running(b->child);
++}
++static int exact_source(const struct qc07f_owned_runtime_v4 *r)
++{
++ return r->source.context==r&&r->source.next==typed_next&&r->source.release==typed_release&&
++  r->source.parameter_sets==parameters&&r->source.parameter_set_bytes&&r->source.parameter_set_bytes<=sizeof(parameters)&&
++  r->source.lifecycle==&r->lifecycle&&r->lifecycle.context==&r->bridge&&r->lifecycle.owner==&r->producer&&
++  r->lifecycle.attach==camera_rtsp_common_attach&&r->lifecycle.detach==camera_rtsp_common_detach&&
++  r->lifecycle.begin==camera_rtsp_common_begin&&r->lifecycle.end==frame_end&&r->lifecycle.retire==frame_retire&&
++  !r->lifecycle.failure&&r->bridge.producer==&r->producer&&r->bridge.context==r&&
++  r->bridge.start==logical_start&&r->bridge.idle==idle_source&&r->bridge.clock_ns==source_now&&
++  r->config->source_ready==ready&&r->config->source_guard_bind==bind_gate&&
++  r->config->retain_uncertain==retain_demand&&r->config->retain_frame_uncertain==retain_frame&&
++  r->span_sink.context==r&&r->span_sink.retain==retain_native_span;
++}
++int qc07f_owned_runtime_writer_entry_v5(struct qc07f_owned_runtime_v4 *r)
++{
++ if(!valid(r))return CAMERA_INVALID;
++ qc07f_owned_runtime_cleanup_v4(r,0,0);
++ if(r->span_relinquished||r->retired)return CAMERA_NOT_READY;
++ if(!r->bound||!native_initialized||stop||r->error||r->bridge.clock_failed||writer_native_busy()||
++    !exact_source(r)||r->gate||r->gate_context||!actual_owner(r,CANDIDATE_PS_READY)||
++    !paid_association(r,PAID_ACTIVE)){
++  if(retention_needed())retain(r,CAMERA_NOT_READY);return CAMERA_NOT_READY;
++ }
++ for(unsigned i=0;i<4;i++)if(r->owner->backend.peers[i]||r->owner->peers[i].live)retain(r,CAMERA_NOT_READY);
++ return CAMERA_OK;
++}
++int qc07f_owned_runtime_writer_publication_v5(struct qc07f_owned_runtime_v4 *r,
++ struct camera_rtsp_frame_handle frame,const struct qc07f_writer_loan_v4 *loan)
++{
++ if(!valid(r))return CAMERA_INVALID;
++ if(r->span_relinquished||r->retired)return CAMERA_NOT_READY; /* before old hub */
++ qc07f_owned_runtime_cleanup_v4(r,0,0);
++ if(!loan||!exact_source(r)||!actual_owner(r,CANDIDATE_PS_SERVING)||!r->gate||!r->gate_context||
++    r->pipeline!=QCW_IDLE||!live_pipeline_empty(r)||r->bridge.frame_open||
++    frame.owner!=&r->producer||frame.namespace_context!=&r->bridge||
++    frame.id!=r->completed_frame_id||frame.generation!=r->completed_common_generation||
++    !loan_same(loan,&r->completed_loan)||!completed_native_exact(r)||!paid_association(r,PAID_ACTIVE))
++  retain(r,CAMERA_IO_ERROR);
++ /* This observes actual source time/session, not reset operation_begin_ns=0.
++  * Caller separately performs real auth before acquisition and on every packet;
++  * ready() also rechecks this exact canonical publication in every guarded call. */
++ uint64_t now=source_now(r);
++ return ready(r,0,now);
++}
++static void retirement_time_checked(struct qc07f_owned_runtime_v4 *r)
++{
++ /* No auth callback: all peers are already closed. Charge actual idle watchdog
++  * observation to the SAME real native RETIRE start and original sealed session. */
++ if(qw_owner_idle_observe(&native.watchdog))retain(r,CAMERA_IO_ERROR);
++ uint64_t now=source_now(r);
++ if(now==UINT64_MAX||now<native.watchdog.last_ns||now<native.watchdog.start_ns||
++    now-native.watchdog.start_ns>=NH_OUTPUT_NS||now<native.watchdog.session_start_ns||
++    now>=native.watchdog.session_deadline_ns||native.watchdog.phase!=QW_RETIRE||
++    native.watchdog.state!=QW_DISABLED)retain(r,CAMERA_IO_ERROR);
++}
++void qc07f_owned_runtime_writer_end_borrow_v5(struct qc07f_owned_runtime_v4 *r,
++ struct camera_span_hub_v1 *hub,int (*gate)(void *),void *gate_context)
++{
++ if(!valid(r))nh_native_quarantine();
++ if(r->span_relinquished)retain(r,CAMERA_NOT_READY); /* BEFORE retired pointer */
++ if(!actual_owner(r,CANDIDATE_PS_SERVING)||!exact_source(r)||!gate||!gate_context||
++    r->gate!=gate||r->gate_context!=gate_context||!native_retired_actual(r)||!common_drained(r)||
++    !hub||r->span_hub!=hub||!paid_association(r,PAID_FINAL)||!camera_span_hub_drained_v1(hub)||
++    hub->subscribers||hub->need_keyframe||hub->pending||hub->acquired||
++    hub->writer_phase!=CAMERA_SPAN_WRITER_V3_IDLE||hub->writer_error)
++  retain(r,CAMERA_IO_ERROR);
++ for(unsigned i=0;i<4;i++)if(r->owner->backend.peers[i]||r->owner->peers[i].live||hub->active_token[i])retain(r,CAMERA_IO_ERROR);
++ retirement_time_checked(r);
++ /* Last fallible action was above. No callback or old hub access after these
++  * scalar snapshots and live-pointer retirement. CPU lender is NOT freed. */
++ r->span_owner_retired=(uintptr_t)hub;r->span_terminal_offset=hub->data_offset;
++ r->span_terminal_bytes=hub->bytes;r->span_terminal_consumer_issuance=hub->issued_token;
++ r->span_hub=NULL;memory_state.ledger.hub.owner=NULL;memory_state.span_retained.owner=NULL;
++ r->span_relinquished=1;
++}

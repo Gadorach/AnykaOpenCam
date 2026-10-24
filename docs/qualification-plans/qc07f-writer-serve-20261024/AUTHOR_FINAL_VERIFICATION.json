@@ -1,0 +1,1080 @@
+{
+  "scope": "AUTHOR_READ_ONLY_METADATA_VERIFICATION_NOT_INDEPENDENT_REVIEW_OR_EXECUTION",
+  "recorded_utc": "2026-10-24T13:00:36.514638+00:00",
+  "build_report": {
+    "bytes": 397980,
+    "sha256": "b4b31a53fe7f983a9f1782886676417fd2a9af70928d298a39d4b62b90383db5"
+  },
+  "source_pins": {
+    "apps/rtsp-auth/qc07f-writer-serve-candidate/LICENSE_NOTICES.md": {
+      "bytes": 1142,
+      "sha256": "e64b51a031dd2c5368e1e032e01d7c9aba36cadc75fbdb4a2791c589815da0d8"
+    },
+    "apps/rtsp-auth/qc07f-writer-serve-candidate/README.md": {
+      "bytes": 925,
+      "sha256": "91fa2618b6bd4dcbb95801373a6087c471142bd55c950e67f57f631028565cce"
+    },
+    "apps/rtsp-auth/qc07f-writer-serve-candidate/build01.py": {
+      "bytes": 19480,
+      "sha256": "dbe9171e563dd0cfb158ef1f1531da1b04406f332d90011a13adb7770c12c465"
+    },
+    "apps/rtsp-auth/qc07f-writer-serve-candidate/owned_runtime.c": {
+      "bytes": 47694,
+      "sha256": "d83ccc8db4129a62a4f6abc74b0924a9732b489c2b2f8e636b22303e00f21551"
+    },
+    "apps/rtsp-auth/qc07f-writer-serve-candidate/owned_runtime_v4.h": {
+      "bytes": 5304,
+      "sha256": "51922d1769d1bf2b88231b3e9b1a8f1933fc73929353eae0e70a2374284447c3"
+    },
+    "apps/rtsp-auth/qc07f-writer-serve-candidate/rtsp_span_server.c": {
+      "bytes": 49853,
+      "sha256": "a5b2854aeaae87275db1dbd01fd6691610365690fe437399d87c031dbf3c86ce"
+    },
+    "apps/rtsp-auth/qc07f-writer-serve-candidate/rtsp_span_server_v1.h": {
+      "bytes": 3434,
+      "sha256": "159dd369ce55bb3562b2e56fb4327ef1ed763ee67f525b6d85f434bf0fc309fc"
+    }
+  },
+  "checks": {
+    "inputs": 543,
+    "dependencies": 322,
+    "reused_dependencies": 320,
+    "tools": 16,
+    "artifacts": 146,
+    "commands": 46
+  },
+  "frozen_files": 114,
+  "frozen_roots": 8,
+  "frozen_hashes_and_exact_membership_unchanged": true,
+  "consumed_seven_source_copies_unchanged": true,
+  "eight_literal_diffs_regenerated": true,
+  "seventeen_unchanged_source_regions": {
+    "owned_runtime.c:static void checked_source(": {
+      "bytes": 1496,
+      "sha256": "ffd7d14d4637cd5a696e0192df2f4962c91004d4eb6a8e2d65305a2956b209ff"
+    },
+    "owned_runtime.c:static void build_request(": {
+      "bytes": 1538,
+      "sha256": "7e58559aede161a254f3c5a5d8643cdb7e639509462257c718b4a955b7ef700a"
+    },
+    "owned_runtime.c:static void parse_result(": {
+      "bytes": 2263,
+      "sha256": "9ee0772e8cd87d70febb7bc0cefb0de097ed59ae4da17da3e27c544a89be0ff5"
+    },
+    "owned_runtime.c:static int pipeline_exact(": {
+      "bytes": 2040,
+      "sha256": "970e8cef2187a429cc42817a2daa8679f2e7479a708fdfffe9b7f7243ee0695f"
+    },
+    "owned_runtime.c:static int frame_end(": {
+      "bytes": 1553,
+      "sha256": "e55504ed422fc28821a3497614173285053ed8c77b6ea7febe64280ea72b6c6f"
+    },
+    "owned_runtime.c:static int idle_source(": {
+      "bytes": 589,
+      "sha256": "396e893a7626d7922f117ceef2f53440d3910c999191708fbbdf8e2507fe5d27"
+    },
+    "owned_runtime.c:static int frame_retire(": {
+      "bytes": 420,
+      "sha256": "4e87cd8dfa8a7fc45146f85bbb2b2c139804c473490f93345c308db5e946d4b8"
+    },
+    "rtsp_span_server.c:static int pause_client(": {
+      "bytes": 1324,
+      "sha256": "c08a28cf61813650dfbf6fc4cb65a901772446a4e478c6fcee736fb038292a2c"
+    },
+    "rtsp_span_server.c:static void finish_au(": {
+      "bytes": 2525,
+      "sha256": "a99b62a17e5233a72ed8c0680b495238e82a103dd4c073b75995e9973b0dba26"
+    },
+    "rtsp_span_server.c:static int capture_admitted(": {
+      "bytes": 703,
+      "sha256": "74626038f6351dbf1631302996b29d715aacae86988aa84798814ed19bbbdb3c"
+    },
+    "rtsp_span_server.c:static int write_counted(": {
+      "bytes": 1020,
+      "sha256": "38804067ac76b785e302c11de828fcaf38bc7050ad1cf7a0f15e14a51b89c0fa"
+    },
+    "rtsp_span_server.c:static int reply(": {
+      "bytes": 574,
+      "sha256": "dc5acdbf85cf31b86093db8c277781d1ed559e7ea40375b6df4b0da818b5f4b9"
+    },
+    "rtsp_span_server.c:static int challenge_reply(": {
+      "bytes": 378,
+      "sha256": "81416e6105f40e00a8109156d40ca8d466fd6f3811b0bf2ea1e442f1f6aa9aca"
+    },
+    "rtsp_span_server.c:static void failure_client(": {
+      "bytes": 515,
+      "sha256": "dcba82484a2ae2707e55033aa930ebf7b304defd56faa9faf4aefafae0d96dc1"
+    },
+    "rtsp_span_server.c:static int process_input(": {
+      "bytes": 5569,
+      "sha256": "bb75fc949b42ce5362a7db256657cf79c10d17b9aa170164360264ceeeef3fa4"
+    },
+    "rtsp_span_server.c:static int control(": {
+      "bytes": 1010,
+      "sha256": "ad46d0a125c949e18a0fe432b419b2cfccb8a658b1a479cd19685cd8c1c4e694"
+    },
+    "rtsp_span_server.c:static int pending_control(": {
+      "bytes": 678,
+      "sha256": "e6fa0ba17b9f78995a50969fad49180e33b0321b15637a548c1060adad177bbe"
+    }
+  },
+  "archive_bodies": [
+    {
+      "archive": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-host.a",
+      "pin": {
+        "bytes": 319802,
+        "sha256": "9d6d330dd97e9039da03bab81273b7912151e28ee1db6f1e7161998311752a44"
+      },
+      "members": [
+        {
+          "member": "host-0-owned_runtime.o",
+          "sha256": "056dd640da658440f8516d34ce923f7f50761645ea5d77976b6894b48f881a39",
+          "bytes": 90048,
+          "selected": false
+        },
+        {
+          "member": "host-1-sensor_baseline.o",
+          "sha256": "b486be85badf7dd9586bd650dd7c5e9fe2f4f1c9ebda00fe0ceac159bcd682f9",
+          "bytes": 8592,
+          "selected": false
+        },
+        {
+          "member": "host-2-memory_reserve.o",
+          "sha256": "61397a4abbe40885cb7d614bdc023f33de4fedaff73d43957b9cc11059822093",
+          "bytes": 12504,
+          "selected": false
+        },
+        {
+          "member": "host-3-memory_runtime.o",
+          "sha256": "005f963ee0191bfbb4c363d8e0a03efd99d1441860fdfd8fcb17e200ff6e69f2",
+          "bytes": 6872,
+          "selected": false
+        },
+        {
+          "member": "host-4-memory_reader.o",
+          "sha256": "f575edb74b2b750cedbaf6ab337eb3d37c9e6eae767f9e9a38c06a861a03a7f1",
+          "bytes": 2544,
+          "selected": false
+        },
+        {
+          "member": "host-5-frame_fd_custody.o",
+          "sha256": "3ab957b7d44d231543e49c4c888f3f7a4d49612621b10d691bf532af2d39bb45",
+          "bytes": 3664,
+          "selected": true
+        },
+        {
+          "member": "host-6-encoder_fd_custody.o",
+          "sha256": "4ef1063a2e6fffd75b1632433f2cf0d2e1a2edc4bda98099c23ba430cca7cc85",
+          "bytes": 3816,
+          "selected": true
+        },
+        {
+          "member": "host-7-watchdog_owner.o",
+          "sha256": "d177561c447ffc0e19986d670b014e7778a610332eaddad31f10b48d4ec35a9a",
+          "bytes": 9224,
+          "selected": true
+        },
+        {
+          "member": "host-8-candidate_auth.o",
+          "sha256": "495c530f9a0659555942d3b322944b07c622564848d8d175878654015afe52c6",
+          "bytes": 18536,
+          "selected": true
+        },
+        {
+          "member": "host-9-rtsp_server_candidate.o",
+          "sha256": "72b7b4f42e21e79dd06d0ba891f53912cc9996473532d2de7fc2a3d0512a132b",
+          "bytes": 49064,
+          "selected": false
+        },
+        {
+          "member": "host-10-verifier_adapter_overlay.o",
+          "sha256": "c35e566a0e96a736e20c93f651a267e2cdb2f02c12b9485629e489b5ebf16f69",
+          "bytes": 22752,
+          "selected": true
+        },
+        {
+          "member": "host-11-listener_custody.o",
+          "sha256": "ee44913ef768289143b78e04475fde7f17e32722b9e23b47e72b3d740e5f4c77",
+          "bytes": 3832,
+          "selected": true
+        },
+        {
+          "member": "host-12-ipc.o",
+          "sha256": "e88502400bc7338553bcff768440cea892b461ac9c718c4bbd89f74a2e7e6818",
+          "bytes": 6128,
+          "selected": true
+        },
+        {
+          "member": "host-13-rtsp_digest_wire.o",
+          "sha256": "a4ecf89e7bd5825574618c81261bc4b4f904418be5a7069e55edfb288796833a",
+          "bytes": 14976,
+          "selected": true
+        },
+        {
+          "member": "host-14-rtsp_request.o",
+          "sha256": "3ea13827a70344154c6c174bb092a54da079bf75764cff15118373bedef08395",
+          "bytes": 7288,
+          "selected": true
+        },
+        {
+          "member": "host-15-rtsp_input.o",
+          "sha256": "c552c1802ce1645019dd418a52b9c6ad3119d3848abc520f0387137eb8f6b23f",
+          "bytes": 10544,
+          "selected": true
+        },
+        {
+          "member": "host-16-backend.o",
+          "sha256": "bfdf3d5d5b3c5d1fff5b8ae8ce0711c72741799b2f2e38769ea0159409269653",
+          "bytes": 5352,
+          "selected": true
+        },
+        {
+          "member": "host-17-packet_hub.o",
+          "sha256": "1cedcf536ed9cf2de073950d60b1492ed0d9286e6385fa2489fa22d2cdb6aff5",
+          "bytes": 5624,
+          "selected": false
+        },
+        {
+          "member": "host-18-producer.o",
+          "sha256": "b469377db799283645160318d491d3cfa8b921bceb0554417b4cff88019093bb",
+          "bytes": 15096,
+          "selected": true
+        },
+        {
+          "member": "host-19-rtp_h264.o",
+          "sha256": "76f042cea897b9d01c157c0eb88507c073a95aa3f903f3c212be90f375d7b948",
+          "bytes": 2928,
+          "selected": true
+        },
+        {
+          "member": "host-20-sha256.o",
+          "sha256": "2dac7dbf7be224f22a9e06155d16122ba1792e72822b6a624df729edcc24324f",
+          "bytes": 9664,
+          "selected": true
+        },
+        {
+          "member": "host-21-constant_time.o",
+          "sha256": "d31fd009e3d966a5ecec0e5fd4862da8475a33f15f313bee683f2f74273b66a9",
+          "bytes": 2544,
+          "selected": true
+        },
+        {
+          "member": "host-22-platform_util.o",
+          "sha256": "a2a0f6ccb8caf9220c5e7190b27aba4d2a376f1e66dc335b0b9dafa852d35798",
+          "bytes": 1936,
+          "selected": true
+        }
+      ]
+    },
+    {
+      "archive": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/libqc07f-owned-runtime-arm.a",
+      "pin": {
+        "bytes": 220214,
+        "sha256": "d0e18513e90bbd7720c10a6d86fc0a8df140680234a13a70fc84fb69a16647c5"
+      },
+      "members": [
+        {
+          "member": "arm-0-owned_runtime.o",
+          "sha256": "9c71921713cfc89f1d1ac11243a8447b224011c1cf0ce2f3fe758632ee2732bb",
+          "bytes": 52312,
+          "selected": false
+        },
+        {
+          "member": "arm-1-sensor_baseline.o",
+          "sha256": "513ef336b41c9cf31b3fbc19cdf8cd6876b5544f3c883f3a91e61aa94fc39c88",
+          "bytes": 7040,
+          "selected": false
+        },
+        {
+          "member": "arm-2-memory_reserve.o",
+          "sha256": "a4169c23dff29d3df823bfa8ef7029d7db9a7c44f0569f22e7ffb6aca1369053",
+          "bytes": 10736,
+          "selected": false
+        },
+        {
+          "member": "arm-3-memory_runtime.o",
+          "sha256": "a6cd8e8f1a91dcede527653587508fdde58957aa2f70c81ff44f4e3169c5ac03",
+          "bytes": 4976,
+          "selected": false
+        },
+        {
+          "member": "arm-4-memory_reader.o",
+          "sha256": "053e16e52582a655ed60075079e9dd2524762e5fbfa216251866cf6557babb6f",
+          "bytes": 1792,
+          "selected": false
+        },
+        {
+          "member": "arm-5-frame_fd_custody.o",
+          "sha256": "5ce250a3920d4ce264ce90225b1330a3d16197bdd57397b565c34c12c744110f",
+          "bytes": 2908,
+          "selected": true
+        },
+        {
+          "member": "arm-6-encoder_fd_custody.o",
+          "sha256": "c47aa1e505755d824c25181d9dc3e41eaa2dfabd7378af3910826eefa439a057",
+          "bytes": 3028,
+          "selected": true
+        },
+        {
+          "member": "arm-7-watchdog_owner.o",
+          "sha256": "858a84e87d57ee1b7abff818423a96a4fea2759a0b353b4c3b83fd4723aada41",
+          "bytes": 7656,
+          "selected": true
+        },
+        {
+          "member": "arm-8-candidate_auth.o",
+          "sha256": "a870c75b4310fb06bdf45a04d52acee57a98032d5246c96f5ce35d8d986c6475",
+          "bytes": 14044,
+          "selected": true
+        },
+        {
+          "member": "arm-9-rtsp_server_candidate.o",
+          "sha256": "9157160f8c17f2a91c553b3b6d8b29b340900f716f0bb0b7ad4952414611fcb4",
+          "bytes": 26960,
+          "selected": false
+        },
+        {
+          "member": "arm-10-verifier_adapter_overlay.o",
+          "sha256": "ba3f10f46523a81bce11fe6d01b7af7e1406a82501e980f026f7fd8581dacad0",
+          "bytes": 17116,
+          "selected": true
+        },
+        {
+          "member": "arm-11-listener_custody.o",
+          "sha256": "d8d21b383994723acec592eb38059b93bd496bfe61fcfce027894b4577fc9282",
+          "bytes": 3200,
+          "selected": true
+        },
+        {
+          "member": "arm-12-ipc.o",
+          "sha256": "32c36f7dcf591483b852022ce186a3dcfafc9a8719a808d914fb165112a88eb3",
+          "bytes": 4400,
+          "selected": true
+        },
+        {
+          "member": "arm-13-rtsp_digest_wire.o",
+          "sha256": "4dd063086fb433b9b6ae3a5c728f6cf88abb4b860ecf9c3d9aaf30cef1356151",
+          "bytes": 10824,
+          "selected": true
+        },
+        {
+          "member": "arm-14-rtsp_request.o",
+          "sha256": "bb29f12d79b1b040c1325a5f0a2ddaa1766cedc0f0571cc5379292f9b9b1a18d",
+          "bytes": 5808,
+          "selected": true
+        },
+        {
+          "member": "arm-15-rtsp_input.o",
+          "sha256": "e85cfdeade8798d0bf61accdc9dfff01c93855c8c85f19c3543b06a7202a3e0e",
+          "bytes": 7756,
+          "selected": true
+        },
+        {
+          "member": "arm-16-backend.o",
+          "sha256": "1585e947e9ff904dd746e8ad9fe5b078070377b487abfbb7dd2df4f316ea3f9a",
+          "bytes": 3656,
+          "selected": true
+        },
+        {
+          "member": "arm-17-packet_hub.o",
+          "sha256": "d274f2dc6d9977dd07a55740f5e49ff016e1a2836fad0a639866a13dfa702440",
+          "bytes": 5308,
+          "selected": false
+        },
+        {
+          "member": "arm-18-producer.o",
+          "sha256": "a74b9bdfe7a839282b564da1f936675d83bc1b85deb9201190c44697a1f613ae",
+          "bytes": 12496,
+          "selected": true
+        },
+        {
+          "member": "arm-19-rtp_h264.o",
+          "sha256": "b79e244c64127a26591c2f92067a8b0059477040f363c3d8ea5404b48c013c1c",
+          "bytes": 2156,
+          "selected": true
+        },
+        {
+          "member": "arm-20-sha256.o",
+          "sha256": "c34ce80b6c177263b7d5bfee03182084d6aedbfef7fdb0d042bac1c00494d67e",
+          "bytes": 6572,
+          "selected": true
+        },
+        {
+          "member": "arm-21-constant_time.o",
+          "sha256": "1a7d6b9de71084c8a99525005217f0c875200a76670e23fcf9553b53bc2da3d7",
+          "bytes": 1744,
+          "selected": true
+        },
+        {
+          "member": "arm-22-platform_util.o",
+          "sha256": "a68b8b3051d38890da5403d459683e219974941f58cbd4c41335d997995c7470",
+          "bytes": 1492,
+          "selected": true
+        }
+      ]
+    }
+  ],
+  "ELF_headers": [
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/objects/host-owned_runtime.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/objects/host-rtsp_span_server.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/objects/host-memory_reserve.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/objects/host-memory_runtime.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/objects/host-memory_reader.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/objects/host-span_hub.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/objects/host-rtp_h264_spans.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/objects/host-sensor_baseline.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-host/host-5-frame_fd_custody.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-host/host-6-encoder_fd_custody.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-host/host-7-watchdog_owner.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-host/host-8-candidate_auth.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-host/host-10-verifier_adapter_overlay.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-host/host-11-listener_custody.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-host/host-12-ipc.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-host/host-13-rtsp_digest_wire.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-host/host-14-rtsp_request.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-host/host-15-rtsp_input.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-host/host-16-backend.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-host/host-18-producer.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-host/host-19-rtp_h264.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-host/host-20-sha256.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-host/host-21-constant_time.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-host/host-22-platform_util.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/host-WRITER-SERVE-NOT-EXECUTABLE.o",
+      "class": 2,
+      "machine": 62,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/objects/arm-owned_runtime.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/objects/arm-rtsp_span_server.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/objects/arm-memory_reserve.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/objects/arm-memory_runtime.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/objects/arm-memory_reader.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/objects/arm-span_hub.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/objects/arm-rtp_h264_spans.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/objects/arm-sensor_baseline.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-arm/arm-5-frame_fd_custody.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-arm/arm-6-encoder_fd_custody.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-arm/arm-7-watchdog_owner.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-arm/arm-8-candidate_auth.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-arm/arm-10-verifier_adapter_overlay.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-arm/arm-11-listener_custody.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-arm/arm-12-ipc.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-arm/arm-13-rtsp_digest_wire.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-arm/arm-14-rtsp_request.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-arm/arm-15-rtsp_input.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-arm/arm-16-backend.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-arm/arm-18-producer.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-arm/arm-19-rtp_h264.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-arm/arm-20-sha256.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-arm/arm-21-constant_time.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/members-arm/arm-22-platform_util.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-writer-serve-20261024/runs/build01/arm-WRITER-SERVE-NOT-EXECUTABLE.o",
+      "class": 1,
+      "machine": 40,
+      "type": "ET_REL",
+      "entry": 0,
+      "program_headers": 0
+    }
+  ],
+  "actual_retained_relocation_connections": {
+    "host": {
+      ".rela.text.exact_source": [
+        "0000000000000013  0000005600000002 R_X86_64_PC32          0000000000000000 .text.typed_next - 4",
+        "0000000000000023  0000005300000002 R_X86_64_PC32          0000000000000000 .text.typed_release - 4"
+      ],
+      ".rela.text.retain": [
+        "0000000000000142  000002ef00000004 R_X86_64_PLT32         0000000000000000 camera_span_hub_producer_hold_v3 - 4"
+      ],
+      ".rela.text.retain.constprop.0": [
+        "0000000000000116  000002ef00000004 R_X86_64_PLT32         0000000000000000 camera_span_hub_producer_hold_v3 - 4"
+      ],
+      ".rela.text.nh_native_retire": [
+        "0000000000000382  000002ea00000004 R_X86_64_PLT32         0000000000000000 qw_owner_disable_boundary - 4"
+      ],
+      ".rela.text.typed_release": [
+        "0000000000000133  0000004f00000002 R_X86_64_PC32          0000000000000000 .text.checked_source - 4"
+      ],
+      ".rela.text.typed_next": [
+        "000000000000029b  0000004f00000002 R_X86_64_PC32          0000000000000000 .text.checked_source - 4",
+        "00000000000003de  0000004f00000002 R_X86_64_PC32          0000000000000000 .text.checked_source - 4",
+        "000000000000068f  0000004f00000002 R_X86_64_PC32          0000000000000000 .text.checked_source - 4",
+        "00000000000006b1  0000023e00000004 R_X86_64_PLT32         0000000000000000 camera_span_hub_producer_arm_v3 - 4",
+        "00000000000006e2  0000004f00000002 R_X86_64_PC32          0000000000000000 .text.checked_source - 4",
+        "0000000000000d5b  0000004f00000002 R_X86_64_PC32          0000000000000000 .text.checked_source - 4",
+        "0000000000000d89  0000004f00000002 R_X86_64_PC32          0000000000000000 .text.checked_source - 4",
+        "0000000000000d95  000002ea00000004 R_X86_64_PLT32         0000000000000000 qw_owner_disable_boundary - 4",
+        "0000000000000db5  0000004f00000002 R_X86_64_PC32          0000000000000000 .text.checked_source - 4"
+      ],
+      ".rela.text.frame_end": [
+        "000000000000019d  0000004f00000002 R_X86_64_PC32          0000000000000000 .text.checked_source - 4",
+        "0000000000000464  0000004f00000002 R_X86_64_PC32          0000000000000000 .text.checked_source - 4",
+        "000000000000049d  0000027500000004 R_X86_64_PLT32         0000000000000000 camera_span_hub_producer_commit_v3 - 4"
+      ],
+      ".rela.text.qc07f_owned_runtime_prepare_v4": [
+        "0000000000000363  0000005300000002 R_X86_64_PC32          0000000000000000 .text.typed_release - 4"
+      ],
+      ".rela.data.rel.ro.local": [
+        "0000000000000018  0000005600000001 R_X86_64_64            0000000000000000 .text.typed_next + 0"
+      ],
+      ".rela.text.serve_prestarted_body": [
+        "0000000000000ad4  000002c400000004 R_X86_64_PLT32         0000000000000000 qc07f_owned_runtime_writer_end_borrow_v5 - 4",
+        "000000000000168d  000002ee00000004 R_X86_64_PLT32         0000000000000000 qc07f_owned_runtime_writer_publication_v5 - 4",
+        "0000000000001824  000002ee00000004 R_X86_64_PLT32         0000000000000000 qc07f_owned_runtime_writer_publication_v5 - 4"
+      ],
+      ".rela.text.camera_span_hub_packet_v1": [
+        "000000000000003f  0000027b00000004 R_X86_64_PLT32         0000000000000000 camera_rtp_h264_spans_packet_v1 - 4"
+      ]
+    },
+    "arm": {
+      ".rel.text.exact_source": [
+        "000001dc  00019803 R_ARM_REL32            00000000   typed_next",
+        "000001e0  00019903 R_ARM_REL32            00000000   typed_release"
+      ],
+      ".rel.text.retain": [
+        "000000c0  00055d1c R_ARM_CALL             00000000   camera_span_hub_producer_hold_v3"
+      ],
+      ".rel.text.nh_native_retire": [
+        "000003c4  0005571c R_ARM_CALL             00000000   qw_owner_disable_boundary"
+      ],
+      ".rel.text.typed_release": [
+        "0000013c  0002441c R_ARM_CALL             00000000   checked_source"
+      ],
+      ".rel.text.typed_next": [
+        "0000021c  0002441c R_ARM_CALL             00000000   checked_source",
+        "0000026c  0002441c R_ARM_CALL             00000000   checked_source",
+        "000004f0  0002441c R_ARM_CALL             00000000   checked_source",
+        "00000504  0004a51c R_ARM_CALL             00000000   camera_span_hub_producer_arm_v3",
+        "00000534  0002441c R_ARM_CALL             00000000   checked_source",
+        "000009f8  0002441c R_ARM_CALL             00000000   checked_source",
+        "00000a28  0002441c R_ARM_CALL             00000000   checked_source",
+        "00000a38  0005571c R_ARM_CALL             00000000   qw_owner_disable_boundary",
+        "00000a54  0002441c R_ARM_CALL             00000000   checked_source"
+      ],
+      ".rel.text.frame_end": [
+        "000001b0  0002441c R_ARM_CALL             00000000   checked_source",
+        "00000438  0002441c R_ARM_CALL             00000000   checked_source",
+        "0000046c  0004de1c R_ARM_CALL             00000000   camera_span_hub_producer_commit_v3"
+      ],
+      ".rel.text.qc07f_owned_runtime_prepare_v4": [
+        "0000037c  00019803 R_ARM_REL32            00000000   typed_next",
+        "00000380  00019903 R_ARM_REL32            00000000   typed_release"
+      ],
+      ".rel.text.serve_prestarted_body": [
+        "00001330  00055c1c R_ARM_CALL             00000000   qc07f_owned_runtime_writer_publication_v5",
+        "00001514  00055c1c R_ARM_CALL             00000000   qc07f_owned_runtime_writer_publication_v5",
+        "00002010  0005301c R_ARM_CALL             00000000   qc07f_owned_runtime_writer_end_borrow_v5"
+      ],
+      ".rel.text.camera_span_hub_packet_v1": [
+        "00000038  0004e41d R_ARM_JUMP24           00000000   camera_rtp_h264_spans_packet_v1"
+      ]
+    }
+  },
+  "private_owner_symbols": {
+    "host": {
+      "native": 1,
+      "memory_state": 1,
+      "runtime": 1
+    },
+    "arm": {
+      "native": 1,
+      "memory_state": 1,
+      "runtime": 1
+    }
+  },
+  "roots": [
+    "qc07f_owned_runtime_prepare_v4",
+    "qc07f_owned_runtime_bind_postfork_v4",
+    "qc07f_owned_runtime_memory_span_hub_v4",
+    "qc07f_owned_runtime_cleanup_v4",
+    "qc07f_owned_runtime_writer_serve_v5",
+    "qc07f_owned_runtime_writer_entry_v5",
+    "qc07f_owned_runtime_writer_publication_v5",
+    "qc07f_owned_runtime_writer_end_borrow_v5",
+    "nh_native_watchdog_take",
+    "nh_native_provider_take",
+    "nh_native_storage_select",
+    "nh_native_optin_exact139",
+    "nh_native_memory_start",
+    "nh_native_memory_fixed_buffers",
+    "nh_native_return_pre_memory_unknown_bootstrap",
+    "nh_native_watchdog_give_back",
+    "nh_native_next",
+    "nh_native_next_keyframe",
+    "nh_native_release",
+    "nh_native_retire_held",
+    "nh_native_retire",
+    "candidate_prestarted_start",
+    "candidate_prestarted_finish",
+    "candidate_backend_revoke",
+    "candidate_backend_cancel",
+    "nh_memory_parse_meminfo",
+    "nh_memory_parse_zoneinfo",
+    "nh_memory_init",
+    "nh_memory_init_mode",
+    "nh_memory_credit_owned",
+    "nh_memory_span_hub_forecast",
+    "nh_memory_credit_span_hub",
+    "nh_memory_credit_codec",
+    "nh_memory_evaluate",
+    "nh_memory_own_layout",
+    "nh_memory_read_fixed",
+    "nh_memory_runtime_init",
+    "nh_memory_runtime_gate",
+    "nh_memory_prefault_owned",
+    "nh_memory_prefault_span_hub",
+    "nh_memory_log",
+    "camera_span_hub_init_v1",
+    "camera_span_hub_subscribe_v1",
+    "camera_span_hub_resync_v1",
+    "camera_span_hub_unsubscribe_v1",
+    "camera_span_hub_publish_v1",
+    "camera_span_hub_producer_reserve_v3",
+    "camera_span_hub_producer_cancel_v3",
+    "camera_span_hub_producer_arm_v3",
+    "camera_span_hub_producer_commit_v3",
+    "camera_span_hub_producer_hold_v3",
+    "camera_span_hub_acquire_v1",
+    "camera_span_hub_release_v1",
+    "camera_span_hub_lease_valid_v1",
+    "camera_span_hub_packet_v1",
+    "camera_span_hub_stop_v1",
+    "camera_span_hub_drained_v1",
+    "camera_span_hub_dispose_v1"
+  ],
+  "raw_digest_undefined_preserved": {
+    "host": {
+      "camera_rtsp_digest_close": {
+        "symbol": [
+          "552:",
+          "0000000000000000",
+          "0",
+          "NOTYPE",
+          "LOCAL",
+          "DEFAULT",
+          "UND",
+          "camera_rtsp_digest_close"
+        ],
+        "retained_references": 0
+      },
+      "camera_rtsp_digest_issue": {
+        "symbol": [
+          "551:",
+          "0000000000000000",
+          "0",
+          "NOTYPE",
+          "LOCAL",
+          "DEFAULT",
+          "UND",
+          "camera_rtsp_digest_issue"
+        ],
+        "retained_references": 0
+      },
+      "camera_rtsp_digest_verify": {
+        "symbol": [
+          "553:",
+          "0000000000000000",
+          "0",
+          "NOTYPE",
+          "LOCAL",
+          "DEFAULT",
+          "UND",
+          "camera_rtsp_digest_verify"
+        ],
+        "retained_references": 0
+      }
+    },
+    "arm": {
+      "camera_rtsp_digest_close": {
+        "symbol": [
+          "1133:",
+          "00000000",
+          "0",
+          "NOTYPE",
+          "LOCAL",
+          "DEFAULT",
+          "UND",
+          "camera_rtsp_digest_close"
+        ],
+        "retained_references": 0
+      },
+      "camera_rtsp_digest_issue": {
+        "symbol": [
+          "1132:",
+          "00000000",
+          "0",
+          "NOTYPE",
+          "LOCAL",
+          "DEFAULT",
+          "UND",
+          "camera_rtsp_digest_issue"
+        ],
+        "retained_references": 0
+      },
+      "camera_rtsp_digest_verify": {
+        "symbol": [
+          "1134:",
+          "00000000",
+          "0",
+          "NOTYPE",
+          "LOCAL",
+          "DEFAULT",
+          "UND",
+          "camera_rtsp_digest_verify"
+        ],
+        "retained_references": 0
+      }
+    }
+  },
+  "candidate_calls": 0,
+  "build_reruns": 0,
+  "REL_artifacts": {
+    "host": {
+      "bytes": 290440,
+      "sha256": "00b60710d498191fa8d35d8800ae0ad2c30921a0e930d638234228031efe0130"
+    },
+    "arm": {
+      "bytes": 199728,
+      "sha256": "32e00dda9fb8f5882c5547204ed051414c44bac73509c14ba5431780362780e3"
+    }
+  }
+}

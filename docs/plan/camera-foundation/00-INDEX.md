@@ -167,9 +167,13 @@ Selected source has no encoded1MiB malloc path; this is NOT a native allocation
 result.14 HOST/ARM compiles/2 rooted REL links/44 commands PASS, NOT RUN. V1's final
 auth-gate latency defect remains NOT ADOPTED; failed pin-map/preflight metadata
 attempts preserved. See [writer runtime disposition](../../qualification-plans/qc07f-writer-runtime-v2-20261024/PARENT_DISPOSITION.md).
-The old frontend/layout is NOT compatible; actual typed frontend/drain/borrow-end
-integration remains missing, not a relink. Paid hub borrow is still retained after
-normal source STOP; no lender disposal or clean SERVED claim.
+The actual typed authenticated writer sender now has narrow independent SOURCE/API/
+order/ownership/lifetime sufficiency,16 HOST/ARM compiles/2 rooted REL links/
+46 commands PASS, NOT RUN. It observes publication AFTER runtime release/exact END/
+commit; real native/client/common/hub drain gates pointer-free normal borrow-end.
+See [typed writer sender disposition](../../qualification-plans/qc07f-writer-serve-20261024/PARENT_DISPOSITION.md).
+Old frontend/layout is NOT compatible and real bootstrap has not adopted the new
+runtime. No lender disposal/restart/recovery/native or product acceptance follows.
 No candidate function invoked.
 Native1MiB output/raw/process2MiB/combined-load
 and external recovery remain open, not satisfied by CPU chunks or source review.
