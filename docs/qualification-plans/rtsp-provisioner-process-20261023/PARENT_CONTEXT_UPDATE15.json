@@ -1,0 +1,15 @@
+{
+  "scope": "FIFTEENTH_KNOWN_PARENT_MUTABLE_INDEX_STATUS_UPDATE_NOT_SOURCE_PIN_REBASE",
+  "recorded_host_date": "2026-10-24",
+  "original_manifests_and_review_unchanged": true,
+  "path": "docs/plan/camera-foundation/00-INDEX.md",
+  "before": {
+    "bytes": 132793,
+    "sha256": "1b0767ea7ca1a6b55572b22518216b906c271fb4f190ff1fc0e6c481bcd100f2"
+  },
+  "after": {
+    "bytes": 133487,
+    "sha256": "e55d56e9fb13a332f16c6a563364ab56f894038c7efcb5c240e279547657ac9d"
+  },
+  "reason": "parent closes narrow independently reviewed private native writer v2 SOURCE/API/order/ownership/lifetime sufficiency; real spans ioctl and release/common-END/commit connected at source scope, v1 R1 and all failed metadata history preserved; zero candidate execution/frontend/native/cap acceptance"
+}

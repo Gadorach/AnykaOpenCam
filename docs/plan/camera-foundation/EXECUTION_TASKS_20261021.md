@@ -158,8 +158,28 @@ become fresh again; runtime/header/reader/handoff byte-identical, original debt/
 timing/sticky unpaid HOLD remain.10 HOST/ARM compiles/2 rooted REL links/28 commands
 PASS, zero candidate calls. Parent checked18 delivery/13 inputs/98 dependencies/
 12 tools/107 artifacts/28 logs/216 frozen files/10 exact roots and all12 diffs.
-See qc07f-producer-memory PARENT_DISPOSITION; no source author/reviewer active.
-No function/ioctl/native/runtime adoption.
+See qc07f-producer-memory PARENT_DISPOSITION; committed locally `5ca49c8`, no source
+author/reviewer active in that lane. Actual qc07f-writer-runtime-candidate source
+delivered: private spans ioctl → typed source loan/release → exact common END →
+hub commit, one native owner/no encoded1MiB malloc, v3 paid/return/history audits.
+Build01 recipe lookup failure preserved (six metadata/0 C/REL); explicit build02
+corrected only lookup/output path, source unchanged:14 HOST/ARM compiles/2 rooted
+REL links/44 commands PASS, NOT RUN. Independent review requires R1: last blocking
+auth-gate latency escapes final source/session/watchdog admission before ioctl/
+loan/release/publication. V1 frozen NOT ADOPTED; see qc07f-writer-runtime-parent-
+20261024/V1_DISPOSITION.md. Fresh writer-runtime-v2 now has narrow independent
+SOURCE/API/order/ownership/lifetime sufficiency for R1: post-final-gate actual
+watchdog observation, then actual source time after that cost; pure metadata tail.
+Only checked_source changes; same starts/limits/all other source bytes preserved.
+V2 preflight01 Path/string failure preserved before compiler; explicit preflight02
+then FIRST unchanged recipe build01:14 HOST/ARM compiles/2 rooted REL links/
+44 commands PASS, NOT RUN. Parent checked30 old+191 new pins/all192 delivery members/
+31 prior files,283 frozen/11 roots,723 inputs/272 new+320 reused dependencies/
+16 tools/138 artifacts/44 logs/46 archive bodies/32 extractions and exact deltas.
+See qc07f-writer-runtime-v2 PARENT_DISPOSITION; no author/reviewer active, v1 NOT
+ADOPTED. No C1 prevention claim,
+new clock framework or old frontend adoption,
+function/ioctl execution or hardware phase; typed frontend remains separate.
 Current userspace still uses the old
 contiguous-output ioctl; no cap/native/app acceptance follows.
 Actual backing remains next,

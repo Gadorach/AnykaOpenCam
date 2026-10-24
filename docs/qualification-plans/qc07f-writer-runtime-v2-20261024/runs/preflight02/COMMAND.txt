@@ -1,0 +1,108 @@
+from pathlib import Path
+import hashlib,json,difflib,re,datetime,ast
+root=Path.cwd();app=root/'apps/rtsp-auth/qc07f-writer-runtime-v2';old=root/'apps/rtsp-auth/qc07f-writer-runtime-candidate';doc=root/'docs/qualification-plans/qc07f-writer-runtime-v2-20261024';out=doc/'runs/preflight02'
+def pin(p):
+ b=p.read_bytes();return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def now():
+ return datetime.datetime.now(datetime.timezone.utc).isoformat()
+def aggregate(files):
+ return hashlib.sha256(''.join(f"{n}\t{files[n]['bytes']}\t{files[n]['sha256']}\n" for n in sorted(files)).encode()).hexdigest()
+selection=json.loads((out/'SELECTION.json').read_text())
+record={'started':now(),'status':'BUILDING_METADATA_ONLY','step':'initial','candidate_calls':0,'recipe_invocations':0,'C_compiles':0,'rooted_REL_links':0,'argv':['/usr/bin/python3','-'],'stdin':str(out/'COMMAND.txt'),'cwd':str(root),'command_pin':pin(out/'COMMAND.txt'),'checks':[]}
+try:
+ record['step']='existing31 before custody'
+ existing={str(p.relative_to(root)):pin(p) for d in (app,doc) for p in d.rglob('*') if p.is_file() and not p.is_relative_to(out)}
+ assert existing==selection['existing_files'] and len(existing)==31
+ assert aggregate(existing)==selection['existing_aggregate']
+ assert pin(app/'owned_runtime.c')['sha256']=='968e975f5658b595fcdabf5b15dfad985d77b57ee5a9106d5fc327fa28e88e69'
+ assert pin(app/'compile01.py')['sha256']=='53547759d869bddf19cdadf6b3704b4357eaed216a634e25d3712296b000eaa8'
+ assert not (doc/'runs/build01').exists()
+ record['checks'].append('all31 existing file bytes and membership exact before work; source/recipe expected hashes')
+ record['step']='frozen283 and original182'
+ frozen=json.loads((doc/'FROZEN_BEFORE.json').read_text())
+ assert len(frozen['files'])==283 and len(frozen['roots'])==11
+ for d in frozen['roots']:
+  assert {str(p.relative_to(root)) for p in (root/d).rglob('*') if p.is_file()}=={n for n in frozen['files'] if n.startswith(d+'/')},d
+ for n,v in frozen['files'].items():assert pin(root/n)==v,n
+ v1={n:v for n,v in frozen['files'].items() if n.startswith('apps/rtsp-auth/qc07f-writer-runtime-candidate/') or n.startswith('docs/qualification-plans/qc07f-writer-runtime-20261024/')}
+ assert len(v1)==182 and aggregate(v1)=='944d6a64b6b78e77e18ed06240114d77f5aaa8c139f6247438a4f17ba2026a99'
+ record['checks'].append('all283 frozen bytes/11 exact root memberships and original182 required aggregate')
+ record['step']='literal C scope and reverse proof'
+ a=(old/'owned_runtime.c').read_text();b=(app/'owned_runtime.c').read_text();start='static void checked_source(';end='static int range32('
+ i=a.index(start);j=a.index(end,i);ii=b.index(start);jj=b.index(end,ii)
+ assert a[:i]==b[:ii] and a[j:]==b[jj:]
+ original=a[i:j];corrected=b[ii:jj];assert original.endswith('}\n')
+ assert corrected.startswith(original[:-2]) and corrected.endswith('}\n')
+ addition=corrected[len(original)-2:-2];assert addition and 'r->gate(' not in addition and 'qw_owner_check' in addition
+ assert len(addition.splitlines())==10
+ assert a[:i]+original[:-2]+addition+'}\n'+a[j:]==b
+ assert b[:ii]+corrected[:len(original)-2]+'}\n'+b[jj:]==a
+ for n in ('owned_runtime_v4.h','native_adapter.inc','native-watchdog.inc'):assert (old/n).read_bytes()==(app/n).read_bytes(),n
+ record['unchanged_C_prefix']={'bytes':len(a[:i].encode()),'sha256':hashlib.sha256(a[:i].encode()).hexdigest()}
+ record['unchanged_C_suffix']={'bytes':len(a[j:].encode()),'sha256':hashlib.sha256(a[j:].encode()).hexdigest()}
+ record['appended_source_text']=addition
+ record['checks'].append('only10 appended checked_source body lines; all original checks retained; forward/inverse exact; all other C/header/private include bytes equal')
+ record['step']='exact recipe text derivative'
+ recipe=(old/'compile02.py').read_text();expected=recipe.replace("DOC = ROOT / 'docs/qualification-plans/qc07f-writer-runtime-20261024'", "DOC = ROOT / 'docs/qualification-plans/qc07f-writer-runtime-v2-20261024'").replace("out = DOC / 'runs/build02'", "out = DOC / 'runs/build01'")
+ oldblock="""          MEM, HUB, APP.parent / 'rtp-span-candidate', ENC]
+PAIRS = [(APP.parent / 'qc07f-span-serve-candidate/owned_runtime.c', APP / 'owned_runtime.c'),
+         (APP.parent / 'qc07f-span-serve-candidate/owned_runtime_v1.h', APP / 'owned_runtime_v4.h'),
+         (APP.parent / 'qc07f-span-runtime-candidate/native/native_adapter.c', APP / 'native_adapter.inc'),
+         (BASE / 'native/native-watchdog.inc', APP / 'native-watchdog.inc')]"""
+ newblock="""          MEM, HUB, APP.parent / 'rtp-span-candidate', ENC,
+          APP.parent / 'qc07f-writer-runtime-candidate',
+          ROOT / 'docs/qualification-plans/qc07f-writer-runtime-20261024',
+          ROOT / 'docs/qualification-plans/qc07f-writer-runtime-review-20261024',
+          ROOT / 'docs/qualification-plans/qc07f-writer-runtime-parent-20261024']
+PAIRS = [(APP.parent / 'qc07f-writer-runtime-candidate' / n, APP / n)
+         for n in ('owned_runtime.c', 'owned_runtime_v4.h', 'native_adapter.inc', 'native-watchdog.inc')]"""
+ assert expected.count(oldblock)==1;expected=expected.replace(oldblock,newblock);actual=(app/'compile01.py').read_text();assert expected==actual
+ reverse=actual.replace(newblock,oldblock).replace("DOC = ROOT / 'docs/qualification-plans/qc07f-writer-runtime-v2-20261024'", "DOC = ROOT / 'docs/qualification-plans/qc07f-writer-runtime-20261024'").replace("out = DOC / 'runs/build01'", "out = DOC / 'runs/build02'")
+ assert reverse==recipe;ast.parse(actual)
+ record['checks'].append('exact previously selected recipe text and inverse; production flags/guards/roles/pin map/roots/sensor inclusion unchanged; AST only')
+ record['step']='fresh diffs and old proof equality'
+ proofdir=out/'proof';proofdir.mkdir()
+ for n,m in [('owned_runtime.c','owned_runtime.c'),('owned_runtime_v4.h','owned_runtime_v4.h'),('native_adapter.inc','native_adapter.inc'),('native-watchdog.inc','native-watchdog.inc'),('compile02.py','compile01.py')]:
+  for inverse in (False,True):
+   x,y=(app/m,old/n) if inverse else (old/n,app/m)
+   text=''.join(difflib.unified_diff(x.read_text().splitlines(True),y.read_text().splitlines(True),str(x),str(y)))
+   name=m+('.inverse.diff' if inverse else '.forward.diff')
+   assert text.encode()==(doc/'proof'/name).read_bytes(),name
+   with (proofdir/name).open('x') as f:f.write(text)
+ record['checks'].append('all10 regenerated fresh diffs byte-identical to preserved partial proofs (six empty)')
+ record['step']='46 baseline source records exact dependencies pin map'
+ base=root/'docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/REPORT.json';r=json.loads(base.read_text());count=0;paths=set();source_records=[]
+ for c in r['commands']:
+  if '-c' in c['argv']:
+   n=c['argv'][c['argv'].index('-c')+1];assert pin(Path(n))==r['dependencies'][n];count+=1;paths.add(n)
+   source_records.append({'source':n,'pin':r['dependencies'][n],'argv':c['argv']})
+ assert count==46 and len(paths)==23
+ record['baseline_compile_source_records']=source_records
+ record['baseline_compile_record_count']=count;record['baseline_distinct_compile_sources']=len(paths)
+ record['checks'].append('46 baseline compilation source records/23 distinct paths hash-match EXACT baseline.dependencies, no fallback')
+ record['step']='actual unchanged phase metadata'
+ handoff=(root/'apps/rtsp-auth/qc07f-producer-memory/handoff.h').read_text();watch=(root/'apps/rtsp-auth/qc07f-owned-runtime/native/watchdog_owner.c').read_text()
+ assert '#define NH_OUTPUT_NS 2000000000ULL' in handoff
+ assert '#define QW_PHASE_NS UINT64_C(2000000000)' in watch
+ record['phase_metadata']={'NH_OUTPUT_NS':'2000000000ULL','QW_PHASE_NS':'UINT64_C(2000000000)','same_value':2000000000,'no_policy_change':True}
+ record['checks'].append('actual unchanged NH_OUTPUT_NS and QW_PHASE_NS both2s')
+ record['step']='selected inputs and final custody'
+ selected=[doc/'FROZEN_BEFORE.json',doc/'CONTRACT.md',base,root/'framework/include/camera/rtsp_clock.h',root/'apps/rtsp-auth/qc07f-owned-runtime/native/watchdog_owner.c',root/'apps/rtsp-auth/qc07f-owned-runtime/native/watchdog_owner.h',root/'apps/rtsp-auth/qc07f-owned-runtime/native/provider-observe.inc',root/'apps/rtsp-auth/qc07f-owned-runtime/native/rtspd-native-import.c',root/'apps/rtsp-auth/qc07f-producer-memory/handoff.h']
+ record['selected_inputs']={str(p.relative_to(root)):pin(p) for p in selected}
+ record['source_pins']={str(p.relative_to(root)):pin(p) for p in app.iterdir() if p.is_file()}
+ record['proof_pins']={str(p.relative_to(root)):pin(p) for p in proofdir.iterdir()}
+ after={str(p.relative_to(root)):pin(p) for d in (app,doc) for p in d.rglob('*') if p.is_file() and not p.is_relative_to(out)}
+ assert after==selection['existing_files']
+ for d in frozen['roots']:
+  assert {str(p.relative_to(root)) for p in (root/d).rglob('*') if p.is_file()}=={n for n in frozen['files'] if n.startswith(d+'/')},d
+ for n,v in frozen['files'].items():assert pin(root/n)==v,n
+ record['checks'].append('all31 preexisting files and all283 frozen files/root memberships identical AFTER preflight; original preflight01 untouched')
+ record.update(status='PREFLIGHT02_ALL_STRICT_CHECKS_PASS_NOT_RUN',step='complete',existing31_unchanged=True,frozen283_unchanged=True,original182_aggregate=aggregate(v1),source_forward_inverse_exact=True,recipe_forward_inverse_exact=True,original_checks_retained=True,whole_file_identical=['owned_runtime_v4.h','native_adapter.inc','native-watchdog.inc'])
+except BaseException as exc:
+ record.update(status='FAILED_PRESERVED',error=type(exc).__name__+': '+str(exc))
+ raise
+finally:
+ record['ended']=now()
+ record['artifacts_excluding_result']={str(p.relative_to(root)):pin(p) for p in out.rglob('*') if p.is_file() and p.name not in ('RESULT.json','STDOUT.txt','STDERR.txt')}
+ with (out/'RESULT.json').open('x') as f:json.dump(record,f,indent=2);f.write('\n')
+ print(record['status'])

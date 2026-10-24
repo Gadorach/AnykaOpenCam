@@ -1,0 +1,19 @@
+--- /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-writer-runtime-candidate/owned_runtime.c
++++ /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-writer-runtime-v2/owned_runtime.c
+@@ -242,6 +242,16 @@
+  now=source_now(r);
+  if(now==UINT64_MAX||now<r->operation_begin_ns||now-r->operation_begin_ns>=NH_OUTPUT_NS||
+     now>=native.watchdog.session_deadline_ns||ready(r,0,now)||r->gate(r->gate_context))retain(r,CAMERA_IO_ERROR);
++ /* Charge the final blocking gate AND actual watchdog descriptor observation.
++  * Finish with a source-clock fence, never another blocking auth callback. */
++ if(active?qw_owner_check(&native.watchdog):qw_owner_idle_observe(&native.watchdog))retain(r,CAMERA_IO_ERROR);
++ now=source_now(r);
++ if(now==UINT64_MAX||now<r->operation_begin_ns||now-r->operation_begin_ns>=NH_OUTPUT_NS||
++    now<native.watchdog.session_start_ns||now>=native.watchdog.session_deadline_ns||
++    now<native.watchdog.last_ns||
++    (active&&(native.watchdog.state!=QW_ACTIVE5||native.watchdog.phase!=QW_NEXT||
++     now<native.watchdog.start_ns||now-native.watchdog.start_ns>=NH_OUTPUT_NS))||
++    (!active&&native.watchdog.state!=QW_DISABLED)||ready(r,0,now))retain(r,CAMERA_IO_ERROR);
+ }
+ static int range32(const void *p,size_t bytes)
+ {uintptr_t a=(uintptr_t)p;return a&&a<=UINT32_MAX&&bytes&&bytes<=UINT32_MAX-a;}

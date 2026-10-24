@@ -1,0 +1,147 @@
+{
+  "selected_at": "2026-10-24T12:21:21.182736+00:00",
+  "authorization": "Parent explicitly selected one metadata preflight02; only if fully PASS one FIRST invocation of existing compile01.py; any failure STOP, no retry/fix.",
+  "existing_roots": [
+    "apps/rtsp-auth/qc07f-writer-runtime-v2",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024"
+  ],
+  "existing_files": {
+    "apps/rtsp-auth/qc07f-writer-runtime-v2/owned_runtime.c": {
+      "bytes": 35700,
+      "sha256": "968e975f5658b595fcdabf5b15dfad985d77b57ee5a9106d5fc327fa28e88e69"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-v2/owned_runtime_v4.h": {
+      "bytes": 4320,
+      "sha256": "1aa528fd9a0d42ddfb8f798b2eecfb3a8361c5acd1bb07e6a3ab0e9bd5bc7879"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-v2/native_adapter.inc": {
+      "bytes": 8226,
+      "sha256": "f4b270c055e8f190f96fdaba8377d0a123d24f020c549c12b78395117226fa72"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-v2/native-watchdog.inc": {
+      "bytes": 4823,
+      "sha256": "e442a15885d97ab2e94d2a9c2b979de830e52c99d6b1b21f6baadb8aae4e2c35"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-v2/LICENSE_NOTICES.md": {
+      "bytes": 1430,
+      "sha256": "7b47e88f488bd73873b718c20d59f7abb1ac35c8684a3e665b5352ab1c09477e"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-v2/compile01.py": {
+      "bytes": 15708,
+      "sha256": "53547759d869bddf19cdadf6b3704b4357eaed216a634e25d3712296b000eaa8"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-v2/README.md": {
+      "bytes": 1919,
+      "sha256": "d7c7af9be7c25a69ea1b54298c584fd8aaf4985bc24057b3485d0e88de876b06"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/FROZEN_BEFORE.json": {
+      "bytes": 57949,
+      "sha256": "0dde0e4413a029db22647666370e1cb71b64bdd72316ce4bf155c7e0a9c85d4d"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/CONTRACT.md": {
+      "bytes": 6273,
+      "sha256": "f421109831fc2c2f811e2cb4a82796cf3f1ca106e01b2024051fe18c7f4513b3"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/HANDOFF.md": {
+      "bytes": 6750,
+      "sha256": "25156d7c828e212131574ac12ae59cf525663c73eba04ad145ae05b589e3ac5e"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/DELIVERY_PINS.json": {
+      "bytes": 6598,
+      "sha256": "a2d4d17a2fe71de0afd0d2d9ccab060c9506eb7f8609909695612a7279d0cc2e"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/owned_runtime.c.forward.diff": {
+      "bytes": 1342,
+      "sha256": "a20939f643e453b9a50f25f200a11a9afecec297d8749929290f5d59a6ca82aa"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/owned_runtime.c.inverse.diff": {
+      "bytes": 1342,
+      "sha256": "23cb40acda2837aaa6bcdd3c10bf0c2a7f1f8080a792971569ccfa9482ac714d"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/owned_runtime_v4.h.forward.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/owned_runtime_v4.h.inverse.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/native_adapter.inc.forward.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/native_adapter.inc.inverse.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/native-watchdog.inc.forward.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/native-watchdog.inc.inverse.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/compile01.py.forward.diff": {
+      "bytes": 2112,
+      "sha256": "6ee2cdc1fc249eb2b80012bb8f6ea8d841379bdaaa3f04fad9bfdd99af3e0f78"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/compile01.py.inverse.diff": {
+      "bytes": 2112,
+      "sha256": "7b856bf22f515cf93a867f279bfed1f1c0155de3ccb7b8b8fcdf085dfa32edb1"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/STDERR.txt": {
+      "bytes": 185,
+      "sha256": "1f7ddcf65ab5330e1b0bb84405d984d9cddc9fb2d649a8c02a4a1bbc9294775b"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/COMMAND.txt": {
+      "bytes": 6244,
+      "sha256": "51fc9a7ae287e86a18df69067b8b0ea8ba6c5ad004d15423c66c147d9dbcef5b"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/REPORT.json": {
+      "bytes": 7012,
+      "sha256": "4fa8065da595b8ae937a6108f7b5d30f5821963ca8dd000592f49db5891ed600"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/source-not-compiled/LICENSE_NOTICES.md": {
+      "bytes": 1430,
+      "sha256": "7b47e88f488bd73873b718c20d59f7abb1ac35c8684a3e665b5352ab1c09477e"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/source-not-compiled/README.md": {
+      "bytes": 1919,
+      "sha256": "d7c7af9be7c25a69ea1b54298c584fd8aaf4985bc24057b3485d0e88de876b06"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/source-not-compiled/compile01.py": {
+      "bytes": 15708,
+      "sha256": "53547759d869bddf19cdadf6b3704b4357eaed216a634e25d3712296b000eaa8"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/source-not-compiled/native-watchdog.inc": {
+      "bytes": 4823,
+      "sha256": "e442a15885d97ab2e94d2a9c2b979de830e52c99d6b1b21f6baadb8aae4e2c35"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/source-not-compiled/native_adapter.inc": {
+      "bytes": 8226,
+      "sha256": "f4b270c055e8f190f96fdaba8377d0a123d24f020c549c12b78395117226fa72"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/source-not-compiled/owned_runtime.c": {
+      "bytes": 35700,
+      "sha256": "968e975f5658b595fcdabf5b15dfad985d77b57ee5a9106d5fc327fa28e88e69"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/source-not-compiled/owned_runtime_v4.h": {
+      "bytes": 4320,
+      "sha256": "1aa528fd9a0d42ddfb8f798b2eecfb3a8361c5acd1bb07e6a3ab0e9bd5bc7879"
+    }
+  },
+  "existing_count": 31,
+  "existing_aggregate": "0c395e45c35f9bdbcace7662f5eb09bbbc33ea3d2d82f3a32ae9df75c95f6f7f",
+  "aggregate_method": "sorted complete relative string path TAB decimal bytes TAB sha256 LF",
+  "metadata_correction": "Only pin(Path(n)) instead of pin(n) at baseline string source read/hash boundary; no source/recipe changes.",
+  "new_output_adaptation": "Fresh preflight02 result and regenerated proof outputs only; old partial proof files compared read-only, never overwritten. Additional strict old-custody/v1 aggregate/actual NH_OUTPUT_NS checks required by parent.",
+  "recipe_argv": [
+    "/usr/bin/python3",
+    "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-writer-runtime-v2/compile01.py"
+  ],
+  "recipe_sha256": "53547759d869bddf19cdadf6b3704b4357eaed216a634e25d3712296b000eaa8",
+  "build_output": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01",
+  "compile_recipe_invocations_before_selection": 0,
+  "candidate_calls": 0
+}

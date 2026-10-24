@@ -1,0 +1,55 @@
+python3 - <<'PY'
+from pathlib import Path
+import hashlib,json,difflib,re,datetime,ast
+root=Path.cwd();app=root/'apps/rtsp-auth/qc07f-writer-runtime-v2';old=root/'apps/rtsp-auth/qc07f-writer-runtime-candidate';doc=root/'docs/qualification-plans/qc07f-writer-runtime-v2-20261024'
+def pin(p):
+ b=p.read_bytes();return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+frozen=json.loads((doc/'FROZEN_BEFORE.json').read_text())
+for d in frozen['roots']:
+ assert {str(p.relative_to(root)) for p in (root/d).rglob('*') if p.is_file()}=={n for n in frozen['files'] if n.startswith(d+'/')},d
+for n,v in frozen['files'].items():assert pin(root/n)==v,n
+# No candidate/recipe import or execution: literal-source bookkeeping only.
+a=(old/'owned_runtime.c').read_text();b=(app/'owned_runtime.c').read_text();start='static void checked_source(';end='static int range32('
+i=a.index(start);j=a.index(end,i);ii=b.index(start);jj=b.index(end,ii)
+assert a[:i]==b[:ii] and a[j:]==b[jj:]
+original=a[i:j];corrected=b[ii:jj];assert original.endswith('}\n')
+assert corrected.startswith(original[:-2]) and corrected.endswith('}\n')
+addition=corrected[len(original)-2:-2];assert addition and 'r->gate(' not in addition and 'qw_owner_check' in addition
+assert a[:i]+original[:-2]+addition+'}\n'+a[j:]==b
+assert b[:ii]+corrected[:len(original)-2]+'}\n'+b[jj:]==a
+for n in ('owned_runtime_v4.h','native_adapter.inc','native-watchdog.inc'):assert (old/n).read_bytes()==(app/n).read_bytes(),n
+recipe=(old/'compile02.py').read_text();expected=recipe.replace("DOC = ROOT / 'docs/qualification-plans/qc07f-writer-runtime-20261024'", "DOC = ROOT / 'docs/qualification-plans/qc07f-writer-runtime-v2-20261024'").replace("out = DOC / 'runs/build02'", "out = DOC / 'runs/build01'")
+oldblock="""          MEM, HUB, APP.parent / 'rtp-span-candidate', ENC]
+PAIRS = [(APP.parent / 'qc07f-span-serve-candidate/owned_runtime.c', APP / 'owned_runtime.c'),
+         (APP.parent / 'qc07f-span-serve-candidate/owned_runtime_v1.h', APP / 'owned_runtime_v4.h'),
+         (APP.parent / 'qc07f-span-runtime-candidate/native/native_adapter.c', APP / 'native_adapter.inc'),
+         (BASE / 'native/native-watchdog.inc', APP / 'native-watchdog.inc')]"""
+newblock="""          MEM, HUB, APP.parent / 'rtp-span-candidate', ENC,
+          APP.parent / 'qc07f-writer-runtime-candidate',
+          ROOT / 'docs/qualification-plans/qc07f-writer-runtime-20261024',
+          ROOT / 'docs/qualification-plans/qc07f-writer-runtime-review-20261024',
+          ROOT / 'docs/qualification-plans/qc07f-writer-runtime-parent-20261024']
+PAIRS = [(APP.parent / 'qc07f-writer-runtime-candidate' / n, APP / n)
+         for n in ('owned_runtime.c', 'owned_runtime_v4.h', 'native_adapter.inc', 'native-watchdog.inc')]"""
+assert expected.count(oldblock)==1;expected=expected.replace(oldblock,newblock);actual=(app/'compile01.py').read_text();assert expected==actual
+reverse=actual.replace(newblock,oldblock).replace("DOC = ROOT / 'docs/qualification-plans/qc07f-writer-runtime-v2-20261024'", "DOC = ROOT / 'docs/qualification-plans/qc07f-writer-runtime-20261024'").replace("out = DOC / 'runs/build01'", "out = DOC / 'runs/build02'")
+assert reverse==recipe;ast.parse(actual)
+proofdir=doc/'proof';proofdir.mkdir()
+for n,m in [('owned_runtime.c','owned_runtime.c'),('owned_runtime_v4.h','owned_runtime_v4.h'),('native_adapter.inc','native_adapter.inc'),('native-watchdog.inc','native-watchdog.inc'),('compile02.py','compile01.py')]:
+ for inverse in (False,True):
+  x,y=(app/m,old/n) if inverse else (old/n,app/m)
+  text=''.join(difflib.unified_diff(x.read_text().splitlines(True),y.read_text().splitlines(True),str(x),str(y)))
+  with (proofdir/(m+('.inverse.diff' if inverse else '.forward.diff'))).open('x') as f:f.write(text)
+base=root/'docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/REPORT.json';r=json.loads(base.read_text());count=0;paths=set()
+for c in r['commands']:
+ if '-c' in c['argv']:
+  n=c['argv'][c['argv'].index('-c')+1];assert pin(n)==r['dependencies'][n];count+=1;paths.add(n)
+assert count==46 and len(paths)==23
+# Equality of the actual existing phase/output limits; no policy replacement.
+handoff=(root/'apps/rtsp-auth/qc07f-producer-memory/handoff.h').read_text();watch=(root/'apps/rtsp-auth/qc07f-owned-runtime/native/watchdog_owner.c').read_text()
+print('NH_OUTPUT_NS declaration:',*[line for line in handoff.splitlines() if 'NH_OUTPUT_NS' in line]);assert '#define QW_PHASE_NS UINT64_C(2000000000)' in watch
+selected=[doc/'FROZEN_BEFORE.json',doc/'CONTRACT.md',base,root/'framework/include/camera/rtsp_clock.h',root/'apps/rtsp-auth/qc07f-owned-runtime/native/watchdog_owner.c',root/'apps/rtsp-auth/qc07f-owned-runtime/native/watchdog_owner.h',root/'apps/rtsp-auth/qc07f-owned-runtime/native/provider-observe.inc',root/'apps/rtsp-auth/qc07f-owned-runtime/native/rtspd-native-import.c']
+record={'created':datetime.datetime.now(datetime.timezone.utc).isoformat(),'status':'SOURCE_AND_RECIPE_LITERAL_PREFLIGHT_ONLY_NOT_RUN','source_pins':{str(p.relative_to(root)):pin(p) for p in app.iterdir() if p.is_file()},'selected_inputs':{str(p.relative_to(root)):pin(p) for p in selected},'proof_pins':{str(p.relative_to(root)):pin(p) for p in proofdir.iterdir()},'outside_checked_source_identical':True,'original_checked_statements_retained_exactly':True,'source_forward_inverse_exact':True,'recipe_forward_inverse_exact':True,'whole_file_identical':['owned_runtime_v4.h','native_adapter.inc','native-watchdog.inc'],'unchanged_C_prefix':{'bytes':len(a[:i].encode()),'sha256':hashlib.sha256(a[:i].encode()).hexdigest()},'unchanged_C_suffix':{'bytes':len(a[j:].encode()),'sha256':hashlib.sha256(a[j:].encode()).hexdigest()},'appended_source_text':addition,'baseline_compile_source_records':count,'baseline_distinct_compile_sources':len(paths),'baseline_pin_map':'dependencies (exact, no fallback)','frozen_files':len(frozen['files']),'frozen_unchanged':True,'planned_invocations':1,'argv':['/usr/bin/python3',str(app/'compile01.py')],'candidate_calls':0}
+with (doc/'PREBUILD_VERIFICATION.json').open('x') as f:json.dump(record,f,indent=2);f.write('\n')
+print('Prebuild source/recipe forward + inverse proofs PASS; frozen283 match; baseline46 records/23 paths match exact dependencies.')
+PY

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<stdin>", line 45, in <module>
+  File "<stdin>", line 5, in pin
+AttributeError: 'str' object has no attribute 'read_bytes'
+Exited with code 1

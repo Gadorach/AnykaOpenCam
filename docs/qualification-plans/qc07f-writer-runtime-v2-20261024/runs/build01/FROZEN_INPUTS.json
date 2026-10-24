@@ -1,0 +1,1149 @@
+{
+  "roots": [
+    "apps/rtsp-auth/qc07f-owned-runtime",
+    "apps/rtsp-auth/qc07f-span-runtime-candidate",
+    "apps/rtsp-auth/qc07f-span-serve-candidate",
+    "apps/rtsp-auth/qc07f-producer-memory",
+    "apps/rtsp-auth/span-hub-producer-candidate",
+    "apps/rtsp-auth/rtp-span-candidate",
+    "apps/qualification/qc07f-encoder-output-spans",
+    "apps/rtsp-auth/qc07f-writer-runtime-candidate",
+    "docs/qualification-plans/qc07f-writer-runtime-20261024",
+    "docs/qualification-plans/qc07f-writer-runtime-review-20261024",
+    "docs/qualification-plans/qc07f-writer-runtime-parent-20261024"
+  ],
+  "files": {
+    "apps/rtsp-auth/qc07f-owned-runtime/README.md": {
+      "bytes": 5394,
+      "sha256": "4f3d0d917a61c26912d81564c6a85abf215ef6c6b5d5e5e81dcd05d1805d1b69"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/build.py": {
+      "bytes": 11156,
+      "sha256": "047bf9667a4900608bf657e56e60dc18b6f6d22ab04bbcc682a8afa48156f17d"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/licenses/GCC-14.3.0-COPYING.RUNTIME": {
+      "bytes": 3324,
+      "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/licenses/GCC-14.3.0-COPYING3": {
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/licenses/HOST-libgcc-RUNTIME.LIBRARY.EXCEPTION": {
+      "bytes": 3324,
+      "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/licenses/MUSL-1.2.5-COPYRIGHT": {
+      "bytes": 6204,
+      "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/licenses/MbedTLS-LICENSE": {
+      "bytes": 29852,
+      "sha256": "9b405ef4c89342f5eae1dd828882f931747f71001cfba7d114801039b52ad09b"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/licenses/public-acquisition.json": {
+      "bytes": 1222,
+      "sha256": "20baeff2c7ec6233225c9b02c018a1138cab35c4b4cbb6cc17037d48f24267b5"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/capture-receipt.h": {
+      "bytes": 1751,
+      "sha256": "aa30e333eae75d53c21781990ebb71194261462756880b47382acd3cb81379f0"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/capture-retirement-uapi.h": {
+      "bytes": 1610,
+      "sha256": "887e32a3a9201812be3bd882826d2bc88a518b613a11793c3da862a39458dc39"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/crc-bzip2.h": {
+      "bytes": 594,
+      "sha256": "98c1bdc63d0eb7a5935b379871cc1fe694c401c717d9b5a68e6c3c78eb0d4e44"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/encoder-open-query.h": {
+      "bytes": 2455,
+      "sha256": "6052069fa5428185eb8c61871404256c53c30c12515eaa5c9ab80c424facde37"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/encoder_fd_custody.c": {
+      "bytes": 4006,
+      "sha256": "21e9ce06803eb28a416e8841b66ac0326f7b6b199dd9b433bedafa51bb564ce3"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/encoder_fd_custody.h": {
+      "bytes": 3116,
+      "sha256": "c51cdc00bc4f3999296335de5f45a8c7bafd37388d131fe14847fd0e8c5917d6"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/frame_fd_custody.c": {
+      "bytes": 3484,
+      "sha256": "d6c4a65939c2f6bde1498eb6622c9487a92757c0d7170bcc90d3137a7cfcf78d"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/frame_fd_custody.h": {
+      "bytes": 2887,
+      "sha256": "6dce51456b7588fa46c8605d73d222a57eb320abc1583399a78f4a6ae45365ae"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/h264-baseline.h": {
+      "bytes": 2099,
+      "sha256": "4b9d6617bb70b92723ef7bdd9eea7e0680b4d11f5276d48133bbbf75042b896f"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/handoff.h": {
+      "bytes": 2413,
+      "sha256": "9b88ce3e24a3a6c1c16336315323b70b29560c473ac9a48d36043bd60c840113"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/isp-stream.h": {
+      "bytes": 3493,
+      "sha256": "db8ca50e94c811757700ebeb0f7f8e809fa2981dd83c7ad97a8a397470ac1d71"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/memory_reader.c": {
+      "bytes": 1079,
+      "sha256": "c9bd8401476f3baf73b43051651e6c306f14a05c1d5a5317531302569d4261c0"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/memory_reserve.c": {
+      "bytes": 10310,
+      "sha256": "aec0a30d7f67bfc8fc0f2c078cf4a53efb42d78a65b46c0bef22312060070aff"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/memory_reserve.h": {
+      "bytes": 2193,
+      "sha256": "e09c5ce48a1142df66a71c782367abdc4c8e5557210c27c8ee3f1b67ecfc6eed"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/memory_runtime.c": {
+      "bytes": 5115,
+      "sha256": "c505e3447cbfa852c88a97816e233269de6dec12080625d16004dca31d152d57"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/memory_runtime.h": {
+      "bytes": 921,
+      "sha256": "54aaa1c9bb8e9c297625054160653378c242d9303504bb7093602373ba227b84"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/native-watchdog.inc": {
+      "bytes": 7670,
+      "sha256": "5d277150aac41c67df04b6ea228a86c1d1a4569838d3daa29048ad7d79a835fa"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/native_adapter.c": {
+      "bytes": 11628,
+      "sha256": "1fcd2a68750c64a0f1d1b3a96f1124f6f21369b9eb19f4b89a9bcbd1774754bf"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/native_adapter.h": {
+      "bytes": 1137,
+      "sha256": "44dbf880edebdccf99ca33a4bd6d4fad33c547ca0e35a1afbe7a5b7625fe01b3"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/native_watchdog.h": {
+      "bytes": 1987,
+      "sha256": "4c38ee22332ed89e57da07365277ae6b167d0770afdf66ac97db571b22b4c19e"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/owned-provider-types.h": {
+      "bytes": 1036,
+      "sha256": "0be89944bdedadb4f446c7059774034ae86ee0bc9baa466ad922d9c29271887b"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/owned-provider.h": {
+      "bytes": 1835,
+      "sha256": "92d2062faefbba3a63002cfed424dbb73c24720211eb5d9643378c1b25951838"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/provider-observe.inc": {
+      "bytes": 4759,
+      "sha256": "b26cd139a249329b87f17aa555d28a845ed67e28f190cbead7be1e264472cd3d"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/provider-return.h": {
+      "bytes": 1757,
+      "sha256": "122776caa5a24556ccc7de189d26a23f0c40bd5e57569523c38b904743b44665"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/provider-return.inc": {
+      "bytes": 5400,
+      "sha256": "ba81cfcfe6c81d15bf86d7241db1a8a166f106e3c0dac91fa99a1d27fd7e62c5"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/provider-take.inc": {
+      "bytes": 3486,
+      "sha256": "9bf6fcdb3f314687d627ba0dba387d374c65624e6ab0561a104329cb92abb1a2"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/qc07f_hwenc.h": {
+      "bytes": 1501,
+      "sha256": "6723c30c76a3fbd1feaf1ed9d1676a2b9b6289b352ffe7682372bf8e95123731"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/rtspd-native-import.c": {
+      "bytes": 16881,
+      "sha256": "00ee594e91442b3fb256834f0069d653d71d379e781c4bce7a4390e68f3339be"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/sc1346-init.h": {
+      "bytes": 2899,
+      "sha256": "98da5eb9e522975d834d99e8c0cdfbefe75ed87dbbcdf84fd9f0fb150f9efbe9"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/sensor_baseline.c": {
+      "bytes": 5688,
+      "sha256": "6994e3ce6e048e6829bd0e85e61049662422d872198aa71e14f3cb95b95676ee"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/sensor_baseline.h": {
+      "bytes": 1099,
+      "sha256": "ed1e8a5ef9586b6c68d71ddabcd499d660cf91e0df97212c8e7ce5076b407503"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/source-close-once.inc": {
+      "bytes": 615,
+      "sha256": "f537ca9df2856c66dc60ff8765b96b956f199a4be09a80dfeb11a1b3b088d8cc"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/stage-telemetry-uapi.h": {
+      "bytes": 2203,
+      "sha256": "6bab6082882a574ad7a98613c68a64225147dbfe9773ed73bd6e5b0f70d7a9e7"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/watchdog_owner.c": {
+      "bytes": 5952,
+      "sha256": "1718f8ad16f06a663de0829dd6f811cecd9fd90f7a0647c618d453524144c489"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/native/watchdog_owner.h": {
+      "bytes": 3490,
+      "sha256": "e033add3827cd9d8586e207eed857f8aee851e20a563f5c8b5a9fe245e3a7034"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/owned_runtime.c": {
+      "bytes": 11809,
+      "sha256": "5e21fcb2559911b79ffbd7732b951b8d8931a84e2e33f03a52f39d09de0dbd43"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/owned_runtime_v1.h": {
+      "bytes": 3375,
+      "sha256": "024ff9282840c97208644674601181fcbe97befd4e7222c34627e75d5c8b3621"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/server/adapter_state.h": {
+      "bytes": 1322,
+      "sha256": "0cd9da197894edd459bd229fa8bae7a7aac152395aa48f899a1b16198ccef63d"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/server/candidate_auth.c": {
+      "bytes": 17425,
+      "sha256": "cb27b35e2d8730b8d19f231d339e06cbe4c97fbe0aca7826fe3469d8479825a7"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/server/candidate_auth.h": {
+      "bytes": 6001,
+      "sha256": "94b6ed560677b7db4119eded9726ab01085c2e0eb392bdad29e961ebcd2ed643"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/server/delay_pin.h": {
+      "bytes": 323,
+      "sha256": "830654636a64b12bf0e2b63e16d0dddc523275ea5e8c34a9bcadc048efa8b2b6"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/server/host_pin.h": {
+      "bytes": 321,
+      "sha256": "fe66ea42fed61071dc60571dc46e68461c6dfdaa7b8c48d05ab6a722cc02a760"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/server/listener_custody.c": {
+      "bytes": 2501,
+      "sha256": "558885b5b6b6064d6048f00513e467b39a680e96a9e1ee084074f9c2176dd0df"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/server/listener_custody.h": {
+      "bytes": 647,
+      "sha256": "56202c59ac39169e9d156777f02d53e3aa6500db4db08586d46036265a6c9465"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/server/native_pin.h": {
+      "bytes": 325,
+      "sha256": "1303b91258fd26847a08589bdd1d81d6f9903b47b71aad3c2c7a708eeb4d194c"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/server/prestarted_owned_listener_v1.h": {
+      "bytes": 3095,
+      "sha256": "d642ea4ab170b970b86e66bc6055dd3bb3db177ff0c3e470e95343a167146a01"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/server/rtsp_server_candidate.c": {
+      "bytes": 43330,
+      "sha256": "fb47ac06be587b8bac793c272c804ece0220601e4a1d0810164295b0c4dd5ce1"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/server/server_crypto_config.h": {
+      "bytes": 303,
+      "sha256": "e38c5a4cb050f7ef380ce3a31a2d6cfdfd9728017fbe34ae3836924c058b84be"
+    },
+    "apps/rtsp-auth/qc07f-owned-runtime/server/verifier_adapter_overlay.c": {
+      "bytes": 19892,
+      "sha256": "03413c00c829f4a94c8630ace490927be4b718bbac9b48b771997a0905c8880a"
+    },
+    "apps/rtsp-auth/qc07f-span-runtime-candidate/LICENSE_NOTICES.md": {
+      "bytes": 872,
+      "sha256": "41d30b83e6d8350f07628fe1705988380595d6d7d359e4fe751da6c9cb000961"
+    },
+    "apps/rtsp-auth/qc07f-span-runtime-candidate/README.md": {
+      "bytes": 1852,
+      "sha256": "feec59c87d7ff9d7c0aa594dcccd48d929bb7c81f5273a18dc3e7b8910257004"
+    },
+    "apps/rtsp-auth/qc07f-span-runtime-candidate/build.py": {
+      "bytes": 16396,
+      "sha256": "570f762a63960848e2ddecacf0caaaa333beb63cfa9475e5912933d266b62504"
+    },
+    "apps/rtsp-auth/qc07f-span-runtime-candidate/build02.py": {
+      "bytes": 14540,
+      "sha256": "6b044026ac623ec4e0a4e666f3a0c6905e82cc9274e2f62d950cfc86a4abf436"
+    },
+    "apps/rtsp-auth/qc07f-span-runtime-candidate/native/native_adapter.c": {
+      "bytes": 12242,
+      "sha256": "b0b97dc3946e001023bb0c00d22e0aa1d5104ec61b93b4d5770c8d7245a18f5f"
+    },
+    "apps/rtsp-auth/qc07f-span-runtime-candidate/native/native_adapter.h": {
+      "bytes": 1392,
+      "sha256": "57876304bc483349b89faaf3b4c82c7df840d53b3c229f202ea7ac11dae730b0"
+    },
+    "apps/rtsp-auth/qc07f-span-runtime-candidate/native/provider-return.inc": {
+      "bytes": 5872,
+      "sha256": "281bea5950da27f9cf7b04aa624405160cf4876ecb59a752f6adf517da480b44"
+    },
+    "apps/rtsp-auth/qc07f-span-runtime-candidate/owned_runtime.c": {
+      "bytes": 18092,
+      "sha256": "4557ccab74d8f4a499da91acc3626ddb5fdd28befc744817dcd3221e61d05a74"
+    },
+    "apps/rtsp-auth/qc07f-span-runtime-candidate/owned_runtime_v1.h": {
+      "bytes": 4677,
+      "sha256": "1cda7bcc58fc0d0b39437097171990a99053f82085cd12cfec0fb65f462d0afa"
+    },
+    "apps/rtsp-auth/qc07f-span-serve-candidate/LICENSE_NOTICES.md": {
+      "bytes": 1234,
+      "sha256": "9c4980851f266bee5825ace261121c2a8717000a91ab55a7e3a4f4913626c16b"
+    },
+    "apps/rtsp-auth/qc07f-span-serve-candidate/README.md": {
+      "bytes": 935,
+      "sha256": "ce1d4fab5d0ef5736b32c2595de66190ff4cf4d7160255a34438b7a2815ec7f5"
+    },
+    "apps/rtsp-auth/qc07f-span-serve-candidate/build01.py": {
+      "bytes": 15538,
+      "sha256": "9f9c4aaf5548240c0f505f9a0df4cd4ff7bda69cd09542f1f0dba0027d367af7"
+    },
+    "apps/rtsp-auth/qc07f-span-serve-candidate/owned_runtime.c": {
+      "bytes": 26783,
+      "sha256": "384bac52a5142bd3f6888715a3e4d9b6e061a85433d4267e11f046b1307bba10"
+    },
+    "apps/rtsp-auth/qc07f-span-serve-candidate/owned_runtime_v1.h": {
+      "bytes": 5920,
+      "sha256": "a0c620b2e4aba7cbc19c4f1f6c53b6c8a3ecc46e6bff862c0a3f6abceca06815"
+    },
+    "apps/rtsp-auth/qc07f-span-serve-candidate/rtsp_span_server.c": {
+      "bytes": 53857,
+      "sha256": "1b3d9c67341832acb76f25ea84052bd1321cbaf85ae6b6aeca7f6a9574669a9b"
+    },
+    "apps/rtsp-auth/qc07f-span-serve-candidate/rtsp_span_server_v1.h": {
+      "bytes": 4107,
+      "sha256": "2ecee18cbe6d53d5ef950d9aa78045dbaba9b1317e5743b9a928576699742e53"
+    },
+    "apps/rtsp-auth/qc07f-producer-memory/LICENSE_NOTICES.md": {
+      "bytes": 901,
+      "sha256": "0957bd5af1053e46a5050e3a124ad887636d2a55cdbb94b65c696318bb59a224"
+    },
+    "apps/rtsp-auth/qc07f-producer-memory/compile01.py": {
+      "bytes": 12765,
+      "sha256": "72c262b3042b04aae29dbcb7265ee944b3717b27b13bf2978a2f55a840a81e86"
+    },
+    "apps/rtsp-auth/qc07f-producer-memory/handoff.h": {
+      "bytes": 2413,
+      "sha256": "9b88ce3e24a3a6c1c16336315323b70b29560c473ac9a48d36043bd60c840113"
+    },
+    "apps/rtsp-auth/qc07f-producer-memory/memory_reader.c": {
+      "bytes": 1079,
+      "sha256": "c9bd8401476f3baf73b43051651e6c306f14a05c1d5a5317531302569d4261c0"
+    },
+    "apps/rtsp-auth/qc07f-producer-memory/memory_reserve.c": {
+      "bytes": 13350,
+      "sha256": "f5c3d87aa2c6272fc5a54eb3f95af6590ceca7a5d6e95e52c1dd969790c1ec48"
+    },
+    "apps/rtsp-auth/qc07f-producer-memory/memory_reserve.h": {
+      "bytes": 4312,
+      "sha256": "429563e8a85b71ce66fd9e0f6ba6d6ef386173126efa3bcadf5ce7e543c14195"
+    },
+    "apps/rtsp-auth/qc07f-producer-memory/memory_runtime.c": {
+      "bytes": 7911,
+      "sha256": "0e0434b5a8a80493e2582f8efa890fb634dd21543da35808ffd706c3a0a00332"
+    },
+    "apps/rtsp-auth/qc07f-producer-memory/memory_runtime.h": {
+      "bytes": 2039,
+      "sha256": "eafa9773488bdd03d0e4bcf2dfd218810c30351e5dc029275be0e0bac53dfcd5"
+    },
+    "apps/rtsp-auth/span-hub-producer-candidate/LICENSE_NOTICES.md": {
+      "bytes": 868,
+      "sha256": "42ae704c2b6398f64c820a29755e755a178325a86dd3a8569ea926e694624029"
+    },
+    "apps/rtsp-auth/span-hub-producer-candidate/compile01.py": {
+      "bytes": 10704,
+      "sha256": "4d9a39da0755a5180020477a546475d17ac8b295ccb7fc92040f5241249b2175"
+    },
+    "apps/rtsp-auth/span-hub-producer-candidate/span_hub.c": {
+      "bytes": 17177,
+      "sha256": "72e06177ae86c8659972ba8a59c81208302d44e0cb78f29b6114f8a4d5631f93"
+    },
+    "apps/rtsp-auth/span-hub-producer-candidate/span_hub.h": {
+      "bytes": 7936,
+      "sha256": "460320064f85d1f1f8ada1a9afd1e282c287583fdff34787ba63c7354adeed8e"
+    },
+    "apps/rtsp-auth/rtp-span-candidate/LICENSE_NOTICES.md": {
+      "bytes": 822,
+      "sha256": "4c5c334be13a6d424a86ab29a21465c9eca2e696c6a4d68e059c316f6416c383"
+    },
+    "apps/rtsp-auth/rtp-span-candidate/compile01.py": {
+      "bytes": 5382,
+      "sha256": "565b9a5908b6639beaea8134ff6cd23f35f209e8d2f76cb89c8c2e5fef983fa4"
+    },
+    "apps/rtsp-auth/rtp-span-candidate/host_normal.c": {
+      "bytes": 3064,
+      "sha256": "eb1e237785e33669ee5ae77266d3cf7c47b64757a4ebdbf87e697f377cd566e6"
+    },
+    "apps/rtsp-auth/rtp-span-candidate/host_once.py": {
+      "bytes": 2993,
+      "sha256": "f680ecf0a2a8e8f31ab66658c601bad16ee2d54776eaaa812cacce937a9dd27b"
+    },
+    "apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.c": {
+      "bytes": 2586,
+      "sha256": "a608fe8ee8a292b1172ce62c62f19c2a61f9969f64d71385f1a742fdd326560e"
+    },
+    "apps/rtsp-auth/rtp-span-candidate/rtp_h264_spans.h": {
+      "bytes": 1660,
+      "sha256": "41126a8b9827894d6ecb71788cd1cc71bf3b5b036e44fddf998f4c5740f05f91"
+    },
+    "apps/qualification/qc07f-encoder-output-spans/LICENSE_NOTICES.md": {
+      "bytes": 790,
+      "sha256": "6754bf952279ad4738421f6ee849e3cd7e0b717eeee22f3c06351be2b4dcaa37"
+    },
+    "apps/qualification/qc07f-encoder-output-spans/README.md": {
+      "bytes": 2602,
+      "sha256": "2f497b4a30cd3032289dee5fd6515d3c0854f7cfcbd6f8b59399a01ae0761f6e"
+    },
+    "apps/qualification/qc07f-encoder-output-spans/abi_compile.c": {
+      "bytes": 3036,
+      "sha256": "031c5337f231ad38ed8cb6bac7f43ee4816a3f3da72fe173193b680c8979b656"
+    },
+    "apps/qualification/qc07f-encoder-output-spans/build.py": {
+      "bytes": 12421,
+      "sha256": "ea4391963e1f49ea40358ad2a2c0b42611c427e5a9496e1066de6b8b9eca0fc9"
+    },
+    "apps/qualification/qc07f-encoder-output-spans/encoder-output-spans.h": {
+      "bytes": 1559,
+      "sha256": "4267d4074177468898937926b35029fbfb2b392c25ea987832c83137841cb6e6"
+    },
+    "apps/qualification/qc07f-encoder-output-spans/encoder-output-spans.inc": {
+      "bytes": 3227,
+      "sha256": "0a49fd1ce8cf1962f747df0f05db66b7614570885a39f1515780a5f560f7a415"
+    },
+    "apps/qualification/qc07f-encoder-output-spans/qc07f_hwenc.c": {
+      "bytes": 26761,
+      "sha256": "36bc80fadc0a16ded4525f24f805022faf22ee0ac8cb77cdfa4b390ba23e6b50"
+    },
+    "apps/qualification/qc07f-encoder-output-spans/qc07f_hwenc.h": {
+      "bytes": 1567,
+      "sha256": "f2c651e522e7b5444a26c4c8aec05a10e483ee0e1fb41a655219ddf91d3f63e7"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-candidate/LICENSE_NOTICES.md": {
+      "bytes": 1110,
+      "sha256": "800b588cc1a5bfa861561079438d5ba8a5dec9497e03329703ddad197a21a39e"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-candidate/README.md": {
+      "bytes": 2132,
+      "sha256": "f0aa8f6ad2d16f984ee94e698135df59318ba8a1d9877c13d9344209b29c4eab"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-candidate/compile01.py": {
+      "bytes": 15608,
+      "sha256": "f90e70593e16686e1bf51a96cbd5c139be84e82a221431ff52a3cf48599ee1c7"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-candidate/compile02.py": {
+      "bytes": 15614,
+      "sha256": "b2c31d3364cdbfc8d77539ad464e5a94f80d1e255145f82c4b6bf977954c7fd1"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-candidate/native-watchdog.inc": {
+      "bytes": 4823,
+      "sha256": "e442a15885d97ab2e94d2a9c2b979de830e52c99d6b1b21f6baadb8aae4e2c35"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-candidate/native_adapter.inc": {
+      "bytes": 8226,
+      "sha256": "f4b270c055e8f190f96fdaba8377d0a123d24f020c549c12b78395117226fa72"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-candidate/owned_runtime.c": {
+      "bytes": 34945,
+      "sha256": "af95dacac7f609654270201b18772de1a5ee4370f34ab7e1798fb0f0257dfaab"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-candidate/owned_runtime_v4.h": {
+      "bytes": 4320,
+      "sha256": "1aa528fd9a0d42ddfb8f798b2eecfb3a8361c5acd1bb07e6a3ab0e9bd5bc7879"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/AUTHOR_AUDIT.md": {
+      "bytes": 10144,
+      "sha256": "dcba662673d17e2a7624c61325b811d6b35072eac104fe9f69c42bc17144e0a7"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/AUTHOR_VERIFICATION.json": {
+      "bytes": 4812,
+      "sha256": "869f9bf7d0cf50c154b4d8cc796fb1861e92c93ed01c24f9a3e7f9bab24897cd"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/BUILD01_FAILURE.md": {
+      "bytes": 2586,
+      "sha256": "07b4b22c03a39842a27f7ea78e34f8d8c03c5f15a9bbd4f8319f4539d6ab38f3"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/BUILD02_DELIVERY_PINS.json": {
+      "bytes": 5063,
+      "sha256": "ff72c69c0e4733d9f0cc11e07c4ae626aa578678fc787fb23fa95570fafde6db"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/BUILD02_HANDOFF.md": {
+      "bytes": 6783,
+      "sha256": "8c7754eb6d549d2d2983902851fef03abde08ad374dc9a6ac90c8c3a8f6160a8"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/BUILD02_SELECTION.json": {
+      "bytes": 23091,
+      "sha256": "7f3d19ae6f2b548039860a31320d2697652af2a7424ed22c1aae01cb59afb367"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/BUILD02_SELECTION.md": {
+      "bytes": 3004,
+      "sha256": "e69d793bdd2d478be4894261cf2fdf742360eba73636601632fe454b046f540a"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/BUILD02_VERIFICATION.json": {
+      "bytes": 6902,
+      "sha256": "6bcbe067f4e24e59088ae9e927c6b4d97b8c76571e28b4f131f7fc8d90ecbd47"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/CONTRACT.md": {
+      "bytes": 8453,
+      "sha256": "71ac3fcca2b7251e1a3e5152ddbf800bf65977ae47c81b64cc528c85f6dc52c2"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/DELIVERY_PINS.json": {
+      "bytes": 4849,
+      "sha256": "7d174f54e2907ac7a6187a92d749d5b126859e0b5aef46f4cc7faa2c7568561e"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/HANDOFF.md": {
+      "bytes": 4011,
+      "sha256": "98389139d8c8e712018bfab1a75d6faad4723bfa0a4d37a5f920be3f67f681ea"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/FROZEN_INPUTS.json": {
+      "bytes": 18103,
+      "sha256": "e3f440209e488aed744d3c3a9075f257dcf85d36b633b4eb5a801273dc1b4360"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/REPORT.json": {
+      "bytes": 40156,
+      "sha256": "535a2f022f5adc01052066a5303a26f059f8b005cf30ae8852536acb5e2e881d"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/logs/host-archive-members.txt": {
+      "bytes": 541,
+      "sha256": "4f06b1bb34d5c6b61a736df50a7f102ff26c9a82d9d7d13261b4855da87df59d"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/logs/host-machine.txt": {
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/logs/host-tool-as.txt": {
+      "bytes": 3,
+      "sha256": "8b97bca79750847558d488e2ea4de79903c9c71c9af27ecf1b3dff5dba2abdd9"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/logs/host-tool-cc1.txt": {
+      "bytes": 40,
+      "sha256": "c400491dd6f36bdc89c46da99a7c98dbd19a3eb313a62e89576505b07846aec8"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/logs/host-tool-ld.txt": {
+      "bytes": 3,
+      "sha256": "3b6cb8ae51045d062a7c7de7cc488ad8785144cfbc0a7fc9546ed52429e0d97f"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/logs/host-version.txt": {
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/native-watchdog.inc.forward.diff": {
+      "bytes": 10292,
+      "sha256": "bb2e3385f5337c59a989279a3deb2d9409606d446681944f517e51f4f448c2a6"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/native-watchdog.inc.inverse.diff": {
+      "bytes": 10292,
+      "sha256": "fdd55f421de41326898f56fdb08b0472cd7ebb75d4bcf8e0c1ab1d7e2621c88d"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/native_adapter.inc.forward.diff": {
+      "bytes": 12971,
+      "sha256": "a38909eb7c0dc061248fe041107653dba6e776647e0d11ef9496e080a9de5f64"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/native_adapter.inc.inverse.diff": {
+      "bytes": 12974,
+      "sha256": "9892696360ab9db174d218bcef67c3f00d76210e53585b67b3fe593d18ed0448"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/owned_runtime.c.forward.diff": {
+      "bytes": 60803,
+      "sha256": "8e14018b94bca294ca0e6249160b658f07c3380391481ca85ff1ae603d77d88b"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/owned_runtime.c.inverse.diff": {
+      "bytes": 60410,
+      "sha256": "60f243d5e55a01d310359a8cd9bc46a69772d2f0f492b750915248c8722b1114"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/owned_runtime_v4.h.forward.diff": {
+      "bytes": 10149,
+      "sha256": "3c140ba9979038799cae234522dbc170f0546351986595cc257ff6802401fc24"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/owned_runtime_v4.h.inverse.diff": {
+      "bytes": 10149,
+      "sha256": "cf2bf4d2cd898cb77ba3c567b4c79adc7e4eb64ad3f153f628eea934d26407c4"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/source/LICENSE_NOTICES.md": {
+      "bytes": 1110,
+      "sha256": "800b588cc1a5bfa861561079438d5ba8a5dec9497e03329703ddad197a21a39e"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/source/README.md": {
+      "bytes": 2132,
+      "sha256": "f0aa8f6ad2d16f984ee94e698135df59318ba8a1d9877c13d9344209b29c4eab"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/source/compile01.py": {
+      "bytes": 15608,
+      "sha256": "f90e70593e16686e1bf51a96cbd5c139be84e82a221431ff52a3cf48599ee1c7"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/source/native-watchdog.inc": {
+      "bytes": 4823,
+      "sha256": "e442a15885d97ab2e94d2a9c2b979de830e52c99d6b1b21f6baadb8aae4e2c35"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/source/native_adapter.inc": {
+      "bytes": 8226,
+      "sha256": "f4b270c055e8f190f96fdaba8377d0a123d24f020c549c12b78395117226fa72"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/source/owned_runtime.c": {
+      "bytes": 34945,
+      "sha256": "af95dacac7f609654270201b18772de1a5ee4370f34ab7e1798fb0f0257dfaab"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/source/owned_runtime_v4.h": {
+      "bytes": 4320,
+      "sha256": "1aa528fd9a0d42ddfb8f798b2eecfb3a8361c5acd1bb07e6a3ab0e9bd5bc7879"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/FROZEN_INPUTS.json": {
+      "bytes": 18103,
+      "sha256": "e3f440209e488aed744d3c3a9075f257dcf85d36b633b4eb5a801273dc1b4360"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/REPORT.json": {
+      "bytes": 376938,
+      "sha256": "e6a7bc6f859cf02e46f0ef4a4a7d25c33b5fefa76e1c9ce811d577b533a9ad2c"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/arm-WRITER-NOT-EXECUTABLE.o": {
+      "bytes": 140816,
+      "sha256": "a4cddc81cad5849a5e350f1df5b6a6f1ef12d7df559bcc45d9377900419b5d74"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/arm.map": {
+      "bytes": 125147,
+      "sha256": "bd13ac400ca0570d67c8ab2ed6b3025360fc9b413a4e4add39ba65c0be32e4cb"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/host-WRITER-NOT-EXECUTABLE.o": {
+      "bytes": 199640,
+      "sha256": "f3a96487cc59e13c2ff9319eb4fdb3e0f8cf90b5e29cf8b76ae25f5a2339323b"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/host.map": {
+      "bytes": 130288,
+      "sha256": "882f1c81c67da5d90cbd13d6c00ce9fb484f0c2c7be01e850f59d4fc431b5ac1"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/arm-ELF.txt": {
+      "bytes": 38628,
+      "sha256": "fbcd9b3be757e46a6e35d3a87db72288945aa793b4dffe5ae84fb35db12301a9"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/arm-REL.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/arm-all-symbols.txt": {
+      "bytes": 19212,
+      "sha256": "489393d90fc52c99d1138a72fedfc3fed1db438cde4aa6d56605c030a7888817"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/arm-archive-members.txt": {
+      "bytes": 518,
+      "sha256": "fdf8d564b7b24580e5faeca9d75caeef4a7ab3f32eae9f884b35d2ace40048fc"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/arm-compile-memory_reader.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/arm-compile-memory_reserve.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/arm-compile-memory_runtime.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/arm-compile-owned_runtime.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/arm-compile-rtp_h264_spans.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/arm-compile-sensor_baseline.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/arm-compile-span_hub.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/arm-defined.txt": {
+      "bytes": 3918,
+      "sha256": "1354f0b9ddd1ff9521c9d9498482e5cf110ce80506ff83c8abe3fd490bc70839"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/arm-extract.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/arm-machine.txt": {
+      "bytes": 29,
+      "sha256": "d0cf670b8c286026ebd268b1f5ecdd6be41552e0e254a949fb50ab0ed085dd23"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/arm-member-ELF.txt": {
+      "bytes": 24052,
+      "sha256": "ed013a2350b87a9634a7d249a571483246d29bbf3105ad6c30c75a984863b205"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/arm-relocations.txt": {
+      "bytes": 134915,
+      "sha256": "0b4f46307bc6b8d70f3799227f898f1a812a310c478feb087e3ddf9dc8f44fc8"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/arm-symbol-table.txt": {
+      "bytes": 65992,
+      "sha256": "8a6afc25d2872ab8a6f326549ca67264994da18a4786d1352b7381637306be41"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/arm-tool-as.txt": {
+      "bytes": 260,
+      "sha256": "aebf2a97c58e1d1f4676098a8e9b91c8569c49d3c9d06e537fe689c4afcd8b56"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/arm-tool-cc1.txt": {
+      "bytes": 220,
+      "sha256": "11399c4ad884b1da76486da5e344e5b6e2c541c6e4001b24865a4e5cd4f70fa3"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/arm-tool-ld.txt": {
+      "bytes": 260,
+      "sha256": "e98fe4335d69760e406f842f1b5a0cd3e92881bf0dee7376ab8f647b78cc0e98"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/arm-undefined.txt": {
+      "bytes": 1379,
+      "sha256": "cdbf15b6095d39b9c1fcd8abdce40b5073d6dfb0c8f69b02f050d5d98bb97465"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/arm-version.txt": {
+      "bytes": 288,
+      "sha256": "7b501201183c07e1e9078ca3f8b1f502d07fd67c414e92183c01e8787c00a0d4"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/host-ELF.txt": {
+      "bytes": 54397,
+      "sha256": "b8da8fdaed1088a6b9e560627cb9b984d9f1f26aeeea08b3db44f4a5358177a3"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/host-REL.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/host-all-symbols.txt": {
+      "bytes": 22057,
+      "sha256": "e1f9005c78780e2d6677c844e022572e6a330316632ed47d28949e1e1fb5a5a0"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/host-archive-members.txt": {
+      "bytes": 541,
+      "sha256": "4f06b1bb34d5c6b61a736df50a7f102ff26c9a82d9d7d13261b4855da87df59d"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/host-compile-memory_reader.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/host-compile-memory_reserve.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/host-compile-memory_runtime.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/host-compile-owned_runtime.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/host-compile-rtp_h264_spans.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/host-compile-sensor_baseline.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/host-compile-span_hub.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/host-defined.txt": {
+      "bytes": 4813,
+      "sha256": "b168b8e233d03df15aaa6a6ce11f4f6fa36be3eef815856af177f173a657a266"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/host-extract.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/host-machine.txt": {
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/host-member-ELF.txt": {
+      "bytes": 17589,
+      "sha256": "6b262a7d5d694480f8c73326ee1e119b4bcde73f3f4eb6240e61e583924a091c"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/host-relocations.txt": {
+      "bytes": 225403,
+      "sha256": "70029f6aadf482daa6fdc37a4094fe3a1ffb9e1911d321ca3372fc3cdf222633"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/host-symbol-table.txt": {
+      "bytes": 45270,
+      "sha256": "322418961351aa95eefb7f076852f272b8bd0bd2b106a76984c9eac970220267"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/host-tool-as.txt": {
+      "bytes": 3,
+      "sha256": "8b97bca79750847558d488e2ea4de79903c9c71c9af27ecf1b3dff5dba2abdd9"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/host-tool-cc1.txt": {
+      "bytes": 40,
+      "sha256": "c400491dd6f36bdc89c46da99a7c98dbd19a3eb313a62e89576505b07846aec8"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/host-tool-ld.txt": {
+      "bytes": 3,
+      "sha256": "3b6cb8ae51045d062a7c7de7cc488ad8785144cfbc0a7fc9546ed52429e0d97f"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/host-undefined.txt": {
+      "bytes": 1641,
+      "sha256": "8f123759a89218c5a38e2027b46b728bdc6c21f7167597433d4298d44c7fbd7f"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/logs/host-version.txt": {
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-arm/arm-10-verifier_adapter_overlay.o": {
+      "bytes": 17116,
+      "sha256": "ba3f10f46523a81bce11fe6d01b7af7e1406a82501e980f026f7fd8581dacad0"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-arm/arm-11-listener_custody.o": {
+      "bytes": 3200,
+      "sha256": "d8d21b383994723acec592eb38059b93bd496bfe61fcfce027894b4577fc9282"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-arm/arm-12-ipc.o": {
+      "bytes": 4400,
+      "sha256": "32c36f7dcf591483b852022ce186a3dcfafc9a8719a808d914fb165112a88eb3"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-arm/arm-13-rtsp_digest_wire.o": {
+      "bytes": 10824,
+      "sha256": "4dd063086fb433b9b6ae3a5c728f6cf88abb4b860ecf9c3d9aaf30cef1356151"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-arm/arm-14-rtsp_request.o": {
+      "bytes": 5808,
+      "sha256": "bb29f12d79b1b040c1325a5f0a2ddaa1766cedc0f0571cc5379292f9b9b1a18d"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-arm/arm-15-rtsp_input.o": {
+      "bytes": 7756,
+      "sha256": "e85cfdeade8798d0bf61accdc9dfff01c93855c8c85f19c3543b06a7202a3e0e"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-arm/arm-16-backend.o": {
+      "bytes": 3656,
+      "sha256": "1585e947e9ff904dd746e8ad9fe5b078070377b487abfbb7dd2df4f316ea3f9a"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-arm/arm-18-producer.o": {
+      "bytes": 12496,
+      "sha256": "a74b9bdfe7a839282b564da1f936675d83bc1b85deb9201190c44697a1f613ae"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-arm/arm-19-rtp_h264.o": {
+      "bytes": 2156,
+      "sha256": "b79e244c64127a26591c2f92067a8b0059477040f363c3d8ea5404b48c013c1c"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-arm/arm-20-sha256.o": {
+      "bytes": 6572,
+      "sha256": "c34ce80b6c177263b7d5bfee03182084d6aedbfef7fdb0d042bac1c00494d67e"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-arm/arm-21-constant_time.o": {
+      "bytes": 1744,
+      "sha256": "1a7d6b9de71084c8a99525005217f0c875200a76670e23fcf9553b53bc2da3d7"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-arm/arm-22-platform_util.o": {
+      "bytes": 1492,
+      "sha256": "a68b8b3051d38890da5403d459683e219974941f58cbd4c41335d997995c7470"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-arm/arm-5-frame_fd_custody.o": {
+      "bytes": 2908,
+      "sha256": "5ce250a3920d4ce264ce90225b1330a3d16197bdd57397b565c34c12c744110f"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-arm/arm-6-encoder_fd_custody.o": {
+      "bytes": 3028,
+      "sha256": "c47aa1e505755d824c25181d9dc3e41eaa2dfabd7378af3910826eefa439a057"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-arm/arm-7-watchdog_owner.o": {
+      "bytes": 7656,
+      "sha256": "858a84e87d57ee1b7abff818423a96a4fea2759a0b353b4c3b83fd4723aada41"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-arm/arm-8-candidate_auth.o": {
+      "bytes": 14044,
+      "sha256": "a870c75b4310fb06bdf45a04d52acee57a98032d5246c96f5ce35d8d986c6475"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-host/host-10-verifier_adapter_overlay.o": {
+      "bytes": 22752,
+      "sha256": "c35e566a0e96a736e20c93f651a267e2cdb2f02c12b9485629e489b5ebf16f69"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-host/host-11-listener_custody.o": {
+      "bytes": 3832,
+      "sha256": "ee44913ef768289143b78e04475fde7f17e32722b9e23b47e72b3d740e5f4c77"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-host/host-12-ipc.o": {
+      "bytes": 6128,
+      "sha256": "e88502400bc7338553bcff768440cea892b461ac9c718c4bbd89f74a2e7e6818"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-host/host-13-rtsp_digest_wire.o": {
+      "bytes": 14976,
+      "sha256": "a4ecf89e7bd5825574618c81261bc4b4f904418be5a7069e55edfb288796833a"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-host/host-14-rtsp_request.o": {
+      "bytes": 7288,
+      "sha256": "3ea13827a70344154c6c174bb092a54da079bf75764cff15118373bedef08395"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-host/host-15-rtsp_input.o": {
+      "bytes": 10544,
+      "sha256": "c552c1802ce1645019dd418a52b9c6ad3119d3848abc520f0387137eb8f6b23f"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-host/host-16-backend.o": {
+      "bytes": 5352,
+      "sha256": "bfdf3d5d5b3c5d1fff5b8ae8ce0711c72741799b2f2e38769ea0159409269653"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-host/host-18-producer.o": {
+      "bytes": 15096,
+      "sha256": "b469377db799283645160318d491d3cfa8b921bceb0554417b4cff88019093bb"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-host/host-19-rtp_h264.o": {
+      "bytes": 2928,
+      "sha256": "76f042cea897b9d01c157c0eb88507c073a95aa3f903f3c212be90f375d7b948"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-host/host-20-sha256.o": {
+      "bytes": 9664,
+      "sha256": "2dac7dbf7be224f22a9e06155d16122ba1792e72822b6a624df729edcc24324f"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-host/host-21-constant_time.o": {
+      "bytes": 2544,
+      "sha256": "d31fd009e3d966a5ecec0e5fd4862da8475a33f15f313bee683f2f74273b66a9"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-host/host-22-platform_util.o": {
+      "bytes": 1936,
+      "sha256": "a2a0f6ccb8caf9220c5e7190b27aba4d2a376f1e66dc335b0b9dafa852d35798"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-host/host-5-frame_fd_custody.o": {
+      "bytes": 3664,
+      "sha256": "3ab957b7d44d231543e49c4c888f3f7a4d49612621b10d691bf532af2d39bb45"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-host/host-6-encoder_fd_custody.o": {
+      "bytes": 3816,
+      "sha256": "4ef1063a2e6fffd75b1632433f2cf0d2e1a2edc4bda98099c23ba430cca7cc85"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-host/host-7-watchdog_owner.o": {
+      "bytes": 9224,
+      "sha256": "d177561c447ffc0e19986d670b014e7778a610332eaddad31f10b48d4ec35a9a"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/members-host/host-8-candidate_auth.o": {
+      "bytes": 18536,
+      "sha256": "495c530f9a0659555942d3b322944b07c622564848d8d175878654015afe52c6"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/native-watchdog.inc.forward.diff": {
+      "bytes": 10292,
+      "sha256": "bb2e3385f5337c59a989279a3deb2d9409606d446681944f517e51f4f448c2a6"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/native-watchdog.inc.inverse.diff": {
+      "bytes": 10292,
+      "sha256": "fdd55f421de41326898f56fdb08b0472cd7ebb75d4bcf8e0c1ab1d7e2621c88d"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/native_adapter.inc.forward.diff": {
+      "bytes": 12971,
+      "sha256": "a38909eb7c0dc061248fe041107653dba6e776647e0d11ef9496e080a9de5f64"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/native_adapter.inc.inverse.diff": {
+      "bytes": 12974,
+      "sha256": "9892696360ab9db174d218bcef67c3f00d76210e53585b67b3fe593d18ed0448"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/arm-memory_reader.d": {
+      "bytes": 4205,
+      "sha256": "b9e8f7b9efeb149982287ae2178a9cb574759aafd7b7e79ec372f48ef30af575"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/arm-memory_reader.o": {
+      "bytes": 1792,
+      "sha256": "053e16e52582a655ed60075079e9dd2524762e5fbfa216251866cf6557babb6f"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/arm-memory_reader.su": {
+      "bytes": 126,
+      "sha256": "ce9e61199dddba8de063fc6242e944dc54c84de4e3587f58b50bdbf98c086b40"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/arm-memory_reserve.d": {
+      "bytes": 2976,
+      "sha256": "d9e7276728e45a01c6b38ab64b7ab4507280a94e3b12beb0d20dc68d2be5a679"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/arm-memory_reserve.o": {
+      "bytes": 12472,
+      "sha256": "e52b6c2f9252b699fb3ce29b0a191ff802b2c72462d3d9de9a13de8758289569"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/arm-memory_reserve.su": {
+      "bytes": 1842,
+      "sha256": "0b9efc1abbe4360cc5c2489e1e46dbf56363b29adaaef4e8aa61a898e8972bc8"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/arm-memory_runtime.d": {
+      "bytes": 5107,
+      "sha256": "a368a695d38a3328c4be8153b89dada5705a7b392866a0f4109c2b2672124d48"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/arm-memory_runtime.o": {
+      "bytes": 6396,
+      "sha256": "fe631695b4e9ed105b5fff70579faa14db55a75bb76b16ea9504045eca209c75"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/arm-memory_runtime.su": {
+      "bytes": 890,
+      "sha256": "ab2aa377e41b9bc5ad6e37a907b9c0698a20074ebcfe0b7ef945031f4fa9ffb3"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/arm-owned_runtime.d": {
+      "bytes": 16986,
+      "sha256": "5bbff3705ef7ffa1b96e3374b0f6ea3136ea0c1f4270359b22551791a13f32cd"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/arm-owned_runtime.o": {
+      "bytes": 61480,
+      "sha256": "b6e00b502a949a3c727ccc1c98799ed685cab75d04f5e751a208a4f03730fa7f"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/arm-owned_runtime.su": {
+      "bytes": 12430,
+      "sha256": "b5d095af2e8bfabc524f13a1b8b90fcde942739a27018d20880d55056854d543"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/arm-rtp_h264_spans.d": {
+      "bytes": 2487,
+      "sha256": "4ed51b722c3239c0f4fcac5adb15b586309252ca4389bb65e9b5c4658a3af101"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/arm-rtp_h264_spans.o": {
+      "bytes": 1756,
+      "sha256": "efb75e7b8f158bc4d05c2aa580e41d5177c2cdfc97a0de9c266adf87d24e7c00"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/arm-rtp_h264_spans.su": {
+      "bytes": 134,
+      "sha256": "04c5251704cdf1d5f634fbcfa3b06a7a8fe6228268815b19aef8017cd66e5aef"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/arm-sensor_baseline.d": {
+      "bytes": 8389,
+      "sha256": "81fd01b6e54d29bc98624954cd53fcee3605058017f9b21e54b6e9eba478a4ec"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/arm-sensor_baseline.o": {
+      "bytes": 7040,
+      "sha256": "513ef336b41c9cf31b3fbc19cdf8cd6876b5544f3c883f3a91e61aa94fc39c88"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/arm-sensor_baseline.su": {
+      "bytes": 1117,
+      "sha256": "97ea7538f9deadb0ebdd6da0f5299b1517174157d80c86095934a92cf18fc75e"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/arm-span_hub.d": {
+      "bytes": 3052,
+      "sha256": "866ac0ec6aefb7e65023ebd3eadf46d02a96b231ec649e3bc98734239fcd4122"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/arm-span_hub.o": {
+      "bytes": 11200,
+      "sha256": "9f019135d0bce2f5339c8dd33c0bf53c6c8ad0f5e00c0035f62bbb8cbd4efda1"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/arm-span_hub.su": {
+      "bytes": 3133,
+      "sha256": "84329f632d584c46db1c36bd1444758f9d3973b09ffcf1c22f591d8a5282cf5f"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/host-memory_reader.d": {
+      "bytes": 2236,
+      "sha256": "b8739a14ef430631c1ca43084050998e4ea0f655bc792fa1cf3102e92ce1a978"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/host-memory_reader.o": {
+      "bytes": 2544,
+      "sha256": "f575edb74b2b750cedbaf6ab337eb3d37c9e6eae767f9e9a38c06a861a03a7f1"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/host-memory_reader.su": {
+      "bytes": 126,
+      "sha256": "2fb7fdf0ed09a959ff72cfe35188b81f0ef168ca26a36f26a7579db3cbc5266d"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/host-memory_reserve.d": {
+      "bytes": 1616,
+      "sha256": "3a0e2e880d04f1f2f7b482c2047ab6d05fc4891513c92ce231239d5196ecf5a5"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/host-memory_reserve.o": {
+      "bytes": 14816,
+      "sha256": "929e542b4865f3b59617fc5fff0ef9d70943f8f827d0f2a636a300af3a308ada"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/host-memory_reserve.su": {
+      "bytes": 1504,
+      "sha256": "58cc9dc963768b53560dd57f71e3aad38cc4e5274a202ddd4758528095b38d47"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/host-memory_runtime.d": {
+      "bytes": 3210,
+      "sha256": "ff668ac023a0f5e97609fd4c5d8d51d30467b68473f493a89d42f96303cdcbf4"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/host-memory_runtime.o": {
+      "bytes": 9152,
+      "sha256": "58e7fe29efd74986f78070598a55e2e4d6b17b21bfbe145ccae1debbf82bb210"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/host-memory_runtime.su": {
+      "bytes": 908,
+      "sha256": "76a3a51ecd327f8b51ff09115e0e503af53482942f71cd43933c9452d1257403"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/host-owned_runtime.d": {
+      "bytes": 11305,
+      "sha256": "9770b96c2672b3b947eb7f83d3b2786a5017f34b47bcfbcd16b21a4a3825c44f"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/host-owned_runtime.o": {
+      "bytes": 95760,
+      "sha256": "24b25c66a16150d8a92e8a909edf12724562fef990fb84e87418f3dce5bea1ea"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/host-owned_runtime.su": {
+      "bytes": 10527,
+      "sha256": "b3abf999dbb7fcfe8f86d4a9daebb11d65a1fe9f4b134534c45f0885af102822"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/host-rtp_h264_spans.d": {
+      "bytes": 1324,
+      "sha256": "023a2018cc864d68d58dbc2b4fcd812ea190c014226e10c3ceafd7f4bfe8b72f"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/host-rtp_h264_spans.o": {
+      "bytes": 2496,
+      "sha256": "e9d59a640fad13ba0403d7600dd1fb8328390cbdafd4ec0f4961e12eed897a0e"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/host-rtp_h264_spans.su": {
+      "bytes": 135,
+      "sha256": "75c9a871c0ca7ea8ce43882f789e7530567ecb69163cb4ef5c41cfb5dd5873b6"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/host-sensor_baseline.d": {
+      "bytes": 4975,
+      "sha256": "e5b16a45c51dbf872bab38a5f7aa7c1a143919c3d1b1a7d487845f3e6dc32d26"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/host-sensor_baseline.o": {
+      "bytes": 8592,
+      "sha256": "b486be85badf7dd9586bd650dd7c5e9fe2f4f1c9ebda00fe0ceac159bcd682f9"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/host-sensor_baseline.su": {
+      "bytes": 1017,
+      "sha256": "8a4dbde91b8721fc6f2822af33147888bdfc006abae1027046a7d81b7e6927a9"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/host-span_hub.d": {
+      "bytes": 2552,
+      "sha256": "140f98784ac2e7789e8151ea868b1e62a6f207f55993f8da7155450aa072adac"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/host-span_hub.o": {
+      "bytes": 13360,
+      "sha256": "cd8d0fcbb3ac32f820fc967204d76048257fbd8f4e6d0cd7a02b39378e7de477"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/objects/host-span_hub.su": {
+      "bytes": 2645,
+      "sha256": "e2cb63c23455c408f6b64f8c9659c44d70e88d813323f1edc04e0cdcbf53deaa"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/owned_runtime.c.forward.diff": {
+      "bytes": 60803,
+      "sha256": "8e14018b94bca294ca0e6249160b658f07c3380391481ca85ff1ae603d77d88b"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/owned_runtime.c.inverse.diff": {
+      "bytes": 60410,
+      "sha256": "60f243d5e55a01d310359a8cd9bc46a69772d2f0f492b750915248c8722b1114"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/owned_runtime_v4.h.forward.diff": {
+      "bytes": 10149,
+      "sha256": "3c140ba9979038799cae234522dbc170f0546351986595cc257ff6802401fc24"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/owned_runtime_v4.h.inverse.diff": {
+      "bytes": 10149,
+      "sha256": "cf2bf4d2cd898cb77ba3c567b4c79adc7e4eb64ad3f153f628eea934d26407c4"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/source/LICENSE_NOTICES.md": {
+      "bytes": 1110,
+      "sha256": "800b588cc1a5bfa861561079438d5ba8a5dec9497e03329703ddad197a21a39e"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/source/README.md": {
+      "bytes": 2132,
+      "sha256": "f0aa8f6ad2d16f984ee94e698135df59318ba8a1d9877c13d9344209b29c4eab"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/source/compile01.py": {
+      "bytes": 15608,
+      "sha256": "f90e70593e16686e1bf51a96cbd5c139be84e82a221431ff52a3cf48599ee1c7"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/source/compile02.py": {
+      "bytes": 15614,
+      "sha256": "b2c31d3364cdbfc8d77539ad464e5a94f80d1e255145f82c4b6bf977954c7fd1"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/source/native-watchdog.inc": {
+      "bytes": 4823,
+      "sha256": "e442a15885d97ab2e94d2a9c2b979de830e52c99d6b1b21f6baadb8aae4e2c35"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/source/native_adapter.inc": {
+      "bytes": 8226,
+      "sha256": "f4b270c055e8f190f96fdaba8377d0a123d24f020c549c12b78395117226fa72"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/source/owned_runtime.c": {
+      "bytes": 34945,
+      "sha256": "af95dacac7f609654270201b18772de1a5ee4370f34ab7e1798fb0f0257dfaab"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/source/owned_runtime_v4.h": {
+      "bytes": 4320,
+      "sha256": "1aa528fd9a0d42ddfb8f798b2eecfb3a8361c5acd1bb07e6a3ab0e9bd5bc7879"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-review-20261024/REVIEW.md": {
+      "bytes": 12784,
+      "sha256": "59df9999694ecbd17fcd55d276fe4282d6b4577d113070ae80122cb5b40319ea"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-parent-20261024/V1_DISPOSITION.md": {
+      "bytes": 2978,
+      "sha256": "a9a5d216f5a13961c60e5f237aeea4cc527606657a30d81288182034805fcdc9"
+    }
+  }
+}

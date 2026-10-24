@@ -66,7 +66,7 @@ dependency records/84 artifacts/40 logs/five tools. Native hardening/real creden
 NOT RUN. See rtsp-provisioner-process PARENT_DISPOSITION; no active author/reviewer
 in that lane; committed locally `5269979`. Its original33-input pin set retains
 the pre-closeout index:32 remain unchanged plus known parent index/status
-updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE14.json`,
+updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE15.json`,
 not rebased. Actual authorized
 external ingress, secret-free launch/FD-env-caps
 hygiene, durable storage/rotation, linked-file retirement/main/external recovery/
@@ -212,10 +212,30 @@ writer/reservation/exposure/HOLD/slice history before touch and before payment.
 Runtime/header/reader/handoff byte-identical; original debt/timing/unpaid HOLD kept.
 10 HOST/ARM compiles/2 rooted REL links/28 commands PASS, zero candidate calls.
 Parent verified18 delivery/13 inputs/98 dependencies/12 tools/107 artifacts/28 logs/
-216 frozen files/10 exact roots and all12 diffs. See qc07f-producer-memory
-PARENT_DISPOSITION; no source author/reviewer active. No actual ioctl/native/runtime
-adoption; complete new-
-layout consumers need separate integration.
+216 frozen files/10 exact roots and all12 diffs. Committed locally `5ca49c8`; see
+qc07f-producer-memory PARENT_DISPOSITION; no source author/reviewer active there.
+Actual qc07f-writer-runtime-candidate source delivered: private span-output ioctl
+into armed hub, typed loan/release and exact common END before real hub commit,
+one private native owner and v3 paid/history/return audits, no encoded1MiB malloc.
+Build01 six metadata commands/0 C/REL failed on recipe pin-map lookup; preserved.
+Explicit corrected build02 changed only recipe lookup/output path:14 HOST/ARM
+compiles/2 rooted REL links/44 commands PASS, source unchanged, NOT RUN.
+Independent review now requires R1: final blocking auth gate escapes the last
+source-operation/session/watchdog check before ioctl/loan/release/publication.
+V1 frozen NOT ADOPTED. See qc07f-writer-runtime-parent-20261024/V1_DISPOSITION.md.
+Fresh qc07f-writer-runtime-v2 now has narrow independent SOURCE/API/order/ownership/
+lifetime sufficiency for R1: same watchdog observed AFTER final blocking gate,
+then source time AFTER that cost, only bounded private metadata follows. Original
+starts/limits unchanged; no strict C1 prevention claim. Only checked_source changes,
+all other C/header/private includes identical. Preflight01 metadata Path/string
+failure preserved before compiler invocation; explicit preflight02 then FIRST
+unchanged recipe build01:14 HOST/ARM compiles/2 rooted REL links/44 commands PASS,
+NOT RUN. Parent checked30 old+191 new delivery pins/all192 members/31 prior files,
+283 frozen files/11 roots,723 inputs/272 new+320 reused dependencies/16 tools/
+138 artifacts/44 logs,46 archive bodies/32 extractions and exact deltas. See v2
+PARENT_DISPOSITION; no author/reviewer active, v1 remains NOT ADOPTED.
+Old frontend remains excluded until a separate typed derivative; no invocation,
+native acceptance or hardware phase. Complete new-layout consumers need integration.
 21 encoder public delivery pins, no function calls. No ioctl,
 test/function call, new framework or hardware phase. Remaining1MiB output/
 raw/process2MiB/combined-load/external recovery remain open; no rerun, negative

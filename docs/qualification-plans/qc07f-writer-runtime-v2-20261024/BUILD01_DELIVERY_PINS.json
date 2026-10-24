@@ -1,0 +1,991 @@
+{
+  "created": "2026-10-24T12:26:49.811556+00:00",
+  "status": "V2_SOURCE_UNREVIEWED_NOT_ADOPTED_NOT_RUN_HOST_ARM_COMPILE_REL_PASS",
+  "aggregate_method": "sorted complete relative string path TAB decimal bytes TAB sha256 LF",
+  "files_excluding_this_manifest": {
+    "apps/rtsp-auth/qc07f-writer-runtime-v2/owned_runtime.c": {
+      "bytes": 35700,
+      "sha256": "968e975f5658b595fcdabf5b15dfad985d77b57ee5a9106d5fc327fa28e88e69"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-v2/owned_runtime_v4.h": {
+      "bytes": 4320,
+      "sha256": "1aa528fd9a0d42ddfb8f798b2eecfb3a8361c5acd1bb07e6a3ab0e9bd5bc7879"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-v2/native_adapter.inc": {
+      "bytes": 8226,
+      "sha256": "f4b270c055e8f190f96fdaba8377d0a123d24f020c549c12b78395117226fa72"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-v2/native-watchdog.inc": {
+      "bytes": 4823,
+      "sha256": "e442a15885d97ab2e94d2a9c2b979de830e52c99d6b1b21f6baadb8aae4e2c35"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-v2/LICENSE_NOTICES.md": {
+      "bytes": 1430,
+      "sha256": "7b47e88f488bd73873b718c20d59f7abb1ac35c8684a3e665b5352ab1c09477e"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-v2/compile01.py": {
+      "bytes": 15708,
+      "sha256": "53547759d869bddf19cdadf6b3704b4357eaed216a634e25d3712296b000eaa8"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-v2/README.md": {
+      "bytes": 1919,
+      "sha256": "d7c7af9be7c25a69ea1b54298c584fd8aaf4985bc24057b3485d0e88de876b06"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/FROZEN_BEFORE.json": {
+      "bytes": 57949,
+      "sha256": "0dde0e4413a029db22647666370e1cb71b64bdd72316ce4bf155c7e0a9c85d4d"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/CONTRACT.md": {
+      "bytes": 6273,
+      "sha256": "f421109831fc2c2f811e2cb4a82796cf3f1ca106e01b2024051fe18c7f4513b3"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/HANDOFF.md": {
+      "bytes": 6750,
+      "sha256": "25156d7c828e212131574ac12ae59cf525663c73eba04ad145ae05b589e3ac5e"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/DELIVERY_PINS.json": {
+      "bytes": 6598,
+      "sha256": "a2d4d17a2fe71de0afd0d2d9ccab060c9506eb7f8609909695612a7279d0cc2e"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/BUILD01_VERIFICATION.json": {
+      "bytes": 64207,
+      "sha256": "946c266e3c30cdf62d18dafedfa408f2756c2c3a58300ad04135d7d58e91049b"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/BUILD01_HANDOFF.md": {
+      "bytes": 8846,
+      "sha256": "84d3f29f3ee82a455f5378debac9bde05aeb591279fca3f35ecde123c3fcd9f4"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/owned_runtime.c.forward.diff": {
+      "bytes": 1342,
+      "sha256": "a20939f643e453b9a50f25f200a11a9afecec297d8749929290f5d59a6ca82aa"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/owned_runtime.c.inverse.diff": {
+      "bytes": 1342,
+      "sha256": "23cb40acda2837aaa6bcdd3c10bf0c2a7f1f8080a792971569ccfa9482ac714d"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/owned_runtime_v4.h.forward.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/owned_runtime_v4.h.inverse.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/native_adapter.inc.forward.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/native_adapter.inc.inverse.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/native-watchdog.inc.forward.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/native-watchdog.inc.inverse.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/compile01.py.forward.diff": {
+      "bytes": 2112,
+      "sha256": "6ee2cdc1fc249eb2b80012bb8f6ea8d841379bdaaa3f04fad9bfdd99af3e0f78"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/compile01.py.inverse.diff": {
+      "bytes": 2112,
+      "sha256": "7b856bf22f515cf93a867f279bfed1f1c0155de3ccb7b8b8fcdf085dfa32edb1"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/STDERR.txt": {
+      "bytes": 185,
+      "sha256": "1f7ddcf65ab5330e1b0bb84405d984d9cddc9fb2d649a8c02a4a1bbc9294775b"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/COMMAND.txt": {
+      "bytes": 6244,
+      "sha256": "51fc9a7ae287e86a18df69067b8b0ea8ba6c5ad004d15423c66c147d9dbcef5b"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/REPORT.json": {
+      "bytes": 7012,
+      "sha256": "4fa8065da595b8ae937a6108f7b5d30f5821963ca8dd000592f49db5891ed600"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/SELECTION.json": {
+      "bytes": 7788,
+      "sha256": "a770f9a3cc20d38309976131bbc375b06a72c31fc729d8b7f7ab1ceb4799b03c"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/SELECTION.md": {
+      "bytes": 1979,
+      "sha256": "d74c8ed6c9887e890c9b3929065bf20dd7562272fcf7c62240d0aebf56f69219"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/COMMAND.txt": {
+      "bytes": 9879,
+      "sha256": "560803fa9e1290afd317e0ef04616f2dcb8cad97cc1594f5544612ce569632c4"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/STDOUT.txt": {
+      "bytes": 43,
+      "sha256": "2162b8d9ad67fc41a22b381abb0dc608200c1878b8603a88edfad69d04867340"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/STDERR.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/RESULT.json": {
+      "bytes": 116121,
+      "sha256": "a5ae4a5c622ffb02a0270d40411295b28d85673bfb15e531de9ba05501e3ff4c"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/BUILD_COMMAND.txt": {
+      "bytes": 294,
+      "sha256": "9c7e5ca282166cc15c01545610457c11b623827f426629911c25fc27fee6eec7"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/BUILD_STDOUT.txt": {
+      "bytes": 119,
+      "sha256": "2f84e7a1251d7e7740bb822858ebfba4dcd2b074946f59feb7e326d6222f2f01"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/BUILD_STDERR.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/FROZEN_INPUTS.json": {
+      "bytes": 57618,
+      "sha256": "495db21805bc69489d4e7c373d8f92d60a451c490b4cf4fcd981d0decc01bb6a"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/owned_runtime.c.forward.diff": {
+      "bytes": 1342,
+      "sha256": "a20939f643e453b9a50f25f200a11a9afecec297d8749929290f5d59a6ca82aa"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/owned_runtime.c.inverse.diff": {
+      "bytes": 1342,
+      "sha256": "23cb40acda2837aaa6bcdd3c10bf0c2a7f1f8080a792971569ccfa9482ac714d"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/owned_runtime_v4.h.forward.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/owned_runtime_v4.h.inverse.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/native_adapter.inc.forward.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/native_adapter.inc.inverse.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/native-watchdog.inc.forward.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/native-watchdog.inc.inverse.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/host.map": {
+      "bytes": 131827,
+      "sha256": "3eccb45b8351c63840481967b44e7e937a9262e6c740394e7a1bf1e4e40b8ed0"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/host-WRITER-NOT-EXECUTABLE.o": {
+      "bytes": 200168,
+      "sha256": "22d483d9d19dcccaa15e39c6619ce3ed9c3657dd115088ea6091ef4259a63ac3"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/arm.map": {
+      "bytes": 126695,
+      "sha256": "609ea381aa9f4fc6b7aea3fe7c7c9f6dfc78d90b97d95257d8dfcb5a4704bb7b"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/arm-WRITER-NOT-EXECUTABLE.o": {
+      "bytes": 141160,
+      "sha256": "0738b3d1ffe47a9fe2154839fd410939ce9665fe12312eda794523d54f4e5472"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/REPORT.json": {
+      "bytes": 422848,
+      "sha256": "17a1e1dac6db7d179a520f323b4ea816307e2cd059066041b9515b4ef2547a1d"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-version.txt": {
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-machine.txt": {
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-tool-cc1.txt": {
+      "bytes": 40,
+      "sha256": "c400491dd6f36bdc89c46da99a7c98dbd19a3eb313a62e89576505b07846aec8"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-tool-as.txt": {
+      "bytes": 3,
+      "sha256": "8b97bca79750847558d488e2ea4de79903c9c71c9af27ecf1b3dff5dba2abdd9"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-tool-ld.txt": {
+      "bytes": 3,
+      "sha256": "3b6cb8ae51045d062a7c7de7cc488ad8785144cfbc0a7fc9546ed52429e0d97f"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-archive-members.txt": {
+      "bytes": 541,
+      "sha256": "4f06b1bb34d5c6b61a736df50a7f102ff26c9a82d9d7d13261b4855da87df59d"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-extract.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-member-ELF.txt": {
+      "bytes": 17637,
+      "sha256": "85c6878e0dbd757597967a122f7970e1b0ac3b938045f9e0501655130b9327f6"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-compile-owned_runtime.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-compile-memory_reserve.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-compile-memory_runtime.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-compile-memory_reader.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-compile-span_hub.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-compile-rtp_h264_spans.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-compile-sensor_baseline.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-REL.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-defined.txt": {
+      "bytes": 4813,
+      "sha256": "b168b8e233d03df15aaa6a6ce11f4f6fa36be3eef815856af177f173a657a266"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-undefined.txt": {
+      "bytes": 1641,
+      "sha256": "8f123759a89218c5a38e2027b46b728bdc6c21f7167597433d4298d44c7fbd7f"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-all-symbols.txt": {
+      "bytes": 22057,
+      "sha256": "e1f9005c78780e2d6677c844e022572e6a330316632ed47d28949e1e1fb5a5a0"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-ELF.txt": {
+      "bytes": 54397,
+      "sha256": "3694235b60f70bef61e9071b13c5ec63be4194f127ef73432b3f905945f03770"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-symbol-table.txt": {
+      "bytes": 45270,
+      "sha256": "3f1c26b1b651f86d3e2dfc43dec288c50f3ced3d9f27a5310be6525b91c58518"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-relocations.txt": {
+      "bytes": 226427,
+      "sha256": "ef16908b405159e421387a2eae9b857ed39cee673b7be1a2300fca20c613e6cc"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-version.txt": {
+      "bytes": 288,
+      "sha256": "7b501201183c07e1e9078ca3f8b1f502d07fd67c414e92183c01e8787c00a0d4"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-machine.txt": {
+      "bytes": 29,
+      "sha256": "d0cf670b8c286026ebd268b1f5ecdd6be41552e0e254a949fb50ab0ed085dd23"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-tool-cc1.txt": {
+      "bytes": 220,
+      "sha256": "11399c4ad884b1da76486da5e344e5b6e2c541c6e4001b24865a4e5cd4f70fa3"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-tool-as.txt": {
+      "bytes": 260,
+      "sha256": "aebf2a97c58e1d1f4676098a8e9b91c8569c49d3c9d06e537fe689c4afcd8b56"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-tool-ld.txt": {
+      "bytes": 260,
+      "sha256": "e98fe4335d69760e406f842f1b5a0cd3e92881bf0dee7376ab8f647b78cc0e98"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-archive-members.txt": {
+      "bytes": 518,
+      "sha256": "fdf8d564b7b24580e5faeca9d75caeef4a7ab3f32eae9f884b35d2ace40048fc"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-extract.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-member-ELF.txt": {
+      "bytes": 24100,
+      "sha256": "22e5ddaf105e0e0cdc8bd1f27cff65a7771037f1c5a706cc08850419b5c3027f"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-compile-owned_runtime.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-compile-memory_reserve.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-compile-memory_runtime.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-compile-memory_reader.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-compile-span_hub.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-compile-rtp_h264_spans.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-compile-sensor_baseline.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-REL.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-defined.txt": {
+      "bytes": 3918,
+      "sha256": "1354f0b9ddd1ff9521c9d9498482e5cf110ce80506ff83c8abe3fd490bc70839"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-undefined.txt": {
+      "bytes": 1379,
+      "sha256": "cdbf15b6095d39b9c1fcd8abdce40b5073d6dfb0c8f69b02f050d5d98bb97465"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-all-symbols.txt": {
+      "bytes": 19212,
+      "sha256": "489393d90fc52c99d1138a72fedfc3fed1db438cde4aa6d56605c030a7888817"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-ELF.txt": {
+      "bytes": 38628,
+      "sha256": "0553c109488d402e160db3dcafd5787387dd218b291a0ae9f66bc85032d62134"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-symbol-table.txt": {
+      "bytes": 65992,
+      "sha256": "c5c4c112946f74ce20709d745b7e46c779c424f36107ee40efb1dc8cd97e6539"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-relocations.txt": {
+      "bytes": 135311,
+      "sha256": "ea827cc7f1453241564ce6ec7d0fe28e58bad12588bdcf5d5ef4363b6eac53fc"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-owned_runtime.su": {
+      "bytes": 10030,
+      "sha256": "7b78c2695154f09abb7c2f1cda77a9322e8a012415ff85a66be619a523d16192"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-owned_runtime.d": {
+      "bytes": 11035,
+      "sha256": "9c4bc4822e13efda324002a3259abfe4aecad9207494107d4bc9f41d30e93446"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-owned_runtime.o": {
+      "bytes": 96296,
+      "sha256": "6f926d1f8677aefd270a2ad9a4e27cdeb902abfa82fae54e90d09373f8efef00"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-memory_reserve.su": {
+      "bytes": 1504,
+      "sha256": "58cc9dc963768b53560dd57f71e3aad38cc4e5274a202ddd4758528095b38d47"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-memory_reserve.d": {
+      "bytes": 1619,
+      "sha256": "9527a250a1c04e876592bc128bff828ede4220e97a639f3a1b2c11d21100f59a"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-memory_reserve.o": {
+      "bytes": 14816,
+      "sha256": "929e542b4865f3b59617fc5fff0ef9d70943f8f827d0f2a636a300af3a308ada"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-memory_runtime.su": {
+      "bytes": 908,
+      "sha256": "76a3a51ecd327f8b51ff09115e0e503af53482942f71cd43933c9452d1257403"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-memory_runtime.d": {
+      "bytes": 3213,
+      "sha256": "8de8a69423b2aae061716a84f0716ba74398c40cfc38a3b2217eaacbe5f4c7f8"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-memory_runtime.o": {
+      "bytes": 9152,
+      "sha256": "58e7fe29efd74986f78070598a55e2e4d6b17b21bfbe145ccae1debbf82bb210"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-memory_reader.su": {
+      "bytes": 126,
+      "sha256": "2fb7fdf0ed09a959ff72cfe35188b81f0ef168ca26a36f26a7579db3cbc5266d"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-memory_reader.d": {
+      "bytes": 2239,
+      "sha256": "1cd7048a25fae02a6e88313f97f1b7c799626f89f9b78c15ad634835e6d2a6ab"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-memory_reader.o": {
+      "bytes": 2544,
+      "sha256": "f575edb74b2b750cedbaf6ab337eb3d37c9e6eae767f9e9a38c06a861a03a7f1"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-span_hub.su": {
+      "bytes": 2645,
+      "sha256": "e2cb63c23455c408f6b64f8c9659c44d70e88d813323f1edc04e0cdcbf53deaa"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-span_hub.d": {
+      "bytes": 2555,
+      "sha256": "6264550ec0925618bb6046623ddb53369bab02fd3748a6633b3def359e056b17"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-span_hub.o": {
+      "bytes": 13360,
+      "sha256": "cd8d0fcbb3ac32f820fc967204d76048257fbd8f4e6d0cd7a02b39378e7de477"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-rtp_h264_spans.su": {
+      "bytes": 135,
+      "sha256": "75c9a871c0ca7ea8ce43882f789e7530567ecb69163cb4ef5c41cfb5dd5873b6"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-rtp_h264_spans.d": {
+      "bytes": 1327,
+      "sha256": "b47676a24f97640a862911109ac4c1976f315ecaaf91ec7bd04605300de9b781"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-rtp_h264_spans.o": {
+      "bytes": 2496,
+      "sha256": "e9d59a640fad13ba0403d7600dd1fb8328390cbdafd4ec0f4961e12eed897a0e"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-sensor_baseline.su": {
+      "bytes": 1017,
+      "sha256": "8a4dbde91b8721fc6f2822af33147888bdfc006abae1027046a7d81b7e6927a9"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-sensor_baseline.d": {
+      "bytes": 4978,
+      "sha256": "ea071284e081177d18aa194c2971697ab2c57db82c20be941674a01b2ca6ecab"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-sensor_baseline.o": {
+      "bytes": 8592,
+      "sha256": "b486be85badf7dd9586bd650dd7c5e9fe2f4f1c9ebda00fe0ceac159bcd682f9"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-owned_runtime.su": {
+      "bytes": 11863,
+      "sha256": "3c01bd84a714bd84c6260bc41da8a3d48a8869e06e3df3b5a133ed9833f6e102"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-owned_runtime.d": {
+      "bytes": 16716,
+      "sha256": "9fd2cc7caf7270857eb0fa1f7c204bf83ca27774e63d8b86f4bdf17fc725cc3a"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-owned_runtime.o": {
+      "bytes": 61824,
+      "sha256": "ddab2995f1a4bcf4b9ffa11458997a6faba9e41f4646409544fc75876f37fa65"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-memory_reserve.su": {
+      "bytes": 1842,
+      "sha256": "0b9efc1abbe4360cc5c2489e1e46dbf56363b29adaaef4e8aa61a898e8972bc8"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-memory_reserve.d": {
+      "bytes": 2979,
+      "sha256": "0f919b5f3cafe6c72f6a4adfaab0137ec139a5da7cbad1158f6ab8b228340d8a"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-memory_reserve.o": {
+      "bytes": 12472,
+      "sha256": "e52b6c2f9252b699fb3ce29b0a191ff802b2c72462d3d9de9a13de8758289569"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-memory_runtime.su": {
+      "bytes": 890,
+      "sha256": "ab2aa377e41b9bc5ad6e37a907b9c0698a20074ebcfe0b7ef945031f4fa9ffb3"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-memory_runtime.d": {
+      "bytes": 5110,
+      "sha256": "f6beadbf9af2ed0aab3f655ba88a33629532de2959c39f74010e93c694da0bdd"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-memory_runtime.o": {
+      "bytes": 6396,
+      "sha256": "fe631695b4e9ed105b5fff70579faa14db55a75bb76b16ea9504045eca209c75"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-memory_reader.su": {
+      "bytes": 126,
+      "sha256": "ce9e61199dddba8de063fc6242e944dc54c84de4e3587f58b50bdbf98c086b40"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-memory_reader.d": {
+      "bytes": 4208,
+      "sha256": "0a225252924265487bb5d4108be1330e434ef03f9e19e2e24a87b8fbe7644887"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-memory_reader.o": {
+      "bytes": 1792,
+      "sha256": "053e16e52582a655ed60075079e9dd2524762e5fbfa216251866cf6557babb6f"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-span_hub.su": {
+      "bytes": 3133,
+      "sha256": "84329f632d584c46db1c36bd1444758f9d3973b09ffcf1c22f591d8a5282cf5f"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-span_hub.d": {
+      "bytes": 3055,
+      "sha256": "9bf9b0159e526f48892279de1d43063699d9727ae67b85804196ffaf8b2fe090"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-span_hub.o": {
+      "bytes": 11200,
+      "sha256": "9f019135d0bce2f5339c8dd33c0bf53c6c8ad0f5e00c0035f62bbb8cbd4efda1"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-rtp_h264_spans.su": {
+      "bytes": 134,
+      "sha256": "04c5251704cdf1d5f634fbcfa3b06a7a8fe6228268815b19aef8017cd66e5aef"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-rtp_h264_spans.d": {
+      "bytes": 2490,
+      "sha256": "6b682fa8d7194abc44b0befe5d31da1e94ef02a6cbe25fbf9b66dd7e12193431"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-rtp_h264_spans.o": {
+      "bytes": 1756,
+      "sha256": "efb75e7b8f158bc4d05c2aa580e41d5177c2cdfc97a0de9c266adf87d24e7c00"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-sensor_baseline.su": {
+      "bytes": 1117,
+      "sha256": "97ea7538f9deadb0ebdd6da0f5299b1517174157d80c86095934a92cf18fc75e"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-sensor_baseline.d": {
+      "bytes": 8392,
+      "sha256": "365d88ef22f571bfce92485a730d1a4e4272159d3694cd5d73940457abc49b8d"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-sensor_baseline.o": {
+      "bytes": 7040,
+      "sha256": "513ef336b41c9cf31b3fbc19cdf8cd6876b5544f3c883f3a91e61aa94fc39c88"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-5-frame_fd_custody.o": {
+      "bytes": 3664,
+      "sha256": "3ab957b7d44d231543e49c4c888f3f7a4d49612621b10d691bf532af2d39bb45"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-6-encoder_fd_custody.o": {
+      "bytes": 3816,
+      "sha256": "4ef1063a2e6fffd75b1632433f2cf0d2e1a2edc4bda98099c23ba430cca7cc85"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-7-watchdog_owner.o": {
+      "bytes": 9224,
+      "sha256": "d177561c447ffc0e19986d670b014e7778a610332eaddad31f10b48d4ec35a9a"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-8-candidate_auth.o": {
+      "bytes": 18536,
+      "sha256": "495c530f9a0659555942d3b322944b07c622564848d8d175878654015afe52c6"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-10-verifier_adapter_overlay.o": {
+      "bytes": 22752,
+      "sha256": "c35e566a0e96a736e20c93f651a267e2cdb2f02c12b9485629e489b5ebf16f69"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-11-listener_custody.o": {
+      "bytes": 3832,
+      "sha256": "ee44913ef768289143b78e04475fde7f17e32722b9e23b47e72b3d740e5f4c77"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-12-ipc.o": {
+      "bytes": 6128,
+      "sha256": "e88502400bc7338553bcff768440cea892b461ac9c718c4bbd89f74a2e7e6818"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-13-rtsp_digest_wire.o": {
+      "bytes": 14976,
+      "sha256": "a4ecf89e7bd5825574618c81261bc4b4f904418be5a7069e55edfb288796833a"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-14-rtsp_request.o": {
+      "bytes": 7288,
+      "sha256": "3ea13827a70344154c6c174bb092a54da079bf75764cff15118373bedef08395"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-15-rtsp_input.o": {
+      "bytes": 10544,
+      "sha256": "c552c1802ce1645019dd418a52b9c6ad3119d3848abc520f0387137eb8f6b23f"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-16-backend.o": {
+      "bytes": 5352,
+      "sha256": "bfdf3d5d5b3c5d1fff5b8ae8ce0711c72741799b2f2e38769ea0159409269653"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-18-producer.o": {
+      "bytes": 15096,
+      "sha256": "b469377db799283645160318d491d3cfa8b921bceb0554417b4cff88019093bb"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-19-rtp_h264.o": {
+      "bytes": 2928,
+      "sha256": "76f042cea897b9d01c157c0eb88507c073a95aa3f903f3c212be90f375d7b948"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-20-sha256.o": {
+      "bytes": 9664,
+      "sha256": "2dac7dbf7be224f22a9e06155d16122ba1792e72822b6a624df729edcc24324f"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-21-constant_time.o": {
+      "bytes": 2544,
+      "sha256": "d31fd009e3d966a5ecec0e5fd4862da8475a33f15f313bee683f2f74273b66a9"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-22-platform_util.o": {
+      "bytes": 1936,
+      "sha256": "a2a0f6ccb8caf9220c5e7190b27aba4d2a376f1e66dc335b0b9dafa852d35798"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-5-frame_fd_custody.o": {
+      "bytes": 2908,
+      "sha256": "5ce250a3920d4ce264ce90225b1330a3d16197bdd57397b565c34c12c744110f"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-6-encoder_fd_custody.o": {
+      "bytes": 3028,
+      "sha256": "c47aa1e505755d824c25181d9dc3e41eaa2dfabd7378af3910826eefa439a057"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-7-watchdog_owner.o": {
+      "bytes": 7656,
+      "sha256": "858a84e87d57ee1b7abff818423a96a4fea2759a0b353b4c3b83fd4723aada41"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-8-candidate_auth.o": {
+      "bytes": 14044,
+      "sha256": "a870c75b4310fb06bdf45a04d52acee57a98032d5246c96f5ce35d8d986c6475"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-10-verifier_adapter_overlay.o": {
+      "bytes": 17116,
+      "sha256": "ba3f10f46523a81bce11fe6d01b7af7e1406a82501e980f026f7fd8581dacad0"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-11-listener_custody.o": {
+      "bytes": 3200,
+      "sha256": "d8d21b383994723acec592eb38059b93bd496bfe61fcfce027894b4577fc9282"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-12-ipc.o": {
+      "bytes": 4400,
+      "sha256": "32c36f7dcf591483b852022ce186a3dcfafc9a8719a808d914fb165112a88eb3"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-13-rtsp_digest_wire.o": {
+      "bytes": 10824,
+      "sha256": "4dd063086fb433b9b6ae3a5c728f6cf88abb4b860ecf9c3d9aaf30cef1356151"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-14-rtsp_request.o": {
+      "bytes": 5808,
+      "sha256": "bb29f12d79b1b040c1325a5f0a2ddaa1766cedc0f0571cc5379292f9b9b1a18d"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-15-rtsp_input.o": {
+      "bytes": 7756,
+      "sha256": "e85cfdeade8798d0bf61accdc9dfff01c93855c8c85f19c3543b06a7202a3e0e"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-16-backend.o": {
+      "bytes": 3656,
+      "sha256": "1585e947e9ff904dd746e8ad9fe5b078070377b487abfbb7dd2df4f316ea3f9a"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-18-producer.o": {
+      "bytes": 12496,
+      "sha256": "a74b9bdfe7a839282b564da1f936675d83bc1b85deb9201190c44697a1f613ae"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-19-rtp_h264.o": {
+      "bytes": 2156,
+      "sha256": "b79e244c64127a26591c2f92067a8b0059477040f363c3d8ea5404b48c013c1c"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-20-sha256.o": {
+      "bytes": 6572,
+      "sha256": "c34ce80b6c177263b7d5bfee03182084d6aedbfef7fdb0d042bac1c00494d67e"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-21-constant_time.o": {
+      "bytes": 1744,
+      "sha256": "1a7d6b9de71084c8a99525005217f0c875200a76670e23fcf9553b53bc2da3d7"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-22-platform_util.o": {
+      "bytes": 1492,
+      "sha256": "a68b8b3051d38890da5403d459683e219974941f58cbd4c41335d997995c7470"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/source/LICENSE_NOTICES.md": {
+      "bytes": 1430,
+      "sha256": "7b47e88f488bd73873b718c20d59f7abb1ac35c8684a3e665b5352ab1c09477e"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/source/README.md": {
+      "bytes": 1919,
+      "sha256": "d7c7af9be7c25a69ea1b54298c584fd8aaf4985bc24057b3485d0e88de876b06"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/source/compile01.py": {
+      "bytes": 15708,
+      "sha256": "53547759d869bddf19cdadf6b3704b4357eaed216a634e25d3712296b000eaa8"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/source/native-watchdog.inc": {
+      "bytes": 4823,
+      "sha256": "e442a15885d97ab2e94d2a9c2b979de830e52c99d6b1b21f6baadb8aae4e2c35"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/source/native_adapter.inc": {
+      "bytes": 8226,
+      "sha256": "f4b270c055e8f190f96fdaba8377d0a123d24f020c549c12b78395117226fa72"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/source/owned_runtime.c": {
+      "bytes": 35700,
+      "sha256": "968e975f5658b595fcdabf5b15dfad985d77b57ee5a9106d5fc327fa28e88e69"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/source/owned_runtime_v4.h": {
+      "bytes": 4320,
+      "sha256": "1aa528fd9a0d42ddfb8f798b2eecfb3a8361c5acd1bb07e6a3ab0e9bd5bc7879"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/proof/owned_runtime.c.forward.diff": {
+      "bytes": 1342,
+      "sha256": "a20939f643e453b9a50f25f200a11a9afecec297d8749929290f5d59a6ca82aa"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/proof/owned_runtime.c.inverse.diff": {
+      "bytes": 1342,
+      "sha256": "23cb40acda2837aaa6bcdd3c10bf0c2a7f1f8080a792971569ccfa9482ac714d"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/proof/owned_runtime_v4.h.forward.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/proof/owned_runtime_v4.h.inverse.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/proof/native_adapter.inc.forward.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/proof/native_adapter.inc.inverse.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/proof/native-watchdog.inc.forward.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/proof/native-watchdog.inc.inverse.diff": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/proof/compile01.py.forward.diff": {
+      "bytes": 2112,
+      "sha256": "6ee2cdc1fc249eb2b80012bb8f6ea8d841379bdaaa3f04fad9bfdd99af3e0f78"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/proof/compile01.py.inverse.diff": {
+      "bytes": 2112,
+      "sha256": "7b856bf22f515cf93a867f279bfed1f1c0155de3ccb7b8b8fcdf085dfa32edb1"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/source-not-compiled/LICENSE_NOTICES.md": {
+      "bytes": 1430,
+      "sha256": "7b47e88f488bd73873b718c20d59f7abb1ac35c8684a3e665b5352ab1c09477e"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/source-not-compiled/README.md": {
+      "bytes": 1919,
+      "sha256": "d7c7af9be7c25a69ea1b54298c584fd8aaf4985bc24057b3485d0e88de876b06"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/source-not-compiled/compile01.py": {
+      "bytes": 15708,
+      "sha256": "53547759d869bddf19cdadf6b3704b4357eaed216a634e25d3712296b000eaa8"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/source-not-compiled/native-watchdog.inc": {
+      "bytes": 4823,
+      "sha256": "e442a15885d97ab2e94d2a9c2b979de830e52c99d6b1b21f6baadb8aae4e2c35"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/source-not-compiled/native_adapter.inc": {
+      "bytes": 8226,
+      "sha256": "f4b270c055e8f190f96fdaba8377d0a123d24f020c549c12b78395117226fa72"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/source-not-compiled/owned_runtime.c": {
+      "bytes": 35700,
+      "sha256": "968e975f5658b595fcdabf5b15dfad985d77b57ee5a9106d5fc327fa28e88e69"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/source-not-compiled/owned_runtime_v4.h": {
+      "bytes": 4320,
+      "sha256": "1aa528fd9a0d42ddfb8f798b2eecfb3a8361c5acd1bb07e6a3ab0e9bd5bc7879"
+    }
+  },
+  "aggregate": "669614b2f9a97fefe9343282ac63693dd0e3f0ffe807e2a9acbcf61d18a3b2d0",
+  "file_records": 191,
+  "all_members_including_this_manifest": 192,
+  "preexisting31_unchanged": true,
+  "frozen283_11roots_unchanged": true,
+  "original182_aggregate": "944d6a64b6b78e77e18ed06240114d77f5aaa8c139f6247438a4f17ba2026a99",
+  "parent_selected_preflight02_pass": true,
+  "recipe_invocations_before_selection": 0,
+  "recipe_invocations_this_continuation": 1,
+  "recipe_sha256": "53547759d869bddf19cdadf6b3704b4357eaed216a634e25d3712296b000eaa8",
+  "runtime_sha256": "968e975f5658b595fcdabf5b15dfad985d77b57ee5a9106d5fc327fa28e88e69",
+  "C_compiles": 14,
+  "rooted_REL_links": 2,
+  "successful_tool_commands": 44,
+  "candidate_calls": 0,
+  "old_preflight01_status": "FAILED_PRESERVED_AUTHOR_METADATA_PREFLIGHT_NOT_A_BUILD; zero recipe/compile calls; original HANDOFF/DELIVERY unchanged",
+  "build_report_pin": {
+    "bytes": 422848,
+    "sha256": "17a1e1dac6db7d179a520f323b4ea816307e2cd059066041b9515b4ef2547a1d"
+  },
+  "verification_pin": {
+    "bytes": 64207,
+    "sha256": "946c266e3c30cdf62d18dafedfa408f2756c2c3a58300ad04135d7d58e91049b"
+  },
+  "all31_original_files": [
+    "apps/rtsp-auth/qc07f-writer-runtime-v2/LICENSE_NOTICES.md",
+    "apps/rtsp-auth/qc07f-writer-runtime-v2/README.md",
+    "apps/rtsp-auth/qc07f-writer-runtime-v2/compile01.py",
+    "apps/rtsp-auth/qc07f-writer-runtime-v2/native-watchdog.inc",
+    "apps/rtsp-auth/qc07f-writer-runtime-v2/native_adapter.inc",
+    "apps/rtsp-auth/qc07f-writer-runtime-v2/owned_runtime.c",
+    "apps/rtsp-auth/qc07f-writer-runtime-v2/owned_runtime_v4.h",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/CONTRACT.md",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/DELIVERY_PINS.json",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/FROZEN_BEFORE.json",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/HANDOFF.md",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/compile01.py.forward.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/compile01.py.inverse.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/native-watchdog.inc.forward.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/native-watchdog.inc.inverse.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/native_adapter.inc.forward.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/native_adapter.inc.inverse.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/owned_runtime.c.forward.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/owned_runtime.c.inverse.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/owned_runtime_v4.h.forward.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/proof/owned_runtime_v4.h.inverse.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/COMMAND.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/REPORT.json",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/STDERR.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/source-not-compiled/LICENSE_NOTICES.md",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/source-not-compiled/README.md",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/source-not-compiled/compile01.py",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/source-not-compiled/native-watchdog.inc",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/source-not-compiled/native_adapter.inc",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/source-not-compiled/owned_runtime.c",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight01/source-not-compiled/owned_runtime_v4.h"
+  ],
+  "new_paths_excluding_this_manifest": [
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/BUILD01_HANDOFF.md",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/BUILD01_VERIFICATION.json",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/FROZEN_INPUTS.json",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/REPORT.json",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/arm-WRITER-NOT-EXECUTABLE.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/arm.map",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/host-WRITER-NOT-EXECUTABLE.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/host.map",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-ELF.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-REL.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-all-symbols.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-archive-members.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-compile-memory_reader.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-compile-memory_reserve.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-compile-memory_runtime.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-compile-owned_runtime.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-compile-rtp_h264_spans.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-compile-sensor_baseline.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-compile-span_hub.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-defined.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-extract.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-machine.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-member-ELF.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-relocations.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-symbol-table.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-tool-as.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-tool-cc1.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-tool-ld.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-undefined.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/arm-version.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-ELF.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-REL.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-all-symbols.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-archive-members.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-compile-memory_reader.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-compile-memory_reserve.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-compile-memory_runtime.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-compile-owned_runtime.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-compile-rtp_h264_spans.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-compile-sensor_baseline.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-compile-span_hub.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-defined.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-extract.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-machine.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-member-ELF.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-relocations.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-symbol-table.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-tool-as.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-tool-cc1.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-tool-ld.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-undefined.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/logs/host-version.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-10-verifier_adapter_overlay.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-11-listener_custody.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-12-ipc.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-13-rtsp_digest_wire.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-14-rtsp_request.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-15-rtsp_input.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-16-backend.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-18-producer.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-19-rtp_h264.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-20-sha256.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-21-constant_time.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-22-platform_util.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-5-frame_fd_custody.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-6-encoder_fd_custody.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-7-watchdog_owner.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-arm/arm-8-candidate_auth.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-10-verifier_adapter_overlay.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-11-listener_custody.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-12-ipc.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-13-rtsp_digest_wire.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-14-rtsp_request.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-15-rtsp_input.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-16-backend.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-18-producer.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-19-rtp_h264.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-20-sha256.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-21-constant_time.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-22-platform_util.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-5-frame_fd_custody.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-6-encoder_fd_custody.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-7-watchdog_owner.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/members-host/host-8-candidate_auth.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/native-watchdog.inc.forward.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/native-watchdog.inc.inverse.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/native_adapter.inc.forward.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/native_adapter.inc.inverse.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-memory_reader.d",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-memory_reader.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-memory_reader.su",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-memory_reserve.d",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-memory_reserve.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-memory_reserve.su",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-memory_runtime.d",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-memory_runtime.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-memory_runtime.su",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-owned_runtime.d",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-owned_runtime.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-owned_runtime.su",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-rtp_h264_spans.d",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-rtp_h264_spans.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-rtp_h264_spans.su",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-sensor_baseline.d",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-sensor_baseline.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-sensor_baseline.su",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-span_hub.d",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-span_hub.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/arm-span_hub.su",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-memory_reader.d",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-memory_reader.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-memory_reader.su",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-memory_reserve.d",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-memory_reserve.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-memory_reserve.su",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-memory_runtime.d",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-memory_runtime.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-memory_runtime.su",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-owned_runtime.d",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-owned_runtime.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-owned_runtime.su",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-rtp_h264_spans.d",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-rtp_h264_spans.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-rtp_h264_spans.su",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-sensor_baseline.d",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-sensor_baseline.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-sensor_baseline.su",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-span_hub.d",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-span_hub.o",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/objects/host-span_hub.su",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/owned_runtime.c.forward.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/owned_runtime.c.inverse.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/owned_runtime_v4.h.forward.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/owned_runtime_v4.h.inverse.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/source/LICENSE_NOTICES.md",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/source/README.md",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/source/compile01.py",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/source/native-watchdog.inc",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/source/native_adapter.inc",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/source/owned_runtime.c",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/build01/source/owned_runtime_v4.h",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/BUILD_COMMAND.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/BUILD_STDERR.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/BUILD_STDOUT.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/COMMAND.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/RESULT.json",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/SELECTION.json",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/SELECTION.md",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/STDERR.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/STDOUT.txt",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/proof/compile01.py.forward.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/proof/compile01.py.inverse.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/proof/native-watchdog.inc.forward.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/proof/native-watchdog.inc.inverse.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/proof/native_adapter.inc.forward.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/proof/native_adapter.inc.inverse.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/proof/owned_runtime.c.forward.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/proof/owned_runtime.c.inverse.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/proof/owned_runtime_v4.h.forward.diff",
+    "docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/proof/owned_runtime_v4.h.inverse.diff"
+  ],
+  "stop": "Independent ordinary v2 SOURCE/saved-build review and parent disposition before use; no self-adoption/automatic next queue/runtime/native/hardware calls."
+}

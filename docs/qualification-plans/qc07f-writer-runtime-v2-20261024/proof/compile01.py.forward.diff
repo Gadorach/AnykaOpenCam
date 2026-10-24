@@ -1,0 +1,39 @@
+--- /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-writer-runtime-candidate/compile02.py
++++ /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-writer-runtime-v2/compile01.py
+@@ -11,7 +11,7 @@
+ 
+ APP = Path(__file__).resolve().parent
+ ROOT = APP.parents[2]
+-DOC = ROOT / 'docs/qualification-plans/qc07f-writer-runtime-20261024'
++DOC = ROOT / 'docs/qualification-plans/qc07f-writer-runtime-v2-20261024'
+ BASE = APP.parent / 'qc07f-owned-runtime'
+ MEM = APP.parent / 'qc07f-producer-memory'
+ HUB = APP.parent / 'span-hub-producer-candidate'
+@@ -19,11 +19,13 @@
+ OLD = ROOT / 'docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02'
+ PRIOR = ROOT / 'docs/qualification-plans/qc07f-span-serve-20261024/runs/build01/REPORT.json'
+ FROZEN = [BASE, APP.parent / 'qc07f-span-runtime-candidate', APP.parent / 'qc07f-span-serve-candidate',
+-          MEM, HUB, APP.parent / 'rtp-span-candidate', ENC]
+-PAIRS = [(APP.parent / 'qc07f-span-serve-candidate/owned_runtime.c', APP / 'owned_runtime.c'),
+-         (APP.parent / 'qc07f-span-serve-candidate/owned_runtime_v1.h', APP / 'owned_runtime_v4.h'),
+-         (APP.parent / 'qc07f-span-runtime-candidate/native/native_adapter.c', APP / 'native_adapter.inc'),
+-         (BASE / 'native/native-watchdog.inc', APP / 'native-watchdog.inc')]
++          MEM, HUB, APP.parent / 'rtp-span-candidate', ENC,
++          APP.parent / 'qc07f-writer-runtime-candidate',
++          ROOT / 'docs/qualification-plans/qc07f-writer-runtime-20261024',
++          ROOT / 'docs/qualification-plans/qc07f-writer-runtime-review-20261024',
++          ROOT / 'docs/qualification-plans/qc07f-writer-runtime-parent-20261024']
++PAIRS = [(APP.parent / 'qc07f-writer-runtime-candidate' / n, APP / n)
++         for n in ('owned_runtime.c', 'owned_runtime_v4.h', 'native_adapter.inc', 'native-watchdog.inc')]
+ 
+ 
+ def pin(p):
+@@ -36,7 +38,7 @@
+ 
+ 
+ def main():
+-    out = DOC / 'runs/build02'
++    out = DOC / 'runs/build01'
+     out.mkdir(parents=True, exist_ok=False)
+     for n in ('logs', 'objects', 'members-host', 'members-arm', 'source', 'tmp'):
+         (out / n).mkdir()

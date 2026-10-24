@@ -1,0 +1,449 @@
+{
+  "selected_at": "2026-10-24T11:58:14.506231+00:00",
+  "scope": "ONE explicit fresh compile02 attempt; metadata/compile/link only; no source changes or retries",
+  "original_app_members": [
+    "LICENSE_NOTICES.md",
+    "README.md",
+    "compile01.py",
+    "native-watchdog.inc",
+    "native_adapter.inc",
+    "owned_runtime.c",
+    "owned_runtime_v4.h"
+  ],
+  "original_doc_members": [
+    "AUTHOR_AUDIT.md",
+    "AUTHOR_VERIFICATION.json",
+    "BUILD01_FAILURE.md",
+    "CONTRACT.md",
+    "DELIVERY_PINS.json",
+    "HANDOFF.md",
+    "runs/build01/FROZEN_INPUTS.json",
+    "runs/build01/REPORT.json",
+    "runs/build01/logs/host-archive-members.txt",
+    "runs/build01/logs/host-machine.txt",
+    "runs/build01/logs/host-tool-as.txt",
+    "runs/build01/logs/host-tool-cc1.txt",
+    "runs/build01/logs/host-tool-ld.txt",
+    "runs/build01/logs/host-version.txt",
+    "runs/build01/native-watchdog.inc.forward.diff",
+    "runs/build01/native-watchdog.inc.inverse.diff",
+    "runs/build01/native_adapter.inc.forward.diff",
+    "runs/build01/native_adapter.inc.inverse.diff",
+    "runs/build01/owned_runtime.c.forward.diff",
+    "runs/build01/owned_runtime.c.inverse.diff",
+    "runs/build01/owned_runtime_v4.h.forward.diff",
+    "runs/build01/owned_runtime_v4.h.inverse.diff",
+    "runs/build01/source/LICENSE_NOTICES.md",
+    "runs/build01/source/README.md",
+    "runs/build01/source/compile01.py",
+    "runs/build01/source/native-watchdog.inc",
+    "runs/build01/source/native_adapter.inc",
+    "runs/build01/source/owned_runtime.c",
+    "runs/build01/source/owned_runtime_v4.h"
+  ],
+  "original_custody": {
+    "apps/rtsp-auth/qc07f-writer-runtime-candidate/LICENSE_NOTICES.md": {
+      "bytes": 1110,
+      "sha256": "800b588cc1a5bfa861561079438d5ba8a5dec9497e03329703ddad197a21a39e"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-candidate/README.md": {
+      "bytes": 2132,
+      "sha256": "f0aa8f6ad2d16f984ee94e698135df59318ba8a1d9877c13d9344209b29c4eab"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-candidate/compile01.py": {
+      "bytes": 15608,
+      "sha256": "f90e70593e16686e1bf51a96cbd5c139be84e82a221431ff52a3cf48599ee1c7"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-candidate/native-watchdog.inc": {
+      "bytes": 4823,
+      "sha256": "e442a15885d97ab2e94d2a9c2b979de830e52c99d6b1b21f6baadb8aae4e2c35"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-candidate/native_adapter.inc": {
+      "bytes": 8226,
+      "sha256": "f4b270c055e8f190f96fdaba8377d0a123d24f020c549c12b78395117226fa72"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-candidate/owned_runtime.c": {
+      "bytes": 34945,
+      "sha256": "af95dacac7f609654270201b18772de1a5ee4370f34ab7e1798fb0f0257dfaab"
+    },
+    "apps/rtsp-auth/qc07f-writer-runtime-candidate/owned_runtime_v4.h": {
+      "bytes": 4320,
+      "sha256": "1aa528fd9a0d42ddfb8f798b2eecfb3a8361c5acd1bb07e6a3ab0e9bd5bc7879"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/AUTHOR_AUDIT.md": {
+      "bytes": 10144,
+      "sha256": "dcba662673d17e2a7624c61325b811d6b35072eac104fe9f69c42bc17144e0a7"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/AUTHOR_VERIFICATION.json": {
+      "bytes": 4812,
+      "sha256": "869f9bf7d0cf50c154b4d8cc796fb1861e92c93ed01c24f9a3e7f9bab24897cd"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/BUILD01_FAILURE.md": {
+      "bytes": 2586,
+      "sha256": "07b4b22c03a39842a27f7ea78e34f8d8c03c5f15a9bbd4f8319f4539d6ab38f3"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/CONTRACT.md": {
+      "bytes": 8453,
+      "sha256": "71ac3fcca2b7251e1a3e5152ddbf800bf65977ae47c81b64cc528c85f6dc52c2"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/DELIVERY_PINS.json": {
+      "bytes": 4849,
+      "sha256": "7d174f54e2907ac7a6187a92d749d5b126859e0b5aef46f4cc7faa2c7568561e"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/HANDOFF.md": {
+      "bytes": 4011,
+      "sha256": "98389139d8c8e712018bfab1a75d6faad4723bfa0a4d37a5f920be3f67f681ea"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/FROZEN_INPUTS.json": {
+      "bytes": 18103,
+      "sha256": "e3f440209e488aed744d3c3a9075f257dcf85d36b633b4eb5a801273dc1b4360"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/REPORT.json": {
+      "bytes": 40156,
+      "sha256": "535a2f022f5adc01052066a5303a26f059f8b005cf30ae8852536acb5e2e881d"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/logs/host-archive-members.txt": {
+      "bytes": 541,
+      "sha256": "4f06b1bb34d5c6b61a736df50a7f102ff26c9a82d9d7d13261b4855da87df59d"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/logs/host-machine.txt": {
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/logs/host-tool-as.txt": {
+      "bytes": 3,
+      "sha256": "8b97bca79750847558d488e2ea4de79903c9c71c9af27ecf1b3dff5dba2abdd9"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/logs/host-tool-cc1.txt": {
+      "bytes": 40,
+      "sha256": "c400491dd6f36bdc89c46da99a7c98dbd19a3eb313a62e89576505b07846aec8"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/logs/host-tool-ld.txt": {
+      "bytes": 3,
+      "sha256": "3b6cb8ae51045d062a7c7de7cc488ad8785144cfbc0a7fc9546ed52429e0d97f"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/logs/host-version.txt": {
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/native-watchdog.inc.forward.diff": {
+      "bytes": 10292,
+      "sha256": "bb2e3385f5337c59a989279a3deb2d9409606d446681944f517e51f4f448c2a6"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/native-watchdog.inc.inverse.diff": {
+      "bytes": 10292,
+      "sha256": "fdd55f421de41326898f56fdb08b0472cd7ebb75d4bcf8e0c1ab1d7e2621c88d"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/native_adapter.inc.forward.diff": {
+      "bytes": 12971,
+      "sha256": "a38909eb7c0dc061248fe041107653dba6e776647e0d11ef9496e080a9de5f64"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/native_adapter.inc.inverse.diff": {
+      "bytes": 12974,
+      "sha256": "9892696360ab9db174d218bcef67c3f00d76210e53585b67b3fe593d18ed0448"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/owned_runtime.c.forward.diff": {
+      "bytes": 60803,
+      "sha256": "8e14018b94bca294ca0e6249160b658f07c3380391481ca85ff1ae603d77d88b"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/owned_runtime.c.inverse.diff": {
+      "bytes": 60410,
+      "sha256": "60f243d5e55a01d310359a8cd9bc46a69772d2f0f492b750915248c8722b1114"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/owned_runtime_v4.h.forward.diff": {
+      "bytes": 10149,
+      "sha256": "3c140ba9979038799cae234522dbc170f0546351986595cc257ff6802401fc24"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/owned_runtime_v4.h.inverse.diff": {
+      "bytes": 10149,
+      "sha256": "cf2bf4d2cd898cb77ba3c567b4c79adc7e4eb64ad3f153f628eea934d26407c4"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/source/LICENSE_NOTICES.md": {
+      "bytes": 1110,
+      "sha256": "800b588cc1a5bfa861561079438d5ba8a5dec9497e03329703ddad197a21a39e"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/source/README.md": {
+      "bytes": 2132,
+      "sha256": "f0aa8f6ad2d16f984ee94e698135df59318ba8a1d9877c13d9344209b29c4eab"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/source/compile01.py": {
+      "bytes": 15608,
+      "sha256": "f90e70593e16686e1bf51a96cbd5c139be84e82a221431ff52a3cf48599ee1c7"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/source/native-watchdog.inc": {
+      "bytes": 4823,
+      "sha256": "e442a15885d97ab2e94d2a9c2b979de830e52c99d6b1b21f6baadb8aae4e2c35"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/source/native_adapter.inc": {
+      "bytes": 8226,
+      "sha256": "f4b270c055e8f190f96fdaba8377d0a123d24f020c549c12b78395117226fa72"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/source/owned_runtime.c": {
+      "bytes": 34945,
+      "sha256": "af95dacac7f609654270201b18772de1a5ee4370f34ab7e1798fb0f0257dfaab"
+    },
+    "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build01/source/owned_runtime_v4.h": {
+      "bytes": 4320,
+      "sha256": "1aa528fd9a0d42ddfb8f798b2eecfb3a8361c5acd1bb07e6a3ab0e9bd5bc7879"
+    }
+  },
+  "custody_aggregate_method": "SHA256 UTF-8 sorted complete relative path TAB bytes TAB SHA256 LF",
+  "custody_aggregate": "df790f5ece34481b7746dec4a1e278d4ae5b49cb886d2d7796defe130f53fa78",
+  "baseline_46_consumed_compile_source_records": [
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/owned_runtime.c",
+      "bytes": 11809,
+      "sha256": "5e21fcb2559911b79ffbd7732b951b8d8931a84e2e33f03a52f39d09de0dbd43"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/native/sensor_baseline.c",
+      "bytes": 5688,
+      "sha256": "6994e3ce6e048e6829bd0e85e61049662422d872198aa71e14f3cb95b95676ee"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/native/memory_reserve.c",
+      "bytes": 10310,
+      "sha256": "aec0a30d7f67bfc8fc0f2c078cf4a53efb42d78a65b46c0bef22312060070aff"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/native/memory_runtime.c",
+      "bytes": 5115,
+      "sha256": "c505e3447cbfa852c88a97816e233269de6dec12080625d16004dca31d152d57"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/native/memory_reader.c",
+      "bytes": 1079,
+      "sha256": "c9bd8401476f3baf73b43051651e6c306f14a05c1d5a5317531302569d4261c0"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/native/frame_fd_custody.c",
+      "bytes": 3484,
+      "sha256": "d6c4a65939c2f6bde1498eb6622c9487a92757c0d7170bcc90d3137a7cfcf78d"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/native/encoder_fd_custody.c",
+      "bytes": 4006,
+      "sha256": "21e9ce06803eb28a416e8841b66ac0326f7b6b199dd9b433bedafa51bb564ce3"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/native/watchdog_owner.c",
+      "bytes": 5952,
+      "sha256": "1718f8ad16f06a663de0829dd6f811cecd9fd90f7a0647c618d453524144c489"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/server/candidate_auth.c",
+      "bytes": 17425,
+      "sha256": "cb27b35e2d8730b8d19f231d339e06cbe4c97fbe0aca7826fe3469d8479825a7"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/server/rtsp_server_candidate.c",
+      "bytes": 43330,
+      "sha256": "fb47ac06be587b8bac793c272c804ece0220601e4a1d0810164295b0c4dd5ce1"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/server/verifier_adapter_overlay.c",
+      "bytes": 19892,
+      "sha256": "03413c00c829f4a94c8630ace490927be4b718bbac9b48b771997a0905c8880a"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/server/listener_custody.c",
+      "bytes": 2501,
+      "sha256": "558885b5b6b6064d6048f00513e467b39a680e96a9e1ee084074f9c2176dd0df"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/verifier/ipc.c",
+      "bytes": 3666,
+      "sha256": "f42968ebf2fa7a361dfc1db31599a061df7f5c7de718a3eac4b0e2e2a4becc01"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/framework/src/rtsp_digest_wire.c",
+      "bytes": 13918,
+      "sha256": "0ecc44fe90618eca56a43d6a95df23ef1e236aac07413b5abf016d1623a7abc9"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/framework/src/rtsp_request.c",
+      "bytes": 7884,
+      "sha256": "76a15006b09e4ebc372b794c6c47b01e650821425d81a41c08e871a7ddc5b074"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/framework/src/rtsp_input.c",
+      "bytes": 9009,
+      "sha256": "f827dff40c7874650872f6a506c28695ef9af90ae7f3dbbe93b7e4fc0976491f"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/framework/src/backend.c",
+      "bytes": 4344,
+      "sha256": "cc5462d995479578c83d5acb38164d2c8f3eae8a1adaf0c6e5a7fe7f929ff9f3"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/framework/src/packet_hub.c",
+      "bytes": 5180,
+      "sha256": "7f3324ce5e180f637a2d0fb0e296f7050ebcb89b99f93918e7cf15521ebf267e"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/framework/src/producer.c",
+      "bytes": 15017,
+      "sha256": "3b00f0e9a9dafafdb6b25c7530bb2e4e2ac20f89fb99b54f85518c7de33ffd31"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/framework/src/rtp_h264.c",
+      "bytes": 1930,
+      "sha256": "6f0720ed4fd3c6b5e325094cb2b7422003efb1f5cae41b7011974de3fae51e1a"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/vendor/library/sha256.c",
+      "bytes": 30275,
+      "sha256": "632672d0c954d8bc0e20fdc8370c9f1725f3ffc5fcdaacc14949e42a1b5424d7"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/vendor/library/constant_time.c",
+      "bytes": 8855,
+      "sha256": "1a573edd420fece73f996b70cdf6bb58a05a468e434a6ac0c562df592048d3c6"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/vendor/library/platform_util.c",
+      "bytes": 8347,
+      "sha256": "83051fddcd37171831ff5706613dc3d336b2e53c42e6515f2f14ac0f8aa649f1"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/owned_runtime.c",
+      "bytes": 11809,
+      "sha256": "5e21fcb2559911b79ffbd7732b951b8d8931a84e2e33f03a52f39d09de0dbd43"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/native/sensor_baseline.c",
+      "bytes": 5688,
+      "sha256": "6994e3ce6e048e6829bd0e85e61049662422d872198aa71e14f3cb95b95676ee"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/native/memory_reserve.c",
+      "bytes": 10310,
+      "sha256": "aec0a30d7f67bfc8fc0f2c078cf4a53efb42d78a65b46c0bef22312060070aff"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/native/memory_runtime.c",
+      "bytes": 5115,
+      "sha256": "c505e3447cbfa852c88a97816e233269de6dec12080625d16004dca31d152d57"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/native/memory_reader.c",
+      "bytes": 1079,
+      "sha256": "c9bd8401476f3baf73b43051651e6c306f14a05c1d5a5317531302569d4261c0"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/native/frame_fd_custody.c",
+      "bytes": 3484,
+      "sha256": "d6c4a65939c2f6bde1498eb6622c9487a92757c0d7170bcc90d3137a7cfcf78d"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/native/encoder_fd_custody.c",
+      "bytes": 4006,
+      "sha256": "21e9ce06803eb28a416e8841b66ac0326f7b6b199dd9b433bedafa51bb564ce3"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/native/watchdog_owner.c",
+      "bytes": 5952,
+      "sha256": "1718f8ad16f06a663de0829dd6f811cecd9fd90f7a0647c618d453524144c489"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/server/candidate_auth.c",
+      "bytes": 17425,
+      "sha256": "cb27b35e2d8730b8d19f231d339e06cbe4c97fbe0aca7826fe3469d8479825a7"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/server/rtsp_server_candidate.c",
+      "bytes": 43330,
+      "sha256": "fb47ac06be587b8bac793c272c804ece0220601e4a1d0810164295b0c4dd5ce1"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/server/verifier_adapter_overlay.c",
+      "bytes": 19892,
+      "sha256": "03413c00c829f4a94c8630ace490927be4b718bbac9b48b771997a0905c8880a"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/app/server/listener_custody.c",
+      "bytes": 2501,
+      "sha256": "558885b5b6b6064d6048f00513e467b39a680e96a9e1ee084074f9c2176dd0df"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/verifier/ipc.c",
+      "bytes": 3666,
+      "sha256": "f42968ebf2fa7a361dfc1db31599a061df7f5c7de718a3eac4b0e2e2a4becc01"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/framework/src/rtsp_digest_wire.c",
+      "bytes": 13918,
+      "sha256": "0ecc44fe90618eca56a43d6a95df23ef1e236aac07413b5abf016d1623a7abc9"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/framework/src/rtsp_request.c",
+      "bytes": 7884,
+      "sha256": "76a15006b09e4ebc372b794c6c47b01e650821425d81a41c08e871a7ddc5b074"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/framework/src/rtsp_input.c",
+      "bytes": 9009,
+      "sha256": "f827dff40c7874650872f6a506c28695ef9af90ae7f3dbbe93b7e4fc0976491f"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/framework/src/backend.c",
+      "bytes": 4344,
+      "sha256": "cc5462d995479578c83d5acb38164d2c8f3eae8a1adaf0c6e5a7fe7f929ff9f3"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/framework/src/packet_hub.c",
+      "bytes": 5180,
+      "sha256": "7f3324ce5e180f637a2d0fb0e296f7050ebcb89b99f93918e7cf15521ebf267e"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/framework/src/producer.c",
+      "bytes": 15017,
+      "sha256": "3b00f0e9a9dafafdb6b25c7530bb2e4e2ac20f89fb99b54f85518c7de33ffd31"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/framework/src/rtp_h264.c",
+      "bytes": 1930,
+      "sha256": "6f0720ed4fd3c6b5e325094cb2b7422003efb1f5cae41b7011974de3fae51e1a"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/vendor/library/sha256.c",
+      "bytes": 30275,
+      "sha256": "632672d0c954d8bc0e20fdc8370c9f1725f3ffc5fcdaacc14949e42a1b5424d7"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/vendor/library/constant_time.c",
+      "bytes": 8855,
+      "sha256": "1a573edd420fece73f996b70cdf6bb58a05a468e434a6ac0c562df592048d3c6"
+    },
+    {
+      "path": "docs/qualification-plans/rtsp-owned-runtime-20261023/runs/build02/source/vendor/library/platform_util.c",
+      "bytes": 8347,
+      "sha256": "83051fddcd37171831ff5706613dc3d336b2e53c42e6515f2f14ac0f8aa649f1"
+    }
+  ],
+  "baseline_distinct_consumed_paths": 23,
+  "recipe_original": {
+    "bytes": 15608,
+    "sha256": "f90e70593e16686e1bf51a96cbd5c139be84e82a221431ff52a3cf48599ee1c7"
+  },
+  "recipe_expected": {
+    "bytes": 15614,
+    "sha256": "b2c31d3364cdbfc8d77539ad464e5a94f80d1e255145f82c4b6bf977954c7fd1"
+  },
+  "recipe_only_line_replacements": [
+    {
+      "from": "out = DOC / 'runs/build01'",
+      "to": "out = DOC / 'runs/build02'"
+    },
+    {
+      "from": "keep(source, old['inputs'][str(source)])",
+      "to": "keep(source, old['dependencies'][str(source)])"
+    }
+  ],
+  "recipe_forward_diff": "--- compile01.py\n+++ compile02.py\n@@ -36,7 +36,7 @@\n \n \n def main():\n-    out = DOC / 'runs/build01'\n+    out = DOC / 'runs/build02'\n     out.mkdir(parents=True, exist_ok=False)\n     for n in ('logs', 'objects', 'members-host', 'members-arm', 'source', 'tmp'):\n         (out / n).mkdir()\n@@ -152,7 +152,7 @@\n             for obj in objects:\n                 keep(obj, old['artifacts'][str(obj)])\n                 c = next(c for c in old['commands'] if '-c' in c['argv'] and c['argv'][-1] == str(obj))\n-                source = Path(c['argv'][c['argv'].index('-c') + 1]);keep(source, old['inputs'][str(source)])\n+                source = Path(c['argv'][c['argv'].index('-c') + 1]);keep(source, old['dependencies'][str(source)])\n                 defines = [v for v in c['argv'] if v.startswith('-D')]\n                 if defines != ['-D_FORTIFY_SOURCE=2', '-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"']:\n                     raise RuntimeError('STOP reused nonproduction role')\n",
+  "recipe_inverse_diff": "--- compile02.py\n+++ compile01.py\n@@ -36,7 +36,7 @@\n \n \n def main():\n-    out = DOC / 'runs/build02'\n+    out = DOC / 'runs/build01'\n     out.mkdir(parents=True, exist_ok=False)\n     for n in ('logs', 'objects', 'members-host', 'members-arm', 'source', 'tmp'):\n         (out / n).mkdir()\n@@ -152,7 +152,7 @@\n             for obj in objects:\n                 keep(obj, old['artifacts'][str(obj)])\n                 c = next(c for c in old['commands'] if '-c' in c['argv'] and c['argv'][-1] == str(obj))\n-                source = Path(c['argv'][c['argv'].index('-c') + 1]);keep(source, old['dependencies'][str(source)])\n+                source = Path(c['argv'][c['argv'].index('-c') + 1]);keep(source, old['inputs'][str(source)])\n                 defines = [v for v in c['argv'] if v.startswith('-D')]\n                 if defines != ['-D_FORTIFY_SOURCE=2', '-DMBEDTLS_CONFIG_FILE=\"server_crypto_config.h\"']:\n                     raise RuntimeError('STOP reused nonproduction role')\n",
+  "source_seven_matches_build01": true,
+  "old_delivery_seal_matches": true,
+  "runtime_calls_authorized": 0,
+  "preselection_metadata_note": "Initial read-only bookkeeping assertion expected46 distinct consumed paths; actual baseline has46 HOST/ARM compile records sharing23 paths. No files written, no recipe/compiler/candidate invoked. Corrected record-versus-distinct-path accounting only; no source/recipe/check change."
+}

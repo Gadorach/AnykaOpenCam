@@ -1,0 +1,1 @@
+/usr/bin/python3 /home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-writer-runtime-v2/compile01.py > docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/BUILD_STDOUT.txt 2> docs/qualification-plans/qc07f-writer-runtime-v2-20261024/runs/preflight02/BUILD_STDERR.txt

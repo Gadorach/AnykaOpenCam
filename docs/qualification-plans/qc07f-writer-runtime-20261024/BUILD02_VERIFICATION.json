@@ -1,0 +1,269 @@
+{
+  "verified_at": "2026-10-24T12:01:17.366493+00:00",
+  "status": "HOST_ARM_14_COMPILES_2_ROOTED_REL_PASS_NOT_RUN",
+  "report_pin": {
+    "bytes": 376938,
+    "sha256": "e6a7bc6f859cf02e46f0ef4a4a7d25c33b5fefa76e1c9ce811d577b533a9ad2c"
+  },
+  "recipe_pin": {
+    "bytes": 15614,
+    "sha256": "b2c31d3364cdbfc8d77539ad464e5a94f80d1e255145f82c4b6bf977954c7fd1"
+  },
+  "literal_two_line_recipe_proof_matches_preselection": true,
+  "original36_custody_members_and_hashes_unchanged": true,
+  "original_build01_23_members_unchanged": true,
+  "original_seven_match_both_consumed_snapshots": true,
+  "original_seven_aggregate": "9277640deb347fb93ce8a94143abcd00605c095f8abdfffdfb80192eb429e6d1",
+  "feature_source_four_aggregate": "d2d1297d45898e433d41b2ab8b0af9f95480c925db829f50882b05df9ec5a373",
+  "aggregate_method": "SHA256 UTF-8 sorted complete relative path TAB bytes TAB SHA256 LF",
+  "record_counts": {
+    "inputs": 540,
+    "new_dependencies": 272,
+    "reused_dependencies": 320,
+    "tools": 16,
+    "artifacts_excluding_report": 139,
+    "build02_exact_members": 140,
+    "command_logs": 44,
+    "fresh_C_compiles": 14,
+    "rooted_REL_links": 2,
+    "frozen_files": 99,
+    "roles_audited": 46,
+    "selected_old_objects": 32,
+    "roots": 54
+  },
+  "all_actual_pins_memberships_logs_and_14_dependency_memberships_match": true,
+  "sensor_macros_before_complete_selected_handoff": true,
+  "archives": {
+    "host": {
+      "original_members": 23,
+      "selected_members": 16
+    },
+    "arm": {
+      "original_members": 23,
+      "selected_members": 16
+    }
+  },
+  "REL_metadata": {
+    "host": {
+      "path": "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/host-WRITER-NOT-EXECUTABLE.o",
+      "bytes": 199640,
+      "sha256": "f3a96487cc59e13c2ff9319eb4fdb3e0f8cf90b5e29cf8b76ae25f5a2339323b",
+      "ELF_role": "ET_REL; entry0; no program headers",
+      "machine": 62,
+      "live_roots": 54,
+      "private_owner_symbol_counts": {
+        "native": 1,
+        "memory_state": 1,
+        "runtime": 1
+      },
+      "raw_digest_UND": {
+        "camera_rtsp_digest_close": {
+          "row": [
+            "405:",
+            "0000000000000000",
+            "0",
+            "NOTYPE",
+            "LOCAL",
+            "DEFAULT",
+            "UND",
+            "camera_rtsp_digest_close"
+          ],
+          "retained_references": 0
+        },
+        "camera_rtsp_digest_issue": {
+          "row": [
+            "403:",
+            "0000000000000000",
+            "0",
+            "NOTYPE",
+            "LOCAL",
+            "DEFAULT",
+            "UND",
+            "camera_rtsp_digest_issue"
+          ],
+          "retained_references": 0
+        },
+        "camera_rtsp_digest_verify": {
+          "row": [
+            "407:",
+            "0000000000000000",
+            "0",
+            "NOTYPE",
+            "LOCAL",
+            "DEFAULT",
+            "UND",
+            "camera_rtsp_digest_verify"
+          ],
+          "retained_references": 0
+        }
+      },
+      "referenced_undefined": [
+        "__errno_location",
+        "__explicit_bzero_chk",
+        "__fprintf_chk",
+        "__stack_chk_fail",
+        "_exit",
+        "calloc",
+        "clock_gettime",
+        "close",
+        "dup2",
+        "fcntl",
+        "fflush",
+        "fork",
+        "free",
+        "fstat",
+        "fstatfs",
+        "getegid",
+        "geteuid",
+        "getgid",
+        "getgroups",
+        "getpid",
+        "getppid",
+        "getrlimit",
+        "getuid",
+        "ioctl",
+        "lseek",
+        "malloc",
+        "memchr",
+        "memcmp",
+        "memcpy",
+        "memmove",
+        "memset",
+        "nanosleep",
+        "open",
+        "poll",
+        "prctl",
+        "pread",
+        "raise",
+        "read",
+        "recvmsg",
+        "send",
+        "setgroups",
+        "setresgid",
+        "setresuid",
+        "setrlimit",
+        "sigaction",
+        "socketpair",
+        "stderr",
+        "strcmp",
+        "strlen",
+        "syscall",
+        "waitpid"
+      ]
+    },
+    "arm": {
+      "path": "docs/qualification-plans/qc07f-writer-runtime-20261024/runs/build02/arm-WRITER-NOT-EXECUTABLE.o",
+      "bytes": 140816,
+      "sha256": "a4cddc81cad5849a5e350f1df5b6a6f1ef12d7df559bcc45d9377900419b5d74",
+      "ELF_role": "ET_REL; entry0; no program headers",
+      "machine": 40,
+      "live_roots": 54,
+      "private_owner_symbol_counts": {
+        "native": 1,
+        "memory_state": 1,
+        "runtime": 1
+      },
+      "raw_digest_UND": {
+        "camera_rtsp_digest_close": {
+          "row": [
+            "832:",
+            "00000000",
+            "0",
+            "NOTYPE",
+            "LOCAL",
+            "DEFAULT",
+            "UND",
+            "camera_rtsp_digest_close"
+          ],
+          "retained_references": 0
+        },
+        "camera_rtsp_digest_issue": {
+          "row": [
+            "829:",
+            "00000000",
+            "0",
+            "NOTYPE",
+            "LOCAL",
+            "DEFAULT",
+            "UND",
+            "camera_rtsp_digest_issue"
+          ],
+          "retained_references": 0
+        },
+        "camera_rtsp_digest_verify": {
+          "row": [
+            "835:",
+            "00000000",
+            "0",
+            "NOTYPE",
+            "LOCAL",
+            "DEFAULT",
+            "UND",
+            "camera_rtsp_digest_verify"
+          ],
+          "retained_references": 0
+        }
+      },
+      "referenced_undefined": [
+        "_GLOBAL_OFFSET_TABLE_",
+        "__aeabi_uidivmod",
+        "__aeabi_uldivmod",
+        "__bswapsi2",
+        "__clock_gettime64",
+        "__ehdr_start",
+        "__errno_location",
+        "__fstat_time64",
+        "__nanosleep_time64",
+        "__stack_chk_fail",
+        "__stack_chk_guard",
+        "_exit",
+        "calloc",
+        "close",
+        "dup2",
+        "fcntl",
+        "fflush",
+        "fork",
+        "fprintf",
+        "free",
+        "fstatfs",
+        "getegid",
+        "geteuid",
+        "getgid",
+        "getgroups",
+        "getpid",
+        "getppid",
+        "getrlimit",
+        "getuid",
+        "ioctl",
+        "lseek",
+        "malloc",
+        "memchr",
+        "memcmp",
+        "memcpy",
+        "memset",
+        "open",
+        "poll",
+        "prctl",
+        "pread",
+        "raise",
+        "read",
+        "recvmsg",
+        "send",
+        "setgroups",
+        "setresgid",
+        "setresuid",
+        "setrlimit",
+        "sigaction",
+        "socketpair",
+        "stderr",
+        "strcmp",
+        "strlen",
+        "syscall",
+        "waitpid"
+      ]
+    }
+  },
+  "candidate_calls": 0,
+  "executions_deferred": "ALL normal/negative/adversarial/mutation/fuzz/native/hardware",
+  "limitations": "Not independent SOURCE acceptance/native ABI/final ELF/transitive-stack/whole compiler closure/fit/recovery/frontend adoption. Stop for ordinary independent review+parent disposition."
+}

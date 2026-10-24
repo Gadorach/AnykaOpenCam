@@ -160,8 +160,16 @@ has narrow independent SOURCE/API/bounds/ownership/order sufficiency,10 HOST/ARM
 compiles/2 rooted REL links/28 commands PASS, NOT RUN; original runtime transaction/
 debt/timing remain unchanged, prior writer history refuses before touch/payment.
 See [producer memory disposition](../../qualification-plans/qc07f-producer-memory-20261024/PARENT_DISPOSITION.md).
-Current private userspace/runtime still use old layouts and contiguous-output ioctl;
-actual new-history audits and typed source connection remain missing, not a relink.
+Actual private writer-runtime v2 now has narrow independent SOURCE/API/order/
+ownership/lifetime sufficiency: actual owned-FD spans ioctl → typed scalar CPU loan/
+release → exact common END → post-cost source/watchdog admission → real hub commit.
+Selected source has no encoded1MiB malloc path; this is NOT a native allocation
+result.14 HOST/ARM compiles/2 rooted REL links/44 commands PASS, NOT RUN. V1's final
+auth-gate latency defect remains NOT ADOPTED; failed pin-map/preflight metadata
+attempts preserved. See [writer runtime disposition](../../qualification-plans/qc07f-writer-runtime-v2-20261024/PARENT_DISPOSITION.md).
+The old frontend/layout is NOT compatible; actual typed frontend/drain/borrow-end
+integration remains missing, not a relink. Paid hub borrow is still retained after
+normal source STOP; no lender disposal or clean SERVED claim.
 No candidate function invoked.
 Native1MiB output/raw/process2MiB/combined-load
 and external recovery remain open, not satisfied by CPU chunks or source review.
