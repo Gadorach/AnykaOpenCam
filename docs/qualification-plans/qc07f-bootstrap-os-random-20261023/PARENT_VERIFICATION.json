@@ -1,0 +1,44 @@
+{
+  "scope": "PARENT_PUBLIC_SOURCE_ORDER_CUSTODY_AND_COMPILE_EVIDENCE_VERIFICATION_NOT_EXECUTION",
+  "recorded_host_utc": "2026-10-24T02:38:24.480075+00:00",
+  "assigned_lane": "20261023",
+  "verified_counts": {
+    "input_pins": 902,
+    "delivery_records": 56,
+    "artifacts": 37,
+    "new_dependency_records": 182,
+    "selected_reused_dependency_records": 871,
+    "command_log_pins": 24,
+    "runtime_archive_bodies": 46,
+    "integration_API_definitions_per_REL": 11
+  },
+  "exact_inverse_recovers_original_C": true,
+  "header_noncomment_tokens_identical": true,
+  "observe_start_finish_tail_byte_identical": true,
+  "real_zeroizer_once_per_REL": true,
+  "source_aggregate": "7ce0e065abc0ebfa3b30c7f26054471444270301f244229bc13d3bd3e2c3f0c5",
+  "pins": {
+    "docs/qualification-plans/qc07f-bootstrap-os-random-review-20261023/REVIEW.md": {
+      "bytes": 9342,
+      "sha256": "d7dab51c3e811c15433041fb9e8920aa01a7a7e741c8e31d5d780ecb2c0b3b85"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/DELIVERY_PINS.json": {
+      "bytes": 20628,
+      "sha256": "2b245f5ad423bb3ad11c57914e0b89dd6c68dda5be96b023d1db547f5da87bcf"
+    },
+    "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/REPORT.json": {
+      "bytes": 57771,
+      "sha256": "dd71f32612060a3551995f6de4be1a9c74a63c4b28b3b552cd0402e3a30236b5"
+    },
+    "apps/rtsp-auth/qc07f-bootstrap-os-random/bootstrap.c": {
+      "bytes": 5309,
+      "sha256": "abd2ad799c635f011c726dee493b417bfebd672ff2fb6a0bba0528ca55894c94"
+    },
+    "apps/rtsp-auth/qc07f-bootstrap-os-random/bootstrap_v1.h": {
+      "bytes": 4994,
+      "sha256": "f965a8075d6079f7d1d02a9e966ba17c2802b3e8e7221ae423e4fbbb1310c076"
+    }
+  },
+  "candidate_test_callback_child_native_credentials_hardware_executed": false,
+  "parent_reader_note": "Initial comment inverse used wrong indentation and stopped; corrected exact text comparison matched. No source or candidate changed or ran."
+}

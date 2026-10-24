@@ -1,0 +1,31 @@
+{
+  "scope": "static text inverse; no candidate or test execution",
+  "original_c": {
+    "path": "apps/rtsp-auth/qc07f-bootstrap-candidate/bootstrap.c",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-candidate/bootstrap.c",
+    "bytes": 4877,
+    "sha256": "d67d1f4c752b3809ed11f2f5862b9296ba7c57098df62f3cbe29c46dabf79eb4"
+  },
+  "derivative_c": {
+    "path": "apps/rtsp-auth/qc07f-bootstrap-os-random/bootstrap.c",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-os-random/bootstrap.c",
+    "bytes": 5309,
+    "sha256": "abd2ad799c635f011c726dee493b417bfebd672ff2fb6a0bba0528ca55894c94"
+  },
+  "reverse_c_sha256": "d67d1f4c752b3809ed11f2f5862b9296ba7c57098df62f3cbe29c46dabf79eb4",
+  "reverse_c_exact_original": true,
+  "observe_start_finish_tail_byte_identical": true,
+  "header_noncomment_nonwhitespace_identical": true,
+  "header_original": {
+    "path": "apps/rtsp-auth/qc07f-bootstrap-candidate/bootstrap_v1.h",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-candidate/bootstrap_v1.h",
+    "bytes": 4352,
+    "sha256": "4bbd0bbc39fec24e0acc3d2146bf05e86c29be155bc462b6fc6eecb48306c863"
+  },
+  "header_derivative": {
+    "path": "apps/rtsp-auth/qc07f-bootstrap-os-random/bootstrap_v1.h",
+    "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-os-random/bootstrap_v1.h",
+    "bytes": 4994,
+    "sha256": "f965a8075d6079f7d1d02a9e966ba17c2802b3e8e7221ae423e4fbbb1310c076"
+  }
+}

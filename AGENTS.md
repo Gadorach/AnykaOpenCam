@@ -55,7 +55,8 @@ dependency records/84 artifacts/40 logs/five tools. Native hardening/real creden
 NOT RUN. See rtsp-provisioner-process PARENT_DISPOSITION; no active author/reviewer
 in that lane; committed locally `5269979`. Its original33-input pin set retains
 the pre-closeout index:32 remain unchanged plus known parent index/status
-updates recorded in PARENT_CONTEXT_UPDATE01/02/03/04.json, not rebased. Actual authorized
+updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE05.json`,
+not rebased. Actual authorized
 external ingress, secret-free launch/FD-env-caps
 hygiene, durable storage/rotation, linked-file retirement/main/external recovery/
 backing remain gaps. Next source connection is known-wait/bind → real device-free
@@ -78,10 +79,18 @@ gaps at ON/staging/READY, after QCL commit and PID1 magic-close plus strict C1 c
 admission remain. Parent read-only outlet capability sample found no advertised
 autonomous cutoff; same-host HTTP is NOT independent host-loss recovery. See
 qc07f-ram75-entry23 PARENT_DISPOSITION. No new image/controller/clock framework.
-One isolated author owns fresh qc07f-bootstrap-os-random app/docs for actual
-OS-callback registration BEFORE provisioning snapshots; reject existing callback,
-preserve original bind→prepare→start and failed-owner custody. Compile/REL-only,
-independent review required; no test/child/native/motor/NOR execution selected.
+Actual OS-callback registration BEFORE provisioning snapshots at
+qc07f-bootstrap-os-random now has narrow independent SOURCE/API/order/custody
+sufficiency: reject ANY prepopulated callback before mutation, latch one attempt,
+select real function before actual snapshot, preserve selection/HOLD on failure.
+2 HOST/ARM compiles/2 real REL links/24 commands PASS, NOT RUN; parent checked902
+inputs/56 delivery pins/37 artifacts/182 new+871 reused dependency records/46
+archive bodies and exact reverse to original. REPLACE old bootstrap unit, never
+link both; original observe/start/finish tails unchanged. Native entropy still open.
+One isolated author owns qc07f-bootstrap-material-retire app/docs for EXPLICIT
+logical material FD/file retirement only AFTER real normal verifier finish0;
+unknown/failed paths retain ownership. No actual close/unlink/test/child/native/
+motor/NOR execution selected. Independent review required before use.
 No bootstrap test/child/verifier/native/media execution, main, synthetic callbacks,
 provider/backing or hardware adoption selected.
 Original radio/Oct22 reset/23c/23d/23e/23g

@@ -1,0 +1,15 @@
+{
+  "scope": "FIFTH_KNOWN_PARENT_MUTABLE_INDEX_STATUS_UPDATE_NOT_SOURCE_PIN_REBASE",
+  "recorded_host_utc": "2026-10-24T02:42:23.886500+00:00",
+  "original_manifests_and_review_unchanged": true,
+  "path": "docs/plan/camera-foundation/00-INDEX.md",
+  "before": {
+    "bytes": 127296,
+    "sha256": "2f9c02cb459d5047a9f9da87bd51c90ea50a9aa0413791ab5d8bfae8254ca1c0"
+  },
+  "after": {
+    "bytes": 127711,
+    "sha256": "cf7c9df8aca68c1bdae011762a615c9977ea330f8510ac62436dc02067a1f7c8"
+  },
+  "reason": "parent closes reviewed OS-callback bootstrap registration and selects explicit normal-finish material-retirement source; no native or callback execution"
+}

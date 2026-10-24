@@ -1,0 +1,41 @@
+--- apps/rtsp-auth/qc07f-bootstrap-candidate/bootstrap_v1.h
++++ apps/rtsp-auth/qc07f-bootstrap-os-random/bootstrap_v1.h
+@@ -6,6 +6,12 @@
+ #if defined(RTSP_HANDOFF_HOST_PUBLICDUMMY) || defined(IS_HOST_PUBLIC_ONLY) || defined(RV_TEST_PUBLIC_ONLY)
+ #error "Bootstrap has no fixture/native fallback class"
+ #endif
++
++/* Explicit replacement: link THIS bootstrap.c and actual OS-random production
++ * object, NOT qc07f-bootstrap-candidate/bootstrap.c or its object/combined REL.
++ * Same API/ABI/initializer and ONE process attempt, not two independent contexts.
++ * Read docs/qualification-plans/qc07f-bootstrap-os-random-20261023/CONTRACT.md.
++ */
+ 
+ /* Source progress ONLY, never native permission/readiness or retirement. */
+ enum qc07f_bootstrap_phase {
+@@ -46,16 +52,20 @@
+ #define QC07F_BOOTSTRAP_INIT { .owner=CANDIDATE_PRESTARTED_INIT, \
+  .provisioner=RTSP_PROVISIONER_PROCESS_INIT, .phase=QC07F_BS_EMPTY }
+ 
+-/* ONE process-local attempt. All public config/callback policy supplied before
+- * begin, material_fd=-1, cfg.context=&owner_storage.runtime (future address).
++/* ONE process-local attempt. Public config/callback policy supplied before begin,
++ * except random_ready MUST be NULL; admitted begin selects the actual OS callback
++ * before provisioner snapshot, retaining selection on underlying begin failure.
++ * No post-begin setter. NULL is not freshness/permission/entropy qualification.
++ * material_fd=-1, cfg.context=&owner_storage.runtime (future address).
+  * Runtime remains zero until prepare; callbacks then use runtime.bootstrap.
+- * Real random_ready/retain_verifier and secret-free/device-free parent, authorized
++ * Real retain_verifier and secret-free/device-free parent, authorized
+  * external ingress/writer, native image/hardening, FD/environment/cap hygiene and
+  * no earlier native/media/prepare/start ANYWHERE are TRUSTED prerequisites, not
+  * metadata/Boolean proof. Callbacks themselves stay device-free in this slice.
+  * Actual provisioner begin consumes canonical *ingress_slot; even preflight/fork
+- * failure retains it in provisioner. Invalid/null/bootstrap identity or reentry
+- * before admission leaves caller slot untouched. No parent secret read.
++ * failure retains it in provisioner. Invalid/null/bootstrap identity, reentry or
++ * non-NULL random_ready before admission leaves config/caller slot untouched.
++ * Selection is not target syscall/CRNG qualification. No parent secret read.
+  */
+ int qc07f_bootstrap_begin_v1(struct qc07f_bootstrap_v1 *,int *ingress_slot,
+  int directory_fd,struct candidate_config *,const struct camera_rtsp_registry *,

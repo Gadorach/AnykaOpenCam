@@ -96,9 +96,14 @@ unknown. Camera OFF/no active capture or live native lease. Retained-image RAM75
 entry method is BLOCKED before code: uncovered recovery/watchdog handoffs and
 strict C1 clock admission, not image corruption or a permission gap. See
 [method disposition](../../qualification-plans/qc07f-ram75-entry23-20261023/PARENT_DISPOSITION.md).
-No controller/new image/clock framework/motor/NOR/boot queue. One source lane
-instead connects the real OS-random callback BEFORE provisioning snapshots in a
-fresh bootstrap derivative; no callback/child/native execution or entropy GO.
+No controller/new image/clock framework/motor/NOR/boot queue. The fresh bootstrap
+OS-random derivative now has narrow independent SOURCE/API/order/custody
+sufficiency,2 HOST/ARM compiles/2 real REL links/24 commands, never called; it
+selects the real callback BEFORE provisioning snapshots and refuses replacement
+of any prepopulated callback. No entropy/native GO. See
+[registration disposition](../../qualification-plans/qc07f-bootstrap-os-random-20261023/PARENT_DISPOSITION.md).
+One source lane adds explicit material FD/fixed staging-file retirement only after
+actual successful verifier finish, not automatic failure cleanup or secure erasure.
 Separate RTSP provisioner-child/readonly-FD IPC now has narrow independent SOURCE/
 API/custody sufficiency,27 HOST/ARM compiles/40 commands and ONE normal PUBLICDUMMY
 fork/FD-transfer/wait0/bind observation. No real credentials/native hardening or
@@ -109,7 +114,7 @@ never called; see
 [bootstrap disposition](../../qualification-plans/qc07f-bootstrap-20261023/PARENT_DISPOSITION.md).
 The real public-RTSP OS randomness callback now has narrow independent SOURCE/API/
 bounds sufficiency,5 HOST/ARM compiles/26 commands and ONE HOST OS call PASS; no
-callback integration/native entropy qualification. Local commit `4b11b79`.
+runtime execution/native entropy qualification. Standalone commit `4b11b79`.
 Provisioner handback:
 [disposition](../../qualification-plans/rtsp-provisioner-process-20261023/PARENT_DISPOSITION.md).
 PTZ counter source/compile-only correction is committed locally `8ec07ff`, not

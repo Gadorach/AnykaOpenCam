@@ -1,0 +1,43 @@
+{
+  "recorded": "2026-10-24T02:30:01.877598+00:00",
+  "status": "STATIC_SOURCE_AND_COMPILE_METADATA_PASS_NOT_RUN",
+  "all_build_inputs_unchanged": 902,
+  "all_report_artifact_pins_matched": 37,
+  "header_exact_reverse_original": true,
+  "header_reverse_sha256": "4bbd0bbc39fec24e0acc3d2146bf05e86c29be155bc462b6fc6eecb48306c863",
+  "no_global_symbol_duplicates": true,
+  "no_runtime_or_test_execution": true,
+  "original_bootstrap_files": [
+    {
+      "path": "apps/rtsp-auth/qc07f-bootstrap-candidate/LICENSE_NOTICES.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-candidate/LICENSE_NOTICES.md",
+      "bytes": 866,
+      "sha256": "b04e0cc6abf2c43ace6bb3943759d5bdf31ab8afbf03e24770698a06c679da94"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-bootstrap-candidate/bootstrap.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-candidate/bootstrap.c",
+      "bytes": 4877,
+      "sha256": "d67d1f4c752b3809ed11f2f5862b9296ba7c57098df62f3cbe29c46dabf79eb4"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-bootstrap-candidate/bootstrap_v1.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-candidate/bootstrap_v1.h",
+      "bytes": 4352,
+      "sha256": "4bbd0bbc39fec24e0acc3d2146bf05e86c29be155bc462b6fc6eecb48306c863"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-bootstrap-candidate/compile_recipe.sh",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-candidate/compile_recipe.sh",
+      "bytes": 2911,
+      "sha256": "63b22a3208f377cf9658dcba7fd6dc4769e83ebd0e10c0c341afbfa3bc2708fd"
+    }
+  ],
+  "source_lines": {
+    "LICENSE_NOTICES.md": 16,
+    "bootstrap.c": 120,
+    "bootstrap_v1.h": 91,
+    "compile_recipe.sh": 58
+  },
+  "one_next_task": "independent parent review and explicit adoption; no queued use/native operation"
+}

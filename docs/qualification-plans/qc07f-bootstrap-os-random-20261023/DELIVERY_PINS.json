@@ -1,0 +1,341 @@
+{
+  "scope": "all assigned source/docs/local build evidence except this manifest; no binary publication/staging authorization",
+  "files": [
+    {
+      "path": "apps/rtsp-auth/qc07f-bootstrap-os-random/LICENSE_NOTICES.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-os-random/LICENSE_NOTICES.md",
+      "bytes": 874,
+      "sha256": "06218fbaf36de54dc4d83cd59182b2cb079a1709f6b007eb40553bfe568b8145"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-bootstrap-os-random/bootstrap.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-os-random/bootstrap.c",
+      "bytes": 5309,
+      "sha256": "abd2ad799c635f011c726dee493b417bfebd672ff2fb6a0bba0528ca55894c94"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-bootstrap-os-random/bootstrap_v1.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-os-random/bootstrap_v1.h",
+      "bytes": 4994,
+      "sha256": "f965a8075d6079f7d1d02a9e966ba17c2802b3e8e7221ae423e4fbbb1310c076"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-bootstrap-os-random/compile_recipe.sh",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-os-random/compile_recipe.sh",
+      "bytes": 3112,
+      "sha256": "75bfec5611ad4139857de88c9e97671b69df35bad9e95141887fbd7986efcacf"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/BUILD_AUDIT.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/BUILD_AUDIT.json",
+      "bytes": 159912,
+      "sha256": "4cc71da7271a3fbbcd020e55a596e79a07361ac4df8a3b65a2186cdf680bebe3"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/BUILD_INPUTS.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/BUILD_INPUTS.json",
+      "bytes": 281686,
+      "sha256": "31d775861449fb870927e82e1016f87c3d4353b196ce31fe3ce947cc333a9673"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/BUILD_INPUTS.sha256",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/BUILD_INPUTS.sha256",
+      "bytes": 147905,
+      "sha256": "9b70e20770f712f32e677339dacf7e475d0747dc0234a5c373242f2a9018f04b"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/CONTRACT.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/CONTRACT.md",
+      "bytes": 4969,
+      "sha256": "5459f517d286bc05d08638e740c48231bc565a7ed19f2189f88b27a80c82cea3"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/DELTA_PROOF.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/DELTA_PROOF.json",
+      "bytes": 1522,
+      "sha256": "fccccede8e19c7f3a901e89a8d73d8ef456b80453c1b4aa217bf36571c586256"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/FINAL_AUDIT.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/FINAL_AUDIT.json",
+      "bytes": 1900,
+      "sha256": "d2fc7b9cb05095fa56d4eb8c06afe820ba76073c4562e9408c84ddfd0c883907"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/HANDOFF.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/HANDOFF.md",
+      "bytes": 8232,
+      "sha256": "42485f8956a27efce1443ab2692ff8ac5f08ba3daf8223dbecdb827ace4979b4"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/INVOCATION.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/INVOCATION.json",
+      "bytes": 463,
+      "sha256": "2cd9a33f1d115570f4b9ef175ae68606f62ca573b1d5e1e4dd11dcaccffaccb7"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/INVOCATION.log",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/INVOCATION.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/METADATA_NOTE.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/METADATA_NOTE.md",
+      "bytes": 922,
+      "sha256": "e77746b45121b86c2dbe90b1c585f1cfaaa95d79d3684c327270beb5f888874d"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/REUSED_DEPENDENCIES.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/REUSED_DEPENDENCIES.json",
+      "bytes": 273367,
+      "sha256": "879f88905572c7cb532d6e02aba8ca275def5f52f172b26fd729f83356fc9e08"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/SOURCE_PINS.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/SOURCE_PINS.json",
+      "bytes": 1440,
+      "sha256": "23d0f499661a93494b80edf4b5dd155d429865b48fb9cc9f4c6556f49a636039"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/bootstrap.c.diff",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/bootstrap.c.diff",
+      "bytes": 1425,
+      "sha256": "9314a1bdc81cec69f1388dd79362c1cfb8e80d032fa737df54d54bece77570b4"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/bootstrap_v1.h.diff",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/bootstrap_v1.h.diff",
+      "bytes": 2608,
+      "sha256": "598d7d0b30b9f4b438bc4036af03f0878838401e58f239860ce4a99f62cfb836"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/COMMANDS.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/COMMANDS.txt",
+      "bytes": 8708,
+      "sha256": "52fda9934a7f717d1147cb3e98036ea4a84560a557a12fc4e03619e90cff29d5"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/DEPENDENCIES.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/DEPENDENCIES.json",
+      "bytes": 76550,
+      "sha256": "62a05c7761202b6a814b422f870480df72dff67fb2a416ad9841fecc18d9539a"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/REPORT.json",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/REPORT.json",
+      "bytes": 57771,
+      "sha256": "dd71f32612060a3551995f6de4be1a9c74a63c4b28b3b552cd0402e3a30236b5"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/TIMES.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/TIMES.txt",
+      "bytes": 2434,
+      "sha256": "131be84f83b070e63fa13e19279670d405e0c50c3ffb5f4e89ef31f94cdf4b1a"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/arm.map",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/arm.map",
+      "bytes": 171176,
+      "sha256": "65f0ceda3562c8873c8fb893491c03e1f88048654860f590d254e17c5f7a4f58"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/bootstrap-arm-NOT-EXECUTABLE.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/bootstrap-arm-NOT-EXECUTABLE.o",
+      "bytes": 227060,
+      "sha256": "5c242d4d1741489bff4578f184434a1b8a4f6edf1e7366aca7f4ba77b186203a"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/bootstrap-host-NOT-EXECUTABLE.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/bootstrap-host-NOT-EXECUTABLE.o",
+      "bytes": 332832,
+      "sha256": "606ad859ad5385ed341d2f80dcbce9acd959c90c48990f887b8e3c2f964c941f"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/host.map",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/host.map",
+      "bytes": 178546,
+      "sha256": "2e5a297c3fd9849ba46a7485fdb7a844ec63315ec288a98e9580a54864feaf1e"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/arm-ELF.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/arm-ELF.txt",
+      "bytes": 1362,
+      "sha256": "4442b2d1d786f5dc4b0465282498e7baa5ba0abb0e7af6d72362f84dc83660be"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/arm-REL.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/arm-REL.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/arm-additions-ELF.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/arm-additions-ELF.txt",
+      "bytes": 8929,
+      "sha256": "b049a8c5ba87dd79a0258fb924281057146e68927b49de87ec93bc40009fccd1"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/arm-archive-ELF.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/arm-archive-ELF.txt",
+      "bytes": 34955,
+      "sha256": "1c761c0c290d7368030dd94703364f6e629dee43164f5d21abb7ca3d0aec3a04"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/arm-archive-symbols.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/arm-archive-symbols.txt",
+      "bytes": 5938,
+      "sha256": "b7f4037a8c690aa57c994ec4418e122d8f188f6d9f91cf4a14820c15918a097b"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/arm-cc.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/arm-cc.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/arm-defined.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/arm-defined.txt",
+      "bytes": 6556,
+      "sha256": "abe6bf807ab89308a33d815ab611bc592b86f3c2785fe43568ec6e574ea0d309"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/arm-machine.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/arm-machine.txt",
+      "bytes": 29,
+      "sha256": "d0cf670b8c286026ebd268b1f5ecdd6be41552e0e254a949fb50ab0ed085dd23"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/arm-members.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/arm-members.txt",
+      "bytes": 518,
+      "sha256": "fdf8d564b7b24580e5faeca9d75caeef4a7ab3f32eae9f884b35d2ace40048fc"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/arm-undefined.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/arm-undefined.txt",
+      "bytes": 1525,
+      "sha256": "dd230a7e0c8176b0e426069af06696d439ee79c08344e6922e0fa69a283e5362"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/arm-version.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/arm-version.txt",
+      "bytes": 288,
+      "sha256": "7b501201183c07e1e9078ca3f8b1f502d07fd67c414e92183c01e8787c00a0d4"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/final-input-pins.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/final-input-pins.txt",
+      "bytes": 91981,
+      "sha256": "e3929bbd05e8a17b29ced910077ae6f4b5c3d56437a45b2326976cb4898c8325"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/host-ELF.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/host-ELF.txt",
+      "bytes": 956,
+      "sha256": "b0f5157f1766e500d1ed6fc7830a3e8273aedf558ac7afeea5883ebc7310312e"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/host-REL.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/host-REL.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/host-additions-ELF.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/host-additions-ELF.txt",
+      "bytes": 6500,
+      "sha256": "a344c9190aa770e834ad9deccbf52668e352903405602129c5e4852fe272b7f2"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/host-archive-ELF.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/host-archive-ELF.txt",
+      "bytes": 25665,
+      "sha256": "e39a59a2715468850cd0de74dc52a76ce858b9916d47895a7d195e57d7f2aa99"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/host-archive-symbols.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/host-archive-symbols.txt",
+      "bytes": 7289,
+      "sha256": "3bbd9dae2631e737ceda874c8f4aa8bf3076a765e6d1fce1e057189cdea03158"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/host-cc.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/host-cc.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/host-defined.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/host-defined.txt",
+      "bytes": 8132,
+      "sha256": "dfce1b2a858d259597bd9dc9507ad05cad262a5c60a47b6a2d04fa16b3ea97a8"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/host-machine.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/host-machine.txt",
+      "bytes": 20,
+      "sha256": "1c7da408e283702561a445e700b61c0f55a082230a3cfe323208841221274a6a"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/host-members.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/host-members.txt",
+      "bytes": 541,
+      "sha256": "4f06b1bb34d5c6b61a736df50a7f102ff26c9a82d9d7d13261b4855da87df59d"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/host-undefined.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/host-undefined.txt",
+      "bytes": 1900,
+      "sha256": "e62d259158f8a06946e5b4994079b7452653282d8bcb52b72459b5de4e31eb62"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/host-version.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/host-version.txt",
+      "bytes": 227,
+      "sha256": "52fa390d1b33ef5e0b20f39de6624190ade494b52dd543bd8121f350ec88e0e5"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/input-pins.txt",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/logs/input-pins.txt",
+      "bytes": 91981,
+      "sha256": "e3929bbd05e8a17b29ced910077ae6f4b5c3d56437a45b2326976cb4898c8325"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/objects/arm-bootstrap.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/objects/arm-bootstrap.d",
+      "bytes": 10291,
+      "sha256": "67e61417d4a2bad5ea704de27b9037f040a8f7812958655d227b1397585add50"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/objects/arm-bootstrap.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/objects/arm-bootstrap.o",
+      "bytes": 4072,
+      "sha256": "c92ef2e8540dd6bef83f627da51b3151a9041a9d5123eec88f675d68f08c6498"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/objects/arm-bootstrap.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/objects/arm-bootstrap.su",
+      "bytes": 645,
+      "sha256": "16a8862a8948a6fda56ad1354e8c37f200e271cd5de3a48da1b85a9202a642f0"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/objects/host-bootstrap.d",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/objects/host-bootstrap.d",
+      "bytes": 6886,
+      "sha256": "26bbf3ed1816405449fab9c3f7e232722f07aab854bb9a513223d90dd578edfd"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/objects/host-bootstrap.o",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/objects/host-bootstrap.o",
+      "bytes": 5456,
+      "sha256": "d06bd9319706c96ebe052832917992aaece31d1bd6a922309186cc3f69d43333"
+    },
+    {
+      "path": "docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/objects/host-bootstrap.su",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/qc07f-bootstrap-os-random-20261023/runs/build01/objects/host-bootstrap.su",
+      "bytes": 541,
+      "sha256": "9c95e7c9e1d49c14dcd61d14e1edc5623f212c285a5b5870b44d4f1974175b34"
+    }
+  ]
+}

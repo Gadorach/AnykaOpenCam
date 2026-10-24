@@ -1,0 +1,29 @@
+--- apps/rtsp-auth/qc07f-bootstrap-candidate/bootstrap.c
++++ apps/rtsp-auth/qc07f-bootstrap-os-random/bootstrap.c
+@@ -1,5 +1,11 @@
+ /* SPDX-License-Identifier: GPL-2.0-only */
+ #include "bootstrap_v1.h"
++#include "../rtsp-os-random/os_random.h"
++
++_Static_assert(__builtin_types_compatible_p(
++ __typeof__(((struct candidate_config *)0)->random_ready),
++ __typeof__(&qc07f_rtsp_os_random_ready_v1)),
++ "owned-runtime random_ready callback type changed");
+ 
+ static struct qc07f_bootstrap_v1 *process_attempt;
+ static unsigned active;
+@@ -23,10 +29,13 @@
+  if(active)return QC07F_BS_BUSY;
+  if(!b||process_attempt||b->self||b->phase!=QC07F_BS_EMPTY||!config||!routes)
+   return QC07F_BS_REFUSED;
++ if(config->random_ready)return QC07F_BS_REFUSED;
+  active=1;process_attempt=b;b->self=b;b->config=config;b->routes=routes;
+  b->bootstrap=bootstrap;b->phase=QC07F_BS_PROVISIONING;
+- /* Do not prepare or change config before actual child retirement + bind.
++ /* Select ONCE before actual provisioner snapshot; retain selection on failure.
++  * No other config change or prepare before actual child retirement + bind.
+   * Existing module owns the canonical ingress move, preflight, fork and waits. */
++ config->random_ready=qc07f_rtsp_os_random_ready_v1;
+  int r=rtsp_provisioner_begin(&b->provisioner,ingress_slot,directory_fd,
+   config,routes,&b->owner,budget_ms);
+  if(r!=RTSP_PP_MORE||b->provisioner.self!=&b->provisioner||

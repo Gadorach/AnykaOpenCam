@@ -1,0 +1,30 @@
+{
+  "files": [
+    {
+      "path": "apps/rtsp-auth/qc07f-bootstrap-os-random/LICENSE_NOTICES.md",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-os-random/LICENSE_NOTICES.md",
+      "bytes": 874,
+      "sha256": "06218fbaf36de54dc4d83cd59182b2cb079a1709f6b007eb40553bfe568b8145"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-bootstrap-os-random/bootstrap.c",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-os-random/bootstrap.c",
+      "bytes": 5309,
+      "sha256": "abd2ad799c635f011c726dee493b417bfebd672ff2fb6a0bba0528ca55894c94"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-bootstrap-os-random/bootstrap_v1.h",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-os-random/bootstrap_v1.h",
+      "bytes": 4994,
+      "sha256": "f965a8075d6079f7d1d02a9e966ba17c2802b3e8e7221ae423e4fbbb1310c076"
+    },
+    {
+      "path": "apps/rtsp-auth/qc07f-bootstrap-os-random/compile_recipe.sh",
+      "resolved": "/home/gadorach/Desktop/AnykaOpenCam/apps/rtsp-auth/qc07f-bootstrap-os-random/compile_recipe.sh",
+      "bytes": 3112,
+      "sha256": "75bfec5611ad4139857de88c9e97671b69df35bad9e95141887fbd7986efcacf"
+    }
+  ],
+  "aggregate_format": "SHA256 of UTF-8 lines SHA256 + two spaces + workspace-relative path + LF; sorted path",
+  "aggregate_sha256": "7ce0e065abc0ebfa3b30c7f26054471444270301f244229bc13d3bd3e2c3f0c5"
+}

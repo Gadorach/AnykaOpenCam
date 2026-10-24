@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "/usr/bin/env",
+    "-i",
+    "PATH=/usr/bin:/bin",
+    "LANG=C",
+    "LC_ALL=C",
+    "TZ=UTC",
+    "/bin/bash",
+    "apps/rtsp-auth/qc07f-bootstrap-os-random/compile_recipe.sh"
+  ],
+  "cwd": "/home/gadorach/Desktop/AnykaOpenCam",
+  "started": "2026-10-24T02:26:03.612705+00:00",
+  "scope": "compile/REL/read-only public metadata only; zero candidate/RNG/child/program execution",
+  "finished": "2026-10-24T02:26:04.718145+00:00",
+  "exit": 0
+}

@@ -17,9 +17,18 @@ Automatic sensor-reset/radio-power/ISP allocation also documented. Parent's
 read-only controller capability sample exposed no timer cutoff (not complete
 firmware proof); same-host HTTP is not independent recovery. See qc07f-ram75-entry23/
 PARENT_DISPOSITION.md. No controller/image/native/motor/NOR or clock-framework queue.
-One source author owns fresh qc07f-bootstrap-os-random for actual pre-snapshot
-registration of the real OS callback, rejecting prepopulated callback and preserving
-bind/prepare/start/HOLD/finish. Compile/REL-only, independent review next.
+Actual pre-snapshot registration at qc07f-bootstrap-os-random now has narrow
+independent SOURCE/API/order/custody sufficiency: reject prepopulated callback
+before mutation, select actual OS function after one-attempt admission/before
+actual provisioner snapshot. Bind/prepare/start/HOLD/finish tails unchanged.
+2 HOST/ARM compiles/2 real REL links/24 commands PASS, never called; parent verified
+902 inputs/56 delivery pins/37 artifacts/182 new+871 reused dependencies/46 archive
+bodies and inverse proof. Replacement unit only, not coexistence. See bootstrap-
+os-random PARENT_DISPOSITION. Actual build UTC is Oct24; assigned Oct23 names kept,
+not clock admission. One author now owns fresh qc07f-bootstrap-material-retire
+for explicit logical FD/fixed staging-file retirement AFTER actual normal verifier
+finish0. No automatic cleanup on failure or private-file/test/native operation;
+independent review next. Native recovery/C1/entropy/main/backing still open.
 
 Latest user steering renews unattended continuation through hardware testing and
 explicitly approves motor testing/onboard NOR flashing if needed. Parent selects
@@ -58,7 +67,8 @@ actual prestarted start, before all native/provider ownership; not native GO.
 Separate process source/public metadata committed locally `5269979`; ordinary
 index unchanged/no push. Its before-closeout source/context pins remain frozen:
 32 unchanged and later parent index status updates recorded explicitly in
-PARENT_CONTEXT_UPDATE01/02/03/04.json, not a rebased manifest. One new isolated author
+PARENT_CONTEXT_UPDATE01.json through PARENT_CONTEXT_UPDATE05.json, not a rebased
+manifest. One new isolated author
 owns qc07f-bootstrap-candidate plus matching bootstrap docs for actual known-wait/
 bind → device-free runtime prepare → prestarted-start order and retained failed-
 start custody. It now has narrow independent SOURCE/API/order/custody sufficiency:
