@@ -1,0 +1,102 @@
+{
+  "scope": "INDEPENDENT_PUBLIC_READ_HASH_DIFF_SAVED_METADATA_ONLY_NO_CANDIDATE_EXECUTION",
+  "result": "NARROW_CONDITIONAL_SOURCE_API_BOUNDS_OWNERSHIP_LIFETIME_SUFFICIENCY_PARENT_DISPOSITION_REQUIRED",
+  "candidate": {
+    "path": "bringup/qc07f/ptz-off-retain-candidate/ptz.c",
+    "bytes": 7551,
+    "sha256": "a0c7d152b8a2e163ed20419e2bfbd6a7fe765056870dd939b3e5b78511a6ce87"
+  },
+  "baseline": {
+    "path": "bringup/qc07f/ptz-counter-candidate/ptz.c",
+    "bytes": 5248,
+    "sha256": "b4a30cc783e7af5b2b0cb8eb53dc34ff24c80f159cd3c8bfe59db9abb11d24a0"
+  },
+  "author_directory": "docs/qualification-plans/ptz-off-retain-20261024",
+  "checked_manifest_pins_relative_to_author_directory": {
+    "SOURCE_INPUTS.json": {
+      "bytes": 116206,
+      "sha256": "1559cd8314c143b996d083d232b05bd0c1cf378d6082c8bf7bad3dc931647611"
+    },
+    "ADDITIONAL_INPUTS.json": {
+      "bytes": 1347,
+      "sha256": "01daa79460570d62a6c219e1d60dc334d4e07aa5f1402c811d21041de860c9b1"
+    },
+    "DELIVERY.json": {
+      "bytes": 3481,
+      "sha256": "512467470f5388c107333426baf8b9f0c1a1730d9c491440ea14edad23e3c902"
+    },
+    "runs/compile01/REPORT.json": {
+      "bytes": 118019,
+      "sha256": "8910a5674f9ca49f8d391e393a684974b20d592fab58fdebd1f843eaa34cd962"
+    }
+  },
+  "independent_current_byte_checks": {
+    "source_input_records": 421,
+    "additional_input_records": 6,
+    "delivery_payload_records": 15,
+    "compile_dependency_records": 394,
+    "tool_records": 2,
+    "mismatches": [],
+    "counts_overlap_not_unique_totals": true,
+    "author_directory_actual_and_expected_files_including_delivery": 15,
+    "membership_extra": [],
+    "membership_missing": [],
+    "regenerated_forward_patch_exact": true,
+    "regenerated_inverse_patch_exact": true,
+    "literal_inverse_application_reconstructs_baseline": true,
+    "counter_guard_byte_identical": true,
+    "tail_from_DEVICE_ATTR_RO_state_byte_identical": true,
+    "dependency_file_unique_normalized_paths": 394,
+    "dependency_membership_equals_report": true,
+    "dependency_target_equals_fresh_object": true,
+    "candidate_C_dependency_present_counter_C_absent": true,
+    "compile_argv_elements": 106,
+    "only_argv_delta_indices_from_counter": [3, 104, 105],
+    "all_three_saved_command_log_pins_match": true,
+    "original_query77_C_equals_security75": true
+  },
+  "supplemental_reference_root": "work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux",
+  "supplemental_reference_pins_relative_to_root": {
+    "drivers/base/platform.c": {
+      "bytes": 38060,
+      "sha256": "b3df261190611e2840323be3e1082f6f1b0a9165176b7ad12eca4ad6ac8622c1"
+    },
+    "drivers/base/driver.c": {
+      "bytes": 6982,
+      "sha256": "eb941fd97750d96c5c877fe390fa2ac4ced8cd7eb34a66f4a27f88ecb4341bfa"
+    },
+    "drivers/base/bus.c": {
+      "bytes": 36764,
+      "sha256": "53975b1d25058a6828ea4a1d0fa2cc3d1a23dc5ba37a8cb8e2a765fb707399e1"
+    },
+    "drivers/gpio/gpiolib-devres.c": {
+      "bytes": 11306,
+      "sha256": "b23e225f02cc55e57990036d89a93c10b3dba8fcc977568760d3f4385017b16d"
+    },
+    "arch/arm/mach-ak3918ev200/ptz.c": {
+      "bytes": 5114,
+      "sha256": "c70829527a939bf3533ec0270fba1f8db4186fb3dc61ff1ba506e1900cda50b6"
+    },
+    "arch/arm/mach-ak3918ev200/Makefile": {
+      "bytes": 496,
+      "sha256": "458e56e0d80bebee9560c79d1643de8266ea1c9fcca865c16b173f6087081a10"
+    }
+  },
+  "saved_build_not_rerun": {
+    "external_commands": 3,
+    "C_compiles": 1,
+    "exit_codes": [0, 0, 0],
+    "compiler_version": "NEW Clang23.1.3",
+    "profile": "QUERY77_BUILTIN_PTZ_Y_NO_MODULE_DEFINE_THIS_MODULE_NULL",
+    "compile_log_bytes": 0,
+    "raw_object_bytes": 8580,
+    "raw_object_sha256": "6d06084ca2908a580764787df6b977b85315343b08a074f90d6f0fda1c0b1ae4",
+    "raw_header": {"class": 1, "data": 1, "type": 1, "machine": 40, "flags": "0x05000000", "program_headers": 0, "section_headers": 31},
+    "saved_attributes": "ARMv5TE / ARM ISA / Thumb-1",
+    "module_kernel_image_link_or_native_evidence": false
+  },
+  "reviewer_compiler_linker_readelf_or_project_helper_invocations": 0,
+  "reviewer_candidate_function_calls_tests_or_hardware_operations": 0,
+  "discovery_note": "One read-only search of nonexistent drivers/gpio/devres.c failed; content search located actual gpiolib-devres.c. No source/evidence repair, build attempt or execution followed from that lookup failure.",
+  "not_adoption_not_hardware_ready": true
+}

@@ -1,0 +1,15 @@
+{
+  "scope": "NINETEENTH_KNOWN_PARENT_MUTABLE_INDEX_STATUS_UPDATE_NOT_SOURCE_PIN_REBASE",
+  "recorded_host_date": "2026-10-24",
+  "original_manifests_and_review_unchanged": true,
+  "path": "docs/plan/camera-foundation/00-INDEX.md",
+  "before": {
+    "bytes": 135369,
+    "sha256": "97f038d03ac7b56f03146be71e0811401720924adbb0580c4af1483aec3752c8"
+  },
+  "after": {
+    "bytes": 136063,
+    "sha256": "2923db500e382e8752cc59609dd15b3aff5adca0f6131a1d1a1ad73fceda5224"
+  },
+  "reason": "fixed-target40 v2 SOURCE disposition and FIRST unchanged compile recipe completion; saved-build review stopped on dependency-order reader assertion before raw profile/ABI/role closure, no N1 closure/adoption/commit or further attempt, all failed evidence retained and zero candidate/native/hardware execution"
+}

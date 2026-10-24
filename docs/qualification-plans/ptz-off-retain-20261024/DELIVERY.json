@@ -1,0 +1,79 @@
+{
+  "scope": "AUTHOR_DELIVERY_ONLY_REVIEW_REQUIRED_NOT_ADOPTED_NOT_RUN",
+  "created_utc": "2026-10-24T17:01:49.797974+00:00",
+  "candidate": {
+    "path": "bringup/qc07f/ptz-off-retain-candidate/ptz.c",
+    "bytes": 7551,
+    "sha256": "a0c7d152b8a2e163ed20419e2bfbd6a7fe765056870dd939b3e5b78511a6ce87"
+  },
+  "actual_C_compiles": 1,
+  "actual_external_commands": 3,
+  "candidate_calls": 0,
+  "tests": 0,
+  "native_operations": 0,
+  "source_inputs_rechecked": 421,
+  "compile_dependencies_rechecked": 394,
+  "files_excluding_this_manifest": {
+    "bringup/qc07f/ptz-off-retain-candidate/ptz.c": {
+      "bytes": 7551,
+      "sha256": "a0c7d152b8a2e163ed20419e2bfbd6a7fe765056870dd939b3e5b78511a6ce87"
+    },
+    "docs/qualification-plans/ptz-off-retain-20261024/ADDITIONAL_INPUTS.json": {
+      "bytes": 1347,
+      "sha256": "01daa79460570d62a6c219e1d60dc334d4e07aa5f1402c811d21041de860c9b1"
+    },
+    "docs/qualification-plans/ptz-off-retain-20261024/BUILD_RESULT.md": {
+      "bytes": 3708,
+      "sha256": "0000d123477354e26584566382032c0afd928ff3199c3294d8346019269428af"
+    },
+    "docs/qualification-plans/ptz-off-retain-20261024/CONTRACT.md": {
+      "bytes": 5145,
+      "sha256": "ef65d362395035de5fa0f73d8e2b003fb1c24c4cd47d378dd476deff0fc14fd0"
+    },
+    "docs/qualification-plans/ptz-off-retain-20261024/HANDBACK.md": {
+      "bytes": 3547,
+      "sha256": "f5fcfcc2d785066d8fad3356de62ab087636a9909ebc9a87ad07df2ca1f43858"
+    },
+    "docs/qualification-plans/ptz-off-retain-20261024/INVERSE.patch": {
+      "bytes": 6828,
+      "sha256": "86b60edade6054530dfcc0da9114112bf04644879ec4ff8ca3992d4be1acd866"
+    },
+    "docs/qualification-plans/ptz-off-retain-20261024/SOURCE_DELTA.patch": {
+      "bytes": 6828,
+      "sha256": "e2322f38d947d05cbdc5f27aded5f076d8a273e79565eceaa8d83b2296a71151"
+    },
+    "docs/qualification-plans/ptz-off-retain-20261024/SOURCE_INPUTS.json": {
+      "bytes": 116206,
+      "sha256": "1559cd8314c143b996d083d232b05bd0c1cf378d6082c8bf7bad3dc931647611"
+    },
+    "docs/qualification-plans/ptz-off-retain-20261024/SOURCE_REASONING.md": {
+      "bytes": 8663,
+      "sha256": "73d60d92fd840489abb3f1681005f5477eccd0c771deb70b10a8a28a03090908"
+    },
+    "docs/qualification-plans/ptz-off-retain-20261024/runs/compile01/ELF.txt": {
+      "bytes": 1466,
+      "sha256": "e2349b70ac0bba0eae617473561e5adeb6ae6a7b98b89c7786f03f699704504c"
+    },
+    "docs/qualification-plans/ptz-off-retain-20261024/runs/compile01/REPORT.json": {
+      "bytes": 118019,
+      "sha256": "8910a5674f9ca49f8d391e393a684974b20d592fab58fdebd1f843eaa34cd962"
+    },
+    "docs/qualification-plans/ptz-off-retain-20261024/runs/compile01/compile.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/qualification-plans/ptz-off-retain-20261024/runs/compile01/compiler-version.txt": {
+      "bytes": 92,
+      "sha256": "515e73398b96d9755cd8e88a2f977a4ac68160148e23fc5f5a63c1290c6576eb"
+    },
+    "docs/qualification-plans/ptz-off-retain-20261024/runs/compile01/ptz.d": {
+      "bytes": 61167,
+      "sha256": "e6cdd40ba255aaf5eaa48df12258861086686024a545fc726be81fedad48664a"
+    },
+    "docs/qualification-plans/ptz-off-retain-20261024/runs/compile01/ptz.o": {
+      "bytes": 8580,
+      "sha256": "6d06084ca2908a580764787df6b977b85315343b08a074f90d6f0fda1c0b1ae4"
+    }
+  },
+  "manifest_exclusion": "Only DELIVERY.json itself; no recursive self-hash. No further author files selected."
+}

@@ -50,15 +50,31 @@ build recipes. Do not rewrite historical absolute paths merely for the rename.
 
 ## Next task
 
-### Oct23 user steering — return to feature integration
+### Oct24 user steering — stabilize hardware drivers first
 
-Park diagnostic-image/build-semantics work. Query78 v3's review is complete at
-narrow SOURCE/method scope; no recipe/archive/kernel/image invocation follows.
-The actual guarded owned-provider → authenticated RTSP/keyframe adapter in
+Prioritize RP-02/NET Wi-Fi/USB reliability and MTU1500, RP-11/CTRL bounded motor
+movement/dependable STOP/defensible zeroing, and RP-12/AUDIO modern microphone
+capture. Speaker TESTING is DEFERRED. Park further backend/provisioning expansion
+and diagnostic-image/build-semantics lanes; actual target-observed driver behavior
+must lead backend readiness. Source/compile passes do not establish hardware GO.
+Preserve no automatic homing/guessed limits, scalar-only microphone evidence and
+all recovery/review gates. First concrete source correction is motor GPIO ownership
+after unknown OFF/partial direction; Wi-Fi P1 review and fresh RAM-entry recovery/
+C1 are still explicit blockers, not permission to reroute or skip them.
+That PTZ OFF-retention correction now has narrow independent SOURCE/API/bounds/
+ownership/lifetime sufficiency and ONE built-in ARM-object compile PASS, NOT RUN.
+Actual descriptors/device/code retain on uncertainty and both axes refuse further
+pulses; no physical STOP/thermal/zeroing or provider-unbind safety claim. See
+[PTZ correction](../../qualification-plans/ptz-off-retain-20261024/PARENT_DISPOSITION.md).
+
+Earlier integration history is retained below, not the selected next-work queue.
+Query78 v3's review is complete at narrow SOURCE/method scope; no recipe/archive/
+kernel/image invocation follows. The guarded owned-provider → RTSP/keyframe adapter in
 qc07f-owned-runtime now has narrow conditional parent SOURCE/API integration
 sufficiency and HOST/ARM compile evidence, no execution. See its
 [parent disposition](../../qualification-plans/rtsp-owned-runtime-20261023/PARENT_DISPOSITION.md).
-Actual app startup/provisioning/backing/external-owner integration remains next. No new
+Actual app startup/provisioning/backing/external-owner integration remains incomplete
+and is PARKED for the driver-first priority. No new
 clock/receipt framework is selected. Startup/provisioning/
 main/external media owner/backing/recovery remain explicit gaps, not fabricated
 ready flags. See the current execution ledger; earlier build selections below
@@ -192,6 +208,17 @@ before exec/secrets; Thumb-2/native instruction risk and user-owned0755 admissio
 remain unresolved. Worker boundary is not parent secret-history or hostile-code
 filesystem/syscall isolation; old fork/API5 bootstrap not adopted. No lender
 disposal/restart/recovery/product acceptance or execution/hardware queue.
+Fixed-target40 v2 has independent conditional SOURCE sufficiency and one completed
+unchanged build recipe:32 HOST/ARM compiles/four partial links/one static ARM link/
+147 commands, NOT RUN. Saved profile dumps show active40/inactive SDK40/37; both
+author inspection failures remain failed. Initial saved-build review failed its
+dependency-order assertion; user continued and remaining static review now completes
+exact1996-record/32-block ordering, raw profile/public ABI, compiled40 policy/four
+role closures/static worker and147 exact argv/273 build members. N1 resolves at
+STATIC profile scope only; later preparatory/map-reader failures remain failed.
+See [remaining review](../../qualification-plans/rtsp-provisioner-exec-v2-remaining-review-20261024/FINAL_REVIEW.md).
+Parent closeout/commit is PARKED for driver priorities, not adoption or new backend
+work. N2 Thumb-2, provenance/native eligibility and all original gates remain open.
 No candidate function invoked.
 Native1MiB output/raw/process2MiB/combined-load
 and external recovery remain open, not satisfied by CPU chunks or source review.

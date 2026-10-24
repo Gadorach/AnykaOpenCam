@@ -18,18 +18,33 @@
   independent work. Do not infer permission for third-party contact, publication,
   account changes or unrelated hardware.
 
-## Current checkpoint (2026-10-23)
+## Current checkpoint (2026-10-24)
 
-**USER RESUME — after 2026-10-24 host-restart pause:** User explicitly requested
-continue. Reconciled HEAD `26d7e4c` and unchanged ordinary index; saved encoder
-build01 failure/build02 compile-PASS reports remain present. The old author was
-cancelled, not an inherited live worker. Resumed author added only final handback/
-verification/delivery pins:96 existing files unchanged, no source/build rerun.
-Independent ordinary encoder review and parent source closeout are now complete
-at narrow SOURCE/API/bounds/ownership/order scope, NOT RUN. No build was rerun.
-Historical
-pause boundary: `docs/plan/camera-foundation/PAUSE_20261024_HOST_RESTART.md`.
-No fresh target observation, transfer or native/hardware phase is selected.
+**Latest user priority: stable hardware drivers before more backend work.** Prioritize
+RP-02/NET-01–08 Wi-Fi/USB reliability and MTU1500; RP-11/CTRL-02–04 bounded motor
+movement/STOP and defensible zeroing; RP-12/AUDIO-01–03 modern microphone capture.
+Speaker testing is explicitly DEFERRED. Park further backend/provisioning expansion
+and new build-semantics lanes. Real source fixes may proceed, but progress toward
+driver readiness must distinguish compiled source from target-observed operation.
+No automatic homing, guessed limits, GPIO sweep or bypass of existing recovery/
+review blocks. Wi-Fi P1 provider-review restriction is not permission to reroute it.
+Retained RAM entry is blocked on uncovered recovery phases and strict C1 admission;
+do not manufacture fresh state or watchdog protection from old receipts.
+
+Host-restart pause was explicitly lifted; preserve its historical checkpoint at
+`docs/plan/camera-foundation/PAUSE_20261024_HOST_RESTART.md`. HEAD remains `4a562c0`
+with ordinary index unchanged. V2 capability-profile remaining static review is
+now complete, but parent closeout/commit is parked, not native adoption. No active
+backend source author/reviewer or fresh target observation/transfer at this boundary.
+ptz-off-retain-candidate now has narrow independent SOURCE/API/bounds/ownership/
+lifetime sufficiency for retaining actual GPIO descriptors/device/code on uncertain
+OFF and partial-direction effects. Sticky both-axis HOLD, no widened motion/phase/
+homing/reset API. ONE actual ARM object compile/three commands PASS, NOT RUN; actual
+compile is built-in/no MODULE define, modular lifetime reviewed at SOURCE only.
+Parent checked421+six input records/15 delivery pins/394 dependencies/two tools/
+three artifacts/three logs/exact diffs. See ptz-off-retain PARENT_DISPOSITION.
+No author/reviewer active. Not physical STOP/thermal/deadline or hardware-ready;
+retention can leave coils energized, provider unbind/recovery remain unqualified.
 
 **Latest autonomy steering:** continue eligible work unattended until completion
 or genuinely required user input. User renewed approval Oct23, explicitly including
@@ -66,7 +81,7 @@ dependency records/84 artifacts/40 logs/five tools. Native hardening/real creden
 NOT RUN. See rtsp-provisioner-process PARENT_DISPOSITION; no active author/reviewer
 in that lane; committed locally `5269979`. Its original33-input pin set retains
 the pre-closeout index:32 remain unchanged plus known parent index/status
-updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE18.json`,
+updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE21.json`,
 not rebased. Actual authorized
 external ingress, secret-free launch/FD-env-caps
 hygiene, durable storage/rotation, linked-file retirement/main/external recovery/
@@ -267,7 +282,20 @@ Current ARM image INELIGIBLE: N1 SDK cap bound37 vs retained kernel40 fail-close
 before exec/secrets; N2 CPU5TEJ+Thumb-2 attributes unresolved and user-owned0755 not
 root-admitted. No native/worker-image eligibility; see exec PARENT_DISPOSITION.
 Narrow worker FD/argv/env/cap SOURCE scope only, not secret-free media-parent or
-hostile-code filesystem/syscall sandbox. No author/reviewer active; old fork/API5
+hostile-code filesystem/syscall sandbox. Committed locally `4a562c0`; no author/
+reviewer active in v1. rtsp-provisioner-exec-v2 fixed target40 delta has independent
+conditional SOURCE sufficiency; both author inspection failures stay preserved.
+Parent selected FIRST unchanged recipe:32 HOST/ARM compiles/4 partial links/1 static
+ARM link/147 commands completed, NOT RUN. Saved dumps show active40 both targets,
+inactive SDK40/37. Parent and initial build-review failures remain preserved. User
+continued; separate remaining review now completes exact1996-dependency/32-block
+traversal, raw HOST/ARM profile/public ABI, compiled-bound40 code, four role closures,
+static worker and147 argv/273 build members. See remaining-review FINAL_REVIEW.md.
+N1 resolved at narrow STATIC profile scope only; N2 Thumb-2/image eligibility stays
+blocked. All59 originals/278 frozen members retained; later preparatory/map-reader
+failures stay failed. Parent closeout/commit PARKED per driver-first steering;
+no new backend lane or worker execution. No active author/reviewer in that lane.
+Old fork/API5
 bootstrap owners remain unadopted. No worker/fork/exec/hardening/credential/host
 policy/account operation; provenance/syscalls/mlock/storage/backing/recovery open.
 No new FD opens,

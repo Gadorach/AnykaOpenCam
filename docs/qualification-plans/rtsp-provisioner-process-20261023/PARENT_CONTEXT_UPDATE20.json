@@ -1,0 +1,15 @@
+{
+  "scope": "TWENTIETH_KNOWN_PARENT_MUTABLE_INDEX_STATUS_UPDATE_NOT_SOURCE_PIN_REBASE",
+  "recorded_host_date": "2026-10-24",
+  "original_manifests_and_reviews_unchanged": true,
+  "path": "docs/plan/camera-foundation/00-INDEX.md",
+  "before": {
+    "bytes": 136063,
+    "sha256": "2923db500e382e8752cc59609dd15b3aff5adca0f6131a1d1a1ad73fceda5224"
+  },
+  "after": {
+    "bytes": 137108,
+    "sha256": "e8c8f1fc093c66f2275ab6b57e13fe91cf3c4b5c92f67dac65ae3470c071ab7d"
+  },
+  "reason": "latest user prioritizes stable Wi-Fi/USB/MTU1500, bounded PTZ/STOP/defensible zeroing and modern microphone drivers; speaker tests deferred, backend expansion parked. Remaining exec-v2 static review completed without rebuilding; parent closeout/commit parked, failures and native eligibility blocks retained. First concrete PTZ OFF-retention driver fix selected, no hardware action"
+}

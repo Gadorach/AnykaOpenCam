@@ -13,7 +13,27 @@ No candidate function/test or hardware operation selected.
 Preserve [historical pause checkpoint](PAUSE_20261024_HOST_RESTART.md) and both build
 attempts. Camera last OFF/finalized23h remains historical, not a fresh observation.
 
-## Current focus — Oct23 feature integration; diagnostic build lane parked
+## Current focus — Oct24 stable drivers first; backend expansion/speaker tests parked
+
+Latest user explicitly prioritizes Wi-Fi/USB/MTU1500 (RP-02/NET-01–08), bounded
+PTZ/STOP and defensible zeroing (RP-11/CTRL-02–04), and modern microphone capture
+(RP-12/AUDIO-01–03). Speaker testing may be deferred and is now DEFERRED. Do not
+continue expanding provisioning/backend abstractions before these hardware-driver
+foundations are stable. Preserve functional bench controls and all source/failed
+evidence; target-observed behavior, not source/compile counts, closes readiness.
+No automatic homing/full travel or relaxation of recovery/privacy/review gates.
+No fresh target state/lease exists. RAM75 entry still needs actual uncovered-phase
+recovery plus strict C1 admission; P1 remains provider-review blocked without reroute.
+First concrete driver correction ptz-off-retain-candidate now has narrow independent
+SOURCE/API/bounds/ownership/lifetime sufficiency: real descriptors/device/code retain
+on unknown OFF/possibly partial direction, sticky bank-wide refusal before new
+effects. ±4/20ms/phase/counter/unknown position preserved. ONE ARM-object compile/
+three commands PASS, NOT RUN; built-in/no MODULE define, not modular ABI evidence.
+Parent checked421+six inputs/15 delivery pins/394 dependencies/two tools/three
+artifacts/three logs/exact diffs; see ptz-off-retain PARENT_DISPOSITION. No active
+author/reviewer. Physical STOP/coil current/thermal/mechanics/zeroing/native pairing/
+provider unbind/recovery remain open; retention may leave coils energized. No
+target action or homing claim.
 
 Latest user reseated probes, explicitly requested retry and asked whether parsing
 caused previous failures. ONE fresh23h with UNCHANGED v4/parser now PASS cold
@@ -210,7 +230,20 @@ kernel40 fail-closes before exec/secrets; CPU5TEJ+Thumb-2/native instruction ris
 unresolved and user-owned0755 not root-admitted. Worker FD/argv/env/cap SOURCE only,
 not a secret-free parent or hostile-code filesystem/syscall sandbox. Old fork/API5
 bootstrap unadopted. No worker/candidate/fork/exec/hardening/credential/host policy/
-account operation. Provenance/syscalls/mlock2MiB/storage/backing/recovery open.
+account operation. Exec v1 source closeout committed locally `4a562c0`. Fixed-target40
+v2 now has independent conditional SOURCE sufficiency. Author inspections01/02 stay
+FAILED_PRESERVED. Parent selected FIRST unchanged recipe:32 HOST/ARM compiles/four
+partial links/one static ARM link/147 commands complete, NOT RUN. Saved profile dumps
+show active40 both targets, inactive SDK40/37. Parent saved-byte reader failed wrong
+v1 path; first independent build review failed dependency ordering. User continued;
+remaining static review now completes exact1996-record/32-block traversal, raw
+HOST/ARM profile/public ABI, actual compiled40 policy, four role closures/static
+worker chain and147 exact argv/273 build members. N1 closes only at STATIC profile
+scope, no native eligibility. Prior and later preparatory/map-reader failures stay
+preserved. Original59/frozen278 unchanged. See remaining-review FINAL_REVIEW.md;
+parent closeout/commit is PARKED per latest driver-first steering, no active worker
+or backend expansion. V1/N2 Thumb-2/provenance/syscalls/mlock2MiB/storage/backing/
+recovery qualification remain blocked/open.
 No new FD opens/default credentials/native cleanup claim; old units excluded.
 No invocation/hardware phase or C1 prevention claim,
 new clock framework or old frontend adoption,

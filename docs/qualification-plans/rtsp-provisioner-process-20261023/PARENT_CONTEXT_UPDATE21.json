@@ -1,0 +1,15 @@
+{
+  "scope": "TWENTY_FIRST_KNOWN_PARENT_MUTABLE_INDEX_STATUS_UPDATE_NOT_SOURCE_PIN_REBASE",
+  "recorded_host_date": "2026-10-24",
+  "original_manifests_and_reviews_unchanged": true,
+  "path": "docs/plan/camera-foundation/00-INDEX.md",
+  "before": {
+    "bytes": 137108,
+    "sha256": "e8c8f1fc093c66f2275ab6b57e13fe91cf3c4b5c92f67dac65ae3470c071ab7d"
+  },
+  "after": {
+    "bytes": 137521,
+    "sha256": "0388203413bf13651b4e9ffb2183afabc8485c828a1fd448e9574b196002f4c6"
+  },
+  "reason": "narrow independently reviewed PTZ unknown-OFF descriptor/device/code retention source correction; bank-wide refusal and unchanged motion bounds, ONE built-in ARM-object compile, zero driver/native/hardware calls; physical STOP/thermal/provider lifecycle/recovery still unqualified"
+}

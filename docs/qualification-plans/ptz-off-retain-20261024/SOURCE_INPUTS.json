@@ -1,0 +1,1713 @@
+{
+  "scope": "READ_ONLY_REAL_INPUT_HASHING_AND_LITERAL_DIFF_INVERSE_ONLY_NO_CANDIDATE_EXECUTION",
+  "baseline": "/home/gadorach/Desktop/AnykaOpenCam/bringup/qc07f/ptz-counter-candidate/ptz.c",
+  "candidate": "/home/gadorach/Desktop/AnykaOpenCam/bringup/qc07f/ptz-off-retain-candidate/ptz.c",
+  "old_report": {
+    "bytes": 117142,
+    "sha256": "0ef505b53ef6aca08ff15a42c186071cd45ff97ff5ce5b27abd775e08b761942"
+  },
+  "old_inputs_and_dependencies_verified": true,
+  "old_dependency_count": 394,
+  "exact_counter_guard_preserved": true,
+  "probe_and_tail_byte_identical": true,
+  "literal_inverse_reconstructs_baseline": {
+    "bytes": 5248,
+    "sha256": "b4a30cc783e7af5b2b0cb8eb53dc34ff24c80f159cd3c8bfe59db9abb11d24a0"
+  },
+  "inputs": {
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/arch/arm/mach-ak3918ev200/.ptz.o.cmd": {
+      "bytes": 86971,
+      "sha256": "bd8878e556d5d5299bc6f30febb1c5b7f7a06e8daa925fef0ca361574141d8e0"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/bringup/qc07f/variants/security75/mach-ak3918ev200/ptz.c": {
+      "bytes": 5114,
+      "sha256": "c70829527a939bf3533ec0270fba1f8db4186fb3dc61ff1ba506e1900cda50b6"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/bringup/qc07f/ptz-counter-candidate/ptz.c": {
+      "bytes": 5248,
+      "sha256": "b4a30cc783e7af5b2b0cb8eb53dc34ff24c80f159cd3c8bfe59db9abb11d24a0"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/arch/arm/mach-ak3918ev200/ptz.o": {
+      "bytes": 6552,
+      "sha256": "7a23811e9ce3e01a169d6fa68910a371b412695f478a7c152d273c59612a70e0"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/compiler-version.h": {
+      "bytes": 1457,
+      "sha256": "71b523f4f5ae572c6cee7fb2d62617ef900f3024619b1a61c8d9e758dfa002c8"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/kconfig.h": {
+      "bytes": 2691,
+      "sha256": "1b51cc51b6e4beb9b249853e0a0774f63679599f9a27b9e9fb8cc26ca14265f1"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/include/generated/autoconf.h": {
+      "bytes": 20061,
+      "sha256": "16095db58ef2ff2b64ef6f39e10e4b557c54a0fd42cd961f47a01c520c74c2b0"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/compiler_types.h": {
+      "bytes": 21464,
+      "sha256": "aa831d618911d6c222ec7f2bee516e8d1c57f56284a6079d6a3062d305085f34"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/compiler-context-analysis.h": {
+      "bytes": 933,
+      "sha256": "148e1930ffcfe5c7b390dce3099cd064c757ea3e6e3a6041fbe43ec39e39dcdd"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/compiler_attributes.h": {
+      "bytes": 16519,
+      "sha256": "860f32920502426b1d840969071dfdabf09e3b9e083cfa8393422bc373fba6ad"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/compiler-clang.h": {
+      "bytes": 5306,
+      "sha256": "441a78d95f255a453281d662d1e7f4ca3649d759008875072b8c22f6f9a38ec4"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/delay.h": {
+      "bytes": 4276,
+      "sha256": "f9149a9b8e6b48317e5cfb2b9100285a25828d8a69e5417fa49cbea7d654ed34"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/math.h": {
+      "bytes": 6462,
+      "sha256": "b5438e316556c1c62286f066117ffad8f0117f222a751ce4aa37d724123b740d"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/types.h": {
+      "bytes": 6641,
+      "sha256": "a03b3d471b24744121f708d536649d93beede2e7990864e7d2c452b3583ec9e2"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/types.h": {
+      "bytes": 2035,
+      "sha256": "f22c5bf977c0bb939577ce7aaa3f69c74e2f5cfa4cd42ff6fb768ce119c9c6fd"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/uapi/asm/types.h": {
+      "bytes": 1477,
+      "sha256": "5d7c5b6768529cf712eb5917b6c2c0a6adbe184de8312d1cea1448f4a613a1db"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/int-ll64.h": {
+      "bytes": 863,
+      "sha256": "6adf196af7b0af7c4175e8c749f2acfcda2ffb59b926bb6b665182b0d6d6720a"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/asm-generic/int-ll64.h": {
+      "bytes": 879,
+      "sha256": "faca16150492e943a43c83e6b3069531dd498ef15dc612fb2051b88f7da83afc"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/arch/arm/include/generated/uapi/asm/bitsperlong.h": {
+      "bytes": 37,
+      "sha256": "07cfe8e5f1188e41649907f107c4ed411a61102c2a53ca50a5b954b5644befb6"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/bitsperlong.h": {
+      "bytes": 1207,
+      "sha256": "09c1354e4daa869af60b1b9ae76a0f7a5362bb0fc0be62d64c8ad51e3d19aa87"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/asm-generic/bitsperlong.h": {
+      "bytes": 1107,
+      "sha256": "fa25db88dc972820b72f8baf9cea6f39ca7f5bd0cf39182089409f6676fa90b6"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/posix_types.h": {
+      "bytes": 1098,
+      "sha256": "bc68636a383418f235d3457e4b21cf27cefc7c7f3edea4c1f6706f1018db196f"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/stddef.h": {
+      "bytes": 4507,
+      "sha256": "c82111d604529fc0543048f99c4aad5276ac1afcc4427cc6c7c5d33798ca60a0"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/stddef.h": {
+      "bytes": 2275,
+      "sha256": "69910a7b45c6bc74d0a59f0d4404ad9dbd9e1ba47d144461eaed09fb41a6a418"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/uapi/asm/posix_types.h": {
+      "bytes": 1063,
+      "sha256": "7ca2dbe7230b6c4dc0c23119a3bfafe015b4bb0c0cb721889c9491d051c6d910"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/asm-generic/posix_types.h": {
+      "bytes": 2402,
+      "sha256": "059c34f03abc8247a9ad9fbbfc86b12f56b9b620a81fa3b84c0c7dd9214068ab"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/div64.h": {
+      "bytes": 2754,
+      "sha256": "e510f130066e5711303c35e92dbcc57fce12ae3f088f1e79ff770ed4c140c768"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/compiler.h": {
+      "bytes": 978,
+      "sha256": "7154261fc7529d97901dc9ebfd53500cb0331537b4a48585c4cac05c4eb768a2"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/div64.h": {
+      "bytes": 6173,
+      "sha256": "288acb881f07893b78dde25bd9df2185db53442a38dc42de4ece20e34a7ccdb9"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/compiler.h": {
+      "bytes": 13591,
+      "sha256": "cc1b7b0efa54b278f1f5e0eae03e67a25fe2f9bffa5f41b888001b8cb1313775"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/arch/arm/include/generated/asm/rwonce.h": {
+      "bytes": 32,
+      "sha256": "e65428b6b0334c3fa3b08c940356e87132ccb205a984bb0d561110b122738963"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/rwonce.h": {
+      "bytes": 3205,
+      "sha256": "e572c666ad9efa7eca68a005337a2f04fbb39d541b9a111c48955db6ec903531"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/kasan-checks.h": {
+      "bytes": 1495,
+      "sha256": "d6fb283c5ffeea532e1b778fe1bc8d44ea8547b25101068f84f277000a1e391b"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/kcsan-checks.h": {
+      "bytes": 19130,
+      "sha256": "92309886f1022c575bff725610023a3897021b2a371a1c963a579f823886c0d6"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/log2.h": {
+      "bytes": 6686,
+      "sha256": "7d9ebbffb69b781e5cb75fc768f44dfcf743bbcbafc0e7d12139c3d71e61bfb5"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/bitops.h": {
+      "bytes": 10342,
+      "sha256": "227976be35dcb5dbd33ec602c9b5affbb678e1c8c0ce8465b1bc7dd5fcd32801"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/bits.h": {
+      "bytes": 2898,
+      "sha256": "fec9de74956535b6664b36ef4e1b0399af0cdc63e50002dbe83c09e1c066825f"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/vdso/bits.h": {
+      "bytes": 209,
+      "sha256": "ef5190bae70874421bd1cd564885f483787203cb65485af5104d57991238538b"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/vdso/const.h": {
+      "bytes": 196,
+      "sha256": "063bec23979bceeb3207d1778776bd86eb44d0f5dd6e30b2b4c39cedc2e32490"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/const.h": {
+      "bytes": 1589,
+      "sha256": "7c7e4ca1e5b509688d5cd246c23271c12824b43abc40ef5cbbda24c40d5ddfd9"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/bits.h": {
+      "bytes": 459,
+      "sha256": "384a342b436c974782d101b5ba6e43d35c23d93de0f6530b22b513d46ff094e8"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/build_bug.h": {
+      "bytes": 3120,
+      "sha256": "ede623eec68a1f3fbda34c9c4771aa2b20c4579409b69a2a0d8a4e28a78b6393"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/overflow.h": {
+      "bytes": 18235,
+      "sha256": "b802da0ae323a3e428e2e535fa65838c276a4eac256d0d7ef3b380c671933a2a"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/limits.h": {
+      "bytes": 809,
+      "sha256": "0ed7dfdba324e0ce1fc732cd580338a2535727cc6a2103af9fbe027601092e33"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/limits.h": {
+      "bytes": 947,
+      "sha256": "5c047eb319a61e211442af30493b420eb9e721a1eceee552258dce0d5a26dede"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/vdso/limits.h": {
+      "bytes": 564,
+      "sha256": "653708a73389bd7a9ef4dd85acf45f19227ac60f2dc133d6285af29cff774544"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/const.h": {
+      "bytes": 100,
+      "sha256": "17aaf8663019f1988881952a031fa12aefa9127af9ea1d546202af632b2f0adf"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/typecheck.h": {
+      "bytes": 782,
+      "sha256": "a456610ba55e62234f7c830d6017d3bd17b3c97397b9e5eb009b758da13aa878"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/kernel.h": {
+      "bytes": 209,
+      "sha256": "a569645840e482111fdfb6830bbb8336934bad5c1a7d939c17898d97e108a02f"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/sysinfo.h": {
+      "bytes": 1049,
+      "sha256": "b803e9e4c4d3cb43b265d9d046fcce6b731af8bf04e78b5c0708e926a6d8f9e2"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/bitops/generic-non-atomic.h": {
+      "bytes": 5310,
+      "sha256": "2a8c37f42a26734a4313527789c6ad5b0e3437558820456b3e64c08f497b5e80"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/barrier.h": {
+      "bytes": 2910,
+      "sha256": "81af4951183749c6918dee9f6dbb5b2493e6eb2e5122ba8d9f2a0f9ab8692a55"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/barrier.h": {
+      "bytes": 7543,
+      "sha256": "d067146839425a9d81712d7259e89820fc73a0305fcb2c84d15de9ab185d2b9c"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/bitops.h": {
+      "bytes": 7732,
+      "sha256": "e162a7d92f3c3e18b973d02cd66195f663089055afaad79f28de0811c3f23ec6"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/irqflags.h": {
+      "bytes": 8153,
+      "sha256": "a75ca718d7055b83e41215e619c410b8cd646a6aa07ea7bf2eb272b07288efd2"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/irqflags_types.h": {
+      "bytes": 563,
+      "sha256": "b3b246519f20d5440a72ae7fddfbf14b387fd41a2692ed6df5b73b8b8efccfac"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/cleanup.h": {
+      "bytes": 18320,
+      "sha256": "2fcef5801b03cc15fbad8aa674e8c61c6a38901a8dccc42128123fab2027baeb"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/err.h": {
+      "bytes": 3487,
+      "sha256": "39cb4711c8d97ad37d3bfdacc99e758140eb90cc8f73eca69a3c1bd0d584c10b"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/arch/arm/include/generated/uapi/asm/errno.h": {
+      "bytes": 31,
+      "sha256": "4ee384515a4325315992e61dd957f0fa91f3858fe7c079de59f56edded51de86"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/asm-generic/errno.h": {
+      "bytes": 5648,
+      "sha256": "fb7b5a504015f3a9074c641e7371b250d867d751d90e4a22a8ac17fced3d50af"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/asm-generic/errno-base.h": {
+      "bytes": 1612,
+      "sha256": "2c148e92b8318deeb767fabd60822113e575ee664ff09a1873aed8f7a495793c"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/args.h": {
+      "bytes": 1021,
+      "sha256": "bf2270bc92ca719ae469ea793c35d91c66f21c25757a24a64feeb9700e1c2b36"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/irqflags.h": {
+      "bytes": 3969,
+      "sha256": "3a95eead5525e3c709fbbe8eb2b1de9597ab9dff3bcf225d79f36db3e1e29d27"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/ptrace.h": {
+      "bytes": 5053,
+      "sha256": "0746fb4fccfaa42643384024a51f3fcdf68923bfc26b3c1f513536e3e3594a96"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/uapi/asm/ptrace.h": {
+      "bytes": 4288,
+      "sha256": "ade11807e2ccbe0281cd35eed9560c312f8e54db58e12ffb4b29668fc5a9c06b"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/hwcap.h": {
+      "bytes": 378,
+      "sha256": "b1c96c0371abd8cac40ca93a4ff73af465a301e30d0c4dcf1b90a352edbf4b1e"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/uapi/asm/hwcap.h": {
+      "bytes": 1480,
+      "sha256": "48121839bf744e12452166a9774b735f575cb0505813651130e92f0bb230d7c2"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/bitfield.h": {
+      "bytes": 7209,
+      "sha256": "0bb8d4d74538627e64531e15e8f7fb092ce0961ec0544d5d7fe4225d37ebb289"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/uapi/asm/byteorder.h": {
+      "bytes": 711,
+      "sha256": "4565d36c8f0aaf134db71719ee4db1bc5907ad6b0e732d48f6a249f46b99548a"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/byteorder/little_endian.h": {
+      "bytes": 357,
+      "sha256": "7a212870a285445786fa8e4f6e0c7dcf5061b6ee00019c1bd4ce4c3e7bbf4e05"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/byteorder/little_endian.h": {
+      "bytes": 3948,
+      "sha256": "f005eb98e6d873eac1f07f7fbc9a7223be0fdca99579e539c242814172f3556b"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/swab.h": {
+      "bytes": 912,
+      "sha256": "0256ce360a3c5b3f65fd341df2857505334f60889eb83c72cdf8fe3dde338de6"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/swab.h": {
+      "bytes": 7010,
+      "sha256": "ff86981a34dd0092b9ac98549e133f725eef9e6021e0ddf98759e7fe2575207a"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/swab.h": {
+      "bytes": 1005,
+      "sha256": "09f01bddf3c39bec8c4465a6f1011ce4d1c76d3b3fdf49b3e7bf0f23c076f060"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/uapi/asm/swab.h": {
+      "bytes": 1460,
+      "sha256": "748232a2da6802d0b42a90ddf2e105173f22c892ea856b8a6ca894202624c689"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/byteorder/generic.h": {
+      "bytes": 6578,
+      "sha256": "6b3facab3b763a327c3c24c198f1a43ac0f3e8964e5feb0292d909694f90589d"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/irqflags.h": {
+      "bytes": 1543,
+      "sha256": "fef0fbaa50dccf3e9a717724e399c8c0edb41bc06c0314139c0fe469a84f3a3e"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/percpu.h": {
+      "bytes": 1744,
+      "sha256": "3a13de61456d61ec2a5d12e7b5e37c3fd93ea551f5617cc95546e197dedf8890"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/insn.h": {
+      "bytes": 1317,
+      "sha256": "46df6845a6ca380e48090bd7d199e85d5dcf984bdf532295a952950f5b729668"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/percpu.h": {
+      "bytes": 16084,
+      "sha256": "e1fd722c3b85f691094bb954a8e04845859bddcd22d4d83d7dbea8d6f70f1c60"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/threads.h": {
+      "bytes": 1338,
+      "sha256": "ac7161de729d183418eee161e1d0bbc2253839139d20e1d8a278510b6108d130"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/percpu-defs.h": {
+      "bytes": 17822,
+      "sha256": "a5ff95075c3c2a480e6550bf0ad7d1084b4183a552ce147bcfdff2d4a8600145"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/bitops/non-atomic.h": {
+      "bytes": 701,
+      "sha256": "63fe3d20abd80251f1377a20dd4d6701ea57895070bf3e4d34101db28faec20c"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/bitops/non-instrumented-non-atomic.h": {
+      "bytes": 588,
+      "sha256": "67efd9982f1951fd1f7b7edbc96f3078e9298b135317df27a7ba64fbc3ef06d0"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/bitops/builtin-__fls.h": {
+      "bytes": 455,
+      "sha256": "9b01a611dd4553ffc432862355371a33596f408dfefd1f5579a4758a865ebcbc"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/bitops/builtin-__ffs.h": {
+      "bytes": 398,
+      "sha256": "6e193ccb67cc1dc78e65376441d5d899ec59364d8eb4691a973b2b35492b6239"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/bitops/builtin-fls.h": {
+      "bytes": 432,
+      "sha256": "9fd1b54d5c00f5b9ea9e0cd0cfa5f09f6d4c8381f58c0a5537a5ae906918872c"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/bitops/builtin-ffs.h": {
+      "bytes": 364,
+      "sha256": "94cdb73f72d94e8071165b74611848fca45c8febfc437fbe55c17799bfcdf179"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/bitops/ffz.h": {
+      "bytes": 325,
+      "sha256": "2670e993fa25298639d89f63921d0ae7e8bcb1094a4e2ffb7460187f648cc839"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/bitops/fls64.h": {
+      "bytes": 900,
+      "sha256": "d6d7e4f1c5de8625766f3ca9c1a15e6bbf846c9ef97084f647f5df92fc827033"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/bitops/sched.h": {
+      "bytes": 760,
+      "sha256": "9ca18afe9cb77896c5a7ab7905cef16e224c12ab2238606ec9ad07f90c6a9cea"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/bitops/hweight.h": {
+      "bytes": 254,
+      "sha256": "68be7f56214439269a08215058fa7d718c5b6a5a4ba3ad3b97589f7e8c397e33"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/bitops/arch_hweight.h": {
+      "bytes": 555,
+      "sha256": "409a1e3a13097682ec788a0d708394a9fcdada6ac5fb264ff5c2eb0ec4d13be5"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/bitops/const_hweight.h": {
+      "bytes": 1711,
+      "sha256": "9bbc94bc89ae521e00be3fea4c2bc1e33fc7b4bf9b8cfd87df2c46236efe84c4"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/bitops/lock.h": {
+      "bytes": 2158,
+      "sha256": "ddea43c7a6251cad904164fc21e982de925b62754aa83fc75daf687311aa720c"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/atomic.h": {
+      "bytes": 2644,
+      "sha256": "4d53d1ce680486a9b9bd97ad529c2382509827784e8afee4835c2bfffa1691ad"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/atomic.h": {
+      "bytes": 12897,
+      "sha256": "8191608ff79d06b5e09936d0eeac489d2b2dd1d6b407991f5ce43e1f459eff32"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/prefetch.h": {
+      "bytes": 1591,
+      "sha256": "8594533565554a8d6286d61ccdf60b45a3d704c60aafa0638cbcc781038ae5fb"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/processor.h": {
+      "bytes": 3072,
+      "sha256": "fe8a01220e4a2824faf2b5e50e65911c91e64589e9724301b6643fa7d2a821b8"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/hw_breakpoint.h": {
+      "bytes": 3848,
+      "sha256": "a51fad5c0bc9c8d3a636b7f22d40ed5ddc84cc9d81947cfe01f5324e9e909081"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/unified.h": {
+      "bytes": 979,
+      "sha256": "a9e612f272bc9d72d4e5650cc070b3e278cf58eeffaea4636a6d3f14965f1b37"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/vdso/processor.h": {
+      "bytes": 492,
+      "sha256": "546070759f72821a3dadf9b860d7f0cb319e6e469a859ac41c5d290a3a998221"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/cache.h": {
+      "bytes": 896,
+      "sha256": "7bfcfe39221629b82539e4fd5793391ad0ce8f662fd8a0d5408554cab60bec55"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/cmpxchg.h": {
+      "bytes": 6463,
+      "sha256": "0ddc11af75f4d242d33f4da6469f76bb1c033c5a0ea39d66f4090ccb99789e03"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/cmpxchg-emu.h": {
+      "bytes": 435,
+      "sha256": "e54bcba351011fa26490c9f312a383e0535a32afaa58d71e06eda7be4e519dfe"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/cmpxchg-local.h": {
+      "bytes": 1526,
+      "sha256": "6c86b885a89b1c60b7aabb48b848aaabfb6cead4d060bae9ccff89f4692f53b5"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/cmpxchg.h": {
+      "bytes": 2478,
+      "sha256": "b2ee89f38ae9cd339dc98d51b7b02e040fffcfadeadb4b72aa8b1e5e8938c213"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/atomic/atomic-arch-fallback.h": {
+      "bytes": 129313,
+      "sha256": "17cf45a143a47a91f9a44fd641742812ba85ed8449b8960ca9a84d1edddee20c"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/atomic64.h": {
+      "bytes": 2549,
+      "sha256": "0652b793b1e28101a2b0a647d5d59d11b407992c1fef76894a70669d7f81907e"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/atomic/atomic-long.h": {
+      "bytes": 47246,
+      "sha256": "bc1842b39b3ef1765b757b5c7fd452aeffc26ef216721efad4bcf143013624cb"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/atomic/atomic-instrumented.h": {
+      "bytes": 138268,
+      "sha256": "bef32e54acce59c6b99721c90084f12ed5fa24990ef5b56cedece911dd320828"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/instrumented.h": {
+      "bytes": 6358,
+      "sha256": "8f1562ec522eb76375c49faec4a6de5c7eb64d7e6e6dc74b77af542ebc5eef8e"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/kmsan-checks.h": {
+      "bytes": 2930,
+      "sha256": "87a03d85d44e194eece06879ebe3d72f157cbeb61b86a1f7ffa8bc721b51c7e3"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/bitops/instrumented-lock.h": {
+      "bytes": 2705,
+      "sha256": "3868d3ff5a3a0550a2d8d718eedd71c433ae2fa966afce8819493348f4676eb9"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/bitops/le.h": {
+      "bytes": 1335,
+      "sha256": "ca674eca51e2b15c33ca511e5b2dd907b7a463df85fbb1386ff8fc77a8ff9811"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/bitops/ext2-atomic-setbit.h": {
+      "bytes": 403,
+      "sha256": "3813ee4bf04de8c65e95e9100329a7620abb09423029c544808e384a126691c8"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/sched.h": {
+      "bytes": 71426,
+      "sha256": "b6990cb89f8a3cf9bad5e4ee5430abee0dedd05cc6d13f3ee263bf088a33a2b6"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/sched.h": {
+      "bytes": 6302,
+      "sha256": "2081b07cee6adab443e4ba320d0ccb13db4c97bed64f3eefafbfde2f25c833a4"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/current.h": {
+      "bytes": 1844,
+      "sha256": "d222907518e12a119ed3841eab7c2a960c2101dd651e1f1a1f4677554d1e5d03"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/thread_info.h": {
+      "bytes": 6668,
+      "sha256": "73fe213525bc27f67b93958a43f9b916dbf354416998dafefeb7c527a256e396"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/bug.h": {
+      "bytes": 2391,
+      "sha256": "23db83e55937d09415957272b4348135b720e7c5717912ef9181ab2b3c6457b5"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/bug.h": {
+      "bytes": 2620,
+      "sha256": "049daddf1e1d59da01eee7e057747e81772f81249c9d9365636a22a0c3e2f75f"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/linkage.h": {
+      "bytes": 9580,
+      "sha256": "7032c93f8b3be3170944453b633d84767ff62215e7d9b481debe6c31387e6efd"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/stringify.h": {
+      "bytes": 395,
+      "sha256": "a7fd23c88d861142792d9233eb7a7e535b936690a2873af66524cafd2879d5e4"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/export.h": {
+      "bytes": 2730,
+      "sha256": "4ad93a3c87f955bad3fde700801cc787b9d50b30137e6db5aff45001fe678b9d"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/linkage.h": {
+      "bytes": 216,
+      "sha256": "469f7b5dc830fc6bd23d813d043789e70e518d572ae7717c756d3787cc17cf27"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/opcodes.h": {
+      "bytes": 8255,
+      "sha256": "80fea8e2ed512225f68e471f5ddb70ea771f7304c37d486f5402deb2f9d74c88"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/bug.h": {
+      "bytes": 6412,
+      "sha256": "cad38e6a000499155b2b4c6b1001a58ce350a3d21686c31cd97f7edbfbcfff1f"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/instrumentation.h": {
+      "bytes": 1898,
+      "sha256": "1c86755e66b043b79ac93efe169c3346e6723f2e19fa379a0dd10fb7a3c0002f"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/once_lite.h": {
+      "bytes": 926,
+      "sha256": "708801b7f811230138199c06adb6ae04a7e8ef5c45ec0a8408a343528bc124cf"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/panic.h": {
+      "bytes": 3028,
+      "sha256": "e4359b990bb3b1454b8c60e2367c4a129a8ab317aca4ff3ccf015478617d2cfd"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/stdarg.h": {
+      "bytes": 313,
+      "sha256": "789912218665044af9f7040dfbb7a9e17c0b900efb8f1fa326d91857d51b6365"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/printk.h": {
+      "bytes": 24939,
+      "sha256": "1370eb800844965cec14e8545cc4c11fe443bc1d3bb08b39cce7e47642ce9aec"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/init.h": {
+      "bytes": 12096,
+      "sha256": "d932beb0f7ac42f6e77e0b1f7caf58c54e72184fa08dff510f4ecd0cff7dcd35"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/kern_levels.h": {
+      "bytes": 1611,
+      "sha256": "335dbe3d399e5c055bf7d3decb962fab05992781e5722b766ad0d021519c19ae"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/ratelimit_types.h": {
+      "bytes": 1408,
+      "sha256": "64a3e42f62e01ea44f00c936f3dbf1ae7314a0cc1726151aeefc54b3b0b187aa"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/param.h": {
+      "bytes": 141,
+      "sha256": "75c3c810ab5732ae2bca3d5947821db5e61d203ba3b00f658472232295d66849"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/arch/arm/include/generated/uapi/asm/param.h": {
+      "bytes": 31,
+      "sha256": "6bf1865f0ddba5c80877463ad6650d7fee66931486956a07884f53deaa13e2b8"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/param.h": {
+      "bytes": 372,
+      "sha256": "35763c3ded5ab8966539b4f3096a41de2c7b7d374d9e26ad99cf32426e6ffbc5"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/asm-generic/param.h": {
+      "bytes": 422,
+      "sha256": "aebe74d8dfe3078a039a3a5faad35d9840c67e6472239e78bd8340bb6deaebfe"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/spinlock_types_raw.h": {
+      "bytes": 1726,
+      "sha256": "ac3a04935e8ccd0e5a76669cc7c792bbfb5b0f0681834ace6583dc7a2b0020d2"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/spinlock_types_up.h": {
+      "bytes": 732,
+      "sha256": "26eed04f00f6f6df75c31e9200791b48554ea8034393594e08e8b17a49673931"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/lockdep_types.h": {
+      "bytes": 7801,
+      "sha256": "46a38bae728ff9956b635089f9bd8170ae73354de3f82158012c357bb8c75cb0"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/restart_block.h": {
+      "bytes": 1114,
+      "sha256": "85f426110ecc3a198a6c3542fdd996b2f6ef9c9218af7f798d5da49fddff26cb"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/errno.h": {
+      "bytes": 1481,
+      "sha256": "e49469284a3014e6cbca27f852a75e4e540818d38b33edff7eb2c4fe8dd268c6"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/errno.h": {
+      "bytes": 23,
+      "sha256": "a47fb2f49bce0546a1e88805cec954338abb1b2ac87de042166e8e3a74b23261"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/thread_info.h": {
+      "bytes": 5187,
+      "sha256": "6a4a31885ba9d6ce74dbbd0ef518c8177ae8477cb7098121ebe177b17927924b"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/fpstate.h": {
+      "bytes": 1377,
+      "sha256": "8e26bd836a66d9bf5683f86b82d3192fa1518c5f5c5eceea1cf5c785c98e6351"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/page.h": {
+      "bytes": 4798,
+      "sha256": "b2abae25d97eda229dd9eaf066cf2533ef7fd8e7af8f813720a500caa235208e"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/vdso/page.h": {
+      "bytes": 814,
+      "sha256": "fa583d2a3e6097cc91c569552d971e5320f775feeeda99fb11bb9a664a014596"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/glue.h": {
+      "bytes": 613,
+      "sha256": "f8695b29284907595ae26e5dc3528a06ac2c6d51f3aaa0cbe258f0bb3269bac5"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/pgtable-2level-types.h": {
+      "bytes": 1278,
+      "sha256": "a10b0129933e7b2bd5a22c7bf00c084a395df1a26f6014ad042c62bde8d483e9"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/memory.h": {
+      "bytes": 10487,
+      "sha256": "9f7f94dbe244bf87968f34e2d31c94ccd43c66d1c599e16d9344f1661585074c"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/sizes.h": {
+      "bytes": 1955,
+      "sha256": "a21721bd920547c0f47e618810fbb71eddc312f3d405c40f02ee980a98d10b88"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/kasan_def.h": {
+      "bytes": 2726,
+      "sha256": "57fae4877e01ca7f29839e03e18d635828d7b5efe3af101cc4cef14ecc3ce8d2"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/getorder.h": {
+      "bytes": 1262,
+      "sha256": "8a11cb3fb27590a28ee50220547925d7228712f8bcc9eac01c8230d2a2c45506"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/memory_model.h": {
+      "bytes": 2387,
+      "sha256": "950e6130b0aae12a508f3be25ff1d2b2dc9649b9dc2b45f6ecb92c8bc523c613"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/pfn.h": {
+      "bytes": 424,
+      "sha256": "3b9a212b275177f0cabbf6d33378c0a5eb2251b78755861f89c123edf59171c8"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/traps.h": {
+      "bytes": 1414,
+      "sha256": "e8410572862b26c1c94baba2852b04b0b70e08351c69b8b3c4b6ccb0d99aaf07"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/list.h": {
+      "bytes": 36549,
+      "sha256": "a8dedf744673005ceabc9e17ff72ad1cb6516dbaf7025bf30e2195567e5401c1"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/container_of.h": {
+      "bytes": 1449,
+      "sha256": "28b735d62e73541345c11101e343bb202694226bc22d93a719c3bf9c57648304"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/poison.h": {
+      "bytes": 3013,
+      "sha256": "84adcca301c008e5d070def3eafa152aca2e218d7ef6d6d7d7000dbe01efc0e2"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/preempt.h": {
+      "bytes": 16067,
+      "sha256": "9cc25405f07889e8e221b98b4944e6038a791fb1ab4238bca272df75c2defb26"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/arch/arm/include/generated/asm/preempt.h": {
+      "bytes": 33,
+      "sha256": "6100b67666a4d14507fd43f105a251be7d713303af0581a5bd3b0d787c0a2aa9"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/preempt.h": {
+      "bytes": 2432,
+      "sha256": "523a0c09867afcc784733262236f746bdcedf45fc9850aab6ba736a1cdb51b40"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/cpumask_types.h": {
+      "bytes": 2232,
+      "sha256": "18fed6ff401fc75c739b468ff7ffdbb5342178051e14796b58d6a0c4efbcc636"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/cache.h": {
+      "bytes": 5481,
+      "sha256": "80126344324f512af39227e0c54ea4dc19933e6943fdedf900fb3cbf9d3f654a"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/vdso/cache.h": {
+      "bytes": 323,
+      "sha256": "7cf987365a5ed2a3cea1ac1afe31d23c5287af54a9b99417e30f545fdc8a2ded"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/smp_types.h": {
+      "bytes": 1382,
+      "sha256": "10b6d7896fc9aa4ac4e7d41e91a476b4e83aa492e88493866488c6646c9fefcc"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/llist.h": {
+      "bytes": 11132,
+      "sha256": "9bcf60ea87e78c4c97d4f56b8304b11755e3bed37e6199ba618155c23609bbe8"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/pid_types.h": {
+      "bytes": 282,
+      "sha256": "a75de7369fcec82ace68e84e42a2e0170eb7d2123175147d4483220718543b32"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/sem_types.h": {
+      "bytes": 234,
+      "sha256": "059f02e475a32b7d92b639948eebbd0063696c3923de4122779f2eee065055df"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/shm.h": {
+      "bytes": 835,
+      "sha256": "315d1d9ce87d22828cc9865b3d5c6b51280d41e2195dd033482872d377772ccd"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/shmparam.h": {
+      "bytes": 419,
+      "sha256": "c08290192cd7e532c89e3aed92c8ea278a4873379ceb7773a5650d20baf7dc5a"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/kmsan_types.h": {
+      "bytes": 906,
+      "sha256": "38ae26869850f435ab1bded9cae66d1a324fa321b9bebceb8c493cdadc496fb2"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/mutex_types.h": {
+      "bytes": 2141,
+      "sha256": "c96488bb111b8b470c993b1ee25456c4e0bb81395df0810fe67c24b65f67f5ab"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/osq_lock.h": {
+      "bytes": 912,
+      "sha256": "33b208bb2c56c99eaf22d98363542595386dcc5197fdaef2b89b849f277ae124"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/spinlock_types.h": {
+      "bytes": 1826,
+      "sha256": "7902577850f337ae011bf873d13d2e44c15704e27536c96b7fb017f7774e1a66"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/rwlock_types.h": {
+      "bytes": 1814,
+      "sha256": "6a2732d4a34602cfb0a51d7022d04cd40d89d94157b7fff6882a371ba5b9cfc9"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/plist_types.h": {
+      "bytes": 315,
+      "sha256": "7f32464bc5db2d540b40d7094848d7f20eb1637a075e6184d8f4a7935c006678"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/hrtimer_types.h": {
+      "bytes": 1574,
+      "sha256": "a08b4a143625258acdc48820a330c012671a82288c5d9c5ed8b998256e20c155"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/timerqueue_types.h": {
+      "bytes": 335,
+      "sha256": "c3427ebec62a97fe0040d0a520ae680d74a440cc4b1abb92e1a5be1f51e5b88b"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/rbtree_types.h": {
+      "bytes": 946,
+      "sha256": "bb78534d4212776381b3b849ad6ce1009b9d3fdfb87e19f51e5e9449e7f03e22"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/timer_types.h": {
+      "bytes": 477,
+      "sha256": "4c8300df1f7f8d098104e08d71959b40a83ff821ffff041a467ac04ad7937151"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/seccomp_types.h": {
+      "bytes": 834,
+      "sha256": "459da86d2802e665931ccf75afbd9bc6351d1559681e9b2c7eba7ee44c584deb"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/nodemask_types.h": {
+      "bytes": 419,
+      "sha256": "5cfa961902f8bf99463bd044ec6fa0821fdaebfc475399a225cf49205e80df66"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/refcount_types.h": {
+      "bytes": 512,
+      "sha256": "1cd15b66e38dc4408329d4bd61ec605222a5c440dde64a0af7e73dcfc1a2472f"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/resource.h": {
+      "bytes": 223,
+      "sha256": "3f2fab184ae97b394a899404a7fe35b2282dcfca7a05e3aef48c7585623ef68a"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/resource.h": {
+      "bytes": 2610,
+      "sha256": "42f158b8dbdb7ad125a7d8c294e58a7f1a0a14107522fbaa2bb7fd92f1ba1922"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/time_types.h": {
+      "bytes": 1292,
+      "sha256": "45f5bd4a2412fe6c1f1415a1e00e8521ad45f37117ab7dd1e9fafd7f922b224a"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/arch/arm/include/generated/uapi/asm/resource.h": {
+      "bytes": 34,
+      "sha256": "6d9c7f1ca98f275aafe3c5533d274aec702ea6029f8036bdb577b0c53e08f7d9"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/resource.h": {
+      "bytes": 1100,
+      "sha256": "460e855d3182ec31290c986b705a87ec2ba9848d7a9bffa3f314b6b61cc2b783"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/asm-generic/resource.h": {
+      "bytes": 1887,
+      "sha256": "ff487485f1e1b56fa1f4199272288f9984956b9f6b33e56a88544bf87093284d"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/latencytop.h": {
+      "bytes": 1088,
+      "sha256": "72822537bd6fd027403df29fcc36b962befc5b15f115de7a2e0f7ffc9655cb50"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/sched/prio.h": {
+      "bytes": 1142,
+      "sha256": "6799482082e27f9bdb43ccd037c5a6a49c406af836dc05a1f5e8c160e2880870"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/sched/types.h": {
+      "bytes": 710,
+      "sha256": "0198ec83dbfda783f202d45ea7d18ff0d1c2145dcd8e23c875bd7a0c6d73e71c"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/signal_types.h": {
+      "bytes": 1726,
+      "sha256": "cb4773aeeaf5521855e63b4449bc41a09d00f59650cf678868ac96755c2f5dba"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/signal.h": {
+      "bytes": 403,
+      "sha256": "4744021d82b90e0dd5bbad5283c98361aad73510127d19c2bd4103c7d21234d8"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/signal.h": {
+      "bytes": 694,
+      "sha256": "6a9c91ab7b6889d170671bee91999ee282a122dca2ec711f0eddf501b434e1b7"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/uapi/asm/signal.h": {
+      "bytes": 2084,
+      "sha256": "830f020f3a0f65cae1a25bbedc05d1f24809e635085ef1ea16c11bbe8bfe7a88"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/asm-generic/signal-defs.h": {
+      "bytes": 2988,
+      "sha256": "6b3e6cb49936df8565f3adce214586d423cc9e5cba4af5ba29b90d3e1f9d9c31"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/uapi/asm/sigcontext.h": {
+      "bytes": 831,
+      "sha256": "51e5d0278efc695d13e05abf921f4b7f0ca614e4419d8b888f4d0479a461019f"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/arch/arm/include/generated/uapi/asm/siginfo.h": {
+      "bytes": 33,
+      "sha256": "175b80f0fd759d48de2f33001630dc4905ee3786cc6097fce981632661195691"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/asm-generic/siginfo.h": {
+      "bytes": 10783,
+      "sha256": "22b270974fa6db12d9278a58bf412411f15c2c4e90ad861e4e0e54e662356e52"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/spinlock.h": {
+      "bytes": 17969,
+      "sha256": "84d5174da1ddc48421c9b4c3ba471a15ab1aeba297ee16380e61e133c919eb27"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/bottom_half.h": {
+      "bytes": 1013,
+      "sha256": "b29af1ca1000c13ed1eaf0f4a0452415972f51c5f97720f0fcc985ca403fe5a4"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/instruction_pointer.h": {
+      "bytes": 346,
+      "sha256": "4377b75a38de319f5ed6c066abfa59a875d50267b5f22879589694d99b3b0cb4"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/lockdep.h": {
+      "bytes": 21402,
+      "sha256": "e666f5591667dd59308eff030a3a579f9a51c6a9487579e4e8d6cd6492e2c92d"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/smp.h": {
+      "bytes": 8234,
+      "sha256": "dd6b3256853cc4183cf7e94324cdbcc3634502ee4b2c91ff1a1c888cf69bfdb2"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/cpumask.h": {
+      "bytes": 40958,
+      "sha256": "a93481ac56d2317b770f0eedb1aada44e289aac36d8dc5d405ea08ddded86457"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/kernel.h": {
+      "bytes": 6800,
+      "sha256": "cfcd17de58cbac041f21aa35b0fd0fceac077ebfc7140a307b41764ada459038"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/align.h": {
+      "bytes": 139,
+      "sha256": "4da2b94e368dab1745dc81e83bd29f580c6620e4f3fa19c871a77b10c31bee36"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/vdso/align.h": {
+      "bytes": 551,
+      "sha256": "8e7ce9486c193d4a46395d4f14d56c01a0f9e06e95fd4d5bdd9b35a236d98ff8"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/array_size.h": {
+      "bytes": 332,
+      "sha256": "f57b8e8f14d930b6884384a048fb97f450d2e6cee7e3da2bf6977e89cc1c97da"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/hex.h": {
+      "bytes": 884,
+      "sha256": "b367b30dcb8c0e971110bc73ee1c06801d1059336646e626ce84d66f1f8f6774"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/kstrtox.h": {
+      "bytes": 6744,
+      "sha256": "cde8bd2a9838b4dba345461204fd86c90b0bf4a66eaa23a03078bc3deb1aac98"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/minmax.h": {
+      "bytes": 10242,
+      "sha256": "b8238217810a9f69b0f44961fba61f346b6fd9d7037a4c083ee65afd5264a777"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/sprintf.h": {
+      "bytes": 1379,
+      "sha256": "72a0226d5631211916ccce67a50033e53f0bba043ca39823d4f346179ecff9df"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/static_call_types.h": {
+      "bytes": 2809,
+      "sha256": "462653346d9b44dddceb63d41fe440d9266fd9528328beb98a6bd6b6a9928688"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/trace_printk.h": {
+      "bytes": 6903,
+      "sha256": "889c4238f2cd0e9283447d0b2757baf3854c052c961d2c55783e20b2dff0d439"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/util_macros.h": {
+      "bytes": 5326,
+      "sha256": "2c42a9cfb9f6f7b7dc9c339154ee90975745b7080306241acbc1f3f01edba07d"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/wordpart.h": {
+      "bytes": 1534,
+      "sha256": "1622fd72851be5e59a98553f5220dd6082bdf3cfecfca45230573cb9cd751391"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/bitmap.h": {
+      "bytes": 29906,
+      "sha256": "69b7f73e5bf226cffb7f8621bd0549154f432edae996d2a366b984ca9a96a16b"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/find.h": {
+      "bytes": 21278,
+      "sha256": "b8b91218c4f7b48ff780e3b1df65f2adc3193775798febea29a2b7c6d73fd000"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/string.h": {
+      "bytes": 18600,
+      "sha256": "6dad7c9cb1d6adf132da850f32fc7c3fbb263086925393db7fe1ef02d4f18881"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/string.h": {
+      "bytes": 296,
+      "sha256": "0ad5788ad9b356a76e9388d0bbff9f7c8e3dbc1dd7ca54bf47c99f5e78f41f7a"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/string.h": {
+      "bytes": 2277,
+      "sha256": "105c6af231ff8031b620090a18f68f14a71c195f58347195cd410e1a2e7d7148"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/bitmap-str.h": {
+      "bytes": 856,
+      "sha256": "ea4663231fe9174f4e1307f876dd77f92e0178e3993e9ec57c75e22f1d476637"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/gfp_types.h": {
+      "bytes": 16955,
+      "sha256": "679394be954668ab8e1d104df064495e4a1f1acf637884ea27d53f1f3c97f46b"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/numa.h": {
+      "bytes": 1635,
+      "sha256": "d64e28ca042dfe536eb8ac21aa5335e7ec8c3b5d8c4fb1c8a933d4da9f2e4543"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/nodemask.h": {
+      "bytes": 17813,
+      "sha256": "ab508f2919b67dd0cf13face173622b0304ea7549fae8a992103540dd053cc4e"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/random.h": {
+      "bytes": 5094,
+      "sha256": "0e21fe7e448d2c3497b3ae8d3ae902312ab71bb40123540ea7068ceb4ee3c6f9"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/random.h": {
+      "bytes": 1912,
+      "sha256": "7afc3eb7ff6b48ae8d1474ca0f0d53022c3a4740e43973af03b257fefcca83db"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/ioctl.h": {
+      "bytes": 163,
+      "sha256": "ba73b5892de6605e6c40b151820e367dfcb98cbdb3f8f468c5ef2bd8437df873"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/arch/arm/include/generated/uapi/asm/ioctl.h": {
+      "bytes": 31,
+      "sha256": "9c6ca9e365296a6b66747cbebdcf76972b8cce7aab91e55bf4ab1f3581df9c2a"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/ioctl.h": {
+      "bytes": 506,
+      "sha256": "f5c298423cf337ec430e1a26272bada9fa2f1bd4681847e407ebcad1550977e9"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/asm-generic/ioctl.h": {
+      "bytes": 3559,
+      "sha256": "8629514cdd724a7100fc6eea84d93db5fbc3285431a1631a77c7f8006b70bce0"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/irqnr.h": {
+      "bytes": 1538,
+      "sha256": "c33a1f71f35d3df836e394380cbf3e7d1b9b51d27520cb202a9ab15baa28c752"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/irqnr.h": {
+      "bytes": 104,
+      "sha256": "e202d1d01363068bfd5f0d11a634c799c7b2299e9282c337a0c37970338b7cf0"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/arch/arm/include/generated/asm/mmiowb.h": {
+      "bytes": 32,
+      "sha256": "562185c822e79d362de4f9f76a1a7016e1529a01d88a7da9552140f666c6a947"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/mmiowb.h": {
+      "bytes": 1764,
+      "sha256": "a3c29901be50ed7aef6c26ce8505e0a881189728913a4b02c8829b8f78aa793b"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/spinlock_up.h": {
+      "bytes": 2135,
+      "sha256": "f842d0c0bf2e8d501c32a59280e4e3ae2dab9a2f62b32a221252f3612a65a579"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/rwlock.h": {
+      "bytes": 4253,
+      "sha256": "d5fb02b9dcfd89c504fb9e2f891c86a65429c46b183b47c4e932469de05af0db"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/spinlock_api_up.h": {
+      "bytes": 3461,
+      "sha256": "546b7ff889d0e6bd37351e7c5f063418db1e8638f3bf40149661649575a20437"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/syscall_user_dispatch_types.h": {
+      "bytes": 388,
+      "sha256": "d05a0b7d53c38d98f4effa41ddc09e2c0e61220c840be1636e6d89e5c357c04b"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/mm_types_task.h": {
+      "bytes": 2376,
+      "sha256": "dbe5d4b227842a1c54f23ac3278adf0a30cc749237eb134a184ac4b3c312a615"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/netdevice_xmit.h": {
+      "bytes": 361,
+      "sha256": "809193a59a470383a63622175cf3122582c48a4b26581cb392cde8520c8c0d81"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/task_io_accounting.h": {
+      "bytes": 1159,
+      "sha256": "b7b280bb0a4b6d0373820ac155b104929711238ca6854e844108dd781c035859"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/posix-timers_types.h": {
+      "bytes": 2259,
+      "sha256": "ac76f15816fa0fe641f580e833f15a4b62ae8d814e9d762617697e6ad5de300f"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/rseq.h": {
+      "bytes": 5463,
+      "sha256": "aea8d4292268ef48f76423f78aaf60591620a1b76d70a78dfacdc1d290d56099"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/seqlock_types.h": {
+      "bytes": 3184,
+      "sha256": "f5b7f873421dfcbf40aee47c738beedd155931c5d796921d644da3ecbcfa71e4"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/kcsan.h": {
+      "bytes": 2241,
+      "sha256": "a332c6b22f6910f3019e74a8aa9043c02468c9d97e10a8fc76820f3f5b96423a"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/rv.h": {
+      "bytes": 3248,
+      "sha256": "adc95c17a7e66cc58ad34cbcfca7bdb90848be320f7cfdabcd453231fc4d8f12"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/uidgid_types.h": {
+      "bytes": 241,
+      "sha256": "ce6861038ba92b3158709823578d38977e0d43fe305164348ab5b2da599184ea"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/tracepoint-defs.h": {
+      "bytes": 2523,
+      "sha256": "95c648ae6bf9155abf96d39632ae1d27624fe2d72e09f257749edf30dd0cbb0b"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/static_key.h": {
+      "bytes": 30,
+      "sha256": "304f1660452c3e2786323b7bbcecd1d4a83017ef71f45339e4b0b2614ce9df63"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/jump_label.h": {
+      "bytes": 16845,
+      "sha256": "2ea12dd858b6ebed6b88419a7b8267c8790397ef9473abc492b0821d01ba7bae"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/unwind_deferred_types.h": {
+      "bytes": 1096,
+      "sha256": "5163d626060e186a19f6f4b31e41469fcc8b29d57f4375ce431a9f7e24d55aaa"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/arch/arm/include/generated/asm/kmap_size.h": {
+      "bytes": 35,
+      "sha256": "7245ee3b42b2e5df950a01ce7c2374db7b971a5a4304646d5a4e9ccfa76395ee"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/kmap_size.h": {
+      "bytes": 263,
+      "sha256": "a598fac6d8e12108d3aac7a028fa35e2d546e67e0df381ef0893910f749587f1"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/include/generated/rq-offsets.h": {
+      "bytes": 187,
+      "sha256": "8120abffa01e2cbf905b99bc140d898094e831cf3a0a1d3a08655697fb2c25a1"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/sched/ext.h": {
+      "bytes": 7468,
+      "sha256": "dece24c6f704c8d068ad3b3e683edaac81f9a3ad22d1a533b528064690d843a7"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/jiffies.h": {
+      "bytes": 20533,
+      "sha256": "0f1fef80f090052d587e42455e57ae86ccf88b2dcffff6eff5dcabd151546ca6"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/math64.h": {
+      "bytes": 9213,
+      "sha256": "568a0aa14c3be4c8bd813450da842d49812ed41b43d4d9bd24f4ca38f721c5b5"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/vdso/math64.h": {
+      "bytes": 1325,
+      "sha256": "3fb06f1564244c3ab205abe547072fb4204ad6252a59cc4c2dfd8050fd9bdb75"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/time.h": {
+      "bytes": 3216,
+      "sha256": "1632adf829e28c143aa9bd4cfd4a100d57c2b22b7f13e069f6dae545a2dc1c98"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/time64.h": {
+      "bytes": 4793,
+      "sha256": "4cc08243de589f85df68411aa998af561e77fb7c3ed024dfc2ed7738606ce1b1"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/vdso/time64.h": {
+      "bytes": 426,
+      "sha256": "7bea2fb74771207f25d0d7659867388c65b74479e0aa7903c4ad0c7e8fac5834"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/time.h": {
+      "bytes": 2207,
+      "sha256": "b0364314ca37dcaf82d18ed6e7bd201fb658cff80f40637dae192ec8665a9eea"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/time32.h": {
+      "bytes": 1795,
+      "sha256": "bc152e162f8ca79b088bcdf35584860a8ff4618fe2294158de0f439609eb31d4"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/timex.h": {
+      "bytes": 6567,
+      "sha256": "cd3b5c33208c1b3ded9a6fc793837e1d1d83d98b8c884e2b314bbc2d6e89052f"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/timex.h": {
+      "bytes": 7884,
+      "sha256": "bb95ba42ac8169c0ddbb4192dac37210cfa883b0200b6db00eabb33a35f6c7ec"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/timex.h": {
+      "bytes": 431,
+      "sha256": "c60f2500e8d41d904623d67a7a9bccef5216f5f907dda7f3e9b627cae2a0ca5a"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/vdso/time32.h": {
+      "bytes": 274,
+      "sha256": "3ba3cd73b09102bae2888f1434057163b2bba8ae7cef49ec7aed840edaae7e23"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/vdso/time.h": {
+      "bytes": 190,
+      "sha256": "d40b62cfecc09799273dc366662d994698eb00e09170579777941b3ed7ab13f9"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/vdso/jiffies.h": {
+      "bytes": 278,
+      "sha256": "8ddcec4187616b2a4855e4219b454ee0890a4eeb52bad4f51d8384d76a84a3c3"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/include/generated/timeconst.h": {
+      "bytes": 1113,
+      "sha256": "082496c45ab93af811732da56000caf5ffc9e6734ff633a2b348291f160ceb7e"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/delay.h": {
+      "bytes": 2901,
+      "sha256": "3959cea355f9cc09e4eba8258585934f775d0a6bea7784b2dc3ab457d3465488"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/gpio/consumer.h": {
+      "bytes": 19509,
+      "sha256": "951171cfeedaa2424bcd16e78a2b11d93e9a5e860598690843c48bb791acf2dc"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/module.h": {
+      "bytes": 28512,
+      "sha256": "a34d4f8464bc06d08f41bbd7f99f422221552056ecd2d58829e9dd2016309416"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/stat.h": {
+      "bytes": 1897,
+      "sha256": "189c21c895c453c9b1022da7b2d907e09dc4e0fef5e7bbd165dd32f930a30e1b"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/uapi/asm/stat.h": {
+      "bytes": 1973,
+      "sha256": "7f863171a0592cab6b34ec9b526bebb0cf55688e7a81f08b91eceaff948f4568"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/stat.h": {
+      "bytes": 7879,
+      "sha256": "c900a05e031d999074db5ac3567f651ce2cf2f9f9e0a686810d6453c9f8b9526"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/uidgid.h": {
+      "bytes": 4533,
+      "sha256": "b3f1ccc674126ec3d9a6ffc476b918686bf493c36c94767406f6b676548ef8d4"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/highuid.h": {
+      "bytes": 3194,
+      "sha256": "cf83180733c5f9283367c990224ffef7de7526f132d23061337e8e04534aa7e5"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/buildid.h": {
+      "bytes": 767,
+      "sha256": "a8729af936a2b1ebde8c5902b5e51a8f5b3b206ced35e6a087041a7a05e549cf"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/kmod.h": {
+      "bytes": 972,
+      "sha256": "530ec2b2debfcd63ea3107db190ea7460dbecfbd72eb40d4e225f075f44b9617"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/umh.h": {
+      "bytes": 1862,
+      "sha256": "f0002537741ab5b124ec980051f2d91c459cf79452e89e1b1684108104f053d5"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/gfp.h": {
+      "bytes": 16655,
+      "sha256": "a6fe8c1754daf501a8408cea321557c96e068cbd1636e03cea3c62bc36113b43"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/mmzone.h": {
+      "bytes": 73729,
+      "sha256": "8653d8ee6b0ebd419f5e553952a8db29f9ee85d2d902d651a2936ed256f1bebd"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/list_nulls.h": {
+      "bytes": 4417,
+      "sha256": "f5b20f4769f0a383d9aa6e0a589f7fca33dd3d7085d2189c5508f9b65c8964d0"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/wait.h": {
+      "bytes": 44771,
+      "sha256": "db22e0aae0b41416a4f6696bb1e479b5bc39e813eaf0bc5dc9e1fb90e4910674"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/seqlock.h": {
+      "bytes": 40955,
+      "sha256": "0b6f998bd8f081538c2d293ecab8559bde235871f227756b35662b9d9fd5c3a7"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/mutex.h": {
+      "bytes": 6961,
+      "sha256": "0a2d01622c134acf57bcf8381e44821b5c058b51ea983eaf304f5085cd51b3e9"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/debug_locks.h": {
+      "bytes": 1606,
+      "sha256": "35cde540de6c6b48044c9ea142508444a19c991b2dcd016f9358cccb936a84e7"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/pageblock-flags.h": {
+      "bytes": 3430,
+      "sha256": "8a6f37f60046e3c63bc02619546313d8b5da334116286fbfe5426f5c8d74c4e6"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/page-flags-layout.h": {
+      "bytes": 3851,
+      "sha256": "997aaa25c0560598d630936080a584e4db5f49b10e2f65a959ffab0a33d0fe42"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/include/generated/bounds.h": {
+      "bytes": 333,
+      "sha256": "b2aeed4751d6630cbab20fcbe48632c4145282efcdc06b851a2e34723b8f459b"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/mm_types.h": {
+      "bytes": 59233,
+      "sha256": "11daa54c05e2222d13cd629fe0774266a7ed4cb6bd4f7039506f01d71065b0e1"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/auxvec.h": {
+      "bytes": 304,
+      "sha256": "827b08f3e0962054f2164ba5c35a429635c42ce5d41df2bb8171d30fa3259409"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/auxvec.h": {
+      "bytes": 1834,
+      "sha256": "8dadb9bdd5f00bbcbb6439086f5a9d429b4eff457a61b11ce08941d1dd8d60fa"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/auxvec.h": {
+      "bytes": 29,
+      "sha256": "13a1b9408f98875caef47d542d495464781b200690076dba94c8205d945923f1"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/uapi/asm/auxvec.h": {
+      "bytes": 165,
+      "sha256": "4ca852e0b982f283f06b49a7bc96a647ee4d40d491cd4b50fb3c5e39eac94569"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/kref.h": {
+      "bytes": 3932,
+      "sha256": "a77b706c7a47d837edbb0432c674fb840627bbe507887f9c5e88cc7191cb9f20"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/refcount.h": {
+      "bytes": 16806,
+      "sha256": "138348cedf2dd2ee4bb5defb880c575db997dab0561abdd805534d83750dca80"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/rbtree.h": {
+      "bytes": 11590,
+      "sha256": "3ad9041b6544b62183389683691a1504fefa73285cfd760e7b57c46ad5f0fb73"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/rcupdate.h": {
+      "bytes": 44465,
+      "sha256": "3162164dd021f8f3880de7c188cb5cde34908b1fcfeaebe9554b91b2622849a5"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/context_tracking_irq.h": {
+      "bytes": 633,
+      "sha256": "c96be4f34ef8e3082e2bbed00e876e29e88068349fd7c8617a0694111691a467"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/rcutiny.h": {
+      "bytes": 3854,
+      "sha256": "7cfee4b62dade843b88378f6e572cd81f3b7128a69886571117fc78fa0d9d39e"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/maple_tree.h": {
+      "bytes": 30148,
+      "sha256": "c890e4c6de96872ea5d5a697d010157a607b5aca145dbc7821db79d99d769bda"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/rwsem.h": {
+      "bytes": 9223,
+      "sha256": "80dea70d8d59bdc46cf194c695e7b0f7fcce9d9fc7634c61a5f04b4a83ff00a3"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/completion.h": {
+      "bytes": 4240,
+      "sha256": "db5aac6634fbb92542486d273d93861dfd29061043d461ae494cfa2b2e9f4e4b"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/swait.h": {
+      "bytes": 9694,
+      "sha256": "859a8fedaa8847f64086cd5df319d0ba89e98b8082308ea3890cd79608f150d9"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/uprobes.h": {
+      "bytes": 10615,
+      "sha256": "f59d02ddb377d8fd7d641853305cedd7148eec97e2ddd353fb4fb0dfadf5cf6e"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/timer.h": {
+      "bytes": 6662,
+      "sha256": "7b819326e4d7f782a0896088c1696f5dd5b3942fbe33b6ffec54e2e65842e3e1"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/ktime.h": {
+      "bytes": 5528,
+      "sha256": "e86942e72ec8a9cf8a72d5956de3fab121691353aea3dd8086b7817c438988d2"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/vdso/ktime.h": {
+      "bytes": 454,
+      "sha256": "c416fe9f93d429fb83288e6f28c13506fd7e2053f0e26bde1d2e9410aaa45740"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/timekeeping.h": {
+      "bytes": 9474,
+      "sha256": "4b5ee837f71627db11e1deb8a945359bcfb82595442e4e1b1539d8921dc178e9"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/clocksource_ids.h": {
+      "bytes": 333,
+      "sha256": "ed611deecdb3e383f0090e4b36635821ff3d998d6e01aba60f19bf88a52ddfee"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/debugobjects.h": {
+      "bytes": 4193,
+      "sha256": "6e69f0f903311b6e53f97218e1550f96a9875aace57bcca93188b056ad08ebf2"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/workqueue.h": {
+      "bytes": 30679,
+      "sha256": "69d623babcc1d9a482d32c6a86dab97a43913914b2d4705620747bb35b1bb030"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/alloc_tag.h": {
+      "bytes": 7287,
+      "sha256": "b8e745b2e706b33a8f0ca24487f8784c3cdf9fdde1fbb61a7d5698785e6198d7"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/codetag.h": {
+      "bytes": 3538,
+      "sha256": "ab4c883639125832a6c374222ebc1cd83a5c2fcb950e1a34ced5fbdf98527d0e"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/workqueue_types.h": {
+      "bytes": 564,
+      "sha256": "1355c26bc1c4b351c8bffb42eeb3fca1c6a90e8a2b37b58883da81f2903ea465"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/percpu_counter.h": {
+      "bytes": 6977,
+      "sha256": "4a107bc381b3b5425b8ff441f7487d97ba6883dc6f5b426c4bd361ad7cbef896"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/percpu.h": {
+      "bytes": 5296,
+      "sha256": "44209431de44abef68f3675dd33a7d970effb3c5ce77b06ebfaf50130ad5a9f5"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/mmdebug.h": {
+      "bytes": 4772,
+      "sha256": "b1ee00b23d98985b49657bc6e65e9b812f4cd24f1ae13b0a952c771082d2adac"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/mmu.h": {
+      "bytes": 949,
+      "sha256": "cdc0e6eeee5886187e2faff3d4573e9ccc5a2c73203b0305712abf61d66edb8c"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/page-flags.h": {
+      "bytes": 41738,
+      "sha256": "1b9097d3f1a12d18c851b1d0b3ebd48934ef36be4e26708bb0a9cf3139601bae"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/local_lock.h": {
+      "bytes": 3146,
+      "sha256": "d5c23c5c6595a1098e26d75bf7e01b90890c9d41131bb99014e839fa8ceb19d5"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/local_lock_internal.h": {
+      "bytes": 7445,
+      "sha256": "f6cc06cae4652a9d75899553a19cf1f39067a83b75ce20f30326cdf76595ba86"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/zswap.h": {
+      "bytes": 1868,
+      "sha256": "fbf32ca20363162641949cdbec87b5258d30b219687b4d6ba4ae703e94da2b9a"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/memory_hotplug.h": {
+      "bytes": 11076,
+      "sha256": "bbe9855b6122b9a58d8e0b3ee2445d45bdf0f9c118877dea5e9213b6c34ddc6e"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/notifier.h": {
+      "bytes": 8379,
+      "sha256": "b05d41ce3a8bd9e9db094a0c22c0ac97210ced1ef5b38bf5fc9350b6a8fd12b2"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/srcu.h": {
+      "bytes": 18493,
+      "sha256": "eb7623f1c513f8d1050eaaeb96ee03672b2eca4b8e3d6c4c737c7845248970b0"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/rcu_segcblist.h": {
+      "bytes": 11025,
+      "sha256": "c2f41815e3bbd8c6edfb5d7ecf9c744fd66962fc44ee6114c8634f844d542141"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/srcutiny.h": {
+      "bytes": 3877,
+      "sha256": "35431b834f5b89e8ddad82cb8d998b4ea05fc8f20093e4c6e37c95c6ed505433"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/topology.h": {
+      "bytes": 9791,
+      "sha256": "fedc6ab27374ef64da31b13eaeeb385d3bbdbacc719d3e90dffeafa25ee02521"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/arch_topology.h": {
+      "bytes": 2783,
+      "sha256": "4bcaf2baff1acddfdd83696544c7ff2c011a6f8d269b9d2a38db414f46652117"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/topology.h": {
+      "bytes": 1168,
+      "sha256": "c6286856eae1228fed90c450ef3f09cf80c1bd689e37e5a5c131cdbffed7b058"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/topology.h": {
+      "bytes": 2219,
+      "sha256": "a1709eadf6f1aa60bd2115d485f20834db67e540b0e5c3af3687a7354e410f5f"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/sysctl.h": {
+      "bytes": 9664,
+      "sha256": "68ebc4b5a6c877240729b3358eded048a4bdc525c0a2739848471ac9fc9d2b49"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/sysctl.h": {
+      "bytes": 26126,
+      "sha256": "ac767cf015a1c8bacfd8b660f9335af2aa68363aff26551058566ccb6d74e8b4"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/elf.h": {
+      "bytes": 3037,
+      "sha256": "ca735899fd2c19c7d387f6a361d54878b3feff287ab025295f215f606e9f5e3e"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/elf.h": {
+      "bytes": 4693,
+      "sha256": "6e83e654695245bef51edc327c34b5fe25595db18ea4e9b85af2c08c8aaf6a77"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/user.h": {
+      "bytes": 4155,
+      "sha256": "20e0a4f4386b894bdfd3c53586511c624f2ce6094c7b86ee70579e4196ab3492"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/elf.h": {
+      "bytes": 19218,
+      "sha256": "6264e8d45a1be1852bdac5481420f2df4df071e6da3918af01f84bbe9bfc7e07"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/elf-em.h": {
+      "bytes": 2627,
+      "sha256": "e72cca577a97d1fccc7f4e5d37b39b401a527a97f02e589255c247b63cb227d2"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/kobject.h": {
+      "bytes": 7124,
+      "sha256": "17078e8c6ec568b14791f13ae1223df70a4a6363cde0e1894872dbe1248ac506"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/sysfs.h": {
+      "bytes": 24252,
+      "sha256": "6c508364b156ee9c6b32c562bc57255d5d7b17ae68963dc742c300c3e5ddd474"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/kernfs.h": {
+      "bytes": 20213,
+      "sha256": "fe9180b733c8ec2f031ea5028100cc483919d5413efafcac57e62fbeb3cce619"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/idr.h": {
+      "bytes": 10430,
+      "sha256": "8f4de38006634e185c936a8844c49c1e2b75d43305783bcb8bc4000298d9b6ef"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/radix-tree.h": {
+      "bytes": 16332,
+      "sha256": "fe9a3fcc465541926488720246bf1029424a1ca72ceeaff438647640c823a892"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/xarray.h": {
+      "bytes": 59943,
+      "sha256": "be3707d0f78bbf6ddf64ac16885f0ed4c6ccd083cc3d8197e92f3a9ad2c03dd4"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/sched/mm.h": {
+      "bytes": 17666,
+      "sha256": "d6146e280957c672e4168c8f332967c75a9f1890b9d4fcc505715f0218f8d4ae"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/sync_core.h": {
+      "bytes": 1052,
+      "sha256": "8d2e00a8620cf78b70559844913d2628598c276b9a4b65d39000eafe39059bd4"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/sched/coredump.h": {
+      "bytes": 1263,
+      "sha256": "208c7673ba59a6675ae353a4e59e61ec2cda731d61effa682b11ca7d52e6b224"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/kobject_ns.h": {
+      "bytes": 1832,
+      "sha256": "4b8285e11bf9d28f36647eef81d7b1dbd641d0c55ea6df0e46ba92f7632cc80f"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/moduleparam.h": {
+      "bytes": 23547,
+      "sha256": "72c963dbbc52f0527de7f7c1ea5c5aac4796dedf38c3fc7f4a0c9882da0f7666"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/rbtree_latch.h": {
+      "bytes": 6891,
+      "sha256": "97ab1d5953dc0c4a573b6b9dbb6b203a437aec566d0d1fa3b6c154ea7d2ad0f1"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/error-injection.h": {
+      "bytes": 630,
+      "sha256": "ac8e661b257ba4d90fc66c49deb89396101711563449685a4722437172a0308d"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/error-injection.h": {
+      "bytes": 1280,
+      "sha256": "b3d2bae80238c63df91d95300477ca7c4c22f928cf42b7e716821779dab13e5b"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/dynamic_debug.h": {
+      "bytes": 11225,
+      "sha256": "7d069d591a5324fe2d91de53f3d2c32c71749161a505f825c34120b9fadb2a67"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/module.h": {
+      "bytes": 1292,
+      "sha256": "26503964378deb8ea74fcee72ce66960ede9f3eb8865c76163c40669ba1d748c"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/asm-generic/module.h": {
+      "bytes": 952,
+      "sha256": "faf3c7acfed4e2d2ef20ed2dd6a9cb265020000717be1f5d2d80e39936bb954a"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/unwind.h": {
+      "bytes": 1307,
+      "sha256": "537974883029d2b1049954715822ae01571996b78f921446dca504e6f4c042cb"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/of.h": {
+      "bytes": 53166,
+      "sha256": "9edf35d31f8d6dd14919dd043e73a2eab96238a6f8974d9fcc0899f3d2aca3a4"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/mod_devicetable.h": {
+      "bytes": 26062,
+      "sha256": "557c5bf1c421783f41af9b5e0e1527505d7cc63a95a22de394aa5db381a443ad"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/mei.h": {
+      "bytes": 3474,
+      "sha256": "0648683ead984c854e97a2859a6528ac8b6b447bf250756100737ab573c0563d"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/uapi/linux/mei_uuid.h": {
+      "bytes": 753,
+      "sha256": "314ec95b586f037ab64d73a7c534081e3999c16621379f2081905253c0586f89"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/uuid.h": {
+      "bytes": 2548,
+      "sha256": "a7c5418fa73f15fc23a1c04a1580fbe48559a9394254c8b396ec2df6924e029e"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/property.h": {
+      "bytes": 21851,
+      "sha256": "b990ae2250b22b4c2dea0f0fccbaf2a40b8ac3c61b4731f4735504a5dc7d9743"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/fwnode.h": {
+      "bytes": 8933,
+      "sha256": "d58b863353cdfdab5031c75d8ff0d85dc786fd05cb99993fd28be68b59de86ad"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/platform_device.h": {
+      "bytes": 13294,
+      "sha256": "ef133f0b145364b6ffd5ccab8f6ff29e2b0b180b2055b2cb1e6d5eb16ffd0789"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/device.h": {
+      "bytes": 43535,
+      "sha256": "951d5461d34207c54f4007b7fc9d05f30c0bb601a96c37133d7f09e92376ce4c"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/dev_printk.h": {
+      "bytes": 9975,
+      "sha256": "ba476a7261040b824eedb7d55a97c3f65be10870deb73baf8700c4310c56c769"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/ratelimit.h": {
+      "bytes": 2455,
+      "sha256": "03d803e46c04ad72155723dd5dcc24cdf5136b74d9feb90a0a7c5603041f579c"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/energy_model.h": {
+      "bytes": 13903,
+      "sha256": "48eeab266493e24a077e5dca9717ef7eaa2d53162d360ee6925cd99f204c0cb4"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/sched/cpufreq.h": {
+      "bytes": 983,
+      "sha256": "4bcfad3bb863714c8b7cddc56fd8adcfb45b7d5660f52dd150ba87de4b831bc5"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/sched/topology.h": {
+      "bytes": 7295,
+      "sha256": "01a5de9c2cad90604377f4b9e99644770e19616fe753bbbb2190f5db696e54e5"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/sched/idle.h": {
+      "bytes": 2550,
+      "sha256": "f323fb3c2c157012d8be3aa24b65a53650deeb8e7e7e55310f2fd1c90f928bcd"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/sched/sd_flags.h": {
+      "bytes": 5200,
+      "sha256": "3948beba57cc1a5ccd046f6558513322bcd97a5c9ca038afcb85dc546429111c"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/ioport.h": {
+      "bytes": 15683,
+      "sha256": "0a89db2d5a3231d72cfc6fd4069f7f75ddf078e763cb643d41ac9c2dbfc45fd7"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/klist.h": {
+      "bytes": 1922,
+      "sha256": "36dabc4fdf26834ebe82f128fa2fcae99b3559e24a635b0ba3d26c91af6519cd"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/pm.h": {
+      "bytes": 37465,
+      "sha256": "408aa9ad3d291c01e916cce8fcd9138c87dcc64264afecbe9dd5221fcca356e1"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/device/bus.h": {
+      "bytes": 11128,
+      "sha256": "ecd13dfdc547c3ea25e9659e89efb7cd79de83cece44cb612bd3894b8e800325"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/device/class.h": {
+      "bytes": 7728,
+      "sha256": "f053e3d98422ef129f054be5d825e398e86704cc6c03210d508683775a0b01a3"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/device/devres.h": {
+      "bytes": 5968,
+      "sha256": "275638bcb5e116b7546b9f60607c462b0c40c8814dc8e1ef372eaaed1f3cbd90"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/device/driver.h": {
+      "bytes": 10414,
+      "sha256": "f103b4925305db24e33ce6a2c999e2fa28b1ac967615d312e486336201bbca6c"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/include/asm/device.h": {
+      "bytes": 533,
+      "sha256": "74b47c446575e2e9f1c47c83a3aa97d0f4697edf75375b73c7f2a4a6aaa1e4c8"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/pm_wakeup.h": {
+      "bytes": 7040,
+      "sha256": "da6e286383312e5ad728c01eb0216e732829080d7df3f113cbd67b73091c8b18"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/slab.h": {
+      "bytes": 45580,
+      "sha256": "d3a7999286cbba4e0bb51db023dd5926ce13a355a574e4bbe86d638e6183fed1"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/percpu-refcount.h": {
+      "bytes": 11493,
+      "sha256": "46271ac091f25a74d0560c9dba9d438feb2bb24a616655fb935db07bc705db9e"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/hash.h": {
+      "bytes": 2998,
+      "sha256": "3619d01cd90fdaa882cccd85e1dfefe200de0578f7e2f5ccccb8cda9add4629c"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/kasan.h": {
+      "bytes": 22240,
+      "sha256": "0ab8e8f6842e86a994f084a9e4fb19b7c5102d804487df6ac0f18e9dcfffce92"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/kasan-enabled.h": {
+      "bytes": 1242,
+      "sha256": "35a167f9f139dec1af0adf851703c5ab6eb136cf2906c3c5e461477da40da870"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/include/linux/kasan-tags.h": {
+      "bytes": 487,
+      "sha256": "bf08ef46a05060f9663849cfaee0de419d505e38c90da29c444893b02e5e2844"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/ptz-counter-20261023/runs/compile01/REPORT.json": {
+      "bytes": 117142,
+      "sha256": "0ef505b53ef6aca08ff15a42c186071cd45ff97ff5ce5b27abd775e08b761942"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/bringup/qc07f/ptz-off-retain-candidate/ptz.c": {
+      "bytes": 7551,
+      "sha256": "a0c7d152b8a2e163ed20419e2bfbd6a7fe765056870dd939b3e5b78511a6ce87"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/ptz-off-retain-20261024/CONTRACT.md": {
+      "bytes": 5145,
+      "sha256": "ef65d362395035de5fa0f73d8e2b003fb1c24c4cd47d378dd476deff0fc14fd0"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/ptz-counter-20261023/CONTRACT.md": {
+      "bytes": 1775,
+      "sha256": "25cf69c98d0813779aea378de000d487ceb773d37def683063ca146366d32c12"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/ptz-counter-20261023/PARENT_DISPOSITION.md": {
+      "bytes": 2077,
+      "sha256": "a80570473ca571a06f10d1803860106f4f0c4c3447c8b8a951bede1a0d026a42"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/bringup/qc07f/PTZ_DIAGNOSTIC_PLAN.md": {
+      "bytes": 2382,
+      "sha256": "a270d2b35ecc687552c17e5b379ffcf72bc4051fcdf087b884db47825cb84bba"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/stock-reference-20261013/closeout-parent01/MOTOR.md": {
+      "bytes": 8090,
+      "sha256": "27fd70dbf080b514d8387d80ce1aef93448c48fa851842cf3d1a6a385cfe2d9c"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/analysis/encoder-query77-build02/build/.config": {
+      "bytes": 58859,
+      "sha256": "d7b2ae8f167c8b56f442a201684eb433cc621bce45f52c98c94a87e48879b5bf"
+    },
+    "/usr/bin/clang-23": {
+      "bytes": 124752,
+      "sha256": "583017067c40b0ff0a9b35805d8ac89d5a66fb014221c78ae13a7c21997dd464"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/Makefile": {
+      "bytes": 72856,
+      "sha256": "84c3e0337634ccc0b91e94d52cf360c27307e31a8dfe8e9a9f16c583b5271f36"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/COPYING": {
+      "bytes": 496,
+      "sha256": "fb5a425bd3b3cd6071a3a9aff9909a859e7c1158d54d32e07658398cd67eb6a0"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/LICENSES/preferred/GPL-2.0": {
+      "bytes": 18600,
+      "sha256": "8780e78a1a737e127f25a65f6d95269bffd36158dc261114de7859b490bfc5aa"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/mach-ak3918ev200/gpio.c": {
+      "bytes": 5649,
+      "sha256": "038d0ed2a3ca430023fab4c290d461397b12aac796b581680ffe246e71fc4286"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/arch/arm/mach-ak3918ev200/gpio-data.h": {
+      "bytes": 6129,
+      "sha256": "4fce35f7e58c045db2632a1bfd254af1ed20876826b1100e01d3ba87058d32ab"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/drivers/gpio/gpiolib.c": {
+      "bytes": 146495,
+      "sha256": "e41bc07211393af6f95943bdf2f07d004dd7ee5beac4893e5fbab2fb3b82b6e0"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/drivers/gpio/gpiolib.h": {
+      "bytes": 10864,
+      "sha256": "7dcad53af59efb16a5c7ded72a483b6354e682c5ae403d21a5972e72dcd26943"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/drivers/base/core.c": {
+      "bytes": 151159,
+      "sha256": "0a6eeaf2d2107ca327316e87f128cded35ae7168b3fe6ae8e98bf5ef43c2a644"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/drivers/base/dd.c": {
+      "bytes": 38935,
+      "sha256": "26efc05457b05672d7156cc7c6198dfc7c4875bc3a9cb0629ed716992704ed0f"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/drivers/base/devres.c": {
+      "bytes": 33874,
+      "sha256": "5c2b58422bebe697e6b528d02bf1f9aea2a2d77c0ba47d8a44e190ee0bfb5a6b"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/kernel/module/main.c": {
+      "bytes": 102477,
+      "sha256": "12db96fa1f6ed05d85bdf78711a54d5685f102ed385fcc28dcf15cb16c2a639b"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/fs/kernfs/file.c": {
+      "bytes": 28107,
+      "sha256": "32d8998ea0ffac621b535748f6a327c6e1f126e0f75f4a54b98319b475599cb7"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/fs/kernfs/dir.c": {
+      "bytes": 50263,
+      "sha256": "5996adfee7c8036022c71fec8f208277770ac474ca7953bd1a94a8ea3d5d1ce0"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/fs/sysfs/file.c": {
+      "bytes": 20965,
+      "sha256": "b8aea244c52954834511b4e298de97e3d4091701cbe47651d31cc2efa674dd0a"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/work/lightbulb-camera/foundation-20261011T041148Z/artifacts/encoder-query77-source02/linux/fs/sysfs/group.c": {
+      "bytes": 16399,
+      "sha256": "01842168449f982a0b322d2232b258d2e3df22e6b2c1c71df3030622e12d17cd"
+    }
+  },
+  "patches": {
+    "SOURCE_DELTA.patch": {
+      "bytes": 6828,
+      "sha256": "e2322f38d947d05cbdc5f27aded5f076d8a273e79565eceaa8d83b2296a71151"
+    },
+    "INVERSE.patch": {
+      "bytes": 6828,
+      "sha256": "86b60edade6054530dfcc0da9114112bf04644879ec4ff8ca3992d4be1acd866"
+    }
+  }
+}

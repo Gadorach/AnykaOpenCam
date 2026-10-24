@@ -1,0 +1,29 @@
+{
+  "scope": "REFERENCE_ONLY_STATIC_READS_NOT_BUILD_INPUTS",
+  "inputs": {
+    "/home/gadorach/Desktop/AnykaOpenCam/bringup/qc07f/qc07f-prototype.dts": {
+      "bytes": 3763,
+      "sha256": "0f352bd70c8dcaa9a33a7cea7be125ac8c1daf171253c69ebc29ccf9b083ceaa"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/00-INDEX.md": {
+      "bytes": 137108,
+      "sha256": "e8c8f1fc093c66f2275ab6b57e13fe91cf3c4b5c92f67dac65ae3470c071ab7d"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/EXECUTION_TASKS_20261021.md": {
+      "bytes": 102882,
+      "sha256": "8fc0076f234f632e7751b06f4227fdc74abedef61719afd588dd036ba269100e"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/11-PTZ-AND-PERIPHERALS.md": {
+      "bytes": 5210,
+      "sha256": "d29f483d9b24a5a96591b73250a6e92359deeaf1590d81820e780c7fb5fe07a1"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/plan/camera-foundation/REMAINING_FEATURES_AND_BUGS_GATED_PLAN_20261021.md": {
+      "bytes": 66342,
+      "sha256": "db9af0641b50c9acb8eeee4083e7e10580b65a3a754a0adc1e58f19ede4d40b9"
+    },
+    "/home/gadorach/Desktop/AnykaOpenCam/docs/qualification-plans/ptz-counter-review-20261023/REVIEW.md": {
+      "bytes": 7042,
+      "sha256": "799fcf6956c6f844de8f63a6e11c31da999983097a68d0cbc473a97ea0bc2317"
+    }
+  }
+}
