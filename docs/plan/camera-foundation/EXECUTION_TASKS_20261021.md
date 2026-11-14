@@ -10,9 +10,11 @@ of the shared KM01/QC07F factory RSA private key. See
 device is exported; all nine acquisition reads/mirrors remain unchanged locally.
 Tools verified offline against published paths; no firmware code or hardware ran.
 Private captures/provisioning/host keys/photos/footage/extracts/newer modified dumps
-and all generated native builds remain excluded. Curated temporary-index commit
-and approved destination only; preserve ordinary staging. Upload verification is
-the current administrative task, not a resumption of historical bench leases.
+and all generated native builds remain excluded. Curated temporary-index publication
+commit `461f4de` pushed to the approved public repository and verified against the
+complete remote main tree:4038 blobs, exactly three8MiB dumps, no native build
+images. Ordinary staging stayed unchanged. Publication is complete, not a resumption
+of historical bench leases or hardware tests.
 
 ## USER RESUME — after 2026-10-24 host restart
 

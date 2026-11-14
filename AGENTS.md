@@ -22,7 +22,10 @@
 
 User explicitly requested public `Gadorach/AnykaOpenCam`, original firmware `.bin`
 dumps for all three cameras and their extraction tools, and NO working built image
-of current native source. Repository created; curated upload/audit in progress.
+of current native source. Publication completed to the approved public repository.
+First publication commit `461f4de` was verified on remote main:4038 blobs, exactly
+three8MiB original dump files, extraction tools and no generated native image.
+Ordinary staging index stayed unchanged; unrelated local work remains local.
 User reaffirmed public byte-exact originals after disclosure of the actual shared
 factory RSA private key in KM01/QC07F. Include only the three verified copies under
 `firmware/original/`, with warnings/checksums/provenance; keep all nine acquisition

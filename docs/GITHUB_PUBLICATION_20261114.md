@@ -45,3 +45,13 @@ curation uses a temporary index initialized from HEAD. No blanket add/reset/clea
 history rewrite, force push, remote visibility change or hardware operation is
 authorized by this file. Firmware/source retain their original license obligations;
 neither ownership of the cameras nor publication assigns a global firmware license.
+
+## Publication verification
+
+Initial publication commit `461f4de15abe948d3d06258869a8a4ef7f4a6b64` was pushed
+normally to public `origin/main`. The complete GitHub tree matched the local
+curated tree:4038 blobs, three actual8388608-byte `.bin` files with the expected
+Git blob identities, and all extraction tools. No native build-image/private
+capture/media path or root build/deployment workflow was present. The ordinary
+index SHA256 remained `2fe5fa37e83f50131ab6719b144cd727884b87e0ab3cf8c57a378ddbfa3418f3`.
+This completion note does not alter dump bytes, extraction results or hardware status.
