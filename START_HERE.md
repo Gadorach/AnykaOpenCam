@@ -1,5 +1,14 @@
 # Start here — AnykaOpenCam
 
+## Public repository — 2026-11-14
+
+See [README.md](README.md) for the current public source/firmware archive,
+[original dump provenance](firmware/README.md) and [per-device extraction tools](firmware/tools/README.md).
+The owner explicitly requested the three unmodified stock dumps, including known
+embedded shared factory-key material. Generated current native images and private
+bench material are excluded. Old runtime/publication statements below are dated
+history, not present hardware state or the latest publication authorization.
+
 ## Explicitly resumed2026-10-13
 
 **Latest:** user authorized stock reference tests after review. Actual controlled
@@ -107,6 +116,7 @@ Legacy root `FIRST_PROMPT.txt`, `PROJECT_STATE.json`, `VALIDATION.md`, `MANIFEST
 whole-workspace checksum set. The roadmap import and document hashes are recorded
 in `docs/archive/migration-docs-20261012.json`.
 
-Keep ROMs, photos, identifiers and private provisioning local. Local Git does not
-authorize publishing; keys/credentials and secret payload hashes do not belong in
-source or public manifests. Preserve original source notices and acquisition bytes.
+Keep complete acquisition mirrors, photos and private bench provisioning local.
+The explicit2026-11-14 exception covers only the three original dump copies under
+`firmware/original/`, with their embedded factory material and warnings. Other
+private credentials/keys/digests remain excluded. Preserve source notices and originals.

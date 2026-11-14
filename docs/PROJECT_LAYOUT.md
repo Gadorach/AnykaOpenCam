@@ -3,7 +3,9 @@
 Canonical root: `/home/gadorach/Desktop/AnykaOpenCam`. This is the existing camera
 workspace reorganized for a shared product, not a replacement of its evidence.
 QC07F is primary; T34-4G and Fulhan hardware ports wait for foundation **G8**.
-Product implementation remains incomplete, local and unpublished.
+Product implementation remains incomplete. Public source and three explicitly
+authorized original stock-dump copies are selected for GitHub publication;
+generated native images, full acquisitions and private bench data remain local.
 
 ## Active code and navigation
 
@@ -17,6 +19,7 @@ Product implementation remains incomplete, local and unpublished.
 | `apps/auth-web/` | Promoted authentication/web service and native-launch candidates copied with exact source provenance; not a claim of accepted native auth |
 | `scripts/`, `tools/`, `templates/` | Acquisition, analysis/build/test helpers and report templates; unchanged placement |
 | `references/` | Original pinned source subsets, license notices and source acquisition metadata, **not a complete kernel/SDK tree** |
+| `firmware/original/`, `firmware/tools/` | Three byte-exact public stock `.bin` copies/checksums and self-contained per-device offline extractors; no current native builds |
 | `targets/` | Stable identities and historical per-target state; reconcile stale status fields with original evidence |
 | `docs/` | Design, qualification and historical analysis documents; read dates/evidence scope, not just filenames |
 
@@ -93,7 +96,9 @@ normally with verified final hashes; fresh exact UART ownership, actual runtime
 and recovery protection are required before new target operations.
 
 Stock ROMs, photographs, device identifiers and extracts can be sensitive.
-**Local Git does not authorize publication.** Keys, credentials and private
-provisioning stay excluded; public indexes contain no secret values or secret
-payload hashes. Apply each upstream license/copyright independently. No inferred
+**Local Git alone does not authorize publication.** On2026-11-14 the owner explicitly
+approved the three original public dump copies, including the disclosed shared
+KM01/QC07F factory RSA private key. See `firmware/README.md`; originals are intentionally
+not sanitized. Private bench keys/credentials/provisioning and extracts stay local.
+Apply each upstream license/copyright independently. No inferred
 speaker, unknown GPIO routing or unmeasured capability becomes product truth.

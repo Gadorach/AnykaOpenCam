@@ -1,5 +1,19 @@
 # Active execution ledger — remaining foundation work
 
+## Current task — public GitHub repository, 2026-11-14
+
+User explicitly requests public `Gadorach/AnykaOpenCam`, three original stock `.bin`
+dumps and per-device extraction tools, excluding working built current-native
+images. Owner separately confirmed public untouched originals after disclosure
+of the shared KM01/QC07F factory RSA private key. See
+[publication scope](../../GITHUB_PUBLICATION_20261114.md). One verified copy per
+device is exported; all nine acquisition reads/mirrors remain unchanged locally.
+Tools verified offline against published paths; no firmware code or hardware ran.
+Private captures/provisioning/host keys/photos/footage/extracts/newer modified dumps
+and all generated native builds remain excluded. Curated temporary-index commit
+and approved destination only; preserve ordinary staging. Upload verification is
+the current administrative task, not a resumption of historical bench leases.
+
 ## USER RESUME — after 2026-10-24 host restart
 
 User explicitly requested continue. Reconciled HEAD `26d7e4c` and unchanged ordinary
@@ -75,6 +89,20 @@ selection plus fresh supervision/sole ownership still precede ON. Same-pinned
 recorder/private custody/supervised detect/abort, no new framework or old22b execution.
 Parent alone owns actual device work after admission; image handback/reviews now
 complete as recorded above. No automatic motor/Wi-Fi/mic phase or flash operation.
+Actual ONE supervised24a invocation FAILED/HOLD on SF-read reply envelope (two
+leading LF where v2 requires one), before neutral reads/loader/GO/Linux.845RX/163TX,
+57 catch TX+106 controlled TX/four fixed commands. ON/OFF acknowledgements and
+strict GETs, actual owned stop/wait0/finalization passed. Parent independently
+verified final hashes/all20 retained inputs/three old markers and GET OFF/PID/socket/
+no visible UART owner. Camera OFF/no capture/transfer/Linux lease. See supervised-run
+ATTEMPT24A_RESULT. Only fresh v3 source correction/review for the exact enumerated
+envelope and two known vendor header literals now independently/parent source-
+reviewed in entry24-v3; 37 other functions and R1 finalizer exact. See v3 disposition.
+Latest user emphasizes reusing the established route. No smart-outlet shutdown
+timer was configured by this run; recorded capture16.339s vs5400s cap, explicit
+cleanup OFF after parser refusal. External/pre-existing automation not disproved.
+No timer setup/removal, v3 invocation, automatic hardware retry or driver test.
+Earlier failures/source versions stay unchanged, no whitespace/prefix discard.
 
 Latest user reseated probes, explicitly requested retry and asked whether parsing
 caused previous failures. ONE fresh23h with UNCHANGED v4/parser now PASS cold

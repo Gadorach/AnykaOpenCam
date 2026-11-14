@@ -1,21 +1,64 @@
 # AnykaOpenCam
 
-## Current execution — 2026-10-21
+## Public source and original firmware archive
 
-The [detailed gated plan](docs/plan/camera-foundation/REMAINING_FEATURES_AND_BUGS_GATED_PLAN_20261021.md)
-is approved for execution; follow the [active ledger](docs/plan/camera-foundation/EXECUTION_TASKS_20261021.md).
-Candidate76 has a historical narrow RAM boot/idle PASS, not full-size USB, protected
-media or product acceptance. Current hardware admission must be freshly established.
-QC07F remains first; other ports wait for G8.
+Repository: <https://github.com/Gadorach/AnykaOpenCam>
 
-Reviewed source increments are committed to main. No remote is configured; the user
-selected local commits until a destination is supplied. See [Git workflow](GIT_WORKFLOW.md).
-Private acquisitions, images/footage, provisioning and hardware-specific local
-selectors are deliberately not part of the source baseline. Existing local staged
-work is preserved; this snapshot is not a complete release or permission to publish
-historical evidence. Original notices/licenses remain with their source components.
+**Experimental and incomplete. No working built image of the project's current
+native firmware is distributed here.** Source/build reviews are not proof that
+hardware drivers or the complete product are ready.
 
-The older checkpoints below are retained history, not current runtime authority.
+The three `.bin` files below are **unmodified original manufacturer-firmware
+acquisitions**, not images built from this project's source. Each is 8,388,608 bytes
+and matches three independent reads retained locally. They predate later bench
+modifications; do not assume they match the firmware currently installed on a unit.
+
+| Camera | Original dump | Extraction tool |
+| --- | --- | --- |
+| T34-4G / Anyka KM01, AliOS Things | [`t34-4g-km01.bin`](firmware/original/t34-4g-km01.bin) | [`extract_t34_4g_km01.py`](firmware/tools/extract_t34_4g_km01.py) |
+| QC07F / Anyka V200, Linux 3.4.35 | [`qc07f.bin`](firmware/original/qc07f.bin) | [`extract_qc07f.py`](firmware/tools/extract_qc07f.py) |
+| Fulhan FH8626V200, Linux 4.9.129 | [`fulhan-fh8626v200.bin`](firmware/original/fulhan-fh8626v200.bin) | [`extract_fulhan_fh8626v200.py`](firmware/tools/extract_fulhan_fh8626v200.py) |
+
+**Security warning:** these dumps are intentionally not sanitized. The owner
+explicitly approved public originals after being informed of a shared factory RSA
+private key in the KM01 and QC07F firmware. Original firmware may also contain
+factory credentials, device identifiers and cloud configuration. Do not reuse its
+keys/credentials or treat it as a secure firmware baseline. No extracted key files,
+private bench provisioning, newer credential-bearing modified dumps, photographs
+or footage are separately included.
+
+From the repository root:
+
+```sh
+sha256sum -c firmware/original/SHA256SUMS
+python3 -B firmware/tools/extract_t34_4g_km01.py
+python3 -B firmware/tools/extract_qc07f.py
+python3 -B firmware/tools/extract_fulhan_fh8626v200.py
+```
+
+See [firmware provenance and warnings](firmware/README.md) and the
+[extraction guide](firmware/tools/README.md) for host dependencies, partition maps
+and limits. Outputs go to ignored `firmware/extracted/`; existing destinations are
+refused. JFFS2 is carved only, not reconstructed. No firmware executable is run and
+these are not installation/flashing commands.
+
+## Development status
+
+QC07F is first. Current priorities are stable Wi-Fi/USB and MTU1500, bounded motor
+movement/STOP and defensible zeroing, then modern microphone capture. Speaker tests
+and further backend expansion are deferred. Modern MTU1500, mechanical/homing and
+modern audio readiness are **not accepted**. The last recorded supervised boot
+attempt stopped in U-Boot on a console-format guard and ended OFF; it did not boot
+the new driver image. No current hardware state is inferred from old records.
+
+Follow the [active ledger](docs/plan/camera-foundation/EXECUTION_TASKS_20261021.md)
+and [gated plan](docs/plan/camera-foundation/00-INDEX.md). Full kernel/SDK/toolchain
+and private build/evidence trees are not bundled; historical recipes may reference
+those local paths. The stock extraction tools are self-contained subject to their
+listed host dependencies. Upstream copyright/license notices remain applicable;
+publishing a dump does not relicense vendor software. See [NOTICE.md](NOTICE.md).
+
+## Project scope
 
 A shared, local camera software product for three owned camera systems: upstream-based Linux, networking, real hardware video from every fitted sensor, authenticated RTSP/browser viewing, PTZ and fitted peripherals, recording/playback, configuration, setup/reset and NVR integration.
 
@@ -33,9 +76,16 @@ Start with [START_HERE.md](START_HERE.md), then the canonical [implementation pl
 
 Inventory numbers and IDs do not change with development order. Firmware names are not exterior labels. [Target records](targets/README.md) retain identity/history; original acquisition evidence is authoritative where an older status field lags.
 
-All three stock acquisitions have three matching 8-MiB main-array reads. Whole-acquisition mirrors live under `firmware/stock/{km01-lte,lightbulb-camera,camera-03}/`; the original acquisitions remain in `work/`. Nine raw reads total **72 MiB**. Repeatable hashes do not alone establish electrical completeness. ROMs and photos may contain device identifiers, credentials or private configuration: **local Git is not permission to publish them**.
+All three stock acquisitions have three matching 8-MiB main-array reads. Public
+copies and provenance are under `firmware/original/`. Whole-acquisition mirrors,
+all nine reads (72 MiB), private configuration and photographs remain local under
+`firmware/stock/`, `work/` and private evidence storage. Matching hashes establish
+repeatability, not electrical completeness or permission to publish other data.
 
-## Latest checkpoint — 2026-10-12
+## Historical checkpoint — 2026-10-12
+
+The observations and next-step wording in this section are dated history, not
+current runtime authority or the latest work selection.
 
 - Kernel75 was directly RAM-booted on QC07F. Strict credential-child READY flags15 and the public-dummy full600k match/mismatch/issuance/revocation/retirement backend campaign passed. These are narrow target proofs, **not native HTTPS authentication acceptance**.
 - Native HTTPS authentication **and owned lifecycle campaign04 passed**: full600k login, protected API, CSRF/logout/replay, discard/drain, owner revocation and clean SIGTERM/service/child/bootstrap retirement. Narrow musl stdio and ARM signal-return ABI repairs are supported by old-fail/new-pass regressions; all original failures are preserved.
@@ -57,4 +107,8 @@ Shared C init/profile/cadence,8192B spans and CPU lease/admission models now pas
 
 The pre-migration root handoff is preserved byte-exact in [docs/archive/initial-handoff/](docs/archive/initial-handoff/). Legacy root `FIRST_PROMPT.txt`, `PROJECT_STATE.json`, `MANIFEST.json`, `SHA256SUMS`, `VALIDATION.md` and `NOTICE.md` remain historical material, not today's entry point or whole-workspace verification. Separate migration/session manifests cover new artifacts.
 
-This workspace is local, uncommitted and unpublished at the migration checkpoint. Keys, credentials and private provisioning are excluded from source/public manifests. Upstream files retain their own copyright and licenses; [NOTICE.md](NOTICE.md) is the original handoff notice, **not a new global license or redistribution grant**. No automatic ROM/photo publication, third-party access or persistent firmware installation is authorized by this README.
+The original migration checkpoint was local and unpublished. The owner's explicit
+2026-11-14 publication approval now covers the selected source and three original
+dumps, including their embedded factory material, not unrelated private evidence
+or any firmware installation. [NOTICE.md](NOTICE.md) remains the original handoff
+notice, not a new global license or redistribution grant.

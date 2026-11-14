@@ -18,7 +18,25 @@
   independent work. Do not infer permission for third-party contact, publication,
   account changes or unrelated hardware.
 
-## Current checkpoint (2026-10-24)
+## Current task — GitHub publication (2026-11-14)
+
+User explicitly requested public `Gadorach/AnykaOpenCam`, original firmware `.bin`
+dumps for all three cameras and their extraction tools, and NO working built image
+of current native source. Repository created; curated upload/audit in progress.
+User reaffirmed public byte-exact originals after disclosure of the actual shared
+factory RSA private key in KM01/QC07F. Include only the three verified copies under
+`firmware/original/`, with warnings/checksums/provenance; keep all nine acquisition
+reads immutable locally. Factory credential/key material inside those originals
+is intentionally included, not sanitized or published separately. Owner reports
+no saved Wi-Fi network; do not turn that into a universal secret-absence claim.
+Do not include private bench provisioning/host keys/captures/photos/footage, newer
+modified credential-bearing dumps, extracted trees, builds or generated native
+images. Preserve vendor/source licenses, ordinary Git index and unrelated work.
+Use a separate temporary index/curated main commit and the approved remote only.
+See GIT_WORKFLOW.md and firmware/README.md. This task selects NO hardware operation;
+October runtime, presence and leases below are historical, not fresh authority.
+
+## Driver checkpoint (historical 2026-10-24)
 
 **Latest user priority: stable hardware drivers before more backend work.** Prioritize
 RP-02/NET-01–08 Wi-Fi/USB reliability and MTU1500; RP-11/CTRL-02–04 bounded motor
@@ -37,7 +55,7 @@ deadlines/checks/failures/uncertain ownership; no unpaired-driver use or fresh s
 inference. Prepare reviewed paired-driver image and supervised entry before effects.
 
 Host-restart pause was explicitly lifted; preserve its historical checkpoint at
-`docs/plan/camera-foundation/PAUSE_20261024_HOST_RESTART.md`. HEAD is local `1282626`
+`docs/plan/camera-foundation/PAUSE_20261024_HOST_RESTART.md`. HEAD is local `e810324`
 with ordinary index unchanged. V2 capability-profile remaining static review is
 now complete, but parent closeout/commit is parked, not native adoption. No active
 backend source author/reviewer or fresh target observation/transfer at this boundary.
@@ -61,10 +79,20 @@ BZIP2 `f8371c93`, load82408000/entry82408040; conservative end8275f878 below CMA
 See driver-foundation-package PARENT_IMAGE_SELECTION and ENTRY_SELECTION.json.
 Original failures preserved; N2 changed FINAL-ONLY Brotli HOST libs limit complete
 toolchain claims, N3 scratch-end figure is an original-DTB model. No active author/
-reviewer. Fresh parent read-only preflight saw outlet OFF/adapter present/no visible
-owner or socket, NOT a live catch/lease. Current supervision still required before
-the selected ONE boot/fixed-RO/OFF invocation; no power/UART change yet. Preserve
-rollback and no unpaired station/audio/backend action. Closed entry24 v1 required R1:
+reviewer. ONE fresh supervised24a invocation now FAILED/HOLD at the exact SF-read
+response envelope (two leading LF, v2 requires one), before neutral reads/loader/
+GO/image/Linux.845RX/163TX, cold catch57TX+four fixed commands106TX. Actual ON/OFF
+acks/GETs and owned stop/wait0/final hashes passed; parent independently confirmed
+OFF/PID/socket/no-owner and all20 original inputs/three markers unchanged. Camera
+OFF/no active capture or transfer/current Linux lease. See supervised-run ATTEMPT24A_RESULT.
+Fresh v3 has independent/parent conditional SOURCE/METHOD sufficiency for exact
+SF envelope plus two known vendor header literals only; 37 other functions/R1
+finalizer byte-exact. See v3 PARENT_DISPOSITION. Latest user says reuse the established
+route, not broad route requalification. No outlet shutdown timer was configured by
+this run; capture16.339s vs5400s cap, explicit cleanup OFF after refusal. Pre-existing
+outlet automation is not disproved. No new timer setup/removal, automatic retry,
+v3 invocation or subsequent driver action. Preserve rollback/no unpaired audio/
+station/backend work. Closed entry24 v1 required R1:
 unknown OFF/already-exited child skipped available final evidence. V1 frozen NOT
 ADOPTED. Fresh driver-entry24-v2 adds22 finalizer lines only; independent correction
 review and parent SOURCE/METHOD/custody/order disposition now accept that boundary.
@@ -84,7 +112,10 @@ Hardware trials are authorized; prefer reviewed
 prearmed watchdog recovery/known-idle watchdog reset. Further adversarial testing
 remains deferred. The initial RAM76 belief was superseded by the cold handoff below.
 
-**Actual native state:** After user reseated probes and requested retry, ONE fresh
+**Latest actual native boundary:** supervised24a ended OFF/finalized after the
+U-Boot SF-envelope HOLD above; no Linux boot or motor command. Older23h remains
+its own cold-observation result, not a current lease or proof of electrical origin.
+**Historical23h:** After user reseated probes and requested retry, ONE fresh
 23h with UNCHANGED v4/parser **PASS cold observation only**:596RX exactly360B/19
 first-prompt records +236B controlled echo groups;3×19B/57TX original catch, no
 extra prefix/window reset, separate10s unchanged RX/TX/raw/events. Actual ON/OFF
@@ -111,7 +142,7 @@ dependency records/84 artifacts/40 logs/five tools. Native hardening/real creden
 NOT RUN. See rtsp-provisioner-process PARENT_DISPOSITION; no active author/reviewer
 in that lane; committed locally `5269979`. Its original33-input pin set retains
 the pre-closeout index:32 remain unchanged plus known parent index/status
-updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE24.json`,
+updates recorded in `PARENT_CONTEXT_UPDATE01.json` through `PARENT_CONTEXT_UPDATE25.json`,
 not rebased. Actual authorized
 external ingress, secret-free launch/FD-env-caps
 hygiene, durable storage/rotation, linked-file retirement/main/external recovery/
@@ -640,15 +671,16 @@ Paths below are workspace-relative; consult the relevant document, not all histo
 
 ## Git and privacy
 
-- Follow `GIT_WORKFLOW.md`: reviewed increments on **main**, **local commits for
-  now** until the user supplies a remote. No remote creation, automatic publication
-  or invented destination. A future push still needs privacy/license review.
+- Follow `GIT_WORKFLOW.md`: reviewed increments on **main** and publication only to
+  the explicitly approved `Gadorach/AnykaOpenCam` scope above. No invented destination
+  or unrelated private-data publication. Review reachable history before pushing.
 - Use a separate temporary index initialized from HEAD and stage only reviewed
   paths. Preserve the ordinary index (historically1993 entries,906 acquisition-scope)
   and unfamiliar user work. No blanket `add -A`, reset, forced untracking or cleanup.
-- Exclude private captures/responses/digests, credentials/provisioning/keys, stock
-  binaries, photographs/identifiers, footage and generated target images. Local Git
-  is not publication consent; preserve each upstream license, no global license grant.
+- Exclude private captures/responses/digests, bench credentials/provisioning/keys,
+  photographs, footage and generated native images. The only new stock-binary
+  exception is the three originals explicitly approved above, including their
+  embedded factory data. Preserve each upstream license; no global license grant.
 - `work/` and ignored acquisitions are retained history, not disposable scratch.
   Preserve root legacy manifests/notices and `docs/archive/initial-handoff/`.
   See `START_HERE.md` and `docs/PROJECT_LAYOUT.md`; dated runtime claims there may

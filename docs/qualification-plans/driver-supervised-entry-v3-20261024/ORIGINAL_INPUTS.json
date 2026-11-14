@@ -1,0 +1,66 @@
+{
+  "scope": "PUBLIC_ORIGINAL_SNAPSHOT_BEFORE_SOURCE_COPY_NO_REBASE",
+  "unique_frozen_files": 46,
+  "inherited_v1_original_snapshot": {
+    "path": "docs/qualification-plans/driver-supervised-entry-v2-20261024/ORIGINAL_INPUTS.json",
+    "bytes": 6062,
+    "sha256": "9a67cac2ec597729cd31eaac4fa1e1ac8df09cf35239773dc0023a9948fbb689",
+    "pin_records": 29
+  },
+  "original_v2_delivery_manifest": {
+    "path": "docs/qualification-plans/driver-supervised-entry-v2-20261024/DELIVERY_PINS.tsv",
+    "bytes": 1376,
+    "sha256": "45e544b54cbf28b43c3a6742b1b46868ed233e7c07abd811cacf5d6bb48eb2c7",
+    "pin_records": 8
+  },
+  "pin_closure": "The unchanged29 inherited pins plus unchanged8 v2 delivery records plus9 additional records below;46 unique files. Referenced manifests are retained verbatim, not rebased or rewritten.",
+  "additional_pins": {
+    "docs/qualification-plans/driver-supervised-entry-v2-20261024/DELIVERY_PINS.tsv": {"bytes": 1376, "sha256": "45e544b54cbf28b43c3a6742b1b46868ed233e7c07abd811cacf5d6bb48eb2c7"},
+    "docs/qualification-plans/driver-supervised-entry-v2-20261024/PARENT_DISPOSITION.md": {"bytes": 3223, "sha256": "0a59e3e2571a26e43812b125758d5be9292a49692de53d6402186f171de77078"},
+    "docs/qualification-plans/driver-supervised-entry-v2-review-20261024/REVIEW.md": {"bytes": 7854, "sha256": "2ad14b225c4e2b159b59bf1ec3b8e0600a2961638ef7e1c5b9769f80737128ad"},
+    "docs/qualification-plans/driver-supervised-run-20261024/ATTEMPT24A_RESULT.md": {"bytes": 2457, "sha256": "35580fb038f9242a1001a00f2ca3614a9680e73837c713a86ea535f3a94394ce"},
+    "docs/qualification-plans/driver-supervised-run-20261024/SAVED_VENDOR_ENVELOPES.md": {"bytes": 2620, "sha256": "a23e75d3d4425c5fccbdcde0e778ad24a6fb833fe3f0bb8c0ab2b25b25f7bb16"},
+    "docs/qualification-plans/driver-foundation-package-20261024/ENTRY_SELECTION.json": {"bytes": 1610, "sha256": "7534840f1a28cd205345abc19cfcbb5943fd8132243897888a1f3ce6c6dc6cfe"},
+    "docs/qualification-plans/driver-foundation-package-20261024/ENTRY_ASSOCIATION.json": {"bytes": 1355, "sha256": "800a5318c94efe9c31981c8fdb94ed3d5eb77a032f06e6d62f02e17df8d5e01e"},
+    "docs/qualification-plans/driver-foundation-package-20261024/PARENT_IMAGE_SELECTION.md": {"bytes": 4130, "sha256": "03f08e850f0735766e472af7b8508fc128daed316f867d0b4358c063ab625447"},
+    "docs/qualification-plans/driver-foundation-package-review-20261024/REVIEW.md": {"bytes": 12183, "sha256": "169eb3b3636fcfc1e52f4e6a1e06e6806ee4e3bb2c9801bbac0c080994050b87"}
+  },
+  "membership": {
+    "apps/qualification/qc07f-driver-entry24": [
+      "apps/qualification/qc07f-driver-entry24/README.md",
+      "apps/qualification/qc07f-driver-entry24/driver_entry.py"
+    ],
+    "docs/qualification-plans/driver-supervised-entry-20261024": [
+      "docs/qualification-plans/driver-supervised-entry-20261024/CONTRACT.md",
+      "docs/qualification-plans/driver-supervised-entry-20261024/HANDBACK.md",
+      "docs/qualification-plans/driver-supervised-entry-20261024/PINS.tsv",
+      "docs/qualification-plans/driver-supervised-entry-20261024/SELECTION.md",
+      "docs/qualification-plans/driver-supervised-entry-20261024/SOURCE_DELTA.md",
+      "docs/qualification-plans/driver-supervised-entry-20261024/STATIC_RESULT.json"
+    ],
+    "docs/qualification-plans/driver-supervised-entry-review-20261024": [
+      "docs/qualification-plans/driver-supervised-entry-review-20261024/REVIEW.md"
+    ],
+    "docs/qualification-plans/driver-supervised-entry-parent-20261024": [
+      "docs/qualification-plans/driver-supervised-entry-parent-20261024/V1_DISPOSITION.md"
+    ],
+    "apps/qualification/qc07f-driver-entry24-v2": [
+      "apps/qualification/qc07f-driver-entry24-v2/README.md",
+      "apps/qualification/qc07f-driver-entry24-v2/driver_entry.py"
+    ],
+    "docs/qualification-plans/driver-supervised-entry-v2-20261024": [
+      "docs/qualification-plans/driver-supervised-entry-v2-20261024/CONTRACT.md",
+      "docs/qualification-plans/driver-supervised-entry-v2-20261024/DELIVERY_PINS.tsv",
+      "docs/qualification-plans/driver-supervised-entry-v2-20261024/HANDBACK.md",
+      "docs/qualification-plans/driver-supervised-entry-v2-20261024/INVERSE.patch",
+      "docs/qualification-plans/driver-supervised-entry-v2-20261024/ORIGINAL_INPUTS.json",
+      "docs/qualification-plans/driver-supervised-entry-v2-20261024/PARENT_DISPOSITION.md",
+      "docs/qualification-plans/driver-supervised-entry-v2-20261024/SOURCE_DELTA.patch",
+      "docs/qualification-plans/driver-supervised-entry-v2-20261024/STATIC_RESULT.json"
+    ],
+    "docs/qualification-plans/driver-supervised-entry-v2-review-20261024": [
+      "docs/qualification-plans/driver-supervised-entry-v2-review-20261024/REVIEW.md"
+    ]
+  },
+  "image_artifact_access": "NONE. Only the four explicit public image-selection/association/context/review files were read. Referenced work/image artifacts and private24a evidence were not opened."
+}

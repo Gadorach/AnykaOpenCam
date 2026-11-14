@@ -50,7 +50,19 @@ build recipes. Do not rewrite historical absolute paths merely for the rename.
 
 ## Next task
 
-### Oct24 user steering — stabilize hardware drivers first
+### Nov14 current task — public source, original dumps and extraction tools
+
+User explicitly requested public `Gadorach/AnykaOpenCam`, the three byte-exact
+original stock `.bin` dumps and extraction tools, but NO working built image of
+current native source. User reaffirmed public originals after disclosure of the
+shared factory RSA private key. See [publication scope](../../GITHUB_PUBLICATION_20261114.md)
+and [firmware guide](../../../firmware/README.md). Only selected public copies are
+included; private bench data, extracts, newer modified dumps and native builds
+remain local. Use the temporary-index workflow; preserve ordinary staging and
+original acquisitions. This publication task performs no hardware operation and
+does not inherit October supervision/runtime/leases.
+
+### Driver development priority — Oct24 historical checkpoint
 
 Prioritize RP-02/NET Wi-Fi/USB reliability and MTU1500, RP-11/CTRL bounded motor
 movement/dependable STOP/defensible zeroing, and RP-12/AUDIO modern microphone
@@ -86,6 +98,10 @@ and independent layout review now establish actual QC6DF01.UIM3403371B/SHA
 BZIP2 f8371c93. See [image selection](../../qualification-plans/driver-foundation-package-20261024/PARENT_IMAGE_SELECTION.md).
 N2 HOST-library provenance/N3 original-DTB scratch-model caveats remain. No boot or
 driver test has run; fresh current supervision/sole-owner admission still required.
+Subsequent supervised24a reached U-Boot but stopped on an exact SF-read envelope
+guard and ended OFF/finalized; no new kernel/driver test followed. The bounded v3
+console-format correction is independently/parent source-reviewed, not invoked.
+See [24a result](../../qualification-plans/driver-supervised-run-20261024/ATTEMPT24A_RESULT.md).
 
 Earlier integration history is retained below, not the selected next-work queue.
 Query78 v3's review is complete at narrow SOURCE/method scope; no recipe/archive/

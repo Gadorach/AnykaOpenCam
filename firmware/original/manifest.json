@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "publication_date": "2026-11-14",
+  "kind": "byte-exact original manufacturer flash main-array acquisitions",
+  "current_native_build_images_included": false,
+  "sanitized": false,
+  "owner_report": "No Wi-Fi network had been saved on the original firmware of these devices.",
+  "warning": "Embedded factory private keys, passwords, device identifiers and cloud configuration may be present. The owner explicitly approved public originals after disclosure of the shared KM01/QC07F RSA private key. Do not reuse embedded credentials or keys.",
+  "provenance": "Each export matches all three independent original reads and all three acquisition-mirror copies. Original files remain unchanged locally; matching reads establish repeatability, not electrical completeness or boot compatibility.",
+  "dumps": [
+    {
+      "file": "t34-4g-km01.bin",
+      "target_id": "km01-lte",
+      "label": "T34-4G / Anyka KM01",
+      "stock_os": "AliOS Things",
+      "acquisition_session": "session-20261008T001154Z",
+      "bytes": 8388608,
+      "sha256": "55765bfd352f3101bc71204d537d6d216e42d2dd6d209f98753c2dd5960ac71d",
+      "matching_independent_reads": 3,
+      "extractor": "../tools/extract_t34_4g_km01.py"
+    },
+    {
+      "file": "qc07f.bin",
+      "target_id": "lightbulb-camera",
+      "label": "QC07F / Anyka V200",
+      "stock_os": "Linux 3.4.35",
+      "acquisition_session": "session-20261008T024241Z",
+      "bytes": 8388608,
+      "sha256": "42f50a345b17e2c5fa00cab2b1a29bd900b793d5bbb8f3c0d9e2b41e603b2ba3",
+      "matching_independent_reads": 3,
+      "extractor": "../tools/extract_qc07f.py"
+    },
+    {
+      "file": "fulhan-fh8626v200.bin",
+      "target_id": "camera-03",
+      "label": "CFMTA-635727-BJYVX / Fulhan FH8626V200",
+      "stock_os": "Linux 4.9.129",
+      "acquisition_session": "session-20261008T032326Z",
+      "bytes": 8388608,
+      "sha256": "c7eda7587953a868064bab58857139c3a6a9edfcbc9937543766146b0c813fc0",
+      "matching_independent_reads": 3,
+      "extractor": "../tools/extract_fulhan_fh8626v200.py"
+    }
+  ]
+}

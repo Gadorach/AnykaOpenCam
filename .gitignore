@@ -28,14 +28,33 @@
 **/core
 **/core.*
 
-# Do not blanket-ignore ROM .bin files, photos, modules, logs, sources or artifacts.
-# Stock acquisitions are sensitive local forensic data; no publication is authorized.
+# Original dump copies are explicitly published under firmware/original/.
+# Do not publish the complete acquisition mirrors or extracted sensitive content.
 
 # Source-only main workflow: preserve forensic/private material locally.
 # These exclusions do not remove or alter pre-existing staged entries.
 /firmware/stock/
+/firmware/extracted/
 /evidence/photos/
 /docs/archive/initial-handoff/
 *.private.json
 *.private.txt
 *.private.bin
+
+# Never publish generated native firmware/build images with the stock dumps.
+*.UIM
+*.uim
+*.uImage
+*.uimage
+*.zimage
+*.img
+*.elf
+*.ko
+*.a
+*.so
+*.so.*
+*.cpio
+*.cpio.gz
+**/zImage
+**/vmlinux
+**/uImage

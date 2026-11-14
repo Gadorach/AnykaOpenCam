@@ -1,21 +1,29 @@
 # Git workflow
 
-The user requests reviewed increments committed to **main**, with pushes after
-a push destination is configured. On2026-10-21 no remote was configured; the user
-explicitly chose **local commits for now**. Do not invent a repository URL or
-contact/create a third-party account. Use the existing Git author configuration.
+The user requests reviewed increments committed to **main**. On2026-11-14 the user
+explicitly requested a GitHub repository and public original stock dumps plus
+extraction tools, excluding working built images of the current native source.
+The approved destination is **https://github.com/Gadorach/AnykaOpenCam**. The user
+also explicitly confirmed public untouched dumps after disclosure of the shared
+factory RSA private key in the KM01/QC07F originals. Use the existing Git author.
+The earlier2026-10-21 local-commits-only decision is superseded for this scope,
+not permission to publish unrelated private material or create other repositories.
 
 ## Source and privacy boundaries
 
 - Commit reviewed authored source, tests, plans, source/license notices and safe
   metadata. A source snapshot is not a build, hardware or product acceptance claim.
-- Do not commit credentials, private provisioning/configuration, operator passwords,
-  keys, private capture/response/digest material, stock ROMs/extracted proprietary
-  binaries, device photographs/identifiers, footage or generated target images.
+- Do not commit private provisioning/configuration, operator passwords/host keys,
+  private captures/responses/digests, photographs, footage or generated native images.
+  The narrow explicit exception is the three byte-exact original stock dumps in
+  `firmware/original/`, including their embedded factory material, with warnings,
+  checksums/provenance and original vendor/third-party license obligations intact.
+  Do not publish later credential-bearing modified dumps or whole acquisition/
+  extracted trees. This is not a global license grant or evidence of secret absence.
 - Preserve local originals, source notices, experiments and failed evidence. An
   excluded path is not disposable and must not be deleted or rewritten for Git.
-- Publication needs a final privacy/license review of the reachable commit tree.
-  A future remote URL does not authorize publishing private acquisitions.
+- Publication needs a final privacy/license and generated-artifact review of the
+  reachable commit tree/history. Other future remotes do not authorize private data.
 
 ## Existing index
 

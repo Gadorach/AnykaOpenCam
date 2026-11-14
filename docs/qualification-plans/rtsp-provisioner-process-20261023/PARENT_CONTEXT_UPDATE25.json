@@ -1,0 +1,15 @@
+{
+  "scope": "TWENTY_FIFTH_KNOWN_PARENT_MUTABLE_INDEX_STATUS_UPDATE_NOT_SOURCE_PIN_REBASE",
+  "recorded_host_date": "2026-11-14",
+  "original_manifests_and_reviews_unchanged": true,
+  "path": "docs/plan/camera-foundation/00-INDEX.md",
+  "before": {
+    "bytes": 139202,
+    "sha256": "fe642f63df44fd0d2dd1f92f6d6286ac156a7a258ecbdb49947c81b6b1849189"
+  },
+  "after": {
+    "bytes": 140331,
+    "sha256": "404b07cf56da7346feb566936a3ea0e5a1121ee256afbc9d8ee41b60bdc07ea4"
+  },
+  "reason": "explicit user-selected public Gadorach/AnykaOpenCam source/original-firmware/extraction-tool publication, with separate consent for embedded shared factory private key; native builds/private bench material excluded. Historical24a HOLD and reviewed uninvoked entry-v3 context clarified; no hardware operation or original pin rebase"
+}

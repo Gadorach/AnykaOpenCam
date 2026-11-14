@@ -1,0 +1,22 @@
+--- a/apps/qualification/qc07f-driver-entry24-v2/driver_entry.py
++++ b/apps/qualification/qc07f-driver-entry24-v3/driver_entry.py
+@@ -496,7 +496,9 @@
+                  '   Image Name:   ' + self.image_name,
+                  '   Image Type:   ARM Linux Kernel Image (uncompressed)',
+                  '   Load Address: 82408000', '   Entry Point:  82408040',
+-                 '   Verifying Checksum ... OK', '   Loading Kernel Image ... OK', 'OK'}
++                 '   Verifying Checksum ... OK', '   Loading Kernel Image ... OK', 'OK',
++                 '*  kernel: image load address = 0x81808000',
++                 '   XIP Kernel Image ... OK'}
+         for line in lines:
+             if not line:
+                 continue
+@@ -575,7 +577,7 @@
+         self.command('mw.b 0x82408000 0 0x60000')
+         self.crc_command(DEST, 0x60000, f'{self.crc(bytes(0x60000)):08x}')
+         state, data = self._text('sf read 0x82408000 0x0 0x60000', 20)
+-        require(re.fullmatch(rb'\nSF: 393216 bytes @ 0x0 Read: OK\n\nanyka\$', data.replace(b'\r', b'')))
++        require(re.fullmatch(rb'\n(?:\n)?SF: 393216 bytes @ 0x0 Read: OK\n\nanyka\$', data.replace(b'\r', b'')))
+         self.accept(state)
+         self.crc_command(DEST, 0x60000, '452a21fe')
+         for address, want, mask in NEUTRAL:
